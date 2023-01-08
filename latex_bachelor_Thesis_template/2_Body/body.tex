@@ -27,8 +27,7 @@ Er is een deskresearch uitgevoerd naar de verschillende sluzien, bedieningstijde
 
 
 \paragraph{requirements}
-requirements versus specificaties 
-requirements are a usable representation of a need.
+%requirements are a usable representation of a need.
 
 Specificaties
 The software requirement specificatie bevat een omschrijving van functies en mogelijkheden die het product moet kunnen bieden. In de specificatie wordt ook vastgelegd welke beperkingen en aannames worden gedaan. De specificatie wordt soms verduidelijks aan de hand van use cases en user stories.
@@ -228,79 +227,79 @@ om een voledig werkend model van een geautomatiseerde sluis te kunnen simuleren 
 \label{sec:results}
 
 Here goes all the important stuff, likely with a lot of graphics like this:
-
-\begin{figure}[htb]
-  \begin{minipage}[t]{0.49\linewidth}\centering
-    \includegraphics[width=7cm]{figure_sampling_view1.eps}
-    \medskip
-    \centerline{(a)}
-  \end{minipage}\hfill
-  \begin{minipage}[t]{0.49\linewidth}\centering
-    \includegraphics[width=7cm]{figure_sampling_view2.eps}
-    \medskip
-    \centerline{(b)}
-  \end{minipage}
-  \caption{Assignment of single-view intensities to RGB components: (a) view
-    \#1; and (b) view \#2. }
-  \label{fig:Sampling}
-\end{figure}
-
-In all likelihood, you will need to insert tables. See one example on the next page.
-\clearpage
-
-\begin{table}[h]
-	\caption{Absolute disparity error per pixel for the test data from
-		Fig.~\ref{fig:Sampling} and different parameter values. In each experiment one
-		parameter is adjusted while other parameters are unchanged.} 
-	\centering
-	\renewcommand{\arraystretch}{1.2}
-	\begin{minipage}[b]{0.30\linewidth}
-		\centerline{$\eta=6000$, $\mu=2000$}\smallskip
-		\centering
-		\begin{tabular}{ccc}
-			\hline
-			$K$ & $u_1$ & $u_2$\\
-			\hline
-			3   & 0.52 &0.46\\
-			7   & 0.47 &0.43\\
-			10  & 0.35 &0.36\\
-			12  & 0.37 &0.36\\
-			\hline
-		\end{tabular}
-	\end{minipage}
-	%
-	\begin{minipage}[b]{0.34\linewidth}
-		\centerline{$K=10$, $\mu=2000$}\smallskip
-		\centering
-		\begin{tabular}{ccc}
-			\hline
-			$\eta$ & $u_1$ & $u_2$\\
-			\hline
-			1000&0.54& 0.45\\
-			3000&0.43& 0.40\\
-			6000&0.35& 0.36\\
-			9000&0.37& 0.37\\
-			\hline
-		\end{tabular}
-	\end{minipage}
-	%
-	\begin{minipage}[b]{0.32\linewidth}
-		\centerline{$K=10$, $\eta=6000$}\smallskip
-		\centering
-		\begin{tabular}{ccc}
-			\hline
-			$\mu$ & $u_1$ & $u_2$\\
-			\hline
-			100 &1.00&1.16\\
-			1000&0.53&0.47\\
-			2000&0.35&0.36\\
-			3000&0.44&0.43\\
-			\hline
-		\end{tabular}
-	\end{minipage}
-	%
-	\label{tab:Parameters}
-\end{table}
+%
+%\begin{figure}[htb]
+%  \begin{minipage}[t]{0.49\linewidth}\centering
+%    \includegraphics[width=7cm]{figure_sampling_view1.eps}
+%    \medskip
+%    \centerline{(a)}
+%  \end{minipage}\hfill
+%  \begin{minipage}[t]{0.49\linewidth}\centering
+%    \includegraphics[width=7cm]{figure_sampling_view2.eps}
+%    \medskip
+%    \centerline{(b)}
+%  \end{minipage}
+%  \caption{Assignment of single-view intensities to RGB components: (a) view
+%    \#1; and (b) view \#2. }
+%  \label{fig:Sampling}
+%\end{figure}
+%
+%In all likelihood, you will need to insert tables. See one example on the next page.
+%\clearpage
+%
+%\begin{table}[h]
+%	\caption{Absolute disparity error per pixel for the test data from
+%		Fig.~\ref{fig:Sampling} and different parameter values. In each experiment one
+%		parameter is adjusted while other parameters are unchanged.} 
+%	\centering
+%	\renewcommand{\arraystretch}{1.2}
+%	\begin{minipage}[b]{0.30\linewidth}
+%		\centerline{$\eta=6000$, $\mu=2000$}\smallskip
+%		\centering
+%		\begin{tabular}{ccc}
+%			\hline
+%			$K$ & $u_1$ & $u_2$\\
+%			\hline
+%			3   & 0.52 &0.46\\
+%			7   & 0.47 &0.43\\
+%			10  & 0.35 &0.36\\
+%			12  & 0.37 &0.36\\
+%			\hline
+%		\end{tabular}
+%	\end{minipage}
+%	%
+%	\begin{minipage}[b]{0.34\linewidth}
+%		\centerline{$K=10$, $\mu=2000$}\smallskip
+%		\centering
+%		\begin{tabular}{ccc}
+%			\hline
+%			$\eta$ & $u_1$ & $u_2$\\
+%			\hline
+%			1000&0.54& 0.45\\
+%			3000&0.43& 0.40\\
+%			6000&0.35& 0.36\\
+%			9000&0.37& 0.37\\
+%			\hline
+%		\end{tabular}
+%	\end{minipage}
+%	%
+%	\begin{minipage}[b]{0.32\linewidth}
+%		\centerline{$K=10$, $\eta=6000$}\smallskip
+%		\centering
+%		\begin{tabular}{ccc}
+%			\hline
+%			$\mu$ & $u_1$ & $u_2$\\
+%			\hline
+%			100 &1.00&1.16\\
+%			1000&0.53&0.47\\
+%			2000&0.35&0.36\\
+%			3000&0.44&0.43\\
+%			\hline
+%		\end{tabular}
+%	\end{minipage}
+%	%
+%	\label{tab:Parameters}
+%\end{table}
 
 Of course, there must be a Table of Contents, List of Figures and List of Tables at the beginning of the thesis, but this is all set up automatically.
 
@@ -333,10 +332,6 @@ https://thingsboard.io/docs/user-guide/rule-engine-2-0/tutorials/transform-incom
 
 Dataverwerking is relevant omdat er wordt verwerkt met verschillende type variabelen: BOOLEAN, INT, FLOAT en DOUBLE
 
-
-\begin{center}
-	\figuur{width=\columnwidth}{plaatjes/cvi\_systeem\_oud.png}{PNGR}{Variabele breedte (png)}
-\end{center}
 
 
 \section{Onderzoeksvraag}
@@ -448,139 +443,11 @@ Er is nog weinig bekend over de ontwikkelkosten voor een IoT cloud platform inte
 \paragraph{software setup}
 
 
-\begin{center}
-	\figuur{width=\columnwidth}{plaatjes/esp\_idf\_setup.png}{PNGR}{Variabele breedte (png)}
-\end{center}
-
-
-Om firmware geschreven in C/C++ code te installeren naar de esp32  [38] En  [39].  is een ontwikkelomgeving nodig. Deze bestaat uit de volgende componenten:
-
-ESP-IDF de sdk van Espressif voor de ontwikkeling van firmware op de esp32	
-CMAKE/IDE open source software voor compiler onafhankelijk testen van software 	
-Visual 	Studio de ontwikkelomgeving waarin de de code ontwikkeld en getest wordt 	
-Visual 	GDB Debugger voor het debuggen van de firmware https://visualgdb.com/tutorials/esp32/arduino/component/ 	
-Git om de verschillende versies van de sdk naar een lokale machine te downloaden 	
-Project: het visual studio project in dit geval
-Opmerking: een windows installatie zonder IDE is ook mogelijk zie https://dl.espressif.com/dl/esp-idf/?idf=4.4. Een ontwikkelaar kan zelf een IDE gebruiken. Uit ervaring kan ik zeggen dat platformIO https://docs.platformio.org/en/stable/frameworks/espidf.html geen aanrader is.
-
-
-Het belangrijkste is dat de primaire processen blijven lopen ondanks de voortgang van de MQTT Implementatie. Er valt namelijk niets te monitoren als de basisprocessen geen doorgang vinden.  De implementatie van dit project heeft de twee belangrijkste activiteiten: data verzenden, ontvangen instructies/commando’s uitvoeren. 
-
 
 \paragraph{hardware setup}
-Ti Green
-Espressif ESP32 NodeMCU WROOM
-
-Voor het CVI project wordt de TI green gebruikt. Belangrijkste component in relatie tot de studie is de esp32. Op het ontwikkelbord zijn verschillende componenten aangebracht om ervoor te zorgen dat het systeem de juiste spanning kan reguleren. Om de firmware op de ESP te debuggen wordt gebruik gemaakt van de JLINK-debugger. Andere componenten die op het bordje zijn geïmplementeerd zijn display, ethernet-port usb,micro poort.  
-
-In het onderstaande afbeelding de display van het type nexus waarop informatie wordt getoond zoals de naam van de netwerkverbinding waarop het device communiceert met de cloud. Het display toont verder belangrijke informatie zoals de temperatuur van de cvi en eventuele storingen
 
 
 
-\begin{center}
-	\figuur{width=\columnwidth}{plaatjes/nexxion\_user\_display.png}{PNGR}{Variabele breedte (png)}
-\end{center}
-
-
-\begin{center}
-	\figuur{width=\columnwidth}{plaatjes/ti\_green.png}{PNGR}{Variabele breedte (png)}
-\end{center}
-
-
-
-\begin{center}
-	\figuur{width=\columnwidth}{plaatjes/hardwre\_compleet.png}{PNGR}{Variabele breedte (png)}
-\end{center}
-
-
-
-\subsection{Visualisatie}
-
-\begin{figure}[!ht]
-	\centering
-	\begin{floatrow}
-		\ffigbox[\FBwidth]{\caption{Dummy figure}\label{fig:dummy-1}}{%
-			\rule{1.6in}{0.9in}   % Just a dummy. Replace with your figure.
-		}
-		\ffigbox[\FBwidth]{\caption{Dummy figure}\label{fig:dummy-2}}{%
-			\rule{1.6in}{0.9in}   % Just a dummy. Replace with your figure.
-		}
-		
-		\ffigbox[\FBwidth]{\caption{Dummy figure}\label{fig:dummy-1}}{%
-			\rule{1.6in}{0.9in}   % Just a dummy. Replace with your figure.
-		}
-		\ffigbox[\FBwidth]{\caption{Dummy figure}\label{fig:dummy-2}}{%
-			\rule{1.6in}{0.9in}   % Just a dummy. Replace with your figure.
-		}
-	\end{floatrow}
-\end{figure}
-
-
-\begin{figure}[!tbp]
-	\centering
-	\subfloat[Flower one.]{\includegraphics[width=0.3\textwidth]{flower1.jpg}\label{fig:f1}}
-	\hfill
-	\subfloat[Flower two.]{\includegraphics[width=0.3\textwidth]{flower2.jpg}\label{fig:f2}}
-	\caption{My flowers.}
-	\subfloat[Flower one.]{\includegraphics[width=0.33\textwidth]{flower1.jpg}\label{fig:f1}}
-	\hfill
-	\subfloat[Flower two.]{\includegraphics[width=0.3\textwidth]{flower2.jpg}\label{fig:f2}}
-	\caption{My flowers.}
-\end{figure}
-
-
-
-Een 3-fase opstelling zoals het systeem op dit moment wordt geleverd bij de klant. Met deze testopstelling wordt het product getest zoals deze daadwerkelijk bij de klant in gebruik is. Voor de proefopstelling wordt dummy data gegenereerd en gepubliceerd voor de telemetry omdat we de systemen bij de klant niet kunnen testen op afstand en ook niet op locatie.
-
-
-\paragraph{esp-idf component}
-
-Voor de implementatie is gebruikt gemaakt door het ESP-idf sdk van espressif. Daarin worden ook arduino libraries als component meegenomen,. Een library die niet wordt meegenomen is de thingsboard sdk.
-
-Er is ook gekeken naar de mogelijkheden om het ESP-idf sdk op andere manieren in gebruik te nemen dan met visual studio 2019 met  gdb-debugger voor de esp32. Zo is er onderzoek gedaan naar platform.io en de tasmota esp-idf framework en de windows installer voor de esp-idf sdk met een eclipse ide installatie optie.
-
-\section{testbed overview}
-
-
-
-\begin{center}
-	\figuur{width=\columnwidth}{plaatjes/putty\_config.png}{PNGR}{Variabele breedte (png)}
-\end{center}
-
-
-
-\section{Selectiestrategie  zoektermen voor implementatie}
-Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
-worden voldaan. De eerste voorwaarde is de geschiktheid van het
-afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
-men zich afvragen of dat wel een echte afstudeeropdracht is. Een
-afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
-moet een afstudeerproject passen in het profiel van een opleiding om
-beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
-de registratie van werkzaamheden tijdens het afstudeerproject. Dit
-voorkomt dat men dingen vergeet.
-\section{Definitie van der onderzoeksscope}
-Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
-worden voldaan. De eerste voorwaarde is de geschiktheid van het
-afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
-men zich afvragen of dat wel een echte afstudeeropdracht is. Een
-afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
-moet een afstudeerproject passen in het profiel van een opleiding om
-beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
-de registratie van werkzaamheden tijdens het afstudeerproject. Dit
-voorkomt dat men dingen vergeet.
-\section{Selectie strategie research papers}
-Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
-worden voldaan. De eerste voorwaarde is de geschiktheid van het
-afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
-men zich afvragen of dat wel een echte afstudeeropdracht is. Een
-afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
-moet een afstudeerproject passen in het profiel van een opleiding om
-beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
-de registratie van werkzaamheden tijdens het afstudeerproject. Dit
-voorkomt dat men dingen vergeet.
-\section{Onderzoeksproces}
- 
 
 
 %\input{hoofdverslag} %(verplicht) hoofdverslag
@@ -617,8 +484,31 @@ https://www.thethingsnetwork.org/forum/t/visualize-and-push-your-iot-data/1788
 
 \subsection{Inleiding}
  
-
-
+\input{Artificial intelligence en water locks}   
+\input{Automatiseren van waterwerken}   
+\input{bijlmerramp}   
+\input{cyber aanval op Oekraïene}   
+\input{ecourt}   
+\input{ethiek}   
+\input{ethiopian airlines}   
+\input{explosie in libabon, beirut}   
+\input{explosie tanjin china }   
+\input{Literatuuronderzoek}   
+\input{Mali}   
+\input{molukse treinkaping}   
+\input{Requirementsengineering}   
+\input{Resultaten}   
+\input{schietpartij ossendrecht}   
+\input{schipholbrand}   
+\input{slmramp}   
+\input{stint ongeluk}   
+\input{tesla crash report}   
+\input{therac-25}   
+\input{tjernobyl}   
+\input{vlucht 1951}   
+\input{vuurwerkramp enschede}   
+\input{Methode}  
+\input{testresultaten}  
 \begin{forest}
 	area/.style={%
 		fill=gray!10,draw,
@@ -808,7 +698,7 @@ and Information Security (SSI 2006), Sao Paulo, Brazil. 2006 (cit. on p. 32).
 \url{https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=1B1EBCE74A7F63C0F27934B3B8AA5B83?doi=10.1.1.708.9461&rep=rep1&type=pdf}
 
 overige literatuur over rbac
-\url{https://ieeexplore.ieee.org/document/7001829/metrics#metrics}
+\url{https://ieeexplore.ieee.org/document/7001829/metrics}
 \url{https://ieeexplore.ieee.org/document/7362101}
 \url{https://ieeexplore.ieee.org/document/7412116}
 \url{https://ieeexplore.ieee.org/document/7507090}
@@ -837,32 +727,16 @@ overige literatuur over rbac
 Aan de hand van het onderzoek naar de verschillende cloud platformen is er een inzicht gekomen in de functionaliteiten van de applicaties. Enkele veelvoorkomende features die in overeenstemming zijn met de functionele eisen een lijst met platform features
 
 \subsubsection{Protocol stack}
-\begin{center}
-	\figuur{width=\columnwidth}{plaatjes/protocolstack.png}{PNGR}{Variabele breedte (png)}
-\end{center}
+
 
 
 \subsubsection{MQTT}
 
 \paragraph{Control signals}
-CONNECT — Client request to connect to Server
- CONNACK — Connection Acknowledgement
- PUBLISH — A message which represents a new/separate publish
- PUBACK — QoS 1 Response to a PUBLISH message
- PUBREC — First part of QoS 2 message flow
- PUBREL — Second part of QoS 2 message flow
- PUBCOMP — Last part of the QoS 2 message flow
-SUBSCRIBE — A message used by clients to subscribe to specific topics
- SUBACK — Acknowledgement of a SUBSCRIBE message
- UNSUBSCRIBE — A message used by clients to unsubscribe from specific topics
- UNSUBACK — Acknowledgement of an UNSUBSCRIBE
- message
- PINGREQ — Heartbeat message
- PINGRESP — Heartbeat message acknowledgement
- DISCONNECT — Grace
+
 
 \url{https://iopscience.iop.org/article/10.1088/1742-6596/853/1/012003/pdf}
-\subsubparagraph{}
+\subsubparagraph{-----}
 
 \paragraph{Quality of service}
 
@@ -2557,241 +2431,18 @@ Geen enkele state kan oneindig een transitie uitvoeren. Elke state heeft een uit
 		Er is een dashboard aangemaakt.
 		Een device is aangemeld als subscriber op het topic met de username van het device
 		
+	 
 		
-		\section{Een Filewriting component}
-		
-		
-		
-		
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				#define WIFI_CONNECTED_BIT  BIT0
-				#define WIFI_FAIL_BIT       BIT1
-				#define SMART_CONFIG_BIT    BIT2
-				#define RECONNECT_BIT BIT0
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP)
-				xEventGroupClearBits(s_wifi_event_group, WIFI_FAIL_BIT);
-				xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT | RECONNECT_BIT);
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED)
-				xEventGroupClearBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
-				xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				return (bits & RECONNECT_BIT) != 0 && (bits & WIFI_FAIL_BIT) != 0; //  WIFI_CONNECTED_BIT | WIFI_CONNECTED_BIT
-			\end{lstlisting}
-		\end{Aanpassen}\\
-		
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/dns\_settings.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		
-		
-		
-		\section{Messaging service component}
-		
-		Het messaging service component is verantwoordelijk voor bidirectionele communicatie tussen IoT device en clout platform. Het MQTT component, dat hiervoor wordt gebruikt  is geïntegreerd in de library van ESPRESSIF.
-		De firmware is verantwoordelijk voor de intelligentie van het gehele IoT device.  De bi-directionele communicatie bestaat uit twee subcomponenten:
-		Telemetrie: verstuurt data van device naar server
-		Commando: versturt data van server naar device
-		
-		Om communicatie mogelijk te maken is een rule chain nodig De rule chain ziet er als volgt uit:
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		\section{Een MQTT Publishing Service component }
-		
-		\subsection{Inleiding }
-		In de firmware van de ESP-IDF SDK wordt een esp_mqtt_client_config_t  struct geinitialiseerd. De configuratie van dit object is nodig om een cliënt aan te maken. Het vastleggen van de parameters gebeurt als volgt: 
-		
-		esp_mqtt_client_config_t mfgc={};
-		mfgc.username = "<Thingsboard AccessKey>";
-		mfgc.uri = "mqtt://thingsboard.cloud";  /* *\
-		mfgc.port = 1883; /* Toevoegen Thingsboard Port*\  
-		client = esp_mqtt_client_init(&mfgc);  /* initialize client*\
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		Data versturen naar de cloud met behulp van MQTT-api kan door de functie esp_mqtt_client_publish() aan te roepen met de volgende parameters:
-		Esp_mqtt_client_handle_t
-		"v1/devices/me/telemetry
-		{\"temperature\":100}"
-		Parameters:
-		client – mqtt client handle
-		topic – topic string
-		data – payload string (set to NULL, sending empty payload message)
-		len – data length, if set to 0, length is calculated from payload string
-		qos – qos of publish message
-		retain – retain flag
-		Returns:
-		message_id of the publish message (for QoS 0 message_id will always be zero) on success. -1 on failure.
-		
-		De esp-idf sdk biedt ook extra opties voor een mqtt configuratie. Zo kan een gebruik kiezen voor mqtt of voor mqtt5 zie https://github.com/espressif/esp-mqtt/tree/master/include
-		
-		
-		Foutafhandeling en exceptions zullen regelmatig voorkomen. Daarom is ervoor gekozen berichten niet alleen vooraf te controleren op het moment dat deze worden verzonden. Maar ook als deze  zijn verstuurd. 
-		
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		Telemetrie  in thingsboard 
-		In onderstaande afbeelding is te zien hoe specifiek data van het koppelde IoT device wordt af te lezen is in thingsboard
-		
-		\subsection{thingsboard max payload}
-		https://thingsboard.io/docs/user-guide/api-limits/
-		https://github.com/thingsboard/thingsboard/issues/1363
-		https://thingsboard.io/docs/user-guide/install/config/
-		https://thingsboard.io/docs/user-guide/device-provisioning/
-		https://thingsboard.io/docs/user-guide/device-profiles/
-		https://thingsboard.io/docs/pe/user-guide/ui/devices/ 
-		
-		netwerknaam
-		ipadres
-		wachtwoord
-		apparaatsleutel
-		
-		PROJECT_NAME " AP";
-		
-		connectAPModeWhileConnectedToWifi
-		connectAPModeWhileConnectedToWifiAndStartServerUsingESP_IDF_LIBS
-		
-		
-		
-		instellingen pagina
-		netwerknaam opslaan
-		wachtwoord opslaan
-		apparaatsleutel opslaan
-		
-		
-		provisionkey+ provisionsecretkey + apparaatnaam return aceesskey op een nieuwe pagin. Deze pagina bevat een knop oom terug te gaan naar het hoofdscherm
-		uitloggen van wifinetwerk en verder gaan in ap-mode
-		
+	 
 		
 		\subsection{conclisie}
 		.Hiermee is aangetoond dat alle relevante data kan worden kan worden verzonden. Het hoogst aantal bytes dat werd verzonden tijdens de proefopstelling van 250 bytes.
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
+		 
 		\section{Een MQTT Subscribing service component}
 		
 		\subsection{inleiding}
-		
-		MQTT RPC is een functionaliteit van Thingsboard waarmee data verstuurd kan worden naar IoT devices. DIt component van Thingsboard biedt 2 servicemogelijkheden aan:
-		One Way RPC: data versturen van de server naar een device
-		Two Way RPC: data versturen naar een device en een bevestiging van ontvangst terugsturen naar de server
-		
-		Gebruik maken van deze functionaliteit vereist dat aan de server-side de Rulechain hiervoor is geconfigureerd alvorens er een dashboard kan worden aangemaakt waarmee data kan worden verstuurd en ontvangen.
-		
-		
-		esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL); /* register an event*\
-		esp_mqtt_client_start(client);  /* start MQTT Task*\
-		
-		
-		
-		De mqtt_event_handler is een callback functie van de mqtt client. In deze callback kan de developer aangeven welke specifieke afhandeling moet worden uitgevoerd bij verschillende MQTT events
-		
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
-				{
-					esp_mqtt_event_handle_t event = (esp_mqtt_event_handle_t)event_data;
-					client = event->client;
-					ESP_LOGI(TAG, "MQTT_EVENT declared");
-					
-					int msg_id;
-					switch ((esp_mqtt_event_id_t)event_id) {
-						case MQTT_EVENT_CONNECTED:
-						ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-						break;
-						case MQTT_EVENT_SUBSCRIBED:
-						ESP_LOGI(TAG, "MQTT_EVENT_SUBSCRIBED, msg_id=%d", event->msg_id);
-						break;
-						
-						case MQTT_EVENT_PUBLISHED:
-						ESP_LOGI(TAG, "MQTT_EVENT_PUBLISHED, msg_id=%d", event->msg_id);
-						break;
-						case MQTT_EVENT_DATA:
-						ESP_LOGI(TAG, "MQTT_EVENT_DATA");
-						printf("TOPIC=%.*s\r\n", event->topic_len, event->topic);
-						printf("DATA=%.*s\r\n", event->data_len, event->data);
-						//printf("%s", event->data);
-						char *out;
-						cJSON *json;
-						json=cJSON_Parse(event->data);
-						printf("DATA=%.*s\r\n", event->data_len, event->data);
-						printf("\n Data succesvol \n");
-						break;
-						
-						default:
-						ESP_LOGI(TAG, "Other event id:%d", event->event_id);
-						break;
-					}
-				}
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		Als de MQTT-taak succesvol is gestart moet via de API worden aangegeven dat het MQTT-protocol data moet afluisteren van een Thingsboard topic:
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				esp_mqtt_client_subscribe(client, "v1/devices/me/rpc/request/+", 0
-				
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
+		 
+		 
 		\subsection{Setup server side}
 		De instructie kan worden vastgelegd in Thingsboard als one-way command. Het device stuurt hierbij geen bevestiging naar het platform voor het ontvangen van een instructie.
 		
@@ -2802,178 +2453,11 @@ Geen enkele state kan oneindig een transitie uitvoeren. Elke state heeft een uit
 		Koppel device profile aan een device.
 		Als de templates voor de rule chain, dashboards en widget bundle zijn toegevoegd kan de gebruiker zelf een knop customizen
 		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/tb\_rpc\_button.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/rpc\_audit\_backlog.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/rpc\_audit\_details.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/rpc\_buttons.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/rpc\_data\_editing.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
-		
-		
-		
-		\begin{center}
-			\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-		\end{center}
+		 
 		
 		\subsection{implementatie}
 		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				
-				#define SEMAPHORE_SET_VAL(SEMAPHORE, DST, VAL) \
-				do { BaseType_t rc;                                     \
-					rc = xSemaphoreTake(SEMAPHORE, portMAX_DELAY);        \
-					assert(rc == pdPASS);                                \
-					DST = VAL; \
-					rc = xSemaphoreGive(SEMAPHORE); \
-					assert(rc == pdPASS);                                \
-				} while (0)
-				
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				SEMAPHORE_SET_VAL(g_Semaphore_MQTTCommand, g_CmdStartMQTT, true);
-				
-				
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				SEMAPHORE_SET_VAL(g_Semaphore_MQTTCommand, g_CmdPauzeMQTT, true);
-				
-				
-				
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				SEMAPHORE_SET_VAL(g_Semaphore_MQTTCommand, g_CmdPauzeMQTT, false);
-				
-				
-				
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				SEMAPHORE_SET_VAL(g_Semaphore_MQTTCommand, g_CmdStopMQTT, true);
-				
-				
-				
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
-		
-		\lstset{language=java}
-		
-		\begin{Aanpassen}
-			\begin{lstlisting}
-				void Task_MQTT(void *pvArgs)
-				{
-					
-					while(1)
-					{
-						bool bStartMQTTCMD;
-						bool bPauzeMQTTCMD;
-						bool bStopMQTTCMD;
-						Semaphore_setVal(g_Semaphore_MQTTCommand,bStartMQTTCMD,g_CmdStartMQTT);
-						
-						if(bStartMQTTCMD==false)
-						{
-							Semaphore_setVal(g_Semaphore_MQTTCommand,bStartMQTTCMD,g_CmdStartMQTT);
-						}
-						
-						Semaphore_setVal(g_Semaphore_MQTTCommand,g_CmdStartMQTT,true); //g_CmdPauzeWifi
-						Semaphore_setVal(g_Semaphore_MQTTCommand,g_CmdPauzeMQTT,false);
-						Semaphore_setVal(g_Semaphore_MQTTCommand,g_CmdStopMQTT,false);
-						
-						Semaphore_setVal(g_Semaphore_MQTTCommand,bStopMQTTCMD,g_CmdStopMQTT);
-						
-						if(bStopMQTTCMD==false)
-						{
-							// handle MQTT   here
-							if(g_CmdPauzeMQTT==false)
-							{
-								
-								esp_task_wdt_reset();
-								
-								esp_mqtt_client_publish(client, "v1/devices/me/telemetry", "{\"temperature\":100}", 0, 1, 0);
-								
-								esp_task_wdt_reset();
-								vTaskDelay(pdMS_TO_TICKS(2000));
-							}
-							
-							Semaphore_setVal(g_Semaphore_MQTTCommand,bStopMQTTCMD,g_CmdStopMQTT);
-							Semaphore_setVal(g_Semaphore_MQTTCommand,bPauzeMQTTCMD,g_CmdPauzeMQTT);
-							
-							esp_task_wdt_reset();
-							vTaskDelay(pdMS_TO_TICKS(5000));
-						}
-						
-						Semaphore_setVal(g_Semaphore_MQTTCommand,g_CmdStartMQTT,true);
-						Semaphore_setVal(g_Semaphore_MQTTCommand,g_CmdPauzeMQTT,false);
-						Semaphore_setVal(g_Semaphore_MQTTCommand,g_CmdStopMQTT,true);
-					}
-					
-				}
-				
-				
-				
-			\end{lstlisting}
-		\end{Aanpassen}
-		
+	 
 		
 		
 		
@@ -3003,7 +2487,7 @@ Geen enkele state kan oneindig een transitie uitvoeren. Elke state heeft een uit
 		beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
 		de registratie van werkzaamheden tijdens het afstudeerproject. Dit
 		voorkomt dat men dingen vergeet.
-		\include{Dashboard provisioning}   %(optioneel) besluit
+		
 		%\include{Device provisioning}   %(optioneel) besluit
 		
 		\chapter{Device provisioning}
@@ -3077,37 +2561,37 @@ Geen enkele state kan oneindig een transitie uitvoeren. Elke state heeft een uit
 			
 			\section{testresultaten TI green}
 			
-			
-			
-			\begin{usecase}
-				\addheading{Testcase}{Result} 
-				\addrow{est case ID}{The system, shows, in the form part of an object type, the number   indication.}
-				\addrow{Test priority (Low/Medium/High)}{A disconnected number indicating the type of `other constructed object'.}
-				\addrow{Module Name:}{A disconnected number indicating the type of `other constructed object'.}
-				\addrow{Test Designed By Name of the Tester.}{A disconnected number indicating the type of `other constructed object'.}
-				\addrow{ Test Designed Date:}{ }
-				\addrow{Test Executed By }{ }
-				\addrow{ Test Execution Date: }{ }
-				\addrow{ Test Title/Name:}{ }
-				\addrow{ Test Summary/Description:}{ }
-				\addrow{ Pre-conditions:}{ }
-				\addrow{ Dependencies:}{ }
-				\addrow{ Test Steps:}{ }
-				\addrow{ Pro Tip: }{ }
-				\addrow{ Test Data:}{ }
-				\addrow{ Expected Result:}{ }
-				\addrow{ Post-condition:}{ }
-				\addrow{ Actual result:}{ }
-				\addrow{ Status (Pass/Fail):}{ }
-				\addrow{ Notes/Comments/Questions:}{ }
-				\addrow{ Optional}{ }
-				\addrow{ Defect ID/Link:}{ }
-				\addrow{ Test Type/Keywords:}{ }
-				\addrow{Requirements: }{ }
-				\addrow{ Attachments/References:}{ }
-				\addrow{ Automation? (Yes/No):}{ }
-				
-			\end{usecase}
+%			
+%			
+%			\begin{usecase}
+%				\addheading{Testcase}{Result} 
+%				\addrow{est case ID}{The system, shows, in the form part of an object type, the number   indication.}
+%				\addrow{Test priority (Low/Medium/High)}{A disconnected number indicating the type of `other constructed object'.}
+%				\addrow{Module Name:}{A disconnected number indicating the type of `other constructed object'.}
+%				\addrow{Test Designed By Name of the Tester.}{A disconnected number indicating the type of `other constructed object'.}
+%				\addrow{ Test Designed Date:}{ }
+%				\addrow{Test Executed By }{ }
+%				\addrow{ Test Execution Date: }{ }
+%				\addrow{ Test Title/Name:}{ }
+%				\addrow{ Test Summary/Description:}{ }
+%				\addrow{ Pre-conditions:}{ }
+%				\addrow{ Dependencies:}{ }
+%				\addrow{ Test Steps:}{ }
+%				\addrow{ Pro Tip: }{ }
+%				\addrow{ Test Data:}{ }
+%				\addrow{ Expected Result:}{ }
+%				\addrow{ Post-condition:}{ }
+%				\addrow{ Actual result:}{ }
+%				\addrow{ Status (Pass/Fail):}{ }
+%				\addrow{ Notes/Comments/Questions:}{ }
+%				\addrow{ Optional}{ }
+%				\addrow{ Defect ID/Link:}{ }
+%				\addrow{ Test Type/Keywords:}{ }
+%				\addrow{Requirements: }{ }
+%				\addrow{ Attachments/References:}{ }
+%				\addrow{ Automation? (Yes/No):}{ }
+%				
+%			\end{usecase}
 			
 			%https://www.softwaretestinghelp.com/test-case-template-examples/
 			
@@ -3330,7 +2814,7 @@ Geen enkele state kan oneindig een transitie uitvoeren. Elke state heeft een uit
 			%	\section{kwaliteitsattributen}
 			%\include{requirement specificaties}
 			%\include{Methodologie}
-			\include{resultaten zoekopdracht}
+		
 			%\include{Literatuuronderzoek}
 			
 			\chapter{Literatuuronderzoek}
