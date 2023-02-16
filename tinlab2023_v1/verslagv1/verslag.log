@@ -1,0 +1,2958 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.20)  20 AUG 2022 02:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./verslag.tex
+(verslag.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count193
+\lst@gtempboxa=\box50
+\lst@token=\toks17
+\lst@length=\count194
+\lst@currlwidth=\dimen141
+\lst@column=\count195
+\lst@pos=\count196
+\lst@lostspace=\dimen142
+\lst@width=\dimen143
+\lst@newlines=\count197
+\lst@lineno=\count198
+\lst@maxwidth=\dimen144
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count199
+\lst@skipnumbers=\count266
+\lst@framebox=\box51
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+! LaTeX Error: Two \documentclass or \documentstyle commands.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \documentclass[11pt]{
+                         report}%
+The document may only declare one class.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(modelverslag.sty
+Package: modelverslag 
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen145
+\Hy@linkcounter=\count267
+\Hy@pagecounter=\count268
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count269
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count270
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen146
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count271
+\Field@Width=\dimen147
+\Fld@charsize=\dimen148
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count272
+\c@Item=\count273
+\c@Hfootnote=\count274
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count275
+\c@bookmark@seq@number=\count276
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 7.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen149
+\ar@mcellbox=\box52
+\extrarowheight=\dimen150
+\NC@list=\toks20
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box53
+)
+\TX@col@width=\dimen151
+\TX@old@table=\dimen152
+\TX@old@col=\dimen153
+\TX@target=\dimen154
+\TX@delta=\dimen155
+\TX@cols=\count277
+\TX@ftn=\toks21
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count278
+\calc@Bcount=\count279
+\calc@Adimen=\dimen156
+\calc@Bdimen=\dimen157
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count280
+\calc@Cskip=\skip54
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count281
+\rotFPtop=\skip55
+\rotFPbot=\skip56
+\rot@float@box=\box54
+\rot@mess@toks=\toks22
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks23
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pslatex\pslatex.sty
+Package: pslatex 2021/01/13 v1.3 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 66.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 67.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 68.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 69.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 69.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 69.
+\symbold=\mathgroup7
+\symitalic=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 76.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 76.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 76.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box55
+)
+\maxwidth=\skip57
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithmic.
+sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count282
+\c@ALC@line=\count283
+\c@ALC@rem=\count284
+\c@ALC@depth=\count285
+\ALC@tlm=\skip58
+\algorithmicindent=\skip59
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count286
+\U@D=\dimen158
+\l@unhyphenated=\language79
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count287
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/babel-dutch\dutch.ldf
+Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
+Package babel Info: Making " an active character on input line 127.
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen159
+\pgfutil@tempdimb=\dimen160
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common-lists.tex))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box56
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+filtered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen161
+\pgf@y=\dimen162
+\pgf@xa=\dimen163
+\pgf@ya=\dimen164
+\pgf@xb=\dimen165
+\pgf@yb=\dimen166
+\pgf@xc=\dimen167
+\pgf@yc=\dimen168
+\pgf@xd=\dimen169
+\pgf@yd=\dimen170
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count288
+\c@pgf@countb=\count289
+\c@pgf@countc=\count290
+\c@pgf@countd=\count291
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count292
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count293
+\pgfsyssoftpath@bigbuffer@items=\count294
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen171
+\pgfmath@count=\count295
+\pgfmath@box=\box57
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count296
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen172
+\pgf@picmaxx=\dimen173
+\pgf@picminy=\dimen174
+\pgf@picmaxy=\dimen175
+\pgf@pathminx=\dimen176
+\pgf@pathmaxx=\dimen177
+\pgf@pathminy=\dimen178
+\pgf@pathmaxy=\dimen179
+\pgf@xx=\dimen180
+\pgf@xy=\dimen181
+\pgf@yx=\dimen182
+\pgf@yy=\dimen183
+\pgf@zx=\dimen184
+\pgf@zy=\dimen185
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen186
+\pgf@path@lasty=\dimen187
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen188
+\pgf@shorten@start@additional=\dimen189
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count297
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen190
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen191
+\pgf@pt@y=\dimen192
+\pgf@pt@temp=\dimen193
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen194
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen195
+\pgf@sys@shading@range@num=\count298
+\pgf@shadingcount=\count299
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box61
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box62
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen196
+\pgf@nodesepend=\dimen197
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex)
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count300
+\pgfplotmarksize=\dimen256
+)
+\tikz@lastx=\dimen257
+\tikz@lasty=\dimen258
+\tikz@lastxsaved=\dimen259
+\tikz@lastysaved=\dimen260
+\tikz@lastmovetox=\dimen261
+\tikz@lastmovetoy=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count301
+\tikznumberofchildren=\count302
+\tikznumberofcurrentchild=\count303
+\tikz@fig@count=\count304
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count305
+\pgfmatrixcurrentcolumn=\count306
+\pgf@matrix@numberofcolumns=\count307
+)
+\tikz@expandcount=\count308
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarychains.code.tex
+File: tikzlibrarychains.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+
+! LaTeX Error: Option clash for package hyperref.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \usepackage
+                {listings}         %aangepaste listings (event. in kleuren)
+The package hyperref has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [colorlinks]
+Adding the global options:
+  ,colorlinks
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen265
+\captionmargin=\dimen266
+\caption@leftmargin=\dimen267
+\caption@rightmargin=\dimen268
+\caption@width=\dimen269
+\caption@indent=\dimen270
+\caption@parindent=\dimen271
+\caption@hangindent=\dimen272
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count309
+\c@continuedfloat=\count310
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+)
+\c@KVtest=\count311
+\sf@farskip=\skip60
+\sf@captopadj=\dimen273
+\sf@capskip=\skip61
+\sf@nearskip=\skip62
+\c@subfigure=\count312
+\c@subfigure@save=\count313
+\c@lofdepth=\count314
+\c@subtable=\count315
+\c@subtable@save=\count316
+\c@lotdepth=\count317
+\sf@top=\skip63
+\sf@bottom=\skip64
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.st
+y
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+! Package subcaption Error: This package can't be used in cooperation
+(subcaption)                with the subfig package.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \subcaption@CheckCompatibility
+                                   
+If you do not understand this error, please take a closer look
+at the documentation of the `subcaption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip65
+\enit@outerparindent=\dimen274
+\enit@toks=\toks36
+\enit@inbox=\box67
+\enit@count@id=\count318
+\enitdp@description=\count319
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-02-24 L3 programming layer (loader) 
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count320
+\l__pdf_internal_box=\box68
+))
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count321
+\l__lipsum_a_int=\count322
+\l__lipsum_b_int=\count323
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier.sty
+Package: fourier 2022/02/05 2.3 fourier-GUTenberg package
+Now handling font encoding FML ...
+... no UTF-8 mapping file for font encoding FML
+Now handling font encoding FMS ...
+... no UTF-8 mapping file for font encoding FMS
+Now handling font encoding FMX ...
+... no UTF-8 mapping file for font encoding FMX
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
+12.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fourier\t1futs.fd
+File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier-orns.st
+y
+Package: fourier-orns 2022/02/05 2.3 fourier-ornaments package
+)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/ptmcm/m/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ptmcm/m/n --> T1/futs/m/n on input line 63.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `normal' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ptmcm/m/it --> FML/futmi/m/it on input line 72.
+LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
+(Font)              `letters' in the math version `bold' on input line 72.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ptmcm/m/it --> FML/futmi/m/it on input line 72.
+\symotherletters=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
+LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
+(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 86.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/pzccm/m/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 126.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/pzccm/m/n --> FMS/futm/m/n on input line 126.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+27.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/psycm/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 127
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/psycm/m/n --> FMX/futm/m/n on input line 127.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/ptm/bx/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/ptm/bx/n --> T1/futs/bx/n on input line 128.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/ptm/m/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ptm/m/it --> T1/futs/m/it on input line 130.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
+LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 223.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 228.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 238.
+LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 240.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 242.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 244.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 246.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 248.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 250.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 252.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 254.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 256.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 260.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 261.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 263.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 264.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 265.
+LaTeX Font Info:    Redeclaring math accent \check on input line 266.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
+\symUfutm=\mathgroup10
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen275
+\c@nlinenum=\count324
+\TeXr@lab=\toks37
+)
+
+! LaTeX Error: Option clash for package graphicx.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \usepackage
+                [labelformat=parens]{subfig}
+The package graphicx has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [demo]
+Adding the global options:
+  ,demo
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box69
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen276
+\ttl@minus=\dimen277
+\ttl@toksa=\toks38
+\titlewidth=\dimen278
+\titlewidthlast=\dimen279
+\titlewidthfirst=\dimen280
+)
+\c@subsubparagraph=\count325
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.callouts.code.tex))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box70
+\pgfnodeparttwobox=\box71
+\pgfnodepartthreebox=\box72
+\pgfnodepartfourbox=\box73
+\pgfnodeparttwentybox=\box74
+\pgfnodepartnineteenbox=\box75
+\pgfnodeparteighteenbox=\box76
+\pgfnodepartseventeenbox=\box77
+\pgfnodepartsixteenbox=\box78
+\pgfnodepartfifteenbox=\box79
+\pgfnodepartfourteenbox=\box80
+\pgfnodepartthirteenbox=\box81
+\pgfnodeparttwelvebox=\box82
+\pgfnodepartelevenbox=\box83
+\pgfnodeparttenbox=\box84
+\pgfnodepartninebox=\box85
+\pgfnodeparteightbox=\box86
+\pgfnodepartsevenbox=\box87
+\pgfnodepartsixbox=\box88
+\pgfnodepartfivebox=\box89
+)))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryintersections.code.tex
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfpu.code.tex)
+\pgf@intersect@solutions=\count326
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks39
+\pgfopts@list@add@b@toks=\toks40
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count327
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/elocalloc\elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks41
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/inlinedef\inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks42
+\ID@count=\count328
+)
+\ID@usercommands=\toks43
+\safeloop@depth=\count329
+\safeRKloop@depth=\count330
+\forest@temp@dimen=\dimen281
+\forest@temp@count=\count331
+\forest@n=\count332
+\forest@temp@global@count=\count333
+\forest@temp@toks=\toks44
+\forest@temparray@M=\count334
+\forest@temparray@N=\count335
+\forest@global@temparray@M=\count336
+\forest@global@temparray@N=\count337
+\forest@isnum@count=\count338
+\forest@isdim@nonintpart=\count339
+\forest@isdim@dimen=\dimen282
+\forest@sort@m=\count340
+\forest@sort@k=\count341
+\forest@sort@p=\count342
+\bracket@content=\toks45
+\bracket@afterthought=\toks46
+\forest@node@maxid=\count343
+\forest@process@left@M=\count344
+\forest@process@left@N=\count345
+\forest@process@right@M=\count346
+\forest@process@right@N=\count347
+\forest@process@saved@M=\count348
+\forest@process@saved@N=\count349
+\forest@process@result@M=\count350
+\forest@process@result@N=\count351
+\forest@process@n=\count352
+\forest@nodewalk@branch@toks=\toks47
+\forest@nodewalk@shortsteps@resolution=\toks48
+\forest@do@dynamics=\toks49
+\forest@box=\box90
+\forest@xg=\dimen283
+\forest@yg=\dimen284
+\forest@xs=\dimen285
+\forest@ys=\dimen286
+\forest@pi@toks=\toks50
+\forest@segment@toks=\toks51
+\forest@PIi@toks=\toks52
+\forest@PIii@toks=\toks53
+\forest@copy@in=\read4
+\forest@copy@out=\write4
+\forest@externalize@max@outer@n=\count353
+\forest@externalize@inner@n=\count354
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest-lib-edges
+.sty
+Package: forest-lib-edges 2016/12/05 v0.1.1
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen287
+\pgfarrowlength=\dimen288
+\pgfarrowwidth=\dimen289
+\pgfarrowlinewidth=\dimen290
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 168.
+ (verslag.aux
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `fig:PNGR' multiply defined.
+
+
+LaTeX Warning: Label `tab:vbt' multiply defined.
+
+
+LaTeX Warning: Label `tab:vbx' multiply defined.
+
+
+LaTeX Warning: Label `fig:dummy-1' multiply defined.
+
+
+LaTeX Warning: Label `fig:dummy-2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig: 2.2' multiply defined.
+
+)
+\openout1 = `verslag.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 174.
+LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
+ 174.
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omspzccm.fd
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 174.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 
+174.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
+File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
+)
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 174.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
+174.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
+File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
+)
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 174.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
+174.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
+File: fmxfutm.fd futm-extension
+)
+LaTeX Font Info:    ... okay on input line 174.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count355
+\scratchdimen=\dimen291
+\scratchbox=\box91
+\nofMPsegments=\count356
+\nofMParguments=\count357
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count358
+\MPscratchDim=\dimen292
+\MPnumerator=\count359
+\makeMPintoPDFobject=\count360
+\everyMPtoPDFconversion=\toks55
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count361
+Package hyperref Info: Link coloring ON on input line 174.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count362
+)
+LaTeX Info: Redefining \ref on input line 174.
+LaTeX Info: Redefining \pageref on input line 174.
+LaTeX Info: Redefining \nameref on input line 174.
+ (verslag.out) (verslag.out)
+\@outlinefile=\write5
+\openout5 = `verslag.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 174.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 175.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 179.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 183.
+<logohr.png, id=467, 255.20343pt x 255.20343pt>
+File: logohr.png Graphic file (type png)
+<use logohr.png>
+Package pdftex.def Info: logohr.png  used on input line 193.
+(pdftex.def)             Requested size: 113.81102pt x 113.81244pt.
+ [1
+
+{C:/Users/gally/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logohr.png
+>] (verslag.toc
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line
+ 8.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
+File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 8.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 8.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 8.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 8.
+
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 8.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 8.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 8.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 ...van waterwerken}{15}{subsubsection.4.1.19}
+                                                  % [1]
+
+LaTeX Warning: Citation `wikibooks' on page 2 undefined on input line 76.
+
+
+LaTeX Warning: Citation `wikibooks' on page 2 undefined on input line 79.
+
+[2] [3])
+\tf@toc=\write6
+\openout6 = `verslag.toc'.
+
+ (Samenvatting.tex [4]
+\keywbox=\box92
+) (Inleiding.tex [5]
+Runaway argument?
+{,afterthought={ 
+! Paragraph ended before \forestOappto was complete.
+<to be read again> 
+                   \par 
+l.97  \end{forest}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...iven options}{,afterthought={ \par }
+                                                  }
+l.97  \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...ven options}{,afterthought={ \par }}
+                                                  
+l.97  \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Runaway argument?
+{,afterthought={ 
+! Paragraph ended before \forestOappto was complete.
+<to be read again> 
+                   \par 
+l.97  \end{forest}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...options}{,afterthought={ \par \par }
+                                                  }
+l.97  \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...ptions}{,afterthought={ \par \par }}
+                                                  
+l.97  \end{forest}
+                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[6])
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\T1/futs/m/n/10 Aims
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/futs/m/n/10 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/futs/m/n/10 ap-pro-
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 217--217
+[]|\T1/futs/m/n/10 Research de-
+ []
+
+
+Overfull \hbox (6.5572pt too wide) in paragraph at lines 217--217
+[]|\T1/futs/m/n/10 Samples| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\T1/futs/m/n/10 Data col-lec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\T1/futs/m/n/10 Data col-lec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/futs/m/n/10 tion pro-ce-
+ []
+
+(Methode.tex [7]
+! Misplaced alignment tab character &.
+l.81 Analysis &
+                Case study implementation
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[8]) (Requirementsengineering.tex [9] [10] [11]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.155 ...w.researchgate.net/publication/254815008_
+                                                  Rampen_regels_richtlijnen
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (14.97372pt too wide) in paragraph at lines 153--156
+\T1/phv/m/n/10 https://www.enschede.nl/inhoud/commissie-oosting https://www.pol
+itie.nl/binaries/content/assets/politie/wob/00-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--156
+\T1/phv/m/n/10 landelijk/vuurwerkramp-enschede/bijlagen-rapport-vuurwerkramp-en
+schede.pdf
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.172 ...w.researchgate.net/publication/348325979_
+                                                  Beirut_Explosion_the_full_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.175 }
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--175
+[]\T1/phv/m/n/10 https://www.hrw.org/report/2021/08/03/they-killed-us-inside/in
+vestigation-august-4-beirut-blast
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--175
+\T1/phv/m/n/10 https://www.researchgate.net/publication/348325979$[]\FML/futmi/
+m/it/10 eirut[]xplosion[]he[]ull[]toryhttps \T1/futs/m/n/10 :
+ []
+
+
+Overfull \hbox (64.61304pt too wide) in paragraph at lines 171--175
+\T1/futs/m/n/10 //\FML/futmi/m/it/10 reliefweb:int\T1/futs/m/n/10 /\FML/futmi/m
+/it/10 sites\T1/futs/m/n/10 /\FML/futmi/m/it/10 reliefweb:int\T1/futs/m/n/10 /\
+FML/futmi/m/it/10 files\T1/futs/m/n/10 /\FML/futmi/m/it/10 resources\T1/futs/m/
+n/10 /\FML/futmi/m/it/10 CaseStudy[]eirutExplosion[]echBioHazardsweb:pdf$ 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+81.
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+[12]
+! Misplaced alignment tab character &.
+l.194 ...ty.net/database/record.php?id=19921004-2&
+                                                  lang=nl
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.204 ...ty.net/investigation/cvr/transcripts/cvr_
+                                                  py764.php
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.206 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
+[]\T1/phv/m/n/10 https://aviation-safety.net/investigation/cvr/transcripts/cvr$
+[]\FML/futmi/m/it/10 y\T1/futs/m/n/10 764\FML/futmi/m/it/10 :phphttps \T1/futs/
+m/n/10 : //\FML/futmi/m/it/10 aviation \FMS/futm/m/n/10 ^^@
+ []
+
+[13]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.234 ...b.iaea.org/MTCD/publications/PDF/Pub913e_
+                                                  web.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.235 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 233--235
+\T1/phv/m/n/10 ce-dure kon in het sys-teem niet snel ge-noeg scha-ke-len om rem
+-mende in-vloed uit te oe-fe-nen op
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.238 ...ads/2018/03/Procesreglement-e-Court-2017_
+                                                  20180201.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.239 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+\T1/phv/m/n/10 https://www.njb.nl/blogs/a-court-with-no-face-and-no-place/ http
+://www.e-court.nl/wp-
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.245 https://catsr.vse.gmu.edu/SYST460/TA1951_
+                                               AccidentReport.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.246 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 253--265
+\T1/phv/m/n/10 https://hbo-kennisbank.nl/searchresult?q=sluizen ar-ti-fi-cial i
+nte;lligence and wa-ter locks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--265
+\T1/phv/m/n/10 intelligence/sewer-monitoring-turns-ai https://www.anylogic.com/
+resources/articles/analysis-of-the-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--273
+[]\T1/phv/m/n/10 https://www.ftm.nl/artikelen/waternet-verantwoordelijkheid-dig
+itaal-wanbeleid
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--273
+\T1/phv/m/n/10 https://open.overheid.nl/repository/ronl-bc28f344-af87-481a-aea6
+-58c481b4cdc8/1/pdf/ilt-
+ []
+
+
+Overfull \hbox (228.42303pt too wide) in paragraph at lines 268--273
+\T1/phv/m/n/10 onderzoeksrapport-stichting-waternet.pdf https://www.security.nl
+/posting/697815/Waternet+onder+verscherpt+toezicht+wegens+onvoldoende+grip+op+c
+ybersecurity
+ []
+
+
+Overfull \hbox (22.20988pt too wide) in paragraph at lines 268--273
+\T1/phv/m/n/10 https://www.security.nl/posting/677368/Inspectie+doet+onderzoek+
+naar+Waternet+na+verzwegen+penetratietest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--273
+\T1/phv/m/n/10 https://www.parool.nl/nederland/onderzoeksraad-rijk-houdt-inform
+atie-over-cyberveiligheid-achter-met-
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.276 ...er.com/chapter/10.1007/978-3-030-38557-6_
+                                                  7
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.281 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--281
+[]\T1/phv/m/n/10 google: ar-tiif-cial in-tel-li-gence for in-du-strial con-trol
+ sys-tems re-search-gate
+ []
+
+
+Overfull \hbox (146.95569pt too wide) in paragraph at lines 275--281
+\T1/phv/m/n/10 https://link.springer.com/chapter/10.1007/978-3-030-38557-6$[]\F
+ML/futmi/m/it/10 automationforindustrialcontrolsystemsresearchgategooglescholar
+ \T1/futs/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--281
+\FML/futmi/m/it/10 automationofindustrialcontrolsystemsproblemshindawi:com \T1/
+futs/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
+[]\T1/phv/m/n/10 persuasive tech-no-logy https://www.humanetech.com/youth/persu
+asive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
+\T1/phv/m/n/10 technology https://www.minddistrict.com/blog/persuasive-technolo
+gy-new-insights-in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
+\T1/phv/m/n/10 behavioural-change https://www.sciencedirect.com/book/9781558606
+432/persuasive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
+\T1/phv/m/n/10 technology https://spectrum.ieee.org/how-persuasive-technology-c
+an-change-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
+\T1/phv/m/n/10 your-habits https://www.frontiersin.org/articles/10.3389/frai.20
+20.00007/full
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
+\T1/phv/m/n/10 https://psmag.com/environment/captology-fogg-invisible-manipulat
+ive-power-persuasive-technology-81301
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--302
+\T1/phv/m/n/10 https://www.makeuseof.com/what-is-persuasive-technology/ https:/
+/lib.ugent.be/catalog/rug01:001235489
+ []
+
+[15] [16]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.330 http://www.cs.ru.nl/~fvaan/PV/what_
+                                         is_a_good_model.html
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+l.330 http://www.cs.ru.nl/~fvaan/PV/what_is_a_
+                                              good_model.html
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.331 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.365 ...ed variabelen: door actuatoren \bestuurde
+                                                  "
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[17] [18]) (Resultaten.tex [19]
+<plaatjes/stroomschema_sluispassage.png, id=680, 490.83376pt x 689.57625pt>
+File: plaatjes/stroomschema_sluispassage.png Graphic file (type png)
+<use plaatjes/stroomschema_sluispassage.png>
+Package pdftex.def Info: plaatjes/stroomschema_sluispassage.png  used on input 
+line 22.
+(pdftex.def)             Requested size: 426.79134pt x 599.62135pt.
+ [20] [21 <./plaatjes/stroomschema_sluispassage.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 123.
+
+[22]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.83995pt on input line 168.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 169.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 169.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 180.
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--217
+
+ []
+
+[23]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 246.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 247.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 247.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 247.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 247.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 247.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 247.
+
+
+LaTeX Warning: Citation `lam1994' on page 24 undefined on input line 282.
+
+
+LaTeX Warning: Citation `Oos1996' on page 24 undefined on input line 283.
+
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 288.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 288.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 288.
+
+LaTeX Warning: Reference `fig:PDFA' on page 24 undefined on input line 292.
+
+[24]
+<plaatjes//2020/eerste oplevermoment/Deuren.png, id=719, 935.495pt x 311.1625pt
+>
+File: plaatjes//2020/eerste oplevermoment/Deuren.png Graphic file (type png)
+<use plaatjes//2020/eerste oplevermoment/Deuren.png>
+Package pdftex.def Info: plaatjes//2020/eerste oplevermoment/Deuren.png  used o
+n input line 316.
+(pdftex.def)             Requested size: 426.79134pt x 141.95898pt.
+
+
+LaTeX Warning: Reference `fig:PDFR' on page 25 undefined on input line 323.
+
+<plaatjes/2020/eerste oplevermoment/knop.png, id=720, 186.6975pt x 140.525pt>
+File: plaatjes/2020/eerste oplevermoment/knop.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/knop.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/knop.png  used on i
+nput line 327.
+(pdftex.def)             Requested size: 426.79134pt x 321.25584pt.
+
+Underfull \hbox (badness 1019) in paragraph at lines 331--339
+[]\T1/phv/m/n/10 Het af-me-tings-pro-bleem is iets ge-mak-ke-lij-ker op te los-
+sen met `bit-map grap-hics' van het `jpg-',
+ []
+
+<plaatjes/2020/eerste oplevermoment/lamp.png, id=722, 304.13625pt x 191.71625pt
+>
+File: plaatjes/2020/eerste oplevermoment/lamp.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/lamp.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/lamp.png  used on i
+nput line 356.
+(pdftex.def)             Requested size: 426.79134pt x 269.04156pt.
+<plaatjes/2020/eerste oplevermoment/Sensor.png, id=723, 222.8325pt x 72.27pt>
+File: plaatjes/2020/eerste oplevermoment/Sensor.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/Sensor.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/Sensor.png  used on
+ input line 376.
+(pdftex.def)             Requested size: 426.79134pt x 138.43037pt.
+<plaatjes/2020/eerste oplevermoment/Sluis.png, id=724, 1147.28625pt x 472.76625
+pt>
+File: plaatjes/2020/eerste oplevermoment/Sluis.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/Sluis.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/Sluis.png  used on 
+input line 396.
+(pdftex.def)             Requested size: 426.79134pt x 175.86578pt.
+<plaatjes/2020/eerste oplevermoment/ship.png, id=725, 373.395pt x 131.49126pt>
+File: plaatjes/2020/eerste oplevermoment/ship.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/ship.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/ship.png  used on i
+nput line 401.
+(pdftex.def)             Requested size: 426.79134pt x 150.30084pt.
+[25 <./plaatjes//2020/eerste oplevermoment/Deuren.png>] [26 <./plaatjes/2020/ee
+rste oplevermoment/knop.png> <./plaatjes/2020/eerste oplevermoment/lamp.png>]
+[27 <./plaatjes/2020/eerste oplevermoment/Sensor.png> <./plaatjes/2020/eerste o
+plevermoment/Sluis.png>]
+<plaatjes/2020/eerste oplevermoment/Stoplicht.png, id=748, 272.01625pt x 114.42
+75pt>
+File: plaatjes/2020/eerste oplevermoment/Stoplicht.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/Stoplicht.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/Stoplicht.png  used
+ on input line 406.
+(pdftex.def)             Requested size: 426.79134pt x 179.54506pt.
+
+
+LaTeX Warning: Reference `fig:FIXED' on page 28 undefined on input line 428.
+
+File: plaatjes/2020/eerste oplevermoment/ship.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/ship.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/ship.png  used on i
+nput line 434.
+(pdftex.def)             Requested size: 426.79134pt x 150.30084pt.
+[28 <./plaatjes/2020/eerste oplevermoment/ship.png> <./plaatjes/2020/eerste opl
+evermoment/Stoplicht.png>]
+File: plaatjes/2020/eerste oplevermoment/Stoplicht.png Graphic file (type png)
+<use plaatjes/2020/eerste oplevermoment/Stoplicht.png>
+Package pdftex.def Info: plaatjes/2020/eerste oplevermoment/Stoplicht.png  used
+ on input line 439.
+(pdftex.def)             Requested size: 426.79134pt x 179.54506pt.
+ [29]
+
+LaTeX Warning: Citation `wikibooks' on page 30 undefined on input line 524.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 524.
+
+[30]
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 686--696
+
+ []
+
+
+LaTeX Warning: Citation `lam1994' on page 32 undefined on input line 761.
+
+
+LaTeX Warning: Citation `Oos1996' on page 32 undefined on input line 762.
+
+[32]
+
+LaTeX Warning: Reference `fig:PDFA' on page 33 undefined on input line 771.
+
+
+! LaTeX Error: \subfloat outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.795 			\subfloat
+                  [The net of (c) after firing]{\includegraphics[scale=0.4, ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<plaatjes/agp.png, id=803, 453.1329pt x 191.5155pt>
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 795.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+
+LaTeX Warning: Reference `fig:PDFR' on page 33 undefined on input line 802.
+
+
+! LaTeX Error: \subfloat outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.807 			\subfloat
+                  [The net of (c) after firing]{\includegraphics[scale=0.4, ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 807.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+
+Underfull \hbox (badness 1019) in paragraph at lines 811--819
+[]\T1/phv/m/n/10 Het af-me-tings-pro-bleem is iets ge-mak-ke-lij-ker op te los-
+sen met `bit-map grap-hics' van het `jpg-',
+ []
+
+[33 <./plaatjes/agp.png>]
+
+! LaTeX Error: \subfloat outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.867 			\subfloat
+                  [The net of (c) after firing]{\includegraphics[scale=0.4, ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 867.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+
+! LaTeX Error: \subfloat outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.872 			\subfloat
+                  [The net of (c) after firing]{\includegraphics[scale=0.4, ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 872.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+
+! LaTeX Error: \subfloat outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.877 			\subfloat
+                  [The net of (c) after firing]{\includegraphics[scale=0.4, ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 877.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+
+LaTeX Warning: Reference `fig:FIXED' on page 34 undefined on input line 899.
+
+[34]
+
+LaTeX Warning: Citation `wikibooks' on page 35 undefined on input line 986.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 986.
+
+[35]
+Overfull \hbox (5.2094pt too wide) in paragraph at lines 1066--1067
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (26.80943pt too wide) in paragraph at lines 1067--1068
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[36]
+
+! LaTeX Error: Environment floatrow undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1123 				\begin{floatrow}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.1124 					\ffigbox
+                    [\FBwidth]{\caption{Dummy figure}\label{fig:dummy-1}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1124 					\ffigbox[\FBwidth
+                             ]{\caption{Dummy figure}\label{fig:dummy-1}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1127 					\ffigbox
+                    [\FBwidth]{\caption{Dummy figure}\label{fig:dummy-2}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1127 					\ffigbox[\FBwidth
+                             ]{\caption{Dummy figure}\label{fig:dummy-2}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1131 					\ffigbox
+                    [\FBwidth]{\caption{Dummy figure}\label{fig:dummy-1}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1131 					\ffigbox[\FBwidth
+                             ]{\caption{Dummy figure}\label{fig:dummy-1}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1134 					\ffigbox
+                    [\FBwidth]{\caption{Dummy figure}\label{fig:dummy-2}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1134 					\ffigbox[\FBwidth
+                             ]{\caption{Dummy figure}\label{fig:dummy-2}}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{figure} on input line 1121 ended by \end{floatrow}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1137 				\end{floatrow}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: File `flower1.jpg' not found on input line 1143.
+
+
+! Package pdftex.def Error: File `flower1.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1143 ...4\textwidth]{flower1.jpg}\label{fig:f1}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `flower2.jpg' not found on input line 1145.
+
+
+! Package pdftex.def Error: File `flower2.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1145 ...4\textwidth]{flower2.jpg}\label{fig:f2}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `flower1.jpg' not found on input line 1147.
+
+
+! Package pdftex.def Error: File `flower1.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1147 ...4\textwidth]{flower1.jpg}\label{fig:f1}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `flower2.jpg' not found on input line 1149.
+
+
+! Package pdftex.def Error: File `flower2.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1149 ...4\textwidth]{flower2.jpg}\label{fig:f2}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[37]
+
+! Package array Error:  Illegal pream-token (2cm): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1166 ...n{tabular}{|l|l {2cm} |l|l|l|l|l|l|l|l|}
+                                                   \hline
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (46.3064pt too wide) in paragraph at lines 1166--1187
+[][] 
+ []
+
+[38] [39]
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1235.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1236.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1238.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1239.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1254.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1255.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1257.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+File: plaatjes/agp.png Graphic file (type png)
+<use plaatjes/agp.png>
+Package pdftex.def Info: plaatjes/agp.png  used on input line 1258.
+(pdftex.def)             Requested size: 181.24994pt x 76.60483pt.
+ [40]) (testresultaten.tex
+
+! Package array Error:  Illegal pream-token (2cm): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{tabular}{|l|l {2cm} |l|l|l|l|l|l|l|l|}
+                                                   \hline
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (46.3064pt too wide) in paragraph at lines 13--34
+[][] 
+ []
+
+[41]
+Overfull \vbox (53.0357pt too high) has occurred while \output is active []
+
+
+[42])
+Runaway argument?
+{Minimale doorlooptijd \par \par \par Black box testing: product test\ETC.
+! File ended while scanning use of \@xdblarg.
+<inserted text> 
+                \par 
+l.237 \input{testresultaten}
+                            
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+(Discussie.tex
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...e zijn de wensen van de opdrachtgever ge ̈
+                                                  ınterpreteerd?
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...s  gezegd:   Wat  betekentveilig, effici ̈
+                                                  ent, etc.  en wat heb je a...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 –Als je ietsnietkon verifi ̈
+                                    eren, waarom dan niet?
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[43]
+
+! LaTeX Error: Unicode character ́ (U+0301)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...ie in een wachtrij geplaatst worden.  E ́
+                                                  en en ander betekent dat e...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ... lengte van vijf,  loopt bij het verifi ̈
+                                                  eren vaneen  eigenschap  h...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...  states  al  zo  hoog  op  dat  verifi ̈
+                                                  eren  onmogelijk  isgeword...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...cifieke  eigenschappen  mee  te  verifi ̈
+                                                  eren  is  een  normale  za...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ...osion  tegen  en  dat  maakt  hetverifi ̈
+                                                  eren van eigenschappen mog...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ̈ (U+0308)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 Het  verifi ̈
+                   eren  van  liveness  kan  voor  subtiele  problemen  zorg...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[44])
+! Misplaced alignment tab character &.
+l.244 https://scholar.google.com/scholar?start=30&
+                                                  q=supervisory+control+syst...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.244 ...r?start=30&q=supervisory+control+systems&
+                                                  hl=en&as_sdt=0,5
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.244 ...t=30&q=supervisory+control+systems&hl=en&
+                                                  as_sdt=0,5
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.244 ...0&q=supervisory+control+systems&hl=en&as_
+                                                  sdt=0,5
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.245 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[45] (verslag.bbl) (Bijlage overzicht.tex [46]) (tesla crash report.tex
+[47] [48] [49]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.138 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+[]\T1/phv/m/n/10 https://www.forbes.com/sites/bernardmarr/2018/01/08/the-amazin
+g-ways-tesla-is-using-artificial-
+ []
+
+! Undefined control sequence.
+l.154 ...ed variabelen: door actuatoren \bestuurde
+                                                  "fenomenen uit de omgeving
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+[]\T1/phv/m/n/10 Path plan-ning/-dri-ving po-licy https://towardsdatascience.co
+m/teslas-deep-learning-at-scale-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+[]\T1/phv/m/n/10 https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisi
+tion-could-accelerate-autopilot-
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.209 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[51] [52] [53]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.313 https://en.wikipedia.org/wiki/Tesla_
+                                          Autopilot#Criticism
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.313 ...://en.wikipedia.org/wiki/Tesla_Autopilot#
+                                                  Criticism
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+) (ethiek.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) (Mali.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--1
+[]\T1/phv/m/n/10 persuasive tech-no-logy https://www.humanetech.com/youth/persu
+asive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--1
+\T1/phv/m/n/10 technology https://www.minddistrict.com/blog/persuasive-technolo
+gy-new-insights-in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--1
+\T1/phv/m/n/10 behavioural-change https://www.sciencedirect.com/book/9781558606
+432/persuasive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--1
+\T1/phv/m/n/10 technology https://spectrum.ieee.org/how-persuasive-technology-c
+an-change-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--1
+\T1/phv/m/n/10 your-habits https://www.frontiersin.org/articles/10.3389/frai.20
+20.00007/full
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--1
+\T1/phv/m/n/10 https://psmag.com/environment/captology-fogg-invisible-manipulat
+ive-power-persuasive-technology-81301
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--1
+\T1/phv/m/n/10 https://www.makeuseof.com/what-is-persuasive-technology/ https:/
+/lib.ugent.be/catalog/rug01:001235489
+ []
+
+[54]) (cyber aanval op Oekraïene.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 https://en.wikipedia.org/wiki/Ukraine_
+                                          power_grid_hack
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 https://ics.sans.org/media/E-ISAC_
+                                       SANS_Ukraine_DUC_5.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--32
+\T1/phv/m/n/10 https://ics.sans.org/media/E-ISAC$[]\FML/futmi/m/it/10 ANS[]krai
+ne[]UC[]:pdfanalyseenmitigatiestrategiehttps \T1/futs/m/n/10 :
+ []
+
+
+Overfull \hbox (844.79315pt too wide) in paragraph at lines 23--32
+\T1/futs/m/n/10 //\FML/futmi/m/it/10 na:eventscloud:com\T1/futs/m/n/10 /\FML/fu
+tmi/m/it/10 file[]ploads\T1/futs/m/n/10 /\FML/futmi/m/it/10 aed\T1/futs/m/n/10 
+4\FML/futmi/m/it/10 bc\T1/futs/m/n/10 20\FML/futmi/m/it/10 e\T1/futs/m/n/10 84\
+FML/futmi/m/it/10 d\T1/futs/m/n/10 2839\FML/futmi/m/it/10 b\T1/futs/m/n/10 83\F
+ML/futmi/m/it/10 c\T1/futs/m/n/10 18\FML/futmi/m/it/10 bcba\T1/futs/m/n/10 7\FM
+L/futmi/m/it/10 e\T1/futs/m/n/10 2876[]\FML/futmi/m/it/10 wens\T1/futs/m/n/10 1
+\FML/futmi/m/it/10 :pdfInditartikelwordtbeweerddatmedewerkersopafstandkondeninl
+oggenophetSCADAnetwerkenmedewerkersopdenetwerkenvoorSupervisoryControlandDataAc
+quisitiehaddengeendubble \FMS/futm/m/n/10 ^^@
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 23--32
+\FML/futmi/m/it/10 authorisatienodigominteloggeninhetsysteem:https \T1/futs/m/n
+/10 : //\FML/futmi/m/it/10 www:wired:com\T1/futs/m/n/10 /2016/03/\FML/futmi/m/i
+t/10 inside \FMS/futm/m/n/10 ^^@
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 https://en.wikipedia.org/wiki/December_
+                                            2015_Ukraine_power_grid_cyberattack
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[55] [56]
+Underfull \hbox (badness 10000) in paragraph at lines 113--129
+[]\T1/phv/m/n/10 https://www.sans.org/blog/confirmation-of-a-coordinated-attack
+-on-the-ukrainian-power-grid/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--129
+\T1/phv/m/n/10 https://www.reuters.com/article/us-ukraine-cybersecurity-sandwor
+m/u-s-firm-blames-russian- sandworm-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--129
+\T1/phv/m/n/10 hackers-for-ukraine-outage-idUSKBN0UM00N20160108 https://www.reu
+ters.com/article/us-ukraine-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--129
+\T1/phv/m/n/10 crisis-cyber-idUSKBN15U2CN https://www.wired.com/2014/10/russian
+-sandworm-hack-isight/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--129
+\T1/phv/m/n/10 https://blog.trendmicro.com/trendlabs-security-intelligence/sand
+worm-to-blacken-the-scada- con-nec-ti-
+ []
+
+! Too many }'s.
+l.131 energy-sector-threats/}
+                             
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Too many }'s.
+l.135 was-done-52802}
+                     
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.137 s_
+        2017_2.pdf}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.137 s_2017_2.pdf}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.139 ...cyber-incidents_in_the_energy_sector.pdf}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.140 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 131--140
+[]\T1/phv/m/n/10 energy-sector-threats/ was-done-52802 s$[]\T1/futs/m/n/10 017[
+]\FML/futmi/m/it/10 :pdfincidents[]nd[]n[]osts[]f[]reventing[]yber \FMS/futm/m/
+n/10 ^^@
+ []
+
+[57])
+Runaway argument?
+{https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_\ETC.
+! File ended while scanning use of \hyper@n@rmalise.
+<inserted text> 
+                \par 
+l.279 \input{cyber aanval op Oekraïene}
+                                        
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+(schipholbrand.tex) (therac-25.tex) (schietpartij ossendrecht.tex [58])
+(molukse treinkaping.tex) (explosie in libabon, beirut.tex)
+(explosie tanjin china .tex
+Underfull \hbox (badness 1442) in paragraph at lines 7--3
+\T1/phv/m/n/10 Op 23 sep-tem-ber 2013 voer het vracht-schip de Rho-sus on-der M
+ol-da-vi-sche vlag[7] van Ba-toemi
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 7--3
+\T1/phv/m/n/10 in Ge-or-gi� naar Beira in Mo-zam-bi-que met 2.750 ton am-mo-ni-
+um-ni-traat  Ge-zien het ern-stige ge-
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 7--3
+\T1/phv/m/n/10 vaar van het be-wa-ren van deze goe-de-ren in de han-gar on-der 
+on-ge-schikte kli-ma-to-lo-gi-sche om-
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 7--3
+\T1/phv/m/n/10 stan-dig-he-den, her-ha-len we ons ver-zoek aan de marine-instan
+tie om deze goe-de-ren on-mid-del-lijk
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 7--3
+\T1/phv/m/n/10 weer te ex-por-te-ren om de vei-lig-heid van de ha-ven en de men
+-sen die er wer-ken te ver-ze-ke-
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 7--3
+\T1/phv/m/n/10 ren, of om ak-koord te gaan om ze te ver-ko-pen. Voor-af-gaand a
+an de ex-plo-sie was er een
+ []
+
+) (bijlmerramp.tex [59]) (slmramp.tex) (vuurwerkramp enschede.tex [60])
+(ethiopian airlines.tex
+Overfull \hbox (14.97372pt too wide) in paragraph at lines 3--3
+\T1/phv/m/n/10 https://www.enschede.nl/inhoud/commissie-oosting https://www.pol
+itie.nl/binaries/content/assets/politie/wob/00-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+\T1/phv/m/n/10 landelijk/vuurwerkramp-enschede/bijlagen-rapport-vuurwerkramp-en
+schede.pdf
+ []
+
+) (stint ongeluk.tex) (tjernobyl.tex) (ecourt.tex
+Underfull \hbox (badness 1102) in paragraph at lines 4--2
+\T1/phv/m/n/10 ce-dure kon in het sys-teem niet snel ge-noeg scha-ke-len om rem
+-mende in-vloed uit te oe-fe-nen op
+ []
+
+[61]) (vlucht 1951.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 3.
+
+) (Automatiseren van waterwerken.tex)
+(Artificial intelligence en water locks.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 https://hbo-kennisbank.nl/searchresult?q=sluizen ar-ti-fi-cial i
+nte;lligence and wa-ter locks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 intelligence/sewer-monitoring-turns-ai https://www.anylogic.com/
+resources/articles/analysis-of-the-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 expansion-of-the-panama-canal-using-simulation-modeling-and-arti
+ficial-intelligence/ ai used in pu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 blic in-fra-struc-ture the-sis https://blog.ferrovial.com/en/202
+0/10/how-artificial-intelligence-is-used-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 infrastructure-maintenance/ https://www.tilburguniversity.edu/ab
+out/schools/law/departments/plg/ai-
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 7--3
+\T1/phv/m/n/10 public-sector ar-ti-fi-caial used in wa-ter ship-ping ar-ti-fi-c
+ial used in ma-ri-time trans-port ar-ti-fi-caial
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 7--3
+\T1/phv/m/n/10 used in wa-ter ship-ping ai used in ma-ri-time traf-fic    https
+://www.ftm.nl/artikelen/waternet-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 verantwoordelijkheid-digitaal-wanbeleid https://open.overheid.nl
+/repository/ronl-bc28f344-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 af87-481a-aea6-58c481b4cdc8/1/pdf/ilt-onderzoeksrapport-stichtin
+g-waternet.pdf
+ []
+
+
+Overfull \hbox (62.72725pt too wide) in paragraph at lines 7--3
+\T1/phv/m/n/10 https://www.security.nl/posting/697815/Waternet+onder+verscherpt
++toezicht+wegens+onvoldoende+grip+op+cybersecurity
+ []
+
+
+Overfull \hbox (22.20988pt too wide) in paragraph at lines 7--3
+\T1/phv/m/n/10 https://www.security.nl/posting/677368/Inspectie+doet+onderzoek+
+naar+Waternet+na+verzwegen+penetratietest
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--3
+\T1/phv/m/n/10 https://www.parool.nl/nederland/onderzoeksraad-rijk-houdt-inform
+atie-over-cyberveiligheid-achter-met-
+ []
+
+) (Modellen.tex) [62] (verslag.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `verslag.out' has not changed.
+(rerunfilecheck)             Checksum: 7EE34203CB3DD8B21DD525B3A6636185;17602.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 218 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 39029 strings out of 478582
+ 837386 string characters out of 2844344
+ 1350474 words of memory out of 3000000
+ 56248 multiletter control sequences out of 15000+600000
+ 566019 words of font info for 142 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 168i,14n,164p,1613b,1967s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/b
+ase/8r.enc}<C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/eur
+osym/feymr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/fourier/fourier-ms.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/adobe/utopia/putb8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/font
+s/type1/adobe/utopia/putr8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/f
+onts/type1/adobe/utopia/putri8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKT
+eX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/gally/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/gally/AppData/Local/Programs
+/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/gally/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on verslag.pdf (63 pages, 553543 bytes).
+PDF statistics:
+ 1067 PDF objects out of 1200 (max. 8388607)
+ 259 named destinations out of 1000 (max. 500000)
+ 991 words of extra memory for PDF output out of 10000 (max. 10000000)
+

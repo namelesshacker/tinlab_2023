@@ -1,0 +1,301 @@
+\documentclass{article}
+\usepackage{graphicx} 
+
+\usepackage{listings}
+
+
+\documentclass[11pt]{report}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newif\ifpublic \newif\iftwocol %nodig voor publicatiemode, niet wijzigen!  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%publiceerbare versie (geen titelblad, bedanktuiging, evaluatie en bijlagen)%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\publictrue        %1-kolom publicatiemode (zonder %) of verslagmode (met %)
+%\twocoltrue        %2-kolommen publicatiemode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%nodig voor template: packages en macro's                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ifpublic\iftwocol\twocolumn\fi\fi  %vlag 1 of 2 kolommen                   %
+\usepackage[utf8]{inputenc}         %aanbevolen encoding, kies 1 van de 3
+%\usepackage[utf-8]{inputenc}      %sommige Ubuntu en Window distributies
+%\usepackage[latin1]{inputenc}     %oudere LaTeX-distributies
+\usepackage{modelverslag}           %verplicht voor de template             %
+\renewcommand{\redactie}[1]{\relax} %nodig voor redactionele opmerkingen    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%hieronder komen alle packages die je zelf wil plaatsen of veranderen       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{algorithmic}      %aangepaste algoritmen   
+
+
+\usepackage{graphicx} 
+\usepackage[dutch]{babel}
+\usepackage{tikz}
+
+\usepackage{xcolor}
+\usetikzlibrary{positioning,chains}
+
+
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}         %aangepaste listings (event. in kleuren)
+%\usepackage{}
+%\usepackage{}
+
+\usepackage[labelformat=parens]{subfig}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[inline]{enumitem}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+\usepackage{algorithmic}      %aangepaste algoritmen   
+\usepackage{listings}         %aangepaste listings (event. in kleuren)
+%\usepackage{}
+%\usepackage{}
+\usepackage[demo]{graphicx}
+\usepackage[labelformat=parens]{subfig}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[inline]{enumitem}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{titlesec}
+\titleclass{\subsubparagraph}{straight}[\subparagraph]
+\newcounter{subsubparagraph}
+\renewcommand{\thesubsubparagraph}{\Alph{subsubparagraph}}
+\titleformat{\subsubparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubsubparagraph}{1em}{}
+\titlespacing*{\subsubparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[edges]{forest}
+\usetikzlibrary{arrows.meta}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\forestset{%
+	dir tree switch forking/.style args={at #1}{%
+		for tree={
+			font=\sffamily,
+			fit=rectangle,
+		},
+		where level=#1{
+			for tree={
+				folder,
+				grow'=0,
+			},
+			delay={
+				child anchor=north,
+				!u.parent anchor=south,
+				edge path'={(!u.parent anchor) -- ++(0,-\forestoption{fork sep}) -| (.child anchor)}
+			},
+		}{
+			if={>On<{level}{#1}}{
+				forked edge,
+				parent anchor=children,
+				child anchor=parent,
+			}{},
+		},
+		before typesetting nodes={
+			for tree={
+				if content={}{
+					coordinate,
+					no edge,
+					before packing={!u.l sep'=0pt},
+					before computing xy={s/.option=!u.min x}
+				}{
+					content/.wrap value={\strut ##1},
+				},
+			},
+			for nodewalk={filter={tree}{>On<{level}{#1}}}{align to centre},
+		},
+	},
+	align to centre/.style={
+		if={>Ow+P{n children}{isodd(#1)}}{
+			for nodewalk/.process={Ow+nw{!r.n children}{(#1+1)/2}{{fake=r,n=#1}{calign with current edge}}},
+		}{
+			calign=edge midpoint,
+		},
+	},
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+%%%%%%%%%%%%%%%%% einde van de preambule, begin document %%%%%%%%%%%%%%%%%%%%
+
+
+
+\newcommand\addrow[2]{#1 &#2\\ }
+
+\newcommand\addheading[2]{#1 &#2 \\ \hline}
+\newcommand\tabularhead{\begin{tabular}{lp{8cm}}
+		\hline
+	}
+	
+	\newcommand\addmulrow[2]{ \begin{minipage}[t][][t]{2.5cm}#1\end{minipage}% 
+		&\begin{minipage}[t][][t]{8cm}
+			\begin{enumerate} #2   \end{enumerate}
+		\end{minipage}\\ }
+	
+	\newenvironment{usecase}{\tabularhead}
+	{\hline\end{tabular}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+
+
+
+\begin{document}
+\sffamily
+\begin{titlepage}
+  \centering
+    \vfill
+    {\bfseries\Huge
+      Modellereing van sluizenpark \\
+        \vskip2cm
+      }
+      {\bfseries\Large
+        Galvin Bartes\\
+      }
+      {
+        \bfseries\normalsize
+        0799967\\
+        \vskip1cm
+        \today\\
+    }    
+    \vfill
+    \includegraphics[width=4cm]{logohr.png} % also works with logo.pdf
+    \vfill
+    \vfill
+\end{titlepage}
+\newpage
+\tableofcontents
+
+
+\input{Samenvatting}
+
+
+\input{Inleiding}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+
+\begin{frame}[shrink=40]{Literature Review}
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+			Onderwerp&\multicolumn{1}{m{1cm}|}{Aims and approach}&\multicolumn{1}{m{2cm}|}{Research design}&\multicolumn{1}{m{1cm}|}{Samples}&\multicolumn{1}{m{2cm}|}{Data collection mehods}&\multicolumn{1}{m{2cm}|}{Data collection procedure}&\multicolumn{1}{m{2cm}|}{Data analysis strategie} \\\hline
+			
+			
+			
+			
+		\end{tabular}
+	\end{table}
+	
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Methode}
+
+\input{Requirementsengineering}
+
+%\input{Literatuuronderzoek}
+\input{Resultaten}
+
+\input{testresultaten}
+ 
+ 
+
+ 
+\input{Discussie}
+
+https://scholar.google.com/scholar?start=30&q=supervisory+control+systems&hl=en&as_sdt=0,5
+
+https://www.sciencedirect.com/science/article/abs/pii/S0960077998003038
+
+https://www.sciencedirect.com/science/article/abs/pii/S000510981830374
+
+
+https://www.sciencedirect.com/science/article/abs/pii/S0166361598001390
+
+https://ieeexplore.ieee.org/abstract/document/9157893
+
+
+https://www.sciencedirect.com/science/article/pii/S0167404819302068
+
+https://www.sciencedirect.com/science/article/abs/pii/S1367578817301876
+
+
+https://apps.dtic.mil/sti/pdfs/ADA149621.pdf
+
+https://www.sciencedirect.com/science/article/pii/S0307904X04000149
+
+
+https://ieeexplore.ieee.org/abstract/document/4162492
+
+https://www.sciencedirect.com/science/article/pii/S0166361521000804
+ 
+
+\newpage
+\bibliography{references}
+\bibliographystyle{plain}
+\appendix
+\input{Bijlage overzicht}
+\input{tesla crash report}
+\input{ethiek}
+\input{Mali}
+\input{cyber aanval op Oekraïene}
+\input{schipholbrand}
+\input{therac-25}
+\input{schietpartij ossendrecht}
+\input{molukse treinkaping}
+\input{explosie in libabon, beirut}
+\input{explosie tanjin china }
+\input{bijlmerramp}
+\input{slmramp}
+\input{vuurwerkramp enschede}
+\input{ethiopian airlines}
+\input{stint ongeluk}
+\input{tjernobyl}
+\input{ecourt}
+\input{vlucht 1951}
+\input{Automatiseren van waterwerken}
+\input{Artificial intelligence en water locks}
+\input{Modellen}
+
+
+\end{document}
+
+

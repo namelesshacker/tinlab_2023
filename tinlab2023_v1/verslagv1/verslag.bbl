@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{modelchecking}
+Edmund~M. Clarke, Jr., Orna Grumberg, and Doron~A. Peled.
+\newblock {\em Model Checking}.
+\newblock MIT Press, Cambridge, MA, USA, 1999.
+
+\bibitem{royce1987managing}
+Winston~W Royce.
+\newblock Managing the development of large software systems: concepts and
+  techniques.
+\newblock In {\em Proceedings of the 9th international conference on Software
+  Engineering}, pages 328--338. IEEE Computer Society Press, 1987.
+
+\end{thebibliography}

@@ -1,0 +1,313 @@
+
+
+\section{tesla crash report}
+Door een softwarefout zijn er situaties ontstaan waarin het systeem informatie een onvoldoende informatie positie had om de juiste beslissingen te maken. Of dat de informatieverwerking niet juist was.
+
+
+
+
+
+
+
+
+
+
+
+
+hardware/software/gebruik
+
+How does Tesla use Big data?
+In general, tesla autonomous vehicle technology should be able to do some of the following things:
+
+· Sense plan act: In order to make sure of the plan and act, the vehicle machine learning algorithms must be able to predict the outcomes which are based on a high volume of data.
+
+· Mapping: The vehicle computer must possess highly detailed, comprehensive maps of street features, which includes the signs, streetlights, and curbs.
+
+· Light detection and ranging: Using the sensors such as the LIDAR and cameras, the vehicle should be able to create a short distance readout of its surrounding in the real-time scenario.
+
+· Vehicle to Vehicle communication: Tesla autonomous vehicle technology does not have this up and running yet, but the best-case scenario would even involve an Internet of Things aspect, in which all the autonomous vehicle is communicating some of the essential details to each other. Projections show that more than 400 million smart cars will be a part of the IoT by the end of 2021.
+
+
+Tesla Machine learning in the cloud is responsible to takes care of educating the entire set of the fleet, while at an individual car level, some of the edge computing decides what action the car needs to take right now. The third level of decision making also exists, with cars able to form networks with some other Tesla vehicles nearby to make sure in order to share some of the local insights and information.
+
+In near future scenario where the autonomous cars are widespread, these networks will most likely also interface with cars from some other manufacturers as well as other systems such as road-based sensors, traffic camera, purge light up mask or smartphones.
+
+Although details are scarce on the new Artificial Intelligence technology that Tesla was creating, its current AI – which is driven by a collaboration with the hardware manufacturer Nvidia, that is even largely based on a model of an unsupervised model of machine learning.
+
+On its Facebook page, Nvidia state that “In contrast to the usual approach to operating self-driving cars, we did not program any explicit object detection, mapping, path planning or control components into this car. Instead, the car learns on its own to create all necessary internal representations necessary to steer, simply by observing human drivers.”
+
+https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/
+
+Notably, Tesla says this silicon, with its twin neural network arrays capable of 36 trillion operations per second (each), will only cost the company 80 percent of what it was paying before for that 21x performance gain, and draw little enough additional wattage (72W, vs. 57W) that it can continue to promise the same range out of each car and without impacting the cost.
+https://www.theverge.com/2019/4/22/18511594/tesla-new-self-driving-chip-is-here-and-this-is-your-best-look-yet
+
+ChipIptimalisatie met NVideai:
+The road to this success was through a huge number of transistors- 6 billion to be precise.
+Dual Chips for Better Control
+Tesla AI chips Optimised Design
+Tesla AI chips have been optimised to perform 36 trillion operations per second and runs ar 2GHs. This high level of performance has been achieved by eliminating generic functions and focusing only on specific important ones.
+https://www.mygreatlearning.com/blog/teslas-new-ai-for-self-driving-cars/
+
+the NVIDIA DRIVE PX2 driverless car platform
+can perform 30 trillion deep learning operations per second and can achieve Level4 autopilot [21].
+It supports 12-channel camera inputs, laser positioning, radar, and ultrasonic sensors, and includes
+two new-generation NVIDIA Tegra processors (see Figure 4). When it comes to softwares, Tensorflow
+is one of the main libraries for deep learning used in the field of self-driving cars
+
+Convolutional Neural Network
+Recurrent Neural Network
+Auto-Encoder (AE)
+Deep Reinforcement Learning (DRL)
+Obstacle Detection
+Lane Recognition
+path planning, motion control, pedestrian detection,
+and traffic sign and light detection
+
+
+file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf
+
+The hardware and software of self-driving cars
+Another important point Musk raised in his remarks is that he believes Tesla cars will achieve level 5 autonomy “simply by making software improvements.”
+
+Other self-driving car companies, including Waymo and Uber, use lidars, hardware that projects laser to create three-dimensional maps of the car’s surroundings. Tesla, on the other hand, relies mainly on cameras powered by computer vision software to navigate roads and streets. Tesla use deep neural networks to detect roads, cars, objects, and people in video feeds from eight cameras installed around the vehicle. (Tesla also has a front-facing radar and ultrasonic object detectors, but those have mostly minor roles.)
+
+There’s a logic to Tesla’s computer vision–only approach: We humans, too, mostly rely on our vision system to drive. We don’t have 3D mapping hardware wired to our brains to detect objects and avoid collisions.
+
+But here’s where things fall apart. Current neural networks can at best replicate a rough imitation of the human vision system. Deep learning has distinct limits that prevent it from making sense of the world in the way humans do. Neural networks require huge amounts of training data to work reliably, and they don’t have the flexibility of humans when facing a novel situation not included in their training data.
+
+This is something Musk tacitly acknowledged at in his remarks. “[Tesla Autopilot] does not work quite as well in China as it does in the U.S. because most of our engineering is in the U.S.” This is where most of the training data for Tesla’s computer vision algorithms come from.
+
+Deep learning’s long-tail problem
+Human drivers also need to adapt themselves to new settings and environments, such as a new city or town, or a weather condition they haven’t experienced before (snow- or ice-covered roads, dirt tracks, heavy mist). However, we use intuitive physics, commonsense, and our knowledge of how the world works to make rational decisions when we deal with new situations.
+
+We understand causality and can determine which events cause others. We also understand the goals and intents of other rational actors in our environments and reliably predict what their next move might be. For instance, if it’s the first time that you see an unattended toddler on the sidewalk, you automatically know that you have pay extra attention and be careful. And what if you meet a stray elephant in the street for the first time? Do you need previous training examples to know that you should probably make a detour?
+
+But for the time being, deep learning algorithms don’t have such capabilities, therefore they need to be pre-trained for every possible situation they encounter.
+
+There’s already a body of evidence that shows Tesla’s deep learning algorithms are not very good at dealing with unexpected scenery even in the environments that they are adapted to. In 2016, a Tesla crashed into a tractor-trailer truck because its AI algorithm failed to detect the vehicle against the brightly lit sky. In another incident, a Tesla self-drove into a concrete barrier, killing the driver. And there have been several incidents of Tesla vehicles on Autopilot crashing into parked fire trucks and overturned vehicles. In all cases, the neural network was seeing a scene that was not included in its training data or was too different from what it had been trained on.
+
+If there’s one company that can solve the self-driving problem through data from the real world, it’s probably Tesla. The company has a very comprehensive data collection program—better than any other car manufacturer doing self-driving software of software company working on self-driving cars. It is constantly gathering fresh data from the hundreds of thousands of cars it has sold across the world and using them to fine-tune its algorithms.
+
+But will more data solve the problem?
+Interpolation vs extrapolation
+The AI community is divided on how to solve the “long tail” problem. One view, mostly endorsed by deep learning researchers, is that bigger and more complex neural networks trained on larger data sets will eventually achieve human-level performance on cognitive tasks. The main argument here is that the history of artificial intelligence has shown that solutions that can scale with advances in computing hardware and availability of more data are better positioned to solve the problems of the future.
+
+This is a view that supports Musk’s approach to solving self-driving cars through incremental improvements to Tesla’s deep learning algorithms. Another argument that supports the big data approach is the “direct-fit” perspective. Some neuroscientists believe that the human brain is a direct-fit machine, which means it fills the space between the data points it has previously seen. The key here is to find the right distribution of data that can cover a vast area of the problem space.
+
+If these premises are correct, Tesla will eventually achieve full autonomy simply by collecting more and more data from its cars. But it must still figure out how to use its vast store of data efficiently.
+
+
+On the opposite side are those who believe that deep learning is fundamentally flawed because it can only interpolate. Deep neural networks extract patterns from data, but they don’t develop causal models of their environment. This is why they need to be precisely trained on the different nuances of the problem they want to solve. No matter how much data you train a deep learning algorithm on, you won’t be able to trust it, because there will always be many novel situations where it will fail dangerously.
+
+The human mind on the other hand, extracts high-level rules, symbols, and abstractions from each environment, and uses them to extrapolate to new settings and scenarios without the need for explicit training.
+
+I personally stand with the latter view. I think without some sort of abstraction and symbol manipulation, deep learning algorithms won’t be able to reach human-level driving capabilities.
+
+There are many efforts to improve deep learning systems. One example is hybrid artificial intelligence, which combines neural networks and symbolic AI to give deep learning the capability to deal with abstractions.
+
+Another notable area of research is “system 2 deep learning.” This approach, endorsed by deep learning pioneer Yoshua Bengio, uses a pure neural network–based approach to give symbol-manipulation capabilities to deep learning. Yann LeCun, a longtime colleague of Bengio, is working on “self-supervised learning,” deep learning systems that, like children, can learn by exploring the world by themselves and without requiring a lot of help and instructions from humans. And Geoffrey Hinton, a mentor to both Bengio and LeCun, is working on “capsule networks,” another neural network architecture that can create a quasi-three-dimensional representation of the world by observing pixels.
+
+These are all promising directions that will hopefully integrate much-needed commonsense, causality, and intuitive physics into deep learning algorithms. But they are still in the early research phase and are not nearly ready to be deployed in self-driving cars and other AI applications. So I suppose they will be ruled out for Musk’s “end of 2020” timeframe.
+
+believe the sample size and data distribution does not paint an accurate picture yet.
+
+But more importantly, I think comparing numbers is misleading at this point. What is more important is the fundamental difference between how humans and AI perceive the world.
+
+Our eyes receive a lot of information, but our visual cortex is sensible to specific things, such as movement, shapes, specific colors and textures. Through billions of years of evolution, our vision has been honed to fulfill different goals that are crucial to our survival, such as spotting food and avoiding danger.
+
+But perhaps more importantly, our cars, roads, sidewalks, road signs, and buildings have evolved to accommodate our own visual preferences. Think about the color and shape of stop signs, lane dividers, flashers, etc. We have made all these choices—consciously or not—based on the general preferences and sensibilities of the human vision system.
+
+Therefore, while we make a lot of mistakes, our mistakes are less weird and more predictable than the AI algorithms that power self-driving cars. Case in point: No human driver in their sane mind would drive straight into an overturned car or a parked firetruck.
+
+Other problems that need to be solved
+Given the differences between human and cop, we either have to wait for AI algorithms that exactly replicate the human vision system (which I think is unlikely any time soon), or we can take other pathways to make sure current AI algorithms and hardware can work reliably.
+
+One such pathway is to change roads and infrastructure to accommodate the hardware and software present in cars. For instance, we can embed smart sensors in roads, lane dividers, cars, road signs, bridges, buildings, and objects. This will allow all these objects to identify each other and communicate through radio signals. Computer vision will still play an important role in autonomous driving, but it will be complementary to all the other smart technology that is present in the car and its environment. This is a scenario that is becoming increasingly possible as 5G networks are slowly becoming a reality and the price of smart sensors and internet connectivity decreases.
+
+Just as our roads evolved with the transition from horses and carts to automobiles, they will probably go through more technological changes with the coming of software-powered and self-driving cars. But such changes require time and huge investments from governments, vehicle manufacturers, and well as the manufacturers of all those other objects that will be sharing roads with self-driving cars. And we’re still exploring the privacy and security threats of putting an internet-connected chip in everything.
+
+An intermediate scenario is the “geofenced” approach. Self-driving technology will only be allowed to operate in areas where its functionality has been fully tested and approved, where there’s smart infrastructure, and where the regulations have been tailored for autonomous vehicles (e.g., pedestrians are not allowed on roads, human drivers are limited, etc.). Some experts describe these approaches as “moving the goalposts” or redefining the problem, which is partly correct. But given the current state of deep learning, the prospect of an overnight rollout of self-driving technology is not very promising. Such measures could help a smooth and gradual transition to autonomous vehicles as the technology improves, the infrastructure evolves, and regulations adapt.
+
+There are also legal hurdles. We have clear rules and regulations that determine who is responsible when human-driven cars cause accidents. But self-driving cars are still in a gray area. For now, drivers are responsible for their Tesla’s actions, even when it is in Autopilot mode. But in a level 5 autonomous vehicle, there’s no driver to blame for accidents. And I don’t think any car manufacturer would be willing to roll out fully autonomous vehicles if they would to be held accountable for every accident caused by their cars.
+
+https://bdtechtalks.com/2020/07/29/self-driving-tesla-car-deep-learning/
+
+In fact, all Tesla vehicles – whether or not they are Autopilot enabled – send data directly to the cloud. A problem with the engine operation meaning that components were occasionally overheating was diagnosed in 2014 by monitoring this data and every vehicle was automatically “repaired” by software patch thanks to this.
+
+Tesla effectively crowdsources its data from all of its vehicles as well as their drivers, with internal as well as external sensors which can pick up information about a driver’s hand placement on the instruments and how they are operating them. As well as helping Tesla to refine its systems, this data holds tremendous value in its own right. Researchers at McKinsey and Co estimate that the market for vehicle-gathered data will be worth $750 billion a year by 2030.
+
+The data is used to generate highly data-dense maps showing everything from the average increase in traffic speed over a stretch of road to the location of hazards which cause drivers to take action. Machine learning in the cloud takes care of educating the entire fleet, while at an individual car level, edge computing decides what action the car needs to take right now. A third level of decision-making also exists, with cars able to form networks with other Tesla vehicles nearby in order to share local information and insights. In a near future scenario where autonomous cars are widespread, these networks will most likely also interface with cars from other manufacturers as well as other systems such as traffic cameras, road-based sensors or mobile phones.
+
+https://www.forbes.com/sites/bernardmarr/2018/01/08/the-amazing-ways-tesla-is-using-artificial-intelligence-and-big-data/?sh=5e396aa24270
+
+
+tesla model y
+This autopilot is developed upon the principles of deep neural networks. It adopts cameras, ultrasonic sensors, and radar for perceiving the environment surrounding the vehicle.  These sensors and cameras allow the drivers to be receptive to their surroundings which are later on processed in a matter of milliseconds to aid in making the driving safer and less strenuous. The radar is adopted for seeing and measuring the distance around the cars in light, dark, and different weather conditions. The Ultraviolet techniques measure proximity in each case and the passive video detects objects around the car, ensuring a secure drive.
+https://www.analyticssteps.com/blogs/how-tesla-making-use-artificial-intelligence-its-operations
+
+
+
+
+4 variabelen model
+Systemen (met daarin software) en de bijbehorende vier variabelen:
+Monitored variabelen: door sensoren gekwanticeerdefenomenen uit de omgeving
+Controlled variabelen: door actuatoren \bestuurde"fenomenen uit de omgeving
+
+
+Input variabelen: data die de software als input gebruikt
+
+
+According to Tesla, they have gathered data from over 100 million miles with their autopilot software. You can even find the best Halloween costumes on Purge Culture. This data are being compiled in the cloud to generate road maps for driverless cars which Tesla claims are 100 times more accurate than any standard navigation system.
+
+https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/
+
+
+Traffic Signs and Lights Recognition
+In the traffic signs recognition, Xu et al. [82] proposed a traffic signs recognition approach based
+on a CNN algorithm. First, the structural information of the traffic sign image is extracted based on the
+hierarchical significance detection method. Then, a neural network model is used to extract the features
+of the region of interest. Finally, the traffic sign is classified by the Softmax classifier to complete the
+detection of the traffic sign. Alghmgham et al. [83] designed a deep-learning-based architecture and
+applied it in the real-time traffic sign classification. The proposed architecture in [83] consists of two
+convolutional layers, two max-pooling layers, one dropout layer and three dense layers.
+In the traffic lights recognition, Lee and Kim [84] proposed a DNN-based method to detect traffic
+lights in images. The detector in this paper has a DNN architecture of encoder-decoder. The encoder
+is used to generate feature maps from the images by the ResNet-101. Then, the decoder is used to
+generate a refined feature map from the results of the encoder, to output the final classification results
+for the traffic lights. Kim et al. [85] proposed a traffic light recognition method based on deep learning,
+which consists of a semantic segmentation network and a fully convolutional network. The semantic
+segmentation network is employed to detect traffic lights and the fully convolutional network is used
+for traffic light classification.
+
+(1) The samples problem of deep learning
+(2) The complexity problem of deep learning
+(3) The robustness problem of deep learning.
+(4) The real-time problem of deep learning
+(5) The high-dimensional state-space problem of deep learning
+(6) The 3D point cloud data processing based on deep learning
+(7) The road support system based on deep learning
+The ultimate goal for the development of self-driving cars is to build an automatic platform
+capable of real-time, all-day and efficient driving service. Driverless technology can greatly improve
+social productivity, generate huge social benefits, and improve the way people travel, to make a better
+living environment. So there are lots of problems that need to be solved efficiently, which include two
+sides, namely the applications of self-driving cars based on deep learning and the improvements of
+deep learning algorithms. Thus, self-driving cars based on deep learning are still on the road.
+file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf
+
+Path planning/driving policy
+https://towardsdatascience.com/teslas-deep-learning-at-scale-7eed85b235d3
+
+Using a variety of optimizations, Iandola and his co-authors demonstrated that they could achieve AlexNet-like performance while reducing the number of parameters by a factor of 50. That reduced the physical size of a trained AlexNet network from 240MB to less than 5MB. Using additional compression techniques developed by other researchers, including switching from 32-bit to 8-bit parameters, they were able to reduce the size of their model by another factor of 10—producing convolutional neural networks with AlexNet-like performance that were less than half a megabyte.
+
+https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisition-could-accelerate-autopilot-development/
+
+
+
+In fact, all Tesla vehicles – whether or not they are Autopilot enabled – send data directly to the cloud. A problem with the engine operation meaning that components were occasionally overheating was diagnosed in 2014 by monitoring this data and every vehicle was automatically “repaired” by software patch thanks to this.
+
+Tesla effectively crowdsouces its data from all of its vehicles as well as their drivers, with internal as well as external sensors which can pick up information about a driver’s hand placement on the instruments and how they are operating them. As well as helping Tesla to refine its systems, this data holds tremendous value in its own right. Researchers at McKinsey and Co estimate that the market for vehicle-gathered data will be worth $750 billion a year by 2030.
+
+The data is used to generate highly data-dense maps showing everything from the average increase in traffic speed over a stretch of road, to the location of hazards which cause drivers to take action. Machine learning in the cloud takes care of educating the entire fleet, while at an individual car level, edge computing decides what action the car needs to take right now. A third level of decision-making also exists, with cars able to form networks with other Tesla vehicles nearby in order to share local information and insights. In a near future scenario where autonomous cars are widespread, these networks will most likely also interface with cars from other manufacturers as well as other systems such as traffic cameras, road-based sensors or mobile phones.
+
+Although details are scarce on the new AI technology that Tesla were creating, its current AI – driven by a partnership with hardware manufacturer Nvidia – is largely based on an unsupervised learning model of machine learning.
+
+On its Facebook page, Nvidia state that “In contrast to the usual approach to operating self-driving cars, we did not  programme any explicit object detection, mapping, path planning or control components into this car. Instead, the car learns on its own to create all necessary internal representations necessary to steer, simply by observing human drivers.”
+
+Whatever new tech it develops may veer away from this by stepping back into the more tested waters of supervised learning, where algorithms are trained beforehand about right or wrong decisions. However, it is possible that the theoretically greater gains achievable by truely unsupervised learning may keep them on this track.
+https://bernardmarr.com/default.asp?contentID=1251
+
+Why Tesla is relying on computer vision instead of LIDAR and HD maps
+
+There are several reasons why exploiting high resolution maps and LIDAR is not scalable. From an algorithmic perspective, having access to a precise 3D point cloud of the environment that has been scanned in advance and LIDAR on the vehicle aiming to drive autonomously allows to localize a vehicle with a centimetre accuracy. That might sound like a solid approach, but what happens when the road configuration has changed between the time the scan was done and the car is driving at the location? This would require re-scanning each road periodically.
+
+Furthermore, localization is only one of the challenges. From a perception point of view, recognizing other vehicles, pedestrians, and all other long tail situations (such as a flying chair lost from a truck) would in any case have to be addressed by analyzing images. Thus, starting from LIDAR only postpones tackling the bigger challenge.
+
+
+The complexity of the long tail in data
+Full autonomous driving requires a long series of tasks including: accurately and reliably detecting the road and road markings, establishing the position of the vehicle on the road, detecting other vehicles, pedestrians and any other object on the road, and, last but not least, detecting traffic signs.
+
+The taxonomy of traffic signs and their "modifiers" is vast and evolving. Each country adopts slightly different additions to traffics signs, modifications which are fundamental to correctly interpret how to safely drive without supervision. The taxonomy is also not fixed in time, as new variations are created over time and older ones discarded, yet potentially still present in a road somewhere on the planet. In the talk Andrej gives the example of speed limits.
+
+Even once such a taxonomy is known and maintained, the appearance of the traffic sign is highly varied, due to occlusions, lighting and the mere creativity of road maintenance companies in installing those signs. In the talk Andrej discusses this in relation to stop signs.
+
+
+
+Operation vacation: how investing in a solid AI process allows you to iterate fast and reliably improve performance
+focus on setting up the generic AI infrastructure to efficiently collect data, label it, train and reliably test models, so that the task of updating models to detect new objects can be handled by a separate product management and labeling team. This keeps the AI team at Tesla nimble and efficient 
+
+Tesla's data engine: the core of the process is to collect rare samples to address the long tail
+The goal of the Data Engine is to ensure data can be collected in the most efficient manner in order to cover the extremely long tail of examples required for models to reliably perform in the real unconstrained world. The core principle of the data engine is very simple:
+
+Label an initial dataset with new object classes
+Train models to detect new objects
+Evaluate performance
+Find cases in which performance is low
+Add those to the data unit test
+Deploy models to car fleet in shadow mode to fetch similar edge cases
+Retrieve cases from car fleet
+Review and label collected data
+Retrain models
+Repeat steps 6-9 until model performance is acceptable
+We discussed the data unit test above, however steps 6 and 7 are equally important. Given the huge number of miles driven each day by Tesla vehicles - more on that in a second - how can the Data Engine ensure the labeling team won't be overwhelmed by false positives? Andrej mentions a few approaches in this talk, also admitting that no method works perfectly: flickering detection in the deployed model, neural network uncertainty from a Bayesian perspective, sudden appearance of a detection, discrepancy with an expected detection given map information.
+
+Another approach which Tesla has been using to query potentially relevant examples is investigating all the autopilot disengagements: each time a Tesla driver whose vehicle is in autopilot mode decides to disengage autopilot, the likelihood of low performance in the model is high. The data engine can be used to fetch the most relevant examples out of all those cases too, allowing the labeling team to focus on the most critical improvements.
+
+Tesla's data advantage: why is Tesla so efficient in collecting data
+which shows Tesla has collected more than 3 billion miles in autopilot. As a comparison, Google's Waymo recently announced it had collected 20 million miles since its inception in 2009. Tesla is currently leading by at least a factor 100.
+
+future work
+Multi-task learning "HydraNet" training more than 50 models generating more than 1000 distinct predictions
+Learning to fuse the several camera inputs into a coherent Birds-Eye view, done through a Deep Neural Network
+Development of customer AI hardware: Full Self Driving Computers for inference in each car and "secret" DOJO training infrastructure
+Invest in a solid AI process to collect data, label data, define data unit tests - reliable sets of data on which to test, train models and evaluate them. 
+Create your Data Engine: most companies train a model until performance is good enough, and, if lucky enough to get there, deploy the model and forget about it. A much more reliable approach in the long term is to exploit models running in production to find the most critical data to update models with and at the same time to expand the set of data unit test.
+Strive to achieve a Data Advantage: it's no secret that collecting loads of relevant data is essential for success in AI. Designing a product/service from the ground up to be an efficient data collector is key, don't make it an afterthought. It's not always possible and easy - often due to privacy and other regulations - but often being transparent to the customer about which data will be collected and what the benefits. Even better aligning you and your customer's interest so that you both benefit from the data which is collected.
+https://www.braincreators.com/brainpower/insights/teslas-data-engine-and-what-we-should-all-learn-from-it
+
+Output variabelen: data die de software levert als output
+
+This network includes a CNN and an LSTM network, which uses the camera as input.
+The CNN is used to process the camera images frame by frame. The features of the driving scene are
+extracted by the CNN and then passed into a stack of LSTM layers. The temporal dependence of these
+features can be learned by the LSTM network. At last, the steering angle prediction is carried out by
+the output layer.
+file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf
+
+
+requirements vs. specications
+Doel: autonomy (level 5): The vehicle can do all the driving in all circumstances, [and] the human occupants are just passengers and need never be involved in driving.
+
+Autopilot can center a Tesla in a lane, even around curves, and adjust the car’s speed based on the vehicle ahead.
+Another feature can slow a Tesla to a stop at traffic lights and stop signs. 
+Autopilot can’t perform some of these tasks if a road’s lane markers are faded or missing, and it can’t make turns.
+https://www.theverge.com/2020/10/21/21527577/tesla-full-self-driving-autopilot-beta-software-update
+encounter traffic signals, intersections, and other complexities.
+FSD feature
+
+Level3 or higher autonomy system
+can be divided into four parts, namely the driving environment perception system, the autonomous
+decision system, the control execution system and the monitor system
+The environment perception system utilizes the prior knowledge of the environment to establish
+an environmental model including obstacles, road structures, and traffic signs through obtaining
+surrounding environmental information. The main function of the environment perception system is
+to realize functions like lane detection, traffic signal detection, and obstacle detection, by using some
+hardware devices such as cameras and laser radars.
+The main function of the autonomous decision system is to make some decisions for the
+self-driving car, including obstacle avoidance, path planning, navigation, and so on. For example,
+in the path planning, the autonomous decision system plans a global path according to the current
+location and the target location firstly, then reasonably plans a local path for the self-driving car
+by combining the global path and the local environment information provided by the environment
+perception system.
+The control execution system’s function is to execute the commands received from the autonomous
+decision system, such as braking, steering, and accelerating to complete the speed control and
+path-following control. The control execution system will perform some actions according to the
+situations of the environment directly sometimes, without any commands from the autonomous
+decision system, to deal with some emergencies, such as pedestrian avoidance.
+The monitor system is responsible to check whether the car is making actual progress towards its
+goal and reacts with recovery actions when meeting problems like unexpected obstacles, faults, etc.
+The self-driving car is a complex autonomous system, which requires the support of the
+theories and technologies.
+
+Safety concenerns
+Fatal crashes
+https://en.wikipedia.org/wiki/Tesla_Autopilot#Criticism
