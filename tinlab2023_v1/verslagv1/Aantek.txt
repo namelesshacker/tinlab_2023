@@ -1,0 +1,853 @@
+
+
+
+
+\paragraph{hardware/software/gebruik}
+Voor de controle op nitraat en ammonium in water zijn verschillende sensoren, sondes en meters  te koop.
+\paragraph{4-variabelen-model}
+
+Een sensor om bijvoorbeeld de concentratie  nitraat in water te bepalen kan met een Nitraat ionselectieve elektrode ( ISE) stekker. Nitrate Ion-Selective Electrod
+Deze bestaat ui een zilveren chloride geleider is PVC omhulsel. De inwendige geleider is gescheiden van het medium door een polymer membraan. Deze heeft interactie met de nitraatinonen.
+
+
+
+misc{flowmeting,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.nl.endress.com/nl/flowmeting-niveaumeting-drukmeting-temperatuurmeting-analysemeting/Vloeistof-analyse-productoverzicht/Nutri%C3%ABntenanalyzers-en-sensoren}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+    
+	misc{testsenor,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.verantwoordeveehouderij.nl/show/Test-sensor-voor-meten-nitraat-in-de-bodem.htm}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{nitraatsensor,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.verantwoordeveehouderij.nl/show/Optische-sensor-TNO-meet-beschikbare-nitraat-in-de-bodem-1.htm#:~:text=mineralisatie%20van%20stikstof.-,Nitraatsensor,bodemvocht%20door%20middel%20van%20lichtreflectie.}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{libmanual,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ysi.com/File%20Library/Documents/Manuals/ba76000-VARiON-Plus-700-IQ-YSI.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{quest_uv_sensor,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ysi.com/File%20Library/Documents/Guides/5-Questions-to-Ask-Selecting-a-UV-or-UV-Vis-Sensor.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{kallibratiemeting,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ysi.com/ysi-blog/water-blogged-blog/2018/01/calibration-and-measurement-for-nitrate-ises-in-the-lab#:~:text=The%20nitrate%20ISE%20is%20a,independent%20of%20the%20sample%20composition.}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{abbanalyse,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.aquanederland.nl/products/abb-analyzers-voor-continue-meting-voor-ammonium-nitraat-fosfaat-e-d/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{nitrate,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ysi.com/parameters/nitrate}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+	
+	misc{elektrode,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://nl.wikipedia.org/wiki/Elektrode}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{nitratax,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.em-solutions.co.uk/wp-content/uploads/Nitratax-sc-brochure.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{worldasia35506311,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.bbc.com/news/world-asia-china-35506311}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{toxicnewsreflection,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://toxicnews.org/2015/11/04/a-reflection-on-the-tianjin-explosions/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{chinadialogue,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://chinadialogue.net/en/pollution/9188-back-to-the-blast-zone-one-year-after-the-tianjin-explosion/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+faa report on 737 max
+737 max deadly crash technical error
+\url{}
+\url{}
+\url{}
+\url{}
+
+    misc{aviationvoice_crash_ethio,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://aviationvoice.com/ethiopian-boeing-737-max-crash-caused-by-design-flaws-only-202003101726/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{boeing_737problems,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.reuters.com/article/us-boeing-737max-idUSKBN20T2EL#:~:text=The%20preliminary%20investigative%20findings%20from,to%20identify%20key%20safety%20problems.}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{faaupdate,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.faa.gov/news/updates/?newsId=93206}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{mcasfail,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.theverge.com/2019/5/2/18518176/boeing-737-max-crash-problems-human-error-mcas-faa}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+executive summary
+11 final observation
+\url{}
+
+
+
+
+misc{737maxinvest,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://transportation.house.gov/committee-activity/boeing-737-max-investigation}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+\paragraph{Requirements}
+Tesla
+overheid
+\url{}
+\url{}
+\url{}
+automobilist
+\url{}
+misc{isostandard,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.iso.org/standard/70939.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	misc{ieee_series,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://ul.org/UL4600}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	misc{unece,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://unece.org/fileadmin/DAM/trans/doc/2020/wp29grva/GRVA-06-02r1e.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+misc{tesla_autopilot,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.bloomberg.com/graphics/2019-tesla-model-3-survey/autopilot.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+\subparagraph{requirements}
+Doel: autonomy (level 5): The vehicle can do all the driving in all circumstances, [and] the human occupants are just passengers and need never be involved in driving.
+
+Autopilot can center a Tesla in a lane, even around curves, and adjust the car’s speed based on the vehicle ahead.
+Another feature can slow a Tesla to a stop at traffic lights and stop signs. 
+Autopilot can’t perform some of these tasks if a road’s lane markers are faded or missing, and it can’t make turns.
+
+
+misc{theverge_tesla,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.theverge.com/2020/10/21/21527577/tesla-full-self-driving-autopilot-beta-software-update}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+misc{tesla_big_data,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{tesla_applsci,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{tesla_deep,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://towardsdatascience.com/teslas-deep-learning-at-scale-7eed85b235d3}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{tesla_acc,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisition-could-accelerate-autopilot-development/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{1251,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://bernardmarr.com/default.asp?contentID=1251}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{teslas_data_engine,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.braincreators.com/brainpower/insights/teslas-data-engine-and-what-we-should-all-learn-from-it}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{applsci,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+misc{tesla_update,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.theverge.com/2020/10/21/21527577/tesla-full-self-driving-autopilot-beta-software-update}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+\url{}
+
+misc{tesla_stickers,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://spectrum.ieee.org/cars-that-think/transportation/self-driving/three-small-stickers-on-road-can-steer-tesla-autopilot-into-oncoming-lane}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+NHTSA levels of automation
+tesla autopilot requirement and specification
+\url{}
+\url{}
+\url{}
+\url{}
+\url{}
+misc{tesla_lev_5,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://towardsdatascience.com/tesla-level-5-autopilot-669f6ac6ee63}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+misc{lev4lev5,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.forbes.com/sites/lanceeliot/2019/12/20/explaining-level-4-and-level-5-of-self-driving-cars-in-plain-english/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+misc{car_levels,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.caranddriver.com/features/a15079828/autonomous-self-driving-car-levels-car-levels/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+misc{auto_drive,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.bmw.com/en/automotive-life/autonomous-driving.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+misc{avs_nhtsa,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+tesla deadly crash technical data
+\url{}
+\url{}
+\url{}
+\url{}
+\url{}
+\url{}
+\url{}
+
+
+
+misc{tesla_ntsb_sil_crash,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.forbes.com/sites/bradtempleton/2020/02/13/ntsb-releases-report-on-2018-fatal-silicon-valley-tesla-autopilot-crash/?sh=13a0b5342a81}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+misc{tesla_crash_report,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.engadget.com/2020-03-20-ntsb-tesla-model-autopilot-crash-report.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+
+misc{ntsb_press,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ntsb.gov/news/press-releases/Pages/NR20200319.aspx}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+
+misc{tesla_monit,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.forbes.com/sites/bradtempleton/2020/02/26/ntsb-report-on-tesla-autopilot-fatality-comes-down-hard-on-driver-monitoring-distraction/?sh=44ec2fd17e75}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+
+misc{tesla_sil_val,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.theguardian.com/technology/2018/jun/07/tesla-fatal-crash-silicon-valley-autopilot-mode-report}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+
+misc{tesla_fed_push,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.caranddriver.com/news/a15346519/fatal-tesla-crash-wont-slow-federal-push-for-autonomous-cars/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+misc{ntsb_abstract,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ntsb.gov/news/events/Documents/2017-HWY16FH018-BMG-abstract.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+neural networking
+\url{}
+gebruikers: automobilisten
+
+
+misc{ml_cars,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.kdnuggets.com/2017/06/machine-learning-algorithms-used-self-driving-cars.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+\paragraph{Nog meer failures}
+\url{}
+\url{}
+
+
+misc{progtokill,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.technologyreview.com/2015/10/22/165469/why-self-driving-cars-must-be-programmed-to-kill/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	misc{tesla_pilot_hack,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.technologyreview.com/2019/04/01/65915/hackers-trick-teslas-autopilot-into-veering-towards-oncoming-traffic/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+\paragraph{atuopilot crash}
+
+
+
+
+misc{vox_fatal,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.vox.com/recode/2020/2/26/21154502/tesla-autopilot-fatal-crashes}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	misc{ntsb_prelim_report,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ntsb.gov/investigations/AccidentReports/Pages/HWY19FH008-preliminary-report.aspx}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_remote,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://securityledger.com/2019/04/hackers-remotely-steer-tesla-model-s-using-autopilot-system/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	misc{tesla_problems,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://europe.autonews.com/automakers/tesla-driver-fatal-crash-reported-problems-autopilot-feature}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_ntsb,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.nytimes.com/2020/02/25/business/tesla-autopilot-ntsb.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	misc{bbctech,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.bbc.com/news/technology-51645566}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+misc{tesla_crash_death,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.theverge.com/2019/5/17/18629214/tesla-autopilot-crash-death-josh-brown-jeremy-banner}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+\paragraph{Baanverwisslingen}
+
+
+
+misc{tesla_lanes,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.cnbc.com/2019/04/03/chinese-hackers-tricked-teslas-autopilot-into-switching-lanes.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_ai,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.vox.com/future-perfect/2019/4/8/18297410/ai-tesla-self-driving-cars-adversarial-machine-learning}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+\paragraph{beveiliging}
+\url{}
+\url{}
+\url{}
+\url{}
+\url{}
+
+misc{tesla_bugs,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.livemint.com/Companies/o2QLbtJc9EQ7ZcpxqgFbBP/Teslas-reward-for-finding-security-bugs-Model-3.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tsla_stlen_flaws,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.bankinfosecurity.com/tesla-model-x-stolen-in-minutes-using-software-flaws-a-15462}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_x_flaws_leuven,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.imec-int.com/en/press/belgian-security-researchers-ku-leuven-and-imec-demonstrate-serious-flaws-tesla-model-x}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_stolen,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://cio.economictimes.indiatimes.com/news/digital-security/security-researchers-hack-steal-tesla-model-x-within-minutes/79406553}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_blue,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.wired.com/story/tesla-model-x-hack-bluetooth/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+\paragraph{sudden unintended acceleration}
+\url{}
+\url{}
+
+misc{nhtsa,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://techcrunch.com/2021/01/08/nhtsa-tesla-sudden-unintended-acceleration-driver-error/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_mode,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.theguardian.com/technology/2018/jun/07/tesla-fatal-crash-silicon-valley-autopilot-mode-report}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+\paragraph{security failure of connecting tesla to internet}
+\url{}
+	
+misc{tesla_backup,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.darkreading.com/threat-intelligence/security-risks-discovered-in-tesla-backup-gateway/d/d-id/1339462}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+\paragraph{battery management system}
+\url{}
+\url{}
+	
+misc{tesla_safe,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.caranddriver.com/news/a29369387/nhtsa-tesla-safety/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_batt,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.latimes.com/business/story/2020-07-01/federal-safety-officials-probe-tesla-battery-cooling-system}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+\paragraph{camera hack}
+\url{}
+
+misc{tesla_hack_acc,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.technologyreview.com/2020/02/19/868188/hackers-can-trick-a-tesla-into-accelerating-by-50-miles-per-hour/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+\paragraph{tasla ddos hack}
+\url{}
+
+misc{portswigger_tesla,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://portswigger.net/daily-swig/web-based-attack-crashes-tesla-driver-interface}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+\paragraph{touch screen}
+\url{}
+
+
+
+
+misc{teslarecall,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.consumerreports.org/car-recalls-defects/nhtsa-asks-tesla-to-recall-model-s-model-x-touch-screen-safety-issues/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+\subsection{Wat zijn sluizen}
+
+\paragraph{Uit welke onderdelen bestaat een sluis?}
+
+\subsubsection{Wat voor soorten sluizen}
+\subsubsection{Welke standaarden zijn er voor sluizen}
+
+zoektermen:
+european commission digital security of waterway transport
+european commission digital security of water locks
+european standards for water locks
+Resulting in :
+
+
+
+
+misc{eu_standards,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.locksonline.co.uk/community/european-standards.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{eu_content,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://eur-lex.europa.eu/legal-content/SL/TXT/?uri=uriserv%3AOJ.L_.2016.252.01.0118.01.ENG}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{share_info_dig_fut,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.inlandwaterwaytransport.eu/sharing-information-for-a-digital-future/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{unice_digit,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://unece.org/DAM/trans/doc/2018/itc/presentations/4.________Digitalization_SC.3_slides_Ivanova.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{eu_transport_studies,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://ec.europa.eu/transport/sites/transport/files/studies/2017-10-dina.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{tesla_inland,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://ec.europa.eu/transport/modes/inland/studies/digital-inland-waterway-area-towards-digital-inland-waterway-area-and-digital_en}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+misc{eu_inland_waterway,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://ec.europa.eu/transport/modes/inland/consultations/digital-tools-inland-waterway-transport-legislations_en}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+misc{gns_guides,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/Published%20GNS%20Guidelines%20document%20EC%20Bookshop.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+	
+Wat betekent veiligheid, efficientie, capaciteit, onderhoudskosren en duurzaamheid etx. en wat heb je aan bronnen geraadpleegd om tot een goede analyse te komen
+misc{tweakers_waterwerken_sec,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://tweakers.net/nieuws/150864/rekenkamer-nederlandse-waterwerken-zijn-onvoldoende-beschermd-tegen-cyberaanval.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{cybersec_WRR,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/rapport+Cybersecurity+WR.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{beveiliging_ics,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.agconnect.nl/artikel/beveiliging-industriele-it-nederland-schiet-tekort}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{bedreig_waternet,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://3bplus.nl/bedreigingen-cybersecurity-waterwerken/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{persb_water_vit,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.persberichten.com/persbericht/95034/Cybersecurity-vitale-waterwerken-niet-waterdicht}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{h-tk-20182019-87,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/h-tk-20182019-87-9.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{water_infra,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://ict.eu/nl/markten/water-infrastructuur/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{CSBN2019,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/CSBN2019.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{digit_ics,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.deitauditor.nl/informatiebeveiliging/digitale-beveiliging-van-industrial-control-systems/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{asapcloud,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.asapcloud.com/2019/07/22/niet-morgen-maar-nu-voorkom-maatschappij-ontwrichtende-situaties/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{nedsluis_sec,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.trouw.nl/nieuws/nederlandse-sluizen-en-waterkeringen-zijn-nog-steeds-niet-goed-beschermd-tegen-hackers~b8fbb880/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+misc{civiel_mili,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://vng.nl/nieuws/civiel-militaire-samenwerking-zijn-gemeenten-er-klaar-voor}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+misc{cyberned,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/Cybersecuritybeeld+Nederland+2020.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}

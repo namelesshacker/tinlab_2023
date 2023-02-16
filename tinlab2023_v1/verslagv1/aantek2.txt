@@ -1,0 +1,294 @@
+
+
+
+Waar wordt in het model geen rekening mee gehouden
+ma t/m vrijdag
+bestuur op afstand
+telefonisch inbellen
+werktijden van bijv 08.00 tot 17:00 reeds vermeld in file:///C:/Users/gally/Downloads/Bedieningstijden.pdf
+geen rekening met voorjaar/najaar reeds vermeld in  https://www.fryslan.frl/home/kaarten_3208/item/openingstijden-bruggen-en-sluizen_727.html
+zon en feestdagen https://www.rotterdam.nl/wonen-leven/bruggen-en-sluizen/ of https://www.rijnland.net/uw-loket/varen-in-rijnland/bedieningstijden-sluizen
+
+misc{bedieningstijd,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/Bedieningstijden.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {Bedieningstijden}}
+	
+	misc{frieslandsluizen,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.fryslan.frl/home/kaarten_3208/item/openingstijden-bruggen-en-sluizen_727.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	misc{rotterdamsluizen,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.rotterdam.nl/wonen-leven/bruggen-en-sluizen/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+misc{rijnlands;uizen,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.rijnland.net/uw-loket/varen-in-rijnland/bedieningstijden-sluizen}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+Hoe werkt het in sommige gevallen?
+Inbellen naar nummer aangegven bij de sluis
+nummer van de sluis invoeren
+vanuit de centrale wordt de sluis geopend
+voor extra informatie contact opnemen met de klanttenservice in amsterdam zie: https://www.amsterdam.nl/parkeren-verkeer/varen-amsterdam/bruggen-sluizen-openingstijden-bediening/
+en ook https://www.waternet.nl/service-en-contact/varen-in-amsterdam/bediening-en-openingstijden-bruggen-en-sluizen-in-amsterdam/
+
+misc{ams_sluizen,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.amsterdam.nl/parkeren-verkeer/varen-amsterdam/bruggen-sluizen-openingstijden-bediening/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+misc{ams_sluizen02,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.waternet.nl/service-en-contact/varen-in-amsterdam/bediening-en-openingstijden-bruggen-en-sluizen-in-amsterdam/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+
+
+Het systeem gaat ook niet uit van sluisgeld of andere dienstregeling door de horeca 
+
+misc{sluisonline,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.sluisonline.nl/openingstijden#:~:text=In%20Sluis%20zijn%20de%20winkels,van%2010.00%20tot%2018.00%20uur.}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+Bij sommige sluizen is de diepte en breedte  aangegeven: 
+
+
+misc{wormerland,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.wormerland.nl/mozard/!suite86.scherm0325?mPag=883&mLok=1}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+Binnen het vws wordt rekening gehouden met  vaarwegen die niet hoofdzakelijk voor zeevaart bestendig zijn,  het type motorvrachtschip, het ontwerp van de vaarweg(lengte, breedte, ddiepgang, hoogte etc), de hydraulische randvoorwaarden (maatgevende hoog/laagwaterstand, langstroming en dwarsstroming), windcondities, bediening, vaarwegmarkering, beheer- en onderhoudsaspecten. 
+
+
+misc{richtlijn_vaarweg_2020,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/richtlijnen-vaarwegen-2020.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+Aantal schepen< 5.000 rustig krap profiel voor tweestrooksverkeer
+hydraulosche randvoorwaarden blz 38/214
+vaardiepte  blz 48
+zijwindtoeslag 51
+stroomtoeslag 57
+bediening 156
+veiligheid 178
+
+
+
+misc{richtlijnenvaarwegen,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{file:///C:/Users/gally/Downloads/richtlijnen-vaarwegen-2020.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+	
+	
+	
+Onderzoek van rijkswaterstaat toont aan da door knelpunten de gemiddelde structurele wachttijd langer dan de maximale van 30 minuten bedraagt.  De gemiddelde structurele wachttijd wordt overigens gedefinieerd als ‘de gemiddelde wachttijd in de drukste periode van vier aaneengesloten weken’. 
+
+
+
+
+misc{sluizenlemmer,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://binnenvaartkrant.nl/wachttijden-sluizen-lemmer-lopen-op}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+Of een maximale wchttijd van 2 uur
+
+
+
+misc{vaarwegenoverzicht,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.rijkswaterstaat.nl/water/vaarwegenoverzicht/maas}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+Wat doet de sluis niet.
+De sluiss houdt geen rekening met links of rechtsrijdend verkeer vanuit de zeevaart
+De sluis heeft geen queue met daarin een id gekoppeld aan de sluis.
+
+De waterpomp wordt alleen aan en uitgezet
+De waterpomp houdt geen rekening met waterstand
+Houdt geen rekening met een schip in de sluis dat is blijven hangen.
+
+
+
+
+
+Using a variety of optimizations, Iandola and his co-authors demonstrated that they could achieve AlexNet-like performance while reducing the number of parameters by a factor of 50. That reduced the physical size of a trained AlexNet network from 240MB to less than 5MB. Using additional compression techniques developed by other researchers, including switching from 32-bit to 8-bit parameters, they were able to reduce the size of their model by another factor of 10—producing convolutional neural networks with AlexNet-like performance that were less than half a megabyte.
+
+\url{}
+
+
+misc{tesla_accelerate,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisition-could-accelerate-autopilot-development/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+\paragraph{Aanbevelingen}
+The NTSB determined the Tesla’s automated vehicle control system was not designed to, and could not, identify the truck crossing the Tesla’s path or recognize the impending crash. Therefore, the system did not slow the car, the forward collision warning system did not provide an alert and the automatic emergency braking did not activate.
+The way in which the Tesla “Autopilot” system monitored and responded to the driver’s interaction with the steering wheel was not an effective method of ensuring driver engagement, the agency added.
+
+Event data to be captured and available in standard formats on new vehicles equipped with automated vehicle control systems;
+Manufacturers to incorporate system safeguards to limit the use of automated control systems to conditions for which they are designed and for there to be a method to verify those safeguards;
+Development of applications to more effectively sense a driver’s level of engagement and alert when engagement is lacking;
+Need for manufacturers to report incidents, crashes and exposure numbers involving vehicles equipped with automated vehicle control systems.
+minimum performance standards for connected vehicle technology for all highway vehicles and the need to require installation of the technology
+\url{}
+
+
+misc{tesla_auto,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.ehstoday.com/safety/article/21919260/ntsb-fatal-crash-involving-tesla-autopilot-resulted-from-driver-errors-overreliance-on-automation}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+	
+	
+Tesla delivered an over-the-air update to its Autopilot driver-assist system over the weekend that warns drivers quicker with visual and audible alerts to put their hands back on the steering wheel.
+
+
+\url{}
+
+
+misc{tesla_auto_update,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.consumerreports.org/car-safety/tesla-autopilot-update-warns-drivers-sooner-to-keep-hands-on-wheel/}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+	
+	
+	
+	
+therac
+
+
+
+
+
+
+
+
+
+misc{therac_25,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://web.stanford.edu/class/cs240/old/sp2014/readings/therac-25.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+	
+misc{therac_incident,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://thedailywtf.com/articles/the-therac-25-incident}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+	
+	
+misc{therac,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{http://sunnyday.mit.edu/therac-25.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+	
+	
+misc{therac_bug_race,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://www.bugsnag.com/blog/bug-day-race-condition-therac-25}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+	
+	
+misc{therac_1,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{http://www.cse.msu.edu/~cse470/Public/Handouts/Therac/Therac_1.html}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+	
+	
+	
+misc{therac_wiki,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://en.wikipedia.org/wiki/Therac-25}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+	
+	
+	
+	misc{arxiv_02925,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{https://arxiv.org/pdf/2001.02925.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
