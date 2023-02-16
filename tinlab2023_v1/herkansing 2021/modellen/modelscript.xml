@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+const int N = 3;         // # ships
+typedef int[0,N-1] id_t;
+
+chan        appr[N], move[N],stop[N], leave[N], wait[N];
+urgent chan go[N];
+// waterniveau in in meter van 0 tot 10
+typedef int[3,10] waterniveau;
+//
+int Counter =0;
+
+//sluis deuren kiezen
+chan lower_gate;
+chan upper_gate;
+//sluis deuren openen
+chan gate_open;
+chan gate_closed;
+// stoplicht
+chan groen_laag;
+chan groen_hoog;
+chan rood_laag;
+chan rood_hoog;
+// waterlevel bijsturen
+chan Toevoeren;
+chan Afvoeren;
+chan pompen;
+//sluis
+chan groen;
+chan rood;
+//ship
+chan move_ship;</declaration><template><name x="5" y="5">Sluis</name><declaration>id_t entrance_list[N+1];
+id_t waiting_list[N+1];
+int[0,N] len;
+
+
+void schedule(id_t element){}
+
+
+// Put an element at the end of the queue
+void enqueue(id_t element)
+{
+        entrance_list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                entrance_list[i] = entrance_list[i + 1];
+                i++;
+        }
+        entrance_list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_t front()
+{
+   return entrance_list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return entrance_list[len - 1];
+}
+
+// if enqueue is full send to waiting queue
+// remove first element of waiting queue en send to enqueue</declaration><location id="id0" x="160" y="160"><name x="192" y="144">Gate_requested_hasCounted_ships_In</name></location><location id="id1" x="480" y="160"><name x="512" y="136">Deuren_gesloten</name></location><location id="id2" x="160" y="224"><name x="192" y="208">Open_locks</name></location><location id="id3" x="160" y="320"><name x="192" y="304">ShipsAllowed_to_enter</name></location><location id="id4" x="352" y="512"><name x="342" y="482">HeropenDeuren</name></location><location id="id5" x="352" y="608"><name x="342" y="578">Pomp_klaar</name></location><location id="id6" x="160" y="608"><name x="192" y="560">Wacht_op_pomp</name></location><location id="id7" x="160" y="512"><name x="192" y="496">Sluit_deuren</name></location><location id="id8" x="160" y="416"><name x="192" y="400">ship_entered_less_than_two</name></location><location id="id9" x="160" y="96"><name x="192" y="80">ShipApproaching_choosing_gate</name></location><location id="id10" x="160" y="-96"><name x="150" y="-126">Init</name></location><init ref="id10"/><transition><source ref="id0"/><target ref="id2"/><label kind="synchronisation" x="100" y="177">gate_open!</label></transition><transition><source ref="id9"/><target ref="id0"/></transition><transition><source ref="id1"/><target ref="id10"/><label kind="synchronisation" x="496" y="0">gate_closed!</label><nail x="480" y="-96"/></transition><transition><source ref="id4"/><target ref="id1"/><nail x="480" y="512"/></transition><transition><source ref="id2"/><target ref="id3"/></transition><transition><source ref="id3"/><target ref="id8"/></transition><transition><source ref="id5"/><target ref="id4"/><label kind="synchronisation" x="292" y="545">gate_open!</label></transition><transition><source ref="id6"/><target ref="id5"/><label kind="synchronisation" x="192" y="584">pompen!</label></transition><transition><source ref="id10"/><target ref="id9"/><label kind="synchronisation" x="168" y="-16">lower_gate?</label></transition><transition><source ref="id7"/><target ref="id6"/><label kind="synchronisation" x="100" y="545">gate_closed!</label></transition><transition><source ref="id8"/><target ref="id7"/></transition><transition><source ref="id10"/><target ref="id9"/><label kind="synchronisation" x="-40" y="-8">upper_gate?</label><nail x="32" y="-96"/><nail x="32" y="0"/><nail x="32" y="96"/></transition></template><template><name>Schip</name><parameter>const id_t id</parameter><declaration>// Place local declarations here.
+clock x;</declaration><location id="id11" x="320" y="256"><name x="304" y="272">Level_is_set</name></location><location id="id12" x="256" y="256"><name x="232" y="208">WaitForWaterLevel</name></location><location id="id13" x="384" y="0"><name x="374" y="-30">Vertrek</name></location><location id="id14" x="384" y="256"><name x="374" y="226">AttendLeaving</name></location><location id="id15" x="192" y="256"><name x="182" y="226">Stop</name></location><location id="id16" x="0" y="256"><name x="-10" y="226">Binnenrijden</name></location><location id="id17" x="0" y="128"><name x="-64" y="112">Arrival</name></location><location id="id18" x="0" y="0"><name x="-10" y="-30">Init</name></location><init ref="id18"/><transition><source ref="id12"/><target ref="id11"/></transition><transition><source ref="id11"/><target ref="id14"/></transition><transition><source ref="id15"/><target ref="id12"/></transition><transition><source ref="id18"/><target ref="id17"/><label kind="synchronisation" x="48" y="48">lower_gate!</label><nail x="32" y="64"/></transition><transition><source ref="id13"/><target ref="id18"/><label kind="synchronisation" x="132" y="-15">move_ship?</label></transition><transition><source ref="id14"/><target ref="id13"/></transition><transition><source ref="id16"/><target ref="id15"/><label kind="synchronisation" x="56" y="264">move_ship?</label></transition><transition><source ref="id17"/><target ref="id16"/></transition><transition><source ref="id18"/><target ref="id17"/><label kind="synchronisation" x="-96" y="48">upper_gate!</label></transition></template><template><name>deur</name><declaration>clock x;</declaration><location id="id19" x="192" y="-104"></location><location id="id20" x="0" y="-160"></location><location id="id21" x="192" y="-160"></location><location id="id22" x="192" y="0"><name x="232" y="-16">open</name></location><location id="id23" x="0" y="0"><name x="-64" y="-16">dicht</name></location><init ref="id23"/><transition><source ref="id19"/><target ref="id21"/><label kind="synchronisation" x="132" y="-147">move_ship!</label></transition><transition><source ref="id22"/><target ref="id19"/><label kind="synchronisation" x="132" y="-67">groen!</label></transition><transition><source ref="id20"/><target ref="id23"/><label kind="synchronisation" x="-60" y="-95">gate_closed?</label></transition><transition><source ref="id21"/><target ref="id20"/><label kind="guard" x="36" y="-190">x&lt;10</label><label kind="synchronisation" x="36" y="-175">rood!</label><nail x="168" y="-160"/></transition><transition><source ref="id23"/><target ref="id22"/><label kind="synchronisation" x="36" y="-15">gate_open?</label><nail x="32" y="64"/><nail x="160" y="64"/></transition></template><template><name>Verkeerslicht</name><location id="id24" x="192" y="0"><name x="182" y="-30">Groenlicht</name></location><location id="id25" x="0" y="0"><name x="-64" y="-40">Stoplicht</name></location><init ref="id25"/><transition><source ref="id24"/><target ref="id25"/><label kind="synchronisation" x="80" y="-96">rood?</label><nail x="160" y="-64"/><nail x="160" y="-64"/><nail x="32" y="-64"/></transition><transition><source ref="id25"/><target ref="id24"/><label kind="synchronisation" x="72" y="80">groen?</label><nail x="32" y="64"/><nail x="160" y="64"/></transition></template><template><name>Sensor</name><location id="id26" x="0" y="0"></location><init ref="id26"/><transition><source ref="id26"/><target ref="id26"/><label kind="synchronisation" x="-168" y="-16">upper_gate!</label><nail x="-96" y="64"/><nail x="-96" y="-64"/></transition><transition><source ref="id26"/><target ref="id26"/><label kind="synchronisation" x="128" y="-16">lower_gate!</label><nail x="96" y="-64"/><nail x="96" y="64"/></transition></template><template><name>Pomp</name><declaration>const int water_laag=3;
+const int water_hoog=10;
+const int water_median=(water_hoog+water_laag)/2;
+int[water_laag,water_hoog] water=water_median;
+clock pomp_clock;
+// waterniveau van de sensor voor de sluis is gelijk aan level
+waterniveau depth;
+</declaration><location id="id27" x="-160" y="0"><name x="-170" y="-30">Laag</name></location><location id="id28" x="160" y="0"><name x="150" y="-30">Hoog</name></location><location id="id29" x="0" y="0"><name x="-10" y="-30">Init</name></location><init ref="id29"/><transition><source ref="id27"/><target ref="id29"/><nail x="-128" y="-64"/><nail x="-32" y="-64"/></transition><transition><source ref="id29"/><target ref="id27"/><label kind="guard" x="-140" y="-30">Counter&gt;0 || Counter &lt;2</label><label kind="synchronisation" x="-140" y="-15">Afvoeren?</label><nail x="-32" y="64"/><nail x="-128" y="64"/></transition><transition><source ref="id28"/><target ref="id29"/><nail x="128" y="-64"/><nail x="32" y="-64"/></transition><transition><source ref="id29"/><target ref="id28"/><label kind="guard" x="16" y="80">Counter&gt;0 || Counter &lt;2</label><label kind="synchronisation" x="48" y="32">Toevoeren?</label><nail x="32" y="64"/><nail x="128" y="64"/></transition></template><template><name>Hoog_laag_openen</name><location id="id30" x="0" y="0"></location><location id="id31" x="-160" y="0"><name x="-170" y="-30">open_hoog</name></location><location id="id32" x="128" y="0"><name x="118" y="-30">open_laag</name></location><location id="id33" x="0" y="0"><name x="-10" y="-30">dicht</name></location><init ref="id33"/><transition><source ref="id32"/><target ref="id30"/><nail x="120" y="-16"/><nail x="96" y="-64"/><nail x="32" y="-64"/><nail x="8" y="-8"/></transition><transition><source ref="id30"/><target ref="id32"/><nail x="32" y="64"/><nail x="96" y="64"/></transition><transition><source ref="id33"/><target ref="id30"/></transition><transition><source ref="id31"/><target ref="id33"/><nail x="-128" y="64"/><nail x="-32" y="64"/></transition><transition><source ref="id30"/><target ref="id31"/><nail x="-32" y="-96"/><nail x="-128" y="-96"/></transition></template><template><name>waterpomp</name><declaration>clock pomp_clock;</declaration><location id="id34" x="160" y="0"></location><location id="id35" x="0" y="0"></location><init ref="id35"/><transition><source ref="id34"/><target ref="id35"/><label kind="guard" x="20" y="-30">pomp_clock&lt;=10</label><nail x="128" y="-64"/><nail x="32" y="-64"/></transition><transition><source ref="id35"/><target ref="id34"/><label kind="synchronisation" x="20" y="-15">pompen?</label><nail x="64" y="64"/><nail x="128" y="64"/></transition></template><system>system Schip, Sluis,deur,waterpomp,Verkeerslicht;</system></nta>

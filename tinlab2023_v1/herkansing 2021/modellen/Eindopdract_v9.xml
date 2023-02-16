@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+
+chan boot_hoog;
+chan boot_laag;
+chan changedoor_low;
+chan changedoor_high;
+chan ship_moves;
+chan ship_abletomove;
+chan changelight;</declaration>
+	<template>
+		<name>Sluis</name>
+		<declaration>const int water_laag=0;
+const int water_hoog=10;
+const int water_median=(water_hoog+water_laag)/2;
+int[water_laag,water_hoog] water=water_median;
+clock x;</declaration>
+		<location id="id0" x="-816" y="-238">
+			<name x="-799" y="-246">Wait</name>
+			<label kind="invariant" x="-765" y="-246">x&lt;=2</label>
+		</location>
+		<location id="id1" x="-680" y="-306">
+			<name x="-697" y="-289">Filling</name>
+			<label kind="invariant" x="-697" y="-272">x&lt;=2</label>
+		</location>
+		<location id="id2" x="-680" y="-170">
+			<name x="-697" y="-212">Draining</name>
+			<label kind="invariant" x="-697" y="-229">x&lt;=2</label>
+		</location>
+		<location id="id3" x="-510" y="-306">
+		</location>
+		<location id="id4" x="-510" y="-170">
+		</location>
+		<location id="id5" x="0" y="-238">
+			<urgent/>
+		</location>
+		<location id="id6" x="-306" y="-306">
+			<name x="-340" y="-289">draining2</name>
+			<label kind="invariant" x="-323" y="-272">x&lt;=2</label>
+		</location>
+		<location id="id7" x="-136" y="-306">
+		</location>
+		<location id="id8" x="-306" y="-170">
+			<name x="-331" y="-204">Filling2</name>
+			<label kind="invariant" x="-323" y="-221">x&lt;=2</label>
+		</location>
+		<location id="id9" x="-136" y="-170">
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id5"/>
+			<label kind="synchronisation" x="-110" y="-178">changedoor_high?</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id5"/>
+			<label kind="synchronisation" x="-110" y="-314">changedoor_low?</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id8"/>
+			<label kind="synchronisation" x="-484" y="-170">changedoor_low?</label>
+			<label kind="assignment" x="-484" y="-153">x:=0</label>
+			<nail x="-476" y="-170"/>
+			<nail x="-374" y="-170"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id6"/>
+			<label kind="synchronisation" x="-484" y="-331">changedoor_high?</label>
+			<label kind="assignment" x="-484" y="-348">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-1071" y="-272">x&gt;1&amp;&amp;water==water_median</label>
+			<label kind="assignment" x="-1071" y="-255">x:=0</label>
+			<nail x="-833" y="-246"/>
+			<nail x="-884" y="-272"/>
+			<nail x="-884" y="-204"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-867" y="-382">water&gt;water_median&amp;&amp;
+x&gt;1</label>
+			<label kind="assignment" x="-867" y="-348">water--,
+x:=0</label>
+			<nail x="-816" y="-306"/>
+			<nail x="-884" y="-306"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-867" y="-136">water&lt; water_median&amp;&amp;
+x&gt;1</label>
+			<label kind="assignment" x="-866" y="-170">water++,
+x:=0</label>
+			<nail x="-816" y="-170"/>
+			<nail x="-884" y="-170"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id0"/>
+			<label kind="assignment" x="-425" y="0">x:=0</label>
+			<nail x="68" y="-238"/>
+			<nail x="68" y="0"/>
+			<nail x="-918" y="0"/>
+			<nail x="-918" y="-238"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-705" y="-450">water&lt;water_hoog&amp;&amp;
+x&gt;=1</label>
+			<label kind="assignment" x="-705" y="-416">water++,
+x:=0</label>
+			<nail x="-646" y="-374"/>
+			<nail x="-714" y="-374"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-705" y="-68">water&gt;water_laag&amp;&amp;
+x&gt;=1</label>
+			<label kind="assignment" x="-705" y="-102">water--,
+x:=0</label>
+			<nail x="-646" y="-102"/>
+			<nail x="-714" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-654" y="-195">water==water_laag</label>
+			<label kind="synchronisation" x="-654" y="-170">changedoor_low!</label>
+			<label kind="assignment" x="-620" y="-212">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-654" y="-306">water==water_hoog</label>
+			<label kind="synchronisation" x="-654" y="-331">changedoor_high!</label>
+			<label kind="assignment" x="-620" y="-289">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-807" y="-306">boot_hoog?</label>
+			<label kind="assignment" x="-756" y="-323">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="synchronisation" x="-807" y="-195">boot_laag?</label>
+			<label kind="assignment" x="-765" y="-178">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-331" y="-450">water&gt;water_laag&amp;&amp;
+x&gt;=1</label>
+			<label kind="assignment" x="-331" y="-416">water--,
+x:=0</label>
+			<nail x="-272" y="-374"/>
+			<nail x="-340" y="-374"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id7"/>
+			<label kind="guard" x="-272" y="-306">water==water_laag</label>
+			<label kind="synchronisation" x="-272" y="-331">changedoor_low!</label>
+			<label kind="assignment" x="-272" y="-289">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id8"/>
+			<label kind="guard" x="-340" y="-68">water&lt;water_hoog&amp;&amp;
+x&gt;=1</label>
+			<label kind="assignment" x="-340" y="-102">water++,
+x:=0</label>
+			<nail x="-272" y="-102"/>
+			<nail x="-340" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id9"/>
+			<label kind="guard" x="-272" y="-195">water==water_hoog</label>
+			<label kind="synchronisation" x="-272" y="-170">changedoor_high!</label>
+			<label kind="assignment" x="-272" y="-212">x:=0</label>
+		</transition>
+	</template>
+	<template>
+		<name>Stoplicht</name>
+		<location id="id10" x="0" y="0">
+			<name x="-42" y="-8">Red</name>
+		</location>
+		<location id="id11" x="170" y="0">
+			<name x="187" y="-8">Green</name>
+		</location>
+		<init ref="id10"/>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="42" y="34">changelight?</label>
+			<nail x="136" y="34"/>
+			<nail x="34" y="34"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<label kind="synchronisation" x="42" y="-59">changelight?</label>
+			<nail x="34" y="-34"/>
+			<nail x="136" y="-34"/>
+		</transition>
+	</template>
+	<template>
+		<name>Ship</name>
+		<declaration>clock x;</declaration>
+		<location id="id12" x="0" y="0">
+			<name x="25" y="-17">ship_can_move</name>
+			<label kind="invariant" x="25" y="0">x&lt;30</label>
+		</location>
+		<location id="id13" x="-102" y="0">
+			<name x="-246" y="-8">ship_cannot_move</name>
+		</location>
+		<init ref="id13"/>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="synchronisation" x="-93" y="-93">ship_moves!</label>
+			<nail x="0" y="-68"/>
+			<nail x="-102" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-102" y="17">ship_abletomove?</label>
+			<label kind="assignment" x="-68" y="0">x:=0</label>
+		</transition>
+	</template>
+	<template>
+		<name>Sensor</name>
+		<location id="id14" x="0" y="0">
+			<name x="-17" y="-34">Wait</name>
+		</location>
+		<init ref="id14"/>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id14"/>
+			<label kind="synchronisation" x="-110" y="-8">boot_hoog!</label>
+			<nail x="-34" y="-34"/>
+			<nail x="-34" y="34"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id14"/>
+			<label kind="synchronisation" x="42" y="-8">boot_laag!</label>
+			<nail x="34" y="-34"/>
+			<nail x="34" y="34"/>
+		</transition>
+	</template>
+	<template>
+		<name>Deuren</name>
+		<declaration>bool stoplicht_hoog=false;
+bool stoplicht_laag=false;
+clock x;
+</declaration>
+		<location id="id15" x="102" y="-68">
+			<name x="119" y="-85">hoog_open</name>
+		</location>
+		<location id="id16" x="-646" y="-68">
+			<name x="-739" y="-85">laag_open</name>
+		</location>
+		<location id="id17" x="-272" y="-68">
+			<name x="-289" y="-110">Closed</name>
+		</location>
+		<location id="id18" x="-102" y="-170">
+			<name x="-144" y="-204">Opening_hoog</name>
+			<label kind="invariant" x="-119" y="-221">x&lt;=10</label>
+		</location>
+		<location id="id19" x="-102" y="34">
+			<name x="-144" y="51">Closing_hoog</name>
+			<label kind="invariant" x="-119" y="68">x&lt;=10</label>
+		</location>
+		<location id="id20" x="-442" y="-170">
+			<name x="-484" y="-204">Closing_laag</name>
+			<label kind="invariant" x="-459" y="-221">x&lt;=10</label>
+		</location>
+		<location id="id21" x="-442" y="34">
+			<name x="-484" y="51">Opening_laag</name>
+			<label kind="invariant" x="-459" y="68">x&lt;=10</label>
+		</location>
+		<location id="id22" x="-578" y="-136">
+			<name x="-586" y="-127">stopgaplow2</name>
+			<urgent/>
+		</location>
+		<location id="id23" x="-578" y="0">
+			<name x="-588" y="-34">stopgaplow1</name>
+			<urgent/>
+		</location>
+		<location id="id24" x="34" y="0">
+			<name x="-42" y="-34">stopgaphigh2</name>
+			<urgent/>
+		</location>
+		<location id="id25" x="34" y="-136">
+			<name x="-42" y="-119">stopgaphigh1</name>
+			<urgent/>
+		</location>
+		<init ref="id17"/>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="68" y="-144">ship_abletomove!</label>
+			<label kind="assignment" x="68" y="-127">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id19"/>
+			<label kind="synchronisation" x="-51" y="17">changelight!</label>
+			<label kind="assignment" x="-51" y="34">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id24"/>
+			<label kind="synchronisation" x="76" y="-34">ship_moves?</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id25"/>
+			<label kind="guard" x="-34" y="-195">x&gt;9</label>
+			<label kind="synchronisation" x="-34" y="-178">changelight!</label>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id16"/>
+			<label kind="synchronisation" x="-722" y="-25">ship_abletomove!</label>
+			<label kind="assignment" x="-722" y="-8">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id23"/>
+			<label kind="guard" x="-561" y="17">x&gt;9</label>
+			<label kind="synchronisation" x="-561" y="34">changelight!</label>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id20"/>
+			<label kind="synchronisation" x="-561" y="-187">changelight!</label>
+			<label kind="assignment" x="-561" y="-170">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id22"/>
+			<label kind="synchronisation" x="-697" y="-127">ship_moves?</label>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id17"/>
+			<label kind="synchronisation" x="-255" y="8">changedoor_high!</label>
+			<label kind="assignment" x="-254" y="-17">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id21"/>
+			<label kind="synchronisation" x="-408" y="8">changedoor_low?</label>
+			<label kind="assignment" x="-323" y="-17">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id17"/>
+			<label kind="synchronisation" x="-391" y="-170">changedoor_low!</label>
+			<label kind="assignment" x="-306" y="-187">x:=0</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id18"/>
+			<label kind="synchronisation" x="-255" y="-170">changedoor_high?</label>
+			<label kind="assignment" x="-247" y="-187">x:=0</label>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+//Process = Template();
+// List one or more processes to be composed into a system.
+system Deuren,Sensor,Sluis,Ship,Stoplicht;
+    </system>
+	<queries>
+		<query>
+			<formula>Sluis.Draining--&gt;Deuren.laag_open</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Deuren.laag_open--&gt;Stoplicht.Green</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; (Ship.ship_can_move&amp;&amp;Stoplicht.Green)</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] not (Stoplicht.Green &amp;&amp; not (Deuren.hoog_open||Deuren.laag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.stopgaphigh2))</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Opening_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) &amp;&amp; (Sluis.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Sensor.Wait--&gt;Sensor.Wait</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Stoplicht.Green--&gt;Stoplicht.Green</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>(Deuren.hoog_open||Deuren.laag_open)--&gt;(Deuren.laag_open||Deuren.hoog_open)</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Deuren.laag_open--&gt;Deuren.Closed</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Deuren.hoog_open--&gt;Deuren.Closed</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Deuren.Closed--&gt;Stoplicht.Red</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Ship.ship_can_move--&gt;Deuren.Closed</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Deuren.hoog_open--&gt;Stoplicht.Green</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Ship.ship_can_move--&gt;Stoplicht.Green</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] not (Deuren.laag_open &amp;&amp; Deuren.hoog_open)</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>Ship.ship_can_move--&gt;Ship.ship_can_move</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] not (Deuren.laag_open &amp;&amp; Sluis.water != Sluis.water_laag)</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] not (Deuren.hoog_open &amp;&amp; Sluis.water != Sluis.water_hoog)</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>A[]not deadlock</formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>

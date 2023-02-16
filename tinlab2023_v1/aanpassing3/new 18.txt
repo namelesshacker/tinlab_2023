@@ -1,0 +1,1151 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage[dutch]{babel}
+\usepackage{tikz}
+
+\usepackage{xcolor}
+\usetikzlibrary{positioning,chains}
+
+\usepackage[colorlinks]{hyperref}
+
+\usepackage{cleveref}
+\begin{document}
+\sffamily
+\begin{titlepage}
+  \centering
+    \vfill
+    {\bfseries\Huge
+      Verslag Tinlab Advanced Algorithms Security \\
+        \vskip2cm
+      }
+      {\bfseries\Large
+        Galvin Bartes\\
+      }
+      {
+        \bfseries\normalsize
+        0799967\\
+        \vskip1cm
+        \today\\
+    }    
+    \vfill
+    \includegraphics[width=4cm]{logohr.png} % also works with logo.pdf
+    \vfill
+    \vfill
+\end{titlepage}
+
+
+
+\newpage
+\section{Samenvatting}
+Zie hier een referentie naar Royce~\~cite {royce1987managing} en nog een naar Clarke~\~cite {modelchecking}\ldots  ~\~cite {locke_2020}
+\newpage
+\tableofcontents
+
+\newpage
+\section{Introductie}
+mklklmklmklmklmkl
+
+
+\newpage
+\section{Methodologie}
+
+
+\tikzset{
+    mynode/.style={
+        draw, rectangle, align=center, text width=4cm, font=\small, inner sep=3ex},
+    mylabel/.style={
+        draw, rectangle, align=center, rounded corners, font=\small\bf, inner sep=2ex, 
+        fill=cyan!30, minimum height=3.8cm},
+    arrow/.style={
+        very thick,->,>=stealth}
+}
+
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    start chain=1 going below,
+    every join/.style=arrow,
+    ]
+    % the chain in the center going below
+    \coordinate[on chain=1] (tc);
+    \node[mynode, on chain=1] (n2)
+        {\# of records after duplicates removed};
+    \node[mynode, join, on chain=1] (n3)
+        {\# of records screened};
+    \node[mynode, join, on chain=1] (n4)
+        {\# of full-text articles accessed for eligbility};
+    \node[mynode, join, on chain=1] (n5)
+        {\# of studies included in qualitative synthesis};
+    \node[mynode, join, on chain=1] (n6)
+        {\# of studies included in quantitative sysntesis\\ (meta-analysis)};
+
+    % the branches to the right
+    \begin{scope}[start chain=going right]
+        \chainin (n3);
+        \node[mynode, join, on chain]
+            {\# of records excluded};
+        \chainin (n4);
+        \node[mynode, join, on chain]
+            {\# of full-text articles excluded, with reasons};
+    \end{scope}
+
+    % the nodes at the top  
+    \node[mynode, left=1cm of tc, anchor=south east] (n1l)
+        {\# of records is identified through database searching};
+    \node[mynode, right=1cm of tc, anchor=south west] (n1r) 
+        {\# of additional records indentified\\ through other sources};
+
+    \coordinate (n2nl) at ([xshift=-2cm]n2.north);
+    \coordinate (n2nr) at ([xshift= 2cm]n2.north);
+    \draw[arrow] (n1l.south -| n2nl) -- (n2nl);
+    \draw[arrow] (n1r.south -| n2nr) -- (n2nr);
+
+    % the labels on the left
+    \begin{scope}[start chain=going below, xshift=-7cm, node distance=.8cm]
+        \node[mylabel, on chain] {\rotatebox{90}{Identification}};
+        \node[mylabel, on chain] {\rotatebox{90}{Screening}};
+        \node[mylabel, on chain] {\rotatebox{90}{Eligibility}};
+        \node[mylabel, on chain] {\rotatebox{90}{Included}};
+    \end{scope}
+
+    % the title
+    \node[above=2.5cm of tc, font=\bf] {Sytematisch literatuur overzicht};
+\end{tikzpicture}
+
+\newpage
+\section{Theoretisch kader}
+
+
+\subsection{Begrippen en relevante artikelen}
+
+\subsection{Inleiding}
+\subsection{specificaties}
+Een sluis bestuurt zichzelf
+Een sluis houdt rekening emt het waternieveau
+Een sluis bestuurt de sluisdeuren automoon met behulp van een sensnor en registratiesysteem
+De boten die binnenkomen worden geregistreerd en uitgescchreven wanneer deze vertrekken.
+
+\subsubsection{Functionaliteit} eisen die u stelt aan de software om de processen binnen uw organisatie goed te ondersteunen. De business bepaalt bijvoorbeeld of er een digitaal klantdossier komt en welke gegevens daarin worden opgenomen.
+\subsubsection{Onderhoudbaarheid} hoe makkelijk is het om wijzigingen in uw systemen door te voeren? Hoe makkelijk is het om een extra gegeven in het elektronisch klantdossier op te nemen?
+\subsubsection{Portabiliteit} hoe makkelijk moet het zijn om software van bijvoorbeeld de testomgeving naar de productieomgeving over te zetten?
+Betrouwbaarheid: onder welke omstandigheden moet het prestatieniveau gehandhaafd blijven? Hoe vaak mag ‘het systeem’ eruit liggen? En hoe lang mag het maximaal duren voordat het systeem weer operationeel is?
+\subsubsection{Gebruikersvriendelijkheid} welke eisen stellen we aan de hardware en software om het de gebruikers gemakkelijk te maken? Is het makkelijk om wijzigingen in het klantdossier door te voeren? Worden de gegevens op een logische manier op het computerscherm gepresenteerd?
+\subsubsection{Efficiency} Wat is de relatie tussen de investeringen die u doet en het prestatieniveau van de hardware en software?
+Blijft de sluis aan of verkeert het systeem in slaapstand totdat er een boot aankomt.
+Houdt dit systeem rekening met de snelheid van het prces als er wachtenden zijn.
+Gaat de sluis dan en alleen dan de deuren openen als de boot in de sluis ich heeft opgemaakt om te vertrekken
+\subsubsection{Veiligheid} Bj dit model gaan we uit van veiligheid voor sluis welke te modelleren is in een model. Voorbeelden daarvan zijn de maximale hoogte van de kade als constante waarde met respect voor de kade. Een sensor voorkomt dat een schip tegen een sluis kan varen, of dt een schip in de sluis met een te hoge waterstand de kade kan raken. Er bestaat ook een digitaal aspect. In  eerder onderzoek is naar voren gekomen dat sluizen soms bestuurd worden via SCADA systemen. Deze verourderde en  complrxe systemen zijn vanwege de protocollen en nfrasturcuutr kwetsbaar voor indringers via het net. In deze studie wordt verder niet dierper ingegaan op SCADAsystemen.
+\subsection{Het vier variabelen model}
+\subsubsection{Monitored variabelen}
+\subsubsection{Controlled variabelen}
+\subsubsection{Input variabelen}
+\subsubsection{Output variabelen}
+\subsection{verschil system vs softwareengineering}
+\subsection{Requirements en specificaties}
+\subsection{Soorten requirements}
+
+\subsection{Requirement elicitation techniques}
+\begin{list}{•}{Lijst van voorbeelden}
+\item Intervieews 
+
+\item Brainstorming sessions 
+
+\item Facilitated applicationspecification technique 
+
+\item Quality function deplyment 
+
+\item Use case approach 
+
+\item Document analysis 
+
+\item Observation 
+
+\item Prototyping 
+
+\item Workshop 
+
+\item Joint applicationdevelopment 
+
+\item Reverse engineering 
+
+\item Survey/ Questionairre 
+
+\item Focus groups 
+
+\item Interface analysis 
+
+\item Stakeholder analysis 
+
+\item Delphi technique 
+
+\item Nominal group T 
+
+\item Protocol analysis 
+
+\item Card sorting laddering 
+
+\item Open ended-interview 
+\end{list}
+\subsection{Functionele en niet-functionele eisen}
+
+\subsection{MODE CONFUSION }
+Mode confusion tredd op als gepbserveerd gedrag van een technisch systeem niet past in het gedragspatroon dat de gebruiker in zijn beeldvorming heeft  en ook niet met voorstellingsvermogen kan bevatten.
+\subsection{Wat is automatiseringsparadox}
+
+
+ 
+\subsection{Wat is een model}
+\subsubsection{Conceptueel model}
+Om duding te geven aan het grote plaatsje
+\subsubsection{in vivo model}
+Levende organismendie in de werkelijkheid of in een laboriatrum vergelijkbare eigenschappen bezitten als bestaande fenomenen in de werkeljkheid. Deze objecten zijn vergelijkbaar met werkelijkobjecten en geven vergelijkbare resultaten
+\subsubsection{in vitro model}
+Een model dat dezelfde condities biedt  buiten het onderzoeksobject om, maar is voldoende vergelijkbaar om vergelijkbare processen te simuleren.
+Zowel invivo als in vitro modellen zijn beperkt door de materialen die beschikbaar ijn voor onderzoek en de arbeidsomstandigheden waaronder ze worden gebruikt. Desondanks zijn het geen werkelijke natuurlijke modellen dus vvoor een onderzoek kan boedt het geen volledige uitsluitsel.
+\subsubsection{In silicio model}
+Ee veelzijdig object. Het verwijst naar simulaties die gebruik maken van wiskundige modellen in computer,een zijn dus afhankelijk van silicone chips. In silico model analyseert  wiskundige vergelijkingen om resultaten te geven onder bepaalde omstandigheden. Deze vergelijkingen vertellen iets over de correlatie van verschillende objecten van een wetenschappelijk onderzoek. OM deze modellen te kunnen gebruiken is het noodzakelijk te omschrijven waat de fenomenen in kwestie van onderzoek zijn door middel van getallen. Kwanttitatieve relaties kunnen worden geintegreerd in het model en waar deze relaties complex zijn is een computer noodzakelijk deze op telossen. Vaak worden hierbij verschillende mechanismen gebruikt. Als je bijvoorbeeld de prijsontwikkeling van een marsreep in kaart wilt brengen.
+\subsubsection{in simulacra model}
+
+\subsection{World and machine samenvatting}
+Waarom zijn wij engineers? Omdat we bruikbare apparaten willen laten functioneren in de wereld waarin we leven. Dat doen we door de machine te beschrijven en deze beschrijving van instructies bieden we aan onze computer opdat deze als de attribuut en gedragingen uitleest zoals wij die hebben omschreven. Dit alles op basis van theoretische funderingen en praktisch inzicht. 
+
+Het doel van een machine is om te worden geinstalleerd en te worden gebruikt. De eisen die we stellen zitten in de omgeving en in de wereld en de machine is slechts de oplossing die we bedenken om aan een eis te voldoen. 
+
+De relatie machine-wereld world gecategoriseerd in: 
+
+Het modelleer aspect: waar een machine de wereld simuleert 
+
+Het interface aspect: waar er fysieke interactie is tussen de machine en de wereld 
+
+Het engineering aspect: waar de machine zich gedraagt als een controlemotor gebruikmakend van de gedragingen van de omgeving in de wereld 
+
+Het probleem aspect: waar de omgeving in de wereld en de omvang van het probleem invloed heeft op de machine en de oplossing 
+
+Het modelleer  of simulatie aspect over een deel van de wereld. Er zijn data,object en proces modellen. Het doel van een model is toegang te geven tot informatie over die wereld. Door het opvangen van statische weergaven en gebeurtenissen kunnen wij deze gebruiken van opgeslagen informatie die we kunnen hergebruiken. Een model kan bruikbare informatie bevatten omdat zowel het model als de wereld warin het model zich bevind gemeenschappelijke omschrijvingen hebben die waar zijn voor zwel het model als voor de wereld. Daarbij moet gesteld worden dat de interpretatie van een model verschilt met een interpretatie van de wereld. 
+
+Omdat zowel de wereld als de machine fysieke realiteiten zijn an niet slechts abstracties, zijn de gemeenschappelijke beschrijvingen slechts een deel van de werkelijheid van beide objecten. For elk object zijn er meerdere beschrijvingen. Toch maken niet alle omschrijvingen deel uit van het getoonde reportoire. Zoals niet alle eigenschappen van een boek; meer dan een auteur, pseudoniemen, een onderdeel van een reeks, een gerevisiteerde versie, worden gereflecteerd in een database.  
+
+Het interface aspect. Een machine kan een probleem in de wereld oplossen als de wereld en de machine phenomena kunnen uitwisselen. Maar de participatie is niet symmetrisch: een status kan als phenomena worden uitgewisseld maar slechts een partij kan er invloed op uitoefenen maar beiden kunnen dezelfde status signaleren. 
+
+Het engineering aspect gaat over requirements, specificaties, en programma’s. Requirements hebben betrekking op phenomena in de wereld. Een programma heeft alleen betrekking tot de machinale phenomena. Het doel van programma’s is om eigenschappen en gedragingen te omschrijven van de machine ten behoeve van de gebruiker. Tussen de requirements en de programma’s zitten de specificaties. Omdat programma’s dan wel beschrijvingen zijn van een gewenste machine, maar dat moeten beschrijvingen zijn van de  machines  die de computers kunnen uitvoeren zodanig dat de computer deze beschrijvingen ook zo kan interpreteren. De engineer moet  de eigenschappen van de wereld kennen en begrijpen en deze eigenschappen manipuleren en laten werken met als doel het dienen van het systeem. 
+
+Het probleem aspect. Het onderscheid tussen specificatie en implementatie. Het probleem zit in de relatie van de machine en de wereld. De machine brengt de oplossing maar het probleem zit in de wereld. Een vertoog over een probleem moet dus gaan over de wereld en over de opvatting die de gebruiker heeft in de wereld. Omdat de wereld veelzijdig is moeten we ervan uit gaan dat er verschillende soorten problemen zijn. Een realistisch probleem wordt dus niet opgelost met een simpele hiërarchische structurele aanpak en een homogene decompositie maar met een paralleele structurele oplossing waar beide kanten van het probleem worden opgelost. 
+
+ 
+
+Ontkenningen 
+
+We hebben als engineers de taak om een machine te bouwen aan de hand van de specificaties opgeleverd door de opdrachtgever. Een engineer heeft niet als taak de fitheid voor een doeleind te onderzoeken, maar wel de haalbaarheid naar een doeleind aan de hand van kennis, tijd, resources, budget en ontwikkelmethodiek. Daaruit komt naar voren dat een engineer zich richt op: elicitation (schetsen van een requirement), description (omschrijving) en analyse van de requirements waaraan het systeem moet voldoen. Vertaalt naar de volgende vragen: Wat is precies de klantwens?  Wat is de precieze omschrijving van het probleem? Voor welke doelen wordt het systeem gebouwd? Welke functies moet het systeem hebben? 
+
+Denial by hacking: obsessief bezig zijn met een systeem omdat het de gebruiker veel macht geeft. Een uitgebreidheid van een systeem zorgt er soms voor dat mensen niet meer geprikkeld zijn na te denken over probleemstellingen, domein beschrijvingen en analyse. 
+
+Denial by a abstraction. Wiskundige benaderingen van werkelijke problemen is  een belangrijke intellectuele strategie om problemen te formuleren. Een software ontwikkelaar moet een probleem kunnen omschrijven in zo min mogelijk woorden, maar de complexiteit ligt in de oplossing. 
+
+Denial by vagueness. De vaagheid van een omschrijving is terug te vinden in: 
+
+Von Neumann’s principe 
+
+Principe van reductionisme 
+
+Shanley principe 
+
+Montaingnes’s principe 
+
+Von Neumand principe 
+
+Voor een vocabulair  moet een grondslag zijn ontwikkeld waarmee gesproken kan worden over de wereld en de machine. Belangrijke phenomenen moeten geindtifieerd worden, door middel van een grondregel  of ‘herkenningsregel’ moet een fenomeen worden herkend, en vervolgens het fenomeen een formele term geven die gebruikt wordt als duiding van een bepaalde omschrijving. Dan moet voor de formele term een symbool gevonden worden. Samen vormen de grondregel en het symbool een designatie. 
+
+Principe van reductionisme 
+
+Simpelweg het openbreken van termen met een weerlegbare definitie totdat alle begrippen die worden gebruikt om iets te duiden  niet meer te herconstrueren zijn in hun definitie. 
+
+Shanley principe 
+
+Er bestaan volgens dit principe geen scherpe verdelingen in de wereld zoals wetenschappers soms denken. Een strenge opvatting over de wereld waarin een individu geclassificeerd kan worden als een onsamenhangend geheel. Maar dat is slechts een opname van een beeld. De werkelijkheid staat soms toe dat een elementair individueel object in verschillende classificaties verschillende getypeerd kan worden in een andere setting of view. 
+
+Montaignes principe 
+
+De incative mood; gaat over wat we beweren waar te zijn. 
+
+De optitative mood; gaat over wat we willen dat waar is 
+\subsection{SIX Variable model}
+Optitatieve statements omschrijven de omgeving zoals we het willen zien vanwege de machine. 
+
+Indicatieve statements omschrijven de omgeving zoals deze is los van de machine. 
+
+Een requirement is een optitatief statement omdat ten doel heeft om de klantwens uit te drukken in een softwareontwikkel project. 
+
+Domein kennis bestaut uit indicatieve uitspraken die vanuit het oogpunt van software ontwikkeling relevant zijn. 
+
+Een specificatie is een optitatief statement met als doel direct implementeerbaar te zijn en ter verondersteuning van het natreven vande requirements. 
+
+Drie verschillende type domeinkennis: domein eigenschappen, domein hypothesen, en verwachtingen. 
+
+Domein eingenschappen  zijn beschrijvende statementsover een omgeving en zijn feiten.Domein hypotheses  zijn ook beschrijvende uitspraken over een omgeving, maar zijn aannames. 
+
+Verwachtingen zijn ook aannames, maar dat zijn voorschrijvende uitspraken die behaald worden door actoren als personen, sensoren en actuators. 
+
+Het verschil tussen essentie en incarnatie van een systeem. Een essentie bevestigd de  mogelijkheden dat een systeem moet hebben om te voldoen aan de eise, ongeacht hoe het systeem is geimlementeerd. De incarnatie bevestigd of omvat de mogelijjkheden die te maken hebben met details omtrent implementatie. Een heuristiek voor het identificeren van de essentie van een systeem is de aanname van perfecte technologie, ofwel de aanname dat de technologie binnen een systeem perfect is. Om essentie te indentificeren nemen we aan dat technologie buiten de machine om perfect is. Zouden we incarnatie overwegen dan wordt de aanname van perfecte machin-externe technologie opgeheven. 
+
+Voor de documentatie van contextuele beslissingen en opties/alternatieven wordt de OVM (Orthogonale variability Model) gebruikt. Oorspronkelik was deze methode bedoeld om de variatiepunten en de variant van een productlijn samen met hun variabele afhankelijkheden( mandatory, optional, alternative)  en beperkende afhankelijkheden(requires en excludes)te omvatten. De variant kan worden gerelateerd aan een ontwikkelartefact zoals een requirement of een diagram als een zogenoemde artefact dependency. Een artefact is dan gedefinieerd als variabele. Voor de documentatie van de keuzen die we maken is een selectie model gemaakt. We gebruiken het OVM voor de documentatie van contextuele beslissingen die moeten worden genomen, opties en alternatieven die selecteerbaar zijn, en de afhankelijkheden tussen hen. met behulp van de artefact dependency relateren we de alternatieven aan variabele elementen van de AND/OR graaf. Voor documentatie van de keuzes gebruiken we ook een selectiemodel. De kracht van het OVM model en de voornaamste reden deze methode te gebruiken is dat deze is in staat is om een variant te relateren aan een geheel model, een model element, of een selectie van een model. 
+
+AND/OR graaf wordt gebruikt voor de documentatie van refinement/decompositie of requirements. De AND/OR graaf is een directe, asyclische graaf met nodes knopen die requirements voorstellen en lijnen die AND-decomposities voorstellen en OR-decompositiestussen de requirements. Een decompositie van een requirement in een set van subrequirements R1,….Rn is een OR-decompositie iff die dusdanig aan een subrequirement voldoet en daarmee voldoet aan requirement R. Wat moet worden gedocumenteerd met betrekkig tot de AND/OR graaf is de abeargumentering waarom elkeAND/OR-decomopositie  voldoende is. 
+\subsubsection{Conceptueel model}
+
+
+
+\subsection{Requirements}
+
+
+System requirement:
+uitspraak over wereld fenomenen (gedeeld of niet) of doelen
+die bereikt moeten worden.
+met enige regelmaat informeel, niet precies geformuleerd.
+Software requirement/specicatie:
+uitspraak over gedeelde fenomenen of doelen die de machine
+moet bereiken middels de onderdelen waar die machine uit
+bestaat of middels de fenomenen waar de machine controle
+over heeft.
+doorgaans preciezer, meetbaar, exact geformuleerd.
+
+
+Systemen gaan een zekere interactie aan met hun omgeving:
+Sensoren: meten fenomenen uit de omgeving (temperatuur,
+druk, licht, geluid, etc.)
+actuatoren: veranderen iets in de omgeving (mechanische,
+electrisch, pneumatisch, etc.)
+Software:
+Kan niet direct communiceren met de buitenwereld.
+Snapt derhalve niets van de buitenwereld.
+Kan alleen maar bestaan in en communiceren met het
+systeem.
+
+
+
+
+\subsection{specificaties}
+
+\subsection{Het vier variabelen model}
+\subsubsection{Monitored variabelen}
+\subsubsection{Controlled variabelen}
+\subsubsection{Input variabelen}
+\subsubsection{Output variabelen}
+
+
+\paragraph{4 variabelen model}
+Systemen (met daarin software) en de bijbehorende vier variabelen:
+\subparagraph{Monitored-variabelen}: door sensoren gekwanticeerdefenomenen uit de omgeving
+\subparagraph{Controlled-variabelen}: door actuatoren bestuurde fenomenen uit de omgeving
+
+
+
+
+\newpage
+
+\subsection{Onderzoek naar verschillende rampen}
+
+\subsection{Inleiding}
+Zie hier een referentie naar Royce~\~cite {royce1987managing} en nog een naar Clarke~\~cite {modelchecking}\ldots 
+
+
+
+
+\subsection{Rampen}
+
+
+
+
+
+
+\subsubsection{Tanjin explosie in China}
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+  %Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
+
+\paragraph{Situatie}
+Augustus 2015, 165 doden bij een explosie in een warenhous.
+
+\subparagraph{Datum en plaats}
+
+\subparagraph{oorzaak}
+De directe oorzaak was spontane ontvlamming van nitrocellulose  opgeslagen in een container door oververhitting. Door de hitte van die zomer waren de waterverdelers verdampt volgens de onderzoekers. De ontstane  brand sloeg over naar een opslag van ammoniumnitraat (kunstmest).
+
+Een ander verhaal is dat bij het blussen vn de brand bepaalde chemicalien zoals Calcium carbide in contact zijn gekomen met het bluswater. Calcium carbide reageert op water door het aanmaken van het zeer explosieve acetylene.
+
+
+
+\subparagraph{Veiligheid}
+	
+	
+     
+
+	
+\begin{center}
+  \begin{tabular}{ l | c || r | }
+    \hline
+    1 & 48 tonnes &  Nitrocellulose \\ \hline
+    2 & 800 tonnes &  Ammonium nitrate \\ \hline
+    3 & 2,173 tonnes  &  flammable liquids, flammable solids, substances\\   % that emit flammable gases when contact with water and oxidising substances 
+4 & 1,831 tonnes  &  Toxic and corrosive substances,  \\  %and other hazardous chemicals
+    \hline
+  \end{tabular}
+\end{center}
+
+
+About 700 tonnes of sodium cyanide was present at the site. It is soluble in water and, when dissolved or burned, it releases the highly poisonous gas hydrogen cyanide. Ongeveer  700 ton aan sodium cyanide was opgeslagen op de plek waar de rampr gebeurde. Heet materiaal is oplosbaar in water, maar bij damp of bij brand komen er giftige stoffen vrij zoals hydogen cyanide.
+
+Authorities on Monday confirmed that three waste water discharge monitoring stations within the evacuated area saw excessive levels of cyanide, with one station recording a level 27.4 times the normal limit, reported People's Daily. Autoriteiten bevestigden dat drie watermonitorinstallaties butenproportionele hoeveelheden cyanide aantronffen, waarbij een enkel station tot 27,4 keer de normale toegestane waarde had gemeten.
+
+But authorities have insisted that the pollutants are contained and not at risk of spreading beyond the evacuated area. Toch hielden de autoriteiten vast dat de vervuiling onder controle was en de omgeving niet verder vervuilde.
+
+Een niet  officiele lezing  was dat er sprake as van corruptie, politieke inmengingvan de communistische Partij met Rui Hai International Logistics ( verantwoordelijk voor de opslag van de chemicalien) waardoor Rui Hai de volledige naleving van voverheidsregulering naast zich neer kon leggen.
+
+Daarnaast waren er ook geen maatschappelijke organisaties die de inwoners van de regio konden vertegenwoordigen en tegenwicht konden bieden tegen het bedrijfsleven of hun beklag koden doen bij de autoriteiten.
+
+Daarnaast maakten mensen  weinig gebruik van de gellegenheid om niet te  publieke opinie tegen zich te krijgen.
+
+Het tekort aan democratie zorgt er ook voor dat politiek leidershchap in Tianjin neit weggestuurd kan worden om relevante veiligheids en gezondheidsregulering in te voeren en te  handhaven.
+
+Volgens critici van het chinese politieke bestuur is het een democratisch tekort waardoor belangrijke waarden niet worden getolereerd: toezicht en deelname.
+
+Informatievoorziening niet op orde voor de directe omwoenden waardoor publieke feedback onderbelicht bleef.
+
+\paragraph{hardware/software/gebruik}
+Voor de controle op nitraat en ammonium in water zijn verschillende sensoren, sondes en meters  te koop.
+\paragraph{4-variabelen-model}
+
+Een sensor om bijvoorbeeld de concentratie  nitraat in water te bepalen kan met een Nitraat ionselectieve elektrode ( ISE) stekker. Nitrate Ion-Selective Electrod
+Deze bestaat ui een zilveren chloride geleider is PVC omhulsel. De inwendige geleider is gescheiden van het medium door een polymer membraan. Deze heeft interactie met de nitraatinonen.
+
+
+\url{https://chinadialogue.net/en/pollution/9188-back-to-the-blast-zone-one-year-after-the-tianjin-explosion/}
+\~cite {chinadialogue}
+\url{https://toxicnews.org/2015/11/04/a-reflection-on-the-tianjin-explosions/}
+\~cite {toxicnewsreflection}
+\url{https://www.bbc.com/news/world-asia-china-35506311}
+\~cite {worldasia35506311}
+\url{https://www.em-solutions.co.uk/wp-content/uploads/Nitratax-sc-brochure.pdf}
+\~cite {nitratax}
+\url{https://nl.wikipedia.org/wiki/Elektrode}
+\~cite {elektrode}
+\url{https://www.ysi.com/parameters/nitrate}
+\~cite {nitrate}
+\url{https://www.aquanederland.nl/products/abb-analyzers-voor-continue-meting-voor-ammonium-nitraat-fosfaat-e-d/}
+\~cite {abbanalyse}
+\url{https://www.ysi.com/ysi-blog/water-blogged-blog/2018/01/calibration-and-measurement-for-nitrate-ises-in-the-lab#:~:text=The%20nitrate%20ISE%20is%20a,independent%20of%20the%20sample%20composition.}
+\~cite {kallibratiemeting}
+\url{https://www.ysi.com/File%20Library/Documents/Guides/5-Questions-to-Ask-Selecting-a-UV-or-UV-Vis-Sensor.pdf}
+\~cite {quest_uv_sensor}
+\url{https://www.ysi.com/File%20Library/Documents/Manuals/ba76000-VARiON-Plus-700-IQ-YSI.pdf}
+\~cite {libmanual}
+\url{https://www.verantwoordeveehouderij.nl/show/Optische-sensor-TNO-meet-beschikbare-nitraat-in-de-bodem-1.htm#:~:text=mineralisatie%20van%20stikstof.-,Nitraatsensor,bodemvocht%20door%20middel%20van%20lichtreflectie.}
+\~cite {nitraatsensor}
+\url{https://www.verantwoordeveehouderij.nl/show/Test-sensor-voor-meten-nitraat-in-de-bodem.htm}
+\~cite {testsenor}
+\url{https://www.nl.endress.com/nl/flowmeting-niveaumeting-drukmeting-temperatuurmeting-analysemeting/Vloeistof-analyse-productoverzicht/Nutri%C3%ABntenanalyzers-en-sensoren}
+\~cite {flowmeting}
+Enkele risico die uit onderzoeken naar voren komen zijn:
+\begin{enumerate}
+\item De opslag van gevaarlijke stoffen moet minimaal 1000 meter zijn verwijderd van publieke gebouwn, maar de explosie vond plaats binnen 600 meter
+\item Illegal storage of ammonium nitrate at harbour Illegale opslaa va ammonium nitraat in de haven
+\item Severe overcapacity of throughput and excessive storage volumes Overcapaciteit van doorvoer en opslag van exessive volumes.
+\item Illegal mixing of storage and stacking of hazardous goods over the stipulated height. De combinatie van opslag en opstapeling van de stoffen boven hun gewicht.
+\item Embarking on illegal unpacking, transportation, loading and unloading and other operations. Het illegaal openhalen van de verpakking, transporteren, oveerladen en andere operaties.
+\item Failure of registration and filing of major hazardous sources as required. Fouten bij de registratie en
+\item Medewerkers waren niet voorbereid om met gevaarlijke stoffen te behandelen en gevaarlijke situaties te herkennen
+\item Er moet een crisis en risicoplan/ managementteam zijn
+\item Of het bedrjf heeft documenten vervalst of het audit bedrijf dat controleert of de chemische stoffen heeft een fout rapport opgeleverd.
+\end{enumerate}
+\paragraph{Requirements}
+Volgensactiegroep Greenpeace schoot de chinese overheid tekort in  de ontwikkeling van een systeem dat toezicht hield op de productie, gebruik, transport, opslag en  verwerking van dergelijke chemicalien.
+
+De duitse IFA heeft op de website een overzocht van enkele maatregelen die in acht moeten worden genomen:
+
+
+\subparagraph{opslagvereisten}
+\begin{description}
+\item Gebruik geen voedselcontainers
+\item De containers moeten permanent worden opgeslagen in de originele verpakking
+\item Sla het product op in een gekoelde omgeving
+\item Bescherm het product tegen oververhitting
+\begin{enumerate}
+\item Specifiek  het product mag neit opgeslagen worden samen met andere sbustantief van andere opslagcategorie.
+\end{enumerate}
+\end{description}
+\subparagraph{Technische eisen voor brand en explosiegevaar}
+\begin{description}
+\item De substantie is exlosief
+\item Houdt het product op afstand van ontstekingsbronnen zoals elektrische apparaten,  open vlammen, warmte bronnen, vonken
+\item Let op rookontwikkeling
+\item het is verboden om lucifers of aanstekers of emtalen objecten mee te nemen in ruimte waar explosieve substances  worden opgeslagen
+  %Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
+\~cite {guvlang}
+zie \url{https://gestis.dguv.de/data?name=496705&lang=en}
+
+\subsubsection{ramp 737 max}
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+  %Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+faa report on 737 max
+737 max deadly crash technical error
+\~cite {mcasfail}
+\url{https://www.theverge.com/2019/5/2/18518176/boeing-737-max-crash-problems-human-error-mcas-faa}
+
+\url{https://aviationvoice.com/ethiopian-boeing-737-max-crash-caused-by-design-flaws-only-202003101726/}
+\~cite {aviationvoice_crash_ethio}
+\url{https://www.reuters.com/article/us-boeing-737max-idUSKBN20T2EL#:~:text=The%20preliminary%20investigative%20findings%20from,to%20identify%20key%20safety%20problems.}
+\~cite {boeing_737problems}
+\url{https://www.faa.gov/news/updates/?newsId=93206}
+\~cite {faaupdate}
+
+executive summary
+11 final observation
+\url{https://transportation.house.gov/committee-activity/boeing-737-max-investigation}
+\~cite {737maxinvest}
+
+Boeing benaderde FAA test piloten om uitkomsten in de recertificeringsfase aan te passen
+sommige tests werden uitgevoerd in een simulatie die niet was pgezet voor de 737 maxTijdens het ptestproces gig er ook het een en ander mis.
+Sommige onderzoeksers van het FAA vertrokken vroegtijdig, anderen werd gevraag om in een niet relevante testomgeving een simulatie uit te voeren.
+Het beleid van de FAA benadeelde lokkenluiders
+Volgens Boeing zijn alle acties die door het bedrijf zijn ondernomen niet ten nadele geweest van de veiligheid van de passagiers, de bemanning of het toestel.
+Volgens Boeing lag er veel druk op het ontwikkelingsproces vanwege de positie van de concurrent.
+Een nieuwe AOA sensor geintegreerd in de fuselage aan beide kanten van het vliegtui levert input voor de flight control computer, de MCAS. aanpassingen aan de motoren is er een software voor non-pilot-commanded flight control movements geintegreerd om de neus van het vliegtuig een automatisch meer naar bedeneden te richten.
+
+Een dag voor de crash van de Lion Air Flight 610 heeft een mechanicus de sensor aan de linkerzijde van het toestel verwijderd en vervangen met een gebrikte sensor voor een ander toestel. Tijdens de vlucht naar Jakarta werd de MCAS geactiveerd door verkeerde  sensorrwaarden van geinstalleerde sensor. De fout werd in dit geval opgemerkt door een derde piloot. Deze piloot instrueerde de twee actieve poloen waardoor zij de controle over het toestel konden overnemen. Eenmaal aangekomen werden de waarschuwingen in het logsysteem bekenen die gemeld wereden door eht systeem tijdens de vlucht. Hij heeft niet aan de bemannign gereapporteerd welke switch uitegeschakeld moest worden om ongewenst bijsturen van de automatische piloot uit te ztten.
+
+De volgende dag leverde de AOA sensor inaccurate informatie waardoor MCAS werd getriggered door de fligh control compuer . Omdat  het bemanningslid die de logbestanden had ingekeken de foutafhandeling niet had gedocumenteerd had de crew niet de belangrijke situatie om het technisch mankement te verhelpen.
+
+Fautieve AOA data die onjuit het MCAS systeem heeft getriggerd bleek herhaaldelijk een actieve kritische rol in beide MAX crashes.
+
+De Ethiopische autoriteten vwisselden de instructiewerkzaamheden  met daarin foto's voor de mechanicus om de AOA sensor te vervangen. Het bewijststuk werd daarmee als ongeldig bestempeld.
+Volgens een klokkenluider zijn onderhoudsdocumenten de dag na het ongeluk aangepast door personeel van Ethiopian Airline.
+
+Ondanks de geruchten dat de Etioopian Airlines onervaren piloten inhuurd waren de betrokkenen enkele met meer dan 4000 vlieguren Echter de 29-jarige pillot  had geen training gekregen in een 737- MAX simulator ondanks zijn 55000 vlieguren. De minst ervaren bemanningslid had 207 vlieguren in Boeing 737 vliegtuigen opgedaan  in de drie maanden voor de fata kraag.
+
+ Deze wijzigign werd ingevoerd zoder daarvan de autoriteiten ein consumente daarvan op de hoogte te stellen 
+
+Dit bleek ook bij de anayse van de crash. Een dag voor vertrek werden de sensor aan de  linkerkant van het toestel verwijderd. Piloten hadden geen kennis en ook geeen inzicht en geen invloed op de machine die zich tegen hen keerde.
+
+\url{https://www.theverge.com/2020/12/18/22189609/faa-boeing-737-max-senate-report-coverup-tests-whistleblowers}
+\~cite {faaupdate}
+\url{https://www.reuters.com/article/us-boeing-737max/u-s-audit-report-cites-weaknesses-in-faa-certification-of-boeing-737-max-idUSKBN2AO2P6}
+\~cite {reuters_boeing}
+
+
+
+\subsubsection{Tesla crash}
+
+
+
+
+
+
+
+
+
+\paragraph{Situatie}
+Meerdere aanrijdingen
+
+\subparagraph{Datum en plaats}
+23 maart 2018 Californie
+2016 en 2020
+
+\subparagraph{oorzaak}
+Fouten in de software enkeuzes in de hardware
+
+
+\paragraph{hardware/software/gebruik}
+
+
+\subparagraph{Input-variabelen}: data die de software als input gebruikt
+
+
+Volgens Tesla, is er data verzameld over 100 miljoen kilometers met hun autopilot software. Deze data wordt ogesagen in de cloud voor het genereren van wegenaartenv oor autonoom rijdende auto waarvan Tesla claimt 100 keer meer accurat te zijn dan enig ander navigatiesysteem.
+
+\url{https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/}
+\~cite {tesla_big_data}
+
+Path planning/driving policy
+\url{https://towardsdatascience.com/teslas-deep-learning-at-scale-7eed85b235d3}
+\~cite {tesla_deep}
+
+
+Using a variety of optimizations, Iandola and his co-authors demonstrated that they could achieve AlexNet-like performance while reducing the number of parameters by a factor of 50. That reduced the physical size of a trained AlexNet network from 240MB to less than 5MB. Using additional compression techniques developed by other researchers, including switching from 32-bit to 8-bit parameters, they were able to reduce the size of their model by another factor of 10—producing convolutional neural networks with AlexNet-like performance that were less than half a megabyte.
+
+\url{https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisition-could-accelerate-autopilot-development/}
+\~cite {tesla_acc}
+
+\url{https://bernardmarr.com/default.asp?contentID=1251}
+\~cite {1251}
+
+
+
+\subparagraph{Output-variabelen}: data die de software levert als output
+
+This network includes a CNN and an LSTM network, which uses the camera as input.
+The CNN is used to process the camera images frame by frame. The features of the driving scene are
+extracted by the CNN and then passed into a stack of LSTM layers. The temporal dependence of these
+features can be learned by the LSTM network. At last, the steering angle prediction is carried out by
+the output layer.
+
+Het gebruik van CNN en LSTM waarbij input van de camera wordt gebruikt. Het CNN algoritme wordt gebruikt om de camerabeelden per frame te processen. De features van de scene worden eruit gehaald met CNN en op de stack gezet van de LSTM layer. De temporele afhankelijkheid van deze features wordt geleerd door het LSTM netwerk, Ten slotte, de voorspelling van de hoek van het stuuurwiel wordt gesaan door de output layer.
+\url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}
+\~cite {tesla_applsci}
+
+
+\paragraph{kritiek}
+
+Radar is excellent at tracking moving objects (like the vehicle the Tesla was following in traffic.)
+Radar also sees stalled vehicles just fine, but because it only has a rough idea where the radar returns are coming from, it faces a problem. It also gets returns from everything else -- guardrails, signs, bridges, road debris and more -- all of which are stationary on the Earth. When it gets a radar return from a stopped fire truck, it has a tough time knowing if that's just the return from the guardrail. It can't brake every time it gets a radar return from a stopped object. It has to be more discerning.
+In this special case, because the truck was tilted, it is possible its radar returns would be weaker than usual due to the angle. The flat back of trucks and cars, and especially the shiny metal license plate, give wonderful radar reflections.
+Cameras see, and computer vision tries to recognize things like a truck. They also have an easier time if those things are moving. They do that by learning from huge numbers of tagged pictures of cars and trucks. It may be a problem that most of those pictures do not have a fire truck parked at an angle. It may have had some trouble identifying it that day.
+A stereo camera (binocular vision) should have been able to identify the truck as blocking the road 3 seconds out. Tesla does not use stereo.
+Of course, a LIDAR would have easily detected the truck as soon as the other vehicle veered out of the way. Elon Musk has declared LIDAR a fool's errand and Tesla does not use it. It should be noted that there is no production LIDAR at consumer costs which Tesla could put in cars today, or when this model S was made.
+
+Radar is geshcikt voor het volgen van bewegende objecten.
+Radar heft ook een goed zicht op stilstaande voertuigen, maar omdat het alleen kan schatten waar de signalen vandaan komen heeft het een probleem. Radar krijgt ook signalen van  anderere publieke werken.
+Als er een radar signaal komt van een brandweerwagen dan duurt het lang voordat het systeem door heeft dat het een brandweerwagen is.
+
+Een stereo camera zou in staat moeten zijn om de  truck te identificeren, amar Tesla gebruikt geen steeo camera.
+Een lidar zou een vrachtwagen kunnen detectern maar Tesla heeft deze sensor niet geimplementeerd
+\url{https://www.forbes.com/sites/bradtempleton/2019/09/06/ntsb-report-on-tesla-autopilot-accident-shows-whats-inside-and-its-not-pretty-for-fsd/?sh=6905e7d4dc55}
+\~cite {ntsb_report_fsd}
+\paragraph{Aanbevelingen}
+The NTSB determined the Tesla’s automated vehicle control system was not designed to, and could not, identify the truck crossing the Tesla’s path or recognize the impending crash. Therefore, the system did not slow the car, the forward collision warning system did not provide an alert and the automatic emergency braking did not activate.
+The way in which the Tesla “Autopilot” system monitored and responded to the driver’s interaction with the steering wheel was not an effective method of ensuring driver engagement, the agency added.
+
+Event data to be captured and available in standard formats on new vehicles equipped with automated vehicle control systems;
+Manufacturers to incorporate system safeguards to limit the use of automated control systems to conditions for which they are designed and for there to be a method to verify those safeguards;
+Development of applications to more effectively sense a driver’s level of engagement and alert when engagement is lacking;
+Need for manufacturers to report incidents, crashes and exposure numbers involving vehicles equipped with automated vehicle control systems.
+minimum performance standards for connected vehicle technology for all highway vehicles and the need to require installation of the technology
+\~cite {tesla_auto}
+\url{https://www.ehstoday.com/safety/article/21919260/ntsb-fatal-crash-involving-tesla-autopilot-resulted-from-driver-errors-overreliance-on-automation}
+Tesla delivered an over-the-air update to its Autopilot driver-assist system over the weekend that warns drivers quicker with visual and audible alerts to put their hands back on the steering wheel.
+
+\~cite {tesla_auto_update}
+\url{https://www.consumerreports.org/car-safety/tesla-autopilot-update-warns-drivers-sooner-to-keep-hands-on-wheel/}
+
+
+
+\paragraph{Requirements}
+Tesla
+overheid
+\url{https://www.iso.org/standard/70939.html}
+\~cite {isostandard}
+\url{https://ul.org/UL4600}
+\~cite {ieee_series}
+\url{https://unece.org/fileadmin/DAM/trans/doc/2020/wp29grva/GRVA-06-02r1e.pdf}
+\~cite {unece}
+automobilist
+\url{https://www.bloomberg.com/graphics/2019-tesla-model-3-survey/autopilot.html}
+\~cite {theverge_tesla}
+
+\subparagraph{requirements}
+Doel: autonomy (level 5): The vehicle can do all the driving in all circumstances, [and] the human occupants are just passengers and need never be involved in driving.
+
+Autopilot can center a Tesla in a lane, even around curves, and adjust the car’s speed based on the vehicle ahead.
+Another feature can slow a Tesla to a stop at traffic lights and stop signs. 
+Autopilot can’t perform some of these tasks if a road’s lane markers are faded or missing, and it can’t make turns.
+\~cite {theverge_tesla}
+\url{https://www.theverge.com/2020/10/21/21527577/tesla-full-self-driving-autopilot-beta-software-update}
+
+
+\~cite {tesla_big_data}
+\url{https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/}
+\~cite {tesla_applsci}
+\url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}
+\~cite {tesla_deep}
+\url{https://towardsdatascience.com/teslas-deep-learning-at-scale-7eed85b235d3}
+\~cite {tesla_acc}
+\url{https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisition-could-accelerate-autopilot-development/}
+\~cite {1251}
+\url{https://bernardmarr.com/default.asp?contentID=1251}
+\~cite {teslas_data_engine}
+\url{https://www.braincreators.com/brainpower/insights/teslas-data-engine-and-what-we-should-all-learn-from-it}
+\~cite {tesla_applsci}
+\url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}
+\~cite {theverge_tesla}
+\url{https://www.theverge.com/2020/10/21/21527577/tesla-full-self-driving-autopilot-beta-software-update}
+
+
+
+
+\url{https://spectrum.ieee.org/cars-that-think/transportation/self-driving/three-small-stickers-on-road-can-steer-tesla-autopilot-into-oncoming-lane}
+
+NHTSA levels of automation
+tesla autopilot requirement and specification
+\~cite {tesla_lev_5}
+\url{https://towardsdatascience.com/tesla-level-5-autopilot-669f6ac6ee63}
+\~cite {lev4lev5}
+\url{https://www.forbes.com/sites/lanceeliot/2019/12/20/explaining-level-4-and-level-5-of-self-driving-cars-in-plain-english/}
+\~cite {car_levels}
+\url{https://www.caranddriver.com/features/a15079828/autonomous-self-driving-car-levels-car-levels/}
+\~cite {auto_drive}
+\url{https://www.bmw.com/en/automotive-life/autonomous-driving.html}
+\~cite {avs_nhtsa}
+\url{https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety}
+
+
+
+
+tesla deadly crash technical data
+\~cite {tesla_ntsb_sil_crash}
+\url{https://www.forbes.com/sites/bradtempleton/2020/02/13/ntsb-releases-report-on-2018-fatal-silicon-valley-tesla-autopilot-crash/?sh=13a0b5342a81}
+\~cite {tesla_crash_report}
+\url{https://www.engadget.com/2020-03-20-ntsb-tesla-model-autopilot-crash-report.html}
+\~cite {ntsb_press}
+\url{https://www.ntsb.gov/news/press-releases/Pages/NR20200319.aspx}
+\~cite {tesla_monit}
+\url{https://www.forbes.com/sites/bradtempleton/2020/02/26/ntsb-report-on-tesla-autopilot-fatality-comes-down-hard-on-driver-monitoring-distraction/?sh=44ec2fd17e75}
+\~cite {tesla_mode}
+\url{https://www.theguardian.com/technology/2018/jun/07/tesla-fatal-crash-silicon-valley-autopilot-mode-report}
+\~cite {tesla_fed_push}
+\url{https://www.caranddriver.com/news/a15346519/fatal-tesla-crash-wont-slow-federal-push-for-autonomous-cars/}
+\~cite {ntsb_abstract}
+\url{https://www.ntsb.gov/news/events/Documents/2017-HWY16FH018-BMG-abstract.pdf}
+
+
+
+
+\subparagraph{Sensoren(hardware) die worden gebruikt: radars, cameras en lidars}
+\~cite {autonom_sense}
+\url{https://www.itransition.com/blog/autonomous-vehicle-sensors}
+Fenomenen uit de omgeving zijin: voetgangers, andere voertuigen en wegtekens
+invloeden op de sensren zijn slecht weer, druk verkeer, bekladde wegtekens. Deze hebben impact op de sensoren.
+Input variabelen
+Output variabelen: Object-detectie, waarscuwing, controle over het stuur, gas, rem
+
+
+
+
+\subparagraph{tesla model y}
+This autopilot is developed upon the principles of deep neural networks. It adopts cameras, ultrasonic sensors, and radar for perceiving the environment surrounding the vehicle.  These sensors and cameras allow the drivers to be receptive to their surroundings which are later on processed in a matter of milliseconds to aid in making the driving safer and less strenuous. The radar is adopted for seeing and measuring the distance around the cars in light, dark, and different weather conditions. The Ultraviolet techniques measure proximity in each case and the passive video detects objects around the car, ensuring a secure drive.
+
+De autopilot is ontwikkeld op de princips van neurale netwerken. Het maakt gebruik van camera's, ultrasone sensore, en radar voor het waarnemen van de omgeving. Deze sensoren en cameras maken het mogelijk voor de bestuurders om de omgeving te scannen die later worden verwerkt in  milliseconden om vervolgense de bestuurder te ondersteunen, veilger te laten rijden en minder vermoeid te  raken. De radar is geimplementeerd om de afstand te meten met andere autos overdag, in het donker en in andere weersomstandigheden. Ultraviolet technieken meten de nabijheid in elke situatie en de videocamera detecteert objecten om de auto, als zekerheid  voor veilig rijden.
+\~cite {tesla_analyti_oper}
+\url{https://www.analyticssteps.com/blogs/how-tesla-making-use-artificial-intelligence-its-operations}
+
+Waarom gebruikt Tesla computer vision in plaats van LIDAR en HD mapping
+
+Het gebruik van de LIDAR en HD mapping is neit schaalbaar.
+Vanuit algoritmisch perspectief is toegang tot een exact 3D punt in de cloud van de omgeving die is gesaand een voordeel en een  LIDAR  op het voertuig met als  doel automoon rijden omdat hiermee een object op centinemer nauwkeurigheid kan worden benaderd. Dat klink solide, maar wat gebeurt er als de weg is aangepast of er is een tijdelijke omleiding opgezet in de tijdsspijn tussen het maken van de scan en de auto die daadwerkelijk rijd op de locatie. Hiervoor is periodiek de weg re-scannen een vereiste om de kaart actueel te houden.
+
+Dan  is er nog de uitdaging van lokalisering. Vanuit eht oogpunt van perceptie is de herkenning van andere voertuigen, voeetgangrs en alle bijzonderheden alleen haalbaar als deze kunnen worden geidentificeerd door middel van afbeeldingen. Dus als je begint et het gebruik van een LIDR dan heb je nog steeds veel uitdaginen.
+
+The complexity of the long tail in data
+Full autonomous driving requires a long series of tasks including: accurately and reliably detecting the road and road markings, establishing the position of the vehicle on the road, detecting other vehicles, pedestrians and any other object on the road, and, last but not least, detecting traffic signs.
+
+
+\~cite {dataengine_tesla}
+\url{https://www.braincreators.com/brainpower/insights/teslas-data-engine-and-what-we-should-all-learn-from-it}
+
+ChipIptimalisatie met NVideai:
+\begin{enumerate}
+\item Door het gebruik van - 6 billion transistors.
+\item Dual Chips voor betere controle
+\item Tesla AI chips Ogeoptimaliseerd design
+\item Tesla AI chips have been optimised to perform 36 trillion operations per second and runs ar 2GHs. This high level of performance has been achieved by eliminating generic functions and focusing only on specific important ones. Testla chips zijn geoptimaliseerd om 36 Triljoen operaties uit te voeren bij 2GHs. Deze hoge performnce ratio is bereikt door het verwijderen van generieke functies en de focus te leggen op specifiek noodzakelijke functies.
+\item De NVIDIA DRIVE PX2 autonoom rijdende auto platform
+\item kan presteren op level 4
+\item Het ondersteund 12-channel camera inputs, laser positioning, radar, en  ultrasonic sensors
+\item Twee new-generation NVIDIA Tegra processors 
+\item Tensorflow is een van de meest gebruikte libraries voor deep learning gebruikt in het veld voor  zelfrijdende auto's.
+\end{enumerate}
+Nog een vordeel van de chip
+Notably, Tesla says this silicon, with its twin neural network arrays capable of 36 trillion operations per second (each), will only cost the company 80 percent of what it was paying before for that 21x performance gain, and draw little enough additional wattage (72W, vs. 57W) that it can continue to promise the same range out of each car and without impacting the cost.
+\url{https://www.theverge.com/2019/4/22/18511594/tesla-new-self-driving-chip-is-here-and-this-is-your-best-look-yet}
+
+Convolutional Neural Network
+Recurrent Neural Network
+Auto-Encoder (AE)
+Deep Reinforcement Learning (DRL)
+Obstacle Detection
+Lane Recognition
+path planning, motion control, pedestrian detection,
+and traffic sign and light detection
+
+\url{https://www.mygreatlearning.com/blog/teslas-new-ai-for-self-driving-cars/}
+\url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}
+Andere bedrijven zoals Uber en Waymo gebruiken lidars, waarmee de omgeving in 3d mappen wordt opgetekend. terwijl Tesla gebruik maakr van deel neural networks voor de detectie van wegen, autos objecten en mensen in video feeds van de 8 cameras om het voertuig heen. Tesla heeft ook een radae en ultrasonische object dectoren.
+
+MAaar wat is de logica achter het vison-only aanpak van Tesla: ze gaan ervanuit dat de mens afhankelijk is van een visueel systeem om te rjiden. Er wordt geen 3d kaanrt in onze heresenen gepland om objecten  te detecteren en obstakels te ontwijken. Volgens het artikel gebeurt er hier iets opmerkelijks. Deep learning heeft namelijk bepaalde grenzen die voorkomen dat het dezelfde duiding geeft aan een systeem als een mens. Neurale nrtewerken vragen grote hoeveelheden data om betrouwbaar te kunnen opererern, en zij heeft neit de flexbilitet als de mens om bij een onbekende  situaties.
+
+Volgens Elon Musk is er dus een verschil tusssen het gebruik van de Tesla Autopilot in China en de VS. Het meeste werk voor de engineering is namelijk gedaan in de VS.
+
+
+Het deep learning probleem
+\~cite {self_deep_ml}
+\url{https://bdtechtalks.com/2020/07/29/self-driving-tesla-car-deep-learning/}
+\~cite {forbes_bigdata}
+\url{https://www.forbes.com/sites/bernardmarr/2018/01/08/the-amazing-ways-tesla-is-using-artificial-intelligence-and-big-data/?sh=5e396aa24270}
+
+
+
+
+\paragraph{software}
+
+
+
+\subparagraph{Hoe gebruikt Tesla Big data}
+In general, tesla autonomous vehicle technology should be able to do some of the following things:
+\begin{enumerate}
+\item  Sense plan act: In order to make sure of the plan and act, the vehicle machine learning algorithms must be able to predict the outcomes which are based on a high volume of data.
+OM een actie voor te bereieden en uit te voeren moet het voertuigalgoritme in staat zijn de uitkomst te voorspellen aan de hand van data met een hoog volume.
+\item  Mapping: The vehicle computer must possess highly detailed, comprehensive maps of street features, which includes the signs, streetlights, and curbs.
+De boordcomputer van het voertuig moet gedetailleerde en uitgebeirde kaarten met straateienschappen, inclusief wegborden, straatlichten en stoepranden kunnen bewerken.
+\item  Light detection and ranging: Using the sensors such as the LIDAR and cameras, the vehicle should be able to create a short distance readout of its surrounding in the real-time scenario.
+Licht detectie en  omgevingsscannen: Met het gebruiken van LIDAR en cameras, moet het voertuig in staat zijn real-time een afstandsbepaling te kunnen uitvoeren.
+\item Vehicle to Vehicle communication: Tesla autonomous vehicle technology does not have this up and running yet, but the best-case scenario would even involve an Internet of Things aspect, in which all the autonomous vehicle is communicating some of the essential details to each other. Projections show that more than 400 million smart cars will be a part of the IoT by the end of 2021. Communicatie van voertuig naar voertuig: Tesla autonome voertuig technologie heeft in de best-case scenario een Internet of Things aspect waarin alle autonome voertuigen communiceren met elkaar over essentiele detail.
+\end{enumerate}
+
+Tesla Machine learning in the cloud is responsible to takes care of educating the entire set of the fleet, while at an individual car level, some of the edge computing decides what action the car needs to take right now. The third level of decision making also exists, with cars able to form networks with some other Tesla vehicles nearby to make sure in order to share some of the local insights and information. (Tesla machine learning in de cloud is verantwoordelijk voor he gehele systeem, terwijl op individueel auto niveau, een deel van de edge computing bepaalt welke acties worden uitgevoerd door de auto. Heeft een 3 niveau van autonomie,  hierdoor i het voertuig ins taat om met andere Tesla voertuigen een netwerk te vormen om informatie en inzichten van de omgeving uit te wisselen.)
+
+In near future scenario where the autonomous cars are widespread, these networks will most likely also interface with cars from some other manufacturers as well as other systems such as road-based sensors, traffic camera, purge light up mask or smartphones. ( In de nabije toekomst is er een scenario  waarbij  het aantal autonome autos wijdverspreid is, deze netwerken zullen in contact staan met auto's van andere modellen die andere systemen gebruiken zoals weg-georienteerde sensoren, verkeerscameras en smartphones.
+
+Although details are scarce on the new Artificial Intelligence technology that Tesla was creating, its current AI – which is driven by a collaboration with the hardware manufacturer Nvidia, that is even largely based on a model of an unsupervised model of machine learning. Ookal zijn er weinig details bekend over de AI technologie die Tesla ontwierp, haar huidige AI software- is in samenwerking met hardware producent Nvidea, voor een groot deel gebaseerd op een model van unsupervised model en machine learning.
+
+On its Facebook page, Nvidia state that “In contrast to the usual approach to operating self-driving cars, we did not program any explicit object detection, mapping, path planning or control components into this car. Instead, the car learns on its own to create all necessary internal representations necessary to steer, simply by observing human drivers.” Op de facebookpagina van Nvidea staat :
+
+\url{https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/}
+
+\~cite {techie_bigdata}
+
+neural networking
+
+\~cite {kdnuggets_cars}
+\url{https://www.kdnuggets.com/2017/06/machine-learning-algorithms-used-self-driving-cars.html}
+gebruikers: automobilisten
+
+
+
+\paragraph{Nog meer failures}
+\~cite {progtokill}
+\url{https://www.technologyreview.com/2015/10/22/165469/why-self-driving-cars-must-be-programmed-to-kill/}
+\~cite {tesla_pilot_hack}
+\url{https://www.technologyreview.com/2019/04/01/65915/hackers-trick-teslas-autopilot-into-veering-towards-oncoming-traffic/}
+\paragraph{atuopilot crash}
+\~cite {vox_fatal}
+\url{https://www.vox.com/recode/2020/2/26/21154502/tesla-autopilot-fatal-crashes}
+\~cite {ntsb_prelim_report}
+\url{https://www.ntsb.gov/investigations/AccidentReports/Pages/HWY19FH008-preliminary-report.aspx}
+\~cite {tesla_remote}
+\url{https://securityledger.com/2019/04/hackers-remotely-steer-tesla-model-s-using-autopilot-system/}
+\~cite {tesla_problems}
+\url{https://europe.autonews.com/automakers/tesla-driver-fatal-crash-reported-problems-autopilot-feature}
+\~cite {tesla_crash_death}
+\url{https://www.theverge.com/2019/5/17/18629214/tesla-autopilot-crash-death-josh-brown-jeremy-banner}
+\~cite {bbctech}
+\url{https://www.bbc.com/news/technology-51645566}
+\~cite {tesla_ntsb}
+\url{https://www.nytimes.com/2020/02/25/business/tesla-autopilot-ntsb.html}
+
+
+
+
+\paragraph{Baanverwisslingen}
+\~cite {tesla_ai}
+\url{https://www.vox.com/future-perfect/2019/4/8/18297410/ai-tesla-self-driving-cars-adversarial-machine-learning}
+\~cite {tesla_lanes}
+\url{https://www.cnbc.com/2019/04/03/chinese-hackers-tricked-teslas-autopilot-into-switching-lanes.html}
+
+
+\paragraph{beveiliging}
+\~cite {tesla_blue}
+\url{https://www.wired.com/story/tesla-model-x-hack-bluetooth/}
+\~cite {tesla_stolen}
+\url{https://cio.economictimes.indiatimes.com/news/digital-security/security-researchers-hack-steal-tesla-model-x-within-minutes/79406553}
+\~cite {tesla_x_flaws_leuven}
+\url{https://www.imec-int.com/en/press/belgian-security-researchers-ku-leuven-and-imec-demonstrate-serious-flaws-tesla-model-x}
+\~cite {tsla_stlen_flaws}
+\url{https://www.bankinfosecurity.com/tesla-model-x-stolen-in-minutes-using-software-flaws-a-15462}
+\~cite {tesla_bugs}
+\url{https://www.livemint.com/Companies/o2QLbtJc9EQ7ZcpxqgFbBP/Teslas-reward-for-finding-security-bugs-Model-3.html}
+\paragraph{sudden unintended acceleration}
+\~cite {nhtsa}
+\url{https://techcrunch.com/2021/01/08/nhtsa-tesla-sudden-unintended-acceleration-driver-error/}
+
+\url{https://www.theguardian.com/technology/2018/jun/07/tesla-fatal-crash-silicon-valley-autopilot-mode-report}
+\~cite {tesla_sil_val}
+\paragraph{security failure of connecting tesla to internet}
+\~cite {tesla_backup}
+\url{https://www.darkreading.com/threat-intelligence/security-risks-discovered-in-tesla-backup-gateway/d/d-id/1339462}
+\paragraph{battery management system}
+\~cite {tesla_safe}
+\url{https://www.caranddriver.com/news/a29369387/nhtsa-tesla-safety/}
+\~cite {tesla_batt}
+\url{https://www.latimes.com/business/story/2020-07-01/federal-safety-officials-probe-tesla-battery-cooling-system}
+\paragraph{camera hack}
+\~cite {tesla_hack_acc}
+\url{https://www.technologyreview.com/2020/02/19/868188/hackers-can-trick-a-tesla-into-accelerating-by-50-miles-per-hour/}
+
+\paragraph{tasla ddos hack}
+\~cite {portswigger_tesla}
+\url{https://portswigger.net/daily-swig/web-based-attack-crashes-tesla-driver-interface}
+
+\paragraph{touch screen}
+\url{https://www.consumerreports.org/car-recalls-defects/nhtsa-asks-tesla-to-recall-model-s-model-x-touch-screen-safety-issues/}
+
+\subsection{Wat zijn sluizen}
+
+\paragraph{Uit welke onderdelen bestaat een sluis?}
+
+\subsubsection{Wat voor soorten sluizen}
+\subsubsection{Welke standaarden zijn er voor sluizen}
+
+zoektermen:
+european commission digital security of waterway transport
+european commission digital security of water locks
+european standards for water locks
+Resulting in :
+\~cite {gns_guides}
+\url{file:///C:/Users/gally/Downloads/Published%20GNS%20Guidelines%20document%20EC%20Bookshop.pdf}
+\~cite {eu_inland_waterway}
+\url{https://ec.europa.eu/transport/modes/inland/consultations/digital-tools-inland-waterway-transport-legislations_en}
+\~cite {tesla_inland}
+\url{https://ec.europa.eu/transport/modes/inland/studies/digital-inland-waterway-area-towards-digital-inland-waterway-area-and-digital_en}
+\~cite {eu_transport_studies}
+\url{https://ec.europa.eu/transport/sites/transport/files/studies/2017-10-dina.pdf}
+\~cite {unice_digit}
+\url{https://unece.org/DAM/trans/doc/2018/itc/presentations/4.________Digitalization_SC.3_slides_Ivanova.pdf}
+\~cite {share_info_dig_fut}
+\url{https://www.inlandwaterwaytransport.eu/sharing-information-for-a-digital-future/}
+\~cite {eu_content}
+\url{https://eur-lex.europa.eu/legal-content/SL/TXT/?uri=uriserv%3AOJ.L_.2016.252.01.0118.01.ENG}
+\~cite {eu_standards}
+\url{https://www.locksonline.co.uk/community/european-standards.html}
+
+
+Wat betekent veiligheid, efficientie, capaciteit, onderhoudskosren en duurzaamheid etx. en wat heb je aan bronnen geraadpleegd om tot een goede analyse te komen
+\~cite {cyberned}
+\url{file:///C:/Users/gally/Downloads/Cybersecuritybeeld+Nederland+2020.pdf}
+\~cite {civiel_mili}
+\url{https://vng.nl/nieuws/civiel-militaire-samenwerking-zijn-gemeenten-er-klaar-voor}
+\~cite {nedsluis_sec}
+\url{https://www.trouw.nl/nieuws/nederlandse-sluizen-en-waterkeringen-zijn-nog-steeds-niet-goed-beschermd-tegen-hackers~b8fbb880/}
+\~cite {asapcloud}
+\url{https://www.asapcloud.com/2019/07/22/niet-morgen-maar-nu-voorkom-maatschappij-ontwrichtende-situaties/}
+\~cite {digit_ics}
+\url{https://www.deitauditor.nl/informatiebeveiliging/digitale-beveiliging-van-industrial-control-systems/}
+\~cite {CSBN2019}
+\url{file:///C:/Users/gally/Downloads/CSBN2019.pdf}
+\~cite {water_infra}
+\url{https://ict.eu/nl/markten/water-infrastructuur/}
+\~cite {h-tk-20182019-87}
+\url{file:///C:/Users/gally/Downloads/h-tk-20182019-87-9.pdf}
+\~cite {persb_water_vit}
+\url{https://www.persberichten.com/persbericht/95034/Cybersecurity-vitale-waterwerken-niet-waterdicht}
+\~cite {bedreig_waternet}
+\url{https://3bplus.nl/bedreigingen-cybersecurity-waterwerken/}
+\~cite {beveiliging_ics}
+\url{https://www.agconnect.nl/artikel/beveiliging-industriele-it-nederland-schiet-tekort}
+\~cite {cybersec_WRR}
+\url{file:///C:/Users/gally/Downloads/rapport+Cybersecurity+WR.pdf}
+\~cite {share_info_dig_fut}
+\url{https://tweakers.net/nieuws/150864/rekenkamer-nederlandse-waterwerken-zijn-onvoldoende-beschermd-tegen-cyberaanval.html}
+
+Hoe lang duurt het, voordat een boot door de sluis is
+Wat voor stappen (states?) moeten doorlopen worden om een boot van de ene naar de andere kant te krijgen?
+Wat voor cijfers horen en bij het bovenstaande? Hoe lang duurt een bepaalde stap
+
+
+
+\newpage
+
+\section{Resultaat}
+
+
+\subsection{Model voor het simuleren van sluizen: brainstorm, requirements, verificatie, validatie}
+
+\subsection{Inleiding}
+
+
+
+
+\subsection{Requirements}
+Requirements zijn alleen die eisen die gesteld worden aan het gedrag of de kwaliteit van het systeem om te voorzien in de behoeften van een belanghebbende uit de business.
+\begin{itemize}
+  \item Een schip dat kan communiceren met een sluis door middel van signalen
+  \item Een sluis kan communiceren met een , schip,sensor, stoplicht, deur en een pomp
+  \item Een stoplicht met rood en groen licht die alleen luistert naar de instructies van een sluis
+  \item Een sensor die het systeem start
+  \item Een slusdeur die luister naar de instructies van een sluis om de hoog of laagwatersluis te te openenen en te sluiten
+  \item Een pomp die aan de hand van de waterstand de sluis kan laten vollopen of water wegpompen.
+\end{itemize}
+\subsection{specificaties}
+\par{Schip}
+Een schip okmt aanvaren en geeft een signaal aan de sluis. Indien er meer dan twee schepen in de sluis zitten danwordt het ship geplaats in de wachrij. Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. Eenmaal in de sluis zal het schip moeten wachten op de sluis en de pomp. Een schip mag alleen uitvaren als de pomp klaar is, de sleusdeuren open.
+\par{Sluis}
+Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp.
+\par{Sensor}
+De sensor is een onderdeel van de sluis en ontvangt signalen van naderende schepen.
+\par{Sluisdeur}
+De sleusdeur voor boven en beneden kunnen beiden oen en dicht. De sluisdeur wordt aangestuurd door de sluis.
+\par{pomp}
+Een pomp begint met pompen bij een signaal van de kluis. Een kluis io zijn beert geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
+
+\subsubsection{Functionaliteit} 
+\subsection{De Kripke structuur}
+\begin{verbatim}
+ Het model dat wordt gemodelleerd is een sluis.
+ Aan de hand van dit model is zichtbaar dat een sluis een naar binnenvarend schip kan afhandelen. De instrumenten die worden gebruikt zijn twee deurenru.nl/~fvaan/PV/what_is_a_good_model.html ,voor hoog en laag water, een waterpomp, een sensor en een stoplicht.
+ 
+ http://www.cs.ru.nl/~fvaan/PV/what_is_a_good_model.html
+ 
+ 
+ https://63587809-a-bf11e6be-s-sites.googlegroups.com/a/ncsu.edu/emily-griffiths/whatisamodel.pdf?attachauth=ANoY7crHzoHtm1KJ1FxUwWOUbgJYyE5vKf9KayhmJsqYam4I4jUF2UxzBgcdKMOM04fo7YnXlD7sgmfSFmaZSaDGG0Ylu-GVYRa7i-et8i863Evevfr9kJVjwIdLPzuoVRxNbNPmyMecoBnwqsKtY1fuS37XCU8vKtbEQpFseDY3aN8ERZr5dX603a7lCJpQww-WbgArfKSsK3hrzM9soJIg6SooioNewg%3D%3D&attredirects=0
+ 
+ 
+ 
+\end{verbatim}
+
+\subsection{Templates}
+\begin{verbatim}
+ Globaal
+\end{verbatim}
+
+\begin{verbatim}
+ Schip
+ 
+\end{verbatim}
+
+
+	
+
+\begin{verbatim}
+ Sensor
+\end{verbatim}
+
+
+
+\subsection{Tijd}
+\begin{verbatim}
+ Onder zeno gedrag wordt verstaan
+\end{verbatim}
+
+\subsection{Guards en invarianten}
+\begin{verbatim}
+ Onder zeno gedrag wordt verstaan
+\end{verbatim}
+
+\subsection{Deadlock}
+\begin{verbatim}
+ Onder zeno gedrag wordt verstaan
+\end{verbatim}
+
+\subsection{Zeno gedrag}
+\begin{verbatim}
+ Onder zeno gedrag wordt verstaan
+\end{verbatim}
+
+
+\section{Logica}
+
+\subsection{Propositielogica}
+
+
+
+\subsection{Predicatenlogica}
+
+\subsection{Kwantoren}
+
+\subsection{Dualiteiten}
+
+\section{Computation tree logic}
+
+\subsection{Queries}
+{\tiny\url{<https://63587809-a-bf11e6be-s-sites.googlegroups.com/a/ncsu.edu/emily-griffiths/whatisamodel.pdf?attachauth=ANoY7crHzoHtm1KJ1FxUwWOUbgJYyE5vKf9KayhmJsqYam4I4jUF2UxzBgcdKMOM04fo7YnXlD7sgmfSFmaZSaDGG0Ylu-GVYRa7i-et8i863Evevfr9kJVjwIdLPzuoVRxNbNPmyMecoBnwqsKtY1fuS37XCU8vKtbEQpFseDY3aN8ERZr5dX603a7lCJpQww-WbgArfKSsK3hrzM9soJIg6SooioNewg%3D%3D&attredirects=0>} }
+  
+\subsection{De computation tree}
+
+\subsection{Operator: AG}
+
+
+
+\subsection{Operator: EG}
+	
+\subsection{Operator: AF}
+
+\subsection{Operator: EF}
+
+\subsection{Operator: AX}
+
+~\~cite {tesla_safe}
+\subsection{Operator: EX}
+
+\subsection{Operator: p U q}
+
+\subsection{Operator: p R q}
+
+\subsection{Fairness}
+\begin{verbatim}
+ In welke staat de automaat zich ook bevindt, in alle richtingen kom je vroeg of laat een state tegen, waarin p geldig is.
+\end{verbatim}
+\subsection{Liveness}
+\begin{verbatim}
+ Altijd en overal geldt: Als p geldt dan geldt vroeg of laat q
+ Ookal treedt p nooit p volgens de logica klopt het dan dat q volgt uit p.
+\end{verbatim}
+\newpage
+\subsection{Gemaakte keuzes bij ontwerp}
+\subsection{Algemeen}
+\subsection{Schip komt aan}
+\subsection{Meerdere schepen}
+\subsection{Wachttijd}
+\subsection{Sluis handelt schepen af}
+\subsection{Counter tegenover een queue}
+\subsection{Boolean versus channels}
+\subsection{Aantal schepen in het systeem}
+\subsection{Behandeltijd per schip}
+\subsection{Procestijd per actie}
+\newpage
+\section{Effectiviteit resultaten}
+
+\newpage
+\section{Conclusie}
+
+\newpage
+\section{Discussion}
+
+\newpage
+\bibliography{references}
+\bibliographystyle{plain}
+
+
+\newpage
+\begin{thebibliography}{9}
+
+\bibitem{lamport94}
+  Leslie Lamport,
+  \textit{\LaTeX: a document preparation system},
+  Addison Wesley, Massachusetts,
+  2nd edition,
+  1994.
+  
+  \bibitem{paper}
+Lars Kuhtz (2010)  \emph{Paper}, Model Checking Finite Paths and Trees.
+\\\texttt{https://www.react.uni-saarland.de/publications/diss-kuhtz.pdf}
+
+\bibitem{paper}
+J. van Leeuwen(1990)  \emph{Paper}, Temporal and Modal Logic.
+\\\texttt{https://www.mbsd.cs.ru.nl/publications/papers/fvaan/SLIDES/tl.pdf}
+
+\bibitem{powerpoint}
+Author onbekend (2020)  \emph{Paper}, Model Checking .
+\\\texttt{http://www.cs.toronto.edu/~sheila/2542/w06/readings/chechik-model-checking.pdf}
+
+
+\end{thebibliography}
+
+
+\end{document}
+
+

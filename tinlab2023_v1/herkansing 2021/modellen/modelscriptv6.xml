@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+const int N = 2;         // # ships
+typedef int[0,N-1] id_t;
+//schepen van beneden
+chan        apprA[N],aanmeldenA[N], moveA[N],stopA[N], leaveA[N], waitA[N], move_up[N];
+urgent chan goA[N];
+//schepen van boven
+chan        apprB[N],aanmeldenB[N], moveB[N],stopB[N], leaveB[N], waitB[N],move_down[N];
+urgent chan goB[N];
+// default
+chan        appr[N],admin[N],aanmelden[N],invaren[N],opstellen[N], move[N],stop[N], leave[N], wait[N];
+urgent chan go[N];
+
+
+// waterniveau in in meter van 0 tot 10
+typedef int[3,10] waterniveau;
+//
+int Counter =0;
+
+//sluis deuren kiezen
+chan call_DeurA, call_DeurB;
+//sluis deuren openen
+
+// stoplicht
+chan call_StoplichtA, call_StoplichtB;
+// waterlevel bijsturen
+
+//sluis
+
+//ship
+</declaration><template><name>Nivelleermachine</name><location id="id0" x="0" y="416"><name x="-10" y="386">klaar</name></location><location id="id1" x="96" y="224"><name x="86" y="194">ProgrammaB</name></location><location id="id2" x="-96" y="224"><name x="-106" y="194">ProgrammaA</name></location><location id="id3" x="224" y="328"><name x="214" y="298">uitschakelende</name></location><location id="id4" x="0" y="320"><name x="24" y="312">bezig</name></location><location id="id5" x="0" y="128"><name x="-10" y="98">aan</name></location><location id="id6" x="0" y="0"><name x="-10" y="-30">uit</name></location><init ref="id6"/><transition><source ref="id0"/><target ref="id3"/><nail x="224" y="416"/></transition><transition><source ref="id4"/><target ref="id0"/><nail x="0" y="400"/></transition><transition><source ref="id1"/><target ref="id4"/></transition><transition><source ref="id2"/><target ref="id4"/></transition><transition><source ref="id5"/><target ref="id1"/></transition><transition><source ref="id5"/><target ref="id2"/></transition><transition><source ref="id3"/><target ref="id6"/><nail x="224" y="0"/></transition><transition><source ref="id5"/><target ref="id4"/></transition><transition><source ref="id6"/><target ref="id5"/></transition></template><template><name>DeurA</name><location id="id7" x="0" y="-160"><name x="-10" y="-190">sluitende</name></location><location id="id8" x="192" y="-160"><name x="182" y="-190">open</name></location><location id="id9" x="192" y="0"><name x="182" y="-30">openend</name></location><location id="id10" x="0" y="0"><name x="-10" y="-30">dicht</name></location><init ref="id10"/><transition><source ref="id7"/><target ref="id10"/></transition><transition><source ref="id8"/><target ref="id7"/></transition><transition><source ref="id9"/><target ref="id8"/></transition><transition><source ref="id10"/><target ref="id9"/></transition></template><template><name>StoplichtA</name><location id="id11" x="192" y="0"><name x="182" y="-30">groen</name></location><location id="id12" x="0" y="0"><name x="-10" y="-30">rood</name></location><init ref="id12"/><transition><source ref="id11"/><target ref="id12"/><nail x="128" y="-64"/><nail x="64" y="-64"/></transition><transition><source ref="id12"/><target ref="id11"/><nail x="64" y="64"/><nail x="120" y="64"/></transition></template><template><name>DeurB</name><location id="id13" x="0" y="-160"><name x="-10" y="-190">sluitende</name></location><location id="id14" x="192" y="-160"><name x="182" y="-190">open</name></location><location id="id15" x="192" y="0"><name x="182" y="-30">openend</name></location><location id="id16" x="0" y="0"><name x="-10" y="-30">dicht</name></location><init ref="id16"/><transition><source ref="id13"/><target ref="id16"/></transition><transition><source ref="id14"/><target ref="id13"/></transition><transition><source ref="id15"/><target ref="id14"/></transition><transition><source ref="id16"/><target ref="id15"/></transition></template><template><name>Sluisbeheerder</name><declaration>/*
+clocks 
+*/
+clock x;
+clock wachttijd_beneden;
+clock wachttijd_boven;
+bool sluis_boven=false;
+bool sluis_beneden=false;
+/*
+
+*/
+//
+id_t list_wachtrij_beneden[N+1];
+//
+id_t list_pos_invaren_beneden[N+1];
+//
+id_t list_schepenInSluis[N+1];
+//
+id_t list_wachtrij_boven[N+1];
+//
+id_t list_pos_invaren_boven[N+1];
+//default
+id_t list[N+1];
+
+/*
+ de max lengte van alle lijsten
+*/
+//lengte beneden
+int[0,N] len_wachtrij_down;
+int[0,N] len_pos_invaren_down;
+//inhoud sluiskolk
+int[0,N] len_sluis_kolk;
+// lengte boven
+int[0,N] len_wachtrij_up;
+int[0,N] len_pos_invaren_up;
+//default
+int[0,N] len;
+
+/*
+benodigde functies voor lijstbewerkingen
+*/
+// Put an element at the end of the queue
+void enqueue_wachtrij_down(id_t element)
+{
+        list_wachtrij_beneden[len_wachtrij_down++] = element;
+}
+void enqueue_wachtrij_up(id_t element)
+{
+        list_wachtrij_boven[len_wachtrij_up++] = element;
+}
+void enqueue_sluiskolk(id_t element)
+{
+        list_schepenInSluis[len_sluis_kolk++] = element;
+}
+
+void enqueue_opstelposities_up(id_t element)
+{
+        list_pos_invaren_boven[len_pos_invaren_up++] = element;
+}
+void enqueue_opstelposities_down(id_t element)
+{
+        list_pos_invaren_beneden[len_pos_invaren_down++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue_wachtrij_down()
+{
+        int i = 0;
+        len_wachtrij_down -= 1;
+        while (i &lt; len_wachtrij_down)
+        {
+                list_wachtrij_beneden[i] = list_wachtrij_beneden[i + 1];
+                i++;
+        }
+        list_wachtrij_beneden[i] = 0;
+}
+// Remove the front element of the queue
+void dequeue_wachtrij_up()
+{
+        int i = 0;
+        len_wachtrij_up -= 1;
+        while (i &lt; len_wachtrij_up)
+        {
+                list_wachtrij_boven[i] = list_wachtrij_boven[i + 1];
+                i++;
+        }
+        list_wachtrij_boven[i] = 0;
+}
+// Remove the front element of the queue
+void dequeue_sluiskolk()
+{
+        int i = 0;
+        len_sluis_kolk -= 1;
+        while (i &lt; len_sluis_kolk)
+        {
+                list_schepenInSluis[i] = list_schepenInSluis[i + 1];
+                i++;
+        }
+        list_schepenInSluis[i] = 0;
+}
+// Remove the front element of the queue
+void dequeue_opstelposities_down()
+{
+        int i = 0;
+        len_pos_invaren_down -= 1;
+        while (i &lt; len_pos_invaren_down)
+        {
+                list_pos_invaren_beneden[i] = list_pos_invaren_beneden[i + 1];
+                i++;
+        }
+        list_pos_invaren_beneden[i] = 0;
+}
+// Remove the front element of the queue
+void dequeue_opstelposities_up()
+{
+        int i = 0;
+        len_pos_invaren_up -= 1;
+        while (i &lt; len_pos_invaren_up)
+        {
+                list_pos_invaren_boven[i] = list_pos_invaren_boven[i + 1];
+                i++;
+        }
+        list_pos_invaren_boven[i] = 0;
+}
+
+
+
+// Returns the front element of the queue
+id_t front_wachtrij_down()
+{
+   return list_wachtrij_beneden[0];
+}
+id_t front_wachtrij_up()
+{
+   return list_wachtrij_boven[0];
+}
+id_t front_sluiskolk()
+{
+   return list_schepenInSluis[0];
+}
+id_t front_opstelposities_up()
+{
+   return list_pos_invaren_boven[0];
+}
+id_t front_opstelposities_down()
+{
+   return list_pos_invaren_boven[0];
+}
+
+
+
+
+
+// Returns the last element of the queue
+id_t tail_wachtrij_down()
+{
+   return list_wachtrij_beneden[len_wachtrij_down - 1];
+}
+id_t tail_wachtrij_up()
+{
+   return list_wachtrij_boven[len_wachtrij_up - 1];
+}
+id_t tail_sluiskolk()
+{
+   return list_schepenInSluis[len_sluis_kolk - 1];
+}
+id_t tail_opstelposities_up()
+{
+   return list_pos_invaren_boven[len_pos_invaren_up - 1];
+}
+id_t tail_opstelposities_down()
+{
+   return list_pos_invaren_beneden[len_pos_invaren_down - 1];
+}</declaration><location id="id17" x="352" y="1184"><name x="342" y="1154">Deuren_beneden_sluite</name></location><location id="id18" x="544" y="1184"><name x="534" y="1154">Deuren_boven_sluite</name></location><location id="id19" x="544" y="1248"><name x="534" y="1218">vaarverbod_up</name></location><location id="id20" x="352" y="1248"><name x="342" y="1218">vaarverbod_down</name></location><location id="id21" x="448" y="1120"><name x="438" y="1090">sluiskolk_afgesloten</name></location><location id="id22" x="448" y="1344"><name x="438" y="1314">sluis_afsluiten</name></location><location id="id23" x="128" y="160"></location><location id="id24" x="-64" y="1504"><name x="-74" y="1474">Uitvaren_beneden_toestaan</name></location><location id="id25" x="-64" y="1440"><name x="-74" y="1410">Beneden_openen</name></location><location id="id26" x="-96" y="1024"><name x="-106" y="994">Signalering_invaarverbod_beneden</name></location><location id="id27" x="-96" y="896"><name x="-106" y="866">Invaarverbod_beneden</name></location><location id="id28" x="96" y="1024"><name x="86" y="994">alles_afsluiten</name></location><location id="id29" x="96" y="544"><name x="128" y="528">invaren_toestaan_boven</name></location><location id="id30" x="0" y="40"><name x="-146" y="26">aanmelden</name></location><location id="id31" x="-96" y="256"><name x="-106" y="226">Beneden_gereedmaken</name></location><location id="id32" x="0" y="512"><name x="32" y="496">opdracht_geven_invaren_toestaan</name></location><location id="id33" x="0" y="320"><name x="24" y="320">Sluis_klaar_gezet</name></location><location id="id34" x="-64" y="1240"><name x="-168" y="1232">ProgrammaA</name></location><location id="id35" x="64" y="1240"><name x="88" y="1232">ProgrammaB</name></location><location id="id36" x="-160" y="1152"><name x="-296" y="1120">nog_niet_klaar</name></location><location id="id37" x="0" y="680"><name x="-10" y="650">invoer_gecontroleerd</name></location><location id="id38" x="64" y="712"><name x="104" y="696">geen_invarende_schpen</name></location><location id="id39" x="-64" y="712"><name x="-320" y="696">invarende_schepen_geconstateerd</name></location><location id="id40" x="-96" y="544"><name x="-272" y="552">invaren_toestaan_beneden</name></location><location id="id41" x="-96" y="448"><name x="-296" y="416">wacht_tot_sluiskolk_geleegd</name></location><location id="id42" x="-128" y="160"><name x="-208" y="128">wachtende</name></location><location id="id43" x="96" y="256"><name x="86" y="226">Boven_gereedmaken</name><label kind="comments">slusdeur_boven openen en stoplicht op groen</label></location><location id="id44" x="64" y="96"><name x="80" y="88">opstellen_schepen_boven</name></location><location id="id45" x="64" y="1504"><name x="54" y="1474">Uitvaren_boven_toestaan</name></location><location id="id46" x="0" y="1376"><name x="32" y="1352">klaarmaken_voor_openen</name></location><location id="id47" x="0" y="1152"><name x="24" y="1144">start_nivelleren</name></location><location id="id48" x="96" y="896"><name x="120" y="880">invaren_verboden</name></location><location id="id49" x="0" y="840"><name x="40" y="816">sluiskolk_gereed</name></location><location id="id50" x="0" y="784"><name x="80" y="776">sluiskolk_gechecked</name></location><location id="id51" x="-64" y="784"><name x="-248" y="776">informatie_controleren</name></location><location id="id52" x="0" y="1568"><name x="-10" y="1538">uitvaren_toegestaan</name></location><location id="id53" x="64" y="1440"><name x="54" y="1410">Boven_openen</name></location><location id="id54" x="0" y="1312"><name x="32" y="1288">Nivelleren_afsluiten</name></location><location id="id55" x="0" y="1088"><name x="-10" y="1058">alles_afgesloten</name></location><location id="id56" x="0" y="608"><name x="32" y="600">controleer_invoer</name></location><location id="id57" x="0" y="448"><name x="32" y="416">geen_uitvarenden</name></location><location id="id58" x="0" y="384"><name x="32" y="360">controleer_sluiskolk</name></location><location id="id59" x="0" y="192"><name x="24" y="192">Schepen_opgesteld</name></location><location id="id60" x="-64" y="96"><name x="-280" y="80">opstellen_schepen_beneden</name></location><location id="id61" x="0" y="-8"><name x="-10" y="-38">aanvaren</name></location><location id="id62" x="0" y="-64"><name x="-10" y="-94">start</name></location><init ref="id62"/><transition><source ref="id22"/><target ref="id20"/></transition><transition><source ref="id18"/><target ref="id21"/><nail x="536" y="1176"/></transition><transition><source ref="id19"/><target ref="id18"/></transition><transition><source ref="id22"/><target ref="id19"/></transition><transition><source ref="id17"/><target ref="id21"/></transition><transition><source ref="id20"/><target ref="id17"/></transition><transition><source ref="id21"/><target ref="id62"/><nail x="448" y="-64"/></transition><transition><source ref="id52"/><target ref="id22"/><label kind="select" x="216" y="1490">e:id_t</label><label kind="synchronisation" x="216" y="1520">leave[e]!</label><nail x="16" y="1568"/><nail x="448" y="1568"/></transition><transition><source ref="id44"/><target ref="id59"/></transition><transition><source ref="id23"/><target ref="id59"/></transition><transition><source ref="id44"/><target ref="id23"/></transition><transition><source ref="id24"/><target ref="id52"/></transition><transition><source ref="id25"/><target ref="id24"/></transition><transition><source ref="id46"/><target ref="id25"/></transition><transition><source ref="id59"/><target ref="id43"/><label kind="synchronisation" x="72" y="208">call_DeurB!</label></transition><transition><source ref="id43"/><target ref="id33"/><label kind="synchronisation" x="56" y="288">call_StoplichtB!</label></transition><transition><source ref="id26"/><target ref="id55"/><label kind="synchronisation" x="-108" y="1041">call_DeurA!</label></transition><transition><source ref="id27"/><target ref="id26"/><label kind="synchronisation" x="-156" y="945">call_StoplichtA!</label></transition><transition><source ref="id49"/><target ref="id27"/></transition><transition><source ref="id49"/><target ref="id48"/></transition><transition><source ref="id56"/><target ref="id37"/></transition><transition><source ref="id29"/><target ref="id56"/></transition><transition><source ref="id40"/><target ref="id56"/></transition><transition><source ref="id28"/><target ref="id55"/><label kind="synchronisation" x="-12" y="1041">call_DeurB!</label></transition><transition><source ref="id48"/><target ref="id28"/><label kind="synchronisation" x="36" y="945">call_StoplichtB!</label></transition><transition><source ref="id32"/><target ref="id29"/><label kind="guard" x="88" y="512">sluis_boven==true</label></transition><transition><source ref="id30"/><target ref="id44"/><label kind="select" x="100" y="23">e:id_t</label><label kind="synchronisation" x="104" y="8">move_up[e]?</label><label kind="assignment" x="100" y="68">sluis_boven=true</label><nail x="32" y="64"/></transition><transition><source ref="id30"/><target ref="id60"/><label kind="select" x="-60" y="23">e:id_t</label><label kind="synchronisation" x="-200" y="48">move_down[e]?</label><label kind="assignment" x="-232" y="64">sluis_beneden=true</label></transition><transition><source ref="id61"/><target ref="id30"/><label kind="select" x="-60" y="-25">e:id_t</label><label kind="synchronisation" x="-60" y="5">appr[e]?</label><nail x="0" y="16"/></transition><transition><source ref="id31"/><target ref="id33"/><label kind="synchronisation" x="-160" y="296">call_StoplichtA!</label></transition><transition><source ref="id59"/><target ref="id31"/><label kind="synchronisation" x="-128" y="200">call_DeurA!</label><label kind="comments">sluisdeur beneden openen en stoplicht op groen</label></transition><transition><source ref="id32"/><target ref="id40"/><label kind="guard" x="-240" y="496">sluis_beneden==true</label></transition><transition><source ref="id57"/><target ref="id32"/></transition><transition><source ref="id33"/><target ref="id58"/></transition><transition><source ref="id34"/><target ref="id54"/></transition><transition><source ref="id35"/><target ref="id54"/><nail x="40" y="1264"/></transition><transition><source ref="id47"/><target ref="id34"/></transition><transition><source ref="id47"/><target ref="id35"/></transition><transition><source ref="id42"/><target ref="id59"/></transition><transition><source ref="id60"/><target ref="id42"/></transition><transition><source ref="id36"/><target ref="id47"/><nail x="-96" y="1120"/></transition><transition><source ref="id47"/><target ref="id36"/></transition><transition><source ref="id50"/><target ref="id49"/></transition><transition><source ref="id38"/><target ref="id50"/><nail x="64" y="784"/></transition><transition><source ref="id51"/><target ref="id50"/></transition><transition><source ref="id39"/><target ref="id51"/></transition><transition><source ref="id37"/><target ref="id38"/></transition><transition><source ref="id37"/><target ref="id39"/></transition><transition><source ref="id45"/><target ref="id52"/></transition><transition><source ref="id53"/><target ref="id45"/></transition><transition><source ref="id46"/><target ref="id53"/></transition><transition><source ref="id54"/><target ref="id46"/></transition><transition><source ref="id47"/><target ref="id54"/></transition><transition><source ref="id55"/><target ref="id47"/></transition><transition><source ref="id41"/><target ref="id57"/><label kind="guard" x="-136" y="464">len_sluis_kolk==0</label></transition><transition><source ref="id58"/><target ref="id41"/><label kind="guard" x="-152" y="376">len_sluis_kolk &gt;0</label></transition><transition><source ref="id58"/><target ref="id57"/><label kind="guard" x="24" y="384">len_sluis_kolk==0</label></transition><transition><source ref="id60"/><target ref="id59"/></transition><transition><source ref="id62"/><target ref="id61"/><label kind="select" x="-60" y="-77">e:id_t</label><label kind="synchronisation" x="-60" y="-47">appr[e]?</label></transition></template><template><name x="5" y="5">Schip</name><parameter>const id_t id</parameter><declaration>// Place local declarations here.
+clock x;
+
+
+</declaration><location id="id63" x="32" y="448"><name x="22" y="418">Gestopt</name></location><location id="id64" x="32" y="88"><name x="38" y="58">aangemeld</name></location><location id="id65" x="32" y="640"><name x="22" y="610">nivelleer_stop</name></location><location id="id66" x="32" y="576"></location><location id="id67" x="32" y="512"><name x="8" y="480">nivelleer_start</name></location><location id="id68" x="32" y="384"><name x="22" y="354">stoppende</name></location><location id="id69" x="32" y="288"><name x="22" y="258">invarene</name></location><location id="id70" x="32" y="224"><name x="8" y="240">invaar_pos_innemen</name></location><location id="id71" x="-64" y="192"><name x="-96" y="208">wachten</name></location><location id="id72" x="384" y="-64"><name x="374" y="-94">klaar_voor_vertrek</name></location><location id="id73" x="32" y="128"><name x="64" y="120">controleren</name></location><location id="id74" x="32" y="32"><name x="56" y="8">aangekomen</name></location><location id="id75" x="32" y="-64"></location><init ref="id75"/><transition><source ref="id63"/><target ref="id67"/></transition><transition><source ref="id68"/><target ref="id63"/><label kind="synchronisation" x="224" y="240">stop[id]?</label></transition><transition><source ref="id73"/><target ref="id72"/><label kind="guard" x="148" y="2">x&gt;=30</label></transition><transition><source ref="id64"/><target ref="id73"/><label kind="synchronisation" x="-28" y="93">move_up[id]!</label></transition><transition><source ref="id74"/><target ref="id64"/><label kind="synchronisation" x="-104" y="48">aanmelden[id]!</label><nail x="32" y="48"/></transition><transition><source ref="id65"/><target ref="id72"/><label kind="synchronisation" x="432" y="328">go[id]?</label><nail x="384" y="640"/></transition><transition><source ref="id66"/><target ref="id65"/></transition><transition><source ref="id67"/><target ref="id66"/></transition><transition><source ref="id69"/><target ref="id68"/></transition><transition><source ref="id70"/><target ref="id69"/></transition><transition><source ref="id73"/><target ref="id70"/></transition><transition><source ref="id71"/><target ref="id73"/><label kind="guard" x="-76" y="130">x==30</label><nail x="-64" y="128"/><nail x="-64" y="128"/></transition><transition><source ref="id73"/><target ref="id71"/><label kind="guard" x="-24" y="152">x&lt;=20</label></transition><transition><source ref="id72"/><target ref="id75"/><label kind="guard" x="148" y="-94">x&gt;=3</label><label kind="synchronisation" x="148" y="-79">leave[id]!</label></transition><transition><source ref="id75"/><target ref="id74"/><label kind="synchronisation" x="-28" y="-31">appr[id]!</label><label kind="assignment" x="-28" y="-16">x=0</label></transition></template><template><name>StoplichtB</name><location id="id76" x="192" y="0"><name x="182" y="-30">groen</name></location><location id="id77" x="0" y="0"><name x="-10" y="-30">rood</name></location><init ref="id77"/><transition><source ref="id76"/><target ref="id77"/><nail x="128" y="-64"/><nail x="64" y="-64"/></transition><transition><source ref="id77"/><target ref="id76"/><nail x="64" y="64"/><nail x="120" y="64"/></transition></template><system>// Place template instantiations here.
+
+
+// List one or more processes to be composed into a system.
+system Nivelleermachine,DeurA,DeurB,StoplichtA,StoplichtB,Sluisbeheerder,Schip;</system></nta>

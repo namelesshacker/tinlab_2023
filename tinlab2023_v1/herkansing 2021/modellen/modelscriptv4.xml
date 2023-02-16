@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+const int N = 2;         // # ships
+typedef int[0,N-1] id_t;
+//schepen van beneden
+chan        apprA[N],aanmeldenA[N], moveA[N],stopA[N], leaveA[N], waitA[N];
+urgent chan goA[N];
+//schepen van boven
+chan        apprB[N],aanmeldenB[N], moveB[N],stopB[N], leaveB[N], waitB[N];
+urgent chan goB[N];
+// default
+chan        appr[N],aanmelden[N], move[N],stop[N], leave[N], wait[N];
+urgent chan go[N];
+
+
+// waterniveau in in meter van 0 tot 10
+typedef int[3,10] waterniveau;
+//
+int Counter =0;
+
+//sluis deuren kiezen
+
+//sluis deuren openen
+
+// stoplicht
+
+// waterlevel bijsturen
+
+//sluis
+
+//ship
+</declaration><template><name x="5" y="5">Controller</name><declaration>// Place local declarations here.
+id_t entrance_list[N+1];
+id_t waiting_list[N+1];
+int[0,N] len;
+
+
+void schedule(id_t element){}
+
+
+// Put an element at the end of the queue
+void enqueue(id_t element)
+{
+        entrance_list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                entrance_list[i] = entrance_list[i + 1];
+                i++;
+        }
+        entrance_list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_t front()
+{
+   return entrance_list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return entrance_list[len - 1];
+}
+
+// if enqueue is full send to waiting queue
+// remove first element of waiting queue en send to enqueue</declaration><location id="id0" x="544" y="-64"><name x="534" y="-94">nog_uitvarende_schepen</name></location><location id="id1" x="96" y="576"><name x="86" y="546">schip_naar_opstelplaats</name></location><location id="id2" x="96" y="480"><name x="86" y="450">aanwijzing_van_opstelplaats</name></location><location id="id3" x="96" y="96"><name x="86" y="66">operationele_melding</name></location><location id="id4" x="576" y="512"><name x="566" y="482">mogen_uitvaartdeuren_open</name></location><location id="id5" x="576" y="224"><name x="566" y="194">nog_invarende_schepen</name></location><location id="id6" x="-224" y="480"><name x="-234" y="450">moet_schip_opstellen</name></location><location id="id7" x="-224" y="256"><name x="-234" y="226">moet_schip_wachten</name></location><location id="id8" x="384" y="712"><name x="374" y="682">uitvaren</name></location><location id="id9" x="384" y="672"><name x="374" y="642">uitvaren_toegestaan</name></location><location id="id10" x="384" y="632"><name x="374" y="602">openen_uitvaartdeuren</name></location><location id="id11" x="384" y="576"><name x="374" y="546">uitvaar_aanwijzigingen</name></location><location id="id12" x="384" y="480"><name x="374" y="450">aanwijzingen_tijdens_nivelleren</name></location><location id="id13" x="384" y="416"><name x="374" y="386">start_nivelleren</name></location><location id="id14" x="384" y="352"><name x="374" y="322">sluiten_invaardeuren</name></location><location id="id15" x="384" y="288"><name x="374" y="258">invaren_verboden</name></location><location id="id16" x="384" y="192"><name x="374" y="162">afmeren</name></location><location id="id17" x="384" y="128"><name x="374" y="98">afmeer_aanwijzingen</name></location><location id="id18" x="384" y="64"><name x="374" y="34">invaren</name></location><location id="id19" x="384" y="0"><name x="374" y="-30">invaar_aanwijzingen</name></location><location id="id20" x="384" y="-96"><name x="374" y="-126">invaren_toegestaan</name></location><location id="id21" x="-128" y="576"><name x="-138" y="546">invaarvolgorde_ligplaats_in_sluis</name></location><location id="id22" x="-128" y="704"><name x="-138" y="674">openen_invaarderen</name></location><location id="id23" x="-128" y="640"><name x="-138" y="610">gereedmaken_voor_invaren</name></location><location id="id24" x="-128" y="416"><name x="-138" y="386">verstrekken_informatie</name></location><location id="id25" x="-128" y="352"><name x="-138" y="322">opstellen_schutplan</name></location><location id="id26" x="96" y="352"><name x="86" y="322">schip_naar_wachtplaats</name></location><location id="id27" x="96" y="256"><name x="94" y="218">aanwijzing_wachtplaats</name></location><location id="id28" x="96" y="192"><name x="86" y="162">inwinnen_aanvullende_informatie</name></location><location id="id29" x="-224" y="96"><name x="-234" y="66">operationele_melding_controleren</name></location><location id="id30" x="-128" y="192"><name x="-138" y="162">aankomst_volgorde_vaststellen</name></location><location id="id31" x="-128" y="32"><name x="-138" y="2">informatie_inwinnen</name></location><location id="id32" x="-128" y="-32"><name x="-138" y="-62">aanmelden</name></location><location id="id33" x="-128" y="-96"><name x="-138" y="-126">Aanvaren</name></location><init ref="id33"/><transition><source ref="id8"/><target ref="id33"/><nail x="912" y="704"/><nail x="912" y="-160"/><nail x="-128" y="-160"/></transition><transition><source ref="id9"/><target ref="id8"/></transition><transition><source ref="id10"/><target ref="id9"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id4"/><target ref="id11"/></transition><transition><source ref="id12"/><target ref="id4"/></transition><transition><source ref="id13"/><target ref="id12"/></transition><transition><source ref="id14"/><target ref="id13"/></transition><transition><source ref="id15"/><target ref="id14"/></transition><transition><source ref="id5"/><target ref="id15"/><nail x="384" y="224"/></transition><transition><source ref="id5"/><target ref="id19"/><nail x="576" y="0"/></transition><transition><source ref="id16"/><target ref="id5"/></transition><transition><source ref="id17"/><target ref="id16"/></transition><transition><source ref="id18"/><target ref="id17"/></transition><transition><source ref="id19"/><target ref="id18"/></transition><transition><source ref="id0"/><target ref="id19"/></transition><transition><source ref="id20"/><target ref="id0"/></transition><transition><source ref="id22"/><target ref="id20"/><nail x="320" y="704"/><nail x="320" y="-64"/></transition><transition><source ref="id1"/><target ref="id21"/></transition><transition><source ref="id2"/><target ref="id1"/></transition><transition><source ref="id6"/><target ref="id2"/></transition><transition><source ref="id24"/><target ref="id6"/></transition><transition><source ref="id25"/><target ref="id24"/></transition><transition><source ref="id26"/><target ref="id25"/></transition><transition><source ref="id27"/><target ref="id26"/></transition><transition><source ref="id7"/><target ref="id27"/></transition><transition><source ref="id28"/><target ref="id30"/></transition><transition><source ref="id3"/><target ref="id28"/></transition><transition><source ref="id29"/><target ref="id3"/></transition><transition><source ref="id21"/><target ref="id23"/></transition><transition><source ref="id23"/><target ref="id22"/></transition><transition><source ref="id7"/><target ref="id25"/></transition><transition><source ref="id30"/><target ref="id7"/></transition><transition><source ref="id29"/><target ref="id30"/></transition><transition><source ref="id31"/><target ref="id29"/></transition><transition><source ref="id32"/><target ref="id31"/></transition><transition><source ref="id33"/><target ref="id32"/></transition></template><template><name>Nivelleermachine</name><location id="id34" x="0" y="-160"><name x="-10" y="-190">uitschakelende</name></location><location id="id35" x="192" y="-160"><name x="182" y="-190">bezig</name></location><location id="id36" x="192" y="0"><name x="182" y="-30">aan</name></location><location id="id37" x="0" y="0"><name x="-10" y="-30">uit</name></location><init ref="id37"/><transition><source ref="id34"/><target ref="id37"/></transition><transition><source ref="id35"/><target ref="id34"/></transition><transition><source ref="id36"/><target ref="id35"/></transition><transition><source ref="id37"/><target ref="id36"/></transition></template><template><name>Sluisdeur</name><location id="id38" x="0" y="-160"><name x="-10" y="-190">sluitende</name></location><location id="id39" x="192" y="-160"><name x="182" y="-190">open</name></location><location id="id40" x="192" y="0"><name x="182" y="-30">openend</name></location><location id="id41" x="0" y="0"><name x="-10" y="-30">dicht</name></location><init ref="id41"/><transition><source ref="id38"/><target ref="id41"/></transition><transition><source ref="id39"/><target ref="id38"/></transition><transition><source ref="id40"/><target ref="id39"/></transition><transition><source ref="id41"/><target ref="id40"/></transition></template><template><name>Stoplicht</name><location id="id42" x="192" y="0"><name x="182" y="-30">groen</name></location><location id="id43" x="0" y="0"><name x="-10" y="-30">rood</name></location><init ref="id43"/><transition><source ref="id42"/><target ref="id43"/><nail x="128" y="-64"/><nail x="64" y="-64"/></transition><transition><source ref="id43"/><target ref="id42"/><nail x="64" y="64"/><nail x="120" y="64"/></transition></template><template><name x="5" y="5">Train</name><parameter>const id_t id</parameter><declaration>// Place local declarations here.
+clock x;</declaration><location id="id44" x="96" y="160"></location><location id="id45" x="192" y="96"></location><location id="id46" x="0" y="96"><label kind="invariant" x="-56" y="88">x&lt;=20</label></location><location id="id47" x="192" y="-64"></location><location id="id48" x="0" y="-64"></location><init ref="id48"/><transition><source ref="id44"/><target ref="id45"/><label kind="synchronisation" x="144" y="136">go[id]?</label><label kind="assignment" x="144" y="152">x=0</label></transition><transition><source ref="id46"/><target ref="id44"/><label kind="guard" x="0" y="128">x&lt;=10</label><label kind="synchronisation" x="0" y="144">stop[id]?</label><nail x="32" y="120"/></transition><transition><source ref="id45"/><target ref="id47"/><label kind="guard" x="216" y="-16">x&gt;=7</label><label kind="assignment" x="224" y="8">x=0</label></transition><transition><source ref="id46"/><target ref="id47"/><label kind="guard" x="36" y="-14">x&gt;=10</label><label kind="assignment" x="40" y="0">x=10</label></transition><transition><source ref="id48"/><target ref="id46"/><label kind="synchronisation" x="-60" y="1">appr[id]!</label><label kind="assignment" x="-60" y="16">x=0</label></transition><transition><source ref="id47"/><target ref="id48"/><label kind="guard" x="88" y="-104">x&gt;=3</label><label kind="synchronisation" x="88" y="-88">leave[id]!</label></transition></template><template><name>Gate</name><declaration>id_t list[N+1];
+int[0,N] len;
+
+// Put an element at the end of the queue
+void enqueue(id_t element)
+{
+        list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                list[i] = list[i + 1];
+                i++;
+        }
+        list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_t front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return list[len - 1];
+}</declaration><location id="id49" x="416" y="384"><committed/></location><location id="id50" x="416" y="256"></location><location id="id51" x="416" y="96"></location><init ref="id51"/><transition><source ref="id49"/><target ref="id50"/><label kind="synchronisation" x="456" y="304">stop[tail()]!</label><nail x="448" y="352"/><nail x="448" y="288"/></transition><transition><source ref="id50"/><target ref="id49"/><label kind="select" x="332" y="296">e:id_t</label><label kind="synchronisation" x="336" y="313">appr[e]?</label><label kind="assignment" x="336" y="328">enqueue(e)</label></transition><transition><source ref="id50"/><target ref="id51"/><label kind="select" x="520" y="137">e:id_t</label><label kind="guard" x="520" y="152">e==front()</label><label kind="synchronisation" x="520" y="167">leave[e]?</label><label kind="assignment" x="520" y="182">dequeue()</label><nail x="512" y="256"/><nail x="512" y="96"/></transition><transition><source ref="id51"/><target ref="id50"/><label kind="guard" x="328" y="137">len&gt;1</label><label kind="synchronisation" x="328" y="152">go[front()]!</label><nail x="320" y="96"/><nail x="320" y="256"/></transition><transition><source ref="id51"/><target ref="id50"/><label kind="select" x="424" y="138">e:id_t</label><label kind="guard" x="424" y="153">len&lt;=1</label><label kind="synchronisation" x="424" y="168">appr[e]?</label><label kind="assignment" x="424" y="183">enqueue(e)</label></transition></template><template><name x="5" y="5">SchipA</name><parameter>const id_t id</parameter><declaration>// Place local declarations here.
+clock x;
+bool beneden =true;
+bool boven=false;</declaration><location id="id52" x="-224" y="-96"><name x="-234" y="-126">klaar_voor_vertrek</name></location><location id="id53" x="-224" y="352"><name x="-234" y="322">nivelleer_stop</name></location><location id="id54" x="-320" y="352"></location><location id="id55" x="-320" y="256"><name x="-330" y="226">nivelleer_start</name></location><location id="id56" x="-416" y="256"><name x="-426" y="226">stoppende</name></location><location id="id57" x="-480" y="256"><name x="-488" y="272">invarene</name></location><location id="id58" x="-672" y="216"><name x="-682" y="186">wachtende</name></location><location id="id59" x="-576" y="256"><name x="-632" y="264">invaar_pos_innemen</name></location><location id="id60" x="-576" y="128"><name x="-586" y="98">controleren</name></location><location id="id61" x="-576" y="56"><name x="-586" y="26">aanmelden</name></location><location id="id62" x="-576" y="-32"><name x="-586" y="-62">aankomen</name></location><location id="id63" x="-576" y="-96"></location><location id="id64" x="96" y="160"></location><location id="id65" x="192" y="96"></location><location id="id66" x="0" y="96"><label kind="invariant" x="-56" y="88">x&lt;=20</label></location><location id="id67" x="192" y="-64"></location><location id="id68" x="0" y="-64"></location><init ref="id63"/><transition><source ref="id58"/><target ref="id60"/><nail x="-672" y="128"/></transition><transition><source ref="id60"/><target ref="id58"/></transition><transition><source ref="id52"/><target ref="id63"/><label kind="synchronisation" x="-460" y="-111">leaveA[id]!</label></transition><transition><source ref="id53"/><target ref="id52"/><label kind="synchronisation" x="-284" y="113">goA[id]?</label></transition><transition><source ref="id54"/><target ref="id53"/></transition><transition><source ref="id55"/><target ref="id54"/></transition><transition><source ref="id56"/><target ref="id55"/></transition><transition><source ref="id57"/><target ref="id56"/><label kind="synchronisation" x="-508" y="241">stopA[id]?</label></transition><transition><source ref="id59"/><target ref="id57"/></transition><transition><source ref="id60"/><target ref="id59"/></transition><transition><source ref="id61"/><target ref="id60"/></transition><transition><source ref="id62"/><target ref="id61"/><label kind="synchronisation" x="-636" y="-3">aanmeldenA[id]!</label></transition><transition><source ref="id63"/><target ref="id62"/><label kind="synchronisation" x="-636" y="-79">apprA[id]!</label></transition><transition><source ref="id64"/><target ref="id65"/><label kind="synchronisation" x="144" y="136">goA[id]?</label><label kind="assignment" x="144" y="152">x=0</label></transition><transition><source ref="id66"/><target ref="id64"/><label kind="guard" x="0" y="128">x&lt;=10</label><label kind="synchronisation" x="0" y="144">stopA[id]?</label><nail x="32" y="120"/></transition><transition><source ref="id65"/><target ref="id67"/><label kind="guard" x="216" y="-16">x&gt;=7</label><label kind="assignment" x="224" y="8">x=0</label></transition><transition><source ref="id66"/><target ref="id67"/><label kind="guard" x="36" y="-14">x&gt;=10</label><label kind="assignment" x="40" y="0">x=10</label></transition><transition><source ref="id68"/><target ref="id66"/><label kind="synchronisation" x="-60" y="1">apprA[id]!</label><label kind="assignment" x="-60" y="16">x=0</label></transition><transition><source ref="id67"/><target ref="id68"/><label kind="guard" x="88" y="-104">x&gt;=3</label><label kind="synchronisation" x="88" y="-88">leaveA[id]!</label></transition></template><template><name>SluisController</name><declaration>
+clock x;
+clock wachttijd_beneden;
+clock wachttijd_boven;
+
+//
+id_t list_wachtrij_beneden[N+1];
+//
+id_t list_pos_invaren_beneden[N+1];
+//
+id_t list_shepenInSluis[N+1];
+//
+id_t list_wachtrij_boven[N+1];
+//
+id_t listpos_invaren_boven[N+1];
+//default
+id_t list[N+1];
+//lengte beneden
+int[0,N] len_wachtrij_down;
+int[0,N] len_pos_invaren_down;
+//inhoud sluiskolk
+int[0,N] len_sluis_kolk;
+// lengte boven
+int[0,N] len_wachtrij_up;
+int[0,N] len_pos_invaren_up;
+//default
+int[0,N] len;
+
+// Put an element at the end of the queue
+void enqueue(id_t element)
+{
+        list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                list[i] = list[i + 1];
+                i++;
+        }
+        list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_t front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return list[len - 1];
+}</declaration><location id="id69" x="0" y="0"><name x="-10" y="-30">appr_boven</name></location><location id="id70" x="56" y="88"><name x="46" y="58">aanmelden_boven</name></location><location id="id71" x="-288" y="96"><name x="-296" y="64">aanmelden_beneden</name></location><location id="id72" x="-256" y="0"><name x="-266" y="-30">appr_beneden</name></location><location id="id73" x="448" y="736"><name x="438" y="706">uitvaren_toestaan</name></location><location id="id74" x="320" y="800"></location><location id="id75" x="320" y="672"></location><location id="id76" x="184" y="736"></location><location id="id77" x="160" y="640"><name x="150" y="610">sluisdeur_boven_sluitende</name></location><location id="id78" x="160" y="544"><name x="184" y="512">invaren_boven_blokkeren</name></location><location id="id79" x="-416" y="640"><name x="-672" y="640">sluisdeur_beneden_sluitende</name></location><location id="id80" x="-416" y="544"><name x="-640" y="528">invaren_beneden_blokkeren</name></location><location id="id81" x="-128" y="736"><name x="-138" y="706">open_betreffende_sluisdeur</name></location><location id="id82" x="-128" y="624"><name x="-192" y="640">kijk_welke_sluisdeur</name></location><location id="id83" x="-128" y="544"><name x="-200" y="504">controleer_nivelleer_aanuit</name></location><location id="id84" x="-128" y="448"><name x="-192" y="416">nivelleren_afronden</name></location><location id="id85" x="-128" y="352"><name x="-192" y="312">nivelleren_starten</name></location><location id="id86" x="-128" y="256"><name x="-176" y="216">nivelleren_aan</name></location><location id="id87" x="288" y="320"></location><location id="id88" x="160" y="456"><name x="208" y="432">controleren_toegang_boven</name></location><location id="id89" x="160" y="320"><name x="168" y="336">invaren_boven_toestaan</name></location><location id="id90" x="-416" y="448"><name x="-528" y="432">controleren</name></location><location id="id91" x="-416" y="320"><name x="-456" y="328">invaren_beneden_toestaan</name></location><location id="id92" x="-544" y="320"></location><location id="id93" x="288" y="160"></location><location id="id94" x="160" y="160"><name x="168" y="176">sluisdeur_boven_openen</name></location><location id="id95" x="-128" y="192"><name x="-168" y="160">sluiskolk_vol</name></location><location id="id96" x="-416" y="160"><name x="-392" y="144">sluisdeur_beneden_openen</name></location><location id="id97" x="-544" y="160"></location><location id="id98" x="-128" y="96"></location><location id="id99" x="712" y="415"><committed/></location><location id="id100" x="712" y="287"></location><location id="id101" x="712" y="127"></location><init ref="id98"/><transition><source ref="id98"/><target ref="id93"/><label kind="guard" x="208" y="40">len_pos_invaren_up&gt;1</label><nail x="0" y="-64"/></transition><transition><source ref="id98"/><target ref="id97"/><label kind="guard" x="-576" y="24">len_pos_invaren_down&gt;1</label><nail x="-168" y="32"/><nail x="-224" y="-64"/></transition><transition><source ref="id70"/><target ref="id94"/><label kind="guard" x="-72" y="128">len_pos_invaren_up&lt;2</label><nail x="104" y="120"/></transition><transition><source ref="id69"/><target ref="id70"/></transition><transition><source ref="id98"/><target ref="id69"/></transition><transition><source ref="id98"/><target ref="id72"/><label kind="select" x="-252" y="3">e:id_t</label><label kind="guard" x="-252" y="18">len&lt;=1</label><label kind="synchronisation" x="-252" y="33">appr[e]?</label><label kind="assignment" x="-252" y="48">enqueue(e)</label></transition><transition><source ref="id72"/><target ref="id71"/><nail x="-272" y="40"/></transition><transition><source ref="id71"/><target ref="id96"/><label kind="guard" x="-312" y="120">len_pos_invaren_down&gt;1</label></transition><transition><source ref="id73"/><target ref="id98"/><label kind="select" x="464" y="440">e:id_t</label><label kind="guard" x="464" y="464">len_sluis_kolk==0 and e==front()</label><label kind="synchronisation" x="464" y="488">leave[e]?</label><label kind="assignment" x="464" y="512">dequeue()</label><nail x="448" y="-64"/><nail x="0" y="-64"/></transition><transition><source ref="id74"/><target ref="id73"/></transition><transition><source ref="id75"/><target ref="id73"/></transition><transition><source ref="id76"/><target ref="id74"/><nail x="192" y="800"/></transition><transition><source ref="id76"/><target ref="id75"/><nail x="192" y="672"/></transition><transition><source ref="id81"/><target ref="id76"/></transition><transition><source ref="id77"/><target ref="id95"/><nail x="64" y="640"/><nail x="64" y="192"/></transition><transition><source ref="id78"/><target ref="id77"/></transition><transition><source ref="id88"/><target ref="id78"/></transition><transition><source ref="id79"/><target ref="id95"/><nail x="-320" y="640"/><nail x="-320" y="192"/></transition><transition><source ref="id80"/><target ref="id79"/></transition><transition><source ref="id90"/><target ref="id80"/></transition><transition><source ref="id97"/><target ref="id92"/></transition><transition><source ref="id93"/><target ref="id87"/></transition><transition><source ref="id89"/><target ref="id88"/></transition><transition><source ref="id94"/><target ref="id89"/></transition><transition><source ref="id91"/><target ref="id90"/></transition><transition><source ref="id96"/><target ref="id91"/><label kind="comments">Schepen toelaten
+maximaal 2
+omdat er maar 2 schepen
+in de sluislkolk zijn toegestaan</label></transition><transition><source ref="id82"/><target ref="id81"/></transition><transition><source ref="id83"/><target ref="id82"/></transition><transition><source ref="id84"/><target ref="id83"/></transition><transition><source ref="id85"/><target ref="id84"/></transition><transition><source ref="id86"/><target ref="id85"/></transition><transition><source ref="id95"/><target ref="id86"/></transition><transition><source ref="id99"/><target ref="id100"/><label kind="synchronisation" x="752" y="335">stop[tail()]!</label><nail x="744" y="383"/><nail x="744" y="319"/></transition><transition><source ref="id100"/><target ref="id99"/><label kind="select" x="628" y="327">e:id_t</label><label kind="synchronisation" x="632" y="344">appr[e]?</label><label kind="assignment" x="632" y="359">enqueue(e)</label></transition><transition><source ref="id100"/><target ref="id101"/><label kind="select" x="816" y="168">e:id_t</label><label kind="guard" x="816" y="183">e==front()</label><label kind="synchronisation" x="816" y="198">leave[e]?</label><label kind="assignment" x="816" y="213">dequeue()</label><nail x="808" y="287"/><nail x="808" y="127"/></transition><transition><source ref="id101"/><target ref="id100"/><label kind="guard" x="624" y="168">len&gt;1</label><label kind="synchronisation" x="624" y="183">go[front()]!</label><nail x="616" y="127"/><nail x="616" y="287"/></transition><transition><source ref="id101"/><target ref="id100"/><label kind="select" x="720" y="169">e:id_t</label><label kind="guard" x="720" y="184">len&lt;=1</label><label kind="synchronisation" x="720" y="199">appr[e]?</label><label kind="assignment" x="720" y="214">enqueue(e)</label></transition></template><template><name x="5" y="5">SchipB</name><parameter>const id_t id</parameter><declaration>// Place local declarations here.
+clock x;
+bool boven =true;
+bool beneden=false;</declaration><location id="id102" x="32" y="88"><name x="38" y="58">aanmelden</name></location><location id="id103" x="384" y="320"><name x="374" y="290">nivelleer_stop</name></location><location id="id104" x="320" y="320"></location><location id="id105" x="320" y="224"><name x="296" y="192">nivelleer_start</name></location><location id="id106" x="224" y="224"><name x="214" y="194">stoppende</name></location><location id="id107" x="128" y="224"><name x="118" y="194">invarene</name></location><location id="id108" x="32" y="224"><name x="8" y="240">invaar_pos_innemen</name></location><location id="id109" x="-64" y="192"><name x="-96" y="208">wahten</name></location><location id="id110" x="384" y="-64"><name x="374" y="-94">klaar_voor_vertrek</name></location><location id="id111" x="128" y="72"><name x="176" y="72">duurt_te_lang</name></location><location id="id112" x="32" y="128"><name x="64" y="120">controleren</name></location><location id="id113" x="32" y="32"><name x="56" y="8">aankomen</name></location><location id="id114" x="32" y="-64"></location><init ref="id114"/><transition><source ref="id102"/><target ref="id112"/></transition><transition><source ref="id113"/><target ref="id102"/><label kind="synchronisation" x="-104" y="48">aanmeldenB[id]!</label><nail x="32" y="48"/></transition><transition><source ref="id103"/><target ref="id110"/><label kind="synchronisation" x="324" y="113">go[id]?</label></transition><transition><source ref="id104"/><target ref="id103"/></transition><transition><source ref="id105"/><target ref="id104"/></transition><transition><source ref="id106"/><target ref="id105"/></transition><transition><source ref="id107"/><target ref="id106"/><label kind="synchronisation" x="152" y="232">stopB[id]?</label></transition><transition><source ref="id108"/><target ref="id107"/></transition><transition><source ref="id112"/><target ref="id108"/></transition><transition><source ref="id109"/><target ref="id112"/><label kind="guard" x="-76" y="130">x==30</label><nail x="-64" y="128"/><nail x="-64" y="128"/></transition><transition><source ref="id112"/><target ref="id109"/><label kind="guard" x="-24" y="152">x&lt;=20</label></transition><transition><source ref="id110"/><target ref="id114"/><label kind="guard" x="148" y="-94">x&gt;=3</label><label kind="synchronisation" x="148" y="-79">leaveB[id]!</label></transition><transition><source ref="id111"/><target ref="id110"/><nail x="352" y="-48"/></transition><transition><source ref="id112"/><target ref="id111"/><label kind="guard" x="88" y="88">x&gt;=30</label></transition><transition><source ref="id114"/><target ref="id113"/><label kind="synchronisation" x="-28" y="-31">apprB[id]!</label><label kind="assignment" x="-28" y="-16">x=0</label></transition></template><template><name>Sluisbeheerder</name><location id="id115" x="0" y="0"></location><init ref="id115"/></template><template><name>DeurA</name><location id="id116" x="0" y="0"></location><init ref="id116"/></template><template><name>DeurB</name><location id="id117" x="0" y="0"></location><init ref="id117"/></template><system>// Place template instantiations here.
+
+
+// List one or more processes to be composed into a system.
+system SluisController,SchipA, SchipB;</system></nta>
