@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+
+
+//product id
+typedef int[0,10] id_p;
+
+chan in,out;
+
+id_p pass;</declaration>
+	<template>
+		<name x="5" y="5">aanvoer</name>
+		<declaration>// Place local declarations here.
+
+clock x;</declaration>
+		<location id="id0" x="0" y="0">
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="select" x="26" y="4">p:id_p</label>
+			<label kind="guard" x="161" y="-68">x&gt;=1</label>
+			<label kind="synchronisation" x="26" y="38">in!</label>
+			<label kind="assignment" x="161" y="-34">x:=0,pass:=p</label>
+			<nail x="8" y="8"/>
+			<nail x="136" y="102"/>
+			<nail x="136" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id1" x="136" y="-102">
+			<label kind="comments" x="126" y="-43">voordat er een andere transitie in het gehele systeem  mag worden genomen is deze state committed; er verstrijkt geen tijd, er zal mteen een uitgaande transitie moeten worden genomen; dus eerst dit dan dat</label>
+			<committed/>
+		</location>
+		<location id="id2" x="0" y="0">
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id2"/>
+			<label kind="assignment" x="-127" y="-42">received:=pass</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="guard" x="161" y="-59">x&gt;=1</label>
+			<label kind="synchronisation" x="161" y="-42">out!</label>
+			<label kind="assignment" x="161" y="-25">x:=0</label>
+			<nail x="136" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>machine</name>
+		<declaration>
+//stack, de lengte van de datastructuur
+const int SIZE=5;
+
+
+id_p stack[SIZE];
+
+int[0,SIZE] head =0;
+
+id_p pop()
+{
+    id_p temp;
+    temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+void push(id_p p)
+{
+    stack[head++]=p;
+}
+
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+bool isEmpty()
+{
+ return (head ==0);
+}</declaration>
+		<location id="id3" x="0" y="0">
+		</location>
+		<init ref="id3"/>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-238" y="-25">!isFull()</label>
+			<label kind="synchronisation" x="-238" y="-8">in?</label>
+			<label kind="assignment" x="-238" y="9">push(pass)</label>
+			<nail x="-76" y="85"/>
+			<nail x="-136" y="136"/>
+			<nail x="-136" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="guard" x="170" y="-59">!isEmpty()</label>
+			<label kind="synchronisation" x="170" y="-42">out?</label>
+			<label kind="assignment" x="170" y="-25">pass:=pop()</label>
+			<nail x="136" y="136"/>
+			<nail x="136" y="-127"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ 
+// List one or more processes to be composed into a system.
+system aanvoer,afvoer,machine;
+    </system>
+	<queries>
+		<query>
+			<formula>p--&gt;p
+			</formula>
+			<comment>p --&gt; q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A&lt;&gt; q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			</comment>
+		</query>
+		<query>
+			<formula>E[]p
+			</formula>
+			<comment>E - exists a path ( “E” in UPPAAL).
+E[] p – p is potentially always true. 
+• There exists a path in which p is true in all states.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; p 
+			</formula>
+			<comment>• E&lt;&gt; p – it is possible to reach a state in which p is  satisfied
+• p is true in (at least) one reachable state.
+
+			</comment>
+		</query>
+		<query>
+			<formula>G&lt;&gt;
+			</formula>
+			<comment>• G - all states in a path ( “[]” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>F&lt;&gt;
+			</formula>
+			<comment>
+• F - some state in a path ( “&lt;&gt;” in UPPAAL). 
+			</comment>
+		</query>
+		<query>
+			<formula>A&lt;&gt; p 
+			</formula>
+			<comment>A&lt;&gt; p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+
+			</comment>
+		</query>
+		<query>
+			<formula>A[] p
+			</formula>
+			<comment>• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>

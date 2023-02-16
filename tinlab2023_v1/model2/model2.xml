@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.</declaration>
+	<template>
+		<name>aanvoer</name>
+		<location id="id0" x="0" y="0">
+		</location>
+		<init ref="id0"/>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<location id="id1" x="0" y="0">
+		</location>
+		<init ref="id1"/>
+	</template>
+	<template>
+		<name>machine</name>
+		<location id="id2" x="0" y="0">
+		</location>
+		<init ref="id2"/>
+	</template>
+	<template>
+		<name x="5" y="5">sluis</name>
+		<declaration>// Place local declarations here.</declaration>
+		<location id="id3" x="0" y="892">
+			<name x="-10" y="858">gereedmaken_voor_invaren</name>
+		</location>
+		<location id="id4" x="0" y="374">
+			<name x="-10" y="340">mote_schip_wachten</name>
+		</location>
+		<location id="id5" x="442" y="1020">
+			<name x="432" y="986">uitvaren</name>
+		</location>
+		<location id="id6" x="442" y="952">
+			<name x="432" y="918">uitvaren_toegestaan</name>
+		</location>
+		<location id="id7" x="442" y="875">
+			<name x="432" y="841">openen_uitvaardeuren</name>
+		</location>
+		<location id="id8" x="442" y="816">
+			<name x="432" y="782">uitvaar_aanwijzingen</name>
+		</location>
+		<location id="id9" x="442" y="748">
+			<name x="432" y="714">mogen_uitvaardeuren_open</name>
+		</location>
+		<location id="id10" x="442" y="680">
+			<name x="432" y="646">stop_nivelleren</name>
+		</location>
+		<location id="id11" x="442" y="612">
+			<name x="432" y="578">aanwijzingen_tijdens_nivelleren</name>
+		</location>
+		<location id="id12" x="433" y="544">
+			<name x="423" y="510">start_nivelleren</name>
+		</location>
+		<location id="id13" x="442" y="476">
+			<name x="432" y="442">sluiten_invaardeuren</name>
+		</location>
+		<location id="id14" x="442" y="408">
+			<name x="432" y="374">invaren_verboden</name>
+		</location>
+		<location id="id15" x="442" y="331">
+			<name x="432" y="297">nog_invarende_schepen</name>
+		</location>
+		<location id="id16" x="442" y="272">
+			<name x="432" y="238">afmeren</name>
+		</location>
+		<location id="id17" x="442" y="204">
+			<name x="432" y="170">invaren</name>
+		</location>
+		<location id="id18" x="102" y="68">
+			<name x="92" y="34">operationele_melding</name>
+		</location>
+		<location id="id19" x="0" y="51">
+			<name x="-10" y="17">aanmelding</name>
+		</location>
+		<location id="id20" x="0" y="952">
+			<name x="-10" y="918">openen_invaardeuren</name>
+		</location>
+		<location id="id21" x="0" y="748">
+			<name x="-10" y="714">moet_schip_opstellen_check</name>
+		</location>
+		<location id="id22" x="442" y="68">
+			<name x="432" y="34">invaren_toegestaan</name>
+		</location>
+		<location id="id23" x="442" y="0">
+			<name x="432" y="-34">nog_uitvarende_schepen</name>
+		</location>
+		<location id="id24" x="0" y="850">
+			<name x="-10" y="816">invaarvolgorde_ligplaats_in_sluis</name>
+		</location>
+		<location id="id25" x="102" y="578">
+			<name x="92" y="544">schip_naar_opstelplaats</name>
+		</location>
+		<location id="id26" x="102" y="510">
+			<name x="92" y="476">aanwijzing_opstelplaats</name>
+		</location>
+		<location id="id27" x="442" y="102">
+			<name x="432" y="68">invaar_aanwijzingen</name>
+		</location>
+		<location id="id28" x="0" y="612">
+			<name x="-10" y="578">verstrekken_informatie</name>
+		</location>
+		<location id="id29" x="0" y="510">
+			<name x="-10" y="476">opstellen_schutplan</name>
+		</location>
+		<location id="id30" x="0" y="238">
+			<name x="-10" y="204">operationele_melding_check</name>
+		</location>
+		<location id="id31" x="102" y="272">
+			<name x="92" y="238">aanwijzing_van_wachtplaats</name>
+		</location>
+		<location id="id32" x="0" y="306">
+			<name x="-10" y="272">aankomst_volgorde_vaststellen</name>
+		</location>
+		<location id="id33" x="102" y="170">
+			<name x="92" y="136">inwinnen_aanvullende_informatie</name>
+		</location>
+		<location id="id34" x="102" y="374">
+			<name x="92" y="340">schip_naar_wachtplaats</name>
+		</location>
+		<location id="id35" x="0" y="102">
+			<name x="-10" y="68">informatie_inwinnen</name>
+		</location>
+		<location id="id36" x="0" y="0">
+			<name x="-17" y="-34">schip_nadert_sluis</name>
+		</location>
+		<init ref="id36"/>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id20"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id7"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id11"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<nail x="442" y="535"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id13"/>
+			<nail x="450" y="425"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id14"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id17"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id27"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id22"/>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id23"/>
+			<nail x="272" y="952"/>
+			<nail x="272" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id21"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id26"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id21"/>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id28"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id29"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id29"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id31"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id4"/>
+			<nail x="0" y="331"/>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id32"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id30"/>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id33"/>
+			<nail x="102" y="93"/>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id18"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id30"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id35"/>
+		</transition>
+		<transition>
+			<source ref="id36"/>
+			<target ref="id19"/>
+			<nail x="8" y="17"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<location id="id37" x="0" y="0">
+		</location>
+		<init ref="id37"/>
+	</template>
+	<template>
+		<name>stoplicht</name>
+		<location id="id38" x="340" y="0">
+			<name x="330" y="-34">groen</name>
+		</location>
+		<location id="id39" x="170" y="0">
+			<name x="160" y="-34">oranje</name>
+		</location>
+		<location id="id40" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<init ref="id40"/>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id38"/>
+		</transition>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id39"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ ;
+// List one or more processes to be composed into a system.
+system aanvoer, afvoer, machine;
+    </system>
+	<queries>
+	</queries>
+</nta>
