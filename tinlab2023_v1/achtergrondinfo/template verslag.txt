@@ -1,0 +1,46 @@
+How I want to proceed further in my lecture is todiscuss these 40 factors  sequentially under the guidelinesof ICJME  requirements with special references to Indianscenario.
+I)  Title1)Title  should  correctly  represent  the  content  andbreadth of the study reported and should  not bemisleading.For example “comparative evaluation of  Propofol–  Ketamine  and  Propofol  Fentanyl    in  minorSurgery”. On reading the title, we can not know thecontent and breadth of the study; whether dosage,duration, efficiency, and sequalae, of two group arestudied  or  not  whether  they  are  studied  as  onlyinduction agents or as sole anaesthetic agents; whatgroup of patients? None of the information can behad from this title.
+
+2)It  should  be  clear,  concise,  and  informative.  Itshould contain keywords, that capture attention ofthe reader. No abbreviations are used in the title.The decision to read an article often  rests on theappeal  of  its  title.      A More appropriate title could be –“Comparativeevaluation  of  efficiency  of  Propofol  –  Ketamineand  Propofol  –  Fentanyl  combination  as  soleanaesthetic agents in patients undergoing minorambulatory  gynecological operations”.II)Author
+3)Designation,    degree,  affiliation  and  address  ofauthors are to be clearly indicated, with additionaldetails like telephone   number, email  address ofthe corresponding author.III) Abstract  & Keywords
+4)Abstract should cover each and every componentof, the study in 150 words for ‘unstructured’ abstractsand 250  words for ‘structured’  abstracts. It shouldstate  the  purpose  of  the  study  or  investigation,basic  procedures,  (selection  of  study  subjects,methodology, main findings, statistical significance),the principal conclusion and implications.
+5)The abstract should contain precise information andshould not contain abbreviations.
+6)The implications and benefits should commensuratewith the results obtained, and are to be highlighted.7)Key words (or short phrases) 3 to 10, should belisted  covering  all  the  aspects  of  the  study.  Usepreferably  the  terms  listed  as  Medical  subjectheadings (MESH) in Index Medicus (Medline)IV) Introduction and Review of Literature
+8)The goal or purpose of the study is clearly stated.The introduction should contain detailed informationabout the problem being studied,   and about thespecific research question/hypothesis.
+9)Four  or  five  pertinent  publications  related  to  theproblem should be presented and critiqued.  Nodata or conclusions are to be reported.
+10)   Do  not  review  the  literature    extensively.
+11)   The  pertinence  of  the  study  is    presented,    inrelation  to  the  current  theories  and  methodsassociated with the problem. The existing gaps  inthe  knowledge  or  conflicting  data  is  to  behighlighted.
+12)   A general overview of the study is presented. Overview serves as   organiser for the sections to followto the reader.
+
+V) Material and Method
+13)   The selection of the subjects for the study has to bedescribed clearly. Inclusion and exclusion criteriaare to be mentioned with method of allocation togroups.
+14)   The research design is to be described in detail.Research design is the plan that is chosen to answerthe research question.  The methods, apparatus  andprocedures are to be identified  in sufficient detail toallow  other  workers  to  reproduce  the  results,  ifnecessary.
+15)   Give references of  all the methods used in the studyincluding statistical methods.
+16)   Identify  precisely  all  drugs  and  chemicals  used,including  generic  names,  doses  and  routes  ofadministration.
+17)   Methods  of  elimination  of  errors  viz  blinding,introduction  of  control  group  and  placebo,randomization etc are to be mentioned distinctly.
+18)   The  measurement  instrument  including  itspsychometric  qualities  is  described  clearly.    Thepsychometric  qualities  include  validity,  reliability,objectivity    and  precision.    An  example  of  theinstrument  should  be  gives  in  the  text  or  in  anappendix.For example in the above mentioned study, if ‘homereadiness’  is  intended  to  be  studied,  the  ‘PostAnaesthetic  Discharge  scoring  system’  (PADS)utilised  in  the  study  has  to  be  a  reliable,  and  anaccepted one for its objectivity and precision.
+19)   The  data  collection  procedure  is  to  be  clearlydescribed.
+20)   The setting in which the study took place is described.This information is useful to the reader in decidingwhether results can be applied to his/her setting.
+21)   The data analysis procedures are stated in preciseterms.
+VI)Results
+22)   Present your results in logical sequence  in the text,tables and illustrations.  Do not repeat in the text allthe data, in the tables or illustrations.
+23)   Emphasize or summarise important observations.Results  section should contain only  actuals, and noopinions.
+24)   All  the  patients  included  in  the  study  should  beaccounted for. There should not be any hesitation inreporting any negative or unexpected result.
+VII) Discussion & Conclusion
+25)   The discussion should cover all the debatable  aspectsof the study. The discussion  can go beyond theresults obtained and can cover methodological andthe  critical  issues.  The  discussion  should  not  bemisused as a platform to state opinions. Readersshould not be side tracked in to another topic.
+26)   Relate the observations to the other relevant studies.Bring out similarities and conflicts.
+27)   The new and important aspects of the study and theconclusions  drawn  are  to  be  emphasized.    Theimplications  of the findings and their limitations areto be discussed.For example if you find that  Propofol – kelaminecombination  fared  well  except  that  there  was‘excitatory phenomenon’ of Ketamine observed inthese  group  of  patients,  this  limitation  has  to  bementioned without fail.
+28)   Scope  and need for future additional research is tobe  discussed.
+29)   Link conclusions with goals of the study but avoidunqualified statements and conclusions not supportedby your data.
+30)   State  new  hypothesis  when  warranted  .Recommendations when appropriate may be included.For eg Propofol does not have any effect on excitatoryphenomenon associated with Ketamine.
+31)   The conclusions and practical outcomes of the studyshould commensurate with the design used and resultsobtained.  The conclusions and recommendationsmade should not go beyond the limits of the studyconducted i.e. should not over generalize the designand sample used.Suppose the haemodynamics were stable in Ketamine-Propofol group as compared to Propofol – Fentanylgroup, one should not generative that the combinationis  recommended  for  patients  with  cardiovasculardiseases.Viii) References
+32)   This is the most disturbing aspect amongst the Indianpublications. It is a wrong notion amongst Indianauthors  that  providing  a  long  list  of  referencesincreases the validity (of their article) which is wrong.References are to be written correctly with due care.Correct abbreviated, accepted names, of the journalsto be mentioned. The number of references should
+be reasonable (neither too many nor too few); Somejournals  specify  the  number  of  references  to  beincluded in a particular type of study.
+33)   Avoid using ‘abstracts’ as references.  The referencesmust be verified by the author against the originaldocuments.
+34)   The references are presented according to standardrules  of  publication  as  specified  by  a  particularjournal. for eg, whether Vancour style or Harwardstyle is followed.General  Considerations
+35)   The  various  sections  of  the  paper  are  clearlyidentifiable and appropriate. The content of eachsection should correspond to the subtitle used, forinstance, there is no ‘Discussion’ in the ‘Results’section.  The  transition  from  one  section  to  nextshould be easy to follow.
+36)   The terminology has to be uniform through out thepaper. For eg.  abbreviations  should be consistentand units of measurements should be the same inthe text as in tables.
+37)   The writing style has to be clear and pleasant.  Thereshould  not  be  spelling  mistakes.  Special  care  isneeded in following British Vs American spellings.Text is, generally written is passive voice.  Uniform‘tense’ has to be used.
+38)   Follow  the  instructions  of  the  journal,  you  arewriting regarding tables, graphs illustrations, thetext matter, type of  manuscripts etc. to be used inthe article.
+39)   Follow the ethical guidelines strictly as specifiedby ICMJE. If there is confusion as what is ethicaland  what  is  non  ethical  and  there  is  no  ethicalcommittee to guide, ‘a self test’ may be employed.Ask  yourself  whether  you  will  be  conducting  thesimilar  study    on  your  kith  and  kin.  If  yes,  goahead with your study.
+40)    All the direct and  indirect help in the study hasto be acknowledged, without fail.Editors and referees ......................... but are busypeople whose humanitarian instincts should not be abused;and it is better for all concerned if authors try to submitpapers that are in good working order5 .
