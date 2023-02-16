@@ -1,0 +1,410 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}A few remarks before you start}{1}{}%
+\contentsline {chapter}{\numberline {2}Voorwoord}{3}{}%
+\contentsline {chapter}{\numberline {3}Inleiding}{4}{}%
+\contentsline {section}{\numberline {3.1}Achtergrond}{4}{}%
+\contentsline {section}{\numberline {3.2}Urgentie}{5}{}%
+\contentsline {section}{\numberline {3.3}Gewenste resultaat}{5}{}%
+\contentsline {section}{\numberline {3.4}Opdracht}{5}{}%
+\contentsline {section}{\numberline {3.5}Probleemomschrijving}{6}{}%
+\contentsline {section}{\numberline {3.6}probleemstelling}{6}{}%
+\contentsline {section}{\numberline {3.7}Onderzoeksvragen}{6}{}%
+\contentsline {section}{\numberline {3.8}Scope}{7}{}%
+\contentsline {section}{\numberline {3.9}Afbakening}{7}{}%
+\contentsline {section}{\numberline {3.10}Design goals}{7}{}%
+\contentsline {section}{\numberline {3.11}Leeswijzer}{10}{}%
+\contentsline {chapter}{\numberline {4}State of the art}{11}{}%
+\contentsline {section}{\numberline {4.1}Inleiding}{11}{}%
+\contentsline {section}{\numberline {4.2}State of the art}{11}{}%
+\contentsline {section}{\numberline {4.3}automatisering van waterwerken}{11}{}%
+\contentsline {subsection}{\numberline {4.3.1}waterwerken}{11}{}%
+\contentsline {subsubsection}{Zoekresultaten}{11}{}%
+\contentsline {subsubsection}{Bijlmerramp}{12}{}%
+\contentsline {paragraph}{change and repair dossier}{13}{}%
+\contentsline {paragraph}{cargo}{13}{}%
+\contentsline {subsubsection}{ cyber aanval op }{14}{}%
+\contentsline {paragraph}{Inleiding}{14}{}%
+\contentsline {paragraph}{Algemeen}{14}{}%
+\contentsline {paragraph}{CYBER AANVAL OP OEKRAINE De cyber aanval op Oekraïene}{14}{}%
+\contentsline {paragraph}{Doelstelling}{15}{}%
+\contentsline {paragraph}{Opvallendheden}{15}{}%
+\contentsline {paragraph}{Speculaties}{17}{}%
+\contentsline {paragraph}{Vermoedelijk cybercriminelen en staatsactoren}{17}{}%
+\contentsline {paragraph}{BlackEnergy}{17}{}%
+\contentsline {paragraph}{Ukraine Power Grid}{17}{}%
+\contentsline {paragraph}{Example}{18}{}%
+\contentsline {paragraph}{Artikel}{20}{}%
+\contentsline {paragraph}{Opportunities}{20}{}%
+\contentsline {paragraph}{Second Attack on the Ukraine Power Grid}{22}{}%
+\contentsline {paragraph}{Artikel}{25}{}%
+\contentsline {paragraph}{BLACKENERGY2}{28}{}%
+\contentsline {paragraph}{De backdoor van de RAT Module eigenschappen:}{30}{}%
+\contentsline {paragraph}{Manier om de aanvaller te ondermijnen}{37}{}%
+\contentsline {paragraph}{Algemeen}{39}{}%
+\contentsline {paragraph}{Opvallendheden}{40}{}%
+\contentsline {paragraph}{Vermoedelijk cybercriminelen en staatsactoren}{42}{}%
+\contentsline {paragraph}{Ukraine Power Grid}{43}{}%
+\contentsline {paragraph}{Opportunities}{45}{}%
+\contentsline {subsection}{\numberline {4.3.2}Second Attack on the Ukraine Power Grid}{47}{}%
+\contentsline {paragraph}{Conclusies}{55}{}%
+\contentsline {paragraph}{Discussies}{55}{}%
+\contentsline {paragraph}{Herhaling hoofdvraag}{55}{}%
+\contentsline {paragraph}{Beantwoording van de hoofdvraag}{55}{}%
+\contentsline {paragraph}{Conclusies}{55}{}%
+\contentsline {paragraph}{Zijn de resultaten valide?}{56}{}%
+\contentsline {paragraph}{Is alles getoetst?}{56}{}%
+\contentsline {paragraph}{Zijn de resultaten te begrijpen en te vertrouwen?}{56}{}%
+\contentsline {section}{\numberline {4.4}ecourt in nederlandse rechtspraak}{58}{}%
+\contentsline {subsection}{\numberline {4.4.1}ethiek}{58}{}%
+\contentsline {subsubsection}{ethiopian airlines}{58}{}%
+\contentsline {subsubsection}{explosie in libabon, beirut }{59}{}%
+\contentsline {subsubsection}{explosie tanjin china }{60}{}%
+\contentsline {section}{\numberline {4.5}Literatuuronderzoek}{61}{}%
+\contentsline {subsection}{\numberline {4.5.1}Introductie}{61}{}%
+\contentsline {subsection}{\numberline {4.5.2}Middenstuk}{61}{}%
+\contentsline {subsection}{\numberline {4.5.3}Literatuur review}{62}{}%
+\contentsline {subsection}{\numberline {4.5.4}Research methodology}{63}{}%
+\contentsline {subsection}{\numberline {4.5.5}Findings / Results / Data Analysis}{64}{}%
+\contentsline {subsubsection}{Het 4 variabelen model kort toegelicht}{68}{}%
+\contentsline {subsubsection}{Erika heeft een ziel}{69}{}%
+\contentsline {subsubsection}{Therac}{70}{}%
+\contentsline {subsubsection}{Krakend zorgssteem door covid-19 in suriname}{72}{}%
+\contentsline {subsubsection}{boeing 737 crashes}{73}{}%
+\contentsline {subsubsection}{china explosion 2015 tianjin}{77}{}%
+\contentsline {subsubsection}{tesla autopilot crashes}{78}{}%
+\contentsline {subsubsection}{vlucht 1951}{91}{}%
+\contentsline {subsubsection}{de mali missie}{93}{}%
+\contentsline {subsubsection}{militair overleden door schietoefening in ossendrecht}{94}{}%
+\contentsline {subsubsection}{schipholbrand}{94}{}%
+\contentsline {subsubsection}{vuurwerkramp enschede}{96}{}%
+\contentsline {subsubsection}{explosie in beirut}{97}{}%
+\contentsline {subsubsection}{bijlmerramp}{99}{}%
+\contentsline {subsubsection}{slmramp}{99}{}%
+\contentsline {subsubsection}{Tsjernobyl}{100}{}%
+\contentsline {subsubsection}{oekraine powergrid}{108}{}%
+\contentsline {subsubsection}{Reflectie}{113}{}%
+\contentsline {subsubsection}{Modelleren}{113}{}%
+\contentsline {subsubsection}{what is a good software specification}{116}{}%
+\contentsline {subsubsection}{parallelle compositie}{117}{}%
+\contentsline {subsubsection}{Urgent locations}{117}{}%
+\contentsline {subsubsection}{zeno gedrag}{117}{}%
+\contentsline {subsubsection}{Formal veriification}{117}{}%
+\contentsline {subsubsection}{critical safety systems chemicals}{118}{}%
+\contentsline {subsubsection}{critical safety systems airplanes}{119}{}%
+\contentsline {subsubsection}{critical safety systems fireworks}{121}{}%
+\contentsline {subsection}{\numberline {4.5.6}Previous work}{122}{}%
+\contentsline {subsubsection}{Mali}{132}{}%
+\contentsline {subsubsection}{Mali}{133}{}%
+\contentsline {subsubsection}{molukse treinkaping }{134}{}%
+\contentsline {section}{\numberline {4.6}Model}{135}{}%
+\contentsline {subsection}{\numberline {4.6.1}scenario en use case}{135}{}%
+\contentsline {subsection}{\numberline {4.6.2}De Kripke structuur}{136}{}%
+\contentsline {subsection}{\numberline {4.6.3}title}{136}{}%
+\contentsline {subsection}{\numberline {4.6.4}Soorten modellen}{136}{}%
+\contentsline {subsection}{\numberline {4.6.5}Tijd}{136}{}%
+\contentsline {subsection}{\numberline {4.6.6}Guards en invarianten}{137}{}%
+\contentsline {subsection}{\numberline {4.6.7}Deadlock}{137}{}%
+\contentsline {subsection}{\numberline {4.6.8}Zeno gedrag}{137}{}%
+\contentsline {section}{\numberline {4.7}Logica}{138}{}%
+\contentsline {subsubsection}{Uppaal syncrhonisatie}{138}{}%
+\contentsline {subsection}{\numberline {4.7.1}Conclusie}{151}{}%
+\contentsline {subsection}{\numberline {4.7.2}Conclusie}{162}{}%
+\contentsline {section}{\numberline {4.8}testresultaten}{165}{}%
+\contentsline {subsection}{\numberline {4.8.1}Testcases}{167}{}%
+\contentsline {subsection}{\numberline {4.8.2}Reparaties}{168}{}%
+\contentsline {subsection}{\numberline {4.8.3}Resulaat annalyse}{168}{}%
+\contentsline {subsection}{\numberline {4.8.4}Reparaties}{169}{}%
+\contentsline {subsection}{\numberline {4.8.5}Resulaat annalyse}{169}{}%
+\contentsline {subsubsection}{Ramp schietpartij militair ossendrecht }{169}{}%
+\contentsline {subsubsection}{schipholbrand}{171}{}%
+\contentsline {subsubsection}{slmramp}{171}{}%
+\contentsline {subsubsection}{stint ongeluk}{172}{}%
+\contentsline {section}{\numberline {4.9}tesla crash report}{172}{}%
+\contentsline {subsubsection}{therac-25}{189}{}%
+\contentsline {subsubsection}{tjernobyl}{190}{}%
+\contentsline {subsubsection}{ramp turkisch airlines}{191}{}%
+\contentsline {subsubsection}{vuurwerkramp in enschede }{191}{}%
+\contentsline {subsubsection}{Sluizen in suriname}{191}{}%
+\contentsline {subsubsection}{Mali}{191}{}%
+\contentsline {subsubsection}{tesla crash report}{193}{}%
+\contentsline {subsubsection}{ethiek}{194}{}%
+\contentsline {subsubsection}{ cyber aanval op Oekraïene }{194}{}%
+\contentsline {subsubsection}{schipholbrand}{194}{}%
+\contentsline {subsubsection}{therac-25}{194}{}%
+\contentsline {subsubsection}{Ramp schietpartij militair ossendrecht }{195}{}%
+\contentsline {subsubsection}{molukse treinkaping }{196}{}%
+\contentsline {subsubsection}{vuurwerkramp in enschede }{196}{}%
+\contentsline {subsubsection}{explosie in libabon, beirut }{196}{}%
+\contentsline {subsubsection}{explosie tanjin china }{197}{}%
+\contentsline {subsubsection}{bijlmerramp}{197}{}%
+\contentsline {subsubsection}{slmramp}{199}{}%
+\contentsline {subsubsection}{ethiopian airlines}{200}{}%
+\contentsline {subsubsection}{stint ongeluk}{201}{}%
+\contentsline {subsubsection}{tjernobyl}{201}{}%
+\contentsline {subsubsection}{ecounrt in de nerderlandse rechdspraak}{202}{}%
+\contentsline {subsubsection}{ramp turkisch airlines}{202}{}%
+\contentsline {subsubsection}{automatisering van waterwerken}{202}{}%
+\contentsline {subsubsection}{Artificial intelligence en water locks}{203}{}%
+\contentsline {subsection}{\numberline {4.9.1}ethiek}{203}{}%
+\contentsline {subsubsection}{mode confusion }{203}{}%
+\contentsline {subsection}{\numberline {4.9.2}Een goed model}{203}{}%
+\contentsline {paragraph}{Specification}{204}{}%
+\contentsline {paragraph}{Traceable}{204}{}%
+\contentsline {paragraph}{Truthfullnes}{205}{}%
+\contentsline {paragraph}{Simplicity}{205}{}%
+\contentsline {paragraph}{intgeroperability}{206}{}%
+\contentsline {subsection}{\numberline {4.9.3}Requirements}{207}{}%
+\contentsline {subsection}{\numberline {4.9.4}specificaties}{207}{}%
+\contentsline {subsection}{\numberline {4.9.5}Het vier variabelen model}{207}{}%
+\contentsline {subsubsection}{Monitored variabelen}{207}{}%
+\contentsline {subsubsection}{Controlled variabelen}{208}{}%
+\contentsline {subsubsection}{Input variabelen}{208}{}%
+\contentsline {subsubsection}{Output variabelen}{208}{}%
+\contentsline {subsection}{\numberline {4.9.6}Specificaties}{209}{}%
+\contentsline {section}{\numberline {4.10}Methode}{211}{}%
+\contentsline {subsection}{\numberline {4.10.1}inleiding}{211}{}%
+\contentsline {subsection}{\numberline {4.10.2}Overzicht van methoden}{211}{}%
+\contentsline {subsubsection}{Litratuuronderzoek}{211}{}%
+\contentsline {subsubsection}{Deskresearch}{211}{}%
+\contentsline {subsubsection}{Requirementsengineering}{211}{}%
+\contentsline {subsubsection}{Modelleren}{211}{}%
+\contentsline {subsubsection}{Testen}{211}{}%
+\contentsline {chapter}{\numberline {5}methoden}{216}{}%
+\contentsline {subparagraph}{Deskresearch}{216}{}%
+\contentsline {subparagraph}{Deskresearch}{216}{}%
+\contentsline {subparagraph}{Sketching}{218}{}%
+\contentsline {subparagraph}{prototyping}{218}{}%
+\contentsline {section}{\numberline {5.1}case study}{219}{}%
+\contentsline {section}{\numberline {5.2}Onderzoeksvraag}{220}{}%
+\contentsline {section}{\numberline {5.3}Inclusie en exclusiecriteria}{220}{}%
+\contentsline {section}{\numberline {5.4}referentie naar de onderzoeksmethoden}{220}{}%
+\contentsline {section}{\numberline {5.5}identificatie}{220}{}%
+\contentsline {section}{\numberline {5.6}binding en randomisatie}{220}{}%
+\contentsline {section}{\numberline {5.7}meetinstrument}{222}{}%
+\contentsline {section}{\numberline {5.8}omschrijving dataverzameling}{222}{}%
+\contentsline {paragraph}{Betrwoubaarheid en validiteit}{222}{}%
+\contentsline {paragraph}{data availability statement}{222}{}%
+\contentsline {section}{\numberline {5.9}setting waarin onderzoek plaatsvond}{222}{}%
+\contentsline {section}{\numberline {5.10}data analyse procedure}{223}{}%
+\contentsline {section}{\numberline {5.11}testomgeving}{223}{}%
+\contentsline {paragraph}{software setup}{223}{}%
+\contentsline {paragraph}{hardware setup}{223}{}%
+\contentsline {section}{\numberline {5.12}Requirementanalyse}{224}{}%
+\contentsline {section}{\numberline {5.13}Requirementanalyse}{224}{}%
+\contentsline {subsection}{\numberline {5.13.1}Inleiding}{224}{}%
+\contentsline {subsection}{\numberline {5.13.2}Protocolllen}{224}{}%
+\contentsline {subsubsection}{Vergelijking en Analyse}{224}{}%
+\contentsline {subsection}{\numberline {5.13.3}categorisatie}{225}{}%
+\contentsline {subsection}{\numberline {5.13.4}analyse}{225}{}%
+\contentsline {subsubsection}{Voor en nadelen analyse}{225}{}%
+\contentsline {paragraph}{Handmatig}{225}{}%
+\contentsline {paragraph}{Automatisch}{225}{}%
+\contentsline {subsubsection}{IoT Security}{226}{}%
+\contentsline {subsubsection}{Kwetsbaarheden}{226}{}%
+\contentsline {subsubsection}{Best Practices}{226}{}%
+\contentsline {subsubsection}{Role Based Access Control}{227}{}%
+\contentsline {subsection}{\numberline {5.13.5}Dataverzameling stakeholders}{227}{}%
+\contentsline {subsection}{\numberline {5.13.6}Bepaling van eisen}{227}{}%
+\contentsline {subsection}{\numberline {5.13.7}Scenario}{227}{}%
+\contentsline {subsubsection}{Doel van de applicatie}{228}{}%
+\contentsline {subsubsection}{Hoe werkt de pplicatie}{228}{}%
+\contentsline {subsubsection}{MosCoW}{229}{}%
+\contentsline {subsection}{\numberline {5.13.8}Resultaat}{232}{}%
+\contentsline {subsubsection}{Model}{232}{}%
+\contentsline {subsubsection}{Aankomst, uitvoering, vrijgave}{233}{}%
+\contentsline {subsubsection}{ontwerp}{233}{}%
+\contentsline {subsubsection}{Onderdelen}{233}{}%
+\contentsline {subsubsection}{Werking}{233}{}%
+\contentsline {paragraph}{extra cases}{234}{}%
+\contentsline {paragraph}{Aandachtspunten}{234}{}%
+\contentsline {section}{\numberline {5.14}Een voorbeeld}{235}{}%
+\contentsline {paragraph}{Vooraanmelding}{235}{}%
+\contentsline {paragraph}{informatie inwinnen}{235}{}%
+\contentsline {paragraph}{operationele melding}{235}{}%
+\contentsline {paragraph}{aankomst volgorde}{236}{}%
+\contentsline {paragraph}{aanwijzen wachtplaats}{236}{}%
+\contentsline {paragraph}{verstrekken informatie}{236}{}%
+\contentsline {paragraph}{aanwijzen opstelplaats}{236}{}%
+\contentsline {paragraph}{opstellen schutproces}{236}{}%
+\contentsline {paragraph}{verstrekken informatie}{236}{}%
+\contentsline {paragraph}{invaarvolgorde en ligplaats in sluis}{236}{}%
+\contentsline {paragraph}{gereedmaken voor invaren}{236}{}%
+\contentsline {paragraph}{openen invaardeuren}{236}{}%
+\contentsline {paragraph}{invaren toegestaan}{236}{}%
+\contentsline {paragraph}{aanwijzingen voor invaren}{236}{}%
+\contentsline {paragraph}{aanwijzingen tijdens afmeren}{236}{}%
+\contentsline {paragraph}{invaren verboden}{236}{}%
+\contentsline {paragraph}{sluiten invaardeuren}{236}{}%
+\contentsline {paragraph}{start nivelleren}{236}{}%
+\contentsline {paragraph}{aanzwijzingen voor uitvaren}{236}{}%
+\contentsline {paragraph}{openen uitvaardewuren}{237}{}%
+\contentsline {paragraph}{uitvaren toegestaan}{237}{}%
+\contentsline {paragraph}{brainstorm 22-5-2022}{237}{}%
+\contentsline {subparagraph}{invaardeuren en uitvaardeuren}{237}{}%
+\contentsline {subparagraph}{invaarstoplicht en uitvaarstoplicht}{237}{}%
+\contentsline {subparagraph}{invaarwachtrij en uitvaarwachtrij}{237}{}%
+\contentsline {section}{\numberline {5.15}Uppaal kripke structuren}{237}{}%
+\contentsline {subsubsection}{templates}{237}{}%
+\contentsline {paragraph}{Schip}{237}{}%
+\contentsline {paragraph}{Sluis}{237}{}%
+\contentsline {paragraph}{Aanvoer}{237}{}%
+\contentsline {paragraph}{Afvoer}{237}{}%
+\contentsline {paragraph}{Pomp}{238}{}%
+\contentsline {paragraph}{Pompbediening}{238}{}%
+\contentsline {paragraph}{Stoplicht}{238}{}%
+\contentsline {paragraph}{Deur}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{238}{}%
+\contentsline {subparagraph}{case}{239}{}%
+\contentsline {subparagraph}{case}{239}{}%
+\contentsline {subparagraph}{case}{239}{}%
+\contentsline {subparagraph}{case}{239}{}%
+\contentsline {subparagraph}{case}{239}{}%
+\contentsline {subparagraph}{case}{239}{}%
+\contentsline {paragraph}{Parallele compositie}{239}{}%
+\contentsline {paragraph}{Parallele compositie}{239}{}%
+\contentsline {subsubsection}{Modeleigenschappel}{239}{}%
+\contentsline {paragraph}{Parallele compositie}{239}{}%
+\contentsline {paragraph}{Synchronisatgie}{239}{}%
+\contentsline {chapter}{\numberline {6}CTL logica}{240}{}%
+\contentsline {section}{\numberline {6.1}Doel van de test}{240}{}%
+\contentsline {subsection}{\numberline {6.1.1}Wat wordt getest en hoe}{240}{}%
+\contentsline {subsection}{\numberline {6.1.2}toetsen met queries}{240}{}%
+\contentsline {subsection}{\numberline {6.1.3}Operator: AG}{240}{}%
+\contentsline {subsection}{\numberline {6.1.4}Operator: EG}{240}{}%
+\contentsline {subsection}{\numberline {6.1.5}Operator: AF}{240}{}%
+\contentsline {subsection}{\numberline {6.1.6}Operator: EF}{241}{}%
+\contentsline {subsection}{\numberline {6.1.7}Operator: AX}{241}{}%
+\contentsline {subsection}{\numberline {6.1.8}Operator: EX}{241}{}%
+\contentsline {subsection}{\numberline {6.1.9}Operator: p U q}{241}{}%
+\contentsline {subsection}{\numberline {6.1.10}Operator: p R q}{241}{}%
+\contentsline {subsection}{\numberline {6.1.11}Fairness}{241}{}%
+\contentsline {subsection}{\numberline {6.1.12}Liveness}{241}{}%
+\contentsline {subsubsection}{resultaat toetsen met queries}{242}{}%
+\contentsline {subsubsection}{Script voor uppaal template}{242}{}%
+\contentsline {subsubsection}{onderdeleel van de test}{245}{}%
+\contentsline {paragraph}{resultaat}{245}{}%
+\contentsline {subparagraph}{verklareing}{245}{}%
+\contentsline {subsection}{\numberline {6.1.13}liveness}{246}{}%
+\contentsline {subsection}{\numberline {6.1.14}safety}{246}{}%
+\contentsline {subsection}{\numberline {6.1.15}zeno vrij}{246}{}%
+\contentsline {subsection}{\numberline {6.1.16}deadlocks}{246}{}%
+\contentsline {section}{\numberline {6.2}testresultaten}{246}{}%
+\contentsline {subsection}{\numberline {6.2.1}Testcases}{247}{}%
+\contentsline {subsubsection}{Een schip komt aanvaren}{250}{}%
+\contentsline {subsubsection}{Een schip moet wachten}{250}{}%
+\contentsline {subsubsection}{Een schip komt van boven naar beneden}{250}{}%
+\contentsline {subsubsection}{De sluis is vol: hoe lang mkoet een schip wachten}{250}{}%
+\contentsline {subsubsection}{Een schip wil in de sluis koers wijzigen}{250}{}%
+\contentsline {subsubsection}{De volgorde in de wachtrij}{250}{}%
+\contentsline {subsubsection}{Aantal schepen in de wachtrij}{250}{}%
+\contentsline {subsubsection}{Maximale doorlooptijd }{250}{}%
+\contentsline {chapter}{\numberline {7}Testresultaten}{251}{}%
+\contentsline {section}{\numberline {7.1}Inleiding}{251}{}%
+\contentsline {section}{\numberline {7.2}verwachte testresultaten}{251}{}%
+\contentsline {section}{\numberline {7.3}Testopstelling}{251}{}%
+\contentsline {section}{\numberline {7.4}Webserver}{254}{}%
+\contentsline {section}{\numberline {7.5}MQTT subscribing}{254}{}%
+\contentsline {chapter}{\numberline {8}reparaties}{255}{}%
+\contentsline {section}{\numberline {8.1}Inleiding}{255}{}%
+\contentsline {section}{\numberline {8.2}Watchdog timer}{255}{}%
+\contentsline {section}{\numberline {8.3}OS-taak wifi-reconnect }{256}{}%
+\contentsline {chapter}{\numberline {9}Projectreflectie}{257}{}%
+\contentsline {section}{\numberline {9.1}Het ontwikkelproces}{257}{}%
+\contentsline {section}{\numberline {9.2}Hoe is getest}{257}{}%
+\contentsline {section}{\numberline {9.3}Welke coding standaarden}{258}{}%
+\contentsline {section}{\numberline {9.4}Hoe zijn bugs opgelost en gedocumenteerd}{258}{}%
+\contentsline {section}{\numberline {9.5}Hoe verliep het deployment proces}{259}{}%
+\contentsline {section}{\numberline {9.6}Welke repo is gebruikt en waarom}{259}{}%
+\contentsline {section}{\numberline {9.7}Ontwikkelomgeving}{259}{}%
+\contentsline {section}{\numberline {9.8}testproces}{259}{}%
+\contentsline {section}{\numberline {9.9}Build proces}{260}{}%
+\contentsline {section}{\numberline {9.10}Deployment proces}{260}{}%
+\contentsline {section}{\numberline {9.11}Support en issue management}{260}{}%
+\contentsline {section}{\numberline {9.12}Source control}{261}{}%
+\contentsline {subsubsection}{subsubsection}{261}{}%
+\contentsline {section}{\numberline {9.13}Rollback procedures}{262}{}%
+\contentsline {subsubsection}{subsubsection}{262}{}%
+\contentsline {chapter}{\numberline {10}Conclusie}{263}{}%
+\contentsline {chapter}{\numberline {11}Evaluatie}{264}{}%
+\contentsline {section}{\numberline {11.1}Defintie}{264}{}%
+\contentsline {section}{\numberline {11.2}Onderzoek}{264}{}%
+\contentsline {section}{\numberline {11.3}Analyse}{265}{}%
+\contentsline {section}{\numberline {11.4}Ontwerp}{265}{}%
+\contentsline {section}{\numberline {11.5}Ontwikkel}{265}{}%
+\contentsline {section}{\numberline {11.6}Build proces}{266}{}%
+\contentsline {section}{\numberline {11.7}Testen}{266}{}%
+\contentsline {section}{\numberline {11.8}Implementatie}{266}{}%
+\contentsline {section}{\numberline {11.9}Realisatie}{267}{}%
+\contentsline {section}{\numberline {11.10}Leerpunten}{267}{}%
+\contentsline {chapter}{\numberline {12}Conclusies en aanbevelingen}{268}{}%
+\contentsline {section}{\numberline {12.1}Conclusies}{268}{}%
+\contentsline {section}{\numberline {12.2}Aanbevelingen}{268}{}%
+\contentsline {chapter}{\numberline {13}Future work}{269}{}%
+\contentsline {chapter}{\numberline {14}Discussie}{270}{}%
+\contentsline {section}{\numberline {14.1}Beantwoording onderzoeksvragen}{270}{}%
+\contentsline {subsection}{\numberline {14.1.1}deelvraag}{270}{}%
+\contentsline {subsection}{\numberline {14.1.2}deelvraag}{270}{}%
+\contentsline {subsection}{\numberline {14.1.3}deelvraag}{270}{}%
+\contentsline {subsection}{\numberline {14.1.4}deelvraag}{270}{}%
+\contentsline {subsection}{\numberline {14.1.5}deelvraag}{270}{}%
+\contentsline {subsection}{\numberline {14.1.6}deelvraag}{270}{}%
+\contentsline {subsection}{\numberline {14.1.7}Beantwoording hoofdvraag}{270}{}%
+\contentsline {section}{\numberline {14.2}Verwijzing naar voorgaaande studiesk}{271}{}%
+\contentsline {section}{\numberline {14.3}implicaties van het ondersoek}{271}{}%
+\contentsline {section}{\numberline {14.4}Beperkingen van de studie}{271}{}%
+\contentsline {section}{\numberline {14.5}Perspectief van toeekomstige studies}{272}{}%
+\contentsline {section}{\numberline {14.6}Positie van de onderzoeker in de bevingingen}{272}{}%
+\contentsline {section}{\numberline {14.7}Conclusie}{272}{}%
+\contentsline {chapter}{\numberline {15}Aanbeveling}{273}{}%
+\contentsline {chapter}{\numberline {16}futurework}{274}{}%
+\contentsline {chapter}{\numberline {17}reflectie}{275}{}%
+\contentsline {chapter}{\numberline {18}Toelichting ontwerpen}{276}{}%
+\contentsline {subsection}{\numberline {18.0.1}Configuratie van cloud platform}{276}{}%
+\contentsline {subsection}{\numberline {18.0.2}conclisie}{276}{}%
+\contentsline {section}{\numberline {18.1}Een MQTT Subscribing service component}{276}{}%
+\contentsline {subsection}{\numberline {18.1.1}inleiding}{276}{}%
+\contentsline {subsection}{\numberline {18.1.2}Setup server side}{276}{}%
+\contentsline {subsection}{\numberline {18.1.3}implementatie}{277}{}%
+\contentsline {subsection}{\numberline {18.1.4}Conclusie}{277}{}%
+\contentsline {chapter}{\numberline {19}Gebruikersbeheer}{278}{}%
+\contentsline {section}{\numberline {19.1}section}{278}{}%
+\contentsline {chapter}{\numberline {20}Device provisioning}{279}{}%
+\contentsline {section}{\numberline {20.1}section}{279}{}%
+\contentsline {chapter}{\numberline {21}Testresultaten}{280}{}%
+\contentsline {section}{\numberline {21.1}Inleiding}{280}{}%
+\contentsline {section}{\numberline {21.2}testresultaten TI green}{282}{}%
+\contentsline {chapter}{\numberline {22}Code review}{283}{}%
+\contentsline {section}{\numberline {22.1}Scope}{283}{}%
+\contentsline {section}{\numberline {22.2}Stadia van code review process}{283}{}%
+\contentsline {section}{\numberline {22.3}Definities}{284}{}%
+\contentsline {section}{\numberline {22.4}Instructie voor code preparatie}{284}{}%
+\contentsline {section}{\numberline {22.5}Code review checklist modules }{285}{}%
+\contentsline {section}{\numberline {22.6}Code review checklist units }{285}{}%
+\contentsline {section}{\numberline {22.7}Formele code review overzicht}{285}{}%
+\contentsline {section}{\numberline {22.8}Lijst van aangevoerde en goedgekeurde wijzigingen}{286}{}%
+\contentsline {section}{\numberline {22.9}Ander code review commentaar}{286}{}%
+\contentsline {chapter}{\numberline {23}Discussie}{288}{}%
+\contentsline {subsection}{\numberline {23.0.1}Future work}{288}{}%
+\contentsline {subsubsection}{Hoogte waterniveau}{288}{}%
+\contentsline {subsubsection}{type deuren naar waterniveau}{288}{}%
+\contentsline {subsubsection}{voorrang uitvarend op invarend}{288}{}%
+\contentsline {subsubsection}{stoplicht invarend en stoplicht uitvarend}{288}{}%
+\contentsline {subsubsection}{Volgorde}{288}{}%
+\contentsline {chapter}{\numberline {24}Relevante begrippen}{289}{}%
+\contentsline {part}{I\hspace {1em}reflectie, projectaanpak en ontwikkeling}{290}{}%
+\contentsline {chapter}{\numberline {A}Literatuuronderzoek}{293}{}%
+\contentsline {chapter}{\numberline {B}Important Details}{308}{}%
+\contentsline {section}{\numberline {B.1}Type 1 fonts}{308}{}%
+\contentsline {section}{\numberline {B.2}Font embedding}{309}{}%
+\contentsline {chapter}{\numberline {C}Conclusions}{310}{}%
+\contentsline {section}{\numberline {C.1}Summary of the thesis}{310}{}%
+\contentsline {chapter}{\numberline {A}Proof of xyz}{311}{}%
+\contentsline {chapter}{References}{312}{}%
+\contentsline {chapter}{Curriculum Vitae}{313}{}%
