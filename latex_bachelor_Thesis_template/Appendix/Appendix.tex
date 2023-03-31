@@ -1,0 +1,317 @@
+\chapter{Uppaal source}
+\label{appendix}
+\thispagestyle{myheadings}
+
+
+
+\begin{verbatim}
+	// Place global declarations here.
+	
+	// knop 
+	chan klik;
+	
+	// alle lampen tegelijk
+	//broadcast chan klik;
+	
+	// max aantal lampen
+	const int MAX=4;
+	
+	//declarate voor een lamp
+	typedef int[0,MAX-1] id_l;
+	
+	// lichtintensiteit in lu
+	typedef int[0,10] lumen;
+	
+	lumen bright;
+	
+	
+	
+	// locale variabelen voor de templatet lamp: geef de template de volgende parameter: id_l lampnr
+	
+	void functie()
+	{
+		
+	}
+	
+	lumen sterkte;
+	
+	
+	// wacht 5 tijdseenheden
+	clock x;
+	
+	// een constraint op een bepaalde variabele
+	bool isForMe()
+	{
+		//	return false;
+		
+		if(lampnr < 2 && bright<6) return true;
+		else if(lampnr>1 && bright>=6) return true;
+		else return false;
+		
+	}
+	
+	
+	//verschillende tijdseenheden voor even en oneven lampnummers
+	
+	
+	
+	// Place local declaraties voor de knop
+	
+	
+	
+	clock x;
+	
+\end{verbatim}
+\newpage
+
+\section{\\ Appendix B: Model eerste deelname aan cursus 2020}
+% the \\ insures the section title is centered below the phrase: Appendix B
+
+Text of Appendix B is Here
+
+
+
+\begin{verbatim}
+	
+	Queries
+	Sluis.Draining-->Deuren.laag_open
+	Deuren.laag_open-->Stoplicht.Green
+	E<> (Ship.ship_can_move&&Stoplicht.Green)
+	A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.laag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.stopgaphigh2))
+	A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Opening_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Sluis.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))
+	Sensor.Wait-->Sensor.Wait
+	Stoplicht.Green-->Stoplicht.Green
+	(Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||Deuren.hoog_open)
+	Deuren.laag_open-->Deuren.Closed
+	Deuren.hoog_open-->Deuren.Closed
+	Deuren.Closed-->Stoplicht.Red
+	Ship.ship_can_move-->Deuren.Closed
+	Deuren.hoog_open-->Stoplicht.Green
+	Ship.ship_can_move-->Stoplicht.Green
+	A[] not (Deuren.laag_open && Deuren.hoog_open)
+	Ship.ship_can_move-->Ship.ship_can_move
+	A[] not (Deuren.laag_open && Sluis.water != Sluis.water_laag)
+	A[] not (Deuren.hoog_open && Sluis.water != Sluis.water_hoog)
+	A[]not deadlock
+	
+	Project declaraties
+	//Declarations
+	
+	chan boot_hoog;
+	chan boot_laag;
+	chan changedoor_low;
+	chan changedoor_high;
+	chan ship_moves;
+	chan ship_abletomove;
+	chan changelight;
+	
+	\\Sluis declaraties
+	const int water_laag=0;
+	const int water_hoog=10;
+	const int water_median=(water_hoog+water_laag)/2;
+	int[water_laag,water_hoog] water=water_median;
+	clock x;
+	\\Stoplicht declaraties
+	
+	\\Ship declaraties
+	clock x;
+	\\Sensor declaraties
+	
+	\\Deuren declaraties
+	bool stoplicht_hoog=false;
+	bool stoplicht_laag=false;
+	clock x;
+	
+	
+	\\System declaraties
+	system Deuren,Sensor,Sluis,Ship,Stoplicht;
+	
+	
+	
+	
+\end{verbatim}
+
+\newpage
+\section{\\ Appendix B: Model herkansing tweede deelname aan cursus 2020}
+% the \\ insures the section title is centered below the phrase: Appendix B
+
+Text of Appendix B is Here
+
+\begin{verbatim}
+	// Place global declarations here.
+	/*
+	Project working
+	
+	AtArrival
+	StoplightRed
+	DoorOpen
+	StoplightGreen
+	Startmove
+	Sensor
+	SchipEntered
+	Doorclosed
+	StoplightRed
+	---------
+	Nivelleer started
+	NIvelleer stopped
+	Waterlevel equilibrium
+	-----------
+	AtLeaving
+	Stoplightred
+	Dooropened
+	Stoplightgreen
+	StartMove
+	Sensor
+	SchipHasLeft
+	Doorclosed
+	StoplightRed
+	
+	
+	Uitleg
+	Als het schip boven is, dan is waterlvel gelijk aan hoog, filling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty valve is dicht. 
+	Schip is in waterlock, waterlevel is hoog, filling valve is dicht, lower gates gesloten, upper gates gesloten, empty valve is open. 
+	Schip is dan laag, waterlevel gelijk aan laag, filling valve is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.
+	AtArrivalHigh
+	
+	AtArrivalLow
+	Als schip beneden is dan is waterlevel gelijk aan laag, filling valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valve is open. 
+	Schip is in water lock, waterlevel is laag, flilling valve is open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is dicht,. 
+	Schip is dan hoog, waterlevel is gelijk aan hoog, filling valve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is dicht
+	
+	
+	*/
+	
+	const int N = 2;         // # trains
+	typedef int[0,N-1] id_t;
+	
+	chan        appr[N], stop[N], leave[N];
+	urgent chan go[N];
+	
+	// waterniveau in in meter van 0 tot 10
+	typedef int[3,10] waterniveau;
+	
+	waterniveau level;
+	
+	
+	//doors
+	chan lower_gate;
+	chan upper_gate;
+	//filling
+	chan emptying_valve;
+	chan filling_valve;
+	bool nivelleer_sessie_bezig;
+	// water level
+	chan high_water_level;
+	chan low_water_level;
+	//sluices
+	chan signal_sluis_low[N];
+	chan signal_sluis_high[N];
+	//
+	chan move[N];
+	//
+	chan groen;
+	chan rood;
+	
+	clock central;
+	
+	\\geef de schip parameter const id_t id
+	// Place local declarations here.
+	clock schip_clock;
+	
+	\\sensor declaraties
+	clock x;
+	
+	
+	
+	\\sluis declaraties
+	
+	const int water_laag=3;
+	const int water_hoog=10;
+	const int water_median=(water_hoog+water_laag)/2;
+	int[water_laag,water_hoog] water=water_median;
+	// level wordt gelijk gezet met temp
+	// temp is gelijk aan waterniveau
+	clock sluis_clock;
+	id_t list[N+1];
+	int[0,N] len;
+	bool contentHigh, contentLow;
+	// Put an element at the end of the queue
+	void enqueue(id_t element)
+	{
+		list[len++] = element;
+	}
+	
+	// Remove the front element of the queue
+	void dequeue()
+	{
+		int i = 0;
+		len -= 1;
+		while (i < len)
+		{
+			list[i] = list[i + 1];
+			i++;
+		}
+		list[i] = 0;
+	}
+	
+	// Returns the front element of the queue
+	id_t front()
+	{
+		return list[0];
+	}
+	
+	// Returns the last element of the queue
+	id_t tail()
+	{
+		return list[len - 1];
+	}
+	
+	
+	
+	\\stoplicht declaraties
+	clock stoplicht_clock;
+	
+	
+	
+	\\pomp declaraties
+	
+	const int water_laag=3;
+	const int water_hoog=10;
+	const int water_median=(water_hoog+water_laag)/2;
+	int[water_laag,water_hoog] water=water_median;
+	clock pomp_clock;
+	// waterniveau van de sensor voor de sluis is gelijk aan level
+	waterniveau depth;
+	
+	
+	
+	// een constraint op een bepaalde variabele
+	bool isForLow()
+	{
+		//	return false;
+		
+		if( level>=3) return true;
+		else return false;
+		
+	}
+	
+	bool isForHigh()
+	{
+		//	return false;
+		
+		if( level>=6) return true;
+		//else if(level>=6) return true;
+		
+		else return false;
+		
+	}
+	
+	
+	
+	//verschillende tijdseenheden voor even en oneven lampnummers
+	
+	
+	
+	
+	
+\end{verbatim}

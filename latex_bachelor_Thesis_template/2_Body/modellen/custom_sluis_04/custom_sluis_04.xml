@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+
+
+const int N = 2;         // # trains
+typedef int[0,N-1] id_t;
+
+chan        appr[N], stop[N], leave[N];
+urgent chan go[N];
+
+int i;
+chan set_level, reset;
+bool set_waterlevel;
+
+
+bool deur_open_1, deur_open_2, open_all;
+chan open_doors, close_doors;
+</declaration><template><name x="5" y="5">Schip_l</name><parameter>const id_t id</parameter><declaration>// Place local declarations here.
+clock x;</declaration><location id="id0" x="544" y="-96"><name x="534" y="-126">Cross2</name></location><location id="id1" x="64" y="224"><name x="54" y="194">Stop</name></location><location id="id2" x="256" y="-32"><name x="182" y="-62">Cross1</name></location><location id="id3" x="160" y="96"><name x="150" y="66">Start</name></location><location id="id4" x="-32" y="96"><name x="-42" y="66">Appr</name><label kind="invariant" x="-42" y="111">x&lt;=20</label></location><location id="id5" x="-32" y="-96"><name x="-42" y="-126">Safe</name></location><init ref="id5"/><transition><source ref="id2"/><target ref="id0"/><label kind="guard" x="424" y="-64">x&gt;5</label><label kind="synchronisation" x="340" y="-79">leave[id]!</label><label kind="assignment" x="340" y="-64">x:=0</label><nail x="544" y="-32"/></transition><transition><source ref="id4"/><target ref="id2"/><label kind="guard" x="-16" y="-64">x&gt;=10</label><label kind="assignment" x="52" y="32">x=0</label><nail x="96" y="96"/><nail x="96" y="-32"/></transition><transition><source ref="id0"/><target ref="id5"/><label kind="guard" x="196" y="-126">x&gt;=3</label><label kind="synchronisation" x="196" y="-111">close_doors!</label></transition><transition><source ref="id3"/><target ref="id2"/><label kind="guard" x="224" y="24">x&gt;7</label><nail x="256" y="96"/></transition><transition><source ref="id1"/><target ref="id3"/><label kind="synchronisation" x="52" y="145">go[id]?</label><label kind="assignment" x="52" y="160">x=0</label></transition><transition><source ref="id4"/><target ref="id1"/><label kind="guard" x="-44" y="130">x&lt;=10</label><label kind="synchronisation" x="-44" y="145">stop[id]?</label></transition><transition><source ref="id5"/><target ref="id4"/><label kind="synchronisation" x="-92" y="-15">appr[id]!</label><label kind="assignment" x="-92" y="0">x=0</label></transition></template><template><name>Schip_r</name><parameter>const id_t id</parameter><declaration>
+
+clock x;</declaration><location id="id6" x="-64" y="-96"><name x="-74" y="-126">Cross2</name></location><location id="id7" x="128" y="160"><name x="118" y="130">set_level</name></location><location id="id8" x="224" y="-160"><name x="214" y="-190">Cross1</name></location><location id="id9" x="224" y="32"><name x="214" y="2">Restart</name><label kind="invariant" x="214" y="47">x&lt;=10</label></location><location id="id10" x="32" y="32"><name x="22" y="2">Entering</name></location><location id="id11" x="-256" y="160"><name x="-266" y="130">Stop</name></location><location id="id12" x="-160" y="32"><name x="-170" y="2">Start</name><label kind="invariant" x="-170" y="47">x&lt;=15</label></location><location id="id13" x="-352" y="32"><name x="-362" y="2">Appr</name><label kind="invariant" x="-362" y="47">x&lt;=20</label></location><location id="id14" x="-352" y="-160"><name x="-362" y="-190">Safe</name></location><init ref="id14"/><transition><source ref="id13"/><target ref="id6"/><label kind="guard" x="-264" y="-136">deur_open_2==true &amp;&amp; x&gt;=10</label><label kind="assignment" x="-280" y="-88">x=0</label><nail x="-224" y="32"/><nail x="-224" y="-96"/></transition><transition><source ref="id8"/><target ref="id14"/><label kind="synchronisation" x="-124" y="-175">leave[id]!</label></transition><transition><source ref="id9"/><target ref="id8"/></transition><transition><source ref="id7"/><target ref="id9"/><label kind="assignment" x="116" y="96">x=0</label></transition><transition><source ref="id10"/><target ref="id7"/></transition><transition><source ref="id6"/><target ref="id10"/><nail x="32" y="-96"/></transition><transition><source ref="id12"/><target ref="id6"/><label kind="guard" x="-96" y="-32">x&gt;=7</label><nail x="-64" y="32"/></transition><transition><source ref="id11"/><target ref="id12"/><label kind="synchronisation" x="-268" y="81">go[id]?</label><label kind="assignment" x="-268" y="96">x=0</label><nail x="-224" y="120"/></transition><transition><source ref="id13"/><target ref="id11"/><label kind="guard" x="-364" y="66">x&lt;=10</label><label kind="synchronisation" x="-364" y="81">stop[id]?</label></transition><transition><source ref="id14"/><target ref="id13"/><label kind="synchronisation" x="-412" y="-79">appr[id]!</label></transition></template><template><name>Controller</name><declaration>
+clock x;
+
+id_t list[N+1];
+int[0,N] len;
+
+void enqueue(id_t element)
+{
+	list[len++] = element;
+}
+
+void dequeue()
+{
+	int i =0;
+	len -= 1;
+	while(i &lt; len)
+	{
+		list[i] = list[i+1];
+		i++;
+	}
+	list[i]=0;
+}
+// Returns the front element of the queue
+id_t front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return list[len - 1];
+}
+
+
+bool check()
+{
+	// deur_open_1, deur_open_2
+	if(deur_open_1== false &amp;&amp; deur_open_2==false) return true;
+	else return false;
+	
+}</declaration><location id="id15" x="448" y="160"></location><location id="id16" x="448" y="32"></location><location id="id17" x="320" y="288"></location><location id="id18" x="160" y="288"><name x="150" y="258">Still_open</name></location><location id="id19" x="96" y="192"><name x="8" y="160">Check_If_closed</name></location><location id="id20" x="320" y="-96"><name x="310" y="-126">final_close</name></location><location id="id21" x="192" y="-96"><name x="182" y="-126">second_closing</name><label kind="invariant" x="182" y="-81">x&lt;=18</label><committed/></location><location id="id22" x="64" y="64"><name x="54" y="34">doors_closed</name></location><location id="id23" x="64" y="0"><name x="54" y="-30">first_closing</name></location><location id="id24" x="-96" y="0"><name x="-106" y="-30">doors_opened</name></location><location id="id25" x="-96" y="-64"><name x="-106" y="-94">opening_doors</name></location><location id="id26" x="192" y="32"><name x="182" y="2">doors_reopened</name></location><location id="id27" x="192" y="128"><name x="182" y="98">reopening_doors</name></location><location id="id28" x="192" y="192"><name x="182" y="162">water_level_set</name><committed/></location><location id="id29" x="0" y="320"><name x="-10" y="290">Full</name><committed/></location><location id="id30" x="0" y="192"><name x="-40" y="160">Occ</name></location><location id="id31" x="0" y="-128"><name x="-10" y="-158">Free</name></location><init ref="id31"/><transition><source ref="id27"/><target ref="id16"/><label kind="guard" x="664" y="-16">deur_open_2==false &amp;&amp; deur_open_1==false</label><label kind="synchronisation" x="260" y="65">open_doors!</label><nail x="640" y="256"/><nail x="640" y="-64"/></transition><transition><source ref="id30"/><target ref="id19"/><label kind="guard" x="8" y="352">set_waterlevel==true</label><label kind="synchronisation" x="48" y="336">reset!</label><nail x="32" y="320"/><nail x="96" y="320"/></transition><transition><source ref="id16"/><target ref="id26"/><label kind="synchronisation" x="260" y="17">reset!</label></transition><transition><source ref="id15"/><target ref="id16"/><label kind="guard" x="552" y="48">deur_open_2==false</label><label kind="synchronisation" x="560" y="72">open_doors!</label><nail x="544" y="128"/><nail x="544" y="64"/></transition><transition><source ref="id15"/><target ref="id16"/><label kind="guard" x="388" y="66">deur_open_1==false</label><label kind="synchronisation" x="392" y="80">open_doors!</label></transition><transition><source ref="id27"/><target ref="id15"/><label kind="guard" x="260" y="114">deur_open_2==false || deur_open_1==false</label></transition><transition><source ref="id17"/><target ref="id28"/><label kind="synchronisation" x="196" y="225">set_level!</label></transition><transition><source ref="id18"/><target ref="id17"/><label kind="guard" x="184" y="296">deur_open_1==true</label><label kind="synchronisation" x="208" y="376">close_doors!</label></transition><transition><source ref="id18"/><target ref="id17"/><label kind="guard" x="192" y="416">deur_open_2==true</label><label kind="synchronisation" x="200" y="320">close_doors!</label><nail x="192" y="352"/><nail x="288" y="352"/></transition><transition><source ref="id19"/><target ref="id18"/><label kind="guard" x="24" y="232">deur_open_2==true || deur_open_1==true</label></transition><transition><source ref="id30"/><target ref="id19"/><label kind="guard" x="0" y="200">set_waterlevel==false</label></transition><transition><source ref="id19"/><target ref="id28"/><label kind="guard" x="112" y="200">check()==true</label><label kind="synchronisation" x="120" y="168">set_level!</label></transition><transition><source ref="id20"/><target ref="id31"/><label kind="guard" x="100" y="-142">x&lt;=20</label><label kind="assignment" x="100" y="-112">x=0</label><nail x="320" y="-128"/></transition><transition><source ref="id21"/><target ref="id20"/></transition><transition><source ref="id26"/><target ref="id21"/><label kind="select" x="136" y="-77">e:id_t</label><label kind="guard" x="136" y="-62">e==front()</label><label kind="synchronisation" x="136" y="-47">leave[e]?</label><label kind="assignment" x="136" y="-32">dequeue(), x:=0</label></transition><transition><source ref="id22"/><target ref="id30"/><label kind="select" x="-28" y="83">e:id_t</label><label kind="synchronisation" x="-28" y="113">appr[e]?</label><label kind="assignment" x="-28" y="128">enqueue(e)</label><nail x="64" y="160"/><nail x="0" y="160"/></transition><transition><source ref="id23"/><target ref="id22"/><label kind="synchronisation" x="4" y="17">close_doors!</label></transition><transition><source ref="id24"/><target ref="id23"/></transition><transition><source ref="id25"/><target ref="id24"/><label kind="synchronisation" x="-156" y="-47">open_doors!</label></transition><transition><source ref="id31"/><target ref="id25"/><label kind="guard" x="-108" y="-126">len==0</label><nail x="0" y="-96"/><nail x="-96" y="-96"/></transition><transition><source ref="id27"/><target ref="id26"/><label kind="guard" x="132" y="50">x&lt;=18 &amp;&amp; (deur_open_2==true &amp;&amp; deur_open_1==true)</label><label kind="synchronisation" x="132" y="65">reset!</label><label kind="assignment" x="132" y="80">x=0</label></transition><transition><source ref="id28"/><target ref="id27"/><label kind="synchronisation" x="132" y="145">open_doors!</label></transition><transition><source ref="id31"/><target ref="id30"/><label kind="guard" x="-240" y="65">len&gt;0</label><label kind="synchronisation" x="-240" y="80">go[front()]!</label><nail x="-160" y="-128"/><nail x="-160" y="192"/></transition><transition><source ref="id29"/><target ref="id30"/><label kind="synchronisation" x="-136" y="288">stop[tail()]!</label><nail x="-136" y="280"/><nail x="-136" y="216"/></transition><transition><source ref="id30"/><target ref="id29"/><label kind="select" x="-68" y="243">e:id_t</label><label kind="guard" x="-72" y="224">len&lt;2</label><label kind="synchronisation" x="-72" y="256">appr[e]?</label><label kind="assignment" x="-72" y="272">enqueue(e)</label></transition></template><template><name>nivelleer</name><location id="id32" x="-192" y="0"><name x="-202" y="-30">Nivelleren</name></location><location id="id33" x="-320" y="0"><name x="-330" y="-30">start_niveau</name></location><init ref="id33"/><transition><source ref="id32"/><target ref="id33"/><label kind="synchronisation" x="-296" y="-64">reset?</label><label kind="assignment" x="-328" y="48">i:=0, set_waterlevel=false</label><nail x="-224" y="-32"/><nail x="-288" y="-32"/></transition><transition><source ref="id33"/><target ref="id32"/><label kind="synchronisation" x="-288" y="0">set_level?</label></transition></template><template><name>Sluisdeur_l</name><declaration>
+clock x;</declaration><location id="id34" x="-288" y="0"><name x="-298" y="-30">Open</name></location><location id="id35" x="-544" y="0"><name x="-584" y="-32">Closed</name></location><init ref="id35"/><transition><source ref="id34"/><target ref="id35"/><label kind="synchronisation" x="-464" y="72">close_doors?</label><label kind="assignment" x="-480" y="112">deur_open_1=false</label><nail x="-352" y="64"/><nail x="-480" y="64"/></transition><transition><source ref="id35"/><target ref="id34"/><label kind="synchronisation" x="-480" y="-120">open_doors?</label><label kind="assignment" x="-480" y="-152">deur_open_1=true</label><nail x="-480" y="-64"/><nail x="-352" y="-64"/></transition></template><template><name>Sluisdeur_r</name><declaration>
+
+clock x;</declaration><location id="id36" x="-352" y="0"><name x="-362" y="-30">Open</name></location><location id="id37" x="-608" y="0"><name x="-664" y="-32">Closed</name></location><init ref="id37"/><transition><source ref="id36"/><target ref="id37"/><label kind="synchronisation" x="-520" y="80">close_doors?</label><label kind="assignment" x="-544" y="120">deur_open_2=false</label><nail x="-416" y="64"/><nail x="-544" y="64"/></transition><transition><source ref="id37"/><target ref="id36"/><label kind="synchronisation" x="-536" y="-144">open_doors?</label><label kind="assignment" x="-544" y="-120">deur_open_2 = true</label><nail x="-544" y="-64"/><nail x="-416" y="-64"/></transition></template><template><name>check</name><declaration>
+
+
+bool check()
+{
+	// deur_open_1, deur_open_2
+	if(deur_open_1== false &amp;&amp; deur_open_2==false) return true;
+	else return false;
+	
+}</declaration><location id="id38" x="0" y="0"><name x="-10" y="-30">Init</name></location><init ref="id38"/><transition><source ref="id38"/><target ref="id38"/><label kind="synchronisation" x="144" y="-40">close_doors!</label><nail x="128" y="64"/><nail x="128" y="-96"/></transition></template><system>// Place template instantiations here.
+
+
+// List one or more processes to be composed into a system.
+system Schip_l,  Controller, nivelleer, Sluisdeur_l, Sluisdeur_r;</system></nta>

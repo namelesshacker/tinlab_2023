@@ -1,0 +1,1158 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  31 MAR 2023 13:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./thesis.tex
+(thesis.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-09-28>
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen139
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count194
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count195
+\leftroot@=\count196
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count197
+\DOTSCASE@=\count198
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count199
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count266
+\dotsspace@=\muskip16
+\c@parentequation=\count267
+\dspbrk@lvl=\count268
+\tag@help=\toks17
+\row@=\count269
+\column@=\count270
+\maxfields@=\count271
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/bibtex\apalike.sty
+\bibhang=\skip52
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count272
+\float@exts=\toks21
+\float@box=\box53
+\@float@everytoks=\toks22
+\@floatcapt=\box54
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+\caption@tempdima=\dimen148
+\captionmargin=\dimen149
+\caption@leftmargin=\dimen150
+\caption@rightmargin=\dimen151
+\caption@width=\dimen152
+\caption@indent=\dimen153
+\caption@parindent=\dimen154
+\caption@hangindent=\dimen155
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count273
+\c@continuedfloat=\count274
+Package caption Info: float package is loaded.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box55
+\shadowsize=\dimen156
+\@Sbox=\box56
+\do@VerbBox=\toks24
+\the@fancyput=\toks25
+\this@fancyput=\toks26
+\EndVerbatimTokens=\toks27
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(bu_ece_thesis.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+\degree=\count275
+\numadvisors=\count276
+\@approvalreader=\box57
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+\stockwidth=\dimen157
+\stockheight=\dimen158
+))) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks28
+\AP@partial=\box58
+\AP@footins=\box59
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.s
+ty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count277
+\sf@farskip=\skip62
+\sf@captopadj=\dimen159
+\sf@capskip=\skip63
+\sf@nearskip=\skip64
+\c@subfigure=\count278
+\c@subfigure@save=\count279
+\c@lofdepth=\count280
+\c@subtable=\count281
+\c@subtable@save=\count282
+\c@lotdepth=\count283
+\sf@top=\skip65
+\sf@bottom=\skip66
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count284
+\c@@ppsavesec=\count285
+\c@@ppsaveapp=\count286
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count287
+\l__pdf_internal_box=\box60
+) (thesis.aux (0_Prelim/prelim.aux) (1_Intro/intro.aux) (2_Body/body.aux) (3_De
+tails/details.aux) (4_Conclusions/conclusions.aux)
+(Appendix/Appendix.aux) (0_Prelim/cv.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count288
+\scratchdimen=\dimen162
+\scratchbox=\box61
+\nofMPsegments=\count289
+\nofMParguments=\count290
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count291
+\MPscratchDim=\dimen163
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
+\everyMPtoPDFconversion=\toks30
+)
+\openout2 = `0_Prelim/prelim.aux'.
+
+ (0_Prelim/prelim.tex [1
+
+
+{C:/Users/gally/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+
+] [3
+
+] (0_Prelim/quote.tex) [4
+
+] (0_Prelim/ack.tex) [5
+
+]
+Overfull \hbox (5.99188pt too wide) in paragraph at lines 106--106
+ [][] 
+ []
+
+(0_Prelim/abs.tex) [6
+
+] (thesis.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[7
+
+
+] [8])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [9] (thesis.lot)
+\tf@lot=\write5
+\openout5 = `thesis.lot'.
+
+ [10
+
+
+] (thesis.lof)
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [11
+
+
+]
+Overfull \hbox (39.17992pt too wide) in paragraph at lines 134--145
+ [] 
+ []
+
+[12
+
+
+])
+\openout2 = `1_Intro/intro.aux'.
+
+ (1_Intro/intro.tex
+Chapter 1.
+[1
+
+
+
+
+
+
+] [2]) [3]
+\openout2 = `2_Body/body.aux'.
+
+ (2_Body/body.tex
+Overfull \hbox (38.39113pt too wide) in paragraph at lines 11--16
+[]$\OT1/cmtt/m/n/12 https : / / www . dalton . nl / literatuur / item / 252-[]d
+e-[]automatiseringsparadox$ $https :
+ []
+
+
+Overfull \hbox (214.1914pt too wide) in paragraph at lines 11--16
+\OT1/cmtt/m/n/12 / / www . debicker . eu / de-[]automatiseringsparadox/$ $https
+ : / / vse . nl / de-[]paradox-[]van-[]de-[]industriele-[]automatisering/$
+ []
+
+
+Overfull \hbox (20.76631pt too wide) in paragraph at lines 11--16
+\OT1/cmtt/m/n/12 https : / / automatie-[]pma . com / nieuws / industriele-[]aut
+omatiseringsparadox$ $https :
+ []
+
+
+Overfull \hbox (32.50523pt too wide) in paragraph at lines 11--16
+\OT1/cmtt/m/n/12 / / blog . xot . nl / 2016 / 11 / 21 / slimme-[]apparaten-[]ma
+ken-[]ons-[]dom-[]en-[]kwetsbaar / index .
+ []
+
+[4
+
+
+
+
+] [5] [6] [7] [8] [9] [10]
+Overfull \hbox (0.8506pt too wide) in paragraph at lines 112--113
+[]\OT1/cmr/m/n/12 AND/OR graaf wordt ge-bruikt voor de doc-u-men-tatie van re-f
+ine-ment/decompositie
+ []
+
+[11] [12] [13] [14] [15] [16] [17]
+Chapter 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
+[]\OT1/cmr/m/n/10 rapport-veiligheid-van-op-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+[]\OT1/cmr/m/n/10 richtlijnen-vaarwegen-2017
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
+[]\OT1/cmr/m/n/10 duurzaamheid []bij []de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
+\OT1/cmr/m/n/10 uit-gevo-erd in hogesterk-te-be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+[]\OT1/cmr/m/n/10 Capaciteitsanalyse []van []de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+[]\OT1/cmr/m/n/10 prinses[]margrietsluis []in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+[]\OT1/cmr/m/n/10 bijlagerapport []c []- []analyse
+ []
+
+
+Overfull \hbox (77.73834pt too wide) in paragraph at lines 346--346
+[]\OT1/cmr/m/n/10 https://wiki.woudagemaal.nl/w/index.php/Sluizen| 
+ []
+
+[18
+
+] [19]
+<2_Body/Figures//sluismodel.jpg, id=109, 432.61626pt x 234.8775pt>
+File: 2_Body/Figures//sluismodel.jpg Graphic file (type jpg)
+<use 2_Body/Figures//sluismodel.jpg>
+Package pdftex.def Info: 2_Body/Figures//sluismodel.jpg  used on input line 404
+.
+(pdftex.def)             Requested size: 281.19724pt x 152.66856pt.
+ [20 <./2_Body/Figures//sluismodel.jpg>] [21]
+<2_Body/Figures//sluispassage.png, id=116, 490.83376pt x 689.57625pt>
+File: 2_Body/Figures//sluispassage.png Graphic file (type png)
+<use 2_Body/Figures//sluispassage.png>
+Package pdftex.def Info: 2_Body/Figures//sluispassage.png  used on input line 4
+37.
+(pdftex.def)             Requested size: 319.03815pt x 448.21924pt.
+ [22 <./2_Body/Figures//sluispassage.png>] [23] [24] [25] [26]
+Chapter 3.
+
+LaTeX Warning: Citation `locke_2020' on page 27 undefined on input line 605.
+
+
+LaTeX Warning: Citation `gnsguides' on page 27 undefined on input line 610.
+
+[27
+
+]
+Overfull \hbox (313.55537pt too wide) in paragraph at lines 617--617
+[]\OT1/cmtt/m/n/12 In welke staat de automaat zich ook bevindt, in alle richtin
+gen kom je vroeg of laat een state tegen, waarin p geldig is.[] 
+ []
+
+
+Overfull \hbox (17.15523pt too wide) in paragraph at lines 624--624
+[]\OT1/cmtt/m/n/12 Ookal treedt p nooit p volgens de logica klopt het dan dat q
+ volgt uit p.[] 
+ []
+
+
+Overfull \hbox (23.22655pt too wide) in paragraph at lines 628--641
+ [] 
+ []
+
+
+Overfull \hbox (498.80547pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.la
+ag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.st
+opgaphigh2))[] 
+ []
+
+
+Overfull \hbox (789.03061pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Opening
+_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Sluis
+.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))[] 
+ []
+
+[28]
+Overfull \hbox (29.50523pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 (Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||De
+uren.hoog_open)[] 
+ []
+
+[29]
+Overfull \hbox (498.80547pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 Als het schip boven is, dan is waterlvel gelijk aan hoog, fi
+lling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty val
+ve is dicht.[] 
+ []
+
+
+Overfull \hbox (375.3054pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 Schip is in waterlock, waterlevel is hoog, filling valve is 
+dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
+ []
+
+
+Overfull \hbox (412.35542pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 Schip is dan laag, waterlevel gelijk aan laag, filling valve
+ is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.[]
+ 
+ []
+
+
+Overfull \hbox (474.10545pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 Als schip beneden is dan is waterlevel gelijk aan laag, fill
+ing valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valve 
+is open.[] 
+ []
+
+
+Overfull \hbox (449.40544pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 Schip is in water lock, waterlevel is laag, flilling valve i
+s open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is dic
+ht,.[] 
+ []
+
+
+Overfull \hbox (437.05544pt too wide) in paragraph at lines 713--713
+[]\OT1/cmtt/m/n/12 Schip is dan hoog, waterlevel is gelijk aan hoog, filling va
+lve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is dic
+ht[] 
+ []
+
+! Undefined control sequence.
+<argument>  D=\Set 
+                   {x\in \nat }{1\le x\le 100}\\ D=\Set [\big ]{x\in \nat }{...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  D=\Set {x\in \nat 
+                              }{1\le x\le 100}\\ D=\Set [\big ]{x\in \nat }{...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\big ]{x\in \nat }{1\le x...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\le 100}\\ D=\Set [\big ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\Big ]{x\in \nat }{1\le x...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\le 100}\\ D=\Set [\Big ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\bigg ]{x\in \nat }{1\le ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...le 100}\\ D=\Set [\bigg ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\Bigg ]{x\in \nat }{1\le ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...le 100}\\ D=\Set [\Bigg ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  *{x\in \nat }{1\le x\le \f...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...1\le x\le 100}\\ D=\Set *{x\in \nat 
+                                                  }{1\le x\le \frac {200}{2}} 
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  D=\Set 
+                   {x\in \nat }{1\le x\le 100}\\ D=\Set [\big ]{x\in \nat }{...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  D=\Set {x\in \nat 
+                              }{1\le x\le 100}\\ D=\Set [\big ]{x\in \nat }{...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\big ]{x\in \nat }{1\le x...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\le 100}\\ D=\Set [\big ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\Big ]{x\in \nat }{1\le x...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\le 100}\\ D=\Set [\Big ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\bigg ]{x\in \nat }{1\le ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...le 100}\\ D=\Set [\bigg ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  [\Bigg ]{x\in \nat }{1\le ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...le 100}\\ D=\Set [\Bigg ]{x\in \nat 
+                                                  }{1\le x\le 100}\\ D=\Set ...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...x\in \nat }{1\le x\le 100}\\ D=\Set 
+                                                  *{x\in \nat }{1\le x\le \f...
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...1\le x\le 100}\\ D=\Set *{x\in \nat 
+                                                  }{1\le x\le \frac {200}{2}} 
+l.721 \end{gather*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[30]
+! Undefined control sequence.
+l.754 $L\stock
+               a$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (82.21152pt too wide) in paragraph at lines 751--755
+\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 SxSis
+eentransitierelatiedietotaalmoetzij; datbetekent; datvoorelkestates \OMS/cmsy/m
+/n/12 2 \OML/cmm/m/it/12 Sereenstatsiss[] \OMS/cmsy/m/n/12 2
+ []
+
+! Undefined control sequence.
+<recently read> \mtproforall 
+                             
+l.758 $\mtproforall
+                    x\,\mtproexists y \cap \subset \in \vee \diamondsuit \da...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.758 $\mtproforall x\,\mtproexists
+                                    y \cap \subset \in \vee \diamondsuit \da...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.765 ...in{tabular}{|l|l {2cm} |l|l|l|l|l|l|l|l|}
+                                                   \hline
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.777 	\multicolumn{2}{|l|}{REQ ID} &  \thead
+                                             { Als  \\gebruiker \\	wil ik  \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.777 ...olumn{2}{|l|}{REQ ID} &  \thead{ Als  \\g
+                                                  ebruiker \\	wil ik  \\een ...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.778 	&
+         Status &Designdoc &codemodule&testaseID &T.case Name & manual& test...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Undefined control sequence.
+l.779 	\multicolumn{2}{|l|}{REQ ID} &  \thead
+                                             { Als  \\gebruiker \\	wil ik  \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.779 ...olumn{2}{|l|}{REQ ID} &  \thead{ Als  \\g
+                                                  ebruiker \\	wil ik  \\een ...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.780 	&
+         Status &Designdoc &codemodule&testaseID &T.case Name & manual& test...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Undefined control sequence.
+l.781 	\multicolumn{2}{|l|}{REQ ID} &  \thead
+                                             { Als  \\gebruiker \\	wil ik  \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.781 ...olumn{2}{|l|}{REQ ID} &  \thead{ Als  \\g
+                                                  ebruiker \\	wil ik  \\een ...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.782 	&
+         Status &Designdoc &codemodule&testaseID &T.case Name & manual& test...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Undefined control sequence.
+l.783 	\multicolumn{2}{|l|}{REQ ID} &  \thead
+                                             { Als  \\gebruiker \\	wil ik  \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.783 ...olumn{2}{|l|}{REQ ID} &  \thead{ Als  \\g
+                                                  ebruiker \\	wil ik  \\een ...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.784 	&
+         Status &Designdoc &codemodule&testaseID &T.case Name & manual& test...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+Overfull \hbox (197.35265pt too wide) in paragraph at lines 765--786
+[] 
+ []
+
+[31] [32]
+Overfull \hbox (58.29254pt too wide) in paragraph at lines 805--819
+[][] 
+ []
+
+[33]
+Chapter 4.
+[34
+
+]
+Chapter 5.
+[35
+
+]
+Chapter 6.
+) [36
+
+]
+\openout2 = `3_Details/details.aux'.
+
+ (3_Details/details.tex
+Chapter 7.
+) [37
+
+
+
+
+
+]
+\openout2 = `4_Conclusions/conclusions.aux'.
+
+ (4_Conclusions/conclusions.tex
+Chapter 8.
+) [38
+
+
+
+
+
+]
+\openout2 = `Appendix/Appendix.aux'.
+
+ (Appendix/Appendix.tex
+Appendix A.
+
+Overfull \hbox (159.1803pt too wide) in paragraph at lines 64--64
+[]\OT1/cmtt/m/n/12 // locale variabelen voor de templatet lamp: geef de templat
+e de volgende parameter: id_l lampnr[] 
+ []
+
+[39
+
+
+
+
+
+] [40]
+Overfull \hbox (498.80547pt too wide) in paragraph at lines 132--132
+[]\OT1/cmtt/m/n/12 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.la
+ag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.st
+opgaphigh2))[] 
+ []
+
+
+Overfull \hbox (789.03061pt too wide) in paragraph at lines 132--132
+[]\OT1/cmtt/m/n/12 A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Opening
+_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Sluis
+.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))[] 
+ []
+
+
+Overfull \hbox (29.50523pt too wide) in paragraph at lines 132--132
+[]\OT1/cmtt/m/n/12 (Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||De
+uren.hoog_open)[] 
+ []
+
+[41] [42] [43]
+Overfull \hbox (498.80547pt too wide) in paragraph at lines 317--317
+[]\OT1/cmtt/m/n/12 Als het schip boven is, dan is waterlvel gelijk aan hoog, fi
+lling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty val
+ve is dicht.[] 
+ []
+
+
+Overfull \hbox (375.3054pt too wide) in paragraph at lines 317--317
+[]\OT1/cmtt/m/n/12 Schip is in waterlock, waterlevel is hoog, filling valve is 
+dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
+ []
+
+
+Overfull \hbox (412.35542pt too wide) in paragraph at lines 317--317
+[]\OT1/cmtt/m/n/12 Schip is dan laag, waterlevel gelijk aan laag, filling valve
+ is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.[]
+ 
+ []
+
+
+Overfull \hbox (474.10545pt too wide) in paragraph at lines 317--317
+[]\OT1/cmtt/m/n/12 Als schip beneden is dan is waterlevel gelijk aan laag, fill
+ing valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valve 
+is open.[] 
+ []
+
+
+Overfull \hbox (449.40544pt too wide) in paragraph at lines 317--317
+[]\OT1/cmtt/m/n/12 Schip is in water lock, waterlevel is laag, flilling valve i
+s open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is dic
+ht,.[] 
+ []
+
+
+Overfull \hbox (437.05544pt too wide) in paragraph at lines 317--317
+[]\OT1/cmtt/m/n/12 Schip is dan hoog, waterlevel is gelijk aan hoog, filling va
+lve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is dic
+ht[] 
+ []
+
+[44] [45] [46] [47]) [48] (thesis.bbl) [49
+
+
+
+] (thesis.aux (0_Prelim/prelim.aux)
+(1_Intro/intro.aux) (2_Body/body.aux) (3_Details/details.aux)
+(4_Conclusions/conclusions.aux) (Appendix/Appendix.aux)) ) 
+Here is how much of TeX's memory you used:
+ 5896 strings out of 475385
+ 107160 string characters out of 2776908
+ 452180 words of memory out of 3000000
+ 27103 multiletter control sequences out of 15000+600000
+ 479273 words of font info for 66 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,12n,63p,1251b,389s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\gally\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\gall
+y\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users
+/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gally/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gally/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/ga
+lly/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/
+Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12
+.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on thesis.pdf (61 pages, 307478 bytes).
+PDF statistics:
+ 273 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+

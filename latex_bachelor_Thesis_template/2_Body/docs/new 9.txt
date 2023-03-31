@@ -1,0 +1,119 @@
+
+
+
+PIANC. Design of movable weirs and storm surge barriers. Brussel : PIANC General Secretariat
+https://www.pianc.org/publications/inland-navigation-commission/design-of-movable-weirs-and-storm-surge-barriers
+
+http://www.anast.ulg.ac.be/doc/WG26_Final_Report_V6_2.pdf
+CROW. Handboek specificeren
+https://www.crow.nl/thema-s/contracteren/specificeren/functioneel-specificeren
+https://www.crow.nl/publicaties/handboek-specificeren
+9. Vrouwenvelder, A.C.W.M. en Witteveen, J. The plastic behaviour and the calculation of plates subjected to bending
+http://homepage.tudelft.nl/p3r3s/contentsbeams.pdf
+Bruggeling, A.S.G. en Bruijn, W.A. de. Theorie en praktijk van het gewapend beton; Deel 2: Buiging, afschuiving en wringing.
+https://lib.ugent.be/nl/catalog/rug01:000307356
+Nederlands Normalisatie Instituut. Belastingen op constructies, Deel 1-7: Algemene belastingen - Buitengewone belastingen: stootbelastingen en ontploffingen
+Vrijburcht, A. Aanvaarrisico's voor sluisdeuren
+https://puc.overheid.nl/rijkswaterstaat/doc/PUC_81581_31/
+Cement. Kopdeuvels als dwarskrachtwapening
+Dywidag. DYWIDAG Bonded Post-Tensioning Systems using Strands
+https://www.dywidag-systems.com/fileadmin/downloads/dywidag-emea/dsi-dywidag-bonded-post-tensioning-systems-using-strands-eu.pdf
+Ory, T. "Van rijden naar glijden", Haalbaarheidsstudie naar het toepassen van Hydrogeleiding in de Kallosluis
+https://puc.overheid.nl/rijkswaterstaat/doc/PUC_101081_31/
+Ostayen, R.A.J. The Hydro–Support: An Elasto-Hydrostatic Thrust Bearing with Mixed Lubrication.
+https://repository.tudelft.nl/islandora/object/uuid%3Ab940c337-a6ba-4fdd-ac64-a6a9ee8d4125
+Eibl, J. BetonKalender
+Technische Adviescommissie voor de Waterkeringen. Leidraad Kunstwerken
+https://www.deltaexpertise.nl/images/f/ff/Leidraad_kunstwerken.pdf
+. Vrijling, J.K., et al., et al. Manual Hydraulic Structures
+https://repository.tudelft.nl/islandora/object/uuid%3A85f86790-c728-4c93-9f10-464da07f682e
+https://repository.tudelft.nl/islandora/object/uuid%3Af4ce82e2-8856-4a8d-98d5-47c0ff34c2bb
+Technische Adviescommissie voor de Waterkeringen. Leidraad Waterkerende Kunstwerken en Bijzondere Constructies
+https://puc.overheid.nl/rijkswaterstaat/doc/PUC_57188_31/
+Veen, M.M. van der. Planstudie Nieuwe Zeesluis fase 1: Uitgangspunten Civiele Constructies. sl
+Visser, M. en Vreman, C. Klanten Eisen Specificatie zeetoegang IJmond
+https://repository.tudelft.nl/islandora/object/uuid%3A1f89d741-c97a-46dc-86ca-b396d8446c69
+https://repository.tudelft.nl/islandora/object/uuid:1f89d741-c97a-46dc-86ca-b396d8446c69/datastream/OBJ/download
+https://repository.tudelft.nl/islandora/object/uuid:515dabdd-a77f-457b-a010-24f7a6281759
+https://www.dinoloket.nl/dinoLks/map/map.jsp?setLayerId=M07M0045
+. Iv Infra/DHV B.V. Planstudie Nieuwe Zeesluis fase 1: Subvariantennota
+https://www.kennisbank-waterbouw.nl/dicea/rws/rws-NH.html
+Henrotte, Johan. Zeetoegang IJmond, update hydraulische ontwerprandvoorwaarden ter plaatse van de Nieuwe Zeesluis te IJmuiden
+Rijkswaterstaat Noord Holland. Planstudie Nieuwe Zeesluis IJmuiden - fase 1: Proof of Concept
+https://repository.tudelft.nl/islandora/object/uuid%3A11d6a181-bc54-48bf-93c1-d7ba07c1f107
+https://repository.tudelft.nl/islandora/object/uuid:159f6f51-7b73-4b2b-9773-aae2c1fd1de6
+. IV Infra/DHV B.V. Planstudie Nieuwe Zeesluis IJmuiden fase 1: Eindrapport Nieuwe Zeesluis IJmuiden
+https://puc.overheid.nl/rijkswaterstaat/doc/PUC_144289_31/
+https://edepot.wur.nl/279808
+Reinhardt, H.W. Beton als constructiemateriaal: eigenschappen en duurzaamheid.
+Nederlands Normalisatie Instituut. Ontwerp en berekening van betonconstructies - Algemene regels en regels voor gebouwen NEN 1992
+https://www.cementonline.nl/eurocode2
+https://www.infrasite.nl/bouwen/2020/02/06/norm-voor-betonstaal-en-nationale-bijlage-voor-berekening-betonconstructies-gepubliceerd/
+https://betonhuis.nl/cement
+Bouwdienst rijkswaterstaat. "Hogere Sterkte Beton, Ervaringen met sterkteklasse B65 en hoger". Rapport BSW
+https://puc.overheid.nl/rijkswaterstaat/doc/PUC_95318_31/
+Caldarone, M.A. High-strength concrete
+. Hoge sterkte beton; technologie, eigenschappen en rekenwaarden. Gouda :
+https://pure.tue.nl/ws/portalfiles/portal/46912562/749270-2.pdf
+Bruijn, H.J. de. Hoofdstudie voorgespannn spoorbrug in hogere sterkte beton. sl : Technische Universiteit Delft & Holland Railconsult
+https://www.tudelft.nl/citg/over-faculteit/afdelingen/engineering-structures/sections-labs/betonconstructies
+https://www.tudelft.nl/citg/over-faculteit/afdelingen/engineering-structures/sections-labs/betonconstructies/staff/dr-ir-s-gruenewald
+. Nederlands Normalisatie Instituut. Ontwerp en berekening van betonconstructies - Betonnen bruggen - Regels voor ontwerp, berekening en detaillering NEN 1992
+https://www.nen.nl/normcommissie-tgb-betonconstructies
+https://rijksoverheid.bouwbesluit.com/Inhoud/docs/norm/nen-en1992-2-2005
+Breugel, K. en Braam, C.R. Concrete science and technology; lecture 11-10-2011: High Strength Concrete. Delft
+Doeksen, J.W. Gate Design For Large, High Head Locks, "The development of an innovative lock gate"
+https://repository.tudelft.nl/islandora/object/uuid%3A10298cf5-eff0-4664-ab16-980bc86dbd44
+https://puc.overheid.nl/rijkswaterstaat/doc/PUC_95170_31/
+https://repository.tudelft.nl/islandora/object/uuid%3Ac8ff509c-7797-4d61-aa59-773a37f6ac8f
+Molenaar, W.F. Hydraulic Structures: Locks
+https://repository.tudelft.nl/islandora/object/uuid%3A36e5bade-8c61-4963-8b70-c83ecd79b863
+Tol, H. B200-betonnen schuiven voor de Stormvloedkering Oosterschelde
+https://puc.overheid.nl/rijkswaterstaat/doc/PUC_22773_31/1/
+Kaptijn, N. en Pluis, M.P.J. Primeur voor de Diefdijk, Eerste betonnen (B85) beweegbare hoogwaterkering
+Kaptijn, N. Nieuwe mogelijkheden van HSB en ZHSB voor waterbouwkundige constructies
+. Sloten, J.J. van. Ontwerp van een roteerbare betonnen waterkering
+https://www.cementonline.nl/artikel/sluisdeur-in-hsb
+https://www.haitsma.nl/
+. Moor, A. de en Hattink, C. Sluis0124: variant in ZHSB
+. Moor, A. de en Hattink, C. Sluis0124: variant in ZHSB
+Bonnes, J.M. Flexibele zeesluis als nieuwe maritieme toegang kanaal Gent Terneuzen
+https://repository.tudelft.nl/islandora/object/uuid%3Ade95c442-afdb-4a05-ad3d-8f989f924540
+http://digisketch.nl/projecten/civiele%20ontwerpen/kattendijksluis/ktsluis%20004.ht
+2. Arends, G.J. Sluizen en gemalen in het Noordzeekanaal.
+https://www.boekwinkeltjes.nl/b/183352628/Sluizen-en-gemalen-in-het/
+https://research.tudelft.nl/en/publications/sluizen-en-gemalen-in-het-noordzeekanaal-anderhalve-eeuw-ontwerpe
+World Association for Waterborne Transport Infrastructures. Innovations in navigation lock design,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+// for more uppaal documentation https://docs.uppaal.org/language-reference/expressions/
+
+/** Requirementsoverzicht
+ * Een sluis heeft deuren voor openenen en sluiten.
+ * Een sluis heeft stoplichten met rood en groen waarmee toestemming al dann wel neit wordt gegeven voor schepen voor invaren of uitvaren.
+ * Een schip heeft een positie en een doel
+ * Een schip kan zich aanmelden
+ * De pompbediening handelt de aanvraag van invarende, wachtende en uitvarende schepen af
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart beneden.
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart boven.
+ * Een schip kan in een wachtrij staan voordat deze een sluis verlaat.
+ * Als een sluis vol is komt een schip automatisch in een wachtrij.
+ * Een sluis heeft een pomp(nivelleeersystseem) voor  hoog, midden, laag.
+ * Een sluis houdt bij hoeveel schepen invaren.
+ * Een sluis houdt bij wat de waterstand is.
+ *
+ * 
+*/
+
+/** product id
+ *
+*/
+typedef int[0,1] id_p;
+
+/**
+ *
+*/
+chan in,out;
+
+
+/**
+ *
+*/
+id_p pass;
+
+
+/**
+ * postitie van schip beneden (0) of boven(1)
+*/
+typedef int[0,1] m_pos;
+
+/**
+ *
+*/
+m_pos positie;
+
+/**
+ * knop voor de pomp 
+*/ 
+chan klik,pklik2,pklik3;
+
+/**
+ * knop voor de schip 
+*/ 
+chan schipklik;
+
+
+/**
+ * knop voor de stoplicht 
+*/ 
+chan stoplichtklik;
+
+/**
+ * knop voor de deur 
+*/ 
+chan deurklik;
+
+
+/**
+ * uitgaan van aanvoer, afvoer, sluis
+ * max aantal sluiskolken
+*/ 
+const int MAX=2;
+
+/**
+ * declaratie voor een sluiskolk
+*/
+typedef int[0,MAX-1] id_l;
+
+/**
+ * waterniveau in meter
+*/ 
+typedef int[0,10] meter;
+
+/**
+ *
+*/
+meter waterlevel;</declaration>
+	<template>
+		<name>pompbediening</name>
+		<declaration>/**
+ *
+*/
+
+
+
+/**
+ *
+*/
+clock x;</declaration>
+		<location id="id0" x="-85" y="-68">
+			<committed/>
+		</location>
+		<location id="id1" x="-85" y="68">
+			<committed/>
+		</location>
+		<location id="id2" x="-170" y="0">
+			<name x="-180" y="-34">S0</name>
+		</location>
+		<location id="id3" x="0" y="0">
+			<name x="-10" y="-34">aan</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-152" y="17">pklik2?</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="select" x="18" y="-22">temp:meter</label>
+			<label kind="guard" x="18" y="-5">x&gt;=1</label>
+			<label kind="synchronisation" x="18" y="12">klik!</label>
+			<label kind="assignment" x="18" y="29">x:=0,
+waterlevel:=temp</label>
+			<nail x="102" y="76"/>
+			<nail x="102" y="-102"/>
+		</transition>
+	</template>
+	<template>
+		<name>deur</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock d;</declaration>
+		<location id="id4" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<location id="id5" x="0" y="-136">
+			<name x="-10" y="-170">S3</name>
+			<urgent/>
+		</location>
+		<location id="id6" x="170" y="-136">
+			<name x="160" y="-170">S2</name>
+		</location>
+		<location id="id7" x="170" y="0">
+			<name x="160" y="-34">S1</name>
+			<urgent/>
+		</location>
+		<location id="id8" x="0" y="0">
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="18" y="-17">deurklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>stoplicht</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock s;</declaration>
+		<location id="id9" x="272" y="0">
+			<name x="262" y="-34">groen</name>
+		</location>
+		<location id="id10" x="136" y="0">
+			<name x="126" y="-34">oranje</name>
+		</location>
+		<location id="id11" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<init ref="id11"/>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<nail x="102" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<nail x="272" y="-68"/>
+			<nail x="170" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id11"/>
+			<nail x="272" y="102"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="18" y="-17">stoplichtklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>pomp</name>
+		<parameter>id_l pompnr</parameter>
+		<declaration>/**
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+*/
+
+/**
+ *
+*/
+void functie()
+{
+	
+}
+
+meter level;
+
+/**
+ *
+*/
+// wacht 5 tijdseenheden
+clock x;
+/**
+ *
+*/
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omlaag
+bool isLaag()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omhoog
+bool isHoog()
+{
+    if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+
+</declaration>
+		<location id="id12" x="204" y="0">
+			<name x="194" y="-34">S1</name>
+			<label kind="invariant" x="194" y="17">isForMe()</label>
+		</location>
+		<location id="id13" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<init ref="id13"/>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="guard" x="154" y="-68">x&gt;=5</label>
+			<nail x="204" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-84" y="17">klik?</label>
+			<label kind="assignment" x="-84" y="34">level:=waterlevel, x:=0</label>
+			<nail x="0" y="68"/>
+			<nail x="204" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<parameter>id_p schipid</parameter>
+		<declaration>/**
+ * Een schip vaart naar meld zich aan waar hij wil en volgt de instructies op van de sluismeester of controlsystem in de sluis
+*/
+
+
+
+/**
+ *
+*/
+clock x;
+
+ </declaration>
+		<location id="id14" x="255" y="0">
+			<name x="245" y="-34">aan</name>
+		</location>
+		<location id="id15" x="340" y="102">
+			<name x="330" y="68">varen</name>
+		</location>
+		<location id="id16" x="340" y="-102">
+			<name x="330" y="-136">pauzeren</name>
+		</location>
+		<location id="id17" x="340" y="0">
+		</location>
+		<location id="id18" x="170" y="0">
+			<name x="160" y="-34">opstarten</name>
+		</location>
+		<location id="id19" x="0" y="0">
+			<name x="-10" y="-34">uit</name>
+		</location>
+		<init ref="id19"/>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id17"/>
+			<label kind="select" x="273" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="273" y="0">positie:=locatie</label>
+			<label kind="comments" x="273" y="25">x : int[0,1] -&gt; start hoog of laag</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id14"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="358" y="119">schipklik!</label>
+			<nail x="408" y="170"/>
+			<nail x="272" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<nail x="510" y="68"/>
+			<nail x="510" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<nail x="408" y="-68"/>
+			<nail x="408" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id15"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id19"/>
+			<label kind="guard" x="18" y="-136">x&gt;=30</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id19"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="select" x="18" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="18" y="0">positie:=locatie</label>
+		</transition>
+	</template>
+	<template>
+		<name x="5" y="5">aanvoer</name>
+		<declaration>// Place local declarations here.
+
+clock x;</declaration>
+		<location id="id20" x="0" y="0">
+		</location>
+		<init ref="id20"/>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id20"/>
+			<label kind="select" x="26" y="4">p:id_p</label>
+			<label kind="guard" x="161" y="-68">x&gt;=1</label>
+			<label kind="synchronisation" x="26" y="38">in!</label>
+			<label kind="assignment" x="161" y="-34">x:=0,pass:=p</label>
+			<nail x="8" y="8"/>
+			<nail x="136" y="102"/>
+			<nail x="136" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id21" x="136" y="-102">
+			<label kind="comments" x="255" y="-119">voordat er een andere transitie in het gehele systeem  mag worden genomen is deze state committed; er verstrijkt geen tijd, er zal mteen een uitgaande transitie moeten worden genomen; dus eerst dit dan dat</label>
+			<committed/>
+		</location>
+		<location id="id22" x="0" y="0">
+		</location>
+		<init ref="id22"/>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="assignment" x="-127" y="-42">received:=pass</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id21"/>
+			<label kind="guard" x="161" y="-59">x&gt;=1</label>
+			<label kind="synchronisation" x="161" y="-42">out!</label>
+			<label kind="assignment" x="161" y="-25">x:=0</label>
+			<nail x="136" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>sluis</name>
+		<declaration>// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
+// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
+
+/** stack
+ * de lengte van de datastructuur
+*/
+ 
+const int SIZE=5;
+
+/** stack
+ *
+*/
+id_p stack[SIZE];
+
+/** wachtrijboven
+ *
+*/
+id_p wachtrijboven[SIZE];
+
+/** aantalschepeninsluis
+ *
+*/
+id_p aantalschepeninsluis[SIZE];
+
+/** wachtrijbeneden
+ *
+*/
+id_p wachtrijbeneden[SIZE];
+
+
+/**
+ *
+*/
+int[0,SIZE] head =0;
+
+/** pop
+ *
+*/
+id_p pop()
+{
+    id_p temp;
+    temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+/** push
+ *
+*/
+void push(id_p p)
+{
+    stack[head++]=p;
+}
+
+
+/** isFull
+ *
+*/
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+
+/** isEmpty
+ *
+*/
+bool isEmpty()
+{
+ return (head ==0);
+}</declaration>
+		<location id="id23" x="204" y="136">
+			<name x="194" y="102">S10</name>
+		</location>
+		<location id="id24" x="204" y="238">
+			<name x="194" y="204">S9</name>
+		</location>
+		<location id="id25" x="102" y="238">
+			<name x="92" y="204">S8</name>
+		</location>
+		<location id="id26" x="0" y="238">
+			<name x="-10" y="204">S7</name>
+		</location>
+		<location id="id27" x="-102" y="238">
+			<name x="-112" y="204">S6</name>
+		</location>
+		<location id="id28" x="-204" y="238">
+			<name x="-214" y="204">S5</name>
+		</location>
+		<location id="id29" x="-204" y="136">
+			<name x="-214" y="102">S4</name>
+		</location>
+		<location id="id30" x="-204" y="34">
+			<name x="-214" y="0">S3</name>
+		</location>
+		<location id="id31" x="-68" y="0">
+			<name x="-78" y="-34">S2</name>
+		</location>
+		<location id="id32" x="0" y="-170">
+			<name x="-10" y="-204">S1</name>
+		</location>
+		<location id="id33" x="0" y="-340">
+			<name x="-10" y="-374">S0</name>
+		</location>
+		<location id="id34" x="0" y="-170">
+		</location>
+		<location id="id35" x="68" y="0">
+			<name x="58" y="-34">S12</name>
+		</location>
+		<location id="id36" x="204" y="34">
+			<name x="194" y="0">S11</name>
+		</location>
+		<init ref="id33"/>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-187" y="-51">positie==0</label>
+			<nail x="-136" y="-34"/>
+			<nail x="-170" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="-186" y="221">pklik2!</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id28"/>
+			<label kind="synchronisation" x="-204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id29"/>
+			<label kind="synchronisation" x="-204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id32"/>
+			<label kind="guard" x="51" y="-119">!isEmpty()</label>
+			<label kind="synchronisation" x="51" y="-102">out?</label>
+			<label kind="assignment" x="51" y="-85">pass:=pop()</label>
+			<nail x="34" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-144" y="25">positie==1</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id31"/>
+			<label kind="guard" x="-102" y="-119">!isFull()</label>
+			<label kind="synchronisation" x="-76" y="-102">in?</label>
+			<label kind="assignment" x="-128" y="-85">push(pass)</label>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id32"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id34"/>
+			<label kind="synchronisation" x="0" y="-272">schipklik?</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="-238" y="-194">!isFull()</label>
+			<label kind="synchronisation" x="-238" y="-177">in?</label>
+			<label kind="assignment" x="-238" y="-160">push(pass)</label>
+			<nail x="-85" y="-136"/>
+			<nail x="-170" y="-102"/>
+			<nail x="-170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="170" y="-229">!isEmpty()</label>
+			<label kind="synchronisation" x="170" y="-212">out?</label>
+			<label kind="assignment" x="170" y="-195">pass:=pop()</label>
+			<nail x="170" y="-102"/>
+			<nail x="170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id36"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ 
+// List one or more processes to be composed into a system.
+//system schip,aanvoer,afvoer;
+ 
+//system pomp,pompbediening;   
+
+
+system schip,aanvoer,afvoer,sluis,pomp,deur,stoplicht,pompbediening;</system>
+	<queries>
+		<query>
+			<formula>p--&gt;p
+			</formula>
+			<comment>p --&gt; q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A&lt;&gt; q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			</comment>
+		</query>
+		<query>
+			<formula>E[]p
+			</formula>
+			<comment>E - exists a path ( “E” in UPPAAL).
+E[] p – p is potentially always true. 
+• There exists a path in which p is true in all states.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; p
+			</formula>
+			<comment>• E&lt;&gt; p – it is possible to reach a state in which p is  satisfied
+• p is true in (at least) one reachable state.
+			</comment>
+		</query>
+		<query>
+			<formula>G&lt;&gt;
+			</formula>
+			<comment>• G - all states in a path ( “[]” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>F&lt;&gt;
+			</formula>
+			<comment>• F - some state in a path ( “&lt;&gt;” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>A&lt;&gt; p
+			</formula>
+			<comment>A&lt;&gt; p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+			</comment>
+		</query>
+		<query>
+			<formula>A[] p
+			</formula>
+			<comment>• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>
