@@ -1,0 +1,112 @@
+
+
+
+Naam:  5-04-2023
+Datum en plaats:  Teams, @Home
+namen van aanwezigen:  Iedereen
+Verzendlijst:  
+
+
+
+Openingen: 
+Agendapunten vorige meeting:
+Onderzoek naar rampen
+Onderzoek naar de ethiek van technologie
+Uppaal model en queries
+
+ingekomen stukken:
+
+Schutsluis (meest voorkomend)
+
+Controleer of de sluisdeuren correct werken:
+
+A[] (door1_closed && door2_closed) -> A[] (door1_opened || door2_opened)
+
+Deze query controleert of beide deuren van de sluis correct werken en op de juiste manier openen en sluiten.
+
+ 
+
+2. Controleer de veiligheid van de sluis:
+
+ 
+
+A[] !emergency && !collision && !boat_in_sluis
+
+Deze query controleert of de sluis veilig is en er geen ongelukken kunnen gebeuren. De query controleert of er geen noodgevallen zijn, of er geen botsingen van boten zijn en of er geen boten in de sluis zijn.
+
+3.Controleer de efficiëntie van de sluis:
+
+ 
+
+A[] (boat_in_sluis && !door1_closed && !door2_closed) -> A[] (door1_closed && door2_closed)
+
+Deze query controleert of de sluis efficiënt werkt en geen onnodige vertragingen of wachttijden veroorzaakt. De query controleert of de deuren van de sluis gesloten zijn nadat een boot de sluis is binnengevaren.
+
+4. Controleer de juiste waterstand in de sluis:
+
+
+A[] (water_level >= min_level && water_level <= max_level)
+
+Deze query controleert of de waterstand in de sluis correct is en of deze binnen de toegestane niveaus blijft.
+
+5. Controleer of de maximale capaciteit van de sluis niet wordt overschreden:
+
+ 
+
+A[] (num_boats_in_sluis <Deze query controleert of het aantal boten in de sluis niet de maximale capaciteit van de sluis overschrijdt.= max_capacity)
+
+
+
+T:Schepen hebben altijd een aes tracker. Een aes tracker ipv een id.
+K:Moeten we rekening houden met te lange schepen.Zodat de aes ook lengte en breedte van de schepen mag worden meegenomen in de risocoanalyse van de sluisbediening.
+T: Destination, koers, status,last report, bouwnummer zoals op vesselfinder.com
+G: Schip moet weten of hij in de sluis past, of hij in de kanaal past(bedenklellijk omdat een schip dat wel in het kanaal kan varen danmoet het ook in de sluis kunnen), nummer in de wachtrij, stoplicht groen,
+aantal schepen in de sluis.
+T: Oplossing zet een bordje op het water niet dieper dan 5 meter
+T: Van wie is het probleem als het schip niet in de sluis past.
+T: https://www.rijkswaterstaat.nl/water/scheepvaart/pleziervaart/sluizen-en-pleziervaart
+T: de meeste sluizen zijn schutsluizen laten we daar een model van maken
+G: Belangrijke punten van vorige deelname aan de module:
+T: geen info gevonden over belang van afmetingen in de boot.  Hoe wordt deze kritieke info doorgegven aan de bestuurder. Staat dit online?
+K: Wanneer staat stoplicht op groen:
+G: Sluis moet weten zijn er schepen, is nivelleerproces afgelopen, hoeveel schepen.
+T: Er moet een  state zijn waarin de state op rood staan.
+T: Er is gen info gevonden over de lengte van een sluis
+K daarom een aanname over de lengte van een sluis
+T: een aanname van een sluis van 30 m breed en 160 lang als template voor de meest voorkomende sluis van Nederland
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+Rondvraag
+T: Meer discussie over algemene functionaliteit van de sluis
+T: Schutsluis meest voorkomende 
+K: requirements komen toch naar voren gedurende proces
+
+
+Sluiting
+
+
+
+Agendapunten
+Voor de volgende bijeenkomst worden per individu requirements(min 10) vastgesteld met oa de volgende reqs zodat iedereen feleing krijgt met uppaal:
+-lijst met aantal schepen (wellicht meerder verschillende schepen qua afmeting)
+-belangrijke info per schip
+-sluisbesturing rekening houdend met invaren en uitvarende schepen
+-stoplicht
+-sluisdeur
+-veiligheid
+motivatie waarom je deze requirements hebt gedefinieerd en onderbouwing dmv literatuur,websites 
+Alle leden hebben een concept model gmaakt in uppaal.
+
+
+
+Onderwerp, besluit, wie, gereed
