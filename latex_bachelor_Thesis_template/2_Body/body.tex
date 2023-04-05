@@ -151,37 +151,53 @@ systeem.
 Requirements elicitation technieken zijn methoden die een onderzoekeer kan gebruiken om de behoeften van de stakeholders in kaart te brengen. De stakeholders  vormen de belangrijkste groep die de doelstelling van een project vastlegd.
 
 Enkele voorbeelden van requirement elcitation technieken zijn:
-Intervieews 
 
-Brainstorming sessions 
 
-Facilitated applicationspecification technique 
+\begin{enumerate}
+	\item  Intervieews
+	\item  Brainstorming sessions 
+	\item  Use case approach 
+	\item  Document analysis 
+	\item  Observation
+	\item  Prototyping
+	\item  Joint applicationdevelopment
+	\item  Reverse engineering 
+	\item  Survey/ Questionairre 
+	\item  Focus groups 
+	\item  Interface analysis
+	\item  Stakeholder analysis 
+	\item  Card sorting laddering 
+	\item  Open ended-interview
+\end{enumerate}
+ 
 
-Quality function deplyment 
 
-Use case approach 
+ 
 
-Document analysis 
 
-Observation
 
-Prototyping 
 
-Joint applicationdevelopment
 
-Reverse engineering 
 
-Survey/ Questionairre 
 
-Focus groups 
 
-Interface analysis 
+ 
 
-Stakeholder analysis 
 
-Card sorting laddering 
 
-Open ended-interview 
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
 
 \subsubsection{Functionele en niet-functionele eisen}
 
@@ -201,7 +217,7 @@ door actuatoren bestuurde fenomenen uit de omgeving
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\subsubsection{Literatuuronderzoek}
 \begin{frame}{Literature Review}
 	\begin{table}[htbp]
 		\footnotesize
@@ -245,10 +261,113 @@ door actuatoren bestuurde fenomenen uit de omgeving
 	\end{table}
 	
 \end{frame}
+
+
+
+
+\chapter{Requirements en specificaties}
+
+
+
+\subsection{Requirements}
+Requirements zijn alleen die eisen die gesteld worden aan het gedrag of de kwaliteit van het systeem om te voorzien in de behoeften van een belanghebbende uit de business.
+
+\begin{itemize}
+	\item Een schip okmt aanvaren en geeft een signaal aan de sluis. 	
+	\item Indien er meer dan twee schepen in de sluis zitten danwordt het ship geplaats in de wachrij. 
+	\item Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. 	
+	\item Eenmaal in de sluis zal het schip moeten wachten op de sluis en de pomp. 	
+	\item Een schip mag alleen uitvaren als de pomp klaar is, de sleusdeuren open. 
+	\item Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp. 
+	\item De sensor is een onderdeel van de sluis en ontvangt signalen van naderende schepen. 
+	\item De sleusdeur voor boven en beneden kunnen beiden oen en dicht. De sluisdeur wordt aangestuurd door de sluis. 
+	\item Een pomp begint met pompen bij een signaal van de kluis. Een kluis io zijn beert geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
+	\item Geen deadlock
+	\item Voor geen enkel pad geldt dat als  de deuren gesloten zijn volgens de kluis dat er een deur openstaat om een schip naar buiten te laten.
+	\item Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle duren dcht.
+	\item Voor alle paden geld dat als een deur dicht is het aantal schepen in de kade gelijk is aan nul	
+	\item Voor een enkel pad geld dat als het binnenstoplicht op groen staat dat het niet toegestaan in naar binnen te varen
+	\item Voor alle paden geldt dat de globale tijd langer is dan 30 tijdseenheden
+	\item Er is een pad waarvoor geld dat als een schip wilt stoppen dat er meer dan 5 schepen in de sluis zitten.
+	\item Voor alle paden geldt als schip vrtrekt is sluisdeur dicht
+	\item Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrollen dan is de nivelleermachine uit
+	\item Er is geen pad waarop een schip vertrekt vanuit de rechtersluisdeur en de linkersluisdeur is open en linkeruitaartstoplicht en linkeruitvaartsoplicht opgroen  en nibelleermachine is aan
+	\item Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
+	\item  EEn stopluch staat altijd op groen als de deuren open staan en de pomp niet bezig is.
+	\item  In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
+	\item Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
+	\item Voor alle paden gelft dat als water level hoger is dan waterhoog dan is pompwater altjd false
+	\item  Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis en stoplicht op groen
+	\item  Het kan gebeuren dat bij pompr het stoplicht op rood staat, het schip in de sluis en deur is dicht, en waterstand gelijk aan waterlaag
+	\item Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
+	\item  Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaag
+	\item   Voor alle paden gelt dat er een mogelijkheid is dat deur is open/dicht en sluis nivelleert omhoog/omlaag
+	
+\end{itemize}
+
+
+
+\subsection{Veiligheidsoverwegingen}
+\begin{itemize}
+	\item Ik wil zeker zijn dat mijn schip niet tegen de sluisdeuren aanvaart als een stoplicht op groen is
+	\item  Ik wil er zeker van zjn dat mijn schip niet tegen de tweede deur vaaaart als het eerste stoplcht op groen is
+	\item  Ik wil er zeker van zijn dat als mijn schip de sluis op hoog binnentreerd dat het waterniveu in de sluis gelijk si aan hoog.
+	\item  Ik wil er zeker van zjn dat als mijnship de sluis op een laag waterpeil binnenvaart dat het waternivel in de sluis gelijk i aan hoog.
+	\item  Ik wil er zeker van zijn dat als mijn schoip de sluis op laag binnenvaart dat het waterniveu in de sluis gelijk is s aanlaag.
+	\item  Ik wil een signaal wanneeer er een schip in de slis zit als sluisbediening
+	\item  Ik wil als sluiscontrolller een signaal als de dueren openstaan en een schip komt aanvaren en er is tegelijk een schip inn de sluis.
+	\item  Ik wil max 2 schepen in de sluis
+	\item  Ik wil dat een schip de sluis pas na 5 seconden in de  atarrival state kan binnentreden
+	\item  Ik wil dat mijn stoplicht lleen bedient kan worden door de sluis
+	\item  Ik wil dat de deuren alleen bedient kunnen worden door de sluis
+	\item  Ik wil dat sensoren alleen bedient kunnen worrden door de sluis
+	\item  Een schip moet een route kunnen aflaggen 
+\end{itemize}
+ 
+ 
+
+
+\subsection{Afbakning}
+\begin{itemize}
+	\item Wat doet de sluis niet.
+	\item De sluiss houdt geen rekening met links of rechtsrijdend verkeer vanuit de zeevaart
+	\item De sluis heeft geen queue met daarin een id gekoppeld aan de sluis.
+	\item De waterpomp wordt alleen aan en uitgezet
+	\item De waterpomp houdt geen rekening met waterstand
+	\item Houdt geen rekening met een schip in de sluis dat is blijven hangen.
+	
+\end{itemize}
+
+
+\begin{center}
+	\begin{gather*}
+		D=\Set{x\in\nat}{1\le x\le 100}\\
+		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
+		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
+		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
+		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
+		D=\Set*{x\in\nat}{1\le x\le \frac{200}{2}}
+	\end{gather*}
+\end{center}
+
+
+
+
+
+$S is a set of finite states$\\
+$S0 \subseteq S is de set van initiele statess$ \\
+$S0 \subseteq S xS  is een transitie relatie die totaal moet zij, dat betekent, dat voor elke state s \in S er een stats is s' \in S zodat R(s,s')$
+$L\stock a$
+
+$\forall x\,\exists y \implies $
+
+$\mtproforall x\,\mtproexists y \cap \subset \in \vee \diamondsuit \dashv \ni \pm$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  
 \chapter{Ontwerp}
+
+\section{Inleiding}
 
 \subsubsection{Aankomst, uitvoering, vrijgave}
 
@@ -286,7 +405,7 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 \end{enumerate} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Een voorbeeld}
+\section{Concept}
 
 \includegraphics[scale=0.65]{sluispassage.png}
 
@@ -358,141 +477,6 @@ Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing ho
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\chapter{Requirements en specificaties}
-
-
-
-\subsection{Requirements}
-Requirements zijn alleen die eisen die gesteld worden aan het gedrag of de kwaliteit van het systeem om te voorzien in de behoeften van een belanghebbende uit de business.
-
-\begin{itemize}
-	\item Geen deadlock
-	\item Voor geen enkel pad geldt dat als  de deuren gesloten zijn volgens de kluis dat er een deur openstaat om een schip naar buiten te laten.
-	\item Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle duren dcht.
-	\item Voor alle paden geld dat als een deur dicht is het aantal schepen in de kade gelijk is aan nul
-	
-	\item Voor een enkel pad geld dat als het binnenstoplicht op groen staat dat het niet toegestaan in naar binnen te varen
-	\item Voor alle paden geldt dat de globale tijd langer is dan 30 tijdseenheden
-	\item Er is een pad waarvoor geld dat als een schip wilt stoppen dat er meer dan 5 schepen in de sluis zitten.
-	\item Voor alle paden geldt als schip vrtrekt is sluisdeur dicht
-	\item Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrollen dan is de nivelleermachine uit
-	\item Er is geen pad waarop een schip vertrekt vanuit de rechtersluisdeur en de linkersluisdeur is open en linkeruitaartstoplicht en linkeruitvaartsoplicht opgroen  en nibelleermachine is aan
-	\item Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
-	\item  EEn stopluch staat altijd op groen als de deuren open staan en de pomp niet bezig is.
-	\item  In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
-	\item Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
-	\item Voor alle paden gelft dat als water level hoger is dan waterhoog dan is pompwater altjd false
-	\item  Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis en stoplicht op groen
-	\item  Het kan gebeuren dat bij pompr het stoplicht op rood staat, het schip in de sluis en deur is dicht, en waterstand gelijk aan waterlaag
-	\item Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
-	\item  Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaag
-	\item   Voor alle paden gelt dat er een mogelijkheid is dat deur is open/dicht en sluis nivelleert omhoog/omlaag
-	
-\end{itemize}
-
-
-
-\subsection{Veiligheidsoverwegingen}
-
-Ik wil zeker zijin dat mijn schip niet tegen de sluisdeuren aanvaart als een stoplicht op groen is
-Ik wil er zeker van zjn dat mijn schip niet tegen de tweede deur vaaaart als het eerste stoplcht op groen is
-
-Ik wil er zeker van zijn dat als mijn schip de sluis op hoog binnentreerd dat het waterniveu in de sluis gelijk si aan hoog.
-
-Ik wil er zeker van zjn dat als mijnship de sluis op een laag waterpeil binnenvaart dat het waternivel in de sluis gelijk i aan hoog.
-
-Ik wil er zeker van zijn dat als mijn schoip de sluis op laag binnenvaart dat het waterniveu in de sluis gelijk is s aanlaag.
-
-k wil een signaal wanneeer er een schip in de slis zit als sluisbediening
-
-Ik wil als sluiscontrolller een signaal als de dueren openstaan en een schip komt aanvaren en er is tegelijk een schip inn de sluis.
-
-Ik wil max 2 schepen in de sluis
-
-Ik wil dat een schip de sluis pas na 5 seconden in de  atarrival state kan binnentreden
-
-Ik wil dat mijn stoplicht lleen bedient kan worden door de sluis
-
-Ik wil dat de deuren alleen bedient kunnen worden door de sluis
-
-
-Ik wil dat sensoren alleen bedient kunnen worrden door de sluis
-
-Een schip moet een route kunnen aflaggen 
-
-
-
-
-
-
-\subsection{specificaties}
-\par{Schip}
-Een schip okmt aanvaren en geeft een signaal aan de sluis. Indien er meer dan twee schepen in de sluis zitten danwordt het ship geplaats in de wachrij. Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. Eenmaal in de sluis zal het schip moeten wachten op de sluis en de pomp. Een schip mag alleen uitvaren als de pomp klaar is, de sleusdeuren open.
-\par{Sluis}
-Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp.
-\par{Sensor}
-De sensor is een onderdeel van de sluis en ontvangt signalen van naderende schepen.
-\par{Sluisdeur}
-De sleusdeur voor boven en beneden kunnen beiden oen en dicht. De sluisdeur wordt aangestuurd door de sluis.
-\par{pomp}
-Een pomp begint met pompen bij een signaal van de kluis. Een kluis io zijn beert geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
-
-\subsection{Afbakning}
-\begin{itemize}
-	\item Wat doet de sluis niet.
-	\item De sluiss houdt geen rekening met links of rechtsrijdend verkeer vanuit de zeevaart
-	\item De sluis heeft geen queue met daarin een id gekoppeld aan de sluis.
-	\item De waterpomp wordt alleen aan en uitgezet
-	\item De waterpomp houdt geen rekening met waterstand
-	\item Houdt geen rekening met een schip in de sluis dat is blijven hangen.
-	
-\end{itemize}
-
-\section{Design goals}
-Het systeem moet minimaal aan de volgende prestatie eisen voldoen 
-
-\begin{enumerate}
-	\item  
-	\begin{enumerate}
-		\item Ship management,  
-	\end{enumerate}
-	\item Data
-	\begin{enumerate}
-		\item Water level management
-	\end{enumerate}
-	\item Veiligheid     
-	\begin{enumerate}
-		\item Uitbreidbaarheid     
-	\end{enumerate}
-	
-	
-\end{enumerate}
-
-
-\begin{center}
-	\begin{gather*}
-		D=\Set{x\in\nat}{1\le x\le 100}\\
-		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
-		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
-		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
-		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
-		D=\Set*{x\in\nat}{1\le x\le \frac{200}{2}}
-	\end{gather*}
-\end{center}
-
-
-
-
-
-$S is a set of finite states$\\
-$S0 \subseteq S is de set van initiele statess$ \\
-$S0 \subseteq S xS  is een transitie relatie die totaal moet zij, dat betekent, dat voor elke state s \in S er een stats is s' \in S zodat R(s,s')$
-$L\stock a$
-
-$\forall x\,\exists y \implies $
-
-$\mtproforall x\,\mtproexists y \cap \subset \in \vee \diamondsuit \dashv \ni \pm$
 
 
 \chapter{Kripke model}
@@ -623,24 +607,7 @@ q moet waar zijn totdat en inclusief de situatie dat p voor het eerst waar is, a
 \end{center}
 
 
-\begin{center}
-	\begin{gather*}
-	D=\Set{x\in\nat}{1\le x\le 100}\\
-	D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
-	D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
-	D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
-	D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
-	D=\Set*{x\in\nat}{1\le x\le \frac{200}{2}}
-\end{gather*}
-
-\begin{align}
-	\alpha &= \beta + \gamma * \lambda \\
-	\alpha &= \beta + \gamma * \lambda \\
-	\alpha &= \beta + \gamma * \lambda \\
-	\theta &= \frac{\alpha}{4}
-\end{align} 
-\end{center}
-
+ 
 %  https://www.stat.cmu.edu/~brian/latex/symbols/symbols.html
 % https://tex.loria.fr/ctan-doc/macros/latex/doc/html/fntguide/node18.html
 % https://observablehq.com/@s-haensch/latex-notation
@@ -666,24 +633,13 @@ q moet waar zijn totdat en inclusief de situatie dat p voor het eerst waar is, a
 
 
 
-\subsection{Testcases}		
-
-Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
-worden voldaan. De eerste voorwaarde is de geschiktheid van het
-afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
-men zich afvragen of dat wel een echte afstudeeropdracht is. Een
-afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
-moet een afstudeerproject passen in het profiel van een opleiding om
-beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
-de registratie van werkzaamheden tijdens het a
-
  
 \paragraph{resultaat}
 
 
-	\bankstatement[title={Kontoauszug 12/2014},
-	openingbalance={-12,34},
-	closingbalance={82,13}]{201412.csv}
+%	\bankstatement[title={Kontoauszug 12/2014},
+%	openingbalance={-12,34},
+%	closingbalance={82,13}]{201412.csv}
  
  
  
@@ -717,16 +673,16 @@ AG(AF(p))
 \end{verbatim}
 
  
-\VerbatimInput{data.txt}
+\VerbatimInput{mydata.csv}
 
 \subsection{safety}
-\VerbatimInput{mydata.txt}
+%\VerbatimInput{mydata.txt}
 
 \subsection{zeno vrij}
 Geen enkele state kan oneindig een transitie uitvoeren. Elke state heeft een uitgaande transitie.
 
 \subsection{deadlocks}
-\VerbatimInput{data.txt}
+%\VerbatimInput{data.txt}
 \chapter{Conclusie}
 
 

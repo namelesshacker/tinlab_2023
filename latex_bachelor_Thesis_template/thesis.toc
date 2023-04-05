@@ -5,7 +5,8 @@
 \contentsline {subsubsection}{Gewenst resultaat }{2}{}%
 \contentsline {subsubsection}{Scope}{2}{}%
 \contentsline {subsubsection}{Onderzoeksvragen }{2}{}%
-\contentsline {section}{\numberline {1.1}Leeswijzer}{3}{}%
+\contentsline {section}{\numberline {1.1}Design goals}{3}{}%
+\contentsline {section}{\numberline {1.2}Leeswijzer}{3}{}%
 \contentsline {chapter}{\numberline {2}Methodologie}{4}{}%
 \contentsline {chapter}{\numberline {3}Theoretisch kader}{5}{}%
 \contentsline {subsection}{\numberline {3.0.1}MODE CONFUSION }{5}{}%
@@ -27,45 +28,45 @@
 \contentsline {subsubsection}{Controlled variabelen}{14}{}%
 \contentsline {subsubsection}{Input variabelen}{14}{}%
 \contentsline {subsubsection}{Output variabelen}{14}{}%
-\contentsline {chapter}{\numberline {4}Ontwerp}{16}{}%
-\contentsline {subsubsection}{Aankomst, uitvoering, vrijgave}{16}{}%
-\contentsline {subsubsection}{ontwerp}{16}{}%
-\contentsline {subsubsection}{Onderdelen}{16}{}%
-\contentsline {subsubsection}{Werking}{17}{}%
-\contentsline {paragraph}{extra cases}{17}{}%
-\contentsline {paragraph}{Aandachtspunten}{17}{}%
-\contentsline {section}{\numberline {4.1}Een voorbeeld}{18}{}%
-\contentsline {paragraph}{Vooraanmelding}{18}{}%
-\contentsline {paragraph}{informatie inwinnen}{18}{}%
-\contentsline {paragraph}{operationele melding}{18}{}%
-\contentsline {paragraph}{aankomst volgorde}{19}{}%
-\contentsline {paragraph}{aanwijzen wachtplaats}{19}{}%
-\contentsline {paragraph}{verstrekken informatie}{19}{}%
-\contentsline {paragraph}{aanwijzen opstelplaats}{19}{}%
-\contentsline {paragraph}{opstellen schutproces}{19}{}%
-\contentsline {paragraph}{verstrekken informatie}{19}{}%
-\contentsline {paragraph}{invaarvolgorde en ligplaats in sluis}{19}{}%
-\contentsline {paragraph}{gereedmaken voor invaren}{19}{}%
-\contentsline {paragraph}{openen invaardeuren}{19}{}%
-\contentsline {paragraph}{invaren toegestaan}{19}{}%
-\contentsline {paragraph}{aanwijzingen voor invaren}{19}{}%
-\contentsline {paragraph}{aanwijzingen tijdens afmeren}{19}{}%
-\contentsline {paragraph}{invaren verboden}{19}{}%
-\contentsline {paragraph}{sluiten invaardeuren}{19}{}%
-\contentsline {paragraph}{start nivelleren}{19}{}%
-\contentsline {paragraph}{aanzwijzingen voor uitvaren}{19}{}%
-\contentsline {paragraph}{openen uitvaardewuren}{20}{}%
-\contentsline {paragraph}{uitvaren toegestaan}{20}{}%
-\contentsline {paragraph}{brainstorm 22-5-2022}{20}{}%
-\contentsline {subparagraph}{invaardeuren en uitvaardeuren}{20}{}%
-\contentsline {subparagraph}{invaarstoplicht en uitvaarstoplicht}{20}{}%
-\contentsline {subparagraph}{invaarwachtrij en uitvaarwachtrij}{20}{}%
-\contentsline {chapter}{\numberline {5}Requirements en specificaties}{21}{}%
-\contentsline {subsection}{\numberline {5.0.1}Requirements}{21}{}%
-\contentsline {subsection}{\numberline {5.0.2}Veiligheidsoverwegingen}{23}{}%
-\contentsline {subsection}{\numberline {5.0.3}specificaties}{24}{}%
-\contentsline {subsection}{\numberline {5.0.4}Afbakning}{24}{}%
-\contentsline {section}{\numberline {5.1}Design goals}{25}{}%
+\contentsline {subsubsection}{Literatuuronderzoek}{14}{}%
+\contentsline {chapter}{\numberline {4}Requirements en specificaties}{16}{}%
+\contentsline {subsection}{\numberline {4.0.1}Requirements}{16}{}%
+\contentsline {subsection}{\numberline {4.0.2}Veiligheidsoverwegingen}{18}{}%
+\contentsline {subsection}{\numberline {4.0.3}Afbakning}{19}{}%
+\contentsline {chapter}{\numberline {5}Ontwerp}{21}{}%
+\contentsline {section}{\numberline {5.1}Inleiding}{21}{}%
+\contentsline {subsubsection}{Aankomst, uitvoering, vrijgave}{21}{}%
+\contentsline {subsubsection}{ontwerp}{21}{}%
+\contentsline {subsubsection}{Onderdelen}{21}{}%
+\contentsline {subsubsection}{Werking}{22}{}%
+\contentsline {paragraph}{extra cases}{22}{}%
+\contentsline {paragraph}{Aandachtspunten}{22}{}%
+\contentsline {section}{\numberline {5.2}Concept}{23}{}%
+\contentsline {paragraph}{Vooraanmelding}{23}{}%
+\contentsline {paragraph}{informatie inwinnen}{23}{}%
+\contentsline {paragraph}{operationele melding}{23}{}%
+\contentsline {paragraph}{aankomst volgorde}{24}{}%
+\contentsline {paragraph}{aanwijzen wachtplaats}{24}{}%
+\contentsline {paragraph}{verstrekken informatie}{24}{}%
+\contentsline {paragraph}{aanwijzen opstelplaats}{24}{}%
+\contentsline {paragraph}{opstellen schutproces}{24}{}%
+\contentsline {paragraph}{verstrekken informatie}{24}{}%
+\contentsline {paragraph}{invaarvolgorde en ligplaats in sluis}{24}{}%
+\contentsline {paragraph}{gereedmaken voor invaren}{24}{}%
+\contentsline {paragraph}{openen invaardeuren}{24}{}%
+\contentsline {paragraph}{invaren toegestaan}{24}{}%
+\contentsline {paragraph}{aanwijzingen voor invaren}{24}{}%
+\contentsline {paragraph}{aanwijzingen tijdens afmeren}{24}{}%
+\contentsline {paragraph}{invaren verboden}{24}{}%
+\contentsline {paragraph}{sluiten invaardeuren}{24}{}%
+\contentsline {paragraph}{start nivelleren}{24}{}%
+\contentsline {paragraph}{aanzwijzingen voor uitvaren}{24}{}%
+\contentsline {paragraph}{openen uitvaardewuren}{25}{}%
+\contentsline {paragraph}{uitvaren toegestaan}{25}{}%
+\contentsline {paragraph}{brainstorm 22-5-2022}{25}{}%
+\contentsline {subparagraph}{invaardeuren en uitvaardeuren}{25}{}%
+\contentsline {subparagraph}{invaarstoplicht en uitvaarstoplicht}{25}{}%
+\contentsline {subparagraph}{invaarwachtrij en uitvaarwachtrij}{25}{}%
 \contentsline {chapter}{\numberline {6}Kripke model}{26}{}%
 \contentsline {section}{\numberline {6.1}Uppaal kripke structuren}{26}{}%
 \contentsline {subsubsection}{templates}{26}{}%
@@ -109,31 +110,30 @@
 \contentsline {subsection}{\numberline {7.1.9}Operator: p U q}{30}{}%
 \contentsline {subsection}{\numberline {7.1.10}Operator: p R q}{30}{}%
 \contentsline {chapter}{\numberline {8}Testresultaten CTL logica}{31}{}%
-\contentsline {subsection}{\numberline {8.0.1}Testcases}{32}{}%
-\contentsline {paragraph}{resultaat}{32}{}%
-\contentsline {subparagraph}{verklareing}{33}{}%
-\contentsline {subsection}{\numberline {8.0.2}Fairness}{33}{}%
-\contentsline {subsection}{\numberline {8.0.3}Liveness}{33}{}%
-\contentsline {subsection}{\numberline {8.0.4}safety}{33}{}%
-\contentsline {subsection}{\numberline {8.0.5}zeno vrij}{34}{}%
-\contentsline {subsection}{\numberline {8.0.6}deadlocks}{34}{}%
-\contentsline {chapter}{\numberline {9}Conclusie}{35}{}%
-\contentsline {chapter}{\numberline {10}Discussie}{36}{}%
-\contentsline {subsection}{\numberline {10.0.1}Future work}{36}{}%
-\contentsline {subsubsection}{Hoogte waterniveau}{36}{}%
-\contentsline {subsubsection}{type deuren naar waterniveau}{36}{}%
-\contentsline {subsubsection}{voorrang uitvarend op invarend}{36}{}%
-\contentsline {subsubsection}{stoplicht invarend en stoplicht uitvarend}{36}{}%
-\contentsline {subsubsection}{Volgorde}{36}{}%
-\contentsline {chapter}{\numberline {11}Notulen}{37}{}%
-\contentsline {chapter}{\numberline {12}Queries}{41}{}%
-\contentsline {chapter}{\numberline {13}Testresultaten}{44}{}%
-\contentsline {subsubsection}{onderdeleel van de test}{45}{}%
-\contentsline {chapter}{\numberline {14}Reflectie}{46}{}%
-\contentsline {chapter}{\numberline {15}Conclusions}{48}{}%
-\contentsline {section}{\numberline {15.1}Summary of the thesis}{48}{}%
-\contentsline {chapter}{\numberline {A}Uppaal source}{49}{}%
-\contentsline {section}{\numberline {A.1}\\ Appendix B: Model eerste deelname aan cursus 2020}{51}{}%
-\contentsline {section}{\numberline {A.2}\\ Appendix B: Model herkansing tweede deelname aan cursus 2020}{53}{}%
-\contentsline {chapter}{References}{59}{}%
-\contentsline {chapter}{Mijn profiel}{60}{}%
+\contentsline {paragraph}{resultaat}{31}{}%
+\contentsline {subparagraph}{verklareing}{32}{}%
+\contentsline {subsection}{\numberline {8.0.1}Fairness}{32}{}%
+\contentsline {subsection}{\numberline {8.0.2}Liveness}{32}{}%
+\contentsline {subsection}{\numberline {8.0.3}safety}{32}{}%
+\contentsline {subsection}{\numberline {8.0.4}zeno vrij}{32}{}%
+\contentsline {subsection}{\numberline {8.0.5}deadlocks}{32}{}%
+\contentsline {chapter}{\numberline {9}Conclusie}{33}{}%
+\contentsline {chapter}{\numberline {10}Discussie}{34}{}%
+\contentsline {subsection}{\numberline {10.0.1}Future work}{34}{}%
+\contentsline {subsubsection}{Hoogte waterniveau}{34}{}%
+\contentsline {subsubsection}{type deuren naar waterniveau}{34}{}%
+\contentsline {subsubsection}{voorrang uitvarend op invarend}{34}{}%
+\contentsline {subsubsection}{stoplicht invarend en stoplicht uitvarend}{34}{}%
+\contentsline {subsubsection}{Volgorde}{34}{}%
+\contentsline {chapter}{\numberline {11}Notulen}{35}{}%
+\contentsline {chapter}{\numberline {12}Queries}{37}{}%
+\contentsline {chapter}{\numberline {13}Testresultaten}{40}{}%
+\contentsline {subsubsection}{onderdeleel van de test}{41}{}%
+\contentsline {chapter}{\numberline {14}Reflectie}{42}{}%
+\contentsline {chapter}{\numberline {15}Conclusions}{44}{}%
+\contentsline {section}{\numberline {15.1}Summary of the thesis}{44}{}%
+\contentsline {chapter}{\numberline {A}Uppaal source}{45}{}%
+\contentsline {section}{\numberline {A.1}\\ Appendix B: Model eerste deelname aan cursus 2020}{47}{}%
+\contentsline {section}{\numberline {A.2}\\ Appendix B: Model herkansing tweede deelname aan cursus 2020}{49}{}%
+\contentsline {chapter}{References}{55}{}%
+\contentsline {chapter}{Mijn profiel}{56}{}%
