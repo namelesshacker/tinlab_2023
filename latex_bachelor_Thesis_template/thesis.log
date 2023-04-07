@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  5 APR 2023 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  7 APR 2023 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -510,8 +510,8 @@ tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 \l__pdf_internal_box=\box70
-) (thesis.aux (0_Prelim/prelim.aux) (1_Intro/intro.aux) (2_Body/body.aux) (3_De
-tails/details.aux) (4_Conclusions/conclusions.aux)
+) (thesis.aux (0_Prelim/prelim.aux) (1_Intro/intro.aux) (2_Body/body.aux) (4_Co
+nclusions/conclusions.aux) (3_Details/details.aux)
 (Appendix/Appendix.aux) (0_Prelim/cv.aux))
 \openout1 = `thesis.aux'.
 
@@ -791,9 +791,16 @@ Overfull \hbox (17.15523pt too wide) in paragraph at lines 670--670
  volgt uit p.[] 
  []
 
-[32]
+) [32]
+\openout2 = `4_Conclusions/conclusions.aux'.
+
+ (4_Conclusions/conclusions.tex
 Chapter 9.
 [33
+
+
+
+
 
 ]
 Chapter 10.
@@ -804,249 +811,7 @@ Chapter 10.
 
  (3_Details/details.tex
 Chapter 11.
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \usepackage
-                {pgf}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-\setform ->\pgfqkeys 
-                     {/form }
-l.52 \setform
-             {field1/.store in=\fieldi,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.52 \setform{field1/.store in=\fieldi
-                                      ,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.53 	field2/.store in=\fieldii
-                               ,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[35
-
-
-
-
-
-]
-Underfull \hbox (badness 1097) in paragraph at lines 116--116
-\OT1/cmr/m/n/12 ries. They can pro-mote
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 118--118
-\OT1/cmr/m/n/12 is high in fiber and B-
- []
-
-[36]
-Chapter 12.
-
-Overfull \hbox (498.80547pt too wide) in paragraph at lines 131--131
-[]\OT1/cmtt/m/n/12 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.la
-ag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.st
-opgaphigh2))[] 
- []
-
-
-Overfull \hbox (789.03061pt too wide) in paragraph at lines 132--132
-[]\OT1/cmtt/m/n/12 A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Opening
-_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Sluis
-.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))[] 
- []
-
-
-Overfull \hbox (29.50523pt too wide) in paragraph at lines 135--135
-[]\OT1/cmtt/m/n/12 (Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||De
-uren.hoog_open)[] 
- []
-
-[37
-
-]
-Overfull \hbox (498.80547pt too wide) in paragraph at lines 182--182
-[]\OT1/cmtt/m/n/12 Als het schip boven is, dan is waterlvel gelijk aan hoog, fi
-lling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty val
-ve is dicht.[] 
- []
-
-
-Overfull \hbox (375.3054pt too wide) in paragraph at lines 183--183
-[]\OT1/cmtt/m/n/12 Schip is in waterlock, waterlevel is hoog, filling valve is 
-dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
- []
-
-
-Overfull \hbox (412.35542pt too wide) in paragraph at lines 184--184
-[]\OT1/cmtt/m/n/12 Schip is dan laag, waterlevel gelijk aan laag, filling valve
- is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.[]
- 
- []
-
-
-Overfull \hbox (474.10545pt too wide) in paragraph at lines 188--188
-[]\OT1/cmtt/m/n/12 Als schip beneden is dan is waterlevel gelijk aan laag, fill
-ing valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valve 
-is open.[] 
- []
-
-[38]
-Overfull \hbox (449.40544pt too wide) in paragraph at lines 189--189
-[]\OT1/cmtt/m/n/12 Schip is in water lock, waterlevel is laag, flilling valve i
-s open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is dic
-ht,.[] 
- []
-
-
-Overfull \hbox (437.05544pt too wide) in paragraph at lines 190--190
-[]\OT1/cmtt/m/n/12 Schip is dan hoog, waterlevel is gelijk aan hoog, filling va
-lve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is dic
-ht[] 
- []
-
-[39]
-Chapter 13.
-
-Overfull \hbox (11.01804pt too wide) in paragraph at lines 205--219
-[] 
- []
-
-[40
-
-] [41]
-Chapter 14.
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.229 \usepackage
-                 {pgf}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \setform already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.230 \newcommand\setform{\pgfqkeys{/form }}
-                                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-\setform ->\pgfqkeys 
-                     {/form }
-l.231 \setform
-              {field1/.store in=\fieldi,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.231 \setform{field1/.store in=\fieldi
-                                       ,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.232 	field2/.store in=\fieldii
-                                ,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Command \myform already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.278 }
-       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-\setform ->\pgfqkeys 
-                     {/form }
-l.282 \setform
-              {field1 = G. Wales,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--284
-[][][][]
- []
-
-
-Overfull \hbox (24.4248pt too wide) in paragraph at lines 284--284
-[][] 
- []
-
-[42
-
-]
-Overfull \hbox (24.4248pt too wide) in paragraph at lines 284--284
-[][] 
- []
-
-
-Overfull \hbox (24.4248pt too wide) in paragraph at lines 284--285
-[][] 
- []
-
-) [43]
-\openout2 = `4_Conclusions/conclusions.aux'.
-
- (4_Conclusions/conclusions.tex
-Chapter 15.
-) [44
+) [35
 
 
 
@@ -1063,13 +828,13 @@ Overfull \hbox (159.1803pt too wide) in paragraph at lines 29--29
 e de volgende parameter: id_l lampnr[] 
  []
 
-[45
+[36
 
 
 
 
 
-] [46]
+] [37]
 Overfull \hbox (498.80547pt too wide) in paragraph at lines 80--80
 []\OT1/cmtt/m/n/12 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.la
 ag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.st
@@ -1089,7 +854,7 @@ Overfull \hbox (29.50523pt too wide) in paragraph at lines 84--84
 uren.hoog_open)[] 
  []
 
-[47] [48] [49]
+[38] [39] [40]
 Overfull \hbox (498.80547pt too wide) in paragraph at lines 171--171
 []\OT1/cmtt/m/n/12 Als het schip boven is, dan is waterlvel gelijk aan hoog, fi
 lling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty val
@@ -1130,52 +895,703 @@ lve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is dic
 ht[] 
  []
 
-[50] [51] [52] [53]) [54] (thesis.bbl) [55
+[41] [42] [43] [44] [45]
+Appendix B.
+! Misplaced alignment tab character &.
+l.327 ...?id=80443e97-f17e-499c-b3f2-ad608f32e1aa&
+                                                  title=Rapportage%20Staat%2...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.339 https://www.noorderzijlvest.nl/_
+                                      flysystem/media/vragen-webinar-30-8-20...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.366 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (54.52216pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 voor sluizen en wa-ter-w-erken" https://www.tweedekamer.nl/down
+loads/document?id=80443e97-
+ []
+
+
+Overfull \hbox (58.79573pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 f17e-499c-b3f2-ad608f32e1aatitle=Rapportagehttps://www.nu.nl/in
+ternet/5814282/rekenkamer-
+ []
+
+
+Overfull \hbox (387.92287pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 waterwerken-niet-goed-beveiligd-tegen-cyberaanvallen.html https
+://www.deltalimburg.nl/article/9824/Onderhoudswerkzaamheden+aan+Sluis+Linne+afg
+erond
+ []
+
+
+Overfull \hbox (42.25006pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 https://nieuwesluisterneuzen.eu/veiligheid https://www.mrdmarin
+esupport.nl/nl/maritieme-
+ []
+
+
+Overfull \hbox (74.17056pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 dienstverlening/ondersteuning-veiligheid/ https://www.infrasite
+.nl/bouwen/2021/05/27/veiligheid-
+ []
+
+
+Overfull \hbox (82.3302pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 voorop-begin-project-sluis-of-brug-altijd-met-risicobeoordeling
+/ https://www.wdodelta.nl/bediening-
+ []
+
+
+Overfull \hbox (80.95938pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 schutsluizen-vechterweerd-en-vilsteren https://www.infrasite.nl
+/waterbouw-deltas/2021/05/21/sluis-
+ []
+
+
+Overfull \hbox (36.96262pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 heel-onder-handen-genomen/ https://www.hdsr.nl/actueel/nieuws/@
+154100/lichtprojecties-
+ []
+
+
+Overfull \hbox (1.6477pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 waterwerk-niet-altijd-opgemerkt https://magazine.vhbinfra.nl/1-
+4/zeesluis-ijmuiden/
+ []
+
+
+Overfull \hbox (298.05264pt too wide) in paragraph at lines 326--366
+\OT1/cmr/m/n/12 https://varendoejesamen.nl/kenniscentrum/artikel/onderhoud-slui
+s-linne-afgerond https://www.noorderzijlvest.nl/$[]\OML/cmm/m/it/12 lysystem=me
+dia=vragen \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (17.97539pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 zoutkamp:pdfhttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==eenvand
+aag:avrotros:nl=item=sluizen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy
+/m/n/12 ^^@ \OML/cmm/m/it/12 gemalen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 kunn
+en \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (15.83041pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 sluis \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 met \OMS/cmsy/m/n/
+12 ^^@ \OML/cmm/m/it/12 kantelende \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 sluisd
+eur=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==tkhsecurity:com=nl=waterwerken=h
+ttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (94.32239pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 nog \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 onvoldoende \OMS/cms
+y/m/n/12 ^^@ \OML/cmm/m/it/12 beschermd \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 t
+egen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 cyberaanvallenhttps \OT1/cmr/m/n/12 
+: \OML/cmm/m/it/12 ==anteagroup:nl=diensten=beweegbare \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (350.28333pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 onder \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 water \OMS/cmsy/m/
+n/12 ^^@ \OML/cmm/m/it/12 zetten []b\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 fcbc\OT1/
+cmr/m/n/12 3\OML/cmm/m/it/12 c=\OT1/cmr/m/n/12 ?\OML/cmm/m/it/12 referrer \OT1/
+cmr/m/n/12 = \OML/cmm/m/it/12 httpshttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==w
+ww:magazinesrijkswaterstaat:nl=bereikbaarzeeland=\OT1/cmr/m/n/12 2021\OML/cmm/m
+/it/12 =\OT1/cmr/m/n/12 01\OML/cmm/m/it/12 =krammersluizencomplex \OMS/cmsy/m/n
+/12 ^^@
+ []
+
+
+Overfull \hbox (355.8621pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 verleden \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 heden \OMS/cmsy
+/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 toekomsth
+ttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:noord \OMS/cmsy/m/n/12 ^^@ \OML/c
+mm/m/it/12 holland:nl=Actueel=Archief=\OT1/cmr/m/n/12 2022\OML/cmm/m/it/12 =Sep
+tember[]\OT1/cmr/m/n/12 022\OML/cmm/m/it/12 =Hollandse[]aterlinies[]n[]e[]chijn
+werpershttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (174.21536pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 ==www:watersport \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 tv:nl=n
+w \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 31400 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/
+12 7 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3715235\OML/cmm/m/it/12 =nieuws=cyber
+security[]itale[]aterwerken[]iet[]aterdicht:htmlhttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (173.14629pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 kwetsbaar \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 voor \OMS/cmsy
+/m/n/12 ^^@ \OML/cmm/m/it/12 cyberaanvallenhttps \OT1/cmr/m/n/12 : \OML/cmm/m/i
+t/12 ==www:rtlnieuws:nl=nieuws=nederland=artikel=\OT1/cmr/m/n/12 3758966\OML/cm
+m/m/it/12 =cyberbeveiliging \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (5.03757pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 content=uploads=\OT1/cmr/m/n/12 2017\OML/cmm/m/it/12 =\OT1/cmr
+/m/n/12 05\OML/cmm/m/it/12 =Referentieverhaal \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/i
+t/12 Provincie \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 Zuid \OMS/cmsy/m/n/12 ^^@ 
+\OML/cmm/m/it/12 Holland:pdfhttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (27.92256pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 ==www:tno:nl=nl=duurzaam=veilige \OMS/cmsy/m/n/12 ^^@ \OML/cmm
+/m/it/12 duurzame \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 leefomgeving=infrastruc
+tuur=natte \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (108.39441pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 infrastructuur=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:
+computable:nl=artikel=nieuws=security=\OT1/cmr/m/n/12 6634379\OML/cmm/m/it/12 =
+\OT1/cmr/m/n/12 250449\OML/cmm/m/it/12 =waterwerken \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (13.59242pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 bruggen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n
+/12 ^^@ \OML/cmm/m/it/12 sluizen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 onvoldoe
+nde \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 beschermd \OMS/cmsy/m/n/12 ^^@ \OML/c
+mm/m/it/12 tegen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 hackershttps \OT1/cmr/m/
+n/12 : \OML/cmm/m/it/12 ==www:zuid \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (68.62033pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 holland:nl=onderwerpen=verkeer \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m
+/it/12 vervoer=vaarwegen=http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:wesemann
+:nl=nl=nieuws \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (38.22864pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 ==www:rekenkamer:nl=actueel=nieuws=\OT1/cmr/m/n/12 2019\OML/cm
+m/m/it/12 =\OT1/cmr/m/n/12 03\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 28\OML/cmm/m/it/
+12 =cybersecurity \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 vitale \OMS/cmsy/m/n/12
+ ^^@ \OML/cmm/m/it/12 waterwerken \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (58.6817pt too wide) in paragraph at lines 326--366
+\OML/cmm/m/it/12 niet \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 waterdichthttps \OT
+1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:rijkswaterstaat:nl=over \OMS/cmsy/m/n/12 
+^^@ \OML/cmm/m/it/12 ons=onze \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 organisatie
+=vervanging \OMS/cmsy/m/n/12 ^^@
+ []
+
+[46
+
+] [47]
+Appendix C.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.373 .../www.hdsr.nl/publish/pages/86927/sluizen_
+                                                  in_of_bij_een_waterkering_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+l.373 ...6927/sluizen_in_of_bij_een_waterkering_-_
+                                                  uitvoeringsregels.pdf
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Misplaced alignment tab character &.
+l.374 ....ibabs.eu/publicdownload.aspx?site=sluis&
+                                                  id=100100292
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.394 ...content/NL/TXT/PDF/?uri=CELEX:32020L0012&
+                                                  from=DE
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.401 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (158.14911pt too wide) in paragraph at lines 372--401
+\OT1/cmr/m/n/12 voor sluizen" https://www.hdsr.nl/publish/pages/86927/sluizen$[
+]\OML/cmm/m/it/12 n[]f[]ij[]en[]aterkering[][]itvoeringsregels:pdfhttps \OT1/cm
+r/m/n/12 :
+ []
+
+
+Overfull \hbox (60.26764pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 ==api\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :ibabs:eu=publicdownloa
+d:aspx\OT1/cmr/m/n/12 ?\OML/cmm/m/it/12 site \OT1/cmr/m/n/12 = \OML/cmm/m/it/12
+ sluisid \OT1/cmr/m/n/12 = 100100292\OML/cmm/m/it/12 https \OT1/cmr/m/n/12 : \O
+ML/cmm/m/it/12 ==services:pilz:nl=wp \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (160.3701pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 content=uploads=\OT1/cmr/m/n/12 2021\OML/cmm/m/it/12 =\OT1/cmr
+/m/n/12 12\OML/cmm/m/it/12 =brochure[]ruggen[]\OT1/cmr/m/n/12 018\OML/cmm/m/it/
+12 :pdfhttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==lokaleregelgeving:overheid:nl
+=CVDR\OT1/cmr/m/n/12 375606\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 
+https \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (68.92355pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 ==zoek:officielebekendmakingen:nl=stb \OMS/cmsy/m/n/12 ^^@ \OT
+1/cmr/m/n/12 2019 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 27\OML/cmm/m/it/12 :html
+https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==a \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it
+/12 quin:nl=nieuws=veiligheid \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (335.24791pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 van \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 bruggen \OMS/cmsy/m/
+n/12 ^^@ \OML/cmm/m/it/12 sluizen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 waarbor
+gen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 wie \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/i
+t/12 wat \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 hoe=https \OT1/cmr/m/n/12 : \OML
+/cmm/m/it/12 ==www:gemeentesluis:nl=Bestuur[]n[]rganisatie=Wetten[]egels[]ekend
+makingenhttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (58.61046pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 ==www:overijssel:nl=onderwerpen=verkeer \OMS/cmsy/m/n/12 ^^@ \
+OML/cmm/m/it/12 en \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 vervoer=varen \OMS/cms
+y/m/n/12 ^^@ \OML/cmm/m/it/12 in \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 overijss
+el=informatie \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (168.32426pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 bedieningstijden \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 sluizen
+ \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12
+ bruggen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 noordwest \OMS/cmsy/m/n/12 ^^@ \
+OML/cmm/m/it/12 overijssel=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:rijks
+waterstaat:nl=water=wetten \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (84.97394pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 regels \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n/
+12 ^^@ \OML/cmm/m/it/12 vergunningenhttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==
+www:schuttevaer:nl=nieuws=actueel=\OT1/cmr/m/n/12 2022\OML/cmm/m/it/12 =\OT1/cm
+r/m/n/12 11\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 23\OML/cmm/m/it/12 =binnenvaart \O
+MS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (344.13368pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 sluizen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 dwingen \OMS/cms
+y/m/n/12 ^^@ \OML/cmm/m/it/12 tot \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 doorvar
+en=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==repository:officiele \OMS/cmsy/m/
+n/12 ^^@ \OML/cmm/m/it/12 overheidspublicaties:nl=CVDR=CVDR\OT1/cmr/m/n/12 2714
+06\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 =html=CVDR\OT1/cmr/m/n/12
+ 271406[]\OML/cmm/m/it/12 :htmlhttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (125.95316pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 ==www:zeeland:nl=actueel=bedieningstijden \OMS/cmsy/m/n/12 ^^@
+ \OML/cmm/m/it/12 sluizen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/
+n/12 ^^@ \OML/cmm/m/it/12 bruggenhttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www
+:amsterdam:nl=verkeer \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (83.78435pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 vervoer=varen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 amsterdam=
+regels \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 varen=https \OT1/cmr/m/n/12 : \OML
+/cmm/m/it/12 ==www:schielandendekrimpenerwaard:nl=wat \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (125.48811pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 rij=richtlijnen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/
+cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 akkoorden=alle \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m
+/it/12 regelgeving \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 van \OMS/cmsy/m/n/12 ^
+^@ \OML/cmm/m/it/12 rijnland=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:itb
+b:nl=diensten=advies \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (203.93411pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 ce \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 markering \OMS/cmsy/m
+/n/12 ^^@ \OML/cmm/m/it/12 europese \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 richt
+lijnen=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:portofamsterdam:com=nl=sc
+heepvaart=zeevaart=regelgevinghttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (54.26735pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 bruggen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n
+/12 ^^@ \OML/cmm/m/it/12 sluizen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 zuid \OM
+S/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 holland \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/1
+2 zorgelijk=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==varendoejesamen:nl=nieuw
+shttps \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (47.41153pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 ==eur \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 lex:europa:eu=lega
+l \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 content=NL=TXT=PDF=\OT1/cmr/m/n/12 ?\OM
+L/cmm/m/it/12 uri \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 CELEX \OT1/cmr/m/n/12 : 32
+020\OML/cmm/m/it/12 L\OT1/cmr/m/n/12 0012\OML/cmm/m/it/12 from \OT1/cmr/m/n/12 
+=
+ []
+
+
+Overfull \hbox (33.62785pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 DEhttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:werkenvoorned
+erland:nl=organisatie=rijkswaterstaat=ict \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12
+ middelen \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (48.18864pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 maken \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 om \OMS/cmsy/m/n/1
+2 ^^@ \OML/cmm/m/it/12 bruggen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 sluizen \O
+MS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 tu
+nnels \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 te \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/
+it/12 besturenhttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:lobocom:nl=infra \
+OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (59.28549pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 bruggen \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 sluizenhttps \OT
+1/cmr/m/n/12 : \OML/cmm/m/it/12 ==waterrecreatienederland:nl=content=uploads=\O
+T1/cmr/m/n/12 2018\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 04\OML/cmm/m/it/12 =richtli
+jnen \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (67.73473pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 vaarwegen \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2017\OML/cmm/m/
+it/12 :pdfhttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:wetterskipfryslan:nl=m
+elden \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/
+it/12 regelen=vergunningen \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (204.85847pt too wide) in paragraph at lines 372--401
+\OML/cmm/m/it/12 wetten \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 en \OMS/cmsy/m/n/
+12 ^^@ \OML/cmm/m/it/12 regelshttps \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:on
+linezeilschool:nl=sluizen=https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:provin
+cie:drenthe:nl=onderwerpen=verkeer \OMS/cmsy/m/n/12 ^^@
+ []
+
+[48
+
+]
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.404 \usepackage
+                 {pgf}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+\setform ->\pgfqkeys 
+                     {/form }
+l.406 \setform
+              {field1/.store in=\fieldi,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.406 \setform{field1/.store in=\fieldi
+                                       ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.407 	field2/.store in=\fieldii
+                                ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[49]
+Underfull \hbox (badness 1097) in paragraph at lines 470--470
+\OT1/cmr/m/n/12 ries. They can pro-mote
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 472--472
+\OT1/cmr/m/n/12 is high in fiber and B-
+ []
+
+[50]
+Appendix D.
+
+Overfull \hbox (498.80547pt too wide) in paragraph at lines 485--485
+[]\OT1/cmtt/m/n/12 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.la
+ag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.st
+opgaphigh2))[] 
+ []
+
+
+Overfull \hbox (789.03061pt too wide) in paragraph at lines 486--486
+[]\OT1/cmtt/m/n/12 A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Opening
+_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Sluis
+.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))[] 
+ []
+
+
+Overfull \hbox (29.50523pt too wide) in paragraph at lines 489--489
+[]\OT1/cmtt/m/n/12 (Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||De
+uren.hoog_open)[] 
+ []
+
+[51
+
+]
+Overfull \hbox (498.80547pt too wide) in paragraph at lines 536--536
+[]\OT1/cmtt/m/n/12 Als het schip boven is, dan is waterlvel gelijk aan hoog, fi
+lling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty val
+ve is dicht.[] 
+ []
+
+
+Overfull \hbox (375.3054pt too wide) in paragraph at lines 537--537
+[]\OT1/cmtt/m/n/12 Schip is in waterlock, waterlevel is hoog, filling valve is 
+dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
+ []
+
+
+Overfull \hbox (412.35542pt too wide) in paragraph at lines 538--538
+[]\OT1/cmtt/m/n/12 Schip is dan laag, waterlevel gelijk aan laag, filling valve
+ is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.[]
+ 
+ []
+
+
+Overfull \hbox (474.10545pt too wide) in paragraph at lines 542--542
+[]\OT1/cmtt/m/n/12 Als schip beneden is dan is waterlevel gelijk aan laag, fill
+ing valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valve 
+is open.[] 
+ []
+
+[52]
+Overfull \hbox (449.40544pt too wide) in paragraph at lines 543--543
+[]\OT1/cmtt/m/n/12 Schip is in water lock, waterlevel is laag, flilling valve i
+s open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is dic
+ht,.[] 
+ []
+
+
+Overfull \hbox (437.05544pt too wide) in paragraph at lines 544--544
+[]\OT1/cmtt/m/n/12 Schip is dan hoog, waterlevel is gelijk aan hoog, filling va
+lve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is dic
+ht[] 
+ []
+
+[53]
+Appendix E.
+
+Overfull \hbox (11.01804pt too wide) in paragraph at lines 559--573
+[] 
+ []
+
+[54
+
+] [55]
+Appendix F.
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.583 \usepackage
+                 {pgf}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \setform already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.584 \newcommand\setform{\pgfqkeys{/form }}
+                                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+\setform ->\pgfqkeys 
+                     {/form }
+l.585 \setform
+              {field1/.store in=\fieldi,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.585 \setform{field1/.store in=\fieldi
+                                       ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.586 	field2/.store in=\fieldii
+                                ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \myform already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.632 }
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+\setform ->\pgfqkeys 
+                     {/form }
+l.636 \setform
+              {field1 = G. Wales,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+[][][][]
+ []
+
+
+Overfull \hbox (24.4248pt too wide) in paragraph at lines 638--638
+[][] 
+ []
+
+[56
+
+]
+Overfull \hbox (24.4248pt too wide) in paragraph at lines 638--638
+[][] 
+ []
+
+
+Overfull \hbox (24.4248pt too wide) in paragraph at lines 638--639
+[][] 
+ []
+
+) [57] (thesis.bbl) [58
 
 
 
 ]
 \openout2 = `0_Prelim/cv.aux'.
 
- (0_Prelim/cv.tex) [56
+ (0_Prelim/cv.tex) [59
 
 
 ] (thesis.aux
 (0_Prelim/prelim.aux) (1_Intro/intro.aux) (2_Body/body.aux)
-(3_Details/details.aux) (4_Conclusions/conclusions.aux) (Appendix/Appendix.aux)
-(0_Prelim/cv.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(4_Conclusions/conclusions.aux) (3_Details/details.aux) (Appendix/Appendix.aux)
+(0_Prelim/cv.aux)) ) 
 Here is how much of TeX's memory you used:
  11086 strings out of 475385
  197938 string characters out of 2776908
- 737642 words of memory out of 3000000
+ 737835 words of memory out of 3000000
  32165 multiletter control sequences out of 15000+600000
  479273 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,13n,91p,2237b,403s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1200.pk> <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1440.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmex10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gally/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gally/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/gally/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gally
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
-ers/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmti12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmti8.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmtt12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/gally/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (68 pages, 321128 bytes).
+ 91i,13n,91p,2237b,407s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcrm1200.pk> <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gally/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gally/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gally/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ga
+lly/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/gally/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/gally/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/gally/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/g
+ally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb>
+Output written on thesis.pdf (71 pages, 348358 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
+ 314 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

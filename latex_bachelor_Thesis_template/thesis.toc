@@ -117,7 +117,8 @@
 \contentsline {subsection}{\numberline {8.0.3}safety}{32}{}%
 \contentsline {subsection}{\numberline {8.0.4}zeno vrij}{32}{}%
 \contentsline {subsection}{\numberline {8.0.5}deadlocks}{32}{}%
-\contentsline {chapter}{\numberline {9}Conclusie}{33}{}%
+\contentsline {chapter}{\numberline {9}Conclusions}{33}{}%
+\contentsline {section}{\numberline {9.1}Eindvverantwoording}{33}{}%
 \contentsline {chapter}{\numberline {10}Discussie}{34}{}%
 \contentsline {subsection}{\numberline {10.0.1}Future work}{34}{}%
 \contentsline {subsubsection}{Hoogte waterniveau}{34}{}%
@@ -125,15 +126,15 @@
 \contentsline {subsubsection}{voorrang uitvarend op invarend}{34}{}%
 \contentsline {subsubsection}{stoplicht invarend en stoplicht uitvarend}{34}{}%
 \contentsline {subsubsection}{Volgorde}{34}{}%
-\contentsline {chapter}{\numberline {11}Notulen}{35}{}%
-\contentsline {chapter}{\numberline {12}Queries}{37}{}%
-\contentsline {chapter}{\numberline {13}Testresultaten}{40}{}%
-\contentsline {subsubsection}{onderdeleel van de test}{41}{}%
-\contentsline {chapter}{\numberline {14}Reflectie}{42}{}%
-\contentsline {chapter}{\numberline {15}Conclusions}{44}{}%
-\contentsline {section}{\numberline {15.1}Summary of the thesis}{44}{}%
-\contentsline {chapter}{\numberline {A}Uppaal source}{45}{}%
-\contentsline {section}{\numberline {A.1}\\ Appendix B: Model eerste deelname aan cursus 2020}{47}{}%
-\contentsline {section}{\numberline {A.2}\\ Appendix B: Model herkansing tweede deelname aan cursus 2020}{49}{}%
-\contentsline {chapter}{References}{55}{}%
-\contentsline {chapter}{Mijn profiel}{56}{}%
+\contentsline {chapter}{\numberline {11}Details}{35}{}%
+\contentsline {chapter}{\numberline {A}Uppaal source}{36}{}%
+\contentsline {section}{\numberline {A.1}\\ Appendix B: Model eerste deelname aan cursus 2020}{38}{}%
+\contentsline {section}{\numberline {A.2}\\ Appendix B: Model herkansing tweede deelname aan cursus 2020}{40}{}%
+\contentsline {chapter}{\numberline {B}Deelonderzoek naar veiligheidsrisico's en eisen voor sluizzen}{46}{}%
+\contentsline {chapter}{\numberline {C}Deelonderzoek wet en regelgeving voor sluizen}{48}{}%
+\contentsline {chapter}{\numberline {D}Queries}{51}{}%
+\contentsline {chapter}{\numberline {E}Testresultaten}{54}{}%
+\contentsline {subsubsection}{onderdeleel van de test}{55}{}%
+\contentsline {chapter}{\numberline {F}Reflectie}{56}{}%
+\contentsline {chapter}{References}{58}{}%
+\contentsline {chapter}{Mijn profiel}{59}{}%
