@@ -1,0 +1,90 @@
+Naam:  Galvin
+Datum en plaats:  10-04-2023
+namen van aanwezigen:  G,K
+Verzendlijst:  
+
+
+
+Openingen: 
+wat is autonoom
+wat is ai
+hoe plaatste je autoinomie in uppaal
+Agendapunten vorige meeting:
+ requirements  rekeing houdend met AI/autonomie
+ingekomen stukken:
+ geen
+
+
+
+
+
+
+ 
+Rondvraag
+
+Wat is AI en wat is autonoom
+
+
+In artificial intelligence and robotics, the term 'autonomous' refers to the capacity of an artificial agent to operate independently of human guidance. It is assumed that the agent has a fixed goal or utility function concerning its actions' appropriateness.
+AI technologies provide the underlying capability for autonomous systems. While autonomy is enabled by AI, not all uses of AI are autonomous. For example, many AI capabilities are used to augment human decision making, rather than replace it.
+AI  kan een benadering zijn van van human decision taking terwijl autonomm zijn  betekent een beslising zonder menselijke input.
+
+
+Welke beslissingen neemt een operating bij het besturen van een sluis
+Een operator  kan:
+beslissen 
+sluisdeuren open/dicht moeten, 
+stoplicht switchen, 
+schatten wat de afstand is van schip naar sluis, 
+schatten wanneer hij de sluisdeuren open/dicht doet als een schip komt aanvaren of komt te wachten,  
+kan beslissen voor welke kant hij de sluisdeuren bedient(links/rechts of boven/beneden), 
+kan noodsignaal afgeven als hij denkt dat weersmstandigheden ongunstig zijn
+
+
+
+kan stoppen
+met signaleren van de aanvarende schepen
+met signaleren van de wachtende schepen
+signaleren uitvarende schepen
+met pompen water in de sluis
+met bedienen sluisdeuren
+
+
+kan pauzeren
+met pompen
+
+
+
+kan alarmeren
+wanneer de pmp klaar is
+wanneer de wachtrij vol is aanvarende schepen weigeren
+wanneer invarende schepen meoten wachten omdat er nog uitvarende schepen zijn in de sluis
+wanneer een schip tegen de sluisdeur dreigt te varen
+bij stijding waterpeil door noodweer
+bij hoge golven
+
+
+
+
+
+Een systeem zou de operator kunnen ondersteunen  bij deze acties als deze informatie heeft over:
+-de breedte, lengte, diepte van schepen
+-weeromstandigheden die kunnnen veranderen
+-om contact te maken met snel naderende schepen die nog geen signaal hebben gegeven/ontvangen zonder dat de operator het weet of heeft gezien
+
+Beste oplossing
+Een sluismodel met een controller die informatie verzamelt en onafhandelijk de beide kanten van de sluis bedient.
+
+
+
+
+Sluiting
+
+
+uppaal model ontwropen, uitgewerkt en getest op deadlocks
+inhoud persoonlijk verslag besproken met o.a. de onderzoeksonderwerpen
+Agendapunten
+
+Onderwerp, besluit, wie, gereed
+aanvoer en afvoer testen
+
