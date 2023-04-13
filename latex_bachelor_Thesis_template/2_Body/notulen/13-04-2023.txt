@@ -8,7 +8,8 @@ Verzendlijst:  x
 Openingen: 
 Agendapunten vorige meeting:
 requiremns uitgeschreven in latex bestand 
-ingekomen stukken:
+tussentijdsoplever moment inplannen met wessel oele maar nog geen reactie
+ingekomen stukken: geen
  
 
 
@@ -50,7 +51,8 @@ Sluiting
 
 
 Agendapunten
-op 14-04 veder met model in uppal
+op 14-04 veder met model in uppaal
+nog geen reactie van oelew
 Onderwerp, besluit, wie, gereed
  
 
