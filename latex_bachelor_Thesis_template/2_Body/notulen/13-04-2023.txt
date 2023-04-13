@@ -1,0 +1,63 @@
+Naam:  Galvin
+Datum en plaats: 13-04-2023, Teams  
+namen van aanwezigen:  Galvin, Koosha
+Verzendlijst:  x
+
+
+
+Openingen: 
+Agendapunten vorige meeting:
+requiremns uitgeschreven in latex bestand 
+ingekomen stukken:
+ 
+
+
+
+
+
+
+ 
+Rondvraag: welke kennig is nodig voor een bslismodel in uppaal
+
+
+
+Artificial intelligence/ autonomie in combinatie met AES
+
+Doel: robot kan op basis van aes info in combinatie met sluissensoren 
+zelf beslissingen  nemen.
+
+-schepen in sluis (max 2)
+-wachtende schepen aan weerszijde (max 2)
+-aanvarende schepen (max 2)
+-uitvarende schepen (max 2)
+-diepte, breede en lengte van de schepen
+-diepte, breedte en lengte van de sluis
+-neerslag
+-waterpeil
+-werktijd van de pomp
+-minimale verwerkjingstidj in de sluis
+
+
+
+
+
+
+
+
+
+Sluiting
+
+
+
+Agendapunten
+op 14-04 veder met model in uppal
+Onderwerp, besluit, wie, gereed
+ 
+
+
+
+Bijlage:
+na de vergadering is het verschil gedefinieerd tussen ai en autonomie:
+
+Here's an easy way to breakdown the differences between the two: autonomous robotics = task completion and AI = problem-solving. 
+Autonomous robotics systems are designed for use in predictable environments to complete tasks within a specific, usually pre-planned, environment

@@ -577,14 +577,801 @@ https://www.provincie.drenthe.nl/onderwerpen/verkeer-vervoer/vaarwegen/rondje-dr
 
 \chapter{Reflectie}
 
+\section{Inleiding}
+
 Ik heb erg veel geleerd van het analyseren van de vershillende requirements en specificaties en het opzetten van een model in Uppaal. Een dergelijk model opzetten had ik namelijk nog nooit gedaan. Het uitvoeren van onderzoek heb ik eerder gedaan. Ook de toetsing van het model met behulp van proposities heb ik nog nooit gedaan. Verder heb ik de kennis die had van programmeren/ design pattersn gebruikt om de verschillende templates in mijn Uppaal model van elkaar te onderscheiden. Het leukste onderdeel van het project vond ik hoe mijn templatemodel deadlockvrij werkte. Voor de verificatie van het model heb ik veel achtergrondinformatie opgezet, en het is mooi om te zien dat je met enkele duidelijke zinnen kan aantonen of een propositie geldig is of niet.  Verder had ik moeite met het opstellen van de juiste veiligheidseisen bij het model. Ik had aangenomen dat ik het project niet zou halen omdat ik de opdracht niet in teamverband heb uitgevoerd. Ik ben toch blij dat ik een concept heb opgeleverd dat ik kan toetsen aan de doormijzef opgestelde eisen en dat ik met mijn huidige kennis de proposities uit de requirements kan toetsen.
 
 
-\usepackage{pgf}
-\newcommand\setform{\pgfqkeys{/form }}
-\setform{field1/.store in=\fieldi,
-	field2/.store in=\fieldii,
+\section{Onderzoeksresultaten}
+
+
+
+
+\subsubsection{bijlmerramp}
+Motor 3 (de binnenste motor aan de rechtervleugel van het vliegtuig) brak af, beschadigde de vleugelkleppen en botste tegen motor 4 die vervolgens ook afbrak.
+De ernst van de situatie werd op Schiphol niet goed ingezien. Dit kwam onder meer doordat lost in de luchtvaart de gebruikelijke term is om het verlies van motorvermogen te melden. Op Schiphol werd er dan ook van uitgegaan dat er twee motoren waren uitgevallen. Dat ze letterlijk verloren waren wist men niet. Gezien het grote aantal handelingen dat de bemanning in een paar minuten moest uitvoeren en de keuzes die de piloot maakte, veronderstelde de parlementaire enquêtecommissie die de ramp later zou onderzoeken dat ook de bemanning waarschijnlijk niet heeft geweten dat beide motoren van de rechtervleugel waren afgebroken. De buitenste motor van een 747 is vanuit de cockpit slechts met moeite zichtbaar en de binnenste motor helemaal niet.
+
+Op de avond van de 4e oktober 1992 was landingsbaan 06 (de Kaagbaan) in gebruik. De piloot verzocht de luchtverkeersleiding op Schiphol echter een noodlanding te mogen maken op de Buitenveldertbaan (baan 27). Waarom hij juist deze baan koos, is nooit duidelijk geworden. Een keuze voor deze baan lag niet voor de hand; omdat de wind uit het noordoosten kwam, zou het toestel met flinke staartwind moeten landen. Langs de landingsbaan waren enkele grote brandweerwagens van Schiphol geplaatst. Deze zogeheten crashtenders moesten een brand tijdens de landing meteen blussen. Na de crash werd één zwarte doos teruggevonden. De bijbehorende band was in vier stukken gebroken, waardoor de laatste 2 minuten en 45 seconden ervan niet meer te gebruiken waren. De doos werd voor onderzoek naar Washington gestuurd en leverde uiteindelijk onderstaande informatie op.
+Om goed uit te komen voor de landingsbaan vloog het beschadigde toestel eerst nog een rondje boven Amsterdam. Tijdens dit rondje gaf de gezagvoerder de copiloot opdracht de vleugelkleppen (flaps) uit te schuiven. Links schoven de kleppen uit, maar doordat de afgebroken motor 3 de rechtervleugel had beschadigd schoven de kleppen op die vleugel niet uit. Als gevolg hiervan kreeg het toestel links meer draagvermogen dan rechts. De piloot meldde aan de verkeersleiding dat er ook problemen met de flaps waren.
+Aanvankelijk ging het aanvliegen van de Buitenveldertbaan goed. Op het moment dat het vliegtuig daalde tot onder de 1500 voet en snelheid minderde, raakte het echter compleet onbestuurbaar en maakte het een ongecontroleerde, scherpe bocht naar rechts. Over de radio was te horen dat de gezagvoerder zijn copiloot in het Hebreeuws opdracht gaf om alle kleppen in te trekken en het landingsgestel uit te klappen. Vervolgens meldde de copiloot in het Engels aan de luchtverkeersleider dat het toestel zou gaan neerstorten. Uit later onderzoek bleek dat het vliegtuig eerder enkel recht bleef vanwege de hoge snelheid (280 knopen, zijnde 519 km/u). Doordat de rechtervleugel beschadigd was, was het moeilijker om het vliegtuig recht te houden. Alleen de hoge snelheid zorgde ervoor dat er nog voldoende draagvermogen was. Toen bij het inzetten van de landing de snelheid verlaagd werd, werd het draagvermogen van de rechtervleugel echter dusdanig gering dat het toestel niet meer onder controle te houden was en een duikvlucht naar rechts maakte.
+
+https://aviation-safety.net/database/record.php?id=19921004-2&lang=nl 
+\subsubsection{vuurwerkramp in enschede }
+https://www.enschede.nl/inhoud/commissie-oosting 
+https://www.politie.nl/binaries/content/assets/politie/wob/00-landelijk/vuurwerkramp-enschede/bijlagen-rapport-vuurwerkramp-enschede.pdf 
+https://www.researchgate.net/publication/254815008_Rampen_regels_richtlijnen 
+
+
+\subsubsection{ramp turkisch airlines}
+Inadequaat handelen van de piloten ondanks een defecte hoogtemeter en onvolledige instructies van de luchtverkeersleiding/
+https://catsr.vse.gmu.edu/SYST460/TA1951_AccidentReport.pdf 
+
+Wat ging er allemaal mis bij de bovengenoemde rampen en ongelukken....... 
+
+Wat hebben deze rampten te maken met de requirements en specificaties van deze odpracht? 
+
+
+
+\subsubsection{tjernobyl}
+Een ramp bij een kernreacor in de sovjetunie. Door een bedieningsfout in een testprocedure werd het vermogen van de koelinstallaties negatief beinvloed. Door een ontwerpfout in de noodstopprocedure kon in het systeem niet snel genoeg schakelen om remmende invloed uit te oefenen op het toenemende vermogen van de reactorkernen. Met brand en eksplosie tot gevolg.
+https://www-pub.iaea.org/MTCD/publications/PDF/Pub913e_web.pdf 
+
+
+
+\subsubsection{therac-25}
+Softwarefout uit zich als hardwarefout de klachtafhandeling geen onderzoek geen second opinion is prioriteit wel 
+gechecked na onderzoek bellen en geen prioriteit aanwezig te zijn alleen importeurs en fabriken mogen fouten 
+in frabrieksinstellingen rapporteren 
+Therac25 Systeem ligt plat veel voorkomende eror stdaardafhandeling om de error te verwerpen resultaat: 
+de patient kreeg overdosis patient overleden onderzoek opgestart, stuatie niet reproduceerbar foutmarkering: 
+gezien als uitzonderlijk, software aanpassing van groote magnitude 5; de oorzaak was waarschijlijk mechanisch 
+maar neit vastgesteld; conceptueel odel niet aangepast probleemclassicificatie door autorititen het probleem 
+en de impact daarvan anar beneden bijgesteld AEFL doe gedeeltelijke aanpassing om hardware na berisping 
+Canadese autoriteit 
+Derde patient overleden door eythema AECL wijst alle doodsoorzaken af AECL beweert dat geen vergeli- 
+jkbare voorvalle bij andere machines of patienten zijn voorgekomen geen vervolgonderzoek vanwege garanties 
+bedrijf gaat uit van geen mogelijke functionele fout 
+vierde patient overleden aan overdodis ontstaan door bug in software onjuiste aanduiding bij de foutmelding 
+verkeerde reactie/invoer ddoor operator communicatie tussen patient en operator werd onvoldoende gemon- 
+itorred ( apparatuur niet aangesloten, en audio monitor kapot) engineer van AECL stelt geen fouten vast 
+Engineer AECl kan fout niet reproduceren Geen communicate tussen bedrijf en uitgezonden technisci over 
+vergelijkbare probleemgevallen 
+vijfde geval malfunction 54 leidt tot overdosis en de dood fout gereproduceerd door operator bedrijf fout 
+was daa entryspeed herpublicatie van de ongevallen en de eerdere ongevallen in de meia apparaat wel nog in 
+gebruik genomen niet handig, waarschuwingsberichten en aanwijzingen voor een bugfix naar de gebruikers door 
+druk van fda is bedrijf op zoek gegaan naar permanente oplossing 
+zesde geval software fout door softwarefout otntstaat lightstruct .. op de patient na onderzoek door AECL 
+blijkt niet alleen hardware de oorzak gebruikers direct geinformeerd oplossing gevonden, media ingeschakeld om 
+
+transparantie af te dwingen door de gebruikersgroep en de FDA AECL gedwongen functionaliteit aan te passen 
+Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoudbaarheid daarvan 
+
+
+
+\section{tesla crash report}
+Door een softwarefout zijn er situaties ontstaan waarin het systeem informatie een onvoldoende informatie positie had om de juiste beslissingen te maken. Of dat de informatieverwerking niet juist was.
+
+
+
+
+\subsubsection{stint ongeluk}
+Vier kinderen, een bestuurder kwamen om en een vijfde persoon , een kind raakte zwaargewond. Uit odnerzoek van bleek :
+Foute torsieveer voor de gashendel werd geleverd
+Geen van de drie onderzochte voertuigen haalden de wettelijk vereiste remvertraging
+De automatische parkeerrem kan leiden tot gevaarlijke situaties wanneer deze ongewenst geactiveerd wordt tijdens het rijden. 
+Het losraken van de nuldraad naar de gashendel leidt volgens TNO tot ongewenst versnellen van het voertuig en een oncontroleerbare situatie voor de bestuurder.
+Voor alle drie onderzochte voertuigen geldt dat het ontbreken van een zitplaats leidt tot veiligheidsrisico’s voor remmen en sturen door de grotere kans dat de bestuurder van het voertuig valt. Als de bestuurder van een Stint valt, leidt dit in alle rijsituaties tot een onbeheersbare situatie
+
+
+https://repository.tno.nl/islandora/object/uuid%3Acdef48df-da49-46b6-8678-5c62a88a0090 
+
+
+
+
+\subsubsection{slmramp}
+Toen de Anthony Nesty Zanderij naderde, was het daar, anders dan het weerbericht had voorspeld, mistig. Het zicht was evenwel niet zo slecht dat er niet op zicht kon worden geland. Gezagvoerder Will Rogers besloot echter via het Instrument Landing System (ILS) te landen, hoewel dit niet betrouwbaar was en hij voor zo'n landing ook geen toestemming had. De gezagvoerder brak drie landingspogingen af. Bij de vierde poging negeerde de bemanning de automatische waarschuwing (GPWS) dat het toestel te laag vloog. Het toestel raakte op 25 meter hoogte twee bomen. Het rolde om de lengteas en stortte om 04.27 uur plaatselijke tijd ondersteboven neer.
+
+Uit onderzoek bleek dat de papieren van de bemanning niet in orde waren. 
+Geconcludeerd werd dat de gezagvoerder roekeloos had gehandeld door voor een ILS-landing te kiezen terwijl hij daar geen toestemming voor had, en door onvoldoende op de vlieghoogte te hebben gelet. 
+De SLM werd verweten de kwalificaties van de bemanning onvoldoende te hebben gecontroleerd.
+
+https://aviation-safety.net/investigation/cvr/transcripts/cvr_py764.php 
+https://aviation-safety.net/database/record.php?id=19890607-2 
+
+
+
+\subsubsection{schipholbrand}
+Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
+worden voldaan. De eerste voorwaarde is de geschiktheid van het
+afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
+men zich afvragen of dat wel een echte afstudeeropdracht is. Een
+afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
+moet een afstudeerproject passen in het profiel van een opleiding om
+beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
+de registratie van werkzaamheden tijdens het a
+
+
+\subsubsection{Ramp schietpartij militair ossendrecht }
+Een militaire overleid op een schietbaan in ossendracht door onvoldoende begeleiding van cursisten, geen toezicht op de lokatie. E\r was een instructuur in opleiding die niet volledig was mmeegenomen in het poroces en ook was er geen baancommandant aanwezig. Geen van de aanwezig instructeurts had de juiste papieren om de cursisten te begeleiden. De aanwezig instruceur had geen zich op de instructeur in opleiding, evenmin de andere militairen. In de instructiehandleiding ontbreken richtlijnen voor bijzondere schietbanen. Ook was er geen keuring. Door personelstekort is er geen andacht besteed aan documentastie(een slyllabus) hoe en met welke risico’s oefeningnen moeten worden ingericht. Ok werd er vooraf geen veiliheidsanaklyse gedaan. Het gebrek aan lesmateriaal en deskundigen is gemeld binnen de defensieorganisatie maar dit heeft niet geleid tot enige verandering in de situatie.
+Op een afgekeurde scheitbaan
+Tezicht door een instructeur in opleiding die zelf geen persoonlijke begeleiding heeft gehad tijdens de uitvoering
+Belangrijk is dat defensie haar taken kan uitvoeren met personeel dat is getraind in situaties die de risicos van de werkomgeving aan de cursisten kunnen laten zien.
+Conclusie
+Zonder gekwalificeerde instructuers.
+Zonder toezicht
+Zonder lesmateriaal
+Zonder adequate veiligheidsanalyse
+https://www.youtube.com/watch?v=6jmkDClGDHo 
+
+
+
+
+\subsubsection{molukse treinkaping }
+https://www.youtube.com/watch?v=h99Fe9XzzHI 
+
+\subsubsection{explosie tanjin china 
 }
+
+Later bleek uit een onderzoek van de Chinese autoriteiten dat de explosie overeenkwam met de ontploffing van 450 ton TNT.[6] 
+De oorzaak van de explosie lag in de spontane zelfontbranding van 207 ton cellulosenitraat dat in containers was opgeslagen op het terminalterrein.[6] 
+Verder lag op een tweede locatie nog eens 26 ton van dit explosieve materiaal opgeslagen.
+De tweede ontploffing werd versterkt door de opslag van 800 ton kunstmest in de vorm van ammoniumnitraat in de nabijheid.[6]
+De opslag van cellulosenitraat is aan strenge regels gebonden. Het moet koel en droog worden opgeslagen. De containers stonden buiten opgesteld in de brandende zon. De temperatuur liep op tot 36 °C en bereikte binnen de containers waarschijnlijk de 65 °C.[6] De verpakking van de cellulosenitraat droogde uit waardoor de ontploffing kon ontstaan. Op het terrein lagen meer gevaarlijke stoffen opgeslagen dan waarvoor vergunningen waren verstrekt.[6] Dit leidde tot een kettingreactie met grote schade tot gevolg. Door de brand en bluswater is in de directe omgeving veel milieuschade opgetreden.
+
+
+https://www.hindawi.com/journals/joph/2019/1360805/ 
+
+
+
+\subsubsection{explosie in libabon, beirut 
+}
+
+Op 23 september 2013 voer het vrachtschip de Rhosus onder Moldavische vlag[7] van Batoemi in Georgië naar Beira in Mozambique met 2.750 ton ammoniumnitraat
+
+Gezien het ernstige gevaar van het bewaren van deze goederen in de hangar onder ongeschikte klimatologische omstandigheden, herhalen we ons verzoek aan de marine-instantie om deze goederen onmiddellijk weer te exporteren om de veiligheid van de haven en de mensen die er werken te verzekeren, of om akkoord te gaan om ze te verkopen.
+Voorafgaand aan de explosie was er een brand in een opslagplaats. 
+
+https://www.hrw.org/report/2021/08/03/they-killed-us-inside/investigation-august-4-beirut-blast 
+https://www.researchgate.net/publication/348325979_Beirut_Explosion_the_full_story 
+https://reliefweb.int/sites/reliefweb.int/files/resources/CaseStudy_BeirutExplosion_TechBioHazardsweb.pdf 
+
+
+\subsubsection{ethiopian airlines}
+Ethiopian Airlines Flight 302
+Door problemen met de flight control
+One minute into the flight, the first officer, acting on the instructions of the captain, reported a "flight control" problem to the control tower.
+Two minutes into the flight, the plane's MCAS system activated, pitching the plane into a dive toward the ground. The pilots struggled to control it and managed to prevent the nose from diving further, but the plane continued to lose altitude.
+The MCAS then activated again, dropping the nose even further down. The pilots then flipped a pair of switches to disable the electrical trim tab system, which also disabled the MCAS software. However, in shutting off the electrical trim system, they also shut off their ability to trim the stabilizer into a neutral position with the electrical switch located on their yokes. The only other possible way to move the stabilizer would be by cranking the wheel by hand, but because the stabilizer was located opposite to the elevator, strong aerodynamic forces were pushing on it.
+As the pilots had inadvertently left the engines on full takeoff power, which caused the plane to accelerate at high speed, there was further pressure on the stabilizer. The pilots' attempts to manually crank the stabilizer back into position failed.
+Three minutes into the flight, with the aircraft continuing to lose altitude and accelerating beyond its safety limits, the captain instructed the first officer to request permission from air traffic control to return to the airport. Permission was granted, and the air traffic controllers diverted other approaching flights. Following instructions from air traffic control, they turned the aircraft to the east, and it rolled to the right. The right wing came to point down as the turn steepened.
+At 8:43, having struggled to keep the plane's nose from diving further by manually pulling the yoke, the captain asked the first officer to help him, and turned the electrical trim tab system back on in the hope that it would allow him to put the stabilizer back into neutral trim. However, in turning the trim system back on, he also reactivated the MCAS system, which pushed the nose further down. The captain and first officer attempted to raise the nose by manually pulling their yokes, but the aircraft continued to plunge toward the ground.
+
+https://www.hindawi.com/journals/ijae/2014/472395/ 
+
+
+\subsection{ethiek}
+
+
+Ethiek 
+
+
+
+persuasive technology 
+https://www.humanetech.com/youth/persuasive-technology 
+https://www.minddistrict.com/blog/persuasive-technology-new-insights-in-behavioural-change 
+https://www.sciencedirect.com/book/9781558606432/persuasive-technology 
+https://spectrum.ieee.org/how-persuasive-technology-can-change-your-habits 
+https://www.frontiersin.org/articles/10.3389/frai.2020.00007/full 
+https://psmag.com/environment/captology-fogg-invisible-manipulative-power-persuasive-technology-81301 
+https://www.makeuseof.com/what-is-persuasive-technology/ 
+https://lib.ugent.be/catalog/rug01:001235489 
+https://cyberpsychology.eu/article/view/12270 
+
+
+
+\section{ecourt in nederlandse rechtspraak}
+niet odnerzocht
+https://www.njb.nl/blogs/a-court-with-no-face-and-no-place/ 
+http://www.e-court.nl/wp-content/uploads/2018/03/Procesreglement-e-Court-2017_20180201.pdf
+
+\subsubsection{ cyber aanval op Oekraïene }
+Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
+worden voldaan. De eerste voorwaarde is de geschiktheid van het
+afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
+men zich afvragen of dat wel een echte afstudeeropdracht is. Een
+afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
+moet een afstudeerproject passen in het profiel van een opleiding om
+beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
+de registratie van werkzaamheden tijdens het a
+
+
+\subsubsection{Mali}
+Een granaat explodeerd in een mortier
+De medische zorg na het ongeval was neit voldoende
+
+
+De algemeen militair verpleegkundige gaf aan het slachtoffer nar het vn-hospitaal in kidal te brengen
+De chaauffeur van de bushmaster kende de locatie niet  en bracht het slachtoffer naar een door frane militairren bemand hospitaal mmet minder mediswche faciliteiten
+Hierna alsnog overgebracht naar het vn-hospitaal.
+Dit verlieop  neit door nederlandse maatstaven.
+pas toen een nederlandse arts arrivveerde werd door de Tongolese artsen een buikoperatie uitgevoerd.
+Dit gebrurde zonder adequate anesthesie.
+Na de operatie werde de gewonde militair overgelogen naar nederland. En later naar nederland.
+
+
+granaat stond niet op scherp en in afgegaan in veilige stand
+Granaat werd opgeslagen in neit gekoelde containers waardoor deze aan te hoge temeperaturen zijn blootgesteld.
+Door de comvinatie van vocht en warmte in de granaat zeer gevoelige explosieve stoffen werden gevormd.
+Tijdens de oefening was de fatale granaat in de zon.
+Het afsluitplaatje in de granaat bleek niet in staat om doorslag in veilige stand te voorkomen waarna de granaat explodeerde.
+De moritren zijn aangeschaft bij de amerikanen. gredurende de aanschafperiode zijn procedures en controles op kwaliteit en veiligheid deels nagelaten.
+Dit veiligheidsgarantie werd vermeld in het koopcontract.
+Conclusie
+Koopcontract werd niet goed doorgelezen
+Geen controle op kwaliteit en veiligheid
+Geen controle op kwaliteit en veiligheid
+Zwakke plekken in het ontwerp
+Geen controle op kwaliteit en veiligheid
+opslag en gebruik in ongunstige condities
+
+De aanwezige medische voorzieningen waren nite volgends de nederlandse militaire richtlijnen
+Het ontbreek aan medische toetsing vanuit de defensie organisatie
+twijfels die werden geuit binnen de defensieorganisae vonden geen wrrklank
+Ok het ongeval tijdens de mortieroefening was voor defensie geen aanleuiding om de medische voorzienignen te evalueren.
+De inrichting van veilige medische zorg voor nederlandse militairen in kidal is ondergeschikt gemaakt aan de voortgang van de missie.
+
+
+https://www.youtube.com/watch?v=PC2ekl4SaNA 
+
+\section{Modelleren}
+
+
+\section{Ethiek}
+
+
+\section{Conclusie}
+
+ 
+\chapter{Security}
+
+\section{Inleiding}
+
+\section{Resultaat}
+
+
+De cyber aanval op Oekraïene
+Samenvatting
+probleemstelling
+aanleiding
+theoretisch kader
+methode
+resultaten/argumenten
+conclusie
+
+Inleiding
+
+Aanleiding
+Doel van dit verslag is inzage te geven in de informatieverzameling en begrip van een complex scada
+systeem. De lezer krijgt inzage in de achtergrond achter cyberaanval, de gebruikte technieken en
+een opsomming van oplossingen en methoden voor beveiligingsvraagstukken.
+
+Doelstelling
+Doe onderzoek naar een real-life voorbeeld van een aanval op een ICS,
+vooral kijkend naar de technische details.
+Zorg dat je verslag bevat hoe de aanval voorkomen had kunnen worden en
+hoe het opgelost is.
+
+probleemomschrijving
+probleemstelling/onderzoeksvraag Wat zijn aanvallen op ICS? Hoe kunnen deze worden voorkomen
+en worden opgelost?
+hoofdvraag
+Welke beveiligingstechnieken en werkwijzen kunnen ICS aanvallen voorkomen?
+deelvragen
+Wat is veiligheid?
+Wat zijn de technieken en werkwijzen die worden gebruikt?
+Wat zijn de kwetsbaarheden?
+Hoe wordt de defensie tegen de aanvallen gerealiseerd?
+
+Wat zijn de veronderstellingen
+Wat zijn de hoofdzaken en bijzaken
+Wat zijn relevante en irrelevante aspecten
+Welke redelijke criteria zijn er om te bepalen of iets een hackaanval is
+Welke redelijke criteria zijn er voor het beoordelen van de juiste maatregel
+Welke bewijzen of tegenvoorbeelden
+Wat zijn de alternatieven
+
+Wat zijn de meningen
+Welke vragen kunnen gesteld worden op basis van beweringen en conclusies, definities en bewijzen,
+meningen en overtuigingn
+Welke tegenstellingen zijn waargenomen
+Welke standpunten opvattingen en overtuigingen kunnen worden uitgelegd, verdedigd of aangepast
+Zijn alle beweringen zorgvuldig en weloverwogen aanvaard of verworpen?
+Welke kennis moet worden verworven om tot een oordeel te komen?
+
+
+
+Situatie oekraiene
+Wat is er gebeurd
+Waar is het gebeurd
+Waarom is het gebeurd
+Hoe is het gebeurd
+Wanneer is het gebeurd
+Welke beveiliging
+Waarom is de beveiliging zo geregeld
+Waarom zijn maatregelen niet eerder genomen
+Waarom is het probleem in deze regio
+Waarom speelt het bedrijf bij deze bedrijven
+
+
+
+Waarom wordt er niet meer tijd, kennis, research en ontwikkeling besteed
+Wie hebben er last van
+Wat is de oplossing
+Met welke technologie werken bedrijven aan een oplossing
+Welke oplossing worden gegeven in de literatuur
+Waarom werken deze oplossingen uit de literatuur en praktijk niet?
+afbakening
+voorlopige ooraken en gevolg
+randvoorwaarden
+opzet van het artikel
+methode hazard risk assessment
+
+
+
+
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_5.pdf
+https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf
+https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/
+
+http://web.mit.edu/smadnick/www/wp/2016-22.pdf
+
+https://en.wikipedia.org/wiki/December_2015_Ukraine_power_grid_cyberattack
+
+https://www.wired.com/story/russian-hackers-attack-ukraine/
+
+https://www.linkedin.com/notifications/
+
+https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-
+lights-went-out.pdf
+
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108
+
+https://www.wired.com/2016/01/everything-we-know-about-ukraines-power-plant-hack/
+
+https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-sandworm-team.html
+https://www.us-cert.gov/ics/alerts/IR-ALERT-H-16-056-01
+https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-
+sandworm-hackers-for-ukraine-outage-idUSKBN0UM00N20160108
+https://www.reuters.com/article/us-ukraine-crisis-cyber-idUSKBN15U2CN
+https://www.wired.com/2014/10/russian-sandworm-hack-isight/
+https://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-
+connection/
+https://blog.trendmicro.com/trendlabs-security-intelligence/killdisk-and-blackenergy-are-not-just-
+energy-sector-threats/
+https://www.nerc.com/pa/CI/ESISAC/Documents/E-ISAC_SANS_Ukraine_DUC_18Mar2016.pdf
+https://www.politico.eu/article/ukraine-cyber-war-frontline-russia-malware-attacks/
+https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-
+was-done-52802
+https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructure
+s_2017_2.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/
+https://www.osti.gov/servlets/purl/1505628
+https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-
+attacks/
+IEC_60870-5
+http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0513EED48102FDAD1BD940260EF12B11?
+doi=10.1.1.548.7490&amp;rep=rep1&amp;type=pdf
+https://scialert.net/fulltext/?doi=tasr.2014.396.405
+https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems
+http://www.salvage-project.com/uploads/4/9/5/5/49558369/art3_-_salvage_2015_-
+_cyber_security_in_communication_of_scada_systems_using_iec_61850.pdf
+https://eg.uc.pt/bitstream/10316/35720/1/Security%20Probes%20for%20Industrial%20Control%20
+Networks.pdf
+https://owlcyberdefense.com/products/data-diode-products/software-modules/iec-104/
+https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf
+https://waterfall-security.com/static/Waterfall-for-IEC-60870-5-104_FINAL.pdf
+http://www.scada.sl/2013/11/last-week-four-guys-of-scada.html
+https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf
+https://www.diva-portal.org/smash/get/diva2:1046339/FULLTEXT01.pdf
+https://www.semanticscholar.org/paper/Cybersecurity-analysis-of-a-SCADA-system-under-and-
+Rocha/dfa7c12551ebe7b24da8d806e87e946051a57cb9
+https://control.com/forums/threads/comparison-between-iec60870-5-103-and-modbus-rtu.20317/
+https://www.blackhat.com/docs/us-17/wednesday/us-17-Staggs-Adventures-In-Attacking-Wind-
+Farm-Control-Networks.pdf
+https://www.securonix.com/web/wp-
+content/uploads/2019/08/RSAC_2019_Scada_Attack_Detection_101.pdf
+https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/
+https://library.e.abb.com/public/f74f9c8be95f4cd09b0b1fbbde699108/4CAE000416_RTU_Secure%2
+0communications_web.pdf
+https://www.slideshare.net/qqlan/scada-zn
+https://virsec.com/virsec-hack-analysis-deep-dive-into-industroyer-aka-crash-override/
+https://tutcris.tut.fi/portal/files/16294332/jafary_1534.pdf
+http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-
+industry.aspx
+https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf
+https://assets.barracuda.com/assets/docs/dms/Barracuda_CloudGen_Firewall_SB_Security_for_ICS_
+and_OT.pdf
+https://www.checkpoint.com/products/industrial-control-systems-appliances/
+https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf
+https://dl.acm.org/doi/fullHtml/10.1145/3381038
+https://arxiv.org/pdf/2001.02925.pdf
+http://blog.nettedautomation.com/2017/
+CRASHOVERRIDE
+
+https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf
+https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-
+transmission-stations-4530.html
+https://www.recordedfuture.com/crashoverride-malware-overview/
+https://www.us-cert.gov/ncas/alerts/TA17-163A
+https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-
+caused-2016-ukraine-outage/d/d-id/1329114
+https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-
+electric-grids-but-its-no-stuxnet/
+https://www.accenture.com/_acnmedia/pdf-69/accenture-managing-malware-crash-override.pdf
+https://www.nixu.com/fi/node/53
+https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-
+industroyer
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_6.pdf
+http://blog.wallix.com/ics-security-russian-hacking
+http://web.mit.edu/smadnick/www/wp/2016-22.pdf
+https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-
+lights-went-out.pdf
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108
+https://www.nerc.com/pa/CI/ESISAC/Documents/E-ISAC_SANS_Ukraine_DUC_18Mar2016.pdf
+https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-
+attacks/
+https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructure
+s_2017_2.pdf
+https://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-
+connection/
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_5.pdf
+
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_5.pdf
+https://digitalsupport.ge.com/servlet/fileField?retURL=%2Fapex%2FKnowledgeDetail%3Fid%3DkA21
+A000000HShPSAW%26lang%3Den_US%26Type%3DArticle__kav&amp;entityId=ka21A000000HccQQAS&amp;fi
+eld=File_1__Body__s
+https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf
+
+https://www.dragos.com/resource/crashoverride-analyzing-the-malware-that-attacks-power-grids/
+https://www.recordedfuture.com/crashoverride-malware-overview/
+https://www.us-cert.gov/ncas/alerts/TA17-163A
+https://en.wikipedia.org/wiki/Industroyer
+https://en.wikipedia.org/wiki/Crash_Override_Network
+https://www.virusbulletin.com/virusbulletin/2019/03/vb2018-paper-anatomy-attack-detecting-and-
+defeating-crashoverride/
+https://www.nixu.com/blog/crashoverride-threat-electricity-networks
+https://www.youtube.com/watch?v=TH17hSH1PGQ
+https://www.cyber.nj.gov/threat-center/threat-profiles/ics-malware-variants/crashoverride
+https://thecyberwire.com/stories/f0c289436fff6d87ec93227b77dd3d88/crashoverride-its-
+aftermath-and-its-implications
+https://www.webopedia.com/TERM/C/crashoverride-industroyer-malware.html
+https://collaborate.mitre.org/attackics/index.php/Software/S0001
+https://www.accenture.com/us-en/blogs/blogs-crashoverride-malware-alert
+https://www.incibe-cert.es/en/blog/crashoverride-malware-ics-back-again
+https://rhebo.com/en/service/glossar/industroyer-25114/
+https://www.csoonline.com/article/3200828/crash-override-malware-that-took-down-a-power-grid-
+may-have-been-a-test-run.html
+https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-
+caused-2016-ukraine-outage/d/d-id/1329114
+https://www.belden.com/blog/industrial-security/crashoverride-first-malware-platform-designed-
+to-take-down-electric-grids
+https://www.cyberbit.com/blog/ot-security/industroyer-crashoverride-ot-malware/
+
+https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-
+electric-grids-but-its-no-stuxnet/
+https://blog.claroty.com/crashoverride-a.ka.industroyer-detection-and-alerting-in-claroty-platform
+https://www.tenable.com/in-the-news/crashoverride-ics-attack-targets-vulnerable-electrical-grid
+https://www.powermag.com/why-crashoverride-is-a-red-flag-for-u-s-power-companies/
+https://searchsecurity.techtarget.com/news/450420683/CrashOverride-ICS-attack-targets-
+vulnerable-electrical-grid
+https://www.fda.gov/media/123073/download
+https://cyberx-labs.com/glossary/industroyer-crashoverride-crash-override/
+https://tehtris.com/en/egambit-endpoint-security-versus-crashoverride/
+
+https://blog.paloaltonetworks.com/2017/06/crashoverrideindustroyer-protections-palo-alto-
+networks-customers/
+https://www.waterisac.org/portal/new-vulnerability-discovery-reportedly-abuses-same-protocol-
+used-industroyercrashoverride
+https://www.msspalert.com/cybersecurity-breaches-and-attacks/u-s-dept-of-homeland-securitys-
+crashoverride-malware-warning-to-utilities/
+https://iiot-world.com/ics-security/cybersecurity/five-cybersecurity-experts-about-crashoverride-
+malware-main-dangers-and-lessons-for-iiot/
+https://www.forescout.com/company/blog/crashoverride-protect-your-ics-network-against-the-
+newest-malware/
+https://search.abb.com/library/Download.aspx?DocumentID=9AKK107045A1003&amp;LanguageCode=en
+&amp;DocumentPartId=&amp;Action=Launch
+https://blog.checkpoint.com/2017/06/21/crashoverride/
+https://www.blackhat.com/us-17/briefings/schedule/#industroyercrashoverride-zero-things-cool-
+about-a-threat-group-targeting-the-power-grid-6159
+https://www.sans.org/webcasts/notpetya-dragonfly-20-crashoverride-time-active-cyber-defense-ics-
+scada-networks-105955
+https://humanit.asia/ta17-163a/
+https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-
+industroyer
+https://keybase.io/crashoverride
+https://medium.com/@sroberts/the-crash-override-chronicles-overall-8389ef178fdf
+https://www.oilandgaseng.com/articles/the-most-infamous-cyber-attacks-on-industrial-systems/
+https://www.bankinfosecurity.com/power-grid-malware-platform-threatens-industrial-controls-a-
+9987
+https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-
+description?Name=Trojan:Win32/CrashOverride.C!dha&amp;ThreatID=2147726161
+https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-
+transmission-stations-4530.html
+https://thehill.com/policy/cybersecurity/337877-crash-override-malware-heightens-fears-for-us-
+electric-grid
+https://choice.npr.org/index.html?origin=https://www.npr.org/2017/09/08/548661962/in-crash-
+override-zoe-quinn-shares-her-boss-battle-against-online-harassment
+https://pylos.co/2018/11/03/crashoverride-when-advanced-actors-look-like-amateurs/
+https://www.inguardians.com/dhs-fbi-warn-of-attacks-against-us-energy-manufacturing-companies-
+and-employees/
+https://blog.emergeits.com/alert-homeland-security-finds-u-s-power-grid-vulnerable-to-
+crashoverride-malware-3
+https://www.cyberthreatalliance.org/member-share/stuxnet-to-crashoverride-to-trisis-evaluating-
+the-history-and-future-of-integrity-based-attacks-on-industrial-environments/
+https://rethinkresearch.biz/articles/industroyer-crashoverride-malware-behind-ukraine-utility-
+attack/
+https://electricenergyonline.com/energy/magazine/1104/article/Security-Sessions-Combating-ICS-
+Threats.htm
+https://www.smart-energy.com/regional-news/europe-uk/encs-crash-override-virus/
+https://securityaffairs.co/wordpress/59989/malware/industroyer-malware.html
+https://isssource.com/crashoverride-designed-for-grid-takedown/
+https://gigazine.net/gsc_news/en/20170613-crashoverride/
+https://www.ethicalhacker.net/members/crashoverride/
+
+https://www.theglobeandmail.com/arts/books-and-media/book-reviews/review-zoe-quinns-crash-
+override-and-ellen-paos-reset-explore-the-sexism-of-tech-culture/article36431282/
+https://www.forbes.com/sites/kalevleetaru/2017/06/24/crash-override-and-how-cyberwarfare-is-
+bringing-conflict-to-the-homefront/#42eb8984277c
+https://www.computerworld.com/article/2883732/crash-override-network-combats-online-
+harassment.html
+https://fticybersecurity.com/2017-11/crashoverride-red-flag-u-s-power-companies/
+https://www.publicpower.org/periodical/article/e-isac-offers-special-webinar-june-16-
+crashoverride-malware
+https://blogs.dnvgl.com/energy/industroyer-and-industrial-control-systems
+https://www.theverge.com/2015/1/17/7628567/crash-override
+http://digitaleragroup.com/blog/industry-reactions-to-crashoverride-malware-feedback-
+friday/?style=turquoise
+https://www.us-cert.gov/ics/Recommended-Practices
+iso standaarden
+https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/04/201902-Handreiking-
+Information-Security-Management-System-ISMS-v2.0.pdf
+https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/NL/Checklist_of_I
+SO_27001_Mandatory_Documentation_NL.pdf
+https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/NL/Checklist_of_I
+SO_27001_Mandatory_Documentation_NL.pdf
+https://www.iso.org/isoiec-27001-information-security.html
+https://www.iso27001security.com/html/faq.html
+https://www.iso27001security.com/ISO27k_FAQ.pdf
+https://www.iso27001security.com/ISO27k_GDPR_mapping_release_1.pdf
+
+https://webstore.iec.ch/preview/info_isoiec27019%7Bed1.0%7Den.pdf
+https://web.archive.org/web/20150924001524/http://www.epri.com/abstracts/Pages/ProductAbstr
+act.aspx?ProductId=000000003002003738
+https://webstore.iec.ch/publication/25948
+https://webstore.iec.ch/publication/6912
+https://webstore.iec.ch/publication/6911
+https://www.ipcomm.de/protocol/IEC62351/en/sheet.html
+
+UK NCSC Guidelines
+BDEW and Oesterreichs Energie
+NERC CIP
+https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-
+cybersecurity-0
+https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-
+cybersecurity-0-1
+https://nvlpubs.nist.gov/nistpubs/ir/2010/NIST.IR.7628.pdf
+https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
+https://nvlpubs.nist.gov/nistpubs/ir/2014/NIST.IR.7628r1.pdf
+
+Bibliografie
+(n.d.). Retrieved from rand.org: https://www.rand.org/pubs/research_reports/RR2081.html
+(n.d.). Retrieved from dpstele.com: https://dpstele.com/blog%20major%20scada%20hacks
+/checklist/network-security-audit-checklist/#related-checklists. (n.d.). Retrieved from process.st:
+https://www.process.st/checklist/network-security-audit-checklist/#related-checklists
+(2016 ). Retrieved from https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-
+sandworm-team.html
+cybersecurity-audit-checklist. (n.d.). Retrieved from reciprocitylabs.com:
+https://reciprocitylabs.com/cybersecurity-audit-checklist/
+ukraine-power-grid-attack-russia-us. (2016, 2 11). Retrieved from edition.cnn.com:
+https://edition.cnn.com/2016/02/11/politics/ukraine-power-grid-attack-russia-us/index.html
+
+ukraine-sees-russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E. (n.d.). Retrieved from
+reuters.com: https://www.reuters.com/article/us-ukraine-cybersecurity/ukraine-sees-
+russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E
+https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf
+https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/
+
+http://web.mit.edu/smadnick/www/wp/2016-22.pdf
+
+https://en.wikipedia.org/wiki/December_2015_Ukraine_power_grid_cyberattack
+
+https://www.wired.com/story/russian-hackers-attack-ukraine/
+
+https://www.linkedin.com/notifications/
+
+https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-
+lights-went-out.pdf
+
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108
+
+https://www.wired.com/2016/01/everything-we-know-about-ukraines-power-plant-hack/
+
+https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-sandworm-team.html
+
+https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-
+sandworm-hackers-for-ukraine-outage-idUSKBN0UM00N20160108
+https://www.reuters.com/article/us-ukraine-crisis-cyber-idUSKBN15U2CN
+https://www.wired.com/2014/10/russian-sandworm-hack-isight/
+https://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-
+connection/
+
+https://blog.trendmicro.com/trendlabs-security-intelligence/killdisk-and-blackenergy-are-not-just-
+energy-sector-threats/
+https://www.nerc.com/pa/CI/ESISAC/Documents/E-ISAC_SANS_Ukraine_DUC_18Mar2016.pdf
+https://www.politico.eu/article/ukraine-cyber-war-frontline-russia-malware-attacks/
+https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-
+was-done-52802
+https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructure
+s_2017_2.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/
+https://www.osti.gov/servlets/purl/1505628
+https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-
+attacks/
+
+IEC_60870-5
+http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0513EED48102FDAD1BD940260EF12B11?
+doi=10.1.1.548.7490&amp;rep=rep1&amp;type=pdf
+https://scialert.net/fulltext/?doi=tasr.2014.396.405
+https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems
+http://www.salvage-project.com/uploads/4/9/5/5/49558369/art3_-_salvage_2015_-
+_cyber_security_in_communication_of_scada_systems_using_iec_61850.pdf
+https://eg.uc.pt/bitstream/10316/35720/1/Security%20Probes%20for%20Industrial%20Control%20
+Networks.pdf
+https://owlcyberdefense.com/products/data-diode-products/software-modules/iec-104/
+https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf
+https://waterfall-security.com/static/Waterfall-for-IEC-60870-5-104_FINAL.pdf
+http://www.scada.sl/2013/11/last-week-four-guys-of-scada.html
+https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf
+https://www.diva-portal.org/smash/get/diva2:1046339/FULLTEXT01.pdf
+https://www.semanticscholar.org/paper/Cybersecurity-analysis-of-a-SCADA-system-under-and-
+Rocha/dfa7c12551ebe7b24da8d806e87e946051a57cb9
+https://control.com/forums/threads/comparison-between-iec60870-5-103-and-modbus-rtu.20317/
+https://www.blackhat.com/docs/us-17/wednesday/us-17-Staggs-Adventures-In-Attacking-Wind-
+Farm-Control-Networks.pdf
+https://www.securonix.com/web/wp-
+content/uploads/2019/08/RSAC_2019_Scada_Attack_Detection_101.pdf
+https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/
+https://library.e.abb.com/public/f74f9c8be95f4cd09b0b1fbbde699108/4CAE000416_RTU_Secure%2
+0communications_web.pdf
+https://www.slideshare.net/qqlan/scada-zn
+https://virsec.com/virsec-hack-analysis-deep-dive-into-industroyer-aka-crash-override/
+https://tutcris.tut.fi/portal/files/16294332/jafary_1534.pdf
+http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-
+industry.aspx
+https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf
+
+https://assets.barracuda.com/assets/docs/dms/Barracuda_CloudGen_Firewall_SB_Security_for_ICS_
+and_OT.pdf
+https://www.checkpoint.com/products/industrial-control-systems-appliances/
+https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf
+https://dl.acm.org/doi/fullHtml/10.1145/3381038
+https://arxiv.org/pdf/2001.02925.pdf
+http://blog.nettedautomation.com/2017/
+
+https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf
+https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-
+transmission-stations-4530.html
+https://www.recordedfuture.com/crashoverride-malware-overview/
+https://www.us-cert.gov/ncas/alerts/TA17-163A
+https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-
+caused-2016-ukraine-outage/d/d-id/1329114
+https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-
+electric-grids-but-its-no-stuxnet/
+https://www.accenture.com/_acnmedia/pdf-69/accenture-managing-malware-crash-override.pdf
+https://www.nixu.com/fi/node/53
+https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-
+industroyer
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_6.pdf
+http://blog.wallix.com/ics-security-russian-hacking
+http://web.mit.edu/smadnick/www/wp/2016-22.pdf
+https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-
+lights-went-out.pdf
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108
+https://www.nerc.com/pa/CI/ESISAC/Documents/E-ISAC_SANS_Ukraine_DUC_18Mar2016.pdf
+https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-
+attacks/
+https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructure
+s_2017_2.pdf
+https://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-
+connection/
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_5.pdf
+
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_5.pdf
+https://digitalsupport.ge.com/servlet/fileField?retURL=%2Fapex%2FKnowledgeDetail%3Fid%3DkA21
+A000000HShPSAW%26lang%3Den_US%26Type%3DArticle__kav&amp;entityId=ka21A000000HccQQAS&amp;fi
+eld=File_1__Body__s
+https://www.us-cert.gov/ics/Recommended-Practices
+
+iso standaarden
+https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/04/201902-Handreiking-
+Information-Security-Management-System-ISMS-v2.0.pdf
+https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/NL/Checklist_of_I
+SO_27001_Mandatory_Documentation_NL.pdf
+https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/NL/Checklist_of_I
+SO_27001_Mandatory_Documentation_NL.pdf
+https://www.iso.org/isoiec-27001-information-security.html
+https://www.iso27001security.com/html/faq.html
+https://www.iso27001security.com/ISO27k_FAQ.pdf
+https://www.iso27001security.com/ISO27k_GDPR_mapping_release_1.pdf
+
+https://webstore.iec.ch/preview/info_isoiec27019%7Bed1.0%7Den.pdf
+https://web.archive.org/web/20150924001524/http://www.epri.com/abstracts/Pages/ProductAbstr
+act.aspx?ProductId=000000003002003738
+https://webstore.iec.ch/publication/25948
+https://webstore.iec.ch/publication/6912
+https://webstore.iec.ch/publication/6911
+https://www.ipcomm.de/protocol/IEC62351/en/sheet.html
+
+UK NCSC Guidelines
+BDEW and Oesterreichs Energie
+NERC CIP
+https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-
+cybersecurity-0
+https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-
+cybersecurity-0-1
+https://nvlpubs.nist.gov/nistpubs/ir/2010/NIST.IR.7628.pdf
+https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
+https://nvlpubs.nist.gov/nistpubs/ir/2014/NIST.IR.7628r1.pdf
+
+Bibliografie
+(n.d.). Retrieved from rand.org: https://www.rand.org/pubs/research_reports/RR2081.html
+(n.d.). Retrieved from dpstele.com: https://dpstele.com/blog%20major%20scada%20hacks
+/checklist/network-security-audit-checklist/#related-checklists. (n.d.). Retrieved from process.st:
+https://www.process.st/checklist/network-security-audit-checklist/#related-checklists
+(2016 ). Retrieved from https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-
+sandworm-team.html
+cybersecurity-audit-checklist. (n.d.). Retrieved from reciprocitylabs.com:
+https://reciprocitylabs.com/cybersecurity-audit-checklist/
+ukraine-power-grid-attack-russia-us. (2016, 2 11). Retrieved from edition.cnn.com:
+https://edition.cnn.com/2016/02/11/politics/ukraine-power-grid-attack-russia-us/index.html
+ukraine-sees-russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E. (n.d.). Retrieved from
+reuters.com: https://www.reuters.com/article/us-ukraine-cybersecurity/ukraine-sees-
+russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E
+
+
+\section{Conclusie}
+
+
+
+\usepackage{pgf}
+%\newcommand\setform{\pgfqkeys{/form }}
+%\setform{field1/.store in=\fieldi,
+%	field2/.store in=\fieldii,
+%}
 
 
 %\addtolength{\oddsidemargin}{-.875in}
