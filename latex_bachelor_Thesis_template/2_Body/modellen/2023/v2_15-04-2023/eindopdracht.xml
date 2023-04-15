@@ -34,6 +34,79 @@ bool deur1, deur2, deur3, deur4;
 bool entrance_schip1, leave_schip1, entrace_schip2, leave_schip2;
 
 
+bool invarend=0;
+bool uitvarend=1;
+
+
+
+bool ai_algorithm(
+)
+{
+    // wat is de iniial  state
+    // 1) check of stoplicht op rood, 
+    //if(stoplicht.s0==true)
+   // {
+    
+    //}
+    // motivatie:  alle invaren schepen worden gestopt
+    // vervolgens kun je kijken of er schepen in de sluis zitten
+   // bool check = sluis.stack.size;
+    // en de mogelijkheid is er om de sluisdeuren te openen/sluiten
+    //if(){
+    
+    //}
+
+    // check locatie locatie
+    // motivatie aan de hand van de locatie van de sluis kijken of er in een online dataset informatie beschikbaar komt van aanvarende schepen
+    
+    // welk schip krijgt voorrang? uitvarend of invarend?
+    //bool check_pos;
+    //if()
+    // a) voorbereiden op invarende schepen als !N_max_schepen en aanvarende_schepen=TRUE
+
+    // b) voorbereiden op uitvarende schepen als sluis gelijk is aan  N_max_schepen
+    
+    
+    // neerslag  en waterpeil in de sluis moet gelijk worden gemaakt     
+    // Motivatie: waterpeil in de sluis moet gelijk zijn aan waterpijl 
+    // invarende schepen in case a
+    // waterpeil in de sluis moet gelijk zijn aan waterpijl 
+    // uitvarende schepen in case b
+
+    // stoplicht invaren op rood
+    // stoplicht uitvaren op rood
+
+    // sluisdeuren sluiten
+    // check of sluisdereun dicht zijn
+
+    // nivelleren
+    // check of waterlevel gelijk is aan uitvarende zijde
+
+    // sluisdeuren openen
+    // stoplicht uitvaren op groen
+    // stoplicht invaren op rood    
+    // check of schip in sluis
+    // geef toestemming uitvaren voor schip in sluis
+
+    //check uitvaartijd
+    // check schip in sluis
+    // als sluis leeg is
+    // a) uitvaarstoplicht op rood
+    // invaarstoplicht op groen
+    // geef signaal aan wachtende schepen
+    // als twee siganel zijn binnengekomen van wachtende schepen aan deze kant
+    // dan nog wachten totdat de sensor in de sluis beiden schepen heeft opgemerkt
+    
+    // als wachtende schepen zijn ingevaren
+    // stoplicht voor invaren op rood
+    // stoplicht voor uitvaren op rood
+    // sluisdeur dicht
+// wat is de end-state
+
+    return false;
+}
+
+
 
 
 
@@ -105,6 +178,106 @@ typedef int[0,10] meter;
 */
 meter waterlevel;
 
+
+
+/**
+
+
+const int  N_max_schepen=2; //schepen in sluis (max 2)
+const int wachtende schepen aan weerszijde 
+const int aanvarende_schepen (max 2)
+const int uitvarende_schepen (max 2)
+const int depth_schip, depth_schip,length_schip;
+const int depth_schip2=2, width_schip2=2,length_schip2=2;
+const int diepte_sluis=10;
+const int breedte=5;
+const int lengte=50;
+const int neerslag= 0.01; // per 10 tijdseenheden
+ int waterpeil_sluis,waterpeil_links,waterpeil_rechts;
+const int werktijd_pomp=30;
+typedef int[0,1] id_p
+id_p stack_linkerzijde[SIZE];
+id_p stack_rechterzijde[SIZE];
+id_p stack_sluis[SIZE];
+typedef int[0,10] meter;
+meter level;
+
+
+void links_deurenopen(){}
+void rechts_deurenopen(){}
+
+void links_deursluiten(){}
+void rechts_deursluiten(){}
+
+void links_stoplicht(){}
+void rechts_stoplicht(){}
+
+void pomp_starten(){}
+// nivelleren
+void pomp_waterbij(){}
+void pomp_waterwegpompen(){}
+void pomp_uitschakelen(){}
+
+
+// op basis van informatie gebaseerd op bovenstaande var 
+//wordt een beslissing genomen
+
+
+//initial state
+// stoplicht op rood , sluisdeuren dicht om waterstrming te voorkomen en pomp is uit omdat er een signaal moetn worden gegeven voor actie
+
+
+//end of final state is de state waar de sluis zich in bevind wanneeer er niets meer mag passeren door de sluis
+// Vanwege: maintainance, einde van de invaarperiode
+// stoplicht op rood , sluisdeuren dicht om waterstrming te voorkomen en pomp is uit omdat er een signaal moetn worden gegeven voor actie
+
+//s0 initial state 
+//update_all
+//s1 check all
+//s2 check if ready
+//s3 start cycle
+
+
+
+
+
+
+
+
+
+chan adjust_water_level, RestartCycle;
+chan Activate1, Activate2, Activate3, Start,Stop;
+
+int c, f,t;
+
+system mySystem {
+  int x;
+
+ 
+
+  // Process definition
+  process myProcess {
+    // Initial state
+    state s0 {
+      // Read input for x
+      // ...
+
+ 
+
+      // Check if x is less than 10
+      if (x &lt; 10) {
+        // Output "x is less than 10"
+        // ...
+      }
+      else {
+        // Output "x is greater than or equal to 10"
+        // ...
+      }
+    }
+  }
+}
+
+*/
 </declaration>
 	<template>
 		<name x="5" y="5">sluis</name>
@@ -603,10 +776,13 @@ bool isHoog()
 	<template>
 		<name>stoplicht</name>
 		<location id="id39" x="0" y="0">
+			<name x="-10" y="-34">s0</name>
 		</location>
 		<location id="id40" x="102" y="0">
+			<name x="92" y="-34">s1</name>
 		</location>
 		<location id="id41" x="204" y="0">
+			<name x="194" y="-34">s2</name>
 		</location>
 		<init ref="id39"/>
 		<transition>
@@ -640,7 +816,55 @@ bool isHoog()
 
 
 
-system schip,aanvoer,afvoer,sluis, pomp,sluisdeur,stoplicht,controller;</system>
+system schip,aanvoer,afvoer,sluis, pomp,sluisdeur,stoplicht,controller;
+
+/**
+system mySystem {
+  // Global variables
+  int var1;
+  int var2;
+
+ 
+
+  // Template 1 definition
+  template myTemplate1 {
+    int t1var1;
+    int t1var2;
+    // ...
+  }
+
+ 
+
+  // Template 2 definition
+  template myTemplate2 {
+    int t2var1;
+    int t2var2;
+    // ...
+  }
+
+ 
+
+  // Initialization of global variables
+  system init {
+    var1 = 0;
+    var2 = 0;
+  }
+
+ 
+
+  // Process definition
+  process myProcess {
+    // Use var1 and var2
+    // ...
+    // Use t1.t1var1, t1.t1var2, t2.t2var1, and t2.t2var2
+
+  }
+}
+
+
+*/
+
+</system>
 	<queries>
 		<query>
 			<formula>A[] not deadlock</formula>

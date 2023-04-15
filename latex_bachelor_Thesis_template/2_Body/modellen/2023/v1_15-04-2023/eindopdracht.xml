@@ -28,10 +28,6 @@
  * 
 */
 
-chan press_stoplicht, aan, uit,press;
-chan  door_open, door_closed;
-bool deur1, deur2, deur3, deur4;
-bool entrance_schip1, leave_schip1, entrace_schip2, leave_schip2;
 
 
 
@@ -640,7 +636,7 @@ bool isHoog()
 
 
 
-system schip,aanvoer,afvoer,sluis, pomp,sluisdeur,stoplicht,controller;</system>
+system schip,aanvoer,afvoer,sluis.pomp,sluisdeur,stoplicht,controller;</system>
 	<queries>
 		<query>
 			<formula>A[] not deadlock</formula>
