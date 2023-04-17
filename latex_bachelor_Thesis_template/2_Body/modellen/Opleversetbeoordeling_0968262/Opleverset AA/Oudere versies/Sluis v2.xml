@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+
+// Boven sensor
+chan boat_boven;
+chan boat_boven_response;
+
+// Beneden sensor
+chan boat_beneden;
+chan boat_beneden_response;
+
+// Boven gate
+bool boven_gate_open = false;
+chan boven_gate_can_close;
+chan boat_at_boven_gate;
+chan boven_gate_response;
+
+// Beneden gate
+bool beneden_gate_open = false;
+chan beneden_gate_can_close;
+chan boat_at_beneden_gate;
+chan beneden_gate_response;
+
+//check water niveau
+chan triggerWaterCheck;
+chan triggerWaterCheckResponse;
+int [0,5] waterniveau =0;
+
+//Stoplichten
+chan Toggle;
+
+
+
+//false is wanneer de boot naar beneden moet gaan en boven staat.
+bool direction =false;</declaration>
+	<template>
+		<name>Stoplicht</name>
+		<location id="id0" x="-306" y="68">
+			<name x="-323" y="85">groen</name>
+		</location>
+		<location id="id1" x="-306" y="-68">
+			<name x="-316" y="-102">Rood</name>
+		</location>
+		<init ref="id1"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-416" y="8">Toggle?</label>
+			<nail x="-348" y="68"/>
+			<nail x="-348" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<label kind="synchronisation" x="-297" y="-17">Toggle?</label>
+		</transition>
+	</template>
+	<template>
+		<name>Binnenkant</name>
+		<declaration>const int queue_size = 3;
+
+int[0, queue_size-1] queue[int[0, queue_size-1]];
+
+int[0, queue_size-1] counter;
+
+void push(int value)
+{
+    queue[counter++] = value;
+}
+
+int pop()
+{
+    return queue[counter--];
+}
+
+bool is_empty()
+{
+    return counter == 0;
+}
+
+bool is_full()
+{
+    return counter == queue_size - 1;
+}</declaration>
+		<location id="id2" x="-408" y="-93">
+		</location>
+		<location id="id3" x="-416" y="-493">
+		</location>
+		<location id="id4" x="-297" y="-195">
+		</location>
+		<location id="id5" x="-297" y="-382">
+			<committed/>
+		</location>
+		<location id="id6" x="-408" y="-289">
+			<committed/>
+		</location>
+		<location id="id7" x="-561" y="-289">
+			<name x="-604" y="-298">idle</name>
+		</location>
+		<init ref="id7"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-340" y="-493">waterniveau&gt;0</label>
+			<label kind="assignment" x="-331" y="-476">waterniveau--</label>
+			<nail x="-255" y="-450"/>
+			<nail x="-331" y="-450"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="-671" y="-433">triggerWaterCheckResponse!</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="-680" y="-144">triggerWaterCheckResponse!</label>
+			<nail x="-561" y="-170"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-331" y="-289">waterniveau&lt;5</label>
+			<label kind="assignment" x="-331" y="-271">waterniveau++</label>
+			<nail x="-331" y="-246"/>
+			<nail x="-263" y="-246"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-382" y="-144">waterniveau&gt;=5</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-450" y="-416">waterniveau==0</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id4"/>
+			<label kind="guard" x="-408" y="-238">!direction</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-408" y="-357">direction</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+			<label kind="synchronisation" x="-535" y="-280">triggerWaterCheck?</label>
+		</transition>
+	</template>
+	<template>
+		<name>Gate</name>
+		<parameter>broadcast chan&amp;boat_aanwezig, chan&amp; response_x, bool&amp; gate_is_open, chan&amp; gate_can_close</parameter>
+		<location id="id8" x="-306" y="-119">
+		</location>
+		<location id="id9" x="-161" y="-212">
+		</location>
+		<location id="id10" x="-161" y="-119">
+			<name x="-127" y="-127">open</name>
+		</location>
+		<location id="id11" x="-289" y="-212">
+			<committed/>
+		</location>
+		<location id="id12" x="-467" y="-119">
+			<name x="-561" y="-127">gesloten</name>
+		</location>
+		<init ref="id12"/>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-433" y="-110">gate_can_close?</label>
+			<label kind="assignment" x="-450" y="-93">gate_is_open = false</label>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id8"/>
+			<label kind="synchronisation" x="-263" y="-110">response_x!</label>
+			<label kind="assignment" x="-280" y="-93">gate_is_open = true</label>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id11"/>
+			<label kind="synchronisation" x="-450" y="-255">response_x?</label>
+			<nail x="-467" y="-212"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="-153" y="-178">triggerWaterCheckResponse?</label>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id9"/>
+			<label kind="synchronisation" x="-289" y="-255">triggerWaterCheck!</label>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id11"/>
+			<label kind="synchronisation" x="-391" y="-178">boat_aanwezig?</label>
+		</transition>
+	</template>
+	<template>
+		<name>Controller</name>
+		<location id="id13" x="68" y="-51">
+		</location>
+		<location id="id14" x="357" y="-127">
+		</location>
+		<location id="id15" x="178" y="-51">
+		</location>
+		<location id="id16" x="357" y="-51">
+			<committed/>
+		</location>
+		<location id="id17" x="357" y="-187">
+		</location>
+		<location id="id18" x="357" y="-272">
+			<name x="399" y="-289">queue_naar_binnenkant</name>
+		</location>
+		<location id="id19" x="-790" y="59">
+		</location>
+		<location id="id20" x="161" y="-272">
+			<name x="85" y="-331">boten_naar_binnenkant</name>
+		</location>
+		<location id="id21" x="-790" y="144">
+			<name x="-934" y="136">gate_beneden_open</name>
+		</location>
+		<location id="id22" x="-93" y="-272">
+			<name x="-170" y="-323">gate_boven_open</name>
+		</location>
+		<location id="id23" x="-679" y="94">
+			<name x="-637" y="102">beneden</name>
+			<committed/>
+		</location>
+		<location id="id24" x="-93" y="-153">
+			<name x="-161" y="-178">boven</name>
+			<committed/>
+		</location>
+		<location id="id25" x="-93" y="-51">
+			<name x="-136" y="-60">idle</name>
+		</location>
+		<init ref="id25"/>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id25"/>
+			<label kind="synchronisation" x="-75" y="-68">beneden_gate_can_close!</label>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id13"/>
+			<label kind="synchronisation" x="51" y="-34">beneden_gate_response?</label>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id16"/>
+			<label kind="synchronisation" x="365" y="-102">triggerWaterCheckResponse?</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id14"/>
+			<label kind="synchronisation" x="365" y="-178">triggerWaterCheck!</label>
+			<label kind="assignment" x="365" y="-161">direction=true</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id18"/>
+			<label kind="comments" x="119" y="-391">Hier gaat het stoplicht op groen en wordt de queue naar binnen gepusht</label>
+			<nail x="425" y="-357"/>
+			<nail x="306" y="-357"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="187" y="-85">beneden_gate_response!</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id17"/>
+			<label kind="synchronisation" x="365" y="-238">boven_gate_can_close!</label>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id18"/>
+			<label kind="synchronisation" x="187" y="-297">boat_boven_response!</label>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id25"/>
+			<label kind="synchronisation" x="-892" y="9">boat_beneden_response!</label>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id19"/>
+			<label kind="synchronisation" x="-960" y="85">beneden_gate_response?</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="-679" y="26">boat_beneden?</label>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id20"/>
+			<label kind="synchronisation" x="-34" y="-297">boven_gate_response?</label>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id21"/>
+			<label kind="synchronisation" x="-756" y="127">boat_at_beneden_gate!</label>
+			<label kind="assignment" x="-756" y="153">direction=true</label>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id22"/>
+			<label kind="synchronisation" x="-238" y="-255">boat_at_boven_gate!</label>
+			<label kind="assignment" x="-204" y="-238">direction=false</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+			<label kind="synchronisation" x="-178" y="-119">boat_boven?</label>
+		</transition>
+	</template>
+	<template>
+		<name x="5" y="5">Request</name>
+		<parameter>broadcast chan&amp; boat_x, chan&amp; response_x</parameter>
+		<declaration>const int queue_size = 3;
+
+int[0, queue_size-1] queue[int[0, queue_size-1]];
+
+int[0, queue_size-1] counter;
+
+void push(int value)
+{
+    queue[counter++] = value;
+}
+
+int pop()
+{
+    return queue[counter--];
+}
+
+bool is_empty()
+{
+    return counter == 0;
+}
+
+bool is_full()
+{
+    return counter == queue_size - 1;
+}</declaration>
+		<location id="id26" x="42" y="-59">
+		</location>
+		<location id="id27" x="-136" y="-59">
+		</location>
+		<init ref="id27"/>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="-153" y="17">response_x?</label>
+			<nail x="-136" y="9"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+			<label kind="synchronisation" x="-144" y="-161">boat_x!</label>
+			<nail x="-136" y="-136"/>
+		</transition>
+	</template>
+	<system>  
+boven_sensor = Request(boat_boven, boat_boven_response);
+boven_gate = Gate(boat_at_boven_gate, boven_gate_response, boven_gate_open, boven_gate_can_close );
+
+beneden_sensor = Request(boat_beneden, boat_beneden_response);
+beneden_gate = Gate(boat_at_beneden_gate, beneden_gate_response, beneden_gate_open, beneden_gate_can_close);
+
+system Binnenkant,Controller, boven_sensor, beneden_sensor, boven_gate, beneden_gate;</system>
+	<queries>
+		<query>
+			<formula>A[] not deadlock</formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>
