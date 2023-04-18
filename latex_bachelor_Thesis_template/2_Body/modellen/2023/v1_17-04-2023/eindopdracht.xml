@@ -400,19 +400,6 @@ int[0,1] currentstate;</declaration>
 		</location>
 		<init ref="id13"/>
 		<transition>
-			<source ref="id16"/>
-			<target ref="id16"/>
-			<nail x="-8" y="-221"/>
-			<nail x="-68" y="-306"/>
-			<nail x="76" y="-306"/>
-		</transition>
-		<transition>
-			<source ref="id14"/>
-			<target ref="id14"/>
-			<nail x="374" y="102"/>
-			<nail x="238" y="102"/>
-		</transition>
-		<transition>
 			<source ref="id14"/>
 			<target ref="id13"/>
 			<label kind="assignment" x="18" y="0">gate_is_open[entrance_schip] := false</label>
@@ -537,22 +524,6 @@ bool isHoog()
 		<init ref="id21"/>
 		<transition>
 			<source ref="id22"/>
-			<target ref="id22"/>
-			<nail x="102" y="229"/>
-			<nail x="17" y="246"/>
-			<nail x="34" y="178"/>
-		</transition>
-		<transition>
-			<source ref="id22"/>
-			<target ref="id22"/>
-			<label kind="select" x="120" y="85">locatie : waterlevel</label>
-			<label kind="assignment" x="120" y="136">level:=waterlevel, x:=0</label>
-			<nail x="204" y="136"/>
-			<nail x="204" y="204"/>
-			<nail x="136" y="204"/>
-		</transition>
-		<transition>
-			<source ref="id22"/>
 			<target ref="id21"/>
 			<label kind="synchronisation" x="18" y="119">pomp_klik!</label>
 			<nail x="0" y="136"/>
@@ -574,149 +545,55 @@ clock x;</declaration>
 		<location id="id23" x="0" y="-102">
 			<name x="-10" y="-136">ildle</name>
 		</location>
-		<location id="id24" x="0" y="238">
-			<name x="-68" y="195">appr</name>
-			<label kind="invariant" x="-68" y="229">x&lt;20</label>
-		</location>
-		<location id="id25" x="136" y="340">
-			<name x="126" y="306">stop</name>
-		</location>
-		<location id="id26" x="238" y="238">
-			<name x="228" y="204">start</name>
-			<label kind="invariant" x="228" y="255">x&lt;=15</label>
-		</location>
-		<location id="id27" x="238" y="-102">
-			<name x="228" y="-136">move</name>
-		</location>
-		<location id="id28" x="0" y="110">
-			<name x="-59" y="119">notify</name>
-		</location>
-		<location id="id29" x="-127" y="-34">
-			<committed/>
-		</location>
-		<location id="id30" x="119" y="-34">
-			<committed/>
-		</location>
-		<location id="id31" x="0" y="-34">
+		<location id="id24" x="0" y="51">
 		</location>
 		<init ref="id23"/>
 		<transition>
 			<source ref="id24"/>
-			<target ref="id27"/>
-			<label kind="guard" x="18" y="34">x&gt;=10</label>
-			<label kind="assignment" x="18" y="68">x=0</label>
-		</transition>
-		<transition>
-			<source ref="id28"/>
-			<target ref="id31"/>
-			<nail x="0" y="93"/>
+			<target ref="id23"/>
+			<nail x="8" y="51"/>
+			<nail x="178" y="51"/>
+			<nail x="178" y="-110"/>
 		</transition>
 		<transition>
 			<source ref="id23"/>
-			<target ref="id31"/>
-			<label kind="assignment" x="0" y="-68">positie: int[0,1]</label>
-		</transition>
-		<transition>
-			<source ref="id31"/>
-			<target ref="id30"/>
-			<label kind="assignment" x="0" y="-17">entrance_schip := true</label>
-		</transition>
-		<transition>
-			<source ref="id31"/>
-			<target ref="id29"/>
-			<label kind="guard" x="-109" y="-68">positie==0</label>
-			<label kind="assignment" x="-109" y="-34">entrance_schip:=false</label>
-		</transition>
-		<transition>
-			<source ref="id30"/>
-			<target ref="id28"/>
-		</transition>
-		<transition>
-			<source ref="id29"/>
-			<target ref="id28"/>
-		</transition>
-		<transition>
-			<source ref="id28"/>
-			<target ref="id28"/>
-			<label kind="synchronisation" x="119" y="93">send[positie]!</label>
-			<nail x="17" y="102"/>
-			<nail x="102" y="102"/>
-			<nail x="102" y="136"/>
-		</transition>
-		<transition>
-			<source ref="id27"/>
-			<target ref="id26"/>
-			<nail x="306" y="102"/>
-			<nail x="306" y="170"/>
-		</transition>
-		<transition>
-			<source ref="id28"/>
-			<target ref="id25"/>
-			<nail x="-136" y="110"/>
-			<nail x="-136" y="340"/>
-			<nail x="119" y="340"/>
-		</transition>
-		<transition>
-			<source ref="id28"/>
 			<target ref="id24"/>
-		</transition>
-		<transition>
-			<source ref="id27"/>
-			<target ref="id23"/>
-			<label kind="guard" x="18" y="-136">x&gt;=3</label>
-			<label kind="synchronisation" x="18" y="-119">leave[id]!</label>
-		</transition>
-		<transition>
-			<source ref="id26"/>
-			<target ref="id27"/>
-			<label kind="guard" x="238" y="34">x&gt;7</label>
-			<label kind="assignment" x="238" y="68">x=0</label>
-		</transition>
-		<transition>
-			<source ref="id25"/>
-			<target ref="id26"/>
-			<label kind="synchronisation" x="154" y="272">go[id]?</label>
-			<label kind="assignment" x="154" y="289">x=0</label>
-		</transition>
-		<transition>
-			<source ref="id24"/>
-			<target ref="id25"/>
-			<label kind="guard" x="18" y="255">x&lt;=10</label>
-			<label kind="synchronisation" x="18" y="272">stop[id]?</label>
+			<label kind="synchronisation" x="0" y="-85">send[kenteken]</label>
+			<label kind="assignment" x="0" y="-68">positie: int[0,1]</label>
 		</transition>
 	</template>
 	<template>
 		<name>sluiskolk</name>
-		<location id="id32" x="0" y="0">
+		<location id="id25" x="0" y="0">
 		</location>
-		<location id="id33" x="0" y="102">
+		<location id="id26" x="0" y="102">
 		</location>
-		<location id="id34" x="0" y="238">
+		<location id="id27" x="0" y="238">
 		</location>
-		<location id="id35" x="0" y="340">
+		<location id="id28" x="0" y="340">
 			<committed/>
 		</location>
-		<init ref="id32"/>
+		<init ref="id25"/>
 		<transition>
-			<source ref="id33"/>
-			<target ref="id34"/>
+			<source ref="id26"/>
+			<target ref="id27"/>
 			<label kind="select" x="0" y="119">e:id_t</label>
 			<label kind="synchronisation" x="0" y="153">appr[e]?</label>
 			<label kind="assignment" x="0" y="170">enqueue(e)</label>
 		</transition>
 		<transition>
-			<source ref="id32"/>
-			<target ref="id33"/>
+			<source ref="id25"/>
+			<target ref="id26"/>
 			<label kind="guard" x="0" y="8">len==0</label>
 			<nail x="0" y="85"/>
 		</transition>
 		<transition>
-			<source ref="id34"/>
-			<target ref="id35"/>
+			<source ref="id27"/>
+			<target ref="id28"/>
 		</transition>
 		<transition>
-			<source ref="id34"/>
-			<target ref="id32"/>
+			<source ref="id27"/>
+			<target ref="id25"/>
 			<label kind="select" x="178" y="59">e:id_t</label>
 			<label kind="guard" x="178" y="76">e==front()</label>
 			<label kind="synchronisation" x="178" y="93">leave[e]?</label>
@@ -726,8 +603,8 @@ clock x;</declaration>
 			<nail x="17" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id32"/>
-			<target ref="id34"/>
+			<source ref="id25"/>
+			<target ref="id27"/>
 			<label kind="guard" x="-255" y="85">len&gt;0</label>
 			<label kind="synchronisation" x="-246" y="110">go[front()]!</label>
 			<nail x="-136" y="0"/>
@@ -736,66 +613,66 @@ clock x;</declaration>
 	</template>
 	<template>
 		<name>wachtrij_beneden</name>
-		<location id="id36" x="0" y="0">
+		<location id="id29" x="0" y="0">
 		</location>
-		<init ref="id36"/>
+		<init ref="id29"/>
 	</template>
 	<template>
 		<name>wachtrij_boven</name>
-		<location id="id37" x="0" y="0">
+		<location id="id30" x="0" y="0">
 		</location>
-		<init ref="id37"/>
+		<init ref="id30"/>
 	</template>
 	<template>
 		<name>stoplight</name>
-		<location id="id38" x="0" y="0">
+		<location id="id31" x="0" y="0">
 			<name x="-10" y="-34">rood</name>
 		</location>
-		<location id="id39" x="136" y="0">
+		<location id="id32" x="136" y="0">
 			<name x="126" y="-34">oranje</name>
 		</location>
-		<location id="id40" x="272" y="0">
+		<location id="id33" x="272" y="0">
 			<name x="262" y="-34">groen</name>
 		</location>
-		<init ref="id38"/>
+		<init ref="id31"/>
 		<transition>
-			<source ref="id39"/>
-			<target ref="id39"/>
+			<source ref="id32"/>
+			<target ref="id32"/>
 			<nail x="68" y="-102"/>
 			<nail x="212" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id40"/>
-			<target ref="id38"/>
+			<source ref="id33"/>
+			<target ref="id31"/>
 			<nail x="272" y="136"/>
 			<nail x="0" y="136"/>
 		</transition>
 		<transition>
-			<source ref="id39"/>
-			<target ref="id40"/>
+			<source ref="id32"/>
+			<target ref="id33"/>
 		</transition>
 		<transition>
-			<source ref="id38"/>
-			<target ref="id39"/>
+			<source ref="id31"/>
+			<target ref="id32"/>
 			<label kind="synchronisation" x="18" y="-17">stoplichtklik?</label>
 		</transition>
 	</template>
 	<template>
 		<name>sensor</name>
-		<location id="id41" x="0" y="0">
+		<location id="id34" x="0" y="0">
 		</location>
-		<init ref="id41"/>
+		<init ref="id34"/>
 		<transition>
-			<source ref="id41"/>
-			<target ref="id41"/>
+			<source ref="id34"/>
+			<target ref="id34"/>
 			<label kind="select" x="144" y="-51">send_aes : kenteken</label>
 			<label kind="synchronisation" x="102" y="-93">send!</label>
 			<nail x="51" y="-102"/>
 			<nail x="119" y="-42"/>
 		</transition>
 		<transition>
-			<source ref="id41"/>
-			<target ref="id41"/>
+			<source ref="id34"/>
+			<target ref="id34"/>
 			<label kind="select" x="-272" y="-76">received_aes : kenteken</label>
 			<label kind="synchronisation" x="-85" y="-119">receive?</label>
 			<nail x="-8" y="-8"/>
