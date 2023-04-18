@@ -1,45 +1,45 @@
 \babel@toc {dutch}{}\relax 
-\contentsline {section}{\numberline {1}Inleiding}{2}{}%
-\contentsline {section}{\numberline {2}Requirements}{2}{}%
-\contentsline {subsection}{\numberline {2.1}Requirements}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Sluisdeuren}{2}{}%
-\contentsline {subsection}{\numberline {2.3}Stoplichten}{3}{}%
-\contentsline {subsection}{\numberline {2.4}Waterpomp}{3}{}%
-\contentsline {subsection}{\numberline {2.5}Boten}{3}{}%
-\contentsline {subsection}{\numberline {2.6}Specificaties}{3}{}%
-\contentsline {subsection}{\numberline {2.7}Het vier variabelen model}{3}{}%
-\contentsline {subsubsection}{\numberline {2.7.1}Monitored variabelen}{3}{}%
-\contentsline {subsubsection}{\numberline {2.7.2}Controlled variabelen}{3}{}%
-\contentsline {subsubsection}{\numberline {2.7.3}Input variabelen}{3}{}%
-\contentsline {subsubsection}{\numberline {2.7.4}Output variabelen}{3}{}%
-\contentsline {subsection}{\numberline {2.8}Rampen}{3}{}%
-\contentsline {subsubsection}{\numberline {2.8.1}Ramp 1}{3}{}%
-\contentsline {subsubsection}{\numberline {2.8.2}Ramp 2}{3}{}%
-\contentsline {subsubsection}{\numberline {2.8.3}Ramp 3}{4}{}%
-\contentsline {subsubsection}{\numberline {2.8.4}Ramp 4}{5}{}%
-\contentsline {subsubsection}{\numberline {2.8.5}Ramp 5}{5}{}%
-\contentsline {subsubsection}{\numberline {2.8.6}Ramp 6}{5}{}%
-\contentsline {section}{\numberline {3}Modellen}{5}{}%
-\contentsline {subsection}{\numberline {3.1}De Kripke structuur}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Soorten modellen}{5}{}%
-\contentsline {subsection}{\numberline {3.3}Tijd}{5}{}%
-\contentsline {subsection}{\numberline {3.4}Guards en invarianten}{5}{}%
-\contentsline {subsection}{\numberline {3.5}Deadlock}{5}{}%
-\contentsline {subsection}{\numberline {3.6}Zeno gedrag}{5}{}%
-\contentsline {section}{\numberline {4}Logica}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Propositielogica}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Predicatenlogica}{5}{}%
-\contentsline {subsection}{\numberline {4.3}Kwantoren}{5}{}%
-\contentsline {subsection}{\numberline {4.4}Dualiteiten}{5}{}%
-\contentsline {section}{\numberline {5}Computation tree logic}{5}{}%
-\contentsline {subsection}{\numberline {5.1}De computation tree}{5}{}%
-\contentsline {subsection}{\numberline {5.2}Operator: AG}{5}{}%
-\contentsline {subsection}{\numberline {5.3}Operator: EG}{5}{}%
-\contentsline {subsection}{\numberline {5.4}Operator: AF}{5}{}%
-\contentsline {subsection}{\numberline {5.5}Operator: EF}{5}{}%
-\contentsline {subsection}{\numberline {5.6}Operator: AX}{5}{}%
-\contentsline {subsection}{\numberline {5.7}Operator: EX}{5}{}%
-\contentsline {subsection}{\numberline {5.8}Operator: p U q}{5}{}%
-\contentsline {subsection}{\numberline {5.9}Operator: p R q}{5}{}%
-\contentsline {subsection}{\numberline {5.10}Fairness}{5}{}%
-\contentsline {subsection}{\numberline {5.11}Liveness}{5}{}%
+\contentsline {section}{\numberline {1}Inleiding}{3}{}%
+\contentsline {section}{\numberline {2}Requirements}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Requirements}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Sluisdeuren}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Stoplichten}{4}{}%
+\contentsline {subsection}{\numberline {2.4}Waterpomp}{4}{}%
+\contentsline {subsection}{\numberline {2.5}Boten}{4}{}%
+\contentsline {subsection}{\numberline {2.6}Specificaties}{4}{}%
+\contentsline {subsection}{\numberline {2.7}Het vier variabelen model}{4}{}%
+\contentsline {subsubsection}{\numberline {2.7.1}Monitored variabelen}{4}{}%
+\contentsline {subsubsection}{\numberline {2.7.2}Controlled variabelen}{4}{}%
+\contentsline {subsubsection}{\numberline {2.7.3}Input variabelen}{4}{}%
+\contentsline {subsubsection}{\numberline {2.7.4}Output variabelen}{4}{}%
+\contentsline {subsection}{\numberline {2.8}Rampen}{4}{}%
+\contentsline {subsubsection}{\numberline {2.8.1}Ramp 1}{4}{}%
+\contentsline {subsubsection}{\numberline {2.8.2}Ramp 2}{5}{}%
+\contentsline {subsubsection}{\numberline {2.8.3}Ramp 3}{5}{}%
+\contentsline {subsubsection}{\numberline {2.8.4}Ramp 4}{6}{}%
+\contentsline {subsubsection}{\numberline {2.8.5}Ramp 5}{6}{}%
+\contentsline {subsubsection}{\numberline {2.8.6}Ramp 6}{6}{}%
+\contentsline {section}{\numberline {3}Modellen}{6}{}%
+\contentsline {subsection}{\numberline {3.1}De Kripke structuur}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Soorten modellen}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Tijd}{6}{}%
+\contentsline {subsection}{\numberline {3.4}Guards en invarianten}{6}{}%
+\contentsline {subsection}{\numberline {3.5}Deadlock}{6}{}%
+\contentsline {subsection}{\numberline {3.6}Zeno gedrag}{6}{}%
+\contentsline {section}{\numberline {4}Logica}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Propositielogica}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Predicatenlogica}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Kwantoren}{6}{}%
+\contentsline {subsection}{\numberline {4.4}Dualiteiten}{6}{}%
+\contentsline {section}{\numberline {5}Computation tree logic}{6}{}%
+\contentsline {subsection}{\numberline {5.1}De computation tree}{6}{}%
+\contentsline {subsection}{\numberline {5.2}Operator: AG}{6}{}%
+\contentsline {subsection}{\numberline {5.3}Operator: EG}{6}{}%
+\contentsline {subsection}{\numberline {5.4}Operator: AF}{6}{}%
+\contentsline {subsection}{\numberline {5.5}Operator: EF}{6}{}%
+\contentsline {subsection}{\numberline {5.6}Operator: AX}{6}{}%
+\contentsline {subsection}{\numberline {5.7}Operator: EX}{6}{}%
+\contentsline {subsection}{\numberline {5.8}Operator: p U q}{6}{}%
+\contentsline {subsection}{\numberline {5.9}Operator: p R q}{6}{}%
+\contentsline {subsection}{\numberline {5.10}Fairness}{6}{}%
+\contentsline {subsection}{\numberline {5.11}Liveness}{6}{}%
