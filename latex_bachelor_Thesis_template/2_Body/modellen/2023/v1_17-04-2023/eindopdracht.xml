@@ -517,6 +517,7 @@ bool isHoog()
 </declaration>
 		<location id="id21" x="0" y="0">
 			<name x="-10" y="-34">pomp_uit</name>
+			<label kind="comments" x="-10" y="59">ipv aan en uit states kan er ook gekozen worden voor de states laag en hoog</label>
 		</location>
 		<location id="id22" x="102" y="136">
 			<name x="92" y="102">pomp_aan</name>
@@ -552,8 +553,8 @@ clock x;</declaration>
 			<source ref="id24"/>
 			<target ref="id23"/>
 			<nail x="8" y="51"/>
-			<nail x="178" y="51"/>
-			<nail x="178" y="-110"/>
+			<nail x="170" y="51"/>
+			<nail x="170" y="-102"/>
 		</transition>
 		<transition>
 			<source ref="id23"/>
