@@ -83,7 +83,7 @@ typedef int[0, aantal_queues-1] queue;
 
 
 int SIZE_STACK=3;
-typedef int wachtrij[SIZE_STACK-1] stack;
+typedef int[0,SIZE_STACK-1] stack;
 /**
 const int pompen = 2;
 typedef int[0,pompen-1] pomp;

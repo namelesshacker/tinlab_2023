@@ -1,0 +1,1345 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  23 APR 2023 12:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./article23.tex
+(article23.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-09-28>
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
+\l__pdf_internal_box=\box51
+) (article23.aux)
+\openout1 = `article23.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 24.
+ [1
+
+{C:/Users/gally/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 30.
+ [1]
+! You can't use `macro parameter character #' in horizontal mode.
+l.36 ...com/science/article/pii/S0167642315001033#
+                                                  fg0010
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (315.79832pt too wide) in paragraph at lines 35--38
+\OT1/cmr/m/n/10.95 encedi-rect.com/science/article/pii/S0167642315001033fg0010 
+https://shemesh.larc.nasa.gov/fm/papers/ExtendingTheFourVariableModel.pdf 
+ []
+
+! Undefined control sequence.
+l.48 \processtable
+                  {Coefficients and remainders for distribution KK ($k = 0.05$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.65 \centering{\includegraphics
+                                [width=60mm]{imagefile1a}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...f the real axis to infinity \source 
+                                                  {}}}{\thepage }{}\protecte...
+l.67 \source{}}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...f the real axis to infinity \source 
+                                                  {}
+l.67 \source{}}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.97 source: https://na.eventscloud.com/file_
+                                             uploads/aed4bc20e84d2839b83c18b...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (89.53651pt too wide) in paragraph at lines 73--108
+\OT1/cmr/m/n/10.95 https://na.eventscloud.com/file$[]\OML/cmm/m/it/10.95 ploads
+=aed\OT1/cmr/m/n/10.95 4\OML/cmm/m/it/10.95 bc\OT1/cmr/m/n/10.95 20\OML/cmm/m/i
+t/10.95 e\OT1/cmr/m/n/10.95 84\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 2839\OML/
+cmm/m/it/10.95 b\OT1/cmr/m/n/10.95 83\OML/cmm/m/it/10.95 c\OT1/cmr/m/n/10.95 18
+\OML/cmm/m/it/10.95 bcba\OT1/cmr/m/n/10.95 7\OML/cmm/m/it/10.95 e\OT1/cmr/m/n/1
+0.95 2876[]\OML/cmm/m/it/10.95 wens\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 :pdf
+https \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (19.8906pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 ==www:boozallen:com=content=dam=boozallen=documents=\OT1/cm
+r/m/n/10.95 2016\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 09\OML/cmm/m/it/10.95 =
+ukraine \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (56.9298pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 report \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 when \OM
+S/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 the \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m
+/it/10.95 lights \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 went \OMS/cmsy/m/n
+/10.95 ^^@ \OML/cmm/m/it/10.95 out:pdfhttps \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/
+10.95 ==theconversation:com=cyberattack \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (60.76517pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 was \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 done \OMS/c
+msy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 52802\OML/cmm/m/it/10.95 Deaanvalisslimopg
+ezethttps \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==www:sans:org=blog=confirma
+tion \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (126.09251pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 of \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 a \OMS/cmsy/
+m/n/10.95 ^^@ \OML/cmm/m/it/10.95 coordinated \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/
+m/it/10.95 attack \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 on \OMS/cmsy/m/n/
+10.95 ^^@ \OML/cmm/m/it/10.95 the \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 u
+krainian \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 power \OMS/cmsy/m/n/10.95 
+^^@ \OML/cmm/m/it/10.95 grid=Cyberaanvalleninhetalgemeenhttps \OT1/cmr/m/n/10.9
+5 :
+ []
+
+
+Overfull \hbox (660.15355pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 ==www:ifri:org=sites=default=files=atoms=files=desarnaud[]y
+ber[]ttacks[]nergy[]nfrastructures[]\OT1/cmr/m/n/10.95 017[]\OML/cmm/m/it/10.95
+ :pdfNearlyayearlater; onDecember\OT1/cmr/m/n/10.95 17\OML/cmm/m/it/10.95 ; \OT
+1/cmr/m/n/10.95 2016\OML/cmm/m/it/10.95 ; asingletransmissionsubstationinnorthe
+rnKievlostpower:https \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (16.84949pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 ==jsis:washington:edu=news=cyberattack \OMS/cmsy/m/n/10.95 
+^^@ \OML/cmm/m/it/10.95 critical \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 in
+frastructure \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 russia \OMS/cmsy/m/n/1
+0.95 ^^@
+ []
+
+
+Overfull \hbox (66.47507pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 ukrainian \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 power
+ \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 grid \OMS/cmsy/m/n/10.95 ^^@ \OML/
+cmm/m/it/10.95 attacks=AttackingIEC \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 
+60870 \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 5 \OMS/cmsy/m/n/10.95 ^^@ \OT1
+/cmr/m/n/10.95 104\OML/cmm/m/it/10.95 SCADASystemshttps \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (1.71082pt too wide) in paragraph at lines 73--108
+\OML/cmm/m/it/10.95 ==www:researchgate:net=publication=\OT1/cmr/m/n/10.95 33367
+1061[]\OML/cmm/m/it/10.95 ttacking[]EC \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.
+95 60870 \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 5 \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111   Q=\left
+               (N+\frac{1}{2}\right)e
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[2] [3]
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.192   H_
+          {2C}=&\sum_{\alpha k\sigma}\epsilon_{\alpha k}\hat{c}^{\dagger}_{\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.192   H_{2C}=&
+                \sum_{\alpha k\sigma}\epsilon_{\alpha k}\hat{c}^{\dagger}_{\...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.194   &
+         +\sum_{\sigma}\epsilon_{d}\hat{d}^{\dagger}_{\sigma}\hat{d}_{\sigma...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.196 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.199   H_
+          {2K}=\sum_{\alpha k\sigma}\epsilon_{\alpha k}\hat{c}^{\dagger}_{\a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.201 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 \begin{align}
+                   \label{2lead}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.204   H_
+          {2K}=\sum_{\alpha k\sigma}\epsilon_{\alpha k}\hat{c}^{\dagger}_{\a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[4]
+! Undefined control sequence.
+l.210 \centering{\includegraphics
+                                 [width=60mm]{imagefile2a}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\ll T_{K}$ and $T\gg T_{K}$ \source 
+                                                  {For high temperatures (da...
+l.213 ... line) the Coulomb blockade is overcome}}
+                                                  \label{kondodotresistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...e Coulomb blockade remains} \source 
+                                                  {For lower temperatures (s...
+l.213 ... line) the Coulomb blockade is overcome}}
+                                                  \label{kondodotresistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\ll T_{K}$ and $T\gg T_{K}$ \source 
+                                                  {For high temperatures (da...
+l.213 ... line) the Coulomb blockade is overcome}}
+                                                  \label{kondodotresistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...e Coulomb blockade remains} \source 
+                                                  {For lower temperatures (s...
+l.213 ... line) the Coulomb blockade is overcome}}
+                                                  \label{kondodotresistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\ll T_{K}$ and $T\gg T_{K}$ \source 
+                                                  {For high temperatures (da...
+l.213 ... line) the Coulomb blockade is overcome}}
+                                                  \label{kondodotresistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...e Coulomb blockade remains} \source 
+                                                  {For lower temperatures (s...
+l.213 ... line) the Coulomb blockade is overcome}}
+                                                  \label{kondodotresistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[5]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 source: https://na.eventscloud.com/file_
+                                              uploads/aed4bc20e84d2839b83c18...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (323.24962pt too wide) in paragraph at lines 244--253
+\OT1/cmr/m/n/10.95 Phys-i-cal Se-cu-rity 7) En-sure Com-plex Pass-words source:
+ https://na.eventscloud.com/file$[]\OML/cmm/m/it/10.95 ploads=aed\OT1/cmr/m/n/1
+0.95 4\OML/cmm/m/it/10.95 bc\OT1/cmr/m/n/10.95 20\OML/cmm/m/it/10.95 e\OT1/cmr/
+m/n/10.95 84\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 2839\OML/cmm/m/it/10.95 b\O
+T1/cmr/m/n/10.95 83\OML/cmm/m/it/10.95 c\OT1/cmr/m/n/10.95 18\OML/cmm/m/it/10.9
+5 bcba\OT1/cmr/m/n/10.95 7\OML/cmm/m/it/10.95 e\OT1/cmr/m/n/10.95 2876[]\OML/cm
+m/m/it/10.95 wens\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 :pdf$ 
+ []
+
+
+Overfull \hbox (13.09pt too wide) in paragraph at lines 254--256
+\OT1/cmr/m/n/10.95 est pub-lished YARA sig-na-ture https://www.cisa.gov/news-ev
+ents/ics-alerts/ir-
+ []
+
+
+Overfull \hbox (90.95512pt too wide) in paragraph at lines 257--260
+[]\OT1/cmr/m/n/10.95 requiremnts en de rol van de poli-tiek/statelijke ac-toren
+ https://www.reuters.com/article/us-
+ []
+
+
+Overfull \hbox (5.73035pt too wide) in paragraph at lines 257--260
+\OT1/cmr/m/n/10.95 ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-sandw
+orm-hackers-
+ []
+
+
+Overfull \hbox (44.11635pt too wide) in paragraph at lines 257--260
+\OT1/cmr/m/n/10.95 for-ukraine-outage-idUSKBN0UM00N20160108 https://www.reuters
+.com/article/us-
+ []
+
+
+Overfull \hbox (21.4833pt too wide) in paragraph at lines 269--271
+[]\OT1/cmr/m/n/10.95 https://www.politico.eu/article/ukraine-cyber-war-frontlin
+e-russia-malware-
+ []
+
+
+Overfull \hbox (9.55998pt too wide) in paragraph at lines 272--273
+[]\OT1/cmr/m/n/10.95 https://www.darkreading.com/threat-intelligence/first-malw
+are-designed-
+ []
+
+! Misplaced alignment tab character &.
+l.280 ...FDAD1BD940260EF12B11?doi=10.1.1.548.7490&
+                                                  amp;rep=rep1&amp;type=pdf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.280 ...EF12B11?doi=10.1.1.548.7490&amp;rep=rep1&
+                                                  amp;type=pdf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (424.83942pt too wide) in paragraph at lines 279--281
+[]\OT1/cmr/m/n/10.95 Systeem https://citeseerx.ist.psu.edu/viewdoc/download;jse
+ssionid=0513EED48102FDAD1BD940260EF12B11?doi=10.1.1.548.7490amp;rep=rep1amp;typ
+e=pdf 
+ []
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \begin{align}
+                   \label{kondolies}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.288   \hH
+           _{2K}^{1}=\sum_{k}\varepsilon_{k}\hat{c}_{\alpha k\sigma}\D\hat{c...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.290 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.290 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[6]
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.294 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced alignment tab character &.
+l.295   &
+         G_{1}\sim G_{0}\nu_{0}J\nonumber\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.295   &G_
+           {1}\sim G_{0}\nu_{0}J\nonumber\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.296   &
+         G_{0}\sim{\ln^{2}(T/T_{k})}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.297 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.299 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.300   G_
+          {1}&=\frac{2e^{2}}{h}\frac{4\Gamma_{L}\Gamma_{R}}{(\Gamma_{L}+\Gam...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.300   G_{1}&
+              =\frac{2e^{2}}{h}\frac{4\Gamma_{L}\Gamma_{R}}{(\Gamma_{L}+\Gam...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.301   &
+         \equiv G_{0}\frac{3\pi^{2}/16}{\ln^{2}(T/T_{k})}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.302 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.307   \hH
+           _{coup}=J\sum_{\alpha}\hat{s}(0)\cdot\hat{S}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.308 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.308 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.311   G_
+          {2}=G_{0}\left[1-\left(\frac{\pi T}{T_{K}}\right)^{2}\right]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.312 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.315   \begin{array}{cc}
+                         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.318   \end{array}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.323 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.324   \hH
+           _{2K}^{1}=\sum_{k\sigma}(\varepsilon_{k}-eV)\hat{c}_{L k\sigma}\D...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.327 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.330   \tilde
+              {G}=\left\{\begin{array}{cc}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.334 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.334 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment align undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.336 \begin{align}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced alignment tab character &.
+l.337      &
+            \tilde{G}_{1}=G_{0}\frac{3\pi^{2}/16}{\ln^{2}(eV/T_{k})}\nonumber\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.337      &\tilde
+                  {G}_{1}=G_{0}\frac{3\pi^{2}/16}{\ln^{2}(eV/T_{k})}\nonumber\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.338      &
+            \tilde{G}_{2}=G_{0}\left[1-\left(\frac{\pi eV}{T_{K}}\right)^{2}...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{document} ended by \end{align}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 \end{align}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.339 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[7]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.348 ...s://ris.utwente.nl/ws/files/6028066/3-s2_
+                                                  0-B9780128015957000227.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.373 ...Download.aspx?DocumentID=9AKK107045A1003&
+                                                  amp;LanguageCode=en
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.374 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (28.69742pt too wide) in paragraph at lines 348--374
+\OT1/cmr/m/n/10.95 https://ris.utwente.nl/ws/files/6028066/3-s2$[] \OMS/cmsy/m/
+n/10.95 ^^@ \OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 9780128015957000227\OML/cmm
+/m/it/10.95 :pdfhttps \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (26.27588pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 ==www:diva \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 port
+al:org=smash=get=diva\OT1/cmr/m/n/10.95 2 : 1046339\OML/cmm/m/it/10.95 =FULLTEX
+T\OT1/cmr/m/n/10.95 01\OML/cmm/m/it/10.95 :pdfhttps \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (78.96046pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 SCADA \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 system \O
+MS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 under \OMS/cmsy/m/n/10.95 ^^@ \OML/cm
+m/m/it/10.95 and \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 Rocha=dfa\OT1/cmr/
+m/n/10.95 7\OML/cmm/m/it/10.95 c\OT1/cmr/m/n/10.95 12551\OML/cmm/m/it/10.95 ebe
+\OT1/cmr/m/n/10.95 7\OML/cmm/m/it/10.95 b\OT1/cmr/m/n/10.95 24\OML/cmm/m/it/10.
+95 da\OT1/cmr/m/n/10.95 8\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 806\OML/cmm/m/
+it/10.95 e\OT1/cmr/m/n/10.95 87\OML/cmm/m/it/10.95 e\OT1/cmr/m/n/10.95 946051\O
+ML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 57\OML/cmm/m/it/10.95 cb\OT1/cmr/m/n/10.9
+5 9\OML/cmm/m/it/10.95 https \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (195.18195pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 ==dreamlab:net=en=blog=post=fuzzing \OMS/cmsy/m/n/10.95 ^^@
+ \OML/cmm/m/it/10.95 ics \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 protocols=
+https \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==www:connectivity\OT1/cmr/m/n/1
+0.95 4\OML/cmm/m/it/10.95 ir:co:uk=article=\OT1/cmr/m/n/10.95 175490\OML/cmm/m/
+it/10.95 =IEC \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (340.50237pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 ==www:win:tue:nl= []setalle=\OT1/cmr/m/n/10.95 2017[]\OML/c
+mm/m/it/10.95 auri[]ncryption:pdfhttps \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95
+ ==blog:nettedautomation:com=\OT1/cmr/m/n/10.95 2017\OML/cmm/m/it/10.95 =taxono
+mievanscadasystemenenhunaanvalhttps \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (119.03227pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 ==arxiv:org=pdf=\OT1/cmr/m/n/10.95 2001\OML/cmm/m/it/10.95 
+:\OT1/cmr/m/n/10.95 02925\OML/cmm/m/it/10.95 :pdfhttps \OT1/cmr/m/n/10.95 : \OM
+L/cmm/m/it/10.95 ==www:dragos:com=wp \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.9
+5 content=uploads=CrashOverride \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (133.5743pt too wide) in paragraph at lines 348--374
+\OT1/cmr/m/n/10.95 01\OML/cmm/m/it/10.95 :pdfhttps \OT1/cmr/m/n/10.95 : \OML/cm
+m/m/it/10.95 ==www:welivesecurity:com=wp \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/
+10.95 content=uploads=\OT1/cmr/m/n/10.95 2017\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/
+10.95 06\OML/cmm/m/it/10.95 =Win\OT1/cmr/m/n/10.95 32[]\OML/cmm/m/it/10.95 ndus
+troyer:pdfhttps \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (3.35622pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 ==www:cybersecurityintelligence:com=blog=attack \OMS/cmsy/m
+/n/10.95 ^^@ \OML/cmm/m/it/10.95 on \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95
+ ukraines \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 power \OMS/cmsy/m/n/10.95
+ ^^@
+ []
+
+
+Overfull \hbox (89.97621pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 grid \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 targeted \
+OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 transmission \OMS/cmsy/m/n/10.95 ^^@
+ \OML/cmm/m/it/10.95 stations \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 4530\O
+ML/cmm/m/it/10.95 :htmlhttps \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==arstech
+nica:com=information \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (2.72858pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 technology=\OT1/cmr/m/n/10.95 2017\OML/cmm/m/it/10.95 =\OT1
+/cmr/m/n/10.95 06\OML/cmm/m/it/10.95 =crash \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/
+it/10.95 override \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 malware \OMS/cmsy
+/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 may \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10
+.95 sabotage \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 electric \OMS/cmsy/m/n
+/10.95 ^^@
+ []
+
+
+Overfull \hbox (46.39264pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 grids \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 but \OMS/
+cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 its \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/i
+t/10.95 no \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 stuxnet=https \OT1/cmr/m
+/n/10.95 : \OML/cmm/m/it/10.95 ==www:vice:com=en=article=zmeyg\OT1/cmr/m/n/10.9
+5 8\OML/cmm/m/it/10.95 =ukraine \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (151.12413pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 power \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 grid \OMS
+/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 malware \OMS/cmsy/m/n/10.95 ^^@ \OML/cm
+m/m/it/10.95 crashoverride \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 industro
+yerhttps \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==www:dragos:com=resource=cra
+shoverride \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (164.20047pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 analyzing \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 the \
+OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 malware \OMS/cmsy/m/n/10.95 ^^@ \OML
+/cmm/m/it/10.95 that \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 attacks \OMS/c
+msy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 power \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/
+it/10.95 grids=https \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==en:wikipedia:or
+g=wiki=Industroyerhttps \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (106.05084pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 ==en:wikipedia:org=wiki=Crash[]verride[]etworkhttps \OT1/cm
+r/m/n/10.95 : \OML/cmm/m/it/10.95 ==www:nixu:com=blog=crashoverride \OMS/cmsy/m
+/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (96.35446pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 threat \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 electric
+ity \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 networkswatkaneenbackdoorallema
+alhttps \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==www:cyber:nj:gov=threat \OMS
+/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (60.84703pt too wide) in paragraph at lines 348--374
+\OT1/cmr/m/n/10.95 25114\OML/cmm/m/it/10.95 =https \OT1/cmr/m/n/10.95 : \OML/cm
+m/m/it/10.95 ==www:paloaltonetworks:com=blog=\OT1/cmr/m/n/10.95 2017\OML/cmm/m/
+it/10.95 =\OT1/cmr/m/n/10.95 06\OML/cmm/m/it/10.95 =crashoverrideindustroyer \O
+MS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (189.94273pt too wide) in paragraph at lines 348--374
+\OML/cmm/m/it/10.95 protections \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 pal
+o \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 alto \OMS/cmsy/m/n/10.95 ^^@ \OML
+/cmm/m/it/10.95 networks \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 customers=
+https \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 ==search:abb:com=library=Downloa
+d:aspx\OT1/cmr/m/n/10.95 ?\OML/cmm/m/it/10.95 DocumentID \OT1/cmr/m/n/10.95 =
+ []
+
+[8]
+Overfull \hbox (148.01675pt too wide) in paragraph at lines 377--382
+[]\OT1/cmr/m/n/10.95 crashoverride in de-cem-ber 2016 https://www.dragos.com/wp
+-content/uploads/CRASHOVERRIDE.pdf
+ []
+
+
+Overfull \hbox (18.71832pt too wide) in paragraph at lines 377--382
+\OT1/cmr/m/n/10.95 https://www.csoonline.com/article/3200828/crash-override-mal
+ware-that-took-
+ []
+
+
+Overfull \hbox (46.91447pt too wide) in paragraph at lines 377--382
+\OT1/cmr/m/n/10.95 down-a-power-grid-may-have-been-a-test-run.html https://www.
+powermag.com/why-
+ []
+
+
+Overfull \hbox (155.35002pt too wide) in paragraph at lines 377--382
+\OT1/cmr/m/n/10.95 crashoverride-is-a-red-flag-for-u-s-power-companies/ https:/
+/www.webopedia.com/definitions/crashoverride-
+ []
+
+
+Overfull \hbox (10.98955pt too wide) in paragraph at lines 383--390
+[]\OT1/cmr/m/n/10.95 https://www.msspalert.com/cybersecurity-breaches-and-attac
+ks/u-s-dept-
+ []
+
+
+Overfull \hbox (210.16095pt too wide) in paragraph at lines 383--390
+\OT1/cmr/m/n/10.95 of-homeland-securitys-crashoverride-malware-warning-to-utili
+ties/ https://blog.checkpoint.com/research/crashoverride/
+ []
+
+
+Overfull \hbox (38.8846pt too wide) in paragraph at lines 383--390
+\OT1/cmr/m/n/10.95 https://thehill.com/policy/cybersecurity/337877-crash-overri
+de-malware-heightens-
+ []
+
+
+Overfull \hbox (0.83334pt too wide) in paragraph at lines 383--390
+\OT1/cmr/m/n/10.95 advanced-actors-look-like-amateurs/ https://www.inguardians.
+com/dhs-fbi-
+ []
+
+
+Overfull \hbox (4.78743pt too wide) in paragraph at lines 383--390
+\OT1/cmr/m/n/10.95 warn-of-attacks-against-us-energy-manufacturing-companies-an
+d-employees/
+ []
+
+
+Overfull \hbox (32.89258pt too wide) in paragraph at lines 383--390
+\OT1/cmr/m/n/10.95 https://www.cyberthreatalliance.org/stuxnet-to-crashoverride
+-to-trisis-evaluating-
+ []
+
+
+Overfull \hbox (8.19417pt too wide) in paragraph at lines 383--390
+\OT1/cmr/m/n/10.95 the-history-and-future-of-integrity-based-attacks-on-industr
+ial-environments/
+ []
+
+
+Overfull \hbox (18.07956pt too wide) in paragraph at lines 383--390
+\OT1/cmr/m/n/10.95 https://rethinkresearch.biz/articles/industroyer-crashoverri
+de-malware-behind-
+ []
+
+! Undefined control sequence.
+l.397 \ack
+          {This work has been supported by The IET}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[9] [10
+
+] (article23.aux) ) 
+Here is how much of TeX's memory you used:
+ 528 strings out of 475385
+ 9531 string characters out of 2776908
+ 361330 words of memory out of 3000000
+ 21976 multiletter control sequences out of 15000+600000
+ 476238 words of font info for 51 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 33i,11n,38p,955b,194s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\tcrm1095.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gally/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gally/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gally/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/
+gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
+:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr6.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gally/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gally/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/gally/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
+s/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+>
+Output written on article23.pdf (12 pages, 250882 bytes).
+PDF statistics:
+ 127 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
