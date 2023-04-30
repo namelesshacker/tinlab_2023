@@ -33,6 +33,8 @@
 clock realtime,systemtime;
 bool entrance_schip,schip_boven=true,schip_beneden=false;
 bool direction = false;
+bool process_started = false;
+bool process_finished = false;
 //const int deuren = 2;
 //typedef int[0,deuren-1] deur;
 //bool gate_is_open[deur];
@@ -364,6 +366,7 @@ update:</label>
 		<name>main</name>
 		<location id="id7" x="-238" y="0">
 			<name x="-248" y="-34">Direction</name>
+			<committed/>
 		</location>
 		<location id="id8" x="-102" y="0">
 			<name x="-112" y="-34">Stoplicht</name>
@@ -388,6 +391,7 @@ update:</label>
 			<name x="194" y="-34">Invaren</name>
 		</location>
 		<location id="id17" x="-34" y="136">
+			<name x="-93" y="195">pending_queue_direction</name>
 		</location>
 		<location id="id18" x="1054" y="0">
 			<name x="1020" y="-68">Toestemming_uitvaren</name>
@@ -400,8 +404,15 @@ update:</label>
 		</location>
 		<init ref="id14"/>
 		<transition>
+			<source ref="id17"/>
+			<target ref="id8"/>
+			<nail x="-25" y="119"/>
+			<nail x="0" y="34"/>
+		</transition>
+		<transition>
 			<source ref="id15"/>
 			<target ref="id19"/>
+			<label kind="guard" x="86" y="-289">direction</label>
 			<nail x="68" y="-255"/>
 			<nail x="1173" y="-255"/>
 			<nail x="1173" y="0"/>
@@ -415,6 +426,7 @@ update:</label>
 		<transition>
 			<source ref="id20"/>
 			<target ref="id14"/>
+			<label kind="guard" x="-356" y="-306">process_finished==true &amp;&amp; process_started==false</label>
 			<nail x="1283" y="-272"/>
 			<nail x="-374" y="-272"/>
 		</transition>
@@ -445,13 +457,10 @@ update:</label>
 			<nail x="646" y="-238"/>
 		</transition>
 		<transition>
-			<source ref="id17"/>
-			<target ref="id15"/>
-			<nail x="-25" y="119"/>
-		</transition>
-		<transition>
 			<source ref="id8"/>
 			<target ref="id17"/>
+			<label kind="guard" x="-84" y="34">is_full</label>
+			<label kind="comments" x="-84" y="93">// als sluiskolk vol is dan plaatsnemen in wachtrij</label>
 		</transition>
 		<transition>
 			<source ref="id16"/>
@@ -487,7 +496,7 @@ update:</label>
 		<transition>
 			<source ref="id9"/>
 			<target ref="id11"/>
-			<label kind="synchronisation" x="324" y="187">!direction</label>
+			<label kind="guard" x="324" y="170">!direction,process_started</label>
 			<nail x="306" y="204"/>
 		</transition>
 		<transition>
@@ -499,6 +508,7 @@ update:</label>
 		<transition>
 			<source ref="id7"/>
 			<target ref="id8"/>
+			<label kind="assignment" x="-220" y="0">process_started=true</label>
 		</transition>
 	</template>
 	<template>
