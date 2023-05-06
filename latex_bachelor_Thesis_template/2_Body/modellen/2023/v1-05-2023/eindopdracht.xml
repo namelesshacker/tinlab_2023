@@ -30,7 +30,7 @@
  * 
 */
 
-clock realtime,systemtime;
+clock realtime;
 bool entrance_schip,schip_boven=true,schip_beneden=false;
 bool direction = false;
 bool process_started = false;
@@ -38,8 +38,11 @@ bool process_finished = false;
 //const int deuren = 2;
 //typedef int[0,deuren-1] deur;
 //bool gate_is_open[deur];
-//chan open_gate[deur];
-//chan close_gate[deur];
+
+
+bool togglePomp = false;
+bool startDown =false;
+bool startUp= true;
 
 
 
@@ -99,7 +102,9 @@ typedef int[0,deuren-1] deur;
 bool deur_is_open[id_d];
 chan deur_openen[id_d];
 chan deur_sluiten[id_d];
-
+bool deur_is_gesloten[id_d];
+chan open_gate[id_d];
+chan close_gate[id_d];
 
 
 
@@ -125,10 +130,18 @@ typedef int[0, aantal_sensoren-1] id_sensor;
 */
 
 const int pompen = 2;
-typedef int[0,pompen-1] pomp;
-chan pomp_klik[pomp];
+typedef int[0,pompen-1] pomp_id;
+chan pomp_klik[pomp_id];
 chan boot_aanwezig;
-chan toggle_pomp[pomp];
+chan toggle_pomp[pomp_id];
+
+
+
+chan send[kenteken], receive[kenteken];
+
+const int positions=2;
+typedef int[0,positions-1] locatie;
+chan shipTrigger[locatie];
 
  clock x;</declaration>
 	<template>
@@ -364,6 +377,35 @@ update:</label>
 	</template>
 	<template>
 		<name>main</name>
+		<declaration>
+/**
+ * Requirements
+ * Voordat het template de states stoplicht en deur heeft bereikt is de richting van het schip bekend en tegengesteld aan de huidige positie.
+ * In de idle stand is het mogeljk dat de clocktijd niet gelijk is aan nul, omdat het systeem alleen op 120 tijdseenheden en 
+ * Een pomp is actief als er nul of 1 of 2 schepen in de sluis zitten.
+ * De sluis heeft een trigger waarmee een actie kan worden gestart met een preconditie gerelateerd aan 1 van de volgende tenplates:schip,stoplicht,systeemtime,pomp,deur.
+ *
+ *
+*/
+clock systemtime;
+int  thresholdUp = 120;
+int thresholdDown=210;
+
+
+
+
+
+bool waterlockStartPosition()
+{
+
+    return false;
+}
+
+
+bool isFull()
+{
+    return false;
+}</declaration>
 		<location id="id7" x="-238" y="0">
 			<name x="-248" y="-34">Direction</name>
 			<committed/>
@@ -389,7 +431,7 @@ update:</label>
 			<name x="58" y="-34">Deur</name>
 		</location>
 		<location id="id16" x="204" y="0">
-			<name x="194" y="-34">Invaren</name>
+			<name x="194" y="-34">trigger</name>
 		</location>
 		<location id="id17" x="-102" y="170">
 			<name x="-161" y="229">pending_queue_direction</name>
@@ -405,6 +447,15 @@ update:</label>
 		</location>
 		<init ref="id14"/>
 		<transition>
+			<source ref="id14"/>
+			<target ref="id7"/>
+			<label kind="guard" x="-322" y="-68">realtime==thresholdUp</label>
+			<label kind="assignment" x="-348" y="-59">direction=true</label>
+			<nail x="-365" y="-17"/>
+			<nail x="-340" y="-34"/>
+			<nail x="-272" y="-34"/>
+		</transition>
+		<transition>
 			<source ref="id17"/>
 			<target ref="id8"/>
 			<nail x="-34" y="136"/>
@@ -414,6 +465,7 @@ update:</label>
 			<source ref="id15"/>
 			<target ref="id19"/>
 			<label kind="guard" x="86" y="-289">direction</label>
+			<label kind="assignment" x="86" y="-255">systemtime++</label>
 			<nail x="68" y="-255"/>
 			<nail x="1173" y="-255"/>
 			<nail x="1173" y="0"/>
@@ -427,7 +479,8 @@ update:</label>
 		<transition>
 			<source ref="id20"/>
 			<target ref="id14"/>
-			<label kind="guard" x="-356" y="-306">process_finished==true &amp;&amp; process_started==false</label>
+			<label kind="guard" x="-356" y="-306">process_finished==true &amp;&amp; process_started==false&amp;&amp; systemtime&gt;=60</label>
+			<label kind="assignment" x="-356" y="-272">systemtime=0</label>
 			<nail x="1283" y="-272"/>
 			<nail x="-374" y="-272"/>
 		</transition>
@@ -438,66 +491,78 @@ update:</label>
 		<transition>
 			<source ref="id18"/>
 			<target ref="id19"/>
+			<label kind="assignment" x="1072" y="0">systemtime++</label>
 		</transition>
 		<transition>
 			<source ref="id13"/>
 			<target ref="id18"/>
+			<label kind="assignment" x="970" y="0">systemtime++</label>
 		</transition>
 		<transition>
 			<source ref="id11"/>
 			<target ref="id11"/>
-			<label kind="synchronisation" x="596" y="238">pomp_klik!</label>
+			<label kind="select" x="596" y="204">nummer: pomp_id</label>
+			<label kind="synchronisation" x="596" y="238">pomp_klik[nummer]!</label>
 			<nail x="646" y="306"/>
 			<nail x="518" y="306"/>
 		</transition>
 		<transition>
 			<source ref="id10"/>
 			<target ref="id10"/>
-			<label kind="synchronisation" x="528" y="-204">pomp_klik!</label>
+			<label kind="select" x="528" y="-238">nummer: pomp_id</label>
+			<label kind="synchronisation" x="528" y="-204">pomp_klik[nummer]!</label>
 			<nail x="510" y="-238"/>
 			<nail x="646" y="-238"/>
 		</transition>
 		<transition>
 			<source ref="id8"/>
 			<target ref="id17"/>
-			<label kind="guard" x="-84" y="34">is_full</label>
 			<label kind="comments" x="-84" y="93">// als sluiskolk vol is dan plaatsnemen in wachtrij</label>
 		</transition>
 		<transition>
 			<source ref="id16"/>
 			<target ref="id9"/>
+			<label kind="synchronisation" x="212" y="-59">shipTrigger[direction]?</label>
+			<label kind="assignment" x="222" y="0">systemtime++</label>
 		</transition>
 		<transition>
 			<source ref="id15"/>
 			<target ref="id16"/>
+			<label kind="assignment" x="86" y="0">systemtime++</label>
 		</transition>
 		<transition>
 			<source ref="id8"/>
 			<target ref="id15"/>
+			<label kind="assignment" x="-84" y="0">systemtime+=1</label>
 		</transition>
 		<transition>
 			<source ref="id14"/>
 			<target ref="id7"/>
+			<label kind="guard" x="-365" y="25">realtime==thresholdDown</label>
+			<label kind="assignment" x="-646" y="8">direction=false &amp;&amp; systemtime++</label>
 		</transition>
 		<transition>
 			<source ref="id12"/>
 			<target ref="id13"/>
+			<label kind="assignment" x="834" y="0">systemtime++</label>
 		</transition>
 		<transition>
 			<source ref="id10"/>
 			<target ref="id12"/>
+			<label kind="assignment" x="613" y="-136">systemtime++</label>
 			<nail x="595" y="-136"/>
 			<nail x="816" y="-136"/>
 		</transition>
 		<transition>
 			<source ref="id11"/>
 			<target ref="id12"/>
+			<label kind="assignment" x="596" y="204">systemtime++</label>
 			<nail x="816" y="204"/>
 		</transition>
 		<transition>
 			<source ref="id9"/>
 			<target ref="id11"/>
-			<label kind="guard" x="324" y="170">!direction,process_started</label>
+			<label kind="guard" x="324" y="170">!direction &amp;&amp;process_started</label>
 			<nail x="306" y="204"/>
 		</transition>
 		<transition>
@@ -509,13 +574,22 @@ update:</label>
 		<transition>
 			<source ref="id7"/>
 			<target ref="id8"/>
-			<label kind="assignment" x="-220" y="0">process_started=true</label>
+			<label kind="assignment" x="-238" y="8">process_started=true</label>
 		</transition>
 	</template>
 	<template>
 		<name>gate</name>
 		<parameter>id_d d</parameter>
 		<declaration>
+/**
+ * Requirements
+ * Een deur is tijdens een actieve pomp altijd gesloten
+ * Een deur kan nooit open staan terwijl het stoplicht voor invaren/uitvaren op rood staat.
+ * Een deur wordt altijd getriggerd vanuit de maincontroller en kan dus oneindig wachten totdat de maincontroller een opdracht geeft.
+ * Een deur kan nooit in een oneindige tussenstand staan zoals: is bezig met openen of is bezig met sluiten.
+ *
+ *
+*/
 // parameter: const gatenr gatenummer
 clock x;
 int[0,1] currentstate;</declaration>
@@ -534,7 +608,7 @@ int[0,1] currentstate;</declaration>
 		<transition>
 			<source ref="id22"/>
 			<target ref="id21"/>
-			<label kind="assignment" x="18" y="0">gate_is_open[entrance_schip] := false</label>
+			<label kind="assignment" x="18" y="0">deur_is_open[entrance_schip] := false</label>
 			<nail x="289" y="0"/>
 			<nail x="280" y="0"/>
 		</transition>
@@ -547,7 +621,7 @@ int[0,1] currentstate;</declaration>
 			<source ref="id24"/>
 			<target ref="id23"/>
 			<label kind="guard" x="60" y="-238">currentstate==entrance_schip</label>
-			<label kind="assignment" x="60" y="-204">gate_is_open[entrance_schip] := true, x:=0</label>
+			<label kind="assignment" x="60" y="-204">deur_is_open[entrance_schip] := true, x:=0</label>
 			<nail x="42" y="-204"/>
 		</transition>
 		<transition>
@@ -562,13 +636,25 @@ int[0,1] currentstate;</declaration>
 		<parameter>kenteken id</parameter>
 		<declaration>
 
+/**
+ * Requirements
+ * Een schip kan maar 1 id/kenteken hebben en dit kenteken komt maar 1 keer in  de cyclus voor, inclusief de beide wachtrijen en de queue van de sluiskolk.
+ * Een schip kan in de sluiskolk niet van richting veranderen
+ * Een schip kan na het doorlopen van de cycli en uitgevaren zijn van de sluis een willekeurige andere positie en richting hebben aangenomen.
+ *
+ *
+ *
+*/
 // const kenteken schipid
 int positie =0;
-clock x;</declaration>
+clock x;
+
+</declaration>
 		<location id="id25" x="0" y="-102">
 			<name x="-10" y="-136">ildle</name>
 		</location>
 		<location id="id26" x="0" y="51">
+			<name x="-10" y="17">varen</name>
 		</location>
 		<init ref="id25"/>
 		<transition>
@@ -591,8 +677,17 @@ positie: int[0,1]</label>
 	</template>
 	<template>
 		<name>pomp</name>
-		<parameter>pomp id</parameter>
+		<parameter>pomp_id id</parameter>
 		<declaration>
+/**
+ * Requirements
+ * Een pomp is actief als de sluisdeuren en de stoplichten op rood zijn.
+ * Een pomp kan nooit 2 cycli achterelkaar water de dezelfde richting pompen.
+ *
+ *
+ *
+ *
+*/
 clock x;
 
 
@@ -691,6 +786,15 @@ bool isHoog()
 	<template>
 		<name>sluiskolk</name>
 		<declaration>
+/**
+ * Requirements
+ * Er kunnen maximaal 2 schepen in de sluis.
+ * De kentekens van schepen in de sluis is nooit gelijk aan een kenteken van een schip in een wachtrij.
+ *
+ *
+ *
+ *
+*/
 // parameter: const stack  q
 
 bool is_full()
@@ -800,9 +904,18 @@ enqueue(i)</label>
 		</transition>
 	</template>
 	<template>
-		<name>Wachtrij</name>
+		<name>wachtrij</name>
 		<parameter>id_q q</parameter>
 		<declaration>
+/**
+ * Requirements
+ * Een wachtrij kan maximaal 2 schepen bevatten.
+ * Een aanvarend schip kan maximaal 1 cyclus in de wachtrij staan.
+ *
+ *
+ *
+ *
+*/
 
 clock x;</declaration>
 		<location id="id33" x="0" y="0">
@@ -835,7 +948,6 @@ clock x;</declaration>
 		<transition>
 			<source ref="id35"/>
 			<target ref="id33"/>
-			<label kind="assignment" x="18" y="102">q[quenummer]--</label>
 			<nail x="238" y="25"/>
 			<nail x="238" y="102"/>
 			<nail x="0" y="102"/>
@@ -843,7 +955,6 @@ clock x;</declaration>
 		<transition>
 			<source ref="id34"/>
 			<target ref="id35"/>
-			<label kind="assignment" x="154" y="0">q[quenummer]++, queue[q],queue_of_ships[q]</label>
 			<nail x="136" y="0"/>
 		</transition>
 		<transition>
@@ -855,7 +966,18 @@ clock x;</declaration>
 	<template>
 		<name>stoplight</name>
 		<parameter>id_s s</parameter>
-		<declaration>// stoplicht 0
+		<declaration>
+/**
+ * Requirements
+ * Een stoplicht is tijdens een actieve pomp altijd op rood.
+ * Een invaar- en uitvaarstoplicht kunnen niet beiden op groen staan, omdat er dan een botsing kan voorkomen.
+ * Een invaar- en uitvaarstoplicht kunnen beiden op rood staan.
+ *
+ *
+ *
+*/
+
+// stoplicht 0
 // stoplicht 1
 // stoplicht 2
 // stoplicht 3
@@ -885,7 +1007,16 @@ clock timer;</declaration>
 	<template>
 		<name>sensor</name>
 		<parameter>id_sensor s</parameter>
-		<declaration>chan send, receive;</declaration>
+		<declaration>
+/**
+ * Requirements
+ * Een sensor kan een kenteken registereren van invarende en uitvarende schpen aan weerszijde van de sluis.
+ * Als een kenten van een schip bekend is bij een sensor dan wordt deze altijd kenbaar gemaakt aan de maincontroller.
+ * Het kan dus nooit voorkomen dat een sluiscontroller een schip in de wachtrij of in de sluiskolk heeft die niet is geconstateerd door een sensor.
+ *
+ *
+ *
+*/</declaration>
 		<location id="id38" x="0" y="0">
 		</location>
 		<init ref="id38"/>
@@ -893,7 +1024,7 @@ clock timer;</declaration>
 			<source ref="id38"/>
 			<target ref="id38"/>
 			<label kind="select" x="144" y="-51">send_ais : kenteken</label>
-			<label kind="synchronisation" x="102" y="-93">send!</label>
+			<label kind="synchronisation" x="102" y="-93">send[send_ais]!</label>
 			<nail x="51" y="-102"/>
 			<nail x="119" y="-42"/>
 		</transition>
@@ -910,7 +1041,7 @@ clock timer;</declaration>
 	<system>// Place template instantiations here.
 //Process = Template();
 // List one or more processes to be composed into a system.
-system maincontroller,gate,pomp,schip,sensor,stoplight;
+system main,gate,pomp,sluiskolk,schip,stoplight;
     </system>
 	<queries>
 		<query>

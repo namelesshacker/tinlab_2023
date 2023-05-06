@@ -38,8 +38,7 @@ bool process_finished = false;
 //const int deuren = 2;
 //typedef int[0,deuren-1] deur;
 //bool gate_is_open[deur];
-//chan open_gate[deur];
-//chan close_gate[deur];
+
 
 
 
@@ -99,7 +98,8 @@ typedef int[0,deuren-1] deur;
 bool deur_is_open[id_d];
 chan deur_openen[id_d];
 chan deur_sluiten[id_d];
-
+chan open_gate[id_d];
+chan close_gate[id_d];
 
 
 
@@ -364,6 +364,13 @@ update:</label>
 	</template>
 	<template>
 		<name>main</name>
+		<declaration>
+
+
+bool isFull()
+{
+    return false;
+}</declaration>
 		<location id="id7" x="-238" y="0">
 			<name x="-248" y="-34">Direction</name>
 			<committed/>
@@ -460,7 +467,6 @@ update:</label>
 		<transition>
 			<source ref="id8"/>
 			<target ref="id17"/>
-			<label kind="guard" x="-84" y="34">is_full</label>
 			<label kind="comments" x="-84" y="93">// als sluiskolk vol is dan plaatsnemen in wachtrij</label>
 		</transition>
 		<transition>
@@ -800,7 +806,7 @@ enqueue(i)</label>
 		</transition>
 	</template>
 	<template>
-		<name>Wachtrij</name>
+		<name>wachtrij</name>
 		<parameter>id_q q</parameter>
 		<declaration>
 
@@ -910,7 +916,7 @@ clock timer;</declaration>
 	<system>// Place template instantiations here.
 //Process = Template();
 // List one or more processes to be composed into a system.
-system maincontroller,gate,pomp,schip,sensor,stoplight;
+system main,gate,pomp,sluiskolk,schip,stoplight;
     </system>
 	<queries>
 		<query>
