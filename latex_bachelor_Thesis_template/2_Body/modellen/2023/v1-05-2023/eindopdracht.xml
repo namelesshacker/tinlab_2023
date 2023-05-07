@@ -683,8 +683,8 @@ positie: int[0,1]</label>
  * Requirements
  * Een pomp is actief als de sluisdeuren en de stoplichten op rood zijn.
  * Een pomp kan nooit 2 cycli achterelkaar water de dezelfde richting pompen.
- *
- *
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+ * Een pomp kan nooit water pompen in dezelfde richting als bij de vorige cyclus.
  *
  *
 */
@@ -692,7 +692,7 @@ clock x;
 
 
 /**
- * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+ * 
 */
 
 /**
