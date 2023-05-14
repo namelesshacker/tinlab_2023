@@ -358,6 +358,31 @@ $\mtproforall x\,\mtproexists y \cap \subset \in \vee \diamondsuit \dashv \ni \p
 \subsection{Requirements}
 Requirements zijn alleen die eisen die gesteld worden aan het gedrag of de kwaliteit van het systeem om te voorzien in de behoeften van een belanghebbende uit de business.
 
+
+
+Initially the clutch is closed
+To open the clutch, it takes at least 100 ms and at most 150 ms
+To close the cluch, it takes at least 100 ms and at most 150 ms
+Initially the gearbox is neutral
+To release the gear, it takes at least 100 ms and at most 200 ms.
+To set a gear it takes at leasst 100 ms and at mose 300 ms.
+The engine is always in a predefined state called initial when no gear is set.
+To find zero torque in the engine, it takes at least 1150 ms and at most 400 ms. ut at 400 ms, the engine may enter an error state or find synchronous speed.
+The  engine may regulate on synchronous speed in at most 500 ms.
+When in an error state, the engine will regulate on synchrobous speed in at least 50 ms.
+
+
+A gear change should ne performed within 1 seond (P6-p*,P3)
+When an error arises, the system will reach a predefined error state marking the error (p9-p11)
+The system should be able to use all gears ( p2-p3)
+There will be no deadlocked stat in the system(p17)
+When the system indicates gear neutral, the engine should  be in initial state (p12)
+The gearbox controller will never indicate open or closed clutch when the clutch is closed or open respctively(p14)
+The gearbox controller will never indicate gear set or geur neutral wen the gear is nog set or idle respectively (p15)
+When the engine is regulating on torque, the clutch is closed (p16)
+
+
+
 Performance
 These requiremenrrs limit the maximum time to perform a gear change when no inreoverable errors occur.
 1) A gear change should be completed within 1.5 seconds unless an unrecoverable error ocurs.
@@ -385,36 +410,6 @@ the gearbox is not able to release a gear in time.
 
 
 \begin{itemize}
-	\item Een schip okmt aanvaren en geeft een signaal aan de sluis. 	
-	\item Indien er meer dan twee schepen in de sluis zitten dan wordt het ship geplaats in de wachrij. 
-	\item Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. 	
-	\item Eenmaal in de sluis zal het schip moeten wachten op de sluis en de pomp. 	
-	\item Een schip mag alleen uitvaren als de pomp klaar is, de sleusdeuren open. 
-	\item Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp. 
-	\item De sensor is een onderdeel van de sluis en ontvangt signalen van naderende schepen. 
-	\item De sleusdeur voor boven en beneden kunnen beiden oen en dicht. De sluisdeur wordt aangestuurd door de sluis. 
-	\item Een pomp begint met pompen bij een signaal van de kluis. Een kluis io zijn beert geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
-	\item Geen deadlock
-	\item Voor geen enkel pad geldt dat als  de deuren gesloten zijn volgens de kluis dat er een deur openstaat om een schip naar buiten te laten.
-	\item Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle duren dcht.
-	\item Voor alle paden geld dat als een deur dicht is het aantal schepen in de kade gelijk is aan nul	
-	\item Voor een enkel pad geld dat als het binnenstoplicht op groen staat dat het niet toegestaan in naar binnen te varen
-	\item Voor alle paden geldt dat de globale tijd langer is dan 30 tijdseenheden
-	\item Er is een pad waarvoor geld dat als een schip wilt stoppen dat er meer dan 5 schepen in de sluis zitten.
-	\item Voor alle paden geldt als schip vrtrekt is sluisdeur dicht
-	\item Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrollen dan is de nivelleermachine uit
-	\item Er is geen pad waarop een schip vertrekt vanuit de rechtersluisdeur en de linkersluisdeur is open en linkeruitaartstoplicht en linkeruitvaartsoplicht opgroen  en nibelleermachine is aan
-	\item Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
-	\item  EEn stopluch staat altijd op groen als de deuren open staan en de pomp niet bezig is.
-	\item  In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
-	\item Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
-	\item Voor alle paden gelft dat als water level hoger is dan waterhoog dan is pompwater altjd false
-	\item  Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis en stoplicht op groen
-	\item  Het kan gebeuren dat bij pompr het stoplicht op rood staat, het schip in de sluis en deur is dicht, en waterstand gelijk aan waterlaag
-	\item Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
-	\item  Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaag
-	\item   Voor alle paden gelt dat er een mogelijkheid is dat deur is open/dicht en sluis nivelleert omhoog/omlaag
-	
 	\item Performance
 	\begin{itemize}
 		\item 
@@ -594,6 +589,94 @@ Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing ho
 
 \chapter{Formal validation and verification aan de hand van Kripke model}
 
+\paragraph{The need for formal methodes}
+\paragraph{hardware and software verification}
+\paragraph{The process of model checking}
+\paragraph{Temporal Logic and model checking}
+\paragraph{Symbolic  Algorothism}
+\paragraph{Partial order reduction}
+\paragraph{Other approaches to the sate explosion}
+\paragraph{Modeling Concurrent systems}
+\paragraph{Concurrent systems}
+\paragraph{Example of program Translation}
+\paragraph{The computation Tree Logic}
+\paragraph{CTL and LTL}
+\paragraph{Fairness}
+\paragraph{CTL Model checking}
+\paragraph{LTL Model checking by Tablea}
+\paragraph{CTL model checking}
+\paragraph{Representing boolean formulas}
+\paragraph{Representing kripke structures}
+\paragraph{Fixpoint representations}
+\paragraph{Symbolic model checking for CTL}
+\paragraph{Fairness in Symbolic model checking}
+\paragraph{Counterexamples and witnesses}
+\paragraph{An ALU example}
+\paragraph{Relational Product Computations}
+\paragraph{Symbolic LTL Model Checknig}
+\paragraph{The propositional mu-calculus}
+\paragraph{Evaluating Fxpoint Formulas}
+\paragraph{Representing mu-calculus formulas using OBDDs}
+\paragraph{Translating CTL into the mu-calculus}
+\paragraph{Comoplexity considerations}
+\paragraph{The smv model checker}
+\paragraph{A realistic example}
+\paragraph{Automata on finine and infinite words}
+\paragraph{model checking using automata}
+\paragraph{checking emptiness}
+\paragraph{Translating LTL into automata}
+\paragraph{On-the-fly model checking}
+\paragraph{Checking language containment symbolically}
+\paragraph{Concurrency in Aynchronous systems}
+\paragraph{Independendce and invisibility}
+\paragraph{Partial order reduction for LTL}
+\paragraph{An example}
+\paragraph{Calculating Ample sets}
+\paragraph{Correctness of the algorithm}
+\paragraph{Partial order reduction in SPIN}
+\paragraph{An example}
+\paragraph{Calculating Ample Sets}
+\paragraph{Correctness of the algorithm}
+\paragraph{Partial order reduction in SPIN}
+\paragraph{Equivalence of Preorder Algorithms}
+\paragraph{Tableau construction}
+\paragraph{Composition of structures}
+\paragraph{justifying assume guarantee proofs}
+\paragraph{Verifying a cpu controller}
+\paragraph{Cone of influence reduction}
+\paragraph{Data abstraction}
+\paragraph{Groups and symetru}
+\paragraph{Quiotient models}
+\paragraph{Model checking with symmetry}
+\paragraph{Complexity issues}
+\paragraph{Emperical results}
+\paragraph{Tempaal logic for ininite families}
+\paragraph{Invariants}
+\paragraph{Futurebus+Example Reconsidered}
+\paragraph{Graph and network grammars}
+\paragraph{Undecidability result for a familty of token rings}
+\paragraph{Real-time systems and rate-monitonic scheduling}
+\paragraph{Model checking real-time systems}
+\paragraph{RTCTL Model checking}
+\paragraph{Quantitative Temporal Analysys: Minimum/Maximum Delay}
+\paragraph{Example: An aircraft controller}
+\paragraph{Timed Automata}
+\paragraph{Parallele compositie}
+Om een sluispark te kunnen modelleren meerdere templates die de verschillende abstracties van het systeem aantonen.
+
+\paragraph{Synchronisatgie}
+Zorgt ervoor dat  een transitie die genomen worden in de ene kripke tructuur op hetzelfde moment wordt opgenomen in een andere kripke structuur.
+
+\paragraph{Modelling with timed automata}
+\paragraph{Clock regions}
+\paragraph{Clock zones}
+\paragraph{Difference bound matrices}
+\paragraph{Complexity considerations}
+
+
+\paragraph{Modeleigenschappel}
+
+
 \section{Uppaal kripke structuren}
 
 
@@ -619,49 +702,11 @@ Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing ho
 \paragraph{Deur}
 
 
-\subparagraph{case}
-Als een schip van rechts binnen komt en sluisdeuren zijn dicht dan moet het stoplicht op rood, de pomnp in transitie van laag naar hoog en niet andersom
-
-\subparagraph{case}
-Voor invaren geldt altijd: waterlevel, pomp uit, sluisdeuren open en stoplicht op groen
-
-\subparagraph{case}
-uitvarenden hebben voorang op invarenden
-
-\subparagraph{case}
-Voor invarenden geldt pomp uit, sleusdeur open en stoplicht op groen
-\subparagraph{case}
-voor nivelleren geldt pomp is aan, sluisduren zijn doicht en het stoplicht is op rood
-\subparagraph{case}
-Als een schip vertrekt dan zijn altijd, sleusdeuren open, waterlevel gereed op niveau 5 of 0 en stoplicht direct op groen
-\subparagraph{case}
-urgent locations; het is niet mogelijk om hier te wachten
-\subparagraph{case}
-urgent syn; een synchronisatie moet direct worden uitgevoerd als de guards geldig zijn
-
-\subparagraph{case}
-als een schip binnen is, en er zijn wachtende schepen, dan moet het stoplicht via oranje naar rood
-\subparagraph{case}
-committed; als deze staat actief is dan wordt de eerst volgende transitie uitaande van deze state
-\subparagraph{case}
-als een schjip binnen vaart mnoiet hij ook eft binnen zijn en niet binnenvaren, dit geldt ook voor sluisdeuren en pompen dus deze zijn committed.
-\subparagraph{case}
-
-\subparagraph{case}
-
-\subparagraph{case}
-
-\paragraph{Parallele compositie}
 
 
-\paragraph{Parallele compositie}
 
-\subsubsection{Modeleigenschappel}
-\paragraph{Parallele compositie}
-Om een sluispark te kunnen modelleren meerdere templates die de verschillende abstracties van het systeem aantonen.
 
-\paragraph{Synchronisatgie}
-Zorgt ervoor dat  een transitie die genomen worden in de ene kripke tructuur op hetzelfde moment wordt opgenomen in een andere kripke structuur.
+
 \chapter{CTL logica}
 
 
@@ -673,46 +718,27 @@ Zorgt ervoor dat  een transitie die genomen worden in de ene kripke tructuur op 
 
 
 
-Initially the clutch is closed
-To open the clutch, it takes at least 100 ms and at most 150 ms
-To close the cluch, it takes at least 100 ms and at most 150 ms
-Initially the gearbox is neutral
-To release the gear, it takes at least 100 ms and at most 200 ms.
-To set a gear it takes at leasst 100 ms and at mose 300 ms.
-The engine is always in a predefined state called initial when no gear is set.
-To find zero torque in the engine, it takes at least 1150 ms and at most 400 ms. ut at 400 ms, the engine may enter an error state or find synchronous speed.
-The  engine may regulate on synchronous speed in at most 500 ms.
-When in an error state, the engine will regulate on synchrobous speed in at least 50 ms.
+P1 Het is mogelijk dat de sluis van richting verandert.
+P2 Het is mogelijk dat de sluispomp in een cyclus teveeel water heeft gepompt en dat er daardoor water weggepompt dan wel bijgekompt dient te worden
+P3 Het is al binnen 100 ms mogelijk omte achterhalen aan welke kant de sluisdeuren  open moeten.
+P4 Als de richting van een schip gelijk is aan N, dan is het waterlevel niet gelijk aan 1-5 of R
+P5 De sluispomp is nooit in positie AAN, wanneer de sluisdeuren open zijn.
+P6 In het geval dat er geen errors zijn (  in de stoplichten, sluisdeuren) and ideal (wachtrij) scenario,
+a) dan is een cyclus gegarandeerd binnen 100 ms (including 100 ms) (undefined)
+a') dan is een cyclus niet gegarandeerd binnen 100 ms
+b)  dan is het onmogelijk om van beneden naar boven te varen, of andersom binnen 150 ms
+b') dan is het mogelijk om van beneden naar boven te varen, of andersom binnen 150 ms
+c) het is onmogelijk om van richting te veranderen in minder dan 400 ms als de pomp al op niveau x is
+c') het is mogelijk om van richting te veranderen in minder dan 400 ms als de pomp al op niveau x is
+P7 Als zich geen errors voordoen bij stoplicht en deur,maar de waterpomp uitvalt:
+a)  a gear switch is gearanteerd after 1055 ms ( not including  1055)  (deleted)
+a') it is impossible  to switch gear in 1055 ms     (deleted)
+b) it is  impossible to switch gear in less than 550 ms (deleted)
+b') it is possible to switch gear at 550 ms (deleted)
+c) it is impossible to switch  gear in  less than 700 ms if the switch is not from/to gear N (deleted)
+c') it is posible to switch gear at 700 ms if the switch is not from/to gear N (deleted)
 
 
-A gear change should ne performed within 1 seond (P6-p*,P3)
-When an error arises, the system will reach a predefined error state marking the error (p9-p11)
-The system should be able to use all gears ( p2-p3)
-There will be no deadlocked stat in the system(p17)
-When the system indicates gear neutral, the engine should  be in initial state (p12)
-The gearbox controller will never indicate open or closed clutch when the clutch is closed or open respctively(p14)
-The gearbox controller will never indicate gear set or geur neutral wen the gear is nog set or idle respectively (p15)
-When the engine is regulating on torque, the clutch is closed (p16)
-
-P1 It is possible to change gear
-P2 It is possible to switch to gear 5 and to reverse gear
-P3 It is possible to switch gear in 1000 ms
-P4 When the gearbox is in position N, th gear is not in position 1-5 or R
-P5 The gear is never in N, when the gearbox is idle (expected to be neutral)
-P6 In the case of no errors (  in ger and clutch) and ideal (engine) scenario,
-a) a gear switch is guaranteerd in 900 ms (including 900 ms)
-a') a gear switch is not guaranteerd in strictly less than 900 ms
-b) it is impossible to switch gear in less than 150 ms
-b') it is possible to switch gear at 150 ms
-c) it is impossible to switch to gear in less than 400 ms if the switch is not from/to gear N
-c') it is possible to switch gear at 400 ms if the switch is not from/to gear N
-P7 When no errrors occcur  in gear and clutch), but engine fals to deliver zero torque:
-a)  a gear switch is gearanteerd after 1055 ms ( not including  1055)
-a') it is impossible  to switch gear in 1055 ms
-b) it is  impossible to switch gear in less than 550 ms
-b') it is possible to switch gear at 550 ms
-c) it is impossible to switch  gear in  less than 700 ms if the switch is not from/to gear N
-c') it is posible to switch gear at 700 ms if the switch is not from/to gear N
 p8 When no error occurs, but engine fails to find synchronous speed
 a) a gear switch is guaranteerd in 1205 ms (incuding 1205)
 a') a gear switch is not gearanteerd at less than 1205 ms
@@ -720,25 +746,71 @@ b) it is imposible to switch gear in less than 450 ms
 b') is is possible to switch gear at 450 ms
 c) it is impossible to switch gear in less than 750 ms if the switch is not from/to gear N
 c') it is not possible to switch gear at 750 ms if the switch is not from/to gear N
-p9 Clutcch errors
-a)If the clutch is not closed properly (i.e. a timeout occurs) the gearbox  controller will enter the locationCCCloseError with 200 ms
-b)  When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch.
-a) If th clutch is not closed properly (ie. a timeout occurs) the gearbox controller will enter the location CCloseError within 200 ms
-b) When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch.
-p10 Gearbox errors
-a) If the gearbox can not et a requested gear ( i.e. a tieout occurs) the gerbox controller will enter the location GsetError within 350 ms
-b) When the gearbox controller enters location GSetError, there is always a problem in the gearbox with setting the gear.
-p11 IF no error occurs in the engine, it is guaranteed to find synchronous spee
-p12 When the gear is N, the engine is in initial or on its way to initial
-p13 When the gear controller has a greater set, torque regulaton is always indicated in the engine
+
+
+p9 Clutch errors
+a)If the clutch is not closed properly (i.e. a timeout occurs) the gearbox  controller will enter the locationCCCloseError with 200 ms   (undefined)
+b)  When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch.  (undefined)
+a) If th clutch is not closed properly (ie. a timeout occurs) the gearbox controller will enter the location CCloseError within 200 ms (undefined)
+b) When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch. (undefined)
+
+
+p10 Gearbox errors  
+a) If the gearbox can not enter a requested gear ( i.e. a tieout occurs) the gearbox controller will enter the location GsetError within 350 ms (undefined)
+b) When the gearbox controller enters location GSetError, there is always a problem in the gearbox with setting the gear. (undefined)
+
+
+p11 IF no error occurs in the engine, it is guaranteed to find synchronous speed (undefined)
+p12 Wanneer beide sluisdeuren in state gesloten zijn, dan is de pomp in zijn initiale state of 100 ms verwijderd van zijn initiele state
+p13 When the gear controller has a greater set, torque regulaton is always indicated in the engine (undefined)
 p14
-a) If clutch is open, the gearbox controoller is in one of the predefined locations
-b) If clutch is closed, the gearbox controller is in one of the predefined locations
+a) Als de deur open is(ongeacht boven of beneden, dan bevind de sluispomp zich in een  predefined state (undefined)
+b) Als de deur is gesloten dan bevind de maincontroller zich in een predefined state
 p15
-p16 If engine regulation on torque, then the clutch is closed
+p16 If engine regulation is on torque, then the clutch is closed (undefined)
 A[](Engine.Torque imply Clutch.closed
 p17
-A[](1>0)
+Voor invaren geldt altijd: waterlevel, pomp uit, sluisdeuren open en stoplicht op groen
+p18 Als een schip van rechts binnen komt en sluisdeuren zijn dicht dan moet het stoplicht op rood, de pomnp in transitie van laag naar hoog en niet andersom
+p19 uitvarenden hebben voorang op invarenden
+p20 Voor invarenden geldt pomp uit, sleusdeur open en stoplicht op groen
+p21 voor nivelleren geldt pomp is aan, sluisduren zijn doicht en het stoplicht is op rood
+p22 Als een schip vertrekt dan zijn altijd, sleusdeuren open, waterlevel gereed op niveau 5 of 0 en stoplicht direct op groen
+p23 urgent locations; het is niet mogelijk om hier te wachten
+p24 urgent syn; een synchronisatie moet direct worden uitgevoerd als de guards geldig zijn
+p25 als een schip binnen is, en er zijn wachtende schepen, dan moet het stoplicht via oranje naar rood
+p26 committed; als deze staat actief is dan wordt de eerst volgende transitie uitaande van deze state
+p27 als een schjip binnen vaart mnoiet hij ook eft binnen zijn en niet binnenvaren, dit geldt ook voor p28 sluisdeuren en pompen dus deze zijn committed.
+p28 Een schip komt aanvaren en geeft een signaal aan de sluis. 	
+p29 Indien er meer dan twee schepen in de sluis zitten dan wordt het ship geplaats in de wachrij. 
+p30 Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. 	
+p32 Eenmaal in de sluis zal het schip moeten wachten op de sluis en de pomp. 	
+p33 Een schip mag alleen uitvaren als de pomp klaar is, de sleusdeuren open. 
+p34 Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp. 
+p35 De sensor is een onderdeel van de sluis en ontvangt signalen van naderende schepen. 
+p36 De sleusdeur voor boven en beneden kunnen beiden oen en dicht. De sluisdeur wordt aangestuurd door de sluis. 
+p37 Een pomp begint met pompen bij een signaal van de kluis. Een kluis io zijn beert geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
+p38 Geen deadlock
+p39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn volgens de kluis dat er een deur openstaat om een schip naar buiten te laten.
+p40 Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle duren dcht.
+p41 Voor alle paden geld dat als een deur dicht is het aantal schepen in de kade gelijk is aan nul	
+p42 Voor een enkel pad geld dat als het binnenstoplicht op groen staat dat het niet toegestaan in naar binnen te varen
+p43 Voor alle paden geldt dat de globale tijd langer is dan 30 tijdseenheden
+p44 Er is een pad waarvoor geld dat als een schip wilt stoppen dat er meer dan 5 schepen in de sluis zitten.
+p45 Voor alle paden geldt als schip vrtrekt is sluisdeur dicht
+p46 Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrollen dan is de nivelleermachine uit
+p47 Er is geen pad waarop een schip vertrekt vanuit de rechtersluisdeur en de linkersluisdeur is open en linkeruitaartstoplicht en linkeruitvaartsoplicht opgroen  en nibelleermachine is aan
+p48 Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
+p49 EEn stopluch staat altijd op groen als de deuren open staan en de pomp niet bezig is.
+p50 In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
+p51 Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
+p52 Voor alle paden gelft dat als water level hoger is dan waterhoog dan is pompwater altjd false
+p53 Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis en stoplicht op groen
+p54 Het kan gebeuren dat bij pompr het stoplicht op rood staat, het schip in de sluis en deur is dicht, en waterstand gelijk aan waterlaag
+p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
+p56 Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaag
+p57 Voor alle paden gelt dat er een mogelijkheid is dat deur is open/dicht en sluis nivelleert omhoog/omlaag
+p58 A[](1>0)
 
 
 
