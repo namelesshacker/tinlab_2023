@@ -1,0 +1,2093 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  19 MAY 2023 22:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./verslag.tex
+(verslag.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-09-28>
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+\stockwidth=\dimen139
+\stockheight=\dimen140
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/10/04 3.81 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen143
+\l@unhyphenated=\language79
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/babel-dutch\dutch.ldf
+Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
+Package babel Info: Making " an active character on input line 127.
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/nl\babel
+-dutch.tex
+Package babel Info: Importing font and identification data for dutch
+(babel)             from babel-nl.ini. Reported on input line 11.
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box51
+) (verslag.aux (1_Intro/intro.aux) (2_Body/body.aux)
+(4_Conclusions/conclusions.aux) (Appendix/Appendix.aux))
+\openout1 = `verslag.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count196
+\scratchdimen=\dimen144
+\scratchbox=\box52
+\nofMPsegments=\count197
+\nofMParguments=\count198
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen145
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
+\everyMPtoPDFconversion=\toks18
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+<logohr.png, id=1, 255.20343pt x 255.20343pt>
+File: logohr.png Graphic file (type png)
+<use logohr.png>
+Package pdftex.def Info: logohr.png  used on input line 25.
+(pdftex.def)             Requested size: 113.81102pt x 113.81244pt.
+ [1
+
+{C:/Users/gally/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logohr.png
+>] (verslag.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+ [1] [2] [3] [4])
+\tf@toc=\write3
+\openout3 = `verslag.toc'.
+
+ [5] [6]
+\openout2 = `1_Intro/intro.aux'.
+
+ (1_Intro/intro.tex
+! Undefined control sequence.
+l.1 \chapter
+            {Inleiding}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[7
+
+] [8]) [9]
+Underfull \hbox (badness 10000) in paragraph at lines 49--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--61
+
+ []
+
+[10
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+[11]
+\openout2 = `2_Body/body.aux'.
+
+ (2_Body/body.tex
+! Undefined control sequence.
+l.6 \chapter
+            {Methodologie}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 19.
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]\OT1/cmr/m/n/8 rapport-veiligheid-van-op-afstand-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]\OT1/cmr/m/n/8 richtlijnen-vaarwegen-2017 []tcm21-
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 34--34
+[]\OT1/cmr/m/n/8 duurzaamheid []bij []de []ontwikkeling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\OT1/cmr/m/n/8 De []deltawerken []Cultuurhistorie
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]\OT1/cmr/m/n/8 Capaciteitsanalyse []van []de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]\OT1/cmr/m/n/8 prinses[]margrietsluis []in []lemmer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]\OT1/cmr/m/n/8 bijlagerapport []c []- []analyse
+ []
+
+
+Overfull \hbox (44.39883pt too wide) in paragraph at lines 50--50
+[]\OT1/cmr/m/n/8 https://wiki.woudagemaal.nl/w/index.php/Sluizen| 
+ []
+
+! Undefined control sequence.
+l.60 \chapter
+             {Theoretisch kader}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[12
+
+]
+! Undefined control sequence.
+l.88 \url
+         {https://www.dalton.nl/literatuur/item/252-de-automatiseringsparadox}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.89 \url
+         {https://www.debicker.eu/de-automatiseringsparadox/}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.90 \url
+         {https://vse.nl/de-paradox-van-de-industriele-automatisering/}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.91 \url
+         {https://automatie-pma.com/nieuws/industriele-automatiseringsparadox}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.92 \url
+         {https://blog.xot.nl/2016/11/21/slimme-apparaten-maken-ons-dom-en-k...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (88.91739pt too wide) in paragraph at lines 88--93
+[]\OT1/cmss/m/n/10 https://www.dalton.nl/literatuur/item/252-de-automatiserings
+paradox https://www.debicker.eu/de-
+ []
+
+
+Overfull \hbox (14.33385pt too wide) in paragraph at lines 88--93
+\OT1/cmss/m/n/10 automatiseringsparadox/ https://vse.nl/de-paradox-van-de-indus
+triele-automatisering/
+ []
+
+
+Overfull \hbox (126.0563pt too wide) in paragraph at lines 88--93
+\OT1/cmss/m/n/10 https://automatie-pma.com/nieuws/industriele-automatiseringspa
+radox https://blog.xot.nl/2016/11/21/slimme-
+ []
+
+[13] [14] [15] [16]
+Overfull \hbox (7.73558pt too wide) in paragraph at lines 189--190
+[]\OT1/cmss/m/n/10 AND/OR graaf wordt ge-bruikt voor de do-cu-men-ta-tie van re
+-fi-ne-ment/decompositie
+ []
+
+[17] [18]
+! Misplaced alignment tab character &.
+l.233 ...ty.net/database/record.php?id=19921004-2&
+                                                  lang=nl
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.237 ...w.researchgate.net/publication/254815008_
+                                                  Rampen_regels_richtlijnen
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.238 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (142.30623pt too wide) in paragraph at lines 235--238
+\OT1/cmss/m/n/10 https://www.enschede.nl/inhoud/commissie-oosting https://www.p
+olitie.nl/binaries/content/assets/politie/wob/00-
+ []
+
+
+Overfull \hbox (324.43843pt too wide) in paragraph at lines 235--238
+\OT1/cmss/m/n/10 landelijk/vuurwerkramp-enschede/bijlagen-rapport-vuurwerkramp-
+enschede.pdf https://www.researchgate.net/publication/254815008$[]\OML/cmm/m/it
+/10 ampen[]egels[]ichtlijnen$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.242 https://catsr.vse.gmu.edu/SYST460/TA1951_
+                                               AccidentReport.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.243 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (92.9586pt too wide) in paragraph at lines 241--243
+\OT1/cmss/m/n/10 in-struc-ties van de lucht-ver-keers-lei-ding/ https://catsr.v
+se.gmu.edu/SYST460/TA1951$[]\OML/cmm/m/it/10 ccidentReport:pdf$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 ...b.iaea.org/MTCD/publications/PDF/Pub913e_
+                                                  web.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (93.42676pt too wide) in paragraph at lines 251--253
+\OT1/cmss/m/n/10 Met brand en eks-plo-sie tot ge-volg. https://www-pub.iaea.org
+/MTCD/publications/PDF/Pub913e$[]\OML/cmm/m/it/10 eb:pdf$ 
+ []
+
+[19] [20]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.313 ...ty.net/investigation/cvr/transcripts/cvr_
+                                                  py764.php
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.315 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (50.01195pt too wide) in paragraph at lines 313--315
+[]\OT1/cmss/m/n/10 https://aviation-safety.net/investigation/cvr/transcripts/cv
+r$[]\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 764\OML/cmm/m/it/10 :phphttps \OT1/cmr/m/
+n/10 : \OML/cmm/m/it/10 ==aviation \OMS/cmsy/m/n/10 ^^@
+ []
+
+[21]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+354.
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.370 ...w.researchgate.net/publication/348325979_
+                                                  Beirut_Explosion_the_full_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.372 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (22.38953pt too wide) in paragraph at lines 369--372
+[]\OT1/cmss/m/n/10 https://www.hrw.org/report/2021/08/03/they-killed-us-inside/
+investigation-august-
+ []
+
+
+Overfull \hbox (94.53656pt too wide) in paragraph at lines 369--372
+\OT1/cmss/m/n/10 4-beirut-blast https://www.researchgate.net/publication/348325
+979$[]\OML/cmm/m/it/10 eirut[]xplosion[]he[]ull[]toryhttps \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (128.0766pt too wide) in paragraph at lines 369--372
+\OML/cmm/m/it/10 ==reliefweb:int=sites=reliefweb:int=files=resources=CaseStudy[
+]eirutExplosion[]echBioHazardsweb:pdf$ 
+ []
+
+[22]
+Overfull \hbox (13.47275pt too wide) in paragraph at lines 394--404
+[]\OT1/cmss/m/n/10 persuasive tech-no-logy https://www.humanetech.com/youth/per
+suasive-technology
+ []
+
+
+Overfull \hbox (19.94496pt too wide) in paragraph at lines 394--404
+\OT1/cmss/m/n/10 https://www.minddistrict.com/blog/persuasive-technology-new-in
+sights-in-behavioural-
+ []
+
+
+Overfull \hbox (7.66733pt too wide) in paragraph at lines 394--404
+\OT1/cmss/m/n/10 change https://www.sciencedirect.com/book/9781558606432/persua
+sive-technology
+ []
+
+
+Overfull \hbox (253.69553pt too wide) in paragraph at lines 394--404
+\OT1/cmss/m/n/10 https://spectrum.ieee.org/how-persuasive-technology-can-change
+-your-habits https://www.frontiersin.org/articles/10.3389/frai.2020.00007/full
+ []
+
+
+Overfull \hbox (28.16722pt too wide) in paragraph at lines 394--404
+\OT1/cmss/m/n/10 https://psmag.com/environment/captology-fogg-invisible-manipul
+ative-power-persuasive-
+ []
+
+
+Overfull \hbox (181.75098pt too wide) in paragraph at lines 394--404
+\OT1/cmss/m/n/10 technology-81301 https://www.makeuseof.com/what-is-persuasive-
+technology/ https://lib.ugent.be/catalog/rug01:001235489
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.410 ...ads/2018/03/Procesreglement-e-Court-2017_
+                                                  20180201.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.411 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (43.40338pt too wide) in paragraph at lines 408--411
+\OT1/cmss/m/n/10 niet od-ner-zocht https://www.njb.nl/blogs/a-court-with-no-fac
+e-and-no-place/ http://www.e-
+ []
+
+
+Overfull \hbox (3.77846pt too wide) in paragraph at lines 408--411
+\OT1/cmss/m/n/10 court.nl/wp-content/uploads/2018/03/Procesreglement-e-Court-20
+17$[]\OT1/cmr/m/n/10 0180201\OML/cmm/m/it/10 :pdf$ 
+ []
+
+[23]
+
+LaTeX Warning: Citation `noauthor_2022-nm' on page 24 undefined on input line 4
+25.
+
+[24]
+! Undefined control sequence.
+l.491 \chapter
+              {Ondeerzoeksresultaten}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (44.12572pt too wide) in paragraph at lines 497--505
+\OT1/cmss/m/n/10 Rijks-wa-ter-staat wacht-tij-den voor de scheep-vaart voorko h
+ttps://www.gww-bouw.nl/artikel/de-
+ []
+
+[25]
+Overfull \hbox (2.0562pt too wide) in paragraph at lines 518--520
+\OT1/cmss/m/n/10 achtergrond/hacker-dringt-door-in-controlekamer-waterwerk-cybe
+rterrorist-kan-ons-
+ []
+
+
+Overfull \hbox (117.84807pt too wide) in paragraph at lines 521--523
+[]\OT1/cmss/m/n/10 deltawerken https://www.magazinesrijkswaterstaat.nl/bereikba
+arzeeland/2021/01/krammersluizencomplex-
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.528 .../nw-31400-7-3715235/nieuws/cybersecurity_
+                                                  vitale_waterwerken_niet_wa...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.529 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (46.86177pt too wide) in paragraph at lines 531--533
+\OT1/cmss/m/n/10 https://www.rtlnieuws.nl/nieuws/nederland/artikel/3758966/cybe
+rbeveiliging-waterschappen-
+ []
+
+
+Overfull \hbox (17.9866pt too wide) in paragraph at lines 534--536
+[]\OT1/cmss/m/n/10 Rittal doet on-der-zoek naarop af-stand besdien-bare slui-ze
+n https://expert.rittal.nl/wp-
+ []
+
+
+Overfull \hbox (19.77837pt too wide) in paragraph at lines 541--543
+\OT1/cmss/m/n/10 https://www.vtmgroep.nl/blog/waterwerken-in-nederland-onvoldoe
+nde-beveiligd-tegen-
+ []
+
+
+Overfull \hbox (91.55609pt too wide) in paragraph at lines 544--547
+[]\OT1/cmss/m/n/10 Veiligheid op het wa-ter ^^Sen op het land Ge-bruik van lamp
+-be-wa-king http://www.wesemann.nl/nl/nieuws-
+ []
+
+[26]
+! Undefined control sequence.
+l.553 \chapter
+              {Uppaal source}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.560 \chapter
+              {Het sluismodel}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[27] [28]
+<2_Body/Figures//sluismodel.jpg, id=108, 432.61626pt x 234.8775pt>
+File: 2_Body/Figures//sluismodel.jpg Graphic file (type jpg)
+<use 2_Body/Figures//sluismodel.jpg>
+Package pdftex.def Info: 2_Body/Figures//sluismodel.jpg  used on input line 695
+.
+(pdftex.def)             Requested size: 281.19724pt x 152.66856pt.
+ [29 <./2_Body/Figures//sluismodel.jpg>] [30]
+! Undefined control sequence.
+l.740 \chapter
+              {Formal description of the system}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<2_Body/Figures//sluispassage.png, id=116, 490.83376pt x 689.57625pt>
+File: 2_Body/Figures//sluispassage.png Graphic file (type png)
+<use 2_Body/Figures//sluispassage.png>
+Package pdftex.def Info: 2_Body/Figures//sluispassage.png  used on input line 7
+42.
+(pdftex.def)             Requested size: 319.03815pt x 448.21924pt.
+[31] [32 <./2_Body/Figures//sluispassage.png>] [33]
+! Undefined control sequence.
+l.814 \chapter
+              {Formal validation and verification aan de hand van Kripke model}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[34] [35] [36] [37]) [38]
+\openout2 = `4_Conclusions/conclusions.aux'.
+
+ (4_Conclusions/conclusions.tex
+! Undefined control sequence.
+l.1 \chapter
+            {Conclusions}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25 \chapter
+             {Discussie}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[39
+
+
+
+
+]) [40]
+
+! LaTeX Error: Environment appendices undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 	\begin{appendices}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\openout2 = `Appendix/Appendix.aux'.
+
+(Appendix/Appendix.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 https://na.eventscloud.com/file_
+                                    uploads/aed4bc20e84d2839b83c18bcba7e2876...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.18 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (76.27068pt too wide) in paragraph at lines 8--18
+[]\OT1/cmss/m/n/10 https://na.eventscloud.com/file$[]\OML/cmm/m/it/10 ploads=ae
+d\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 bc\OT1/cmr/m/n/10 20\OML/cmm/m/it/10 e\OT1/c
+mr/m/n/10 84\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 2839\OML/cmm/m/it/10 b\OT1/cmr/m/
+n/10 83\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 bcba\OT1/cmr/m/n/10
+ 7\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 2876[]\OML/cmm/m/it/10 wens\OT1/cmr/m/n/10 
+1\OML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (9.81349pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 ==www:wired:com=\OT1/cmr/m/n/10 2016\OML/cmm/m/it/10 =\OT1/cmr
+/m/n/10 03\OML/cmm/m/it/10 =inside \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 cunnin
+g \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 unprecedented \OMS/cmsy/m/n/10 ^^@ \OML
+/cmm/m/it/10 hack \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ukraines \OMS/cmsy/m/n/
+10 ^^@
+ []
+
+
+Overfull \hbox (91.06609pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 power \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 grid=https \OT1/cm
+r/m/n/10 : \OML/cmm/m/it/10 ==www:boozallen:com=content=dam=boozallen=documents
+=\OT1/cmr/m/n/10 2016\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 09\OML/cmm/m/it/10 =ukra
+ine \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (15.73709pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 report \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 when \OMS/cmsy/m/
+n/10 ^^@ \OML/cmm/m/it/10 the \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 lights \OMS
+/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 went \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ou
+t:pdfhttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:reuters:com=article=us \OMS
+/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (2.89459pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 ==www:mandiant:com=resources=blog=ukraine \OMS/cmsy/m/n/10 ^^@
+ \OML/cmm/m/it/10 and \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 sandworm \OMS/cmsy/
+m/n/10 ^^@ \OML/cmm/m/it/10 teamhttps \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (153.90518pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 ==www:ifri:org=sites=default=files=atoms=files=desarnaud[]yber
+[]ttacks[]nergy[]nfrastructures[]\OT1/cmr/m/n/10 017[]\OML/cmm/m/it/10 :pdfhttp
+s \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (0.80202pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 ==ris:utwente:nl=ws=files=\OT1/cmr/m/n/10 6028066\OML/cmm/m/it
+/10 =\OT1/cmr/m/n/10 3 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 s\OT1/cmr/m/n/10 2
+[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 9780128015957000227\O
+ML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (42.70598pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 ==repositorio \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 aberto:up:
+pt=bitstream=\OT1/cmr/m/n/10 10216\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 119066\OML/
+cmm/m/it/10 =\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 315683\OML/cmm/
+m/it/10 :pdfhttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:diva \OMS/cmsy/m/n/1
+0 ^^@
+ []
+
+
+Overfull \hbox (159.06279pt too wide) in paragraph at lines 8--18
+\OML/cmm/m/it/10 portal:org=smash=get=diva\OT1/cmr/m/n/10 2 : 1046339\OML/cmm/m
+/it/10 =FULLTEXT\OT1/cmr/m/n/10 01\OML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/n/10 : 
+\OML/cmm/m/it/10 ==www:vice:com=en=article=zmeyg\OT1/cmr/m/n/10 8\OML/cmm/m/it/
+10 =ukraine \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (71.1675pt too wide) in paragraph at lines 30--37
+\OT1/cmss/m/n/10 attack-ukraine/ https://www.boozallen.com/content/dam/boozalle
+n/documents/2016/09/ukraine-
+ []
+
+
+Overfull \hbox (50.61168pt too wide) in paragraph at lines 30--37
+\OT1/cmss/m/n/10 report-when-the-lights-went-out.pdf https://www.reuters.com/ar
+ticle/us-ukraine-cybersecurity-
+ []
+
+
+Overfull \hbox (78.08423pt too wide) in paragraph at lines 30--37
+\OT1/cmss/m/n/10 sandworm/u-s-firm-blames-russian-sandworm-hackers-for-ukraine-
+outage-idUSKBN0UM00N20160108
+ []
+
+
+Overfull \hbox (145.99986pt too wide) in paragraph at lines 30--37
+\OT1/cmss/m/n/10 https://www.reuters.com/article/us-ukraine-crisis-cyber-idUSKB
+N15U2CN https://theconversation.com/cyberattack-
+ []
+
+
+Overfull \hbox (155.97296pt too wide) in paragraph at lines 30--37
+\OT1/cmss/m/n/10 on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-was-don
+e-52802 https://jsis.washington.edu/news/cyberattack-
+ []
+
+
+Overfull \hbox (69.1675pt too wide) in paragraph at lines 38--40
+\OT1/cmss/m/n/10 https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf
+ https://www.dragos.com/wp-
+ []
+
+[41
+
+
+
+
+]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.42 ...sites/default/files/atoms/files/desarnaud_
+                                                  cyber_attacks_energy_infra...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.44 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (5.02838pt too wide) in paragraph at lines 41--44
+\OT1/cmss/m/n/10 https://www.politico.eu/article/ukraine-cyber-war-frontline-ru
+ssia-malware-attacks/
+ []
+
+
+Overfull \hbox (141.29382pt too wide) in paragraph at lines 41--44
+\OT1/cmss/m/n/10 https://www.ifri.org/sites/default/files/atoms/files/desarnaud
+$[]\OML/cmm/m/it/10 yber[]ttacks[]nergy[]nfrastructures[]\OT1/cmr/m/n/10 017[]\
+OML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (1.75063pt too wide) in paragraph at lines 48--52
+\OT1/cmss/m/n/10 https://www.sans.org/blog/confirmation-of-a-coordinated-attack
+-on-the-ukrainian-
+ []
+
+
+Overfull \hbox (13.75064pt too wide) in paragraph at lines 48--52
+\OT1/cmss/m/n/10 power-grid/ https://arstechnica.com/information-technology/201
+7/06/crash-override-
+ []
+
+
+Overfull \hbox (50.16727pt too wide) in paragraph at lines 48--52
+\OT1/cmss/m/n/10 malware-may-sabotage-electric-grids-but-its-no-stuxnet/ https:
+//www.darkreading.com/threat-
+ []
+
+
+Overfull \hbox (14.94484pt too wide) in paragraph at lines 48--52
+\OT1/cmss/m/n/10 intelligence/first-malware-designed-solely-for-electric-grids-
+caused-2016-ukraine-outage
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.53 https://en.wikipedia.org/wiki/2015_
+                                        Ukraine_power_grid_hack
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.56 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (40.95021pt too wide) in paragraph at lines 53--56
+\OT1/cmss/m/n/10 https://en.wikipedia.org/wiki/2015$[]\OML/cmm/m/it/10 kraine[]
+ower[]rid[]ackhttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:cisa:gov=news \OMS
+/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (126.60605pt too wide) in paragraph at lines 53--56
+\OML/cmm/m/it/10 events=alerts=\OT1/cmr/m/n/10 2017\OML/cmm/m/it/10 =\OT1/cmr/m
+/n/10 06\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 12\OML/cmm/m/it/10 =crashoverride \OM
+S/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 malwarehttps \OT1/cmr/m/n/10 : \OML/cmm/m/it
+/10 ==rhebo:com=en=service=glossar=industroyer \OMS/cmsy/m/n/10 ^^@
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.59 https://na.eventscloud.com/file_
+                                     uploads/aed4bc20e84d2839b83c18bcba7e287...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.61 \subsubsection
+                   {Oplossingen}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (61.27068pt too wide) in paragraph at lines 59--61
+\OT1/cmss/m/n/10 https://na.eventscloud.com/file$[]\OML/cmm/m/it/10 ploads=aed\
+OT1/cmr/m/n/10 4\OML/cmm/m/it/10 bc\OT1/cmr/m/n/10 20\OML/cmm/m/it/10 e\OT1/cmr
+/m/n/10 84\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 2839\OML/cmm/m/it/10 b\OT1/cmr/m/n/
+10 83\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 bcba\OT1/cmr/m/n/10 7
+\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 2876[]\OML/cmm/m/it/10 wens\OT1/cmr/m/n/10 1\
+OML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (1.93231pt too wide) in paragraph at lines 59--61
+\OML/cmm/m/it/10 ==www:boozallen:com=content=dam=boozallen=documents=\OT1/cmr/m
+/n/10 2016\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 09\OML/cmm/m/it/10 =ukraine \OMS/cm
+sy/m/n/10 ^^@
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.62 https://na.eventscloud.com/file_
+                                     uploads/aed4bc20e84d2839b83c18bcba7e287...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.64 \subsubsection
+                   {Aanbevelingen}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (61.27068pt too wide) in paragraph at lines 62--64
+\OT1/cmss/m/n/10 https://na.eventscloud.com/file$[]\OML/cmm/m/it/10 ploads=aed\
+OT1/cmr/m/n/10 4\OML/cmm/m/it/10 bc\OT1/cmr/m/n/10 20\OML/cmm/m/it/10 e\OT1/cmr
+/m/n/10 84\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 2839\OML/cmm/m/it/10 b\OT1/cmr/m/n/
+10 83\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 bcba\OT1/cmr/m/n/10 7
+\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 2876[]\OML/cmm/m/it/10 wens\OT1/cmr/m/n/10 1\
+OML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/n/10 :
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.109 https://na.eventscloud.com/file_
+                                      uploads/aed4bc20e84d2839b83c18bcba7e28...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111 \subsubsection
+                    {spearfishing}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (61.27068pt too wide) in paragraph at lines 68--111
+\OT1/cmss/m/n/10 https://na.eventscloud.com/file$[]\OML/cmm/m/it/10 ploads=aed\
+OT1/cmr/m/n/10 4\OML/cmm/m/it/10 bc\OT1/cmr/m/n/10 20\OML/cmm/m/it/10 e\OT1/cmr
+/m/n/10 84\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 2839\OML/cmm/m/it/10 b\OT1/cmr/m/n/
+10 83\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 bcba\OT1/cmr/m/n/10 7
+\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 2876[]\OML/cmm/m/it/10 wens\OT1/cmr/m/n/10 1\
+OML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (1.93231pt too wide) in paragraph at lines 68--111
+\OML/cmm/m/it/10 ==www:boozallen:com=content=dam=boozallen=documents=\OT1/cmr/m
+/n/10 2016\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 09\OML/cmm/m/it/10 =ukraine \OMS/cm
+sy/m/n/10 ^^@
+ []
+
+[42]
+! Misplaced alignment tab character &.
+l.127 ...FDAD1BD940260EF12B11?doi=10.1.1.548.7490&
+                                                  amp;rep=rep1&amp;type=pdf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.127 ...EF12B11?doi=10.1.1.548.7490&amp;rep=rep1&
+                                                  amp;type=pdf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.129 ...w.researchgate.net/publication/333671061_
+                                                  Attacking_IEC-60870-5-104_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.140 ...w.blackhat.com/us-17/briefings/schedule/#
+                                                  industroyercrashoverride-z...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Misplaced alignment tab character &.
+l.141 ...Download.aspx?DocumentID=9AKK107045A1003&
+                                                  amp;LanguageCode=en&amp;Do...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.141 ...ntID=9AKK107045A1003&amp;LanguageCode=en&
+                                                  amp;DocumentPartId=&amp;Ac...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.141 ...&amp;LanguageCode=en&amp;DocumentPartId=&
+                                                  amp;Action=Launch
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.155 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (292.19586pt too wide) in paragraph at lines 127--155
+\OT1/cmss/m/n/10 https://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0513
+EED48102FDAD1BD940260EF12B11?doi=10.1.1.548.7490amp;rep=rep1amp;type=pdf
+ []
+
+
+Overfull \hbox (172.02527pt too wide) in paragraph at lines 127--155
+\OT1/cmss/m/n/10 https://scialert.net/fulltext/?doi=tasr.2014.396.405 https://w
+ww.researchgate.net/publication/333671061$[]\OML/cmm/m/it/10 ttacking[]EC \OMS/
+cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (213.87476pt too wide) in paragraph at lines 127--155
+\OT1/cmr/m/n/10 60870 \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 5 \OMS/cmsy/m/n/10 ^
+^@ \OT1/cmr/m/n/10 104[]\OML/cmm/m/it/10 CADA[]ystemshttps \OT1/cmr/m/n/10 : \O
+ML/cmm/m/it/10 ==www:welivesecurity:com=wp \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/1
+0 content=uploads=\OT1/cmr/m/n/10 2017\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 06\OML/
+cmm/m/it/10 =Win\OT1/cmr/m/n/10 32[]\OML/cmm/m/it/10 ndustroyer:pdfhttps \OT1/c
+mr/m/n/10 :
+ []
+
+
+Overfull \hbox (16.05869pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 ==blog:nettedautomation:com=\OT1/cmr/m/n/10 2017\OML/cmm/m/it/
+10 =https \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==arxiv:org=pdf=\OT1/cmr/m/n/10 20
+01\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 02925\OML/cmm/m/it/10 :pdfhttps \OT1/cmr/m/
+n/10 :
+ []
+
+
+Overfull \hbox (142.2459pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 ==dl:acm:org=doi=fullHtml=\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 :
+\OT1/cmr/m/n/10 1145\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 3381038\OML/cmm/m/it/10 h
+ttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:win:tue:nl= setalle=\OT1/cmr/m/n/
+10 2017[]\OML/cmm/m/it/10 auri[]ncryption:pdfhttp \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (42.93593pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 ==www:connectivity\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ir:co:uk=a
+rticle=\OT1/cmr/m/n/10 175490\OML/cmm/m/it/10 =IEC \OMS/cmsy/m/n/10 ^^@ \OT1/cm
+r/m/n/10 62351 \OMS/cmsy/m/n/10 ^^@ ^^@\OML/cmm/m/it/10 Secure \OMS/cmsy/m/n/10
+ ^^@ \OML/cmm/m/it/10 communication \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (18.97447pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 in \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 the \OMS/cmsy/m/n/10 
+^^@ \OML/cmm/m/it/10 energy \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 industry:aspx
+https \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:virsec:com=resources=blog=virsec
+ \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (70.79735pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 ==dreamlab:net=en=blog=post=fuzzing \OMS/cmsy/m/n/10 ^^@ \OML/
+cmm/m/it/10 ics \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 protocols=https \OT1/cmr/
+m/n/10 : \OML/cmm/m/it/10 ==www:blackhat:com=docs=us \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (34.08658pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 Control \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Networks:pdfhttp
+s \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==blog:checkpoint:com=research=crashoverri
+de=https \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (0.11124pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 ==www:blackhat:com=us \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 17\
+OML/cmm/m/it/10 =briefings=schedule=industroyercrashoverride \OMS/cmsy/m/n/10 ^
+^@
+ []
+
+
+Overfull \hbox (36.6312pt too wide) in paragraph at lines 127--155
+\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 AKK\OT1/cmr/m/n/10 107045\OML/cmm/m/it/10 A\O
+T1/cmr/m/n/10 1003\OML/cmm/m/it/10 amp\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 Langua
+geCode \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 enamp\OT1/cmr/m/n/10 ; \OML/cmm/m/it/
+10 DocumentPartId \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 amp\OT1/cmr/m/n/10 ; \OML/
+cmm/m/it/10 Action \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (25.48827pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 Launchhttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==iiot \OMS/cms
+y/m/n/10 ^^@ \OML/cmm/m/it/10 world:com=ics \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/
+10 security=cybersecurity=five \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 cybersecur
+ity \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (49.96284pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 run:htmlhttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:paloalt
+onetworks:com=blog=\OT1/cmr/m/n/10 2017\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 06\OML
+/cmm/m/it/10 =crashoverrideindustroyer \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (127.11266pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 protections \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 palo \OMS/cm
+sy/m/n/10 ^^@ \OML/cmm/m/it/10 alto \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 netwo
+rks \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 customers=https \OT1/cmr/m/n/10 : \OM
+L/cmm/m/it/10 ==www:webopedia:com=definitions=crashoverride \OMS/cmsy/m/n/10 ^^
+@
+ []
+
+
+Overfull \hbox (75.18195pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 profiles=ics \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 malware \OM
+S/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 variants=crashoverridehttps \OT1/cmr/m/n/10 
+: \OML/cmm/m/it/10 ==www:nixu:com=blog=crashoverride \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (75.12192pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 threat \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 electricity \OMS/
+cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 networkshttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/
+10 ==www:virusbulletin:com=virusbulletin=\OT1/cmr/m/n/10 2019\OML/cmm/m/it/10 =
+\OT1/cmr/m/n/10 03\OML/cmm/m/it/10 =vb\OT1/cmr/m/n/10 2018 \OMS/cmsy/m/n/10 ^^@
+
+ []
+
+
+Overfull \hbox (103.9811pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 ==en:wikipedia:org=wiki=Crash[]verride[]etworkhttps \OT1/cmr/m
+/n/10 : \OML/cmm/m/it/10 ==en:wikipedia:org=wiki=Industroyerhttps \OT1/cmr/m/n/
+10 :
+ []
+
+
+Overfull \hbox (132.71156pt too wide) in paragraph at lines 127--155
+\OML/cmm/m/it/10 russian \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 hackinghttps \OT
+1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:nixu:com=fi=node=\OT1/cmr/m/n/10 53\OML/c
+mm/m/it/10 https \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==control:com=forums=thread
+s=comparison \OMS/cmsy/m/n/10 ^^@
+ []
+
+[43]
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 \usepackage
+                 {pgf}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.213 \setform
+              {field1 = G. Wales,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[][][][]
+ []
+
+
+Overfull \hbox (21.79999pt too wide) in paragraph at lines 215--215
+[][] 
+ []
+
+[44]
+Overfull \hbox (21.79999pt too wide) in paragraph at lines 215--215
+[][] 
+ []
+
+
+Overfull \hbox (21.79999pt too wide) in paragraph at lines 215--216
+[][] 
+ []
+
+[45]
+Overfull \hbox (452.99304pt too wide) in paragraph at lines 250--250
+[] \OT1/cmtt/m/n/10 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.l
+aag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.s
+topgaphigh2))[] 
+ []
+
+
+Overfull \hbox (699.74089pt too wide) in paragraph at lines 250--250
+[] \OT1/cmtt/m/n/10 A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Openin
+g_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Slui
+s.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 250--250
+[] \OT1/cmtt/m/n/10 (Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||D
+euren.hoog_open)[] 
+ []
+
+[46] [47] [48]
+
+LaTeX Warning: Citation `locke_2020' on page 49 undefined on input line 362.
+
+
+LaTeX Warning: Citation `gnsguides' on page 49 undefined on input line 367.
+
+[49] [50]
+! Undefined control sequence.
+l.430  \chapter
+               {Testresultaten CTL logica}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment gather* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.435  	\begin{gather*}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.436  		D=\Set
+               {x\in\nat}{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.436  		D=\Set{x\in
+                    \nat}{1\le x\le 100}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.436  		D=\Set{x\in\nat
+                        }{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.436  		D=\Set{x\in\nat}
+                         {1\le x\le 100}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.436  		D=\Set{x\in\nat}{1\le x\le 100}\\
+                                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.436  		D=\Set{x\in\nat}{1\le x\le 100}\\
+                                          
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.436  		D=\Set{x\in\nat}{1\le x\le 100}\\
+                                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.437  		D=\Set
+               [\big]{x\in\nat}{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.437  		D=\Set[\big]{x\in
+                          \nat}{1\le x\le 100}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.437  		D=\Set[\big]{x\in\nat
+                              }{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.437  		D=\Set[\big]{x\in\nat}
+                               {1\le x\le 100}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.437  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
+                                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.437  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
+                                                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.437  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
+                                                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.438  		D=\Set
+               [\Big]{x\in\nat}{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.438  		D=\Set[\Big]{x\in
+                          \nat}{1\le x\le 100}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.438  		D=\Set[\Big]{x\in\nat
+                              }{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.438  		D=\Set[\Big]{x\in\nat}
+                               {1\le x\le 100}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
+                                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.438  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
+                                                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.438  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
+                                                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.439  		D=\Set
+               [\bigg]{x\in\nat}{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.439  		D=\Set[\bigg]{x\in
+                           \nat}{1\le x\le 100}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.439  		D=\Set[\bigg]{x\in\nat
+                               }{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.439  		D=\Set[\bigg]{x\in\nat}
+                                {1\le x\le 100}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.439  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.439  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
+                                                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.439  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
+                                                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.440  		D=\Set
+               [\Bigg]{x\in\nat}{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.440  		D=\Set[\Bigg]{x\in
+                           \nat}{1\le x\le 100}\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.440  		D=\Set[\Bigg]{x\in\nat
+                               }{1\le x\le 100}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.440  		D=\Set[\Bigg]{x\in\nat}
+                                {1\le x\le 100}\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.440  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.440  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
+                                                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.440  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
+                                                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.441  		D=\Set
+               *{x\in\nat}{1\le x\le \frac{200}{2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.441  		D=\Set*{x\in
+                     \nat}{1\le x\le \frac{200}{2}}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.441  		D=\Set*{x\in\nat
+                         }{1\le x\le \frac{200}{2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.441  		D=\Set*{x\in\nat}
+                          {1\le x\le \frac{200}{2}}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{center} on input line 434 ended by \end{gather*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.442  	\end{gather*}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.442  	\end{gather*}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.442  	\end{gather*}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.452  $L\stock
+                a$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (13.25859pt too wide) in paragraph at lines 449--453
+\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^R \OML/cmm/m/it/10 SxSis
+eentransitierelatiedietotaalmoetzij; datbetekent; datvoorelkestates \OMS/cmsy/m
+/n/10 2
+ []
+
+! Undefined control sequence.
+l.454  $\forall x\,\exists y \implies
+                                      $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \mtproforall 
+                             
+l.456  $\mtproforall
+                     x\,\mtproexists y \cap \subset \in \vee \diamondsuit \d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.456  $\mtproforall x\,\mtproexists
+                                     y \cap \subset \in \vee \diamondsuit \d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (32.57272pt too wide) in paragraph at lines 461--474
+ [] 
+ []
+
+! Undefined control sequence.
+l.501  \chapter
+               {Time bound derivation}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Info: File `mydata.csv' already exists on the system.
+            Not generating it from this source.
+
+
+Overfull \hbox (300.74437pt too wide) in paragraph at lines 533--533
+[]  \OT1/cmtt/m/n/10 In welke staat de automaat zich ook bevindt, in alle richt
+ingen kom je vroeg of laat een state tegen, waarin p geldig is.[] 
+ []
+
+[51]
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 540--540
+[]  \OT1/cmtt/m/n/10 Ookal treedt p nooit p volgens de logica klopt het dan dat
+ q volgt uit p.[] 
+ []
+
+! Undefined control sequence.
+l.543  \VerbatimInput
+                     {mydata.csv}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[52]
+Overfull \hbox (458.243pt too wide) in paragraph at lines 587--587
+[]  \OT1/cmtt/m/n/10 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.
+laag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.
+stopgaphigh2))[] 
+ []
+
+
+Overfull \hbox (704.99084pt too wide) in paragraph at lines 587--587
+[]  \OT1/cmtt/m/n/10 A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Openi
+ng_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Slu
+is.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))[] 
+ []
+
+
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 587--587
+[]  \OT1/cmtt/m/n/10 (Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||
+Deuren.hoog_open)[] 
+ []
+
+[53]
+Overfull \hbox (458.243pt too wide) in paragraph at lines 772--772
+[]  \OT1/cmtt/m/n/10 Als het schip boven is, dan is waterlvel gelijk aan hoog, 
+filling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty v
+alve is dicht.[] 
+ []
+
+
+Overfull \hbox (353.24391pt too wide) in paragraph at lines 772--772
+[]  \OT1/cmtt/m/n/10 Schip is in waterlock, waterlevel is hoog, filling valve i
+s dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
+ []
+
+
+Overfull \hbox (384.74364pt too wide) in paragraph at lines 772--772
+[]  \OT1/cmtt/m/n/10 Schip is dan laag, waterlevel gelijk aan laag, filling val
+ve is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.
+[] 
+ []
+
+
+Overfull \hbox (437.24318pt too wide) in paragraph at lines 772--772
+[]  \OT1/cmtt/m/n/10 Als schip beneden is dan is waterlevel gelijk aan laag, fi
+lling valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valv
+e is open.[] 
+ []
+
+
+Overfull \hbox (416.24336pt too wide) in paragraph at lines 772--772
+[]  \OT1/cmtt/m/n/10 Schip is in water lock, waterlevel is laag, flilling valve
+ is open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is d
+icht,.[] 
+ []
+
+
+Overfull \hbox (405.74345pt too wide) in paragraph at lines 772--772
+[]  \OT1/cmtt/m/n/10 Schip is dan hoog, waterlevel is gelijk aan hoog, filling 
+valve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is d
+icht[] 
+ []
+
+[54] [55] [56]
+! Undefined control sequence.
+l.775  \chapter
+               {Queries}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[57]
+Overfull \hbox (458.243pt too wide) in paragraph at lines 826--826
+[]  \OT1/cmtt/m/n/10 Als het schip boven is, dan is waterlvel gelijk aan hoog, 
+filling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty v
+alve is dicht.[] 
+ []
+
+
+Overfull \hbox (353.24391pt too wide) in paragraph at lines 826--826
+[]  \OT1/cmtt/m/n/10 Schip is in waterlock, waterlevel is hoog, filling valve i
+s dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
+ []
+
+
+Overfull \hbox (384.74364pt too wide) in paragraph at lines 826--826
+[]  \OT1/cmtt/m/n/10 Schip is dan laag, waterlevel gelijk aan laag, filling val
+ve is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.
+[] 
+ []
+
+
+Overfull \hbox (437.24318pt too wide) in paragraph at lines 826--826
+[]  \OT1/cmtt/m/n/10 Als schip beneden is dan is waterlevel gelijk aan laag, fi
+lling valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valv
+e is open.[] 
+ []
+
+
+Overfull \hbox (416.24336pt too wide) in paragraph at lines 826--826
+[]  \OT1/cmtt/m/n/10 Schip is in water lock, waterlevel is laag, flilling valve
+ is open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is d
+icht,.[] 
+ []
+
+
+Overfull \hbox (405.74345pt too wide) in paragraph at lines 826--826
+[]  \OT1/cmtt/m/n/10 Schip is dan hoog, waterlevel is gelijk aan hoog, filling 
+valve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is d
+icht[] 
+ []
+
+[58]
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.844  \usepackage
+                  {pgf}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+\setform ->\pgfqkeys 
+                     {/form }
+l.846  \setform
+               {field1/.store in=\fieldi,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.846  \setform{field1/.store in=\fieldi
+                                        ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.847  	field2/.store in=\fieldii
+                                 ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \myform already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.893  }
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[59]
+! Undefined control sequence.
+l.920  \chapter
+               {Testresultaten}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (28.8337pt too wide) in paragraph at lines 928--942
+[] 
+ []
+
+! Undefined control sequence.
+l.956  \chapter
+               {Security}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [60]
+
+! LaTeX Error: \begin{document} ended by \end{appendices}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 	\end{appendices}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(verslag.bbl) [61
+
+
+] (verslag.aux (1_Intro/intro.aux) (2_Body/body.aux)
+(4_Conclusions/conclusions.aux) (Appendix/Appendix.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3151 strings out of 475385
+ 60499 string characters out of 2776908
+ 434284 words of memory out of 3000000
+ 24459 multiletter control sequences out of 15000+600000
+ 474984 words of font info for 47 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,12n,67p,1253b,396s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk> <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcss1000.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gally/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gally/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/gally/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gal
+ly/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Us
+ers/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mss10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmssbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/gally/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on verslag.pdf (62 pages, 398204 bytes).
+PDF statistics:
+ 284 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
