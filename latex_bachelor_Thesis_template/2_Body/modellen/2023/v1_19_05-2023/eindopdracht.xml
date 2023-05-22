@@ -690,6 +690,48 @@ update:</label>
 		<location id="id27" x="0" y="306">
 		</location>
 		<init ref="id23"/>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id26"/>
+			<nail x="34" y="0"/>
+			<nail x="272" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+			<nail x="-68" y="102"/>
+			<nail x="-68" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id27"/>
+			<nail x="-68" y="170"/>
+			<nail x="-68" y="272"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+			<nail x="25" y="306"/>
+			<nail x="272" y="306"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id25"/>
+			<nail x="68" y="272"/>
+			<nail x="68" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id26"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id23"/>
+		</transition>
 	</template>
 	<template>
 		<name>Scheduler</name>
