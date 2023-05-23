@@ -249,7 +249,9 @@ https://control.com/forums/threads/comparison-between-iec60870-5-103-and-modbus-
  A[]not deadlock
   \end{verbatim}
  P1 Het is mogelijk dat de sluis van richting verandert.
+  E<> !Main.Direction
  P2 Het is mogelijk dat de sluispomp in een cyclus teveeel water heeft gepompt en dat er daardoor water weggepompt dan wel bijgekompt dient te worden
+ E<> main.waterlevel
  P3 Het is al binnen 100 ms mogelijk omte achterhalen aan welke kant de sluisdeuren  open moeten.
  P4 Als de richting van een schip gelijk is aan N, dan is het waterlevel niet gelijk aan 1-5 of R
  P5 De sluispomp is nooit in positie AAN, wanneer de sluisdeuren open zijn.
@@ -292,54 +294,93 @@ https://control.com/forums/threads/comparison-between-iec60870-5-103-and-modbus-
  
  p11 IF no error occurs in the engine, it is guaranteed to find synchronous speed (undefined)
  p12 Wanneer beide sluisdeuren in state gesloten zijn, dan is de pomp in zijn initiale state of 100 ms verwijderd van zijn initiele state
+ A[]
  p13 When the gear controller has a greater set, torque regulaton is always indicated in the engine (undefined)
+  A[]
  p14
  a) Als de deur open is(ongeacht boven of beneden, dan bevind de sluispomp zich in een  predefined state (undefined)
+ A[] (gate(0).open||gate(1).open) -> (main.pomp_idle || main.pomp2_idle)
  b) Als de deur is gesloten dan bevind de maincontroller zich in een predefined state
+ A[] gate.closed -> main.idle
  p15
  p16 If engine regulation is on torque, then the clutch is closed (undefined)
  A[](Engine.Torque imply Clutch.closed
- p17
- Voor invaren geldt altijd: waterlevel, pomp uit, sluisdeuren open en stoplicht op groen
+ p17Voor invaren geldt altijd: waterlevel, pomp uit, sluisdeuren open en stoplicht op groen
+ A[] main.s5 -> main.waterlevel_laag && idle_pomp1 && gate(0).open && gate(1).open && (stoplight(0).green && stoplight(1).green || stoplight(2).green && stoplight(3).green )
  p18 Als een schip van rechts binnen komt en sluisdeuren zijn dicht dan moet het stoplicht op rood, de pomnp in transitie van laag naar hoog en niet andersom
+ A[] !main.direction -> forall (i:id_d) forall (j:id_s) gate(i).closed && stoplight.rood && main.rd_1
  p19 uitvarenden hebben voorang op invarenden
+ 
  p20 Voor invarenden geldt pomp uit, sleusdeur open en stoplicht op groen
+ A[] main.s6 -> gate(0).open && gate(1).open && stoplight(0).groen && stoplight(1).groen
  p21 voor nivelleren geldt pomp is aan, sluisduren zijn doicht en het stoplicht is op rood
+ A[] (main.rn1 || main.rn2) -> forall (i:id_d) forall(j:id_s )gate(i).closed stoplight(j).rood
  p22 Als een schip vertrekt dan zijn altijd, sleusdeuren open, waterlevel gereed op niveau 5 of 0 en stoplicht direct op groen
+ A[] main.s12 ->
  p23 urgent locations; het is niet mogelijk om hier te wachten
  p24 urgent syn; een synchronisatie moet direct worden uitgevoerd als de guards geldig zijn
  p25 als een schip binnen is, en er zijn wachtende schepen, dan moet het stoplicht via oranje naar rood
+ A[]
  p26 committed; als deze staat actief is dan wordt de eerst volgende transitie uitaande van deze state
  p27 als een schjip binnen vaart mnoiet hij ook eft binnen zijn en niet binnenvaren, dit geldt ook voor p28 sluisdeuren en pompen dus deze zijn committed.
- p28 Een schip komt aanvaren en geeft een signaal aan de sluis. 	
+ A[]
+ p28 Een schip komt aanvaren en geeft een signaal aan de sluis. 
+ A[]	
  p29 Indien er meer dan twee schepen in de sluis zitten dan wordt het ship geplaats in de wachrij. 
+ A[]  Queue.list[N-1] == 2 -> (Sluiskolk.list[N]==1 ||Sluiskolk.list[N]==2)
  p30 Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. 	
+ A[]  main.s6 && schip.varen ->  Queue.list[N-1] <2
  p32 Eenmaal in de sluis zal het schip moeten wachten op de sluis en de pomp. 	
+  A[] Queue.list[N-1] == 2 
  p33 Een schip mag alleen uitvaren als de pomp klaar is, de sleusdeuren open. 
+  A[] schip.varen && main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
  p34 Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp. 
+  A[]
  p35 De sensor is een onderdeel van de sluis en ontvangt signalen van naderende schepen. 
- p36 De sleusdeur voor boven en beneden kunnen beiden oen en dicht. De sluisdeur wordt aangestuurd door de sluis. 
- p37 Een pomp begint met pompen bij een signaal van de kluis. Een kluis io zijn beert geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
+  A[]
+ p36 De sleusdeur voor boven en beneden kunnen beiden open en dicht. De sluisdeur wordt aangestuurd door de sluis. 
+  A[]
+ p37 Een pomp begint met pompen bij een signaal van de sluis. Een sluis op zijn beurt geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
+  A[] pomp.pomp_active -> main.s6 && forall(i:id_d) gate(i).closed
  p38 Geen deadlock
  p39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn volgens de kluis dat er een deur openstaat om een schip naar buiten te laten.
- p40 Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle duren dcht.
- p41 Voor alle paden geld dat als een deur dicht is het aantal schepen in de kade gelijk is aan nul	
- p42 Voor een enkel pad geld dat als het binnenstoplicht op groen staat dat het niet toegestaan in naar binnen te varen
+ A[] not forall(i:id_d) gate.closed ->(main.s12||main.s13)
+ p40 Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle deuren dcht.
+ A[] main.s6 -> forall(gate(0).closed
+  p41 Voor alle paden geld dat als een deur dicht is het aantal schepen in de kade gelijk is aan nul	
+ A[]
+ p42 Voor geen enkel pad geld dat als het binnenstoplicht op groen staat dat het niet toegestaan in naar binnen te varen
+ E<> stoplight(2).groen || stoploght(3).groen -> main.s6
  p43 Voor alle paden geldt dat de globale tijd langer is dan 30 tijdseenheden
+ A[] main.s13-> main.processtime>30
  p44 Er is een pad waarvoor geld dat als een schip wilt stoppen dat er meer dan 5 schepen in de sluis zitten.
+ E<>
  p45 Voor alle paden geldt als schip vrtrekt is sluisdeur dicht
+ A[]
  p46 Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrollen dan is de nivelleermachine uit
+ A[]
  p47 Er is geen pad waarop een schip vertrekt vanuit de rechtersluisdeur en de linkersluisdeur is open en linkeruitaartstoplicht en linkeruitvaartsoplicht opgroen  en nibelleermachine is aan
+ E<>
  p48 Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
+ E<>
  p49 EEn stopluch staat altijd op groen als de deuren open staan en de pomp niet bezig is.
+ A[]
  p50 In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
+ A[] not
  p51 Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
+ A[] (main.waterlevel<waterlaag) -> (!pompwaterweg||pompwaterweg==false)
  p52 Voor alle paden gelft dat als water level hoger is dan waterhoog dan is pompwater altjd false
+ A[]
  p53 Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis en stoplicht op groen
+ A[] not
  p54 Het kan gebeuren dat bij pompr het stoplicht op rood staat, het schip in de sluis en deur is dicht, en waterstand gelijk aan waterlaag
+ E<>
  p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
+ E<> main.rn1||main.rn2 -> gate(0).closed &&main.waterlevel==waterlaag
  p56 Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaag
+ E<> main.rn1||main.rn2 -> main.waterlevel== main.waterlaag
  p57 Voor alle paden gelt dat er een mogelijkheid is dat deur is open/dicht en sluis nivelleert omhoog/omlaag
+ A[] gate(0).open && ()main.direction ==0||main.direction==1)
  p58 A[](1>0)
  
  
