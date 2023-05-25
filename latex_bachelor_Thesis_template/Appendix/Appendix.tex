@@ -356,15 +356,15 @@ https://control.com/forums/threads/comparison-between-iec60870-5-103-and-modbus-
  p44 Er is een pad waarvoor geld dat als een schip wilt stoppen dat er meer dan 5 schepen in de sluis zitten.
  E<>
  p45 Voor alle paden geldt als schip vrtrekt is sluisdeur dicht
- A[]
- p46 Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrollen dan is de nivelleermachine uit
+ A[] 
+ p46 Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrokken dan is de nivelleermachine uit
  A[]
  p47 Er is geen pad waarop een schip vertrekt vanuit de rechtersluisdeur en de linkersluisdeur is open en linkeruitaartstoplicht en linkeruitvaartsoplicht opgroen  en nibelleermachine is aan
  E<>
  p48 Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
- E<>
- p49 EEn stopluch staat altijd op groen als de deuren open staan en de pomp niet bezig is.
- A[]
+ E<> 
+ p49 EEn stoplich staat altijd op groen als de deuren open staan en de pomp niet bezig is.
+ A[] forall(i:id_s) stoplight.groen -> gate(0).open && gate(1).open && (main.pomp1_idle || main.pomp2_idle)
  p50 In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
  A[] not
  p51 Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
@@ -372,9 +372,9 @@ https://control.com/forums/threads/comparison-between-iec60870-5-103-and-modbus-
  p52 Voor alle paden gelft dat als water level hoger is dan waterhoog dan is pompwater altjd false
  A[]
  p53 Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis en stoplicht op groen
- A[] not
+ A[] not main.rn1 || main.rn2 -> gate(0).open && gate(1).open && Queue.list[N-1] == 0 && ((stoplight(0).groen||stoplight(1).groen) ||(stoplight(3).groen &&stoplight(4).groen))
  p54 Het kan gebeuren dat bij pompr het stoplicht op rood staat, het schip in de sluis en deur is dicht, en waterstand gelijk aan waterlaag
- E<>
+ E<> (main.blocked1 || main.blocked2) -> Queue.list[N-1] >0 && gate(0).closed && gate(1).closed && main.waterlevel==main.waterlevel_laag
  p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
  E<> main.rn1||main.rn2 -> gate(0).closed &&main.waterlevel==waterlaag
  p56 Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaag
