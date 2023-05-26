@@ -29,9 +29,7 @@
 	\newpage
 	\tableofcontents
 	
-	\newpage
-	\section{Inleiding}
-	In deze case study wordt %insert inleiding hier
+
 	
 	% The preliminary pages
 	%\include{0_Prelim/prelim}        
@@ -43,66 +41,7 @@
 	\include{1_Intro/intro}
 	\cleardoublepage
 	
-	\section{Requirements}
-	
-	\subsection{Requirements}
-	Directe requirements van opdrachtgever:\\
-	Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renova-tie van een groot aantal sluizen noodzakelijk is.  Een eerste verkenning heeft onsgeleerd dat het gecombineerd renoveren en automatiseren van het Nederlandsesluizenpark een aanzienlijke verbetering kan opleveren t.a.v.:\\
-	- veiligheid\\
-	- efficientie\\
-	- capaciteit\\
-	- onderhoudskosten\\
-	- duurzaamheid\\
-	In het kader van het onlangs afgesloten klimaatakkoord heeft de Nederlandseoverheid  daarom  besloten  over te gaan tot een ingrijpende renovatie van dediverse sluizen die ons land rijk is. Op het ministerie van infrastructuur en waterstaat is helaas onvoldoende kennis van ict en systemen aanwezig om eenen ander uit te voeren. Wij vragen u een model (of een onderling samenhangend aantal modellen)aan  te leveren, opdat ontwerpen van verschillende, volledig geautomatiseerde sluizen in de toekomst gerealiseerd kunnen worden.\\\\
-	Eigen inbreng van deze requirements:\\
-	Wij gaan er van uit dat het volgende van ons verwacht wordt:\\
-	Maak een model dat als template dient gebruikt te worden voor het automatiseren van verschillende soorten sluizen. Verder moeten overwegingen gemaakt worden die goed onderbouwd zijn.\\\\ Aangezien er van ons alleen een model verwacht wordt, zullen wij ons geheel focussen op de fundamentele werking van de sluis en hierbij zullen wij ons dus niet bezig  houden met fysieke eisen zoals veiligheidshekjes en borden. Onze focus ligt geheel op de werking van de sluis; elke state waar de sluis zich in mag bevinden en welke beslissingen de sluis moet maken op basis van bestaande protocols en benoemde eisen. \\\\
-	Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze bestaande uit de sluisdeuren, de sloplichten, de waterpomp en de boten.\\
-	
-	\subsection{Sluisdeuren}
-	De sluisdeuren.
-	
-	\subsection{Stoplichten}
-	De stoplichten
-	
-	\subsection{Waterpomp}
-	De waterpomp
-	
-	\subsection{Boten}
-	De meeste sluizen die zich in Nederland bevinden zijn schutsluizen; deze sluizen zijn bedoeld om boten, zowel vrachtschepen als pleziervaart afhangend van de locatie van de sluis, te verwerken. Om deze reden gaan wij deze dus ook verwerken in ons model. Mocht een sluis niet bedoeld zijn om boten te verwerken, dan zou dit model alsnog toegepast kunnen worden opp desbetreffende sluis.
-	Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke sluis.  Sinds wij een template maken, hoeven wij geen rekening te hounden met hoe de schepen in de queue komen. Het enige wat wij hoeven te doen, is de data verwerken.
-	
-	Overige einsen op basis van eigen inbreng:\\
-	
-	
-	
-	\subsection{Specificaties}
-	Vanuit deze requiremenst kunnen verdere specificaties opgesteld worden.
-	
-	Even ter duidelijkheid: een requirement beschrijft wat een programma moet doen, en een specificatie beschrijft hoe men van plan is om deze requirements te realiseren.//
-	Voorbeeld:// Requirement is dat de sluis meerdere boten moet kunnen verwerken; de specificatie zou hier zijn fdat de sluis minstens twee keer zo groot moet zijn dan de grootste boot die door de sluis kan.
-	
-	\subsection{Notities die verwerkt moeten worden}
-	
-	moet de intitial state altijd in een loop zitten in uppaal?
-	wat zijn urgent channels?
-	rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
-	
-	
-	gesprek wessel:
-	main controller slim dat direction een bool is. 
-	pomp is te slim, zoiu alleen maar aan of uit moeten gaan, of nog weg en in pompen maar meer niet. niets met waterlevel en aantal schepen.
-	schip: niet doen. als een schip zich aanmeld, dan gebeuren er dingen, maar gaat hij naar binnen? je weet niet wat dat schip gaat doen want menselijk gedrag. beter niet het schip uitgebreid maken, maar eerder de sluis. te veel aannames.
-	
-	wessel model: alleen als wachtrij vol zit, doet de sluis iets.
-	deur heeft een parameter zodat er meerdere deuren in de simulator neergezet kunnnen worden. ook bij wachtrij.
-	
-	stoplichen kunnen er wel in maar als je simpeler wilt, gaan die als eerste weg.
-	zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
-	rampen alleen voor persoonlijk verslag
-	
-	
-	
+
 
 	
 	% -------------------------------------

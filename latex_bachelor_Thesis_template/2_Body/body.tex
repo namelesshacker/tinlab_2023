@@ -57,26 +57,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Theoretisch kader}
+\chapter{}
 
-\section{Preliminaries}
+\section{Theoretisch kader}
 
-\subsection{Times transition systems and timed traces}
+In het eerste hoofdstuk is duidelijk geworden wat de onderzoeksvraag is, namelijk ‘Hoe kan een geautomatiseerde sluis worden gemodeleerd met oog op ontwikkel- en onderhoudskosten,veiligheid, efficientie en capaciteit’. Door de toenemende complexiteit van systemen is het gebruik van modellen en de toepassing van timebased model checking  op industriele controle systemen een manier van modelleren van het systeem en de requirements zodat er een bijdagre kan worden geleverd aan de acceptatie van  simulatie-/modeltechniek voor de industrie.(‘https://link.springer.com/article/10.1007/s10626-020-00314-0’, 2020). Of dit ook het geval is bij het modellereren van sluizen is nu de vraag.
+De verschillende factoren en achtergronden die hiermee samenhangen met het modelleren van een sluiszullen in dit hoofdstuk
+toegelicht worden. Bovendien worden er hypotheses gevormd die de basis vormen voor de
+beantwoording van de onderzoeksvraag. 
 
-\subsection{Wat is dit}
 
-\subsection{Welke de definities worden gebruikt}
 
-\subsection{Timed automata with data variables}
-\subsection{Networks of automata}
-
-\subsection{A logic for safety and bounded response time properties}
-
-\subsection{Wat was onze logica bij aanvang van het project}
-
-\subsection{syntax and semantics}
-\subsection{Welke de definities worden gebruikt}
-\subsection{Verifying bounded response tume properties by reachability analysis}
 \subsection{Beperking uppaal ten overstaan van ons model}
 Welke versie van Uppaal gebruiken wij en welke beperkingen heeft deze software voor het bereiken van onze doelstelling
 
@@ -548,7 +539,7 @@ Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoud
 
 
 
-\section{tesla crash report}
+\subsubsection{tesla crash report}
 Door een softwarefout zijn er situaties ontstaan waarin het systeem informatie een onvoldoende informatie positie had om de juiste beslissingen te maken. Of dat de informatieverwerking niet juist was.
 
 
@@ -649,7 +640,7 @@ At 8:43, having struggled to keep the plane's nose from diving further by manual
 https://www.hindawi.com/journals/ijae/2014/472395/ 
 
 
-\subsection{ethiek}
+\subsubsection{ethiek}
 
 
 Ethiek 
@@ -669,7 +660,7 @@ https://cyberpsychology.eu/article/view/12270
 
 
 
-\section{ecourt in nederlandse rechtspraak}
+\subsubsection{ecourt in nederlandse rechtspraak}
 niet odnerzocht
 https://www.njb.nl/blogs/a-court-with-no-face-and-no-place/ 
 http://www.e-court.nl/wp-content/uploads/2018/03/Procesreglement-e-Court-2017_20180201.pdf
@@ -753,7 +744,7 @@ https://www.youtube.com/watch?v=PC2ekl4SaNA
 
 
 
-\section{Ondeerzoeksresultaten naar sluisbeveiliging}
+\subssection{Ondeerzoeksresultaten naar sluisbeveiliging}
 
 
 
@@ -820,10 +811,63 @@ http://www.wesemann.nl/nl/nieuws-en-pers/274-veiligheid-op-het-water-en-op-het-l
 \thispagestyle{myheadings}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Requirements}
+\subsection{Inleiding}
+Om voor mezelf een beeld te krijgen van wat een sluis is en hoe deze moet werken is er een aantal foto's verzameld van sluizen.	
+	
+	\includegraphics[scale=0.65]{sluismodel.jpg}
+	
+	
+Uit deze afbeelding blijkt het volgende:
+Hoogteverschip t.o.v NAP
+2 sluisdeuren
+stoplichten
+Uit een onderzoek naar de werking van de verschillende sluizen in nederland wordt rekening gehouden met de aanmelding van sluizen en de gebruiktstijd van sluizen.
+
+Met de aanmelding van schepen wordt omschreven welke acties er door de schipper de sluismeeter moet worden gedaan om de positie, tijdstip en lengte van een invarendship te communiveren.
+
+Met de gebruikstijd wordt  de daadwerkelijke tijd aangeduid waarin het scheepsverkeer/waterverkeer gebruik kan maken van de sluis en onder welke voorwaarden zoals wachttijd, gewicht, terugvaarmogelijkheden etc).
+
+\subsection{Requirements}
+Directe requirements van opdrachtgever:\\
+Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renova-tie van een groot aantal sluizen noodzakelijk is.  Een eerste verkenning heeft onsgeleerd dat het gecombineerd renoveren en automatiseren van het Nederlandsesluizenpark een aanzienlijke verbetering kan opleveren t.a.v.:\\
+- veiligheid\\
+- efficientie\\
+- capaciteit\\
+- onderhoudskosten\\
+- duurzaamheid\\
+In het kader van het onlangs afgesloten klimaatakkoord heeft de Nederlandseoverheid  daarom  besloten  over te gaan tot een ingrijpende renovatie van dediverse sluizen die ons land rijk is. Op het ministerie van infrastructuur en waterstaat is helaas onvoldoende kennis van ict en systemen aanwezig om eenen ander uit te voeren. Wij vragen u een model (of een onderling samenhangend aantal modellen)aan  te leveren, opdat ontwerpen van verschillende, volledig geautomatiseerde sluizen in de toekomst gerealiseerd kunnen worden.\\\\
+Eigen inbreng van deze requirements:\\
+Wij gaan er van uit dat het volgende van ons verwacht wordt:\\
+Maak een model dat als template dient gebruikt te worden voor het automatiseren van verschillende soorten sluizen. Verder moeten overwegingen gemaakt worden die goed onderbouwd zijn.\\\\ Aangezien er van ons alleen een model verwacht wordt, zullen wij ons geheel focussen op de fundamentele werking van de sluis en hierbij zullen wij ons dus niet bezig  houden met fysieke eisen zoals veiligheidshekjes en borden. Onze focus ligt geheel op de werking van de sluis; elke state waar de sluis zich in mag bevinden en welke beslissingen de sluis moet maken op basis van bestaande protocols en benoemde eisen. \\\\
+Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze bestaande uit de sluisdeuren, de sloplichten, de waterpomp en de boten.\\
+
+\subsection{Sluisdeuren en stoplichten}
+De sluisdeuren aan weerszijde van de sluis  worden gebruikt om de toegang tot de sluiskolk mogelijk te maken en te bewaken in combinatie met de stoplicht.
 
 
 
-\section{Requirements voor Het sluismodel}
+\subsection{Waterpomp}
+De waterpomp pompt water in de sluis of pompt water weg naar gelang de richting van het ingevaren schip.
+
+\subsection{Boten}
+De meeste sluizen die zich in Nederland bevinden zijn schutsluizen; deze sluizen zijn bedoeld om boten, zowel vrachtschepen als pleziervaart afhangend van de locatie van de sluis, te verwerken. Om deze reden gaan wij deze dus ook verwerken in ons model. Mocht een sluis niet bedoeld zijn om boten te verwerken, dan zou dit model alsnog toegepast kunnen worden opp desbetreffende sluis.
+Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke sluis.  Sinds wij een template maken, hoeven wij geen rekening te hounden met hoe de schepen in de queue komen. Het enige wat wij hoeven te doen, is de data verwerken.
+
+
+
+
+\subsection{Specificaties}
+Vanuit deze requiremenst kunnen verdere specificaties opgesteld worden.
+
+Even ter duidelijkheid: een requirement beschrijft wat een programma moet doen, en een specificatie beschrijft hoe men van plan is om deze requirements te realiseren.//
+Voorbeeld:// Requirement is dat de sluis meerdere boten moet kunnen verwerken; de specificatie zou hier zijn fdat de sluis minstens twee keer zo groot moet zijn dan de grootste boot die door de sluis kan.
+
+
+
+
+
+\subsection{Requirements voor Het sluismodel}
 
  
 \subsection{Requirements}
@@ -853,85 +897,99 @@ The gearbox controller will never indicate gear set or geur neutral wen the gear
 When the engine is regulating on torque, the clutch is closed (p16)
 
 
+ 
 
-Performance
-These requiremenrrs limit the maximum time to perform a gear change when no inreoverable errors occur.
-1) A gear change should be completed within 1.5 seconds unless an unrecoverable error ocurs.
-b) A gear change, under normal operation conditions should ne performced within 1 second
-Predeictability
-The predictability requirements are to ensire strict synhronization and control betwee components.
-a) There should be no deadlocks in the system
-b) When the engine is regulating torque, the clutch should be closed.
-c) When a gear is set, he engine shoud  be regulating torque.
-Functionality
-The followin requirements are to ensure the desired functionality of the gear controller.
-a) It is able to use all gears.
-b) It uses the engine to enhance zero torque and synchronous speed over the transition.
-c) It uses the gearbox to set and release gears.
-d) It is allowed to use the clutch in difficult conditions.
-e) It does not request zero torque when changing from neutral gear.
-f) The gear controller does not request synchronous speed when changing to neutral gear.
-Error detection
-Th gear controller detects and indicates error only when:
-a) the clutch is not openend in time;
-b) the clutch is not closed in time;
-c) the gearbox is not able to set a gear in time,
-the gearbox is not able to release a gear in time.
-
+	\subsection{Veiligheidsoverwegingen}
 
 
 \begin{itemize}
 	\item Performance
 	\begin{itemize}
+		\item  A gear change should be completed within 1.5 seconds unless an unrecoverable error ocurs.
+		\item A gear change, under normal operation conditions should ne performced within 1 second
+		\item When a gear is set, he engine shoud  be regulating torque.
+		\item 
+		\item 
 		\item 
 	\end{itemize}
 	
-	\item Predeictability
+	\item Predeictability The predictability requirements are to ensire strict synhronization and control betwee components.
 	\begin{itemize}
-		\item 
+			\item   There should be no deadlocks in the system
+		\item When the engine is regulating torque, the clutch should be closed.
+		\item It is able to use all gears.
+		\item It uses the engine to enhance zero torque and synchronous speed over the transition.
+		\item It uses the gearbox to set and release gears.
+		\item   It is allowed to use the clutch in difficult conditions.
+		\item It does not request zero torque when changing from neutral gear.
+		\item The gear controller does not request synchronous speed when changing to neutral gear.
+		\item
 	\end{itemize}
 	
 	
-	\item Functionality
+	\item Functionality The followin requirements are to ensure the desired functionality of the gear controller.
 	\begin{itemize}
+			\item 
+		\item 
+		\item 
+		\item 
+		\item 
 		\item 
 	\end{itemize}
 	
-	\item Error detection
+	\item Error detection: 	Th gear controller detects and indicates error only when:
 	\begin{itemize}
+			\item  	a) the clutch is not openend in time;
+		\item 	b) the clutch is not closed in time;
+		\item  	c) the gearbox is not able to set a gear in time,
+		\item  	the gearbox is not able to release a gear in time.
 		\item 
+		\item  
 	\end{itemize}
-	
+
+
+
+
+
 	\item Safety
 	\begin{itemize}
+			\item 
 		\item 
+		\item 
+		\item 
+		\item 
+		\item  
 	\end{itemize}
+
+	\begin{itemize}
+		\item Ik wil zeker zijn dat mijn schip niet tegen de sluisdeuren aanvaart als een stoplicht op groen is
+		\item  Ik wil er zeker van zjn dat mijn schip niet tegen de tweede deur vaaart als het eerste stoplcht op groen is
+		\item  Ik wil er zeker van zijn dat als mijn schip de sluis op hoog binnentreerd dat het waterniveu in de sluis gelijk si aan hoog.
+		\item  Ik wil er zeker van zjn dat als mijnship de sluis op een laag waterpeil binnenvaart dat het waternivel in de sluis gelijk i aan hoog.
+		\item  Ik wil er zeker van zijn dat als mijn schoip de sluis op laag binnenvaart dat het waterniveu in de sluis gelijk is s aanlaag.
+		\item  Ik wil een signaal wanneer er een schip in de slis zit als sluisbediening
+		\item  Ik wil als sluiscontrolller een signaal als de dueren openstaan en een schip komt aanvaren en er is tegelijk een schip inn de sluis.
+		\item  Ik wil max 2 schepen in de sluis
+		\item  Ik wil dat een schip de sluis pas na 5 seconden in de  atarrival state kan binnentreden
+		\item  Ik wil dat mijn stoplicht lleen bedient kan worden door de sluis
+		\item  Ik wil dat de deuren alleen bedient kunnen worden door de sluis
+		\item  Ik wil dat sensoren alleen bedient kunnen worrden door de sluis
+		\item  Een schip moet een route kunnen aflaggen 
+	\end{itemize}
+\item Liveness
+\begin{itemize}
+	\item 
+\end{itemize}
+
+
+\item Fairness
+\begin{itemize}
+	\item 
+\end{itemize}
 	
 \end{itemize}
 
-\section{Uppaal kripke structuren}
-
-
-\subsubsection{templates}
-
-\paragraph{Schip}
-
-\paragraph{Sluis}
-
-
-\paragraph{Aanvoer}
-
-
-\paragraph{Afvoer}
-
-\paragraph{Pomp}
-
-\paragraph{Pompbediening}
-
-
-\paragraph{Stoplicht}
-
-\paragraph{Deur}
+\subsubsection{Uppaal kripke structuren}
 
 
 
@@ -941,22 +999,8 @@ the gearbox is not able to release a gear in time.
 
 
 
-\subsection{Veiligheidsoverwegingen}
-\begin{itemize}
-	\item Ik wil zeker zijn dat mijn schip niet tegen de sluisdeuren aanvaart als een stoplicht op groen is
-	\item  Ik wil er zeker van zjn dat mijn schip niet tegen de tweede deur vaaart als het eerste stoplcht op groen is
-	\item  Ik wil er zeker van zijn dat als mijn schip de sluis op hoog binnentreerd dat het waterniveu in de sluis gelijk si aan hoog.
-	\item  Ik wil er zeker van zjn dat als mijnship de sluis op een laag waterpeil binnenvaart dat het waternivel in de sluis gelijk i aan hoog.
-	\item  Ik wil er zeker van zijn dat als mijn schoip de sluis op laag binnenvaart dat het waterniveu in de sluis gelijk is s aanlaag.
-	\item  Ik wil een signaal wanneer er een schip in de slis zit als sluisbediening
-	\item  Ik wil als sluiscontrolller een signaal als de dueren openstaan en een schip komt aanvaren en er is tegelijk een schip inn de sluis.
-	\item  Ik wil max 2 schepen in de sluis
-	\item  Ik wil dat een schip de sluis pas na 5 seconden in de  atarrival state kan binnentreden
-	\item  Ik wil dat mijn stoplicht lleen bedient kan worden door de sluis
-	\item  Ik wil dat de deuren alleen bedient kunnen worden door de sluis
-	\item  Ik wil dat sensoren alleen bedient kunnen worrden door de sluis
-	\item  Een schip moet een route kunnen aflaggen 
-\end{itemize}
+
+
 
 
 
@@ -983,7 +1027,6 @@ door actuatoren bestuurde fenomenen uit de omgeving
 
 \subsubsection{ontwerp}
 
-\includegraphics[scale=0.65]{sluismodel.jpg}
 
 \subsubsection{Onderdelen}
 Op basis van de schets kunnen we vaststellen dat een sluismodel uit de volgende onderdelen bestaat.
@@ -1032,58 +1075,82 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 
 \includegraphics[scale=0.65]{sluispassage.png}
 
-\paragraph{Vooraanmelding}
+
+\begin{itemize}
+	\begin{minipage}{0.4\linewidth}
+		\item Vooraanmelding
+		\item informatie inwinnen
+		\item operationele melding
+		\item aankomst volgorde
+		\item aanwijzen wachtplaats
+		\item verstrekken informatie
+		\item aanwijzen opstelplaats
+		\item opstellen schutproces
+		\item verstrekken informatie
+		\item invaarvolgorde en ligplaats in sluis
+		\item
+		\item
+	\end{minipage}
+\begin{minipage}{0.4\linewidth}
+
+		\item gereedmaken voor invaren
+		\item openen invaardeuren
+		\item invaren toegestaan
+		\item aanwijzingen voor invaren
+		\item aanwijzingen tijdens afmeren
+		\item invaren verboden
+		\item sluiten invaardeuren
+		\item start nivelleren
+		\item stop nivelleren
+		\item aanzwijzingen voor uitvaren
+		\item openen uitvaardewuren
+		\item uitvaren toegestaan
+	
+\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+	\item uitvaren
+	\item operationele afmmelding
+	\item utvaren verboden
+	\item aanwijzing invaren nieuwe schepen
+	\invaren verboden
+	\deuren gesloten
+	\end{minipage}
+\end{itemize}
 
 
-\paragraph{informatie inwinnen}
+\subsection{Notities die verwerkt moeten worden}
+
+moet de intitial state altijd in een loop zitten in uppaal?
+wat zijn urgent channels?
+rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
 
 
-\paragraph{operationele melding}
+gesprek wessel:
+main controller slim dat direction een bool is. 
+pomp is te slim, zoiu alleen maar aan of uit moeten gaan, of nog weg en in pompen maar meer niet. niets met waterlevel en aantal schepen.
+schip: niet doen. als een schip zich aanmeld, dan gebeuren er dingen, maar gaat hij naar binnen? je weet niet wat dat schip gaat doen want menselijk gedrag. beter niet het schip uitgebreid maken, maar eerder de sluis. te veel aannames.
+
+wessel model: alleen als wachtrij vol zit, doet de sluis iets.
+deur heeft een parameter zodat er meerdere deuren in de simulator neergezet kunnnen worden. ook bij wachtrij.
+
+stoplichen kunnen er wel in maar als je simpeler wilt, gaan die als eerste weg.
+zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
+rampen alleen voor persoonlijk verslag
+
+ 
 
 
-\paragraph{aankomst volgorde}
+ 
 
-\paragraph{aanwijzen wachtplaats}
-
-
-\paragraph{verstrekken informatie}
-
-
-\paragraph{aanwijzen opstelplaats}
-
-\paragraph{opstellen schutproces}
-
-
-\paragraph{verstrekken informatie}
-
-
-\paragraph{invaarvolgorde en ligplaats in sluis}
-
-\paragraph{gereedmaken voor invaren}
-
-
-
-\paragraph{openen invaardeuren}
-
-
-
-
-\paragraph{invaren toegestaan}
-
-\paragraph{aanwijzingen voor invaren}
-\paragraph{aanwijzingen tijdens afmeren}
-
-\paragraph{invaren verboden}
-
-\paragraph{sluiten invaardeuren}
-
-\paragraph{start nivelleren}
-
-\paragraph{aanzwijzingen voor uitvaren}
-\paragraph{openen uitvaardewuren}
-
-\paragraph{uitvaren toegestaan}
-
+\paragraph{Liveness}
+Liveness properties are of the formn: something will eventually happen, e.g. when pressing the on button of the remote control of the television, then eventually the television should turn on. Or in a model of a  communication protocol, any message that has been sent should eventually be received.
+\paragraph{Fairness}
+\paragraph{Security}
+Safety propertires are of the form: "something bad will never happen". For instance, in a model of a nuclear power plant, a safety propertymight be, that the operating temperature is always (invariantly) under a certain threshold, or that a meltdown never occurs. A variation of this property is that "something will possibly never happen".
+ For instance when playing a game, a safe state is one in which we can still win he game, hence we will possible not loose.
+The system cannot reach states or enable events that are fornidden by the requirements
+\paragraph{Performance}
+There requirements limit the maximum time to perform when no recoverable errors occur.
 
 
 
@@ -1104,78 +1171,6 @@ Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing ho
 
 \chapter{Formal validation and verification aan de hand van Kripke model}
 
-\paragraph{The need for formal methodes}
-\paragraph{hardware and software verification}
-\paragraph{The process of model checking}
-\paragraph{Temporal Logic and model checking}
-\paragraph{Symbolic  Algorothism}
-\paragraph{Partial order reduction}
-\paragraph{Other approaches to the sate explosion}
-\paragraph{Modeling Concurrent systems}
-\paragraph{Concurrent systems}
-\paragraph{Example of program Translation}
-\paragraph{The computation Tree Logic}
-\paragraph{CTL and LTL}
-\paragraph{Fairness}
-\paragraph{CTL Model checking}
-\paragraph{LTL Model checking by Tablea}
-\paragraph{CTL model checking}
-\paragraph{Representing boolean formulas}
-\paragraph{Representing kripke structures}
-\paragraph{Fixpoint representations}
-\paragraph{Symbolic model checking for CTL}
-\paragraph{Fairness in Symbolic model checking}
-\paragraph{Counterexamples and witnesses}
-\paragraph{An ALU example}
-\paragraph{Relational Product Computations}
-\paragraph{Symbolic LTL Model Checknig}
-\paragraph{The propositional mu-calculus}
-\paragraph{Evaluating Fxpoint Formulas}
-\paragraph{Representing mu-calculus formulas using OBDDs}
-\paragraph{Translating CTL into the mu-calculus}
-\paragraph{Comoplexity considerations}
-\paragraph{The smv model checker}
-\paragraph{A realistic example}
-\paragraph{Automata on finine and infinite words}
-\paragraph{model checking using automata}
-\paragraph{checking emptiness}
-\paragraph{Translating LTL into automata}
-\paragraph{On-the-fly model checking}
-\paragraph{Checking language containment symbolically}
-\paragraph{Concurrency in Aynchronous systems}
-\paragraph{Independendce and invisibility}
-\paragraph{Partial order reduction for LTL}
-\paragraph{An example}
-\paragraph{Calculating Ample sets}
-\paragraph{Correctness of the algorithm}
-\paragraph{Partial order reduction in SPIN}
-\paragraph{An example}
-\paragraph{Calculating Ample Sets}
-\paragraph{Correctness of the algorithm}
-\paragraph{Partial order reduction in SPIN}
-\paragraph{Equivalence of Preorder Algorithms}
-\paragraph{Tableau construction}
-\paragraph{Composition of structures}
-\paragraph{justifying assume guarantee proofs}
-\paragraph{Verifying a cpu controller}
-\paragraph{Cone of influence reduction}
-\paragraph{Data abstraction}
-\paragraph{Groups and symetru}
-\paragraph{Quiotient models}
-\paragraph{Model checking with symmetry}
-\paragraph{Complexity issues}
-\paragraph{Emperical results}
-\paragraph{Tempaal logic for ininite families}
-\paragraph{Invariants}
-\paragraph{Futurebus+Example Reconsidered}
-\paragraph{Graph and network grammars}
-\paragraph{Undecidability result for a familty of token rings}
-\paragraph{Real-time systems and rate-monitonic scheduling}
-\paragraph{Model checking real-time systems}
-\paragraph{RTCTL Model checking}
-\paragraph{Quantitative Temporal Analysys: Minimum/Maximum Delay}
-\paragraph{Example: An aircraft controller}
-\paragraph{Timed Automata}
 \paragraph{Parallele compositie}
 Om een sluispark te kunnen modelleren meerdere templates die de verschillende abstracties van het systeem aantonen.
 
@@ -1189,6 +1184,27 @@ Zorgt ervoor dat  een transitie die genomen worden in de ene kripke tructuur op 
 \paragraph{Complexity considerations}
 
 
+
+\subsubsection{templates}
+
+\paragraph{Schip}
+
+\paragraph{Sluis}
+
+
+\paragraph{Aanvoer}
+
+
+\paragraph{Afvoer}
+
+\paragraph{Pomp}
+
+\paragraph{Pompbediening}
+
+
+\paragraph{Stoplicht}
+
+\paragraph{Deur}
 
 
 
