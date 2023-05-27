@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  26 MAY 2023 16:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  27 MAY 2023 07:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3144,7 +3144,7 @@ Overfull \hbox (93.42676pt too wide) in paragraph at lines 507--509
 /MTCD/publications/PDF/Pub913e$[]\OML/cmm/m/it/10 eb:pdf$ 
  []
 
-[19]
+[19] [20]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3168,10 +3168,9 @@ r$[]\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 764\OML/cmm/m/it/10 :phphttps \OT1/cmr/m/
 n/10 : \OML/cmm/m/it/10 ==aviation \OMS/cmsy/m/n/10 ^^@
  []
 
-[20]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 610.
- (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 [21]
@@ -3277,39 +3276,28 @@ Overfull \hbox (3.77846pt too wide) in paragraph at lines 664--667
 LaTeX Warning: Citation `noauthor_2022-nm' on page 23 undefined on input line 6
 81.
 
-[23]
-! Undefined control sequence.
-l.747 \subssection
-                  {Ondeerzoeksresultaten naar sluisbeveiliging}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (44.12572pt too wide) in paragraph at lines 753--761
+[23] [24]
+Overfull \hbox (44.12572pt too wide) in paragraph at lines 758--766
 \OT1/cmss/m/n/10 Rijks-wa-ter-staat wacht-tij-den voor de scheep-vaart voorko h
 ttps://www.gww-bouw.nl/artikel/de-
  []
 
-[24]
-Overfull \hbox (2.0562pt too wide) in paragraph at lines 774--776
+[25]
+Overfull \hbox (2.0562pt too wide) in paragraph at lines 779--781
 \OT1/cmss/m/n/10 achtergrond/hacker-dringt-door-in-controlekamer-waterwerk-cybe
 rterrorist-kan-ons-
  []
 
 
-Overfull \hbox (117.84807pt too wide) in paragraph at lines 777--779
+Overfull \hbox (117.84807pt too wide) in paragraph at lines 782--784
 []\OT1/cmss/m/n/10 deltawerken https://www.magazinesrijkswaterstaat.nl/bereikba
 arzeeland/2021/01/krammersluizencomplex-
  []
 
-[25]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.784 .../nw-31400-7-3715235/nieuws/cybersecurity_
+l.789 .../nw-31400-7-3715235/nieuws/cybersecurity_
                                                   vitale_waterwerken_niet_wa...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3317,37 +3305,38 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.785 
+l.790 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (46.86177pt too wide) in paragraph at lines 787--789
+Overfull \hbox (46.86177pt too wide) in paragraph at lines 792--794
 \OT1/cmss/m/n/10 https://www.rtlnieuws.nl/nieuws/nederland/artikel/3758966/cybe
 rbeveiliging-waterschappen-
  []
 
 
-Overfull \hbox (17.9866pt too wide) in paragraph at lines 790--792
+Overfull \hbox (17.9866pt too wide) in paragraph at lines 795--797
 []\OT1/cmss/m/n/10 Rittal doet on-der-zoek naarop af-stand besdien-bare slui-ze
 n https://expert.rittal.nl/wp-
  []
 
 
-Overfull \hbox (19.77837pt too wide) in paragraph at lines 797--799
+Overfull \hbox (19.77837pt too wide) in paragraph at lines 802--804
 \OT1/cmss/m/n/10 https://www.vtmgroep.nl/blog/waterwerken-in-nederland-onvoldoe
 nde-beveiligd-tegen-
  []
 
-
-Overfull \hbox (91.55609pt too wide) in paragraph at lines 800--803
+[26]
+Overfull \hbox (91.55609pt too wide) in paragraph at lines 805--808
 []\OT1/cmss/m/n/10 Veiligheid op het wa-ter ^^Sen op het land Ge-bruik van lamp
 -be-wa-king http://www.wesemann.nl/nl/nieuws-
  []
 
+[27]
 ! Undefined control sequence.
-l.809 \chapter
+l.813 \chapter
               {Uppaal source}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3355,35 +3344,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<2_Body/Figures//sluismodel.jpg, id=98, 432.61626pt x 234.8775pt>
+<2_Body/Figures//sluismodel.jpg, id=104, 432.61626pt x 234.8775pt>
 File: 2_Body/Figures//sluismodel.jpg Graphic file (type jpg)
 <use 2_Body/Figures//sluismodel.jpg>
-Package pdftex.def Info: 2_Body/Figures//sluismodel.jpg  used on input line 818
+Package pdftex.def Info: 2_Body/Figures//sluismodel.jpg  used on input line 822
 .
 (pdftex.def)             Requested size: 281.19724pt x 152.66856pt.
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 832--844
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--848
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 832--844
+Underfull \hbox (badness 10000) in paragraph at lines 836--848
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 832--844
+Underfull \hbox (badness 10000) in paragraph at lines 836--848
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 832--844
+Underfull \hbox (badness 10000) in paragraph at lines 836--848
 
  []
 
-[27 <./2_Body/Figures//sluismodel.jpg>] [28] [29] [30] [31] [32]
+[28 <./2_Body/Figures//sluismodel.jpg>] [29] [30] [31] [32] [33]
 ! Undefined control sequence.
-l.1074 \chapter
+l.1078 \chapter
                {Formal description of the system}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3391,15 +3380,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<2_Body/Figures//sluispassage.png, id=122, 490.83376pt x 689.57625pt>
+<2_Body/Figures//sluispassage.png, id=125, 490.83376pt x 689.57625pt>
 File: 2_Body/Figures//sluispassage.png Graphic file (type png)
 <use 2_Body/Figures//sluispassage.png>
 Package pdftex.def Info: 2_Body/Figures//sluispassage.png  used on input line 1
-076.
+080.
 (pdftex.def)             Requested size: 319.03815pt x 448.21924pt.
-[33]
+[34]
 ! Undefined control sequence.
-l.1115 	\invaren
+l.1119 	\invaren
                  verboden
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3408,7 +3397,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.1116 	\deuren
+l.1120 	\deuren
                 gesloten
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3417,18 +3406,18 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1114--1117
+Underfull \hbox (badness 10000) in paragraph at lines 1118--1121
 []\OT1/cmss/m/n/10 aanwijzing in-va-ren nieuwe
  []
 
 
-Overfull \hbox (68.43855pt too wide) in paragraph at lines 1080--1118
+Overfull \hbox (68.43855pt too wide) in paragraph at lines 1084--1122
 []$[]$ $[]$ $[]$ 
  []
 
-[34 <./2_Body/Figures//sluispassage.png>] [35]
+[35 <./2_Body/Figures//sluispassage.png>] [36]
 ! Undefined control sequence.
-l.1172 \chapter
+l.1176 \chapter
                {Formal validation and verification aan de hand van Kripke mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3436,11 +3425,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[36]
+[37]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1230 F C Q = sluiskolk_
+l.1234 F C Q = sluiskolk_
                          afgesloten
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3448,12 +3437,12 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1234 
+l.1238 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [37]
+) [38]
 \openout2 = `4_Conclusions/conclusions.aux'.
 
  (4_Conclusions/conclusions.tex
@@ -3466,8 +3455,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[39
+
+
+
+
+] [40]
 ! Undefined control sequence.
-l.25 \chapter
+l.27 \chapter
              {Discussie}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3475,12 +3470,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[38
-
-
-
-
-]) [39]
+) [41]
 
 ! LaTeX Error: Environment appendices undefined.
 
@@ -3624,7 +3614,7 @@ Overfull \hbox (69.1675pt too wide) in paragraph at lines 38--40
  https://www.dragos.com/wp-
  []
 
-[40
+[42
 
 
 
@@ -3806,7 +3796,7 @@ Overfull \hbox (1.93231pt too wide) in paragraph at lines 68--111
 sy/m/n/10 ^^@
  []
 
-[41]
+[43]
 ! Misplaced alignment tab character &.
 l.127 ...FDAD1BD940260EF12B11?doi=10.1.1.548.7490&
                                                   amp;rep=rep1&amp;type=pdf
@@ -4021,7 +4011,7 @@ mm/m/it/10 https \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==control:com=forums=thread
 s=comparison \OMS/cmsy/m/n/10 ^^@
  []
 
-[42]
+[44]
 
 ! LaTeX Error: Can be used only in preamble.
 
@@ -4054,7 +4044,7 @@ Overfull \hbox (21.79999pt too wide) in paragraph at lines 215--215
 [][] 
  []
 
-[43]
+[45]
 Overfull \hbox (21.79999pt too wide) in paragraph at lines 215--215
 [][] 
  []
@@ -4064,7 +4054,7 @@ Overfull \hbox (21.79999pt too wide) in paragraph at lines 215--216
 [][] 
  []
 
-[44]
+[46]
 Overfull \hbox (452.99304pt too wide) in paragraph at lines 252--252
 [] \OT1/cmtt/m/n/10 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.l
 aag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.s
@@ -4084,17 +4074,121 @@ Overfull \hbox (53.99652pt too wide) in paragraph at lines 252--252
 euren.hoog_open)[] 
  []
 
-[45]
+[47] [48]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.304 ...ate(0).open||gate(1).open) -> (main.pomp_
+l.306 ...ate(0).open||gate(1).open) -> (main.pomp_
                                                   idle || main.pomp2_idle)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 \item
+             b) Als de deur is gesloten dan bevind de maincontroller zich in...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 \item  b
+              ) Als de deur is gesloten dan bevind de maincontroller zich in...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 \item  b
+              ) Als de deur is gesloten dan bevind de maincontroller zich in...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.309 \item
+             p15
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.309 \item  p
+              15
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.309 \item  p
+              15
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (250.84296pt too wide) in paragraph at lines 305--309
+\OT1/cmss/m/n/10 > (main.pomp$[]\OML/cmm/m/it/10 dle\OMS/cmsy/m/n/10 jj\OML/cmm
+/m/it/10 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 dle\OT1/cmr/m/n/10 )\OML/
+cmm/m/it/10 b\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Alsdedeurisgeslotendanbevinddema
+incontrollerzichineenpredefinedstateA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 gate:cl
+osed\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.309 \item  p
+              15
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Overfull \hbox (31.13919pt too wide) in paragraph at lines 310--312
+[]\OT1/cmss/m/n/10 p16 If en-gine re-gu-la-tion is on tor-que, then the clutch 
+is clo-sed (un-de-fi-ned) A[](Engine.Torque
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.313  A[] main.s5 -> main.waterlevel_
+                                      laag && idle_pomp1 && gate(0).open && ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 ! Misplaced alignment tab character &.
-l.311  A[] main.s5 -> main.waterlevel_laag &
+l.313  A[] main.s5 -> main.waterlevel_laag &
                                             & idle_pomp1 && gate(0).open && ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4104,7 +4198,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311  A[] main.s5 -> main.waterlevel_laag &&
+l.313  A[] main.s5 -> main.waterlevel_laag &&
                                               idle_pomp1 && gate(0).open && ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4114,7 +4208,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ...5 -> main.waterlevel_laag && idle_pomp1 &
+l.313 ...5 -> main.waterlevel_laag && idle_pomp1 &
                                                   & gate(0).open && gate(1)....
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4124,7 +4218,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ... -> main.waterlevel_laag && idle_pomp1 &&
+l.313 ... -> main.waterlevel_laag && idle_pomp1 &&
                                                    gate(0).open && gate(1).o...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4134,7 +4228,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ...evel_laag && idle_pomp1 && gate(0).open &
+l.313 ...evel_laag && idle_pomp1 && gate(0).open &
                                                   & gate(1).open && (stoplig...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4144,7 +4238,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ...vel_laag && idle_pomp1 && gate(0).open &&
+l.313 ...vel_laag && idle_pomp1 && gate(0).open &&
                                                    gate(1).open && (stopligh...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4154,7 +4248,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ...e_pomp1 && gate(0).open && gate(1).open &
+l.313 ...e_pomp1 && gate(0).open && gate(1).open &
                                                   & (stoplight(0).green && s...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4164,7 +4258,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ..._pomp1 && gate(0).open && gate(1).open &&
+l.313 ..._pomp1 && gate(0).open && gate(1).open &&
                                                    (stoplight(0).green && st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4174,7 +4268,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ... && gate(1).open && (stoplight(0).green &
+l.313 ... && gate(1).open && (stoplight(0).green &
                                                   & stoplight(1).green || st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4184,7 +4278,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ...&& gate(1).open && (stoplight(0).green &&
+l.313 ...&& gate(1).open && (stoplight(0).green &&
                                                    stoplight(1).green || sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4194,7 +4288,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ...toplight(1).green || stoplight(2).green &
+l.313 ...toplight(1).green || stoplight(2).green &
                                                   & stoplight(3).green )
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4204,7 +4298,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.311 ...oplight(1).green || stoplight(2).green &&
+l.313 ...oplight(1).green || stoplight(2).green &&
                                                    stoplight(3).green )
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4213,8 +4307,47 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \item
+             p18 Als een schip van rechts binnen komt en sluisdeuren zijn di...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \item  p
+              18 Als een schip van rechts binnen komt en sluisdeuren zijn di...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \item  p
+              18 Als een schip van rechts binnen komt en sluisdeuren zijn di...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 ! Misplaced alignment tab character &.
-l.313 ...(i:id_d) forall (j:id_s) gate(i).closed &
+l.315 ...(i:id_d) forall (j:id_s) gate(i).closed &
                                                   & stoplight.rood && main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4224,7 +4357,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.313 ...i:id_d) forall (j:id_s) gate(i).closed &&
+l.315 ...i:id_d) forall (j:id_s) gate(i).closed &&
                                                    stoplight.rood && main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4234,7 +4367,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.313 ...:id_s) gate(i).closed && stoplight.rood &
+l.315 ...:id_s) gate(i).closed && stoplight.rood &
                                                   & main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4244,7 +4377,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.313 ...id_s) gate(i).closed && stoplight.rood &&
+l.315 ...id_s) gate(i).closed && stoplight.rood &&
                                                    main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4256,57 +4389,59 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.315 
+l.317 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+! Missing } inserted.
+<inserted text> 
+                }
+l.317 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-Overfull \hbox (366.12097pt too wide) in paragraph at lines 297--315
-\OT1/cmss/m/n/10 (gate(0).open||gate(1).open) -> (main.pomp$[]\OML/cmm/m/it/10 
-dle\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/i
-t/10 dle\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Al
-sdedeurisgeslotendanbevinddemaincontrollerzichineenpredefinedstateA\OT1/cmr/m/n
-/10 []\OML/cmm/m/it/10 gate:closed\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+
+Overfull \hbox (1046.24826pt too wide) in paragraph at lines 312--317
+\OT1/cmss/m/n/10 groen A[] main.s5 -> main.waterlevel$[]\OML/cmm/m/it/10 aagidl
+e[]omp\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10
+ :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 stoplight\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10 :greenstoplight\OT1/cmr/m/n/
+10 (1)\OML/cmm/m/it/10 :green\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 stoplight\OT1/
+cmr/m/n/10 (2)\OML/cmm/m/it/10 :greenstoplight\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/
+10 :green\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 
+Alseenschipvanrechtsbinnenkomtensluisdeurenzijndichtdanmoethetstoplichtoprood; 
+depomnpintransitievanlaagnaarhoogennietandersomA\OT1/cmr/m/n/10 []!\OML/cmm/m/i
+t/10 main:direction\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (314.6593pt too wide) in paragraph at lines 297--315
-\OML/cmm/m/it/10 main:idlep\OT1/cmr/m/n/10 15\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 
-16\OML/cmm/m/it/10 Ifengineregulationisontorque; thentheclutchisclosed\OT1/cmr/
-m/n/10 (\OML/cmm/m/it/10 undefined\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 A\OT1/cmr/m
-/n/10 [](\OML/cmm/m/it/10 Engine:TorqueimplyClutch:closedp\OT1/cmr/m/n/10 17\OM
-L/cmm/m/it/10 Voorinvarengeldtaltijd \OT1/cmr/m/n/10 :
- []
-
-
-Overfull \hbox (1290.10298pt too wide) in paragraph at lines 297--315
-\OML/cmm/m/it/10 waterlevel; pompuit; sluisdeurenopenenstoplichtopgroenA\OT1/cm
-r/m/n/10 []\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 5\OMS/cmsy/m/n/10 ^^@ \OML/cm
-m/m/it/10 > main:waterlevel[]aagidle[]omp\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 gate
-\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10 :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/1
-0 :open\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 stoplight\OT1/cmr/m/n/10 (0)\OML/cmm/m
-/it/10 :greenstoplight\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :green\OMS/cmsy/m/n/1
-0 jj\OML/cmm/m/it/10 stoplight\OT1/cmr/m/n/10 (2)\OML/cmm/m/it/10 :greenstoplig
-ht\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/10 :green\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 p
-\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 Alseenschipvanrechtsbinnenkomtensluisdeurenz
-ijndichtdanmoethetstoplichtoprood; depomnpintransitievanlaagnaarhoogennietander
-somA\OT1/cmr/m/n/10 []!\OML/cmm/m/it/10 main:direction\OMS/cmsy/m/n/10 ^^@ \OML
-/cmm/m/it/10 >
- []
-
-
-Overfull \hbox (134.74622pt too wide) in paragraph at lines 297--315
+Overfull \hbox (134.74622pt too wide) in paragraph at lines 312--317
 \OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 : \O
 ML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 j \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cm
 m/m/it/10 gate\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cmm/m/it
 /10 :closedstoplight:roodmain:rd[]p\OT1/cmr/m/n/10 19\OML/cmm/m/it/10 uitvarend
-enhebbenvoorangopinvarenden$ 
+enhebbenvoorangopinvarenden[]$ 
  []
 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.317 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
 ! Misplaced alignment tab character &.
-l.317  A[] main.s6 -> gate(0).open &
+l.319  A[] main.s6 -> gate(0).open &
                                     & gate(1).open && stoplight(0).groen && ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4316,7 +4451,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.317  A[] main.s6 -> gate(0).open &&
+l.319  A[] main.s6 -> gate(0).open &&
                                       gate(1).open && stoplight(0).groen && ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4326,7 +4461,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.317 ...main.s6 -> gate(0).open && gate(1).open &
+l.319 ...main.s6 -> gate(0).open && gate(1).open &
                                                   & stoplight(0).groen && st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4336,7 +4471,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.317 ...ain.s6 -> gate(0).open && gate(1).open &&
+l.319 ...ain.s6 -> gate(0).open && gate(1).open &&
                                                    stoplight(0).groen && sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4346,7 +4481,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.317 ...n && gate(1).open && stoplight(0).groen &
+l.319 ...n && gate(1).open && stoplight(0).groen &
                                                   & stoplight(1).groen
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4356,7 +4491,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.317 ... && gate(1).open && stoplight(0).groen &&
+l.319 ... && gate(1).open && stoplight(0).groen &&
                                                    stoplight(1).groen
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4368,13 +4503,108 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.319  A[] (main.rn1 || main.rn2) -> forall (i:id_
+l.321  A[] (main.rn1 || main.rn2) -> forall (i:id_
                                                   d) forall(j:id_s )gate(i)....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 \item
+             p22 Als een schip vertrekt dan zijn altijd, sleusdeuren open, w...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 \item  p
+              22 Als een schip vertrekt dan zijn altijd, sleusdeuren open, w...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 \item  p
+              22 Als een schip vertrekt dan zijn altijd, sleusdeuren open, w...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.324 \item
+             p23 urgent locations; het is niet mogelijk om hier te wachten
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.324 \item  p
+              23 urgent locations; het is niet mogelijk om hier te wachten
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.324 \item  p
+              23 urgent locations; het is niet mogelijk om hier te wachten
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (622.02261pt too wide) in paragraph at lines 320--324
+\OT1/cmss/m/n/10 rood A[] (main.rn1 || main.rn2) -> fo-rall (i:id$[]\OT1/cmr/m/
+n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j \OT1/cmr/m/n/1
+0 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :closedstoplight\OT1/cmr/m
+/n/10 (\OML/cmm/m/it/10 j\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :roodp\OT1/cmr/m/n/1
+0 22\OML/cmm/m/it/10 Alseenschipvertrektdanzijnaltijd; sleusdeurenopen; waterle
+velgereedopniveau\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 of\OT1/cmr/m/n/10 0\OML/cmm/
+m/it/10 enstoplichtdirectopgroenA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 main:s\OT1/
+cmr/m/n/10 12\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.324 \item  p
+              23 urgent locations; het is niet mogelijk om hier te wachten
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[49]
 ! Misplaced alignment tab character &.
-l.334  A[]  main.s6 &
+l.336  A[]  main.s6 &
                      & schip.varen ->  Queue.list[N-1] <2
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4384,7 +4614,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.334  A[]  main.s6 &&
+l.336  A[]  main.s6 &&
                        schip.varen ->  Queue.list[N-1] <2
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4394,7 +4624,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.338   A[] schip.varen &
+l.340   A[] schip.varen &
                          & main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4404,7 +4634,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.338   A[] schip.varen &&
+l.340   A[] schip.varen &&
                            main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4414,7 +4644,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.338 ...n && main.s12 || main.s13 -> (!main.rn1 &
+l.340 ...n && main.s12 || main.s13 -> (!main.rn1 &
                                                   & !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -4424,248 +4654,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.338 ... && main.s12 || main.s13 -> (!main.rn1 &&
+l.340 ... && main.s12 || main.s13 -> (!main.rn1 &&
                                                    !main.rn2)
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.346   A[] pomp.pomp_active -> main.s6 &
-                                         & forall(i:id_d) gate(i).closed
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.346   A[] pomp.pomp_active -> main.s6 &&
-                                           forall(i:id_d) gate(i).closed
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.369 ...i:id_s) stoplight.groen -> gate(0).open &
-                                                  & gate(1).open && (main.po...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.369 ...:id_s) stoplight.groen -> gate(0).open &&
-                                                   gate(1).open && (main.pom...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.369 ...t.groen -> gate(0).open && gate(1).open &
-                                                  & (main.pomp1_idle || main...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.369 ....groen -> gate(0).open && gate(1).open &&
-                                                   (main.pomp1_idle || main....
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...ot main.rn1 || main.rn2 -> gate(0).open &
-                                                  & gate(1).open && Queue.li...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...t main.rn1 || main.rn2 -> gate(0).open &&
-                                                   gate(1).open && Queue.lis...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...ain.rn2 -> gate(0).open && gate(1).open &
-                                                  & Queue.list[N-1] == 0 && ...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...in.rn2 -> gate(0).open && gate(1).open &&
-                                                   Queue.list[N-1] == 0 && (...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...&& gate(1).open && Queue.list[N-1] == 0 &
-                                                  & ((stoplight(0).groen||st...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...& gate(1).open && Queue.list[N-1] == 0 &&
-                                                   ((stoplight(0).groen||sto...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...oplight(1).groen) ||(stoplight(3).groen &
-                                                  &stoplight(4).groen))
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.377 ...plight(1).groen) ||(stoplight(3).groen &&
-                                                  stoplight(4).groen))
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.379 ...|| main.blocked2) -> Queue.list[N-1] >0 &
-                                                  & gate(0).closed && gate(1...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.379 ...| main.blocked2) -> Queue.list[N-1] >0 &&
-                                                   gate(0).closed && gate(1)...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.379 ...-> Queue.list[N-1] >0 && gate(0).closed &
-                                                  & gate(1).closed && main.w...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.379 ...> Queue.list[N-1] >0 && gate(0).closed &&
-                                                   gate(1).closed && main.wa...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.379 ... >0 && gate(0).closed && gate(1).closed &
-                                                  & main.waterlevel==main.wa...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.379 ...>0 && gate(0).closed && gate(1).closed &&
-                                                   main.waterlevel==main.wat...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.381  E<> main.rn1||main.rn2 -> gate(0).closed &
-                                                 &main.waterlevel==waterlaag
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.381  E<> main.rn1||main.rn2 -> gate(0).closed &&
-                                                  main.waterlevel==waterlaag
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.385  A[] gate(0).open &
-                         & ()main.direction ==0||main.direction==1)
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.385  A[] gate(0).open &&
-                           ()main.direction ==0||main.direction==1)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -4676,248 +4666,654 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.387 
-      
+l.348   A[] pomp.pomp_
+                      active -> main.s6 && forall(i:id_d) gate(i).closed
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.348   A[] pomp.pomp_active -> main.s6 &
+                                         & forall(i:id_d) gate(i).closed
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.348   A[] pomp.pomp_active -> main.s6 &&
+                                           forall(i:id_d) gate(i).closed
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.349 \item
+             p38 Geen deadlock
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.349 \item  p
+              38 Geen deadlock
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.349 \item  p
+              38 Geen deadlock
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 \item
+             p39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.350 \item  p
+              39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.350 \item  p
+              39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.350 \item  p
+              39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.351  A[] not forall(i:id_
+                           d) gate.closed ->(main.s12||main.s13)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (600.66144pt too wide) in paragraph at lines 316--387
-\OT1/cmss/m/n/10 A[] (main.rn1 || main.rn2) -> fo-rall (i:id$[]\OT1/cmr/m/n/10 
-)\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j \OT1/cmr/m/n/10 : \
-OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :closedstoplight\OT1/cmr/m/n/10
- (\OML/cmm/m/it/10 j\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :roodp\OT1/cmr/m/n/10 22\
-OML/cmm/m/it/10 Alseenschipvertrektdanzijnaltijd; sleusdeurenopen; waterlevelge
-reedopniveau\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 of\OT1/cmr/m/n/10 0\OML/cmm/m/it/
-10 enstoplichtdirectopgroenA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 main:s\OT1/cmr/m
-/n/10 12\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 \item
+             p40 Voor alle paden geld dat als een sluis aan het voorbereiden...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 \item  p
+              40 Voor alle paden geld dat als een sluis aan het voorbereiden...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.352 \item  p
+              40 Voor alle paden geld dat als een sluis aan het voorbereiden...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.354 \item
+              p41 Voor alle paden geld dat als een deur dicht is het aantal ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.354 \item   p
+               41 Voor alle paden geld dat als een deur dicht is het aantal ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.354 \item   p
+               41 Voor alle paden geld dat als een deur dicht is het aantal ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (18.4618pt too wide) in paragraph at lines 350--354
+\OT1/cmss/m/n/10 een deur open-staat om een schip naar bui-ten te la-ten. A[] n
+ot forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate:closed\OMS/cmsy/m/n/10 
+^^@ \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (2484.00998pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 23\OML/cmm/m/it/10 urgentlocations\OT1/cmr/m/
-n/10 ; \OML/cmm/m/it/10 hetisnietmogelijkomhiertewachtenp\OT1/cmr/m/n/10 24\OML
-/cmm/m/it/10 urgentsyn\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 eensynchronisatiemoetd
-irectwordenuitgevoerdalsdeguardsgeldigzijnp\OT1/cmr/m/n/10 25\OML/cmm/m/it/10 a
-lseenschipbinnenis; enerzijnwachtendeschepen; danmoethetstoplichtviaoranjenaarr
-oodA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 26\OML/cmm/m/it/10 comm
-itted\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 alsdezestaatactiefisdanwordtdeeerstvolg
-endetransitieuitaandevandezestatep\OT1/cmr/m/n/10 27\OML/cmm/m/it/10 alseenschj
-ipbinnenvaartmnoiethijookeftbinnenzijnennietbinnenvaren; ditgeldtookvoorp\OT1/c
-mr/m/n/10 28\OML/cmm/m/it/10 sluisdeurenenpompendusdezezijncommitted:A\OT1/cmr/
-m/n/10 []\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 28\OML/cmm/m/it/10 Eenschipkomtaanva
-renengeefteensignaalaandesluis:A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 p\OT1/cmr/m/
-n/10 29\OML/cmm/m/it/10 Indienermeerdantweeschepenindesluiszittendanwordthetshi
-pgeplaatsindewachrij:A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 Queue:list\OT1/cmr/m/n
-/10 [\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10 ^^@
- []
-
-
-Overfull \hbox (601.93303pt too wide) in paragraph at lines 316--387
-\OT1/cmr/m/n/10 1] == 2\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 > \OT1/cmr/m/n/10 
-(\OML/cmm/m/it/10 Sluiskolk:list\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 N\OT1/cmr/m/n
-/10 ] == 1\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 Sluiskolk:list\OT1/cmr/m/n/10 [\O
-ML/cmm/m/it/10 N\OT1/cmr/m/n/10 ] == 2)\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 30\OML
-/cmm/m/it/10 Eenschipkanpasnaarbinnenrijdenalsdesluisdeurenopenzijn; hetstoplic
-htisopgroenererzijnminderdan\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 schepenindesluis:
-A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 sch
-ip:varen\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
- []
-
-
-Overfull \hbox (132.3984pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 Queue:list\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10
- ^^@ \OT1/cmr/m/n/10 1] \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 32\OML/cmm/m/it/10 Eenmaalindesluiszalhetschipmoetenwachtenopdes
-luisendepomp:A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 Queue:list\OT1/cmr/m/n/10 [\OM
-L/cmm/m/it/10 N \OMS/cmsy/m/n/10 ^^@
- []
-
-
-Overfull \hbox (172.03065pt too wide) in paragraph at lines 316--387
-\OT1/cmr/m/n/10 1] == 2\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 33\OML/cmm/m/it/10 Een
-schipmagalleenuitvarenalsdepompklaaris; desleusdeurenopen:A\OT1/cmr/m/n/10 []\O
-ML/cmm/m/it/10 schip:varenmain:s\OT1/cmr/m/n/10 12\OMS/cmsy/m/n/10 jj\OML/cmm/m
-/it/10 main:s\OT1/cmr/m/n/10 13\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
- []
-
-
-Overfull \hbox (1733.30594pt too wide) in paragraph at lines 316--387
-\OT1/cmr/m/n/10 (!\OML/cmm/m/it/10 main:rn\OT1/cmr/m/n/10 1!\OML/cmm/m/it/10 ma
-in:rn\OT1/cmr/m/n/10 2)\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 34\OML/cmm/m/it/10 Een
-sluisontvangeenaankomstsignaalvaneenschipenbestuurtdesluisdeurenendepomp:A\OT1/
-cmr/m/n/10 []\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 35\OML/cmm/m/it/10 Desensoriseen
-onderdeelvandesluisenontvangtsignalenvannaderendeschepen:A\OT1/cmr/m/n/10 []\OM
-L/cmm/m/it/10 p\OT1/cmr/m/n/10 36\OML/cmm/m/it/10 Desleusdeurvoorbovenenbeneden
-kunnenbeidenopenendicht:Desluisdeurwordtaangestuurddoordesluis:A\OT1/cmr/m/n/10
- []\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 37\OML/cmm/m/it/10 Eenpompbegintmetpompenb
-ijeensignaalvandesluis:Eensluisopzijnbeurtgeeftalleeneensignaalaandepompalsdesl
-eudeurendichtzijnA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 pomp:pomp[]ctive\OMS/cmsy/
+Overfull \hbox (185.49286pt too wide) in paragraph at lines 350--354
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 12\OMS/cmsy/m/n/10 jj\O
+ML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 13)\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 40\OM
+L/cmm/m/it/10 Voorallepadengelddatalseensluisaanhetvoorbereidenis; danzijnalled
+eurendcht:A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 6\OMS/cmsy/
 m/n/10 ^^@ \OML/cmm/m/it/10 >
  []
 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.354 \item   p
+               41 Voor alle paden geld dat als een deur dicht is het aantal ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-Overfull \hbox (501.72626pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 
-(\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OM
-L/cmm/m/it/10 gate\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cmm/
-m/it/10 :closedp\OT1/cmr/m/n/10 38\OML/cmm/m/it/10 Geendeadlockp\OT1/cmr/m/n/10
- 39\OML/cmm/m/it/10 Voorgeenenkelpadgeldtdatalsdedeurengeslotenzijnvolgensdeklu
-isdatereendeuropenstaatomeenschipnaarbuitentelaten:A\OT1/cmr/m/n/10 []\OML/cmm/
-m/it/10 notforall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 :
+[50]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.371  A[] forall(i:id_
+                       s) stoplight.groen -> gate(0).open && gate(1).open &&...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.371 ...i:id_s) stoplight.groen -> gate(0).open &
+                                                  & gate(1).open && (main.po...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.371 ...:id_s) stoplight.groen -> gate(0).open &&
+                                                   gate(1).open && (main.pom...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.371 ...t.groen -> gate(0).open && gate(1).open &
+                                                  & (main.pomp1_idle || main...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.371 ....groen -> gate(0).open && gate(1).open &&
+                                                   (main.pomp1_idle || main....
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.372 \item
+             p50 In geen enkele staat van de sluis behalve tussen de lowerga...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.372 \item  p
+              50 In geen enkele staat van de sluis behalve tussen de lowerga...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.372 \item  p
+              50 In geen enkele staat van de sluis behalve tussen de lowerga...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 \item
+             p51 Voor alle paden in een pomp geldt dat als water level lager...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.374 \item  p
+              51 Voor alle paden in een pomp geldt dat als water level lager...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.374 \item  p
+              51 Voor alle paden in een pomp geldt dat als water level lager...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (923.81989pt too wide) in paragraph at lines 370--374
+\OT1/cmss/m/n/10 zig is. A[] forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 st
+oplight:groen\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 > gate\OT1/cmr/m/n/10 (0)\OM
+L/cmm/m/it/10 :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 main:pomp\OT1/cmr/m/n/10 1[]\OML/cmm/m/it/10 dle\OMS/cmsy/m/
+n/10 jj\OML/cmm/m/it/10 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 dle\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 50\OML/cmm/m/it/10 Ingeenenkelestaa
+tvandesluisbehalvetussendelowergateenuppergateenuppergateenlowergateendestatenA
+tArrivalLowenAtEnteringHighisdewachttijdlangerdan\OT1/cmr/m/n/10 5\OML/cmm/m/it
+/10 tijdseenhedenA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 not[][]$ 
  []
 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.374 \item  p
+              51 Voor alle paden in een pomp geldt dat als water level lager...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-Overfull \hbox (272.16916pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate:closed\OMS/cmsy/m/n
-/10 ^^@ \OML/cmm/m/it/10 > \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 main:s\OT1/cmr/m/n
-/10 12\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 13)\OML/cmm/m/i
-t/10 p\OT1/cmr/m/n/10 40\OML/cmm/m/it/10 Voorallepadengelddatalseensluisaanhetv
-oorbereidenis; danzijnalledeurendcht:A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 main:s
-\OT1/cmr/m/n/10 6\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+! Misplaced alignment tab character &.
+l.379 ...ot main.rn1 || main.rn2 -> gate(0).open &
+                                                  & gate(1).open && Queue.li...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.379 ...t main.rn1 || main.rn2 -> gate(0).open &&
+                                                   gate(1).open && Queue.lis...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.379 ...ain.rn2 -> gate(0).open && gate(1).open &
+                                                  & Queue.list[N-1] == 0 && ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.379 ...in.rn2 -> gate(0).open && gate(1).open &&
+                                                   Queue.list[N-1] == 0 && (...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.379 ...&& gate(1).open && Queue.list[N-1] == 0 &
+                                                  & ((stoplight(0).groen||st...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.379 ...& gate(1).open && Queue.list[N-1] == 0 &&
+                                                   ((stoplight(0).groen||sto...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.379 ...oplight(1).groen) ||(stoplight(3).groen &
+                                                  &stoplight(4).groen))
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.379 ...plight(1).groen) ||(stoplight(3).groen &&
+                                                  stoplight(4).groen))
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.381 ...|| main.blocked2) -> Queue.list[N-1] >0 &
+                                                  & gate(0).closed && gate(1...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.381 ...| main.blocked2) -> Queue.list[N-1] >0 &&
+                                                   gate(0).closed && gate(1)...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.381 ...-> Queue.list[N-1] >0 && gate(0).closed &
+                                                  & gate(1).closed && main.w...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.381 ...> Queue.list[N-1] >0 && gate(0).closed &&
+                                                   gate(1).closed && main.wa...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.381 ... >0 && gate(0).closed && gate(1).closed &
+                                                  & main.waterlevel==main.wa...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.381 ...>0 && gate(0).closed && gate(1).closed &&
+                                                   main.waterlevel==main.wat...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.381 ...osed && main.waterlevel==main.waterlevel_
+                                                  laag
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.382 \item
+             p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.382 \item  p
+              55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.382 \item  p
+              55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.383  E<> main.rn1||main.rn2 -> gate(0).closed &
+                                                 &main.waterlevel==waterlaag
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.383  E<> main.rn1||main.rn2 -> gate(0).closed &&
+                                                  main.waterlevel==waterlaag
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 \item
+             p56 Het kan voorkomen dat bij state pompaan het waterniveau gel...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.384 \item  p
+              56 Het kan voorkomen dat bij state pompaan het waterniveau gel...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.384 \item  p
+              56 Het kan voorkomen dat bij state pompaan het waterniveau gel...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (586.81195pt too wide) in paragraph at lines 380--384
+\OT1/cmss/m/n/10 main.blocked2) -> Queue.list[N-1] >0  gate(0).closed  gate(1).
+closed  main.waterlevel==main.waterlevel$[]\OML/cmm/m/it/10 aagp\OT1/cmr/m/n/10
+ 55\OML/cmm/m/it/10 Eriseenmogelijkheiddatvanuitpompgetstoplichtoproodwordtgeze
+tenwaterlevelgelijkisaanwaterlaagE <>
  []
 
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.384 \item  p
+              56 Het kan voorkomen dat bij state pompaan het waterniveau gel...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-Overfull \hbox (635.03285pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (0
-)\OML/cmm/m/it/10 :closedp\OT1/cmr/m/n/10 41\OML/cmm/m/it/10 Voorallepadengeldd
-atalseendeurdichtishetaantalschepenindekadegelijkisaannulA\OT1/cmr/m/n/10 []\OM
-L/cmm/m/it/10 p\OT1/cmr/m/n/10 42\OML/cmm/m/it/10 Voorgeenenkelpadgelddatalshet
-binnenstoplichtopgroenstaatdathetniettoegestaaninnaarbinnentevarenE <>
+! Misplaced alignment tab character &.
+l.387  A[] gate(0).open &
+                         & ()main.direction ==0||main.direction==1)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.387  A[] gate(0).open &&
+                           ()main.direction ==0||main.direction==1)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (23.33397pt too wide) in paragraph at lines 386--388
+\OT1/cmss/m/n/10 vel-leert om-hoog/omlaag A[] gate(0).open  ()main.direction ==
+0||main.direction==1) 
  []
 
+[51]
 
-Overfull \hbox (252.20677pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 stoplight\OT1/cmr/m/n/10 (2)\OML/cmm/m/it/10 :groen\OMS/cmsy/m
-/n/10 jj\OML/cmm/m/it/10 stoploght\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/10 :groen\OM
-S/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 > main:s\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 p\
-OT1/cmr/m/n/10 43\OML/cmm/m/it/10 Voorallepadengeldtdatdeglobaletijdlangerisdan
-\OT1/cmr/m/n/10 30\OML/cmm/m/it/10 tijdseenhedenA\OT1/cmr/m/n/10 []\OML/cmm/m/i
-t/10 main:s\OT1/cmr/m/n/10 13\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
- []
+LaTeX Warning: Citation `locke_2020' on page 52 undefined on input line 414.
 
 
-Overfull \hbox (202.4625pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 main:processtime > \OT1/cmr/m/n/10 30\OML/cmm/m/it/10 p\OT1/cm
-r/m/n/10 44\OML/cmm/m/it/10 Eriseenpadwaarvoorgelddatalseenschipwiltstoppendate
-rmeerdan\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 schepenindesluiszitten:E <>
- []
+LaTeX Warning: Citation `gnsguides' on page 52 undefined on input line 419.
 
-
-Overfull \hbox (1196.45674pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 45\OML/cmm/m/it/10 Voorallepadengeldtalsschip
-vrtrektissluisdeurdichtA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 46\
-OML/cmm/m/it/10 Voorallepadengeldtalsstoplichtoproodsluisdeurendichtenschipvert
-rokkendanisdenivelleermachineuitA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 p\OT1/cmr/m
-/n/10 47\OML/cmm/m/it/10 Erisgeenpadwaaropeenschipvertrektvanuitderechtersluisd
-eurendelinkersluisdeurisopenenlinkeruitaartstoplichtenlinkeruitvaartsoplichtopg
-roenennibelleermachineisaanE <>
- []
-
-
-Overfull \hbox (517.76332pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 48\OML/cmm/m/it/10 Eriseenpadwaarvoorgeldtdat
-linkerslsuisdeurendichtzijn; rechtersluisdeurendichtzijnrechteruitvaartstoplich
-tisroodenrechteruitvaartstoplichtisroodterwijleergeenschipindesluislichtE <>
- []
-
-
-Overfull \hbox (58.15024pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 49\OML/cmm/m/it/10 EEnstoplichstaataltijdopgr
-oenalsdedeurenopenstaanendepompnietbezigis:A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 
-forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 :
- []
-
-
-Overfull \hbox (1392.6764pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 stoplight:groen\OMS/cmsy
-/m/n/10 ^^@ \OML/cmm/m/it/10 > gate\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10 :opengat
-e\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 mai
-n:pomp\OT1/cmr/m/n/10 1[]\OML/cmm/m/it/10 dle\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/1
-0 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 dle\OT1/cmr/m/n/10 )\OML/cmm/m/i
-t/10 p\OT1/cmr/m/n/10 50\OML/cmm/m/it/10 Ingeenenkelestaatvandesluisbehalvetuss
-endelowergateenuppergateenuppergateenlowergateendestatenAtArrivalLowenAtEnterin
-gHighisdewachttijdlangerdan\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 tijdseenhedenA\OT1
-/cmr/m/n/10 []\OML/cmm/m/it/10 notp\OT1/cmr/m/n/10 51\OML/cmm/m/it/10 Voorallep
-adenineenpompgeldtdatalswaterlevellagerisdanwaterlaagpompwaterwegisaltijdfalseA
-\OT1/cmr/m/n/10 [](\OML/cmm/m/it/10 main:waterlevel <
- []
-
-
-Overfull \hbox (926.84459pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 waterlaag\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/1
-0 > \OT1/cmr/m/n/10 (!\OML/cmm/m/it/10 pompwaterweg\OMS/cmsy/m/n/10 jj\OML/cmm/
-m/it/10 pompwaterweg \OT1/cmr/m/n/10 == \OML/cmm/m/it/10 false\OT1/cmr/m/n/10 )
-\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 52\OML/cmm/m/it/10 Voorallepadengelftdatalswa
-terlevelhogerisdanwaterhoogdanispompwateraltjdfalseA\OT1/cmr/m/n/10 []\OML/cmm/
-m/it/10 p\OT1/cmr/m/n/10 53\OML/cmm/m/it/10 Hetzalnooitgebeurendateenpompwatert
-oevoegtalsdeurenopenzjn; geenschipinsluisenstoplichtopgroenA\OT1/cmr/m/n/10 []\
-OML/cmm/m/it/10 notmain:rn\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 
-main:rn\OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
- []
-
-
-Overfull \hbox (792.87378pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10 :opengate\OT1/cmr/m/n/
-10 (1)\OML/cmm/m/it/10 :openQueue:list\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 N \OMS/
-cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1] == 0((\OML/cmm/m/it/10 stoplight\OT1/cmr/m/n
-/10 (0)\OML/cmm/m/it/10 :groen\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 stoplight\OT1
-/cmr/m/n/10 (1)\OML/cmm/m/it/10 :groen\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 jj\OT1/
-cmr/m/n/10 (\OML/cmm/m/it/10 stoplight\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/10 :groe
-nstoplight\OT1/cmr/m/n/10 (4)\OML/cmm/m/it/10 :groen\OT1/cmr/m/n/10 ))\OML/cmm/
-m/it/10 p\OT1/cmr/m/n/10 54\OML/cmm/m/it/10 Hetkangebeurendatbijpomprhetstoplic
-htoproodstaat; hetschipindesluisendeurisdicht; enwaterstandgelijkaanwaterlaagE 
-<>
- []
-
-
-Overfull \hbox (121.80376pt too wide) in paragraph at lines 316--387
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 main:blocked\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10
- jj\OML/cmm/m/it/10 main:blocked\OT1/cmr/m/n/10 2)\OMS/cmsy/m/n/10 ^^@ \OML/cmm
-/m/it/10 > Queue:list\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10 ^^@ \
-OT1/cmr/m/n/10 1] \OML/cmm/m/it/10 > \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 gate\OT1
-/cmr/m/n/10 (0)\OML/cmm/m/it/10 :closedgate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 
-:closedmain:waterlevel \OT1/cmr/m/n/10 ==
- []
-
-
-Overfull \hbox (234.19537pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 main:waterlevel[]aagp\OT1/cmr/m/n/10 55\OML/cmm/m/it/10 Erisee
-nmogelijkheiddatvanuitpompgetstoplichtoproodwordtgezetenwaterlevelgelijkisaanwa
-terlaagE <>
- []
-
-
-Overfull \hbox (345.44487pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 main:rn\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 ma
-in:rn\OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 > gate\OT1/cmr/m/n/
-10 (0)\OML/cmm/m/it/10 :closedmain:waterlevel \OT1/cmr/m/n/10 == \OML/cmm/m/it/
-10 waterlaagp\OT1/cmr/m/n/10 56\OML/cmm/m/it/10 Hetkanvoorkomendatbijstatepompa
-anhetwaterniveaugelijkisaanwaterlaagE <>
- []
-
-
-Overfull \hbox (532.31773pt too wide) in paragraph at lines 316--387
-\OML/cmm/m/it/10 main:rn\OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 ma
-in:rn\OT1/cmr/m/n/10 2\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 > main:waterlevel \
-OT1/cmr/m/n/10 == \OML/cmm/m/it/10 main:waterlaagp\OT1/cmr/m/n/10 57\OML/cmm/m/
-it/10 Voorallepadengeltdatereenmogelijkheidisdatdeurisopen=dichtensluisnivellee
-rtomhoog=omlaagA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (0)\OML/
-cmm/m/it/10 :open\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 main:direction \OT1/cmr/m/n
-/10 ==
- []
-
-[46]
-
-LaTeX Warning: Citation `locke_2020' on page 47 undefined on input line 405.
-
-
-LaTeX Warning: Citation `gnsguides' on page 47 undefined on input line 410.
-
-[47] [48]
+[52] [53]
 ! Undefined control sequence.
-l.473  \chapter
+l.482  \chapter
                {Testresultaten CTL logica}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4932,14 +5328,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.478  	\begin{gather*}
+l.487  	\begin{gather*}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.479  		D=\Set
+l.488  		D=\Set
                {x\in\nat}{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4950,13 +5346,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.479  		D=\Set{x\in
+l.488  		D=\Set{x\in
                     \nat}{1\le x\le 100}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.479  		D=\Set{x\in\nat
+l.488  		D=\Set{x\in\nat
                         }{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4965,7 +5361,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.479  		D=\Set{x\in\nat}
+l.488  		D=\Set{x\in\nat}
                          {1\le x\le 100}\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4980,7 +5376,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.479  		D=\Set{x\in\nat}{1\le x\le 100}\\
+l.488  		D=\Set{x\in\nat}{1\le x\le 100}\\
                                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4989,7 +5385,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.479  		D=\Set{x\in\nat}{1\le x\le 100}\\
+l.488  		D=\Set{x\in\nat}{1\le x\le 100}\\
                                           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4997,7 +5393,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.479  		D=\Set{x\in\nat}{1\le x\le 100}\\
+l.488  		D=\Set{x\in\nat}{1\le x\le 100}\\
                                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5006,7 +5402,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.480  		D=\Set
+l.489  		D=\Set
                [\big]{x\in\nat}{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5017,13 +5413,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.480  		D=\Set[\big]{x\in
+l.489  		D=\Set[\big]{x\in
                           \nat}{1\le x\le 100}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.480  		D=\Set[\big]{x\in\nat
+l.489  		D=\Set[\big]{x\in\nat
                               }{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5032,7 +5428,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.480  		D=\Set[\big]{x\in\nat}
+l.489  		D=\Set[\big]{x\in\nat}
                                {1\le x\le 100}\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5047,7 +5443,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.480  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
+l.489  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
                                                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5056,7 +5452,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.480  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
+l.489  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
                                                 
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -5064,7 +5460,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.480  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
+l.489  		D=\Set[\big]{x\in\nat}{1\le x\le 100}\\
                                                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5073,7 +5469,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.481  		D=\Set
+l.490  		D=\Set
                [\Big]{x\in\nat}{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5084,13 +5480,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.481  		D=\Set[\Big]{x\in
+l.490  		D=\Set[\Big]{x\in
                           \nat}{1\le x\le 100}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.481  		D=\Set[\Big]{x\in\nat
+l.490  		D=\Set[\Big]{x\in\nat
                               }{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5099,7 +5495,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.481  		D=\Set[\Big]{x\in\nat}
+l.490  		D=\Set[\Big]{x\in\nat}
                                {1\le x\le 100}\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5114,7 +5510,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.481  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
+l.490  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
                                                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5123,7 +5519,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.481  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
+l.490  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
                                                 
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -5131,7 +5527,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.481  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
+l.490  		D=\Set[\Big]{x\in\nat}{1\le x\le 100}\\
                                                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5140,7 +5536,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.482  		D=\Set
+l.491  		D=\Set
                [\bigg]{x\in\nat}{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5151,13 +5547,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.482  		D=\Set[\bigg]{x\in
+l.491  		D=\Set[\bigg]{x\in
                            \nat}{1\le x\le 100}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.482  		D=\Set[\bigg]{x\in\nat
+l.491  		D=\Set[\bigg]{x\in\nat
                                }{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5166,7 +5562,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.482  		D=\Set[\bigg]{x\in\nat}
+l.491  		D=\Set[\bigg]{x\in\nat}
                                 {1\le x\le 100}\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5181,7 +5577,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.482  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
+l.491  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5190,7 +5586,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.482  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
+l.491  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
                                                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -5198,7 +5594,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.482  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
+l.491  		D=\Set[\bigg]{x\in\nat}{1\le x\le 100}\\
                                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5207,7 +5603,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.483  		D=\Set
+l.492  		D=\Set
                [\Bigg]{x\in\nat}{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5218,13 +5614,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.483  		D=\Set[\Bigg]{x\in
+l.492  		D=\Set[\Bigg]{x\in
                            \nat}{1\le x\le 100}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.483  		D=\Set[\Bigg]{x\in\nat
+l.492  		D=\Set[\Bigg]{x\in\nat
                                }{1\le x\le 100}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5233,7 +5629,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.483  		D=\Set[\Bigg]{x\in\nat}
+l.492  		D=\Set[\Bigg]{x\in\nat}
                                 {1\le x\le 100}\\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5248,7 +5644,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.483  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
+l.492  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5257,7 +5653,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.483  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
+l.492  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
                                                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -5265,7 +5661,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.483  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
+l.492  		D=\Set[\Bigg]{x\in\nat}{1\le x\le 100}\\
                                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5274,7 +5670,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.484  		D=\Set
+l.493  		D=\Set
                *{x\in\nat}{1\le x\le \frac{200}{2}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5285,13 +5681,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.484  		D=\Set*{x\in
+l.493  		D=\Set*{x\in
                      \nat}{1\le x\le \frac{200}{2}}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.484  		D=\Set*{x\in\nat
+l.493  		D=\Set*{x\in\nat
                          }{1\le x\le \frac{200}{2}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5300,7 +5696,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Extra }, or forgotten $.
-l.484  		D=\Set*{x\in\nat}
+l.493  		D=\Set*{x\in\nat}
                           {1\le x\le \frac{200}{2}}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5309,13 +5705,13 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-! LaTeX Error: \begin{center} on input line 477 ended by \end{gather*}.
+! LaTeX Error: \begin{center} on input line 486 ended by \end{gather*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485  	\end{gather*}
+l.494  	\end{gather*}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5324,7 +5720,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.485  	\end{gather*}
+l.494  	\end{gather*}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5335,7 +5731,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.485  	\end{gather*}
+l.494  	\end{gather*}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -5344,7 +5740,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Undefined control sequence.
-l.495  $L\stock
+l.504  $L\stock
                 a$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5353,14 +5749,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (13.25859pt too wide) in paragraph at lines 492--496
+Overfull \hbox (13.25859pt too wide) in paragraph at lines 501--505
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^R \OML/cmm/m/it/10 SxSis
 eentransitierelatiedietotaalmoetzij; datbetekent; datvoorelkestates \OMS/cmsy/m
 /n/10 2
  []
 
 ! Undefined control sequence.
-l.497  $\forall x\,\exists y \implies
+l.506  $\forall x\,\exists y \implies
                                       $
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5371,7 +5767,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \mtproforall 
                              
-l.499  $\mtproforall
+l.508  $\mtproforall
                      x\,\mtproexists y \cap \subset \in \vee \diamondsuit \d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5380,7 +5776,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.499  $\mtproforall x\,\mtproexists
+l.508  $\mtproforall x\,\mtproexists
                                      y \cap \subset \in \vee \diamondsuit \d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5388,13 +5784,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[49]
-Overfull \hbox (32.57272pt too wide) in paragraph at lines 504--517
+
+Overfull \hbox (32.57272pt too wide) in paragraph at lines 513--526
  [] 
  []
 
+[54]
 ! Undefined control sequence.
-l.544  \chapter
+l.553  \chapter
                {Time bound derivation}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5407,19 +5804,19 @@ LaTeX Info: File `mydata.csv' already exists on the system.
             Not generating it from this source.
 
 
-Overfull \hbox (300.74437pt too wide) in paragraph at lines 576--576
+Overfull \hbox (300.74437pt too wide) in paragraph at lines 585--585
 []  \OT1/cmtt/m/n/10 In welke staat de automaat zich ook bevindt, in alle richt
 ingen kom je vroeg of laat een state tegen, waarin p geldig is.[] 
  []
 
 
-Overfull \hbox (48.74657pt too wide) in paragraph at lines 583--583
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 592--592
 []  \OT1/cmtt/m/n/10 Ookal treedt p nooit p volgens de logica klopt het dan dat
  q volgt uit p.[] 
  []
 
 ! Undefined control sequence.
-l.586  \VerbatimInput
+l.595  \VerbatimInput
                      {mydata.csv}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5427,78 +5824,32 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[50]
-Overfull \hbox (458.243pt too wide) in paragraph at lines 630--630
+[55]
+Overfull \hbox (43.8337pt too wide) in paragraph at lines 634--648
+[][] 
+ []
+
+[56]
+Overfull \hbox (458.243pt too wide) in paragraph at lines 684--684
 []  \OT1/cmtt/m/n/10 A[] not (Stoplicht.Green && not (Deuren.hoog_open||Deuren.
 laag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.
 stopgaphigh2))[] 
  []
 
 
-Overfull \hbox (704.99084pt too wide) in paragraph at lines 630--630
+Overfull \hbox (704.99084pt too wide) in paragraph at lines 684--684
 []  \OT1/cmtt/m/n/10 A[] not ((Deuren.hoog_open||Deuren.laag_open||Deuren.Openi
 ng_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Slu
 is.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2))[] 
  []
 
 
-Overfull \hbox (59.24648pt too wide) in paragraph at lines 630--630
+Overfull \hbox (59.24648pt too wide) in paragraph at lines 684--684
 []  \OT1/cmtt/m/n/10 (Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||
 Deuren.hoog_open)[] 
  []
 
-[51]
-Overfull \hbox (458.243pt too wide) in paragraph at lines 815--815
-[]  \OT1/cmtt/m/n/10 Als het schip boven is, dan is waterlvel gelijk aan hoog, 
-filling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty v
-alve is dicht.[] 
- []
-
-
-Overfull \hbox (353.24391pt too wide) in paragraph at lines 815--815
-[]  \OT1/cmtt/m/n/10 Schip is in waterlock, waterlevel is hoog, filling valve i
-s dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
- []
-
-
-Overfull \hbox (384.74364pt too wide) in paragraph at lines 815--815
-[]  \OT1/cmtt/m/n/10 Schip is dan laag, waterlevel gelijk aan laag, filling val
-ve is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.
-[] 
- []
-
-
-Overfull \hbox (437.24318pt too wide) in paragraph at lines 815--815
-[]  \OT1/cmtt/m/n/10 Als schip beneden is dan is waterlevel gelijk aan laag, fi
-lling valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valv
-e is open.[] 
- []
-
-
-Overfull \hbox (416.24336pt too wide) in paragraph at lines 815--815
-[]  \OT1/cmtt/m/n/10 Schip is in water lock, waterlevel is laag, flilling valve
- is open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is d
-icht,.[] 
- []
-
-
-Overfull \hbox (405.74345pt too wide) in paragraph at lines 815--815
-[]  \OT1/cmtt/m/n/10 Schip is dan hoog, waterlevel is gelijk aan hoog, filling 
-valve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is d
-icht[] 
- []
-
-[52] [53] [54]
-! Undefined control sequence.
-l.818  \chapter
-               {Queries}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[55]
+[57]
 Overfull \hbox (458.243pt too wide) in paragraph at lines 869--869
 []  \OT1/cmtt/m/n/10 Als het schip boven is, dan is waterlvel gelijk aan hoog, 
 filling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty v
@@ -5539,7 +5890,47 @@ valve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is d
 icht[] 
  []
 
-[56]
+[58] [59] [60] [61]
+Overfull \hbox (458.243pt too wide) in paragraph at lines 923--923
+[]  \OT1/cmtt/m/n/10 Als het schip boven is, dan is waterlvel gelijk aan hoog, 
+filling valve is dicht, lower gates zijn gesloten, uppergates zijn open,empty v
+alve is dicht.[] 
+ []
+
+
+Overfull \hbox (353.24391pt too wide) in paragraph at lines 923--923
+[]  \OT1/cmtt/m/n/10 Schip is in waterlock, waterlevel is hoog, filling valve i
+s dicht, lower gates gesloten, upper gates gesloten, empty valve is open.[] 
+ []
+
+
+Overfull \hbox (384.74364pt too wide) in paragraph at lines 923--923
+[]  \OT1/cmtt/m/n/10 Schip is dan laag, waterlevel gelijk aan laag, filling val
+ve is dicht, lowergates zijn open, uppergates zijn dicht, empty valve is dicht.
+[] 
+ []
+
+
+Overfull \hbox (437.24318pt too wide) in paragraph at lines 923--923
+[]  \OT1/cmtt/m/n/10 Als schip beneden is dan is waterlevel gelijk aan laag, fi
+lling valve is dicht, lower gates zijn open, upper gates zijn dicht, empty valv
+e is open.[] 
+ []
+
+
+Overfull \hbox (416.24336pt too wide) in paragraph at lines 923--923
+[]  \OT1/cmtt/m/n/10 Schip is in water lock, waterlevel is laag, flilling valve
+ is open, lower gates zijn gesloten, upper gates zij gesloten, empty valve is d
+icht,.[] 
+ []
+
+[62]
+Overfull \hbox (405.74345pt too wide) in paragraph at lines 923--923
+[]  \OT1/cmtt/m/n/10 Schip is dan hoog, waterlevel is gelijk aan hoog, filling 
+valve is dicht, uppergates zijn open, lowergates zijn dicht, filling valve is d
+icht[] 
+ []
+
 
 ! LaTeX Error: Can be used only in preamble.
 
@@ -5547,7 +5938,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.887  \usepackage
+l.941  \usepackage
                   {pgf}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5556,7 +5947,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 \setform ->\pgfqkeys 
                      {/form }
-l.889  \setform
+l.943  \setform
                {field1/.store in=\fieldi,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5565,7 +5956,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.889  \setform{field1/.store in=\fieldi
+l.943  \setform{field1/.store in=\fieldi
                                         ,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5574,7 +5965,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.890  	field2/.store in=\fieldii
+l.944  	field2/.store in=\fieldii
                                  ,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5590,37 +5981,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.936  }
+l.990  }
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[57]
-! Undefined control sequence.
-l.963  \chapter
-               {Testresultaten}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (28.8337pt too wide) in paragraph at lines 971--985
-[] 
- []
-
-! Undefined control sequence.
-l.999  \chapter
-               {Security}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) [58]
+) [63]
 
 ! LaTeX Error: \begin{document} ended by \end{appendices}.
 
@@ -5634,7 +6001,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-(verslag.bbl) [59
+(verslag.bbl) [64
 
 
 ] (verslag.aux (1_Intro/intro.aux) (2_Body/body.aux)
@@ -5650,7 +6017,7 @@ Here is how much of TeX's memory you used:
  24462 multiletter control sequences out of 15000+600000
  474984 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,67p,1253b,396s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 60i,12n,67p,1253b,398s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk> <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcss1000.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -5668,9 +6035,9 @@ onts/cm/cmssbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/gally/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on verslag.pdf (60 pages, 407915 bytes).
+Output written on verslag.pdf (65 pages, 411376 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
+ 294 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
