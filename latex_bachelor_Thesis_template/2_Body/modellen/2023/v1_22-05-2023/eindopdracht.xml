@@ -530,7 +530,7 @@ bool isFull()
 			<source ref="id9"/>
 			<target ref="id10"/>
 			<label kind="select" x="1072" y="119">shipid: kenteken</label>
-			<label kind="synchronisation" x="1072" y="153">schipklik[shipid]!</label>
+			<label kind="synchronisation" x="1071" y="178">schipklik[shipid]!</label>
 		</transition>
 		<transition>
 			<source ref="id4"/>
