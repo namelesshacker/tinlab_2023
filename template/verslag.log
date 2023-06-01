@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  1 JUN 2023 17:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  1 JUN 2023 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -167,9 +167,9 @@ Package pdftex.def Info: logohr.png  used on input line 25.
 {C:/Users/gally/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logohr.png
 >] (verslag.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
+(Font)              <5> on input line 3.
  [1])
 \tf@toc=\write3
 \openout3 = `verslag.toc'.
@@ -183,46 +183,47 @@ Package pdftex.def Info: 4varmodel.png  used on input line 46.
 <sluismodel.jpg, id=19, 432.61626pt x 234.8775pt>
 File: sluismodel.jpg Graphic file (type jpg)
 <use sluismodel.jpg>
-Package pdftex.def Info: sluismodel.jpg  used on input line 55.
+Package pdftex.def Info: sluismodel.jpg  used on input line 56.
 (pdftex.def)             Requested size: 227.62204pt x 123.58133pt.
 
-Overfull \hbox (61.9278pt too wide) in paragraph at lines 54--56
-\OT1/cmss/m/n/10 Hieronder een voor-beeld van een sluis-mo-del [] 
+Overfull \hbox (105.8353pt too wide) in paragraph at lines 54--57
+\OT1/cmss/m/n/10 op-dracht. Hier-on-der een voor-beeld van een sluis-mo-del [] 
+
  []
 
 <sluispassage.png, id=20, 490.83376pt x 689.57625pt>
 File: sluispassage.png Graphic file (type png)
 <use sluispassage.png>
-Package pdftex.def Info: sluispassage.png  used on input line 58.
+Package pdftex.def Info: sluispassage.png  used on input line 59.
 (pdftex.def)             Requested size: 227.62204pt x 319.78682pt.
 [3 <./4varmodel.png> <./sluismodel.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 65--77
+Underfull \hbox (badness 10000) in paragraph at lines 66--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--77
+Underfull \hbox (badness 10000) in paragraph at lines 66--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--77
+Underfull \hbox (badness 10000) in paragraph at lines 66--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--77
+Underfull \hbox (badness 10000) in paragraph at lines 66--78
 
  []
 
 [4 <./sluispassage.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 [5]
 
-LaTeX Warning: File `logo.png' not found on input line 127.
+LaTeX Warning: File `logo.png' not found on input line 128.
 
 
 ! Package pdftex.def Error: File `logo.png' not found: using draft setting.
@@ -231,14 +232,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 	\includegraphics[width=8cm]{logo.png}
+l.128 	\includegraphics[width=8cm]{logo.png}
                                              % also works with logo.pdf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [6]
 
-LaTeX Warning: File `logo.png' not found on input line 129.
+LaTeX Warning: File `logo.png' not found on input line 130.
 
 
 ! Package pdftex.def Error: File `logo.png' not found: using draft setting.
@@ -247,14 +248,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 	\includegraphics[width=8cm]{logo.png}
+l.130 	\includegraphics[width=8cm]{logo.png}
                                              % also works with logo.pdf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [7]
 
-LaTeX Warning: File `logo.png' not found on input line 131.
+LaTeX Warning: File `logo.png' not found on input line 132.
 
 
 ! Package pdftex.def Error: File `logo.png' not found: using draft setting.
@@ -263,13 +264,13 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 	\includegraphics[width=8cm]{logo.png}
+l.132 	\includegraphics[width=8cm]{logo.png}
                                              % also works with logo.pdf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: File `logo.png' not found on input line 133.
+LaTeX Warning: File `logo.png' not found on input line 134.
 
 
 ! Package pdftex.def Error: File `logo.png' not found: using draft setting.
@@ -278,14 +279,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 		\includegraphics[width=8cm]{logo.png}
+l.134 		\includegraphics[width=8cm]{logo.png}
                                               % also works with logo.pdf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [8]
 
-LaTeX Warning: File `logo.png' not found on input line 135.
+LaTeX Warning: File `logo.png' not found on input line 136.
 
 
 ! Package pdftex.def Error: File `logo.png' not found: using draft setting.
@@ -294,7 +295,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 	\includegraphics[width=8cm]{logo.png}
+l.136 	\includegraphics[width=8cm]{logo.png}
                                              % also works with logo.pdf
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -303,7 +304,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.211 ...ate(0).open||gate(1).open) -> (main.pomp_
+l.212 ...ate(0).open||gate(1).open) -> (main.pomp_
                                                   idle || main.pomp2_idle)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -315,7 +316,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.212 		\item
+l.213 		\item
                b) Als de deur is gesloten dan bevind de maincontroller zich ...
 
 Try typing  <return>  to proceed.
@@ -328,7 +329,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.212 		\item  b
+l.213 		\item  b
                 ) Als de deur is gesloten dan bevind de maincontroller zich ...
 
 Try typing  <return>  to proceed.
@@ -341,7 +342,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.212 		\item  b
+l.213 		\item  b
                 ) Als de deur is gesloten dan bevind de maincontroller zich ...
 
 Try typing  <return>  to proceed.
@@ -354,7 +355,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 		\item
+l.215 		\item
                p15
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -362,7 +363,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.214 		\item  p
+l.215 		\item  p
                 15
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -370,7 +371,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.214 		\item  p
+l.215 		\item  p
                 15
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -379,7 +380,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (250.84296pt too wide) in paragraph at lines 210--214
+Overfull \hbox (250.84296pt too wide) in paragraph at lines 211--215
 \OT1/cmss/m/n/10 > (main.pomp$[]\OML/cmm/m/it/10 dle\OMS/cmsy/m/n/10 jj\OML/cmm
 /m/it/10 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 dle\OT1/cmr/m/n/10 )\OML/
 cmm/m/it/10 b\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Alsdedeurisgeslotendanbevinddema
@@ -390,7 +391,7 @@ osed\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.214 		\item  p
+l.215 		\item  p
                 15
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -399,7 +400,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (31.13919pt too wide) in paragraph at lines 215--217
+Overfull \hbox (31.13919pt too wide) in paragraph at lines 216--218
 []\OT1/cmss/m/n/10 p16 If en-gine re-gu-la-tion is on tor-que, then the clutch 
 is clo-sed (un-de-fi-ned) A[](Engine.Torque
  []
@@ -407,13 +408,13 @@ is clo-sed (un-de-fi-ned) A[](Engine.Torque
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.218 		A[] main.s5 -> main.waterlevel_
+l.219 		A[] main.s5 -> main.waterlevel_
                                        laag && idle_pomp1 && gate(0).open &&...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.218 		A[] main.s5 -> main.waterlevel_laag &
+l.219 		A[] main.s5 -> main.waterlevel_laag &
                                              & idle_pomp1 && gate(0).open &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -423,7 +424,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 		A[] main.s5 -> main.waterlevel_laag &&
+l.219 		A[] main.s5 -> main.waterlevel_laag &&
                                                idle_pomp1 && gate(0).open &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -433,7 +434,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ...5 -> main.waterlevel_laag && idle_pomp1 &
+l.219 ...5 -> main.waterlevel_laag && idle_pomp1 &
                                                   & gate(0).open && gate(1)....
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -443,7 +444,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ... -> main.waterlevel_laag && idle_pomp1 &&
+l.219 ... -> main.waterlevel_laag && idle_pomp1 &&
                                                    gate(0).open && gate(1).o...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -453,7 +454,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ...evel_laag && idle_pomp1 && gate(0).open &
+l.219 ...evel_laag && idle_pomp1 && gate(0).open &
                                                   & gate(1).open && (stoplig...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -463,7 +464,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ...vel_laag && idle_pomp1 && gate(0).open &&
+l.219 ...vel_laag && idle_pomp1 && gate(0).open &&
                                                    gate(1).open && (stopligh...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -473,7 +474,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ...e_pomp1 && gate(0).open && gate(1).open &
+l.219 ...e_pomp1 && gate(0).open && gate(1).open &
                                                   & (stoplight(0).green && s...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -483,7 +484,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ..._pomp1 && gate(0).open && gate(1).open &&
+l.219 ..._pomp1 && gate(0).open && gate(1).open &&
                                                    (stoplight(0).green && st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -493,7 +494,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ... && gate(1).open && (stoplight(0).green &
+l.219 ... && gate(1).open && (stoplight(0).green &
                                                   & stoplight(1).green || st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -503,7 +504,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ...&& gate(1).open && (stoplight(0).green &&
+l.219 ...&& gate(1).open && (stoplight(0).green &&
                                                    stoplight(1).green || sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -513,7 +514,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ...toplight(1).green || stoplight(2).green &
+l.219 ...toplight(1).green || stoplight(2).green &
                                                   & stoplight(3).green )
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -523,7 +524,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.218 ...oplight(1).green || stoplight(2).green &&
+l.219 ...oplight(1).green || stoplight(2).green &&
                                                    stoplight(3).green )
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -539,7 +540,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 		\item
+l.220 		\item
                p18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
 
 Try typing  <return>  to proceed.
@@ -552,7 +553,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 		\item  p
+l.220 		\item  p
                 18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
 
 Try typing  <return>  to proceed.
@@ -565,14 +566,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 		\item  p
+l.220 		\item  p
                 18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Misplaced alignment tab character &.
-l.220 ...(i:id_d) forall (j:id_s) gate(i).closed &
+l.221 ...(i:id_d) forall (j:id_s) gate(i).closed &
                                                   & stoplight.rood && main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -582,7 +583,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.220 ...i:id_d) forall (j:id_s) gate(i).closed &&
+l.221 ...i:id_d) forall (j:id_s) gate(i).closed &&
                                                    stoplight.rood && main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -592,7 +593,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.220 ...:id_s) gate(i).closed && stoplight.rood &
+l.221 ...:id_s) gate(i).closed && stoplight.rood &
                                                   & main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -602,7 +603,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.220 ...id_s) gate(i).closed && stoplight.rood &&
+l.221 ...id_s) gate(i).closed && stoplight.rood &&
                                                    main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -614,7 +615,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.222 		
+l.223 		
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -622,7 +623,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.222 		
+l.223 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -631,7 +632,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (1046.24826pt too wide) in paragraph at lines 217--222
+Overfull \hbox (1046.24826pt too wide) in paragraph at lines 218--223
 \OT1/cmss/m/n/10 groen A[] main.s5 -> main.waterlevel$[]\OML/cmm/m/it/10 aagidl
 e[]omp\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10
  :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10 (\OML/cmm/m/
@@ -645,7 +646,7 @@ t/10 main:direction\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (134.74622pt too wide) in paragraph at lines 217--222
+Overfull \hbox (134.74622pt too wide) in paragraph at lines 218--223
 \OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 : \O
 ML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 j \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cm
@@ -657,7 +658,7 @@ enhebbenvoorangopinvarenden[]$
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.222 		
+l.223 		
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -666,7 +667,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Misplaced alignment tab character &.
-l.224 		A[] main.s6 -> gate(0).open &
+l.225 		A[] main.s6 -> gate(0).open &
                                      & gate(1).open && stoplight(0).groen &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -676,7 +677,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.224 		A[] main.s6 -> gate(0).open &&
+l.225 		A[] main.s6 -> gate(0).open &&
                                        gate(1).open && stoplight(0).groen &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -686,7 +687,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.224 ...main.s6 -> gate(0).open && gate(1).open &
+l.225 ...main.s6 -> gate(0).open && gate(1).open &
                                                   & stoplight(0).groen && st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -696,7 +697,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.224 ...ain.s6 -> gate(0).open && gate(1).open &&
+l.225 ...ain.s6 -> gate(0).open && gate(1).open &&
                                                    stoplight(0).groen && sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -706,7 +707,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.224 ...n && gate(1).open && stoplight(0).groen &
+l.225 ...n && gate(1).open && stoplight(0).groen &
                                                   & stoplight(1).groen
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -716,7 +717,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.224 ... && gate(1).open && stoplight(0).groen &&
+l.225 ... && gate(1).open && stoplight(0).groen &&
                                                    stoplight(1).groen
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -728,7 +729,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.226 ...] (main.rn1 || main.rn2) -> forall (i:id_
+l.227 ...] (main.rn1 || main.rn2) -> forall (i:id_
                                                   d) forall(j:id_s )gate(i)....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -740,7 +741,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 		\item
+l.228 		\item
                p22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
 
 Try typing  <return>  to proceed.
@@ -753,7 +754,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 		\item  p
+l.228 		\item  p
                 22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
 
 Try typing  <return>  to proceed.
@@ -766,7 +767,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 		\item  p
+l.228 		\item  p
                 22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
 
 Try typing  <return>  to proceed.
@@ -779,7 +780,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.229 		\item
+l.230 		\item
                p23 urgent locations; het is niet mogelijk om hier te wachten
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -787,7 +788,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.229 		\item  p
+l.230 		\item  p
                 23 urgent locations; het is niet mogelijk om hier te wachten
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -795,7 +796,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.229 		\item  p
+l.230 		\item  p
                 23 urgent locations; het is niet mogelijk om hier te wachten
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -804,7 +805,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (622.02261pt too wide) in paragraph at lines 225--229
+Overfull \hbox (622.02261pt too wide) in paragraph at lines 226--230
 \OT1/cmss/m/n/10 rood A[] (main.rn1 || main.rn2) -> fo-rall (i:id$[]\OT1/cmr/m/
 n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j \OT1/cmr/m/n/1
 0 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 
@@ -819,7 +820,7 @@ cmr/m/n/10 12\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.229 		\item  p
+l.230 		\item  p
                 23 urgent locations; het is niet mogelijk om hier te wachten
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -829,7 +830,7 @@ deleted material, e.g., by typing `I$}'.
 
 [12]
 ! Misplaced alignment tab character &.
-l.241 		A[]  main.s6 &
+l.242 		A[]  main.s6 &
                       & schip.varen ->  Queue.list[N-1] <2
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -839,7 +840,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.241 		A[]  main.s6 &&
+l.242 		A[]  main.s6 &&
                         schip.varen ->  Queue.list[N-1] <2
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -849,7 +850,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.245 		A[] schip.varen &
+l.246 		A[] schip.varen &
                          & main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -859,7 +860,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.245 		A[] schip.varen &&
+l.246 		A[] schip.varen &&
                            main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -869,7 +870,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.245 ...n && main.s12 || main.s13 -> (!main.rn1 &
+l.246 ...n && main.s12 || main.s13 -> (!main.rn1 &
                                                   & !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -879,7 +880,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.245 ... && main.s12 || main.s13 -> (!main.rn1 &&
+l.246 ... && main.s12 || main.s13 -> (!main.rn1 &&
                                                    !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -891,13 +892,13 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 		A[] pomp.pomp_
+l.254 		A[] pomp.pomp_
                       active -> main.s6 && forall(i:id_d) gate(i).closed
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.253 		A[] pomp.pomp_active -> main.s6 &
+l.254 		A[] pomp.pomp_active -> main.s6 &
                                          & forall(i:id_d) gate(i).closed
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -907,7 +908,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.253 		A[] pomp.pomp_active -> main.s6 &&
+l.254 		A[] pomp.pomp_active -> main.s6 &&
                                            forall(i:id_d) gate(i).closed
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -923,7 +924,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.254 		\item
+l.255 		\item
                p38 Geen deadlock
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -935,7 +936,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.254 		\item  p
+l.255 		\item  p
                 38 Geen deadlock
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -947,7 +948,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.254 		\item  p
+l.255 		\item  p
                 38 Geen deadlock
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -959,7 +960,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 		\item
+l.256 		\item
                p39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 
 Try typing  <return>  to proceed.
@@ -968,7 +969,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.255 		\item  p
+l.256 		\item  p
                 39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -976,7 +977,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.255 		\item  p
+l.256 		\item  p
                 39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -987,7 +988,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.255 		\item  p
+l.256 		\item  p
                 39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -998,7 +999,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.256 		A[] not forall(i:id_
+l.257 		A[] not forall(i:id_
                             d) gate.closed ->(main.s12||main.s13)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1010,7 +1011,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 		\item
+l.258 		\item
                p40 Voor alle paden geld dat als een sluis aan het voorbereid...
 
 Try typing  <return>  to proceed.
@@ -1023,7 +1024,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 		\item  p
+l.258 		\item  p
                 40 Voor alle paden geld dat als een sluis aan het voorbereid...
 
 Try typing  <return>  to proceed.
@@ -1036,7 +1037,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 		\item  p
+l.258 		\item  p
                 40 Voor alle paden geld dat als een sluis aan het voorbereid...
 
 Try typing  <return>  to proceed.
@@ -1049,7 +1050,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.259 		\item
+l.260 		\item
                 p41 Voor alle paden geld dat als een deur dicht is het aanta...
 
 Try typing  <return>  to proceed.
@@ -1058,7 +1059,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.259 		\item   p
+l.260 		\item   p
                  41 Voor alle paden geld dat als een deur dicht is het aanta...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1066,7 +1067,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.259 		\item   p
+l.260 		\item   p
                  41 Voor alle paden geld dat als een deur dicht is het aanta...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1075,14 +1076,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (18.4618pt too wide) in paragraph at lines 255--259
+Overfull \hbox (18.4618pt too wide) in paragraph at lines 256--260
 \OT1/cmss/m/n/10 een deur open-staat om een schip naar bui-ten te la-ten. A[] n
 ot forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate:closed\OMS/cmsy/m/n/10 
 ^^@ \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (185.49286pt too wide) in paragraph at lines 255--259
+Overfull \hbox (185.49286pt too wide) in paragraph at lines 256--260
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 12\OMS/cmsy/m/n/10 jj\O
 ML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 13)\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 40\OM
 L/cmm/m/it/10 Voorallepadengelddatalseensluisaanhetvoorbereidenis; danzijnalled
@@ -1093,7 +1094,7 @@ m/n/10 ^^@ \OML/cmm/m/it/10 >
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.259 		\item   p
+l.260 		\item   p
                  41 Voor alle paden geld dat als een deur dicht is het aanta...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1105,13 +1106,13 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.276 		A[] forall(i:id_
+l.277 		A[] forall(i:id_
                         s) stoplight.groen -> gate(0).open && gate(1).open &...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.276 ...i:id_s) stoplight.groen -> gate(0).open &
+l.277 ...i:id_s) stoplight.groen -> gate(0).open &
                                                   & gate(1).open && (main.po...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1121,7 +1122,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.276 ...:id_s) stoplight.groen -> gate(0).open &&
+l.277 ...:id_s) stoplight.groen -> gate(0).open &&
                                                    gate(1).open && (main.pom...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1131,7 +1132,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.276 ...t.groen -> gate(0).open && gate(1).open &
+l.277 ...t.groen -> gate(0).open && gate(1).open &
                                                   & (main.pomp1_idle || main...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1141,7 +1142,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.276 ....groen -> gate(0).open && gate(1).open &&
+l.277 ....groen -> gate(0).open && gate(1).open &&
                                                    (main.pomp1_idle || main....
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1157,7 +1158,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 		\item
+l.278 		\item
                p50 In geen enkele staat van de sluis behalve tussen de lower...
 
 Try typing  <return>  to proceed.
@@ -1170,7 +1171,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 		\item  p
+l.278 		\item  p
                 50 In geen enkele staat van de sluis behalve tussen de lower...
 
 Try typing  <return>  to proceed.
@@ -1183,7 +1184,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 		\item  p
+l.278 		\item  p
                 50 In geen enkele staat van de sluis behalve tussen de lower...
 
 Try typing  <return>  to proceed.
@@ -1196,7 +1197,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.279 		\item
+l.280 		\item
                p51 Voor alle paden in een pomp geldt dat als water level lag...
 
 Try typing  <return>  to proceed.
@@ -1205,7 +1206,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.279 		\item  p
+l.280 		\item  p
                 51 Voor alle paden in een pomp geldt dat als water level lag...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1213,7 +1214,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.279 		\item  p
+l.280 		\item  p
                 51 Voor alle paden in een pomp geldt dat als water level lag...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1222,7 +1223,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (923.81989pt too wide) in paragraph at lines 275--279
+Overfull \hbox (923.81989pt too wide) in paragraph at lines 276--280
 \OT1/cmss/m/n/10 zig is. A[] forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 st
 oplight:groen\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 > gate\OT1/cmr/m/n/10 (0)\OM
 L/cmm/m/it/10 :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10
@@ -1237,7 +1238,7 @@ tArrivalLowenAtEnteringHighisdewachttijdlangerdan\OT1/cmr/m/n/10 5\OML/cmm/m/it
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.279 		\item  p
+l.280 		\item  p
                 51 Voor alle paden in een pomp geldt dat als water level lag...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1246,7 +1247,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Misplaced alignment tab character &.
-l.284 ...ot main.rn1 || main.rn2 -> gate(0).open &
+l.285 ...ot main.rn1 || main.rn2 -> gate(0).open &
                                                   & gate(1).open && Queue.li...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1256,7 +1257,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.284 ...t main.rn1 || main.rn2 -> gate(0).open &&
+l.285 ...t main.rn1 || main.rn2 -> gate(0).open &&
                                                    gate(1).open && Queue.lis...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1266,7 +1267,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.284 ...ain.rn2 -> gate(0).open && gate(1).open &
+l.285 ...ain.rn2 -> gate(0).open && gate(1).open &
                                                   & Queue.list[N-1] == 0 && ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1276,7 +1277,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.284 ...in.rn2 -> gate(0).open && gate(1).open &&
+l.285 ...in.rn2 -> gate(0).open && gate(1).open &&
                                                    Queue.list[N-1] == 0 && (...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1286,7 +1287,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.284 ...&& gate(1).open && Queue.list[N-1] == 0 &
+l.285 ...&& gate(1).open && Queue.list[N-1] == 0 &
                                                   & ((stoplight(0).groen||st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1296,7 +1297,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.284 ...& gate(1).open && Queue.list[N-1] == 0 &&
+l.285 ...& gate(1).open && Queue.list[N-1] == 0 &&
                                                    ((stoplight(0).groen||sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1306,7 +1307,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.284 ...oplight(1).groen) ||(stoplight(3).groen &
+l.285 ...oplight(1).groen) ||(stoplight(3).groen &
                                                   &stoplight(4).groen))
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1316,7 +1317,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.284 ...plight(1).groen) ||(stoplight(3).groen &&
+l.285 ...plight(1).groen) ||(stoplight(3).groen &&
                                                   stoplight(4).groen))
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1326,7 +1327,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.286 ...|| main.blocked2) -> Queue.list[N-1] >0 &
+l.287 ...|| main.blocked2) -> Queue.list[N-1] >0 &
                                                   & gate(0).closed && gate(1...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1336,7 +1337,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.286 ...| main.blocked2) -> Queue.list[N-1] >0 &&
+l.287 ...| main.blocked2) -> Queue.list[N-1] >0 &&
                                                    gate(0).closed && gate(1)...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1346,7 +1347,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.286 ...-> Queue.list[N-1] >0 && gate(0).closed &
+l.287 ...-> Queue.list[N-1] >0 && gate(0).closed &
                                                   & gate(1).closed && main.w...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1356,7 +1357,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.286 ...> Queue.list[N-1] >0 && gate(0).closed &&
+l.287 ...> Queue.list[N-1] >0 && gate(0).closed &&
                                                    gate(1).closed && main.wa...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1366,7 +1367,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.286 ... >0 && gate(0).closed && gate(1).closed &
+l.287 ... >0 && gate(0).closed && gate(1).closed &
                                                   & main.waterlevel==main.wa...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1376,7 +1377,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.286 ...>0 && gate(0).closed && gate(1).closed &&
+l.287 ...>0 && gate(0).closed && gate(1).closed &&
                                                    main.waterlevel==main.wat...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1388,7 +1389,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.286 ...osed && main.waterlevel==main.waterlevel_
+l.287 ...osed && main.waterlevel==main.waterlevel_
                                                   laag
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1400,7 +1401,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 		\item
+l.288 		\item
                p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
 
 Try typing  <return>  to proceed.
@@ -1413,7 +1414,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 		\item  p
+l.288 		\item  p
                 55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
 
 Try typing  <return>  to proceed.
@@ -1426,14 +1427,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.287 		\item  p
+l.288 		\item  p
                 55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Misplaced alignment tab character &.
-l.288 		E<> main.rn1||main.rn2 -> gate(0).closed &
+l.289 		E<> main.rn1||main.rn2 -> gate(0).closed &
                                                   &main.waterlevel==waterlaag
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1443,7 +1444,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.288 ...> main.rn1||main.rn2 -> gate(0).closed &&
+l.289 ...> main.rn1||main.rn2 -> gate(0).closed &&
                                                   main.waterlevel==waterlaag
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1459,7 +1460,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.289 		\item
+l.290 		\item
                p56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 
 Try typing  <return>  to proceed.
@@ -1468,7 +1469,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.289 		\item  p
+l.290 		\item  p
                 56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1476,7 +1477,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.289 		\item  p
+l.290 		\item  p
                 56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1485,7 +1486,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (586.81195pt too wide) in paragraph at lines 285--289
+Overfull \hbox (586.81195pt too wide) in paragraph at lines 286--290
 \OT1/cmss/m/n/10 main.blocked2) -> Queue.list[N-1] >0  gate(0).closed  gate(1).
 closed  main.waterlevel==main.waterlevel$[]\OML/cmm/m/it/10 aagp\OT1/cmr/m/n/10
  55\OML/cmm/m/it/10 Eriseenmogelijkheiddatvanuitpompgetstoplichtoproodwordtgeze
@@ -1495,7 +1496,7 @@ tenwaterlevelgelijkisaanwaterlaagE <>
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.289 		\item  p
+l.290 		\item  p
                 56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1504,7 +1505,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Misplaced alignment tab character &.
-l.292 		A[] gate(0).open &
+l.293 		A[] gate(0).open &
                           & ()main.direction ==0||main.direction==1)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1514,7 +1515,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.292 		A[] gate(0).open &&
+l.293 		A[] gate(0).open &&
                             ()main.direction ==0||main.direction==1)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1524,18 +1525,18 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (23.33397pt too wide) in paragraph at lines 291--293
+Overfull \hbox (23.33397pt too wide) in paragraph at lines 292--294
 \OT1/cmss/m/n/10 vel-leert om-hoog/omlaag A[] gate(0).open  ()main.direction ==
 0||main.direction==1) 
  []
 
-[14] [15] [16]
+[14] [15]
 
 LaTeX Info: File `mydata.csv' already exists on the system.
             Not generating it from this source.
 
 ! Undefined control sequence.
-l.382 	 \VerbatimInput
+l.368 	 \VerbatimInput
                       {data.txt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1543,7 +1544,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[17] [18] [19] [20] (verslag.bbl) [21] (verslag.aux) ) 
+[16] [17] [18] [19] (verslag.bbl) [20] (verslag.aux) ) 
 Here is how much of TeX's memory you used:
  3013 strings out of 475385
  54272 string characters out of 2776908
@@ -1565,9 +1566,9 @@ nts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/gally/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/gally/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on verslag.pdf (22 pages, 262596 bytes).
+Output written on verslag.pdf (21 pages, 261694 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
+ 133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
