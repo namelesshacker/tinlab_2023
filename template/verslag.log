@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.30)  14 APR 2023 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  1 JUN 2023 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./verslag.tex
 (verslag.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22>
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-09-28>
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -19,63 +19,65 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+\stockwidth=\dimen139
+\stockheight=\dimen140
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
-) (C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2023/02/13 3.86 The Babel package
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/10/04 3.81 The Babel package
 \babel@savecnt=\count193
 \U@D=\dimen143
 \l@unhyphenated=\language79
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count194
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/babel-dutch\dutch.ldf
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/babel-dutch\dutch.ldf
 Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
 Package babel Info: Making " an active character on input line 127.
 ))
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/nl\babel
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/nl\babel
 -dutch.tex
 Package babel Info: Importing font and identification data for dutch
 (babel)             from babel-nl.ini. Reported on input line 11.
 )
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count195
 \l__pdf_internal_box=\box51
 ) (verslag.aux)
@@ -96,7 +98,7 @@ LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count196
@@ -111,33 +113,33 @@ ii
 \makeMPintoPDFobject=\count267
 \everyMPtoPDFconversion=\toks18
 )
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
 ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+) (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
 keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ))
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
- (C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -151,7 +153,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(C:\Users\tycho\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
@@ -162,7 +164,7 @@ Package pdftex.def Info: logohr.png  used on input line 25.
 (pdftex.def)             Requested size: 113.81102pt x 113.81244pt.
  [1
 
-{C:/Users/tycho/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logohr.png
+{C:/Users/gally/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logohr.png
 >] (verslag.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
@@ -173,56 +175,1399 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `verslag.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 39--51
+<4varmodel.png, id=18, 339.51843pt x 187.45032pt>
+File: 4varmodel.png Graphic file (type png)
+<use 4varmodel.png>
+Package pdftex.def Info: 4varmodel.png  used on input line 46.
+(pdftex.def)             Requested size: 113.81102pt x 62.83414pt.
+<sluismodel.jpg, id=19, 432.61626pt x 234.8775pt>
+File: sluismodel.jpg Graphic file (type jpg)
+<use sluismodel.jpg>
+Package pdftex.def Info: sluismodel.jpg  used on input line 55.
+(pdftex.def)             Requested size: 227.62204pt x 123.58133pt.
+
+Overfull \hbox (61.9278pt too wide) in paragraph at lines 54--56
+\OT1/cmss/m/n/10 Hieronder een voor-beeld van een sluis-mo-del [] 
+ []
+
+<sluispassage.png, id=20, 490.83376pt x 689.57625pt>
+File: sluispassage.png Graphic file (type png)
+<use sluispassage.png>
+Package pdftex.def Info: sluispassage.png  used on input line 58.
+(pdftex.def)             Requested size: 227.62204pt x 319.78682pt.
+[3 <./4varmodel.png> <./sluismodel.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 65--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--51
+Underfull \hbox (badness 10000) in paragraph at lines 65--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--51
+Underfull \hbox (badness 10000) in paragraph at lines 65--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--51
+Underfull \hbox (badness 10000) in paragraph at lines 65--77
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+[4 <./sluispassage.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-[4] [5]
-Overfull \vbox (22.66644pt too high) has occurred while \output is active []
+[5]
+
+LaTeX Warning: File `logo.png' not found on input line 127.
 
 
-[6] (verslag.bbl
-LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 5.
-) [7] (verslag.aux) ) 
+! Package pdftex.def Error: File `logo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 	\includegraphics[width=8cm]{logo.png}
+                                             % also works with logo.pdf
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[6]
+
+LaTeX Warning: File `logo.png' not found on input line 129.
+
+
+! Package pdftex.def Error: File `logo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 	\includegraphics[width=8cm]{logo.png}
+                                             % also works with logo.pdf
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[7]
+
+LaTeX Warning: File `logo.png' not found on input line 131.
+
+
+! Package pdftex.def Error: File `logo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 	\includegraphics[width=8cm]{logo.png}
+                                             % also works with logo.pdf
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `logo.png' not found on input line 133.
+
+
+! Package pdftex.def Error: File `logo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 		\includegraphics[width=8cm]{logo.png}
+                                              % also works with logo.pdf
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[8]
+
+LaTeX Warning: File `logo.png' not found on input line 135.
+
+
+! Package pdftex.def Error: File `logo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 	\includegraphics[width=8cm]{logo.png}
+                                             % also works with logo.pdf
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[9] [10] [11]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.211 ...ate(0).open||gate(1).open) -> (main.pomp_
+                                                  idle || main.pomp2_idle)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 		\item
+               b) Als de deur is gesloten dan bevind de maincontroller zich ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 		\item  b
+                ) Als de deur is gesloten dan bevind de maincontroller zich ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 		\item  b
+                ) Als de deur is gesloten dan bevind de maincontroller zich ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 		\item
+               p15
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.214 		\item  p
+                15
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.214 		\item  p
+                15
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (250.84296pt too wide) in paragraph at lines 210--214
+\OT1/cmss/m/n/10 > (main.pomp$[]\OML/cmm/m/it/10 dle\OMS/cmsy/m/n/10 jj\OML/cmm
+/m/it/10 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 dle\OT1/cmr/m/n/10 )\OML/
+cmm/m/it/10 b\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Alsdedeurisgeslotendanbevinddema
+incontrollerzichineenpredefinedstateA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 gate:cl
+osed\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.214 		\item  p
+                15
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Overfull \hbox (31.13919pt too wide) in paragraph at lines 215--217
+[]\OT1/cmss/m/n/10 p16 If en-gine re-gu-la-tion is on tor-que, then the clutch 
+is clo-sed (un-de-fi-ned) A[](Engine.Torque
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.218 		A[] main.s5 -> main.waterlevel_
+                                       laag && idle_pomp1 && gate(0).open &&...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.218 		A[] main.s5 -> main.waterlevel_laag &
+                                             & idle_pomp1 && gate(0).open &&...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 		A[] main.s5 -> main.waterlevel_laag &&
+                                               idle_pomp1 && gate(0).open &&...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ...5 -> main.waterlevel_laag && idle_pomp1 &
+                                                  & gate(0).open && gate(1)....
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ... -> main.waterlevel_laag && idle_pomp1 &&
+                                                   gate(0).open && gate(1).o...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ...evel_laag && idle_pomp1 && gate(0).open &
+                                                  & gate(1).open && (stoplig...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ...vel_laag && idle_pomp1 && gate(0).open &&
+                                                   gate(1).open && (stopligh...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ...e_pomp1 && gate(0).open && gate(1).open &
+                                                  & (stoplight(0).green && s...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ..._pomp1 && gate(0).open && gate(1).open &&
+                                                   (stoplight(0).green && st...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ... && gate(1).open && (stoplight(0).green &
+                                                  & stoplight(1).green || st...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ...&& gate(1).open && (stoplight(0).green &&
+                                                   stoplight(1).green || sto...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ...toplight(1).green || stoplight(2).green &
+                                                  & stoplight(3).green )
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.218 ...oplight(1).green || stoplight(2).green &&
+                                                   stoplight(3).green )
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 		\item
+               p18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 		\item  p
+                18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 		\item  p
+                18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.220 ...(i:id_d) forall (j:id_s) gate(i).closed &
+                                                  & stoplight.rood && main.rd_1
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.220 ...i:id_d) forall (j:id_s) gate(i).closed &&
+                                                   stoplight.rood && main.rd_1
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.220 ...:id_s) gate(i).closed && stoplight.rood &
+                                                  & main.rd_1
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.220 ...id_s) gate(i).closed && stoplight.rood &&
+                                                   main.rd_1
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.222 		
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.222 		
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (1046.24826pt too wide) in paragraph at lines 217--222
+\OT1/cmss/m/n/10 groen A[] main.s5 -> main.waterlevel$[]\OML/cmm/m/it/10 aagidl
+e[]omp\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10
+ :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 stoplight\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10 :greenstoplight\OT1/cmr/m/n/
+10 (1)\OML/cmm/m/it/10 :green\OMS/cmsy/m/n/10 jj\OML/cmm/m/it/10 stoplight\OT1/
+cmr/m/n/10 (2)\OML/cmm/m/it/10 :greenstoplight\OT1/cmr/m/n/10 (3)\OML/cmm/m/it/
+10 :green\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 
+Alseenschipvanrechtsbinnenkomtensluisdeurenzijndichtdanmoethetstoplichtoprood; 
+depomnpintransitievanlaagnaarhoogennietandersomA\OT1/cmr/m/n/10 []!\OML/cmm/m/i
+t/10 main:direction\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (134.74622pt too wide) in paragraph at lines 217--222
+\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 : \O
+ML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 j \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cm
+m/m/it/10 gate\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cmm/m/it
+/10 :closedstoplight:roodmain:rd[]p\OT1/cmr/m/n/10 19\OML/cmm/m/it/10 uitvarend
+enhebbenvoorangopinvarenden[]$ 
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.222 		
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+l.224 		A[] main.s6 -> gate(0).open &
+                                     & gate(1).open && stoplight(0).groen &&...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.224 		A[] main.s6 -> gate(0).open &&
+                                       gate(1).open && stoplight(0).groen &&...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.224 ...main.s6 -> gate(0).open && gate(1).open &
+                                                  & stoplight(0).groen && st...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.224 ...ain.s6 -> gate(0).open && gate(1).open &&
+                                                   stoplight(0).groen && sto...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.224 ...n && gate(1).open && stoplight(0).groen &
+                                                  & stoplight(1).groen
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.224 ... && gate(1).open && stoplight(0).groen &&
+                                                   stoplight(1).groen
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.226 ...] (main.rn1 || main.rn2) -> forall (i:id_
+                                                  d) forall(j:id_s )gate(i)....
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 		\item
+               p22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 		\item  p
+                22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 		\item  p
+                22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 		\item
+               p23 urgent locations; het is niet mogelijk om hier te wachten
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 		\item  p
+                23 urgent locations; het is niet mogelijk om hier te wachten
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 		\item  p
+                23 urgent locations; het is niet mogelijk om hier te wachten
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (622.02261pt too wide) in paragraph at lines 225--229
+\OT1/cmss/m/n/10 rood A[] (main.rn1 || main.rn2) -> fo-rall (i:id$[]\OT1/cmr/m/
+n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j \OT1/cmr/m/n/1
+0 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :closedstoplight\OT1/cmr/m
+/n/10 (\OML/cmm/m/it/10 j\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :roodp\OT1/cmr/m/n/1
+0 22\OML/cmm/m/it/10 Alseenschipvertrektdanzijnaltijd; sleusdeurenopen; waterle
+velgereedopniveau\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 of\OT1/cmr/m/n/10 0\OML/cmm/
+m/it/10 enstoplichtdirectopgroenA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 main:s\OT1/
+cmr/m/n/10 12\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.229 		\item  p
+                23 urgent locations; het is niet mogelijk om hier te wachten
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[12]
+! Misplaced alignment tab character &.
+l.241 		A[]  main.s6 &
+                      & schip.varen ->  Queue.list[N-1] <2
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.241 		A[]  main.s6 &&
+                        schip.varen ->  Queue.list[N-1] <2
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.245 		A[] schip.varen &
+                         & main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.245 		A[] schip.varen &&
+                           main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.245 ...n && main.s12 || main.s13 -> (!main.rn1 &
+                                                  & !main.rn2)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.245 ... && main.s12 || main.s13 -> (!main.rn1 &&
+                                                   !main.rn2)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.253 		A[] pomp.pomp_
+                      active -> main.s6 && forall(i:id_d) gate(i).closed
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.253 		A[] pomp.pomp_active -> main.s6 &
+                                         & forall(i:id_d) gate(i).closed
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.253 		A[] pomp.pomp_active -> main.s6 &&
+                                           forall(i:id_d) gate(i).closed
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 		\item
+               p38 Geen deadlock
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 		\item  p
+                38 Geen deadlock
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.254 		\item  p
+                38 Geen deadlock
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 		\item
+               p39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.255 		\item  p
+                39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.255 		\item  p
+                39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.255 		\item  p
+                39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.256 		A[] not forall(i:id_
+                            d) gate.closed ->(main.s12||main.s13)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.257 		\item
+               p40 Voor alle paden geld dat als een sluis aan het voorbereid...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.257 		\item  p
+                40 Voor alle paden geld dat als een sluis aan het voorbereid...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.257 		\item  p
+                40 Voor alle paden geld dat als een sluis aan het voorbereid...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 		\item
+                p41 Voor alle paden geld dat als een deur dicht is het aanta...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.259 		\item   p
+                 41 Voor alle paden geld dat als een deur dicht is het aanta...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.259 		\item   p
+                 41 Voor alle paden geld dat als een deur dicht is het aanta...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (18.4618pt too wide) in paragraph at lines 255--259
+\OT1/cmss/m/n/10 een deur open-staat om een schip naar bui-ten te la-ten. A[] n
+ot forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate:closed\OMS/cmsy/m/n/10 
+^^@ \OML/cmm/m/it/10 >
+ []
+
+
+Overfull \hbox (185.49286pt too wide) in paragraph at lines 255--259
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 12\OMS/cmsy/m/n/10 jj\O
+ML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 13)\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 40\OM
+L/cmm/m/it/10 Voorallepadengelddatalseensluisaanhetvoorbereidenis; danzijnalled
+eurendcht:A\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 6\OMS/cmsy/
+m/n/10 ^^@ \OML/cmm/m/it/10 >
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.259 		\item   p
+                 41 Voor alle paden geld dat als een deur dicht is het aanta...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[13]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.276 		A[] forall(i:id_
+                        s) stoplight.groen -> gate(0).open && gate(1).open &...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.276 ...i:id_s) stoplight.groen -> gate(0).open &
+                                                  & gate(1).open && (main.po...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.276 ...:id_s) stoplight.groen -> gate(0).open &&
+                                                   gate(1).open && (main.pom...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.276 ...t.groen -> gate(0).open && gate(1).open &
+                                                  & (main.pomp1_idle || main...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.276 ....groen -> gate(0).open && gate(1).open &&
+                                                   (main.pomp1_idle || main....
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.277 		\item
+               p50 In geen enkele staat van de sluis behalve tussen de lower...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.277 		\item  p
+                50 In geen enkele staat van de sluis behalve tussen de lower...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.277 		\item  p
+                50 In geen enkele staat van de sluis behalve tussen de lower...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 		\item
+               p51 Voor alle paden in een pomp geldt dat als water level lag...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.279 		\item  p
+                51 Voor alle paden in een pomp geldt dat als water level lag...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.279 		\item  p
+                51 Voor alle paden in een pomp geldt dat als water level lag...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (923.81989pt too wide) in paragraph at lines 275--279
+\OT1/cmss/m/n/10 zig is. A[] forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 st
+oplight:groen\OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 > gate\OT1/cmr/m/n/10 (0)\OM
+L/cmm/m/it/10 :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 main:pomp\OT1/cmr/m/n/10 1[]\OML/cmm/m/it/10 dle\OMS/cmsy/m/
+n/10 jj\OML/cmm/m/it/10 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 dle\OT1/cm
+r/m/n/10 )\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 50\OML/cmm/m/it/10 Ingeenenkelestaa
+tvandesluisbehalvetussendelowergateenuppergateenuppergateenlowergateendestatenA
+tArrivalLowenAtEnteringHighisdewachttijdlangerdan\OT1/cmr/m/n/10 5\OML/cmm/m/it
+/10 tijdseenhedenA\OT1/cmr/m/n/10 []\OML/cmm/m/it/10 not[][]$ 
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.279 		\item  p
+                51 Voor alle paden in een pomp geldt dat als water level lag...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+l.284 ...ot main.rn1 || main.rn2 -> gate(0).open &
+                                                  & gate(1).open && Queue.li...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.284 ...t main.rn1 || main.rn2 -> gate(0).open &&
+                                                   gate(1).open && Queue.lis...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.284 ...ain.rn2 -> gate(0).open && gate(1).open &
+                                                  & Queue.list[N-1] == 0 && ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.284 ...in.rn2 -> gate(0).open && gate(1).open &&
+                                                   Queue.list[N-1] == 0 && (...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.284 ...&& gate(1).open && Queue.list[N-1] == 0 &
+                                                  & ((stoplight(0).groen||st...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.284 ...& gate(1).open && Queue.list[N-1] == 0 &&
+                                                   ((stoplight(0).groen||sto...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.284 ...oplight(1).groen) ||(stoplight(3).groen &
+                                                  &stoplight(4).groen))
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.284 ...plight(1).groen) ||(stoplight(3).groen &&
+                                                  stoplight(4).groen))
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.286 ...|| main.blocked2) -> Queue.list[N-1] >0 &
+                                                  & gate(0).closed && gate(1...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.286 ...| main.blocked2) -> Queue.list[N-1] >0 &&
+                                                   gate(0).closed && gate(1)...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.286 ...-> Queue.list[N-1] >0 && gate(0).closed &
+                                                  & gate(1).closed && main.w...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.286 ...> Queue.list[N-1] >0 && gate(0).closed &&
+                                                   gate(1).closed && main.wa...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.286 ... >0 && gate(0).closed && gate(1).closed &
+                                                  & main.waterlevel==main.wa...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.286 ...>0 && gate(0).closed && gate(1).closed &&
+                                                   main.waterlevel==main.wat...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.286 ...osed && main.waterlevel==main.waterlevel_
+                                                  laag
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 		\item
+               p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 		\item  p
+                55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 		\item  p
+                55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.288 		E<> main.rn1||main.rn2 -> gate(0).closed &
+                                                  &main.waterlevel==waterlaag
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.288 ...> main.rn1||main.rn2 -> gate(0).closed &&
+                                                  main.waterlevel==waterlaag
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.289 		\item
+               p56 Het kan voorkomen dat bij state pompaan het waterniveau g...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.289 		\item  p
+                56 Het kan voorkomen dat bij state pompaan het waterniveau g...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.289 		\item  p
+                56 Het kan voorkomen dat bij state pompaan het waterniveau g...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (586.81195pt too wide) in paragraph at lines 285--289
+\OT1/cmss/m/n/10 main.blocked2) -> Queue.list[N-1] >0  gate(0).closed  gate(1).
+closed  main.waterlevel==main.waterlevel$[]\OML/cmm/m/it/10 aagp\OT1/cmr/m/n/10
+ 55\OML/cmm/m/it/10 Eriseenmogelijkheiddatvanuitpompgetstoplichtoproodwordtgeze
+tenwaterlevelgelijkisaanwaterlaagE <>
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.289 		\item  p
+                56 Het kan voorkomen dat bij state pompaan het waterniveau g...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Misplaced alignment tab character &.
+l.292 		A[] gate(0).open &
+                          & ()main.direction ==0||main.direction==1)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.292 		A[] gate(0).open &&
+                            ()main.direction ==0||main.direction==1)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (23.33397pt too wide) in paragraph at lines 291--293
+\OT1/cmss/m/n/10 vel-leert om-hoog/omlaag A[] gate(0).open  ()main.direction ==
+0||main.direction==1) 
+ []
+
+[14] [15] [16]
+
+LaTeX Info: File `mydata.csv' already exists on the system.
+            Not generating it from this source.
+
+! Undefined control sequence.
+l.382 	 \VerbatimInput
+                      {data.txt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[17] [18] [19] [20] (verslag.bbl) [21] (verslag.aux) ) 
 Here is how much of TeX's memory you used:
- 2944 strings out of 476334
- 53147 string characters out of 5787971
- 1863382 words of memory out of 5000000
- 23355 multiletter control sequences out of 15000+600000
- 515348 words of font info for 42 fonts, out of 8000000 for 9000
+ 3013 strings out of 475385
+ 54272 string characters out of 2776908
+ 415295 words of memory out of 3000000
+ 24356 multiletter control sequences out of 15000+600000
+ 472467 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,67p,626b,329s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/tycho/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb><C:/Users/tycho/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/tycho/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tycho/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/tycho/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/ty
-cho/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on verslag.pdf (8 pages, 109195 bytes).
+ 60i,6n,67p,626b,327s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\gally\AppData\
+Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/gally/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/
+gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi7.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/gally/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/gally/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on verslag.pdf (22 pages, 262596 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
