@@ -1,6 +1,80 @@
 \documentclass{article}
 \usepackage{graphicx} 
 \usepackage[dutch]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%hieronder komen alle packages die je zelf wil plaatsen of veranderen       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{algorithmic}      %aangepaste algoritmen   
+\usepackage{listings}         %aangepaste listings (event. in kleuren)
+%\usepackage{}
+%\usepackage{}
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[automark,headsepline,plainheadsepline, plainfootsepline, footsepline]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+%Tabelle
+\usepackage{multirow, makecell, cellspace, bigstrut}
+\usepackage{ragged2e}
+\usepackage{ltablex}
+\keepXColumns
+\renewcommand\tabularxcolumn[1]{ >{\arraybackslash}m{#1}}
+\usepackage{booktabs}
+\newcolumntype{L}[1]{>{\RaggedRight}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newlength{\lastcolwd}
+\settowidth{\lastcolwd}{Bermerkungen}
+\usepackage[inner=2.5cm,outer=2.5cm,top=2cm,bottom=1.0cm,includeheadfoot]{geometry}
+\newcommand\mymidrule{\specialrule{\lightrulewidth}{0pt}{\belowrulesep}}
+\newcommand\mybottomrule{\specialrule{\heavyrulewidth}{0pt}{\belowrulesep}}
+\newcommand\mytoprule{\specialrule{\heavyrulewidth}{0pt}{0pt}}
+
+\setlength\cellspacetoplimit{5pt}
+\setlength\cellspacebottomlimit{5pt}
+
+
+\usepackage{times}
+\usepackage[most]{tcolorbox}
+\usepackage{lipsum}
+
+\colorlet{helpful}{lime!70}
+\colorlet{harmful}{red!30}
+\colorlet{internal}{yellow!20}
+\colorlet{external}{cyan!30}
+\colorlet{S}{helpful!50!internal}
+\colorlet{W}{harmful!50!internal}
+\colorlet{O}{helpful!50!external}
+\colorlet{T}{harmful!50!external}
+
+\newcommand{\texta}{Helpful\par \tiny (to achieve the objective)}
+\newcommand{\textb}{Harmful\par \tiny (to achieve the objective)}
+\newcommand{\textcn}{\rotatebox[origin=c]{90}{\parbox[t]{3cm}{\centering Internal origin\\ \tiny (product\slash company attributes)\par}}}
+\newcommand{\textdn}{\rotatebox[origin=c]{90}{\parbox[b]{3cm}{\centering External origin\\ \tiny (environment\slash market attributes)\par}}}
+
+\newcommand{\texts}{strength 1\par strength 2}
+\newcommand{\textw}{weakness 1\par weakness 2}
+\newcommand{\texto}{opportunity 1\par opportunity 2}
+\newcommand{\textt}{threat 1\par threat 2}
+
+\tcbset{swotbox/.style={size=normal, boxrule=0pt,
+		colback=#1, watermark text=#1, width=.5\linewidth-5mm},
+	header/.style={size=small, boxrule=0pt, width=.5\linewidth-5mm, colback=#1, valign=center, halign=center},
+	firstcol/.style={header=#1, width=1cm}
+}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% einde van de preambule, begin document %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 	\sffamily
 	\begin{titlepage}
