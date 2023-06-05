@@ -6,8 +6,7 @@
 \chapter{Methodologie}
 \label{chapter:body}
 \thispagestyle{myheadings}
-
-
+Voor dit rapport is onderzoek gedaan naar sluizen, sluismodellen, rampen, rampenbestrijdingsprocedures en requiremeentsengineering.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Literatuuronderzoek}
@@ -62,29 +61,23 @@
 \section{Theoretisch kader}
 
 In het eerste hoofdstuk is duidelijk geworden wat de onderzoeksvraag is, namelijk ‘Hoe kan een geautomatiseerde sluis worden gemodeleerd met oog op ontwikkel- en onderhoudskosten,veiligheid, efficientie en capaciteit’. Door de toenemende complexiteit van systemen is het gebruik van modellen en de toepassing van timebased model checking  op industriele controle systemen een manier van modelleren van het systeem en de requirements zodat er een bijdagre kan worden geleverd aan de acceptatie van  simulatie-/modeltechniek voor de industrie.(‘https://link.springer.com/article/10.1007/s10626-020-00314-0’, 2020). Of dit ook het geval is bij het modellereren van sluizen is nu de vraag.
-De verschillende factoren en achtergronden die hiermee samenhangen met het modelleren van een sluiszullen in dit hoofdstuk
-toegelicht worden. Bovendien worden er hypotheses gevormd die de basis vormen voor de
+De verschillende factoren en achtergronden die  samenhangen met het modelleren van een sluis zullen in dit hoofdstuk toegelicht worden. Bovendien worden er hypotheses gevormd die de basis vormen voor de
 beantwoording van de onderzoeksvraag. 
 
 
 
-\subsection{Beperking uppaal ten overstaan van ons model}
-Welke versie van Uppaal gebruiken wij en welke beperkingen heeft deze software voor het bereiken van onze doelstelling
 
 \subsection{MODE CONFUSION }
 Mode confusion tredd op als gepbserveerd gedrag van een technisch systeem niet past in het gedragspatroon dat de gebruiker in zijn beeldvorming heeft  en ook niet met voorstellingsvermogen kan bevatten.
 \subsection{Wat is automatiseringsparadox}
 Gemak dient de mens. Als er veel energie wordt gestoken in de ontwikkeling van hulmiddelen die taken van werknemers overemen heeft dat tot resultaat dat veel productieprocessen worden geautomatiseerd. De vraag is dan of vanuit mechnisch wereldpunt de robot niet de rol van de mens overneemt en of de mens nog de kwaliteiten heeft om het werk zelf te doen.
-
-\url{https://www.dalton.nl/literatuur/item/252-de-automatiseringsparadox}
-\url{https://www.debicker.eu/de-automatiseringsparadox/}
-\url{https://vse.nl/de-paradox-van-de-industriele-automatisering/}
-\url{https://automatie-pma.com/nieuws/industriele-automatiseringsparadox}
-\url{https://blog.xot.nl/2016/11/21/slimme-apparaten-maken-ons-dom-en-kwetsbaar/index.html}
+\cite{bicker21102016automatiseringsparadox }
+\cite{vseautoparadox }
+\cite{blogxot21112016slimapparaat }
+ 
 
 \subsection{Wat is een model}
-\subsubsection{Conceptueel model}
-Om duding te geven aan het grote plaatsje
+ 
 \subsubsection{in vivo model}
 Levende organismendie in de werkelijkheid of in een laboriatrum vergelijkbare eigenschappen bezitten als bestaande fenomenen in de werkeljkheid. Deze objecten zijn vergelijkbaar met werkelijkobjecten en geven vergelijkbare resultaten
 \subsubsection{in vitro model}
@@ -476,7 +469,7 @@ quality attribute
 \section{Onderzoeksresultaten naar rampen}
 
 \subsection{Inleiding}
-
+De bestudering van rampen aan de hand van het vier-variabelen model biedt maakt het analyseren mogelijk van rampsituaties. Van een aantal rampen is een beschrijving gegeven met datum, plaats en oorzaak. De analyse van de 4-variabelen modellen zal gebruikt worden voor de requirementsdefinitie, ontwerp en ontwikkeling van het sluismodel. 
 \subsection{Systeemrampen}
 \subsubsection{bijlmerramp}
 
@@ -498,9 +491,14 @@ https://aviation-safety.net/database/record.php?id=19921004-2&lang=nl
 https://www.enschede.nl/inhoud/commissie-oosting 
 https://www.politie.nl/binaries/content/assets/politie/wob/00-landelijk/vuurwerkramp-enschede/bijlagen-rapport-vuurwerkramp-enschede.pdf 
 https://www.researchgate.net/publication/254815008_Rampen_regels_richtlijnen 
+\cite{boogers092002RampenRegelsRichtlijnen}
 
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.youtube.com/watch?v=OMkIsj8FsHw"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://depot03.archiefweb.eu/archives/archiefweb/20210703085353/http://www.vuurwerkramp.enschede.nl/publicaties/00005/#.YOAlp-gzaUk"},}
 
-\subsubsection{ramp turkisch airlines}
+Wat waren de afspraken omtrent vuurwerkopslag?
+Waarom werden de voorschriften neit nageleefd?
+\subsubsection{ramp turkisch airlines vlucht 1951}
 
 	\begin{description}
 	\item[Beschrijving]
@@ -510,12 +508,55 @@ https://www.researchgate.net/publication/254815008_Rampen_regels_richtlijnen
 \end{description}
 Inadequaat handelen van de piloten ondanks een defecte hoogtemeter en onvolledige instructies van de luchtverkeersleiding/
 https://catsr.vse.gmu.edu/SYST460/TA1951_AccidentReport.pdf 
-
+\cite{catsr25022009Boeing737AmsterdamCrash}
 Wat ging er allemaal mis bij de bovengenoemde rampen en ongelukken....... 
 
 Wat hebben deze rampten te maken met de requirements en specificaties van deze odpracht? 
 
+vlucht 1951
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nl.wikipedia.org/wiki/Turkish_Airlines-vlucht_1951"},}
+technisch rapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"file:///C:/Users/gally/Downloads/rapport_ta_nl_aangepast.pdf"},}
+beschrijving
+terugblik met overlevenden
+tijdlijn
+@online{zuilen23022019Tijdlijnpoldercrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.noordhollandsdagblad.nl/cnt/dmf20190221_65390940"},}
+artikel
+terugblik met overlevenden
+advies raad voor de veiligheid
+de overlevende, de oorzaak, regeling, herdenking, smartengeld
+verhaal van een overlevende
+herdenking
+herdenking
+bemanning deed niets met foutmelding
+parlementaire besluitenlijst
+kamervragen over de onafhankelijkheid van de raad voor veiligheid
+verhaal van een overlevende
+beschrijvend artikel van letsel en gewonden
+@online{ntvg20012010letsel,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ntvg.nl/artikelen/vliegtuigongeval-schiphol-25-02-2009-letsels-en-verdeling-van-gewonden"},}
+technische fout als oorzaak
+@online{wikinews04032009techfoutailines1951,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nl.wikinews.org/wiki/Technische_fout_oorzaak_vliegtuigcrash_Turkish_Airlines-vlucht_1951"},}
+gesprek met pieter van vollenhove voorzitter van de onderzoeksraad voor veiligheid
+onderzoeksraad voor veiligheid is onderdruk gezet
+@online{luchtvaartnieuws21012020boeing737conclusies,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.luchtvaartnieuws.nl/nieuws/categorie/72/algemeen/conclusies-crash-tk1951-na-amerikaanse-druk-afgezwakt"},}
+niuwesartikel
+feitenverloop
+@online{adformatie280220209communicatiegebreken,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.adformatie.nl/contentmarketing/communicatie-na-vliegramp-vertoonde-gebreken"},}
+zwarte doos
+@online{spinnael25022009onderzoekpolderbaancrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://flightlevel.be/244/onderzoek-polderbaan-crash-turkish-airlines-1951/"},}
+@online{crashTurkishAirlines,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://wikimapia.org/11633002/nl/Crash-Turkish-Airlines-vlucht-1951"},}
+@online{flightradar24,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.flightradar24.com/data/flights/tk1951"},}
+@online{flightstatstracker,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.flightstats.com/v2/flight-tracker/TK/1951"},}
 
+\cite{zuilen23022019Tijdlijnpoldercrash}
+\cite{wikinews04032009techfoutailines1951}
+\cite{luchtvaartnieuws21012020boeing737conclusies}
+\cite{adformatie280220209communicatiegebreken}
+\cite{spinnael25022009onderzoekpolderbaancrash}
+\cite{crashTurkishAirlines}
+\cite{flightradar24}
+\cite{flightstatstracker}
+ 
 
 \subsubsection{tjernobyl}
 
@@ -527,8 +568,160 @@ Wat hebben deze rampten te maken met de requirements en specificaties van deze o
 \end{description}
 Een ramp bij een kernreacor in de sovjetunie. Door een bedieningsfout in een testprocedure werd het vermogen van de koelinstallaties negatief beinvloed. Door een ontwerpfout in de noodstopprocedure kon in het systeem niet snel genoeg schakelen om remmende invloed uit te oefenen op het toenemende vermogen van de reactorkernen. Met brand en eksplosie tot gevolg.
 https://www-pub.iaea.org/MTCD/publications/PDF/Pub913e_web.pdf 
+\cite{INSAVienna1992Chernobyl}
+
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.youtube.com/watch?v=Xw3SFOfbR84"},}
+\cite{}
+@online{wikiTjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nl.wikipedia.org/wiki/Kernramp_van_Tsjernobyl"},}
+\cite{}
+@online{rivmTjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.rivm.nl/straling-en-radioactiviteit/stralingsincidenten-en-kernongevallen/tsjernobyl"},}
+\cite{}
+@online{andereTijdenTjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.anderetijden.nl/aflevering/599/Tsjernobyl-als-Nederlandse-ramp"},}
+\cite{}
+wat er is gebeurd en hoe het leven verdergaat
+@online{kingskey19042022tjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nationalgeographic.nl/het-leven-in-tsjernobyl-gaat-door"},}
+\cite{}
+pernsioenfondsen en de tjernobyl ramp
+In 2021 worden mensen nog steeds blootgesteld blijkt ut een gezamelijk onderzoek van greenpeace en oekraiense wetenschappers
+stijging van de nucliaire activiteit gemeten in tjernobyl
+Het toerisme  aspect
+De chronologie
+@online{erikbork26042023reactor4,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://historianet.nl/maatschappij/rampen/tsjernobyl-atoomhel-bij-reactor-4"},}
+\cite{}
+@online{nosTjernobyl30jaarlater,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nos.nl/artikel/2101523-de-spookstad-van-tsjernobyl-30-jaar-later"},}
+\cite{}
+Dieren in de omgeving van tjernobyl
+De chronologie
+Echtreme droogte zorgd voor gevaar
+@online{knmi04052021tjernobylbosbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.knmi.nl/over-het-knmi/nieuws/35-jaar-na-tsjernobyl-liggen-branden-op-de-loer"},}
+\cite{}
+@online{dodonovaKVIRisicoTjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.kivi.nl/afdelingen/risicobeheer-en-techniek/columns/kernramp-tsjernobyl-het-dilemma-van-scherbitsky"},}
+\cite{}
+Joernalistiek, entertainment en de waarheid
+@online{dumarey04062020verhaalTjernobylWaarheid,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vrt.be/vrtnws/nl/2020/04/06/in-de-ban-van-tsjernobyl-vooruitblik/"},}
+\cite{}
+Een onderzoek
+
+Huidige gevolgen van de explosie van toen
+@online{sparkesNewScientistTjernoby;,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.newscientist.nl/nieuws/steeds-meer-kernreacties-in-ontoegankelijke-ruimte-in-tsjernobyl/"},}
+\cite{}
+De ramp, hoe de mensen ermee omgingen en hoe er nu geleef wordt
+
+evaluatieonderzoek en amatregeen
+@online{kernenergiened26041986chronologiemaatregelen,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.kernenergieinnederland.nl/node/308"},}
+\cite{}
+@online{mapszoneReactor,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=nl&t=h&msa=0&ll=51.388923%2C30.099792&spn=0.685583%2C1.645203&z=9&source=embed&mid=1MLcOcMK_WrIJYMuTf0VVuYnMqQI"},}
+\cite{}
+Invloed van de mens op de omgeving
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.animalstoday.nl/mens-schadelijker-natuur-tsjernobyl/"},}
+\cite{}
+Heroplevende splijtingsreacties
+docu van schooltv
+Radioactiviteit bereikt nederland
+documentaire en maatregelen
+@online{kernhistoriek15062021tjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://historiek.net/kernramp-van-tsjernobyl-1986/8769/"},}
+\cite{}
+Het verhaal van een overledende
+Toerisme
+toerisme
+toerisme
+Dieren in de omgevong
+Toevluchtsoord voor vluchtelingen van de oorlog met russische seperatisten
+Ouderen die terugkeerden naar hun woonplaats na de gedwongen verhuizing door de autoriteiten
+De straling neemt weer toe
+Lessen geleerd van tjernobyl
+@online{nucleairforumFeitenTjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nucleairforum.be/thema/veiligheid-als-prioriteit/tsjernobyl-de-feiten"},}
+\cite{}
+Toerisme
+Bosbrand in tjernobyl
+invloed van de ramp op belgie
+@online{kernongevalTjernobylFancGov,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://fanc.fgov.be/nl/noodsituaties/zware-ongevallen-het-buitenland/1986-kernongeval-tsjernobyl"},}
+\cite{}
+Boek recensie
+Fotos en berekeningen
+ontmanteling en toerisme
+Belangrijke lessen en overeenkomsten
+De journalistieke waarheid van de koude oorlog
+De lessen van
+@online{arendswolters062019lessenTjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://magazines.autoriteitnvs.nl/nieuwsbrief-anvs/2019/02/de-lessen-van-tsjernobyl"},}
+\cite{}
+Een toristenattractie maken van tjernobyl
+De radioactieve straling toen en nu
+de 30km zone door de ogen van toeristen
+artikel
+stedentrip
+rapport
+@online{damveld08052020tjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://wisenederland.nl/wp-content/uploads/2020/06/TSJERNOBYL.pdf"},}
+\cite{}
+slapend monster
+docu
+krantenartikel
+hbo serie
+docuserie
+de  nieuwe sacrofaag
+hulp aan slachtoffers
+slapende reactor
+krantenartikel
+@online{deVriestjernobylHolland,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://onh.nl/verhaal/besmette-melk-en-radioactieve-spinazie-tsjernobyl-in-holland"},}
+\cite{}
+hbo serie
+internationale gevolgen
+toerisme
+nieuwe koepel
+media communicatie
+docu
+dieren
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.amboanthos.nl/boek/nacht-in-tsjernobyl/"},}
+\cite{}
+koepel
+koepel
+@online{ing3enieur29042015antistralingskoepel,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.deingenieur.nl/artikel/nieuwe-antistralingskoepel-tsjernobyl-bijna-af"},}
+\cite{}
+toerisme
+toeristisch reiperspectief
+toerisme
+niwe koepel
+overschakelen naar duurzaamheid
+docu
+tjernobyl wekt nu duurazme energie
+toerisme
+overeenkomsten tjernobyl en fukushima
+drank en sla uit tjernobyl
+geen efficiente opslag is mogelijk
+
+wetenschappelijke artikelen
+
+zaterdag 26 april 1986. Er vind routineonderhoud plaats bij reactor 4, De controle wordt uitegevoerd door de dagploeg. Vnwege een test wordt jhet koelsysteem uitgeschakeld. Door omstandigheden wordt de test uitgesteld en wordt de verantwoordelijkheid overgedragen aan de avondploeg.
+De operator maakt bedieningsfouten waardoot de reactor bijna stil komt te liggen. En vervolgens probeert hij de reactor weer op gang te brengen. ondanks de snelle temperatuurstijging wordt het experiment doorgezet. Dan wordt ook het veiligheidssysteem stilgelgd. Terwijl het koelwater langzaam opwarmt, sluit hij de klep waarlangs de stoom naar de generator stroomt.
+
+De temperatuur van de reactorstaven neemt daarna snel toe. Terwijl er een oncontroleerbare kettingreactie op gang komt, laat het personeel in paniek de regelstaven zakken om de warmteontwikkeling af te remmen. Het is dan echter al te laat. Door een ontwerpfout loopt het vermogen razendsnel op tot 33.000 megawatt, ruim tien keer hoger dan normaal.
+
+In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.}
+
+In de ravage vat het gloeiend hete grafiet in de reactor spontaan vlam. De uitslaande brand en een tweede explosie voeren een radioactieve rookwolk tot 8 kilometer hoogte. 
+In een poging het vuur in reactor 4 te doven, storten helikopters vanuit de lucht zand, lood en boorzuur in de reactorkern. Het mag echter niet baten.
+
+Intussen is de nucleaire brandstof zo heet geworden dat die door de bodem van het reactorvat dreigt te smelten. Als dat gebeurt, kan het bluswater onder het vat in één klap verdampen en dreigt een derde explosie die een groot deel van Europa onbewoonbaar zal maken. Om dit te voorkomen moet het water hoe dan ook worden weggepompt.
+
+Drie brandweermannen wagen zich daarvoor in de ruimte onder de reactor, blootgesteld aan 300 sievert per uur, 300.000 keer de dosis die een Nederlander jaarlijks maximaal mag oplopen. Ze slagen daarin, maar twee van hen overlijden enkele dagen later aan acute stralingsziekte.
+
+Hoewel geigertellers de dag na de ramp onrustbarende waarden aangeven, slaat het plaatselijk bestuur geen alarm. De bevolking is het niet gewend om vragen te stellen.
+
+De volgende dag blijkt er wel degelijk iets ernstigs aan de hand te zijn. In een lange rij bussen worden de 135.000 inwoners op 27 april uit het besmette gebied geëvacueerd, om er nooit meer terug te keren.
+
+De ramp is dan nog steeds geen wereldnieuws. De Sovjetautoriteiten blijken er niet eens van op de hoogte te zijn – president Gorbatsjov klaagt later dat hij via Zweden aan zijn informatie moest komen.
 
 
+@online{verschuur14012013tjernobylreports,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://essay.utwente.nl/63353/1/Verschuur,_W._-_s0123617_(verslag).pdf"},}
+\cite{}
+@online{paperlessarchivesTjernobyl,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.paperlessarchives.com/chernobyl_nuclear_accident_doc.html"},}
+\cite{}
+@online{vargos082000tjernobylconcerns,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.pnnl.gov/main/publications/external/technical_reports/pnnl-13294.pdf"},}
+\cite{}
+@online{mauroNuclearRiskSociety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.geocities.ws/scannapuerci/demauroinnovation.pdf"},}
+\cite{}
+@online{vienna06092005LookingBack,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www-pub.iaea.org/MTCD/publications/PDF/Pub1312_web.pdf"},}
+\cite{}
 
 \subsubsection{therac-25}
 
@@ -566,6 +759,123 @@ transparantie af te dwingen door de gebruikersgroep en de FDA AECL gedwongen fun
 Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoudbaarheid daarvan 
 
 
+sheets
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://web.cs.ucdavis.edu/~rogaway/classes/188/winter04/therac-25.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://people.physics.carleton.ca/~drogers/egs_windows_collection/tsld008.htm"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/Therac-25"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.youtube.com/watch?v=-7gVqBY52MY"},}
+reproduceren van de error. IN dit stuk wordt uitgelgd hoe het product werkt en waarom bepaalde beslssingen zijn genomen in de ontwerp/productiefase
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bugsnag.com/blog/bug-day-race-condition-therac-25"},}
+kort artikel met daarin een opsomming van alle fouten in het systeem en een korte uitleg
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bowdoin.edu/~allen/courses/cs260/readings/therac.pdf"},}
+uitgebreid artikel over hoe de fout werd gereproduceerd en de resultaten daaruit voortkwamen. Alsnog werden er na de reproductie fase nog meer fouten gevonden.
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://hackaday.com/2015/10/26/killed-by-a-machine-the-therac-25/"},}
+artikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ethicsunwrapped.utexas.edu/case-study/therac-25"},}
+onderzoeksartikel waarin de bug wordt uitgelgd: de racecondities, de bytepositie en het testen worden berkitiseerd envenals andere onderdelen van het softwareproces
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://thedailywtf.com/articles/the-therac-25-incident"},}
+onrealistisch testplan. In dit artikel egt de auteur het belang nog eens uit van goede requirements en implementatie, niet de software is waar het probleem ligt
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.computer.org/csdl/magazine/co/2017/11/mco2017110008/13rRUxAStVR"},}
+onderzoeksrapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://web.stanford.edu/class/cs240/old/sp2014/readings/therac-25.pdf"},}
+geschiedenis
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://computingcases.org/case_materials/therac/case_history/Case%20History.html"},}
+artikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://medium.com/swlh/software-architecture-therac-25-the-killer-radiation-machine-8a05e0705d5b"},}
+computer error. De ongeval en de malfunction nog een keer uitgelegd
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.ccnr.org/fatal_dose.html"},}
+rapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://sunnyday.mit.edu/papers/therac.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://pubmed.ncbi.nlm.nih.gov/101762/"},}
+onderzoeksartkel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www1.cs.columbia.edu/~junfeng/08fa-e6998/sched/readings/therac25.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ieeexplore.ieee.org/document/274940"},}
+uitgebreid artikel gaat hier ook wat meer over de hardware
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.linkedin.com/pulse/therac-25-industrial-design-engineering-systems-wang-ph-d-cre-acb/"},}
+artikel waarin in 3 delen de problemaiekwordt blootgesteld
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.cse.msu.edu/~cse470/Public/Handouts/Therac/Therac_2.html"},}
+case study sheets
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cs.jhu.edu/~cis/cista/445/Lectures/Therac.pdf"},}
+artikel waarin vooral de fabriikant ervan langs krijgt
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://users.csc.calpoly.edu/~jdalbey/SWE/Papers/THERAC25.html"},}
+lessons learned. Vooral de begrippen betrouwbaarheid, welgevalligheid, veilgheid en gebruiksvriendelijkheid
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bohr.wlu.ca/cp164/therac/therac25.htm"},}
+root-cause analysis
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://root-cause-analysis.info/2010/08/08/therac-25-radiation-overdoses/"},}
+case study
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://dusk.geo.orst.edu/ethics/papers/Therac.Huff.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://embeddedartistry.com/fieldatlas/case-study-therac-25/"},}
+case study
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.sebokwiki.org/wiki/Medical_Radiation"},}
+opzetten van systematische acceptaatie test met therac als voorbeeld
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.sciencedirect.com/science/article/pii/S1474667017448245"},}
+artikel waarin een diagnose plaatvindt voor het bedrijf en de ingenieur/ontwerper
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://magsilva.pro.br/apps/wiki/testing/Therac_25"},}
+rapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://csel.eng.ohio-state.edu/productions/pexis/readings/submod3/therac.pdf"},}
+oorzaken aangegeven in artikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.chemeurope.com/en/encyclopedia/Therac-25.html"},}
+het onderzoek en enkele ontwerptekeningen en oplossingen
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://pvs-studio.com/en/blog/posts/0438/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.coursera.org/lecture/software-design-threats-mitigations/therac-25-case-study-VmQPa"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.semanticscholar.org/paper/The-story-of-the-Therac-25-in-LOTOS-Thomas/6c9c6024cf95aadae8b7edf1160e0e4500410eb9"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.ycombinator.com/item?id=21679287"},}
+wiki
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikibooks.org/wiki/Professionalism/Therac-25"},}
+analyse
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.369&rep=rep1&type=pdf"},}
+samenvatting
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://onlineethics.org/cases/resources-engineering-and-science-ethics/investigation-therac-25-accidents-abstract"},}
+podcast
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://podcasts.apple.com/gb/podcast/therac-25/id1046978749?i=1000514115050"},}
+enkele conclusies
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.cas.mcmaster.ca/~se4d03/therac.html"},}
+rapport over de fouten die de verschillende partijen hebben gemaakt( overheid, ingenieurs, bedrijf, operators) en de verbeterpunten
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cs.colostate.edu/~bieman/CS314/Notes/therac25.pdf"},}
+onderzoeksrapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cs.ucf.edu/~dcm/Teaching/COP4600-Fall2010/Literature/Therac25-Leveson.pdf"},}
+slides online over het technisch mankement
+Wat is er gebeurd, nou het volgende:
+Normal radiation treatments: 6,000 rads over a 3 week period, under certain conditions Therac-25 was delivering 60,000 rads during one session.
+En wat ging er mis?
+Paradigm Shift
+
+Therac-25 replaced expensive hardware safety interlocks with software controls
+
+Real-time software
+Design
+Race condition caused focusing element to be incorrectly set
+No indication of actual hardware settings
+Error messages appeared the same regardless of how important
+Error messages were difficult to understand
+All errors messages could be manually overridden
+
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://hci.cs.siue.edu/NSF/Files/Semester/Week13-2/PPT-Text/Slide13.html"},}
+oorzaak-gevolg diagram
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thinkreliability.com/InstructorBlogs/Blog-Therac-25.pdf"},}
+veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix waarmee het programma wordt uitgevoerd en de software-analyse door een consultat
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.erenkrantz.com/Geeks/Therac-25/Side_bar_5.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bandcamp.com/therac-25"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://sites.nd.edu/brent-marin/2017/09/21/blog-post-8-therac-25-accidents/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://europepmc.org/article/med/4035720"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://itlaw.wikia.org/wiki/Therac-25"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.sitepoint.com/therac-25-bad-software-kills/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://sqa.stackexchange.com/questions/9798/asking-for-help-with-this-therac-25-bugged-code-i-dont-understand-the-explanat"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.se.rit.edu/~swen-342/activities/TheracIndividual.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.designnews.com/automation-motion-control/engineering-disasters-deadly-zaps-therac-25"},}
+
+publicaties over de therac:
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cs.colostate.edu/~bieman/CS314/Notes/therac25.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cs.ucf.edu/~dcm/Teaching/COP4600-Fall2010/Literature/Therac25-Leveson.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://onlineethics.org/cases/resources-engineering-and-science-ethics/investigation-therac-25-accidents-abstract"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.369&rep=rep1&type=pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://csel.eng.ohio-state.edu/productions/pexis/readings/submod3/therac.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://dusk.geo.orst.edu/ethics/papers/Therac.Huff.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cs.jhu.edu/~cis/cista/445/Lectures/Therac.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www1.cs.columbia.edu/~junfeng/08fa-e6998/sched/readings/therac25.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://sunnyday.mit.edu/papers/therac.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://web.stanford.edu/class/cs240/old/sp2014/readings/therac-25.pdf"},}
+
 
 \subsubsection{tesla crash report}
 
@@ -578,6 +888,189 @@ Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoud
 Door een softwarefout zijn er situaties ontstaan waarin het systeem informatie een onvoldoende informatie positie had om de juiste beslissingen te maken. Of dat de informatieverwerking niet juist was.
 
 
+tesla autopilot crashes
+
+
+veiigheidsrisico
+@online{evan01042019teslaautopilotIntersection,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://spectrum.ieee.org/cars-that-think/transportation/self-driving/three-small-stickers-on-road-can-steer-tesla-autopilot-into-oncoming-lane"},}
+
+@online{testVehicleSafetyReport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.tesla.com/VehicleSafetyReport"},}
+veiligheidsrapport mbt autopilot
+@online{lambert31062020q2safetyreport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://electrek.co/2020/07/31/tesla-q2-2020-safety-report-strong-improvement-autopilot-accidents/"},}
+consumentenrapport
+bluetooth veiligheidsvraagstuk
+@online{wiredBloutoothHackTesla,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wired.com/story/tesla-model-x-hack-bluetooth/"},}
+veiigheidsvraagstuk vanwege touch screen
+@online{preston14012021NHTSATeslaRecall,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.consumerreports.org/car-recalls-defects/nhtsa-asks-tesla-to-recall-model-s-model-x-touch-screen-safety-issues/"},}
+veiligheidsvraagstuk
+@online{cio25112020belgianTeslaHack,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://cio.economictimes.indiatimes.com/news/digital-security/security-researchers-hack-steal-tesla-model-x-within-minutes/79406553"},}
+veiligheidsvraagstuk
+rapport over autopilot
+@online{templeton06092019HTSBReportTesla,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.forbes.com/sites/bradtempleton/2019/09/06/ntsb-report-on-tesla-autopilot-accident-shows-whats-inside-and-its-not-pretty-for-fsd/?sh=6905e7d4dc55"},}
+de invloed van de bestuurder bij tesla ongeluk
+@online{Dickey08012021SuddenTeslaAcceleration,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://techcrunch.com/2021/01/08/nhtsa-tesla-sudden-unintended-acceleration-driver-error/"},}
+veiligheidsvraagstuk
+@online{darkReading17112020TeslaBackup,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.darkreading.com/threat-intelligence/security-risks-discovered-in-tesla-backup-gateway/d/d-id/1339462"},}
+veiligheidsvraagstuk
+@online{leyden23032020TeslaInterfaceHack,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://portswigger.net/daily-swig/web-based-attack-crashes-tesla-driver-interface"},}
+veiigheidsvraagstuk
+@online{huddlestonjr03042019ChineseTeslaHack,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnbc.com/2019/04/03/chinese-hackers-tricked-teslas-autopilot-into-switching-lanes.html"},}
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+@online{heilweil26022020teslaAutopilot,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vox.com/recode/2020/2/26/21154502/tesla-autopilot-fatal-crashes"},}
+rapport over ongeluk
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+@online{blanco04102019NHTSATesla,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.caranddriver.com/news/a29369387/nhtsa-tesla-safety/"},}
+veiligheidsvraagstuk
+ransomware aanval op tesla
+tesla batterij is veiligheidsvraagstuk geworden
+@online{mitchell01072020teslabatterycooling,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.latimes.com/business/story/2020-07-01/federal-safety-officials-probe-tesla-battery-cooling-system"},}
+ongeluk
+@online{bbc26022020AutopilotCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/technology-51645566"},}
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+@online{stumpff04052020TeslaPersonalData,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thedrive.com/news/33272/tesla-discarded-old-car-parts-with-customers-personal-data-passwords-report"},}
+dodelijk ongeluk
+@online{levin08062018teslaautopilotsafety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theguardian.com/technology/2018/jun/07/tesla-fatal-crash-silicon-valley-autopilot-mode-report"},}
+veiligheidsvraagstuk: ransomware
+veiligheidsvraagstuk: medewerker in de fout
+@online{cbrook06082021TeslaInsideDataThreft,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://digitalguardian.com/blog/tesla-data-theft-case-illustrates-danger-insider-threat"},}
+@online{shilling25022021Tesla,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://jalopnik.com/tesla-is-stopping-some-model-3-production-report-1846353323"},}
+veiligheidsvraagstuk: hackers je systeem laten testen
+verdedigen tegenover ransomware
+veiligheidsrisico
+prijzen omlaag
+autopilot
+@online{randall05112019modelSurvey,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bloomberg.com/graphics/2019-tesla-model-3-survey/autopilot.html"},}
+malware door een medewerker
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.teslarati.com/tesla-employee-fbi-thwarts-russian-cybersecurity-attack/"},}
+dodelijk ongeluk
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.marketwatch.com/story/apple-engineer-killed-in-tesla-suv-crash-on-silicon-valley-freeway-was-playing-videogame-ntsb-2020-02-25"},}
+@online{fottrell03092018TeslaSecurityChecks,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.marketwatch.com/story/nearly-100-of-teslas-stolen-in-the-us-since-2011-have-been-recovered-2018-08-10"},}
+waarom een tesla stelen bijna onmogelijk is
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.welivesecurity.com/2019/03/25/white-hats-hack-tesla-keep/"},}
+veiligheidsonderzoek
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.tripwire.com/state-of-security/security-data-protection/tesla-encouraging-good-faith-security-research-in-bug-bounty-program/"},}
+softwarefout maakt diestal mogelijk
+@online{kirk26112020modelX,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bankinfosecurity.com/tesla-model-x-stolen-in-minutes-using-software-flaws-a-15462"},}
+fouten ontdekt in onderzoek
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnet.com/roadshow/news/tesla-ev-appeal-loyalty-study/"},}
+@online{bbc24022021hyundaiBatteryFireFix,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/technology-56156801"},}
+
+
+
+
+
+
+
+
+tesla cloud gehacked
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://arstechnica.com/information-technology/2018/02/tesla-cloud-resources-are-hacked-to-run-cryptocurrency-mining-malware/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.motortrend.com/news/tesla-model-y-ev-safety-quality-issues-problems/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://securityledger.com/2019/04/hackers-remotely-steer-tesla-model-s-using-autopilot-system/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.pcmag.com/news/report-tesla-suspends-model-3-production-in-california-until-march-7"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.scmp.com/business/money/article/3121173/tesla-conduct-complete-self-inspection-after-chinese-regulators"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.businesswire.com/news/home/20180220005222/en/RedLock-Releases-Cloud-Security-Report-Highlighting-Focus-on-Shared-Responsibilities-Uncovers-Cloud-Related-Exposures-at-Tesla"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.epa.gov/automotive-trends/highlights-automotive-trends-report"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.livemint.com/Companies/o2QLbtJc9EQ7ZcpxqgFbBP/Teslas-reward-for-finding-security-bugs-Model-3.html"},}
+@online{evans11062018,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://revealnews.org/blog/tesla-fired-safety-official-for-reporting-unsafe-conditions-lawsuit-says/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://heimdalsecurity.com/blog/security-alert-teslacrypt-4-0-unbreakable-encryption-worse-data-leakage/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.eweek.com/cloud/tesla-cloud-account-data-breach-revealed-in-redlock-security-report/"},}
+@online{hawkins22102022,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theverge.com/2020/10/21/21527577/tesla-full-self-driving-autopilot-beta-software-update"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf"},}
+@online{gritti24062020tesladataengine,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.braincreators.com/brainpower/insights/teslas-data-engine-and-what-we-should-all-learn-from-it"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bernardmarr.com/default.asp?contentID=1251"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisition-could-accelerate-autopilot-development/"},}
+@online{bouchard07052019teslaDeepLearning,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://towardsdatascience.com/teslas-deep-learning-at-scale-7eed85b235d3"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf"},}
+@online{Srikanth
+	2019teslabigdata,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/"},}
+@online{rangaiah25022020teslaAI,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.analyticssteps.com/blogs/how-tesla-making-use-artificial-intelligence-its-operations"},}
+@online{marr08012018taslabigdataAI,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.forbes.com/sites/bernardmarr/2018/01/08/the-amazing-ways-tesla-is-using-artificial-intelligence-and-big-data/?sh=5e396aa24270"},}
+@online{bdickson29072020teslalevelfive = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bdtechtalks.com/2020/07/29/self-driving-tesla-car-deep-learning/"},}
+@online{dcruz17062022tesladesignthink,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.mygreatlearning.com/blog/teslas-new-ai-for-self-driving-cars/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/"},}
+
+
+
+
+
+@online{mcfarland22042021selfdrivingrisks,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnn.com/2021/04/21/tech/tesla-full-self-driving-launch/index.html"},}
+@online{hawkins18032021fedgovinvest,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theverge.com/2021/3/18/22338427/tesla-autopilot-crash-michigan-nhtsa-investigation"},}
+@online{berry21042021teslacrashtexas,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wionews.com/technology/doctor-among-victims-of-lethal-tesla-car-crash-in-texas-378950"},}
+@online{hull23072021regulatorsaftercrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bloomberg.com/news/newsletters/2021-06-23/hyperdrive-daily-after-30-tesla-crashes-what-s-a-regulator-to-do"},}
+@online{wikiTeslaAutopilot,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/Tesla_Autopilot"},}
+@online{nhtsaAutomatedVehiclesSafety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety"},}
+@online{dowling23042021autopilottricking,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.caradvice.com.au/947080/elon-musk-responds-to-deadly-texas-tesla-crash-as-consumer-reports-reveals-how-autopilot-can-be-tricked/"},}
+@online{wilson19042021teslacrashregulators,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://usa.streetsblog.org/2021/04/19/regulators-could-have-prevented-fatal-tesla-crash/"},}
+
+@online{seamans22062021aikillerap,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.brookings.edu/research/autonomous-vehicles-as-a-killer-app-for-ai/"},}
+@online{mitchell24022020AIDataTesla,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.latimes.com/business/story/2020-02-24/autopilot-data-secrecy"},}
+@online{denneyjdsupraFeds,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.jdsupra.com/post/contentViewerEmbed.aspx?fid=9844cae0-aa5a-45a5-988f-7f02fa5709c1"},}
+@online{siddiqui22102020TeslaCriticism,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.washingtonpost.com/technology/2020/10/21/tesla-self-driving/"},}
+@online{ackerman01072016TeslaImperfect,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://spectrum.ieee.org/cars-that-think/transportation/self-driving/fatal-tesla-autopilot-crash-reminds-us-that-robots-arent-perfect"},}
+@online{greene04092019misuseautopilot,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://thenextweb.com/news/another-tesla-owner-is-dead-because-of-autopilot"},}
+@online{michralli26112019ubserautocarcrsash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://towardsdatascience.com/another-self-driving-car-accident-another-ai-development-lesson-b2ce3dbb4444"},}
+@online{pitmann21072021wrongfullautodeath,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theautochannel.com/news/2021/07/21/1024631-is-it-still-wrongful-death-if-car-is-driving-itself.html"},}
+@online{stackexchange102019teslacarmistake,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ai.stackexchange.com/questions/1488/why-did-a-tesla-car-mistake-a-truck-with-a-bright-sky"},}
+@online{tasking07062017TeslaAugmentedSafety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://resources.tasking.com/p/benefits-tesla-autopilot-and-how-adas-will-save-lives"},}
+@online{griemannExaminSelfDriving,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.jipitec.eu/issues/jipitec-9-3-2018/4806"},}
+@online{Harkey30052019SafeSystemVehicle,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://static.tti.tamu.edu/conferences/traffic-safety19/presentations/lunch/harkey.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://thepressfree.com/have-google-and-amazon-backed-the-wrong-technology/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.irishtimes.com/business/innovation/robotaxis-have-google-and-amazon-backed-the-wrong-technology-1.4626749"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.afr.com/technology/how-teslas-autopilot-got-it-wrong-in-fatal-crash-20160704-gpxsje"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://economictimes.indiatimes.com/markets/stocks/news/what-me-worry-fed-chiefs-emotional-tone-can-drive-markets-study-suggests/articleshow/84618073.cms"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ehstoday.com/safety/article/21919260/ntsb-fatal-crash-involving-tesla-autopilot-resulted-from-driver-errors-overreliance-on-automation"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vanityfair.com/news/2016/07/how-the-media-screwed-up-the-fatal-tesla-accident"},}
+
+
+tesla crash report
+@online{shepardson18062021TeslaDeaths,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.reuters.com/business/autos-transportation/us-safety-agency-says-it-has-opened-probes-into-10-tesla-crash-deaths-since-2016-2021-06-17/"},}
+@online{hawkins30062021nhtsarequiresreporting,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.politico.com/news/2021/05/18/ntsb-tesla-owner-was-in-drivers-seat-before-april-texas-crash-489272"},}
+@online{hawkins10052021autopilotnotavailable,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theverge.com/2021/5/10/22429198/tesla-ntsb-texas-crash-driverless-preliminary-report"},}
+@online{szymkowski29062021nhtsaTeslaCrashReports,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnet.com/roadshow/news/tesla-autopilot-nhtsa-crash-report-self-driving-car-driver-assist-system/"},}
+@online{abc1112052021AutopilotNotinTeslaCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://abc11.com/tesla-crash-battery-fire-national-transportation-safety-board-driverless/10619772/"},}
+@online{ankel18062021regulatorsinvestigateAutopilot,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.businessinsider.com/tesla-autopilot-crashes-regulators-open-probes-into-30-report-2021-6?international=true&r=US&IR=T"},}
+@online{sommerfield12072021NHTSAmandateresult,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://driving.ca/column/lorraine/lorraine-explains-what-the-nhtsas-self-driving-car-crash-reporting-mandate-will-find-out"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.teslarati.com/tesla-model-s-crash-texas-ntsb-preliminary-report/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://insideevs.com/news/506498/ntsb-report-tesla-texas-crash/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://electrek.co/2021/06/03/tesla-tsla-crashes-report-new-orders-in-china-free-falling/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.newsy.com/stories/ntsb-releases-report-on-fatal-tesla-crash/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ndtv.com/world-news/autopilot-not-used-in-april-tesla-crash-says-us-report-2439146"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.autocar.co.nz/autocar-news-app/fatal-driverless-tesla-crash-report-shows-autopilot-not-to-blame"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://teleperformance-waha.sabacloud.com/Saba/Web_spf/EU2PRD0152/app/dashboard"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.independent.co.uk/news/world/americas/tesla-texas-crash-model-s-autopilot-b1845286.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wired.com/2017/01/probing-teslas-deadly-crash-feds-say-yay-self-driving/"},}
+@online{saferoardsCrashesAutonomousvehicles,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://saferoads.org/wp-content/uploads/2020/03/AV-Crash-List-with-Photos-February-2020.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://mashable.com/article/nthsa-tesla-autopilot-model-x-crash-investigation"},}
+@online{stephardson18032021revieuwingtesla,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.usnews.com/news/top-news/articles/2021-03-18/us-safety-agency-reviewing-23-tesla-crashes-three-from-recent-weeks"},}
+@online{krishner30062021NHTSAreport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://chicago.suntimes.com/consumer-affairs/2021/6/30/22557122/nhtsa-automated-driving-crash-reports-tesla-national-highway-traffic-safety-administration"},}
+@online{gitlin11052021autopilot,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://arstechnica.com/cars/2021/05/ntsb-finds-no-reason-to-suspect-autopilot-in-fatal-tesla-crash/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://jalopnik.com/the-ntsb-to-partially-blame-teslas-autopilot-in-fatal-c-1803136365"},}
+@online{mitchell19012017investigationstop,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.latimes.com/business/autos/la-fi-hy-tesla-autopilot-20170119-story.html"},}
+@online{gordon10052021teslaprelimreport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vice.com/en/article/z3xxaw/ntsb-releases-preliminary-report-on-tesla-crash-that-killed-two-people"},}
+@online{shaper07062018,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://choice.npr.org/index.html?origin=https://www.npr.org/2018/06/07/618081406/no-driver-input-detected-in-seconds-before-deadly-tesla-crash-ntsb-finds"},}
+@online{cochran18042021nodriverTeslaCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.click2houston.com/news/local/2021/04/18/2-men-dead-after-fiery-tesla-crash-in-spring-officials-say/"},}
+@online{habib28062016NHTSATeslaReport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://static.nhtsa.gov/odi/inv/2016/INCLA-PE16007-7876.pdf"},}
+@online{firstpress11052021fatalnonautopilot,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.firstpost.com/tech/news-analysis/tesla-model-s-involved-in-fatal-crash-in-the-us-did-not-use-autopilot-says-ntsb-report-9609911.html"},}
+@online{raynal20042021probeTeslaCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.autoweek.com/news/green-cars/a36173804/both-local-police-and-nhtsa-probe-tesla-crash/"},}
+@online{tiungteslasoftwarecrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.zdnet.com/article/apple-and-tesla-under-fire-over-software-engineers-fatal-autopilot-crash/"},}
+@online{globaltimes08052021guangdongcrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.globaltimes.cn/page/202105/1222902.shtml"},}
+@online{anderson30042021secondteslacrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.carscoops.com/2021/04/ntsb-to-release-report-on-deadly-tesla-crash-within-a-month/"},}
+@online{oremus21062017fatalTeslaCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://slate.com/technology/2017/06/a-new-report-on-what-happened-in-the-fatal-tesla-autopilot-crash.html"},}
+@online{guardian15052021teslacrashHandsOnWheel,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theguardian.com/us-news/2021/may/15/tesla-fatal-california-crash-autopilot"},}
+@online{Puzzanghera13092017TeslaSharesBlame,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.stuff.co.nz/motoring/news/96797272/tesla-shares-some-blame-in-fatal-autopilot-crash-report"},}
+@online{jaillet02022017teslaAutopilotLimitations,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.overdriveonline.com/business/article/14891759/dot-report-on-fatal-2016-tesla-crash-with-tractor-trailer-blames-limitations-of-autopilot-mode"},}
+@online{reuters03102019teslaAutoParkingFail,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://venturebeat.com/2019/10/03/regulators-investigate-teslas-automated-parking-feature-following-crash-reports/"},}
+@online{dowling23042021,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.caradvice.com.au/947080/elon-musk-responds-to-deadly-texas-tesla-crash-as-consumer-reports-reveals-how-autopilot-can-be-tricked/"},}
+@online{young05112021fatalTeslaReport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.consumeraffairs.com/news/ntsb-releases-report-on-fatal-tesla-crash-in-texas-051121.html"},}
+@online{kierstein18032021teslaAutopilotCrashStationary,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.motortrend.com/news/tesla-michigan-state-autopilot-crash-report/"},}
+@online{janssen20062017teslacrashdetailflorida,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://tweakers.net/nieuws/126145/onderzoeksraad-vs-publiceert-technische-details-tesla-crash-in-florida.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://gizmodo.com/new-documents-reveal-one-driver-s-agony-and-confusion-d-1841720801"},}
+
+
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.google.com/search?q=tesla+crash+report&rlz=1C1AVUC_enNL953NL953&ei=p3kNYa6sLI_UsAeSoZrwDw&start=100&sa=N&ved=2ahUKEwjum77s_ZzyAhUPKuwKHZKQBv44WhDw0wN6BAgBEEg&biw=1920&bih=933"},}
 
 
 \subsubsection{stint ongeluk}
@@ -617,6 +1110,47 @@ De SLM werd verweten de kwalificaties van de bemanning onvoldoende te hebben gec
 
 https://aviation-safety.net/investigation/cvr/transcripts/cvr_py764.php 
 https://aviation-safety.net/database/record.php?id=19890607-2 
+Wat is er gebeurd?
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.srnieuws.com/suriname/290721/slm-ramp-herdacht/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://werkgroepcaraibischeletteren.nl/documentaire-waarom-nou-jij-over-de-slm-ramp-in-89/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vpro.nl/speel~WO_NTR_15390142~andere-tijden-17-apr-2019-3-09-min-fouten-en-misstanden-leiden-tot-de-slm-ramp~.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.canonvannederland.nl/nl/kalender/06/1989-06-07"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://vijfeeuwenmigratie.nl/archief-herdenkingen-slm-ramp"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.hulpverleningsforum.nl/index.php?topic=84702.0"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nporadio1.nl/fragmenten/focus/f792e720-bd85-4c18-8a71-b334d9d5de7e/2019-04-17-slm-ramp-een-paar-cowboys-hebben-achter-de-stuurknuppel-gezeten"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.waterkant.net/suriname/2017/06/07/herdenking-slm-ramp-28-jaar-geleden-suriname/"},}
+@online{espnSLMterugblik,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.espn.nl/video/clip?id=8744942"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.themediabrothers.nl/tag/slm-ramp/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.rijnmond.nl/nieuws/182546/30-jaar-na-de-SLM-ramp-Ik-mis-mijn-broer-nog-elke-dag"},}
+@online{dennisRosier01052020,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.voetbalkrant.com/nieuws/2020-05-01/het-vergeten-verhaal-van-de-slm-ramp"},}
+@online{hassing07062020slmramp,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bd.nl/sport/de-slm-ramp-en-het-hartverscheurende-verhaal-van-jerry-en-winnie-haatrecht~ae4ce105/?referrer=https%3A%2F%2Fwww.google.com%2F"},}
+@online{amsterdamArchiefSLM,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.amsterdam.nl/stadsarchief/nieuws/slm-ramp/"},}
+@online{rtvOost06062019nabestaande,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.rtvoost.nl/nieuws/313496/Nabestaande-SLM-ramp-Heb-ik-wel-mijn-broer-en-moeder-begraven"},}
+@online{breda07062021AndroSnel,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bredavandaag.nl/nieuws/algemeen/337919/nac-herdenkt-andro-knel-slm-ramp-precies-32-jaar-geleden"},}
+@online{andereTijdenSLMCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.anderetijden.nl/aflevering/792/Een-aangekondigde-vliegramp"},}
+@online{aviationSLMCrashAccidentInvestigation,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nl.wikipedia.org/wiki/SLM-ramp"},}
+database
+@online{aviationReport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://aviation-safety.net/database/record.php?id=19890607-2"},}
+rapport
+@online{aviationSLMCrashAccidentInvestigation,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://reports.aviation-safety.net/1989/19890607-2_DC86_N1809E.pdf"},}
+@online{mcDonnelDouglasCommissionReportSLMCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://aviation-safety.net/investigation/cvr/transcripts/cvr_py764.php"},}
+@online{wikiSRFlight764,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/Surinam_Airways_Flight_764"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://web.archive.org/web/20050113010822/https://www.ntsb.gov/ntsb/brief.asp?ev_id=34510&key=0"},}
+@online{nos07062019SLMTerugblik,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nos.nl/artikel/2287986-slm-vliegramp-van-precies-30-jaar-geleden-trof-ook-nederlands-voetbal"},}
+@online{dagvantoenSLMCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.dagvantoen.nl/vliegtuigcrash-slm-bij-zanderij-meer-dan-170-doden/"},}
+@online{waterkantNesty07061989,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.waterkant.net/suriname/2006/06/07/vliegramp-suriname-op-7-juni-1989-2/"},}
+uitgebreid engels artikel
+@online{eduNandlalSRCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.edufd.nl/planecrash/"},}
+ntsb investigtion
+@online{oldjetsSRAirways,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.oldjets.net/slm-dc-8-crash.html"},}
+uitgebreid engels artikel
+@online{cloudberg02012021srflight764,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://admiralcloudberg.medium.com/contract-to-kill-the-crash-of-surinam-airways-flight-764-828979c7efe2"},}
+persbericht
+@online{apnews07061989srplanecrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://apnews.com/article/5b240d758ee4c5422381cc7cdc98566b"},}
+Wat is de rol van de autoriteiten?
+Welke andere betrokkeen? Enw at is hun verantwoordelijkheid
+Hadden de negatieve gevolgen voorkomen kunnen worden?
+Hoe werd er over veiligheid gedacht?
 
 
 
@@ -638,6 +1172,66 @@ beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
 de registratie van werkzaamheden tijdens het a
 
 
+Wat is er gebeurd?
+@online{wikiSchipholbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nl.wikipedia.org/wiki/Schipholbrand"},}
+artikel
+@online{schipholbrand27102005video,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.youtube.com/watch?v=1i-hfEzxFfk"},}
+psychologische gevolgen
+rapport
+@online{onderzoeksraad2610schipholoost,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.onderzoeksraad.nl/nl/page/392/brand-cellencomplex-schiphol-oost-nacht-van-26-op-27-oktober"},}
+artikel met video
+herdenking
+impact op de persoon
+herdenking
+@online{schipholbrandvideoargos,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vpro.nl/argos/speel~POMS_VPRO_461907~schadevergoeding-voor-ex-verdachte-schipholbrand~.html"},}
+chronologie
+@online{nunl30052023feitenoverzicht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nu.nl/binnenland/3355935/feitenoverzicht-schipholbrand-en-rechtszaken.html"},}
+tijdlijn
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.singeluitgeverijen.nl/isbn/de-schipholbrand/"},}
+vervolgens van ministers
+beeldanalyse en reconstructie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://eenvandaag.avrotros.nl/item/schipholbrand-niet-ontstaan-in-cel-11/"},}
+herdenking
+korte samenvatting
+rapport
+artikel
+verwijzing naar het rapport vanuit de politieke oppositie
+beeld vanuit de gevangenisbewaarder
+nationaliteit slachtoffers schipholbrand
+verblijfsvergunning voor de slachtoffers
+gen schadevergoeding voor de verdachte
+verdachte voor de rechter
+geen schadevergoeding voor verdachte
+artikel wat ging er mis bji de schipholbrand
+brand veroorzaakt door een peuk
+smaadschrift
+bewakers worden niet vervolgd
+proces schipholbrand moet over en de brandveilgheid moet worden verbeterd
+de rol van het parlement in de evaluatie
+@online{parlementairemonitorschipholbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vi3aof7awcxg"},}
+onderzoeksmemo
+herdenking
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://archief.ntr.nl/nova/page/detail/uitzendingen/3847/Den%20Haag%20Vandaag_%20herdenking%20Schipholbrand.html"},}
+herdenking
+invloed van de ramp op samenleving
+@online{videonpoNOVA13112008,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.npostart.nl/heropen-onderzoek-schipholbrand/13-11-2008/POMS_NTR_103332"},}
+opmerkelijk rapport gestolen in de nasleep
+@online{schipperSchipholbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nd.nl/nieuws/nederland/600395/schipholbrand-blijft-schrijnen"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ed.nl/economie/om-geen-schadevergoeding-voor-verdachte-schipholbrand~a6c7c51d/63042600/?referrer=https%3A%2F%2Fwww.google.com%2F"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.groene.nl/artikel/schipholbrand-vereist-debat"},}
+@online{rizoomes01052014schipholbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.rizoomes.nl/brandweer/brand-cellencomplex-schiphol/"},}
+
+
+
+publicaties
+@online{heuvelkroesschipholbrandcamerabeelden,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.msnp.nl/downloads/Onderzoeksmemo%20beeldanalyse%20Schipholbrand%20prot.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.dakweb.nl/roofs/2006-10/RH10-P30-31.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.delta.tudelft.nl/article/dood-door-zuinigheid"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.onderzoeksraad.nl/nl/page/392/brand-cellencomplex-schiphol-oost-nacht-van-26-op-27-oktober"},}
+Wat waren de regels destijds?
+Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen?
+Wat is er gedaan om de veiligheid van illegalen en gevangenissbewaarders te verbeteren
+
 \subsubsection{Ramp schietpartij militair ossendrecht }
 
 	\begin{description}
@@ -656,7 +1250,22 @@ Zonder toezicht
 Zonder lesmateriaal
 Zonder adequate veiligheidsanalyse
 https://www.youtube.com/watch?v=6jmkDClGDHo 
+\cite{oVVSchietongevalOssendrecht}
 
+
+
+@online{nos22032016ossendrecht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://amp.nos.nl/artikel/2094524-militair-omgekomen-bij-schietoefening-ossendrecht.html"},}
+
+@online{ovv04042016lessenongevalossendrecht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.onderzoeksraad.nl/nl/page/4293/lessen-uit-schietongeval-ossendrecht"},}
+
+@online{quekelboere10052017doodossendrecht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bndestem.nl/bergen-op-zoom/dood-van-militair-sander-klap-35-in-ossendrecht-was-ongeluk-militairen-vrijuit-hij-probeerde-zijn-leven-te-redden~afe4c7a0/"},}
+
+
+Wat is de rol van defensie?
+Wat is er gedaan om de veligheid van de medewerkers te waarborgen?
+Waarom zijn deze regels niet nageleefd?
+Wat zijn de gevolgen?
+Zijn de acties die naderhand zijn ondernomen wel redelijk naar de slachtoffers, het nationale veiligheisbeeld en de medewerkers?
 
 
 
@@ -669,7 +1278,7 @@ https://www.youtube.com/watch?v=6jmkDClGDHo
 	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
 https://www.youtube.com/watch?v=h99Fe9XzzHI 
-
+\cite{molukseTreinkaping}
 \subsubsection{explosie tanjin china }
 
 	\begin{description}
@@ -687,7 +1296,138 @@ De opslag van cellulosenitraat is aan strenge regels gebonden. Het moet koel en 
 
 
 https://www.hindawi.com/journals/joph/2019/1360805/ 
+\cite{jiang16042019TanjinExplosion}
 
+verhaal van brandweermannen
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://slate.com/human-interest/2015/08/chinese-explosion-aftermath-officials-investigate-causes-behind-warehouse-blast-and-death-of-88-firefighters.html"},}
+artikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.chinafile.com/conversation/tianjin-explosion"},}
+invloed van social media
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.economist.com/asia/2015/08/18/a-blast-in-tianjin-sets-off-an-explosion-online"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://america.cgtn.com/2015/08/12/explosion-reported-in-tianjin-china"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://factcheck.afp.com/no-photo-was-taken-chinese-city-tianjin-august-2015"},}
+vergelijking van twee rampen
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://airshare.air-inc.com/how-does-the-beirut-explosion-compare-to-tianjin"},}
+overheid en media
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://newbloommag.net/2015/08/17/tianjin-explosion/"},}
+chemische industrie ondeer de loep
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.voanews.com/east-asia-pacific/tianjin-blast-puts-spotlight-chemical-industry"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://abcnews.go.com/International/apocalyptic-aftermath-devastating-images-tianjin-china-explosions/story?id=33057017"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.reachingoutacrossdurham.co.uk/osk/tianjin-explosion-2021"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/prs.11789"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.automotivelogistics.media/thousands-of-cars-destroyed-in-tianjin-port-explosions/13570.article"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.joc.com/port-news/asian-ports/port-tianjin/tianjin-port-explosions-could-be-most-expensive-maritime-disaster_20150826.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bloomberg.com/news/articles/2015-08-12/explosion-in-northern-china-shatters-windows-causes-injuries"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://unece.org/fileadmin/DAM/env/documents/2016/TEIA/OECD_WGCA_24-27_OCT_2016/Session_3_Zhao_-__Introduction_of_Tianjin_Accident_-_Jinsong_Zhao.pdf"},}
+gemaakte fouten
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://porteconomicsmanagement.org/pemp/contents/part6/port-resilience/site-2015-tianjin-port-explosions/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.alamy.com/stock-image-tianjin-china-17th-aug-2015-tianjin-explosion-aftermath-blast-site-165334778.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.popularmechanics.com/technology/news/a16871/massive-explosions-china-city-of-tianjin/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.imago-images.com/st/0080815934"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.chemistryworld.com/news/deadly-chemical-blast-at-chinese-port/8857.article"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.process-worldwide.com/tianjin-explosion-from-chemical-perspective-insights-and-backgrounds-a-502381/"},}
+vergelijking met andere explosies
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://apnews.com/article/lebanon-fires-us-news-explosions-middle-east-53f4206a7f1db0812262a15d22e1e58f"},}
+invloed van de ramp op de industrie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://fortune.com/2015/08/14/tianjin-port-explosion-shipping-delays/"},}
+is er sprake van een doofpot
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.washingtontimes.com/news/2015/aug/20/inside-china-tianjin-explosions-cover-up-exposes-b/"},}
+eigendomsverzekering
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.artemis.bm/news/tianjin-explosions-property-insurance-loss-could-reach-3-5bn-swiss-re/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thechinastory.org/yearbooks/yearbook-2015/forum-the-abyss-%E5%9D%8E/tianjin-explosions/"},}
+effecten op de lange termijn
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.flexport.com/blog/tianjin-explosion-effect-on-supply-chains/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cicm.org.my/images/articles/CICM-Article-on-Tianjin-Blast-Oct2015.pdf"},}
+lessons learned
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.genre.com/knowledge/blog/lessons-from-the-tianjin-explosion-en.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ft.com/content/ad62904c-44ce-11e5-b3b2-1672f710807b"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.huffingtonpost.co.uk/2015/08/13/tianjin-explosion-china-shocking-footage-caught-on-camera_n_7980888.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thatsmags.com/china/post/19189/massive-fire-rocks-tianjin-port"},}
+gevolgen voor de industrie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.everstream.ai/risk-center/special-reports/the-jiangsu-yancheng-explosion/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.newyorker.com/news/news-desk/after-tianjin-an-outbreak-of-mistrust-in-china"},}
+framing vanuit de chinese media
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.neliti.com/publications/101997/the-chinese-media-framing-of-the-2015s-tianjin-explosion"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.reinsurancene.ws/chinese-insurers-settle-1-5-billion-tianjin-blast-claims/"},}
+niewsartikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thechemicalengineer.com/news/update-78-confirmed-dead-after-chinese-chemicals-plant-explosion/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.caixinglobal.com/2016-11-10/chinese-executive-receives-suspended-death-sentence-over-2015-tianjin-warehouse-blast-101006325.html"},}
+toegang tot de ramplplek vanuit de okale journalistiek
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://chinadigitaltimes.net/2015/08/he-xiaoxin-how-far-can-i-go-and-how-much-can-i-do/"},}
+artikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wnpr.org/post/china-examines-aftermath-immense-twin-explosions-killed-dozens"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://theconversation.com/what-is-ammonium-nitrate-the-chemical-that-exploded-in-beirut-143979"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://chemicalwatch.com/36730/nationwide-inspections-in-china-follow-tianjin-explosion"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thehindu.com/news/international/investigation-begun-into-china-gas-explosion-as-toll-rises/article34818324.ece"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://santiagotimes.cl/2019/03/24/64-killed-600-injured-in-china-chemical-plant-blast/"},}
+oorzaken
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://klingecorp.com/blog/what-caused-the-tianjin-explosions/"},}
+case study
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.preventionweb.net/educational/view/57235"},}
+niewsartikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnbc.com/2015/08/12/explosion-in-tianjin-china.html"},}
+chronologische uiteenzetting
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.aria.developpement-durable.gouv.fr/wp-content/files_mf/A46803_a46803_fiche_impel_006.pdf"},}
+corruptie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nytimes.com/2015/08/31/world/asia/behind-tianjin-tragedy-a-company-that-flouted-regulations-and-reaped-profits.html"},}
+mismanagement als oorzaak
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nytimes.com/2016/02/06/world/asia/tianjin-explosions-were-result-of-mismanagement-china-finds.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://cen.acs.org/articles/94/web/2016/02/Chinese-Investigators-Identify-Cause-Tianjin.html"},}
+autoriteiten publiceren onderoeksrapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://cen.acs.org/articles/94/i7/Chinese-Investigators-Identify-Cause-Tianjin.html"},}
+fotos van de rampplek
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theatlantic.com/photo/2015/08/photos-of-the-aftermath-of-the-massive-explosions-in-tianjin-china/401228/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://edition.cnn.com/2015/08/13/asia/china-tianjin-explosions/index.html"},}
+niuwesartiekel}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cbc.ca/news/world/china-explosion-tianjin-1.3189455"},}
+verantwoordelijke
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thestar.com/news/world/2016/11/09/chinese-executive-gets-death-sentence-over-tianjin-explosion-in-2015.html"},}
+risicobeperking/controle
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.swissre.com/en/china/news-insights/articles/analysis-of-tianjin-port-explosion-china.html"},}
+censuur
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://foreignpolicy.com/2015/09/10/censored-china-young-survivor-tianjin-explosion-viral-post/"},}
+censuur
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://qz.com/756872/a-year-after-the-tianjin-blast-public-mourning-and-discussion-about-it-are-still-censored-in-china/"},}
+verschillende artikelen
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.scmp.com/topics/tianjin-warehouse-explosion-2015"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wsj.com/articles/BL-CJB-27664"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nbcnews.com/news/world/tianjin-explosions-californian-witness-filmed-dramatic-china-blasts-n409701"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ui.adsabs.harvard.edu/abs/2016AGUFM.S13D..06P/abstract"},}
+afwikkeling van de ramp
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://chinadialogue.net/en/pollution/9188-back-to-the-blast-zone-one-year-after-the-tianjin-explosion/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wired.com/2015/08/chinas-huge-tianjin-explosion-looked-like-space/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.abc.net.au/news/2015-08-13/explosion-rocks-north-chinese-city-of-tianjin/6693336?nw=0"},}
+ambtenaren onderzocht
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://thediplomat.com/2015/08/23-executives-government-officials-under-investigation-for-role-in-tianjin-explosions/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://america.aljazeera.com/articles/2015/8/13/at-least-50-dead-and-hundreds-injured-in-chinese-warehouse-explosion.html"},}
+risico-inschatting
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.mdpi.com/2071-1050/12/3/1169/htm"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.mdpi.com/2071-1050/12/3/1169/htm"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cbsnews.com/news/tianjin-port-china-massive-explosion-hundreds-injured/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.hkjcdpri.org.hk/download/casestudies/Tianjin_CASE.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://time.com/3996168/tianjin-explosion-china-pictures/"},}
+onderzoeksrapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.hfw.com/Tianjin-Port-explosion-August-2015"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.un.org/en/story/2015/08/506912-following-tianjin-explosion-un-expert-calls-china-ensure-transparent"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.france24.com/en/20150812-huge-explosions-rock-chinese-city-tianjin"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://choice.npr.org/index.html?origin=https://www.npr.org/2015/08/14/432280627/what-caused-the-warehouse-explosions-in-tianjin-china"},}
+123 verantwoordelijken
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/world-asia-china-35506311"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.washingtonpost.com/gdpr-consent/?next_url=https%3a%2f%2fwww.washingtonpost.com%2fnews%2fworldviews%2fwp%2f2015%2f08%2f12%2fvideos-show-chinese-city-of-tianjin-rocked-by-enormous-explosion%2f"},}
+lang artiekel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.businessinsider.com/the-chemical-explosion-in-china-killed-more-than-100-people-and-the-devastation-is-unreal-2015-8?international=true&r=US&IR=T"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://pubmed.ncbi.nlm.nih.gov/27311537/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.reuters.com/article/us-china-blast-insurance-idUSKCN0QM0N220150817"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.sciencedirect.com/science/article/abs/pii/S0305417916300079"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/2015_Tianjin_explosions"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/world-asia-china-33844084"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.independent.co.uk/news/world/asia/tianjin-explosion-photos-china-chemical-factory-accident-crater-revealed-a7199591.html"},}
+
+veiigheidshandhaving
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ilo.org/legacy/english/protection/safework/ctrl_banding/toolkit/main_guide.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://echa.europa.eu/documents/10162/21332507/guide_chemical_safety_sme_en.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/AppendixD_EN.htm"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ilo.org/safework/info/publications/WCMS_113134/lang--en/index.htm"},}
 
 
 \subsubsection{explosie in libabon, beirut }
@@ -703,8 +1443,29 @@ Gezien het ernstige gevaar van het bewaren van deze goederen in de hangar onder 
 Voorafgaand aan de explosie was er een brand in een opslagplaats. 
 
 https://www.hrw.org/report/2021/08/03/they-killed-us-inside/investigation-august-4-beirut-blast 
+\cite{hrw03082021investigateBeirutBlast}
 https://www.researchgate.net/publication/348325979_Beirut_Explosion_the_full_story 
+\cite{souaibyElHussein112020Beirutstory}
 https://reliefweb.int/sites/reliefweb.int/files/resources/CaseStudy_BeirutExplosion_TechBioHazardsweb.pdf 
+\cite{ifrc2020chemicalexplosionBeirutPort}
+
+@online{landryalameddine12112020beiruthelathsystem,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05906-y"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.sky.com/story/beirut-blast-cctv-captures-moment-huge-explosion-devastated-hospital-12047452"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.unodc.org/unodc/en/frontpage/2020/September/unodc-assists-lebanon-in-reestablishing-container-shipments-in-the-aftermath-of-the-port-of-beirut-explosion.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://reliefweb.int/sites/reliefweb.int/files/resources/LEB201-Lebanon-Emergency-Response.pdf"},}
+@online{yadav07082020handlingexplosivesBeirut,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.downtoearth.org.in/news/governance/beirut-blast-lessons-time-for-india-to-strengthen-handling-of-explosives-chemicals-72707"},}
+@online{graham21082020rootsImpactBeirutBlast,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.justsecurity.org/72122/the-cost-of-resilience-the-roots-and-impacts-of-the-beirut-blast/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.fire-magazine.com/the-port-of-beirut-explosion-a-timely-reminder"},}
+@online{neusaeter07082020beirutexplosioneval,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ctvnews.ca/sci-tech/mapping-the-beirut-explosion-what-the-impact-would-look-like-in-canadian-cities-1.5053932"},}
+
+
+secyrity:
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf"},}
+
+
+secyrity:
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf"},}
+
 
 
 \subsubsection{ethiopian airlines}
@@ -725,6 +1486,105 @@ Three minutes into the flight, with the aircraft continuing to lose altitude and
 At 8:43, having struggled to keep the plane's nose from diving further by manually pulling the yoke, the captain asked the first officer to help him, and turned the electrical trim tab system back on in the hope that it would allow him to put the stabilizer back into neutral trim. However, in turning the trim system back on, he also reactivated the MCAS system, which pushed the nose further down. The captain and first officer attempted to raise the nose by manually pulling their yokes, but the aircraft continued to plunge toward the ground.
 
 https://www.hindawi.com/journals/ijae/2014/472395/ 
+\cite{caliskan09112013747boeingkalman}
+
+algemene vragen
+oorzaken
+@online{gates18112020boeingcrisis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.seattletimes.com/business/boeing-aerospace/what-led-to-boeings-737-max-crisis-a-qa/"},}
+@online{boeing737maxsoftwareprobles,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.schneier.com/blog/archives/2019/04/excellent_analy.html"},}
+fout in de software
+@online{avetisov19032019boeingmalwarestate,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.forbes.com/sites/georgeavetisov/2019/03/19/malware-at-30000-feet-what-the-737-max-says-about-the-state-of-airplane-software-security/?sh=4d26f7052a9e"},}
+het nationaal veiligheidsbelang
+@online{thompson23112020nationalsecurityboeing,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.forbes.com/sites/lorenthompson/2020/11/23/five-reasons-return-of-boeings-737-max-to-service-is-important-to-national-security/?sh=2128ea552018"},}
+falend toezicht
+@online{gates21032019FAAControlSystem,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.seattletimes.com/business/boeing-aerospace/failed-certification-faa-missed-safety-issues-in-the-737-max-system-implicated-in-the-lion-air-crash/"},}
+onderzoeksrapport
+@online{faa18112020boeingreview,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.faa.gov/foia/electronic_reading_room/boeing_reading_room/media/737_RTS_Summary.pdf"},}
+@online{wiki737maxgroundings,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"},}
+veiligheidsrisico's
+menselijke fouten
+@online{campbell02052019boengcrashhumanerrors,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theverge.com/2019/5/2/18518176/boeing-737-max-crash-problems-human-error-mcas-faa"},}
+overzicht van crashes
+@online{hawkins22032019737maxairplanes,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theverge.com/2019/3/22/18275736/boeing-737-max-plane-crashes-grounded-problems-info-details-explained-reasons"},}
+veiligheidsopmerking
+@online{thomas30082020737safest,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.airlineratings.com/news/boeings-737-max-will-one-safest-aircraft-history/"},}
+aanpassingen
+@online{boeing737maxdisplay,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.boeing.com/commercial/737max/737-max-software-updates.page"},}
+waarschuwingen//output signalen
+@online{fehrm24112020737changes,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://leehamnews.com/2020/11/24/boeing-737-max-changes-beyond-mcas/"},}
+software gerelateerde fouten
+@online{travis18042019737maxsoftwaredevop,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://spectrum.ieee.org/aerospace/aviation/how-the-boeing-737-max-disaster-looks-to-a-software-developer"},}
+onderzoeksrapport
+de rol van de publieke opinie
+@online{barnett05052019737maxcrisis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://pubsonline.informs.org/do/10.1287/orms.2019.05.05/full/"},}
+onderzoek van europese luchtvaart agentschap
+@online{easa27012021737maxsafereturn,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.easa.europa.eu/newsroom-and-events/news/easa-declares-boeing-737-max-safe-return-service-europe"},}
+veiligheidsvraagstuk
+@online{touitou11032019737tragedies,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://phys.org/news/2019-03-boeing-max-safety-tragedies.html"},}
+artikel over sensoren
+@online{hemmerdinger02022021737maxdeliveries,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.flightglobal.com/airframers/boeing-delays-737-max-10-deliveries-two-years-to-2023/142245.article"},}
+goedkeuring van europese luchtvaart autoriteiten
+advies aan de faa
+@online{bielby27022021faaimprovesafety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.hstoday.us/subject-matter-areas/airport-aviation-security/oig-tells-faa-to-improve-safety-oversight-following-boeing-737-max-review/"},}
+@online{boyle18112020737maxupgrade,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.geekwire.com/2020/faas-go-ahead-737-maxs-return-flight-kicks-off-massive-software-upgrade/"},}
+@online{bergstraburgess122019737maxMcasAlgorithm,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.researchgate.net/publication/338420944_A_Promise_Theoretic_Account_of_the_Boeing_737_Max_MCAS_Algorithm_Affair"},}
+achtergrond informatie
+@online{737mcas,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.b737.org.uk/mcas.htm"},}
+algemeen vertrouwen
+@online{newburger17052019boeingcrisis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnbc.com/2019/05/16/what-you-need-to-know-about-boeings-737-max-crisis.html"},}
+toestemming europese autoriteiten
+problemen
+@online{arstechnica22012020737problems,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://arstechnica.com/information-technology/2020/01/737-max-fix-slips-to-summer-and-thats-just-one-of-boeings-problems/"},}
+uitgebreid artikel over de onderzoeken en het vliegverbod
+@online{german190620217372yaftergrounded,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnet.com/news/boeing-737-max-8-all-about-the-aircraft-flight-ban-and-investigations/"},}
+computers als oorzaak
+lessons learned
+@online{beningo02052019boeinglessons,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.designnews.com/electronics-test/5-lessons-learn-boeing-737-max-fiasco"},}
+@online{duran05042019boeingspof,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.eurocontrol.int/publication/effects-network-extra-standby-aircraft-and-boeing-737-max-grounding"},}
+single point of failure
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://dmd.solutions/blog/2019/04/05/how-a-single-point-of-failure-spof-in-the-mcas-software-could-have-caused-the-boeing-737-max-crash-in-ethiopia/"},}
+@online{makichuck24012021737fearflying,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://asiatimes.com/2021/01/boeings-737-max-and-the-fear-of-flying/"},}
+lijst van tehnische aanpassingen
+@online{caa737modifications,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.caa.co.uk/Consumers/Guide-to-aviation/Boeing-737-MAX/"},}
+@online{oestergaard14122020boeingdeliveries,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://dsm.forecastinternational.com/wordpress/2020/12/14/airbus-and-boeing-report-november-2020-commercial-aircraft-orders-and-deliveries/"},}
+code lek
+@online{reenberg787flaws,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wired.com/story/boeing-787-code-leak-security-flaws/"},}
+@online{fitch16092020737backlogrisks,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.fitchratings.com/research/corporate-finance/boeing-737-max-return-backlog-risks-remain-16-09-2020"},}
+Cultuurverandering, deregulatie, systeemwijziging of gewoon een kwestie van competentie
+@online{willis27082020737maxfailures,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.aerospacetestinginternational.com/features/what-broke-the-737-max.html"},}
+extra aanpassingen
+@online{ostrower11062020more737changes,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://theaircurrent.com/aviation-safety/boeings-737-max-software-done-but-regulators-plot-more-changes-after-jets-return/"},}
+wat ging er mis een analyse van een ex-iloot
+De utoriteiten waren op de hoogte
+@online{hruska13122019faaknown737crashrate,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.extremetech.com/extreme/303373-the-faa-knew-the-737-max-was-dangerous-and-kept-it-flying-anyway"},}
+kwaliteiten van het alarmsysteem niet goed bekend
+@online{bloomberg26092019failedpred,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://time.com/5687473/boeing-737-alarm-system/"},}
+@online{whiteman09072020boengcancelstock,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nasdaq.com/articles/boeing-gets-dealt-another-737-max-cancellation-blow.-what-it-means-for-boeing-stock-2020"},}
+@online{leopold09192019boeingreliability,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.eetimes.com/boeing-crashes-highlight-a-worsening-reliability-crisis/"},}
+veiligheidsvraagstuk
+@online{koenig11122019737crashesnofix,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.latimes.com/business/story/2019-12-11/faa-boeing-737-max-crashes"},}
+probleemanalyse, veiligheidsvraagstuk
+@online{dohertylindeman15032019737problems,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.politico.com/story/2019/03/15/boeing-737-max-grounding-1223072"},}
+falend toezicht
+@online{stodder02102019corruptoversight,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.pogo.org/analysis/2019/10/corrupted-oversight-the-faa-boeing-and-the-737-max/"},}
+@online{afacwaLostSafeguards,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.afacwa.org/the_inside_story_of_mcas_seattle_times"},}
+doelstellingen en veiligheidsvraagstukken
+@online{swayne18032019profitssafety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.marxist.com/737-max-scandal-boeing-putting-profits-before-safety.htm"},}
+@online{freed26022021liftaustraliaban,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://finance.yahoo.com/news/australia-lifts-ban-boeing-737-035817682.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAHZCJYy_0A5VS2WiPoCvH4xdrRNkmkdsv5EWJ2RLIz_AS-rxsTty6AF1_HlmJiRyWYqCXDi4p0Xs4isYkNkCq2Pfo-pQ60Xz_IfTNjm4FgoZiBMC4zpZlB6F0fwecrjE_ujAXZzG4xPJnWCd8-G3VLlPTY8h3H31eQ1i8hY9AIyy"},}
+autoriteiten krijgen tik op de vingers
+@online{reed15032019softwareattention,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://medium.com/@jpaulreed/the-737max-and-why-software-engineers-should-pay-attention-a041290994bd"},}
+@online{news17032019softwareexplains,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.ycombinator.com/item?id=19414775"},}
+@online{legget21122020eu737maxsafe,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/55366320"},}
+@online{marketscreener0103221737chinarecertification,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.marketscreener.com/news/latest/China-studies-Boeing-737-MAX-recertification-wants-safety-concerns-fully-addressed--32569125/"},}
+motor in brand
+@online{euractiv22022021737firegrounds,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.euractiv.com/section/aviation/news/boeing-grounds-777s-after-engine-fire/"},}
+@online{benny18022019737returnUAE,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://gulfnews.com/business/aviation/uae-airspace-to-see-return-of-boeing-737-max-1.1613627548923"},}
+motor in brand gevlogen
+@online{biersmichel22022021777grounds,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://techxplore.com/news/2021-02-boeing-urges-grounding-777s.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.politico.eu/article/uk-temporarily-bans-some-boeing-aircraft-after-pratt-whitney-engine-incidents/"},}
+@online{reuters23022021777metalfatigue,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.timeslive.co.za/news/world/2021-02-23-damage-to-united-boeing-777-engine-consistent-with-metal-fatigue--ntsb/"},}
+faa was niet kritisch genoeg
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://federalnewsnetwork.com/government-news/2021/02/federal-watchdog-blasts-faa-over-certification-of-boeing-jet/"},}
 
 
 \subsubsection{ethiek}
@@ -736,14 +1596,20 @@ Ethiek
 
 persuasive technology 
 https://www.humanetech.com/youth/persuasive-technology 
+\cite{humanTechpersuasiveTech}
 https://www.minddistrict.com/blog/persuasive-technology-new-insights-in-behavioural-change 
 https://www.sciencedirect.com/book/9781558606432/persuasive-technology 
 https://spectrum.ieee.org/how-persuasive-technology-can-change-your-habits 
+\cite{rezenfeld01012018persuasiveTecgHabits}
 https://www.frontiersin.org/articles/10.3389/frai.2020.00007/full 
+\cite{aldenaini28042020persuasiveTechTrends}
 https://psmag.com/environment/captology-fogg-invisible-manipulative-power-persuasive-technology-81301 
+\cite{larson14062017persuasivetechmanipulates}
 https://www.makeuseof.com/what-is-persuasive-technology/ 
+\cite{tanzem22012022persuasivetechchanginglives}
 https://lib.ugent.be/catalog/rug01:001235489 
 https://cyberpsychology.eu/article/view/12270 
+\cite{tikkakuddonenpersuasiveTechnology}
 
 
 
@@ -757,7 +1623,10 @@ https://cyberpsychology.eu/article/view/12270
 \end{description}
 niet odnerzocht
 https://www.njb.nl/blogs/a-court-with-no-face-and-no-place/ 
+\cite{sprongken19032018CourtProcedureDigital}
 http://www.e-court.nl/wp-content/uploads/2018/03/Procesreglement-e-Court-2017_20180201.pdf
+\cite{PROCESREGLEMENTEcourt}
+
 
 \subsubsection{ cyber aanval op Oekraïene }
 
@@ -767,20 +1636,30 @@ http://www.e-court.nl/wp-content/uploads/2018/03/Procesreglement-e-Court-2017_20
 	\item[Oorzaak]
 	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
-Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
-worden voldaan. De eerste voorwaarde is de geschiktheid van het
-afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
-men zich afvragen of dat wel een echte afstudeeropdracht is. Een
-afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
-moet een afstudeerproject passen in het profiel van een opleiding om
-beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
-de registratie van werkzaamheden tijdens het a
+
 op 23,december 2015  vind er een cyber aanval plaats op het elektriciteitsnet van de Oekraine. Dit was de eerste bekende aanval op een elektrisch contole  system.  Dit verslag geeft inzage in een analyse van de Ukraine cyber aanval,
 inclusief hoe de actoren zich zelf toegang gavan tot het controle systeem, welke methoden de acoren hebben gebruikt voor reconnaissance en vastleggen van het systeem, een gedetailleerde omshrijving van de aanval op 15 December 2015, en de methoden die gebruikt zijn door de aanvallers om hun sporen uit te wissen en daarmee het het stoppen van schade toebrengen  nog moeilker maken. Daarnaast wordter  een gedetailleerde omschrijving gevevenv an de beveiliging van de SCADA ccontrol systemen gebaeerd op bst practices, inclusief het control network ontwerp, technieken voor whtelisting, monitoring en loggen, en  opleiding van personeel.
 \cite{Whitehead2017ukrainepoweroutage}
 
 \cite{noauthor_2022-nm}
 \cite{zetter2016GridHack}
+
+
+@online{owens21032017ukrainemitigationstrategies,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.us-cert.gov/ics/alerts/IR-ALERT-H-16-056-01"},}
+
+@online{cerulus2019FrontlineRussiaAttack,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.politico.eu/article/ukraine-cyber-war-frontline-russia-malware-attacks/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/December_2015_Ukraine_power_grid_cyberattack"},}
+@online{grammatikis2019AttackIEC6087505104,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf"},}
+@online{hidajat2016ScadaSimulator,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.diva-portal.org/smash/get/diva2:1046339/FULLTEXT01.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.semanticscholar.org/paper/Cybersecurity-analysis-of-a-SCADA-system-under-and-Rocha/dfa7c12551ebe7b24da8d806e87e946051a57cb9"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://tutcris.tut.fi/portal/files/16294332/jafary_1534.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://blog.nettedautomation.com/2017/"},}
+@online{uscert20072021crashmalware,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.us-cert.gov/ncas/alerts/TA17-163A"},}
+@online{zetter12062017malwareanalysis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer"},}
+@online{icsRussianHackingCyberWeapon,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://blog.wallix.com/ics-security-russian-hacking"},}
+@online{usgovC2M2,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-cybersecurity-0"},}
 
 
 
@@ -827,10 +1706,36 @@ Ok het ongeval tijdens de mortieroefening was voor defensie geen aanleuiding om 
 De inrichting van veilige medische zorg voor nederlandse militairen in kidal is ondergeschikt gemaakt aan de voortgang van de missie.
 
 
-https://www.youtube.com/watch?v=PC2ekl4SaNA 
+\cite{ovvMortierOngevalMaliVideo} 
 
 
 
+
+
+@online{bnnvara13062018malirapport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://joop.bnnvara.nl/nieuws/rapport-haalbaarheid-en-houdbaarheid-van-mali-missie-twijfelachtig"},}
+@online{eucal11012021malimissieverlengd,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.consilium.europa.eu/nl/press/press-releases/2021/01/11/eucap-sahel-mali-mission-extended-until-31-january-2023-and-mandate-adjusted/"},}
+@online{nos21052014zorgenmalimissie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nos.nl/artikel/650637-kamer-bezorgd-over-mali-missie"},}
+@online{meijnders,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bnr.nl/nieuws/10015679/koenders-positief-tegenover-verlening-mali-missie"},}
+@online{bnrwebredactie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bnr.nl/nieuws/politiek/10345553/kabinet-wil-mali-missie-stoppen-verrassend-besluit"},}
+@online{keultjes01062016malimissiecoalitie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ad.nl/nieuws/clash-om-mali-missie-dreigt-binnen-coalitie~a4151d4f/"},}
+@online{veenhof18012019,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nd.nl/cultuur/boeken/536861/boek-kijkje-bij-de-mali-missie"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.youtube.com/watch?v=jmZ6uSbpCvg"},}
+@online{isitman06012016militair,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ewmagazine.nl/nederland/achtergrond/2016/07/twee-nederlanse-militairen-dood-bij-oefening-mali-missie-325226/"},}
+@online{nporadio11072016filmdemissie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nporadio1.nl/nieuws/cultuur-media/9e3b076e-5401-4630-bf39-f925213c5b6b/onverwachte-openhartigheid-over-missie-in-mali"},}
+@online{parlementairmonitor15122013mortierongeluk,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vjfm5p0nujzw?ctx=vj2mc67lofnr"},}
+
+
+sollicitatie
+de bureaucratie
+aankomst
+interview van de burgerbevolking
+steun van de bevolking minuut 15:00
+de organisatie minuut 23:00
+De militaire briefing minuut 34:00
+prioriteit minuut 39:00
+briefing minuut 40:00
+de communicatie met ministerie over inlichten minuut 44:00
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.2doc.nl/documentaires/series/2doc/2016/juli/de-missie.html"},}
 
 
 
