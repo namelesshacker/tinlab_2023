@@ -1,11 +1,4 @@
-\chapter{Inleiding}
-\label{chapter:Inleiding}
-\thispagestyle{myheadings}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\newpage
+\newpage
 \section{Inleiding}
 In deze case study wordt %insert inleiding hier
 
@@ -37,10 +30,10 @@ First implementations of model checking suffered from so-called state space expl
 lassical model checking techniques are Boolean (either the system satisfies a property or it does not). Unfortunately such a view is extremely sensitive to changes made in the design and is not able to quantify their impacts (both minor and major changes may reverse the verification outcome).  This view is now obsolete: the designers need a finer analysis that allows to quantify the impacts of any change in the design. This has motivated the development of a series of new techniques (under the name of Probabilistic Model Checking) and tools [PRISM,BK08] capable of quantifying the likelihood for a system (whose behaviors naturally depend on stochastic information) to satisfy some property.  Adding explicitly rich features (e.g., real time) in specifications is also needed. Indeed, in many situations it is not enough to know whether something will or will not happen; rather, one needs to have a precise estimate of the time when some situation will arise. This motivated the creation of a number of new techniques under the name of timed model checking. 
 The problem with MC-based approaches is that even though heuristics exist (partial order, symbolic approach, BDDs, etc.), they still suffer from the state-space explosion problem. This is especially the case when the system is obtained as the combination of several subsystems. Moreover, when moving to rich systems such as those with real time features, most of the model checking problems become undecidable.
 
-https://project.inria.fr/plasma-lab/statistical-model-checking/
-https://ris.utwente.nl/ws/portalfiles/portal/28200786/A_statistical_model_checker.pdf
-https://dl.acm.org/doi/10.1145/3158668
-https://dl.acm.org/doi/pdf/10.1145/3158668
+ \cite{inriaStatsMoodCheck}
+ \cite{ buddeModelChecker}
+ \cite{AGHASuervey }
+ 
 
 Waarom gebruiken we statistisch model checking?
 To overcome the above difficulties we propose to work with Statistical Model Checking [KZHHJ09,You05,You06,SVA04,SVA05,SVA05b] an approach that has recently been proposed as an alternative to avoid an exhaustive exploration of the state-space of the model. The core idea of the approach is to conduct some simulations of the system, monitor them, and then use results from the statistic area (including sequential hypothesis testing or Monte Carlo simulation) in order to decide whether the system satisfies the property or not with some degree of confidence. By nature, SMC is a compromise between testing and classical model checking techniques. Simulation-based methods are known to be far less memory and time intensive than exhaustive ones, and are oftentimes the only option. 
@@ -114,3 +107,4 @@ In  de methodologie wordt de lezer uitgelegd met welke methoden de onderzoeksvra
 
 %	\input{Methoden} %(verplicht) hoofdverslag
 %\hoofdstuk{methoden}
+ 
