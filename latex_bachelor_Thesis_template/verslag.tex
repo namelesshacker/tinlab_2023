@@ -22,6 +22,62 @@
 \renewcommand{\redactie}[1]{\relax} %nodig voor redactionele opmerkingen    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %hieronder komen alle packages die je zelf wil plaatsen of veranderen       %
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\usepackage{lipsum}
+
+\colorlet{helpful}{lime!70}
+\colorlet{harmful}{red!30}
+\colorlet{internal}{yellow!20}
+\colorlet{external}{cyan!30}
+\colorlet{S}{helpful!50!internal}
+\colorlet{W}{harmful!50!internal}
+\colorlet{O}{helpful!50!external}
+\colorlet{T}{harmful!50!external}
+
+\newcommand{\texta}{Helpful}
+\newcommand{\textb}{Harmful}
+\newcommand{\textcn}{\rotatebox{90}{\parbox[c]{3cm}{\centering Internal origin}}}
+\newcommand{\textdn}{\rotatebox{90}{\parbox[c]{3cm}{\centering External origin}}}
+
+\newcommand{\texts}{strength 1\par strength 2}
+\newcommand{\textw}{weakness 1\par weakness 2}
+\newcommand{\texto}{opportunity 1\par opportunity 2}
+\newcommand{\textt}{threat 1\par threat 2}
+
+\tcbset{swotbox/.style={size=normal, boxrule=0pt,
+		colback=#1, watermark text=#1, width=.5\linewidth-5mm},
+	header/.style={size=normal, boxrule=0pt, width=.5\linewidth-5mm, colback=#1, valign=center, halign=center},
+	firstcol/.style={header=#1, width=1cm, boxsep=0mm}
+}
+
+
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[automark,headsepline,plainheadsepline, plainfootsepline, footsepline]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+%Tabelle
+\usepackage{multirow, makecell, cellspace, bigstrut}
+\usepackage{ragged2e}
+\usepackage{ltablex}
+\keepXColumns
+\renewcommand\tabularxcolumn[1]{ >{\arraybackslash}m{#1}}
+\usepackage{booktabs}
+\newcolumntype{L}[1]{>{\RaggedRight}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newlength{\lastcolwd}
+\settowidth{\lastcolwd}{Bermerkungen}
+\usepackage[inner=2.5cm,outer=2.5cm,top=2cm,bottom=1.0cm,includeheadfoot]{geometry}
+\newcommand\mymidrule{\specialrule{\lightrulewidth}{0pt}{\belowrulesep}}
+\newcommand\mybottomrule{\specialrule{\heavyrulewidth}{0pt}{\belowrulesep}}
+\newcommand\mytoprule{\specialrule{\heavyrulewidth}{0pt}{0pt}}
+
+\setlength\cellspacetoplimit{5pt}
+\setlength\cellspacebottomlimit{5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{algorithmic}      %aangepaste algoritmen   
 \usepackage{listings}         %aangepaste listings (event. in kleuren)
@@ -34,8 +90,8 @@
 
 \begin{document}
 \titelblad                   %argumenten invullen
-  {Een \LaTeX\ `model' voor een referaat} %hier titel invullen 
-  {Onbekend Talent (123456)} %hier naam en (stamnummer) van student invullen
+  {Een \LaTeX\ `model' voor een Persoonlijk verslag} %hier titel invullen 
+  {Galvin Bartes (0799967)} %hier naam en (stamnummer) van student invullen
   {\TI}                      %hier opleiding \TI, \INF of \BI invullen
   {\today}                   %{\today} concept of {1 april 2011} definitief
   {Dhr. M. de Uil}           %eerste docent
@@ -72,7 +128,7 @@
   \include{bijlage1}   %(optioneel) bijlagen
   \include{bijlage2}   %(optioneel) bijlagen
   \include{bijlage3}   %(optioneel) bijlagen
-%  \include{}   %(optioneel) bijlagen
+  \include{bijlage4}   %(optioneel) bijlagen
 %  \include{}   %(optioneel) bijlagen
 %  \include{}   %(optioneel) bijlagen
 \fi
