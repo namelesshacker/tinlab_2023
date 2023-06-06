@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+// examples v1_12_06_2022 
+// examples v1_13_06_2022 
+
+// List one or more processes to be composed into a system.
+//system schip,aanvoer,afvoer;
+ 
+//system pomp,pompbediening;   
+// for more uppaal documentation https://docs.uppaal.org/language-reference/expressions/
+
+/** Requirementsoverzicht
+ * Een sluis heeft deuren voor openenen en sluiten.
+ * Een sluis heeft stoplichten met rood en groen waarmee toestemming al dann wel neit wordt gegeven voor schepen voor invaren of uitvaren.
+ * Een schip heeft een positie en een doel
+ * Een schip kan zich aanmelden
+ * De pompbediening handelt de aanvraag van invarende, wachtende en uitvarende schepen af
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart beneden.
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart boven.
+ * Een schip kan in een wachtrij staan voordat deze een sluis verlaat.
+ * Als een sluis vol is komt een schip automatisch in een wachtrij.
+ * Een sluis heeft een pomp(nivelleeersystseem) voor  hoog, midden, laag.
+ * Een sluis houdt bij hoeveel schepen invaren.
+ * Een sluis houdt bij wat de waterstand is.
+ *
+ * Scenario
+ * Vanuit idle wordt er een schip toegevoegd aan de wachtrij boven of beneden. De sluis blijft in de wacthmodus totdat de wachtrij boven of beneden vol is.
+ * Error handling
+ * Pomp
+ * Een pomp mag niet meer water bijpompen dan het maximum.
+ * Een pomp mag niet meer  water wegpompen dan onder het NAP\
+ * Stoplicht
+ * Er mag niets mis gaan emt de stoplichten anders kunnen er botsingen voorkomen
+ * Deur
+ * Een deur moet binnen 30 seconden open en dicht anders wordt er een foutmelding gestuurd.
+*/
+
+clock realtime;
+bool entrance_schip,schip_boven=true,schip_beneden=false;
+bool direction = false;
+bool process_started = false;
+bool process_finished = false;
+bool on=false, off=false;
+//const int deuren = 2;
+//typedef int[0,deuren-1] deur;
+//bool gate_is_open[deur];
+
+
+bool togglePomp = false;
+bool startDown =false;
+bool startUp= true;
+bool position=0;
+
+
+
+
+bool sluisToggle = false;
+bool sluisIsBezig = false;
+
+int[-1,6] waterniveau = 0;
+
+
+
+
+//typedef int[0,10] meter;
+//meter waterlevel;
+int[-1,10] waterlevel=0;
+
+
+// identifier voor schepen
+const int MAX_schepen=3;
+typedef int[0,MAX_schepen-1] kenteken;
+chan schipklik[kenteken];
+//chan send[0,1],receive[0,1];
+
+chan notified_pomp_direction;
+
+
+// identifier voor wachtrij
+// aantal queues voor wachtrij beneden,  de wachtrij boven en  aantal schepen in de sluis
+const int aantal_wachtrijen=3;
+
+const int SIZE=3;
+//queue_of_ships stack[SIZE];
+//int myarray[3] := {stack[SIZE], stack[SIZE], stack[SIZE]};
+int wachtrij_beneden[SIZE];
+//int stack[SIZE];
+int wachtrij_boven[SIZE];
+//int[0, 2] myarray[stack[SIZE]];
+//int queues[queue];
+
+
+const int aantal_queues=2;
+typedef int[0, aantal_queues-1] queue;// goed
+typedef int[0, aantal_queues-1] id_q; // ook goed
+typedef int[0, aantal_wachtrijen-1] que; // ook goed
+typedef int[0,aantal_wachtrijen-1] queue_of_ships; // ook goed
+int[-1,6] mystack[SIZE]; // size is minimaal -1 en max gelijk aan 6 ?? Is dit een fout in Uppaal waar me rekening mee moeten houden in geval van state explosion???
+int queues[que];
+
+
+
+// identifier voor deuren
+int[0,1] gatenr;
+const int aantal_deuren=2;
+typedef int[0, aantal_queues-1] id_d;
+const int deuren = 2;
+typedef int[0,deuren-1] deur;
+bool deur_is_open[id_d];
+chan deur_openen[id_d];
+chan deur_sluiten[id_d];
+bool deur_is_gesloten[id_d];
+chan open_gate[id_d];
+chan close_gate[id_d];
+chan deurklik[id_d];
+
+
+// identifier voor stoplichten
+// id=0 invaren beneden
+// id=1 uitvaren beneden
+// id=2 uitvaren boven
+// id=3  invaren boven
+const int aantal_stoplichten=4;
+typedef int[0,aantal_stoplichten-1] stoplicht;
+typedef int[0, aantal_stoplichten-1] id_s;
+chan stoplichtklik[id_s];
+chan start_stoplicht_uitvaren[id_s];
+chan stop_stoplicht_uitvaren[id_s];
+chan start_stoplicht_invaren[id_s];
+chan stop_stoplicht_invaren[id_s];
+
+
+
+// identifier voor sensoren
+const int aantal_sensoren=4;
+typedef int[0, aantal_sensoren-1] id_sensor;
+//typedef int[0,SIZE_STACK-1] stack;
+/**
+
+*/
+
+const int pompen = 2;
+typedef int[0,pompen-1] pomp_id;
+chan pomp_klik[pomp_id];
+chan boot_aanwezig;
+chan toggle_pomp[pomp_id];
+
+
+
+chan send[kenteken], receive[kenteken];
+
+const int positions=2;
+typedef int[0,positions-1] locatie;
+chan shipTrigger[locatie];
+
+ clock x;
+clock systemtime;
+clock processtime;
+
+int kostprijs = 1000;
+
+////
+
+const int N = 4;          // Number of tasks.
+typedef int[0,N-1] pid_t; // Process IDs.
+
+chan	done, ready, run, stop;
+clock 	time;
+
+const int E[pid_t] = { 20, 20, 10, 10 };		// 
+const int L[pid_t] = { 40, 20, 10, 10 };		// [ E[i] , L[i] ] Ready interval
+const int D[pid_t] = { 40, 20, 10, 10 };		// Deadlines
+const int C[pid_t] = {  5,  4,  2,  1 };    	// Computation Times
+const int P[pid_t] = {  1,  2,  3,  4 };		// Priorities
+
+// Task queue
+pid_t taskQueue[pid_t];
+int[0,N] len = N;
+
+void initialize()
+{
+  // Bubble-sort tasks into the queue.
+  bool picked[pid_t];
+  for(i : pid_t)
+  {
+    int max = -1, t = -1;
+    for(j : pid_t)
+    {
+      if (!picked[j] &amp;&amp; P[j] &gt; max)
+      {
+        max = P[j];
+        t = j;
+      }
+    }
+    picked[t] = true;
+    taskQueue[i] = t;
+  }
+}
+
+pid_t head()   { return taskQueue[0]; }
+bool isEmpty() { return len == 0; }
+
+void add(pid_t id)
+{
+  pid_t i, tmp;
+  taskQueue[len] = id;
+  for(i = len ; i &gt; 0 &amp;&amp; P[taskQueue[i]] &gt; P[taskQueue[i-1]]; --i)
+  {
+    tmp = taskQueue[i];
+    taskQueue[i] = taskQueue[i-1];
+    taskQueue[i-1] = tmp;
+  }
+  len++;
+}
+
+void remove()
+{
+  int i;
+  for(i = 0; i+1 &lt; N; ++i) { taskQueue[i] = taskQueue[i+1]; }
+  taskQueue[--len] = 0;
+}
+</declaration>
+	<template>
+		<name>main</name>
+		<declaration>
+/**
+ * Requirements
+ * Voordat het template de states stoplicht en deur heeft bereikt is de richting van het schip bekend en tegengesteld aan de huidige positie.
+ * In de idle stand is het mogeljk dat de clocktijd niet gelijk is aan nul, omdat het systeem alleen op 120 tijdseenheden en 
+ * Een pomp is actief als er nul of 1 of 2 schepen in de sluis zitten.
+ * De sluis heeft een trigger waarmee een actie kan worden gestart met een preconditie gerelateerd aan 1 van de volgende tenplates:schip,stoplicht,systeemtime,pomp,deur.
+ *
+ *
+*/
+clock systemtime;
+int  thresholdUp = 0900;
+int thresholdDown=1300;
+
+
+
+
+
+bool waterlockStartPosition()
+{
+
+    return false;
+}
+
+
+bool isFull()
+{
+    return false;
+}</declaration>
+		<location id="id0" x="-238" y="170">
+			<name x="-246" y="136">s1</name>
+		</location>
+		<location id="id1" x="-127" y="170">
+			<name x="-137" y="136">s2</name>
+		</location>
+		<location id="id2" x="306" y="170">
+			<name x="280" y="136">s6</name>
+		</location>
+		<location id="id3" x="952" y="170">
+			<name x="918" y="161">s9</name>
+		</location>
+		<location id="id4" x="1088" y="170">
+			<name x="1078" y="136">s10</name>
+		</location>
+		<location id="id5" x="-374" y="0">
+			<name x="-425" y="-34">idle</name>
+		</location>
+		<location id="id6" x="85" y="170">
+			<name x="76" y="136">s4</name>
+		</location>
+		<location id="id7" x="204" y="170">
+			<name x="178" y="136">s5</name>
+		</location>
+		<location id="id8" x="-25" y="170">
+			<name x="-33" y="136">s3</name>
+		</location>
+		<location id="id9" x="1947" y="170">
+			<name x="1913" y="102">s11</name>
+		</location>
+		<location id="id10" x="2074" y="170">
+			<name x="2064" y="136">s12</name>
+		</location>
+		<location id="id11" x="2176" y="170">
+			<name x="2166" y="136">s13</name>
+		</location>
+		<location id="id12" x="-306" y="136">
+			<name x="-297" y="68">onstate</name>
+		</location>
+		<location id="id13" x="-374" y="136">
+			<name x="-484" y="68">offstate</name>
+		</location>
+		<location id="id14" x="408" y="170">
+			<name x="398" y="136">idle_pomp</name>
+		</location>
+		<location id="id15" x="544" y="170">
+			<name x="534" y="136">rdy_2</name>
+		</location>
+		<location id="id16" x="646" y="170">
+			<name x="636" y="136">rn2</name>
+		</location>
+		<location id="id17" x="748" y="170">
+			<name x="738" y="136">finished</name>
+		</location>
+		<location id="id18" x="646" y="68">
+			<name x="636" y="34">error2</name>
+		</location>
+		<location id="id19" x="408" y="68">
+			<name x="398" y="34">s7</name>
+		</location>
+		<location id="id20" x="-238" y="408">
+			<name x="-248" y="374">s1d</name>
+		</location>
+		<location id="id21" x="-136" y="408">
+			<name x="-146" y="374">s2d</name>
+		</location>
+		<location id="id22" x="-34" y="408">
+			<name x="-44" y="374">s3d</name>
+		</location>
+		<location id="id23" x="102" y="408">
+			<name x="92" y="374">s4d</name>
+		</location>
+		<location id="id24" x="204" y="408">
+			<name x="194" y="374">s5d</name>
+		</location>
+		<location id="id25" x="306" y="408">
+			<name x="296" y="374">s6d</name>
+		</location>
+		<location id="id26" x="408" y="510">
+			<name x="398" y="476">s7d</name>
+		</location>
+		<location id="id27" x="952" y="408">
+		</location>
+		<location id="id28" x="476" y="238">
+		</location>
+		<location id="id29" x="476" y="102">
+		</location>
+		<location id="id30" x="1088" y="408">
+		</location>
+		<location id="id31" x="1836" y="399">
+		</location>
+		<location id="id32" x="1972" y="399">
+		</location>
+		<location id="id33" x="2074" y="399">
+		</location>
+		<location id="id34" x="1734" y="408">
+			<name x="1724" y="374">s6d</name>
+		</location>
+		<location id="id35" x="1836" y="510">
+			<name x="1826" y="476">s7d</name>
+		</location>
+		<location id="id36" x="1632" y="408">
+			<name x="1622" y="374">s5d</name>
+		</location>
+		<location id="id37" x="1530" y="408">
+			<name x="1520" y="374">s4d</name>
+		</location>
+		<location id="id38" x="1394" y="408">
+			<name x="1384" y="374">s3d</name>
+		</location>
+		<location id="id39" x="1292" y="408">
+			<name x="1282" y="374">s2d</name>
+		</location>
+		<location id="id40" x="1190" y="408">
+			<name x="1180" y="374">s1d</name>
+		</location>
+		<location id="id41" x="1767" y="102">
+		</location>
+		<location id="id42" x="1835" y="170">
+			<name x="1825" y="136">rdy_2</name>
+		</location>
+		<location id="id43" x="1699" y="170">
+			<name x="1689" y="136">idle_pomp</name>
+		</location>
+		<location id="id44" x="1767" y="238">
+		</location>
+		<location id="id45" x="1699" y="68">
+			<name x="1689" y="34">s7</name>
+		</location>
+		<location id="id46" x="1164" y="170">
+			<name x="1154" y="136">s11</name>
+		</location>
+		<location id="id47" x="1597" y="170">
+			<name x="1571" y="136">s15</name>
+		</location>
+		<location id="id48" x="1376" y="170">
+			<name x="1367" y="136">s13</name>
+		</location>
+		<location id="id49" x="1495" y="170">
+			<name x="1469" y="136">s14</name>
+		</location>
+		<location id="id50" x="1266" y="170">
+			<name x="1258" y="136">s12</name>
+		</location>
+		<init ref="id5"/>
+		<transition>
+			<source ref="id47"/>
+			<target ref="id45"/>
+			<nail x="1598" y="136"/>
+			<nail x="1598" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id31"/>
+			<nail x="1836" y="493"/>
+		</transition>
+		<transition>
+			<source ref="id42"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id40"/>
+			<nail x="1105" y="408"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id46"/>
+			<nail x="1105" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id17"/>
+			<label kind="guard" x="658" y="131">position==1 &amp;&amp; waterlevel==0</label>
+			<nail x="680" y="136"/>
+			<nail x="714" y="136"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id5"/>
+			<nail x="2074" y="577"/>
+			<nail x="-408" y="578"/>
+			<nail x="-408" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id33"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id32"/>
+			<label kind="select" x="1854" y="348">shipid: kenteken</label>
+			<label kind="synchronisation" x="1854" y="382">schipklik[shipid]!</label>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id30"/>
+			<label kind="assignment" x="970" y="408">position=!position</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id15"/>
+			<label kind="select" x="476" y="68">deur_id:id_d</label>
+			<label kind="synchronisation" x="459" y="42">deurklik[deur_id]!</label>
+			<nail x="493" y="119"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id29"/>
+			<label kind="select" x="340" y="85">stopl_id: id_s</label>
+			<label kind="synchronisation" x="297" y="102">stoplichtklik[stopl_id]!</label>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id15"/>
+			<label kind="select" x="518" y="195">deur_id:id_d</label>
+			<label kind="synchronisation" x="493" y="221">deurklik[deur_id]!</label>
+			<nail x="501" y="212"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id28"/>
+			<label kind="select" x="374" y="212">stopl_id: id_s</label>
+			<label kind="synchronisation" x="340" y="178">stoplichtklik[stopl_id]!</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id27"/>
+			<nail x="748" y="204"/>
+			<nail x="884" y="204"/>
+			<nail x="884" y="408"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id14"/>
+			<nail x="408" y="493"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id26"/>
+			<nail x="306" y="510"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id24"/>
+			<label kind="select" x="120" y="357">stoplichtnummer: id_s</label>
+			<label kind="guard" x="120" y="374">systemtime &lt;0900</label>
+			<label kind="synchronisation" x="51" y="331">stoplichtklik[stoplichtnummer]!</label>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id23"/>
+			<label kind="guard" x="-34" y="450">systemtime &lt;0845</label>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="select" x="-118" y="357">deurnummer: id_d</label>
+			<label kind="guard" x="-246" y="425">deurnummer==0  &amp;&amp; systemtime&gt;0800 &amp;&amp; systemtime &lt;0830</label>
+			<label kind="synchronisation" x="-118" y="391">deurklik[deurnummer]!</label>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id21"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id20"/>
+			<label kind="guard" x="-399" y="289">position==0</label>
+			<nail x="-306" y="408"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id16"/>
+			<label kind="guard" x="637" y="187">position==0</label>
+			<label kind="assignment" x="641" y="221">waterlevel++</label>
+			<nail x="637" y="272"/>
+			<nail x="612" y="272"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id14"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="guard" x="-314" y="80">(systemtime==thresholdUp)</label>
+			<nail x="-365" y="119"/>
+			<nail x="-348" y="93"/>
+			<nail x="-323" y="93"/>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-8" y="127">systemtime &lt;0845</label>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id3"/>
+			<nail x="799" y="170"/>
+			<nail x="875" y="170"/>
+			<nail x="892" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id14"/>
+			<label kind="select" x="272" y="204">shipid: kenteken</label>
+			<label kind="guard" x="263" y="255">position==1&amp;&amp;systemtime&gt;0900</label>
+			<label kind="synchronisation" x="272" y="230">schipklik[shipid]!</label>
+			<nail x="331" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id19"/>
+			<label kind="select" x="297" y="-51">shipid: kenteken</label>
+			<label kind="guard" x="297" y="-34">position==0 &amp;&amp; systemtime&gt;0900</label>
+			<label kind="synchronisation" x="297" y="-9">schipklik[shipid]!</label>
+			<nail x="306" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id16"/>
+			<label kind="select" x="705" y="229">nummer: pomp_id</label>
+			<label kind="guard" x="646" y="204">position==1</label>
+			<label kind="synchronisation" x="705" y="246">pomp_klik[nummer]!</label>
+			<label kind="assignment" x="646" y="280">waterlevel--</label>
+			<nail x="646" y="272"/>
+			<nail x="671" y="272"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id17"/>
+			<label kind="guard" x="658" y="165">position==0 &amp;&amp; waterlevel==10</label>
+			<nail x="680" y="204"/>
+			<nail x="714" y="204"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id18"/>
+			<nail x="748" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id18"/>
+			<nail x="544" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id18"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<nail x="569" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id15"/>
+			<nail x="450" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id13"/>
+			<nail x="-340" y="136"/>
+			<nail x="-340" y="170"/>
+			<nail x="-374" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="guard" x="-356" y="102">(systemtime==thresholdDown)</label>
+			<label kind="comments" x="-799" y="263">alternatief
+thresholdUp &lt; 0910 &amp;&amp; thresholdUp &gt;0900
+thresholdUp &lt; 1310 &amp;&amp; thresholdUp &gt;1300</label>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-288" y="119">position==1</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id13"/>
+			<label kind="guard" x="-476" y="34">position==0</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id12"/>
+			<label kind="guard" x="-297" y="-26">position==1</label>
+			<label kind="assignment" x="-297" y="0">direction=true , on=true</label>
+			<nail x="-306" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-357" y="-93">process_finished==true &amp;&amp; process_started==false&amp;&amp; systemtime&gt;=60</label>
+			<label kind="assignment" x="-356" y="-272">systemtime=0 and kostprijs--</label>
+			<nail x="2176" y="-68"/>
+			<nail x="-374" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<label kind="select" x="1973" y="119">shipid: kenteken</label>
+			<label kind="synchronisation" x="1972" y="178">schipklik[shipid]!</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id8"/>
+			<label kind="select" x="-136" y="195">deurnummer: id_d</label>
+			<label kind="guard" x="-136" y="85">deurnummer==0  &amp;&amp; systemtime&gt;0800 &amp;&amp; systemtime &lt;0830</label>
+			<label kind="synchronisation" x="-153" y="178">deurklik[deurnummer]!</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id7"/>
+			<label kind="select" x="68" y="25">stoplichtnummer: id_s</label>
+			<label kind="guard" x="102" y="110">systemtime &lt;0900</label>
+			<label kind="synchronisation" x="51" y="187">stoplichtklik[stoplichtnummer]!</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id4"/>
+			<label kind="assignment" x="968" y="187">position=!position</label>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-204" y="127">systemtime==0800</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id35"/>
+			<nail x="1734" y="510"/>
+		</transition>
+		<transition>
+			<source ref="id36"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id36"/>
+			<label kind="select" x="1548" y="357">stoplichtnummer: id_s</label>
+			<label kind="synchronisation" x="1479" y="331">stoplichtklik[stoplichtnummer]!</label>
+		</transition>
+		<transition>
+			<source ref="id38"/>
+			<target ref="id37"/>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id38"/>
+			<label kind="select" x="1310" y="357">deurnummer: id_d</label>
+			<label kind="synchronisation" x="1310" y="391">deurklik[deurnummer]!</label>
+		</transition>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id39"/>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id42"/>
+			<label kind="select" x="1767" y="68">deur_id:id_d</label>
+			<label kind="synchronisation" x="1750" y="42">deurklik[deur_id]!</label>
+			<nail x="1784" y="119"/>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id41"/>
+			<label kind="select" x="1631" y="85">stopl_id: id_s</label>
+			<label kind="synchronisation" x="1588" y="102">stoplichtklik[stopl_id]!</label>
+		</transition>
+		<transition>
+			<source ref="id44"/>
+			<target ref="id42"/>
+			<label kind="select" x="1809" y="195">deur_id:id_d</label>
+			<label kind="synchronisation" x="1784" y="221">deurklik[deur_id]!</label>
+			<nail x="1792" y="212"/>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id44"/>
+			<label kind="select" x="1665" y="212">stopl_id: id_s</label>
+			<label kind="synchronisation" x="1631" y="178">stoplichtklik[stopl_id]!</label>
+		</transition>
+		<transition>
+			<source ref="id45"/>
+			<target ref="id43"/>
+		</transition>
+		<transition>
+			<source ref="id50"/>
+			<target ref="id48"/>
+		</transition>
+		<transition>
+			<source ref="id47"/>
+			<target ref="id43"/>
+			<label kind="select" x="1563" y="204">shipid: kenteken</label>
+			<label kind="synchronisation" x="1563" y="230">schipklik[shipid]!</label>
+			<nail x="1622" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id42"/>
+			<nail x="1741" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id46"/>
+			<target ref="id50"/>
+			<label kind="select" x="1155" y="195">deurnummer: id_d</label>
+			<label kind="synchronisation" x="1138" y="178">deurklik[deurnummer]!</label>
+		</transition>
+		<transition>
+			<source ref="id49"/>
+			<target ref="id47"/>
+		</transition>
+		<transition>
+			<source ref="id48"/>
+			<target ref="id49"/>
+			<label kind="select" x="1368" y="102">stoplichtnummer: id_s</label>
+			<label kind="synchronisation" x="1342" y="187">stoplichtklik[stoplichtnummer]!</label>
+		</transition>
+	</template>
+	<template>
+		<name>maincontroller</name>
+		<declaration>// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
+// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
+
+/** stack
+ * de lengte van de datastructuur
+*/
+const int time_step = 2;
+
+
+
+
+/**
+ *
+*/
+int[0,SIZE] head =0;
+
+/** pop
+ *
+*/
+kenteken pop_left()
+{
+    kenteken temp;
+    //temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    //stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+kenteken pop_center()
+{
+    kenteken temp;
+    //temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    //stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+kenteken pop_right()
+{
+    kenteken temp;
+    //temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    //stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+/** push
+ *
+*/
+void push(kenteken p)
+{
+    //stack[head++]=p;
+}
+
+
+/** isFull
+ *
+*/
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+
+/** isEmpty
+ *
+*/
+bool isEmpty()
+{
+ return (head ==0);
+}
+
+void reset()
+{}</declaration>
+		<location id="id51" x="-280" y="0">
+			<name x="-290" y="-34">idle</name>
+			<label kind="comments" x="-875" y="93">Check realtime clock. Luster naar signalen van de sensors boven en beneden.
+Check of sluis leeg is.
+Indien sluis niet leeg is dan werk afmaken.
+Als sluis leeg is dan positie wachtend schip.
+Pomp water in/uit de sluis.
+Sluisdeur open.
+Stoplcht groen uitvaren.
+Schepen laten uitvaren.
+Stoplicht rood uitvaren.
+Stoplicht groen invaren.
+Schepen laten invaren.
+Stoplicht rood invaren.
+Sluisdeuren sluiten.</label>
+		</location>
+		<location id="id52" x="442" y="0">
+			<name x="432" y="-34">s5</name>
+			<label kind="comments" x="569" y="136">verwijder uit de sluiskolk en voeg toe aan de array voor schepen in de wachtrij of beschouw als uuitvarend
+
+To DO
+Een uitvarend schip kan niet  worden toegevoegd aan de lijst met wachtende schepen.</label>
+		</location>
+		<location id="id53" x="884" y="0">
+			<name x="892" y="25">s6</name>
+			<label kind="invariant" x="901" y="51">queues[direction]&gt;=0 &amp;&amp; x&lt;=time_step</label>
+		</location>
+		<location id="id54" x="136" y="-136">
+			<name x="126" y="-170">s3</name>
+			<label kind="invariant" x="280" y="-187">waterniveau&gt;=0&amp;&amp;x&lt;=time_step</label>
+		</location>
+		<location id="id55" x="136" y="221">
+			<name x="119" y="229">s4</name>
+			<label kind="invariant" x="110" y="255">waterniveau&lt;=5&amp;&amp;x&lt;=time_step</label>
+		</location>
+		<location id="id56" x="-85" y="0">
+			<name x="-95" y="-34">s2</name>
+			<label kind="comments" x="-95" y="59">verwijder uit de wachtrij en voeg toe aan de array voor schepen in de sluiskolk
+
+
+myarray[0][0]++,queues[!direction]--, queues[2]++</label>
+		</location>
+		<location id="id57" x="-178" y="0">
+			<name x="-188" y="-34">s1</name>
+		</location>
+		<init ref="id51"/>
+		<transition>
+			<source ref="id57"/>
+			<target ref="id56"/>
+		</transition>
+		<transition>
+			<source ref="id51"/>
+			<target ref="id57"/>
+			<label kind="guard" x="-262" y="-34">direction</label>
+			<nail x="-187" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id52"/>
+			<target ref="id53"/>
+			<label kind="synchronisation" x="477" y="-17">open_gate[direction]!</label>
+			<nail x="459" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id56"/>
+			<target ref="id55"/>
+			<label kind="guard" x="-67" y="187">!direction</label>
+			<nail x="-85" y="221"/>
+		</transition>
+		<transition>
+			<source ref="id56"/>
+			<target ref="id54"/>
+			<label kind="guard" x="-67" y="-170">direction</label>
+			<nail x="-85" y="-17"/>
+			<nail x="-85" y="-136"/>
+		</transition>
+		<transition>
+			<source ref="id51"/>
+			<target ref="id51"/>
+			<label kind="guard" x="-440" y="-22">realtime==21</label>
+			<label kind="comments" x="-356" y="8">update:
+reset()</label>
+			<nail x="-374" y="-34"/>
+			<nail x="-374" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id53"/>
+			<target ref="id56"/>
+			<label kind="guard" x="527" y="272">queues[direction]&lt;=0&amp;&amp;sluisToggle</label>
+			<label kind="synchronisation" x="527" y="289">close_gate[direction]!</label>
+			<label kind="assignment" x="527" y="306">direction=!direction, sluisToggle:=false</label>
+			<nail x="883" y="34"/>
+			<nail x="883" y="340"/>
+			<nail x="-170" y="340"/>
+			<nail x="-170" y="42"/>
+			<nail x="-102" y="42"/>
+		</transition>
+		<transition>
+			<source ref="id53"/>
+			<target ref="id51"/>
+			<label kind="comments" x="1139" y="-34">guard:
+sluisToggle==false &amp;&amp; queues[direction]&lt;=0
+sync:
+close_gate[direction]!
+update:
+sluisIsBezig:=false, queues[!direction] := 0
+
+update:myarray[direction]++</label>
+			<nail x="1019" y="0"/>
+			<nail x="1019" y="-238"/>
+			<nail x="-280" y="-238"/>
+		</transition>
+		<transition>
+			<source ref="id55"/>
+			<target ref="id52"/>
+			<label kind="comments" x="425" y="85">gyuard:
+waterniveau&gt;=5
+
+sync:
+
+notified_pomp_direction[direction]!
+update:</label>
+			<nail x="153" y="221"/>
+			<nail x="442" y="221"/>
+		</transition>
+		<transition>
+			<source ref="id55"/>
+			<target ref="id55"/>
+			<label kind="assignment" x="102" y="119">waterniveau--, x:=0</label>
+			<nail x="102" y="162"/>
+			<nail x="170" y="162"/>
+		</transition>
+		<transition>
+			<source ref="id54"/>
+			<target ref="id54"/>
+			<label kind="assignment" x="119" y="-68">waterniveau++, x:=0</label>
+			<nail x="170" y="-68"/>
+			<nail x="102" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id54"/>
+			<target ref="id52"/>
+			<label kind="comments" x="154" y="-111">select:
+
+guard:
+waterniveau==0
+
+
+sync:
+notified_pomp_direction[direction]!
+
+
+update:</label>
+			<nail x="442" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>Error</name>
+		<location id="id58" x="0" y="0">
+		</location>
+		<init ref="id58"/>
+	</template>
+	<template>
+		<name>gate</name>
+		<parameter>id_d d</parameter>
+		<declaration>
+/**
+ * Requirements
+ * Een deur is tijdens een actieve pomp altijd gesloten
+ * Een deur kan nooit open staan terwijl het stoplicht voor invaren/uitvaren op rood staat.
+ * Een deur wordt altijd getriggerd vanuit de maincontroller en kan dus oneindig wachten totdat de maincontroller een opdracht geeft.
+ * Een deur kan nooit in een oneindige tussenstand staan zoals: is bezig met openen of is bezig met sluiten.
+ *
+ *
+*/
+// parameter: const gatenr gatenummer
+clock x;
+int[0,1] currentstate;</declaration>
+		<location id="id59" x="0" y="0">
+			<name x="-17" y="8">closed</name>
+		</location>
+		<location id="id60" x="306" y="0">
+			<name x="280" y="8">closing</name>
+		</location>
+		<location id="id61" x="306" y="-204">
+			<name x="296" y="-238">open</name>
+		</location>
+		<location id="id62" x="0" y="-204">
+			<name x="-10" y="-238">opening</name>
+		</location>
+		<init ref="id59"/>
+		<transition>
+			<source ref="id60"/>
+			<target ref="id59"/>
+			<label kind="assignment" x="18" y="0">deur_is_open[entrance_schip] := false</label>
+			<nail x="289" y="0"/>
+			<nail x="280" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id61"/>
+			<target ref="id60"/>
+			<label kind="synchronisation" x="306" y="-119">deurklik[d]!</label>
+		</transition>
+		<transition>
+			<source ref="id62"/>
+			<target ref="id61"/>
+			<label kind="guard" x="60" y="-238">currentstate==entrance_schip</label>
+			<label kind="assignment" x="60" y="-204">deur_is_open[entrance_schip] := true, x:=0</label>
+			<nail x="42" y="-204"/>
+		</transition>
+		<transition>
+			<source ref="id59"/>
+			<target ref="id62"/>
+			<label kind="synchronisation" x="0" y="-136">deurklik[d]!</label>
+			<nail x="0" y="-34"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<parameter>kenteken id</parameter>
+		<declaration>
+
+/**
+ * Requirements
+ * Een schip kan maar 1 id/kenteken hebben en dit kenteken komt maar 1 keer in  de cyclus voor, inclusief de beide wachtrijen en de queue van de sluiskolk.
+ * Een schip kan in de sluiskolk niet van richting veranderen
+ * Een schip kan na het doorlopen van de cycli en uitgevaren zijn van de sluis een willekeurige andere positie en richting hebben aangenomen.
+ *
+ *
+ *
+*/
+// const kenteken schipid
+int positie =0;
+clock x;
+
+</declaration>
+		<location id="id63" x="0" y="-102">
+			<name x="-10" y="-136">ildle</name>
+		</location>
+		<location id="id64" x="0" y="51">
+			<name x="-10" y="17">varen</name>
+		</location>
+		<init ref="id63"/>
+		<transition>
+			<source ref="id64"/>
+			<target ref="id63"/>
+			<nail x="8" y="51"/>
+			<nail x="170" y="51"/>
+			<nail x="170" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id63"/>
+			<target ref="id64"/>
+			<label kind="comments" x="-187" y="-76">sync:
+send[kenteken]
+
+
+update:
+positie: int[0,1]</label>
+		</transition>
+	</template>
+	<template>
+		<name>pomp</name>
+		<parameter>pomp_id id</parameter>
+		<declaration>
+/**
+ * Requirements
+ * Een pomp is actief als de sluisdeuren en de stoplichten op rood zijn.
+ * Een pomp kan nooit 2 cycli achterelkaar water de dezelfde richting pompen.
+ *
+ *
+ *
+ *
+*/
+clock x;
+
+
+/**
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+*/
+
+/**
+ *
+*/
+void functie()
+{
+	
+}
+
+/**
+ *
+*/
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+	//if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	//else if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	 return false;
+}
+
+/**
+ *
+*/
+//pomp omlaag
+bool isLaag()
+{
+	//if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	//else
+    return false;
+}
+
+/**
+ *
+*/
+//pomp omhoog
+bool isHoog()
+{
+    //if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	//else return false;
+ return false;
+}
+
+</declaration>
+		<location id="id65" x="0" y="0">
+			<name x="-10" y="-34">pomp_uit</name>
+			<label kind="comments" x="-620" y="93">ipv aan en uit states kan er ook gekozen worden voor de states laag en hoog</label>
+		</location>
+		<location id="id66" x="102" y="136">
+			<name x="92" y="102">pomp_aan</name>
+		</location>
+		<init ref="id65"/>
+		<transition>
+			<source ref="id66"/>
+			<target ref="id65"/>
+			<label kind="synchronisation" x="18" y="119">pomp_klik[id]?</label>
+			<nail x="0" y="136"/>
+		</transition>
+		<transition>
+			<source ref="id65"/>
+			<target ref="id66"/>
+			<label kind="synchronisation" x="52" y="-17">pomp_klik[id]?</label>
+			<nail x="34" y="0"/>
+			<nail x="102" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>sluis</name>
+		<parameter>id_q q</parameter>
+		<declaration>
+/**
+ * Requirements
+ * Een wachtrij kan maximaal 2 schepen bevatten.
+ * Een aanvarend schip kan maximaal 1 cyclus in de wachtrij staan.
+ *
+ *
+ *
+ *
+*/
+
+clock x;
+
+
+
+/**
+ * Requirements
+ * Er kunnen maximaal 2 schepen in de sluis.
+ * De kentekens van schepen in de sluis is nooit gelijk aan een kenteken van een schip in een wachtrij.
+ *
+ *
+ *
+ *
+*/
+// parameter: const stack  q
+
+bool is_full()
+{
+    return false;
+}
+
+
+void dequeues()
+{
+}
+
+
+void enqueue()
+{
+}
+
+bool is_empty()
+{
+    return false;
+}
+
+bool go_out()
+{
+    return false;
+}
+
+
+bool lock_empty()
+{
+    return false;
+}
+
+
+chan lock_full;
+
+chan to_lock;
+//chan go_out;</declaration>
+		<location id="id67" x="0" y="0">
+			<name x="-10" y="-34">idle</name>
+		</location>
+		<location id="id68" x="119" y="0">
+			<name x="109" y="-34">add</name>
+		</location>
+		<location id="id69" x="238" y="0">
+			<name x="228" y="-34">release</name>
+		</location>
+		<location id="id70" x="0" y="204">
+			<name x="-10" y="170">closed</name>
+		</location>
+		<location id="id71" x="238" y="204">
+			<name x="228" y="170">open</name>
+		</location>
+		<location id="id72" x="374" y="204">
+		</location>
+		<init ref="id67"/>
+		<transition>
+			<source ref="id72"/>
+			<target ref="id71"/>
+			<nail x="374" y="272"/>
+		</transition>
+		<transition>
+			<source ref="id71"/>
+			<target ref="id72"/>
+		</transition>
+		<transition>
+			<source ref="id71"/>
+			<target ref="id70"/>
+			<nail x="238" y="306"/>
+			<nail x="0" y="306"/>
+		</transition>
+		<transition>
+			<source ref="id70"/>
+			<target ref="id71"/>
+			<nail x="17" y="204"/>
+		</transition>
+		<transition>
+			<source ref="id67"/>
+			<target ref="id67"/>
+			<label kind="guard" x="-84" y="-97">x&gt;=2</label>
+			<label kind="assignment" x="-84" y="-63">x:=0</label>
+			<nail x="-34" y="-25"/>
+			<nail x="-102" y="-68"/>
+			<nail x="-102" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id69"/>
+			<target ref="id69"/>
+			<label kind="guard" x="273" y="-84">x&lt;2</label>
+			<nail x="272" y="-25"/>
+			<nail x="340" y="-68"/>
+			<nail x="340" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id69"/>
+			<target ref="id67"/>
+			<nail x="238" y="25"/>
+			<nail x="238" y="102"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id68"/>
+			<target ref="id69"/>
+			<nail x="136" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id67"/>
+			<target ref="id68"/>
+			<nail x="34" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>stoplight</name>
+		<parameter>id_s s</parameter>
+		<declaration>
+/**
+ * Requirements
+ * Een stoplicht is tijdens een actieve pomp altijd op rood.
+ * Een invaar- en uitvaarstoplicht kunnen niet beiden op groen staan, omdat er dan een botsing kan voorkomen.
+ * Een invaar- en uitvaarstoplicht kunnen beiden op rood staan.
+ *
+ *
+ *
+*/
+
+// stoplicht 0
+// stoplicht 1
+// stoplicht 2
+// stoplicht 3
+clock timer;</declaration>
+		<location id="id73" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<location id="id74" x="272" y="0">
+			<name x="262" y="-34">groen</name>
+		</location>
+		<init ref="id73"/>
+		<transition>
+			<source ref="id73"/>
+			<target ref="id74"/>
+			<label kind="synchronisation" x="93" y="-42">stoplichtklik[s]?</label>
+			<nail x="34" y="0"/>
+			<nail x="170" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id74"/>
+			<target ref="id73"/>
+			<label kind="guard" x="18" y="102">timer&gt;10</label>
+			<nail x="272" y="136"/>
+			<nail x="0" y="136"/>
+		</transition>
+	</template>
+	<template>
+		<name>sensor</name>
+		<parameter>id_sensor s</parameter>
+		<declaration>
+/**
+ * Requirements
+ *
+ *
+ *
+ *
+ *
+ *
+*/</declaration>
+		<location id="id75" x="0" y="0">
+		</location>
+		<init ref="id75"/>
+		<transition>
+			<source ref="id75"/>
+			<target ref="id75"/>
+			<label kind="select" x="144" y="-51">send_ais : kenteken</label>
+			<label kind="synchronisation" x="102" y="-93">send[send_ais]!</label>
+			<nail x="51" y="-102"/>
+			<nail x="119" y="-42"/>
+		</transition>
+		<transition>
+			<source ref="id75"/>
+			<target ref="id75"/>
+			<label kind="select" x="-272" y="-76">received_ais : kenteken</label>
+			<label kind="synchronisation" x="-127" y="-144">receive[received_ais]?</label>
+			<nail x="-8" y="-8"/>
+			<nail x="-68" y="-68"/>
+			<nail x="0" y="-102"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+//Process = Template();
+// List one or more processes to be composed into a system.
+system main,gate,pomp,sluis,schip,stoplight;
+    </system>
+	<queries>
+		<query>
+			<formula>A[] not deadlock</formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>

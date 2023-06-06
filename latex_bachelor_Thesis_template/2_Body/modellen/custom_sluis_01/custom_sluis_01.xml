@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+/*
+https://inf.mit.bme.hu/sites/default/files/materials/category/kateg%C3%B3ria/oktat%C3%A1s/v%C3%A1laszthat%C3%B3-t%C3%A1rgyak/kritikus-be%C3%A1gyazott-rendszerek/15/05_Formal_modelling_verification.pdf
+http://www.inf.u-szeged.hu/~zlnemeth/modell2008/UPPAAL/KGL%20UPPAAL.pdf
+http://disc-cps15.imtlucca.it/pdf/Larsen.pdf
+https://link.springer.com/chapter/10.1007/978-3-642-40213-5_8
+https://www.researchgate.net/figure/UPPAAL-model-of-a-train_fig5_221644958
+https://www.researchgate.net/figure/Example-of-Uppaal-Stratego-model-a-Timed-Game-Automata-modeling-a-car-passing-a-town_fig1_318746326
+https://www.it.uu.se/research/group/darts/papers/texts/new-tutorial.pdf
+https://www.es.tu-darmstadt.de/es/team/lars-luthmann/copta-analysis/
+https://www.researchgate.net/figure/UPPAAL-model-of-the-gate_fig2_220687010
+https://www.cs.ru.nl/~fvaan/PC/chapter.pdf
+http://people.cs.aau.dk/~srba/courses/SV-05/slides/l11-3x2.pdf
+http://people.cs.aau.dk/~kgl/SSFT2015/SMC%20tutorial.pdf
+http://www.lsv.fr/~bouyer/files/movep14.pdf
+http://people.cs.aau.dk/~ask/MTV/material/rt-uppaal.pdf
+http://www.cs.ru.nl/~fvaan/PV/what_is_a_good_model.html
+
+
+
+*/
+</declaration><template><name x="5" y="5">Template</name><declaration>// Place local declarations here.
+</declaration><location id="id0" x="16" y="-40"></location><init ref="id0"/></template><template><name x="32" y="16">Door</name><parameter>bool &amp;activated, urgent chan &amp;pushed, urgent chan &amp;closed1, urgent chan &amp;closed2</parameter><declaration>clock x;</declaration><location id="id1" x="224" y="96"><name x="248" y="104">wait</name></location><location id="id2" x="96" y="368"><name x="24" y="352">closing</name><label kind="invariant" x="40" y="368">x&lt;=6</label></location><location id="id3" x="96" y="224"><name x="120" y="208">closed</name><label kind="invariant" x="120" y="224">x&lt;=5</label></location><location id="id4" x="224" y="368"><name x="248" y="352">open</name><label kind="invariant" x="248" y="368">x&lt;=8</label></location><location id="id5" x="224" y="224"><name x="248" y="208">opening</name><label kind="invariant" x="248" y="224">x&lt;=6</label></location><location id="id6" x="96" y="96"><name x="112" y="104">idle</name></location><init ref="id6"/><transition><source ref="id3"/><target ref="id3"/><label kind="synchronisation" x="24" y="192">closed1!</label><nail x="56" y="248"/><nail x="56" y="224"/></transition><transition><source ref="id3"/><target ref="id6"/><label kind="guard" x="56" y="152">x&gt;=5</label></transition><transition><source ref="id2"/><target ref="id3"/><label kind="guard" x="40" y="264">x==6</label><label kind="assignment" x="40" y="288">x=0,
+activated=false</label></transition><transition><source ref="id6"/><target ref="id6"/><label kind="synchronisation" x="16" y="64">closed1!</label><nail x="56" y="120"/><nail x="56" y="96"/></transition><transition><source ref="id6"/><target ref="id1"/><label kind="synchronisation" x="128" y="48">pushed?</label><label kind="assignment" x="120" y="64">activated = true</label></transition><transition><source ref="id4"/><target ref="id2"/><label kind="guard" x="136" y="344">x&gt;=4</label><label kind="assignment" x="144" y="376">x=0</label></transition><transition><source ref="id5"/><target ref="id4"/><label kind="guard" x="232" y="264">x==6</label><label kind="assignment" x="232" y="288">x=0</label></transition><transition><source ref="id1"/><target ref="id5"/><label kind="synchronisation" x="232" y="136">closed2?</label><label kind="assignment" x="232" y="152">x=0</label></transition><transition><source ref="id1"/><target ref="id1"/><label kind="synchronisation" x="280" y="80">closed1!</label><nail x="272" y="72"/><nail x="272" y="96"/></transition></template><template><name x="32" y="16">User</name><parameter>bool &amp;activated, urgent chan &amp;pushed</parameter><declaration>clock w;</declaration><location id="id7" x="192" y="160"></location><location id="id8" x="96" y="96"><name x="72" y="64">idle</name></location><init ref="id8"/><transition><source ref="id8"/><target ref="id7"/><label kind="guard" x="72" y="168">!activated</label><label kind="assignment" x="72" y="184">w=0</label><nail x="96" y="160"/></transition><transition><source ref="id7"/><target ref="id8"/><label kind="synchronisation" x="152" y="72">pushed!</label><nail x="192" y="96"/></transition></template><template><name x="40" y="16">Train</name><parameter>const id_t id</parameter><declaration>clock x;</declaration><location id="id9" x="96" y="96"><name x="48" y="80">Safe</name></location><location id="id10" x="176" y="320"><name x="192" y="328">Stop</name></location><location id="id11" x="256" y="96"><name x="272" y="80">Cross</name><label kind="invariant" x="272" y="96">x&lt;=5</label></location><location id="id12" x="96" y="232"><name x="32" y="216">Appr</name><label kind="invariant" x="32" y="232">x&lt;=20</label></location><location id="id13" x="256" y="232"><name x="272" y="216">Start</name><label kind="invariant" x="272" y="232">x&lt;= 15</label></location><init ref="id9"/><transition><source ref="id12"/><target ref="id11"/><label kind="guard" x="184" y="160">x&gt;=10</label><label kind="assignment" x="184" y="176">x=0</label></transition><transition><source ref="id12"/><target ref="id10"/><label kind="guard" x="88" y="280">x&lt;=10</label><label kind="synchronisation" x="88" y="296">stop[id]?</label></transition><transition><source ref="id11"/><target ref="id9"/><label kind="guard" x="184" y="56">x&gt;=3</label><label kind="synchronisation" x="184" y="72">leave[id]!</label></transition><transition><source ref="id9"/><target ref="id12"/><label kind="synchronisation" x="32" y="128">appr[id]!</label><label kind="assignment" x="32" y="144">x=0</label></transition><transition><source ref="id13"/><target ref="id11"/><label kind="guard" x="264" y="160">x&gt;=7</label><label kind="assignment" x="264" y="176">x=0</label></transition><transition><source ref="id10"/><target ref="id13"/><label kind="synchronisation" x="224" y="280">go[id]?</label><label kind="assignment" x="224" y="296">x=0</label></transition></template><template><name x="40" y="16">Gate</name><declaration>id_t list[N+1];
+int[0,N] len;
+
+// Put an element at the end of the queue
+void enqueue(id_t element)
+{
+        list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                list[i] = list[i + 1];
+                i++;
+        }
+        list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_t front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return list[len - 1];
+}</declaration><location id="id14" x="192" y="360"><committed/></location><location id="id15" x="192" y="264"><name x="208" y="264">Occ</name></location><location id="id16" x="192" y="128"><name x="208" y="96">Free</name></location><init ref="id16"/><transition><source ref="id15"/><target ref="id14"/><label kind="select" x="104" y="288">e : id_t</label><label kind="synchronisation" x="104" y="304">appr[e]?</label><label kind="assignment" x="104" y="320">enqueue(e)</label></transition><transition><source ref="id15"/><target ref="id16"/><label kind="select" x="296" y="152">e : id_t</label><label kind="guard" x="296" y="168">e == front()</label><label kind="synchronisation" x="296" y="184">leave[e]?</label><label kind="assignment" x="296" y="200">dequeue()</label><nail x="288" y="264"/><nail x="288" y="128"/></transition><transition><source ref="id14"/><target ref="id15"/><label kind="synchronisation" x="224" y="304">stop[tail()]!</label><nail x="216" y="312"/></transition><transition><source ref="id16"/><target ref="id15"/><label kind="guard" x="104" y="168">len &gt; 0</label><label kind="synchronisation" x="104" y="184">go[front()]!</label><nail x="96" y="128"/><nail x="96" y="264"/></transition><transition><source ref="id16"/><target ref="id15"/><label kind="select" x="200" y="152">e : id_t</label><label kind="guard" x="200" y="168">len == 0</label><label kind="synchronisation" x="200" y="184">appr[e]?</label><label kind="assignment" x="200" y="200">enqueue(e)</label></transition></template><template><name x="5" y="5">Train2</name><declaration>// Place local declarations here.
+clock x;</declaration><location id="id17" x="256" y="128"><name x="246" y="98">On</name><label kind="invariant" x="246" y="143">x &lt; 20</label></location><location id="id18" x="256" y="-160"><name x="246" y="-190">Before</name><label kind="invariant" x="246" y="-145">x&lt; 30</label></location><location id="id19" x="16" y="-40"><name x="6" y="-70">Far</name></location><init ref="id19"/><transition><source ref="id18"/><target ref="id17"/><label kind="guard" x="196" y="-46">20&lt;x &amp;&amp; x&lt;30 &amp;&amp; a</label><label kind="assignment" x="196" y="-16">x:=0</label></transition><transition><source ref="id17"/><target ref="id19"/><label kind="guard" x="76" y="14">10 &lt; x  &amp;&amp; x&lt; 20</label><label kind="synchronisation" x="76" y="29">Exit!</label></transition><transition><source ref="id19"/><target ref="id18"/><label kind="synchronisation" x="76" y="-115">App!</label><label kind="assignment" x="76" y="-100">x:=0</label></transition></template><template><name>Gate2</name><location id="id20" x="0" y="160"><name x="-10" y="130">Raising</name><label kind="invariant" x="-10" y="175">Hg &lt; 10</label></location><location id="id21" x="256" y="160"><name x="246" y="130">Close</name></location><location id="id22" x="256" y="0"><name x="246" y="-30">Lowering</name></location><location id="id23" x="0" y="0"><name x="-10" y="-30">Open</name></location><init ref="id23"/><transition><source ref="id20"/><target ref="id23"/><label kind="guard" x="-96" y="64">Hg &lt; 10 &amp;&amp; a</label></transition><transition><source ref="id21"/><target ref="id20"/><label kind="synchronisation" x="68" y="145">GoUp?</label><label kind="assignment" x="68" y="160">Hg:=0</label></transition><transition><source ref="id22"/><target ref="id21"/><label kind="guard" x="196" y="50">Hg&lt;10 &amp;&amp; a</label></transition><transition><source ref="id23"/><target ref="id22"/><label kind="synchronisation" x="68" y="-15">GoDown?</label><label kind="assignment" x="68" y="0">Hg :=0</label></transition></template><template><name>Controller2</name><location id="id24" x="480" y="0"></location><location id="id25" x="224" y="0"><name x="214" y="-30">c0</name></location><location id="id26" x="0" y="0"><label kind="invariant" x="-10" y="15">c1 &amp;&amp; Hc &lt;=20</label></location><init ref="id26"/><transition><source ref="id26"/><target ref="id25"/><label kind="synchronisation" x="112" y="72">GoUp!</label><label kind="assignment" x="120" y="88">Hc=20</label><nail x="64" y="64"/><nail x="192" y="64"/></transition><transition><source ref="id24"/><target ref="id25"/><label kind="guard" x="328" y="80">Hc &lt;=10</label><label kind="synchronisation" x="328" y="104">GoDown!</label><nail x="416" y="64"/><nail x="272" y="64"/><nail x="256" y="64"/></transition><transition><source ref="id26"/><target ref="id24"/><label kind="synchronisation" x="208" y="-128">App?</label><nail x="96" y="-96"/><nail x="352" y="-96"/><nail x="384" y="-96"/></transition><transition><source ref="id26"/><target ref="id26"/><label kind="synchronisation" x="-16" y="-96">Exit?</label><nail x="-32" y="-64"/><nail x="32" y="-64"/></transition><transition><source ref="id24"/><target ref="id24"/><label kind="synchronisation" x="472" y="72">App?</label><nail x="512" y="64"/><nail x="448" y="64"/></transition><transition><source ref="id24"/><target ref="id24"/><label kind="synchronisation" x="464" y="-96">Exit?</label><nail x="448" y="-64"/><nail x="512" y="-64"/></transition><transition><source ref="id25"/><target ref="id24"/><label kind="synchronisation" x="292" y="-15">App?</label><label kind="assignment" x="292" y="0">Hc:=0</label></transition><transition><source ref="id25"/><target ref="id26"/><label kind="synchronisation" x="72" y="-24">Exit?</label><label kind="assignment" x="112" y="-24">Hc:=0</label></transition></template><template><name x="5" y="5">lamp</name><parameter>id_l lampnr</parameter><declaration>// Place local declarations here.
+
+void functie()
+{
+	
+}
+
+lumen sterkte;
+
+
+// wacht 5 tijdseenheden
+clock x;
+
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+//	return false;
+	
+	if(lampnr &lt; 2 &amp;&amp; bright&lt;6) return true;
+	else if(lampnr&gt;1 &amp;&amp; bright&gt;=6) return true;
+	else return false;
+
+}
+
+
+//verschillende tijdseenheden voor even en oneven lampnummers</declaration><location id="id27" x="328" y="-48"><name x="352" y="-80">aan</name><label kind="invariant" x="352" y="-56">isForMe()</label></location><location id="id28" x="16" y="-40"><name x="6" y="-70">uit</name></location><init ref="id28"/><transition><source ref="id27"/><target ref="id28"/><label kind="guard" x="144" y="-144">x&gt;=5</label><nail x="288" y="-104"/><nail x="48" y="-112"/></transition><transition><source ref="id28"/><target ref="id27"/><label kind="synchronisation" x="112" y="16">klik?</label><label kind="assignment" x="96" y="40">sterkte:=bright, x:=0</label><nail x="48" y="8"/><nail x="304" y="16"/></transition></template><template><name>knop</name><declaration>
+
+clock x;</declaration><location id="id29" x="0" y="0"></location><init ref="id29"/><transition><source ref="id29"/><target ref="id29"/><label kind="select" x="72" y="40">temp:lumen</label><label kind="guard" x="72" y="-24">x&gt;=1</label><label kind="synchronisation" x="72" y="-8">klik!</label><label kind="assignment" x="72" y="8">x:=0,
+bright:=temp</label><nail x="56" y="40"/><nail x="64" y="-64"/></transition></template><template><name x="32" y="16">Soldier</name><parameter>const int delay</parameter><declaration>clock y;</declaration><location id="id30" x="288" y="80"></location><location id="id31" x="288" y="216"><name x="272" y="232">safe</name></location><location id="id32" x="64" y="216"></location><location id="id33" x="64" y="80"><name x="56" y="48">unsafe</name></location><init ref="id33"/><transition><source ref="id32"/><target ref="id33"/><label kind="guard" x="72" y="176">y &gt;= delay</label><label kind="synchronisation" x="72" y="120">release!</label></transition><transition><source ref="id31"/><target ref="id32"/><label kind="guard" x="208" y="224">L == 1</label><label kind="synchronisation" x="216" y="192">take !</label><label kind="assignment" x="104" y="224">y = 0</label></transition><transition><source ref="id30"/><target ref="id31"/><label kind="guard" x="296" y="112">y &gt;= delay</label><label kind="synchronisation" x="296" y="160">release!</label></transition><transition><source ref="id33"/><target ref="id30"/><label kind="guard" x="120" y="56">L == 0</label><label kind="synchronisation" x="120" y="88">take !</label><label kind="assignment" x="216" y="56">y = 0</label></transition></template><template><name x="32" y="-16">Torch</name><location id="id34" x="200" y="192"><name x="192" y="200">one</name></location><location id="id35" x="200" y="48"><urgent/></location><location id="id36" x="64" y="120"><name x="48" y="88">free</name></location><location id="id37" x="336" y="120"><name x="328" y="88">two</name></location><init ref="id36"/><transition><source ref="id36"/><target ref="id35"/><label kind="synchronisation" x="104" y="56">take?</label></transition><transition><source ref="id35"/><target ref="id34"/></transition><transition><source ref="id35"/><target ref="id37"/><label kind="synchronisation" x="264" y="56">take?</label></transition><transition><source ref="id34"/><target ref="id36"/><label kind="synchronisation" x="96" y="176">release?</label><label kind="assignment" x="32" y="144">L = 1 - L</label></transition><transition><source ref="id37"/><target ref="id34"/><label kind="synchronisation" x="256" y="176">release?</label></transition></template><template><name x="16" y="-8">P</name><parameter>const id_t pid</parameter><declaration>clock x;
+const int k = 2;</declaration><location id="id38" x="216" y="176"><name x="216" y="192">wait</name></location><location id="id39" x="216" y="48"><name x="216" y="16">req</name><label kind="invariant" x="240" y="32">x&lt;=k</label></location><location id="id40" x="64" y="48"><name x="54" y="18">A</name></location><location id="id41" x="64" y="176"><name x="56" y="192">cs</name></location><init ref="id40"/><transition><source ref="id40"/><target ref="id39"/><label kind="guard" x="88" y="24">id== 0</label><label kind="assignment" x="160" y="24">x = 0</label></transition><transition><source ref="id39"/><target ref="id38"/><label kind="guard" x="144" y="72">x&lt;=k</label><label kind="assignment" x="144" y="104">x = 0,
+id = pid</label></transition><transition><source ref="id38"/><target ref="id39"/><label kind="guard" x="264" y="120">id== 0</label><label kind="assignment" x="264" y="88">x = 0</label><nail x="251" y="146"/><nail x="251" y="82"/></transition><transition><source ref="id38"/><target ref="id41"/><label kind="guard" x="96" y="184">x&gt;k &amp;&amp; id==pid</label></transition><transition><source ref="id41"/><target ref="id40"/><label kind="assignment" x="8" y="80">id = 0</label></transition></template><system>// Place template instantiations here.
+Process = Template();
+
+// List one or more processes to be composed into a system.
+system Process;</system></nta>

@@ -1,0 +1,505 @@
+%%% Computers in Education Journal Template
+%%% Based on Physiome Journal Template 
+%%% Creative Commons CC BY 4.0
+%%% overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv
+
+%%% Last Modified by CoED Journal Dec 2020
+
+
+\documentclass[11pt]{report}
+
+%% Choose from Original,Letter, Review, Case Study, Methods
+\articletype{Original}
+
+%% Main Title
+\title{Example Article Title}
+
+%% During Initial Submission please leave the following blank
+\author[1][corr.author@xyz.ac.mm]{First Author}
+\author[2]{Second Author}
+\affil[1]{Address of first author}
+\affil[2]{Address of second author}
+
+
+%% The following lines can be omitted when submitting;
+%% information will be added by editors
+\publicationdate{30 Sept 2020}
+\volume{10}
+\issue{4}
+\submitteddate{4 May 2020}
+\accepteddate{15 Sept 2020}
+\citethisas{First and Second (2020) Example Article Title. aseecoed 10(4).}{}
+
+%%% Start of Main Body of Article
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Please provide an abstract of no more than 350 words. Your abstract should explain the main contributions of your article, and should not contain any material that is not included in the main text. 
+\end{abstract}
+
+\keywords{Keyword1, Keyword2, Keyword3}
+
+\relatedpubs{sample}{borowczak2018enabling,burrows2017hardening}
+
+\section{Introduction}
+
+Thanks for using Overleaf to write your article. Your introduction goes here! Some examples of commonly used commands and features are listed below, to help you get started.
+
+\subsection{Primary Publication}
+
+Though not required many \emph{aseecoed} articles have associations with one or more related ASEE publications. These publications, whether from the authorship list or not can be listed in the .bib file, then insert them after the \verb|\keywords{...}| using the \verb|\relatedpubs| command:
+
+\verb|\relatedpubs{name of .bib file}{BibTeX keys of the publications}|
+
+If you are authoring and compiling this template on your own machine, you will need to run an extra step \verb|bibtex relatedpubs| to generate them in the final PDF. If you wish, you can use \texttt{latexmk}, \texttt{arara} or \texttt{Make} to automate this step.
+
+
+\section{Literature Review}
+% Explain the current state of the research field with key publications cited.
+% Highlight controversial and diverging hypotheses when necessary. 
+
+
+
+\subsection{Some \LaTeX{} Examples}
+\label{sec:examples}
+
+Use section and subsection commands to organize your document. \LaTeX{} handles all the formatting and numbering automatically. Use \verb|\autoref| and \verb|\label| commands for cross-references, e.g.~\autoref{sec:examples}, \autoref{eq:sum}, \autoref{fig:view}, \autoref{tab:widgets}. You can still use the more common \verb|\ref|, but this will only generate the (sub)section/table/figure/equation number: \ref{tab:withnotes}. 
+
+\subsection{Figures and Tables}
+
+Use the table and tabular commands for basic tables --- see \autoref{tab:widgets}, for example. \autoref{tab:withnotes} shows a larger example with \emph{table notes}. You can upload a figure (JPEG, PNG or PDF) using the project menu. To include it in your document, use the \verb|\includegraphics| command as in the code for \autoref{fig:view} below. Captions are always justified and start from the left; don't try to change the alignment.
+
+If you prefer, you can place all your image files in a folder. Remember to include the folder path in your \verb|\includegraphics| command, or use `\verb|\graphicspath|` to specify the path to the folder in which all your image files can be found.
+
+\begin{figure}[ht]\centering
+\includegraphics[width=0.5\linewidth]{images/image1040.png}
+\caption{An example image of a logo.}
+\label{fig:view}
+\end{figure}
+
+\begin{table}[ht]\centering
+\caption{An example table.}\label{tab:widgets}
+\begin{tabular}{l r}
+\toprule
+Item & Quantity \\\midrule
+Candles & 4 \\
+Fork handles & ?\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[hbt!]\centering
+\begin{threeparttable}
+\caption{An example table with tablenotes}\label{tab:withnotes}
+
+\begin{tabular}{lccrr}
+\toprule
+Course & TSC($n$) & Control ($n=40$) & TP & $t$ (68)\\
+\midrule
+Computer Science I & 38 & 58\tnote{1} & 504.48 & 58 ms\\
+Materials and Mechanics & 38 & 58 & 504.48 & 58 ms\\
+Differential Equations & 38 & 58 & 504.48 & 58 ms\\
+Cybersecurity & 38 & 58 & 504.48 & 58 ms\\
+Electronics II\tnote{2} & 38 & 58 & 504.48 & 58 ms\\
+Basket weaving & 38 & 58 & 504.48 & 58 ms\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item[1] here's a note.
+\item[2] and another.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\subsection{Citations}
+
+LaTeX formats citations and references automatically using the bibliography records in your .bib file, which you can edit via the project menu. Use the \verb|\citet| command for a text citation, like \citet{borowczak2019mitigating}, and the \verb|\citep| command for a citation in parentheses \citep{burrows2018integrated}.
+
+\subsection{Mathematics}
+
+\LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+\begin{equation}\label{eq:sum}
+S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i
+\end{equation}
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+\subsection{Lists}
+
+You can make lists with automatic numbering \dots
+
+\begin{enumerate}[noitemsep] 
+\item Like this,
+\item and like this.
+\end{enumerate}
+\dots or bullet points \dots
+\begin{itemize}[noitemsep] 
+\item Like this,
+\item and like this.
+\end{itemize}
+\dots or with words and descriptions \dots
+\begin{description}
+\item[Word] Definition
+\item[Concept] Explanation
+\item[Idea] Text
+\end{description}
+
+\section{Methods and Context}
+% Methods and protocols should be described in detail and well-established methods can be briefly described and appropriately cited. Provide details that enable readers to frame/situate this work - locations, participants demographics, details relevant to your particular study/implementation
+ Methods and protocols should be described in detail and well-established methods can be briefly described and appropriately cited. Provide details that enable readers to frame/situate this work - locations, participants demographics, details relevant to your particular study/implementation
+
+Quam suscipit ut quidem et animi numquam consectetur et. Nihil et commodi ut officia eveniet beatae qui. Placeat accusantium eius consequatur animi nisi sed. Pariatur et dolores tempore velit similique voluptatem similique error.
+
+Quam suscipit ut quidem et animi numquam consectetur et. Nihil et commodi ut officia eveniet beatae qui. Placeat accusantium eius consequatur animi nisi sed. Pariatur et dolores tempore velit similique voluptatem similique error. Quam suscipit ut quidem et animi numquam consectetur et. Nihil et commodi ut officia eveniet beatae qui. Placeat accusantium eius consequatur animi nisi sed. Pariatur et dolores tempore velit similique voluptatem similique error.
+
+
+
+\section{les 1}
+
+
+Spreker: yuval harai
+De spreker heeft het naar mijn inzien over de volgende punten:
+• de lerende overheid
+• de slimme zorgmeter (robotische arts
+• commercie
+• privacy
+• fabel over veiligheid
+
+
+Wat intrigeert je? Waarom?
+Als je de spreker mag geloven zijn we niet klaar voor de digitale revolutie met Big Data als we met een sceptische bril kijken naar de wetenschap. Mijn besef komt voort uit het criterium dat alle zaken en kennis die je opdoet goed of slecht kunnen zijn. We hebben als burgers het recht om een overheid en haar diensten sceptisch te benaderen in een westers georiënteerde samenleving. De wetenschap wordt gebruikt bij de onderbouwing van politieke keuzes die de mensbeeld, leefstijl en samenleving voorgoed kunnen veranderen. Als een individu of een gemeenschap een principe heeft dat de wetenschap schendt dan mogen zij daar best in verweer komen tegen de algemene beginselen en uitvoering van de vakwetenschap zoals dat wordt uitgevoerd. Uiteindelijk moeten de leken afhankelijk worden van de intellectualiteit van de academici. En die verantwoordelijkheid wordt naar mijn idee niet goed vertaalt maar eerdere gematerialiseerd door de spreker.
+Wat heeft (mogelijk) invloed op jou als mens?
+
+Wat heeft (mogelijk) invloed op jou als IT’er? Als IT’er moet je op alle vlakken van de digitale techniek de komen 30 jaar een basis set van skills hebben ontwikkeld, zodat je over een breed scala van projecten op de werkvloer kan worden ingezet. Ik denk dat een ‘echte baan’ meer inzicht biedt op de mogelijkheden die de opleiding biedt.
+
+\section{Les 2}
+Opdracht
+Zelfreflectie Neem, nu je je eigen uitkomsten hebt gezien, tijd om hierop te reflecteren en om na te denken over de rol die deze waarden in je leven spelen. Kijk ook naar gebieden in het waarde overzicht waar je geen waarden hebt geselecteerd. Dit kan betekenen dat dat gebied geen aandacht meer hoeft, dat er sprake is van een blinde vlek of dat er sprake is van een gebied dat ontwikkeld moet worden. Wat betekenen deze gebieden zonder waarden voor jou? (Zie oefening 2 hieronder om je te helpen op de gebieden waar je je misschien wilt ontwikkelen). Succesvolle beheersing van alle bewustzijnsgebieden omvat twee stappen: allereerst bewustwording van opkomende behoeften, daarna het ontwikkelen van vaardigheden om die behoeften te bevredigen. Leren managen van onze behoeften is een levenslang proces. Zelfs als we geleerd hebben de regie over ons eigen leven te nemen komen we in situaties waarin we ontdekken dat we angst gedreven overtuigingen hebben die ons op ons eigen belang richten - situaties die ons frustreren of bang maken en onze angsten boven brengen. Het is daarom van vitaal belang zelfkennis te ontwikkelen en vaardigheden en technieken te leren die het mogelijk maken je leven zo te managen dat je persoonlijke voldoening kan vinden.
+
+Volgende stappen Nu je je eigen resultaten hebt gezien is het misschien nuttig deze te bespreken met je partner, familie en/of vrienden. Het kan ook waardevol zijn om anderen te vragen hun eigen assessment te doen. Dan kun je de uitkomsten met elkaar delen en meer begrip krijgen van jullie onderlinge relaties en elkaars behoeften. Er zijn ook andere manieren om je eigen waarden beter te begrijpen. Bijvoorbeeld door te lezen over persoonlijke ontwikkeling, door te mediteren, door coaching of door feedback van anderen te vragen en daar zelf op reflecteren. Werken met waarden is een levenslang proces. Persoonlijke voldoening kan je krijgen door echt jezelf te leren kennen en door jezelf vaardigheden en technieken eigen te maken die je helpen groeien. De oefeningen op de volgende pagina's zijn opgenomen om je te helpen je meer bewust te worden van je waarden. De eerste oefening gaat in op die waarden die het meest belangrijk voor je zijn en helpt je te zien hoe deze je leven beïnvloeden. De tweede oefening helpt je nadenken over waar je zou willen ontwikkelen of groeien en helpt je bewust te worden van wat je in dat opzicht zou kunnen doen.
+
+Van de 10 gekozen waarden hierboven, welke drie zijn het meest belangrijk voor jou? Schrijf ze in de ruimte hieronder.
+
+\section{Oefening 1}
+
+
+Voorzichtigheid- 
+
+Waarom denk je dat deze waarde belangrijk is voor jou? Deze waarde heb ik gekozen uit een principe dat ik mee heb gekregen van mijn ouders. Spaarzaamheid. Mijn ouders hadden het vroeger niet breed en hebben mij de waarde bijgebracht dat ik zuinig moet zijn met de dingen die ik heb en om mezelf niet het idee aan te praten dat ik alle keuzes kan maken zonder goed de gevolgen te kunnen overzien en verantwoordelijkheid te nemen.
+Denk terug aan een moment waarop je deze waarde echt leefde. Naar mijn idee is spaarzaamheid een vorm van voorzichtigheid. Welk gedrag vertoonde je om deze waarde te ondersteunen? Een voorbeeld hiervan is sociale media. In de tijd van Hyves, PartyPeeps en PP2G als websites waar je met je vrienden leuke foto’s kon posten had ik het idee dat je voorzichtig moet zijn met je privacy. Nu heb ik zelf ook twitter en facebook. Maar ik ben alsnog voorzichtig met het plaatsen van foto’s.
+Hoe reageer je als anderen deze waarden niet belangrijk vinden? Beschrijf je gevoelens, gedachten en acties. Meeste mensen die ik ken hebben Instagram. Ik heb dat altijd een keuze gevonden voor anderen om je privéleven te posten. Maar voor mij kun je niet voorzichtig genoeg zijn met je privé.
+
+
+\paragraph{title}
+Continue leren
+Waarom denk je dat deze waarde belangrijk is voor jou?
+Ik denk vaak vanuit het idee dat ik een achterstand heb op cognitief niveau. Op de basisschool werd ik al met dit idee geconfronteerd. Veelal door leraren die vonden dat ik te speels was. Ik kreeg dan een mavo-advies terwijl ik een CITO-score had voor een HAVO-vwo-opleiding. Door de motivering van de leraar had ik er weinig vertrouwen in dat ik mezelf op jonge leeftijd kon ontwikkeling voortgezet wetenschappelijk onderwijs.
+Ik heb na de basisschool een mavoschool uitgekozen en na een jaar kon k al naar de HAVO. Dat heb ik bereikt door destijds veel te leren. Hierdoor had ik echt het idee dat ik wat kon. Daarna wilde ik een havo-opleiding combineren met een sportopleiding. Dat laatste is niet gelukt. Ik heb mijn havo afgerond en ben naar het hbo gestapt. Een keuze voor bedrijfseconomie werd geen succes. Daarna heb ik een jaar les gevolgd op een Mbo-school voor een opleiding elektrotechniek. Maar dat werkte allemaal niet. De wil om de leren was er wel maar de concentratie ontbrak. Dit is doorgelopen tot mijn hbo-opleiding Technische Informatica. Na mijn propedeuse viel de concentratie weg ook al ben ik elke dag bezig met werken en leren.
+Denk terug aan een moment waarop je deze waarde echt leefde. Welk gedrag vertoonde je om deze waarde te ondersteunen? 
+Hoe reageer je als anderen deze waarden niet belangrijk vinden? Beschrijf je gevoelens, gedachten en acties. Veelal als ik met volwassenen ik gesprek ben over dit onderwerp dan begrijpen ze mijn emoties en de leercurve die ik voor mezelf heb opgesteld. Maar als ik met generatiegenoten praat over de intellectuele problemen waar ik tegenaan loop dan ontwijken ze liever de inhoudelijke gesprekken. Daar heb ik soms wel moeite mee.
+
+\paragraph{title}
+Doorzettingsvermogen
+Waarom denk je dat deze waarde belangrijk is voor jou? Het succes en geluk kan alleen bereikt worden als je bereidt ben alles uit jezelf te halen wat er in je zit. Die inspiratie haal ik niet alleen uit mijn ouders en directe omgeving. Maar naar mijn beleving is de gehele samenleving erop ingesteld dat je als individu met zo min mogelijk het meeste succes behaalt. Het is dan wel aan het individu om te bepalen welke vorm van succes het meest voor hem of haar betekent.
+Denk terug aan een moment waarop je deze waarde echt leefde. Welk gedrag vertoonde je om deze waarde te ondersteunen? Ik ben inmiddels een langstudeerders en heb meerdere bijbaantjes gehad. Als ik geen motivatie had dan kon ik het niet opbrengen om per week 32 uur te werken en daarnaast te leren en verdiepen in je vakgebied.
+Hoe reageer je als anderen deze waarden niet belangrijk vinden? Beschrijf je gevoelens, gedachten en acties. Veelal krijg ik de opmerking dat ik als langstudeerders heb vak niet begrijp en wat anders moet gaan doen. Dan krijg ik een gevoel van frustratie en irritatie alsof er niet genoeg kenvermogen bij mezelf is ontwikkeld om de leerstof aan te kunnen. Ik heb ook een aantal jaar het niet kunnen opbrengen om voltijd me in te zetten voor het afronden van de opleiding. Maar na enige successen en afgeronde vakken krijg je toch het idee en de ruimte om alles op een rijtje te zetten en door te gaan.
+
+\section{Oefening 2}
+Kies uit jouw gekozen waarden of de waarden hieronder drie waarden die je meer zou willen leven.
+\paragraph{title}
+De beste zijn, verschil maken, respect
+
+De beste zijn.
+Welk gedrag of welke acties laat je zien waaruit blijkt dat je deze waarden meer zou willen leven?
+Tijdens mijn opleiding heb ik mezelf ten doel gesteld om de best Java-programmeur te worden. Ook al is dit niet realistisch en ook niet toetsbaar. Het is een idee dat ik koester en waar ik ook veel van mijn “verloren studiejaren” aan heb besteed.
+Waar zou je mee moeten stoppen om deze waarden meer te leven? Als ik deze waarde meer zou willen leven zou ik kritische moeten zijn naar mijn werkhouding en daarnaast minder werken, in de zin van een bijbaan om me te kunnen focussen op deze waarde.
+Waar zou je mee moeten beginnen om deze waarden meer te leven? Certificaten halen, afstuderen en een baan lijken mij goede uitgangspunten.
+
+\paragraph{title}
+Verschil maken
+Welk gedrag of welke acties laat je zien waaruit blijkt dat je deze waarden meer zou willen leven? In mijn omgeving zou ik graag meer mensen willen zien die lezen of kennis opdoen van hetgeen dat ik doe tijdens mijn opleiding. Ik he wel hoogopgeleiden mensen in mijn omgeving maar weinig mensen in mijn sector/beroepsgroep. Soms spoor ik mensen aan om op websites te gaan of bepaalde artikelen te lezen om ze te overtuigen van het belang van kennis van de mogelijkheden van de computer en Tech wetenschappelijke skills.
+Waar zou je mee moeten stoppen om deze waarden meer te leven? Mezelf meer tijd geven om daadwerkelijk et mensen in contact te komen en aan hen te pitchen wat je met een opleiding als IT’er kan bereiken. Niet alleen professioneel maar ook in creatieve zin kennisontwikkeling.
+Waar zou je mee moeten beginnen om deze waarden meer te leven? Pitchen, meedoen aan debatten, blogs, fora of bijvoorbeeld een workshop.
+\paragraph{title}
+Respect
+Welk gedrag of welke acties laat je zien waaruit blijkt dat je deze waarden meer zou willen leven?
+Geen. Het is een ambitie die ontstaat vanuit een idealistisch beeld. Het is onderdeel van mijn mensbeeld dat je een idee of überhaupt iets alleen kan overhandigen als de ‘ander’ respect heeft voor datgeen je hebt of waarvoor je staat.
+Waar zou je mee moeten stoppen om deze waarden meer te leven?
+Ik weet zelf nog niet welke eigenschap ik van mijn karakter en/of handelingen mijzelf dit beeld voorstellen behalve een starrig idealistisch mensbeeld.
+Waar zou je mee moeten beginnen om deze waarden meer te leven? Meer kennis opdoen over jezelf, maar ook kritisch blijven kijken naar je omgeving en de wetenschappelijke ontwikkeling bijhouden lijkt me wel een uitdaging.
+
+
+
+
+
+
+
+
+
+
+
+\section{les 3}
+selectie van 5 Centrale waarden die bij mij passen.
+
+\paragraph{title}
+Idealisme
+De droom is een idee, dan kan een simpel idee zijn zoals een baan, een huis of een mooie auto, maar kan ook gaan over de utopie. Een kenschets van de ideale samenleving. Er zijn enkele idealisten geweest die in de 20e eeuw de wereldpolitiek hebben beïnvloed. En diezelfde utopie zie je in de Tech wereld. Mensen die denken dan alle oplossingen bereikbaar zijn met digitale techniek. Ik ben vooral geïnteresseerd in het vraagstuk ‘Of alle kennis in de wereld afhankelijk is van digitale techniek”? De techniek is ontstaan uit noodzaak en handel, vraag en aanbod, overschot en tekort. Als een samenleving een gelijkheidsbeginsel hanteert moet ze ook inspelen op de behoefte. In een diverse samenleving is er een uitlopende behoefte strategie nodig om te kunnen inspelen op de behoefte. Deze behoefte wordt gereguleerd in beschaafde landen. En daarop wordt deze behoefte onderhouden door hoogwaardige techniek in “hooggeïndustrialiseerde en kapitalistische” landen met een sterk ontwikkeld besef van de rol van de staat in een samenleving.
+
+\paragraph{title}
+Inzicht
+Al sinds de middelbare school ben ik geïnteresseerd in de dingen die ik niet weet. Ik wist niets van absolute kennis, religie, wetenschap, cultuur, gemeenschapszin, geloof of principes. Ik heb wel meegekregen dat als ik iets wil bereiken dat ik dar mijn best voor moet doen, ook al heb ik weinig succes vertaald in kansen van slagen. Zodoende heb ik mij ingezet om mezelf te ontwikkelen als student. Redenen daarvoor waren dat ik niet precies wist welk beroep ik wilde vervullen in mijn loopbaan, maar ook omdat de samenleving in de afgelopen 20 jaar door de opgelegde digitalisering snel is veranderd.
+Serieusheid, en soberheid zijn twee waarden die elkaar omarmen. Om iets te bereiken moet je tijd en energie stoppen om hetgeen te bereiken wat je wilt. Daarbij is soberheid op zijn plaats omdat vanuit mijn perspectief extravagantie en luxe wel een ideële mogelijkheid maar niet een reële mogelijkheid schetsen waarin ik mij kan ontwikkelen. Je moet de dingen die je hebt vasthouden en koesteren en de onbereikbare en niet-noodzakelijke dingen uitstellen.
+
+\paragraph{title}
+Vaderlandsliefde
+Het is een vraag of je uitkomt voor je vaderland, of het land waar je geboren en getogen bent. Het is een discussie die voor iedereen speelt maar die met name naar voren komt in de topsport. Daar waar men zegt dat sport mensen verbindt is het toch ook een toneel waar mensen kunnen laten zien welke weg zij als sporter bewandeld hebben en voor welke nationale waarden zij staan.
+
+
+\paragraph{title}
+Zelf-zijn
+Ik heb deze waarde gekozen omdat het mij aanspreekt als mensen met een migratieachtergrond in de media een mening hebben over ontwikkeling en identiteit. Dan vraag ik mezelf wel eens af “wat is jezelf”? Bedoeld iemand daarmee zijn of haar innerlijk? Of een innerlijk dat geaccepteerd wordt als het gepaard gaat met een positieve uitstraling. Geloof gaat uit van goed en slecht. Een uiterlijke vertonen plaatst een beeld bij de mensen waardoor ze zichzelf kunnen herinneren hoe iemand zichzelf laat zien. Jezelf-zijn is accepteren wie je bent hoe je eruitziet, dus dan neem ik vaak aan dat iemand voor zichzelf accepteert dat het uiterlijk een gewenning is voor de ander of dat die gewenning nog moet optreden. Mijn conclusie is dan dat jezelf zijn ook afhankelijk is van je bewustzijn van je sociale omgeving, want als niemand weet hoe je over de zaken denkt dan blijft er onduidelijkheid.
+
+\subsection{Nederlandse normen}
+
+\paragraph{title}
+Individualisme
+Hoe zie jij de norm terug in het dagelijkse leven?
+De samenleving is naar mijn beleving totaal geïndividualiseerd. Als individu ben je verantwoordelijk voor alles wat je doet. Maar dat niet alleen, het sociale stelsel, de zorg, en onderwijs staan voor de collectieve waarden. Enerzijds wordt iedereen opgevoed om voor zichzelf te zorgen, maar er zijn ook kerntaken die uitgedragen moeten worden door de nationale overheid om het collectief van een basis te voorzien. Die basis kan worden gezocht in woonruimte, onderwijs, gelijke banenkans, leefomgeving. In die ‘leefgebieden’ moet een individu de spiritualiteit halen in een maatschappij waarin geloof niet centraal staat. Een samenleving waarin het individu niet ziet wat het einddoel is van zijn leven.
+\paragraph{title}
+Plicht-plezier
+Hoe zie jij de norm terug in het dagelijkse leven?
+Militaire dienstplicht is een onderwerp dat ik bij deze noem onder plicht-plezier. Defensie lijkt mij een organisatie waarin je als persoon je individuele eigenschappen verbetert, je zwakke plekken onderzoekt, belicht, verbetert ten gunste van je team, organisatie en uiteindelijk de samenleving. Dat moet wel met een bovengemiddeld optimisme, inzet, vechtmentaliteit en plezier om onder hoge druk de veiligheid van anderen in zekerheid te kunnen stellen. Onder defensie zie ik ook wijkagenten en BOA’s. Dit zijn naar mijn idee mensen met een sterk plichtsbesef waar ik het vaak niet mee eens ben maar waarvan ik weet dat hetgeen dat ze doen met volledige overtuiging wordt gedaan.
+In welke norm uit de Nederlandse identiteit kan ik mezelf vinden? 
+Vrijheid van onderwijs, vrijheid van religie en tolerantie. Vrijheid van onderwijs brengt naar mijn beleving de creativiteit van verschillende groepen mensen naar voren. Uiteindelijk wordt de samenleving bestuurt door volwassen mensen die een mening moeten hebben over wat de grondslag moet zijn voor het principe van wat ‘algemene kennis’ is en wat ‘algemeen rechtvaardig’ is.
+Volgens velen mensen uit mijn indirecte omgeving is religie is bron van intolerantie, onwetenschappelijkheid en dogmatiek. Ik heb de stelling dat zonder überhaupt een grondslag van denken en overtuigingen een debat of wetenschap nooit mogelijk is geweest. Daarnaast gaan de religieuze twisten in het westen veelal uit over de Abrahamatische religies. Maar er zijn in die religies diverse stromen en buiten de ‘grote religies’ nog tal van denkrichtingen die het dagelijks leven negatief kunnen beïnvloeden. Neem de WO2. Veelal oudere mensen zullen zeggen dat het geen religieus conflict maar een ideologisch conflict is dat werd uitgevochten. En toch zijn veel hedendaagse rechtstatelijke instituties gevest op principes die de negativiteit en radicalisering van die tijd tegenstaan.
+\paragraph{title}
+Gelijkheid.
+Alle mensen zijn gelijkwaardig. Je moet ze met respect behandelen. Volgens mij moet de definitie van gelijkheid in sociale context uitgelegd worden met begulp van het begrip gelijkwaardigheid. We zijn namelijk allemaal mensen in een samenleving die iets kunnen en willen. Iedereen verschilt qua mentaliteit, wil, behoefte en omstandigheid. De kernwaarde gelijkwaardigheid beschouw ik als een term die de grondsleg legt om bij elk individu vast te stellen om wat zijn/haar tekortkomingen zijn en als die persoon daarvoor open staat je daarvoor in te zetten. Het kan zijn dat iemand hulp afwijst op basis van onbegrip, angst of vooroordeel of onwetendheid. Maar een persoon wordt daardoor als mens niet minder waard.
+
+\subsubsection{title}
+Met welke normen juist niet? Waarom? 
+Vrijheid van meningsuiting kan naar mijn idee heel breed uitgemeten worden. Want iemand kan zeggen wat hij/of zij denkt, iemand kan zijn mening uiten zonder daarover na te denken, maar het kan ook zo zijn dat iemand wel goed over een onderwerp waar hij/zij over na heeft gedacht maar het publieke domein betreedt en in debat gaat zonder de andere deelnemers te ‘onderrichten’ in de harde wetenschap. Hierdoor kan iemand met goede argumenten bij een stelling voor een moeilijk vraagstuk zijn eigen overtuiging algemeen geldig laten zijn zonder kritische vragen.
+
+Deugden die mij aanspreken
+De 7 zonden
+1) Superbia (hoogmoed-hoevaardigheid-ijdelheid)
+2) Avaritia (hebzucht- gierigheid)
+3) Luxuria (onkuisheid-lust-wellust)
+4) Invidia (nijd-jaloezie-afgunst)
+5) Gula (onmatigheid-gulzgheid-vraatzucht)
+6) Ira (woede-toorn-wraak-gramschap)
+7) Acedia ( gemakzucht -traagheid -luiheidvadsigheid)
+De 7 deugden
+1) Prudentia ( Voorzichtigheid-verstandigheid-wijsheid)
+2) Iustitia (Rechtvaardigheid – rechtschapenheid)
+3) Temperantia ( Gematigheid -matigheid-zelfbeheersing)
+4) Foritudo (Moed-sterkte-vasthoudendheid-standvastigheid-focus)
+5) Fides(Geloof)
+6) Spes(Hoop)
+7) Caritas (Naastenliefde- liefdadigheid)
+
+
+\paragraph{Welke deugd spreekt mij het meeste aan?}
+\paragraph{}
+Geloof
+Geloof is niet verplicht en dat hoeft ook niet voor de volgende generaties. De wereldorde als daar überhaupt sprake van is vastgesteld op basis van geloof en regels. De regel sluit soms een geloof uit maar een geloof mag nooit een algemene norm uitsluiten. Daardoor zijn er verschillende samenlevingen ontstaan. En van daaruit ontstaat ook het idee van tolerantie en schoonheid. Schoonheid en tolerantiegaan gepaard met intolerantie en verdorvenheid. Alleen worden tolerantie en schoonheid belicht in de discussie over ‘hoe-het-moet-zijn’.
+\paragraph{}
+Prudentia
+Prudentia is de voorzichtigheid waarmee je de schoonheid kan bereiken. Als we allemaal een ‘allegorie’ doorlopen dan moeten we voorzichtig zijn dat we niet de fouten maken dat we in onwetendheid, onzekerheid, of onveilige situaties terechtkomen. Voorzichtigheid is een deugd die je ontwikkeld met ervaring. Hoe vaker je iets doet des te meer reden je hebt om voorzichtig te zijn een bepaalde handeling te verrichten.
+\paragraph{}
+Fortidudo
+Met moed en vasthoudendheid kun je de liefde voor een herinnering koesteren of een motivatie voor een bepaald doel voor ogen houden. De vraag die erbij komt of hetgeen waarvoor je je moed op het spel zet ook verstandig is. Vanuit het principe dat iemand pas leert door ervaring is er eerst moed voor nodig om iets te weten te komen alvorens je iets bereikt. Deze deugd spreekt mij dus erg aan.
+
+
+\section{}
+Hacking the human brain: Can we trust our thoughts
+Als de techniek wordt gebruikt om zieke mensen te helpen om hun lichaam weer te gebruiken met behulp van een exoskelet en  geïmplanteerde apparaten die door middel van een decoder en een intelligent algoritme de impulsen decoderen en omzetten naar instructies voor een bepaalde beweging heeft de persoon met controle over de apparaten ook controle over de mens. 
+Ik denk dat de plichtsethiek van de mens hierdoor ter discussie staat. 
+Een mens ontwikkeld zich in een samenleving aan de hand van de normen die wordt gesteld en de waarde die een samenleving vanuit haar bewustzijn heeft voor een specifieke norm. Als door kennis van een bepaalde wetenschap een specifieke groep intellectuele onbegrensde controle heeft over het functioneren van het individuele brein. Dan is de maatschappelijke invloed ongekend. De maatschappij is daarbij afhankelijk van een groep mensen  die zichzelf een deugd oplegt , namelijk de bevolkingsgezondheid bewaken en tegelijkertijd de wetenschappelijke plicht heeft om de invloed van de wetenschap het ideële domein van de mens te beïnvloeden. Net als bij de kritiek op de wetten van Asamov moet er niet eest gekeken worden naar de software en hardware mogelijkheden maar eerst naar het veiligheidsaspect voor het individu en de samenleving alvorens de implementatie van de techniek in het menselijk brein daadwerkelijk plaatsvind.
+Ook in geval van dagelijjkse werkzaamheden voor een fabrieksarbeider kunnen worden ontzien.
+
+Je kunt je eigen brein niet meer vertrouwen omdat het makkelijker is iemands brein te hacken is dan een computer. Door middel van een geïmplanteerd idee kan een slimme neuroloog de associaties van een mens met een bepaald idee controleren,  wijzigen, toevoegen en manipuleren door de proefpersoon het idee te geven dat de associaties met een geïmplanteerd idee juist zijn.
+Er wordt veel geïnvesteerd door bedrijven om niet alleen de consument te begrijpen maar ook om iemands gedrag en mindset te beinvloeden. Het gevaar zit in de idee van de vrije wil. De bedrijven kunnen de zelfkennis van een consument om voor de consument te bepalen via beinvloeden dat de martkstrategie beter weet wat goed is voor de consument dan de consument kan beslissen door vrijew wil.
+Dromen hebben sinds Freud en Jung de stempel een onbereikbaarheid en ongrijpbaarheid gekregen. Maar door neuroscience krijgt men toegang tot de droom terwijl iemand slaapt.  Deze analyse vertelt wie je bent, hoe je bent, wat je wilt doen en hoe je nadenkt over mogelijkheden. De wetenschapper leert zo meer over de idee van de individu in de wereld. Er kan een droom voor je gemaakt worden zoals een virtual reality doet voorkomen.
+
+Synthetische dromen in de hersenen van vogels door middel van optogenetics. Eerst worden er genen in een neuron gebracht dmv NAAF. Deze neuronen zijn genetisch aangepast zodat ze reageren op lichtstimulatie. Deze stimulatie manipuleert de activiteit van de neuronen in de NAAF regione en het controleert  de interactie tussen dit deel van de hersenen en de HVC ( High Vocal Center). Met deze wetenschap kan onderzoek gedaan worden naar het gebruik van bijvoorbeeld taal.
+
+Her herleven van herinneringen. Is waar het naar mijn idee om draait. De freudiaanse idee van de droom vind ik maar vaag. Het idee dat het misschien zou kunnen helpe om PTSS te beïnvloeden neem ik graag aan maar ik zie graag eerst bewijs.
+Overheden hebben in het verleden ook met drugs en medicijnen geprobeerd de fantasie van een individu door middel van dosering te beïnvloeden. Daar moet naar mijn idee mee invloed en inspraak van de patiënt zijn omdat elke individu een eigen beleveniswereld kent.
+
+https://www.youtube.com/watch?v=MP-hwl5d-gw&feature=emb_title
+\section{}
+VPRO Uitzending
+Enkele onderwerpen die naar voren koem
+• Spelstrategiedata
+• hersenbelasting door overactiviteit.
+• Slaapproblemen
+• hoeveel ruimte neemt een herinnering in
+• de grenzen aan hoe hard we na kunnen denken
+• Waarom hebben we een bewustzijn?
+• onbegrijpelijke stellingen die de mens niet meer begrijpt maar wel zijn bedacht door de computer zijn een bedreiging voor de wetenschap
+• computers en robots die zich verder zullen ontwikkelen door evolutie een robot die ontstaan is door willekeurige informatie-uitwisseling door zijn ouders net als bij een mensenkind de beslissing wordt gemaakt door een computer waar de robot zijn DNA naar toe stuurt
+• genetisch programmeren: een algoritme dat de codering van code verzorgt is het oplossen van problemen uitbesteden aan AI
+• last van de irrationele angst van menend die denken dat de bijkomstigheden van AI niet altijd gunstig zijn
+• technologie als uitbreiding van de menselijke mogelijkheid. Het kan goed of slecht gebruikt worden.
+• mag en kan je wetenschap en technologie tegenhouden als je de controle verliest of niet meer begrijpt?
+• een panicbutton
+• een ethisch verantwoorden wetenschapper moet nadenken over de gevolgen van zijn onderzoek
+• voortplanting van robot is gevaarlijk omdat de eigenschappen van grootte en lengte onbereikbaar worden
+
+ 
+Centrale vraag: Kunnen we ermee leven dat de techniek ons voorbij streeft?
+De mens heeft techniek in ontwikkeling gezet om zichzelf te beschermen. De bedoeling van techniek zal blijven dat degene met de controle en kennis van techniek de overhand heeft. Ookal heeft het individu niet meer de volledige controle. Mijn opvatting is dat de mens kiest voor controle en macht ten koste van een samenleving als er geen andere mogelijk is.
+
+https://www.vpro.nl/programmas/robo-sapiens/kijk/afleveringen/2017/2.html
+https://www.youtube.com/watch?v=MP-hwl5d-gw
+
+\section{Wetten van Asimov}
+
+\subsection{Algemeen}
+De robots konden niet de juiste handelingen verrichten omdat de specifieke context aanpassingen van de applicatie vereiste. Er moet een discussie gevoerd worden of de robotica genoeg perceptuele en -kwaliteiten heeft om volgende Wetten van Asimov te kunnen handelen. Ervan uitgaande dat er sprake is van functionele moraliteit moet een robot genoeg controlemechanisme en cognitie hebben om morele beslissingen te nemen.
+Voor Asimov is het belangrijk een slim apparaat te ontwikkelen waarmee hij realistische  en praktische problemen kan oplossen door middel van autonome robots. Hij zoekt daarbij oplossingen die rekening houden met: ambiguiteit en cultureel afhankelijke taal en gedragsproblemen 2) sociale bruikbaarheid gelet op rolverdeling, mogelijkheden en achtergronden in een samenleving 3) de grenzen van technologie.
+Hij geeft aan dat de aandacht voor het principe van functionele moraliteit het belang van operationele moraliteit overschaduwd. Operationele moraliteit is nodig voor het verbinden van de robotacties en bij een beslissing, aannames, analyse en investering en blijft altijd belangrijk ondanks de vergevorderde ontwikkeling van een robot voor mensen die de robot instructies voorschrijven, bedienen en cases laten afhandelen.
+
+\subsection{wetten}
+\paragraph{Eerste wet}
+
+Een robot mag en mens niet verwonden of door inactiviteit toestaan dat een mens wordt verwond.
+Deze stelling is verwerpelijk omdat overheden zich publiekelijk inzet voor kunstmatige intelligentie bij oorlogsvoering.
+ 
+Ten tweede is de stelling irrelevant omdat de perceptuele mogelijkheden van een robot niet zover zijn dat een robot foutloos een mens kan herkennen en onderscheiding kan aanbrengen in hun intenties of een betrouwbaar interpretatief vermogen hebben van contextuele scenes. Bijvoorbeeld gezichtsherkenning gaat niet bij alle commerciële veiligheidssoftware goed. Daarnaast gebruiken sommige robots hitte en bewegingssensoren. Deze werken alleen in begrensde situaties. Volgens wetenschappers leven robots als  een literal-minded-agent, ze kunnen niet aangeven of de wereld waarin zij verkeren werkelijkheid is.
+Maar dat is nog niet het grootste probleem. Het veiligheidsprobleem wordt gezien als het probleem van de robot. Alsof dat de enige actor is in de mens-robot-interactie. Er zijn ook praktische, theoretische, sociaal-cognitieve en juridische beperkingen.
+Bijvoorbeeld vanuit juridisch perspectief gezien is een robot een product dus niet verantwoordelijk voor het resultaat van handelen. Terwijl de eigenaar en fabrikant wel de verantwoordelijkheid kunnen dragen voor de acties van de robot, tenzij de robot een soort persoonlijkheidsstatus krijgt in de wetgeving zoals een bedrijf gezien kan worden als een rechtspersoon en individuele entiteit. Bij een ongeval waar mensen bij zijn betrokken volgt dan een proces waarbij de oorzaak van de schade de verantwoordelijkheid draagt. Vervolgens wordt er gekeken naar de eigenaar van het apparaat, degene die instructies heeft geprogrammeerd of een verantwoordelijke rol heeft als toezichthouder. Het is nog steeds gewoonlijk dat bij een fout een producent kan aangeven dat het een menselijke fout was met juridische gevolgen.
+Verantwoordelijkheid hoort bij de menselijke manier van sociale relaties onderhouden. Een beslissing nemen gebeurt altijd in context van een verwachtingspatroon waar de verantwoordelijke al vanuit gaat bij het nemen van een beslissing. Verwachtingen voor een adequate uitleg en de gevolgen voor mensen wanneer hun verantwoording als inadequaat wordt beoordeeld zijn kritische onderdelen van een verantwoordingssysteem- een vergeldingscyclus waarin voorbereid zijn om verantwoordelijkheid te nemen voor handelingen en acties die schadelijk zijn voor anderen onderdeel is van het terechtstaan. Als robots moreel agentschap willen hebben en uitdragen dan zullen zij in staat moeten zijn om persoonlijk deel te nemen aan een vergeldingscyclus van aansprakelijkheid.
+\paragraph{Tweede wet}
+
+Een robot moet menselijke instructies gehoorzamen, behalve als deze instructies de eerste wettelijke bepaling uitsluiten.
+
+Hoe een mens instructies moet geven is in de mensenwereld al vaag omschreven en het begrijpen van verbale instructies kan voor een robot nog moeilijker zijn vanwege de huidige staat van kunstmatige intelligentie met betrekking tot natural-language understanding. Er zijn wel resultaten op het gebied van taalontwikkeling maar een betekenisvolle machine-participatie in een open conversatie blijft moeilijk. De mens gebruikt gebaren, lichaamstaal, gezichtsuitdrukkingen en emoties om te verduidelijken en benadrukken.
+\paragraph{Derde wet}
+
+Een robot moet zijn eigen bestaan beschermen zo lang als dat zijn bescherming niet in conflict is met de eerste of tweede wet.
+Een robot moet de investering van zijn eigenaar beschermen.
+Bijvoorbeeld robot die worden gebruikt voor militaire doeleinden zijn vaak onder controle van een persoon die volledige verantwoordelijkheid heeft voor het product. Maar studies tonen aan dat remote operators een nadelige impact kan hebben op het verantwoordelijkheidsgevoel. Ze werken via een interface op een display voor een bepaalde tijd. Daarnaast komt vaak voor dat de operators in omstandigheden werken met slechte mens-computer-interfacing en in een context waarin de operator, oververmoeid, overbelast en onder hoge druk met het product werkt.
+Wat in het voordeel is van de deze wet is dat er meer technologische oplossingen zijn voor overlevingsactiviteiten die werken voor autonome alsook door de mens bestuurde robotica. Deze activiteiten werken veelal met behulp van sensoren. Deze sensoren kunnen de totale kosten van de robot wel verhogen.
+
+Alternatieven
+
+\paragraph{Alternatieve eerste wet}
+
+Een mens mag een robot niet inzetten zonder de mens-robot systeem te gebruiken met  de hoogste juridische professionele ethische standaarden en ethiek.
+Ook robots moeten voldoen aan normen en standaarden voor veiligheid en betrouwbaarheid bijvoorbeeld bij gebruik in de medische wereld.
+Maar er is een schril contrast met mobiele robotica zoals robot auto’s op de openbare wegen. Het gebruik van robotica in deze kritische infrastructuur vraagt veel papierwerk. Zo ook wordt er een onderscheid gemaakt tussen onbemande vliegvaartuigen in gebruik als hobby of voor commercieel vliegverkeer. De cultuur omtrent toestemming en vergeving voor het gebruik van deze robotica toont aan dat er een slecht veiligheidsbewustzijn is.
+Maar voldoen aan de juridische waarborging is niet genoeg. De hoogste ethische professionele standaarden moeten ook gewaarborgd zijn. Verantwoordelijke gemeenschappen die het gebruik van de robots onderzoeken moeten ook nadenken aan de schadelijke gevolgen voor de branche bij een ongeluk. In brede zin moet daarbij gedacht worden aan agentschappen die manieren zoeken om veiligheid op de agenda te zetten en onderzoek te ondersteunen die gericht zijn op relevante juridische bezwaren.
+De hoogste ethische en professionele standaarden moeten ook worden toegepast in ontwikkeling en testen van het product. Autonome robots hebben kwetsbaarheden voor bepaalde problemen die te wijten zijn aan draadloze communicatie netwerken. Omdat signaalontvangst moeilijk te voorspellen is blijft deze functionaliteit een belangrijk aspect van het gedrag van robotica. Dit betekent dat robots opereren om te antwoorden op een verstandige manier op veronderstellingen. Sterker nog robots komen vaak in situaties waarin ze stuiten op onverwachte factoren die het bestuurssysteem beïnvloeden. Zelfs als een specifieke storing een onvoorspelbaar detail is. Het feit dat er storingen zullen zijn is een garantie. En de implementatie van deze fundamentele garantie zorgt voor een veerkrachtig ontwerp.
+Robot design moet eerst gaan over veiligheid en daarna over software en hardware. Robots zouden een zwarte doos moeten hebben met recorders die bijhouden wat de robots allemaal hebben gedaan op het moment dat er onvoorspelbaarheden optraden, niet alleen voor onderzoek naar ongelukken maar ook om het gedrag van een robot in context te kunnen diagnosticeren en te debuggen.
+\paragraph{Alternatieve tweede wet}
+
+Een robot moet reageren op mensen afhankelijk van hun rol.
+
+De reactie op mensen is in de relatie mens-robot interactie misschien nog wel belangrijker dan autonomie. Niet alle robots zijn autonoom over alle condities die worden opgegeven. Een robot kan zich bijvoorbeeld autonoom bewegen over een afstand maar rekening houdend met menselijke actoren onderweg. Responsiviteit is afhankelijk van de sociale omgeving, het type mens en de verwachting die in robot kan ontvangen in zijn takenpakket. In plaats van een superieure-ondergeschikte relatie is de tweede alternatieve wet erop gericht dat een root dusdanig moet zijn gebouwd dat de interactie past bij relaties en rolverdeling van elke entiteit in de omgeving. De relatie bepaald hoe een robot verplicht is te reageren in een situatie. Het definiëren van een toegestane response bepaald ook hoe een robot niet moet worden gebruikt.
+Hoe robots instructies ontvangen en verschillende entiteiten, rolverdelingen en signalen van een omgeving identificeren is minstens zo belangrijk als autonomie.
+\paragraph{Alternatieve derde wet}
+
+Een robot moet uitgerust zijn met voldoende situationele autonomie om zijn eigen bestaan te beschermen zolang deze bescherming een soepele controleoverdracht garandeert naar andere agentschappen consistent met de eerste en tweede wetten.
+Specifiek stelt deze wet dat een robot in staat moet zijn  een foutloze transitie van wat voor vorm van autonomie dan ook heeft of welke rol de robot en de mens innemen in het interactieproces, naar een nieuwe controle-relatie in de context van de onderbreking, impasse, onvoorspelbaarheden tegemoetkomend of voorkomend.
+Er zijn bepaalde kritische situaties waar in een korte tijdsbestek indringende beslissingen moeten worden genomen. Een piloot zou in een dergelijke situatie een beslissing van de robot niet mogen overrulen. Dit impliceert dat bepaalde situaties een aspect van het ontwerpen van rolverdeling moet gaan over klassen en situaties die een controleoverdracht vereisen, zodat de uitwisseling van kritische processen kan worden gezien als een onderdeel van een bepaalde rol die wordt vervult. Het kan zijn dat een mens de controle overneemt wanneer de grenzen van een robot bij een specifieke situatie worden bereikt of in een noodgeval. Voorbeelden die naar voren komen bij verschillende onderzoeken zijn out-of-the-loop controle problemen, afhandelen van een anomalie(onregelmatigheid), trapsgewijze onderbrekingen, situationeel bewustzijn, autopilot/pilot overdracht van controlebevoegdheid die mee kunnen worden genomen in een ontwerp.
+Consistentie met de eerste wet vraagt ontwerpers om expliciet duidelijk te zijn in wat toegestane situationele autonomie betekent en om een mechanisme te bedenken dat zorgt voor een foutloze controle/bestuursoverdracht. Om de literatuur over ethische bezwaren aan de kant te zetten zou tegen de ethische verplichting van de ontwerper gaan.
+
+Meer mogelijkheden voor autonomie en autoriteit leiden tot meer vraag naar deelname in ontwikkelde vormen van gecoördineerde activiteit.
+http://www.inf.ufrgs.br/~prestes/Courses/Robotics/beyond%20asimov.pdf
+
+\section{gene editing en embryo selection}
+
+In het artikel komen enkele punten naar voren.
+Voorbeelden daarvan zijn:
+• embryo’s die  met IVF behandeling zijn geproduceerd moeten genetisch worden gescreend met PGD
+• genetische informatie moet beschikbaar zijn in het medisch dossier
+• genetische gegevens gebruiken om te voorspellen wat voor persoon er uit een embryo voortkomt
+• Er ontstaat een vrijheid van enkele specifieke aandoeningen die genetische afhankelijkheid hebben
+• Wanneer mogen overheden zich bemoeien met de kinderwens van ouders? Bijvoorbeeld in gevallen waarbij een handicap van een kind aannemelijk is?
+
+De auteur gaat in op de technische en wetenschappelijke haalbaarheid, de openbaarheid van gegevens, de keuze van ouders en de rol van de overheid. Maar een van de belangrijkste aspecten van de samenleving en het menselijke leven wordt niet genoemd; namelijk de opvoeding van de jeugd die voortkomt uit deze geboorte-selectiematrix.
+Met welke moraal worden kinderen op de wereld gezet en opgevoed?
+De kinderen zijn afhankelijk in de opvoeding van het ethisch referentiekader van de ouders/opvoeders. In een ‘goed’ gezin kan een kind opgroeien in een omgeving waarin wordt geïnvesteerd in cognitie, geheugen  en beweging. Ieder kind verdient het beste zou het uitgangspunt moeten zijn van de ouders, het onderwijs en de zorg. Maar een kind leert ook wat tekortkomingen zijn en wat verschillen zijn. Hoe het kind geluk kan interpreteren en welke keuzes je daarbij moet maken. De kwaliteit van ethiek wordt ook in dit artikel onderschat en ook hier neem ik het artikel voor de alternatieve wetten van Asimov ter harte. De vraag die voorafgaand deze ingreep in het menselijk bestaan gesteld moet worden is of er genoeg ethiek en professionaliteit in de omgeving van het kind dat geboren wordt aanwezig  is om opleiding en geluk te brengen in een kindertijd.
+https://www.theguardian.com/science/2017/jan/08/designer-babies-ethical-horror-waiting-to-happen
+
+
+\section{Baby twins}
+
+
+de fouten die zijn gemaakt
+moet de informatie publiekelijk gemaakt worden
+https://www.technologyreview.com/2019/12/03/65024/crispr-baby-twins-lulu-and-nana-what-happened/
+
+https://www.technologyreview.com/s/614762/crispr-baby-twins-lulu-and-nana-what-happened/
+
+http://www.demul.nl/nl/item/1965-2016-08-20-vrij-nederland-in-japan-heeft-erica-een-ziel
+
+De waarschuwing dat robots de werkvloer overnemen is achterhaald
+Robots worden al gezien als werknemer in plaats van werkvervanger
+Vooral het management wordt beinvloed door softwaretechnologie met als gevolg automatisch ontslag.
+
+https://www.theverge.com/2020/2/27/21155254/automation-robots-unemployment-jobs-vs-human-google-amazon
+
+\section{Ethiek  facebook en persuasion technology }
+
+
+Facebook een geschiedenis
+
+Hoe heeft het kunnen gebeuren dat een bedrijf met $18.7 miljard omzet in 2018 in de traditionele media wordt afgeschilderd als een organisatie die een bedreiging vormt en voor wie? Hier probeer ik een antwoord op te geven. Als je alleen naar de negatieve berichten luistert dan vliegen de schandalen je om de oren.
+
+Het begint allemaal bij het idee om mensen te verbinden maar wordt wereldwijd bekent als een platform dat ruimbaan biedt voor de ontwikkeling voor persuasive technology, een wetenschap gericht op hoe computers menselijk gedrag kunnen beïnvloeden.
+
+Wat zijn de nadelen van deze technologie? Je hoeft geen specialist te zijn maar de volgende termen komen al voorbij als je de invloed van social media in kaart wil brengen: Selectieve profilering, desinformatie verspreiden, eigenwaarde en prestige van het individu, of andere onderwerpen zoals kwaadspreken, laster, kleineren of ander pestgedrag.
+
+De afgelopen jaren is facebook in tal van schandalen verwikkeld geraakt, mede door deze innovatieve technologie.
+Een korte opsomming:
+
+• Censuur over de buitenlandpolitiek van de VS
+• Facebook-advertenties; facebook laat medewerkers de voorkeur kiezen voor mannen over vrouwen
+• Desinformatie, Russische trollen, samenzweringstheorieën bij Amerikaanse verkiezingen in 2016
+• Belastingontwijking
+• Facebook moderators
+• Minderheden in Myanmar; Het is maart 2018 als de Verenigde Naties facebook vermaand Facebook om desinformatie omtrent content over de vervolging van Rohinya vluchtelingen.
+• 2016, Amerikaanse senator huurt Cambridge Analytica
+• December 2018 een bug in facebook toont 6.8 miljoen gebruikers foto's
+• December 2018 Facebook bikini app
+
+De manier waarop facebook zichzelf als bedrijf positioneert in de markt is gebaseerd op macht strategie, alles om de concurrentie uit te schakelen of over te nemen
+
+Het bedrijf met aan het hoofd Mark Zuckerberg lijkt niet erg gevoelig voor kritiek uit vooral linkse academische hoek. De vraag die in de media rondgaat is: moet er een ethische standaard zijn voor grote bedrijven? Zoals we nu plotseling zien bij de oorlog in de Oekraïne? Moet er een leider opstaan met moreel besef of moet er druk komen vanuit de Europese Unie en de Amerikaanse president voordat er actie wordt ondernomen om het algemeen belang in de publieke sector te benadrukken.
+
+Normen en waarden
+Normen en waarden zijn nodig om een samenleving democratisch te ontwikkelen.  Toch lijkt het zo te zijn dat om een groot kapitaal te ontwikkelen er in bepaalde delen van de westerse wereld normen en waarden aan de kant worden gezet om een minimalistische visie en moraal een plek te geven in de samenleving. Het voorbeeld is dus facebook: een onschuldig eenvoudige manier om met gelijkgestemden in contact te komen en informatie uit te wisselen, foto's video's muziek, tekst, spoken word. Alles wat je maar kan bedenken is terug te vinden op Facebook. En als je helemaal niet meer gevonden wil worden dan verwijder je je eigen profiel.
+
+Uiteindelijk ligt de vraag bij de consument of wij de mens willen gebruiken als experiment en verlengstuk van technologie of als wezen. Net als de discussie nu over Russisch gas.
+
+
+Door Galvin Bartes
+
+
+
+
+
+
+\section{Discussion}
+%Authors should discuss the results and how they can be interpreted in perspective of previous studies and of the working hypotheses. 
+
+Authors should discuss the results and how they can be interpreted in perspective of previous studies and of the working hypotheses. 
+
+ Quam suscipit ut quidem et animi numquam consectetur et. Nihil et commodi ut officia eveniet beatae qui. Placeat accusantium eius consequatur animi nisi sed. Pariatur et dolores tempore velit similique voluptatem similique error.
+
+ Quam suscipit ut quidem et animi numquam consectetur et. Nihil et commodi ut officia eveniet beatae qui. Placeat accusantium eius consequatur animi nisi sed. Pariatur et dolores tempore velit similique voluptatem similique error.
+
+\section{Conclusion}
+%Be sure to include the implications of your work that deals with computing for (Engineering) Educators!
+
+Be sure to include the implications of your work that deals with computing for (Engineering) Educators!
+
+
+\bibliography{sample}
+
+\end{document}

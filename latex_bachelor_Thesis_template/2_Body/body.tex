@@ -1,0 +1,2185 @@
+\graphicspath{{2_Body/Figures/}}
+
+
+
+
+\section{Methodologie}
+\label{chapter:body}
+\thispagestyle{myheadings}
+Voor dit rapport is onderzoek gedaan naar sluizen, sluismodellen, rampen, rampenbestrijdingsprocedures en requiremeentsengineering.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Literatuuronderzoek}
+\begin{frame}{Literature Review}
+	\begin{table}[htbp]
+		\footnotesize
+		
+		\centering
+		\begin{tabular}{|c|c|p{2in}|c|c|}\hline
+			S.no&Author&Title&Findings&Gap in literature\\\hline
+			S.no&Author&wanrooy \textunderscore vab1991a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&wa3300-bezuien2000(1).pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Title&Findings&Gap in literature\\\hline
+			S.no&Author&Title&Findings&Gap in literature\\\hline
+			S.no&Author&rapport-veiligheid-van-op-afstand-bediende-burggen.pd&Findings&Gap in literature\\\hline
+			S.no&Author&pronk.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Olieman1987a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&richtlijnen-vaarwegen-2020.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&richtlijnen-vaarwegen-2017 \textunderscore tcm21-127359(1).pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Olieman1987a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Meijer1980b.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Meijer1980c.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&kst-31200-A-80-b2.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&duurzaamheid \textunderscore bij \textunderscore de \textunderscore ontwikkeling \textunderscore van \textunderscore reevesluis.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&De \textunderscore deltawerken \textunderscore Cultuurhistorie \textunderscore ontwerpgeschiedenis \textunderscore web-A.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&wa3300-Bezuijen2000.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Sander van Alphen Haalbaarheidsstudie naar grote sluisdeuren uitgevoerd in hogesterktebeton.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Dalmeijer1994a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Dalmeijer1994b.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Dalmeijer1994c.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&ceg \textunderscore pruijssers \textunderscore 1982.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Capaciteitsanalyse \textunderscore van \textunderscore de \textunderscore prinses\textunderscore margrietsluis \textunderscore in \textunderscore lemmer \textunderscore - \textunderscore Marc \textunderscore Lamboo.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Boer1979a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&bijlagerapport \textunderscore c \textunderscore - \textunderscore analyse \textunderscore geavanceerd-definitief \textunderscore v1 \textunderscore 0.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Bijl1988a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Bentum1978a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Alphen.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Abbenhuis1975a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&Abbenhuis1974a.pdf&Findings&Gap in literature\\\hline
+			S.no&Author&https://wiki.woudagemaal.nl/w/index.php/Sluizen&Findings&Gap in literature\\\hline
+			S.no&Author&Title&Findings&Gap in literature\\\hline
+			
+		\end{tabular}
+	\end{table}
+	
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+\section{Theoretisch kader}
+
+In het eerste hoofdstuk is duidelijk geworden wat de onderzoeksvraag is, namelijk ‘Hoe kan een geautomatiseerde sluis worden gemodeleerd met oog op ontwikkel- en onderhoudskosten,veiligheid, efficientie en capaciteit’. Door de toenemende complexiteit van systemen is het gebruik van modellen en de toepassing van timebased model checking  op industriele controle systemen een manier van modelleren van het systeem en de requirements zodat er een bijdagre kan worden geleverd aan de acceptatie van  simulatie-/modeltechniek voor de industrie.(‘https://link.springer.com/article/10.1007/s10626-020-00314-0’, 2020). Of dit ook het geval is bij het modellereren van sluizen is nu de vraag.
+De verschillende factoren en achtergronden die  samenhangen met het modelleren van een sluis zullen in dit hoofdstuk toegelicht worden. Bovendien worden er hypotheses gevormd die de basis vormen voor debeantwoording van de onderzoeksvraag. 
+
+
+
+
+\subsection{MODE CONFUSION }
+Mode confusion tredd op als gepbserveerd gedrag van een technisch systeem niet past in het gedragspatroon dat de gebruiker in zijn beeldvorming heeft  en ook niet met voorstellingsvermogen kan bevatten.
+\subsection{Wat is automatiseringsparadox}
+Gemak dient de mens. Als er veel energie wordt gestoken in de ontwikkeling van hulmiddelen die taken van werknemers overemen heeft dat tot resultaat dat veel productieprocessen worden geautomatiseerd. De vraag is dan of vanuit mechnisch wereldpunt de robot niet de rol van de mens overneemt en of de mens nog de kwaliteiten heeft om het werk zelf te doen.
+\cite{bicker21102016automatiseringsparadox }
+\cite{vseautoparadox }
+\cite{blogxot21112016slimapparaat }
+ 
+
+\subsection{Wat is een model}
+ 
+\subsubsection{in vivo model}
+Levende organismendie in de werkelijkheid of in een laboriatrum vergelijkbare eigenschappen bezitten als bestaande fenomenen in de werkeljkheid. Deze objecten zijn vergelijkbaar met werkelijkobjecten en geven vergelijkbare resultaten
+\subsubsection{in vitro model}
+Een model dat dezelfde condities biedt  buiten het onderzoeksobject om, maar is voldoende vergelijkbaar om vergelijkbare processen te simuleren.
+Zowel invivo als in vitro modellen zijn beperkt door de materialen die beschikbaar ijn voor onderzoek en de arbeidsomstandigheden waaronder ze worden gebruikt. Desondanks zijn het geen werkelijke natuurlijke modellen dus vvoor een onderzoek kan boedt het geen volledige uitsluitsel.
+\subsubsection{In silicio model}
+Ee veelzijdig object. Het verwijst naar simulaties die gebruik maken van wiskundige modellen in computer,een zijn dus afhankelijk van silicone chips. In silico model analyseert  wiskundige vergelijkingen om resultaten te geven onder bepaalde omstandigheden. Deze vergelijkingen vertellen iets over de correlatie van verschillende objecten van een wetenschappelijk onderzoek. OM deze modellen te kunnen gebruiken is het noodzakelijk te omschrijven waat de fenomenen in kwestie van onderzoek zijn door middel van getallen. Kwanttitatieve relaties kunnen worden geintegreerd in het model en waar deze relaties complex zijn is een computer noodzakelijk deze op telossen. Vaak worden hierbij verschillende mechanismen gebruikt. Als je bijvoorbeeld de prijsontwikkeling van een marsreep in kaart wilt brengen.
+\subsubsection{in simulacra model}
+
+\subsection{World and machine samenvatting}
+Waarom zijn wij engineers? Omdat we bruikbare apparaten willen laten functioneren in de wereld waarin we leven. Dat doen we door de machine te beschrijven en deze beschrijving van instructies bieden we aan onze computer opdat deze als de attribuut en gedragingen uitleest zoals wij die hebben omschreven. Dit alles op basis van theoretische funderingen en praktisch inzicht. 
+
+Het doel van een machine is om te worden geinstalleerd en te worden gebruikt. De eisen die we stellen zitten in de omgeving en in de wereld en de machine is slechts de oplossing die we bedenken om aan een eis te voldoen. 
+
+De relatie machine-wereld world gecategoriseerd in: 
+
+Het modelleer aspect: waar een machine de wereld simuleert 
+
+Het interface aspect: waar er fysieke interactie is tussen de machine en de wereld 
+
+Het engineering aspect: waar de machine zich gedraagt als een controlemotor gebruikmakend van de gedragingen van de omgeving in de wereld 
+
+Het probleem aspect: waar de omgeving in de wereld en de omvang van het probleem invloed heeft op de machine en de oplossing 
+
+Het modelleer  of simulatie aspect over een deel van de wereld. Er zijn data,object en proces modellen. Het doel van een model is toegang te geven tot informatie over die wereld. Door het opvangen van statische weergaven en gebeurtenissen kunnen wij deze gebruiken van opgeslagen informatie die we kunnen hergebruiken. Een model kan bruikbare informatie bevatten omdat zowel het model als de wereld warin het model zich bevind gemeenschappelijke omschrijvingen hebben die waar zijn voor zwel het model als voor de wereld. Daarbij moet gesteld worden dat de interpretatie van een model verschilt met een interpretatie van de wereld. 
+
+Omdat zowel de wereld als de machine fysieke realiteiten zijn an niet slechts abstracties, zijn de gemeenschappelijke beschrijvingen slechts een deel van de werkelijheid van beide objecten. For elk object zijn er meerdere beschrijvingen. Toch maken niet alle omschrijvingen deel uit van het getoonde reportoire. Zoals niet alle eigenschappen van een boek; meer dan een auteur, pseudoniemen, een onderdeel van een reeks, een gerevisiteerde versie, worden gereflecteerd in een database.  
+
+Het interface aspect. Een machine kan een probleem in de wereld oplossen als de wereld en de machine phenomena kunnen uitwisselen. Maar de participatie is niet symmetrisch: een status kan als phenomena worden uitgewisseld maar slechts een partij kan er invloed op uitoefenen maar beiden kunnen dezelfde status signaleren. 
+
+Het engineering aspect gaat over requirements, specificaties, en programma’s. Requirements hebben betrekking op phenomena in de wereld. Een programma heeft alleen betrekking tot de machinale phenomena. Het doel van programma’s is om eigenschappen en gedragingen te omschrijven van de machine ten behoeve van de gebruiker. Tussen de requirements en de programma’s zitten de specificaties. Omdat programma’s dan wel beschrijvingen zijn van een gewenste machine, maar dat moeten beschrijvingen zijn van de  machines  die de computers kunnen uitvoeren zodanig dat de computer deze beschrijvingen ook zo kan interpreteren. De engineer moet  de eigenschappen van de wereld kennen en begrijpen en deze eigenschappen manipuleren en laten werken met als doel het dienen van het systeem. 
+
+Het probleem aspect. Het onderscheid tussen specificatie en implementatie. Het probleem zit in de relatie van de machine en de wereld. De machine brengt de oplossing maar het probleem zit in de wereld. Een vertoog over een probleem moet dus gaan over de wereld en over de opvatting die de gebruiker heeft in de wereld. Omdat de wereld veelzijdig is moeten we ervan uit gaan dat er verschillende soorten problemen zijn. Een realistisch probleem wordt dus niet opgelost met een simpele hiërarchische structurele aanpak en een homogene decompositie maar met een paralleele structurele oplossing waar beide kanten van het probleem worden opgelost. 
+
+
+
+Ontkenningen 
+
+We hebben als engineers de taak om een machine te bouwen aan de hand van de specificaties opgeleverd door de opdrachtgever. Een engineer heeft niet als taak de fitheid voor een doeleind te onderzoeken, maar wel de haalbaarheid naar een doeleind aan de hand van kennis, tijd, resources, budget en ontwikkelmethodiek. Daaruit komt naar voren dat een engineer zich richt op: elicitation (schetsen van een requirement), description (omschrijving) en analyse van de requirements waaraan het systeem moet voldoen. Vertaalt naar de volgende vragen: Wat is precies de klantwens?  Wat is de precieze omschrijving van het probleem? Voor welke doelen wordt het systeem gebouwd? Welke functies moet het systeem hebben? 
+
+Denial by hacking: obsessief bezig zijn met een systeem omdat het de gebruiker veel macht geeft. Een uitgebreidheid van een systeem zorgt er soms voor dat mensen niet meer geprikkeld zijn na te denken over probleemstellingen, domein beschrijvingen en analyse. 
+
+Denial by a abstraction. Wiskundige benaderingen van werkelijke problemen is  een belangrijke intellectuele strategie om problemen te formuleren. Een software ontwikkelaar moet een probleem kunnen omschrijven in zo min mogelijk woorden, maar de complexiteit ligt in de oplossing. 
+
+Denial by vagueness. De vaagheid van een omschrijving is terug te vinden in: 
+
+Von Neumann’s principe 
+
+Principe van reductionisme 
+
+Shanley principe 
+
+Montaingnes’s principe 
+
+Von Neumand principe 
+
+Voor een vocabulair  moet een grondslag zijn ontwikkeld waarmee gesproken kan worden over de wereld en de machine. Belangrijke phenomenen moeten geindtifieerd worden, door middel van een grondregel  of ‘herkenningsregel’ moet een fenomeen worden herkend, en vervolgens het fenomeen een formele term geven die gebruikt wordt als duiding van een bepaalde omschrijving. Dan moet voor de formele term een symbool gevonden worden. Samen vormen de grondregel en het symbool een designatie. 
+
+Principe van reductionisme 
+
+Simpelweg het openbreken van termen met een weerlegbare definitie totdat alle begrippen die worden gebruikt om iets te duiden  niet meer te herconstrueren zijn in hun definitie. 
+
+Shanley principe 
+
+Er bestaan volgens dit principe geen scherpe verdelingen in de wereld zoals wetenschappers soms denken. Een strenge opvatting over de wereld waarin een individu geclassificeerd kan worden als een onsamenhangend geheel. Maar dat is slechts een opname van een beeld. De werkelijkheid staat soms toe dat een elementair individueel object in verschillende classificaties verschillende getypeerd kan worden in een andere setting of view. 
+
+Montaignes principe 
+
+De incative mood; gaat over wat we beweren waar te zijn. 
+
+De optitative mood; gaat over wat we willen dat waar is 
+\subsection{SIX Variable model}
+Optitatieve statements omschrijven de omgeving zoals we het willen zien vanwege de machine. 
+
+Indicatieve statements omschrijven de omgeving zoals deze is los van de machine. 
+
+Een requirement is een optitatief statement omdat ten doel heeft om de klantwens uit te drukken in een softwareontwikkel project. 
+
+Domein kennis bestaut uit indicatieve uitspraken die vanuit het oogpunt van software ontwikkeling relevant zijn. 
+
+Een specificatie is een optitatief statement met als doel direct implementeerbaar te zijn en ter verondersteuning van het natreven vande requirements. 
+
+Drie verschillende type domeinkennis: domein eigenschappen, domein hypothesen, en verwachtingen. 
+
+Domein eingenschappen  zijn beschrijvende statementsover een omgeving en zijn feiten.Domein hypotheses  zijn ook beschrijvende uitspraken over een omgeving, maar zijn aannames. 
+
+Verwachtingen zijn ook aannames, maar dat zijn voorschrijvende uitspraken die behaald worden door actoren als personen, sensoren en actuators. 
+
+Het verschil tussen essentie en incarnatie van een systeem. Een essentie bevestigd de  mogelijkheden dat een systeem moet hebben om te voldoen aan de eise, ongeacht hoe het systeem is geimlementeerd. De incarnatie bevestigd of omvat de mogelijjkheden die te maken hebben met details omtrent implementatie. Een heuristiek voor het identificeren van de essentie van een systeem is de aanname van perfecte technologie, ofwel de aanname dat de technologie binnen een systeem perfect is. Om essentie te indentificeren nemen we aan dat technologie buiten de machine om perfect is. Zouden we incarnatie overwegen dan wordt de aanname van perfecte machin-externe technologie opgeheven. 
+
+Voor de documentatie van contextuele beslissingen en opties/alternatieven wordt de OVM (Orthogonale variability Model) gebruikt. Oorspronkelik was deze methode bedoeld om de variatiepunten en de variant van een productlijn samen met hun variabele afhankelijkheden( mandatory, optional, alternative)  en beperkende afhankelijkheden(requires en excludes)te omvatten. De variant kan worden gerelateerd aan een ontwikkelartefact zoals een requirement of een diagram als een zogenoemde artefact dependency. Een artefact is dan gedefinieerd als variabele. Voor de documentatie van de keuzen die we maken is een selectie model gemaakt. We gebruiken het OVM voor de documentatie van contextuele beslissingen die moeten worden genomen, opties en alternatieven die selecteerbaar zijn, en de afhankelijkheden tussen hen. met behulp van de artefact dependency relateren we de alternatieven aan variabele elementen van de AND/OR graaf. Voor documentatie van de keuzes gebruiken we ook een selectiemodel. De kracht van het OVM model en de voornaamste reden deze methode te gebruiken is dat deze is in staat is om een variant te relateren aan een geheel model, een model element, of een selectie van een model. 
+
+AND/OR graaf wordt gebruikt voor de documentatie van refinement/decompositie of requirements. De AND/OR graaf is een directe, asyclische graaf met nodes knopen die requirements voorstellen en lijnen die AND-decomposities voorstellen en OR-decompositiestussen de requirements. Een decompositie van een requirement in een set van subrequirements R1,….Rn is een OR-decompositie iff die dusdanig aan een subrequirement voldoet en daarmee voldoet aan requirement R. Wat moet worden gedocumenteerd met betrekkig tot de AND/OR graaf is de abeargumentering waarom elkeAND/OR-decomopositie  voldoende is. 
+\subsubsection{Conceptueel model}
+
+
+
+System requirement:
+uitspraak over wereld fenomenen (gedeeld of niet) of doelen
+die bereikt moeten worden.
+met enige regelmaat informeel, niet precies geformuleerd.
+Software requirement/specicatie:
+uitspraak over gedeelde fenomenen of doelen die de machine
+moet bereiken middels de onderdelen waar die machine uit
+bestaat of middels de fenomenen waar de machine controle
+over heeft.
+doorgaans preciezer, meetbaar, exact geformuleerd.
+
+
+Systemen gaan een zekere interactie aan met hun omgeving:
+Sensoren: meten fenomenen uit de omgeving (temperatuur,
+druk, licht, geluid, etc.)
+actuatoren: veranderen iets in de omgeving (mechanische,
+electrisch, pneumatisch, etc.)
+Software:
+Kan niet direct communiceren met de buitenwereld.
+Snapt derhalve niets van de buitenwereld.
+Kan alleen maar bestaan in en communiceren met het
+systeem.
+
+
+\subsection{Requirementsengineering}
+
+
+scannen64-75
+
+challenges in requirements engineering
+why goals-oriented for requirements engineering
+design and build of collaborative information agents
+treating nfiras first gradefor its testability
+software requirements negotiation a theory ui based spiral approach
+the worlds a stage: a survey on requirementsengineering using a real life case study
+from inconsistencyhandling to non-conanical requirements management: a logical perspective
+managing inconsistent specification: reasoning, analysis, action
+representingand using nonfunctional requirements: a process-oriented approach
+Four dark corners of requirements engineering
+classification of research methods in requirements engineering
+agent-basedtactocs for goal-oriented requirements elaboration
+
+
+challenges in requirements engineering
+deceding exactly what to buildand documenting the results
+misidentoficationof requirements as a problem
+Biggest software problem:
+-incomplete requirement and specification
+-cganging requirements and specification
+-large complex sofwtare systems
+Analyzing change inbussiness/operational environment and managing fluctuaing and conflicting equirements.
+cycle:
+need identification and problem analysis
+requirement determination
+requirement specification
+requirement fulfilllment
+More problems:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+why goals-oriented for requirements engineering
+
+scann 0087
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+design and build ofcollaborative information agents
+A laguage to specify functional requirements and scenatio's for sysems of informations agents
+A language to specify design descriptions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+treating nfiras first gradefor its testability
+
+scan 0089
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+software requirements negotiation a theory ui based spiral approach
+problem of detailed concers ofusers, non-users and interfaces n evolutionaru development
+ceoncept of operational
+1) win-conditions-capturing the desired objective of the individual
+2) conflict/risk/uncertainty specs capturing the conflicts between win conditions and their associated rest and uncertainties
+3) points of agreement capturing the agreed upon set of condictions which satisfy stakeholders  win conditions and also define the system objectives
+WinWin0 concept of operation in initial fase
+WinWin1
+-) decommitment frm previously relevant POA
+-) exploring options, such as reusing components reducing negationed software functionaliry on deferring lower priority capabilities
+-) understanding notifications of options, choices and filtering options that are noncompatible with stakeholder critical conditions
+-) handling the ripple effects of changes introduced to resolve the conflict
+-) bounding and focussing the domain of discourse with respect to negotiated systems
+3.2
+confrontational win-conditions-capturing
+incomplete set of options
+weak association between new CRU and new conflict resolving win-conditions-capturing
+uncontrolled search for alternatives
+4.3 potential conflicts
+1) interactions due to node mismatch
+2) complexity of interactions
+4.4 renegotioation support
+tradeoff by COCOMO-tool
+node-based re-negotianions support for cost/schedule/functionality, performance tradeoff analysis
+
+use cases decribe the possible system interactions that eexternal agenets may have with a system
+
+
+identification of goals to be acheved by the envisioned system. The operational character of such goals are services and constraints assignment of responsibilities of resulting requirements to agenets as humans, devices and software
+1) elicitation
+2) goal modeling
+3) goal generalization
+4) mapping goals into sotware objects, events and operations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+the worlds a stage: a survey on requirementsengineering using a real life case study
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+viuwepoints, social aspects,evolution, non-functional requirements, conflict resolution, traceability
+
+Goal of this paper is requirement  engineering on London aulance service
+Method of opinions: crew, staff, management, computational, transport, services
+Evolutioon: changes, specification and technology trade
+Environment: company policies, regulation, impact solution on organizational
+Non-functional aspect: communicatio problem, malfunctions, less critical isues: cost, tradeoff beween performance \& user interfaces
+vieuwpoint: is a subset of all system requirements expressible in a given requirements notation regardless of the stakeholders involved
+
+log change
+basic model vieuw
+hypertext vieuw
+data transmission problems
+continued difficulties
+installation problems
+problems caused by mistake
+tracebility requirements[selecting reliable information]
+PRE requirement specification traceability, repository baed approach
+1) compromise specification
+2) representatives
+3) agreement dimensions
+Domain: part of the worl in which the computer system effects will be felt, inclusing its peoples, organizational structure, related legislation, physical location and met only the compyter systems
+
+Functional vs quality requiements
+How to determine quality characteristiec in specific situation
+What different stakeholders are involved in different ways in particular bussiness processes
+strategies: testing, comparing, analysis, trial and error
+uncertainties: bussiness processes, information technology used, knowledge of various types of usrs, knowledge of various types of developers invoved
+
+Communication between stakeholders p[geographic and temporal distance]
+goals describe the macro-level o requremens
+scenarios are used to describe the medium level of requirements vieuwpoints describe the microlelvel of requirements
+functional concerns:  primary bussiness goal
+non-functional concern: security, performance, compatibility refers to gravity of functional concern
+cognition mappings used for:
+simulation
+organisational strategies modeling
+support for strategic problems
+formulation and decisio analysis
+modeling of social psychologycal processes
+knowledge based construction
+manageral problem construction
+failure nodes effect analysis
+modeling virtual worlds and analysis of their behaviour
+requirements analysis
+system requirement  specification
+
+
+from inconsistencyhandling to non-conanical requirements management: a logical perspective
+
+1) identifying non-canonicalrequirements
+2) measuring them
+3) generate caandidate proposals for handling them
+4) choosing acccptable probosals
+5) revising them acccording to the proposals
+model phases using: paraconsistent reasoning, non-monotnic reasoning
+
+Requirement U scenarion -> Scenarion E
+
+
+
+managing inconsistent specification: reasoning, analysis, action
+classic logic
+quasi-classical logic >> inconsistency implies action
+
+specification information >> natural language deduction rules
+method information >> reduction ad absurdum
+domain interpretation
+
+
+background: users, customers, domain experts, designers,, manufacturers
+graphical  textual specification
+
+Basic constraint, legal constraint, cooperation constraint
+1) scenatio  definition
+2) scenario analysis
+3) scenario consolidation
+
+How can a system be 	 further designed	so that ne non-functional requirements mentioned will met?
+How does that design relate to further refinements of the functionaland structural aspectsof the system
+
+block[objects, classes, methods, messages, inheritance]
+[goals,agents, alternative, events, actions,existence modalities,agent responsibilities]
+primitice terms
+structuring mechanism
+primitive operations
+genral intergrity rules
+
+Softgoals are satisfied when there is a suffucienr positive and little negative eludence for this claim, and that they are usatisfiable when there issufficient negative evidence and little positive support for their satisfiability.
+
+
+
+service computing
+1)role
+2) goal
+3) process
+4)service
+How to constrainand extendthe semantic interoperability n the process of self-organizationand action emergence for the distributing service resource?
+How to categorise the  structure of nteroperability?
+Howto satisfy stakeholders requirements?
+
+
+Connecting ontologies:
+1) semantic distance
+2) semantic interoperability masurement
+3) semantic interoperability capability
+
+1) event
+2) entity
+3) attribute
+4) value
+5)quantity
+6) value
+7) secondary feature
+8)syntax
+9) eventrole
+10)eventfeatures
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+representingand using nonfunctional requirements: a process-oriented approach
+product oriented
+process oriented
+
+
+Acquisition Performance
+user concern
+-How well does it function
+-hwo well does it utilize a source >> Efficiency
+-How secure is it >> integrity
+-What confidence can be placedand what it does >>Reliability
+-How well does it perform underadverse conditions >> sustainability
+-How easy is it to use it >> usability
+quality attribute
+
+
+Acquisition: Design
+user concern
+How valid is the design
+-how well does it conform to requirements
+-how easy is it to repair
+-ow easy is it to verify its performance
+quality attribute
+
+
+Acquisition: Adaption
+user concern
+-how adaptable is it
+- how easy is it to exportand uprade its capability >> expendability
+- how easy is it to change >>flexibility
+-how easy is it to infer with other system >> portability
+- how easy is it to transport >> interoperability
+how easy is it to convert for use with other application>> reaseability
+quality attribute
+
+
+
+
+\section{Onderzoeksresultaten naar rampen}
+
+\subsection{Inleiding}
+De bestudering van rampen aan de hand van het vier-variabelen model biedt maakt het analyseren mogelijk van rampsituaties. Van een aantal rampen is een beschrijving gegeven met datum, plaats en oorzaak. De analyse van de 4-variabelen modellen zal gebruikt worden voor de requirementsdefinitie, ontwerp en ontwikkeling van het sluismodel. 
+\subsection{Systeemrampen}
+\subsubsection{bijlmerramp}
+
+	\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Motor 3 (de binnenste motor aan de rechtervleugel van het vliegtuig) brak af, beschadigde de vleugelkleppen en botste tegen motor 4 die vervolgens ook afbrak.
+De ernst van de situatie werd op Schiphol niet goed ingezien. Dit kwam onder meer doordat lost in de luchtvaart de gebruikelijke term is om het verlies van motorvermogen te melden. Op Schiphol werd er dan ook van uitgegaan dat er twee motoren waren uitgevallen. Dat ze letterlijk verloren waren wist men niet. Gezien het grote aantal handelingen dat de bemanning in een paar minuten moest uitvoeren en de keuzes die de piloot maakte, veronderstelde de parlementaire enquêtecommissie die de ramp later zou onderzoeken dat ook de bemanning waarschijnlijk niet heeft geweten dat beide motoren van de rechtervleugel waren afgebroken. De buitenste motor van een 747 is vanuit de cockpit slechts met moeite zichtbaar en de binnenste motor helemaal niet.
+
+Op de avond van de 4e oktober 1992 was landingsbaan 06 (de Kaagbaan) in gebruik. De piloot verzocht de luchtverkeersleiding op Schiphol echter een noodlanding te mogen maken op de Buitenveldertbaan (baan 27). Waarom hij juist deze baan koos, is nooit duidelijk geworden. Een keuze voor deze baan lag niet voor de hand; omdat de wind uit het noordoosten kwam, zou het toestel met flinke staartwind moeten landen. Langs de landingsbaan waren enkele grote brandweerwagens van Schiphol geplaatst. Deze zogeheten crashtenders moesten een brand tijdens de landing meteen blussen. Na de crash werd één zwarte doos teruggevonden. De bijbehorende band was in vier stukken gebroken, waardoor de laatste 2 minuten en 45 seconden ervan niet meer te gebruiken waren. De doos werd voor onderzoek naar Washington gestuurd en leverde uiteindelijk onderstaande informatie op.
+Om goed uit te komen voor de landingsbaan vloog het beschadigde toestel eerst nog een rondje boven Amsterdam. Tijdens dit rondje gaf de gezagvoerder de copiloot opdracht de vleugelkleppen (flaps) uit te schuiven. Links schoven de kleppen uit, maar doordat de afgebroken motor 3 de rechtervleugel had beschadigd schoven de kleppen op die vleugel niet uit. Als gevolg hiervan kreeg het toestel links meer draagvermogen dan rechts. De piloot meldde aan de verkeersleiding dat er ook problemen met de flaps waren.
+Aanvankelijk ging het aanvliegen van de Buitenveldertbaan goed. Op het moment dat het vliegtuig daalde tot onder de 1500 voet en snelheid minderde, raakte het echter compleet onbestuurbaar en maakte het een ongecontroleerde, scherpe bocht naar rechts. Over de radio was te horen dat de gezagvoerder zijn copiloot in het Hebreeuws opdracht gaf om alle kleppen in te trekken en het landingsgestel uit te klappen. Vervolgens meldde de copiloot in het Engels aan de luchtverkeersleider dat het toestel zou gaan neerstorten. Uit later onderzoek bleek dat het vliegtuig eerder enkel recht bleef vanwege de hoge snelheid (280 knopen, zijnde 519 km/u). Doordat de rechtervleugel beschadigd was, was het moeilijker om het vliegtuig recht te houden. Alleen de hoge snelheid zorgde ervoor dat er nog voldoende draagvermogen was. Toen bij het inzetten van de landing de snelheid verlaagd werd, werd het draagvermogen van de rechtervleugel echter dusdanig gering dat het toestel niet meer onder controle te houden was en een duikvlucht naar rechts maakte.
+
+\cite{aviationsafety04101992airplaneCrashBijlmer}
+\subsubsection{vuurwerkramp in enschede }
+ 
+\cite{boogers092002RampenRegelsRichtlijnen}
+ 
+Wat waren de afspraken omtrent vuurwerkopslag?
+Waarom werden de voorschriften neit nageleefd?
+\subsubsection{ramp turkisch airlines vlucht 1951}
+
+	\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Inadequaat handelen van de piloten ondanks een defecte hoogtemeter en onvolledige instructies van de luchtverkeersleiding/
+ 
+\cite{catsr25022009Boeing737AmsterdamCrash}
+ 
+\cite{zuilen23022019Tijdlijnpoldercrash}
+\cite{wikinews04032009techfoutailines1951}
+\cite{luchtvaartnieuws21012020boeing737conclusies}
+\cite{adformatie280220209communicatiegebreken}
+\cite{spinnael25022009onderzoekpolderbaancrash}
+\cite{crashTurkishAirlines}
+\cite{flightradar24}
+\cite{flightstatstracker}
+ 
+
+\subsubsection{tjernobyl}
+
+	\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Een ramp bij een kernreacor in de sovjetunie. Door een bedieningsfout in een testprocedure werd het vermogen van de koelinstallaties negatief beinvloed. Door een ontwerpfout in de noodstopprocedure kon in het systeem niet snel genoeg schakelen om remmende invloed uit te oefenen op het toenemende vermogen van de reactorkernen. Met brand en eksplosie tot gevolg.
+ 
+\cite{INSAVienna1992Chernobyl}
+Tsjernobyl
+
+ 
+
+\cite{wikiTjernobyl}
+
+\cite{rivmTjernobyl}
+
+\cite{andereTijdenTjernobyl}
+wat er is gebeurd en hoe het leven verdergaat
+
+\cite{kingskey19042022tjernobyl}
+pernsioenfondsen en de tjernobyl ramp
+In 2021 worden mensen nog steeds blootgesteld blijkt ut een gezamelijk onderzoek van greenpeace en oekraiense wetenschappers
+stijging van de nucliaire activiteit gemeten in tjernobyl
+Het toerisme  aspect
+De chronologie
+
+\cite{erikbork26042023reactor4}
+
+\cite{nosTjernobyl30jaarlater}
+Dieren in de omgeving van tjernobyl
+De chronologie
+Echtreme droogte zorgd voor gevaar
+
+\cite{knmi04052021tjernobylbosbrand}
+
+\cite{dodonovaKVIRisicoTjernobyl}
+Joernalistiek, entertainment en de waarheid
+
+\cite{dumarey04062020verhaalTjernobylWaarheid}
+Een onderzoek
+Huidige gevolgen van de explosie van toen
+
+\cite{sparkesNewScientistTjernoby}
+De ramp, hoe de mensen ermee omgingen en hoe er nu geleef wordt
+evaluatieonderzoek en amatregeen
+
+\cite{kernenergiened26041986chronologiemaatregelen}
+
+\cite{mapszoneReactor}
+Invloed van de mens op de omgeving
+
+\cite{}
+Heroplevende splijtingsreacties
+docu van schooltv
+Radioactiviteit bereikt nederland
+documentaire en maatregelen
+
+\cite{kernhistoriek15062021tjernobyl}
+Het verhaal van een overledende
+Toerisme
+toerisme
+toerisme
+Dieren in de omgevong
+Toevluchtsoord voor vluchtelingen van de oorlog met russische seperatisten
+Ouderen die terugkeerden naar hun woonplaats na de gedwongen verhuizing door de autoriteiten
+De straling neemt weer toe
+Lessen geleerd van tjernobyl
+
+\cite{nucleairforumFeitenTjernobyl}
+Toerisme
+Bosbrand in tjernobyl
+invloed van de ramp op belgie
+
+\cite{kernongevalTjernobylFancGov}
+Boek recensie
+Fotos en berekeningen
+ontmanteling en toerisme
+Belangrijke lessen en overeenkomsten
+De journalistieke waarheid van de koude oorlog
+De lessen van
+
+\cite{arendswolters062019lessenTjernobyl}
+Een toristenattractie maken van tjernobyl
+De radioactieve straling toen en nu
+de 30km zone door de ogen van toeristen
+artikel
+stedentrip
+rapport
+
+\cite{damveld08052020tjernobyl}
+slapend monster
+docu
+krantenartikel
+hbo serie
+docuserie
+de  nieuwe sacrofaag
+hulp aan slachtoffers
+slapende reactor
+krantenartikel
+
+
+\cite{deVriestjernobylHolland}
+hbo serie
+internationale gevolgen
+toerisme
+nieuwe koepel
+media communicatie
+docu
+dieren
+
+\cite{}
+koepel
+koepel
+
+\cite{ing3enieur29042015antistralingskoepel}
+toerisme
+toeristisch reiperspectief
+toerisme
+niwe koepel
+overschakelen naar duurzaamheid
+docu
+tjernobyl wekt nu duurazme energie
+toerisme
+overeenkomsten tjernobyl en fukushima
+drank en sla uit tjernobyl
+geen efficiente opslag is mogelijk
+
+wetenschappelijke artikelen
+
+zaterdag 26 april 1986. Er vind routineonderhoud plaats bij reactor 4, De controle wordt uitegevoerd door de dagploeg. Vnwege een test wordt jhet koelsysteem uitgeschakeld. Door omstandigheden wordt de test uitgesteld en wordt de verantwoordelijkheid overgedragen aan de avondploeg.
+De operator maakt bedieningsfouten waardoot de reactor bijna stil komt te liggen. En vervolgens probeert hij de reactor weer op gang te brengen. ondanks de snelle temperatuurstijging wordt het experiment doorgezet. Dan wordt ook het veiligheidssysteem stilgelgd. Terwijl het koelwater langzaam opwarmt, sluit hij de klep waarlangs de stoom naar de generator stroomt.
+
+De temperatuur van de reactorstaven neemt daarna snel toe. Terwijl er een oncontroleerbare kettingreactie op gang komt, laat het personeel in paniek de regelstaven zakken om de warmteontwikkeling af te remmen. Het is dan echter al te laat. Door een ontwerpfout loopt het vermogen razendsnel op tot 33.000 megawatt, ruim tien keer hoger dan normaal.
+
+In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.}
+
+In de ravage vat het gloeiend hete grafiet in de reactor spontaan vlam. De uitslaande brand en een tweede explosie voeren een radioactieve rookwolk tot 8 kilometer hoogte. 
+In een poging het vuur in reactor 4 te doven, storten helikopters vanuit de lucht zand, lood en boorzuur in de reactorkern. Het mag echter niet baten.
+
+Intussen is de nucleaire brandstof zo heet geworden dat die door de bodem van het reactorvat dreigt te smelten. Als dat gebeurt, kan het bluswater onder het vat in één klap verdampen en dreigt een derde explosie die een groot deel van Europa onbewoonbaar zal maken. Om dit te voorkomen moet het water hoe dan ook worden weggepompt.
+
+Drie brandweermannen wagen zich daarvoor in de ruimte onder de reactor, blootgesteld aan 300 sievert per uur, 300.000 keer de dosis die een Nederlander jaarlijks maximaal mag oplopen. Ze slagen daarin, maar twee van hen overlijden enkele dagen later aan acute stralingsziekte.
+
+Hoewel geigertellers de dag na de ramp onrustbarende waarden aangeven, slaat het plaatselijk bestuur geen alarm. De bevolking is het niet gewend om vragen te stellen.
+
+De volgende dag blijkt er wel degelijk iets ernstigs aan de hand te zijn. In een lange rij bussen worden de 135.000 inwoners op 27 april uit het besmette gebied geëvacueerd, om er nooit meer terug te keren.
+
+De ramp is dan nog steeds geen wereldnieuws. De Sovjetautoriteiten blijken er niet eens van op de hoogte te zijn – president Gorbatsjov klaagt later dat hij via Zweden aan zijn informatie moest komen.
+
+
+
+\cite{verschuur14012013tjernobylreports}
+
+\cite{paperlessarchivesTjernobyl}
+
+\cite{vargos082000tjernobylconcerns}
+
+\cite{mauroNuclearRiskSociety}
+
+\cite{vienna06092005LookingBack}
+
+\subsubsection{therac-25}
+
+	\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Softwarefout uit zich als hardwarefout de klachtafhandeling geen onderzoek geen second opinion is prioriteit wel 
+gechecked na onderzoek bellen en geen prioriteit aanwezig te zijn alleen importeurs en fabriken mogen fouten 
+in frabrieksinstellingen rapporteren 
+Therac25 Systeem ligt plat veel voorkomende eror stdaardafhandeling om de error te verwerpen resultaat: 
+de patient kreeg overdosis patient overleden onderzoek opgestart, stuatie niet reproduceerbar foutmarkering: 
+gezien als uitzonderlijk, software aanpassing van groote magnitude 5; de oorzaak was waarschijlijk mechanisch 
+maar neit vastgesteld; conceptueel odel niet aangepast probleemclassicificatie door autorititen het probleem 
+en de impact daarvan anar beneden bijgesteld AEFL doe gedeeltelijke aanpassing om hardware na berisping 
+Canadese autoriteit 
+Derde patient overleden door eythema AECL wijst alle doodsoorzaken af AECL beweert dat geen vergeli- 
+jkbare voorvalle bij andere machines of patienten zijn voorgekomen geen vervolgonderzoek vanwege garanties 
+bedrijf gaat uit van geen mogelijke functionele fout 
+vierde patient overleden aan overdodis ontstaan door bug in software onjuiste aanduiding bij de foutmelding 
+verkeerde reactie/invoer ddoor operator communicatie tussen patient en operator werd onvoldoende gemon- 
+itorred ( apparatuur niet aangesloten, en audio monitor kapot) engineer van AECL stelt geen fouten vast 
+Engineer AECl kan fout niet reproduceren Geen communicate tussen bedrijf en uitgezonden technisci over 
+vergelijkbare probleemgevallen 
+vijfde geval malfunction 54 leidt tot overdosis en de dood fout gereproduceerd door operator bedrijf fout 
+was daa entryspeed herpublicatie van de ongevallen en de eerdere ongevallen in de meia apparaat wel nog in 
+gebruik genomen niet handig, waarschuwingsberichten en aanwijzingen voor een bugfix naar de gebruikers door 
+druk van fda is bedrijf op zoek gegaan naar permanente oplossing 
+zesde geval software fout door softwarefout otntstaat lightstruct .. op de patient na onderzoek door AECL 
+blijkt niet alleen hardware de oorzak gebruikers direct geinformeerd oplossing gevonden, media ingeschakeld om 
+
+transparantie af te dwingen door de gebruikersgroep en de FDA AECL gedwongen functionaliteit aan te passen 
+Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoudbaarheid daarvan 
+
+
+Therac
+
+
+sheets
+
+\cite{rogaway2004therac25}
+
+
+
+~\cite{wikiTherac25}
+
+
+reproduceren van de error. IN dit stuk wordt uitgelgd hoe het product werkt en waarom bepaalde beslssingen zijn genomen in de ontwerp/productiefase
+
+\cite{lynch2017theracRaceConditions}
+kort artikel met daarin een opsomming van alle fouten in het systeem en een korte uitleg
+
+\cite{lim1998theracdisaster}
+uitgebreid artikel over hoe de fout werd gereproduceerd en de resultaten daaruit voortkwamen. Alsnog werden er na de reproductie fase nog meer fouten gevonden.
+
+\cite{fabio26102015therac25}
+artikel
+
+\cite{ethicsunwrappedTherac25}
+onderzoeksartikel waarin de bug wordt uitgelgd: de racecondities, de bytepositie en het testen worden berkitiseerd envenals andere onderdelen van het softwareproces
+
+
+onrealistisch testplan. In dit artikel egt de auteur het belang nog eens uit van goede requirements en implementatie, niet de software is waar het probleem ligt
+
+
+geschiedenis
+
+\cite{casesHistoryTherac25}
+artikel
+
+\cite{caballero2019Therac25}
+computer error. De ongeval en de malfunction nog een keer uitgelegd
+
+\cite{rose1994theracFatalDose}
+rapport
+
+\cite{levesonMITTherac25}
+
+\cite{grant1978theracevaluation}
+onderzoeksartkel
+
+\cite{turnerTheracAccidentsInvestigations}
+
+\cite{turner1993TheracAccidentsInvestigations}
+uitgebreid artikel gaat hier ook wat meer over de hardware
+
+\cite{wang2017industrialdesignengineering}
+artikel waarin in 3 delen de problemaiekwordt blootgesteld
+
+\cite{levesonturner1993theracpart2}
+case study sheets
+artikel waarin vooral de fabriikant ervan langs krijgt
+
+\cite{porelloTheraccFailure}
+lessons learned. Vooral de begrippen betrouwbaarheid, welgevalligheid, veilgheid en gebruiksvriendelijkheid
+
+\cite{theracIncidents}
+root-cause analysis
+case study
+
+\cite{huffbrown2004casestudyethicatherac}
+case study
+
+\cite{sebowikimedicalradiation}
+opzetten van systematische acceptaatie test met therac als voorbeeld
+
+\cite{hsia1995testtherac25}
+artikel waarin een diagnose plaatvindt voor het bedrijf en de ingenieur/ontwerper
+
+\cite{magsilvaTheracTesting}
+rapport
+oorzaken aangegeven in artikel
+
+\cite{chemeuropetherac25}
+het onderzoek en enkele ontwerptekeningen en oplossingen
+
+\cite{statsenko10102016Therackillerbug}
+
+\cite{therac25casestudy}
+
+\cite{thomas1994theracinLotos}
+
+\cite{twitter2019programmerbehindtherac}
+wiki
+
+\cite{wikibookstherac}
+analyse
+
+\cite{bozdagTherac25}
+samenvatting
+
+
+\cite{levesonTurnerTheracAbstract}
+
+rapport over de fouten die de verschillende partijen hebben gemaakt( overheid, ingenieurs, bedrijf, operators) en de verbeterpunten
+
+
+onderzoeksrapport
+
+
+slides online over het technisch mankement
+Wat is er gebeurd, nou het volgende:
+Normal radiation treatments: 6,000 rads over a 3 week period, under certain conditions Therac-25 was delivering 60,000 rads during one session.
+En wat ging er mis?
+Paradigm Shift
+
+Therac-25 replaced expensive hardware safety interlocks with software controls
+Real-time software
+Design
+Race condition caused focusing element to be incorrectly set
+No indication of actual hardware settings
+Error messages appeared the same regardless of how important
+Error messages were difficult to understand
+All errors messages could be manually overridden
+
+
+
+oorzaak-gevolg diagram
+
+
+veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix waarmee het programma wordt uitgevoerd en de software-analyse door een consultat
+
+\cite{stackexchange2021therac25code}
+
+
+\subsubsection{tesla crash report}
+
+	\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Door een softwarefout zijn er situaties ontstaan waarin het systeem informatie een onvoldoende informatie positie had om de juiste beslissingen te maken. Of dat de informatieverwerking niet juist was.
+
+ 
+tesla autopilot crashes
+
+
+veiigheidsrisico
+
+\cite{evan01042019teslaautopilotIntersection}
+
+\cite{testVehicleSafetyReport}
+veiligheidsrapport mbt autopilot
+
+\cite{lambert31062020q2safetyreport}
+consumentenrapport
+bluetooth veiligheidsvraagstuk
+
+\cite{wiredBloutoothHackTesla}
+veiigheidsvraagstuk vanwege touch screen
+
+\cite{preston14012021NHTSATeslaRecall}
+veiligheidsvraagstuk
+
+\cite{cio25112020belgianTeslaHack}
+veiligheidsvraagstuk
+rapport over autopilot
+
+\cite{templeton06092019HTSBReportTesla}
+de invloed van de bestuurder bij tesla ongeluk
+
+veiligheidsvraagstuk
+
+\cite{darkReading17112020TeslaBackup}
+veiligheidsvraagstuk
+
+\cite{leyden23032020TeslaInterfaceHack}
+veiigheidsvraagstuk
+
+\cite{huddlestonjr03042019ChineseTeslaHack}
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+
+\cite{heilweil26022020teslaAutopilot}
+rapport over ongeluk
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+
+\cite{blanco04102019NHTSATesla}
+veiligheidsvraagstuk
+ransomware aanval op tesla
+tesla batterij is veiligheidsvraagstuk geworden
+
+\cite{mitchell01072020teslabatterycooling}
+ongeluk
+
+\cite{bbc26022020AutopilotCrash}
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+
+\cite{stumpff04052020TeslaPersonalData}
+dodelijk ongeluk
+
+\cite{levin08062018teslaautopilotsafety}
+veiligheidsvraagstuk: ransomware
+veiligheidsvraagstuk: medewerker in de fout
+
+\cite{cbrook06082021TeslaInsideDataThreft}
+
+\cite{shilling25022021Tesla}
+veiligheidsvraagstuk: hackers je systeem laten testen
+verdedigen tegenover ransomware
+veiligheidsrisico
+prijzen omlaag
+autopilot
+
+\cite{randall05112019modelSurvey}
+malware door een medewerker
+
+\cite{}
+dodelijk ongeluk
+
+\cite{}
+
+\cite{fottrell03092018TeslaSecurityChecks}
+waarom een tesla stelen bijna onmogelijk is
+
+
+
+veiligheidsonderzoek
+
+
+
+softwarefout maakt diestal mogelijk
+
+
+\cite{kirk26112020modelX}
+fouten ontdekt in onderzoek
+
+\cite{}
+
+\cite{bbc24022021hyundaiBatteryFireFix}
+
+
+
+
+
+
+
+tesla cloud gehacked
+ 
+
+\cite{hawkins22102022}
+
+ 
+
+\cite{gritti24062020tesladataengine}
+ 
+
+\cite{bouchard07052019teslaDeepLearning}
+
+ 
+\cite{Srikanth2019teslabigdata}
+
+\cite{rangaiah25022020teslaAI}
+
+\cite{marr08012018taslabigdataAI}
+
+\cite{bdickson29072020teslalevelfive}
+
+\cite{dcruz17062022tesladesignthink}
+ 
+
+
+
+
+
+\cite{mcfarland22042021selfdrivingrisks}
+
+\cite{hawkins18032021fedgovinvest}
+
+\cite{berry21042021teslacrashtexas}
+
+\cite{hull23072021regulatorsaftercrash}
+
+\cite{wikiTeslaAutopilot}
+
+\cite{nhtsaAutomatedVehiclesSafety}
+
+\cite{dowling23042021autopilottricking}
+
+\cite{wilson19042021teslacrashregulators}
+
+\cite{seamans22062021aikillerap}
+
+\cite{mitchell24022020AIDataTesla}
+
+\cite{denneyjdsupraFeds}
+
+\cite{siddiqui22102020TeslaCriticism}
+
+\cite{ackerman01072016TeslaImperfect}
+
+\cite{greene04092019misuseautopilot}
+
+\cite{michralli26112019ubserautocarcrsash}
+
+\cite{pitmann21072021wrongfullautodeath}
+
+\cite{stackexchange102019teslacarmistake}
+
+\cite{tasking07062017TeslaAugmentedSafety}
+
+\cite{griemannExaminSelfDriving}
+
+\cite{Harkey30052019SafeSystemVehicle}
+ 
+
+tesla crash report
+
+
+\cite{shepardson18062021TeslaDeaths}
+
+\cite{hawkins30062021nhtsarequiresreporting}
+
+\cite{hawkins10052021autopilotnotavailable}
+
+\cite{szymkowski29062021nhtsaTeslaCrashReports}
+
+\cite{abc1112052021AutopilotNotinTeslaCrash}
+
+\cite{ankel18062021regulatorsinvestigateAutopilot}
+
+\cite{sommerfield12072021NHTSAmandateresult}
+
+ 
+\cite{saferoardsCrashesAutonomousvehicles}
+
+ 
+
+\cite{stephardson18032021revieuwingtesla}
+
+\cite{krishner30062021NHTSAreport}
+
+\cite{gitlin11052021autopilot}
+
+ 
+
+\cite{mitchell19012017investigationstop}
+
+\cite{gordon10052021teslaprelimreport}
+
+\cite{shaper07062018}
+
+\cite{cochran18042021nodriverTeslaCrash}
+
+\cite{habib28062016NHTSATeslaReport}
+
+\cite{firstpress11052021fatalnonautopilot}
+
+\cite{raynal20042021probeTeslaCrash}
+
+\cite{tiungteslasoftwarecrash}
+
+\cite{globaltimes08052021guangdongcrash}
+
+\cite{anderson30042021secondteslacrash}
+
+\cite{oremus21062017fatalTeslaCrash}
+
+\cite{guardian15052021teslacrashHandsOnWheel}
+
+\cite{Puzzanghera13092017TeslaSharesBlame}
+
+\cite{jaillet02022017teslaAutopilotLimitations}
+
+\cite{reuters03102019teslaAutoParkingFail}
+
+\cite{dowling23042021}
+
+\cite{young05112021fatalTeslaReport}
+
+\cite{kierstein18032021teslaAutopilotCrashStationary}
+
+\cite{janssen20062017teslacrashdetailflorida}
+
+ 
+
+
+
+
+
+tesla crash publications overview
+
+
+
+
+
+ 
+
+\subsubsection{stint ongeluk}
+
+	\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Vier kinderen, een bestuurder kwamen om en een vijfde persoon , een kind raakte zwaargewond. Uit odnerzoek van bleek :
+Foute torsieveer voor de gashendel werd geleverd
+Geen van de drie onderzochte voertuigen haalden de wettelijk vereiste remvertraging
+De automatische parkeerrem kan leiden tot gevaarlijke situaties wanneer deze ongewenst geactiveerd wordt tijdens het rijden. 
+Het losraken van de nuldraad naar de gashendel leidt volgens TNO tot ongewenst versnellen van het voertuig en een oncontroleerbare situatie voor de bestuurder.
+Voor alle drie onderzochte voertuigen geldt dat het ontbreken van een zitplaats leidt tot veiligheidsrisico’s voor remmen en sturen door de grotere kans dat de bestuurder van het voertuig valt. Als de bestuurder van een Stint valt, leidt dit in alle rijsituaties tot een onbeheersbare situatie
+
+
+https://repository.tno.nl/islandora/object/uuid%3Acdef48df-da49-46b6-8678-5c62a88a0090 
+
+
+\subsubsection{slmramp}
+
+\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Toen de Anthony Nesty Zanderij naderde, was het daar, anders dan het weerbericht had voorspeld, mistig. Het zicht was evenwel niet zo slecht dat er niet op zicht kon worden geland. Gezagvoerder Will Rogers besloot echter via het Instrument Landing System (ILS) te landen, hoewel dit niet betrouwbaar was en hij voor zo'n landing ook geen toestemming had. De gezagvoerder brak drie landingspogingen af. Bij de vierde poging negeerde de bemanning de automatische waarschuwing (GPWS) dat het toestel te laag vloog. Het toestel raakte op 25 meter hoogte twee bomen. Het rolde om de lengteas en stortte om 04.27 uur plaatselijke tijd ondersteboven neer.
+
+Uit onderzoek bleek dat de papieren van de bemanning niet in orde waren. 
+Geconcludeerd werd dat de gezagvoerder roekeloos had gehandeld door voor een ILS-landing te kiezen terwijl hij daar geen toestemming voor had, en door onvoldoende op de vlieghoogte te hebben gelet. 
+De SLM werd verweten de kwalificaties van de bemanning onvoldoende te hebben gecontroleerd.
+
+https://aviation-safety.net/investigation/cvr/transcripts/cvr_py764.php 
+https://aviation-safety.net/database/record.php?id=19890607-2 
+Wat is er gebeurd?
+online{espnSLMterugblik,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.espn.nl/video/clip?id=8744942"},}
+@online{dennisRosier01052020,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.voetbalkrant.com/nieuws/2020-05-01/het-vergeten-verhaal-van-de-slm-ramp"},}
+@online{hassing07062020slmramp,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bd.nl/sport/de-slm-ramp-en-het-hartverscheurende-verhaal-van-jerry-en-winnie-haatrecht~ae4ce105/?referrer=https%3A%2F%2Fwww.google.com%2F"},}
+@online{amsterdamArchiefSLM,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.amsterdam.nl/stadsarchief/nieuws/slm-ramp/"},}
+@online{rtvOost06062019nabestaande,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.rtvoost.nl/nieuws/313496/Nabestaande-SLM-ramp-Heb-ik-wel-mijn-broer-en-moeder-begraven"},}
+@online{breda07062021AndroSnel,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bredavandaag.nl/nieuws/algemeen/337919/nac-herdenkt-andro-knel-slm-ramp-precies-32-jaar-geleden"},}
+@online{andereTijdenSLMCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.anderetijden.nl/aflevering/792/Een-aangekondigde-vliegramp"},}
+@online{aviationSLMCrashAccidentInvestigation,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nl.wikipedia.org/wiki/SLM-ramp"},}
+database
+@online{aviationReport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://aviation-safety.net/database/record.php?id=19890607-2"},}
+rapport
+@online{aviationSLMCrashAccidentInvestigation,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://reports.aviation-safety.net/1989/19890607-2_DC86_N1809E.pdf"},}
+@online{mcDonnelDouglasCommissionReportSLMCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://aviation-safety.net/investigation/cvr/transcripts/cvr_py764.php"},}
+@online{wikiSRFlight764,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/Surinam_Airways_Flight_764"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://web.archive.org/web/20050113010822/https://www.ntsb.gov/ntsb/brief.asp?ev_id=34510&key=0"},}
+@online{nos07062019SLMTerugblik,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nos.nl/artikel/2287986-slm-vliegramp-van-precies-30-jaar-geleden-trof-ook-nederlands-voetbal"},}
+@online{dagvantoenSLMCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.dagvantoen.nl/vliegtuigcrash-slm-bij-zanderij-meer-dan-170-doden/"},}
+@online{waterkantNesty07061989,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.waterkant.net/suriname/2006/06/07/vliegramp-suriname-op-7-juni-1989-2/"},}
+uitgebreid engels artikel
+@online{eduNandlalSRCrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.edufd.nl/planecrash/"},}
+ntsb investigtion
+@online{oldjetsSRAirways,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.oldjets.net/slm-dc-8-crash.html"},}
+uitgebreid engels artikel
+@online{cloudberg02012021srflight764,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://admiralcloudberg.medium.com/contract-to-kill-the-crash-of-surinam-airways-flight-764-828979c7efe2"},}
+persbericht
+@online{apnews07061989srplanecrash,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://apnews.com/article/5b240d758ee4c5422381cc7cdc98566b"},}
+Wat is de rol van de autoriteiten?
+Welke andere betrokkeen? Enw at is hun verantwoordelijkheid
+Hadden de negatieve gevolgen voorkomen kunnen worden?
+Hoe werd er over veiligheid gedacht?
+
+
+
+\subsubsection{schipholbrand}
+
+\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
+worden voldaan. De eerste voorwaarde is de geschiktheid van het
+afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
+men zich afvragen of dat wel een echte afstudeeropdracht is. Een
+afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
+moet een afstudeerproject passen in het profiel van een opleiding om
+beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
+de registratie van werkzaamheden tijdens het a
+
+
+Wat is er gebeurd?
+@online{wikiSchipholbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nl.wikipedia.org/wiki/Schipholbrand"},}
+artikel
+@online{schipholbrand27102005video,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.youtube.com/watch?v=1i-hfEzxFfk"},}
+psychologische gevolgen
+rapport
+@online{onderzoeksraad2610schipholoost,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.onderzoeksraad.nl/nl/page/392/brand-cellencomplex-schiphol-oost-nacht-van-26-op-27-oktober"},}
+artikel met video
+herdenking
+impact op de persoon
+herdenking
+@online{schipholbrandvideoargos,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vpro.nl/argos/speel~POMS_VPRO_461907~schadevergoeding-voor-ex-verdachte-schipholbrand~.html"},}
+chronologie
+@online{nunl30052023feitenoverzicht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nu.nl/binnenland/3355935/feitenoverzicht-schipholbrand-en-rechtszaken.html"},}
+tijdlijn
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.singeluitgeverijen.nl/isbn/de-schipholbrand/"},}
+vervolgens van ministers
+beeldanalyse en reconstructie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://eenvandaag.avrotros.nl/item/schipholbrand-niet-ontstaan-in-cel-11/"},}
+herdenking
+korte samenvatting
+rapport
+artikel
+verwijzing naar het rapport vanuit de politieke oppositie
+beeld vanuit de gevangenisbewaarder
+nationaliteit slachtoffers schipholbrand
+verblijfsvergunning voor de slachtoffers
+gen schadevergoeding voor de verdachte
+verdachte voor de rechter
+geen schadevergoeding voor verdachte
+artikel wat ging er mis bji de schipholbrand
+brand veroorzaakt door een peuk
+smaadschrift
+bewakers worden niet vervolgd
+proces schipholbrand moet over en de brandveilgheid moet worden verbeterd
+de rol van het parlement in de evaluatie
+@online{parlementairemonitorschipholbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vi3aof7awcxg"},}
+onderzoeksmemo
+herdenking
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://archief.ntr.nl/nova/page/detail/uitzendingen/3847/Den%20Haag%20Vandaag_%20herdenking%20Schipholbrand.html"},}
+herdenking
+invloed van de ramp op samenleving
+@online{videonpoNOVA13112008,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.npostart.nl/heropen-onderzoek-schipholbrand/13-11-2008/POMS_NTR_103332"},}
+opmerkelijk rapport gestolen in de nasleep
+@online{rizoomes01052014schipholbrand,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.rizoomes.nl/brandweer/brand-cellencomplex-schiphol/"},}
+
+
+
+publicaties
+@online{heuvelkroesschipholbrandcamerabeelden,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.msnp.nl/downloads/Onderzoeksmemo%20beeldanalyse%20Schipholbrand%20prot.pdf"},}
+Wat waren de regels destijds?
+Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen?
+Wat is er gedaan om de veiligheid van illegalen en gevangenissbewaarders te verbeteren
+
+\subsubsection{Ramp schietpartij militair ossendrecht }
+
+\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Een militaire overleid op een schietbaan in ossendracht door onvoldoende begeleiding van cursisten, geen toezicht op de lokatie. E\r was een instructuur in opleiding die niet volledig was mmeegenomen in het poroces en ook was er geen baancommandant aanwezig. Geen van de aanwezig instructeurts had de juiste papieren om de cursisten te begeleiden. De aanwezig instruceur had geen zich op de instructeur in opleiding, evenmin de andere militairen. In de instructiehandleiding ontbreken richtlijnen voor bijzondere schietbanen. Ook was er geen keuring. Door personelstekort is er geen andacht besteed aan documentastie(een slyllabus) hoe en met welke risico’s oefeningnen moeten worden ingericht. Ok werd er vooraf geen veiliheidsanaklyse gedaan. Het gebrek aan lesmateriaal en deskundigen is gemeld binnen de defensieorganisatie maar dit heeft niet geleid tot enige verandering in de situatie.
+Op een afgekeurde scheitbaan
+Tezicht door een instructeur in opleiding die zelf geen persoonlijke begeleiding heeft gehad tijdens de uitvoering
+Belangrijk is dat defensie haar taken kan uitvoeren met personeel dat is getraind in situaties die de risicos van de werkomgeving aan de cursisten kunnen laten zien.
+Conclusie
+Zonder gekwalificeerde instructuers.
+Zonder toezicht
+Zonder lesmateriaal
+Zonder adequate veiligheidsanalyse
+https://www.youtube.com/watch?v=6jmkDClGDHo 
+\cite{oVVSchietongevalOssendrecht}
+
+
+
+@online{nos22032016ossendrecht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://amp.nos.nl/artikel/2094524-militair-omgekomen-bij-schietoefening-ossendrecht.html"},}
+
+@online{ovv04042016lessenongevalossendrecht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.onderzoeksraad.nl/nl/page/4293/lessen-uit-schietongeval-ossendrecht"},}
+
+@online{quekelboere10052017doodossendrecht,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bndestem.nl/bergen-op-zoom/dood-van-militair-sander-klap-35-in-ossendrecht-was-ongeluk-militairen-vrijuit-hij-probeerde-zijn-leven-te-redden~afe4c7a0/"},}
+
+
+Wat is de rol van defensie?
+Wat is er gedaan om de veligheid van de medewerkers te waarborgen?
+Waarom zijn deze regels niet nageleefd?
+Wat zijn de gevolgen?
+Zijn de acties die naderhand zijn ondernomen wel redelijk naar de slachtoffers, het nationale veiligheisbeeld en de medewerkers?
+
+
+
+\subsubsection{molukse treinkaping }
+
+\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+https://www.youtube.com/watch?v=h99Fe9XzzHI 
+\cite{molukseTreinkaping}
+\subsubsection{explosie tanjin china }
+
+\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
+Later bleek uit een onderzoek van de Chinese autoriteiten dat de explosie overeenkwam met de ontploffing van 450 ton TNT.[6] 
+De oorzaak van de explosie lag in de spontane zelfontbranding van 207 ton cellulosenitraat dat in containers was opgeslagen op het terminalterrein.[6] 
+Verder lag op een tweede locatie nog eens 26 ton van dit explosieve materiaal opgeslagen.
+De tweede ontploffing werd versterkt door de opslag van 800 ton kunstmest in de vorm van ammoniumnitraat in de nabijheid.[6]
+De opslag van cellulosenitraat is aan strenge regels gebonden. Het moet koel en droog worden opgeslagen. De containers stonden buiten opgesteld in de brandende zon. De temperatuur liep op tot 36 °C en bereikte binnen de containers waarschijnlijk de 65 °C.[6] De verpakking van de cellulosenitraat droogde uit waardoor de ontploffing kon ontstaan. Op het terrein lagen meer gevaarlijke stoffen opgeslagen dan waarvoor vergunningen waren verstrekt.[6] Dit leidde tot een kettingreactie met grote schade tot gevolg. Door de brand en bluswater is in de directe omgeving veel milieuschade opgetreden.
+
+
+https://www.hindawi.com/journals/joph/2019/1360805/ 
+\cite{jiang16042019TanjinExplosion}
+
+verhaal van brandweermannen
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://slate.com/human-interest/2015/08/chinese-explosion-aftermath-officials-investigate-causes-behind-warehouse-blast-and-death-of-88-firefighters.html"},}
+artikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.chinafile.com/conversation/tianjin-explosion"},}
+invloed van social media
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.economist.com/asia/2015/08/18/a-blast-in-tianjin-sets-off-an-explosion-online"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://america.cgtn.com/2015/08/12/explosion-reported-in-tianjin-china"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://factcheck.afp.com/no-photo-was-taken-chinese-city-tianjin-august-2015"},}
+vergelijking van twee rampen
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://airshare.air-inc.com/how-does-the-beirut-explosion-compare-to-tianjin"},}
+overheid en media
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://newbloommag.net/2015/08/17/tianjin-explosion/"},}
+chemische industrie ondeer de loep
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.voanews.com/east-asia-pacific/tianjin-blast-puts-spotlight-chemical-industry"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://abcnews.go.com/International/apocalyptic-aftermath-devastating-images-tianjin-china-explosions/story?id=33057017"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.reachingoutacrossdurham.co.uk/osk/tianjin-explosion-2021"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/prs.11789"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.automotivelogistics.media/thousands-of-cars-destroyed-in-tianjin-port-explosions/13570.article"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.joc.com/port-news/asian-ports/port-tianjin/tianjin-port-explosions-could-be-most-expensive-maritime-disaster_20150826.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bloomberg.com/news/articles/2015-08-12/explosion-in-northern-china-shatters-windows-causes-injuries"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://unece.org/fileadmin/DAM/env/documents/2016/TEIA/OECD_WGCA_24-27_OCT_2016/Session_3_Zhao_-__Introduction_of_Tianjin_Accident_-_Jinsong_Zhao.pdf"},}
+gemaakte fouten
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://porteconomicsmanagement.org/pemp/contents/part6/port-resilience/site-2015-tianjin-port-explosions/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.alamy.com/stock-image-tianjin-china-17th-aug-2015-tianjin-explosion-aftermath-blast-site-165334778.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.popularmechanics.com/technology/news/a16871/massive-explosions-china-city-of-tianjin/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.imago-images.com/st/0080815934"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.chemistryworld.com/news/deadly-chemical-blast-at-chinese-port/8857.article"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.process-worldwide.com/tianjin-explosion-from-chemical-perspective-insights-and-backgrounds-a-502381/"},}
+vergelijking met andere explosies
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://apnews.com/article/lebanon-fires-us-news-explosions-middle-east-53f4206a7f1db0812262a15d22e1e58f"},}
+invloed van de ramp op de industrie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://fortune.com/2015/08/14/tianjin-port-explosion-shipping-delays/"},}
+is er sprake van een doofpot
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.washingtontimes.com/news/2015/aug/20/inside-china-tianjin-explosions-cover-up-exposes-b/"},}
+eigendomsverzekering
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.artemis.bm/news/tianjin-explosions-property-insurance-loss-could-reach-3-5bn-swiss-re/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thechinastory.org/yearbooks/yearbook-2015/forum-the-abyss-%E5%9D%8E/tianjin-explosions/"},}
+effecten op de lange termijn
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.flexport.com/blog/tianjin-explosion-effect-on-supply-chains/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cicm.org.my/images/articles/CICM-Article-on-Tianjin-Blast-Oct2015.pdf"},}
+lessons learned
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.genre.com/knowledge/blog/lessons-from-the-tianjin-explosion-en.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ft.com/content/ad62904c-44ce-11e5-b3b2-1672f710807b"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.huffingtonpost.co.uk/2015/08/13/tianjin-explosion-china-shocking-footage-caught-on-camera_n_7980888.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thatsmags.com/china/post/19189/massive-fire-rocks-tianjin-port"},}
+gevolgen voor de industrie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.everstream.ai/risk-center/special-reports/the-jiangsu-yancheng-explosion/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.newyorker.com/news/news-desk/after-tianjin-an-outbreak-of-mistrust-in-china"},}
+framing vanuit de chinese media
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.neliti.com/publications/101997/the-chinese-media-framing-of-the-2015s-tianjin-explosion"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.reinsurancene.ws/chinese-insurers-settle-1-5-billion-tianjin-blast-claims/"},}
+niewsartikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thechemicalengineer.com/news/update-78-confirmed-dead-after-chinese-chemicals-plant-explosion/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.caixinglobal.com/2016-11-10/chinese-executive-receives-suspended-death-sentence-over-2015-tianjin-warehouse-blast-101006325.html"},}
+toegang tot de ramplplek vanuit de okale journalistiek
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://chinadigitaltimes.net/2015/08/he-xiaoxin-how-far-can-i-go-and-how-much-can-i-do/"},}
+artikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wnpr.org/post/china-examines-aftermath-immense-twin-explosions-killed-dozens"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://theconversation.com/what-is-ammonium-nitrate-the-chemical-that-exploded-in-beirut-143979"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://chemicalwatch.com/36730/nationwide-inspections-in-china-follow-tianjin-explosion"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thehindu.com/news/international/investigation-begun-into-china-gas-explosion-as-toll-rises/article34818324.ece"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://santiagotimes.cl/2019/03/24/64-killed-600-injured-in-china-chemical-plant-blast/"},}
+oorzaken
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://klingecorp.com/blog/what-caused-the-tianjin-explosions/"},}
+case study
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.preventionweb.net/educational/view/57235"},}
+niewsartikel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnbc.com/2015/08/12/explosion-in-tianjin-china.html"},}
+chronologische uiteenzetting
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.aria.developpement-durable.gouv.fr/wp-content/files_mf/A46803_a46803_fiche_impel_006.pdf"},}
+corruptie
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nytimes.com/2015/08/31/world/asia/behind-tianjin-tragedy-a-company-that-flouted-regulations-and-reaped-profits.html"},}
+mismanagement als oorzaak
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nytimes.com/2016/02/06/world/asia/tianjin-explosions-were-result-of-mismanagement-china-finds.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://cen.acs.org/articles/94/web/2016/02/Chinese-Investigators-Identify-Cause-Tianjin.html"},}
+autoriteiten publiceren onderoeksrapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://cen.acs.org/articles/94/i7/Chinese-Investigators-Identify-Cause-Tianjin.html"},}
+fotos van de rampplek
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theatlantic.com/photo/2015/08/photos-of-the-aftermath-of-the-massive-explosions-in-tianjin-china/401228/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://edition.cnn.com/2015/08/13/asia/china-tianjin-explosions/index.html"},}
+niuwesartiekel}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cbc.ca/news/world/china-explosion-tianjin-1.3189455"},}
+verantwoordelijke
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.thestar.com/news/world/2016/11/09/chinese-executive-gets-death-sentence-over-tianjin-explosion-in-2015.html"},}
+risicobeperking/controle
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.swissre.com/en/china/news-insights/articles/analysis-of-tianjin-port-explosion-china.html"},}
+censuur
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://foreignpolicy.com/2015/09/10/censored-china-young-survivor-tianjin-explosion-viral-post/"},}
+censuur
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://qz.com/756872/a-year-after-the-tianjin-blast-public-mourning-and-discussion-about-it-are-still-censored-in-china/"},}
+verschillende artikelen
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.scmp.com/topics/tianjin-warehouse-explosion-2015"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wsj.com/articles/BL-CJB-27664"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nbcnews.com/news/world/tianjin-explosions-californian-witness-filmed-dramatic-china-blasts-n409701"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ui.adsabs.harvard.edu/abs/2016AGUFM.S13D..06P/abstract"},}
+afwikkeling van de ramp
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://chinadialogue.net/en/pollution/9188-back-to-the-blast-zone-one-year-after-the-tianjin-explosion/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wired.com/2015/08/chinas-huge-tianjin-explosion-looked-like-space/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.abc.net.au/news/2015-08-13/explosion-rocks-north-chinese-city-of-tianjin/6693336?nw=0"},}
+ambtenaren onderzocht
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://thediplomat.com/2015/08/23-executives-government-officials-under-investigation-for-role-in-tianjin-explosions/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://america.aljazeera.com/articles/2015/8/13/at-least-50-dead-and-hundreds-injured-in-chinese-warehouse-explosion.html"},}
+risico-inschatting
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.mdpi.com/2071-1050/12/3/1169/htm"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.mdpi.com/2071-1050/12/3/1169/htm"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cbsnews.com/news/tianjin-port-china-massive-explosion-hundreds-injured/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.hkjcdpri.org.hk/download/casestudies/Tianjin_CASE.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://time.com/3996168/tianjin-explosion-china-pictures/"},}
+onderzoeksrapport
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.hfw.com/Tianjin-Port-explosion-August-2015"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.un.org/en/story/2015/08/506912-following-tianjin-explosion-un-expert-calls-china-ensure-transparent"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.france24.com/en/20150812-huge-explosions-rock-chinese-city-tianjin"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://choice.npr.org/index.html?origin=https://www.npr.org/2015/08/14/432280627/what-caused-the-warehouse-explosions-in-tianjin-china"},}
+123 verantwoordelijken
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/world-asia-china-35506311"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.washingtonpost.com/gdpr-consent/?next_url=https%3a%2f%2fwww.washingtonpost.com%2fnews%2fworldviews%2fwp%2f2015%2f08%2f12%2fvideos-show-chinese-city-of-tianjin-rocked-by-enormous-explosion%2f"},}
+lang artiekel
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.businessinsider.com/the-chemical-explosion-in-china-killed-more-than-100-people-and-the-devastation-is-unreal-2015-8?international=true&r=US&IR=T"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://pubmed.ncbi.nlm.nih.gov/27311537/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.reuters.com/article/us-china-blast-insurance-idUSKCN0QM0N220150817"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.sciencedirect.com/science/article/abs/pii/S0305417916300079"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/2015_Tianjin_explosions"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/world-asia-china-33844084"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.independent.co.uk/news/world/asia/tianjin-explosion-photos-china-chemical-factory-accident-crater-revealed-a7199591.html"},}
+
+veiigheidshandhaving
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ilo.org/legacy/english/protection/safework/ctrl_banding/toolkit/main_guide.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://echa.europa.eu/documents/10162/21332507/guide_chemical_safety_sme_en.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/AppendixD_EN.htm"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ilo.org/safework/info/publications/WCMS_113134/lang--en/index.htm"},}
+
+
+\subsubsection{explosie in libabon, beirut }
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Op 23 september 2013 voer het vrachtschip de Rhosus onder Moldavische vlag[7] van Batoemi in Georgië naar Beira in Mozambique met 2.750 ton ammoniumnitraat
+
+Gezien het ernstige gevaar van het bewaren van deze goederen in de hangar onder ongeschikte klimatologische omstandigheden, herhalen we ons verzoek aan de marine-instantie om deze goederen onmiddellijk weer te exporteren om de veiligheid van de haven en de mensen die er werken te verzekeren, of om akkoord te gaan om ze te verkopen.
+Voorafgaand aan de explosie was er een brand in een opslagplaats. 
+
+https://www.hrw.org/report/2021/08/03/they-killed-us-inside/investigation-august-4-beirut-blast 
+\cite{hrw03082021investigateBeirutBlast}
+https://www.researchgate.net/publication/348325979_Beirut_Explosion_the_full_story 
+\cite{souaibyElHussein112020Beirutstory}
+https://reliefweb.int/sites/reliefweb.int/files/resources/CaseStudy_BeirutExplosion_TechBioHazardsweb.pdf 
+\cite{ifrc2020chemicalexplosionBeirutPort}
+
+@online{landryalameddine12112020beiruthelathsystem,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05906-y"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.sky.com/story/beirut-blast-cctv-captures-moment-huge-explosion-devastated-hospital-12047452"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.unodc.org/unodc/en/frontpage/2020/September/unodc-assists-lebanon-in-reestablishing-container-shipments-in-the-aftermath-of-the-port-of-beirut-explosion.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://reliefweb.int/sites/reliefweb.int/files/resources/LEB201-Lebanon-Emergency-Response.pdf"},}
+@online{yadav07082020handlingexplosivesBeirut,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.downtoearth.org.in/news/governance/beirut-blast-lessons-time-for-india-to-strengthen-handling-of-explosives-chemicals-72707"},}
+@online{graham21082020rootsImpactBeirutBlast,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.justsecurity.org/72122/the-cost-of-resilience-the-roots-and-impacts-of-the-beirut-blast/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.fire-magazine.com/the-port-of-beirut-explosion-a-timely-reminder"},}
+@online{neusaeter07082020beirutexplosioneval,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ctvnews.ca/sci-tech/mapping-the-beirut-explosion-what-the-impact-would-look-like-in-canadian-cities-1.5053932"},}
+
+
+secyrity:
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf"},}
+
+
+secyrity:
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf"},}
+
+
+
+\subsubsection{ethiopian airlines}
+
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Ethiopian Airlines Flight 302
+Door problemen met de flight control
+One minute into the flight, the first officer, acting on the instructions of the captain, reported a "flight control" problem to the control tower.
+Two minutes into the flight, the plane's MCAS system activated, pitching the plane into a dive toward the ground. The pilots struggled to control it and managed to prevent the nose from diving further, but the plane continued to lose altitude.
+The MCAS then activated again, dropping the nose even further down. The pilots then flipped a pair of switches to disable the electrical trim tab system, which also disabled the MCAS software. However, in shutting off the electrical trim system, they also shut off their ability to trim the stabilizer into a neutral position with the electrical switch located on their yokes. The only other possible way to move the stabilizer would be by cranking the wheel by hand, but because the stabilizer was located opposite to the elevator, strong aerodynamic forces were pushing on it.
+As the pilots had inadvertently left the engines on full takeoff power, which caused the plane to accelerate at high speed, there was further pressure on the stabilizer. The pilots' attempts to manually crank the stabilizer back into position failed.
+Three minutes into the flight, with the aircraft continuing to lose altitude and accelerating beyond its safety limits, the captain instructed the first officer to request permission from air traffic control to return to the airport. Permission was granted, and the air traffic controllers diverted other approaching flights. Following instructions from air traffic control, they turned the aircraft to the east, and it rolled to the right. The right wing came to point down as the turn steepened.
+At 8:43, having struggled to keep the plane's nose from diving further by manually pulling the yoke, the captain asked the first officer to help him, and turned the electrical trim tab system back on in the hope that it would allow him to put the stabilizer back into neutral trim. However, in turning the trim system back on, he also reactivated the MCAS system, which pushed the nose further down. The captain and first officer attempted to raise the nose by manually pulling their yokes, but the aircraft continued to plunge toward the ground.
+
+https://www.hindawi.com/journals/ijae/2014/472395/ 
+\cite{caliskan09112013747boeingkalman}
+
+algemene vragen
+oorzaken
+@online{gates18112020boeingcrisis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.seattletimes.com/business/boeing-aerospace/what-led-to-boeings-737-max-crisis-a-qa/"},}
+@online{boeing737maxsoftwareprobles,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.schneier.com/blog/archives/2019/04/excellent_analy.html"},}
+fout in de software
+@online{avetisov19032019boeingmalwarestate,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.forbes.com/sites/georgeavetisov/2019/03/19/malware-at-30000-feet-what-the-737-max-says-about-the-state-of-airplane-software-security/?sh=4d26f7052a9e"},}
+het nationaal veiligheidsbelang
+@online{thompson23112020nationalsecurityboeing,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.forbes.com/sites/lorenthompson/2020/11/23/five-reasons-return-of-boeings-737-max-to-service-is-important-to-national-security/?sh=2128ea552018"},}
+falend toezicht
+@online{gates21032019FAAControlSystem,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.seattletimes.com/business/boeing-aerospace/failed-certification-faa-missed-safety-issues-in-the-737-max-system-implicated-in-the-lion-air-crash/"},}
+onderzoeksrapport
+@online{faa18112020boeingreview,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.faa.gov/foia/electronic_reading_room/boeing_reading_room/media/737_RTS_Summary.pdf"},}
+@online{wiki737maxgroundings,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"},}
+veiligheidsrisico's
+menselijke fouten
+@online{campbell02052019boengcrashhumanerrors,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theverge.com/2019/5/2/18518176/boeing-737-max-crash-problems-human-error-mcas-faa"},}
+overzicht van crashes
+@online{hawkins22032019737maxairplanes,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.theverge.com/2019/3/22/18275736/boeing-737-max-plane-crashes-grounded-problems-info-details-explained-reasons"},}
+veiligheidsopmerking
+@online{thomas30082020737safest,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.airlineratings.com/news/boeings-737-max-will-one-safest-aircraft-history/"},}
+aanpassingen
+@online{boeing737maxdisplay,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.boeing.com/commercial/737max/737-max-software-updates.page"},}
+waarschuwingen//output signalen
+@online{fehrm24112020737changes,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://leehamnews.com/2020/11/24/boeing-737-max-changes-beyond-mcas/"},}
+software gerelateerde fouten
+@online{travis18042019737maxsoftwaredevop,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://spectrum.ieee.org/aerospace/aviation/how-the-boeing-737-max-disaster-looks-to-a-software-developer"},}
+onderzoeksrapport
+de rol van de publieke opinie
+@online{barnett05052019737maxcrisis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://pubsonline.informs.org/do/10.1287/orms.2019.05.05/full/"},}
+onderzoek van europese luchtvaart agentschap
+@online{easa27012021737maxsafereturn,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.easa.europa.eu/newsroom-and-events/news/easa-declares-boeing-737-max-safe-return-service-europe"},}
+veiligheidsvraagstuk
+@online{touitou11032019737tragedies,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://phys.org/news/2019-03-boeing-max-safety-tragedies.html"},}
+artikel over sensoren
+@online{hemmerdinger02022021737maxdeliveries,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.flightglobal.com/airframers/boeing-delays-737-max-10-deliveries-two-years-to-2023/142245.article"},}
+goedkeuring van europese luchtvaart autoriteiten
+advies aan de faa
+@online{bielby27022021faaimprovesafety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.hstoday.us/subject-matter-areas/airport-aviation-security/oig-tells-faa-to-improve-safety-oversight-following-boeing-737-max-review/"},}
+@online{boyle18112020737maxupgrade,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.geekwire.com/2020/faas-go-ahead-737-maxs-return-flight-kicks-off-massive-software-upgrade/"},}
+@online{bergstraburgess122019737maxMcasAlgorithm,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.researchgate.net/publication/338420944_A_Promise_Theoretic_Account_of_the_Boeing_737_Max_MCAS_Algorithm_Affair"},}
+achtergrond informatie
+@online{737mcas,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://www.b737.org.uk/mcas.htm"},}
+algemeen vertrouwen
+@online{newburger17052019boeingcrisis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnbc.com/2019/05/16/what-you-need-to-know-about-boeings-737-max-crisis.html"},}
+toestemming europese autoriteiten
+problemen
+@online{arstechnica22012020737problems,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://arstechnica.com/information-technology/2020/01/737-max-fix-slips-to-summer-and-thats-just-one-of-boeings-problems/"},}
+uitgebreid artikel over de onderzoeken en het vliegverbod
+@online{german190620217372yaftergrounded,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.cnet.com/news/boeing-737-max-8-all-about-the-aircraft-flight-ban-and-investigations/"},}
+computers als oorzaak
+lessons learned
+@online{beningo02052019boeinglessons,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.designnews.com/electronics-test/5-lessons-learn-boeing-737-max-fiasco"},}
+@online{duran05042019boeingspof,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.eurocontrol.int/publication/effects-network-extra-standby-aircraft-and-boeing-737-max-grounding"},}
+single point of failure
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://dmd.solutions/blog/2019/04/05/how-a-single-point-of-failure-spof-in-the-mcas-software-could-have-caused-the-boeing-737-max-crash-in-ethiopia/"},}
+@online{makichuck24012021737fearflying,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://asiatimes.com/2021/01/boeings-737-max-and-the-fear-of-flying/"},}
+lijst van tehnische aanpassingen
+@online{caa737modifications,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.caa.co.uk/Consumers/Guide-to-aviation/Boeing-737-MAX/"},}
+@online{oestergaard14122020boeingdeliveries,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://dsm.forecastinternational.com/wordpress/2020/12/14/airbus-and-boeing-report-november-2020-commercial-aircraft-orders-and-deliveries/"},}
+code lek
+@online{reenberg787flaws,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.wired.com/story/boeing-787-code-leak-security-flaws/"},}
+@online{fitch16092020737backlogrisks,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.fitchratings.com/research/corporate-finance/boeing-737-max-return-backlog-risks-remain-16-09-2020"},}
+Cultuurverandering, deregulatie, systeemwijziging of gewoon een kwestie van competentie
+@online{willis27082020737maxfailures,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.aerospacetestinginternational.com/features/what-broke-the-737-max.html"},}
+extra aanpassingen
+@online{ostrower11062020more737changes,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://theaircurrent.com/aviation-safety/boeings-737-max-software-done-but-regulators-plot-more-changes-after-jets-return/"},}
+wat ging er mis een analyse van een ex-iloot
+De utoriteiten waren op de hoogte
+@online{hruska13122019faaknown737crashrate,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.extremetech.com/extreme/303373-the-faa-knew-the-737-max-was-dangerous-and-kept-it-flying-anyway"},}
+kwaliteiten van het alarmsysteem niet goed bekend
+@online{bloomberg26092019failedpred,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://time.com/5687473/boeing-737-alarm-system/"},}
+@online{whiteman09072020boengcancelstock,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nasdaq.com/articles/boeing-gets-dealt-another-737-max-cancellation-blow.-what-it-means-for-boeing-stock-2020"},}
+@online{leopold09192019boeingreliability,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.eetimes.com/boeing-crashes-highlight-a-worsening-reliability-crisis/"},}
+veiligheidsvraagstuk
+@online{koenig11122019737crashesnofix,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.latimes.com/business/story/2019-12-11/faa-boeing-737-max-crashes"},}
+probleemanalyse, veiligheidsvraagstuk
+@online{dohertylindeman15032019737problems,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.politico.com/story/2019/03/15/boeing-737-max-grounding-1223072"},}
+falend toezicht
+@online{stodder02102019corruptoversight,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.pogo.org/analysis/2019/10/corrupted-oversight-the-faa-boeing-and-the-737-max/"},}
+@online{afacwaLostSafeguards,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.afacwa.org/the_inside_story_of_mcas_seattle_times"},}
+doelstellingen en veiligheidsvraagstukken
+@online{swayne18032019profitssafety,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.marxist.com/737-max-scandal-boeing-putting-profits-before-safety.htm"},}
+@online{freed26022021liftaustraliaban,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://finance.yahoo.com/news/australia-lifts-ban-boeing-737-035817682.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAHZCJYy_0A5VS2WiPoCvH4xdrRNkmkdsv5EWJ2RLIz_AS-rxsTty6AF1_HlmJiRyWYqCXDi4p0Xs4isYkNkCq2Pfo-pQ60Xz_IfTNjm4FgoZiBMC4zpZlB6F0fwecrjE_ujAXZzG4xPJnWCd8-G3VLlPTY8h3H31eQ1i8hY9AIyy"},}
+autoriteiten krijgen tik op de vingers
+@online{reed15032019softwareattention,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://medium.com/@jpaulreed/the-737max-and-why-software-engineers-should-pay-attention-a041290994bd"},}
+@online{news17032019softwareexplains,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.ycombinator.com/item?id=19414775"},}
+@online{legget21122020eu737maxsafe,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bbc.com/news/55366320"},}
+@online{marketscreener0103221737chinarecertification,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.marketscreener.com/news/latest/China-studies-Boeing-737-MAX-recertification-wants-safety-concerns-fully-addressed--32569125/"},}
+motor in brand
+@online{euractiv22022021737firegrounds,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.euractiv.com/section/aviation/news/boeing-grounds-777s-after-engine-fire/"},}
+@online{benny18022019737returnUAE,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://gulfnews.com/business/aviation/uae-airspace-to-see-return-of-boeing-737-max-1.1613627548923"},}
+motor in brand gevlogen
+@online{biersmichel22022021777grounds,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://techxplore.com/news/2021-02-boeing-urges-grounding-777s.html"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.politico.eu/article/uk-temporarily-bans-some-boeing-aircraft-after-pratt-whitney-engine-incidents/"},}
+@online{reuters23022021777metalfatigue,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.timeslive.co.za/news/world/2021-02-23-damage-to-united-boeing-777-engine-consistent-with-metal-fatigue--ntsb/"},}
+faa was niet kritisch genoeg
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://federalnewsnetwork.com/government-news/2021/02/federal-watchdog-blasts-faa-over-certification-of-boeing-jet/"},}
+
+
+\subsubsection{ethiek}
+
+
+Ethiek 
+
+
+
+persuasive technology 
+https://www.humanetech.com/youth/persuasive-technology 
+\cite{humanTechpersuasiveTech}
+https://www.minddistrict.com/blog/persuasive-technology-new-insights-in-behavioural-change 
+https://www.sciencedirect.com/book/9781558606432/persuasive-technology 
+https://spectrum.ieee.org/how-persuasive-technology-can-change-your-habits 
+\cite{rezenfeld01012018persuasiveTecgHabits}
+https://www.frontiersin.org/articles/10.3389/frai.2020.00007/full 
+\cite{aldenaini28042020persuasiveTechTrends}
+https://psmag.com/environment/captology-fogg-invisible-manipulative-power-persuasive-technology-81301 
+\cite{larson14062017persuasivetechmanipulates}
+https://www.makeuseof.com/what-is-persuasive-technology/ 
+\cite{tanzem22012022persuasivetechchanginglives}
+https://lib.ugent.be/catalog/rug01:001235489 
+https://cyberpsychology.eu/article/view/12270 
+\cite{tikkakuddonenpersuasiveTechnology}
+
+
+
+\subsubsection{ecourt in nederlandse rechtspraak}
+
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+niet odnerzocht
+https://www.njb.nl/blogs/a-court-with-no-face-and-no-place/ 
+\cite{sprongken19032018CourtProcedureDigital}
+http://www.e-court.nl/wp-content/uploads/2018/03/Procesreglement-e-Court-2017_20180201.pdf
+\cite{PROCESREGLEMENTEcourt}
+
+
+\subsubsection{ cyber aanval op Oekraïene }
+
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
+op 23,december 2015  vind er een cyber aanval plaats op het elektriciteitsnet van de Oekraine. Dit was de eerste bekende aanval op een elektrisch contole  system.  Dit verslag geeft inzage in een analyse van de Ukraine cyber aanval,
+inclusief hoe de actoren zich zelf toegang gavan tot het controle systeem, welke methoden de acoren hebben gebruikt voor reconnaissance en vastleggen van het systeem, een gedetailleerde omshrijving van de aanval op 15 December 2015, en de methoden die gebruikt zijn door de aanvallers om hun sporen uit te wissen en daarmee het het stoppen van schade toebrengen  nog moeilker maken. Daarnaast wordter  een gedetailleerde omschrijving gevevenv an de beveiliging van de SCADA ccontrol systemen gebaeerd op bst practices, inclusief het control network ontwerp, technieken voor whtelisting, monitoring en loggen, en  opleiding van personeel.
+\cite{Whitehead2017ukrainepoweroutage}
+
+\cite{noauthor_2022-nm}
+\cite{zetter2016GridHack}
+
+
+@online{owens21032017ukrainemitigationstrategies,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.us-cert.gov/ics/alerts/IR-ALERT-H-16-056-01"},}
+
+@online{cerulus2019FrontlineRussiaAttack,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.politico.eu/article/ukraine-cyber-war-frontline-russia-malware-attacks/"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://en.wikipedia.org/wiki/December_2015_Ukraine_power_grid_cyberattack"},}
+@online{grammatikis2019AttackIEC6087505104,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf"},}
+@online{hidajat2016ScadaSimulator,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.diva-portal.org/smash/get/diva2:1046339/FULLTEXT01.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.semanticscholar.org/paper/Cybersecurity-analysis-of-a-SCADA-system-under-and-Rocha/dfa7c12551ebe7b24da8d806e87e946051a57cb9"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://tutcris.tut.fi/portal/files/16294332/jafary_1534.pdf"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://blog.nettedautomation.com/2017/"},}
+@online{uscert20072021crashmalware,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.us-cert.gov/ncas/alerts/TA17-163A"},}
+@online{zetter12062017malwareanalysis,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer"},}
+@online{icsRussianHackingCyberWeapon,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://blog.wallix.com/ics-security-russian-hacking"},}
+@online{usgovC2M2,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-cybersecurity-0"},}
+
+
+
+\subsubsection{Mali}
+
+\begin{description}
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Een granaat explodeerd in een mortier
+De medische zorg na het ongeval was neit voldoende
+
+
+De algemeen militair verpleegkundige gaf aan het slachtoffer nar het vn-hospitaal in kidal te brengen
+De chaauffeur van de bushmaster kende de locatie niet  en bracht het slachtoffer naar een door frane militairren bemand hospitaal mmet minder mediswche faciliteiten
+Hierna alsnog overgebracht naar het vn-hospitaal.
+Dit verlieop  neit door nederlandse maatstaven.
+pas toen een nederlandse arts arrivveerde werd door de Tongolese artsen een buikoperatie uitgevoerd.
+Dit gebrurde zonder adequate anesthesie.
+Na de operatie werde de gewonde militair overgelogen naar nederland. En later naar nederland.
+
+
+granaat stond niet op scherp en in afgegaan in veilige stand
+Granaat werd opgeslagen in neit gekoelde containers waardoor deze aan te hoge temeperaturen zijn blootgesteld.
+Door de comvinatie van vocht en warmte in de granaat zeer gevoelige explosieve stoffen werden gevormd.
+Tijdens de oefening was de fatale granaat in de zon.
+Het afsluitplaatje in de granaat bleek niet in staat om doorslag in veilige stand te voorkomen waarna de granaat explodeerde.
+De moritren zijn aangeschaft bij de amerikanen. gredurende de aanschafperiode zijn procedures en controles op kwaliteit en veiligheid deels nagelaten.
+Dit veiligheidsgarantie werd vermeld in het koopcontract.
+Conclusie
+Koopcontract werd niet goed doorgelezen
+Geen controle op kwaliteit en veiligheid
+Geen controle op kwaliteit en veiligheid
+Zwakke plekken in het ontwerp
+Geen controle op kwaliteit en veiligheid
+opslag en gebruik in ongunstige condities
+
+De aanwezige medische voorzieningen waren nite volgends de nederlandse militaire richtlijnen
+Het ontbreek aan medische toetsing vanuit de defensie organisatie
+twijfels die werden geuit binnen de defensieorganisae vonden geen wrrklank
+Ok het ongeval tijdens de mortieroefening was voor defensie geen aanleuiding om de medische voorzienignen te evalueren.
+De inrichting van veilige medische zorg voor nederlandse militairen in kidal is ondergeschikt gemaakt aan de voortgang van de missie.
+
+
+\cite{ovvMortierOngevalMaliVideo} 
+
+
+
+
+
+@online{bnnvara13062018malirapport,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://joop.bnnvara.nl/nieuws/rapport-haalbaarheid-en-houdbaarheid-van-mali-missie-twijfelachtig"},}
+@online{eucal11012021malimissieverlengd,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.consilium.europa.eu/nl/press/press-releases/2021/01/11/eucap-sahel-mali-mission-extended-until-31-january-2023-and-mandate-adjusted/"},}
+@online{nos21052014zorgenmalimissie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://nos.nl/artikel/650637-kamer-bezorgd-over-mali-missie"},}
+@online{meijnders,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bnr.nl/nieuws/10015679/koenders-positief-tegenover-verlening-mali-missie"},}
+@online{bnrwebredactie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.bnr.nl/nieuws/politiek/10345553/kabinet-wil-mali-missie-stoppen-verrassend-besluit"},}
+@online{keultjes01062016malimissiecoalitie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ad.nl/nieuws/clash-om-mali-missie-dreigt-binnen-coalitie~a4151d4f/"},}
+@online{veenhof18012019,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nd.nl/cultuur/boeken/536861/boek-kijkje-bij-de-mali-missie"},}
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.youtube.com/watch?v=jmZ6uSbpCvg"},}
+@online{isitman06012016militair,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ewmagazine.nl/nederland/achtergrond/2016/07/twee-nederlanse-militairen-dood-bij-oefening-mali-missie-325226/"},}
+@online{nporadio11072016filmdemissie,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.nporadio1.nl/nieuws/cultuur-media/9e3b076e-5401-4630-bf39-f925213c5b6b/onverwachte-openhartigheid-over-missie-in-mali"},}
+@online{parlementairmonitor15122013mortierongeluk,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vjfm5p0nujzw?ctx=vj2mc67lofnr"},}
+
+
+sollicitatie
+de bureaucratie
+aankomst
+interview van de burgerbevolking
+steun van de bevolking minuut 15:00
+de organisatie minuut 23:00
+De militaire briefing minuut 34:00
+prioriteit minuut 39:00
+briefing minuut 40:00
+de communicatie met ministerie over inlichten minuut 44:00
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.2doc.nl/documentaires/series/2doc/2016/juli/de-missie.html"},}
+
+
+
+
+
+
+
+
+
+
+\subsection{Analyse}
+
+
+\subsection{Conclusie}
+
+
+\newpage
+\section{Deelonderzoeken}
+
+
+
+\subsubsection{Research case Oekraiene}
+\subsubsection{Deelonerzoek naar veiligheidsrisico's voor sluizen}
+\subsubsection{Wet en regelgeving voor sluizen}
+
+
+\subsubsection{Ondeerzoeksresultaten naar sluisbeveiliging}
+
+
+
+Verouderde computersystemen zijn door de jaren heen gekoppeld aan netwerken, zodat ze op afstand te besturen zijn. Dit zorgt ervoor dat systemen kwetsbaar zijn voor aanvallen van buitenaf. De beveiliging is in de loop der jaren niet voldoende ontwikkeld om de infrastructuur goed te beveiligen.
+
+Volgens het onderzoek is er de afgelopen jaren wel het nodige geïnvesteerd om de beveiliging op te schroeven, maar deze maatregelen zijn nog onvoldoende doorgevoerd.
+https://www.nu.nl/internet/5814282/rekenkamer-waterwerken-niet-goed-beveiligd-tegen-cyberaanvallen.html
+rapport Digitale dijkverzwaring: cybersecurity en vitale waterwerken 
+Crisisdocumentatie is verouderd en er worden geen volwaardige pentesten uitgevoerd. Uit het onderzoek blijkt dat nog niet alle vitale waterwerken rechtstreeks zijn aangesloten op het Security Operations Center (SOC) van Rijkswaterstaat. Hierdoor bestaat het risico dat RWS een cyberaanval niet of te laat detecteert. De minister van Infrastructuur en Waterstaat moet nog stappen zetten om aan de eigen doelstellingen voor cybersecurity te voldoen
+De Algemene Rekenkamer beveelt de minister van Infrastructuur en Waterstaat ook aan om het actuele dreigingsniveau te onderzoeken en te besluiten of extra mensen en middelen nodig zijn. Ook is het voor een snelle en adequate reactie op een crisissituatie van essentieel belang dat informatie up-to-date is. Pentesten zouden integraal onderdeel uit moeten maken van de cybersecuritymaatregelen bij vitale waterwerken. Verder zou moeten worden bezien of medewerkers van het SOC beter moeten worden gescreend.
+https://www.rekenkamer.nl/publicaties/rapporten/2019/03/28/digitale-dijkverzwaring-cybersecurity-en-vitale-waterwerken
+Sluis Eefde kreeg niet alleen de onderhoudsbeurt, maar werd tevens uitgebreid met een tweede sluiskolk. Zo wil Rijkswaterstaat wachttijden voor de scheepvaart voorko
+https://www.gww-bouw.nl/artikel/de-eerste-sluis-met-kantelende-sluisdeur/
+
+Om de lokale bemanning, die de oren en ogen waren van de sluizen, te vervangen waren camera’s, communicatielijnen en software nodig. Hoge kwaliteit videobeelden, met echte kleuren en zonder enige vertraging zijn belangrijk voor de operators en zij moeten hierop kunnen vertrouwen. Er zijn verschillende testen gedaan met diverse camera’s en cameraposities om kleurechtheid te kunnen bieden onder alle omstandigheden. Het resultaat was een perfecte kleur op alle 70+ camera’s op iedere locatie.
+
+Vertraging van videobeelden was een cruciale factor in dit project. Het is uiterst belangrijk dat de operator op zijn beeld ziet wat er daadwerkelijk op locatie gebeurt, zonder enige vertraging. Om te laten zien of er eventuele vertraging is, is er een speciale functie gecreëerd. Deze functie laat een rood kruis zien op het scherm wanneer de vertraging meer is dan 500 miliseconden. Zo ziet de operator direct of het beeld wat hij ziet actueel is. 
+
+Een andere functie die voor dit project is gecreëerd, is bij de videobeelden aan te geven van welke kant van de sluis het camerabeeld is. Voor de operators is het belangrijk dat ze weten vanaf welke kant het vaartuig komt en waar deze naartoe vaart. Een simpele oplossing was om een blauw kader te maken om het videobeeld van de ene kant van de sluis en geen kader om het videobeeld van de andere kant. 
+
+https://tkhsecurity.com/nl/waterwerken/
+
+Het crisismodel kan beter, is de derde deelconclusie van de Algemene Rekenkamer. Er is geen specifiek scenario voor een crisis die wordt veroorzaakt door een cyberaanval. Ook ontbreekt inzicht in de effecten van een cybercrisis op andere sectoren, de zogeheten cascade-effecten. Tevens is de crisisdocumentatie op onderdelen verouderd.
+https://www.h2owaternetwerk.nl/h2o-actueel/rekenkamer-vitale-waterwerken-nog-onvoldoende-beschermd-tegen-cyberaanvallen
+
+
+Ook maakt cyberveiligheid nog geen volwaardig onderdeel uit van reguliere inspecties.’ De Rekenkamer hamert erop dat alle vitale waterinfrastructuur zo snel mogelijk op het SOC wordt aangesloten. Ook zouden werknemers van Rijkswaterstaat die belangrijke waterkeringen bedienen beter gescreend moeten worden op hun antecedenten. Sollicitanten hoeven nu slechts een Verklaring Omtrent Gedrag te overleggen, maar dat is een heel lichte toets.
+https://www.volkskrant.nl/nieuws-achtergrond/hacker-dringt-door-in-controlekamer-waterwerk-cyberterrorist-kan-ons-land-onder-water-zetten~b6fcbc3c/?referrer=https%3A%2F%2Fwww.google.com%2F
+
+deltawerken
+https://www.magazinesrijkswaterstaat.nl/bereikbaarzeeland/2021/01/krammersluizencomplex-verleden-heden-en-toekomst
+
+
+Volgens Rijkswaterstaat is het kostbaar en technisch uitdagend om klassieke automatiseringssystemen te moderniseren en wordt er daarom vooral ingezet op detectie van aanvallen en een adequate reactie daarop.
+Uit het onderzoek blijkt dat Rijkswaterstaat de afgelopen jaren zelf van alle tunnels, bruggen, sluizen et cetera heeft vastgesteld welke cyberveiligheidsmaatregelen moeten worden genomen. Een groot deel van die maatregelen (ongeveer 60%) was begin 2018 ook al uitgevoerd, maar Rijkswaterstaat ziet onvoldoende toe op de uitvoering van het resterend deel en heeft geen actueel overzicht van de overgebleven maatregelen.
+De minister heeft een aantal waterwerken die Rijkswaterstaat beheert als vitaal aangewezen. . Uit het onderzoek blijkt dat nog niet alle vitale waterwerken rechtstreeks zijn aangesloten op het Security Operations Center (SOC) van Rijkswaterstaat. De ambitie om eind 2017 bij alle vitale waterwerken cyberaanvallen direct te kunnen detecteren was in het najaar van 2018 daarmee nog niet gerealiseerd. Hierdoor bestaat het risico dat RWS een cyberaanval niet of te laat detecteert.
+https://www.watersport-tv.nl/nw-31400-7-3715235/nieuws/cybersecurity_vitale_waterwerken_niet_waterdicht.html
+
+
+Over de cyberbeveiliging van gemeenten en waterschappen wordt al langer geklaagd. Zo meldde EenVandaag al in 2012 dat rioolgemalen en sluizen gemakkelijk van afstand te bedienen waren, onder meer door bijzonder slechte wachtwoorden.
+https://www.rtlnieuws.nl/nieuws/nederland/artikel/3758966/cyberbeveiliging-waterschappen-hapert-sluizen-kunnen-worden
+
+Rittal doet onderzoek naarop afstand besdienbare sluizen
+https://expert.rittal.nl/wp-content/uploads/2017/05/Referentieverhaal-Provincie-Zuid-Holland.pdf
+
+
+
+Beveiligde VPN
+
+M2M Services levert aan inmiddels 220 gemeenten en waterschappen beveiligde connectiviteitsoplossingen voor het beheer van pompen, riolen en gemalen. Om risico’s op beveiligingsincidenten te voorkomen maken wij gebruik van een VPN oplossing, waarbij de verbinding optimaal beveiligd is middels encryptie en authenticatie.
+https://www.vtmgroep.nl/blog/waterwerken-in-nederland-onvoldoende-beveiligd-tegen-cyberaanvallen
+
+Veiligheid op het water én op het land
+Gebruik van lampbewaking 
+http://www.wesemann.nl/nl/nieuws-en-pers/274-veiligheid-op-het-water-en-op-het-land.html
+
+
+
+
+
+\newpage
+\section{Modelontwikkeling en keuzen in Uppaal}
+ 
+\label{appendix}
+\thispagestyle{myheadings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Requirements}
+\subsection{Inleiding}
+Om voor mezelf een beeld te krijgen van wat een sluis is en hoe deze moet werken is er een aantal foto's verzameld van sluizen.	
+	
+	\includegraphics[scale=0.65]{sluismodel.jpg}
+	
+	
+Uit deze afbeelding blijkt het volgende:
+Hoogteverschip t.o.v NAP
+2 sluisdeuren
+stoplichten
+Uit een onderzoek naar de werking van de verschillende sluizen in nederland wordt rekening gehouden met de aanmelding van sluizen en de gebruiktstijd van sluizen.
+
+Met de aanmelding van schepen wordt omschreven welke acties er door de schipper de sluismeeter moet worden gedaan om de positie, tijdstip en lengte van een invarendship te communiveren.
+
+Met de gebruikstijd wordt  de daadwerkelijke tijd aangeduid waarin het scheepsverkeer/waterverkeer gebruik kan maken van de sluis en onder welke voorwaarden zoals wachttijd, gewicht, terugvaarmogelijkheden etc).
+
+\subsection{Requirements}
+Directe requirements van opdrachtgever:\\
+Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renova-tie van een groot aantal sluizen noodzakelijk is.  Een eerste verkenning heeft onsgeleerd dat het gecombineerd renoveren en automatiseren van het Nederlandsesluizenpark een aanzienlijke verbetering kan opleveren t.a.v.:\\
+- veiligheid\\
+- efficientie\\
+- capaciteit\\
+- onderhoudskosten\\
+- duurzaamheid\\
+In het kader van het onlangs afgesloten klimaatakkoord heeft de Nederlandseoverheid  daarom  besloten  over te gaan tot een ingrijpende renovatie van dediverse sluizen die ons land rijk is. Op het ministerie van infrastructuur en waterstaat is helaas onvoldoende kennis van ict en systemen aanwezig om eenen ander uit te voeren. Wij vragen u een model (of een onderling samenhangend aantal modellen)aan  te leveren, opdat ontwerpen van verschillende, volledig geautomatiseerde sluizen in de toekomst gerealiseerd kunnen worden.\\\\
+Eigen inbreng van deze requirements:\\
+Wij gaan er van uit dat het volgende van ons verwacht wordt:\\
+Maak een model dat als template dient gebruikt te worden voor het automatiseren van verschillende soorten sluizen. Verder moeten overwegingen gemaakt worden die goed onderbouwd zijn.\\\\ Aangezien er van ons alleen een model verwacht wordt, zullen wij ons geheel focussen op de fundamentele werking van de sluis en hierbij zullen wij ons dus niet bezig  houden met fysieke eisen zoals veiligheidshekjes en borden. Onze focus ligt geheel op de werking van de sluis; elke state waar de sluis zich in mag bevinden en welke beslissingen de sluis moet maken op basis van bestaande protocols en benoemde eisen. \\\\
+Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze bestaande uit de sluisdeuren, de sloplichten, de waterpomp en de boten.\\
+
+\subsection{Sluisdeuren en stoplichten}
+De sluisdeuren aan weerszijde van de sluis  worden gebruikt om de toegang tot de sluiskolk mogelijk te maken en te bewaken in combinatie met de stoplicht.
+
+
+
+\subsection{Waterpomp}
+De waterpomp pompt water in de sluis of pompt water weg naar gelang de richting van het ingevaren schip.
+
+\subsection{Boten}
+De meeste sluizen die zich in Nederland bevinden zijn schutsluizen; deze sluizen zijn bedoeld om boten, zowel vrachtschepen als pleziervaart afhangend van de locatie van de sluis, te verwerken. Om deze reden gaan wij deze dus ook verwerken in ons model. Mocht een sluis niet bedoeld zijn om boten te verwerken, dan zou dit model alsnog toegepast kunnen worden opp desbetreffende sluis.
+Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke sluis.  Sinds wij een template maken, hoeven wij geen rekening te hounden met hoe de schepen in de queue komen. Het enige wat wij hoeven te doen, is de data verwerken.
+
+
+
+
+\subsection{Specificaties}
+Vanuit deze requiremenst kunnen verdere specificaties opgesteld worden.
+
+Even ter duidelijkheid: een requirement beschrijft wat een programma moet doen, en een specificatie beschrijft hoe men van plan is om deze requirements te realiseren.//
+Voorbeeld:// Requirement is dat de sluis meerdere boten moet kunnen verwerken; de specificatie zou hier zijn fdat de sluis minstens twee keer zo groot moet zijn dan de grootste boot die door de sluis kan.
+
+
+
+
+
+\subsection{Requirements voor Het sluismodel}
+
+ 
+\subsection{Requirements}
+Requirements zijn alleen die eisen die gesteld worden aan het gedrag of de kwaliteit van het systeem om te voorzien in de behoeften van een belanghebbende uit de business.
+
+
+
+Initially the clutch is closed
+To open the clutch, it takes at least 100 ms and at most 150 ms
+To close the cluch, it takes at least 100 ms and at most 150 ms
+Initially the gearbox is neutral
+To release the gear, it takes at least 100 ms and at most 200 ms.
+To set a gear it takes at leasst 100 ms and at mose 300 ms.
+The engine is always in a predefined state called initial when no gear is set.
+To find zero torque in the engine, it takes at least 1150 ms and at most 400 ms. ut at 400 ms, the engine may enter an error state or find synchronous speed.
+The  engine may regulate on synchronous speed in at most 500 ms.
+When in an error state, the engine will regulate on synchrobous speed in at least 50 ms.
+
+
+A gear change should ne performed within 1 seond (P6-p*,P3)
+When an error arises, the system will reach a predefined error state marking the error (p9-p11)
+The system should be able to use all gears ( p2-p3)
+There will be no deadlocked stat in the system(p17)
+When the system indicates gear neutral, the engine should  be in initial state (p12)
+The gearbox controller will never indicate open or closed clutch when the clutch is closed or open respctively(p14)
+The gearbox controller will never indicate gear set or geur neutral wen the gear is nog set or idle respectively (p15)
+When the engine is regulating on torque, the clutch is closed (p16)
+
+
+
+
+\subsubsection{Uppaal kripke structuren}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Functionele en niet-functionele eisen}
+
+\subsubsection{specificaties}
+
+\subsubsection{Het vier variabelen model}
+Systemen (met daarin software) en de bijbehorende vier variabelen:
+\subsubsection{Monitored variabelen}
+: door sensoren gekwanticeerdefenomenen uit de omgeving
+\subsubsection{Controlled variabelen}
+door actuatoren bestuurde fenomenen uit de omgeving
+\subsubsection{Input variabelen}
+\subsubsection{Output variabelen}
+
+
+
+
+\subsubsection{Aankomst, uitvoering, vrijgave}
+
+
+\subsubsection{ontwerp}
+
+
+\subsubsection{Onderdelen}
+Op basis van de schets kunnen we vaststellen dat een sluismodel uit de volgende onderdelen bestaat.
+
+\begin{enumerate}
+	\item Een tweetal sluisdeuren. 
+	\item Een sluiskolk waarin de schepen in- enuitvaren
+	\item een stoplicht om een signaal af te geven voor invaren en uitvaren.
+	\item Een nivelleermachine zorgt ervoor dat het water in de sluis op het gewenste niveau wordt gebracht
+	\item Een control-system dat ervoor zorgt dat de opdrachten van de sluisbeheerder (geautomatiseerd) worden uitgevoerd
+\end{enumerate}
+\subsubsection{Werking}
+
+Een schip komt aanvaren en meld zich aan bij de sluismeester. De sluismeester geeft een signaal aan het controlsystem voor het openen van de sluisdeuren, nadat geccontroleerd is of de nivelleermachine al klaar is. Als er ruimte is voor een invarend schip mag het schip dat zoich heeft aangemeld en toestemming heeft  in de sluis varen. Op het moment dat de sluis vol is gaan de sluisdeuren dicht. Eenmaal afgesloten kan de nivelleermachine beginnen om het water in de sluiskolk op het gewenste waterpeil te brengen. Als dit nivelleerprces is afgerond geeft  het controlsystem daan da de sleusdeuren open kunnen.  Als de sleusdeuren open zijn en het uitvaarsignaal is op groen dan moet het schip in de sluis de sluis uitvaren.
+\paragraph{extra cases}
+Uit het zojuist genoemnde scenario valt het volgende op te maken.
+\begin{enumerate}
+	\item Een schip geeft een signaal aan een sluismeester.
+	\item Er wordt gekeken of er wel plek is in de sluis .
+	\item Er wordt gekeken of de nivelleermachine is afgerond.
+	\item Er wordt gekeken wat het niveo van de waterpeil in de sluiskolk is.
+	\item Er wordt gekeken of de sluisdeuren gereed zijn voor invarende schepen.
+\end{enumerate}
+\paragraph{Aandachtspunten}
+\begin{enumerate}
+	\item Voorrang tussen schepen onderling in de sluis?
+	\item Hoe lang mag een schip zich in de sluis bevinden?
+\end{enumerate} 
+
+
+
+
+\subsection{Afbakening}
+\begin{itemize}
+	\item Wat doet de sluis niet.
+	\item De sluiss houdt geen rekening met links of rechtsrijdend verkeer vanuit de zeevaart
+	\item De sluis heeft geen queue met daarin een id gekoppeld aan de sluis.
+	\item De waterpomp wordt alleen aan en uitgezet
+	\item De waterpomp houdt geen rekening met waterstand
+	\item Houdt geen rekening met een schip in de sluis dat is blijven hangen.
+	
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Formal description of the system}
+
+\includegraphics[scale=0.65]{sluispassage.png}
+
+
+\begin{itemize}
+	\begin{minipage}{0.4\linewidth}
+		\item Vooraanmelding
+		\item informatie inwinnen
+		\item operationele melding
+		\item aankomst volgorde
+		\item aanwijzen wachtplaats
+		\item verstrekken informatie
+		\item aanwijzen opstelplaats
+		\item opstellen schutproces
+		\item verstrekken informatie
+		\item invaarvolgorde en ligplaats in sluis
+
+	\end{minipage}
+\begin{minipage}{0.4\linewidth}
+
+		\item gereedmaken voor invaren
+		\item openen invaardeuren
+		\item invaren toegestaan
+		\item aanwijzingen voor invaren
+		\item aanwijzingen tijdens afmeren
+		\item invaren verboden
+		\item sluiten invaardeuren
+		\item start nivelleren
+		\item stop nivelleren
+		\item aanzwijzingen voor uitvaren
+		\item openen uitvaardewuren
+		\item uitvaren toegestaan
+	
+\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+	\item uitvaren
+	\item operationele afmmelding
+	\item utvaren verboden
+	\item aanwijzing invaren nieuwe schepen
+	\invaren verboden
+	\deuren gesloten
+	\end{minipage}
+\end{itemize}
+
+
+\subsection{Notities die verwerkt moeten worden}
+
+moet de intitial state altijd in een loop zitten in uppaal?
+wat zijn urgent channels?
+rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
+
+
+gesprek wessel:
+main controller slim dat direction een bool is. 
+pomp is te slim, zoiu alleen maar aan of uit moeten gaan, of nog weg en in pompen maar meer niet. niets met waterlevel en aantal schepen.
+schip: niet doen. als een schip zich aanmeld, dan gebeuren er dingen, maar gaat hij naar binnen? je weet niet wat dat schip gaat doen want menselijk gedrag. beter niet het schip uitgebreid maken, maar eerder de sluis. te veel aannames.
+
+wessel model: alleen als wachtrij vol zit, doet de sluis iets.
+deur heeft een parameter zodat er meerdere deuren in de simulator neergezet kunnnen worden. ook bij wachtrij.
+
+stoplichen kunnen er wel in maar als je simpeler wilt, gaan die als eerste weg.
+zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
+rampen alleen voor persoonlijk verslag
+
+ 
+
+
+ 
+
+\paragraph{Liveness}
+Liveness properties are of the formn: something will eventually happen, e.g. when pressing the on button of the remote control of the television, then eventually the television should turn on. Or in a model of a  communication protocol, any message that has been sent should eventually be received.
+\paragraph{Fairness}
+\paragraph{Security}
+Safety propertires are of the form: "something bad will never happen". For instance, in a model of a nuclear power plant, a safety propertymight be, that the operating temperature is always (invariantly) under a certain threshold, or that a meltdown never occurs. A variation of this property is that "something will possibly never happen".
+ For instance when playing a game, a safe state is one in which we can still win he game, hence we will possible not loose.
+The system cannot reach states or enable events that are fornidden by the requirements
+\paragraph{Performance}
+There requirements limit the maximum time to perform when no recoverable errors occur.
+
+
+
+\paragraph{brainstorm 22-5-2022}
+
+\subparagraph{invaardeuren en uitvaardeuren}
+Gaan we uit van binnendeuren en buitendeuren? Er ontstaat dan een extra ruimte in de sluis. Hoeveel schepen kunnen in deze ruimte? Wat is de maximale wachtreij in deze ruimte en wat zijn de verkeersregels in deze nruimte?
+\subparagraph{invaarstoplicht en uitvaarstoplicht}
+Als invaren is toegestaan hoe wordt dit dan doorgegeven aan de schepen in de sluis? moeten zij dan uit zichzelf wachten of krijgen zij een signaal dat zij wewl/niet mogen uitvaren? En moeten zij dan kiezen voor links, midden of rechts? Of maakt dat allemaal niets uit?
+
+\subparagraph{invaarwachtrij en uitvaarwachtrij}
+Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing houden met het schip dat als eerste is ingevaren en/of het langst in de sluis zit?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\chapter{Formal validation and verification aan de hand van Kripke model}
+
+\paragraph{Parallele compositie}
+Om een sluispark te kunnen modelleren meerdere templates die de verschillende abstracties van het systeem aantonen.
+
+\paragraph{Synchronisatgie}
+Zorgt ervoor dat  een transitie die genomen worden in de ene kripke tructuur op hetzelfde moment wordt opgenomen in een andere kripke structuur.
+
+\paragraph{Modelling with timed automata}
+\paragraph{Clock regions}
+\paragraph{Clock zones}
+\paragraph{Difference bound matrices}
+\paragraph{Complexity considerations}
+
+
+
+\subsubsection{templates}
+
+\paragraph{Schip}
+
+\paragraph{Sluis}
+
+
+\paragraph{Aanvoer}
+
+
+\paragraph{Afvoer}
+
+\paragraph{Pomp}
+
+\paragraph{Pompbediening}
+
+
+\paragraph{Stoplicht}
+
+\paragraph{Deur}
+
+
+
+
+
+
+	
+\subsection{Formele logica}
+
+0004
+0031
+Modelcheckig boek blz 14
+E = {main={},
+	deur={},
+	stoplicht={},
+	sensor={},
+	pomp={},
+	wachtrij={},
+	queue={},
+	sluiskolk={}
+}
+Q0 =
+F C Q = sluiskolk_afgesloten
+Q = E0,...En
+0064
+0077
+
+
+
+X: volgende keer
+F: in de toekomst
+G: altijd geldig
+A: voor alle paden
+E: voor enkele paden
+U: waar zolang de volgende inclusief geldt
+R: waar zolang geldt inclusief de startpositie
+
+M, s-> f betekent f is geldig in state s in kripke structuur M
+M, ph -> f is geldig op een pad in kripke structuur M
+M. s -> FP <-> er bestat een fair pad dat begint bij s en p € L(s)
+M, s->E(g) er bestaat een fair pad M dat begint van s zodanig dat phi -> F(g)
+M, s-> F A(g) voor alle fair pads phi beginnend vanad s,  phi -> F(g)
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
