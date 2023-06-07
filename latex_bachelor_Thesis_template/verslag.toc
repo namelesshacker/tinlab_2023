@@ -49,103 +49,102 @@
 \contentsline {subsubsection}{tesla crash report}{25}{section*.37}%
 \contentsline {subsubsection}{stint ongeluk}{28}{section*.38}%
 \contentsline {subsubsection}{slmramp}{28}{section*.39}%
-\contentsline {subsubsection}{schipholbrand}{30}{section*.40}%
-\contentsline {subsubsection}{Ramp schietpartij militair ossendrecht }{31}{section*.41}%
-\contentsline {subsubsection}{molukse treinkaping }{31}{section*.42}%
-\contentsline {subsubsection}{explosie tanjin china }{32}{section*.43}%
-\contentsline {subsubsection}{explosie in libabon, beirut }{37}{section*.44}%
-\contentsline {subsubsection}{ethiopian airlines}{38}{section*.45}%
-\contentsline {subsubsection}{ethiek}{42}{section*.46}%
-\contentsline {subsubsection}{ecourt in nederlandse rechtspraak}{42}{section*.47}%
-\contentsline {subsubsection}{ cyber aanval op Oekraïene }{42}{section*.48}%
-\contentsline {subsubsection}{Mali}{43}{section*.49}%
-\contentsline {subsection}{\numberline {0.3.3}Analyse}{44}{subsection.0.3.3}%
-\contentsline {subsection}{\numberline {0.3.4}Conclusie}{44}{subsection.0.3.4}%
-\contentsline {section}{\numberline {0.4}Deelonderzoeken}{45}{section.0.4}%
-\contentsline {subsubsection}{Research case Oekraiene}{45}{section*.50}%
-\contentsline {subsubsection}{Deelonerzoek naar veiligheidsrisico's voor sluizen}{45}{section*.51}%
-\contentsline {subsubsection}{Wet en regelgeving voor sluizen}{45}{section*.52}%
-\contentsline {subsubsection}{Ondeerzoeksresultaten naar sluisbeveiliging}{45}{section*.53}%
-\contentsline {section}{\numberline {0.5}Modelontwikkeling en keuzen in Uppaal}{47}{section.0.5}%
-\contentsline {section}{\numberline {0.6}Requirements}{47}{section.0.6}%
-\contentsline {subsection}{\numberline {0.6.1}Inleiding}{47}{subsection.0.6.1}%
-\contentsline {subsection}{\numberline {0.6.2}Requirements}{47}{subsection.0.6.2}%
-\contentsline {subsection}{\numberline {0.6.3}Sluisdeuren en stoplichten}{48}{subsection.0.6.3}%
-\contentsline {subsection}{\numberline {0.6.4}Waterpomp}{48}{subsection.0.6.4}%
-\contentsline {subsection}{\numberline {0.6.5}Boten}{48}{subsection.0.6.5}%
-\contentsline {subsection}{\numberline {0.6.6}Specificaties}{48}{subsection.0.6.6}%
-\contentsline {subsection}{\numberline {0.6.7}Requirements voor Het sluismodel}{48}{subsection.0.6.7}%
-\contentsline {subsection}{\numberline {0.6.8}Requirements}{48}{subsection.0.6.8}%
-\contentsline {subsubsection}{Uppaal kripke structuren}{49}{section*.54}%
-\contentsline {subsubsection}{Functionele en niet-functionele eisen}{49}{section*.55}%
-\contentsline {subsubsection}{specificaties}{49}{section*.56}%
-\contentsline {subsubsection}{Het vier variabelen model}{49}{section*.57}%
-\contentsline {subsubsection}{Monitored variabelen}{49}{section*.58}%
-\contentsline {subsubsection}{Controlled variabelen}{49}{section*.59}%
-\contentsline {subsubsection}{Input variabelen}{49}{section*.60}%
-\contentsline {subsubsection}{Output variabelen}{49}{section*.61}%
-\contentsline {subsubsection}{Aankomst, uitvoering, vrijgave}{49}{section*.62}%
-\contentsline {subsubsection}{ontwerp}{49}{section*.63}%
-\contentsline {subsubsection}{Onderdelen}{49}{section*.64}%
-\contentsline {subsubsection}{Werking}{49}{section*.65}%
-\contentsline {paragraph}{extra cases}{50}{section*.66}%
-\contentsline {paragraph}{Aandachtspunten}{50}{section*.67}%
-\contentsline {subsection}{\numberline {0.6.9}Afbakening}{50}{subsection.0.6.9}%
-\contentsline {chapter}{\numberline {1}Formal description of the system}{51}{chapter.1}%
-\contentsline {subsection}{\numberline {1.0.1}Notities die verwerkt moeten worden}{51}{subsection.1.0.1}%
-\contentsline {paragraph}{Liveness}{52}{section*.68}%
-\contentsline {paragraph}{Fairness}{52}{section*.69}%
-\contentsline {paragraph}{Security}{52}{section*.70}%
-\contentsline {paragraph}{Performance}{52}{section*.71}%
-\contentsline {paragraph}{brainstorm 22-5-2022}{52}{section*.72}%
-\contentsline {subparagraph}{invaardeuren en uitvaardeuren}{52}{section*.73}%
-\contentsline {subparagraph}{invaarstoplicht en uitvaarstoplicht}{52}{section*.74}%
-\contentsline {subparagraph}{invaarwachtrij en uitvaarwachtrij}{52}{section*.75}%
-\contentsline {chapter}{\numberline {2}Formal validation and verification aan de hand van Kripke model}{53}{chapter.2}%
-\contentsline {paragraph}{Parallele compositie}{53}{section*.76}%
-\contentsline {paragraph}{Synchronisatgie}{53}{section*.77}%
-\contentsline {paragraph}{Modelling with timed automata}{53}{section*.78}%
-\contentsline {paragraph}{Clock regions}{53}{section*.79}%
-\contentsline {paragraph}{Clock zones}{53}{section*.80}%
-\contentsline {paragraph}{Difference bound matrices}{53}{section*.81}%
-\contentsline {paragraph}{Complexity considerations}{53}{section*.82}%
-\contentsline {subsubsection}{templates}{53}{section*.83}%
-\contentsline {paragraph}{Schip}{53}{section*.84}%
-\contentsline {paragraph}{Sluis}{53}{section*.85}%
-\contentsline {paragraph}{Aanvoer}{53}{section*.86}%
-\contentsline {paragraph}{Afvoer}{53}{section*.87}%
-\contentsline {paragraph}{Pomp}{53}{section*.88}%
-\contentsline {paragraph}{Pompbediening}{53}{section*.89}%
-\contentsline {paragraph}{Stoplicht}{53}{section*.90}%
-\contentsline {paragraph}{Deur}{54}{section*.91}%
-\contentsline {subsection}{\numberline {2.0.1}Formele logica}{54}{subsection.2.0.1}%
-\contentsline {chapter}{Discussie}{55}{chapter*.92}%
-\contentsline {chapter}{Aanbeveling}{56}{chapter*.93}%
-\contentsline {chapter}{\numberline {3}Deelonderzoek naar veiligheidsrisico's en eisen voor sluizen}{62}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Deelonderzoek wet en regelgeving voor sluizen}{64}{chapter.4}%
-\contentsline {chapter}{Bronnen}{107}{chapter.4}%
-\contentsline {chapter}{Evaluatie}{108}{chapter*.95}%
-\contentsline {chapter}{\numberline {A}Achtergrond materiaal}{109}{appendix.A}%
-\contentsline {chapter}{Requirement tracability matrix}{194}{appendix*.96}%
-\contentsline {chapter}{swot analyse}{195}{appendix*.97}%
-\contentsline {section}{\numberline {A.1}Research case: De digitale aanval op de Oekrainese krachtcentrale}{197}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Literaire analyse}{197}{subsection.A.1.1}%
-\contentsline {subsubsection}{Motief}{197}{section*.98}%
-\contentsline {subsubsection}{Situatie Oekraiene}{197}{section*.99}%
-\contentsline {subsubsection}{Situatie algemeen}{197}{section*.100}%
-\contentsline {subsubsection}{Factoren}{198}{section*.101}%
-\contentsline {subsubsection}{Oorzaak}{198}{section*.102}%
-\contentsline {subsubsection}{Gebruikte materialen}{198}{section*.103}%
-\contentsline {subsubsection}{Uitvoering van de aanval}{198}{section*.104}%
-\contentsline {subsubsection}{Oplossingen}{198}{section*.105}%
-\contentsline {subsubsection}{Aanbevelingen}{198}{section*.106}%
-\contentsline {subsection}{\numberline {A.1.2}Resultaten}{198}{subsection.A.1.2}%
-\contentsline {subsubsection}{De aanval}{198}{section*.107}%
-\contentsline {subsubsection}{spearfishing}{199}{section*.108}%
-\contentsline {subsubsection}{blackenergy}{199}{section*.109}%
-\contentsline {subsubsection}{remote access capabilities}{199}{section*.110}%
-\contentsline {subsubsection}{serial-to-ethernet communication devices}{199}{section*.111}%
-\contentsline {subsubsection}{telephony denial of service attacks}{199}{section*.112}%
-\contentsline {subsection}{\numberline {A.1.3}oplossingen}{199}{subsection.A.1.3}%
-\contentsline {subsection}{\numberline {A.1.4}Discussie}{199}{subsection.A.1.4}%
-\contentsline {subsection}{\numberline {A.1.5}Verder lezen}{199}{subsection.A.1.5}%
+\contentsline {subsubsection}{schipholbrand}{29}{section*.40}%
+\contentsline {subsubsection}{schipholbrand}{30}{section*.41}%
+\contentsline {subsubsection}{Ramp schietpartij militair ossendrecht }{32}{section*.42}%
+\contentsline {subsubsection}{molukse treinkaping }{33}{section*.43}%
+\contentsline {subsubsection}{explosie tanjin china }{33}{section*.44}%
+\contentsline {subsubsection}{explosie in libabon, beirut }{34}{section*.45}%
+\contentsline {subsubsection}{ethiopian airlines}{34}{section*.46}%
+\contentsline {subsubsection}{ethiek}{38}{section*.47}%
+\contentsline {subsubsection}{ecourt in nederlandse rechtspraak}{39}{section*.48}%
+\contentsline {subsubsection}{ cyber aanval op Oekraïene }{39}{section*.49}%
+\contentsline {subsubsection}{Mali}{40}{section*.50}%
+\contentsline {subsection}{\numberline {0.3.3}Analyse}{41}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {0.3.4}Conclusie}{41}{subsection.0.3.4}%
+\contentsline {section}{\numberline {0.4}Deelonderzoeken}{42}{section.0.4}%
+\contentsline {subsubsection}{Research case Oekraiene}{42}{section*.51}%
+\contentsline {subsubsection}{Deelonerzoek naar veiligheidsrisico's voor sluizen}{42}{section*.52}%
+\contentsline {subsubsection}{Wet en regelgeving voor sluizen}{42}{section*.53}%
+\contentsline {subsubsection}{Ondeerzoeksresultaten naar sluisbeveiliging}{42}{section*.54}%
+\contentsline {section}{\numberline {0.5}Modelontwikkeling en keuzen in Uppaal}{44}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Requirements}{44}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Inleiding}{44}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}Requirements}{44}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {0.6.3}Sluisdeuren en stoplichten}{45}{subsection.0.6.3}%
+\contentsline {subsection}{\numberline {0.6.4}Waterpomp}{45}{subsection.0.6.4}%
+\contentsline {subsection}{\numberline {0.6.5}Boten}{45}{subsection.0.6.5}%
+\contentsline {subsection}{\numberline {0.6.6}Specificaties}{45}{subsection.0.6.6}%
+\contentsline {subsection}{\numberline {0.6.7}Requirements voor Het sluismodel}{45}{subsection.0.6.7}%
+\contentsline {subsection}{\numberline {0.6.8}Requirements}{45}{subsection.0.6.8}%
+\contentsline {subsubsection}{Uppaal kripke structuren}{46}{section*.55}%
+\contentsline {subsubsection}{Functionele en niet-functionele eisen}{46}{section*.56}%
+\contentsline {subsubsection}{specificaties}{46}{section*.57}%
+\contentsline {subsubsection}{Het vier variabelen model}{46}{section*.58}%
+\contentsline {subsubsection}{Monitored variabelen}{46}{section*.59}%
+\contentsline {subsubsection}{Controlled variabelen}{46}{section*.60}%
+\contentsline {subsubsection}{Input variabelen}{46}{section*.61}%
+\contentsline {subsubsection}{Output variabelen}{46}{section*.62}%
+\contentsline {subsubsection}{Aankomst, uitvoering, vrijgave}{46}{section*.63}%
+\contentsline {subsubsection}{ontwerp}{46}{section*.64}%
+\contentsline {subsubsection}{Onderdelen}{46}{section*.65}%
+\contentsline {subsubsection}{Werking}{46}{section*.66}%
+\contentsline {paragraph}{extra cases}{47}{section*.67}%
+\contentsline {paragraph}{Aandachtspunten}{47}{section*.68}%
+\contentsline {subsection}{\numberline {0.6.9}Afbakening}{47}{subsection.0.6.9}%
+\contentsline {chapter}{\numberline {1}Formal description of the system}{48}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Notities die verwerkt moeten worden}{48}{subsection.1.0.1}%
+\contentsline {paragraph}{Liveness}{49}{section*.69}%
+\contentsline {paragraph}{Fairness}{49}{section*.70}%
+\contentsline {paragraph}{Security}{49}{section*.71}%
+\contentsline {paragraph}{Performance}{49}{section*.72}%
+\contentsline {paragraph}{brainstorm 22-5-2022}{49}{section*.73}%
+\contentsline {subparagraph}{invaardeuren en uitvaardeuren}{49}{section*.74}%
+\contentsline {subparagraph}{invaarstoplicht en uitvaarstoplicht}{49}{section*.75}%
+\contentsline {subparagraph}{invaarwachtrij en uitvaarwachtrij}{49}{section*.76}%
+\contentsline {chapter}{\numberline {2}Formal validation and verification aan de hand van Kripke model}{50}{chapter.2}%
+\contentsline {paragraph}{Parallele compositie}{50}{section*.77}%
+\contentsline {paragraph}{Synchronisatgie}{50}{section*.78}%
+\contentsline {paragraph}{Modelling with timed automata}{50}{section*.79}%
+\contentsline {paragraph}{Clock regions}{50}{section*.80}%
+\contentsline {paragraph}{Clock zones}{50}{section*.81}%
+\contentsline {paragraph}{Difference bound matrices}{50}{section*.82}%
+\contentsline {paragraph}{Complexity considerations}{50}{section*.83}%
+\contentsline {subsubsection}{templates}{50}{section*.84}%
+\contentsline {paragraph}{Schip}{50}{section*.85}%
+\contentsline {paragraph}{Sluis}{50}{section*.86}%
+\contentsline {paragraph}{Aanvoer}{50}{section*.87}%
+\contentsline {paragraph}{Afvoer}{50}{section*.88}%
+\contentsline {paragraph}{Pomp}{50}{section*.89}%
+\contentsline {paragraph}{Pompbediening}{50}{section*.90}%
+\contentsline {paragraph}{Stoplicht}{50}{section*.91}%
+\contentsline {paragraph}{Deur}{51}{section*.92}%
+\contentsline {subsection}{\numberline {2.0.1}Formele logica}{51}{subsection.2.0.1}%
+\contentsline {chapter}{Discussie}{52}{chapter*.93}%
+\contentsline {chapter}{Aanbeveling}{53}{chapter*.94}%
+\contentsline {chapter}{Bronnen}{102}{chapter*.95}%
+\contentsline {chapter}{Evaluatie}{103}{chapter*.96}%
+\contentsline {chapter}{\numberline {A}Achtergrond materiaal}{104}{appendix.A}%
+\contentsline {chapter}{Requirement tracability matrix}{189}{appendix*.97}%
+\contentsline {chapter}{swot analyse}{190}{appendix*.98}%
+\contentsline {section}{\numberline {A.1}Research case: De digitale aanval op de Oekrainese krachtcentrale}{192}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Literaire analyse}{192}{subsection.A.1.1}%
+\contentsline {subsubsection}{Motief}{192}{section*.99}%
+\contentsline {subsubsection}{Situatie Oekraiene}{192}{section*.100}%
+\contentsline {subsubsection}{Situatie algemeen}{193}{section*.101}%
+\contentsline {subsubsection}{Factoren}{193}{section*.102}%
+\contentsline {subsubsection}{Oorzaak}{193}{section*.103}%
+\contentsline {subsubsection}{Gebruikte materialen}{193}{section*.104}%
+\contentsline {subsubsection}{Uitvoering van de aanval}{193}{section*.105}%
+\contentsline {subsubsection}{Oplossingen}{193}{section*.106}%
+\contentsline {subsubsection}{Aanbevelingen}{193}{section*.107}%
+\contentsline {subsection}{\numberline {A.1.2}Resultaten}{193}{subsection.A.1.2}%
+\contentsline {subsubsection}{De aanval}{193}{section*.108}%
+\contentsline {subsubsection}{spearfishing}{194}{section*.109}%
+\contentsline {subsubsection}{blackenergy}{194}{section*.110}%
+\contentsline {subsubsection}{remote access capabilities}{194}{section*.111}%
+\contentsline {subsubsection}{serial-to-ethernet communication devices}{194}{section*.112}%
+\contentsline {subsubsection}{telephony denial of service attacks}{194}{section*.113}%
+\contentsline {subsection}{\numberline {A.1.3}oplossingen}{194}{subsection.A.1.3}%
+\contentsline {subsection}{\numberline {A.1.4}Discussie}{194}{subsection.A.1.4}%
+\contentsline {subsection}{\numberline {A.1.5}Verder lezen}{194}{subsection.A.1.5}%
