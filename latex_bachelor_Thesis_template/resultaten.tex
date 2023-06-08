@@ -1,499 +1,9 @@
-\hoofdstuk{Resultaten}
-resultaten
-geverifieerde waanemingen
-waarnemingen in strijd met gangbare n opvattingen
-waarnemingen die bestaande praktische problemen oplossen
 
+ 
 
 
-\begin{tcbitemize}[raster columns=3, raster rows=4, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
-	
-	%Empty corner and two headers
-	\tcbitem[blankest, width=1cm]
-	\tcbitem[header = Strength]
-	\texta
-	\tcbitem[header = Weakness]
-	\textb
-	
-	%First row
-	\tcbitem[firstcol = internal]
-	\textcn
-	\tcbitem[swotbox = S]
-	\lipsum[2]
-	\tcbitem[swotbox = W]
-	\lipsum[2]
-	
-	\tcbitem[blankest, width=1cm]
-	\tcbitem[header = Opportunity]
-	\texta
-	\tcbitem[header = threat]
-	\textb
-	
-	%Second row
-	\tcbitem[firstcol = external]
-	\textcn
-	\tcbitem[swotbox=O]
-	\lipsum[2]
-	\tcbitem[swotbox=T]
-	\lipsum[2]
-\end{tcbitemize}
 
-\newpage
-\paragraaf{Werken met \LaTeX{}}
-
-Het is niet verplicht om met \LaTeX{} te werken. Men mag ook gebruik
-maken van andere tekstverwerkers zoals \emph{MS-Word}, Wel is het
-verplicht het afstudeerverslag \LaTeX{}-geformateerd in te leveren en
-van de \LaTeX{}-template \verb!modelverslag.sty! gebruik te
-maken.
-
-De \LaTeX{}-template bevat enkele macro's voor het opstellen van een
-hoofdstuk (\verb!\hoofdstuk!), een paragraaf (\verb!\paragraaf!), een
-afbeelding (\verb!\figuur!). De overige \LaTeX{} macro's en omgevingen
-blijven bruikbaar. Bijvoorbeeld de \verb!tabular!-omgeving om tabellen
-te maken:
-
-\begin{lstlisting}{language=[LaTeX]TeX}
-\begin{tabular}{formaat}
-   ... 
-\end{tabular}
-\end{lstlisting}
-
-\begin{center}
-\begin{tabular}{|l||r|}
-  \hline
-  \multicolumn{2}{|c|}{Afmetingen ($1\mbox{ pt}=0,351\mbox{ mm}$)}\\
-  \hline
-  paper width     & \the\paperwidth\\
-  text width      & \the\textwidth\\
-  column width    & \the\columnwidth\\
-  column seperate & \the\columnsep\\
-  oddside margin  & \the\oddsidemargin\\
-  evenside margin & \the\evensidemargin\\
-  paper height    & \the\paperheight\\
-  text height     & \the\textheight\\
-  top margin      & \the\topmargin\\
-  \hline
-\end{tabular}
-\end{center}
-
-Een nadeel van tabellen dat ze vaak te groot zijn voor de
-twocolumn-mode. Het zou mooi zijn als ze ingedrukt kunnen
-worden. Bovendien is deze tabel niet-zwevend, hij wordt geplaatst
-tussen de tekstdelen waar hij is ingevoerd. Dit kan bezwaarlijk zijn
-bij pagina-overgangen. In dat geval kan je beter gebruikmaken van
-zwevende tabellen (en figuren) die door \LaTeX{} zelf op een geschikte
-plaats worden gezet. Wel moet aan een zwevende tabel een label en een
-onderschrift gekoppeld worden om er naar te kunnen verwijzen. Voor een
-zwevende horizontale tabel met label en onderschrift wordt in de
-`template' de \verb!tabel!-omgeving aangeboden:\\
-
-\begin{Aanpassen}
-\begin{verbatim}
-\begin{tabel}[afm]{formaat}{label}{onderschrift}
-  ...
-\end{tabel}
-\end{verbatim}
-\end{Aanpassen}
-
-
-De \verb!tabel!-omgeving plaatst `zwevende' tabellen in verslag- en
-publicatie-mode. Het eerste argument is een optioneel \verb![afm]!
-argument met de defaultwaarde \verb!\normalsize! voor de afmeting van
-de karakters. De mogelijke waarden voor de afmeting zijn -- van groot
-tot klein -- de volgende macro's: (\verb!\huge!, \verb!\LARGE!,
-\verb!\Large!, \verb!\large!, \verb!\small!, \verb!\footnotesize!,
-\verb!\scriptsize! en \verb!\tiny!).
-
-Bovendien zijn de standaard \verb!tabular! kolomformaten
-\verb!r,l,c,|,||,p{lengte}! uit de tabelomgeving uitgebreid met
-kolomformaten \verb!\R, \C, \L!  voor variabele celinhoud zoals het
-plaatsen van meerdere regels per cel.
-
-Een verticale tabel is mogelijk met de omgeving (\verb!TABEL!)  met
-dezelfde kolomformaten mogelijkheden.  In \LaTeX{} zijn de tabellen,
-vooral in de \verb!twocolumn!-mode erg lastig. Bijvoorbeeld in de
-tabellen~\ref{tab:vbt} en \ref{tab:vbx} zijn twee verschillende
-uitwerkingen van de tabelomgevingen:
-
-\begin{footnotesize}
-\begin{tabel}[\Large]{|r|l|}{vbt}{Vaste cellen, variabele breedte}
-  \hline
-  7C0 & hexadecimal \\
-  3700 & octal \\ \cline{2-2}
-  11111000000 & binary \\
-  \hline \hline
-  1984 & decimal \\
-  \hline
-\end{tabel}
-\end{footnotesize}
-
-%Absolute breedte in mm, cm etc. (geschikt voor één mode):
-%\begin{tabel}{|>\R p{2cm}|>\L p{4cm}|}{vbx}{OpenGL libraries}
-%Relatieve breedte 20% en 65% van de kolombreedte (geschikt voor alle moden).
-%Procentwaarden van 0 ... 99, voor 100% neem \columnwidth zelf.
-\begin{tabel}{|>\R p{\Procent{20}}|>\L
-    p{\Procent{65}}|}{vbx}{Variabele cellen, variabele breedte}
-\hline
- OpenGL core library & OpenGL32 voor MS-Windows en GL voor
- de meeste X-Window systemen\\
-\hline
- OpenGL Utility Library & GLU\\
-\hline
- Koppeling met het platform & GLX voor X-Window en WGL voor MS-Windows\\
-\hline 
- OpenGL Library Utility Toolkit & GLUT, bibliotheek voor
-  het openen van windows, invoer van muis en toetsenbord, menus,
-  event-driven in- en uitvoer\\
-\hline
-\end{tabel}
-
-Plaats afbeeldingen alleen in het hoofdverslag als ze de tekst
-ondersteunen en de leesbaarheid niet verlagen.  In de tekst kan naar
-afbeeldingen worden verwezen met de macro \verb!\ref{fig:label}!.
-
-In \LaTeX{}\cite{lam1994} geschreven verslagen zijn op diverse manieren
-afbeeldingen\cite{Oos1996} te plaatsen. Een van die manieren is gebruik te
-maken van de macro \verb!\figuur! in de \verb!modelverslag!-package'.
-
-`Vector graphics' figuren van het `pdf-', `eps-' en `svg-'
-formaat\footnote{Een pdf-bestand kan zowel vector-graphics als
-  bitmap-graphics bevatten.} met een ingewikkelde `bounding box' zijn
-moeilijk op de juiste schaal te brengen. Vaak moet dat met uitproberen
-bepaald worden. Het plaatsen van figuren met absolute afmetingen of
-een vaste `scale' factor, kan leiden tot minder soepele oplossingen
-zoals figuur~\ref{fig:PDFA}. Deze figuur heeft naast een rotatie
-(\verb!angle=270!)  een vaste scale-factor (\verb!scale=0.45!) die
-alleen geschikt is voor de `twocolumn-mode'.
-
-\begin{center}
-  \figuur{scale=0.45,angle=270}{plaatjes/agp.pdf}{PDFA}{Vaste breedte
-    (pdf)}
-\end{center}
-
-In plaats van \verb!scale=x! kan je beter de relatieve afmeting
-\verb!width=\Procent{y}! gebruiken. De waarde $y$ wordt in de
-verslag-mode met uitproberen gevonden, zie figuur~\ref{fig:PDFR}.
-
-\figuur{width=\Procent{40},angle=270}{plaatjes/agp.pdf}{PDFR}{Variabele
-  breedte (pdf)}
-
-Het afmetingsprobleem is iets gemakkelijker op te lossen met `bitmap
-graphics' van het `jpg-', `gif-' en `png-' formaat omdat de figuren al
-van te voren geschaald kunnen worden als de `bounding box' bij het
-inlezen bekend is. De breedte (\verb!width!) kan als percentage van de
-kolombreedte (\verb!width=\Procent{0 ... 99}!) worden opgegeven zoals
-dat bij figuur~\ref{fig:PNGR} gedaan is. Voor een 100\% waarde neemt
-men \verb!width=\columnwidth! De afmeting wordt automatisch
-aangepast aan de nieuwe kolombreedte.
-
-
-\begin{center}
-\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-\end{center}
-
-
-De macro \verb!\PROCENT{0...99}! is nodig voor de macro's \verb!Tabel!
-en \verb!Figuur!. Deze laatste twee macro's maken het mogelijk dat
-tabellen en afbeeldingen in de twocolumn-mode passen met behoud van
-hun originele afmeting en detaillering (zie
-figuur \ref{fig:FIXED}). De parameters van deze macro's komen overeen
-met de parameters van de macro's \verb!tabel! en \verb!figuur!.
-
-\Figuur{width=\PROCENT{40},angle=270}{plaatjes/agp.pdf}{FIXED}{Vaste breedte ook in twocolumn-mode (pdf)}
-
-In het algemeen heeft vector-graphics een betere kwaliteit van de
-weergave dan bitmap-graphics.
-
-
-\paragraaf{Bijzondere tekens en afbreekproblemen}
-
-Bijzondere tekens zoals de á, à, ä, é, è, ë, ï, ü, ç \ldots worden
-probleemloos door \LaTeX{} geaccepteerd als normale utf8
-karakters. Voor de uitzonderingen bestaan macro's zoals het
-euro-symbool \euro{} waarvoor de macro \verb!\euro! nodig is. In
-wiskundige formules kan je gebruik maken van de macro \verb!\eurom!.
-
-
-In de two-columnmode zijn regels soms te lang als er gebruik gemaakt
-is van \verb!verb! of \verb!verbatim! of woorden die niet goed worden
-afgebroken. In dat laatste geval kan je in zo'n woord een afbreekpunt
-introduceren met de twee tekens \verb!\-!. Een regel kan gecontroleerd
-afgebroken door van te voren onzichtbare knikpunten te plaatsen met de
-\verb!\Knak! macro. De volgende regel moet in in tegenstelling met de
-twocolumnmode in de verslagmode ongeknakt worden weergegeven:
-
-\begin{Aanpassen}
-\begin{verbatim}
- ... aaaaaaa\Knak{}aaaaaaa ...
-\end{verbatim}
-\end{Aanpassen}
-
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\Knak{}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
-
-Voor regels waarbij de structuur niet gebroken mag worden, is de
-\verb!\Knak!-methode ongeschikt, bijvoorbeeld bij scripts en
-broncode. Daarentegen zorgt de \verb!Aanpassen!-omgeving ervoor dat in
-de twocolumn-mode de regels met behoud van de originele structuur
-worden weergegeven. Daarvoor wordt een kleinere letterafmeting
-gebruikt (default de \verb!\scriptsize!). Deze omgeving werkt alleen
-met niet al te lange regels. Bij zeer lange regels moet de
-letterafmeting zeer klein worden waardoor de leesbaarheid in het
-gedrang komt. In dat geval moet naar een andere oplossing gezocht
-worden zoals het opnemen van de probleemregels (broncode en scripts)
-in de bijlagen.
-
-\begin{Aanpassen}[\tiny]
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
-\end{Aanpassen}
-
-Hoewel het gebruik van opsommingen (\verb!\item!), letterlijke citaten
-\verb!quotation! en kaders (\verb!\fbox!) in de twocolumn-mode tot
-problemen kunnen leiden, zijn ze beperkt toegestaan. Bijvoorbeeld voor
-de kaders rond de teksten kan je beter gebruik maken van de
-\verb!tabular!-omgeving (of de \verb!tabel!-omgeving als je geen last
-wil hebben van pagina-overgangen), dan voor de standaard
-\verb!\fbox!-methode. De kolom van deze omkaderde tabel moeten dan wel
-een relatieve afmetingsverhouding de \verb!\columnwidth! krijgen.
-
-\begin{Aanpassen}
-\begin{verbatim}
-\begin{center}
-\begin{tabular}{|>\C p{\Procent{80}}|}
-  \hline
-  Afbreekproblemen ...
-  \hline
-\end{tabular}
-\end{center}
-\end{verbatim}
-\end{Aanpassen}
-
-\begin{center}
-\begin{tabular}{|>\C p{\Procent{80}}|}
-  \hline
-  ~\\
-  Afbreek- en andere opmaakproblemen pak je als laatste aan,
-  dus bij je definitieve verslag!\\
-  ~\\
-  Tabellen, figuren en listingen in het hoofdverslag tot het
-  noodzakelijke beperken.\\
-  ~\\
-  \hline
-\end{tabular}
-\end{center}
-
-
-\paragraaf{Algoritmen en broncode\cite{wikibooks}}
-
-Als je algoritmen met een mooie layout wilt hebben, dan zou je het
-\verb!algorithmic!-pakket kunnen gebruiken. Met dit pakket kan je het
-algoritme op een logische manier opbouwen met pseudotaal. Het bestand
-`verslag.tex' bevat al de pakketten \verb!algorithmic! en
-\verb!listings! die voor dit verslag nodig zijn. Als je zelf packages
-wil toevoegen of verwijderen (afblijven van
-\verb!\usepackage{moduleverslag}!)  dan moet dat in de preambule
-`verslag.tex'.
-
-\begin{Aanpassen}
-\begin{verbatim}
-\usepackage{algorithmic}
-\end{verbatim}
-\end{Aanpassen}
-
-Een algoritme moet je maken binnen een algorithmic-omgeving, een
-voorbeeld:
-
-\begin{Aanpassen}[\small]
-\begin{algorithmic}
-\IF {$i\geq maxval$} 
-        \STATE $i\gets 0$
-\ELSE
-        \IF {$i+k\leq maxval$}
-                \STATE $i\gets i+k$
-        \ENDIF
-\ENDIF 
-\end{algorithmic}
-\end{Aanpassen}
-
-
-Broncode kan je in een \verb!verbatim!-omgeving opnemen. De
-broncoderegels zien er net zo uit zoals je ze ingetypt hebt.  Het
-\verb!listings!-pakket is geavanceerder dan de
-\verb!verbatim!-omgeving.
-
-\begin{Aanpassen}
-\begin{verbatim}
-\usepackage{listings}
-\end{verbatim}
-\end{Aanpassen}
-
-Merk even op dat alle commando's van het \verb!listings!-pakket
-beginnen met \verb!lst!, dit conform de lppl-licentie.
-
-De broncode zelf zet je in een \verb!listings!-omgeving, net zoals bij
-de \verb!verbatim!-omgeving, om broncode te zetten gebruik je het
-\verb!\lstinline!-commando op dezelfde manier als het
-\verb!\verb!-commando. Je kunt ook broncode van een extern document laden met het commando:
-
-\begin{Aanpassen}
-\begin{verbatim}
-\lstinputlisting{pathname}
-\end{verbatim}
-\end{Aanpassen}
-
-Het argument `pathname' is de relatieve of absolute locatie van het
-bronbestand, de map(pen) gecombineerd met de bestandsnaam. Als je
-broncode van een bronbestand laadt, ben je zeker dat de broncode in je
-\LaTeX{}-document altijd actueel is en hou je het \LaTeX{}-document
-overzichtelijk. Als de broncode niet in dezelfde map of een submap van
-het \LaTeX{}-document staat of je gebruikt absolute `pathnames', dan
-is het mogelijk dat het verslag niet op andere computers gecompileerd
-kan worden. Bij het inleveren van je afstudeerverslag in
-\LaTeX{}-formaat zal je hiermee rekening moeten houden.
-
-
-Alle opties in het \verb!listings!-pakket hebben eenzelfde structuur
-\verb!sleutel=waarde!. Als je alleen 'Java' gebruikt hebt, dan kan je
-deze taal voor je volledig document na de regel
-\verb!\usepackage{listings}! in preambule `verslag.tex' definiëren met
-\verb!\lstset{language=java}!
-
-\lstset{language=java}
-
-\begin{Aanpassen}
-\begin{lstlisting}
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, world!");
-    }
-}
-\end{lstlisting}
-\end{Aanpassen}
-
-
-De sleutel is hier dus \verb!language! en de waarde die je aan de
-sleutel geeft is \verb!java!. Alles wat je als opties binnen de
-\verb!\lstset!-macro zet kan je per \verb!listings!-omgeving apart
-definiëren. Bijvoorbeeld html-broncode met
-\verb!\begin{lstlisting}[language=html]!:
-
-\begin{Aanpassen}
-\begin{lstlisting}[language=html]
-<html>
-    <head>
-        <title>Hello</title>
-    </head>
-    <body>Hello</body>
-</html>
-\end{lstlisting}
-\end{Aanpassen}
-
-\newpage
-\hoofdstuk{Testresultaten}
-
-\parindent0pt
-%
-
-\cheading{Fake Course Evaluation Summary for \textsc{course
-		1234y}}{Sept.\ 2010 --- May 2011}
-
-\begin{longtable}{@{}l rr rr rr rr rr rr}
-	% pairs: absolute number (percentage)
-	
-	\toprule%
-	\centering%
-	& \multicolumn{2}{c}{{{\bfseries Excellent}}}
-	& \multicolumn{2}{c}{{{\bfseries Very Good}}}
-	& \multicolumn{2}{c}{{{\bfseries Good}}}
-	& \multicolumn{2}{c}{{{\bfseries Average}}}
-	& \multicolumn{2}{c}{{{\bfseries Poor}}}
-	& \multicolumn{2}{c}{{{\bfseries Very Poor}}} \\
-	
-	
-	\cmidrule[0.4pt](r{0.125em}){1-1}%
-	\cmidrule[0.4pt](lr{0.125em}){2-3}%
-	\cmidrule[0.4pt](lr{0.125em}){4-5}%
-	\cmidrule[0.4pt](lr{0.125em}){6-7}%
-	\cmidrule[0.4pt](lr{0.125em}){8-9}%
-	\cmidrule[0.4pt](lr{0.125em}){10-11}%
-	\cmidrule[0.4pt](l{0.25em}){12-13}%
-	% \midrule
-	\endhead
-	
-	
-	Some question about the Instructor or Course & 2 & (7.14) & 4 &
-	(14.29) & \highest{12} & \highest{(42.86)} & 4
-	& (14.29) & 6 & (21.43) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 3 & (10.71) &
-	\highest{15} & \highest{(53.57)} & 5 & (17.86) & 5 & (17.86) & 0 &
-	(0.00) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & 4 & (14.29) & 8 &
-	(28.57) & \highest{15}
-	& \highest{(53.57)} & 1 & (3.57) & 0 & (0.00) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 3 & (10.71) & 8 &
-	(28.57) & \highest{10} & \highest{(35.71)}
-	& 5 & (17.86) & 2 & (7.14) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & 6 & (21.43) &
-	\highest{9} & \highest{(32.14)}
-	& 4 & (14.29) & \highest{9} & \highest{(32.14)} & 0 & (0.00) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & \highest{10} &
-	\highest{(35.71)} & \highest{10} & \highest{(35.71)}
-	& 3 & (10.71) & 5 & (17.86) & 0 & (0.00) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & \highest{12} &
-	\highest{(42.86)} & \highest{12} & \highest{(42.86)} & 3
-	& (10.71) & 1 & (3.57) & 0 & (0.00) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & \highest{12} &
-	\highest{(42.86)} & 3 & (10.71) & 7
-	& (25.00) & 5 & (17.86) & 1 & (3.57) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & \highest{10} &
-	\highest{(35.71)} & 6 & (21.43) & 6 & (21.43) & 6 & (21.43)
-	& 1 & (3.57) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 5 & (17.86) & 5 &
-	(17.86) & \highest{12} & \highest{(42.86)} & 2 & (7.14)
-	& 3 & (10.71) & 1 & (3.57)\\
-	
-	Some question about the Instructor or Course & 3 & (10.71) & 8 &
-	(28.57) & \highest{11} & \highest{(39.29)} & 3 & (10.71) & 3 & (10.71)
-	& 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & \highest{18} &
-	\highest{(64.29)}
-	& 5 & (17.86) & 3 & (10.71) & 1 & (3.57) & 1 & (3.57) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & \highest{15} &
-	\highest{(53.57)}
-	& 7 & (25.00) & 2 & (7.14) & 2 & (7.14) & 2 & (7.14) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 3 & (10.71) &
-	\highest{13} & \highest{(46.43)} & 4 & (14.29) & 6 & (21.43) & 2
-	& (7.14) & 0 & (0.00) \\
-	
-	\bottomrule
-	
-\end{longtable}
-
-
-
-
-
-\section{Theoretisch kader}
+\hoofdstuk{Theoretisch kader}
 
 In het eerste hoofdstuk is duidelijk geworden wat de onderzoeksvraag is, namelijk ‘Hoe kan een geautomatiseerde sluis worden gemodeleerd met oog op ontwikkel- en onderhoudskosten,veiligheid, efficientie en capaciteit’. Door de toenemende complexiteit van systemen is het gebruik van modellen en de toepassing van timebased model checking  op industriele controle systemen een manier van modelleren van het systeem en de requirements zodat er een bijdagre kan worden geleverd aan de acceptatie van  simulatie-/modeltechniek voor de industrie.(‘https://link.springer.com/article/10.1007/s10626-020-00314-0’, 2020). Of dit ook het geval is bij het modellereren van sluizen is nu de vraag.
 De verschillende factoren en achtergronden die  samenhangen met het modelleren van een sluis zullen in dit hoofdstuk toegelicht worden. Bovendien worden er hypotheses gevormd die de basis vormen voor debeantwoording van de onderzoeksvraag. 
@@ -1062,7 +572,7 @@ De operator maakt bedieningsfouten waardoot de reactor bijna stil komt te liggen
 
 De temperatuur van de reactorstaven neemt daarna snel toe. Terwijl er een oncontroleerbare kettingreactie op gang komt, laat het personeel in paniek de regelstaven zakken om de warmteontwikkeling af te remmen. Het is dan echter al te laat. Door een ontwerpfout loopt het vermogen razendsnel op tot 33.000 megawatt, ruim tien keer hoger dan normaal.
 
-In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.}
+In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.
 
 In de ravage vat het gloeiend hete grafiet in de reactor spontaan vlam. De uitslaande brand en een tweede explosie voeren een radioactieve rookwolk tot 8 kilometer hoogte. 
 In een poging het vuur in reactor 4 te doven, storten helikopters vanuit de lucht zand, lood en boorzuur in de reactorkern. Het mag echter niet baten.
@@ -1276,80 +786,56 @@ tesla autopilot crashes
 veiigheidsrisico
 
 \cite{evan01042019teslaautopilotIntersection}
-
 \cite{testVehicleSafetyReport}
 veiligheidsrapport mbt autopilot
-
 \cite{lambert31062020q2safetyreport}
 consumentenrapport
 bluetooth veiligheidsvraagstuk
-
 \cite{wiredBloutoothHackTesla}
 veiigheidsvraagstuk vanwege touch screen
-
 \cite{preston14012021NHTSATeslaRecall}
 veiligheidsvraagstuk
-
 \cite{cio25112020belgianTeslaHack}
 veiligheidsvraagstuk
 rapport over autopilot
-
 \cite{templeton06092019HTSBReportTesla}
 de invloed van de bestuurder bij tesla ongeluk
-
 veiligheidsvraagstuk
-
 \cite{darkReading17112020TeslaBackup}
 veiligheidsvraagstuk
-
 \cite{leyden23032020TeslaInterfaceHack}
 veiigheidsvraagstuk
-
 \cite{huddlestonjr03042019ChineseTeslaHack}
 veiligheidsvraagstuk
 veiligheidsvraagstuk
-
 \cite{heilweil26022020teslaAutopilot}
 rapport over ongeluk
 veiligheidsvraagstuk
 veiligheidsvraagstuk
-
 \cite{blanco04102019NHTSATesla}
 veiligheidsvraagstuk
 ransomware aanval op tesla
 tesla batterij is veiligheidsvraagstuk geworden
-
 \cite{mitchell01072020teslabatterycooling}
 ongeluk
-
 \cite{bbc26022020AutopilotCrash}
 veiligheidsvraagstuk
 veiligheidsvraagstuk
-
 \cite{stumpff04052020TeslaPersonalData}
 dodelijk ongeluk
-
 \cite{levin08062018teslaautopilotsafety}
 veiligheidsvraagstuk: ransomware
 veiligheidsvraagstuk: medewerker in de fout
-
 \cite{cbrook06082021TeslaInsideDataThreft}
-
 \cite{shilling25022021Tesla}
 veiligheidsvraagstuk: hackers je systeem laten testen
 verdedigen tegenover ransomware
 veiligheidsrisico
 prijzen omlaag
 autopilot
-
 \cite{randall05112019modelSurvey}
 malware door een medewerker
-
-\cite{}
 dodelijk ongeluk
-
-\cite{}
-
 \cite{fottrell03092018TeslaSecurityChecks}
 waarom een tesla stelen bijna onmogelijk is
 
@@ -1364,83 +850,35 @@ softwarefout maakt diestal mogelijk
 
 \cite{kirk26112020modelX}
 fouten ontdekt in onderzoek
-
-\cite{}
-
 \cite{bbc24022021hyundaiBatteryFireFix}
-
-
-
-
-
-
-
 tesla cloud gehacked
-
-
 \cite{hawkins22102022}
-
-
-
 \cite{gritti24062020tesladataengine}
-
-
 \cite{bouchard07052019teslaDeepLearning}
-
-
 \cite{Srikanth2019teslabigdata}
-
 \cite{rangaiah25022020teslaAI}
-
 \cite{marr08012018taslabigdataAI}
-
 \cite{bdickson29072020teslalevelfive}
-
 \cite{dcruz17062022tesladesignthink}
-
-
-
-
-
-
 \cite{mcfarland22042021selfdrivingrisks}
-
 \cite{hawkins18032021fedgovinvest}
-
 \cite{berry21042021teslacrashtexas}
-
 \cite{hull23072021regulatorsaftercrash}
-
 \cite{wikiTeslaAutopilot}
-
 \cite{nhtsaAutomatedVehiclesSafety}
-
 \cite{dowling23042021autopilottricking}
-
 \cite{wilson19042021teslacrashregulators}
-
 \cite{seamans22062021aikillerap}
-
 \cite{mitchell24022020AIDataTesla}
-
 \cite{denneyjdsupraFeds}
-
 \cite{siddiqui22102020TeslaCriticism}
-
 \cite{ackerman01072016TeslaImperfect}
-
 \cite{greene04092019misuseautopilot}
-
 \cite{michralli26112019ubserautocarcrsash}
-
 \cite{pitmann21072021wrongfullautodeath}
-
 \cite{stackexchange102019teslacarmistake}
-
 \cite{tasking07062017TeslaAugmentedSafety}
-
 \cite{griemannExaminSelfDriving}
-
 \cite{Harkey30052019SafeSystemVehicle}
 
 
@@ -1448,68 +886,34 @@ tesla crash report
 
 
 \cite{shepardson18062021TeslaDeaths}
-
 \cite{hawkins30062021nhtsarequiresreporting}
-
 \cite{hawkins10052021autopilotnotavailable}
-
 \cite{szymkowski29062021nhtsaTeslaCrashReports}
-
 \cite{abc1112052021AutopilotNotinTeslaCrash}
-
 \cite{ankel18062021regulatorsinvestigateAutopilot}
-
 \cite{sommerfield12072021NHTSAmandateresult}
-
-
 \cite{saferoardsCrashesAutonomousvehicles}
-
-
-
 \cite{stephardson18032021revieuwingtesla}
-
 \cite{krishner30062021NHTSAreport}
-
 \cite{gitlin11052021autopilot}
-
-
-
 \cite{mitchell19012017investigationstop}
-
 \cite{gordon10052021teslaprelimreport}
-
 \cite{shaper07062018}
-
 \cite{cochran18042021nodriverTeslaCrash}
-
 \cite{habib28062016NHTSATeslaReport}
-
 \cite{firstpress11052021fatalnonautopilot}
-
 \cite{raynal20042021probeTeslaCrash}
-
 \cite{tiungteslasoftwarecrash}
-
 \cite{globaltimes08052021guangdongcrash}
-
 \cite{anderson30042021secondteslacrash}
-
 \cite{oremus21062017fatalTeslaCrash}
-
 \cite{guardian15052021teslacrashHandsOnWheel}
-
 \cite{Puzzanghera13092017TeslaSharesBlame}
-
 \cite{jaillet02022017teslaAutopilotLimitations}
-
 \cite{reuters03102019teslaAutoParkingFail}
-
 \cite{dowling23042021}
-
 \cite{young05112021fatalTeslaReport}
-
 \cite{kierstein18032021teslaAutopilotCrashStationary}
-
 \cite{janssen20062017teslacrashdetailflorida}
 
 
@@ -1549,10 +953,10 @@ https://repository.tno.nl/islandora/object/uuid%3Acdef48df-da49-46b6-8678-5c62a8
 \subsubsection{slmramp}
 
 \begin{description}
-	\item[Beschrijving]
-	\item[Datum en plaats] 
-	\item[Oorzaak]
-	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
 Toen de Anthony Nesty Zanderij naderde, was het daar, anders dan het weerbericht had voorspeld, mistig. Het zicht was evenwel niet zo slecht dat er niet op zicht kon worden geland. Gezagvoerder Will Rogers besloot echter via het Instrument Landing System (ILS) te landen, hoewel dit niet betrouwbaar was en hij voor zo'n landing ook geen toestemming had. De gezagvoerder brak drie landingspogingen af. Bij de vierde poging negeerde de bemanning de automatische waarschuwing (GPWS) dat het toestel te laag vloog. Het toestel raakte op 25 meter hoogte twee bomen. Het rolde om de lengteas en stortte om 04.27 uur plaatselijke tijd ondersteboven neer.
 
@@ -1565,48 +969,29 @@ https://aviation-safety.net/database/record.php?id=19890607-2
 Wat is er gebeurd?
 
 \cite{espnSLMterugblik}
-
 \cite{dennisRosier01052020}
-
 \cite{hassing07062020slmramp}
-
 \cite{amsterdamArchiefSLM}
-
 \cite{rtvOost06062019nabestaande}
-
 \cite{breda07062021AndroSnel}
-
 \cite{andereTijdenSLMCrash}
-
 \cite{wikiSLMRamp}
 database
-
 \cite{aviationReport}
 rapport
-
 \cite{aviationSLMCrashAccidentInvestigation}
-
 \cite{mcDonnelDouglasCommissionReportSLMCrash}
-
 \cite{wikiSRFlight764}
-
-\cite{}
-
 \cite{nos07062019SLMTerugblik}
-
 \cite{dagvantoenSLMCrash}
-
 \cite{waterkantNesty07061989}
 uitgebreid engels artikel
-
 \cite{eduNandlalSRCrash}
 ntsb investigtion
-
 \cite{oldjetsSRAirways}
 uitgebreid engels artikel
 \cite{cloudberg02012021srflight764}
 persbericht
-
 \cite{apnews07061989srplanecrash}
 Wat is de rol van de autoriteiten?
 Welke andere betrokkeen? Enw at is hun verantwoordelijkheid
@@ -1618,10 +1003,10 @@ Hoe werd er over veiligheid gedacht?
 \subsubsection{schipholbrand}
 
 \begin{description}
-	\item[Beschrijving]
-	\item[Datum en plaats] 
-	\item[Oorzaak]
-	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
 Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
 worden voldaan. De eerste voorwaarde is de geschiktheid van het
@@ -1654,7 +1039,7 @@ chronologie
 \cite{nunl30052023feitenoverzicht}
 tijdlijn
 
- 
+
 vervolgens van ministers
 beeldanalyse en reconstructie
 
@@ -1680,7 +1065,7 @@ de rol van het parlement in de evaluatie
 \cite{parlementairemonitorschipholbrand}
 onderzoeksmemo
 herdenking
- 
+
 herdenking
 invloed van de ramp op samenleving
 
@@ -1726,16 +1111,16 @@ artikel
 
 psychologische gevolgen
 rapport
- 
+
 \cite{onderzoeksraad2610schipholoost}
 artikel met video
 herdenking
 impact op de persoon
 herdenking
- 
+
 \cite{schipholbrandvideoargos}
 chronologie
- 
+
 \cite{nunl30052023feitenoverzicht}
 tijdlijn
 \bibitem{ID} ... \LaTeX:\\ \url{https://www.singeluitgeverijen.nl/isbn/de-schipholbrand/}
@@ -1761,22 +1146,22 @@ smaadschrift
 bewakers worden niet vervolgd
 proces schipholbrand moet over en de brandveilgheid moet worden verbeterd
 de rol van het parlement in de evaluatie
- 
+
 \cite{parlementairemonitorschipholbrand}
 onderzoeksmemo
 herdenking
- 
+
 herdenking
 invloed van de ramp op samenleving
- 
+
 \cite{videonpoNOVA13112008}
 opmerkelijk rapport gestolen in de nasleep
- 
+
 \cite{rizoomes01052014schipholbrand}
 
 
 publicaties
- 
+
 \cite{heuvelkroesschipholbrandcamerabeelden}
 Wat waren de regels destijds?
 Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen?
@@ -1801,10 +1186,6 @@ Zonder lesmateriaal
 Zonder adequate veiligheidsanalyse
 https://www.youtube.com/watch?v=6jmkDClGDHo 
 \cite{oVVSchietongevalOssendrecht}
-
-
-
-
 \cite{nos22032016ossendrecht}
 \cite{ovv04042016lessenongevalossendrecht}
 \cite{quekelboere10052017doodossendrecht}
@@ -1831,10 +1212,10 @@ https://www.youtube.com/watch?v=h99Fe9XzzHI
 \subsubsection{explosie tanjin china }
 
 \begin{description}
-	\item[Beschrijving]
-	\item[Datum en plaats] 
-	\item[Oorzaak]
-	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\item[Beschrijving]
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
 
 Later bleek uit een onderzoek van de Chinese autoriteiten dat de explosie overeenkwam met de ontploffing van 450 ton TNT.[6] 
@@ -2045,7 +1426,7 @@ https://www.hindawi.com/journals/ijae/2014/472395/
 \cite{benny18022019737returnUAE}
 \cite{biersmichel22022021777grounds}
 \cite{reuters23022021777metalfatigue}
- 
+
 \subsubsection{ethiek}
 
 
@@ -2103,7 +1484,7 @@ inclusief hoe de actoren zich zelf toegang gavan tot het controle systeem, welke
 \cite{noauthor_2022-nm}
 \cite{zetter2016GridHack}
 
- 
+
 
 \cite{}
 
@@ -2189,7 +1570,7 @@ de communicatie met ministerie over inlichten minuut 44:00
 
 
 \newpage
-\section{Deelonderzoeken}
+\hoofdstuk{Deelonderzoeken}
 
 
 
@@ -2259,8 +1640,397 @@ http://www.wesemann.nl/nl/nieuws-en-pers/274-veiligheid-op-het-water-en-op-het-l
 
 
 
+\begin{tcbitemize}[raster columns=3, raster rows=4, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
+	
+	%Empty corner and two headers
+	\tcbitem[blankest, width=1cm]
+	\tcbitem[header = Strength]
+	\texta
+	\tcbitem[header = Weakness]
+	\textb
+	
+	%First row
+	\tcbitem[firstcol = internal]
+	\textcn
+	\tcbitem[swotbox = S]
+	\lipsum[2]
+	\tcbitem[swotbox = W]
+	\lipsum[2]
+	
+	\tcbitem[blankest, width=1cm]
+	\tcbitem[header = Opportunity]
+	\texta
+	\tcbitem[header = threat]
+	\textb
+	
+	%Second row
+	\tcbitem[firstcol = external]
+	\textcn
+	\tcbitem[swotbox=O]
+	\lipsum[2]
+	\tcbitem[swotbox=T]
+	\lipsum[2]
+\end{tcbitemize}
+
 \newpage
-\section{Modelontwikkeling en keuzen in Uppaal}
+\paragraaf{Werken met \LaTeX{}}
+
+Het is niet verplicht om met \LaTeX{} te werken. Men mag ook gebruik
+maken van andere tekstverwerkers zoals \emph{MS-Word}, Wel is het
+verplicht het afstudeerverslag \LaTeX{}-geformateerd in te leveren en
+van de \LaTeX{}-template \verb!modelverslag.sty! gebruik te
+maken.
+
+De \LaTeX{}-template bevat enkele macro's voor het opstellen van een
+hoofdstuk (\verb!\hoofdstuk!), een paragraaf (\verb!\paragraaf!), een
+afbeelding (\verb!\figuur!). De overige \LaTeX{} macro's en omgevingen
+blijven bruikbaar. Bijvoorbeeld de \verb!tabular!-omgeving om tabellen
+te maken:
+
+\begin{lstlisting}{language=[LaTeX]TeX}
+\begin{tabular}{formaat}
+   ... 
+\end{tabular}
+\end{lstlisting}
+
+\begin{center}
+\begin{tabular}{|l||r|}
+  \hline
+  \multicolumn{2}{|c|}{Afmetingen ($1\mbox{ pt}=0,351\mbox{ mm}$)}\\
+  \hline
+  paper width     & \the\paperwidth\\
+  text width      & \the\textwidth\\
+  column width    & \the\columnwidth\\
+  column seperate & \the\columnsep\\
+  oddside margin  & \the\oddsidemargin\\
+  evenside margin & \the\evensidemargin\\
+  paper height    & \the\paperheight\\
+  text height     & \the\textheight\\
+  top margin      & \the\topmargin\\
+  \hline
+\end{tabular}
+\end{center}
+
+Een nadeel van tabellen dat ze vaak te groot zijn voor de
+twocolumn-mode. Het zou mooi zijn als ze ingedrukt kunnen
+worden. Bovendien is deze tabel niet-zwevend, hij wordt geplaatst
+tussen de tekstdelen waar hij is ingevoerd. Dit kan bezwaarlijk zijn
+bij pagina-overgangen. In dat geval kan je beter gebruikmaken van
+zwevende tabellen (en figuren) die door \LaTeX{} zelf op een geschikte
+plaats worden gezet. Wel moet aan een zwevende tabel een label en een
+onderschrift gekoppeld worden om er naar te kunnen verwijzen. Voor een
+zwevende horizontale tabel met label en onderschrift wordt in de
+`template' de \verb!tabel!-omgeving aangeboden:\\
+
+\begin{Aanpassen}
+\begin{verbatim}
+\begin{tabel}[afm]{formaat}{label}{onderschrift}
+  ...
+\end{tabel}
+\end{verbatim}
+\end{Aanpassen}
+
+
+De \verb!tabel!-omgeving plaatst `zwevende' tabellen in verslag- en
+publicatie-mode. Het eerste argument is een optioneel \verb![afm]!
+argument met de defaultwaarde \verb!\normalsize! voor de afmeting van
+de karakters. De mogelijke waarden voor de afmeting zijn -- van groot
+tot klein -- de volgende macro's: (\verb!\huge!, \verb!\LARGE!,
+\verb!\Large!, \verb!\large!, \verb!\small!, \verb!\footnotesize!,
+\verb!\scriptsize! en \verb!\tiny!).
+
+Bovendien zijn de standaard \verb!tabular! kolomformaten
+\verb!r,l,c,|,||,p{lengte}! uit de tabelomgeving uitgebreid met
+kolomformaten \verb!\R, \C, \L!  voor variabele celinhoud zoals het
+plaatsen van meerdere regels per cel.
+
+Een verticale tabel is mogelijk met de omgeving (\verb!TABEL!)  met
+dezelfde kolomformaten mogelijkheden.  In \LaTeX{} zijn de tabellen,
+vooral in de \verb!twocolumn!-mode erg lastig. Bijvoorbeeld in de
+tabellen~\ref{tab:vbt} en \ref{tab:vbx} zijn twee verschillende
+uitwerkingen van de tabelomgevingen:
+
+\begin{footnotesize}
+\begin{tabel}[\Large]{|r|l|}{vbt}{Vaste cellen, variabele breedte}
+  \hline
+  7C0 & hexadecimal \\
+  3700 & octal \\ \cline{2-2}
+  11111000000 & binary \\
+  \hline \hline
+  1984 & decimal \\
+  \hline
+\end{tabel}
+\end{footnotesize}
+
+%Absolute breedte in mm, cm etc. (geschikt voor één mode):
+%\begin{tabel}{|>\R p{2cm}|>\L p{4cm}|}{vbx}{OpenGL libraries}
+%Relatieve breedte 20% en 65% van de kolombreedte (geschikt voor alle moden).
+%Procentwaarden van 0 ... 99, voor 100% neem \columnwidth zelf.
+\begin{tabel}{|>\R p{\Procent{20}}|>\L
+    p{\Procent{65}}|}{vbx}{Variabele cellen, variabele breedte}
+\hline
+ OpenGL core library & OpenGL32 voor MS-Windows en GL voor
+ de meeste X-Window systemen\\
+\hline
+ OpenGL Utility Library & GLU\\
+\hline
+ Koppeling met het platform & GLX voor X-Window en WGL voor MS-Windows\\
+\hline 
+ OpenGL Library Utility Toolkit & GLUT, bibliotheek voor
+  het openen van windows, invoer van muis en toetsenbord, menus,
+  event-driven in- en uitvoer\\
+\hline
+\end{tabel}
+
+Plaats afbeeldingen alleen in het hoofdverslag als ze de tekst
+ondersteunen en de leesbaarheid niet verlagen.  In de tekst kan naar
+afbeeldingen worden verwezen met de macro \verb!\ref{fig:label}!.
+
+In \LaTeX{}\cite{lam1994} geschreven verslagen zijn op diverse manieren
+afbeeldingen\cite{Oos1996} te plaatsen. Een van die manieren is gebruik te
+maken van de macro \verb!\figuur! in de \verb!modelverslag!-package'.
+
+`Vector graphics' figuren van het `pdf-', `eps-' en `svg-'
+formaat\footnote{Een pdf-bestand kan zowel vector-graphics als
+  bitmap-graphics bevatten.} met een ingewikkelde `bounding box' zijn
+moeilijk op de juiste schaal te brengen. Vaak moet dat met uitproberen
+bepaald worden. Het plaatsen van figuren met absolute afmetingen of
+een vaste `scale' factor, kan leiden tot minder soepele oplossingen
+zoals figuur~\ref{fig:PDFA}. Deze figuur heeft naast een rotatie
+(\verb!angle=270!)  een vaste scale-factor (\verb!scale=0.45!) die
+alleen geschikt is voor de `twocolumn-mode'.
+
+\begin{center}
+  \figuur{scale=0.45,angle=270}{plaatjes/agp.pdf}{PDFA}{Vaste breedte
+    (pdf)}
+\end{center}
+
+In plaats van \verb!scale=x! kan je beter de relatieve afmeting
+\verb!width=\Procent{y}! gebruiken. De waarde $y$ wordt in de
+verslag-mode met uitproberen gevonden, zie figuur~\ref{fig:PDFR}.
+
+\figuur{width=\Procent{40},angle=270}{plaatjes/agp.pdf}{PDFR}{Variabele
+  breedte (pdf)}
+
+Het afmetingsprobleem is iets gemakkelijker op te lossen met `bitmap
+graphics' van het `jpg-', `gif-' en `png-' formaat omdat de figuren al
+van te voren geschaald kunnen worden als de `bounding box' bij het
+inlezen bekend is. De breedte (\verb!width!) kan als percentage van de
+kolombreedte (\verb!width=\Procent{0 ... 99}!) worden opgegeven zoals
+dat bij figuur~\ref{fig:PNGR} gedaan is. Voor een 100\% waarde neemt
+men \verb!width=\columnwidth! De afmeting wordt automatisch
+aangepast aan de nieuwe kolombreedte.
+
+
+\begin{center}
+\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
+\end{center}
+
+
+De macro \verb!\PROCENT{0...99}! is nodig voor de macro's \verb!Tabel!
+en \verb!Figuur!. Deze laatste twee macro's maken het mogelijk dat
+tabellen en afbeeldingen in de twocolumn-mode passen met behoud van
+hun originele afmeting en detaillering (zie
+figuur \ref{fig:FIXED}). De parameters van deze macro's komen overeen
+met de parameters van de macro's \verb!tabel! en \verb!figuur!.
+
+\Figuur{width=\PROCENT{40},angle=270}{plaatjes/agp.pdf}{FIXED}{Vaste breedte ook in twocolumn-mode (pdf)}
+
+In het algemeen heeft vector-graphics een betere kwaliteit van de
+weergave dan bitmap-graphics.
+
+
+\paragraaf{Bijzondere tekens en afbreekproblemen}
+
+Bijzondere tekens zoals de á, à, ä, é, è, ë, ï, ü, ç \ldots worden
+probleemloos door \LaTeX{} geaccepteerd als normale utf8
+karakters. Voor de uitzonderingen bestaan macro's zoals het
+euro-symbool \euro{} waarvoor de macro \verb!\euro! nodig is. In
+wiskundige formules kan je gebruik maken van de macro \verb!\eurom!.
+
+
+In de two-columnmode zijn regels soms te lang als er gebruik gemaakt
+is van \verb!verb! of \verb!verbatim! of woorden die niet goed worden
+afgebroken. In dat laatste geval kan je in zo'n woord een afbreekpunt
+introduceren met de twee tekens \verb!\-!. Een regel kan gecontroleerd
+afgebroken door van te voren onzichtbare knikpunten te plaatsen met de
+\verb!\Knak! macro. De volgende regel moet in in tegenstelling met de
+twocolumnmode in de verslagmode ongeknakt worden weergegeven:
+
+\begin{Aanpassen}
+\begin{verbatim}
+ ... aaaaaaa\Knak{}aaaaaaa ...
+\end{verbatim}
+\end{Aanpassen}
+
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\Knak{}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+
+Voor regels waarbij de structuur niet gebroken mag worden, is de
+\verb!\Knak!-methode ongeschikt, bijvoorbeeld bij scripts en
+broncode. Daarentegen zorgt de \verb!Aanpassen!-omgeving ervoor dat in
+de twocolumn-mode de regels met behoud van de originele structuur
+worden weergegeven. Daarvoor wordt een kleinere letterafmeting
+gebruikt (default de \verb!\scriptsize!). Deze omgeving werkt alleen
+met niet al te lange regels. Bij zeer lange regels moet de
+letterafmeting zeer klein worden waardoor de leesbaarheid in het
+gedrang komt. In dat geval moet naar een andere oplossing gezocht
+worden zoals het opnemen van de probleemregels (broncode en scripts)
+in de bijlagen.
+
+\begin{Aanpassen}[\tiny]
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+\end{Aanpassen}
+
+Hoewel het gebruik van opsommingen (\verb!\item!), letterlijke citaten
+\verb!quotation! en kaders (\verb!\fbox!) in de twocolumn-mode tot
+problemen kunnen leiden, zijn ze beperkt toegestaan. Bijvoorbeeld voor
+de kaders rond de teksten kan je beter gebruik maken van de
+\verb!tabular!-omgeving (of de \verb!tabel!-omgeving als je geen last
+wil hebben van pagina-overgangen), dan voor de standaard
+\verb!\fbox!-methode. De kolom van deze omkaderde tabel moeten dan wel
+een relatieve afmetingsverhouding de \verb!\columnwidth! krijgen.
+
+\begin{Aanpassen}
+\begin{verbatim}
+\begin{center}
+\begin{tabular}{|>\C p{\Procent{80}}|}
+  \hline
+  Afbreekproblemen ...
+  \hline
+\end{tabular}
+\end{center}
+\end{verbatim}
+\end{Aanpassen}
+
+\begin{center}
+\begin{tabular}{|>\C p{\Procent{80}}|}
+  \hline
+  ~\\
+  Afbreek- en andere opmaakproblemen pak je als laatste aan,
+  dus bij je definitieve verslag!\\
+  ~\\
+  Tabellen, figuren en listingen in het hoofdverslag tot het
+  noodzakelijke beperken.\\
+  ~\\
+  \hline
+\end{tabular}
+\end{center}
+
+
+\paragraaf{Algoritmen en broncode\cite{wikibooks}}
+
+Als je algoritmen met een mooie layout wilt hebben, dan zou je het
+\verb!algorithmic!-pakket kunnen gebruiken. Met dit pakket kan je het
+algoritme op een logische manier opbouwen met pseudotaal. Het bestand
+`verslag.tex' bevat al de pakketten \verb!algorithmic! en
+\verb!listings! die voor dit verslag nodig zijn. Als je zelf packages
+wil toevoegen of verwijderen (afblijven van
+\verb!\usepackage{moduleverslag}!)  dan moet dat in de preambule
+`verslag.tex'.
+
+\begin{Aanpassen}
+\begin{verbatim}
+\usepackage{algorithmic}
+\end{verbatim}
+\end{Aanpassen}
+
+Een algoritme moet je maken binnen een algorithmic-omgeving, een
+voorbeeld:
+
+\begin{Aanpassen}[\small]
+\begin{algorithmic}
+\IF {$i\geq maxval$} 
+        \STATE $i\gets 0$
+\ELSE
+        \IF {$i+k\leq maxval$}
+                \STATE $i\gets i+k$
+        \ENDIF
+\ENDIF 
+\end{algorithmic}
+\end{Aanpassen}
+
+
+Broncode kan je in een \verb!verbatim!-omgeving opnemen. De
+broncoderegels zien er net zo uit zoals je ze ingetypt hebt.  Het
+\verb!listings!-pakket is geavanceerder dan de
+\verb!verbatim!-omgeving.
+
+\begin{Aanpassen}
+\begin{verbatim}
+\usepackage{listings}
+\end{verbatim}
+\end{Aanpassen}
+
+Merk even op dat alle commando's van het \verb!listings!-pakket
+beginnen met \verb!lst!, dit conform de lppl-licentie.
+
+De broncode zelf zet je in een \verb!listings!-omgeving, net zoals bij
+de \verb!verbatim!-omgeving, om broncode te zetten gebruik je het
+\verb!\lstinline!-commando op dezelfde manier als het
+\verb!\verb!-commando. Je kunt ook broncode van een extern document laden met het commando:
+
+\begin{Aanpassen}
+\begin{verbatim}
+\lstinputlisting{pathname}
+\end{verbatim}
+\end{Aanpassen}
+
+Het argument `pathname' is de relatieve of absolute locatie van het
+bronbestand, de map(pen) gecombineerd met de bestandsnaam. Als je
+broncode van een bronbestand laadt, ben je zeker dat de broncode in je
+\LaTeX{}-document altijd actueel is en hou je het \LaTeX{}-document
+overzichtelijk. Als de broncode niet in dezelfde map of een submap van
+het \LaTeX{}-document staat of je gebruikt absolute `pathnames', dan
+is het mogelijk dat het verslag niet op andere computers gecompileerd
+kan worden. Bij het inleveren van je afstudeerverslag in
+\LaTeX{}-formaat zal je hiermee rekening moeten houden.
+
+
+Alle opties in het \verb!listings!-pakket hebben eenzelfde structuur
+\verb!sleutel=waarde!. Als je alleen 'Java' gebruikt hebt, dan kan je
+deze taal voor je volledig document na de regel
+\verb!\usepackage{listings}! in preambule `verslag.tex' definiëren met
+\verb!\lstset{language=java}!
+
+\lstset{language=java}
+
+\begin{Aanpassen}
+\begin{lstlisting}
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}
+\end{lstlisting}
+\end{Aanpassen}
+
+
+De sleutel is hier dus \verb!language! en de waarde die je aan de
+sleutel geeft is \verb!java!. Alles wat je als opties binnen de
+\verb!\lstset!-macro zet kan je per \verb!listings!-omgeving apart
+definiëren. Bijvoorbeeld html-broncode met
+\verb!\begin{lstlisting}[language=html]!:
+
+\begin{Aanpassen}
+\begin{lstlisting}[language=html]
+<html>
+    <head>
+        <title>Hello</title>
+    </head>
+    <body>Hello</body>
+</html>
+\end{lstlisting}
+\end{Aanpassen}
+
+
+
+
+
+
+
+\newpage
+\hoofdstuk{Modelontwikkeling en keuzen in Uppaal}
 
 \label{appendix}
 \thispagestyle{myheadings}
@@ -2436,7 +2206,7 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Formal description of the system}
+\hoofdstuk{Formal description of the system}
 
 \includegraphics[scale=0.65]{sluispassage.png}
 
@@ -2533,7 +2303,7 @@ Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing ho
 
 
 
-\chapter{Formal validation and verification aan de hand van Kripke model}
+\hoofdstuk{Formal validation and verification aan de hand van Kripke model}
 
 \paragraph{Parallele compositie}
 Om een sluispark te kunnen modelleren meerdere templates die de verschillende abstracties van het systeem aantonen.
@@ -2681,6 +2451,108 @@ Train2.Appr --> Train2.Cross \\
 Train3.Appr --> Train3.Cross \\
 Train4.Appr --> Train4.Cross \\
 
+
+
+
+\newpage
+\hoofdstuk{Testresultaten}
+
+\parindent0pt
+%
+
+\cheading{Fake Course Evaluation Summary for \textsc{course
+		1234y}}{Sept.\ 2010 --- May 2011}
+
+\begin{longtable}{@{}l rr rr rr rr rr rr}
+	% pairs: absolute number (percentage)
+	
+	\toprule%
+	\centering%
+	& \multicolumn{2}{c}{{{\bfseries Excellent}}}
+	& \multicolumn{2}{c}{{{\bfseries Very Good}}}
+	& \multicolumn{2}{c}{{{\bfseries Good}}}
+	& \multicolumn{2}{c}{{{\bfseries Average}}}
+	& \multicolumn{2}{c}{{{\bfseries Poor}}}
+	& \multicolumn{2}{c}{{{\bfseries Very Poor}}} \\
+	
+	
+	\cmidrule[0.4pt](r{0.125em}){1-1}%
+	\cmidrule[0.4pt](lr{0.125em}){2-3}%
+	\cmidrule[0.4pt](lr{0.125em}){4-5}%
+	\cmidrule[0.4pt](lr{0.125em}){6-7}%
+	\cmidrule[0.4pt](lr{0.125em}){8-9}%
+	\cmidrule[0.4pt](lr{0.125em}){10-11}%
+	\cmidrule[0.4pt](l{0.25em}){12-13}%
+	% \midrule
+	\endhead
+	
+	
+	Some question about the Instructor or Course & 2 & (7.14) & 4 &
+	(14.29) & \highest{12} & \highest{(42.86)} & 4
+	& (14.29) & 6 & (21.43) & 0 & (0.00) \\
+	
+	\myrowcolour%
+	Some question about the Instructor or Course & 3 & (10.71) &
+	\highest{15} & \highest{(53.57)} & 5 & (17.86) & 5 & (17.86) & 0 &
+	(0.00) & 0 & (0.00) \\
+	
+	Some question about the Instructor or Course & 4 & (14.29) & 8 &
+	(28.57) & \highest{15}
+	& \highest{(53.57)} & 1 & (3.57) & 0 & (0.00) & 0 & (0.00) \\
+	
+	\myrowcolour%
+	Some question about the Instructor or Course & 3 & (10.71) & 8 &
+	(28.57) & \highest{10} & \highest{(35.71)}
+	& 5 & (17.86) & 2 & (7.14) & 0 & (0.00) \\
+	
+	Some question about the Instructor or Course & 6 & (21.43) &
+	\highest{9} & \highest{(32.14)}
+	& 4 & (14.29) & \highest{9} & \highest{(32.14)} & 0 & (0.00) & 0 & (0.00) \\
+	
+	\myrowcolour%
+	Some question about the Instructor or Course & \highest{10} &
+	\highest{(35.71)} & \highest{10} & \highest{(35.71)}
+	& 3 & (10.71) & 5 & (17.86) & 0 & (0.00) & 0 & (0.00) \\
+	
+	Some question about the Instructor or Course & \highest{12} &
+	\highest{(42.86)} & \highest{12} & \highest{(42.86)} & 3
+	& (10.71) & 1 & (3.57) & 0 & (0.00) & 0 & (0.00) \\
+	
+	\myrowcolour%
+	Some question about the Instructor or Course & \highest{12} &
+	\highest{(42.86)} & 3 & (10.71) & 7
+	& (25.00) & 5 & (17.86) & 1 & (3.57) & 0 & (0.00) \\
+	
+	Some question about the Instructor or Course & \highest{10} &
+	\highest{(35.71)} & 6 & (21.43) & 6 & (21.43) & 6 & (21.43)
+	& 1 & (3.57) & 0 & (0.00) \\
+	
+	\myrowcolour%
+	Some question about the Instructor or Course & 5 & (17.86) & 5 &
+	(17.86) & \highest{12} & \highest{(42.86)} & 2 & (7.14)
+	& 3 & (10.71) & 1 & (3.57)\\
+	
+	Some question about the Instructor or Course & 3 & (10.71) & 8 &
+	(28.57) & \highest{11} & \highest{(39.29)} & 3 & (10.71) & 3 & (10.71)
+	& 0 & (0.00) \\
+	
+	\myrowcolour%
+	Some question about the Instructor or Course & \highest{18} &
+	\highest{(64.29)}
+	& 5 & (17.86) & 3 & (10.71) & 1 & (3.57) & 1 & (3.57) & 0 & (0.00) \\
+	
+	Some question about the Instructor or Course & \highest{15} &
+	\highest{(53.57)}
+	& 7 & (25.00) & 2 & (7.14) & 2 & (7.14) & 2 & (7.14) & 0 & (0.00) \\
+	
+	\myrowcolour%
+	Some question about the Instructor or Course & 3 & (10.71) &
+	\highest{13} & \highest{(46.43)} & 4 & (14.29) & 6 & (21.43) & 2
+	& (7.14) & 0 & (0.00) \\
+	
+	\bottomrule
+	
+\end{longtable}
 
 
 
