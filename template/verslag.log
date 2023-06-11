@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  11 JUN 2023 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  11 JUN 2023 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,28 +795,28 @@ Overfull \hbox (7.05606pt too wide) in paragraph at lines 48--50
 chrij-ving, ont-werp, test-
  []
 
-[2] (verslag.toc [3] [4])
+[2] (verslag.toc [3])
 \tf@toc=\write5
 \openout5 = `verslag.toc'.
 
- [5]
-<4varmodel.png, id=34, 339.51843pt x 187.45032pt>
+ [4]
+<4varmodel.png, id=30, 339.51843pt x 187.45032pt>
 File: 4varmodel.png Graphic file (type png)
 <use 4varmodel.png>
 Package pdftex.def Info: 4varmodel.png  used on input line 98.
 (pdftex.def)             Requested size: 113.81102pt x 62.83414pt.
- [6 <./4varmodel.png>]
-<sluismodel.jpg, id=40, 432.61626pt x 234.8775pt>
+ [5 <./4varmodel.png>]
+<sluismodel.jpg, id=37, 432.61626pt x 234.8775pt>
 File: sluismodel.jpg Graphic file (type jpg)
 <use sluismodel.jpg>
 Package pdftex.def Info: sluismodel.jpg  used on input line 127.
 (pdftex.def)             Requested size: 227.62204pt x 123.58133pt.
-<sluispassage.png, id=41, 490.83376pt x 689.57625pt>
+<sluispassage.png, id=38, 490.83376pt x 689.57625pt>
 File: sluispassage.png Graphic file (type png)
 <use sluispassage.png>
 Package pdftex.def Info: sluispassage.png  used on input line 140.
 (pdftex.def)             Requested size: 227.62204pt x 319.78682pt.
- [7 <./sluismodel.jpg>]
+ [6 <./sluismodel.jpg>]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -891,30 +891,30 @@ msy/m/n/10 ^^@ \OML/cmm/m/it/10 david \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 tho
 mpson=Watverstaatmenonderdeautomatiseringsparadox\OT1/cmr/m/n/10 ?$ 
  []
 
-[8 <./sluispassage.png>]
-<4varparnas.png, id=52, 514.92375pt x 277.78781pt>
+[7 <./sluispassage.png>]
+<4varparnas.png, id=49, 514.92375pt x 277.78781pt>
 File: 4varparnas.png Graphic file (type png)
 <use 4varparnas.png>
 Package pdftex.def Info: 4varparnas.png  used on input line 168.
 (pdftex.def)             Requested size: 227.62204pt x 122.79498pt.
-<requirement.png, id=53, 405.01312pt x 313.17pt>
+<requirement.png, id=50, 405.01312pt x 313.17pt>
 File: requirement.png Graphic file (type png)
 <use requirement.png>
 Package pdftex.def Info: requirement.png  used on input line 170.
 (pdftex.def)             Requested size: 227.62204pt x 176.00954pt.
-<oplossing_easterbrook.png, id=54, 487.8225pt x 259.7203pt>
+<oplossing_easterbrook.png, id=51, 487.8225pt x 259.7203pt>
 File: oplossing_easterbrook.png Graphic file (type png)
 <use oplossing_easterbrook.png>
 Package pdftex.def Info: oplossing_easterbrook.png  used on input line 172.
 (pdftex.def)             Requested size: 227.62204pt x 121.18877pt.
-<problemframejackson1997easterbrook.png, id=55, 496.10344pt x 442.65375pt>
+<problemframejackson1997easterbrook.png, id=52, 496.10344pt x 442.65375pt>
 File: problemframejackson1997easterbrook.png Graphic file (type png)
 <use problemframejackson1997easterbrook.png>
 Package pdftex.def Info: problemframejackson1997easterbrook.png  used on input 
 line 174.
 (pdftex.def)             Requested size: 227.62204pt x 203.09634pt.
- [9 <./4varparnas.png> <./requirement.png> <./oplossing_easterbrook.png>]
-<whatvshoe_easterbrook.png, id=62, 462.97969pt x 145.29282pt>
+ [8 <./4varparnas.png> <./requirement.png> <./oplossing_easterbrook.png>]
+<whatvshoe_easterbrook.png, id=59, 462.97969pt x 145.29282pt>
 File: whatvshoe_easterbrook.png Graphic file (type png)
 <use whatvshoe_easterbrook.png>
 Package pdftex.def Info: whatvshoe_easterbrook.png  used on input line 178.
@@ -944,8 +944,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--205
 
  []
 
-[10 <./problemframejackson1997easterbrook.png> <./whatvshoe_easterbrook.png>]
-[11]
+[9 <./problemframejackson1997easterbrook.png> <./whatvshoe_easterbrook.png>]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
@@ -1254,34 +1254,34 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[12] [13]
-<main.png, id=80, 1221.06187pt x 608.2725pt>
+[11] [12]
+<main.png, id=77, 1221.06187pt x 608.2725pt>
 File: main.png Graphic file (type png)
 <use main.png>
 Package pdftex.def Info: main.png  used on input line 308.
 (pdftex.def)             Requested size: 227.62204pt x 113.38254pt.
-<schip.png, id=81, 433.62pt x 277.035pt>
+<schip.png, id=78, 433.62pt x 277.035pt>
 File: schip.png Graphic file (type png)
 <use schip.png>
 Package pdftex.def Info: schip.png  used on input line 310.
 (pdftex.def)             Requested size: 227.62204pt x 145.42441pt.
-<sluiskolk.png, id=82, 660.96938pt x 319.94531pt>
+<sluiskolk.png, id=79, 660.96938pt x 319.94531pt>
 File: sluiskolk.png Graphic file (type png)
 <use sluiskolk.png>
 Package pdftex.def Info: sluiskolk.png  used on input line 312.
 (pdftex.def)             Requested size: 227.62204pt x 110.18108pt.
-<stoplicht.png, id=83, 372.64218pt x 219.06844pt>
+<stoplicht.png, id=80, 372.64218pt x 219.06844pt>
 File: stoplicht.png Graphic file (type png)
 <use stoplicht.png>
 Package pdftex.def Info: stoplicht.png  used on input line 314.
 (pdftex.def)             Requested size: 227.62204pt x 133.81204pt.
- [14 <./main.png> <./schip.png> <./sluiskolk.png>]
-<deur.png, id=90, 513.41812pt x 314.67563pt>
+ [13 <./main.png> <./schip.png> <./sluiskolk.png>]
+<deur.png, id=87, 513.41812pt x 314.67563pt>
 File: deur.png Graphic file (type png)
 <use deur.png>
 Package pdftex.def Info: deur.png  used on input line 316.
 (pdftex.def)             Requested size: 227.62204pt x 139.50923pt.
-<pomp.png, id=91, 790.45313pt x 386.94562pt>
+<pomp.png, id=88, 790.45313pt x 386.94562pt>
 File: pomp.png Graphic file (type png)
 <use pomp.png>
 Package pdftex.def Info: pomp.png  used on input line 318.
@@ -1303,7 +1303,7 @@ l.340
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[15 <./stoplicht.png> <./deur.png> <./pomp.png>]
+[14 <./stoplicht.png> <./deur.png> <./pomp.png>]
 ! Undefined control sequence.
 l.346  Belangrijk gevolg: Voor elke state s \inS
                                                  geldt dat er een state s' b...
@@ -1822,7 +1822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--389
 
  []
 
-[16] [17]
+[15] [16]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -2370,7 +2370,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[18]
+[17]
 ! Misplaced alignment tab character &.
 l.470 		A[] schip.varen &
                          & main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
@@ -2767,7 +2767,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[19]
+[18]
 ! Misplaced alignment tab character &.
 l.509 ...ot main.rn1 || main.rn2 -> gate(0).open &
                                                   & gate(1).open && Queue.li...
@@ -3052,7 +3052,7 @@ Overfull \hbox (23.33397pt too wide) in paragraph at lines 516--518
 0||main.direction==1) 
  []
 
-<xymatrix 2x2 409> [20]
+<xymatrix 2x2 409> [19]
 ! Undefined control sequence.
 l.571 	 \VerbatimInput
                       {data.txt}
@@ -3062,7 +3062,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[21] [22]
+[20] [21]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3573,7 +3573,7 @@ Overfull \hbox (26.11162pt too wide) in paragraph at lines 630--631
 ing-results-discussion-
  []
 
-[23] [24] [25] (verslag.bbl) [26]
+[22] [23] [24] (verslag.bbl) [25]
 ! Misplaced alignment tab character &.
 l.713 	III) Abstract  &
                         Keywords
@@ -3584,7 +3584,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[27]
+[26]
 ! Misplaced alignment tab character &.
 l.742 	VII) Discussion &
                          Conclusion
@@ -3595,7 +3595,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[28]
+[27]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3629,7 +3629,7 @@ ww.researchgate.net/publication/265059173$[]\OML/cmm/m/it/10 ow[]o[]rite[][]cie
 ntific[]rticle[]or[][]edical[]ournal$ 
  []
 
-[29] (verslag.aux)
+[28] (verslag.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3658,9 +3658,9 @@ cmssbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/xypic/xyatip10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/xypic/xybtip10.pfb>
-Output written on verslag.pdf (31 pages, 658043 bytes).
+Output written on verslag.pdf (30 pages, 657943 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
