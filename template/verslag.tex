@@ -1,6 +1,16 @@
 \documentclass{article}
 \usepackage{graphicx} 
 \usepackage[dutch]{babel}
+\usepackage{logicproof}
+
+\usetikzlibrary{automata,positioning}
+
+\usepackage[all]{xy}
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+ 
+\usepackage{mathtools,halloweenmath}
 \begin{document}
 	\sffamily
 	\begin{titlepage}
@@ -62,9 +72,22 @@ What specific results answer to the objectives of the study?What is the novelty 
 	\section{Inleiding}
 	In deze case study wordt %insert inleiding hier
 	
+		\subsection{Algemeen}
 	
 	
-	\subsection{Uppaal}
+	
+	\subsection{Achtergrond}
+	
+	\subsubsection{Formal specification}
+	
+	\subsubsection{Modelling}
+	
+	\subsubsection{Formal verification}
+	Formal verification is een proces warin wordt bevestigd dat het bestudeerde systeem voldoet aan de requirements of specificaties. Formele verificatie kan worden uitgevoerd door middel van simulatie, propositielogica en model checking. Deze technieken worden ondeer andere gebruikt voor het test van een systeem op safety,liveness, deadlock freeness en reachability requirements.
+	
+	\subsubsection{Counterexample analysis}
+	Er is onderzoek gedaan naar verschillende sluizen en de bediening hiervan. 
+	Een alternatief is voorgesteld om aan te tonen dat de implementatie van de sluis voldoet aan het vier-variabelen model.
 	
 	\subsection{Statistical model checking}
 	Dit gaat in het algemeen over ...
@@ -84,22 +107,87 @@ What specific results answer to the objectives of the study?What is the novelty 
 
 	
 	
-	\subsection{Conclusies uit rampenonderzoek van de groepsleden}
 	
-	\subsection{Voorbeelden van sluizen}
-	Dit gaat over de literatuur die tijdens het project is verzameld en bestudeerd mbt de opdracht.
-	Hieronder een voorbeeld van een sluismodel
 	
-	\subsubsection{Voorbeelden van sluizen}
-	\includegraphics[width=6cm]{sluismodel.jpg} % also works with logo.pdf
+	\subsection{Counterexamples}
+	Het sluizenpartk is in beheer van Rijkswaterstaat. Onderzoek naar de werking en bediening van  sluizen
+	heeft een fucntionele beschrijving van de bediening vn schutsluizen opgeleverd. Een formele omschrijving van de gevisualiseerde schutsluis is alls volgd:
+	Schip komt aanvaren
+	Schip meld zijn aan
+	Sluisdeuren gaan open
+	Stoplichten gaan op groen
+	Schip vaart in de sluiskolk.
+	Sluisdeuren gaan dicht en stoplicht op rood.
+	De sluis start het nivelleerproces.
+	De sluisdeuren  gaan open en stoplicht gaat op groen.
+	Het schip kan de andere kant uitvaren
+	De sluisdeuren sluiten en stoplicht gaat op rood.
+
+ 
+	\includegraphics[width=8cm]{sluismodel.jpg} % also works with logo.pdf
 	
-	\subsubsection{Voorbeelden van sluizen}
+ Het stroomschema van de richtlijn vaarwegen is een geschikte weergave volgens het 4-variabelen model.
+ De input variabelen
+ 
+ De output variabelen
+ 
+ De monitored variabelen
+ 
+ De controlled variabelen
+ 
+ 
 		Hieronder een voorbeeld van de werking van en sluismodel volgens de richtlijn vaarwegen.
 	\includegraphics[width=8cm]{sluispassage.png} % also works with logo.pdf
+
+ 
 	
-	\subsection{Conclusie}
+	\section{Requirements elacitation}
 	
-	\section{Requirements}
+	\subsection{Algemeen}
+	
+	Wat zijn requirements en specications?
+	https://agilescrumgroup.nl/product-backlog/
+	https://nl.wikipedia.org/wiki/Requirementsanalyse
+	http://www.chilico.nl/artikelen/businessrequirements/business_en_functionelerequirements.html
+	https://iir.nl/blog/goede-requirements-zijn-het-fundament-van-de-informatievoorziening/
+	https://qualitybs.wordpress.com/2015/03/13/hoe-maak-je-een-user-requirement-specification-voor-operationele-systemen/
+	https://www.bpmcompany.eu/in-hoeverre-zijn-requirements-en-specificaties-nuttig/
+	https://www.reaco.nl/blog/wat-zijn-agile-requirements/
+	Er bestaat ook een 6-variabelen model. . .Wat is dat?
+	https://www.uni-due.de/imperia/md/content/swe/papers/icsoft16a.pdf
+	Wat voor soorten requirements zijn er zoal te vinden?
+	Hoe verkrijgt men requirements?
+	Wat voor requirement elicitation technieken zijn er zoal?
+	Wat is het verschil tussen functionele en niet-functionele
+	requirements?
+	Wat verstaat men onder mode confusion?
+	http://automation.forthillgroup.com/themes/mode-confusion
+	https://www.linkedin.com/pulse/confusion-cockpit-understanding-human-performance-david-thompson/
+	Wat verstaat men onder de automatiseringsparadox?
+	
+		\includegraphics[width=8cm]{4varparnas.png}
+		
+				\includegraphics[width=8cm]{requirement.png}
+		
+			\includegraphics[width=8cm]{oplossing_easterbrook.png}
+			
+				\includegraphics[width=8cm]{problemframejackson1997easterbrook.png}
+				
+			
+					
+						\includegraphics[width=8cm]{whatvshoe_easterbrook.png}
+	Problem description vs slution description \\
+	whatvs how \\
+	application domain vs machine domain \\
+	functional vs non-functional requirements \\
+	systems engineering vs software engineering \\
+	customers vs users \\
+	ndicatieve vs optative descriptions \\
+	verification vs validation \\
+	capturing vs synthesisingrequirements \\
+	
+	\subsection{Conclusies uit rampenonderzoek van de groepsleden}
+	
 	
 	\subsection{Requirements}
 	Directe requirements van opdrachtgever:\\
@@ -115,22 +203,6 @@ What specific results answer to the objectives of the study?What is the novelty 
 	Maak een model dat als template dient gebruikt te worden voor het automatiseren van verschillende soorten sluizen. Verder moeten overwegingen gemaakt worden die goed onderbouwd zijn.\\\\ Aangezien er van ons alleen een model verwacht wordt, zullen wij ons geheel focussen op de fundamentele werking van de sluis en hierbij zullen wij ons dus niet bezig  houden met fysieke eisen zoals veiligheidshekjes en borden. Onze focus ligt geheel op de werking van de sluis; elke state waar de sluis zich in mag bevinden en welke beslissingen de sluis moet maken op basis van bestaande protocols en benoemde eisen. \\\\
 	Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze bestaande uit de sluisdeuren, de sloplichten, de waterpomp en de boten.\\
 	
-	\subsection{Sluisdeuren}
-	De sluisdeuren.
-	
-	\subsection{Stoplichten}
-	De stoplichten
-	
-	\subsection{Waterpomp}
-	De waterpomp
-	
-	\subsection{Boten}
-	De meeste sluizen die zich in Nederland bevinden zijn schutsluizen; deze sluizen zijn bedoeld om boten, zowel vrachtschepen als pleziervaart afhangend van de locatie van de sluis, te verwerken. Om deze reden gaan wij deze dus ook verwerken in ons model. Mocht een sluis niet bedoeld zijn om boten te verwerken, dan zou dit model alsnog toegepast kunnen worden opp desbetreffende sluis.
-	Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke sluis.  Sinds wij een template maken, hoeven wij geen rekening te hounden met hoe de schepen in de queue komen. Het enige wat wij hoeven te doen, is de data verwerken.
-	
-	Overige einsen op basis van eigen inbreng:\\
-	
-	
 	
 	\subsection{Specificaties}
 	Vanuit deze requiremenst kunnen verdere specificaties opgesteld worden.
@@ -138,8 +210,7 @@ What specific results answer to the objectives of the study?What is the novelty 
 	Even ter duidelijkheid: een requirement beschrijft wat een programma moet doen, en een specificatie beschrijft hoe men van plan is om deze requirements te realiseren.//
 	Voorbeeld:// Requirement is dat de sluis meerdere boten moet kunnen verwerken; de specificatie zou hier zijn fdat de sluis minstens twee keer zo groot moet zijn dan de grootste boot die door de sluis kan.
 	
-	\subsection{Notities die verwerkt moeten worden}
-	
+		
 	moet de intitial state altijd in een loop zitten in uppaal?
 	wat zijn urgent channels?
 	rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
@@ -157,27 +228,165 @@ What specific results answer to the objectives of the study?What is the novelty 
 	zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
 	rampen alleen voor persoonlijk verslag
 	
+	\subsubsection{Aannames}
+	
+		De meeste sluizen die zich in Nederland bevinden zijn schutsluizen; deze sluizen zijn bedoeld om boten, zowel vrachtschepen als pleziervaart afhangend van de locatie van de sluis, te verwerken. Om deze reden gaan wij deze dus ook verwerken in ons model. Mocht een sluis niet bedoeld zijn om boten te verwerken, dan zou dit model alsnog toegepast kunnen worden opp desbetreffende sluis.
+	Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke sluis.  Sinds wij een template maken, hoeven wij geen rekening te hounden met hoe de schepen in de queue komen. Het enige wat wij hoeven te doen, is de data verwerken.
+	
+	Overige einsen op basis van eigen inbreng:\\
+	
+		\subsection{Formele specificaties}
+	
+	\paragraph{Safety}
+	Safety Properties are used to verify that something
+	bad will never happen. Dit kan worden gespecificeerd met de volgende vergelijking
 	
 	
-	\section{Modellen}
 	
-	\subsection{De Kripke structuur}
+	\square ( a_0 \implies (( \lnot a_2 \wedge \lnot a_3 ) \mathcal{U} a_1 ) \vee ( \lnot a_2 \wedge \lnot a_3 )) \\
 	
-	\subsection{Maincontroller}
+	
+ 
+ 
+		\forall x \, (P(x) \to Q(x)) & premise \\
+		\forall x \, P(x) & premise \\\hspace*{-30pt} \\
+ 
+		 
+			P(x_0) & $\forall x \, \mathrm{e}$ 2 \\
+			Q(x_0) & $\to \mathrm{e}$ 3, 4 \\
+ 
+		\forall x \, Q(x) & $\forall x \, \mathrm{i}$ 3--5 \\
+ 
+	
+	
+	
+ 
+	
+	
+	\{a,b\} or \set†{a,b} \\
+	\langle a,b \rangle or \gens†{a,b} \\
+	
+	
+	f \colon A \to B \\
+
+	f \circ g \\
+	x \mapsto f(x) \\
+	
+	\begin{align*}
+		f \colon \mathbb{R} &\to \mathbb{R} \\
+		x &\mapsto x^2
+	\end{align*}
+	
+	
+	\paragraph{Reachability}
+	Reachability properties are used to check whether
+	a given state formula can be satisfied by some
+	reachable state.
+	
+	\paragraph{Liveliness}
+	Liveness properties are used to verify that
+	something eventually will hold
+	\paragraph{Security}
+	
+	\paragraph{Performance}
+	
+	Er is geen deadlock
+	
+
+	
+	
+	
+	\newpage
+	\section{Formeel model gerealiseerd in Uppaal}
+	
+	\subsection{Algemeen}
+	
+
+	
+	
+		\subsection{Maincontroller}
 	\includegraphics[width=8cm]{main.png} % also works with logo.pdf
 	\subsection{Schip}
 	\includegraphics[width=8cm]{schip.png} % also works with logo.pdf
-	\subsection{Sluis}
-	\includegraphics[width=8cm]{sluis.png} % also works with logo.pdf
+	\subsection{Sluiskolk}
+	\includegraphics[width=8cm]{sluiskolk.png} % also works with logo.pdf
 	\subsection{Stoplicht}
-		\includegraphics[width=8cm]{stoplicht.png} % also works with logo.pdf
+	\includegraphics[width=8cm]{stoplicht.png} % also works with logo.pdf
 	\subsection{Deur}	
 	\includegraphics[width=8cm]{deur.png} % also works with logo.pdf
-		\subsection{pomp}	
+	\subsection{pomp}	
 	\includegraphics[width=8cm]{pomp.png} % also works with logo.pdf
 	
-	\subsection{Soorten modellen}
+	 
+
+	 
 	
+	
+	
+
+	
+	\subsection{De formele verificatie aan de hand van een Kripke structuur}
+	
+
+
+ 
+ 
+ 
+ Voor het modelleren van een systeemhebben we nodig:\\
+ alle states van het systeem.We stoppen dezein een verzameling \\
+ S: de verzamleing van alle states van een systeem
+ Elke individuele state noemen we s_{0}, s_{1},...s_{n} \\
+ Ons model is een tupelmet daarin de verzameling states: M(S)
+ 
+ 
+ De transities tussen states vormen een relatie
+ R $\subseteq$S xS
+ 
+ De systemen die wij modelleren zijn reactief:Systemenkunnen eindeloos rondjes lopen door een aantal toestanden. \\
+ Belangrijk gevolg: Voor elke state s \inS geldt dat er een state s' bestaat zodanig dat geldt R(s,s') \\
+ Elke state heeft een uitgaande transities.
+ Een transitierelatie, waarin elke stateeen uitgaande transitie heeft noemt men totaal. \\
+ Alle transitierelatiesin de  systemen die wij modelleren zijn totaal.
+ 
+ Om uitspraken te kunnen doen over ons systeem gebruiken we: \\
+ Een verzamelingatomaire poposities (AP): proposities die niet verder op te delen zijnin kleinere/kortere proposities. \\
+ Een labeling functie: L
+ De labeling functieis een functie dieelke state "labeled"met een verrzameling atomaire propostities die waar zijn in die state: \\
+   L= S \to   ~ $2^{AP}$  \\
+ 
+
+ 
+ 
+ \paragraph{Model checking Temporal logics} \\
+ M, s \models p $\Leftrightarrow$ p \in L(s) \\
+ M, s \models \not f1 $\Leftrightarrow$ M, s \nvdash f1 \\
+ M, s \models f1 \vee f2 $\Leftrightarrow$ M,s \models f1 or M,s \nvdash f2 \\
+ M, s \models f1 \wedge f2 $\Leftrightarrow$  M,s \models f1 and M,s \nvdash f2 \\
+ M, s \models \mathrm{E} g_{1} $\Leftrightarrow$ there is a path \pi  from ~  s ~   such ~  that  ~ M, \pi \models g1 \\
+ M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from s, M, \pi \models g1 \\
+ M, s \models p $\Leftrightarrow$ s is the first state of \piand M, s \models f1 \\
+ M, s \models \not g_{1} $\Leftrightarrow$ M, \pi  \nvdash g1\\
+ M, s \models p $\Leftrightarrow$  M, \pi  \models g1  or  M, \pi  M, \pi  \models g2\\
+ M, s \models p $\Leftrightarrow$ M, \pi  \models g1  and  M, \pi  M, \pi  \models g2 \\
+ M, s \models p $\Leftrightarrow$ M, $\pi^{1}$ \models g1 \\
+ M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that M, $\pi^{k}$  \models g1\\
+ M, s \models p $\Leftrightarrow$ for all i \ge 0,M,$\pi^{i}$ \models g1 \\
+ M, s \models g1 \bugcup g2 $\Leftrightarrow$ there exists ak \ge 0 such that M, $\pi^{k}$ \models g2\\
+ and for all 0 \le j < k, M,$\pi^{j}$ \models g1
+ M, s \models p $\Leftrightarrow$ for all j \ge 0, if for every i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2\\
+ 
+ 
+ 
+ 
+
+ 
+ Kripke structuur
+  \mathbb{A}  bestaat uit  een 4-tuple M = \{ S ,  S_{0}  , \Re , L \} ~ met ~  daarin: \\
+  S:  ~ de  ~ verzamelingvan ~  alle ~  states ~  in  ~ het ~  systeem \\
+  S_{0} $\subseteq$ S: de verzameling van alle beginstates \\
+  \Re $\subseteq$ \mathbb{S} x S: de transitierelatie \\
+      L= S \to   ~ $2^{AP}$ ~ : de labels waarmee weiedere state labelen met atomaire propositiesdie waar zijn in die state\\
+
 	\subsection{Tijd}
 	
 	\subsection{Guards en invarianten}
@@ -186,7 +395,7 @@ What specific results answer to the objectives of the study?What is the novelty 
 	
 	\subsection{Zeno gedrag}
 	
-	\section{Logica}
+ 
 	
 	\subsection{Propositielogica}
 	
@@ -214,40 +423,14 @@ What specific results answer to the objectives of the study?What is the novelty 
 		\item  c) het is onmogelijk om van richting te veranderen in minder dan 400 ms als de pomp al op niveau x is
 		\item  c') het is mogelijk om van richting te veranderen in minder dan 400 ms als de pomp al op niveau x is
 		\item  P7 Als zich geen errors voordoen bij stoplicht en deur,maar de waterpomp uitvalt:
-		\item  a)  a gear switch is gearanteerd after 1055 ms ( not including  1055)  (deleted)
-		\item  a') it is impossible  to switch gear in 1055 ms     (deleted)
-		\item  b) it is  impossible to switch gear in less than 550 ms (deleted)
-		\item  b') it is possible to switch gear at 550 ms (deleted)
-		\item  c) it is impossible to switch  gear in  less than 700 ms if the switch is not from/to gear N (deleted)
-		\item  c') it is posible to switch gear at 700 ms if the switch is not from/to gear N (deleted)
+ 
+ 
 		
 		
-		\item  p8 When no error occurs, but engine fails to find synchronous speed
-		\item  a) a gear switch is guaranteerd in 1205 ms (incuding 1205)
-		\item  a') a gear switch is not gearanteerd at less than 1205 ms
-		\item  b) it is imposible to switch gear in less than 450 ms
-		\item  b') is is possible to switch gear at 450 ms
-		\item  c) it is impossible to switch gear in less than 750 ms if the switch is not from/to gear N
-		\item  c') it is not possible to switch gear at 750 ms if the switch is not from/to gear N
-		
-		
-		\item  p9 Clutch errors
-		\item  a)If the clutch is not closed properly (i.e. a timeout occurs) the gearbox  controller will enter the locationCCCloseError with 200 ms   (undefined)
-		\item  b)  When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch.  (undefined)
-		\item  a) If th clutch is not closed properly (ie. a timeout occurs) the gearbox controller will enter the location CCloseError within 200 ms (undefined)
-		\item  b) When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch. (undefined)
-		
-		
-		\item  p10 Gearbox errors  
-		\item  a) If the gearbox can not enter a requested gear ( i.e. a tieout occurs) the gearbox controller will enter the location GsetError within 350 ms (undefined)
-		\item  b) When the gearbox controller enters location GSetError, there is always a problem in the gearbox with setting the gear. (undefined)
-		
-		
-		\item  p11 IF no error occurs in the engine, it is guaranteed to find synchronous speed (undefined)
+ 
 		\item  p12 Wanneer beide sluisdeuren in state gesloten zijn, dan is de pomp in zijn initiale state of 100 ms verwijderd van zijn initiele state
 		\item  A[]
-		\item  p13 When the gear controller has a greater set, torque regulaton is always indicated in the engine (undefined)
-		\item   A[]
+ 
 		\item  p14
 		\item  a) Als de deur open is(ongeacht boven of beneden, dan bevind de sluispomp zich in een  predefined state (undefined)
 		A[] (gate(0).open||gate(1).open) -> (main.pomp_idle || main.pomp2_idle)
@@ -337,9 +520,15 @@ What specific results answer to the objectives of the study?What is the novelty 
 
 	\end{itemize} 
 	
-	\section{Computation tree logic}
+ 
 	
 	\subsection{De computation tree}
+	
+\xymatrix@ur@!R=2pc{%
+	*+<1pc>[o][F-]{q_0}  \ar@(l,l)[]^<<<<{start} \ar@/^/[r]^0  \ar@/_/[d]_1 
+	& *+<1pc>[o][F-]{q_1} \ar@(ul,ur)[]^{0}  \ar@/^/[d]^1 \\
+	*+<1pc>[o][F-]{q_2} \ar@(dr,dl)[]^{1} \ar@/_/[r]_0 
+	& *+<1pc>[o][F=]{q_3} }
 	
 	\subsection{Operator: AG}
 
@@ -375,51 +564,26 @@ What specific results answer to the objectives of the study?What is the novelty 
 	\subsection{Operator: p R q}
 	Vanaf het invaren tot en met het uitvaren van een schip en geldig is x lager dan 15 tijdseenheden????
 	vanaf aanvaren staat een schip maximaal 40 tijdseenheden in de wahtrij.
-	\subsection{Fairness}
-	
-	Definitie
-	
-	\subsection{Liveness}
-	
-	
-	Definities
-
-	\subsection{Security}
-	
-	
-	Definities
-	
-	\subsection{performance}
-	
-	
-	Definities
-	
-	\newpage
-	\section{Testresultaten}
-	
-	\subsection{Inleiding}
-	Inleiding
-	
-	\subsection{Resultaten}
-	 \begin{filecontents*}{mydata.csv}
-		1.8233,1.8233,1.8233,0.9243,0.8651,0.9013,0.3217,0.3377,34.4858
-		0.2753,0.2753,0.2753,0.5383,0.5038,0.5249,0.3217,0.3377,8.4552
-		0.0898,0.0898,0.0898,0.2804,0.2625,0.2734,0.3217,0.3377,1.5514
-		0.4689,0.1193,0.0417,0.8046,0.2227,0.1795,0.6413,0.3307,6.4488
-		0.339,0.8068,0.0936,0.4335,0.8036,0.2434,0.3046,0.624,20.8422
-		0.2162,0.133,0.8711,0.1707,0.1503,0.8215,0.1562,0.0692,2.3365
-		0.5187,0.9138,1.0432,0.4332,0.8028,0.8406,0.2269,0.3404,22.8164
-		0.58,0.2096,0.9086,0.808,0.2134,0.8294,0.333,0.1596,8.4349
-		0.8237,0.9378,0.0855,0.8654,0.8096,0.2487,0.4338,0.5187,26.9923 
-	\end{filecontents*}
-
-\subsection{Conclusie}
+ 
+\subsection{Analyse}
 
 
 	 \VerbatimInput{data.txt}
 	\newpage
 		\section{Conclusie}
-		
+		LIn this paper, we presented the case study of intelligent
+		water level monitoring system. Different safety and
+		reachability requirements of the system are specified,
+		modelled and verified in the UPPAAL model checking
+		tool.Also bugs in the requirements specifications were
+		reported after counterexample analysis. Here failure in the
+		sensors and timers are regarded as changes in the
+		environment. Formal verification process validates the
+		adaptive behavior of the system in defined changing
+		environments. However, there is wide scope for defining
+		various unaccounted changes in the environment and add
+		additional functionality to the present system so that it
+		will adapt to those changes.
 		
 		
 			\newpage
