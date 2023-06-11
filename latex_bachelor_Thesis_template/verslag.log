@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  10 JUN 2023 22:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  11 JUN 2023 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4278,11 +4278,24 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2686 M
+        , s \models p $\Leftrightarrow$ p \in L(s) \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.2686 M, s \models
-                    p $\Leftrightarrow$ p \in L(s)
+                    p $\Leftrightarrow$ p \in L(s) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -4290,7 +4303,7 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.2686 M, s \models p $\Leftrightarrow
-                                      $ p \in L(s)
+                                      $ p \in L(s) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -4298,40 +4311,466 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.2686 M, s \models p $\Leftrightarrow$ p \in
-                                              L(s)
+                                              L(s) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2687 
+l.2687 M, s \models p $\Leftrightarrow
+                                      $ M, s \nvdash f1 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2687 ...\models p $\Leftrightarrow$ M, s \nvdash
+                                                   f1 \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2688 M, s \models
+                    p $\Leftrightarrow$ M,s \models f1 or M,s \nvdash f2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2688 M, s \models p $\Leftrightarrow
+                                      $ M,s \models f1 or M,s \nvdash f2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2688 ... \models p $\Leftrightarrow$ M,s \models
+                                                   f1 or M,s \nvdash f2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2688 ...ightarrow$ M,s \models f1 or M,s \nvdash
+                                                   f2 \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2689 M, s \models p $\Leftrightarrow
+                                      $  M,s \models f1 and M,s \nvdash f2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2689 ...\models p $\Leftrightarrow$  M,s \models
+                                                   f1 and M,s \nvdash f2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2689 ...htarrow$  M,s \models f1 and M,s \nvdash
+                                                   f2 \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2690 M, s \models p $\Leftrightarrow
+                                      $ there is a path \pi  from s  such th...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2690 ... p $\Leftrightarrow$ there is a path \pi
+                                                    from s  such that M, \pi...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2691 M, s \models p $\Leftrightarrow
+                                      $ for every path \pi starting from s, ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2691 ...s p $\Leftrightarrow$ for every path \pi
+                                                   starting from s, M, \pi \...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2692 M, s \models p $\Leftrightarrow
+                                      $ s is the first state of \piand M, s ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2692 ...ghtarrow$ s is the first state of \piand
+                                                   M, s \models f1 \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2692 ...s the first state of \piand M, s \models
+                                                   f1 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2693 M, s \models p $\Leftrightarrow
+                                      $ M, \pi  \nvdash g1\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2693 M, s \models p $\Leftrightarrow$ M, \pi
+                                                \nvdash g1\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2693 ...dels p $\Leftrightarrow$ M, \pi  \nvdash
+                                                   g1\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2694 M, s \models p $\Leftrightarrow
+                                      $  M, \pi  \models g1  or  M, \pi  M, ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2694 M, s \models p $\Leftrightarrow$  M, \pi
+                                                 \models g1  or  M, \pi  M, ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2695 M, s \models p $\Leftrightarrow
+                                      $ M, \pi  \models g1  and  M, \pi  M, ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2695 M, s \models p $\Leftrightarrow$ M, \pi
+                                                \models g1  and  M, \pi  M, ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2696 M, s \models p $\Leftrightarrow
+                                      $ M, $\pi^{1}$ \models g1 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2696 ...p $\Leftrightarrow$ M, $\pi^{1}$ \models
+                                                   g1 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2697 M, s \models p $\Leftrightarrow
+                                      $ there exists a k \ge 0, such that M,...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2697 ...p $\Leftrightarrow$ there exists a k \ge
+                                                   0, such that M, $\pi^{k}$...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2697 ...here exists a k \ge 0, such that M, $\pi
+                                                  ^{k}$  \models g1\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2697 ...k \ge 0, such that M, $\pi^{k}$  \models
+                                                   g1\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2698 M, s \models p $\Leftrightarrow
+                                      $ for all i \ge 0,M,$\pi^{i}$ \models ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2698 ...models p $\Leftrightarrow$ for all i \ge
+                                                   0,M,$\pi^{i}$ \models g1 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2698 ...$\Leftrightarrow$ for all i \ge 0,M,$\pi
+                                                  ^{i}$ \models g1 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2698 ...row$ for all i \ge 0,M,$\pi^{i}$ \models
+                                                   g1 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2699 M, s \models g1 \bugcup
+                               g2 $\Leftrightarrow$ there exists ak \ge 0 su...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2699 M, s \models g1 \bugcup g2 $\Leftrightarrow
+                                                  $ there exists ak \ge 0 su...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2699 ...g2 $\Leftrightarrow$ there exists ak \ge
+                                                   0 such that M, $\pi^{k}$ ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2699 ... there exists ak \ge 0 such that M, $\pi
+                                                  ^{k}$ \models g2\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2699 ... ak \ge 0 such that M, $\pi^{k}$ \models
+                                                   g2\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2700 and for all 0 \le j < k, M,$\pi
+                                      ^{j}$ \models g1
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2700 ...for all 0 \le j < k, M,$\pi^{j}$ \models
+                                                   g1
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2701 M, s \models p $\Leftrightarrow
+                                      $ for all j \ge 0, if for every i < j,...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2701 ...models p $\Leftrightarrow$ for all j \ge
+                                                   0, if for every i < j,M,$...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2701 ...r all j \ge 0, if for every i < j,M,$\pi
+                                                  ^{i}$ \nvdash g1 then M,$\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2701 ..., if for every i < j,M,$\pi^{i}$ \nvdash
+                                                   g1 then M,$\pi^{j}$ \mode...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2701 ...{i}$ \nvdash g1 then M,$\pi^{j}$ \models
+                                                   g2\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2702 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 2686--2702
+
+ []
+
+! Undefined control sequence.
+l.2703 \leg
+            \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2704 \geq
+            \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2691    \ell
+l.2704 \geq
+            \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+<recently read> \bigup 
+                       
+l.2707 \bigup
+              \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2709 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2704--2709
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2714    \ell
                ~ \boldsymbol \ell  g \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 2691.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 2714.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 2691.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 2714.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2692 
+l.2715 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2691--2692
+Underfull \hbox (badness 10000) in paragraph at lines 2714--2715
 
  []
 
@@ -4342,7 +4781,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2693   \mathbb
+l.2716   \mathbb
                 {A}  is a tuple = \{ L ,  \ell_{0} ,X ,  Inv , \mathrm{T} , ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -4351,7 +4790,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2693   \mathbb{A}  is a tuple = \{ L ,  \ell
+l.2716   \mathbb{A}  is a tuple = \{ L ,  \ell
                                               _{0} ,X ,  Inv , \mathrm{T} , ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4359,7 +4798,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2697 ... ~  x ~ C (X) ~  x  ~ \sigma  ~ x  ~ $2^
+l.2720 ... ~  x ~ C (X) ~  x  ~ \sigma  ~ x  ~ $2^
                                                   {X}$ ~ x ~ L  ~ is  ~ a  ~...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4367,7 +4806,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2697 ...et  ~ of ~  tranasitions: ~   e= \langle
+l.2720 ...et  ~ of ~  tranasitions: ~   e= \langle
                                                    \ell ,g,a,r,l' \rangle  \...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4375,15 +4814,16 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2700 \paragraph
+l.2723 \paragraph
                  {Definition 4.2}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+[46]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2701 A timed transition (TTS)is a tuple S =(S,s_
+l.2724 A timed transition (TTS)is a tuple S =(S,s_
                                                   {0},$$\underrightarrow{} $...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4391,13 +4831,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2703 \paragraph
+l.2726 \paragraph
                  {Definition 4.3}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (27.4232pt too wide) in paragraph at lines 2701--2703
+Overfull \hbox (27.4232pt too wide) in paragraph at lines 2724--2726
  []\T1/ptm/b/n/10.95 Definition 4.2[] \T1/ptm/m/n/10.95 A ti-med tran-si-tion (
 TTS)is a tu-ple S =(S,s$[]\OML/ptmcm/m/it/10.95 ;$$[]$$; \OT1/ptmcm/m/n/10.95 ^
 ^F)\OML/ptmcm/m/it/10.95 whereSisa\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 p
@@ -4406,7 +4846,7 @@ S/pzccm/m/n/10.95 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2701--2703
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2726
 \OML/ptmcm/m/it/10.95 Sistheinitialstateand$$[]$$\OMS/pzccm/m/n/10.95 ^^R \OML/
 ptmcm/m/it/10.95 Sx\OT1/ptmcm/m/n/10.95 (^^F \OMS/pzccm/m/n/10.95 [ \OML/ptmcm/
 m/it/10.95 R\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 xSisthetransitionrelati
@@ -4414,7 +4854,7 @@ on:Morever; therelation\OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 >
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2701--2703
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2726
 \OML/ptmcm/m/it/10.95 satisfiesthethreefollowingconditions \OT1/ptmcm/m/n/10.95
  : (1)\OML/ptmcm/m/it/10.95 ifs$$[]$$s[]; thens \OT1/ptmcm/m/n/10.95 = \OML/ptm
 cm/m/it/10.95 s[]; \OT1/ptmcm/m/n/10.95 (2)\OML/ptmcm/m/it/10.95 iss$$[]$$s[]an
@@ -4423,7 +4863,7 @@ n/10.95 2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2701--2703
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2726
 \OML/ptmcm/m/it/10.95 R; thens$$[]$$s\OT1/ptmcm/m/n/10.95 "\OML/ptmcm/m/it/10.9
 5 ; and\OT1/ptmcm/m/n/10.95 (3)\OML/ptmcm/m/it/10.95 ifs$$[]$$[]withd \OMS/pzcc
 m/m/n/10.95 2 \OML/ptmcm/m/it/10.95 R; thenforall\OT1/ptmcm/m/n/10.95 0 \OML/pt
@@ -4431,10 +4871,78 @@ mcm/m/it/10.95 << d[] << d; thereexistss\OT1/ptmcm/m/n/10.95 " \OMS/pzccm/m/n/1
 0.95 2
  []
 
+
+! LaTeX Error: \mathrm allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2727 Let \mathrm
+                  {A} = (L,\ell,X,Inv, T,\Sigma) be a timed automation. The ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2709 ...on system TTS is a structure L=(S,A,R,s_
+l.2727 Let \mathrm{A} = (L,\ell
+                               ,X,Inv, T,\Sigma) be a timed automation. The ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2728 S = L x $R^
+                  {X}$  \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2729 s_
+         {0} = (\ell_{0}, v_{0}) with v_{0}(x)=0 for every x \in X, \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2732 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (9.64326pt too wide) in paragraph at lines 2727--2732
+ []\T1/ptm/b/n/10.95 Definition 4.3[] \T1/ptm/m/n/10.95 Let A = (L,$\OML/ptmcm/
+m/it/10.95 `; X; Inv; T; \OT1/ptmcm/m/n/10.95 ^^F)\OML/ptmcm/m/it/10.95 beatime
+dautomation:ThesemanticsofAisdefinedastheTTSS[] \OT1/ptmcm/m/n/10.95 =
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2734 delay transitions: if d \in
+                                   R, (\ell,v) ,$$\underrightarrow{d} $$ (\e...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2734 ... if and only if v+d \models Inv(\ell $(^
+                                                  {1}$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2739 ...on system TTS is a structure L=(S,A,R,s_
                                                   {0},$\subseteq$, U) where \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4442,7 +4950,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2709 ...is a structure L=(S,A,R,s_{0},$\subseteq
+l.2739 ...is a structure L=(S,A,R,s_{0},$\subseteq
                                                   $, U) where \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4450,7 +4958,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2710 ...set of states, with the initial state s_
+l.2740 ...set of states, with the initial state s_
                                                   {0} \in S; \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4458,7 +4966,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2712 ...rrightarrow{}  $$ \subseteq S x (A x $R^
+l.2742 ...rrightarrow{}  $$ \subseteq S x (A x $R^
                                                   { \geq 0}$) x S is the tra...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4466,7 +4974,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2713 U \subseteq
+l.2743 U \subseteq
                     $R^{ \geq 0}$ x S is the until predicate \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4474,20 +4982,316 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2713 U \subseteq  $R^
+l.2743 U \subseteq  $R^
                        { \geq 0}$ x S is the until predicate \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2709--2714
+Underfull \hbox (badness 10000) in paragraph at lines 2739--2744
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2721 ...fety automation is a structure (S,A,C,s_
+l.2748 Let L_
+             {i} = (S_{i},A x  $\Re^{\geq0}$,$s^{\i0}$_{0},,$$\underrightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2748 Let L_{i} = (S_{i},A x  $\Re
+                                   ^{\geq0}$,$s^{\i0}$_{0},,$$\underrightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 2748.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2748 ...} = (S_{i},A x  $\Re^{\geq0}$,$s^{\i0}$_
+                                                  {0},,$$\underrightarrow{} ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2748 ...i0}$_{0},,$$\underrightarrow{} $$ i, $U^
+                                                  {i}$   ), i \in {1,2}, be ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2748 ...derrightarrow{} $$ i, $U^{i}$   ), i \in
+                                                   {1,2}, be two TTS. \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2749 ...dbisimulation is a relation R $\subseteq
+                                                  $ S1 x S2 with $s^{1}$_{0}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2749 ...tion R $\subseteq$ S1 x S2 with $s^{1}$_
+                                                  {0}R$s^{2}$_{0} satisfying...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2749 ...$\subseteq$ S1 x S2 with $s^{1}$_{0}R$s^
+                                                  {2}$_{0} satisfying, for a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2749 ...seteq$ S1 x S2 with $s^{1}$_{0}R$s^{2}$_
+                                                  {0} satisfying, for all a(...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2749 ...0} satisfying, for all a(d) \in A x $\Re
+                                                  ^{\geq0}$, the following t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 if  s_
+             {1}R_{2} and  s_{1}$$\underrightarrow{a(d)} $$_{1} s_{1}', then...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ...ow{a(d)} $$_{1} s_{1}', then \exists $s^
+                                                  {'}$_{2} \in S_{2} : s2  $...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ...d)} $$_{1} s_{1}', then \exists $s^{'}$_
+                                                  {2} \in S_{2} : s2  $$\und...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ... : s2  $$\underrightarrow{a(d)}  $$ 2$s^
+                                                  {'}$_{2} and $s^{'}$_{1}R$...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ...  $$\underrightarrow{a(d)}  $$ 2$s^{'}$_
+                                                  {2} and $s^{'}$_{1}R$s^{'}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ...ightarrow{a(d)}  $$ 2$s^{'}$_{2} and $s^
+                                                  {'}$_{1}R$s^{'}$_{2} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ...rrow{a(d)}  $$ 2$s^{'}$_{2} and $s^{'}$_
+                                                  {1}R$s^{'}$_{2} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ...d)}  $$ 2$s^{'}$_{2} and $s^{'}$_{1}R$s^
+                                                  {'}$_{2} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2750 ...$$ 2$s^{'}$_{2} and $s^{'}$_{1}R$s^{'}$_
+                                                  {2} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2751 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2748--2751
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 if  s_
+             {1}R_{2} and s_{1}$$\underrightarrow{a(d)} $$_{2} s_{1}', then ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ...ow{a(d)} $$_{2} s_{1}', then \exists $s^
+                                                  {'}$_{1} \in S_{1} : s1  $...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ...d)} $$_{2} s_{1}', then \exists $s^{'}$_
+                                                  {1} \in S_{1} : s1  $$\und...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ...} : s1  $$\underrightarrow{a(d)}  $$ $s^
+                                                  {'}$_{1} and $s^{'}$_{1}R$...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ...1  $$\underrightarrow{a(d)}  $$ $s^{'}$_
+                                                  {1} and $s^{'}$_{1}R$s^{'}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ...rightarrow{a(d)}  $$ $s^{'}$_{1} and $s^
+                                                  {'}$_{1}R$s^{'}$_{2}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ...arrow{a(d)}  $$ $s^{'}$_{1} and $s^{'}$_
+                                                  {1}R$s^{'}$_{2}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ...(d)}  $$ $s^{'}$_{1} and $s^{'}$_{1}R$s^
+                                                  {'}$_{2}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2752 ... $$ $s^{'}$_{1} and $s^{'}$_{1}R$s^{'}$_
+                                                  {2}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2753 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2754 if   s_
+              {1}R_{2} s_{1}', then  $U^{1}$_{d}(s1)   $\Leftrightarrow$ $U^...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2754 if   s_{1}R_{2} s_{1}', then  $U^
+                                        {1}$_{d}(s1)   $\Leftrightarrow$ $U^...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2754 if   s_{1}R_{2} s_{1}', then  $U^{1}$_
+                                             {d}(s1)   $\Leftrightarrow$ $U^...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2754 ...then  $U^{1}$_{d}(s1)   $\Leftrightarrow
+                                                  $ $U^{2}$_{d}(s2)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2754 ...1}$_{d}(s1)   $\Leftrightarrow$ $U^{2}$_
+                                                  {d}(s2)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2755 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2757 ...fety automation is a structure (S,A,C,s_
                                                   {0},$\subseteq$, $\varthet...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4495,7 +5299,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2721 ...n is a structure (S,A,C,s_{0},$\subseteq
+l.2757 ...n is a structure (S,A,C,s_{0},$\subseteq
                                                   $, $\vartheta$ ,\kappa)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4503,7 +5307,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2721 ...C,s_{0},$\subseteq$, $\vartheta$ ,\kappa
+l.2757 ...C,s_{0},$\subseteq$, $\vartheta$ ,\kappa
                                                   )
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4511,7 +5315,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2725  $$\underrightarrow{}  $$  $\subseteq
+l.2761  $$\underrightarrow{}  $$  $\subseteq
                                             $ S x A x \phi(C) x S is the set...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4519,7 +5323,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2725 ...ghtarrow{}  $$  $\subseteq$ S x A x \phi
+l.2761 ...ghtarrow{}  $$  $\subseteq$ S x A x \phi
                                                   (C) x S is the set of edge...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4527,7 +5331,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2726 $\vartheta
+l.2762 $\vartheta
                  $ : S $\subseteq$ \Phi(C)is the invariantassignment function
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4535,7 +5339,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2726 $\vartheta$ : S $\subseteq$ \Phi
+l.2762 $\vartheta$ : S $\subseteq$ \Phi
                                        (C)is the invariantassignment function
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4543,7 +5347,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2727 \kappa : S $\subseteq
+l.2763 \kappa : S $\subseteq
                             $ \varphi_{fin}(C) is the clocks resetting function
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4551,7 +5355,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2727 \kappa : S $\subseteq$ \varphi
+l.2763 \kappa : S $\subseteq$ \varphi
                                      _{fin}(C) is the clocks resetting function
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4563,7 +5367,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4575,14 +5379,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 Please use the math alphabet \mathtt instead of the \ttfamily command. 
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4593,7 +5397,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4604,7 +5408,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4615,7 +5419,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4626,7 +5430,7 @@ my insertion and my current dilemma will both disappear.
 ! Undefined control sequence.
 \Url@FormatString ...ndafter \UrlLeft \Url@String 
                                                   \UrlRight \m@th $
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4637,7 +5441,7 @@ and I'll forget about whatever was undefined.
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4648,7 +5452,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4659,36 +5463,35 @@ my insertion and my current dilemma will both disappear.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 Things are pretty mixed up, but I think the worst is over.
 
 ! Extra \endgroup.
 \Hy@endcolorlink ->\endgroup 
                              
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 Things are pretty mixed up, but I think the worst is over.
 
 ! Extra \endgroup.
 \hyper@linkurl ...ce@end \close@pdflink \endgroup 
                                                   
-l.2728 .../Users/gally/Downloads/228_DArBr96b.pdf}
+l.2764 .../Users/gally/Downloads/228_DArBr96b.pdf}
                                                   
 Things are pretty mixed up, but I think the worst is over.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2721--2729
+Underfull \hbox (badness 10000) in paragraph at lines 2757--2765
  []\T1/ptm/b/n/10.95 Definition 3[] \T1/ptm/m/n/10.95 A ti-med sa-fety au-to-ma
 -tion is a struc-ture (S,A,C,s$[]\OML/ptmcm/m/it/10.95 ;$$\OMS/pzccm/m/n/10.95 
 ^^R$\T1/ptm/m/n/10.95 , $\OML/ptmcm/m/it/10.95 #$
  []
 
-[46]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2731 ...errightarrow{d}  $$ (s,v+d), where d \in
+l.2767 ...errightarrow{d}  $$ (s,v+d), where d \in
                                                    $R^{ \geq +}$) , provided...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4696,15 +5499,16 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2731 ...ghtarrow{d}  $$ (s,v+d), where d \in $R^
+l.2767 ...ghtarrow{d}  $$ (s,v+d), where d \in $R^
                                                   { \geq +}$) , provided tha...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
+[47]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2733 ...derrightarrow{d}  $$ (s',v') where a \in
+l.2769 ...derrightarrow{d}  $$ (s',v') where a \in
                                                    \Sigma, provided that the...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4712,7 +5516,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2734 
+l.2770 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4720,7 +5524,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2740 \Re
+l.2776 \Re
            \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4728,7 +5532,7 @@ you left one out. Proceed, with fingers crossed.
 ! Undefined control sequence.
 <recently read> \patial 
                         
-l.2741 \patial
+l.2777 \patial
                \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4739,19 +5543,19 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2742 
+l.2778 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2740--2742
+Underfull \hbox (badness 10000) in paragraph at lines 2776--2778
 
  []
 
-) (discussie.tex [47]) (aanbeveling.tex [48
+) (discussie.tex [48]) (aanbeveling.tex [49
 
-]) (bronnen.tex [49
+]) (bronnen.tex [50
 
 ]
 Overfull \hbox (270.53256pt too wide) in paragraph at lines 14--16
@@ -4852,7 +5656,7 @@ Overfull \hbox (11.14682pt too wide) in paragraph at lines 476--477
 el / onderhoud-[]sluis-[]linne-[]afgerond$[][] 
  []
 
-[50
+[51
 
 ]
 Overfull \hbox (237.02573pt too wide) in paragraph at lines 479--480
@@ -5020,7 +5824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 505--506
 -[]doen-[]we /
  []
 
-[51]
+[52]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5172,7 +5976,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 519--520
  / verkeer-[]vervoer / vaarwegen /
  []
 
-[52]
+[53]
 ! Undefined control sequence.
 l.535 ...ed variabelen: door actuatoren \bestuurde
                                                    fenomenen uit de omgeving
@@ -5211,7 +6015,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.565 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://people.physics.carleton.ca/~dr...
 
-LaTeX Warning: Citation `' on page 53 undefined on input line 566.
+LaTeX Warning: Citation `' on page 54 undefined on input line 566.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 565--567
@@ -5227,7 +6031,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.568 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=-7gVqB...
 
-LaTeX Warning: Citation `' on page 53 undefined on input line 569.
+LaTeX Warning: Citation `' on page 54 undefined on input line 569.
 
 
 Underfull \hbox (badness 5147) in paragraph at lines 571--573
@@ -5235,7 +6039,7 @@ Underfull \hbox (badness 5147) in paragraph at lines 571--573
 e-[]condition-[]therac-[]25$[][] \T1/ptm/m/n/10.95 kort ar-ti-kel met
  []
 
-[53]
+[54]
 Underfull \hbox (badness 3250) in paragraph at lines 577--579
 [][]$\T1/pcr/m/n/10.95 https : / / ethicsunwrapped . utexas . edu / case-[]stud
 y / therac-[]25$[][] \T1/ptm/m/n/10.95 on-der-zoeks-ar-ti-kel waarin
@@ -5249,7 +6053,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.579 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://thedailywtf.com/articles/the-t...
 
-LaTeX Warning: Citation `' on page 54 undefined on input line 580.
+LaTeX Warning: Citation `' on page 55 undefined on input line 580.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
@@ -5259,7 +6063,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.582 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.computer.org/csdl/magazine...
 
-LaTeX Warning: Citation `' on page 54 undefined on input line 583.
+LaTeX Warning: Citation `' on page 55 undefined on input line 583.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 582--585
@@ -5297,7 +6101,7 @@ Underfull \hbox (badness 6493) in paragraph at lines 604--606
 / Papers / THERAC25 . html$[][] \T1/ptm/m/n/10.95 les-sons lear-ned.
  []
 
-[54]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 613--615
 [][]$\T1/pcr/m/n/10.95 https : / / www . sciencedirect . com / science / articl
 e / pii / S1474667017448245$[][] \T1/ptm/m/n/10.95 ar-ti-kel
@@ -5335,7 +6139,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.635 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.cs.colostate.edu/~bieman/C...
 
-LaTeX Warning: Citation `' on page 55 undefined on input line 636.
+LaTeX Warning: Citation `' on page 56 undefined on input line 636.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
@@ -5345,7 +6149,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.639 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.cs.ucf.edu/~dcm/Teaching/C...
 
-LaTeX Warning: Citation `' on page 55 undefined on input line 640.
+LaTeX Warning: Citation `' on page 56 undefined on input line 640.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 639--646
@@ -5353,7 +6157,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 639--646
 4600-[]Fall2010 / Literature /
  []
 
-[55]
+[56]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5361,7 +6165,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.656 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://hci.cs.siue.edu/NSF/Files/Seme...
 
-LaTeX Warning: Citation `' on page 56 undefined on input line 657.
+LaTeX Warning: Citation `' on page 57 undefined on input line 657.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 656--659
@@ -5377,7 +6181,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.659 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.thinkreliability.com/Instr...
 
-LaTeX Warning: Citation `' on page 56 undefined on input line 660.
+LaTeX Warning: Citation `' on page 57 undefined on input line 660.
 
 
 Underfull \hbox (badness 2564) in paragraph at lines 659--662
@@ -5470,7 +6274,7 @@ Overfull \hbox (44.06918pt too wide) in paragraph at lines 712--714
 vice-[]is-[]important-[]to-[]national-[]security /
  []
 
-[56]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 714--716
 [][]$\T1/pcr/m/n/10.95 https : / / www . seattletimes . com / business / boeing
 -[]aerospace /
@@ -5550,7 +6354,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 742--743
 s / airport-[]aviation-[]security /
  []
 
-[57]
+[58]
 Overfull \hbox (143.58969pt too wide) in paragraph at lines 743--744
 [][]$\T1/pcr/m/n/10.95 https : / / www . geekwire . com / 2020 / faas-[]go-[]ah
 ead-[]737-[]maxs-[]return-[]flight-[]kicks-[]off-[]massive-[]software-[]upgrade
@@ -5652,7 +6456,7 @@ eings-[]737-[]max-[]software-[]done-[]but-[]regulators-[]plot-[]more-[]changes-
 []after-[]jets-[]return/$[][]
  []
 
-[58]
+[59]
 Overfull \hbox (172.51205pt too wide) in paragraph at lines 773--775
 [][]$\T1/pcr/m/n/10.95 https : / / www . extremetech . com / extreme / 303373-[
 ]the-[]faa-[]knew-[]the-[]737-[]max-[]was-[]dangerous-[]and-[]kept-[]it-[]flyin
@@ -5745,7 +6549,7 @@ Overfull \hbox (53.23813pt too wide) in paragraph at lines 795--797
 ]airspace-[]to-[]see-[]return-[]of-[]boeing-[]737-[]max-[]1 .
  []
 
-[59]
+[60]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5897,7 +6701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 841--842
 ]maritime-[]disaster _ 20150826 .
  []
 
-[60]
+[61]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6008,7 +6812,7 @@ Overfull \hbox (6.56235pt too wide) in paragraph at lines 867--869
 CICM-[]Article-[]on-[]Tianjin-[]Blast-[]Oct2015 .
  []
 
-[61]
+[62]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6135,7 +6939,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-[62]
+[63]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6283,7 +7087,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.933     \bibitem{ID}
                        ... \LaTeX:\\ \url{https://ui.adsabs.harvard.edu/abs/...
-[63]
+[64]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6416,7 +7220,7 @@ Overfull \hbox (296.87045pt too wide) in paragraph at lines 966--967
 evastation-[]is-[]unreal-[]2015-[]8 ?
  []
 
-[64]
+[65]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6491,7 +7295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 998--1001
 ithin-[]minutes / 79406553$[][] \T1/ptm/m/n/10.95 vei-
  []
 
-[65]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
 [][]$\T1/pcr/m/n/10.95 https : / / www . forbes . com / sites / bradtempleton /
  2019 / 09 / 06 /
@@ -6585,7 +7389,7 @@ Overfull \hbox (29.40024pt too wide) in paragraph at lines 1039--1041
 bi-[]thwarts-[]russian-[]cybersecurity-[]attack/$[][]
  []
 
-[66]
+[67]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6756,7 +7560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1068--1069
 EQ7ZcpxqgFbBP /
  []
 
-[67]
+[68]
 Overfull \hbox (137.00522pt too wide) in paragraph at lines 1069--1070
 [][]$\T1/pcr/m/n/10.95 https : / / revealnews . org / blog / tesla-[]fired-[]sa
 fety-[]official-[]for-[]reporting-[]unsafe-[]conditions-[]lawsuit-[]says/$[][] 
@@ -6899,7 +7703,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
  2021-[]06-[]23 /
  []
 
-[68]
+[69]
 Overfull \hbox (358.29965pt too wide) in paragraph at lines 1096--1097
 [][]$\T1/pcr/m/n/10.95 https : / / www . caradvice . com . au / 947080 / elon-[
 ]musk-[]responds-[]to-[]deadly-[]texas-[]tesla-[]crash-[]as-[]consumer-[]report
@@ -7016,7 +7820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1114--1115
 rive-[]markets-[]study-[]suggests /
  []
 
-[69]
+[70]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7181,7 +7985,7 @@ Overfull \hbox (101.99838pt too wide) in paragraph at lines 1134--1135
  americas / tesla-[]texas-[]crash-[]model-[]s-[]autopilot-[]b1845286 .
  []
 
-[70]
+[71]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7340,7 +8144,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1171 	\bibitem{ID}
                      ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Turkis...
-[71]
+[72]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7408,7 +8212,7 @@ Overfull \hbox (40.06918pt too wide) in paragraph at lines 1221--1222
 s-[]positief-[]tegenover-[]verlening-[]mali-[]missie$[][] 
  []
 
-[72]
+[73]
 Overfull \hbox (96.41391pt too wide) in paragraph at lines 1222--1223
 [][]$\T1/pcr/m/n/10.95 https : / / www . bnr . nl / nieuws / politiek / 1034555
 3 / kabinet-[]wil-[]mali-[]missie-[]stoppen-[]verrassend-[]besluit$[][] 
@@ -7499,7 +8303,7 @@ Overfull \hbox (123.33627pt too wide) in paragraph at lines 1280--1282
 _ 461907~schadevergoeding-[]voor-[]ex-[]verdachte-[]schipholbrand~ .
  []
 
-[73]
+[74]
 Overfull \hbox (27.90024pt too wide) in paragraph at lines 1282--1284
 [][]$\T1/pcr/m/n/10.95 https : / / www . nu . nl / binnenland / 3355935 / feite
 noverzicht-[]schipholbrand-[]en-[]rechtszaken .
@@ -7589,7 +8393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1332--1333
 efweb / 20210703085353 / http :
  []
 
-[74]
+[75]
 Underfull \hbox (badness 10000) in paragraph at lines 1342--1343
 [][]$\T1/pcr/m/n/10.95 https : / / bmchealthservres . biomedcentral . com / art
 icles / 10 . 1186 /
@@ -7725,7 +8529,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1378 	\bibitem{ID}
                      ... \LaTeX:\\ \url{https://www.canonvannederland.nl/nl/...
-[75]
+[76]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7826,7 +8630,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1399--1400
  https : / / www . ntsb . gov / ntsb / brief .
  []
 
-[76
+[77
 pdfTeX warning (ext4): destination with the same identifier (name{cite.aviation
 SLMCrashAccidentInvestigation}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -7896,7 +8700,7 @@ Overfull \hbox (64.90707pt too wide) in paragraph at lines 1437--1438
  / 35-[]jaar-[]na-[]tsjernobyl-[]liggen-[]branden-[]op-[]de-[]loer$[][] 
  []
 
-[77]
+[78]
 Underfull \hbox (badness 10000) in paragraph at lines 1438--1440
 [][]$\T1/pcr/m/n/10.95 https : / / www . kivi . nl / afdelingen / risicobeheer-
 []en-[]techniek / columns /
@@ -7988,7 +8792,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1502 	\bibitem{ID}
                      ... \LaTeX:\\ \url{https://www.amboanthos.nl/boek/nacht...
-[78]
+[79]
 Overfull \hbox (22.81577pt too wide) in paragraph at lines 1505--1517
 [][]$\T1/pcr/m/n/10.95 https : / / www . deingenieur . nl / artikel / nieuwe-[]
 antistralingskoepel-[]tsjernobyl-[]bijna-[]af$[][]
@@ -8009,7 +8813,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1543--1544
 ernal / technical _ reports / pnnl-[]13294 .
  []
 
-[79]
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 1558--1559
 [][]$\T1/pcr/m/n/10.95 https : / / na . eventscloud . com / file _ uploads / ae
 d4bc20e84d2839b83c18bcba7e2876 _
@@ -8092,7 +8896,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1575--1576
  media / downloads /
  []
 
-[80]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
 [][]$\T1/pcr/m/n/10.95 https : / / www . crow . nl / downloads / pdf / verkeer-
 []en-[]vervoer / verkeersmanagement /
@@ -8184,7 +8988,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1591--1592
 ploads / 2017 / 01 /
  []
 
-[81]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 1592--1593
 [][]$\T1/pcr/m/n/10.95 https : / / library . wur . nl / edepot / websites / sto
 lwijkersluis / presentatie-[]data / data /
@@ -8240,7 +9044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1643--1644
 os / Integrating + UML + and + UPPAAL + for +
  []
 
-[82]
+[83]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -8686,7 +9490,7 @@ eerder:Delokatieklaar[]oor[]ertrekisverbondenmetdelokatieInit:Meteenguardx >\T1
 /ptm/m/n/10.95 =
  []
 
-[83]
+[84]
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
@@ -8729,7 +9533,7 @@ Overfull \hbox (152.87894pt too wide) in paragraph at lines 1764--1765
 9dc$[][] 
  []
 
-[84]
+[85]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8850,7 +9654,7 @@ Overfull \hbox (350.33548pt too wide) in paragraph at lines 1822--1823
 isition-[]of-[]safety-[]critical-[]systems-[]v1-[]6 .
  []
 
-[85]
+[86]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8935,7 +9739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1847--1848
  online-[]learning / safety-[]spotlights /
  []
 
-[86]
+[87]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -9007,7 +9811,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1866 \bibitem{ID}
                     ... \LaTeX:\\ \url{https://www.defence.gov.au/dasp/Docs/...
-[87]
+[88]
 Underfull \hbox (badness 10000) in paragraph at lines 1867--1868
 [][]$\T1/pcr/m/n/10.95 https : / / www . aviationpros . com / aircraft / commer
 cial-[]airline / article / 10239806 /
@@ -9129,7 +9933,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1883--1884
 []och-[]145-[]verkstader /
  []
 
-[88]
+[89]
 Underfull \hbox (badness 10000) in paragraph at lines 1886--1887
 [][]$\T1/pcr/m/n/10.95 https : / / www . skybrary . aero / index . php / Cockpi
 t _ Automation _ -[] _ Advantages _ and _ Safety _
@@ -9246,7 +10050,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1914 	\bibitem{ID}
                      ... \LaTeX:\\ \url{http://www.eig2.org.uk/wp-content/up...
-[89]
+[90]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -9358,7 +10162,7 @@ Overfull \hbox (95.53421pt too wide) in paragraph at lines 1930--1932
 detection-[]and-[]protection-[]through-[]safety-[]critical-[]systems$[][] 
  []
 
-[90]
+[91]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.gates181
 12020boeingcrisis}) has been already used, duplicate ignored
 <to be read again> 
@@ -9508,7 +10312,7 @@ Overfull \hbox (141.70999pt too wide) in paragraph at lines 1972--1973
 loper$[][] 
  []
 
-[91]
+[92]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.barnett0
 5052019737maxcrisis}) has been already used, duplicate ignored
 <to be read again> 
@@ -9694,7 +10498,7 @@ k24012021737fearflying}) has been already used, duplicate ignored
                    \relax 
 l.2018 ...\bibitem{makichuck24012021737fearflying}
                                                    ... \LaTeX:\\ \url{https:...
-[92]
+[93]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.caa737mo
 difications}) has been already used, duplicate ignored
 <to be read again> 
@@ -9842,7 +10646,7 @@ stSafeguards}) has been already used, duplicate ignored
                    \relax 
 l.2056     \bibitem{afacwaLostSafeguards}
                                           ... \LaTeX:\\ \url{https://www.afa...
-[93]
+[94]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.swayne18
 032019profitssafety}) has been already used, duplicate ignored
 <to be read again> 
@@ -9984,7 +10788,7 @@ Overfull \hbox (227.47708pt too wide) in paragraph at lines 2082--2085
 h-[]metal-[]fatigue-[]-[]ntsb/$[][]
  []
 
-) (evaluatie.tex [94]) [95
+) (evaluatie.tex [95]) [96
 
 ]
 \openout2 = `bijlage1.aux'.
@@ -10374,10 +11178,10 @@ Underfull \hbox (badness 1286) in paragraph at lines 177--177
 []\T1/phv/m/n/10.95 Hier steht ein Text.
  []
 
-[96
+[97
 
 
-] [97] [98] [99] [100]
+] [98] [99] [100] [101]
 ! Undefined control sequence.
 <recently read> \rowcolor 
                           
@@ -11585,11 +12389,11 @@ Overfull \hbox (10.99077pt too wide) in paragraph at lines 418--418
 \T1/phv/m/n/10.95 ==0||main.direction==1)| 
  []
 
-[101] [102] [103] [104] [105] [106] [107] [108] [109] [110]) [111]
+[102] [103] [104] [105] [106] [107] [108] [109] [110] [111]) [112]
 \openout2 = `bijlage2.aux'.
 
 
-(bijlage2.tex) [112
+(bijlage2.tex) [113
 
 
 
@@ -11607,7 +12411,7 @@ Overfull \hbox (3.52368pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
-[113
+[114
 
 
 
@@ -11671,135 +12475,135 @@ Overfull \hbox (3.52368pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
-) [114]
+) [115]
 \openout2 = `bijlage4.aux'.
 
  (bijlage4.tex
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 115 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 116 undefined
  on input line 6.
 
 
-LaTeX Warning: Citation `zetter2016GridHack' on page 115 undefined on input lin
+LaTeX Warning: Citation `zetter2016GridHack' on page 116 undefined on input lin
 e 7.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 115 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 116 undefined on in
 put line 8.
 
 
-LaTeX Warning: Citation `finklejan2016UsBlamesRussianSandworm' on page 115 unde
+LaTeX Warning: Citation `finklejan2016UsBlamesRussianSandworm' on page 116 unde
 fined on input line 9.
 
 
-LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 115 undefined on in
+LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 116 undefined on in
 put line 10.
 
 
 LaTeX Warning: Citation `caseli04112016intrusiondetectioncontrolsystem' on page
- 115 undefined on input line 11.
+ 116 undefined on input line 11.
 
 
-LaTeX Warning: Citation `rochascadatesting' on page 115 undefined on input line
+LaTeX Warning: Citation `rochascadatesting' on page 116 undefined on input line
  12.
 
 
-LaTeX Warning: Citation `zetter2017moreDangerousMalware' on page 115 undefined 
+LaTeX Warning: Citation `zetter2017moreDangerousMalware' on page 116 undefined 
 on input line 14.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 115 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 116 undefined
  on input line 18.
 
 
-LaTeX Warning: Citation `zetter2016GridHack' on page 115 undefined on input lin
+LaTeX Warning: Citation `zetter2016GridHack' on page 116 undefined on input lin
 e 20.
 
 
-LaTeX Warning: Citation `zetter2016GridHack' on page 115 undefined on input lin
+LaTeX Warning: Citation `zetter2016GridHack' on page 116 undefined on input lin
 e 26.
 
 
-LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 115 undefined on
+LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 116 undefined on
  input line 29.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 115 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 116 undefined on in
 put line 31.
 
 
-LaTeX Warning: Citation `finkle08012016russiansandwormhackers' on page 115 unde
+LaTeX Warning: Citation `finkle08012016russiansandwormhackers' on page 116 unde
 fined on input line 32.
 
 
-LaTeX Warning: Citation `zinets15022017ukrainechargesrussia' on page 115 undefi
+LaTeX Warning: Citation `zinets15022017ukrainechargesrussia' on page 116 undefi
 ned on input line 33.
 
 
-LaTeX Warning: Citation `mcelfresh2016cyberattackhowandwhy' on page 115 undefin
+LaTeX Warning: Citation `mcelfresh2016cyberattackhowandwhy' on page 116 undefin
 ed on input line 34.
 
 
-LaTeX Warning: Citation `parkwalstorm11102017russiagridattack' on page 115 unde
+LaTeX Warning: Citation `parkwalstorm11102017russiagridattack' on page 116 unde
 fined on input line 35.
 
 
-LaTeX Warning: Citation `drago2017CrashOverride' on page 115 undefined on input
+LaTeX Warning: Citation `drago2017CrashOverride' on page 116 undefined on input
  line 38.
 
 
-LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 115 undefi
+LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 116 undefi
 ned on input line 39.
 
 
-LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 115 undefined on in
+LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 116 undefined on in
 put line 43.
 
 
-LaTeX Warning: Citation `dragos2019TargetedTransStation' on page 115 undefined 
+LaTeX Warning: Citation `dragos2019TargetedTransStation' on page 116 undefined 
 on input line 44.
 
 
-LaTeX Warning: Citation `shehod2016gridadvantageus' on page 115 undefined on in
+LaTeX Warning: Citation `shehod2016gridadvantageus' on page 116 undefined on in
 put line 47.
 
 
-LaTeX Warning: Citation `rocha2017cybersecyrityanalysisScada' on page 115 undef
+LaTeX Warning: Citation `rocha2017cybersecyrityanalysisScada' on page 116 undef
 ined on input line 50.
 
 
-LaTeX Warning: Citation `2017crashoverridenostuxnet' on page 115 undefined on i
+LaTeX Warning: Citation `2017crashoverridenostuxnet' on page 116 undefined on i
 nput line 51.
 
 
-LaTeX Warning: Citation `vijayan2017firstmalwareCausedOutage' on page 115 undef
+LaTeX Warning: Citation `vijayan2017firstmalwareCausedOutage' on page 116 undef
 ined on input line 52.
 
 
-LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 115 undefi
+LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 116 undefi
 ned on input line 53.
 
 
-LaTeX Warning: Citation `2015ukrainegridattack' on page 115 undefined on input 
+LaTeX Warning: Citation `2015ukrainegridattack' on page 116 undefined on input 
 line 56.
 
 
-LaTeX Warning: Citation `industroyershortfact' on page 115 undefined on input l
+LaTeX Warning: Citation `industroyershortfact' on page 116 undefined on input l
 ine 57.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 115 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 116 undefined
  on input line 61.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 115 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 116 undefined on in
 put line 62.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 115 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 116 undefined
  on input line 65.
 
-[115
+[116
 
 
 
@@ -11810,87 +12614,87 @@ LaTeX Font Info:    Trying to load font information for TS1+phv on input line 7
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 116 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 117 undefined
  on input line 113.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 116 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 117 undefined on in
 put line 115.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 116 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 117 undefined
  on input line 127.
 
-[116]
+[117]
 
-LaTeX Warning: Citation `Shahzad2014ScadaProtocolsPollingScenario' on page 117 
+LaTeX Warning: Citation `Shahzad2014ScadaProtocolsPollingScenario' on page 118 
 undefined on input line 134.
 
 
-LaTeX Warning: Citation `2017win32industroyer' on page 117 undefined on input l
+LaTeX Warning: Citation `2017win32industroyer' on page 118 undefined on input l
 ine 136.
 
 
-LaTeX Warning: Citation `yadav2020reviewScadaArchitecture' on page 117 undefine
+LaTeX Warning: Citation `yadav2020reviewScadaArchitecture' on page 118 undefine
 d on input line 137.
 
 
-LaTeX Warning: Citation `arrizabalaga2020surveyiiotProtocols' on page 117 undef
+LaTeX Warning: Citation `arrizabalaga2020surveyiiotProtocols' on page 118 undef
 ined on input line 138.
 
 
-LaTeX Warning: Citation `fauri2017EncryptionICS' on page 117 undefined on input
+LaTeX Warning: Citation `fauri2017EncryptionICS' on page 118 undefined on input
  line 139.
 
 
-LaTeX Warning: Citation `resch31102019IEC62351secureCommunication' on page 117 
+LaTeX Warning: Citation `resch31102019IEC62351secureCommunication' on page 118 
 undefined on input line 140.
 
 
-LaTeX Warning: Citation `levalle2020FuzzingICSProtocols' on page 117 undefined 
+LaTeX Warning: Citation `levalle2020FuzzingICSProtocols' on page 118 undefined 
 on input line 141.
 
 
-LaTeX Warning: Citation `blackhatusa2017' on page 117 undefined on input line 1
+LaTeX Warning: Citation `blackhatusa2017' on page 118 undefined on input line 1
 42.
 
 
-LaTeX Warning: Citation `blackhatusa2017' on page 117 undefined on input line 1
+LaTeX Warning: Citation `blackhatusa2017' on page 118 undefined on input line 1
 43.
 
 
-LaTeX Warning: Citation `abb30062017crashoverridenotification' on page 117 unde
+LaTeX Warning: Citation `abb30062017crashoverridenotification' on page 118 unde
 fined on input line 144.
 
 
-LaTeX Warning: Citation `spinner2018crashoverrideiot' on page 117 undefined on 
+LaTeX Warning: Citation `spinner2018crashoverrideiot' on page 118 undefined on 
 input line 145.
 
 
-LaTeX Warning: Citation `njccicthreat08102017crashovverrideprofile' on page 117
+LaTeX Warning: Citation `njccicthreat08102017crashovverrideprofile' on page 118
  undefined on input line 146.
 
 
-LaTeX Warning: Citation `slowikvb2018crashoverride' on page 117 undefined on in
+LaTeX Warning: Citation `slowikvb2018crashoverride' on page 118 undefined on in
 put line 147.
 
 
-LaTeX Warning: Citation `crashoverridenetwork' on page 117 undefined on input l
+LaTeX Warning: Citation `crashoverridenetwork' on page 118 undefined on input l
 ine 148.
 
 
-LaTeX Warning: Citation `wikiindustroyer' on page 117 undefined on input line 1
+LaTeX Warning: Citation `wikiindustroyer' on page 118 undefined on input line 1
 49.
 
 
-LaTeX Warning: Citation `icsSecurityRussianHacking' on page 117 undefined on in
+LaTeX Warning: Citation `icsSecurityRussianHacking' on page 118 undefined on in
 put line 150.
 
 
-LaTeX Warning: Citation `holappa2017threattoElectricityNetworks' on page 117 un
+LaTeX Warning: Citation `holappa2017threattoElectricityNetworks' on page 118 un
 defined on input line 151.
 
-) [117] (verslag.aux (dankbetuiging.aux) (afkortingen.aux) (bijlage1.aux)
+) [118] (verslag.aux (dankbetuiging.aux) (afkortingen.aux) (bijlage1.aux)
 (bijlage2.aux) (bijlage3.aux) (bijlage4.aux))
 
 LaTeX Warning: There were undefined references.
@@ -11898,67 +12702,39 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `verslag.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `verslag.out':
-(rerunfilecheck)             Before: 0DC84411522EFE291F14C9BC5930ECBE;7834
-(rerunfilecheck)             After:  6BD0DF8F775CE080653663F26718E55C;7837.
+Package rerunfilecheck Info: File `verslag.out' has not changed.
+(rerunfilecheck)             Checksum: 6BD0DF8F775CE080653663F26718E55C;7837.
  ) 
 Here is how much of TeX's memory you used:
- 35804 strings out of 475385
- 755557 string characters out of 2776908
- 1688289 words of memory out of 3000000
- 55675 multiletter control sequences out of 15000+600000
- 560871 words of font info for 151 fonts, out of 8000000 for 9000
+ 35807 strings out of 475385
+ 755540 string characters out of 2776908
+ 1687289 words of memory out of 3000000
+ 55676 multiletter control sequences out of 15000+600000
+ 564171 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,26n,120p,1275b,1349s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{appendix*.102} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{appendix*.101} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.100} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.99} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.98} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.97} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
-sers/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/eurosym/feymr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/symbols/msam10.pfb><C:/Users/gally/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/gally/AppData/
-Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/gally/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/gally/App
-Data/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/gally/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gally/A
-ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/A
-ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/A
-ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/A
-ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/gally/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on verslag.pdf (124 pages, 953138 bytes).
+{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/
+cmex9.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/gally/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/gally/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users
+/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Use
+rs/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/
+Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><
+C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C
+:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C
+:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C
+:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C
+:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><
+C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.p
+fb>
+Output written on verslag.pdf (125 pages, 964623 bytes).
 PDF statistics:
- 2829 PDF objects out of 2984 (max. 8388607)
- 762 named destinations out of 1000 (max. 500000)
+ 2833 PDF objects out of 2984 (max. 8388607)
+ 757 named destinations out of 1000 (max. 500000)
  588 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2679,11 +2679,34 @@ A-B \\
  
 \usepackage{tikz}
 \usetikzlibrary{cd}
-
+ ~ 
 \usepackage{mathtools,halloweenmath}
 
-\paragraph{Model checking Temporal logics}
-M, s \models p $\Leftrightarrow$ p \in L(s)
+\paragraph{Model checking Temporal logics} \\
+M, s \models p $\Leftrightarrow$ p \in L(s) \\
+M, s \models \not f1 $\Leftrightarrow$ M, s \nvdash f1 \\
+M, s \models f1 \vee f2 $\Leftrightarrow$ M,s \models f1 or M,s \nvdash f2 \\
+M, s \models f1 \wedge f2 $\Leftrightarrow$  M,s \models f1 and M,s \nvdash f2 \\
+M, s \models \mathrm{E} g_{1} $\Leftrightarrow$ there is a path \pi  from ~  s ~   such ~  that  ~ M, \pi \models g1 \\
+M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from s, M, \pi \models g1 \\
+M, s \models p $\Leftrightarrow$ s is the first state of \piand M, s \models f1 \\
+M, s \models \not g_{1} $\Leftrightarrow$ M, \pi  \nvdash g1\\
+M, s \models p $\Leftrightarrow$  M, \pi  \models g1  or  M, \pi  M, \pi  \models g2\\
+M, s \models p $\Leftrightarrow$ M, \pi  \models g1  and  M, \pi  M, \pi  \models g2 \\
+M, s \models p $\Leftrightarrow$ M, $\pi^{1}$ \models g1 \\
+M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that M, $\pi^{k}$  \models g1\\
+M, s \models p $\Leftrightarrow$ for all i \ge 0,M,$\pi^{i}$ \models g1 \\
+M, s \models g1 \bugcup g2 $\Leftrightarrow$ there exists ak \ge 0 such that M, $\pi^{k}$ \models g2\\
+and for all 0 \le j < k, M,$\pi^{j}$ \models g1
+M, s \models p $\Leftrightarrow$ for all j \ge 0, if for every i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2\\
+
+\leg \\
+\geq \\
+\Re \\
+\partial \\
+\bigup \\
+\bigcap \\
+
 
 \paragraph{Model checking Fairness constraints}
 \paragraph{Definition 4.1}
@@ -2701,7 +2724,14 @@ M, s \models p $\Leftrightarrow$ p \in L(s)
 A timed transition (TTS)is a tuple S =(S,s_{0},$$\underrightarrow{} $$, \Sigma) where S is a (possibly infinite) set of states, s_{0} \in S is the initial state and $$\underrightarrow{} $$   \subseteq S x (\Sigma \cup R) x S is the transition relation. Morever, the relation -> satisfies the three following conditions:
 (1)  if s $$\underrightarrow{0} $$ s', then s = s',  (2) is s$$\underrightarrow{d} $$ s' and s' $$\underrightarrow{d'} $$ s"  with d, d' \in R, then s $$\underrightarrow{d+d'} $$ s", and (3) if s $$\underrightarrow{d} $$ ' with d \in R, then for all 0 << d' << d, there exists s" \in S such that s $$\underrightarrow{d'} $$ s"and s" $$\underrightarrow{d-d'} $$ s'
 \paragraph{Definition 4.3}
+Let \mathrm{A} = (L,\ell,X,Inv, T,\Sigma) be a timed automation. The semantics of A is defined asthe TTS S_{A}=(S,s_{0},$$\underrightarrow{} $$, \Sigma) where:\\
+S = L x $R^{X}$  \\
+s_{0} = (\ell_{0}, v_{0}) with v_{0}(x)=0 for every x \in X, \\
+the transition relation  ,$$\underrightarrow{} $$ is composed of: \\
+action transitions (\ell, v)$$\underrightarrow{a} $$ (\ell',v') if and only ifthere exists \ell $$\underrightarrow{g,a,r} $$ \ell' \in  T such that v \models g,v'=[r \leftarrow 0] v and v' \models Inv(\ell').
 
+
+delay transitions: if d \in R, (\ell,v) ,$$\underrightarrow{d} $$ (\ell,v+d) if and only if v+d \models Inv(\ell $(^{1}$
 \url{http://www.iste.co.uk/data/doc_wrkszvritcbv.pdf}
 
 
@@ -2715,7 +2745,13 @@ U \subseteq  $R^{ \geq 0}$ x S is the until predicate \\
 
 
 \paragraph{Definition 2}
-Let Li = (S)
+Let L_{i} = (S_{i},A x  $\Re^{\geq0}$,$s^{\i0}$_{0},,$$\underrightarrow{} $$ i, $U^{i}$   ), i \in {1,2}, be two TTS. \\
+A timedbisimulation is a relation R $\subseteq$ S1 x S2 with $s^{1}$_{0}R$s^{2}$_{0} satisfying, for all a(d) \in A x $\Re^{\geq0}$, the following transfer properties: \\
+if  s_{1}R_{2} and  s_{1}$$\underrightarrow{a(d)} $$_{1} s_{1}', then \exists $s^{'}$_{2} \in S_{2} : s2  $$\underrightarrow{a(d)}  $$ 2$s^{'}$_{2} and $s^{'}$_{1}R$s^{'}$_{2} \\
+
+if  s_{1}R_{2} and s_{1}$$\underrightarrow{a(d)} $$_{2} s_{1}', then \exists $s^{'}$_{1} \in S_{1} : s1  $$\underrightarrow{a(d)}  $$ $s^{'}$_{1} and $s^{'}$_{1}R$s^{'}$_{2}
+
+if   s_{1}R_{2} s_{1}', then  $U^{1}$_{d}(s1)   $\Leftrightarrow$ $U^{2}$_{d}(s2) 
 
 \paragraph{Definition 3}
 A timed safety automation is a structure (S,A,C,s_{0},$\subseteq$, $\vartheta$ ,\kappa)
