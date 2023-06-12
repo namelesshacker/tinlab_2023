@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  11 JUN 2023 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  12 JUN 2023 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,27 +800,76 @@ chrij-ving, ont-werp, test-
 \openout5 = `verslag.toc'.
 
  [4]
-<4varmodel.png, id=30, 339.51843pt x 187.45032pt>
-File: 4varmodel.png Graphic file (type png)
-<use 4varmodel.png>
-Package pdftex.def Info: 4varmodel.png  used on input line 98.
-(pdftex.def)             Requested size: 113.81102pt x 62.83414pt.
- [5 <./4varmodel.png>]
-<sluismodel.jpg, id=37, 432.61626pt x 234.8775pt>
-File: sluismodel.jpg Graphic file (type jpg)
-<use sluismodel.jpg>
-Package pdftex.def Info: sluismodel.jpg  used on input line 127.
-(pdftex.def)             Requested size: 227.62204pt x 123.58133pt.
-<sluispassage.png, id=38, 490.83376pt x 689.57625pt>
-File: sluispassage.png Graphic file (type png)
-<use sluispassage.png>
-Package pdftex.def Info: sluispassage.png  used on input line 140.
-(pdftex.def)             Requested size: 227.62204pt x 319.78682pt.
- [6 <./sluismodel.jpg>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.151 .../artikelen/businessrequirements/business_
+l.95 ...wente.nl/ws/portalfiles/portal/28200786/A_
+                                                  statistical_model_checker.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in math mode.
+l.98 ...atistical-Model-Checking-814.html?lang=en#
+                                                  :~:text=Statistical%20Mode...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.100 	\subsection
+                  {Het vier variabelen model}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (112.16498pt too wide) in paragraph at lines 93--100
+\OT1/cmss/m/n/10 model-checking/ https://ris.utwente.nl/ws/portalfiles/portal/2
+8200786/A$[]\OML/cmm/m/it/10 tatistical[]odel[]hecker:pdfhttps \OT1/cmr/m/n/10 
+:
+ []
+
+
+Overfull \hbox (40.58542pt too wide) in paragraph at lines 93--100
+\OML/cmm/m/it/10 ==dl:acm:org=doi=pdf=\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 :\OT1/
+cmr/m/n/10 1145\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 3158668\OML/cmm/m/it/10 https 
+\OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==dl:acm:org=doi=\OT1/cmr/m/n/10 10\OML/cmm/
+m/it/10 :\OT1/cmr/m/n/10 1145\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 3158668\OML/cmm/
+m/it/10 https \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.5838pt too wide) in paragraph at lines 93--100
+\OML/cmm/m/it/10 en \OT1/cmr/m/n/10 : : \OML/cmm/m/it/10 text \OT1/cmr/m/n/10 =
+ \OML/cmm/m/it/10 Statisticalhttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:com
+p:nus:edu:sg= cs\OT1/cmr/m/n/10 5270\OML/cmm/m/it/10 =Notes=chapt\OT1/cmr/m/n/1
+0 6\OML/cmm/m/it/10 a:pdf$ 
+ []
+
+<4varmodel.png, id=30, 339.51843pt x 187.45032pt>
+File: 4varmodel.png Graphic file (type png)
+<use 4varmodel.png>
+Package pdftex.def Info: 4varmodel.png  used on input line 103.
+(pdftex.def)             Requested size: 113.81102pt x 62.83414pt.
+[5 <./4varmodel.png>]
+<sluismodel.jpg, id=40, 432.61626pt x 234.8775pt>
+File: sluismodel.jpg Graphic file (type jpg)
+<use sluismodel.jpg>
+Package pdftex.def Info: sluismodel.jpg  used on input line 132.
+(pdftex.def)             Requested size: 227.62204pt x 123.58133pt.
+ [6 <./sluismodel.jpg>]
+<sluispassage.png, id=44, 490.83376pt x 689.57625pt>
+File: sluispassage.png Graphic file (type png)
+<use sluispassage.png>
+Package pdftex.def Info: sluispassage.png  used on input line 145.
+(pdftex.def)             Requested size: 227.62204pt x 319.78682pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156 .../artikelen/businessrequirements/business_
                                                   en_functionelerequirements...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -828,25 +877,25 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.167 	
+l.172 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (111.56093pt too wide) in paragraph at lines 148--167
+Overfull \hbox (111.56093pt too wide) in paragraph at lines 153--172
 []\OT1/cmss/m/n/10 cations? https://agilescrumgroup.nl/product-backlog/ https:/
 /nl.wikipedia.org/wiki/Requirementsanalyse
  []
 
 
-Overfull \hbox (91.20253pt too wide) in paragraph at lines 148--167
+Overfull \hbox (91.20253pt too wide) in paragraph at lines 153--172
 \OT1/cmss/m/n/10 http://www.chilico.nl/artikelen/businessrequirements/business$
 []\OML/cmm/m/it/10 n[]unctionelerequirements:htmlhttps \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (4.00934pt too wide) in paragraph at lines 148--167
+Overfull \hbox (4.00934pt too wide) in paragraph at lines 153--172
 \OML/cmm/m/it/10 systemen=https \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:bpmcom
 pany:eu=in \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 hoeverre \OMS/cmsy/m/n/10 ^^@ 
 \OML/cmm/m/it/10 zijn \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 requirements \OMS/c
@@ -854,14 +903,14 @@ msy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (25.64346pt too wide) in paragraph at lines 148--167
+Overfull \hbox (25.64346pt too wide) in paragraph at lines 153--172
 \OML/cmm/m/it/10 requirements=Erbestaatookeen\OT1/cmr/m/n/10 6 \OMS/cmsy/m/n/10
  ^^@ \OML/cmm/m/it/10 variabelenmodel:::Watisdat\OT1/cmr/m/n/10 ?\OML/cmm/m/it/
 10 https \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:uni \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (708.30875pt too wide) in paragraph at lines 148--167
+Overfull \hbox (708.30875pt too wide) in paragraph at lines 153--172
 \OML/cmm/m/it/10 due:de=imperia=md=content=swe=papers=icsoft\OT1/cmr/m/n/10 16\
 OML/cmm/m/it/10 a:pdfWatvoorsoortenrequirementszijnerzoaltevinden\OT1/cmr/m/n/1
 0 ?\OML/cmm/m/it/10 Hoeverkrijgtmenrequirements\OT1/cmr/m/n/10 ?\OML/cmm/m/it/1
@@ -870,7 +919,7 @@ it/10 Watishetverschiltussenfunctioneleenniet \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (193.66574pt too wide) in paragraph at lines 148--167
+Overfull \hbox (193.66574pt too wide) in paragraph at lines 153--172
 \OML/cmm/m/it/10 functionelerequirements\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 Watve
 rstaatmenondermodeconfusion\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 http \OT1/cmr/m/n/
 10 : \OML/cmm/m/it/10 ==automation:forthillgroup:com=themes=mode \OMS/cmsy/m/n/
@@ -878,14 +927,14 @@ rstaatmenondermodeconfusion\OT1/cmr/m/n/10 ?\OML/cmm/m/it/10 http \OT1/cmr/m/n/
  []
 
 
-Overfull \hbox (24.4703pt too wide) in paragraph at lines 148--167
+Overfull \hbox (24.4703pt too wide) in paragraph at lines 153--172
 \OML/cmm/m/it/10 confusionhttps \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:linked
 in:com=pulse=confusion \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 cockpit \OMS/cmsy/
 m/n/10 ^^@ \OML/cmm/m/it/10 understanding \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (68.47414pt too wide) in paragraph at lines 148--167
+Overfull \hbox (68.47414pt too wide) in paragraph at lines 153--172
 \OML/cmm/m/it/10 human \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 performance \OMS/c
 msy/m/n/10 ^^@ \OML/cmm/m/it/10 david \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 tho
 mpson=Watverstaatmenonderdeautomatiseringsparadox\OT1/cmr/m/n/10 ?$ 
@@ -895,63 +944,63 @@ mpson=Watverstaatmenonderdeautomatiseringsparadox\OT1/cmr/m/n/10 ?$
 <4varparnas.png, id=49, 514.92375pt x 277.78781pt>
 File: 4varparnas.png Graphic file (type png)
 <use 4varparnas.png>
-Package pdftex.def Info: 4varparnas.png  used on input line 168.
+Package pdftex.def Info: 4varparnas.png  used on input line 173.
 (pdftex.def)             Requested size: 227.62204pt x 122.79498pt.
 <requirement.png, id=50, 405.01312pt x 313.17pt>
 File: requirement.png Graphic file (type png)
 <use requirement.png>
-Package pdftex.def Info: requirement.png  used on input line 170.
+Package pdftex.def Info: requirement.png  used on input line 175.
 (pdftex.def)             Requested size: 227.62204pt x 176.00954pt.
 <oplossing_easterbrook.png, id=51, 487.8225pt x 259.7203pt>
 File: oplossing_easterbrook.png Graphic file (type png)
 <use oplossing_easterbrook.png>
-Package pdftex.def Info: oplossing_easterbrook.png  used on input line 172.
+Package pdftex.def Info: oplossing_easterbrook.png  used on input line 177.
 (pdftex.def)             Requested size: 227.62204pt x 121.18877pt.
 <problemframejackson1997easterbrook.png, id=52, 496.10344pt x 442.65375pt>
 File: problemframejackson1997easterbrook.png Graphic file (type png)
 <use problemframejackson1997easterbrook.png>
 Package pdftex.def Info: problemframejackson1997easterbrook.png  used on input 
-line 174.
+line 179.
 (pdftex.def)             Requested size: 227.62204pt x 203.09634pt.
  [8 <./4varparnas.png> <./requirement.png> <./oplossing_easterbrook.png>]
 <whatvshoe_easterbrook.png, id=59, 462.97969pt x 145.29282pt>
 File: whatvshoe_easterbrook.png Graphic file (type png)
 <use whatvshoe_easterbrook.png>
-Package pdftex.def Info: whatvshoe_easterbrook.png  used on input line 178.
+Package pdftex.def Info: whatvshoe_easterbrook.png  used on input line 183.
 (pdftex.def)             Requested size: 227.62204pt x 71.43353pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--188
+Underfull \hbox (badness 10000) in paragraph at lines 183--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--205
+Underfull \hbox (badness 10000) in paragraph at lines 198--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--205
+Underfull \hbox (badness 10000) in paragraph at lines 198--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--205
+Underfull \hbox (badness 10000) in paragraph at lines 198--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--205
+Underfull \hbox (badness 10000) in paragraph at lines 198--210
 
  []
 
 [9 <./problemframejackson1997easterbrook.png> <./whatvshoe_easterbrook.png>]
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 ! Undefined control sequence.
-l.246 	\square
+l.251 	\square
                ( a_0 \implies (( \lnot a_2 \wedge \lnot a_3 ) \mathcal{U} a_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -962,7 +1011,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.246 	\square ( a_
+l.251 	\square ( a_
                    0 \implies (( \lnot a_2 \wedge \lnot a_3 ) \mathcal{U} a_...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -970,26 +1019,26 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.247 	
+l.252 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.251 		\forall
+l.256 		\forall
                 x \, (P(x) \to Q(x)) & premise \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.251 		\forall x \, (P(x) \to Q(x)) &
+l.256 		\forall x \, (P(x) \to Q(x)) &
                                        premise \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -999,7 +1048,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.252 		\forall x \, P(x) &
+l.257 		\forall x \, P(x) &
                             premise \\\hspace*{-30pt} \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1011,26 +1060,26 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 
+l.258 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.255 			P(x_
+l.260 			P(x_
              0) & $\forall x \, \mathrm{e}$ 2 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.255 			P(x_0) &
+l.260 			P(x_0) &
                   $\forall x \, \mathrm{e}$ 2 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1042,7 +1091,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.255 			P(x_0) & $\forall
+l.260 			P(x_0) & $\forall
                            x \, \mathrm{e}$ 2 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1050,13 +1099,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.256 			Q(x_
+l.261 			Q(x_
              0) & $\to \mathrm{e}$ 3, 4 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.256 			Q(x_0) &
+l.261 			Q(x_0) &
                   $\to \mathrm{e}$ 3, 4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1068,26 +1117,26 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.256 			Q(x_0) & $\to
+l.261 			Q(x_0) & $\to
                        \mathrm{e}$ 3, 4 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.258 		\forall
+l.263 		\forall
                 x \, Q(x) & $\forall x \, \mathrm{i}$ 3--5 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.258 		\forall x \, Q(x) &
+l.263 		\forall x \, Q(x) &
                             $\forall x \, \mathrm{i}$ 3--5 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1099,26 +1148,26 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.258 		\forall x \, Q(x) & $\forall
+l.263 		\forall x \, Q(x) & $\forall
                                      x \, \mathrm{i}$ 3--5 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmss on input line 
-266.
-LaTeX Font Info:    No file OMScmss.fd. on input line 266.
+271.
+LaTeX Font Info:    No file OMScmss.fd. on input line 271.
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 266.
+(Font)              for symbol `textbraceleft' on input line 271.
 
 ! Undefined control sequence.
-l.266 	\{a,b\} or \set
+l.271 	\{a,b\} or \set
                       †{a,b} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1127,20 +1176,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-266.
+271.
 (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.267 	\langle
+l.272 	\langle
                a,b \rangle or \gens†{a,b} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.267 	\langle a,b \rangle or \gens
+l.272 	\langle a,b \rangle or \gens
                                    †{a,b} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1149,29 +1198,29 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Command \textdagger invalid in math mode on input line 267.
+LaTeX Warning: Command \textdagger invalid in math mode on input line 272.
 
 
-LaTeX Warning: Command \textdagger invalid in math mode on input line 267.
+LaTeX Warning: Command \textdagger invalid in math mode on input line 272.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.268 	
+l.273 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Missing character: There is no � in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--268
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.270 	f \colon
+l.275 	f \colon
                 A \to B \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1179,20 +1228,20 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.271 
+l.276 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.272 	f \circ
+l.277 	f \circ
                g \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1200,20 +1249,20 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.274 	
+l.279 	
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
 ! Undefined control sequence.
 <argument>  f \colon \mathbb 
                              {R} &\to \mathbb {R} \\ x &\mapsto x^2 
-l.278 	\end{align*}
+l.283 	\end{align*}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1224,7 +1273,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument>  f \colon \mathbb {R} &\to \mathbb 
                                               {R} \\ x &\mapsto x^2 
-l.278 	\end{align*}
+l.283 	\end{align*}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1235,7 +1284,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument>  f \colon \mathbb 
                              {R} &\to \mathbb {R} \\ x &\mapsto x^2 
-l.278 	\end{align*}
+l.283 	\end{align*}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1246,7 +1295,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument>  f \colon \mathbb {R} &\to \mathbb 
                                               {R} \\ x &\mapsto x^2 
-l.278 	\end{align*}
+l.283 	\end{align*}
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1258,39 +1307,39 @@ and I'll forget about whatever was undefined.
 <main.png, id=77, 1221.06187pt x 608.2725pt>
 File: main.png Graphic file (type png)
 <use main.png>
-Package pdftex.def Info: main.png  used on input line 308.
+Package pdftex.def Info: main.png  used on input line 321.
 (pdftex.def)             Requested size: 227.62204pt x 113.38254pt.
 <schip.png, id=78, 433.62pt x 277.035pt>
 File: schip.png Graphic file (type png)
 <use schip.png>
-Package pdftex.def Info: schip.png  used on input line 310.
+Package pdftex.def Info: schip.png  used on input line 323.
 (pdftex.def)             Requested size: 227.62204pt x 145.42441pt.
 <sluiskolk.png, id=79, 660.96938pt x 319.94531pt>
 File: sluiskolk.png Graphic file (type png)
 <use sluiskolk.png>
-Package pdftex.def Info: sluiskolk.png  used on input line 312.
+Package pdftex.def Info: sluiskolk.png  used on input line 325.
 (pdftex.def)             Requested size: 227.62204pt x 110.18108pt.
-<stoplicht.png, id=80, 372.64218pt x 219.06844pt>
+ [13 <./main.png> <./schip.png>]
+<stoplicht.png, id=85, 372.64218pt x 219.06844pt>
 File: stoplicht.png Graphic file (type png)
 <use stoplicht.png>
-Package pdftex.def Info: stoplicht.png  used on input line 314.
+Package pdftex.def Info: stoplicht.png  used on input line 327.
 (pdftex.def)             Requested size: 227.62204pt x 133.81204pt.
- [13 <./main.png> <./schip.png> <./sluiskolk.png>]
-<deur.png, id=87, 513.41812pt x 314.67563pt>
+<deur.png, id=86, 513.41812pt x 314.67563pt>
 File: deur.png Graphic file (type png)
 <use deur.png>
-Package pdftex.def Info: deur.png  used on input line 316.
+Package pdftex.def Info: deur.png  used on input line 329.
 (pdftex.def)             Requested size: 227.62204pt x 139.50923pt.
-<pomp.png, id=88, 790.45313pt x 386.94562pt>
+<pomp.png, id=87, 790.45313pt x 386.94562pt>
 File: pomp.png Graphic file (type png)
 <use pomp.png>
-Package pdftex.def Info: pomp.png  used on input line 318.
+Package pdftex.def Info: pomp.png  used on input line 331.
 (pdftex.def)             Requested size: 227.62204pt x 111.42607pt.
-
+ [14 <./sluiskolk.png> <./stoplicht.png> <./deur.png>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.338  Elke individuele state noemen we s_
+l.357  Elke individuele state noemen we s_
                                           {0}, s_{1},...s_{n} \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1298,14 +1347,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.340 
+l.359 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[14 <./stoplicht.png> <./deur.png> <./pomp.png>]
 ! Undefined control sequence.
-l.346  Belangrijk gevolg: Voor elke state s \inS
+l.365  Belangrijk gevolg: Voor elke state s \inS
                                                  geldt dat er een state s' b...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1316,7 +1364,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.355    L= S \to
+l.374    L= S \to
                     ~ $2^{AP}$  \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1324,13 +1372,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.355    L= S \to   ~ $2^
+l.374    L= S \to   ~ $2^
                          {AP}$  \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--356
+Underfull \hbox (badness 10000) in paragraph at lines 370--375
 
  []
 
@@ -1341,7 +1389,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.361  M
+l.380  M
         , s \models p $\Leftrightarrow$ p \in L(s) \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1350,7 +1398,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.361  M, s \models
+l.380  M, s \models
                     p $\Leftrightarrow$ p \in L(s) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1358,7 +1406,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.361  M, s \models p $\Leftrightarrow
+l.380  M, s \models p $\Leftrightarrow
                                       $ p \in L(s) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1366,7 +1414,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.361  M, s \models p $\Leftrightarrow$ p \in
+l.380  M, s \models p $\Leftrightarrow$ p \in
                                               L(s) \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1374,13 +1422,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.362  M, s \models \not f1 $\Leftrightarrow
+l.381  M, s \models \not f1 $\Leftrightarrow
                                             $ M, s \nvdash f1 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.362 ...ls \not f1 $\Leftrightarrow$ M, s \nvdash
+l.381 ...ls \not f1 $\Leftrightarrow$ M, s \nvdash
                                                    f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1391,7 +1439,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.363  M, s \models
+l.382  M, s \models
                     f1 \vee f2 $\Leftrightarrow$ M,s \models f1 or M,s \nvda...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1399,7 +1447,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.363  M, s \models f1 \vee f2 $\Leftrightarrow
+l.382  M, s \models f1 \vee f2 $\Leftrightarrow
                                                $ M,s \models f1 or M,s \nvda...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1407,13 +1455,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.363 ... f1 \vee f2 $\Leftrightarrow$ M,s \models
+l.382 ... f1 \vee f2 $\Leftrightarrow$ M,s \models
                                                    f1 or M,s \nvdash f2 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.363 ...rightarrow$ M,s \models f1 or M,s \nvdash
+l.382 ...rightarrow$ M,s \models f1 or M,s \nvdash
                                                    f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1424,7 +1472,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.364  M, s \models f1 \wedge f2 $\Leftrightarrow
+l.383  M, s \models f1 \wedge f2 $\Leftrightarrow
                                                  $  M,s \models f1 and M,s \...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1432,13 +1480,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.364 ... \wedge f2 $\Leftrightarrow$  M,s \models
+l.383 ... \wedge f2 $\Leftrightarrow$  M,s \models
                                                    f1 and M,s \nvdash f2 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.364 ...ghtarrow$  M,s \models f1 and M,s \nvdash
+l.383 ...ghtarrow$  M,s \models f1 and M,s \nvdash
                                                    f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1449,7 +1497,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.365 ...\models \mathrm{E} g_{1} $\Leftrightarrow
+l.384 ...\models \mathrm{E} g_{1} $\Leftrightarrow
                                                   $ there is a path \pi  fro...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1457,7 +1505,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.365 ...{1} $\Leftrightarrow$ there is a path \pi
+l.384 ...{1} $\Leftrightarrow$ there is a path \pi
                                                     from ~  s ~   such ~  th...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1465,7 +1513,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.366  M, s \models p $\Leftrightarrow
+l.385  M, s \models p $\Leftrightarrow
                                       $ for every path \pi  ~ starting from ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1473,7 +1521,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.366 ...ls p $\Leftrightarrow$ for every path \pi
+l.385 ...ls p $\Leftrightarrow$ for every path \pi
                                                     ~ starting from s, M, \p...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1481,13 +1529,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.367  M, s \models p $\Leftrightarrow
+l.386  M, s \models p $\Leftrightarrow
                                       $ s is the first state of \piand M, s ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.367 ...ightarrow$ s is the first state of \piand
+l.386 ...ightarrow$ s is the first state of \piand
                                                    M, s \models f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1498,7 +1546,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.367 ...is the first state of \piand M, s \models
+l.386 ...is the first state of \piand M, s \models
                                                    f1 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1506,7 +1554,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.368  M, s \models \not g_{1} $\Leftrightarrow
+l.387  M, s \models \not g_{1} $\Leftrightarrow
                                                $ M, \pi  \nvdash g1\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1514,13 +1562,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.368 ...odels \not g_{1} $\Leftrightarrow$ M, \pi
+l.387 ...odels \not g_{1} $\Leftrightarrow$ M, \pi
                                                     \nvdash g1\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.368 ...t g_{1} $\Leftrightarrow$ M, \pi  \nvdash
+l.387 ...t g_{1} $\Leftrightarrow$ M, \pi  \nvdash
                                                    g1\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1531,7 +1579,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.369  M, s \models p $\Leftrightarrow
+l.388  M, s \models p $\Leftrightarrow
                                       $  M, \pi  \models g1  or  M, \pi  M, ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1539,7 +1587,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.369  M, s \models p $\Leftrightarrow$  M, \pi
+l.388  M, s \models p $\Leftrightarrow$  M, \pi
                                                  \models g1  or  M, \pi  M, ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1547,7 +1595,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.370  M, s \models p $\Leftrightarrow
+l.389  M, s \models p $\Leftrightarrow
                                       $ M, \pi  \models g1  and  M, \pi  M, ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1555,7 +1603,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.370  M, s \models p $\Leftrightarrow$ M, \pi
+l.389  M, s \models p $\Leftrightarrow$ M, \pi
                                                 \models g1  and  M, \pi  M, ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1563,7 +1611,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.371  M, s \models p $\Leftrightarrow
+l.390  M, s \models p $\Leftrightarrow
                                       $ M, $\pi^{1}$ \models g1 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1571,7 +1619,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.371 ... p $\Leftrightarrow$ M, $\pi^{1}$ \models
+l.390 ... p $\Leftrightarrow$ M, $\pi^{1}$ \models
                                                    g1 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1579,7 +1627,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.372  M, s \models p $\Leftrightarrow
+l.391  M, s \models p $\Leftrightarrow
                                       $ there exists a k \ge 0, such that M,...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1587,7 +1635,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.372 ... p $\Leftrightarrow$ there exists a k \ge
+l.391 ... p $\Leftrightarrow$ there exists a k \ge
                                                    0, such that M, $\pi^{k}$...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1595,7 +1643,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.372 ...there exists a k \ge 0, such that M, $\pi
+l.391 ...there exists a k \ge 0, such that M, $\pi
                                                   ^{k}$  \models g1\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1603,7 +1651,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.372 ... k \ge 0, such that M, $\pi^{k}$  \models
+l.391 ... k \ge 0, such that M, $\pi^{k}$  \models
                                                    g1\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1611,7 +1659,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.373  M, s \models p $\Leftrightarrow
+l.392  M, s \models p $\Leftrightarrow
                                       $ for all i \ge 0,M,$\pi^{i}$ \models ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1619,7 +1667,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.373 ...\models p $\Leftrightarrow$ for all i \ge
+l.392 ...\models p $\Leftrightarrow$ for all i \ge
                                                    0,M,$\pi^{i}$ \models g1 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1627,7 +1675,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.373 ... $\Leftrightarrow$ for all i \ge 0,M,$\pi
+l.392 ... $\Leftrightarrow$ for all i \ge 0,M,$\pi
                                                   ^{i}$ \models g1 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1635,13 +1683,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.373 ...rrow$ for all i \ge 0,M,$\pi^{i}$ \models
+l.392 ...rrow$ for all i \ge 0,M,$\pi^{i}$ \models
                                                    g1 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.374  M, s \models g1 \bugcup
+l.393  M, s \models g1 \bugcup
                                g2 $\Leftrightarrow$ there exists ak \ge 0 su...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1652,7 +1700,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374  M, s \models g1 \bugcup g2 $\Leftrightarrow
+l.393  M, s \models g1 \bugcup g2 $\Leftrightarrow
                                                   $ there exists ak \ge 0 su...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1660,7 +1708,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ... g2 $\Leftrightarrow$ there exists ak \ge
+l.393 ... g2 $\Leftrightarrow$ there exists ak \ge
                                                    0 such that M, $\pi^{k}$ ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1668,7 +1716,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...$ there exists ak \ge 0 such that M, $\pi
+l.393 ...$ there exists ak \ge 0 such that M, $\pi
                                                   ^{k}$ \models g2\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1676,7 +1724,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.374 ...s ak \ge 0 such that M, $\pi^{k}$ \models
+l.393 ...s ak \ge 0 such that M, $\pi^{k}$ \models
                                                    g2\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1684,7 +1732,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.375  and for all 0 \le j < k, M,$\pi
+l.394  and for all 0 \le j < k, M,$\pi
                                       ^{j}$ \models g1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1692,7 +1740,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.375 ... for all 0 \le j < k, M,$\pi^{j}$ \models
+l.394 ... for all 0 \le j < k, M,$\pi^{j}$ \models
                                                    g1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1700,7 +1748,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.376  M, s \models p $\Leftrightarrow
+l.395  M, s \models p $\Leftrightarrow
                                       $ for all j \ge 0, if for every i < j,...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1708,7 +1756,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.376 ...\models p $\Leftrightarrow$ for all j \ge
+l.395 ...\models p $\Leftrightarrow$ for all j \ge
                                                    0, if for every i < j,M,$...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1716,13 +1764,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.376 ...or all j \ge 0, if for every i < j,M,$\pi
+l.395 ...or all j \ge 0, if for every i < j,M,$\pi
                                                   ^{i}$ \nvdash g1 then M,$\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.376 ...0, if for every i < j,M,$\pi^{i}$ \nvdash
+l.395 ...0, if for every i < j,M,$\pi^{i}$ \nvdash
                                                    g1 then M,$\pi^{j}$ \mode...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1733,7 +1781,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.376 ...^{i}$ \nvdash g1 then M,$\pi^{j}$ \models
+l.395 ...^{i}$ \nvdash g1 then M,$\pi^{j}$ \models
                                                    g2\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1741,18 +1789,19 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.377 
+l.396 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--377
+Underfull \hbox (badness 10000) in paragraph at lines 380--396
 
  []
 
+[15 <./pomp.png>]
 ! Undefined control sequence.
-l.384   \mathbb
+l.403   \mathbb
                {A}  bestaat uit  een 4-tuple M = \{ S ,  S_{0}  , \Re , L \}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1763,7 +1812,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.384 ...  bestaat uit  een 4-tuple M = \{ S ,  S_
+l.403 ...  bestaat uit  een 4-tuple M = \{ S ,  S_
                                                   {0}  , \Re , L \} ~ met ~ ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1771,7 +1820,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.386   S_{0} $\subseteq
+l.405   S_{0} $\subseteq
                         $ S: de verzameling van alle beginstates \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1779,7 +1828,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.387   \Re
+l.406   \Re
             $\subseteq$ \mathbb{S} x S: de transitierelatie \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1787,13 +1836,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.387   \Re $\subseteq
+l.406   \Re $\subseteq
                       $ \mathbb{S} x S: de transitierelatie \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.387   \Re $\subseteq$ \mathbb
+l.406   \Re $\subseteq$ \mathbb
                                {S} x S: de transitierelatie \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1804,7 +1853,7 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.388       L= S \to
+l.407       L= S \to
                        ~ $2^{AP}$ ~ : de labels waarmee weiedere state label...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1812,21 +1861,21 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.388       L= S \to   ~ $2^
+l.407       L= S \to   ~ $2^
                             {AP}$ ~ : de labels waarmee weiedere state label...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--389
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
 
  []
 
-[15] [16]
+[16]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.436 ...ate(0).open||gate(1).open) -> (main.pomp_
+l.455 ...ate(0).open||gate(1).open) -> (main.pomp_
                                                   idle || main.pomp2_idle)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1838,7 +1887,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.437 		\item
+l.456 		\item
                b) Als de deur is gesloten dan bevind de maincontroller zich ...
 
 Try typing  <return>  to proceed.
@@ -1851,7 +1900,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.437 		\item  b
+l.456 		\item  b
                 ) Als de deur is gesloten dan bevind de maincontroller zich ...
 
 Try typing  <return>  to proceed.
@@ -1864,7 +1913,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.437 		\item  b
+l.456 		\item  b
                 ) Als de deur is gesloten dan bevind de maincontroller zich ...
 
 Try typing  <return>  to proceed.
@@ -1877,7 +1926,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 		\item
+l.458 		\item
                p15
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1885,7 +1934,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.439 		\item  p
+l.458 		\item  p
                 15
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1893,7 +1942,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.439 		\item  p
+l.458 		\item  p
                 15
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1902,7 +1951,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (250.84296pt too wide) in paragraph at lines 435--439
+Overfull \hbox (250.84296pt too wide) in paragraph at lines 454--458
 \OT1/cmss/m/n/10 > (main.pomp$[]\OML/cmm/m/it/10 dle\OMS/cmss/m/n/10 jj\OML/cmm
 /m/it/10 main:pomp\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 dle\OT1/cmr/m/n/10 )\OML/
 cmm/m/it/10 b\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 Alsdedeurisgeslotendanbevinddema
@@ -1913,7 +1962,7 @@ osed\OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 >
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.439 		\item  p
+l.458 		\item  p
                 15
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1922,7 +1971,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Overfull \hbox (31.13919pt too wide) in paragraph at lines 440--442
+Overfull \hbox (31.13919pt too wide) in paragraph at lines 459--461
 []\OT1/cmss/m/n/10 p16 If en-gine re-gu-la-tion is on tor-que, then the clutch 
 is clo-sed (un-de-fi-ned) A[](Engine.Torque
  []
@@ -1930,13 +1979,13 @@ is clo-sed (un-de-fi-ned) A[](Engine.Torque
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.443 		A[] main.s5 -> main.waterlevel_
+l.462 		A[] main.s5 -> main.waterlevel_
                                        laag && idle_pomp1 && gate(0).open &&...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.443 		A[] main.s5 -> main.waterlevel_laag &
+l.462 		A[] main.s5 -> main.waterlevel_laag &
                                              & idle_pomp1 && gate(0).open &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1946,7 +1995,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 		A[] main.s5 -> main.waterlevel_laag &&
+l.462 		A[] main.s5 -> main.waterlevel_laag &&
                                                idle_pomp1 && gate(0).open &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1956,7 +2005,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ...5 -> main.waterlevel_laag && idle_pomp1 &
+l.462 ...5 -> main.waterlevel_laag && idle_pomp1 &
                                                   & gate(0).open && gate(1)....
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1966,7 +2015,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ... -> main.waterlevel_laag && idle_pomp1 &&
+l.462 ... -> main.waterlevel_laag && idle_pomp1 &&
                                                    gate(0).open && gate(1).o...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1976,7 +2025,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ...evel_laag && idle_pomp1 && gate(0).open &
+l.462 ...evel_laag && idle_pomp1 && gate(0).open &
                                                   & gate(1).open && (stoplig...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1986,7 +2035,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ...vel_laag && idle_pomp1 && gate(0).open &&
+l.462 ...vel_laag && idle_pomp1 && gate(0).open &&
                                                    gate(1).open && (stopligh...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1996,7 +2045,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ...e_pomp1 && gate(0).open && gate(1).open &
+l.462 ...e_pomp1 && gate(0).open && gate(1).open &
                                                   & (stoplight(0).green && s...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2006,7 +2055,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ..._pomp1 && gate(0).open && gate(1).open &&
+l.462 ..._pomp1 && gate(0).open && gate(1).open &&
                                                    (stoplight(0).green && st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2016,7 +2065,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ... && gate(1).open && (stoplight(0).green &
+l.462 ... && gate(1).open && (stoplight(0).green &
                                                   & stoplight(1).green || st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2026,7 +2075,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ...&& gate(1).open && (stoplight(0).green &&
+l.462 ...&& gate(1).open && (stoplight(0).green &&
                                                    stoplight(1).green || sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2036,7 +2085,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ...toplight(1).green || stoplight(2).green &
+l.462 ...toplight(1).green || stoplight(2).green &
                                                   & stoplight(3).green )
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2046,7 +2095,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.443 ...oplight(1).green || stoplight(2).green &&
+l.462 ...oplight(1).green || stoplight(2).green &&
                                                    stoplight(3).green )
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2062,7 +2111,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444 		\item
+l.463 		\item
                p18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
 
 Try typing  <return>  to proceed.
@@ -2075,7 +2124,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444 		\item  p
+l.463 		\item  p
                 18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
 
 Try typing  <return>  to proceed.
@@ -2088,14 +2137,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444 		\item  p
+l.463 		\item  p
                 18 Als een schip van rechts binnen komt en sluisdeuren zijn ...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Misplaced alignment tab character &.
-l.445 ...(i:id_d) forall (j:id_s) gate(i).closed &
+l.464 ...(i:id_d) forall (j:id_s) gate(i).closed &
                                                   & stoplight.rood && main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2105,7 +2154,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.445 ...i:id_d) forall (j:id_s) gate(i).closed &&
+l.464 ...i:id_d) forall (j:id_s) gate(i).closed &&
                                                    stoplight.rood && main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2115,7 +2164,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.445 ...:id_s) gate(i).closed && stoplight.rood &
+l.464 ...:id_s) gate(i).closed && stoplight.rood &
                                                   & main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2125,7 +2174,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.445 ...id_s) gate(i).closed && stoplight.rood &&
+l.464 ...id_s) gate(i).closed && stoplight.rood &&
                                                    main.rd_1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2137,7 +2186,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.447 		
+l.466 		
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2145,7 +2194,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.447 		
+l.466 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2154,7 +2203,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (1046.24826pt too wide) in paragraph at lines 442--447
+Overfull \hbox (1046.24826pt too wide) in paragraph at lines 461--466
 \OT1/cmss/m/n/10 groen A[] main.s5 -> main.waterlevel$[]\OML/cmm/m/it/10 aagidl
 e[]omp\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10
  :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10 (\OML/cmm/m/
@@ -2168,7 +2217,7 @@ t/10 main:direction\OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (134.74622pt too wide) in paragraph at lines 442--447
+Overfull \hbox (134.74622pt too wide) in paragraph at lines 461--466
 \OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 : \O
 ML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OM
 L/cmm/m/it/10 j \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cm
@@ -2180,7 +2229,7 @@ enhebbenvoorangopinvarenden[]$
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.447 		
+l.466 		
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2189,7 +2238,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Misplaced alignment tab character &.
-l.449 		A[] main.s6 -> gate(0).open &
+l.468 		A[] main.s6 -> gate(0).open &
                                      & gate(1).open && stoplight(0).groen &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2199,7 +2248,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.449 		A[] main.s6 -> gate(0).open &&
+l.468 		A[] main.s6 -> gate(0).open &&
                                        gate(1).open && stoplight(0).groen &&...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2209,7 +2258,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.449 ...main.s6 -> gate(0).open && gate(1).open &
+l.468 ...main.s6 -> gate(0).open && gate(1).open &
                                                   & stoplight(0).groen && st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2219,7 +2268,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.449 ...ain.s6 -> gate(0).open && gate(1).open &&
+l.468 ...ain.s6 -> gate(0).open && gate(1).open &&
                                                    stoplight(0).groen && sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2229,7 +2278,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.449 ...n && gate(1).open && stoplight(0).groen &
+l.468 ...n && gate(1).open && stoplight(0).groen &
                                                   & stoplight(1).groen
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2239,7 +2288,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.449 ... && gate(1).open && stoplight(0).groen &&
+l.468 ... && gate(1).open && stoplight(0).groen &&
                                                    stoplight(1).groen
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2251,7 +2300,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.451 ...] (main.rn1 || main.rn2) -> forall (i:id_
+l.470 ...] (main.rn1 || main.rn2) -> forall (i:id_
                                                   d) forall(j:id_s )gate(i)....
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2263,7 +2312,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.452 		\item
+l.471 		\item
                p22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
 
 Try typing  <return>  to proceed.
@@ -2276,7 +2325,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.452 		\item  p
+l.471 		\item  p
                 22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
 
 Try typing  <return>  to proceed.
@@ -2289,7 +2338,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.452 		\item  p
+l.471 		\item  p
                 22 Als een schip vertrekt dan zijn altijd, sleusdeuren open,...
 
 Try typing  <return>  to proceed.
@@ -2302,7 +2351,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.454 		\item
+l.473 		\item
                p23 urgent locations; het is niet mogelijk om hier te wachten
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2310,7 +2359,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.454 		\item  p
+l.473 		\item  p
                 23 urgent locations; het is niet mogelijk om hier te wachten
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2318,7 +2367,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.454 		\item  p
+l.473 		\item  p
                 23 urgent locations; het is niet mogelijk om hier te wachten
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2327,7 +2376,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (622.02261pt too wide) in paragraph at lines 450--454
+Overfull \hbox (622.02261pt too wide) in paragraph at lines 469--473
 \OT1/cmss/m/n/10 rood A[] (main.rn1 || main.rn2) -> fo-rall (i:id$[]\OT1/cmr/m/
 n/10 )\OML/cmm/m/it/10 forall\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j \OT1/cmr/m/n/1
 0 : \OML/cmm/m/it/10 id[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate\OT1/cmr/m/n/10 
@@ -2342,7 +2391,7 @@ cmr/m/n/10 12\OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 >
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.454 		\item  p
+l.473 		\item  p
                 23 urgent locations; het is niet mogelijk om hier te wachten
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2350,8 +2399,9 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+[17]
 ! Misplaced alignment tab character &.
-l.466 		A[]  main.s6 &
+l.485 		A[]  main.s6 &
                       & schip.varen ->  Queue.list[N-1] <2
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2361,7 +2411,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.466 		A[]  main.s6 &&
+l.485 		A[]  main.s6 &&
                         schip.varen ->  Queue.list[N-1] <2
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2370,9 +2420,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[17]
 ! Misplaced alignment tab character &.
-l.470 		A[] schip.varen &
+l.489 		A[] schip.varen &
                          & main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2382,7 +2431,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.470 		A[] schip.varen &&
+l.489 		A[] schip.varen &&
                            main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2392,7 +2441,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.470 ...n && main.s12 || main.s13 -> (!main.rn1 &
+l.489 ...n && main.s12 || main.s13 -> (!main.rn1 &
                                                   & !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2402,7 +2451,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.470 ... && main.s12 || main.s13 -> (!main.rn1 &&
+l.489 ... && main.s12 || main.s13 -> (!main.rn1 &&
                                                    !main.rn2)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2414,13 +2463,13 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 		A[] pomp.pomp_
+l.497 		A[] pomp.pomp_
                       active -> main.s6 && forall(i:id_d) gate(i).closed
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.478 		A[] pomp.pomp_active -> main.s6 &
+l.497 		A[] pomp.pomp_active -> main.s6 &
                                          & forall(i:id_d) gate(i).closed
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2430,7 +2479,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.478 		A[] pomp.pomp_active -> main.s6 &&
+l.497 		A[] pomp.pomp_active -> main.s6 &&
                                            forall(i:id_d) gate(i).closed
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2446,7 +2495,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.479 		\item
+l.498 		\item
                p38 Geen deadlock
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2458,7 +2507,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.479 		\item  p
+l.498 		\item  p
                 38 Geen deadlock
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2470,7 +2519,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.479 		\item  p
+l.498 		\item  p
                 38 Geen deadlock
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2482,7 +2531,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.480 		\item
+l.499 		\item
                p39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 
 Try typing  <return>  to proceed.
@@ -2491,7 +2540,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.480 		\item  p
+l.499 		\item  p
                 39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2499,7 +2548,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.480 		\item  p
+l.499 		\item  p
                 39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2510,7 +2559,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.480 		\item  p
+l.499 		\item  p
                 39 Voor geen enkel pad geldt dat als  de deuren gesloten zij...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2521,7 +2570,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.481 		A[] not forall(i:id_
+l.500 		A[] not forall(i:id_
                             d) gate.closed ->(main.s12||main.s13)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2533,7 +2582,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.482 		\item
+l.501 		\item
                p40 Voor alle paden geld dat als een sluis aan het voorbereid...
 
 Try typing  <return>  to proceed.
@@ -2546,7 +2595,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.482 		\item  p
+l.501 		\item  p
                 40 Voor alle paden geld dat als een sluis aan het voorbereid...
 
 Try typing  <return>  to proceed.
@@ -2559,7 +2608,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.482 		\item  p
+l.501 		\item  p
                 40 Voor alle paden geld dat als een sluis aan het voorbereid...
 
 Try typing  <return>  to proceed.
@@ -2572,7 +2621,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.484 		\item
+l.503 		\item
                 p41 Voor alle paden geld dat als een deur dicht is het aanta...
 
 Try typing  <return>  to proceed.
@@ -2581,7 +2630,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.484 		\item   p
+l.503 		\item   p
                  41 Voor alle paden geld dat als een deur dicht is het aanta...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2589,7 +2638,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.484 		\item   p
+l.503 		\item   p
                  41 Voor alle paden geld dat als een deur dicht is het aanta...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2598,14 +2647,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (18.4618pt too wide) in paragraph at lines 480--484
+Overfull \hbox (18.4618pt too wide) in paragraph at lines 499--503
 \OT1/cmss/m/n/10 een deur open-staat om een schip naar bui-ten te la-ten. A[] n
 ot forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 gate:closed\OMS/cmss/m/n/10 
 ^^@ \OML/cmm/m/it/10 >
  []
 
 
-Overfull \hbox (185.49286pt too wide) in paragraph at lines 480--484
+Overfull \hbox (185.49286pt too wide) in paragraph at lines 499--503
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 12\OMS/cmss/m/n/10 jj\O
 ML/cmm/m/it/10 main:s\OT1/cmr/m/n/10 13)\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 40\OM
 L/cmm/m/it/10 Voorallepadengelddatalseensluisaanhetvoorbereidenis; danzijnalled
@@ -2616,7 +2665,7 @@ m/n/10 ^^@ \OML/cmm/m/it/10 >
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.484 		\item   p
+l.503 		\item   p
                  41 Voor alle paden geld dat als een deur dicht is het aanta...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2624,16 +2673,17 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+[18]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.501 		A[] forall(i:id_
+l.520 		A[] forall(i:id_
                         s) stoplight.groen -> gate(0).open && gate(1).open &...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.501 ...i:id_s) stoplight.groen -> gate(0).open &
+l.520 ...i:id_s) stoplight.groen -> gate(0).open &
                                                   & gate(1).open && (main.po...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2643,7 +2693,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.501 ...:id_s) stoplight.groen -> gate(0).open &&
+l.520 ...:id_s) stoplight.groen -> gate(0).open &&
                                                    gate(1).open && (main.pom...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2653,7 +2703,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.501 ...t.groen -> gate(0).open && gate(1).open &
+l.520 ...t.groen -> gate(0).open && gate(1).open &
                                                   & (main.pomp1_idle || main...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2663,7 +2713,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.501 ....groen -> gate(0).open && gate(1).open &&
+l.520 ....groen -> gate(0).open && gate(1).open &&
                                                    (main.pomp1_idle || main....
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2679,7 +2729,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.502 		\item
+l.521 		\item
                p50 In geen enkele staat van de sluis behalve tussen de lower...
 
 Try typing  <return>  to proceed.
@@ -2692,7 +2742,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.502 		\item  p
+l.521 		\item  p
                 50 In geen enkele staat van de sluis behalve tussen de lower...
 
 Try typing  <return>  to proceed.
@@ -2705,7 +2755,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.502 		\item  p
+l.521 		\item  p
                 50 In geen enkele staat van de sluis behalve tussen de lower...
 
 Try typing  <return>  to proceed.
@@ -2718,7 +2768,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.504 		\item
+l.523 		\item
                p51 Voor alle paden in een pomp geldt dat als water level lag...
 
 Try typing  <return>  to proceed.
@@ -2727,7 +2777,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.504 		\item  p
+l.523 		\item  p
                 51 Voor alle paden in een pomp geldt dat als water level lag...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2735,7 +2785,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.504 		\item  p
+l.523 		\item  p
                 51 Voor alle paden in een pomp geldt dat als water level lag...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2744,7 +2794,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (923.81989pt too wide) in paragraph at lines 500--504
+Overfull \hbox (923.81989pt too wide) in paragraph at lines 519--523
 \OT1/cmss/m/n/10 zig is. A[] forall(i:id$[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 st
 oplight:groen\OMS/cmss/m/n/10 ^^@ \OML/cmm/m/it/10 > gate\OT1/cmr/m/n/10 (0)\OM
 L/cmm/m/it/10 :opengate\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 :open\OT1/cmr/m/n/10
@@ -2759,7 +2809,7 @@ tArrivalLowenAtEnteringHighisdewachttijdlangerdan\OT1/cmr/m/n/10 5\OML/cmm/m/it
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.504 		\item  p
+l.523 		\item  p
                 51 Voor alle paden in een pomp geldt dat als water level lag...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2767,9 +2817,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[18]
 ! Misplaced alignment tab character &.
-l.509 ...ot main.rn1 || main.rn2 -> gate(0).open &
+l.528 ...ot main.rn1 || main.rn2 -> gate(0).open &
                                                   & gate(1).open && Queue.li...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2779,7 +2828,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.509 ...t main.rn1 || main.rn2 -> gate(0).open &&
+l.528 ...t main.rn1 || main.rn2 -> gate(0).open &&
                                                    gate(1).open && Queue.lis...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2789,7 +2838,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.509 ...ain.rn2 -> gate(0).open && gate(1).open &
+l.528 ...ain.rn2 -> gate(0).open && gate(1).open &
                                                   & Queue.list[N-1] == 0 && ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2799,7 +2848,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.509 ...in.rn2 -> gate(0).open && gate(1).open &&
+l.528 ...in.rn2 -> gate(0).open && gate(1).open &&
                                                    Queue.list[N-1] == 0 && (...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2809,7 +2858,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.509 ...&& gate(1).open && Queue.list[N-1] == 0 &
+l.528 ...&& gate(1).open && Queue.list[N-1] == 0 &
                                                   & ((stoplight(0).groen||st...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2819,7 +2868,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.509 ...& gate(1).open && Queue.list[N-1] == 0 &&
+l.528 ...& gate(1).open && Queue.list[N-1] == 0 &&
                                                    ((stoplight(0).groen||sto...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2829,7 +2878,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.509 ...oplight(1).groen) ||(stoplight(3).groen &
+l.528 ...oplight(1).groen) ||(stoplight(3).groen &
                                                   &stoplight(4).groen))
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2839,7 +2888,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.509 ...plight(1).groen) ||(stoplight(3).groen &&
+l.528 ...plight(1).groen) ||(stoplight(3).groen &&
                                                   stoplight(4).groen))
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2849,7 +2898,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.511 ...|| main.blocked2) -> Queue.list[N-1] >0 &
+l.530 ...|| main.blocked2) -> Queue.list[N-1] >0 &
                                                   & gate(0).closed && gate(1...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2859,7 +2908,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.511 ...| main.blocked2) -> Queue.list[N-1] >0 &&
+l.530 ...| main.blocked2) -> Queue.list[N-1] >0 &&
                                                    gate(0).closed && gate(1)...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2869,7 +2918,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.511 ...-> Queue.list[N-1] >0 && gate(0).closed &
+l.530 ...-> Queue.list[N-1] >0 && gate(0).closed &
                                                   & gate(1).closed && main.w...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2879,7 +2928,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.511 ...> Queue.list[N-1] >0 && gate(0).closed &&
+l.530 ...> Queue.list[N-1] >0 && gate(0).closed &&
                                                    gate(1).closed && main.wa...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2889,7 +2938,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.511 ... >0 && gate(0).closed && gate(1).closed &
+l.530 ... >0 && gate(0).closed && gate(1).closed &
                                                   & main.waterlevel==main.wa...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2899,7 +2948,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.511 ...>0 && gate(0).closed && gate(1).closed &&
+l.530 ...>0 && gate(0).closed && gate(1).closed &&
                                                    main.waterlevel==main.wat...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2911,7 +2960,7 @@ might try typing `S' now just to see what is salvageable.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.511 ...osed && main.waterlevel==main.waterlevel_
+l.530 ...osed && main.waterlevel==main.waterlevel_
                                                   laag
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2923,7 +2972,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512 		\item
+l.531 		\item
                p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
 
 Try typing  <return>  to proceed.
@@ -2936,7 +2985,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512 		\item  p
+l.531 		\item  p
                 55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
 
 Try typing  <return>  to proceed.
@@ -2949,14 +2998,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512 		\item  p
+l.531 		\item  p
                 55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op ...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Misplaced alignment tab character &.
-l.513 		E<> main.rn1||main.rn2 -> gate(0).closed &
+l.532 		E<> main.rn1||main.rn2 -> gate(0).closed &
                                                   &main.waterlevel==waterlaag
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2966,7 +3015,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.513 ...> main.rn1||main.rn2 -> gate(0).closed &&
+l.532 ...> main.rn1||main.rn2 -> gate(0).closed &&
                                                   main.waterlevel==waterlaag
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2982,7 +3031,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.514 		\item
+l.533 		\item
                p56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 
 Try typing  <return>  to proceed.
@@ -2991,7 +3040,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.514 		\item  p
+l.533 		\item  p
                 56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2999,7 +3048,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.514 		\item  p
+l.533 		\item  p
                 56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3008,7 +3057,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (586.81195pt too wide) in paragraph at lines 510--514
+Overfull \hbox (586.81195pt too wide) in paragraph at lines 529--533
 \OT1/cmss/m/n/10 main.blocked2) -> Queue.list[N-1] >0  gate(0).closed  gate(1).
 closed  main.waterlevel==main.waterlevel$[]\OML/cmm/m/it/10 aagp\OT1/cmr/m/n/10
  55\OML/cmm/m/it/10 Eriseenmogelijkheiddatvanuitpompgetstoplichtoproodwordtgeze
@@ -3018,7 +3067,7 @@ tenwaterlevelgelijkisaanwaterlaagE <>
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.514 		\item  p
+l.533 		\item  p
                 56 Het kan voorkomen dat bij state pompaan het waterniveau g...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3027,7 +3076,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Misplaced alignment tab character &.
-l.517 		A[] gate(0).open &
+l.536 		A[] gate(0).open &
                           & ()main.direction ==0||main.direction==1)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3037,7 +3086,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.517 		A[] gate(0).open &&
+l.536 		A[] gate(0).open &&
                             ()main.direction ==0||main.direction==1)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3047,14 +3096,14 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (23.33397pt too wide) in paragraph at lines 516--518
+Overfull \hbox (23.33397pt too wide) in paragraph at lines 535--537
 \OT1/cmss/m/n/10 vel-leert om-hoog/omlaag A[] gate(0).open  ()main.direction ==
 0||main.direction==1) 
  []
 
-<xymatrix 2x2 409> [19]
+<xymatrix 2x2 409> [19] [20]
 ! Undefined control sequence.
-l.571 	 \VerbatimInput
+l.590 	 \VerbatimInput
                       {data.txt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3062,11 +3111,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[20] [21]
+[21] [22]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.609 		Because of the lack of _
+l.628 		Because of the lack of _
                                 _ we decided to not investigate __
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3074,7 +3123,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.609 		Because of the lack of __
+l.628 		Because of the lack of __
                                   we decided to not investigate __
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3084,7 +3133,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.609 ...ck of __ we decided to not investigate __
+l.628 ...ck of __ we decided to not investigate __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3094,7 +3143,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.610 		One concern about the findings of __
+l.629 		One concern about the findings of __
                                              was that __
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3104,7 +3153,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.610 ...cern about the findings of __ was that __
+l.629 ...cern about the findings of __ was that __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3114,7 +3163,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.611 ...of this potential limitation, we treat __
+l.630 ...of this potential limitation, we treat __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3124,7 +3173,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.612 ... the present studies naturally include __
+l.631 ... the present studies naturally include __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3134,7 +3183,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.613 		Regarding the limitations of __
+l.632 		Regarding the limitations of __
                                        , it could be argued that __
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3144,7 +3193,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.613 ...tations of __, it could be argued that __
+l.632 ...tations of __, it could be argued that __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3154,7 +3203,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.614 		Another limitation of this __
+l.633 		Another limitation of this __
                                      
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3164,7 +3213,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.615 		This limitation is apparent in many __
+l.634 		This limitation is apparent in many __
                                               
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3174,7 +3223,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.616 		Another limitation in __
+l.635 		Another limitation in __
                                  involves the issue of __
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3184,7 +3233,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.616 ...limitation in __ involves the issue of __
+l.635 ...limitation in __ involves the issue of __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3194,7 +3243,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.617 		The main limitation is the lack of __
+l.636 		The main limitation is the lack of __
                                              
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3204,7 +3253,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.619 ... of these methods however is that they __
+l.638 ... of these methods however is that they __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3214,7 +3263,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.620 		It presents some limitations such as __
+l.639 		It presents some limitations such as __
                                                
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3224,7 +3273,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.621 ...t suffers from some limitations due to __
+l.640 ...t suffers from some limitations due to __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3234,7 +3283,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.622 		An apparent limitation of the method is __
+l.641 		An apparent limitation of the method is __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3244,7 +3293,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.624 ...on of our implementation is that it is __
+l.643 ...on of our implementation is that it is __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3254,7 +3303,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.625 		A major source of limitation is due to  __
+l.644 		A major source of limitation is due to  __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3264,7 +3313,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.626 ...lised suffers from the limitation that __
+l.645 ...lised suffers from the limitation that __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3274,7 +3323,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.627 		The limitations are becoming clear __
+l.646 		The limitations are becoming clear __
                                              
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3284,7 +3333,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    _
-l.628 ...the same limitations associated with a __
+l.647 ...the same limitations associated with a __
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3294,7 +3343,7 @@ so that I will find a matching right brace soon.
 ! Missing { inserted.
 <to be read again> 
                    \tex_par:D 
-l.629 		
+l.648 		
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3304,7 +3353,7 @@ so that I will find a matching right brace soon.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.629 		
+l.648 		
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3312,7 +3361,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3323,7 +3372,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3334,7 +3383,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3345,7 +3394,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3356,7 +3405,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3367,7 +3416,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3378,7 +3427,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3389,7 +3438,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3400,7 +3449,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3411,7 +3460,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3422,7 +3471,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3433,7 +3482,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3444,7 +3493,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3455,7 +3504,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3466,7 +3515,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3477,7 +3526,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3488,7 +3537,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3499,7 +3548,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3510,7 +3559,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3521,7 +3570,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3532,7 +3581,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3543,7 +3592,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3554,7 +3603,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.629 		
+l.648 		
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3563,19 +3612,19 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (2423.69173pt too wide) in paragraph at lines 609--629
+Overfull \hbox (2423.69173pt too wide) in paragraph at lines 628--648
 \OT1/cmss/m/n/10 Because of the lack of $[]$ 
  []
 
 
-Overfull \hbox (26.11162pt too wide) in paragraph at lines 630--631
+Overfull \hbox (26.11162pt too wide) in paragraph at lines 649--650
 []\OT1/cmss/m/n/10 https://www.ref-n-write.com/blog/research-paper-example-writ
 ing-results-discussion-
  []
 
-[22] [23] [24] (verslag.bbl) [25]
+[23] [24] [25] (verslag.bbl) [26]
 ! Misplaced alignment tab character &.
-l.713 	III) Abstract  &
+l.732 	III) Abstract  &
                         Keywords
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3584,9 +3633,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[26]
+[27]
 ! Misplaced alignment tab character &.
-l.742 	VII) Discussion &
+l.761 	VII) Discussion &
                          Conclusion
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3595,41 +3644,41 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[27]
+[28]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.765 ...w.researchgate.net/publication/265059173_
+l.784 ...w.researchgate.net/publication/265059173_
                                                   How_To_Write_A_Scientific_...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Double subscript.
-l.765 ...net/publication/265059173_How_To_Write_A_
+l.784 ...net/publication/265059173_How_To_Write_A_
                                                   Scientific_Article_For_A_M...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.765 ..._How_To_Write_A_Scientific_Article_For_A_
+l.784 ..._How_To_Write_A_Scientific_Article_For_A_
                                                   Medical_Journal
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.766 \end{document}
+l.785 \end{document}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (309.58879pt too wide) in paragraph at lines 764--766
+Overfull \hbox (309.58879pt too wide) in paragraph at lines 783--785
 \OT1/cmss/m/n/10 to sub-mit-pa-pers that are in good wor-king or-der5 https://w
 ww.researchgate.net/publication/265059173$[]\OML/cmm/m/it/10 ow[]o[]rite[][]cie
 ntific[]rticle[]or[][]edical[]ournal$ 
  []
 
-[28] (verslag.aux)
+[29] (verslag.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3658,9 +3707,9 @@ cmssbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/xypic/xyatip10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/xypic/xybtip10.pfb>
-Output written on verslag.pdf (30 pages, 657943 bytes).
+Output written on verslag.pdf (31 pages, 661319 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
+ 205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

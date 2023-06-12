@@ -306,8 +306,16 @@ What specific results answer to the objectives of the study?What is the novelty 
 	
 	\subsection{Algemeen}
 	
-
-	
+\subsection{Formal specification}
+	Sommige safety en reachability requirements die gespecificeerd moeten worden zijn hieronder aangegeven.
+	De deur mag alleen  geopend zijn als er een schip wil in-/uitvaren.
+	De stoplicht mag alleen op groen staan als de deuren zijn geopend.
+	De pomp mag alleen worden aangezet als alle sluisdeuren dicht zijn, de stoplichten op rood.
+	Een schip bereikt de finished state alleen als de positie van de final state verschilt met de positie van de initial state.
+	Er is geen deadlock formatie in het systeem.
+	Het monitoring mechanisme van het systeem werkt als volgd:
+	Op geen enkel moment, positie hoog of laag zijn de hoogte en laagte sensore 0 of 1 tegelijkertijd.
+	Op geen enkel moment, positie hoog of laag zijn aan weerszijnde de sluisdeuren open en stoplichten op groen.
 	
 		\subsection{Maincontroller}
 	\includegraphics[width=8cm]{main.png} % also works with logo.pdf
@@ -331,7 +339,13 @@ What specific results answer to the objectives of the study?What is the novelty 
 
 	
 	\subsection{De formele verificatie aan de hand van een Kripke structuur}
-	
+	De safety en reachability requirements die formeel zijn gespecificeerd   worden in Uppaal geverifieerd met de A en E state formule. Deze zijn als volgd:
+	A[] not maincontroller.rd1 imply
+	A[] maincontroller.rd1 imply
+	A[] not deadlock imply
+	E<> maincontroller.rd1 imply
+	E<> maincontroller.s7
+	E<> maincontroller.s7d
 
 
  
