@@ -74,14 +74,14 @@ What specific results answer to the objectives of the study?What is the novelty 
 	
 		\subsection{Algemeen}
 	
-	
+	http://www.cs.ru.nl/~fvaan/PV/what_is_a_good_model.html#:~:text=A%20good%20model%20has%20a%20clearly%20specified%20purpose%20and%20(ideally,code%20generation%2C%20and%20test%20generation
 	
 	\subsection{Achtergrond}
 	
 	\subsubsection{Formal specification}
-	
+	Een formal specification is
 	\subsubsection{Modelling}
-	
+	Wat is een good model?
 	\subsubsection{Formal verification}
 	Formal verification is een proces warin wordt bevestigd dat het bestudeerde systeem voldoet aan de requirements of specificaties. Formele verificatie kan worden uitgevoerd door middel van simulatie, propositielogica en model checking. Deze technieken worden ondeer andere gebruikt voor het test van een systeem op safety,liveness, deadlock freeness en reachability requirements.
 	
@@ -89,7 +89,7 @@ What specific results answer to the objectives of the study?What is the novelty 
 	Er is onderzoek gedaan naar verschillende sluizen en de bediening hiervan. 
 	Een alternatief is voorgesteld om aan te tonen dat de implementatie van de sluis voldoet aan het vier-variabelen model.
 	
-	\subsection{Statistical model checking}
+	\subsubsection{Statistical model checking}
 	Dit gaat in het algemeen over ...
 	https://project.inria.fr/plasma-lab/statistical-model-checking/
 	https://ris.utwente.nl/ws/portalfiles/portal/28200786/A_statistical_model_checker.pdf
@@ -354,8 +354,8 @@ What specific results answer to the objectives of the study?What is the novelty 
  Voor het modelleren van een systeemhebben we nodig:\\
  alle states van het systeem.We stoppen dezein een verzameling \\
  S: de verzamleing van alle states van een systeem
- Elke individuele state noemen we s_{0}, s_{1},...s_{n} \\
- Ons model is een tupelmet daarin de verzameling states: M(S)
+ Elke individuele state noemen we s_{0}, s_{1},...s_{n}.
+ Ons ~  model ~  is  ~ een  ~ tupel  ~ met ~  daarin ~  de  ~ verzameling  ~ states: M(S)
  
  
  De transities tussen states vormen een relatie
@@ -376,23 +376,24 @@ What specific results answer to the objectives of the study?What is the novelty 
 
  
  
- \paragraph{Model checking Temporal logics} \\
+ \paragraph{Model checking Temporal logics} 
+ \newline \\
  M, s \models p $\Leftrightarrow$ p \in L(s) \\
  M, s \models \not f1 $\Leftrightarrow$ M, s \nvdash f1 \\
  M, s \models f1 \vee f2 $\Leftrightarrow$ M,s \models f1 or M,s \nvdash f2 \\
  M, s \models f1 \wedge f2 $\Leftrightarrow$  M,s \models f1 and M,s \nvdash f2 \\
  M, s \models \mathrm{E} g_{1} $\Leftrightarrow$ there is a path \pi  from ~  s ~   such ~  that  ~ M, \pi \models g1 \\
- M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from s, M, \pi \models g1 \\
+ M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from  ~  s, M, \pi \models g1 \\
  M, s \models p $\Leftrightarrow$ s is the first state of \piand M, s \models f1 \\
  M, s \models \not g_{1} $\Leftrightarrow$ M, \pi  \nvdash g1\\
  M, s \models p $\Leftrightarrow$  M, \pi  \models g1  or  M, \pi  M, \pi  \models g2\\
  M, s \models p $\Leftrightarrow$ M, \pi  \models g1  and  M, \pi  M, \pi  \models g2 \\
  M, s \models p $\Leftrightarrow$ M, $\pi^{1}$ \models g1 \\
- M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that M, $\pi^{k}$  \models g1\\
+ M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that  ~ M, $\pi^{k}$  \models g1\\
  M, s \models p $\Leftrightarrow$ for all i \ge 0,M,$\pi^{i}$ \models g1 \\
- M, s \models g1 \bugcup g2 $\Leftrightarrow$ there exists ak \ge 0 such that M, $\pi^{k}$ \models g2\\
- and for all 0 \le j < k, M,$\pi^{j}$ \models g1
- M, s \models p $\Leftrightarrow$ for all j \ge 0, if for every i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2\\
+ M, s \models g1 \bugcup g2 $\Leftrightarrow$ ~  there  ~ exists  ~ ak  ~ \ge  ~ 0 ~  such ~  that  ~ M,  ~ $\pi^{k}$ \models g2\\
+ and  ~ for  ~ all ~  0  ~ \le j < k, M,$\pi^{j}$ \models g1
+ M, s \models p $\Leftrightarrow$ for all j \ge 0, if for ~  every  ~ i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2\\
  
  
  
@@ -517,7 +518,7 @@ What specific results answer to the objectives of the study?What is the novelty 
 		\item  p48 Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
 		E<> 
 		\item  p49 EEn stoplich staat altijd op groen als de deuren open staan en de pomp niet bezig is.
-		A[] forall(i:id_s) stoplight.groen -> gate(0).open && gate(1).open && (main.pomp1_idle || main.pomp2_idle)
+		A[] forall(i:id_s) stoplight.groen -> gate(0).open && gate(1).open && (main.pomp1_idle || \\ main.pomp2_idle)  \\
 		\item  p50 In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
 		A[] not
 		\item  p51 Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
