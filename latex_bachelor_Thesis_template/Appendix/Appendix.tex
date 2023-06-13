@@ -304,6 +304,38 @@ onderbouwing, maar die de leesbaarheid van het hoofdverslag verlagen.
  A[] not (Deuren.hoog_open && Sluis.water != Sluis.water_hoog)
  A[]not deadlock
   \end{verbatim}
+<<<<<<< HEAD
+ 
+ P2 Het is mogelijk dat de sluispomp in een cyclus teveel water heeft gepompt en dat er daardoor water weggepompt dan wel bijgekompt dient te worden.
+ E<> main.waterlevel
+ P7  Als zich geen errors voordoen bij stoplicht en deur, maar de waterpomp uitvalt:
+ a)  a gear switch is gearanteerd after 1055 ms ( not including  1055)  (deleted)
+ a') it is impossible  to switch gear in 1055 ms     (deleted)
+ b) it is  impossible to switch gear in less than 550 ms (deleted)
+ b') it is possible to switch gear at 550 ms (deleted)
+ c) it is impossible to switch  gear in  less than 700 ms if the switch is not from/to gear N (deleted)
+ c') it is posible to switch gear at 700 ms if the switch is not from/to gear N (deleted)
+ p8 When no error occurs, but engine fails to find synchronous speed
+ a) a gear switch is guaranteerd in 1205 ms (incuding 1205)
+ a') a gear switch is not gearanteerd at less than 1205 ms
+ b) it is imposible to switch gear in less than 450 ms
+ b') is is possible to switch gear at 450 ms
+ c) it is impossible to switch gear in less than 750 ms if the switch is not from/to gear N
+ c') it is not possible to switch gear at 750 ms if the switch is not from/to gear N
+ p9 Clutch errors
+ a)If the clutch is not closed properly (i.e. a timeout occurs) the gearbox  controller will enter the locationCCCloseError with 200 ms   (undefined)
+ b)  When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch.  (undefined)
+ a) If th clutch is not closed properly (ie. a timeout occurs) the gearbox controller will enter the location CCloseError within 200 ms (undefined)
+ b) When the gearbox controller enters location CCloseError, there is always a problem in the clutch with closing the clutch. (undefined)
+ p10 Gearbox errors  
+ a) If the gearbox can not enter a requested gear ( i.e. a tieout occurs) the gearbox controller will enter the location GsetError within 350 ms (undefined)
+ b) When the gearbox controller enters location GSetError, there is always a problem in the gearbox with setting the gear. (undefined)
+ p11 IF no error occurs in the engine, it is guaranteed to find synchronous speed (undefined)
+ p13 When the gear controller has a greater set, torque regulaton is always indicated in the engine (undefined)
+  A[]
+ p14
+ a) Als de deur open is(ongeacht boven of beneden, dan bevind de sluispomp zich in een predefined state (undefined)
+=======
 
 \begin{itemize}
 \item  P1 Het is mogelijk dat de sluis van richting verandert.
@@ -357,9 +389,32 @@ onderbouwing, maar die de leesbaarheid van het hoofdverslag verlagen.
 \item   A[]
 \item  p14
 \item  a) Als de deur open is(ongeacht boven of beneden, dan bevind de sluispomp zich in een  predefined state (undefined)
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  A[] (gate(0).open||gate(1).open) -> (main.pomp_idle || main.pomp2_idle)
 \item  b) Als de deur is gesloten dan bevind de maincontroller zich in een predefined state
  A[] gate.closed -> main.idle
+<<<<<<< HEAD
+ p15
+ 
+ p16 If engine regulation is on torque, then the clutch is closed (undefined)
+ A[](Engine.Torque imply Clutch.closed
+ 
+ p18 Als een schip van rechts binnen komt en sluisdeuren zijn dicht dan moet het stoplicht op rood, de pomp in transitie van laag naar hoog en niet andersom
+ A[] !main.direction -> forall (i:id_d) forall (j:id_s) gate(i).closed && stoplight.rood && main.rd_1
+ p19 uitvarenden hebben voorang op invarenden
+ 
+ 
+ A[] main.s6 -> gate(0).open && gate(1).open && stoplight(0).groen && stoplight(1).groen
+ 
+ 
+ A[] main.s12 ->
+ p23 urgent locations; het is niet mogelijk om hier te wachten
+ p24 urgent syn; een synchronisatie moet direct worden uitgevoerd als de guards geldig zijn
+ 
+ A[]
+ p26 committed; als deze staat actief is dan wordt de eerst volgende transitie uitaande van deze state
+ 
+=======
 \item  p15
 \item  p16 If engine regulation is on torque, then the clutch is closed (undefined)
  A[](Engine.Torque imply Clutch.closed
@@ -381,29 +436,51 @@ onderbouwing, maar die de leesbaarheid van het hoofdverslag verlagen.
  A[]
 \item  p26 committed; als deze staat actief is dan wordt de eerst volgende transitie uitaande van deze state
 \item  p27 als een schjip binnen vaart mnoiet hij ook eft binnen zijn en niet binnenvaren, dit geldt ook voor p28 sluisdeuren en pompen dus deze zijn committed.
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  A[]
 \item  p28 Een schip komt aanvaren en geeft een signaal aan de sluis. 
  A[]	
+<<<<<<< HEAD
+ 
+ p30 Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. 	
+=======
 \item  p29 Indien er meer dan twee schepen in de sluis zitten dan wordt het ship geplaats in de wachrij. 
  A[]  Queue.list[N-1] == 2 -> (Sluiskolk.list[N]==1 ||Sluiskolk.list[N]==2)
 \item  p30 Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis. 	
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  A[]  main.s6 && schip.varen ->  Queue.list[N-1] <2
 \item  p32 Eenmaal in de sluis zal het schip moeten wachten op de sluis en de pomp. 	
   A[] Queue.list[N-1] == 2 
 \item  p33 Een schip mag alleen uitvaren als de pomp klaar is, de sleusdeuren open. 
   A[] schip.varen && main.s12 || main.s13 -> (!main.rn1 && !main.rn2)
+<<<<<<< HEAD
+  
+ p34 Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp. 
+=======
 \item  p34 Een sluis ontvang een aankomst signaal van een schip en bestuurt de sluisdeuren en de pomp. 
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
   A[]
 \item  p35 De sensor is een onderdeel van de sluis en ontvangt signalen van naderende schepen. 
   A[]
+<<<<<<< HEAD
+
+=======
 \item  p36 De sleusdeur voor boven en beneden kunnen beiden open en dicht. De sluisdeur wordt aangestuurd door de sluis. 
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
   A[]
 \item  p37 Een pomp begint met pompen bij een signaal van de sluis. Een sluis op zijn beurt geeft alleen een signaal aan de pomp als de sleudeuren dichtzijn
   A[] pomp.pomp_active -> main.s6 && forall(i:id_d) gate(i).closed
+<<<<<<< HEAD
+ p38 Geen deadlock
+ p39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn volgens de sluis dat er een deur openstaat om een schip naar buiten te laten.
+ A[] not forall(i:id_d) gate.closed ->(main.s12||main.s13)
+
+=======
 \item  p38 Geen deadlock
 \item  p39 Voor geen enkel pad geldt dat als  de deuren gesloten zijn volgens de kluis dat er een deur openstaat om een schip naar buiten te laten.
  A[] not forall(i:id_d) gate.closed ->(main.s12||main.s13)
 \item  p40 Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle deuren dcht.
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  A[] main.s6 -> forall(gate(0).closed
 \item   p41 Voor alle paden geld dat als een deur dicht is het aantal schepen in de kade gelijk is aan nul	
  A[]
@@ -415,12 +492,26 @@ onderbouwing, maar die de leesbaarheid van het hoofdverslag verlagen.
  E<>
  \item p45 Voor alle paden geldt als schip vrtrekt is sluisdeur dicht
  A[] 
+<<<<<<< HEAD
+ 
+=======
 \item  p46 Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrokken dan is de nivelleermachine uit
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  A[]
 \item  p47 Er is geen pad waarop een schip vertrekt vanuit de rechtersluisdeur en de linkersluisdeur is open en linkeruitaartstoplicht en linkeruitvaartsoplicht opgroen  en nibelleermachine is aan
  E<>
 \item  p48 Er is een pad waarvoor geldt dat linkerslsuisdeuren dicht zijn, rechtersluisdeuren dicht zijn rechteruitvaartstoplicht is rood en rechteruitvaartstoplicht is  rood terwijl eer geen schip in de sluis licht
  E<> 
+<<<<<<< HEAD
+
+
+ A[] not
+ 
+ A[] (main.waterlevel<waterlaag) -> (!pompwaterweg||pompwaterweg==false)
+ 
+ A[]
+ 
+=======
 \item  p49 EEn stoplich staat altijd op groen als de deuren open staan en de pomp niet bezig is.
  A[] forall(i:id_s) stoplight.groen -> gate(0).open && gate(1).open && (main.pomp1_idle || main.pomp2_idle)
 \item  p50 In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
@@ -430,21 +521,73 @@ onderbouwing, maar die de leesbaarheid van het hoofdverslag verlagen.
 \item  p52 Voor alle paden gelft dat als water level hoger is dan waterhoog dan is pompwater altjd false
  A[]
 \item  p53 Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis en stoplicht op groen
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  A[] not main.rn1 || main.rn2 -> gate(0).open && gate(1).open && Queue.list[N-1] == 0 && ((stoplight(0).groen||stoplight(1).groen) ||(stoplight(3).groen &&stoplight(4).groen))
 \item  p54 Het kan gebeuren dat bij pompr het stoplicht op rood staat, het schip in de sluis en deur is dicht, en waterstand gelijk aan waterlaag
  E<> (main.blocked1 || main.blocked2) -> Queue.list[N-1] >0 && gate(0).closed && gate(1).closed && main.waterlevel==main.waterlevel_laag
+<<<<<<< HEAD
+ 
+ E<> main.rn1||main.rn2 -> gate(0).closed &&main.waterlevel==waterlaag
+ g
+=======
 \item  p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
  E<> main.rn1||main.rn2 -> gate(0).closed &&main.waterlevel==waterlaag
 \item  p56 Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaag
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  E<> main.rn1||main.rn2 -> main.waterlevel== main.waterlaag
 \item  p57 Voor alle paden gelt dat er een mogelijkheid is dat deur is open/dicht en sluis nivelleert omhoog/omlaag
  A[] gate(0).open && ()main.direction ==0||main.direction==1)
+<<<<<<< HEAD
+ p58 A[](1>0)
+ 
+ Fainess:
+=======
 \item  p58 A[](1>0)
 	
 	
 
 \end{itemize} 
+>>>>>>> 089192fecacf699a72c053a046b5b7bdc401910f
  
+ 
+ Liveness:
+ P1 Na in de idle state te komen, zal de sluis uiteindelijk van richting veranderen. (E<> !Main.Direction)
+ p20 Voor invarenden geldt pomp uit, sleusdeur open en stoplicht op groen
+ p21 voor nivelleren geldt pomp is aan, sluisduren zijn dicht en het stoplicht is op rood
+ A[] (main.rn1 || main.rn2) -> forall (i:id_d) forall(j:id_s )gate(i).closed stoplight(j).rood
+ p22 Als een schip vertrekt dan zijn altijd, sleusdeur open, waterlevel gereed op niveau 5 of 0 en stoplicht direct op groen
+ p25 als een schip binnen is, en er zijn wachtende schepen, dan moet het stoplicht via oranje naar rood
+ p27 als een schip binnen vaart moet hij ook echt binnen zijn en niet binnenvaren, dit geldt ook voor  sluisdeuren en pompen dus deze zijn committed.
+ p29 Indien er meer dan twee schepen in de sluis zitten dan wordt het ship geplaats in de wachrij. 
+ A[]  Queue.list[N-1] == 2 -> (Sluiskolk.list[N]==1 ||Sluiskolk.list[N]==2)
+  p36 De sleusdeur voor boven en beneden kunnen beiden open en dicht. De sluisdeur wordt aangestuurd door de sluis. 
+  p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood wordt gezet en waterlevel gelijk is aan waterlaag
+  p56 Het kan voorkomen dat bij state pompaan het waterniveau gelijk is aan waterlaa
+ 
+ Securtity:
+ P4 Als de richting van een schip gelijk is aan N, dan is het waterlevel niet gelijk aan 1-5 of R
+ P5 De sluispomp is nooit in positie AAN, wanneer de sluisdeuren open zijn.
+ p17Voor invaren geldt altijd: waterlevel, pomp uit, sluisdeuren open en stoplicht op groen
+ A[] main.s5 -> main.waterlevel_laag && idle_pomp1 && gate(0).open && gate(1).open && (stoplight(0).green && stoplight(1).green || stoplight(2).green && stoplight(3).green )
+ p40 Voor alle paden geld dat als een sluis aan het voorbereiden is, dan zijn alle deuren dicht.
+ p46 Voor alle paden geldt als stoplicht op rood sluisdeuren dicht en schip vertrokken dan is de nivelleermachine uit
+ p51 Voor alle paden in een pomp geldt dat als water level lager is dan waterlaag pompwaterweg is altijd false
+ p52 Voor alle paden geldt dat als water level hoger is dan waterhoog dan is pompwater altjd false
+ p53 Het zal nooit gebeuren dat een pomp water toevoegt als deuren open zjn, geen schip in sluis of stoplicht op groen
+ 
+ Performance:
+ P3 Het is al binnen 100 ms mogelijk om te achterhalen aan welke kant de sluisdeuren  open moeten.
+ P6 In het geval dat er geen errors zijn (in de stoplichten, sluisdeuren) and ideal (wachtrij) scenario,
+ a)  dan is een cyclus gegarandeerd binnen 100 ms (including 100 ms) (undefined)
+ a') dan is een cyclus niet gegarandeerd binnen 100 ms
+ b)  dan is het onmogelijk om van beneden naar boven te varen, of andersom binnen 150 ms
+ b') dan is het mogelijk om van beneden naar boven te varen, of andersom binnen 150 ms
+ c)  het is onmogelijk om van richting te veranderen in minder dan 400 ms als de pomp al op niveau x is
+ c') het is mogelijk om van richting te veranderen in minder dan 400 ms als de pomp al op niveau x is
+ p12 Wanneer beide sluisdeuren in state gesloten zijn, dan is de pomp in zijn initiale state of 100 ms verwijderd van zijn initiele state
+ p49 EEn stoplich staat altijd op groen als de deuren open staan en de pomp niet bezig is.
+ A[] forall(i:id_s) stoplight.groen -> gate(0).open && gate(1).open && (main.pomp1_idle || main.pomp2_idle)
+ p50 In geen enkele staat van de sluis behalve tussen de lowergate en uppergate en uppergate en lowergate en de staten AtArrivalLow en AtEnteringHigh is de wachttijd langer dan 5 tijdseenheden
  
  
  \subsection{Operator: AG}
