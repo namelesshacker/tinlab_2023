@@ -1,6 +1,80 @@
 \documentclass{article}
 \usepackage{graphicx} 
 \usepackage[dutch]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%hieronder komen alle packages die je zelf wil plaatsen of veranderen       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{algorithmic}      %aangepaste algoritmen   
+\usepackage{listings}         %aangepaste listings (event. in kleuren)
+%\usepackage{}
+%\usepackage{}
+
+\usepackage[svgnames, table]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+%\usepackage[automark,headsepline,plainheadsepline, plainfootsepline,footsepline]{scrlayer-scrpage}
+ 
+
+%Tabelle
+\usepackage{multirow, makecell, cellspace, bigstrut}
+\usepackage{ragged2e}
+\usepackage{ltablex}
+\keepXColumns
+\renewcommand\tabularxcolumn[1]{ >{\arraybackslash}m{#1}}
+\usepackage{booktabs}
+\newcolumntype{L}[1]{>{\RaggedRight}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newlength{\lastcolwd}
+\settowidth{\lastcolwd}{Bermerkungen}
+\usepackage[inner=2.5cm,outer=2.5cm,top=2cm,bottom=1.0cm,includeheadfoot]{geometry}
+\newcommand\mymidrule{\specialrule{\lightrulewidth}{0pt}{\belowrulesep}}
+\newcommand\mybottomrule{\specialrule{\heavyrulewidth}{0pt}{\belowrulesep}}
+\newcommand\mytoprule{\specialrule{\heavyrulewidth}{0pt}{0pt}}
+
+\setlength\cellspacetoplimit{5pt}
+\setlength\cellspacebottomlimit{5pt}
+
+
+\usepackage{times}
+\usepackage[most]{tcolorbox}
+\usepackage{lipsum}
+
+\colorlet{helpful}{lime!70}
+\colorlet{harmful}{red!30}
+\colorlet{internal}{yellow!20}
+\colorlet{external}{cyan!30}
+\colorlet{S}{helpful!50!internal}
+\colorlet{W}{harmful!50!internal}
+\colorlet{O}{helpful!50!external}
+\colorlet{T}{harmful!50!external}
+
+\newcommand{\texta}{Helpful\par \tiny (to achieve the objective)}
+\newcommand{\textb}{Harmful\par \tiny (to achieve the objective)}
+\newcommand{\textcn}{\rotatebox[origin=c]{90}{\parbox[t]{3cm}{\centering Internal origin\\ \tiny (product\slash company attributes)\par}}}
+\newcommand{\textdn}{\rotatebox[origin=c]{90}{\parbox[b]{3cm}{\centering External origin\\ \tiny (environment\slash market attributes)\par}}}
+
+\newcommand{\texts}{strength 1\par strength 2}
+\newcommand{\textw}{weakness 1\par weakness 2}
+\newcommand{\texto}{opportunity 1\par opportunity 2}
+\newcommand{\textt}{threat 1\par threat 2}
+
+\tcbset{swotbox/.style={size=normal, boxrule=0pt,
+		colback=#1, watermark text=#1, width=.5\linewidth-5mm},
+	header/.style={size=small, boxrule=0pt, width=.5\linewidth-5mm, colback=#1, valign=center, halign=center},
+	firstcol/.style={header=#1, width=1cm}
+}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% einde van de preambule, begin document %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 	\sffamily
 	\begin{titlepage}
@@ -29,9 +103,7 @@
 	\newpage
 	\tableofcontents
 	
-	\newpage
-	\section{Inleiding}
-	In deze case study wordt %insert inleiding hier
+
 	
 	% The preliminary pages
 	%\include{0_Prelim/prelim}        
@@ -43,66 +115,7 @@
 	\include{1_Intro/intro}
 	\cleardoublepage
 	
-	\section{Requirements}
-	
-	\subsection{Requirements}
-	Directe requirements van opdrachtgever:\\
-	Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renova-tie van een groot aantal sluizen noodzakelijk is.  Een eerste verkenning heeft onsgeleerd dat het gecombineerd renoveren en automatiseren van het Nederlandsesluizenpark een aanzienlijke verbetering kan opleveren t.a.v.:\\
-	- veiligheid\\
-	- efficientie\\
-	- capaciteit\\
-	- onderhoudskosten\\
-	- duurzaamheid\\
-	In het kader van het onlangs afgesloten klimaatakkoord heeft de Nederlandseoverheid  daarom  besloten  over te gaan tot een ingrijpende renovatie van dediverse sluizen die ons land rijk is. Op het ministerie van infrastructuur en waterstaat is helaas onvoldoende kennis van ict en systemen aanwezig om eenen ander uit te voeren. Wij vragen u een model (of een onderling samenhangend aantal modellen)aan  te leveren, opdat ontwerpen van verschillende, volledig geautomatiseerde sluizen in de toekomst gerealiseerd kunnen worden.\\\\
-	Eigen inbreng van deze requirements:\\
-	Wij gaan er van uit dat het volgende van ons verwacht wordt:\\
-	Maak een model dat als template dient gebruikt te worden voor het automatiseren van verschillende soorten sluizen. Verder moeten overwegingen gemaakt worden die goed onderbouwd zijn.\\\\ Aangezien er van ons alleen een model verwacht wordt, zullen wij ons geheel focussen op de fundamentele werking van de sluis en hierbij zullen wij ons dus niet bezig  houden met fysieke eisen zoals veiligheidshekjes en borden. Onze focus ligt geheel op de werking van de sluis; elke state waar de sluis zich in mag bevinden en welke beslissingen de sluis moet maken op basis van bestaande protocols en benoemde eisen. \\\\
-	Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze bestaande uit de sluisdeuren, de sloplichten, de waterpomp en de boten.\\
-	
-	\subsection{Sluisdeuren}
-	De sluisdeuren.
-	
-	\subsection{Stoplichten}
-	De stoplichten
-	
-	\subsection{Waterpomp}
-	De waterpomp
-	
-	\subsection{Boten}
-	De meeste sluizen die zich in Nederland bevinden zijn schutsluizen; deze sluizen zijn bedoeld om boten, zowel vrachtschepen als pleziervaart afhangend van de locatie van de sluis, te verwerken. Om deze reden gaan wij deze dus ook verwerken in ons model. Mocht een sluis niet bedoeld zijn om boten te verwerken, dan zou dit model alsnog toegepast kunnen worden opp desbetreffende sluis.
-	Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke sluis.  Sinds wij een template maken, hoeven wij geen rekening te hounden met hoe de schepen in de queue komen. Het enige wat wij hoeven te doen, is de data verwerken.
-	
-	Overige einsen op basis van eigen inbreng:\\
-	
-	
-	
-	\subsection{Specificaties}
-	Vanuit deze requiremenst kunnen verdere specificaties opgesteld worden.
-	
-	Even ter duidelijkheid: een requirement beschrijft wat een programma moet doen, en een specificatie beschrijft hoe men van plan is om deze requirements te realiseren.//
-	Voorbeeld:// Requirement is dat de sluis meerdere boten moet kunnen verwerken; de specificatie zou hier zijn fdat de sluis minstens twee keer zo groot moet zijn dan de grootste boot die door de sluis kan.
-	
-	\subsection{Notities die verwerkt moeten worden}
-	
-	moet de intitial state altijd in een loop zitten in uppaal?
-	wat zijn urgent channels?
-	rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
-	
-	
-	gesprek wessel:
-	main controller slim dat direction een bool is. 
-	pomp is te slim, zoiu alleen maar aan of uit moeten gaan, of nog weg en in pompen maar meer niet. niets met waterlevel en aantal schepen.
-	schip: niet doen. als een schip zich aanmeld, dan gebeuren er dingen, maar gaat hij naar binnen? je weet niet wat dat schip gaat doen want menselijk gedrag. beter niet het schip uitgebreid maken, maar eerder de sluis. te veel aannames.
-	
-	wessel model: alleen als wachtrij vol zit, doet de sluis iets.
-	deur heeft een parameter zodat er meerdere deuren in de simulator neergezet kunnnen worden. ook bij wachtrij.
-	
-	stoplichen kunnen er wel in maar als je simpeler wilt, gaan die als eerste weg.
-	zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
-	rampen alleen voor persoonlijk verslag
-	
-	
-	
+
 
 	
 	% -------------------------------------
@@ -121,10 +134,10 @@
 	% CHAPTER 4: CONCLUSIONS
 	% -------------------------------------
 	
-	%\include{3_Details/details}
-	%\cleardoublepage
+	\include{3_Details/details}
+	\cleardoublepage
 	
-	%\appendix
+	\appendix
 	\begin{appendices}
 		\include{Appendix/Appendix}
 	\end{appendices}

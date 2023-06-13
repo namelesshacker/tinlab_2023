@@ -1,279 +1,184 @@
 \babel@toc {dutch}{}\relax 
-\contentsline {section}{\numberline {1}Inleiding}{6}{}%
-\contentsline {subsubsection}{\numberline {1.0.1}Algemeen}{7}{}%
-\contentsline {subsubsection}{\numberline {1.0.2}Recente ontwikkelingen op het gebied van sluisautomatisering}{7}{}%
-\contentsline {subsubsection}{\numberline {1.0.3}Wat is een sluis}{7}{}%
-\contentsline {subsubsection}{\numberline {1.0.4}Wat worrdt er omschreven en wat is er geleerd}{7}{}%
-\contentsline {subsubsection}{\numberline {1.0.5}Wat is uppaal}{7}{}%
-\contentsline {subsubsection}{\numberline {1.0.6}Probleemanalyse}{7}{}%
-\contentsline {subsubsection}{\numberline {1.0.7}Waarom nu}{7}{}%
-\contentsline {subsubsection}{\numberline {1.0.8}Gewenst resultaat }{8}{}%
-\contentsline {subsubsection}{\numberline {1.0.9}Scope}{8}{}%
-\contentsline {subsubsection}{\numberline {1.0.10}Onderzoeksvragen }{8}{}%
-\contentsline {section}{\numberline {2}Design goals}{8}{}%
-\contentsline {subsubsection}{\numberline {2.0.1}Welke aanpak is gekozen en welke studies liggen hieraan ten grondslag?}{9}{}%
-\contentsline {section}{\numberline {3}Leeswijzer}{9}{}%
-\contentsline {section}{\numberline {4}Requirements}{10}{}%
-\contentsline {subsection}{\numberline {4.1}Requirements}{10}{}%
-\contentsline {subsection}{\numberline {4.2}Sluisdeuren}{10}{}%
-\contentsline {subsection}{\numberline {4.3}Stoplichten}{10}{}%
-\contentsline {subsection}{\numberline {4.4}Waterpomp}{11}{}%
-\contentsline {subsection}{\numberline {4.5}Boten}{11}{}%
-\contentsline {subsection}{\numberline {4.6}Specificaties}{11}{}%
-\contentsline {subsection}{\numberline {4.7}Notities die verwerkt moeten worden}{11}{}%
-\contentsline {subsubsection}{\numberline {4.7.1}Literatuuronderzoek}{12}{}%
-\contentsline {section}{\numberline {5}Preliminaries}{13}{}%
-\contentsline {subsection}{\numberline {5.1}Times transition systems and timed traces}{13}{}%
-\contentsline {subsection}{\numberline {5.2}Wat is dit}{13}{}%
-\contentsline {subsection}{\numberline {5.3}Welke de definities worden gebruikt}{13}{}%
-\contentsline {subsection}{\numberline {5.4}Timed automata with data variables}{13}{}%
-\contentsline {subsection}{\numberline {5.5}Networks of automata}{13}{}%
-\contentsline {subsection}{\numberline {5.6}A logic for safety and bounded response time properties}{13}{}%
-\contentsline {subsection}{\numberline {5.7}Wat was onze logica bij aanvang van het project}{13}{}%
-\contentsline {subsection}{\numberline {5.8}syntax and semantics}{13}{}%
-\contentsline {subsection}{\numberline {5.9}Welke de definities worden gebruikt}{13}{}%
-\contentsline {subsection}{\numberline {5.10}Verifying bounded response tume properties by reachability analysis}{13}{}%
-\contentsline {subsection}{\numberline {5.11}Beperking uppaal ten overstaan van ons model}{13}{}%
-\contentsline {subsection}{\numberline {5.12}MODE CONFUSION }{13}{}%
-\contentsline {subsection}{\numberline {5.13}Wat is automatiseringsparadox}{13}{}%
-\contentsline {subsection}{\numberline {5.14}Wat is een model}{14}{}%
-\contentsline {subsubsection}{\numberline {5.14.1}Conceptueel model}{14}{}%
-\contentsline {subsubsection}{\numberline {5.14.2}in vivo model}{14}{}%
-\contentsline {subsubsection}{\numberline {5.14.3}in vitro model}{14}{}%
-\contentsline {subsubsection}{\numberline {5.14.4}In silicio model}{14}{}%
-\contentsline {subsubsection}{\numberline {5.14.5}in simulacra model}{14}{}%
-\contentsline {subsection}{\numberline {5.15}World and machine samenvatting}{14}{}%
-\contentsline {subsection}{\numberline {5.16}SIX Variable model}{16}{}%
-\contentsline {subsubsection}{\numberline {5.16.1}Conceptueel model}{18}{}%
-\contentsline {subsection}{\numberline {5.17}Requirementsengineering}{18}{}%
-\contentsline {section}{\numberline {6}Onderzoeksresultaten naar rampen}{21}{}%
-\contentsline {subsubsection}{\numberline {6.0.1}bijlmerramp}{21}{}%
-\contentsline {subsubsection}{\numberline {6.0.2}vuurwerkramp in enschede }{22}{}%
-\contentsline {subsubsection}{\numberline {6.0.3}ramp turkisch airlines}{22}{}%
-\contentsline {subsubsection}{\numberline {6.0.4}tjernobyl}{22}{}%
-\contentsline {subsubsection}{\numberline {6.0.5}therac-25}{22}{}%
-\contentsline {section}{\numberline {7}tesla crash report}{23}{}%
-\contentsline {subsubsection}{\numberline {7.0.1}stint ongeluk}{23}{}%
-\contentsline {subsubsection}{\numberline {7.0.2}slmramp}{23}{}%
-\contentsline {subsubsection}{\numberline {7.0.3}schipholbrand}{24}{}%
-\contentsline {subsubsection}{\numberline {7.0.4}Ramp schietpartij militair ossendrecht }{24}{}%
-\contentsline {subsubsection}{\numberline {7.0.5}molukse treinkaping }{24}{}%
-\contentsline {subsubsection}{\numberline {7.0.6}explosie tanjin china }{25}{}%
-\contentsline {subsubsection}{\numberline {7.0.7}explosie in libabon, beirut }{25}{}%
-\contentsline {subsubsection}{\numberline {7.0.8}ethiopian airlines}{25}{}%
-\contentsline {subsection}{\numberline {7.1}ethiek}{26}{}%
-\contentsline {section}{\numberline {8}ecourt in nederlandse rechtspraak}{26}{}%
-\contentsline {subsubsection}{\numberline {8.0.1} cyber aanval op Oekraïene }{26}{}%
-\contentsline {subsubsection}{\numberline {8.0.2}Mali}{27}{}%
-\contentsline {section}{\numberline {9}Ondeerzoeksresultaten naar sluisbeveiliging}{28}{}%
-\contentsline {section}{\numberline {10}Modelontwikkeling en keuzen in Uppaal}{30}{}%
-\contentsline {section}{\numberline {11}Requirements voor Het sluismodel}{30}{}%
-\contentsline {subsection}{\numberline {11.1}Requirements}{30}{}%
-\contentsline {section}{\numberline {12}Uppaal kripke structuren}{31}{}%
-\contentsline {subsubsection}{\numberline {12.0.1}templates}{31}{}%
-\contentsline {paragraph}{Schip}{31}{}%
-\contentsline {paragraph}{Sluis}{31}{}%
-\contentsline {paragraph}{Aanvoer}{31}{}%
-\contentsline {paragraph}{Afvoer}{31}{}%
-\contentsline {paragraph}{Pomp}{31}{}%
-\contentsline {paragraph}{Pompbediening}{31}{}%
-\contentsline {paragraph}{Stoplicht}{31}{}%
-\contentsline {paragraph}{Deur}{31}{}%
-\contentsline {subsection}{\numberline {12.1}Veiligheidsoverwegingen}{32}{}%
-\contentsline {subsubsection}{\numberline {12.1.1}Functionele en niet-functionele eisen}{32}{}%
-\contentsline {subsubsection}{\numberline {12.1.2}specificaties}{32}{}%
-\contentsline {subsubsection}{\numberline {12.1.3}Het vier variabelen model}{32}{}%
-\contentsline {subsubsection}{\numberline {12.1.4}Monitored variabelen}{32}{}%
-\contentsline {subsubsection}{\numberline {12.1.5}Controlled variabelen}{32}{}%
-\contentsline {subsubsection}{\numberline {12.1.6}Input variabelen}{33}{}%
-\contentsline {subsubsection}{\numberline {12.1.7}Output variabelen}{33}{}%
-\contentsline {subsubsection}{\numberline {12.1.8}Aankomst, uitvoering, vrijgave}{33}{}%
-\contentsline {subsubsection}{\numberline {12.1.9}ontwerp}{33}{}%
-\contentsline {subsubsection}{\numberline {12.1.10}Onderdelen}{33}{}%
-\contentsline {subsubsection}{\numberline {12.1.11}Werking}{33}{}%
-\contentsline {paragraph}{extra cases}{34}{}%
-\contentsline {paragraph}{Aandachtspunten}{34}{}%
-\contentsline {subsection}{\numberline {12.2}Afbakening}{34}{}%
-\contentsline {paragraph}{Vooraanmelding}{35}{}%
-\contentsline {paragraph}{informatie inwinnen}{35}{}%
-\contentsline {paragraph}{operationele melding}{35}{}%
-\contentsline {paragraph}{aankomst volgorde}{36}{}%
-\contentsline {paragraph}{aanwijzen wachtplaats}{36}{}%
-\contentsline {paragraph}{verstrekken informatie}{36}{}%
-\contentsline {paragraph}{aanwijzen opstelplaats}{36}{}%
-\contentsline {paragraph}{opstellen schutproces}{36}{}%
-\contentsline {paragraph}{verstrekken informatie}{36}{}%
-\contentsline {paragraph}{invaarvolgorde en ligplaats in sluis}{36}{}%
-\contentsline {paragraph}{gereedmaken voor invaren}{36}{}%
-\contentsline {paragraph}{openen invaardeuren}{36}{}%
-\contentsline {paragraph}{invaren toegestaan}{36}{}%
-\contentsline {paragraph}{aanwijzingen voor invaren}{36}{}%
-\contentsline {paragraph}{aanwijzingen tijdens afmeren}{36}{}%
-\contentsline {paragraph}{invaren verboden}{36}{}%
-\contentsline {paragraph}{sluiten invaardeuren}{36}{}%
-\contentsline {paragraph}{start nivelleren}{36}{}%
-\contentsline {paragraph}{aanzwijzingen voor uitvaren}{36}{}%
-\contentsline {paragraph}{openen uitvaardewuren}{36}{}%
-\contentsline {paragraph}{uitvaren toegestaan}{36}{}%
-\contentsline {paragraph}{brainstorm 22-5-2022}{36}{}%
-\contentsline {subparagraph}{invaardeuren en uitvaardeuren}{36}{}%
-\contentsline {subparagraph}{invaarstoplicht en uitvaarstoplicht}{37}{}%
-\contentsline {subparagraph}{invaarwachtrij en uitvaarwachtrij}{37}{}%
-\contentsline {paragraph}{The need for formal methodes}{37}{}%
-\contentsline {paragraph}{hardware and software verification}{37}{}%
-\contentsline {paragraph}{The process of model checking}{37}{}%
-\contentsline {paragraph}{Temporal Logic and model checking}{37}{}%
-\contentsline {paragraph}{Symbolic Algorothism}{37}{}%
-\contentsline {paragraph}{Partial order reduction}{37}{}%
-\contentsline {paragraph}{Other approaches to the sate explosion}{37}{}%
-\contentsline {paragraph}{Modeling Concurrent systems}{37}{}%
-\contentsline {paragraph}{Concurrent systems}{37}{}%
-\contentsline {paragraph}{Example of program Translation}{37}{}%
-\contentsline {paragraph}{The computation Tree Logic}{37}{}%
-\contentsline {paragraph}{CTL and LTL}{37}{}%
-\contentsline {paragraph}{Fairness}{37}{}%
-\contentsline {paragraph}{CTL Model checking}{37}{}%
-\contentsline {paragraph}{LTL Model checking by Tablea}{37}{}%
-\contentsline {paragraph}{CTL model checking}{37}{}%
-\contentsline {paragraph}{Representing boolean formulas}{38}{}%
-\contentsline {paragraph}{Representing kripke structures}{38}{}%
-\contentsline {paragraph}{Fixpoint representations}{38}{}%
-\contentsline {paragraph}{Symbolic model checking for CTL}{38}{}%
-\contentsline {paragraph}{Fairness in Symbolic model checking}{38}{}%
-\contentsline {paragraph}{Counterexamples and witnesses}{38}{}%
-\contentsline {paragraph}{An ALU example}{38}{}%
-\contentsline {paragraph}{Relational Product Computations}{38}{}%
-\contentsline {paragraph}{Symbolic LTL Model Checknig}{38}{}%
-\contentsline {paragraph}{The propositional mu-calculus}{38}{}%
-\contentsline {paragraph}{Evaluating Fxpoint Formulas}{38}{}%
-\contentsline {paragraph}{Representing mu-calculus formulas using OBDDs}{38}{}%
-\contentsline {paragraph}{Translating CTL into the mu-calculus}{38}{}%
-\contentsline {paragraph}{Comoplexity considerations}{38}{}%
-\contentsline {paragraph}{The smv model checker}{38}{}%
-\contentsline {paragraph}{A realistic example}{38}{}%
-\contentsline {paragraph}{Automata on finine and infinite words}{38}{}%
-\contentsline {paragraph}{model checking using automata}{38}{}%
-\contentsline {paragraph}{checking emptiness}{38}{}%
-\contentsline {paragraph}{Translating LTL into automata}{38}{}%
-\contentsline {paragraph}{On-the-fly model checking}{38}{}%
-\contentsline {paragraph}{Checking language containment symbolically}{39}{}%
-\contentsline {paragraph}{Concurrency in Aynchronous systems}{39}{}%
-\contentsline {paragraph}{Independendce and invisibility}{39}{}%
-\contentsline {paragraph}{Partial order reduction for LTL}{39}{}%
-\contentsline {paragraph}{An example}{39}{}%
-\contentsline {paragraph}{Calculating Ample sets}{39}{}%
-\contentsline {paragraph}{Correctness of the algorithm}{39}{}%
-\contentsline {paragraph}{Partial order reduction in SPIN}{39}{}%
-\contentsline {paragraph}{An example}{39}{}%
-\contentsline {paragraph}{Calculating Ample Sets}{39}{}%
-\contentsline {paragraph}{Correctness of the algorithm}{39}{}%
-\contentsline {paragraph}{Partial order reduction in SPIN}{39}{}%
-\contentsline {paragraph}{Equivalence of Preorder Algorithms}{39}{}%
-\contentsline {paragraph}{Tableau construction}{39}{}%
-\contentsline {paragraph}{Composition of structures}{39}{}%
-\contentsline {paragraph}{justifying assume guarantee proofs}{39}{}%
-\contentsline {paragraph}{Verifying a cpu controller}{39}{}%
-\contentsline {paragraph}{Cone of influence reduction}{39}{}%
-\contentsline {paragraph}{Data abstraction}{39}{}%
-\contentsline {paragraph}{Groups and symetru}{39}{}%
-\contentsline {paragraph}{Quiotient models}{39}{}%
-\contentsline {paragraph}{Model checking with symmetry}{40}{}%
-\contentsline {paragraph}{Complexity issues}{40}{}%
-\contentsline {paragraph}{Emperical results}{40}{}%
-\contentsline {paragraph}{Tempaal logic for ininite families}{40}{}%
-\contentsline {paragraph}{Invariants}{40}{}%
-\contentsline {paragraph}{Futurebus+Example Reconsidered}{40}{}%
-\contentsline {paragraph}{Graph and network grammars}{40}{}%
-\contentsline {paragraph}{Undecidability result for a familty of token rings}{40}{}%
-\contentsline {paragraph}{Real-time systems and rate-monitonic scheduling}{40}{}%
-\contentsline {paragraph}{Model checking real-time systems}{40}{}%
-\contentsline {paragraph}{RTCTL Model checking}{40}{}%
-\contentsline {paragraph}{Quantitative Temporal Analysys: Minimum/Maximum Delay}{40}{}%
-\contentsline {paragraph}{Example: An aircraft controller}{40}{}%
-\contentsline {paragraph}{Timed Automata}{40}{}%
-\contentsline {paragraph}{Parallele compositie}{40}{}%
-\contentsline {paragraph}{Synchronisatgie}{40}{}%
-\contentsline {paragraph}{Modelling with timed automata}{40}{}%
-\contentsline {paragraph}{Clock regions}{40}{}%
-\contentsline {paragraph}{Clock zones}{40}{}%
-\contentsline {paragraph}{Difference bound matrices}{40}{}%
-\contentsline {paragraph}{Complexity considerations}{41}{}%
-\contentsline {subsection}{\numberline {12.3}Formele logica}{41}{}%
-\contentsline {section}{\numberline {13}Conclusies}{42}{}%
-\contentsline {section}{\numberline {14}Eindvverantwoording}{42}{}%
-\contentsline {subsection}{\numberline {14.1}Future work}{42}{}%
-\contentsline {subsubsection}{\numberline {14.1.1}Hoogte waterniveau}{42}{}%
-\contentsline {subsubsection}{\numberline {14.1.2}type deuren naar waterniveau}{42}{}%
-\contentsline {subsubsection}{\numberline {14.1.3}voorrang uitvarend op invarend}{42}{}%
-\contentsline {subsubsection}{\numberline {14.1.4}stoplicht invarend en stoplicht uitvarend}{43}{}%
-\contentsline {subsubsection}{\numberline {14.1.5}Volgorde}{43}{}%
-\contentsline {section}{\numberline {15}Research case: De digitale aanval op de Oekrainese krachtcentrale}{44}{}%
-\contentsline {subsection}{\numberline {15.1}Literaire analyse}{44}{}%
-\contentsline {subsubsection}{\numberline {15.1.1}Motief}{44}{}%
-\contentsline {subsubsection}{\numberline {15.1.2}Situatie Oekraiene}{45}{}%
-\contentsline {subsubsection}{\numberline {15.1.3}Situatie algemeen}{45}{}%
-\contentsline {subsubsection}{\numberline {15.1.4}Factoren}{45}{}%
-\contentsline {subsubsection}{\numberline {15.1.5}Oorzaak}{45}{}%
-\contentsline {subsubsection}{\numberline {15.1.6}Gebruikte materialen}{45}{}%
-\contentsline {subsubsection}{\numberline {15.1.7}Uitvoering van de aanval}{45}{}%
-\contentsline {subsubsection}{\numberline {15.1.8}Oplossingen}{45}{}%
-\contentsline {subsubsection}{\numberline {15.1.9}Aanbevelingen}{45}{}%
-\contentsline {subsection}{\numberline {15.2}Resultaten}{45}{}%
-\contentsline {subsubsection}{\numberline {15.2.1}De aanval}{45}{}%
-\contentsline {subsubsection}{\numberline {15.2.2}spearfishing}{46}{}%
-\contentsline {subsubsection}{\numberline {15.2.3}blackenergy}{46}{}%
-\contentsline {subsubsection}{\numberline {15.2.4}remote access capabilities}{46}{}%
-\contentsline {subsubsection}{\numberline {15.2.5}serial-to-ethernet communication devices}{46}{}%
-\contentsline {subsubsection}{\numberline {15.2.6}telephony denial of service attacks}{46}{}%
-\contentsline {subsection}{\numberline {15.3}oplossingen}{46}{}%
-\contentsline {subsection}{\numberline {15.4}Discussie}{47}{}%
-\contentsline {subsection}{\numberline {15.5}Verder lezen}{47}{}%
-\contentsline {section}{\numberline {16}Bijlage: Testcaes en resultaten}{49}{}%
-\contentsline {subsection}{\numberline {16.1}Wat wordt getest en hoe}{49}{}%
-\contentsline {subsection}{\numberline {16.2}Requirement specification}{49}{}%
-\contentsline {subsection}{\numberline {16.3}Operator: AG}{51}{}%
-\contentsline {subsection}{\numberline {16.4}Operator: EG}{51}{}%
-\contentsline {subsection}{\numberline {16.5}Operator: AF}{51}{}%
-\contentsline {subsection}{\numberline {16.6}Operator: EF}{52}{}%
-\contentsline {subsection}{\numberline {16.7}Operator: AX}{52}{}%
-\contentsline {subsection}{\numberline {16.8}Operator: EX}{52}{}%
-\contentsline {subsection}{\numberline {16.9}Operator: p U q}{52}{}%
-\contentsline {subsection}{\numberline {16.10}Operator: p R q}{52}{}%
-\contentsline {subsection}{\numberline {16.11}De computation tree}{52}{}%
-\contentsline {subsection}{\numberline {16.12}Operator: AG}{52}{}%
-\contentsline {subsection}{\numberline {16.13}Operator: EG}{52}{}%
-\contentsline {subsection}{\numberline {16.14}Operator: EG}{52}{}%
-\contentsline {subsection}{\numberline {16.15}Operator: AF}{52}{}%
-\contentsline {subsection}{\numberline {16.16}Operator: EF}{52}{}%
-\contentsline {subsection}{\numberline {16.17}Operator: AX}{53}{}%
-\contentsline {subsection}{\numberline {16.18}Operator: EX}{53}{}%
-\contentsline {subsection}{\numberline {16.19}Operator: p U q}{53}{}%
-\contentsline {subsection}{\numberline {16.20}Operator: p R q}{53}{}%
-\contentsline {subsection}{\numberline {16.21}Operator: EX}{53}{}%
-\contentsline {subsection}{\numberline {16.22}Operator: p U q}{53}{}%
-\contentsline {subsection}{\numberline {16.23}Operator: p R q}{53}{}%
-\contentsline {subsection}{\numberline {16.24}Operator: AF}{53}{}%
-\contentsline {subsection}{\numberline {16.25}Operator: EF}{53}{}%
-\contentsline {subsection}{\numberline {16.26}Operator: AX}{53}{}%
-\contentsline {subsection}{\numberline {16.27}Operator: EX}{53}{}%
-\contentsline {subsection}{\numberline {16.28}Operator: p U q}{53}{}%
-\contentsline {subsection}{\numberline {16.29}Operator: p R q}{54}{}%
-\contentsline {subsection}{\numberline {16.30}Fairness}{54}{}%
-\contentsline {subsection}{\numberline {16.31}Liveness}{54}{}%
-\contentsline {paragraph}{Verification results}{54}{}%
-\contentsline {subparagraph}{verklareing}{54}{}%
-\contentsline {subsection}{\numberline {16.32}Fairness}{55}{}%
-\contentsline {subsection}{\numberline {16.33}Liveness}{55}{}%
-\contentsline {subsection}{\numberline {16.34}safety}{55}{}%
-\contentsline {subsection}{\numberline {16.35}zeno vrij}{55}{}%
-\contentsline {subsection}{\numberline {16.36}deadlocks}{55}{}%
-\contentsline {section}{\numberline {17}\\ Appendix B: Model eerste deelname aan cursus 2020}{56}{}%
-\contentsline {section}{\numberline {18}\\ Appendix B: Model herkansing tweede deelname aan cursus 2020}{57}{}%
-\contentsline {section}{\numberline {19}Deelonderzoek naar veiligheidsrisico's en eisen voor sluizen}{62}{}%
-\contentsline {section}{\numberline {20}Deelonderzoek wet en regelgeving voor sluizen}{62}{}%
-\contentsline {subsubsection}{\numberline {20.0.1}onderdeleel van de test}{63}{}%
-\contentsline {section}{\numberline {21}Modelleren}{63}{}%
-\contentsline {section}{\numberline {22}Ethiek}{63}{}%
-\contentsline {section}{\numberline {23}Conclusie}{63}{}%
-\contentsline {section}{\numberline {24}Inleiding}{63}{}%
-\contentsline {section}{\numberline {25}Resultaat}{63}{}%
+\contentsline {section}{\numberline {1}Inleiding}{5}{}%
+\contentsline {subsubsection}{\numberline {1.0.1}Algemeen}{5}{}%
+\contentsline {subsubsection}{\numberline {1.0.2}Recente ontwikkelingen op het gebied van sluisautomatisering}{5}{}%
+\contentsline {subsubsection}{\numberline {1.0.3}Wat is een sluis}{5}{}%
+\contentsline {subsubsection}{\numberline {1.0.4}Wat worrdt er omschreven en wat is er geleerd}{5}{}%
+\contentsline {subsubsection}{\numberline {1.0.5}Wat is uppaal}{5}{}%
+\contentsline {subsubsection}{\numberline {1.0.6}Probleemanalyse}{6}{}%
+\contentsline {subsubsection}{\numberline {1.0.7}Waarom nu}{6}{}%
+\contentsline {subsubsection}{\numberline {1.0.8}Gewenst resultaat }{6}{}%
+\contentsline {subsubsection}{\numberline {1.0.9}Scope}{6}{}%
+\contentsline {subsubsection}{\numberline {1.0.10}Onderzoeksvragen }{6}{}%
+\contentsline {subsubsection}{\numberline {1.0.11}Design goals}{7}{}%
+\contentsline {subsubsection}{\numberline {1.0.12}Welke aanpak is gekozen en welke studies liggen hieraan ten grondslag?}{7}{}%
+\contentsline {subsubsection}{\numberline {1.0.13}Leeswijzer}{7}{}%
+\contentsline {section}{\numberline {2}Methodologie}{8}{}%
+\contentsline {subsubsection}{\numberline {2.0.1}Literatuuronderzoek}{8}{}%
+\contentsline {section}{\numberline {3}Theoretisch kader}{8}{}%
+\contentsline {subsection}{\numberline {3.1}MODE CONFUSION }{9}{}%
+\contentsline {subsection}{\numberline {3.2}Wat is automatiseringsparadox}{9}{}%
+\contentsline {subsection}{\numberline {3.3}Wat is een model}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}in vivo model}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}in vitro model}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}In silicio model}{9}{}%
+\contentsline {subsubsection}{\numberline {3.3.4}in simulacra model}{9}{}%
+\contentsline {subsection}{\numberline {3.4}World and machine samenvatting}{9}{}%
+\contentsline {subsection}{\numberline {3.5}SIX Variable model}{11}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Conceptueel model}{12}{}%
+\contentsline {subsection}{\numberline {3.6}Requirementsengineering}{12}{}%
+\contentsline {section}{\numberline {4}Onderzoeksresultaten naar rampen}{14}{}%
+\contentsline {subsection}{\numberline {4.1}Inleiding}{14}{}%
+\contentsline {subsection}{\numberline {4.2}Systeemrampen}{14}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}bijlmerramp}{14}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}vuurwerkramp in enschede }{15}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}ramp turkisch airlines vlucht 1951}{15}{}%
+\contentsline {subsubsection}{\numberline {4.2.4}tjernobyl}{15}{}%
+\contentsline {subsubsection}{\numberline {4.2.5}therac-25}{17}{}%
+\contentsline {subsubsection}{\numberline {4.2.6}tesla crash report}{19}{}%
+\contentsline {subsubsection}{\numberline {4.2.7}stint ongeluk}{20}{}%
+\contentsline {subsubsection}{\numberline {4.2.8}slmramp}{21}{}%
+\contentsline {subsubsection}{\numberline {4.2.9}schipholbrand}{22}{}%
+\contentsline {subsubsection}{\numberline {4.2.10}Ramp schietpartij militair ossendrecht }{23}{}%
+\contentsline {subsubsection}{\numberline {4.2.11}molukse treinkaping }{24}{}%
+\contentsline {subsubsection}{\numberline {4.2.12}explosie tanjin china }{24}{}%
+\contentsline {subsubsection}{\numberline {4.2.13}explosie in libabon, beirut }{27}{}%
+\contentsline {subsubsection}{\numberline {4.2.14}ethiopian airlines}{28}{}%
+\contentsline {subsubsection}{\numberline {4.2.15}ethiek}{31}{}%
+\contentsline {subsubsection}{\numberline {4.2.16}ecourt in nederlandse rechtspraak}{32}{}%
+\contentsline {subsubsection}{\numberline {4.2.17} cyber aanval op Oekraïene }{32}{}%
+\contentsline {subsubsection}{\numberline {4.2.18}Mali}{33}{}%
+\contentsline {subsection}{\numberline {4.3}Analyse}{34}{}%
+\contentsline {subsection}{\numberline {4.4}Conclusie}{34}{}%
+\contentsline {section}{\numberline {5}Deelonderzoeken}{35}{}%
+\contentsline {subsubsection}{\numberline {5.0.1}Research case Oekraiene}{35}{}%
+\contentsline {subsubsection}{\numberline {5.0.2}Deelonerzoek naar veiligheidsrisico's voor sluizen}{35}{}%
+\contentsline {subsubsection}{\numberline {5.0.3}Wet en regelgeving voor sluizen}{35}{}%
+\contentsline {subsubsection}{\numberline {5.0.4}Ondeerzoeksresultaten naar sluisbeveiliging}{35}{}%
+\contentsline {section}{\numberline {6}Modelontwikkeling en keuzen in Uppaal}{37}{}%
+\contentsline {section}{\numberline {7}Requirements}{37}{}%
+\contentsline {subsection}{\numberline {7.1}Inleiding}{37}{}%
+\contentsline {subsection}{\numberline {7.2}Requirements}{37}{}%
+\contentsline {subsection}{\numberline {7.3}Sluisdeuren en stoplichten}{38}{}%
+\contentsline {subsection}{\numberline {7.4}Waterpomp}{38}{}%
+\contentsline {subsection}{\numberline {7.5}Boten}{38}{}%
+\contentsline {subsection}{\numberline {7.6}Specificaties}{38}{}%
+\contentsline {subsection}{\numberline {7.7}Requirements voor Het sluismodel}{38}{}%
+\contentsline {subsection}{\numberline {7.8}Requirements}{38}{}%
+\contentsline {subsubsection}{\numberline {7.8.1}Uppaal kripke structuren}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.2}Functionele en niet-functionele eisen}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.3}specificaties}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.4}Het vier variabelen model}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.5}Monitored variabelen}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.6}Controlled variabelen}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.7}Input variabelen}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.8}Output variabelen}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.9}Aankomst, uitvoering, vrijgave}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.10}ontwerp}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.11}Onderdelen}{39}{}%
+\contentsline {subsubsection}{\numberline {7.8.12}Werking}{39}{}%
+\contentsline {paragraph}{extra cases}{40}{}%
+\contentsline {paragraph}{Aandachtspunten}{40}{}%
+\contentsline {subsection}{\numberline {7.9}Afbakening}{40}{}%
+\contentsline {subsection}{\numberline {7.10}Notities die verwerkt moeten worden}{42}{}%
+\contentsline {paragraph}{Liveness}{42}{}%
+\contentsline {paragraph}{Fairness}{42}{}%
+\contentsline {paragraph}{Security}{42}{}%
+\contentsline {paragraph}{Performance}{42}{}%
+\contentsline {paragraph}{brainstorm 22-5-2022}{42}{}%
+\contentsline {subparagraph}{invaardeuren en uitvaardeuren}{42}{}%
+\contentsline {subparagraph}{invaarstoplicht en uitvaarstoplicht}{42}{}%
+\contentsline {subparagraph}{invaarwachtrij en uitvaarwachtrij}{42}{}%
+\contentsline {paragraph}{Parallele compositie}{42}{}%
+\contentsline {paragraph}{Synchronisatgie}{42}{}%
+\contentsline {paragraph}{Modelling with timed automata}{43}{}%
+\contentsline {paragraph}{Clock regions}{43}{}%
+\contentsline {paragraph}{Clock zones}{43}{}%
+\contentsline {paragraph}{Difference bound matrices}{43}{}%
+\contentsline {paragraph}{Complexity considerations}{43}{}%
+\contentsline {subsubsection}{\numberline {7.10.1}templates}{43}{}%
+\contentsline {paragraph}{Schip}{43}{}%
+\contentsline {paragraph}{Sluis}{43}{}%
+\contentsline {paragraph}{Aanvoer}{43}{}%
+\contentsline {paragraph}{Afvoer}{43}{}%
+\contentsline {paragraph}{Pomp}{43}{}%
+\contentsline {paragraph}{Pompbediening}{43}{}%
+\contentsline {paragraph}{Stoplicht}{43}{}%
+\contentsline {paragraph}{Deur}{43}{}%
+\contentsline {subsection}{\numberline {7.11}Formele logica}{43}{}%
+\contentsline {section}{\numberline {8}Conclusies}{44}{}%
+\contentsline {section}{\numberline {9}Eindverantwoording}{45}{}%
+\contentsline {section}{\numberline {10}Discussie}{46}{}%
+\contentsline {subsection}{\numberline {10.1}Future work}{46}{}%
+\contentsline {subsubsection}{\numberline {10.1.1}Hoogte waterniveau}{46}{}%
+\contentsline {subsubsection}{\numberline {10.1.2}type deuren naar waterniveau}{46}{}%
+\contentsline {subsubsection}{\numberline {10.1.3}voorrang uitvarend op invarend}{46}{}%
+\contentsline {subsubsection}{\numberline {10.1.4}stoplicht invarend en stoplicht uitvarend}{46}{}%
+\contentsline {subsubsection}{\numberline {10.1.5}Volgorde}{46}{}%
+\contentsline {section}{\numberline {A}Research case: De digitale aanval op de Oekrainese krachtcentrale}{48}{}%
+\contentsline {subsection}{\numberline {A.1}Literaire analyse}{48}{}%
+\contentsline {subsubsection}{\numberline {A.1.1}Motief}{48}{}%
+\contentsline {subsubsection}{\numberline {A.1.2}Situatie Oekraiene}{48}{}%
+\contentsline {subsubsection}{\numberline {A.1.3}Situatie algemeen}{48}{}%
+\contentsline {subsubsection}{\numberline {A.1.4}Factoren}{48}{}%
+\contentsline {subsubsection}{\numberline {A.1.5}Oorzaak}{49}{}%
+\contentsline {subsubsection}{\numberline {A.1.6}Gebruikte materialen}{49}{}%
+\contentsline {subsubsection}{\numberline {A.1.7}Uitvoering van de aanval}{49}{}%
+\contentsline {subsubsection}{\numberline {A.1.8}Oplossingen}{49}{}%
+\contentsline {subsubsection}{\numberline {A.1.9}Aanbevelingen}{49}{}%
+\contentsline {subsection}{\numberline {A.2}Resultaten}{49}{}%
+\contentsline {subsubsection}{\numberline {A.2.1}De aanval}{49}{}%
+\contentsline {subsubsection}{\numberline {A.2.2}spearfishing}{50}{}%
+\contentsline {subsubsection}{\numberline {A.2.3}blackenergy}{50}{}%
+\contentsline {subsubsection}{\numberline {A.2.4}remote access capabilities}{50}{}%
+\contentsline {subsubsection}{\numberline {A.2.5}serial-to-ethernet communication devices}{50}{}%
+\contentsline {subsubsection}{\numberline {A.2.6}telephony denial of service attacks}{50}{}%
+\contentsline {subsection}{\numberline {A.3}oplossingen}{50}{}%
+\contentsline {subsection}{\numberline {A.4}Discussie}{50}{}%
+\contentsline {subsection}{\numberline {A.5}Verder lezen}{50}{}%
+\contentsline {section}{\numberline {B}Bijlage: Testcases en resultaten}{53}{}%
+\contentsline {subsection}{\numberline {B.1}Wat wordt getest en hoe}{53}{}%
+\contentsline {subsection}{\numberline {B.2}Requirement specification in queries}{53}{}%
+\contentsline {subsection}{\numberline {B.3}Operator: AG}{57}{}%
+\contentsline {subsection}{\numberline {B.4}Operator: EG}{57}{}%
+\contentsline {subsection}{\numberline {B.5}Operator: AF}{57}{}%
+\contentsline {subsection}{\numberline {B.6}Operator: EF}{57}{}%
+\contentsline {subsection}{\numberline {B.7}Operator: AX}{57}{}%
+\contentsline {subsection}{\numberline {B.8}Operator: EX}{57}{}%
+\contentsline {subsection}{\numberline {B.9}Operator: p U q}{57}{}%
+\contentsline {subsection}{\numberline {B.10}Operator: p R q}{57}{}%
+\contentsline {subsection}{\numberline {B.11}De computation tree}{57}{}%
+\contentsline {subsection}{\numberline {B.12}Operator: AG}{57}{}%
+\contentsline {subsection}{\numberline {B.13}Operator: EG}{57}{}%
+\contentsline {subsection}{\numberline {B.14}Operator: EG}{57}{}%
+\contentsline {subsection}{\numberline {B.15}Operator: AF}{58}{}%
+\contentsline {subsection}{\numberline {B.16}Operator: EF}{58}{}%
+\contentsline {subsection}{\numberline {B.17}Operator: AX}{58}{}%
+\contentsline {subsection}{\numberline {B.18}Operator: EX}{58}{}%
+\contentsline {subsection}{\numberline {B.19}Operator: p U q}{58}{}%
+\contentsline {subsection}{\numberline {B.20}Operator: p R q}{58}{}%
+\contentsline {subsection}{\numberline {B.21}Operator: EX}{58}{}%
+\contentsline {subsection}{\numberline {B.22}Operator: p U q}{58}{}%
+\contentsline {subsection}{\numberline {B.23}Operator: p R q}{58}{}%
+\contentsline {subsection}{\numberline {B.24}Operator: AF}{58}{}%
+\contentsline {subsection}{\numberline {B.25}Operator: EF}{58}{}%
+\contentsline {subsection}{\numberline {B.26}Operator: AX}{58}{}%
+\contentsline {subsection}{\numberline {B.27}Operator: EX}{58}{}%
+\contentsline {subsection}{\numberline {B.28}Operator: p U q}{58}{}%
+\contentsline {subsection}{\numberline {B.29}Operator: p R q}{59}{}%
+\contentsline {subsection}{\numberline {B.30}Fairness}{59}{}%
+\contentsline {subsection}{\numberline {B.31}Liveness}{59}{}%
+\contentsline {paragraph}{Verification results}{59}{}%
+\contentsline {subparagraph}{verklareing}{59}{}%
+\contentsline {subsection}{\numberline {B.32}Fairness}{59}{}%
+\contentsline {subsection}{\numberline {B.33}Liveness}{60}{}%
+\contentsline {subsection}{\numberline {B.34}safety}{60}{}%
+\contentsline {subsection}{\numberline {B.35}zeno vrij}{60}{}%
+\contentsline {subsection}{\numberline {B.36}deadlocks}{60}{}%
+\contentsline {section}{\numberline {C}\\ Appendix B: Model eerste deelname aan cursus 2020}{61}{}%
+\contentsline {subsection}{\numberline {C.1}Queries}{61}{}%
+\contentsline {section}{\numberline {D}\\ Appendix B: Model herkansing tweede deelname aan cursus 2020}{62}{}%
+\contentsline {subsection}{\numberline {D.1}Template source}{62}{}%
+\contentsline {subsection}{\numberline {D.2}Queries}{65}{}%
+\contentsline {section}{\numberline {E}Deelonderzoek naar veiligheidsrisico's en eisen voor sluizen}{66}{}%
+\contentsline {section}{\numberline {F}Deelonderzoek wet en regelgeving voor sluizen}{66}{}%
