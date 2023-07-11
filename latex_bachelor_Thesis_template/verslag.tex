@@ -90,11 +90,11 @@
 
 \begin{document}
 \titelblad                   %argumenten invullen
-  {Een \LaTeX\ `model' voor een Persoonlijk verslag} %hier titel invullen 
+  {Persoonlijk verslag} %hier titel invullen 
   {Galvin Bartes (0799967)} %hier naam en (stamnummer) van student invullen
   {\TI}                      %hier opleiding \TI, \INF of \BI invullen
   {\today}                   %{\today} concept of {1 april 2011} definitief
-  {Dhr. M. de Uil}           %eerste docent
+  {Dhr. W. Oele}           %eerste docent
   {}                         %tweede docent
 % als er meer auteurs zijn, dan wordt de tweede parameter:
 % {Onbekend Talent1 (123456)\\Onbekend Talent2 (987654)\\ ...} 
@@ -109,11 +109,11 @@
   \pagenumbering{arabic}
 \fi
 \input{inleiding}    %(verplicht) inleiding
-\input{materiaal}    %(verplicht) inleiding
-\input{methode}    %(verplicht) inleiding
+%\input{materiaal}    %(verplicht) inleiding
+%\input{methode}    %(verplicht) inleiding
 \input{resultaten} %(verplicht) hoofdverslag
 \input{discussie}   %(verplicht) geaggregeerde conclusies en aanbevelingen
-\input{aanbeveling}   %(verplicht) geaggregeerde conclusies en aanbevelingen
+%\input{aanbeveling}   %(verplicht) geaggregeerde conclusies en aanbevelingen
 \ifpublic
   \iflanguage{dutch}{\def\bibname{\normalsize{Bronnen}}}
                     {\def\bibname{\normalsize{References}}}
@@ -129,7 +129,8 @@
   \include{bijlage2}   %(optioneel) bijlagen
   \include{bijlage3}   %(optioneel) bijlagen
   \include{bijlage4}   %(optioneel) bijlagen
-  
+   \include{bijlage5}   %(optioneel) bijlagen
+  \include{bijlage6}
 %  \include{}   %(optioneel) bijlagen
 %  \include{}   %(optioneel) bijlagen
 \fi

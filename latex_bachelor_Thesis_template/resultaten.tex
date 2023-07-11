@@ -93,6 +93,40 @@ Montaignes principe
 De incative mood; gaat over wat we beweren waar te zijn. 
 
 De optitative mood; gaat over wat we willen dat waar is 
+\subsection{4 variabelen model}
+
+
+
+Rampen
+In dit hoofdstuk worden de resultaten van een deskresearch naar verschillende rampen behandeld
+Hierbij een verslag naar de oorzaken van de rampen, de werkwijze waarop het product is ontwikkeld, de verwerking van feedback, implementatie en nazorg.
+Met behulp van het 4 variabelen model wordt duidelijk gemaakt hoe het systeem is opgezet en wat daarin verkeerd is gegaan.
+Het  hoofdstuk wordt afgesloten met een analyse van algemene kenmerken van de verschillende rampen die zijn onderzocht.
+
+
+Het 4 variabelen model kort toegelicht
+Monitored variabelen: door sensoren gekwantificeerde fenomenen uit de omgeving, bijv temperatuur
+
+Controlled variabelen: door actuatoren \bestuurde fenomenen uit de omgeving
+For example, monitored variables might be the pressure and temperature
+inside a nuclear reactor while controlled variables might be visual and audible alarms, as well
+as the trip signal that initiates a reactor shutdown; whenever the temperature or pressure reach
+abnormal values, the alarms go off and the shutdown procedure is initiated
+
+Input variabelen: data die de software als input gebruikt
+Here, IN models the input hardware interface (sensors and analog-to-digital converters) and
+relates values of monitored variables to values of input variables in the software. The input variables model the information about the environment that is available to the software. For example,
+IN might model a pressure sensor that converts temperature values to analog voltages; these voltages are then converted via an A/D converter to integer values stored in a register accesible to the
+software.
+
+Output variabelen: data die de software levert als output
+The output hardware interface (digital-to-analog converters and actuators) is modelled
+by OUT, which relates values of the output variables of the software to values of controlled variables. An output variable might be, for instance, a boolean variable set by the software with the
+understanding that the value true indicates that a reactor shutdown should occur and the value
+false indicates the opposite
+
+
+
 \subsection{SIX Variable model}
 Optitatieve statements omschrijven de omgeving zoals we het willen zien vanwege de machine. 
 
@@ -145,24 +179,15 @@ systeem.
 
 \subsection{Requirementsengineering}
 
+ \cite{jonkerTreurKlush200informativeAgents}
+\cite{boehmBoseLeeRequirementsNegotiations}
+\cite{muHungJinLiu2013inconsistencyReqs}
+\cite{hunterNuseibeh1996manageSpecs}
+\cite{myloloupos1992representingReqs}
+\cite{zavePamela4darkCorners}
+\cite{zavePAmela1997regEngineering}
 
-scannen64-75
-
-challenges in requirements engineering
-why goals-oriented for requirements engineering
-design and build of collaborative information agents
-treating nfiras first gradefor its testability
-software requirements negotiation a theory ui based spiral approach
-the worlds a stage: a survey on requirementsengineering using a real life case study
-from inconsistencyhandling to non-conanical requirements management: a logical perspective
-managing inconsistent specification: reasoning, analysis, action
-representingand using nonfunctional requirements: a process-oriented approach
-Four dark corners of requirements engineering
-classification of research methods in requirements engineering
-agent-basedtactocs for goal-oriented requirements elaboration
-
-
-challenges in requirements engineering
+\subsubsection{challenges in requirements engineering}
 deceding exactly what to buildand documenting the results
 misidentoficationof requirements as a problem
 Biggest software problem:
@@ -175,57 +200,21 @@ need identification and problem analysis
 requirement determination
 requirement specification
 requirement fulfilllment
-More problems:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-why goals-oriented for requirements engineering
 
-scann 0087
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-design and build ofcollaborative information agents
+\subsubsection{why goals-oriented for requirements engineering}
+
+\subsubsection{design and build of collaborative information agents}
+Voorwaarde van ontwerp voor informatiegestuurd systeem:
 A laguage to specify functional requirements and scenatio's for sysems of informations agents
 A language to specify design descriptions
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-treating nfiras first gradefor its testability
+\subsubsection{treating nfiras first gradefor its testability}
 
-scan 0089
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-software requirements negotiation a theory ui based spiral approach
-problem of detailed concers ofusers, non-users and interfaces n evolutionaru development
+\subsubsection{software requirements negotiation a theory ui based spiral approach}
+problem of detailed concersn of users, non-users and interfaces n evolutionaru development
 ceoncept of operational
-1) win-conditions-capturing the desired objective of the individual
-2) conflict/risk/uncertainty specs capturing the conflicts between win conditions and their associated rest and uncertainties
-3) points of agreement capturing the agreed upon set of condictions which satisfy stakeholders  win conditions and also define the system objectives
-WinWin0 concept of operation in initial fase
-WinWin1
--) decommitment frm previously relevant POA
--) exploring options, such as reusing components reducing negationed software functionaliry on deferring lower priority capabilities
--) understanding notifications of options, choices and filtering options that are noncompatible with stakeholder critical conditions
--) handling the ripple effects of changes introduced to resolve the conflict
--) bounding and focussing the domain of discourse with respect to negotiated systems
-3.2
-confrontational win-conditions-capturing
-incomplete set of options
-weak association between new CRU and new conflict resolving win-conditions-capturing
-uncontrolled search for alternatives
-4.3 potential conflicts
-1) interactions due to node mismatch
-2) complexity of interactions
-4.4 renegotioation support
-tradeoff by COCOMO-tool
-node-based re-negotianions support for cost/schedule/functionality, performance tradeoff analysis
 
-use cases decribe the possible system interactions that eexternal agenets may have with a system
-
-
-identification of goals to be acheved by the envisioned system. The operational character of such goals are services and constraints assignment of responsibilities of resulting requirements to agenets as humans, devices and software
-1) elicitation
-2) goal modeling
-3) goal generalization
-4) mapping goals into sotware objects, events and operations
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-the worlds a stage: a survey on requirementsengineering using a real life case study
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-viuwepoints, social aspects,evolution, non-functional requirements, conflict resolution, traceability
+\subsubsection{the worlds a stage: a survey on requirementsengineering using a real life case study}
+viuwepoints, social ascpecten,evolutie, non-functional requirements, conflict resolution, traceability
 
 Goal of this paper is requirement  engineering on London aulance service
 Method of opinions: crew, staff, management, computational, transport, services
@@ -248,18 +237,21 @@ PRE requirement specification traceability, repository baed approach
 3) agreement dimensions
 Domain: part of the worl in which the computer system effects will be felt, inclusing its peoples, organizational structure, related legislation, physical location and met only the compyter systems
 
-Functional vs quality requiements
-How to determine quality characteristiec in specific situation
-What different stakeholders are involved in different ways in particular bussiness processes
-strategies: testing, comparing, analysis, trial and error
-uncertainties: bussiness processes, information technology used, knowledge of various types of usrs, knowledge of various types of developers invoved
+Fucntionele en kwalitaatieve requirements
 
-Communication between stakeholders p[geographic and temporal distance]
-goals describe the macro-level o requremens
+Hoe bepaal je de kwaliteitseigenschappen in een specifieke situatie
+Welke verschillende stakeholders zijn betrokken in de verschillende  zakelijke processen
+Welke strategien kun je toepassen: testen, vergelijken, analyse, trial en error
+Onzekerheden: bussiness processes, information technology used, knowledge of various types of usrs, knowledge of various types of developers invoved
+
+Communicatie tussen stakeholders met geografische en temporele afstanden
+
+Doelen omschrijven macro-level requirements
 scenarios are used to describe the medium level of requirements vieuwpoints describe the microlelvel of requirements
-functional concerns:  primary bussiness goal
-non-functional concern: security, performance, compatibility refers to gravity of functional concern
-cognition mappings used for:
+Scrnario's worden gebruikt om het medium level van requirements te beschrijven waarentegen vieuwpoints het microlevel van requirements omschijven.
+Functioneel belang is het primaire bussiness goal.
+het non-functional belang gaat over : security, performance, compatibility refers to gravity of functional concern
+cognition mappings worden onder andere gebruikt voor:
 simulation
 organisational strategies modeling
 support for strategic problems
@@ -272,8 +264,7 @@ modeling virtual worlds and analysis of their behaviour
 requirements analysis
 system requirement  specification
 
-
-from inconsistencyhandling to non-conanical requirements management: a logical perspective
+\subsubsection{from inconsistencyhandling to non-conanical requirements management: a logical perspective}
 
 1) identifying non-canonicalrequirements
 2) measuring them
@@ -285,17 +276,11 @@ model phases using: paraconsistent reasoning, non-monotnic reasoning
 Requirement U scenarion -> Scenarion E
 
 
-
-managing inconsistent specification: reasoning, analysis, action
-classic logic
-quasi-classical logic >> inconsistency implies action
-
-specification information >> natural language deduction rules
-method information >> reduction ad absurdum
-domain interpretation
-
-
-background: users, customers, domain experts, designers,, manufacturers
+\subsubsection{managing inconsistent specification: reasoning, analysis, action}
+Hoe kun je omgaan met inconsistenties in de requirements specificaties.
+Voor de omshrijving van een specificatie kun je gebruik maken van logica. Daarbij kun je onderschei maken in klasieke logica quasi -logica.
+Wat ook een rol kan spelen in domain interpretatie. De achtergrond van de gebruikers speelt ook een rol.
+Zo is er e=onderscheid te maken in de volgende groepen: users, customers, domain experts, designers,, manufacturers
 graphical  textual specification
 
 Basic constraint, legal constraint, cooperation constraint
@@ -303,8 +288,9 @@ Basic constraint, legal constraint, cooperation constraint
 2) scenario analysis
 3) scenario consolidation
 
-How can a system be 	 further designed	so that ne non-functional requirements mentioned will met?
-How does that design relate to further refinements of the functionaland structural aspectsof the system
+
+Hoe kan een systeem verder worden ontworpen op een manier dat non-functionele requirements worden geimplementeerd?
+Hoe hangt dat ontwerp samen met aanpassingen van het functionele en structurele aspect van het systeem?
 
 block[objects, classes, methods, messages, inheritance]
 [goals,agents, alternative, events, actions,existence modalities,agent responsibilities]
@@ -313,8 +299,8 @@ structuring mechanism
 primitive operations
 genral intergrity rules
 
-Softgoals are satisfied when there is a suffucienr positive and little negative eludence for this claim, and that they are usatisfiable when there issufficient negative evidence and little positive support for their satisfiability.
-
+ 
+Softgoals worden gerealiseerd als er voldoende positieve en weinig n grijpbaar voor deze claim, en en zij worden niet gerealiseerd waneer er onvoldoende negatief bewijs  en weiig positive support is voor tevredenheid.
 
 
 service computing
@@ -322,7 +308,7 @@ service computing
 2) goal
 3) process
 4)service
-How to constrainand extendthe semantic interoperability n the process of self-organizationand action emergence for the distributing service resource?
+How to constrain and extend the semantic interoperability n the process of self-organizationand action emergence for the distributing service resource?
 How to categorise the  structure of nteroperability?
 Howto satisfy stakeholders requirements?
 
@@ -346,14 +332,12 @@ Connecting ontologies:
 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-representingand using nonfunctional requirements: a process-oriented approach
+\subsubsection{representingand using nonfunctional requirements: a process-oriented approach}
 product oriented
 process oriented
 
 
-Acquisition Performance
+Acquisitie Prestaties
 user concern
 -How well does it function
 -hwo well does it utilize a source >> Efficiency
@@ -364,16 +348,17 @@ user concern
 quality attribute
 
 
-Acquisition: Design
+Acquisitie: Ontwerp
 user concern
-How valid is the design
--how well does it conform to requirements
--how easy is it to repair
--ow easy is it to verify its performance
+Hoe valide is het ontwerp
+-Is ht ontwerp conform de requirements
+-hoe makkelijk is het ontwerp te repareren
+-Hoe makkelijk zijn de prestaties te verifieren
+
 quality attribute
 
 
-Acquisition: Adaption
+Acquisitie: Aanpasbaarheid
 user concern
 -how adaptable is it
 - how easy is it to exportand uprade its capability >> expendability
@@ -382,11 +367,24 @@ user concern
 - how easy is it to transport >> interoperability
 how easy is it to convert for use with other application>> reaseability
 quality attribute
+\subsubsection{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+what is a good software specification
 
+\cite{fvaandrager2322010Goodmodel}
+\cite{onix01102022devopmodel}
+\cite{sulemani04012021softwareprocesmodel}
+\cite{globalluxsoft18102017softdev}
+\cite{wiegers30052022SRS}
+\cite{muller06092020goodspecification}
+\cite{informit30062008reqmanagement}
+\cite{altexsoft15092020writingSRS}
+\cite{bibid}
 
+ 
 
-\section{Onderzoeksresultaten naar rampen}
+\hoofdstuk{Onderzoeksresultaten naar rampen}
 
 \subsection{Inleiding}
 De bestudering van rampen aan de hand van het vier-variabelen model biedt maakt het analyseren mogelijk van rampsituaties. Van een aantal rampen is een beschrijving gegeven met datum, plaats en oorzaak. De analyse van de 4-variabelen modellen zal gebruikt worden voor de requirementsdefinitie, ontwerp en ontwikkeling van het sluismodel. 
@@ -946,7 +944,7 @@ Het losraken van de nuldraad naar de gashendel leidt volgens TNO tot ongewenst v
 Voor alle drie onderzochte voertuigen geldt dat het ontbreken van een zitplaats leidt tot veiligheidsrisico’s voor remmen en sturen door de grotere kans dat de bestuurder van het voertuig valt. Als de bestuurder van een Stint valt, leidt dit in alle rijsituaties tot een onbeheersbare situatie
 
 
-https://repository.tno.nl/islandora/object/uuid%3Acdef48df-da49-46b6-8678-5c62a88a0090 
+\cite{TNOStint}
 
 
 
@@ -964,9 +962,7 @@ Uit onderzoek bleek dat de papieren van de bemanning niet in orde waren.
 Geconcludeerd werd dat de gezagvoerder roekeloos had gehandeld door voor een ILS-landing te kiezen terwijl hij daar geen toestemming voor had, en door onvoldoende op de vlieghoogte te hebben gelet. 
 De SLM werd verweten de kwalificaties van de bemanning onvoldoende te hebben gecontroleerd.
 
-https://aviation-safety.net/investigation/cvr/transcripts/cvr_py764.php 
-https://aviation-safety.net/database/record.php?id=19890607-2 
-Wat is er gebeurd?
+ 
 
 \cite{espnSLMterugblik}
 \cite{dennisRosier01052020}
@@ -1084,30 +1080,15 @@ Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen
 Wat is er gedaan om de veiligheid van illegalen en gevangenissbewaarders te verbeteren
 
 
-
-\subsubsection{schipholbrand}
-
-\begin{description}
-\item[Beschrijving]
-\item[Datum en plaats] 
-\item[Oorzaak]
-%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
-\end{description}
-Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
-worden voldaan. De eerste voorwaarde is de geschiktheid van het
-afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
-men zich afvragen of dat wel een echte afstudeeropdracht is. Een
-afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
-moet een afstudeerproject passen in het profiel van een opleiding om
-beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
-de registratie van werkzaamheden tijdens het a
+ 
 
 
 Wat is er gebeurd?
-\bibitem{wikiSchipholbrand} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Schipholbrand}
-\cite{}
-artikel
-\bibitem{schipholbrand27102005video} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=1i-hfEzxFfk}
+\cite{wikiSchipholbrand}
+
+
+\cite{schipholbrand27102005video}
+ 
 
 psychologische gevolgen
 rapport
@@ -1330,11 +1311,11 @@ Op 23 september 2013 voer het vrachtschip de Rhosus onder Moldavische vlag[7] va
 Gezien het ernstige gevaar van het bewaren van deze goederen in de hangar onder ongeschikte klimatologische omstandigheden, herhalen we ons verzoek aan de marine-instantie om deze goederen onmiddellijk weer te exporteren om de veiligheid van de haven en de mensen die er werken te verzekeren, of om akkoord te gaan om ze te verkopen.
 Voorafgaand aan de explosie was er een brand in een opslagplaats. 
 
-https://www.hrw.org/report/2021/08/03/they-killed-us-inside/investigation-august-4-beirut-blast 
+ 
 \cite{hrw03082021investigateBeirutBlast}
-https://www.researchgate.net/publication/348325979_Beirut_Explosion_the_full_story 
+ 
 \cite{souaibyElHussein112020Beirutstory}
-https://reliefweb.int/sites/reliefweb.int/files/resources/CaseStudy_BeirutExplosion_TechBioHazardsweb.pdf 
+ 
 \cite{ifrc2020chemicalexplosionBeirutPort}
 
 %@online{landryalameddine12112020beiruthelathsystem,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05906-y"},}
@@ -1346,14 +1327,7 @@ https://reliefweb.int/sites/reliefweb.int/files/resources/CaseStudy_BeirutExplos
 %@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.fire-magazine.com/the-port-of-beirut-explosion-a-timely-reminder"},}
 %@online{neusaeter07082020beirutexplosioneval,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.ctvnews.ca/sci-tech/mapping-the-beirut-explosion-what-the-impact-would-look-like-in-canadian-cities-1.5053932"},}
 
-
-secyrity:
-@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf"},}
-
-
-secyrity:
-@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf"},}
-
+ 
 
 
 \subsubsection{ethiopian airlines}
@@ -1485,8 +1459,18 @@ inclusief hoe de actoren zich zelf toegang gavan tot het controle systeem, welke
 \cite{zetter2016GridHack}
 
 
+\cite{owens21032017ukrainemitigationstrategies}
+\cite{cerulus2019FrontlineRussiaAttack}
+\cite{grammatikis2019AttackIEC6087505104}
+\cite{hidajat2016ScadaSimulator}
+\cite{uscert20072021crashmalware}
+\cite{zetter12062017malwareanalysis}
+\cite{icsRussianHackingCyberWeapon}
+\cite{usgovC2M2}
+ 
 
-\cite{}
+ 
+
 
 \subsubsection{Mali}
 
@@ -1638,406 +1622,13 @@ http://www.wesemann.nl/nl/nieuws-en-pers/274-veiligheid-op-het-water-en-op-het-l
 
 
 
-
-
-\begin{tcbitemize}[raster columns=3, raster rows=4, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
-	
-	%Empty corner and two headers
-	\tcbitem[blankest, width=1cm]
-	\tcbitem[header = Strength]
-	\texta
-	\tcbitem[header = Weakness]
-	\textb
-	
-	%First row
-	\tcbitem[firstcol = internal]
-	\textcn
-	\tcbitem[swotbox = S]
-	\lipsum[2]
-	\tcbitem[swotbox = W]
-	\lipsum[2]
-	
-	\tcbitem[blankest, width=1cm]
-	\tcbitem[header = Opportunity]
-	\texta
-	\tcbitem[header = threat]
-	\textb
-	
-	%Second row
-	\tcbitem[firstcol = external]
-	\textcn
-	\tcbitem[swotbox=O]
-	\lipsum[2]
-	\tcbitem[swotbox=T]
-	\lipsum[2]
-\end{tcbitemize}
-
-\newpage
-\paragraaf{Werken met \LaTeX{}}
-
-Het is niet verplicht om met \LaTeX{} te werken. Men mag ook gebruik
-maken van andere tekstverwerkers zoals \emph{MS-Word}, Wel is het
-verplicht het afstudeerverslag \LaTeX{}-geformateerd in te leveren en
-van de \LaTeX{}-template \verb!modelverslag.sty! gebruik te
-maken.
-
-De \LaTeX{}-template bevat enkele macro's voor het opstellen van een
-hoofdstuk (\verb!\hoofdstuk!), een paragraaf (\verb!\paragraaf!), een
-afbeelding (\verb!\figuur!). De overige \LaTeX{} macro's en omgevingen
-blijven bruikbaar. Bijvoorbeeld de \verb!tabular!-omgeving om tabellen
-te maken:
-
-\begin{lstlisting}{language=[LaTeX]TeX}
-\begin{tabular}{formaat}
-   ... 
-\end{tabular}
-\end{lstlisting}
-
-\begin{center}
-\begin{tabular}{|l||r|}
-  \hline
-  \multicolumn{2}{|c|}{Afmetingen ($1\mbox{ pt}=0,351\mbox{ mm}$)}\\
-  \hline
-  paper width     & \the\paperwidth\\
-  text width      & \the\textwidth\\
-  column width    & \the\columnwidth\\
-  column seperate & \the\columnsep\\
-  oddside margin  & \the\oddsidemargin\\
-  evenside margin & \the\evensidemargin\\
-  paper height    & \the\paperheight\\
-  text height     & \the\textheight\\
-  top margin      & \the\topmargin\\
-  \hline
-\end{tabular}
-\end{center}
-
-Een nadeel van tabellen dat ze vaak te groot zijn voor de
-twocolumn-mode. Het zou mooi zijn als ze ingedrukt kunnen
-worden. Bovendien is deze tabel niet-zwevend, hij wordt geplaatst
-tussen de tekstdelen waar hij is ingevoerd. Dit kan bezwaarlijk zijn
-bij pagina-overgangen. In dat geval kan je beter gebruikmaken van
-zwevende tabellen (en figuren) die door \LaTeX{} zelf op een geschikte
-plaats worden gezet. Wel moet aan een zwevende tabel een label en een
-onderschrift gekoppeld worden om er naar te kunnen verwijzen. Voor een
-zwevende horizontale tabel met label en onderschrift wordt in de
-`template' de \verb!tabel!-omgeving aangeboden:\\
-
-\begin{Aanpassen}
-\begin{verbatim}
-\begin{tabel}[afm]{formaat}{label}{onderschrift}
-  ...
-\end{tabel}
-\end{verbatim}
-\end{Aanpassen}
-
-
-De \verb!tabel!-omgeving plaatst `zwevende' tabellen in verslag- en
-publicatie-mode. Het eerste argument is een optioneel \verb![afm]!
-argument met de defaultwaarde \verb!\normalsize! voor de afmeting van
-de karakters. De mogelijke waarden voor de afmeting zijn -- van groot
-tot klein -- de volgende macro's: (\verb!\huge!, \verb!\LARGE!,
-\verb!\Large!, \verb!\large!, \verb!\small!, \verb!\footnotesize!,
-\verb!\scriptsize! en \verb!\tiny!).
-
-Bovendien zijn de standaard \verb!tabular! kolomformaten
-\verb!r,l,c,|,||,p{lengte}! uit de tabelomgeving uitgebreid met
-kolomformaten \verb!\R, \C, \L!  voor variabele celinhoud zoals het
-plaatsen van meerdere regels per cel.
-
-Een verticale tabel is mogelijk met de omgeving (\verb!TABEL!)  met
-dezelfde kolomformaten mogelijkheden.  In \LaTeX{} zijn de tabellen,
-vooral in de \verb!twocolumn!-mode erg lastig. Bijvoorbeeld in de
-tabellen~\ref{tab:vbt} en \ref{tab:vbx} zijn twee verschillende
-uitwerkingen van de tabelomgevingen:
-
-\begin{footnotesize}
-\begin{tabel}[\Large]{|r|l|}{vbt}{Vaste cellen, variabele breedte}
-  \hline
-  7C0 & hexadecimal \\
-  3700 & octal \\ \cline{2-2}
-  11111000000 & binary \\
-  \hline \hline
-  1984 & decimal \\
-  \hline
-\end{tabel}
-\end{footnotesize}
-
-%Absolute breedte in mm, cm etc. (geschikt voor één mode):
-%\begin{tabel}{|>\R p{2cm}|>\L p{4cm}|}{vbx}{OpenGL libraries}
-%Relatieve breedte 20% en 65% van de kolombreedte (geschikt voor alle moden).
-%Procentwaarden van 0 ... 99, voor 100% neem \columnwidth zelf.
-\begin{tabel}{|>\R p{\Procent{20}}|>\L
-    p{\Procent{65}}|}{vbx}{Variabele cellen, variabele breedte}
-\hline
- OpenGL core library & OpenGL32 voor MS-Windows en GL voor
- de meeste X-Window systemen\\
-\hline
- OpenGL Utility Library & GLU\\
-\hline
- Koppeling met het platform & GLX voor X-Window en WGL voor MS-Windows\\
-\hline 
- OpenGL Library Utility Toolkit & GLUT, bibliotheek voor
-  het openen van windows, invoer van muis en toetsenbord, menus,
-  event-driven in- en uitvoer\\
-\hline
-\end{tabel}
-
-Plaats afbeeldingen alleen in het hoofdverslag als ze de tekst
-ondersteunen en de leesbaarheid niet verlagen.  In de tekst kan naar
-afbeeldingen worden verwezen met de macro \verb!\ref{fig:label}!.
-
-In \LaTeX{}\cite{lam1994} geschreven verslagen zijn op diverse manieren
-afbeeldingen\cite{Oos1996} te plaatsen. Een van die manieren is gebruik te
-maken van de macro \verb!\figuur! in de \verb!modelverslag!-package'.
-
-`Vector graphics' figuren van het `pdf-', `eps-' en `svg-'
-formaat\footnote{Een pdf-bestand kan zowel vector-graphics als
-  bitmap-graphics bevatten.} met een ingewikkelde `bounding box' zijn
-moeilijk op de juiste schaal te brengen. Vaak moet dat met uitproberen
-bepaald worden. Het plaatsen van figuren met absolute afmetingen of
-een vaste `scale' factor, kan leiden tot minder soepele oplossingen
-zoals figuur~\ref{fig:PDFA}. Deze figuur heeft naast een rotatie
-(\verb!angle=270!)  een vaste scale-factor (\verb!scale=0.45!) die
-alleen geschikt is voor de `twocolumn-mode'.
-
-\begin{center}
-  \figuur{scale=0.45,angle=270}{plaatjes/agp.pdf}{PDFA}{Vaste breedte
-    (pdf)}
-\end{center}
-
-In plaats van \verb!scale=x! kan je beter de relatieve afmeting
-\verb!width=\Procent{y}! gebruiken. De waarde $y$ wordt in de
-verslag-mode met uitproberen gevonden, zie figuur~\ref{fig:PDFR}.
-
-\figuur{width=\Procent{40},angle=270}{plaatjes/agp.pdf}{PDFR}{Variabele
-  breedte (pdf)}
-
-Het afmetingsprobleem is iets gemakkelijker op te lossen met `bitmap
-graphics' van het `jpg-', `gif-' en `png-' formaat omdat de figuren al
-van te voren geschaald kunnen worden als de `bounding box' bij het
-inlezen bekend is. De breedte (\verb!width!) kan als percentage van de
-kolombreedte (\verb!width=\Procent{0 ... 99}!) worden opgegeven zoals
-dat bij figuur~\ref{fig:PNGR} gedaan is. Voor een 100\% waarde neemt
-men \verb!width=\columnwidth! De afmeting wordt automatisch
-aangepast aan de nieuwe kolombreedte.
-
-
-\begin{center}
-\figuur{width=\columnwidth}{plaatjes/agp.png}{PNGR}{Variabele breedte (png)}
-\end{center}
-
-
-De macro \verb!\PROCENT{0...99}! is nodig voor de macro's \verb!Tabel!
-en \verb!Figuur!. Deze laatste twee macro's maken het mogelijk dat
-tabellen en afbeeldingen in de twocolumn-mode passen met behoud van
-hun originele afmeting en detaillering (zie
-figuur \ref{fig:FIXED}). De parameters van deze macro's komen overeen
-met de parameters van de macro's \verb!tabel! en \verb!figuur!.
-
-\Figuur{width=\PROCENT{40},angle=270}{plaatjes/agp.pdf}{FIXED}{Vaste breedte ook in twocolumn-mode (pdf)}
-
-In het algemeen heeft vector-graphics een betere kwaliteit van de
-weergave dan bitmap-graphics.
-
-
-\paragraaf{Bijzondere tekens en afbreekproblemen}
-
-Bijzondere tekens zoals de á, à, ä, é, è, ë, ï, ü, ç \ldots worden
-probleemloos door \LaTeX{} geaccepteerd als normale utf8
-karakters. Voor de uitzonderingen bestaan macro's zoals het
-euro-symbool \euro{} waarvoor de macro \verb!\euro! nodig is. In
-wiskundige formules kan je gebruik maken van de macro \verb!\eurom!.
-
-
-In de two-columnmode zijn regels soms te lang als er gebruik gemaakt
-is van \verb!verb! of \verb!verbatim! of woorden die niet goed worden
-afgebroken. In dat laatste geval kan je in zo'n woord een afbreekpunt
-introduceren met de twee tekens \verb!\-!. Een regel kan gecontroleerd
-afgebroken door van te voren onzichtbare knikpunten te plaatsen met de
-\verb!\Knak! macro. De volgende regel moet in in tegenstelling met de
-twocolumnmode in de verslagmode ongeknakt worden weergegeven:
-
-\begin{Aanpassen}
-\begin{verbatim}
- ... aaaaaaa\Knak{}aaaaaaa ...
-\end{verbatim}
-\end{Aanpassen}
-
-
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\Knak{}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
-
-Voor regels waarbij de structuur niet gebroken mag worden, is de
-\verb!\Knak!-methode ongeschikt, bijvoorbeeld bij scripts en
-broncode. Daarentegen zorgt de \verb!Aanpassen!-omgeving ervoor dat in
-de twocolumn-mode de regels met behoud van de originele structuur
-worden weergegeven. Daarvoor wordt een kleinere letterafmeting
-gebruikt (default de \verb!\scriptsize!). Deze omgeving werkt alleen
-met niet al te lange regels. Bij zeer lange regels moet de
-letterafmeting zeer klein worden waardoor de leesbaarheid in het
-gedrang komt. In dat geval moet naar een andere oplossing gezocht
-worden zoals het opnemen van de probleemregels (broncode en scripts)
-in de bijlagen.
-
-\begin{Aanpassen}[\tiny]
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
-\end{Aanpassen}
-
-Hoewel het gebruik van opsommingen (\verb!\item!), letterlijke citaten
-\verb!quotation! en kaders (\verb!\fbox!) in de twocolumn-mode tot
-problemen kunnen leiden, zijn ze beperkt toegestaan. Bijvoorbeeld voor
-de kaders rond de teksten kan je beter gebruik maken van de
-\verb!tabular!-omgeving (of de \verb!tabel!-omgeving als je geen last
-wil hebben van pagina-overgangen), dan voor de standaard
-\verb!\fbox!-methode. De kolom van deze omkaderde tabel moeten dan wel
-een relatieve afmetingsverhouding de \verb!\columnwidth! krijgen.
-
-\begin{Aanpassen}
-\begin{verbatim}
-\begin{center}
-\begin{tabular}{|>\C p{\Procent{80}}|}
-  \hline
-  Afbreekproblemen ...
-  \hline
-\end{tabular}
-\end{center}
-\end{verbatim}
-\end{Aanpassen}
-
-\begin{center}
-\begin{tabular}{|>\C p{\Procent{80}}|}
-  \hline
-  ~\\
-  Afbreek- en andere opmaakproblemen pak je als laatste aan,
-  dus bij je definitieve verslag!\\
-  ~\\
-  Tabellen, figuren en listingen in het hoofdverslag tot het
-  noodzakelijke beperken.\\
-  ~\\
-  \hline
-\end{tabular}
-\end{center}
-
-
-\paragraaf{Algoritmen en broncode\cite{wikibooks}}
-
-Als je algoritmen met een mooie layout wilt hebben, dan zou je het
-\verb!algorithmic!-pakket kunnen gebruiken. Met dit pakket kan je het
-algoritme op een logische manier opbouwen met pseudotaal. Het bestand
-`verslag.tex' bevat al de pakketten \verb!algorithmic! en
-\verb!listings! die voor dit verslag nodig zijn. Als je zelf packages
-wil toevoegen of verwijderen (afblijven van
-\verb!\usepackage{moduleverslag}!)  dan moet dat in de preambule
-`verslag.tex'.
-
-\begin{Aanpassen}
-\begin{verbatim}
-\usepackage{algorithmic}
-\end{verbatim}
-\end{Aanpassen}
-
-Een algoritme moet je maken binnen een algorithmic-omgeving, een
-voorbeeld:
-
-\begin{Aanpassen}[\small]
-\begin{algorithmic}
-\IF {$i\geq maxval$} 
-        \STATE $i\gets 0$
-\ELSE
-        \IF {$i+k\leq maxval$}
-                \STATE $i\gets i+k$
-        \ENDIF
-\ENDIF 
-\end{algorithmic}
-\end{Aanpassen}
-
-
-Broncode kan je in een \verb!verbatim!-omgeving opnemen. De
-broncoderegels zien er net zo uit zoals je ze ingetypt hebt.  Het
-\verb!listings!-pakket is geavanceerder dan de
-\verb!verbatim!-omgeving.
-
-\begin{Aanpassen}
-\begin{verbatim}
-\usepackage{listings}
-\end{verbatim}
-\end{Aanpassen}
-
-Merk even op dat alle commando's van het \verb!listings!-pakket
-beginnen met \verb!lst!, dit conform de lppl-licentie.
-
-De broncode zelf zet je in een \verb!listings!-omgeving, net zoals bij
-de \verb!verbatim!-omgeving, om broncode te zetten gebruik je het
-\verb!\lstinline!-commando op dezelfde manier als het
-\verb!\verb!-commando. Je kunt ook broncode van een extern document laden met het commando:
-
-\begin{Aanpassen}
-\begin{verbatim}
-\lstinputlisting{pathname}
-\end{verbatim}
-\end{Aanpassen}
-
-Het argument `pathname' is de relatieve of absolute locatie van het
-bronbestand, de map(pen) gecombineerd met de bestandsnaam. Als je
-broncode van een bronbestand laadt, ben je zeker dat de broncode in je
-\LaTeX{}-document altijd actueel is en hou je het \LaTeX{}-document
-overzichtelijk. Als de broncode niet in dezelfde map of een submap van
-het \LaTeX{}-document staat of je gebruikt absolute `pathnames', dan
-is het mogelijk dat het verslag niet op andere computers gecompileerd
-kan worden. Bij het inleveren van je afstudeerverslag in
-\LaTeX{}-formaat zal je hiermee rekening moeten houden.
-
-
-Alle opties in het \verb!listings!-pakket hebben eenzelfde structuur
-\verb!sleutel=waarde!. Als je alleen 'Java' gebruikt hebt, dan kan je
-deze taal voor je volledig document na de regel
-\verb!\usepackage{listings}! in preambule `verslag.tex' definiëren met
-\verb!\lstset{language=java}!
-
-\lstset{language=java}
-
-\begin{Aanpassen}
-\begin{lstlisting}
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, world!");
-    }
-}
-\end{lstlisting}
-\end{Aanpassen}
-
-
-De sleutel is hier dus \verb!language! en de waarde die je aan de
-sleutel geeft is \verb!java!. Alles wat je als opties binnen de
-\verb!\lstset!-macro zet kan je per \verb!listings!-omgeving apart
-definiëren. Bijvoorbeeld html-broncode met
-\verb!\begin{lstlisting}[language=html]!:
-
-\begin{Aanpassen}
-\begin{lstlisting}[language=html]
-<html>
-    <head>
-        <title>Hello</title>
-    </head>
-    <body>Hello</body>
-</html>
-\end{lstlisting}
-\end{Aanpassen}
-
-
-
-
-
-
-
-\newpage
-\hoofdstuk{Modelontwikkeling en keuzen in Uppaal}
-
+ 
 \label{appendix}
 \thispagestyle{myheadings}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Requirements}
-\subsection{Inleiding}
+ 
+\hoofdstuk{Uppaal model}
 Om voor mezelf een beeld te krijgen van wat een sluis is en hoe deze moet werken is er een aantal foto's verzameld van sluizen.	
 
 \includegraphics[scale=0.65]{sluismodel.jpg}
@@ -2066,6 +1657,100 @@ Eigen inbreng van deze requirements:\\
 Wij gaan er van uit dat het volgende van ons verwacht wordt:\\
 Maak een model dat als template dient gebruikt te worden voor het automatiseren van verschillende soorten sluizen. Verder moeten overwegingen gemaakt worden die goed onderbouwd zijn.\\\\ Aangezien er van ons alleen een model verwacht wordt, zullen wij ons geheel focussen op de fundamentele werking van de sluis en hierbij zullen wij ons dus niet bezig  houden met fysieke eisen zoals veiligheidshekjes en borden. Onze focus ligt geheel op de werking van de sluis; elke state waar de sluis zich in mag bevinden en welke beslissingen de sluis moet maken op basis van bestaande protocols en benoemde eisen. \\\\
 Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze bestaande uit de sluisdeuren, de sloplichten, de waterpomp en de boten.\\
+
+
+
+
+\includegraphics[scale=0.65]{sluispassage.png}
+
+
+\begin{itemize}
+	\begin{minipage}{0.4\linewidth}
+		\item Vooraanmelding
+		\item informatie inwinnen
+		\item operationele melding
+		\item aankomst volgorde
+		\item aanwijzen wachtplaats
+		\item verstrekken informatie
+		\item aanwijzen opstelplaats
+		\item opstellen schutproces
+		\item verstrekken informatie
+		\item invaarvolgorde en ligplaats in sluis
+		
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		
+		\item gereedmaken voor invaren
+		\item openen invaardeuren
+		\item invaren toegestaan
+		\item aanwijzingen voor invaren
+		\item aanwijzingen tijdens afmeren
+		\item invaren verboden
+		\item sluiten invaardeuren
+		\item start nivelleren
+		\item stop nivelleren
+		\item aanzwijzingen voor uitvaren
+		\item openen uitvaardewuren
+		\item uitvaren toegestaan
+		
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		\item uitvaren
+		\item operationele afmmelding
+		\item utvaren verboden
+		\item aanwijzing invaren nieuwe schepen
+		\invaren verboden
+		\deuren gesloten
+	\end{minipage}
+\end{itemize}
+
+
+\subsection{Notities die verwerkt moeten worden}
+
+moet de intitial state altijd in een loop zitten in uppaal?
+wat zijn urgent channels?
+rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
+
+
+gesprek wessel:
+main controller slim dat direction een bool is. 
+pomp is te slim, zoiu alleen maar aan of uit moeten gaan, of nog weg en in pompen maar meer niet. niets met waterlevel en aantal schepen.
+schip: niet doen. als een schip zich aanmeld, dan gebeuren er dingen, maar gaat hij naar binnen? je weet niet wat dat schip gaat doen want menselijk gedrag. beter niet het schip uitgebreid maken, maar eerder de sluis. te veel aannames.
+
+wessel model: alleen als wachtrij vol zit, doet de sluis iets.
+deur heeft een parameter zodat er meerdere deuren in de simulator neergezet kunnnen worden. ook bij wachtrij.
+
+stoplichen kunnen er wel in maar als je simpeler wilt, gaan die als eerste weg.
+zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
+rampen alleen voor persoonlijk verslag
+
+
+
+
+
+ 
+\{Liveness}
+Liveness properties are of the formn: something will eventually happen, e.g. when pressing the on button of the remote control of the television, then eventually the television should turn on. Or in a model of a  communication protocol, any message that has been sent should eventually be received.
+\paragraph{Fairness}
+\paragraph{Security}
+Safety propertires are of the form: "something bad will never happen". For instance, in a model of a nuclear power plant, a safety propertymight be, that the operating temperature is always (invariantly) under a certain threshold, or that a meltdown never occurs. A variation of this property is that "something will possibly never happen".
+For instance when playing a game, a safe state is one in which we can still win he game, hence we will possible not loose.
+The system cannot reach states or enable events that are fornidden by the requirements
+\paragraph{Performance}
+There requirements limit the maximum time to perform when no recoverable errors occur.
+
+
+
+\paragraph{brainstorm 22-5-2022}
+
+\subparagraph{invaardeuren en uitvaardeuren}
+Gaan we uit van binnendeuren en buitendeuren? Er ontstaat dan een extra ruimte in de sluis. Hoeveel schepen kunnen in deze ruimte? Wat is de maximale wachtreij in deze ruimte en wat zijn de verkeersregels in deze nruimte?
+\subparagraph{invaarstoplicht en uitvaarstoplicht}
+Als invaren is toegestaan hoe wordt dit dan doorgegeven aan de schepen in de sluis? moeten zij dan uit zichzelf wachten of krijgen zij een signaal dat zij wewl/niet mogen uitvaren? En moeten zij dan kiezen voor links, midden of rechts? Of maakt dat allemaal niets uit?
+
+\subparagraph{invaarwachtrij en uitvaarwachtrij}
+Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing houden met het schip dat als eerste is ingevaren en/of het langst in de sluis zit?
+
 
 \subsection{Sluisdeuren en stoplichten}
 De sluisdeuren aan weerszijde van de sluis  worden gebruikt om de toegang tot de sluiskolk mogelijk te maken en te bewaken in combinatie met de stoplicht.
@@ -2205,396 +1890,143 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\hoofdstuk{Formal description of the system}
 
-\includegraphics[scale=0.65]{sluispassage.png}
 
 
-\begin{itemize}
-\begin{minipage}{0.4\linewidth}
-\item Vooraanmelding
-\item informatie inwinnen
-\item operationele melding
-\item aankomst volgorde
-\item aanwijzen wachtplaats
-\item verstrekken informatie
-\item aanwijzen opstelplaats
-\item opstellen schutproces
-\item verstrekken informatie
-\item invaarvolgorde en ligplaats in sluis
 
-\end{minipage}
-\begin{minipage}{0.4\linewidth}
 
-\item gereedmaken voor invaren
-\item openen invaardeuren
-\item invaren toegestaan
-\item aanwijzingen voor invaren
-\item aanwijzingen tijdens afmeren
-\item invaren verboden
-\item sluiten invaardeuren
-\item start nivelleren
-\item stop nivelleren
-\item aanzwijzingen voor uitvaren
-\item openen uitvaardewuren
-\item uitvaren toegestaan
+4.2 5 en 6
+Het Sluisbeheeerder model wordt getoond in fuguur[]. Het model is een uitbreiding van een schutsluis met alle condities en effecten. De kleuren in de automation verwijizen naar de kleuren in de staat van de automata . De template begint met een initiele lokatie start. De sluisbeheerder initieert het proces door een aangekomen schip te registreren metbehulp van een sychronizate met het channel... over de edge richtng de lokatie "aanmelden." Dit symboliseert een opstartprocedure, ook wordt een functie enqueeu_aanmeldLijst() gebruikt om de juiste waarden te geven aan lokale en globale avariabelen. De lokatie aanmelden regisseert het opstellen van schepen boven of beneden van de sluiskolk. De template Schip synchronizeerd met de template Sluisbeheerder met het channel move_down[id] of move_up[id] en bereikt daarmee de volgende lokatie afhankelijk af de sluis boven of beneden is worden de schepen die in de opstellijst voorkomen, max 2, klaargemaakt voor invaren.. De templates Stoplicht en sluisdeur synchroniseren met de channels ... call_Deur en call_stoplicht.
+Het Sluisbeheerder model gebruikt de variabelen clock x, wachttijd_beneden, wachttijd_boven als invariant tussen de lokaties. Om op de hoogete te zijn van de invaar-/uitvaart van de verschillende schepen worden lijsten bijgehouden: list_wachtrij_beneden, list_pos_invaren_beneden, list_schepenInSluis, list_wachtrij_boven en list_pos_invaren_boven.
 
-\end{minipage}
-\begin{minipage}{0.4\linewidth}
-\item uitvaren
-\item operationele afmmelding
-\item utvaren verboden
-\item aanwijzing invaren nieuwe schepen
-\invaren verboden
-\deuren gesloten
-\end{minipage}
-\end{itemize}
+Het model voltooit de volgende transitie op basis van de waarde van de boolean sluis_bove en sluis_beneden. en de lokale klok variabele x.
+Vanaf de locatie invaarverbod_gecontroleerd  wordt gecontroleerd of er nog invarende schepen zijn die in de sluiskolk passen.
+Op de lokatie sluiskolk gereed zijn er 1 of meer schepen in de sluis. Als er nog plek is in de sluiskolk n er is nog een schip klaar om in te varen dan wordt dit gecontroleerd, de functie enqueu() voegt het schip toe aan de queue van de sluiskolk. De functie deque() verwijdert de schip van de lijst met invarende schepen. De variabele sluis_boven of sluis_beneden is waar, bij de switch voor het sluiten van deuren en het aanroepe van het stoplicht nr gelang de positie van  de laate binnenvarende schip (boven of beneden). Hierna bereikt de automation sluiskolk_afgesloten.
 
 
-\subsection{Notities die verwerkt moeten worden}
 
-moet de intitial state altijd in een loop zitten in uppaal?
-wat zijn urgent channels?
-rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
+De lokatie start_nivelleren kiest op basis van de variabelen sluis_boven en de variabelen sluis_beneden het nivellereingsprogramma.
+Heet nivellereingsprogramma is Aof B. De keuze voor het programma wordt bepaald door de variabelen van het schip dat in de sluis zit.
 
+De lokatie klaarmaken_voor_openen wordt bereikt als de   hoogte van de sluis  door het nivellereingsprogramma is bereikt.
+De positie van de kluis is bepaald door de schepen in de sluis. Vanuit deze lokatie wordt gekeken off de stoplichten gereed moeten worden gemaakt en of de sluisdeuren open mogen.
+Hierna volgt een transiie waarin de stoplichte op groen worden gezet en de sluisdeuren worden geopend voor de uitvaart van de schepen in de sluis.
+Als alle schepen zijn uitgevaren die uit moeten varen, worden de stoplichten op groen gezet en de deuren gesloten.
 
-gesprek wessel:
-main controller slim dat direction een bool is. 
-pomp is te slim, zoiu alleen maar aan of uit moeten gaan, of nog weg en in pompen maar meer niet. niets met waterlevel en aantal schepen.
-schip: niet doen. als een schip zich aanmeld, dan gebeuren er dingen, maar gaat hij naar binnen? je weet niet wat dat schip gaat doen want menselijk gedrag. beter niet het schip uitgebreid maken, maar eerder de sluis. te veel aannames.
 
-wessel model: alleen als wachtrij vol zit, doet de sluis iets.
-deur heeft een parameter zodat er meerdere deuren in de simulator neergezet kunnnen worden. ook bij wachtrij.
+De lokatie uitvaren_toegestaan heeft een verbinding(edge) met de lokatie sluis_afsluiten.
+Er is een select statement, e:id_t gebruikt als onderdeel van het prototocol om alle uitvarende schepen uit de queue van de sluiskolk te halen, en wordt dan ook gebruikt door de synchronisatie met de channel leave om de schepen uit de sluiskolk te begeleiden. De edge hieraan gekoppeld bevat de functie deque() om de variabelen  van de sluiskolk te resetten.
 
-stoplichen kunnen er wel in maar als je simpeler wilt, gaan die als eerste weg.
-zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
-rampen alleen voor persoonlijk verslag
+Vanuit de positie van de sluis worden de schepen gesignaleerd op een invaarverbod en worden de deuren van de sluis gesloten.
+De lokatie sluiskolk_afgesloten is bereikt.
 
+Ship [guards, invariants, assignents, synchronizations, properties,aannames]
+De template Schip begint bij de Init lokatie. De lokatie is verbonden met de lokatie aangekomen met een edge waarbij een synchronizatie wordt aangeroepen met de template sluisbeheerder. De clock wordt op nul gezet. De lokatie aangekomen is verbonden met de lokatie aangemeld. De edge bevat een synchronizatie waarmee de edge een synchronizatie uitvoert met de template Sluisbheheerder.
+De volgende lokatie is  controleren. De edge waarmee de lokatie aangemeld in verbinding staat met de lokatie cnotroleren heeft een synchronisatie voor de template Sluisbeheerder. De lokatie controleren heeft ook een edge met de lokatie wachten. Een schip max maximaal 30 seconden wachten op de lokatie wachten voordat er een mogelijkheid is om opniew in aanmerking te komen voor een controle. Als een schip langer dan 30 tijdseenheden moet wachten de is er een mogelijkheid voor het schip te vertrekken. Hierbij eindigt het schip het invaarproces. Een schip kan dus na aanvaren maximaal 20 seconden wachten om toestemming te krijgen voor een positie invaren anders wordt deze verwezen naar een wachtrij.
+Hierna volgdde lokate invarene. De lokatie invarene implieert dat een schip in een invaarproces is dat eindigt in de lokatie gestopt.
+Hierop volgd de lokatie nivelleer_start. Hierop wordt een nivelleer_proces gestart. Daarbij is ee synchronisatie met de template Sluisbeheerder.
+De lokatie nivelleer_stop is een lokate waarin het nivelleerproces al is gestopt. Van hieruit is er een edge met de lokatie klaar voor vertrek. De edge synchroniseert hiermee met de template Sluisbeheerder.
+De lokatie klaar_voor_vertrek is verbonden met de lokatie Init. Met een guard x>=3 tijdseenheden mag een schip vertrekken.
 
 
+Deur
+De deur bevat de volgende lokaties: dicht, openend, open en sluitende.
+Een deur sluit niet in een enkele actie. Het proces die een deur dooploopt zijn de processen openend en sluitende. De finale lokaties zijn open en dicht.
 
+Nivelleermachine
+De nivelleermachine begint bij de lokatie uit. Met een synchronisatie wordt een nivelleermachine aangezet. De automatie kiest een programma en werkt deze uit in de lokatie bezig. Als ht programma is afgerond volgt de lokatie klaar. Na elk nivelleerproces wordt de machine uitgezet
 
+Stoplicht
+Een stoplicht heeft twee lokaties: rood en groen.
 
-\paragraph{Liveness}
-Liveness properties are of the formn: something will eventually happen, e.g. when pressing the on button of the remote control of the television, then eventually the television should turn on. Or in a model of a  communication protocol, any message that has been sent should eventually be received.
-\paragraph{Fairness}
-\paragraph{Security}
-Safety propertires are of the form: "something bad will never happen". For instance, in a model of a nuclear power plant, a safety propertymight be, that the operating temperature is always (invariantly) under a certain threshold, or that a meltdown never occurs. A variation of this property is that "something will possibly never happen".
-For instance when playing a game, a safe state is one in which we can still win he game, hence we will possible not loose.
-The system cannot reach states or enable events that are fornidden by the requirements
-\paragraph{Performance}
-There requirements limit the maximum time to perform when no recoverable errors occur.
 
+\subsection{Template}
 
 
-\paragraph{brainstorm 22-5-2022}
 
-\subparagraph{invaardeuren en uitvaardeuren}
-Gaan we uit van binnendeuren en buitendeuren? Er ontstaat dan een extra ruimte in de sluis. Hoeveel schepen kunnen in deze ruimte? Wat is de maximale wachtreij in deze ruimte en wat zijn de verkeersregels in deze nruimte?
-\subparagraph{invaarstoplicht en uitvaarstoplicht}
-Als invaren is toegestaan hoe wordt dit dan doorgegeven aan de schepen in de sluis? moeten zij dan uit zichzelf wachten of krijgen zij een signaal dat zij wewl/niet mogen uitvaren? En moeten zij dan kiezen voor links, midden of rechts? Of maakt dat allemaal niets uit?
+\subsection{Verificatie}
+     De safety en reachability requirements die formeel zijn gespecificeerd worden in Uppaal geverifieerd met de A en E state formule. Andrerere opreratoren zijn
 
-\subparagraph{invaarwachtrij en uitvaarwachtrij}
-Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing houden met het schip dat als eerste is ingevaren en/of het langst in de sluis zit?
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CTL formulas are based on the following operators:
+A (\on every path")
+E (\there exists a path")
+X (\next time")
+G (\globally" or \always")
+F (\eventually" or \nally")
+U (\until")
+R (\release")
 
 
 
-\hoofdstuk{Formal validation and verification aan de hand van Kripke model}
+Deze zijn als volgt:
+\newline
+\newline
+A[] not maincontroller.rd1 imply
+\newline
+\newline
+A[] maincontroller.rd1 imply
+\newline
+\newline
+A[] not deadlock imply
+\newline
+\newline
+E<> maincontroller.rd1 imply
+\newline
+\newline
+E<> maincontroller.s7
+\newline
+\newline
+E<> maincontroller.s7d
+\newline
+\newline
 
-\paragraph{Parallele compositie}
-Om een sluispark te kunnen modelleren meerdere templates die de verschillende abstracties van het systeem aantonen.
+\subsection{Formele specificaties}
 
-\paragraph{Synchronisatgie}
-Zorgt ervoor dat  een transitie die genomen worden in de ene kripke tructuur op hetzelfde moment wordt opgenomen in een andere kripke structuur.
+\paragraph{Safety}
+Safety Properties are used to verify that something
+bad will never happen. Dit kan worden gespecificeerd met de volgende vergelijking
 
-\paragraph{Modelling with timed automata}
-\paragraph{Clock regions}
-\paragraph{Clock zones}
-\paragraph{Difference bound matrices}
-\paragraph{Complexity considerations}
+\aqcap\\
 
+\square ( a_0 \implies (( \lnot a_2 \wedge \lnot a_3 ) \mathcal{U} a_1 ) \vee ( \lnot a_2 \wedge \lnot a_3 )) \\
 
+AG(p)
+M, s \models AG(p) $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \forall i \cdot M,\pi[i] \models p\\
 
-\subsubsection{templates}
+EG(p)
+M, s \models EG(p) $\Leftrightarrow$     \exists \pi \in  \sqcap (M,s) \cdot \forall i \cdot M,\pi[i] \models p\\
 
-\paragraph{Schip}
+AF(p)
 
-\paragraph{Sluis}
+EF(p)
 
+AX(p)
 
-\paragraph{Aanvoer}
+EX(p)
 
+A(p \cup q)
+M, s \models  A(p \cup q)   $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \exists k \cdot M,\pi[k] \models q \wedge ( \forall i \leq k \cdot M,\pi [i] \models p)\\
+E(p \cup q)
 
-\paragraph{Afvoer}
+A(p \Re q)
 
-\paragraph{Pomp}
+E(p \Re q)
 
-\paragraph{Pompbediening}
+\forall x \, (P(x) \to Q(x)) & premise \\
+\forall x \, P(x) & premise \\\hspace*{-30pt} \\
 
 
-\paragraph{Stoplicht}
+P(x_0) & $\forall x \, \mathrm{e}$ 2 \\
+Q(x_0) & $\to \mathrm{e}$ 3, 4 \\
 
-\paragraph{Deur}
+\forall x \, Q(x) & $\forall x \, \mathrm{i}$ 3--5 \\
 
 
 
 
 
-
-
-\subsection{Formele logica}
-
-0004 \\
-0031 \\
-Modelcheckig boek blz 14 \\
-E = {main={}, \\
-deur={}, \\
-stoplicht={}, \\
-sensor={}, \\
-pomp={}, \\
-wachtrij={}, \\
-queue={}, \\
-sluiskolk={} \\
-} \\
-Q0 = \\
-F C Q = sluiskolk_afgesloten \\
-Q = E0,...En \\
-0064 \\
-0077 \\
-
-
-
-X: volgende keer \\
-F: in de toekomst \\
-G: altijd geldig \\
-A: voor alle paden \\
-E: voor enkele paden \\
-U: waar zolang de volgende inclusief geldt \\
-R: waar zolang geldt inclusief de startpositie \\
-
-M, s-> f betekent f is geldig in state s in kripke structuur M \\
-M, ph -> f is geldig op een pad in kripke structuur M \\
-M. s -> FP <-> er bestat een fair pad dat begint bij s en p € L(s) \\
-M, s->E(g) er bestaat een fair pad M dat begint van s zodanig dat phi -> F(g) \\
-M, s-> F A(g) voor alle fair pads phi beginnend vanad s,  phi -> F(g) \\
-
-
-
- Sluis.Draining-->Deuren.laag_open \\
-Deuren.laag_open-->Stoplicht.Green \\
-E<> (Ship.ship_can_move&&Stoplicht.Green) \\
-A[] not (Stoplicht.Green && not \\ (Deuren.hoog_open||Deuren.laag_open||Deuren.stopgaplow1||Deuren.stopgaplow2||Deuren.stopgaphigh1||Deuren.stopgaphigh2)) \\
-A[] not \\ ((Deuren.hoog_open||Deuren.laag_open||Deuren.Opening_laag||Deuren.Opening_hoog||Deuren.Closing_hoog||Deuren.Closing_laag) && (Sluis.Draining||Sluis.Filling||Sluis.draining2||Sluis.Filling2)) \\
-Sensor.Wait-->Sensor.Wait \\
-Stoplicht.Green-->Stoplicht.Green \\
-(Deuren.hoog_open||Deuren.laag_open)-->(Deuren.laag_open||Deuren.hoog_open) \\
-Deuren.laag_open-->Deuren.Closed \\
-Deuren.hoog_open-->Deuren.Closed \\
-Deuren.Closed-->Stoplicht.Red \\
-Ship.ship_can_move-->Deuren.Closed \\
-Deuren.hoog_open-->Stoplicht.Green \\
-Ship.ship_can_move-->Stoplicht.Green \\
-A[] not (Deuren.laag_open && Deuren.hoog_open) \\
-Ship.ship_can_move-->Ship.ship_can_move \\
-A[] not (Deuren.laag_open && Sluis.water != Sluis.water_laag) \\
-A[] not (Deuren.hoog_open && Sluis.water != Sluis.water_hoog) \\
-A[]not deadlock \\
-
-
-
-
-A[] forall (i:id_t) forall (j:id_t) P(i).cs && P(j).cs imply i == j \\
-Mutex requirement. \\
-P(1).req --> P(1).wait \\
-Whenever P(1) requests access to the critical section it will eventually enter the wait state. \\
-A[] (sum(i:pid_t) P(i).cs) <= 1 \\
-Mutex requirement. \\
-A[] forall(i : pid_t) not Task(i).Error \\
-Check that the system is schedulable. \\
-E<> Gate.Occ \\
-Gate can receive (and store in queue) msg's from approaching trains. \\
-Train 0 can reach crossing. \\
-E<> Train(1).Cross \\
-E<> Train(0).Cross and Train(1).Stop \\
-E<> Train(0).Cross and (forall (i : id_t) i != 0 imply Train(i).Stop) \\
-A[] forall (i : id_t) forall (j : id_t) Train(i).Cross && Train(j).Cross imply i == j
-There is never more than one train crossing the bridge (at any time instance). \\
-A[] Gate.list[N] == 0 \\
-There can never be N elements in the queue (thus the array will not overflow). \\
-Train(0).Appr --> Train(0).Cross \\
-Train(1).Appr --> Train(1).Cross \\
-Train(2).Appr --> Train(2).Cross \\
-Train(3).Appr --> Train(3).Cross \\
-Train(4).Appr --> Train(4).Cross \\
-Train(5).Appr --> Train(5).Cross \\
-E<> Gate.Occ \\
-Gate can receive (and store in queue) msg's from approaching trains. \\
-E<> Train1.Cross \\
-Train 1 can reach crossing. \\
-E<> Train2.Cross \\
-Train 2 can reach crossing. \\
-E<> Train1.Cross and Train2.Stop \\
-Train 1 can be crossing bridge while Train 2 is waiting to cross. \\
-E<> Train1.Cross and Train2.Stop and Train3.Stop and Train4.Stop \\
-Train 1 can cross bridge while Train 2, 3 & 4 are waiting to cross. \\
-A[] Train1.Cross + Train2.Cross + Train3.Cross + Train4.Cross <= 1 \\
-There is never more than one train crossing the bridge (at any time instance). \\
-A[] Queue.list[N-1] == 0 \\
-There can never be N elements in the queue (thus the array will not overflow) \\
-Train1.Appr --> Train1.Cross \\
-Whenever a train approaches the bridge, it will eventually cross. \\
-Train2.Appr --> Train2.Cross \\
-Train3.Appr --> Train3.Cross \\
-Train4.Appr --> Train4.Cross \\
-
-
-
-
-\newpage
-\hoofdstuk{Testresultaten}
-
-\parindent0pt
-%
-
-\cheading{Fake Course Evaluation Summary for \textsc{course
-		1234y}}{Sept.\ 2010 --- May 2011}
-
-\begin{longtable}{@{}l rr rr rr rr rr rr}
-	% pairs: absolute number (percentage)
-	
-	\toprule%
-	\centering%
-	& \multicolumn{2}{c}{{{\bfseries Excellent}}}
-	& \multicolumn{2}{c}{{{\bfseries Very Good}}}
-	& \multicolumn{2}{c}{{{\bfseries Good}}}
-	& \multicolumn{2}{c}{{{\bfseries Average}}}
-	& \multicolumn{2}{c}{{{\bfseries Poor}}}
-	& \multicolumn{2}{c}{{{\bfseries Very Poor}}} \\
-	
-	
-	\cmidrule[0.4pt](r{0.125em}){1-1}%
-	\cmidrule[0.4pt](lr{0.125em}){2-3}%
-	\cmidrule[0.4pt](lr{0.125em}){4-5}%
-	\cmidrule[0.4pt](lr{0.125em}){6-7}%
-	\cmidrule[0.4pt](lr{0.125em}){8-9}%
-	\cmidrule[0.4pt](lr{0.125em}){10-11}%
-	\cmidrule[0.4pt](l{0.25em}){12-13}%
-	% \midrule
-	\endhead
-	
-	
-	Some question about the Instructor or Course & 2 & (7.14) & 4 &
-	(14.29) & \highest{12} & \highest{(42.86)} & 4
-	& (14.29) & 6 & (21.43) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 3 & (10.71) &
-	\highest{15} & \highest{(53.57)} & 5 & (17.86) & 5 & (17.86) & 0 &
-	(0.00) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & 4 & (14.29) & 8 &
-	(28.57) & \highest{15}
-	& \highest{(53.57)} & 1 & (3.57) & 0 & (0.00) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 3 & (10.71) & 8 &
-	(28.57) & \highest{10} & \highest{(35.71)}
-	& 5 & (17.86) & 2 & (7.14) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & 6 & (21.43) &
-	\highest{9} & \highest{(32.14)}
-	& 4 & (14.29) & \highest{9} & \highest{(32.14)} & 0 & (0.00) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & \highest{10} &
-	\highest{(35.71)} & \highest{10} & \highest{(35.71)}
-	& 3 & (10.71) & 5 & (17.86) & 0 & (0.00) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & \highest{12} &
-	\highest{(42.86)} & \highest{12} & \highest{(42.86)} & 3
-	& (10.71) & 1 & (3.57) & 0 & (0.00) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & \highest{12} &
-	\highest{(42.86)} & 3 & (10.71) & 7
-	& (25.00) & 5 & (17.86) & 1 & (3.57) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & \highest{10} &
-	\highest{(35.71)} & 6 & (21.43) & 6 & (21.43) & 6 & (21.43)
-	& 1 & (3.57) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 5 & (17.86) & 5 &
-	(17.86) & \highest{12} & \highest{(42.86)} & 2 & (7.14)
-	& 3 & (10.71) & 1 & (3.57)\\
-	
-	Some question about the Instructor or Course & 3 & (10.71) & 8 &
-	(28.57) & \highest{11} & \highest{(39.29)} & 3 & (10.71) & 3 & (10.71)
-	& 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & \highest{18} &
-	\highest{(64.29)}
-	& 5 & (17.86) & 3 & (10.71) & 1 & (3.57) & 1 & (3.57) & 0 & (0.00) \\
-	
-	Some question about the Instructor or Course & \highest{15} &
-	\highest{(53.57)}
-	& 7 & (25.00) & 2 & (7.14) & 2 & (7.14) & 2 & (7.14) & 0 & (0.00) \\
-	
-	\myrowcolour%
-	Some question about the Instructor or Course & 3 & (10.71) &
-	\highest{13} & \highest{(46.43)} & 4 & (14.29) & 6 & (21.43) & 2
-	& (7.14) & 0 & (0.00) \\
-	
-	\bottomrule
-	
-\end{longtable}
-
-
-
-
-
-
-
-
-
-
-
-
-
-\square ( a_0 \implies (( \lnot a_2 \wedge \lnot a_3 ) \mathcal{U} a_1 ) \vee ( \lnot a_2 \wedge \lnot a_3 ))
-
-
-$\xymatrix@1{
-	A\times B\times C\times D \ar[r]^-{+} &B
-}$
-
-
-\usepackage{logicproof}
-
-
-\begin{logicproof}{4}
-	\forall x \, (P(x) \to Q(x)) & premise \\
-	\forall x \, P(x) & premise \\\hspace*{-30pt}
-	\begin{subproof}
-		\llap{$x_0\quad$} P(x_0) \to Q(x_0) & $\forall x \, \mathrm{e}$ 1 \\
-		P(x_0) & $\forall x \, \mathrm{e}$ 2 \\
-		Q(x_0) & $\to \mathrm{e}$ 3, 4
-	\end{subproof}
-	\forall x \, Q(x) & $\forall x \, \mathrm{i}$ 3--5
-\end{logicproof}
-
-
-
-\begin{align*}
-	&p                                                      \\
-	&p\pdfliteral{-10 -5 m 0.5 0 1 RG 0.5 w 25 -5 l S }\to q\\
-	\therefore\quad &q
-\end{align*}
 
 
 \{a,b\} or \set†{a,b} \\
@@ -2602,9 +2034,7 @@ $\xymatrix@1{
 
 
 f \colon A \to B \\
-f \colon A \into B \\
-f \colon A \onto B \\
-f \colon A \isom B \\
+
 f \circ g \\
 x \mapsto f(x) \\
 
@@ -2614,165 +2044,67 @@ x \mapsto f(x) \\
 \end{align*}
 
 
-\mathrm{A} \alpha \\
-\mathrm{B} \beta \\
-\Gamma \gamma \\
-\Delta \delta \\
-\mathrm{E} \epsilon \varepsilon \\
-\mathrm{Z} \zeta \\
-\mathrm{H} \eta \\
-\Theta \theta \vartheta \\
-\mathrm{I} \iota \\
-\mathrm{K} \kappa \\
-\Lambda \lambda \\
-\mathrm{M} \mu \\
-\mathrm{N} \nu \\
-\Xi \xi \\
-\mathrm{O} \mathrm{o} \\
-\Pi \pi \varpi \\
-\mathrm{P} \rho \varrho \\
-\Sigma \sigma \varsigma \\
-\mathrm{T} \tau \\
-\Upsilon \upsilon \\
-\Phi \phi \varphi \\
-\mathrm{X} \chi \\
-\Psi \psi \\
-\Omega \omega \\
-
-
-
-X \implies Y  \\
-X \impliedby Y \\
-X \iff Y \\
-\neg X \\
-\sim X \\
-X \land Y \\
-X \lor Y \\
-\forall a \in A \\
-\exists b \in B \\
-\exists !b \in B \\
-
-
-A = \{ [elements] : [conditions]\} \\
-
-\mathbb{N} = \{ a \in \mathbb{Z} : a > 0 \} \\
-
-a \in A \\
-A \subseteq B \\
-A \subset B  \\
-A \supseteq B \\
-A \supset B  \\
-A = B  \\
-A \cong B \\
-A \cup B \\
-A \cap B \\
-A-B \\
-|A| \\
-\{\} = \varnothing \\
-
-
-\begin{align*}
-	f \colon \mathbb{R} &\to \mathbb{R} \\
-	x &\mapsto x^2
-\end{align*}
-
- 
-\usepackage{tikz}
-\usetikzlibrary{cd}
- ~ 
-\usepackage{mathtools,halloweenmath}
-
-\paragraph{Model checking Temporal logics} \\
+\newline \\
 M, s \models p $\Leftrightarrow$ p \in L(s) \\
 M, s \models \not f1 $\Leftrightarrow$ M, s \nvdash f1 \\
 M, s \models f1 \vee f2 $\Leftrightarrow$ M,s \models f1 or M,s \nvdash f2 \\
 M, s \models f1 \wedge f2 $\Leftrightarrow$  M,s \models f1 and M,s \nvdash f2 \\
 M, s \models \mathrm{E} g_{1} $\Leftrightarrow$ there is a path \pi  from ~  s ~   such ~  that  ~ M, \pi \models g1 \\
-M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from s, M, \pi \models g1 \\
+M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from  ~  s, M, \pi \models g1 \\
 M, s \models p $\Leftrightarrow$ s is the first state of \piand M, s \models f1 \\
 M, s \models \not g_{1} $\Leftrightarrow$ M, \pi  \nvdash g1\\
 M, s \models p $\Leftrightarrow$  M, \pi  \models g1  or  M, \pi  M, \pi  \models g2\\
 M, s \models p $\Leftrightarrow$ M, \pi  \models g1  and  M, \pi  M, \pi  \models g2 \\
 M, s \models p $\Leftrightarrow$ M, $\pi^{1}$ \models g1 \\
-M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that M, $\pi^{k}$  \models g1\\
+M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that  ~ M, $\pi^{k}$  \models g1\\
 M, s \models p $\Leftrightarrow$ for all i \ge 0,M,$\pi^{i}$ \models g1 \\
-M, s \models g1 \bugcup g2 $\Leftrightarrow$ there exists ak \ge 0 such that M, $\pi^{k}$ \models g2\\
-and for all 0 \le j < k, M,$\pi^{j}$ \models g1
-M, s \models p $\Leftrightarrow$ for all j \ge 0, if for every i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2\\
-
-\leg \\
-\geq \\
-\Re \\
-\partial \\
-\bigup \\
-\bigcap \\
+M, s \models g1 \bugcup g2 $\Leftrightarrow$ ~  there  ~ exists  ~ ak  ~ \ge  ~ 0 ~  such ~  that  ~ M,  ~ $\pi^{k}$ \models g2\\
+and  ~ for  ~ all ~  0  ~ \le j < k, M,$\pi^{j}$ \models g1
+M, s \models p $\Leftrightarrow$ for all j \ge 0, if for ~  every  ~ i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2\\
 
 
-\paragraph{Model checking Fairness constraints}
-\paragraph{Definition 4.1}
+\paragraph{Reachability}
+Reachability properties are used to check whether
+a given state formula can be satisfied by some
+reachable state.
 
-   \ell ~ \boldsymbol \ell  g \\
-  
-  \mathbb{A}  is a tuple = \{ L ,  \ell_{0} ,X ,  Inv , \mathrm{T} , \Sigma \} ~ where: \\
- L ~  is ~   a  ~  finite ~   set  ~  of  ~  control ~   states, ~   also ~   called ~   locations, \\
- \ell_{0}    \in L  ~  is  ~  the ~   initial  ~  location,  ~  \\
- X   ~ is  ~  a ~   finite  ~  set  ~  of  ~  clocks \\
- T ~   \subseteq ~   L ~  x ~ C (X) ~  x  ~ \sigma  ~ x  ~ $2^{X}$ ~ x ~ L  ~ is  ~ a  ~ finite ~  set  ~ of ~  tranasitions: ~   e= \langle \ell ,g,a,r,l' \rangle  \in T ~  represents ~   a   ~ trasition  ~  from ~   \ell ~  to  ~  \ell'. ~  g  ~  is  ~  the   ~ guard   ~ of ~   e, ~   r  ~  is  ~  the  ~  set  ~  of  ~  clocks  ~  that  is ~   reset  ~  by ~    ~  e, \\ ~   and   ~   a ~   is \\  ~  the  ~  action  ~  of  ~  e.  ~  We ~   also ~   write  ~  \ell    $$\underrightarrow{g,a,r}  $$ \\
- Inv : L \to C (X) \\
- \Sigma  ~ is  ~ an  ~ alphabet  ~  of  ~  actions
-\paragraph{Definition 4.2}
-A timed transition (TTS)is a tuple S =(S,s_{0},$$\underrightarrow{} $$, \Sigma) where S is a (possibly infinite) set of states, s_{0} \in S is the initial state and $$\underrightarrow{} $$   \subseteq S x (\Sigma \cup R) x S is the transition relation. Morever, the relation -> satisfies the three following conditions:
-(1)  if s $$\underrightarrow{0} $$ s', then s = s',  (2) is s$$\underrightarrow{d} $$ s' and s' $$\underrightarrow{d'} $$ s"  with d, d' \in R, then s $$\underrightarrow{d+d'} $$ s", and (3) if s $$\underrightarrow{d} $$ ' with d \in R, then for all 0 << d' << d, there exists s" \in S such that s $$\underrightarrow{d'} $$ s"and s" $$\underrightarrow{d-d'} $$ s'
-\paragraph{Definition 4.3}
-Let \mathrm{A} = (L,\ell,X,Inv, T,\Sigma) be a timed automation. The semantics of A is defined asthe TTS S_{A}=(S,s_{0},$$\underrightarrow{} $$, \Sigma) where:\\
-S = L x $R^{X}$  \\
-s_{0} = (\ell_{0}, v_{0}) with v_{0}(x)=0 for every x \in X, \\
-the transition relation  ,$$\underrightarrow{} $$ is composed of: \\
-action transitions (\ell, v)$$\underrightarrow{a} $$ (\ell',v') if and only ifthere exists \ell $$\underrightarrow{g,a,r} $$ \ell' \in  T such that v \models g,v'=[r \leftarrow 0] v and v' \models Inv(\ell').
+\paragraph{Liveliness}
+Liveness properties are used to verify that
+something eventually will hold
+\paragraph{Security}
 
+\paragraph{Performance}
 
-delay transitions: if d \in R, (\ell,v) ,$$\underrightarrow{d} $$ (\ell,v+d) if and only if v+d \models Inv(\ell $(^{1}$
-\url{http://www.iste.co.uk/data/doc_wrkszvritcbv.pdf}
-
-
-\paragraph{Definition 1}
-Let A be a setof actions. A timedtransistion system TTS is a structure L=(S,A,R,s_{0},$\subseteq$, U) where \\
-S is a set of states, with the initial state s_{0} \in S; \\
-A is a setof labels;\\
- $$\underrightarrow{}  $$ \subseteq S x (A x $R^{ \geq 0}$) x S is the transition location; and \\
-U \subseteq  $R^{ \geq 0}$ x S is the until predicate \\
-
-
-
-\paragraph{Definition 2}
-Let L_{i} = (S_{i},A x  $\Re^{\geq0}$,$s^{\i0}$_{0},,$$\underrightarrow{} $$ i, $U^{i}$   ), i \in {1,2}, be two TTS. \\
-A timedbisimulation is a relation R $\subseteq$ S1 x S2 with $s^{1}$_{0}R$s^{2}$_{0} satisfying, for all a(d) \in A x $\Re^{\geq0}$, the following transfer properties: \\
-if  s_{1}R_{2} and  s_{1}$$\underrightarrow{a(d)} $$_{1} s_{1}', then \exists $s^{'}$_{2} \in S_{2} : s2  $$\underrightarrow{a(d)}  $$ 2$s^{'}$_{2} and $s^{'}$_{1}R$s^{'}$_{2} \\
-
-if  s_{1}R_{2} and s_{1}$$\underrightarrow{a(d)} $$_{2} s_{1}', then \exists $s^{'}$_{1} \in S_{1} : s1  $$\underrightarrow{a(d)}  $$ $s^{'}$_{1} and $s^{'}$_{1}R$s^{'}$_{2}
-
-if   s_{1}R_{2} s_{1}', then  $U^{1}$_{d}(s1)   $\Leftrightarrow$ $U^{2}$_{d}(s2) 
-
-\paragraph{Definition 3}
-A timed safety automation is a structure (S,A,C,s_{0},$\subseteq$, $\vartheta$ ,\kappa)
-S is a setof states, with the initial state s_{0} \in S; \\
-A is a set of actions; \\
-C is a set of clocks \\
- $$\underrightarrow{}  $$  $\subseteq$ S x A x \phi(C) x S is the set of edges; \\
-$\vartheta$ : S $\subseteq$ \Phi(C)is the invariantassignment function
-\kappa : S $\subseteq$ \varphi_{fin}(C) is the clocks resetting function
-\url{file:///C:/Users/gally/Downloads/228_DArBr96b.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
- \paragraph{Model checking Delay transitions}
- De lay transitions correspond to the  elapsing time while staying at some location. We write (s,v)  $$\underrightarrow{d}  $$ (s,v+d), where d \in $R^{ \geq +}$) , provided that for every 0$\le$e$\le$d, the invariant I(s) holds for v+e
-\paragraph{Model checking Action transitions}
-Action transitions correspondto the execution of a transitionfrom T.We write (s,v) $$\underrightarrow{d}  $$ (s',v') where a \in \Sigma, provided that there  is a transition \langle s,a,\phi,\lambda,s' \rangle such  that v satisfies \varphi and v' = v[ \lambda :=0]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
  
- 
-% $\xymatrix@1{
-% 	X\ar[r]^a_b & Y & Z\ar[l]^A_B }$
-% 
-%$\ell$ \\
-\Re \\
-\patial \\
+
+\hoofdstuk{Conclusie}
+
+Wat hebben alle bovenstaande rampen/ongelukken gemeen? Veiligheid.
+Bij de therac waren er diverse problemen: communicatie, doorontwikkeling, controle en toetsing
+Was het makkelijk te onderzoeken? Waarom?
+Bij de boeing 737 crashes was het probleem van controle en communicatie naar medewerkers
+Was het makkelijk te onderzoeken? Waarom?
+
+Uit de evaluatie van de china explosion 2015 tianjin komt naar voren dat communicatie, transparantie en veiligheid niet altijd prioriteit hadden bij de lokale autoriteiten
+Was het makkelijk te onderzoeken? Waarom?
+
+Bij de tesla autopilot crashes komen soms onvoldoende onderbouwde ontwerpkeuzes naar voren die niet goed zij  afgewogen tegenover het gedrag van de bestuurder
+vlucht 1951
+Was het makkelijk te onderzoeken? Waarom?
+
+De ramp in Tsjernobyl toont aan hoe autoriteiten een ramp in de doofpot proberen te stoppen
+Was het makkelijk te onderzoeken? Waarom?
+
+
+
+Wat heb ik geleerd
+Ik heb erg veel geleerd van het veilig opzetten van VPN’s. Een VPN opzettenhad ik namelijk nog nooit gedaan. Het opzetten van SSH en het aanmaken vanVM’s was al bekend. Ook had ik nog nooit met UDP sockets geprogrammeerd.Verder heb ik geleerd hoe ik in de praktijk een VM in een VLAN kan zetten enhoe VLAN’s netwerken van elkaar kunnen scheiden.Het leukste onderdeel van het project, was dat wonderbaarlijk mijn gekozenoplossing elegant werkte. UDP Servers en clients zijn gerealiseerd met minderdan enkele regels logisch scipt. Ik had aan genomen dat het werken met socketsin shell absoluut rampzalig zou uitpakken. Ik ben blij dat het opdracht zo vrijwas, zodat ik experimenteel kon zijn met mijn implementatie.
+
+
 
