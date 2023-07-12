@@ -2076,8 +2076,101 @@ something eventually will hold
 \paragraph{Performance}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ We think of thevariables innV as the present sate variables and the variables in V'as next state variables. Each variable v i V has a corresponding next state variable in V', which we denote y v'. A valuation for the variables in V and V' can be vieuwed as designating an ordered pair of states or a transition, and we can represent setsof these valuations using formulas as above. We refer to a set of pairs of states as a transition relation. If R is a transition relation, then we write R(V,V') to denote a formula that represents it.
+ In order to write specifications that describe properties of concurrent systems we need to define a set of atomic propositions AP. Atomic propositionswill typically have the form v=d where v \in V and d \in D. A proposition v =d will be truein a state s if s(v)=d. Whenv is a variable over the  boolean domain{True,False}, it is not necessarly to include both v = True and  v = False in AP.We will write v to indicate that s(v)=True and \neq v to indicate that s(v)=False.
+ We now show how to derive
  
+ blz 16
+ 
+ We now show how to derive Kripke M=(S,S_0,R,L) from the first order formulas S_0 and R that represent the concurrent system.
+ The set of states is hthe set of all variations	for V
+ the set of initial states S_0 is the set of all valuations s_0 for V that satisfy the formula S_0
+ let s and s' be the two states, then R(s,s') holds if R evaluates to True when each v \in V is assigned the value s(v) and each v' \in  V' is assigned the value s'(v).
+ The labeling function L: S \to  $\2^{AP}$ is defined so that L(s) is the subsetof all atomic propositions true in s. If v is a variable over the boolean domain, then v \in L(s) indicates that s(v)=True, and v $\notin$  L(s) indicates that s(v)=False.
+ L: S \to  $\2^{AP}$  is a function that labels each state with the set of atomic propositions true in that state\\
+ 
+Because we require that the transition relation of a kripke structuer us always total, we must extend the relation R if some state s has no successor. In this case, we modify R so that R(s,s) holds.
+To illustrate the notions defined in this section we consider a simple system with variables x and y that range over D={0,1}. Thus, a valuation for the variables x and y is justa pair (d_1, d_2) \in D x Dwhre d_1 is the value for x and d_2 is the value for y.
 
+blz 33
+Fairness
+A fairness constraint an be an arbitraty set of states, usually described by the formula of the logic. if fairness constraints are interpreted as sets of states, then a fair path must contain an element of each fairness constraint infinetely often. If fairness constrants are interpreted	 as CTL formula, then a path is fair if each constraint is true infnetely often along the path. The path quantifiers in the logic are then restricted fair paths.
+Formally, a fairkripke structure is a 4-tuple M = (S,R,L,F), where S, L and R are  defined as before and F \subseteq  $\2^{S}$  is a set of fairness constraints ( often called Buchi acceptance conditions) Let \pi = s_0,s_1 be a path in M. Define 
+inf(\pi) = {s| s=s_i for infinitely many i}.
+
+We say that \pi is fair if and only if for every P \in F, inf(\p) \cap P \neq $\emptyset$. The semantics of CTL* wth respect to a fair kripke structure is very similar to the semantics of CTL* with respect to ordinary kripke structure. We will write M,s \models_F f to indicate that the state formula f is true in state s of the fair Kripke structure M. Similarly, we write M, $\pi$ \models _f g to indicate that the path formula g is true along path \pi  in M. Only clauses 1, 5 and 6 in the origial semanticss change.
+1. M, s \models  _f p  $\Leftrightarrow$ there exists a fair path from s and p \in L(s)
+5. M, s \models  _f p  $\Leftrightarrow$ there exists a fair path \pi starting from s such that \pi \models _f g1
+6. M, s \models  _f p  $\Leftrightarrow$ for all fair paths \pi starting from s, \pi \models _f g1
+
+To illustrate the use of fairness, conider again the communication protocol for reliable channels. There is one fairness constraint for each channelthat expresses the reliability of that channel. A possible choice for the fairness constraint associated with channel i is the set of states that satisfy the formula \neq send \vee  receive_i. Thus, a computation path is fair if and only if for every channel, infinitly often either a message is received. Other notions of fairness are dealt with in[116].
+blz 36
+ctl model checking
+
+The model checkingproblem is easy to describe. given a kripke structure M =(S,R,L) that represents a finite-state concurrent system and a termporal logic formula f expressing some desired specification, find the set of all states n S that satisfy f: {s \in S | M, s \models f} \\
+Let M = (S,R, L) be a kripke structur. Assume that we want to determine which states in S satisfy the CTL formula f. The algorithm will operate by labeling each state s with the set label(s) of subformulas of f which are true in s. Initially, label(s) is just L(s). The algorithm then goes through a series of stages.During the ith stage, subformulas with i-1 nested CTL operators are processed. When a subformula is processed, it is added to the labelig of each state in which it is true. Onze the algorithm terminates, we will have that M, s \models f iff f \in label(s)
+blz 40
+Fairness constraints
+In this subsection we show how
+
+In order to determine if M, s \models f p for some p \in AP, we check M,s \models p \wedge fair using the ordinary model-checking procedure.
+blz 68
+Fairness in model checking
+
+blz 69
+
+blz 70
+
+blz 71
+Counterexamples and whitnesses
+
+blz 72
+
+
+blz 73
+
+
+blz 74
+
+
+
+blz 121
+
+blz 141
+
+
+
+blz 171
+Equivalence and preorders between systems
+blz 172
+
+blz 173
+
+
+blz 174
+
+
+blz 175
+
+
+blz 176
+
+
+blz 177
+simulation relations
+blz 178
+
+blz 179
+
+blz 180
+
+
+blz 232
+INvariants
+blz 233
+
+
+blz 234
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
