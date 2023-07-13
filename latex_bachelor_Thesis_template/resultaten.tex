@@ -2111,11 +2111,15 @@ The model checkingproblem is easy to describe. given a kripke structure M =(S,R,
 Let M = (S,R, L) be a kripke structur. Assume that we want to determine which states in S satisfy the CTL formula f. The algorithm will operate by labeling each state s with the set label(s) of subformulas of f which are true in s. Initially, label(s) is just L(s). The algorithm then goes through a series of stages.During the ith stage, subformulas with i-1 nested CTL operators are processed. When a subformula is processed, it is added to the labelig of each state in which it is true. Onze the algorithm terminates, we will have that M, s \models f iff f \in label(s)
 blz 40
 Fairness constraints
-In this subsection we show how
+In this subsection we show how to extendthe CTL model checking algorithmto handle fairness constraints. Let M = (S,R,L,F) be a fair kripke structure. Let F = {P1, ..., P_k} be the setof fairness constraints. We will say that a strongly connnected component C of the graph of M is fair wth respect to F if and only if for each P_i \in F, there is a state t_i \in (C \cap  P_i). We first give an algorithmfor checking EG f_1 with respect to a fair structure. In order to establish the correctness of this algorith, we need a lemma that is analogous to Lemma 1.As before, let M' be obtained from M by deleting from S all of those states at which f_1 does not fairly hold. Thus, M'=(S',R',L',F') where $\S^{'}$ = {s \in S | M,s \models F f1}, R' = R|_S'xS', L' = L|_s;, and F' ={ P_i \cap S' | P_i \in F}.
+
+Lemma 2 M,s \models F EG f1 iff the followingtow conditions are satisfied:
+1. s \in S'
+2. There exists a path S' that leads from s to somenode t in a nontrivial fair strongly connected component of thr graph (S',R')
 
 In order to determine if M, s \models f p for some p \in AP, we check M,s \models p \wedge fair using the ordinary model-checking procedure.
 blz 68
-Fairness in model checking
+Fairness in model checking with fixpoint
 
 blz 69
 
@@ -2135,7 +2139,7 @@ blz 74
 
 
 blz 121
-
+automata theory
 blz 141
 
 
@@ -2171,6 +2175,66 @@ blz 233
 
 
 blz 234
+
+
+blz 265
+
+blz 266
+
+blz 267
+
+
+blz 268 parralel compositioon
+
+
+blz 269 modelling with timed automata
+
+blz 274 clock regions
+
+blz 280 clock zones
+
+blz 281
+Timed automata
+A timed automation[8,99] is a finite augmented with a finite set of  real-valued clocks. We assume that transitions are instantaneous. However, time can elapse when the automation is in a state or location. When a transition occurs, some of the clocks ma be reset to zero. At any instant, the reading clock is equal to the time that has elapsed since the lat time the clock was reset. We assume that time passes at the same rate for all clocks. In order to prevent pathological behaviours, we only consider automata that are non-zeno, that is, only a finite number of transitions can happen within a finite amout of time.
+
+A clock constraint, called a guard, is associated with each transition. The transition can be taken only if the current values of the clocks satisfy the clock constraint. A clock cnstraint is also associated with each location of the automation. This constraint i called the invariant of the location. Time can elapse in the location only as long as the invariant of the location is true. An example of a timed automation is shown in Figure 17.1 The automation consists of two locations s0 and s1, two clocks x and y, and "a" transition from s0 to s1, and a "b" transition from s1 to s0. The automation starts in location s0. It can remain in that location as long as the clock y is less than or equal to 5. As soon as the value of y is greater than or equal to 3, the  automation can make an "a" transition to location s1 and reset the clock y to 0. the automation can remain in location s1 as long as y is less than or equal to 10 and x is less than or equal to 8. When y is at least 4 and x is at least 6, it can make a "b" transition back to location s0 and reset x.
+
+The remainder of this section contains a formal semantics for timed automata in terms of infinite state transition graphs[3,8]. We begin with a precise definition of clock constraints. Let X be a set of clock variables, ranging over the nonneative real numbers $\Re^{+}$. Define the set of clock constraints C(X) as follows:
+All inequalities of the form x \prec c or c \prec x are in C(X) where \prec is either < or  \leq \sm and c is a nonnegative rational number.
+If $\varphi$_1 ad $\varphi_{1}$ are in C(X), then $\varphi_1$ $\wedge$ $\varphi$ is in C(X).
+
+Note that if X contains k clocks; then each clock constraints is a convex subset of k-dimensional Eucledian space.Thus, if two points satisfy a clock constraint, then all of the points	on the line sement connecting these points satisfy the clock constraint.
+A timed automation is a 6-tuple A = (\Sigma, S, S_0, X, I, T) such that
+\Sigma is a finite alphabet
+S is a finite set of locations
+S0 \subseteq S is a set of starting locations
+X is a set of clocks
+I : S \rightarrow C(X) is a mapping from locations to clock constraints called the location invariant.
+T $\subseteq$ S x $\Sigma$ x C(X) x $2^{x}$ x S is a set of transitions. The 5-tuple $\langle$ s,a,$\varphi$, $\lambda$, s' $\rangle$ corresponds to a transition from location s to location s' labeled with a, a constraint $\varphi$ that specifies when the transition is enabled, and a set of clocks $\lambda$ $\subseteq$ X that  are reset when the transition is executed.
+
+
+We will require that time be allowed to progress to infinity, that is, at each location the upper bound imposed on the clocks be either infinity, or smaller than the maximum bound imposed by the invariant and by the transitions outgoing from the location. In other words, it is possible either to stay at a location forever, or the invariant will force the automation to leave the location, and at that point at least one transition will be enabled. For timed automata, these constraints can be imposed syntactically.
+
+A model for a timed automation A is an infinite state transition graph \tau(A) = ($\Sigma$, Q, $Q^{0}$, R). Each state in Q is a pair (s, v) where s \in S is a location and v : X $\rightarrow$  $R^{+}$ is a clock assignement, mapping each clock to a nonnegative real value. The set of initial states Q_0 is given by {(s,v)| s \in S_0 \wedge $\forall$ x  $\in$  X[v(x) =0]}.
+In order to define the state transtion relation for \tau(A), we musr first introduce some notation. For $\lambda$ $\subseteq$ X, define v[\lambda := 0] to be the clock assignment that is the same as v for clocks in X - $\lambda$ and maps the clocks in $\lambda$ to 0. For d \in \Re, define v +d as the clock assignment that maps each clock x \in X to v(x) +d. The clock assignment v -d is defined in the same  manner.
+From the brief discussion in the introduction, we know that a timed automation has two basic types of transitions:
+Delay transitions correspond to the elapsing of time while staying at some location. We write (s, v) $\xrightarrow[]{d}$ (s, v+d), where d \in  $R^{+}$, provided that for every 0 \leq e \leq d, the invariant	l(s) holds for v +e.
+Action transitions correspond to the execution of a transition	 from T. We write (s,v) $\xrightarrow[]{a}$ (s', v'), where a \in $\Sigma$, provided that there is a transition $\langle$ s,a, $\varphi$, $\lambda$, s' $\rangle$ such that v satisfies $\varphi$ and v=[$\lambda$:=0].
+
+The transition relation R of \tau(A) is obtained by combining the delay and action transitions. We will write (s,v) R(s', v') or (s, v) $\xRightarrow[]{f(x)}$   (s', v') if there exists s" and v" such that (s,v) $\xrightarrow[]{d}$ (s", v")$\xrightarrow[]{a}$ (s', v') for some d \in \Re.
+In this chapter we will describe an algorithm for solving the reachability problem for \tau(A): Given a set of initial states Q_n, we show how to copute the set of all states q \in Q that are reachable from Q_0 by transitions in R. This problem is nontrivial because \tau (A) has an infinite number of states. In order to accomplish this goal, it is necessary to use a finite representation for the infinite state space of $\tau$(A). Developing such representations is the main topic of te following sections.
+
+blz 268 parralel composition
+
+blz 274 clock regions
+blz 280 clock zones
+blz 281 Intersection
+
+blz 281 Clock reset
+
+
+blz 281 elapsing of time
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
