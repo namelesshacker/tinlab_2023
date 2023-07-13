@@ -2227,6 +2227,8 @@ In this chapter we will describe an algorithm for solving the reachability probl
 blz 268 parralel composition
 
 blz 274 clock regions
+
+For example, let A
 blz 280 clock zones
 blz 281 Intersection
 
@@ -2234,7 +2236,84 @@ blz 281 Clock reset
 
 
 blz 281 elapsing of time
+In principle, the three
 
+
+Real-time System = Discrete System + Clock Variables by Rajeev Alur
+
+blz 6 clocks and delays
+
+Formally, the action (\sigma,\sigma ') is a system action if for all clock variables x, either
+\sigma '(x) = \sigma(x) or \sigma '(x) = 0; the action (\sigma,\sigma ') is a time action - or delay -if there
+is a nonnegative real \delta the duration of the delay|such that \sigma ' = (\sigma,\sigma '). System
+actions have duration 0. Every null action is, by denition, both a system action and a delay of duration 0.
+
+
+
+blz 7 Clock constraints
+Let (\sigma, \delta) be a delay, let \phi be a state predicate, and let \psi  be an action
+predicate. The characteristic function of \phi maps each nonnegative real e < \delta to
+1 if \phi is true for \sigma + e, and otherwise to 0; the characteristic function of   maps
+e to 1 iff \psi   is enabled in \sigma + e. A state or action predicate varies finitely over the
+delay (\sigma, \delta) if its characteristic function has nitely many discontinuities in the
+interval (0,\delta). Abstractly, we restrict ourselves to state predicates and action
+predicates that vary nitely over all delays.
+
+
+blz 8 Clock-constrained systems
+A clock-constrained system S = (\phi, \psi ) is a pair that consists of a timed state
+predicate 0|the initial condition of S|and a timed action predicate \psi |the
+transition condition of S. The timed behavior \sigma is a behavior of the clock-
+constrained system S if (1) the initial condition of S is initially true for \sigma
+and (2) the transition condition of S is invariantly true for \sigma. Every clock-
+constrained system S denes, then, the set of its divergent behaviors, which is
+denoted by [[S]].
+
+
+
+blz 9 Clock-constrained programs
+
+
+blz 10 Delay predicates
+
+
+blz 11 Real-time systems
+A real-time system S = (\phi, \psi, \chi) is a triple that consists of a clock-constrained system (\phi, \psi) and a delay predicate \chi the environment condition
+of S. The timed behavior \sigma is a behavior of the real-time system S if (1) \sigma is a
+behavior of the clock-constrained system that underlies S and (2) the environ-
+ment condition of S is invariantly true for \sigma. Every real-time system S defines,
+then, the set of its divergent behaviors, which is denoted by [[S]].
+
+For example, the following real-time system S2 = (\phi, \psi, \chi)
+changes the value of m from 0 to 1 at time 3 at the earliest and at time 5 at the
+latest:
+\phi = (m =0 \wedge x =0)
+\psi = (m \geq 3 \wedge m1' =1)
+\chi = (m =0 \wedge x < 5 ) \vee (m=1)
+
+blz 12 Real-time executability
+
+blz 13 Real-time programs
+
+blz 15 Sequential real-time processes
+
+
+blz 17 Concurrent real-time processes
+
+
+blz 19 Embedded real-time processes
+
+blz 30 Verification of Safety Properties
+
+A safety property is simply a closed set of behaviors.
+\begin{equation*}
+	\begin{split}
+		x &= 1 \\
+		y &= 2 \\
+		\hline
+		x + y &= 3 
+	\end{split}
+\end{equation*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  12 JUL 2023 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  13 JUL 2023 23:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4320,6 +4320,31 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
+l.2114 ... hold. Thus, M'=(S',R',L',F') where $\S^
+                                                  {'}$ = {s \in S | M,s \mod...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2114 ...M'=(S',R',L',F') where $\S^{'}$ = {s \in
+                                                   S | M,s \models F f1}, R'...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.2114 ... $\S^{'}$ = {s \in S | M,s \models F f1}
+                                                  , R' = R|_S'xS', L' = L|_s...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
 l.2115 
        
 I've inserted a begin-math/end-math symbol since I think
@@ -4346,11 +4371,40 @@ algorithmterminates; wewillhavethatM; s \OMS/pzccm/m/n/10.95 j[]\OT1/ptmcm/m/n/
 10.95 =
  []
 
+
+Overfull \hbox (206.48506pt too wide) in paragraph at lines 2110--2115
+\OML/ptmcm/m/it/10.95 fifff \OMS/pzccm/m/n/10.95 2 \OML/ptmcm/m/it/10.95 label\
+OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 s\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/
+it/10.95 blz\OT1/ptmcm/m/n/10.95 40\OML/ptmcm/m/it/10.95 FairnessconstraintsInt
+hissubsectionweshowhowtoextendtheCTLmodelcheckingalgorithmtohandlefairnessconst
+raints:LetM \OT1/ptmcm/m/n/10.95 =
+ []
+
+
+Overfull \hbox (399.5283pt too wide) in paragraph at lines 2110--2115
+\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 S; R; L; F\OT1/ptmcm/m/n/10.95 )\OM
+L/ptmcm/m/it/10.95 beafairkripkestructure:LetF \OT1/ptmcm/m/n/10.95 = []\OML/pt
+mcm/m/it/10.95 bethesetoffairnessconstraints:Wewillsaythatastronglyconnnectedco
+mponentCofthegraphofMisfairwthrespecttoFifandonlyifforeachP[] \OMS/pzccm/m/n/10
+.95 2
+ []
+
+
+Overfull \hbox (873.52188pt too wide) in paragraph at lines 2110--2115
+\OML/ptmcm/m/it/10.95 F; thereisastatet[] \OMS/pzccm/m/n/10.95 2 \OT1/ptmcm/m/n
+/10.95 (\OML/ptmcm/m/it/10.95 C \OMS/pzccm/m/n/10.95 \ \OML/ptmcm/m/it/10.95 P[
+]\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 :Wefirstgiveanalgorithmforchecking
+EGf[]withrespecttoafairstructure:Inordertoestablishthecorrectnessofthisalgorith
+; weneedalemmathatisanalogoustoLemma\OT1/ptmcm/m/n/10.95 1\OML/ptmcm/m/it/10.95
+ :Asbefore; letM[]beobtainedfromMbydeletingfromSallofthosestatesatwhichf[]doesn
+otfairlyhold:Thus; M[] \OT1/ptmcm/m/n/10.95 =
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2116 In order to determine if M, s \models
-                                             f p for some p \in AP, we check...
+l.2116 Lemma 2 M,s \models
+                           F EG f1 iff the followingtow conditions are satis...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -4362,9 +4416,632 @@ l.2119
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[34] [35]) (discussie.tex [36
 
-]) (bronnen.tex [37
+Underfull \hbox (badness 10000) in paragraph at lines 2116--2119
+[]\T1/ptm/m/n/10.95 Lemma 2 M,s $\OMS/pzccm/m/n/10.95 j[]\OT1/ptmcm/m/n/10.95 =
+ \OML/ptmcm/m/it/10.95 FEGf\OT1/ptmcm/m/n/10.95 1\OML/ptmcm/m/it/10.95 iffthefo
+llowingtowconditionsaresatisfied \OT1/ptmcm/m/n/10.95 : 1\OML/ptmcm/m/it/10.95 
+:s \OMS/pzccm/m/n/10.95 2
+ []
+
+
+Overfull \hbox (65.90614pt too wide) in paragraph at lines 2116--2119
+\OML/ptmcm/m/it/10.95 S[]\OT1/ptmcm/m/n/10.95 2\OML/ptmcm/m/it/10.95 :Thereexis
+tsapathS[]thatleadsfromstosomenodetinanontrivialfairstronglyconnectedcomponento
+fthrgraph\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 S[]; R[]\OT1/ptmcm/m/n/10.
+95 )$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2120 In order to determine if M, s \models
+                                             f p for some p \in AP, we check...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2123 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[34]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2203 All inequalities of the form x \prec
+                                            c or c \prec x are in C(X) where...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2203 ...(X) where \prec is either < or  \leq \sm
+                                                   and c is a nonnegative ra...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2204 If $\varphi
+                  $_1 ad $\varphi_{1}$ are in C(X), then $\varphi_1$ $\wedge...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2204 If $\varphi$_
+                    1 ad $\varphi_{1}$ are in C(X), then $\varphi_1$ $\wedge...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2204 If $\varphi$_1 ad $\varphi
+                                 _{1}$ are in C(X), then $\varphi_1$ $\wedge...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2207 A timed automation is a 6-tuple A = (\Sigma
+                                                  , S, S_0, X, I, T) such that
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2213 T $\subseteq
+                   $ S x $\Sigma$ x C(X) x $2^{x}$ x S is a set of transitio...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 2206--2214
+[]\T1/ptm/m/n/10.95 Note that if X con-tains k clocks; then each clock con-s-tr
+aints is a con-vex sub-set of k-
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 2206--2214
+\T1/ptm/m/n/10.95 dimensional Eu-cle-dian space.Thus, if two points sa-tisfy a 
+clock con-s-traint, then all of the
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 2206--2214
+\T1/ptm/m/n/10.95 ma-tion is a 6-tuple A = ($\OT1/ptmcm/m/n/10.95 ^^F\OML/ptmcm
+/m/it/10.95 ; S; S[]; X; I; T\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 suchth
+at\OT1/ptmcm/m/n/10.95 ^^F\OML/ptmcm/m/it/10.95 isafinitealphabetSisafiniteseto
+flocationsS\OT1/ptmcm/m/n/10.95 0 \OMS/pzccm/m/n/10.95 ^^R
+ []
+
+
+Overfull \hbox (129.61366pt too wide) in paragraph at lines 2206--2214
+\OML/ptmcm/m/it/10.95 SisasetofstartinglocationsXisasetofclocksI \OT1/ptmcm/m/n
+/10.95 : \OML/ptmcm/m/it/10.95 S \OMS/pzccm/m/n/10.95 ! \OML/ptmcm/m/it/10.95 C
+\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 X\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m
+/it/10.95 isamappingfromlocationstoclockconstraintscalledthelocationinvariant:T
+$$\OMS/pzccm/m/n/10.95 ^^R$
+ []
+
+[35]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2218 ... an infinite state transition graph \tau
+                                                  (A) = ($\Sigma$, Q, $Q^{0}...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2218 ...tate transition graph \tau(A) = ($\Sigma
+                                                  $, Q, $Q^{0}$, R). Each st...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2218 ... state in Q is a pair (s, v) where s \in
+                                                   S is a location and v : X...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2218 ...n S is a location and v : X $\rightarrow
+                                                  $  $R^{+}$ is a clock assi...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2218 ...real value. The set of initial states Q_
+                                                  0 is given by {(s,v)| s \i...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2218 ...0 is given by {(s,v)| s \in S_0 \wedge $
+                                                  \forall$ x  $\in$  X[v(x) ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2218 ...ven by {(s,v)| s \in S_0 \wedge $\forall
+                                                  $ x  $\in$  X[v(x) =0]}.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2219 ...ne the state transtion relation for \tau
+                                                  (A), we musr first introdu...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2219 ...st introduce some notation. For $\lambda
+                                                  $ $\subseteq$ X, define v[...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2219 ...\lambda$ $\subseteq$ X, define v[\lambda
+                                                   := 0] to be the clock ass...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2219 ...the same as v for clocks in X - $\lambda
+                                                  $ and maps the clocks in $...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2219 ... the clocks in $\lambda$ to 0. For d \in
+                                                   \Re, define v +d as the c...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2221 ...tion. We write (s, v) $\xrightarrow[]{d}
+                                                  $ (s, v+d), where d \in  $...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2221 ...\xrightarrow[]{d}$ (s, v+d), where d \in
+                                                    $R^{+}$, provided that f...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2221 ...htarrow[]{d}$ (s, v+d), where d \in  $R^
+                                                  {+}$, provided that for ev...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2221 ... $R^{+}$, provided that for every 0 \leq
+                                                   e \leq d, the invariant	l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2222 ...rom T. We write (s,v) $\xrightarrow[]{a}
+                                                  $ (s', v'), where a \in $\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2222 ...\xrightarrow[]{a}$ (s', v'), where a \in
+                                                   $\Sigma$, provided that t...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2222 ...rrow[]{a}$ (s', v'), where a \in $\Sigma
+                                                  $, provided that there is ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (143.61009pt too wide) in paragraph at lines 2218--2223
+\OML/ptmcm/m/it/10.95 disdefinedinthesamemanner:Fromthebriefdiscussionintheintr
+oduction; weknowthatatimedautomationhastwobasictypesoftransitions \OT1/ptmcm/m/
+n/10.95 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2218--2223
+\OML/ptmcm/m/it/10.95 Delaytransitionscorrespondtotheelapsingoftimewhilestaying
+atsomelocation:Wewrite\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 s; v\OT1/ptmc
+m/m/n/10.95 )$$[]$
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 2218--2223
+\T1/ptm/m/n/10.95 (s, v+d), where d $\OMS/pzccm/m/n/10.95 2$\T1/ptm/m/n/10.95 R
+$[]$, pro-vi-ded that for every 0 $\OMS/pzccm/m/n/10.95 ^^T \OML/ptmcm/m/it/10.
+95 e \OMS/pzccm/m/n/10.95 ^^T \OML/ptmcm/m/it/10.95 d; theinvariantl\OT1/ptmcm/
+m/n/10.95 (\OML/ptmcm/m/it/10.95 s\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 h
+oldsforv \OT1/ptmcm/m/n/10.95 +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2218--2223
+\OML/ptmcm/m/it/10.95 e:Actiontransitionscorrespondtotheexecutionofatransitionf
+romT:Wewrite\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 s; v\OT1/ptmcm/m/n/10.9
+5 )$$[]$ \T1/ptm/m/n/10.95 (s', v'), where
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2224 The transition relation R of \tau
+                                        (A) is obtained by combining the del...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.2224 ... (s,v) R(s', v') or (s, v) $\xRightarrow
+                                                  []{f(x)}$   (s', v') if th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2224 ...nd v" such that (s,v) $\xrightarrow[]{d}
+                                                  $ (s", v")$\xrightarrow[]{...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2224 ...rightarrow[]{a}$ (s', v') for some d \in
+                                                   \Re.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2225 ...on for the infinite state space of $\tau
+                                                  $(A). Developing such repr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (289.60074pt too wide) in paragraph at lines 2224--2226
+[]\T1/ptm/m/n/10.95 The tran-si-tion re-la-tion R of $\OML/ptmcm/m/it/10.95 ^^\
+\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 A\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m
+/it/10.95 isobtainedbycombiningthedelayandactiontransitions:Wewillwrite\OT1/ptm
+cm/m/n/10.95 (\OML/ptmcm/m/it/10.95 s; v\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/1
+0.95 R\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 s[]; v[]\OT1/ptmcm/m/n/10.95 
+)\OML/ptmcm/m/it/10.95 or\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 s; v\OT1/p
+tmcm/m/n/10.95 )$\T1/ptm/m/n/10.95 []f(x)$\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it
+/10.95 s[]; v[]\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 ifthereexistss[]ndv\
+OT1/ptmcm/m/n/10.95 "\OML/ptmcm/m/it/10.95 suchthat\OT1/ptmcm/m/n/10.95 (\OML/p
+tmcm/m/it/10.95 s; v\OT1/ptmcm/m/n/10.95 )$$[]$
+ []
+
+
+Overfull \hbox (66.8059pt too wide) in paragraph at lines 2224--2226
+\T1/ptm/m/n/10.95 (s", v")$[]$ (s', v') for some d $\OMS/pzccm/m/n/10.95 2 <\OM
+L/ptmcm/m/it/10.95 :Inthischapterwewilldescribeanalgorithmforsolvingthereachabi
+lityproblemfor^^\\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 A\OT1/ptmcm/m/n/10
+.95 ) :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2224--2226
+\OML/ptmcm/m/it/10.95 GivenasetofinitialstatesQ[]; weshowhowtocoputethesetofall
+statesq \OMS/pzccm/m/n/10.95 2
+ []
+
+
+Overfull \hbox (500.88307pt too wide) in paragraph at lines 2224--2226
+\OML/ptmcm/m/it/10.95 QthatarereachablefromQ[]bytransitionsinR:Thisproblemisnon
+trivialbecause^^\\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 A\OT1/ptmcm/m/n/10
+.95 )\OML/ptmcm/m/it/10.95 hasaninfinitenumberofstates:Inordertoaccomplishthisg
+oal; itisnecessarytouseafiniterepresentationfortheinfinitestatespaceof$$^^\$\T1
+/ptm/m/n/10.95 (A).
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2246 Formally, the action (\sigma
+                                   ,\sigma ') is a system action if for all ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2249 ...ration 0. Every null action is, by de^^L
+                                                  nition, both a system acti...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (25.5333pt too wide) in paragraph at lines 2246--2249
+\OT1/ptmcm/m/n/10.95 0; \OML/ptmcm/m/it/10.95 theaction\OT1/ptmcm/m/n/10.95 (\O
+ML/ptmcm/m/it/10.95 ^^[; ^^[[]\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 isati
+meaction \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 ordelay \OMS/pzccm/m/n/
+10.95 ^^@ \OML/ptmcm/m/it/10.95 ifthereisanonnegativereal^^Nthedurationofthedel
+ay\OMS/pzccm/m/n/10.95 j\OML/ptmcm/m/it/10.95 suchthat^^[[] \OT1/ptmcm/m/n/10.9
+5 =
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2254 Let (\sigma
+                  , \delta) be a delay, let \phi be a state predicate, and l...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Unicode character  (U+000B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2257 e to 1 iff \psi
+                          is enabled in \sigma + e. A state or action predic...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2257 .... A state or action predicate varies ^^L
+                                                  finitely over the
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (249.62427pt too wide) in paragraph at lines 2253--2257
+[]\T1/ptm/m/n/10.95 blz 7 Clock con-s-traints Let ($\OML/ptmcm/m/it/10.95 ^^[; 
+^^N\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 beadelay; let^^^beastatepredicat
+e; andlet beanactionpredicate:Thecharacteristicfunctionof^^^mapseachnonnegative
+reale <
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2253--2257
+\OML/ptmcm/m/it/10.95 ^^Nto\OT1/ptmcm/m/n/10.95 1\OML/ptmcm/m/it/10.95 if^^^ist
+ruefor^^[ \OT1/ptmcm/m/n/10.95 + \OML/ptmcm/m/it/10.95 e; andotherwiseto\OT1/pt
+mcm/m/n/10.95 0; \OML/ptmcm/m/it/10.95 thecharacteristicfunctionofmapseto\OT1/p
+tmcm/m/n/10.95 1\OML/ptmcm/m/it/10.95 iff isenabledin^^[ \OT1/ptmcm/m/n/10.95 +
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2258 delay (\sigma
+                    , \delta) if its characteristic function has ^^Lnitely m...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2258 ...) if its characteristic function has ^^L
+                                                  nitely many discontinuitie...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2259 interval (0,\delta
+                         ). Abstractly, we restrict ourselves to state predi...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2260 predicates that vary ^^L
+                               nitely over all delays.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (111.79848pt too wide) in paragraph at lines 2258--2260
+[]\T1/ptm/m/n/10.95 nitely many dis-con-ti-nui-ties in the in-ter-val (0,$\OML/
+ptmcm/m/it/10.95 ^^N\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 :Abstractly; we
+restrictourselvestostatepredicatesandactionpredicatesthatvary$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2264 A clock-constrained system S = (\phi
+                                           , \psi ) is a pair that consists ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Unicode character ^^^ (U+001E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2265 predicate ^^^
+                    0|the initial condition of S|and a timed action predicat...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2269 constrained system S de^^L
+                                 nes, then, the set of its divergent behavio...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2263--2269
+[]\T1/ptm/m/n/10.95 blz 8 Clock-constrained sys-tems A clock-constrained sy-s-t
+em S =
+ []
+
+
+Overfull \hbox (323.59856pt too wide) in paragraph at lines 2263--2269
+\T1/ptm/m/n/10.95 ($\OML/ptmcm/m/it/10.95 ^^^;  \OT1/ptmcm/m/n/10.95 )\OML/ptmc
+m/m/it/10.95 isapairthatconsistsofatimedstatepredicate\OT1/ptmcm/m/n/10.95 0\OM
+S/pzccm/m/n/10.95 j\OML/ptmcm/m/it/10.95 theinitialconditionofS\OMS/pzccm/m/n/1
+0.95 j\OML/ptmcm/m/it/10.95 andatimedactionpredicate \OMS/pzccm/m/n/10.95 j\OML
+/ptmcm/m/it/10.95 thetransitionconditionofS:Thetimedbehavior^^[isabehaviorofthe
+clock \OMS/pzccm/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (149.38477pt too wide) in paragraph at lines 2263--2269
+\OML/ptmcm/m/it/10.95 constrainedsystemSif\OT1/ptmcm/m/n/10.95 (1)\OML/ptmcm/m/
+it/10.95 theinitialconditionofSisinitiallytruefor^^[and\OT1/ptmcm/m/n/10.95 (2)
+\OML/ptmcm/m/it/10.95 thetransitionconditionofSisinvariantlytruefor^^[:Everyclo
+ck \OMS/pzccm/m/n/10.95 ^^@
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2281 A real-time system S = (\phi
+                                   , \psi, \chi) is a triple that consists o...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2286 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 2280--2286
+[]\T1/ptm/m/n/10.95 blz 11 Real-time sys-tems A real-time sy-s-tem S = ($\OML/p
+tmcm/m/it/10.95 ^^^;  ; ^^_\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 isatripl
+ethatconsistsofaclock \OMS/pzccm/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (74.26143pt too wide) in paragraph at lines 2280--2286
+\OML/ptmcm/m/it/10.95 constrainedsystem\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10
+.95 ^^^;  \OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 andadelaypredicate^^_thee
+nvironmentconditionofS:Thetimedbehavior^^[isabehaviorofthereal \OMS/pzccm/m/n/1
+0.95 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2280--2286
+\OML/ptmcm/m/it/10.95 timesystemSif\OT1/ptmcm/m/n/10.95 (1)\OML/ptmcm/m/it/10.9
+5 ^^[isabehavioroftheclock \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 const
+rainedsystemthatunderliesSand\OT1/ptmcm/m/n/10.95 (2)\OML/ptmcm/m/it/10.95 thee
+nviron \OMS/pzccm/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (137.87332pt too wide) in paragraph at lines 2280--2286
+\OML/ptmcm/m/it/10.95 mentconditionofSisinvariantlytruefor^^[:Everyreal \OMS/pz
+ccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 timesystemSdefines; then; thesetofitsdi
+vergentbehaviors; whichisdenotedby\OT1/ptmcm/m/n/10.95 [[\OML/ptmcm/m/it/10.95 
+S\OT1/ptmcm/m/n/10.95 ]]\OML/ptmcm/m/it/10.95 :$ 
+ []
+
+[36]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2287 ...he following real-time system S2 = (\phi
+                                                  , \psi, \chi)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2293 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (143.59576pt too wide) in paragraph at lines 2287--2293
+[]\T1/ptm/m/n/10.95 For example, the fol-lo-wing real-time sy-s-tem S2 = ($\OML
+/ptmcm/m/it/10.95 ^^^;  ; ^^_\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 change
+sthevalueofmfrom\OT1/ptmcm/m/n/10.95 0\OML/ptmcm/m/it/10.95 to\OT1/ptmcm/m/n/10
+.95 1\OML/ptmcm/m/it/10.95 attime\OT1/ptmcm/m/n/10.95 3\OML/ptmcm/m/it/10.95 at
+theearliestandattime\OT1/ptmcm/m/n/10.95 5\OML/ptmcm/m/it/10.95 atthelatest \OT
+1/ptmcm/m/n/10.95 :
+ []
+
+[37]) (discussie.tex [38
+
+]) (bronnen.tex [39
 
 ]
 Overfull \hbox (270.53256pt too wide) in paragraph at lines 14--16
@@ -4451,7 +5128,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--404
 /ptm/m/n/10.95 re-pre-sen-t-in-gand using non-func-ti-o-nal
  []
 
-[38
+[40
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 405--407
@@ -4594,7 +5271,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--528
 -[]dienstverlening /
  []
 
-[39]
+[41]
 Overfull \hbox (231.94125pt too wide) in paragraph at lines 528--529
 [][]$\T1/pcr/m/n/10.95 https : / / www . infrasite . nl / bouwen / 2021 / 05 / 
 27 / veiligheid-[]voorop-[]begin-[]project-[]sluis-[]of-[]brug-[]altijd-[]met-[
@@ -4724,7 +5401,7 @@ Overfull \hbox (63.90707pt too wide) in paragraph at lines 556--557
 izen-[]en-[]bruggen-[]noordwest-[]overijssel/$[][] 
  []
 
-[40]
+[42]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -4910,7 +5587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 573--574
 oads / 2018 / 04 /
  []
 
-[41]
+[43]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -4972,7 +5649,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.593 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://people.physics.carleton.ca/~dr...
 
-LaTeX Warning: Citation `' on page 42 undefined on input line 594.
+LaTeX Warning: Citation `' on page 44 undefined on input line 594.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 593--595
@@ -4988,7 +5665,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.596 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=-7gVqB...
 
-LaTeX Warning: Citation `' on page 42 undefined on input line 597.
+LaTeX Warning: Citation `' on page 44 undefined on input line 597.
 
 
 Underfull \hbox (badness 5147) in paragraph at lines 599--601
@@ -5010,9 +5687,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.607 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://thedailywtf.com/articles/the-t...
 
-LaTeX Warning: Citation `' on page 42 undefined on input line 608.
+LaTeX Warning: Citation `' on page 44 undefined on input line 608.
 
-[42]
+[44]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5020,7 +5697,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.610 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.computer.org/csdl/magazine...
 
-LaTeX Warning: Citation `' on page 43 undefined on input line 611.
+LaTeX Warning: Citation `' on page 45 undefined on input line 611.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 610--613
@@ -5064,7 +5741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 641--643
 e / pii / S1474667017448245$[][] \T1/ptm/m/n/10.95 ar-ti-kel
  []
 
-[43]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 650--651
 [][]$\T1/pcr/m/n/10.95 https : / / www . coursera . org / lecture / software-[]
 design-[]threats-[]mitigations /
@@ -5096,7 +5773,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.663 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.cs.colostate.edu/~bieman/C...
 
-LaTeX Warning: Citation `' on page 44 undefined on input line 664.
+LaTeX Warning: Citation `' on page 46 undefined on input line 664.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
@@ -5106,7 +5783,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.667 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.cs.ucf.edu/~dcm/Teaching/C...
 
-LaTeX Warning: Citation `' on page 44 undefined on input line 668.
+LaTeX Warning: Citation `' on page 46 undefined on input line 668.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 667--674
@@ -5122,7 +5799,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.684 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://hci.cs.siue.edu/NSF/Files/Seme...
 
-LaTeX Warning: Citation `' on page 44 undefined on input line 685.
+LaTeX Warning: Citation `' on page 46 undefined on input line 685.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 684--687
@@ -5138,7 +5815,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.687 \bibitem{ID}
                    ... \LaTeX:\\ \url{https://www.thinkreliability.com/Instr...
 
-LaTeX Warning: Citation `' on page 44 undefined on input line 688.
+LaTeX Warning: Citation `' on page 46 undefined on input line 688.
 
 
 Underfull \hbox (badness 2564) in paragraph at lines 687--690
@@ -5146,7 +5823,7 @@ Underfull \hbox (badness 2564) in paragraph at lines 687--690
 gs / Blog-[]Therac-[]25 . pdf$[][] \T1/ptm/m/n/10.95 [[]] vei-lig-
  []
 
-[44]
+[46]
 Overfull \hbox (261.86362pt too wide) in paragraph at lines 690--691
 [][]$\T1/pcr/m/n/10.95 https : / / sqa . stackexchange . com / questions / 9798
  / asking-[]for-[]help-[]with-[]this-[]therac-[]25-[]bugged-[]code-[]i-[]dont-[
@@ -5255,7 +5932,7 @@ Underfull \hbox (badness 1314) in paragraph at lines 745--748
  MAX _ groundings$[][] \T1/ptm/m/n/10.95 vei-lig-heids-ri-sico's men-se-
  []
 
-[45]
+[47]
 Overfull \hbox (91.82944pt too wide) in paragraph at lines 748--750
 [][]$\T1/pcr/m/n/10.95 https : / / www . theverge . com / 2019 / 5 / 2 / 185181
 76 / boeing-[]737-[]max-[]crash-[]problems-[]human-[]error-[]mcas-[]faa$[][]
@@ -5330,7 +6007,7 @@ Overfull \hbox (36.48471pt too wide) in paragraph at lines 776--779
 ou-[]need-[]to-[]know-[]about-[]boeings-[]737-[]max-[]crisis .
  []
 
-[46]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 779--781
 [][]$\T1/pcr/m/n/10.95 https : / / arstechnica . com / information-[]technology
  / 2020 / 01 /
@@ -5426,7 +6103,7 @@ Overfull \hbox (41.06918pt too wide) in paragraph at lines 804--805
 s-[]dealt-[]another-[]737-[]max-[]cancellation-[]blow .
  []
 
-[47]
+[49]
 Overfull \hbox (18.2313pt too wide) in paragraph at lines 805--807
 [][]$\T1/pcr/m/n/10.95 https : / / www . eetimes . com / boeing-[]crashes-[]hig
 hlight-[]a-[]worsening-[]reliability-[]crisis/$[][]
@@ -5520,7 +6197,7 @@ rily-[]bans-[]some-[]boeing-[]aircraft-[]after-[]pratt-[]whitney-[]engine-[]inc
 idents/$[][] 
  []
 
-[48]
+[50]
 Overfull \hbox (251.19467pt too wide) in paragraph at lines 827--829
 [][]$\T1/pcr/m/n/10.95 https : / / www . timeslive . co . za / news / world / 2
 021-[]02-[]23-[]damage-[]to-[]united-[]boeing-[]777-[]engine-[]consistent-[]wit
@@ -5685,7 +6362,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 873--874
 nts / 2016 / TEIA / OECD _ WGCA _ 24-[]27 _ OCT _
  []
 
-[49]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 876--877
 [][]$\T1/pcr/m/n/10.95 https : / / porteconomicsmanagement . org / pemp / conte
 nts / part6 / port-[]resilience /
@@ -5796,7 +6473,7 @@ Overfull \hbox (141.58969pt too wide) in paragraph at lines 901--902
 
  []
 
-[50]
+[52]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5923,7 +6600,7 @@ Overfull \hbox (67.49155pt too wide) in paragraph at lines 934--936
  / 02 / Chinese-[]Investigators-[]Identify-[]Cause-[]Tianjin .
  []
 
-[51]
+[53]
 Overfull \hbox (17.2313pt too wide) in paragraph at lines 936--938
 [][]$\T1/pcr/m/n/10.95 https : / / cen . acs . org / articles / 94 / i7 / Chine
 se-[]Investigators-[]Identify-[]Cause-[]Tianjin .
@@ -6084,7 +6761,7 @@ Overfull \hbox (47.15366pt too wide) in paragraph at lines 968--969
  / explosion-[]rocks-[]north-[]chinese-[]city-[]of-[]tianjin /
  []
 
-[52]
+[54]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6190,7 +6867,7 @@ Overfull \hbox (6.06235pt too wide) in paragraph at lines 997--998
 ]blast-[]insurance-[]idUSKCN0QM0N220150817$[][] 
  []
 
-[53]
+[55]
 Overfull \hbox (287.78598pt too wide) in paragraph at lines 1001--1003
 [][]$\T1/pcr/m/n/10.95 https : / / www . independent . co . uk / news / world /
  asia / tianjin-[]explosion-[]photos-[]china-[]chemical-[]factory-[]accident-[]
@@ -6270,7 +6947,7 @@ Overfull \hbox (74.07602pt too wide) in paragraph at lines 1031--1033
 tesla-[]sudden-[]unintended-[]acceleration-[]driver-[]error/$[][]
  []
 
-[54]
+[56]
 Overfull \hbox (119.2518pt too wide) in paragraph at lines 1033--1035
 [][]$\T1/pcr/m/n/10.95 https : / / www . darkreading . com / threat-[]intellige
 nce / security-[]risks-[]discovered-[]in-[]tesla-[]backup-[]gateway /
@@ -6380,7 +7057,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1072--1074
 / white-[]hats-[]hack-[]tesla-[]keep/$[][] \T1/ptm/m/n/10.95 vei-lig-
  []
 
-[55]
+[57]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6558,7 +7235,7 @@ Overfull \hbox (124.83627pt too wide) in paragraph at lines 1100--1101
 ] 
  []
 
-[56]
+[58]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6679,7 +7356,7 @@ Overfull \hbox (7.56235pt too wide) in paragraph at lines 1127--1128
 s-[]vehicles-[]as-[]a-[]killer-[]app-[]for-[]ai/$[][] 
  []
 
-[57]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 1129--1130
 [][]$\T1/pcr/m/n/10.95 https : / / www . jdsupra . com / post / contentViewerEm
 bed . aspx ? fid =
@@ -6816,7 +7493,7 @@ Overfull \hbox (90.74496pt too wide) in paragraph at lines 1148--1149
 to-[]10-[]tesla-[]crash-[]deaths-[]since-[]2016-[]2021-[]06-[]17/$[][] 
  []
 
-[58]
+[60]
 Overfull \hbox (182.681pt too wide) in paragraph at lines 1149--1150
 [][]$\T1/pcr/m/n/10.95 https : / / www . politico . com / news / 2021 / 05 / 18
  / ntsb-[]tesla-[]owner-[]was-[]in-[]drivers-[]seat-[]before-[]april-[]texas-[]
@@ -6974,7 +7651,7 @@ Overfull \hbox (7.06235pt too wide) in paragraph at lines 1165--1166
 utopilot-[]model-[]x-[]crash-[]investigation$[][] 
  []
 
-[59]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 1166--1167
 [][]$\T1/pcr/m/n/10.95 https : / / www . usnews . com / news / top-[]news / art
 icles / 2021-[]03-[]18 /
@@ -7114,7 +7791,7 @@ Underfull \hbox (badness 3449) in paragraph at lines 1201--1205
 a _ nl _ aangepast . pdf$[][] \T1/ptm/m/n/10.95 be-schrij-ving te-rug-
  []
 
-[60]
+[62]
 Overfull \hbox (131.42075pt too wide) in paragraph at lines 1218--1220
 [][]$\T1/pcr/m/n/10.95 https : / / www . ntvg . nl / artikelen / vliegtuigongev
 al-[]schiphol-[]25-[]02-[]2009-[]letsels-[]en-[]verdeling-[]van-[]gewonden$[][]
@@ -7188,7 +7865,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1253 	\bibitem{ID}
                      ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=jmZ6...
-[61]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 1254--1255
 [][]$\T1/pcr/m/n/10.95 https : / / www . ewmagazine . nl / nederland / achtergr
 ond / 2016 / 07 /
@@ -7265,7 +7942,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1315--1333
 brand-[]niet-[]ontstaan-[]in-[]cel-[]11/$[][]
  []
 
-[62]
+[64]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7342,7 +8019,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1370--1371
 icles / 10 . 1186 /
  []
 
-[63]
+[65]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7499,7 +8176,7 @@ Overfull \hbox (11.64682pt too wide) in paragraph at lines 1409--1410
 f792e720-[]bd85-[]4c18-[]8a71-[]b334d9d5de7e /
  []
 
-[64]
+[66]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7592,7 +8269,7 @@ Overfull \hbox (29.40024pt too wide) in paragraph at lines 1430--1432
  / 07 / vliegramp-[]suriname-[]op-[]7-[]juni-[]1989-[]2/$[][]
  []
 
-[65
+[67
 pdfTeX warning (ext4): destination with the same identifier (name{cite.aviation
 SLMCrashAccidentInvestigation}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -7667,7 +8344,7 @@ Overfull \hbox (130.42075pt too wide) in paragraph at lines 1472--1474
 meer-[]kernreacties-[]in-[]ontoegankelijke-[]ruimte-[]in-[]tsjernobyl/$[][]
  []
 
-[66]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 1477--1479
 [][]$\T1/pcr/m/n/10.95 https : / / www . google . com / maps / d / u / 0 / view
 er ? ie = UTF8 & hl = nl & t = h & msa = 0 & ll = 51 .
@@ -7741,7 +8418,7 @@ Overfull \hbox (22.81577pt too wide) in paragraph at lines 1533--1545
 antistralingskoepel-[]tsjernobyl-[]bijna-[]af$[][]
  []
 
-[67]
+[69]
 ! Extra }, or forgotten \endgroup.
 l.1553 ...000 ton zware deksel van de reactor af.}
                                                   
@@ -7770,7 +8447,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1587 \bibitem{ID}
                     ... \LaTeX:\\ \url{https://www.us-cert.gov/ics/alerts/IR...
-[68]
+[70]
 Overfull \hbox (34.98471pt too wide) in paragraph at lines 1589--1590
 [][]$\T1/pcr/m/n/10.95 https : / / www . politico . eu / article / ukraine-[]cy
 ber-[]war-[]frontline-[]russia-[]malware-[]attacks/$[][] 
@@ -7846,7 +8523,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1607--1608
 []en-[]vervoer / verkeersmanagement /
  []
 
-[69]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 1609--1610
 [][]$\T1/pcr/m/n/10.95 http : / / wsv . wsvdegors . nl / wp-[]content / uploads
  / 2017 / 05 / Bedieningstijden _ 201701 .
@@ -7950,7 +8627,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1622--1623
  assets / PUBLICATIES / Publicaties %
  []
 
-[70]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 1624--1625
 [][]$\T1/pcr/m/n/10.95 https : / / www . varendoejesamen . nl / storage / app /
  media / knooppunten /
@@ -8086,7 +8763,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1695--1696
 202014 / WEBIST / WEBIST / Internet %
  []
 
-[71]
+[73]
 Overfull \hbox (8.76712pt too wide) in paragraph at lines 1708--1709
 [][]$\T1/pcr/m/n/10.95 http : / / ppedreiras . av . it . pt / resources / empse
 0809 / slides / TheUppaalModelChecker-[]Julian .
@@ -8179,7 +8856,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[72]
+[74]
 Overfull \hbox (27.02054pt too wide) in paragraph at lines 1771--1772
 [][]$\T1/pcr/m/n/10.95 https : / / repository . tno . nl / islandora / object /
  uuid % 3Acdef48df-[]da49-[]46b6-[]8678-[]5c62a88a0090$[][] 
@@ -8264,7 +8941,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1800 \bibitem{ID}
                     ... \LaTeX:\\ \url{file:///C:/Users/gally/Downloads/AGAR...
-[73]
+[75]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8335,7 +9012,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 <to be read again> 
                    \relax 
 l.1820 \bibitem{ID}
-                    ... \LaTeX:\\ \url{https://flightsafety.org/} [74]
+                    ... \LaTeX:\\ \url{https://flightsafety.org/} [76]
 Overfull \hbox (100.61868pt too wide) in paragraph at lines 1821--1822
 [][]$\T1/pcr/m/n/10.95 https : / / engineering . stanford . edu / magazine / ar
 ticle / mykel-[]kochenderfer-[]ai-[]and-[]safety-[]critical-[]systems$[][] 
@@ -8433,7 +9110,7 @@ Overfull \hbox (100.61868pt too wide) in paragraph at lines 1839--1840
 te-[]airline-[]safety-[]federal-[]oversight-[]commercial-[]aviation$[][] 
  []
 
-[75]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 1840--1841
 [][]$\T1/pcr/m/n/10.95 https : / / www . federalregister . gov / documents / 20
 19 / 02 / 13 / 2019-[]00758 /
@@ -8549,7 +9226,7 @@ Overfull \hbox (73.69632pt too wide) in paragraph at lines 1856--1857
 -[]critical-[]avionics-[]for-[]the-[]777-[]primary-[]flight-[]Yeh /
  []
 
-[76]
+[78]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8686,7 +9363,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1887--1888
 reWorks % 20Features % 20and % 20Operation %
  []
 
-[77]
+[79]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8827,7 +9504,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1918--1919
 g _ room / boeing _ reading _ room / media / 737 _
  []
 
-[78]
+[80]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.wiki737m
 axgroundings}) has been already used, duplicate ignored
 <to be read again> 
@@ -8979,7 +9656,7 @@ ead-[]737-[]maxs-[]return-[]flight-[]kicks-[]off-[]massive-[]software-[]upgrade
 /$[][] 
  []
 
-[79]
+[81]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.bergstra
 burgess122019737maxMcasAlgorithm}) has been already used, duplicate ignored
 <to be read again> 
@@ -9147,7 +9824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1998--1999
 features / what-[]broke-[]the-[]737-[]max .
  []
 
-[80]
+[82]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ostrower
 11062020more737changes}) has been already used, duplicate ignored
 <to be read again> 
@@ -9317,7 +9994,7 @@ Overfull \hbox (310.24417pt too wide) in paragraph at lines 2037--2038
 erns-[]fully-[]addressed-[]-[]32569125/$[][] 
  []
 
-[81]
+[83]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.euractiv
 22022021737firegrounds}) has been already used, duplicate ignored
 <to be read again> 
@@ -9378,7 +10055,7 @@ Overfull \hbox (227.47708pt too wide) in paragraph at lines 2049--2052
 h-[]metal-[]fatigue-[]-[]ntsb/$[][]
  []
 
-) (evaluatie.tex [82]) [83
+) (evaluatie.tex [84]) [85
 
 ]
 \openout2 = `bijlage1.aux'.
@@ -9768,10 +10445,10 @@ Underfull \hbox (badness 1286) in paragraph at lines 177--177
 []\T1/phv/m/n/10.95 Hier steht ein Text.
  []
 
-[84
+[86
 
 
-] [85] [86] [87] [88]
+] [87] [88] [89] [90]
 ! Undefined control sequence.
 <recently read> \rowcolor 
                           
@@ -10979,10 +11656,11 @@ Overfull \hbox (10.99077pt too wide) in paragraph at lines 418--418
 \T1/phv/m/n/10.95 ==0||main.direction==1)| 
  []
 
-[89] [90] [91] [92] [93] [94] [95] [96] [97] [98]) [99]
+[91] [92] [93] [94] [95] [96] [97] [98] [99] [100]) [101]
 \openout2 = `bijlage2.aux'.
 
- (bijlage2.tex) [100
+ (bijlage2.tex)
+[102
 
 
 
@@ -10990,8 +11668,7 @@ Overfull \hbox (10.99077pt too wide) in paragraph at lines 418--418
 ]
 \openout2 = `bijlage3.aux'.
 
-
-(bijlage3.tex
+ (bijlage3.tex
 Overfull \hbox (3.52368pt too wide) in paragraph at lines 16--17
  [][] 
  []
@@ -11001,7 +11678,7 @@ Overfull \hbox (3.52368pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
-[101
+[103
 
 
 
@@ -11065,135 +11742,135 @@ Overfull \hbox (3.52368pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
-) [102]
+) [104]
 \openout2 = `bijlage4.aux'.
 
  (bijlage4.tex
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 103 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 105 undefined
  on input line 6.
 
 
-LaTeX Warning: Citation `zetter2016GridHack' on page 103 undefined on input lin
+LaTeX Warning: Citation `zetter2016GridHack' on page 105 undefined on input lin
 e 7.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 103 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 105 undefined on in
 put line 8.
 
 
-LaTeX Warning: Citation `finklejan2016UsBlamesRussianSandworm' on page 103 unde
+LaTeX Warning: Citation `finklejan2016UsBlamesRussianSandworm' on page 105 unde
 fined on input line 9.
 
 
-LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 103 undefined on in
+LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 105 undefined on in
 put line 10.
 
 
 LaTeX Warning: Citation `caseli04112016intrusiondetectioncontrolsystem' on page
- 103 undefined on input line 11.
+ 105 undefined on input line 11.
 
 
-LaTeX Warning: Citation `rochascadatesting' on page 103 undefined on input line
+LaTeX Warning: Citation `rochascadatesting' on page 105 undefined on input line
  12.
 
 
-LaTeX Warning: Citation `zetter2017moreDangerousMalware' on page 103 undefined 
+LaTeX Warning: Citation `zetter2017moreDangerousMalware' on page 105 undefined 
 on input line 14.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 103 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 105 undefined
  on input line 18.
 
 
-LaTeX Warning: Citation `zetter2016GridHack' on page 103 undefined on input lin
+LaTeX Warning: Citation `zetter2016GridHack' on page 105 undefined on input lin
 e 20.
 
 
-LaTeX Warning: Citation `zetter2016GridHack' on page 103 undefined on input lin
+LaTeX Warning: Citation `zetter2016GridHack' on page 105 undefined on input lin
 e 26.
 
 
-LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 103 undefined on
+LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 105 undefined on
  input line 29.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 103 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 105 undefined on in
 put line 31.
 
 
-LaTeX Warning: Citation `finkle08012016russiansandwormhackers' on page 103 unde
+LaTeX Warning: Citation `finkle08012016russiansandwormhackers' on page 105 unde
 fined on input line 32.
 
 
-LaTeX Warning: Citation `zinets15022017ukrainechargesrussia' on page 103 undefi
+LaTeX Warning: Citation `zinets15022017ukrainechargesrussia' on page 105 undefi
 ned on input line 33.
 
 
-LaTeX Warning: Citation `mcelfresh2016cyberattackhowandwhy' on page 103 undefin
+LaTeX Warning: Citation `mcelfresh2016cyberattackhowandwhy' on page 105 undefin
 ed on input line 34.
 
 
-LaTeX Warning: Citation `parkwalstorm11102017russiagridattack' on page 103 unde
+LaTeX Warning: Citation `parkwalstorm11102017russiagridattack' on page 105 unde
 fined on input line 35.
 
 
-LaTeX Warning: Citation `drago2017CrashOverride' on page 103 undefined on input
+LaTeX Warning: Citation `drago2017CrashOverride' on page 105 undefined on input
  line 38.
 
 
-LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 103 undefi
+LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 105 undefi
 ned on input line 39.
 
 
-LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 103 undefined on in
+LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 105 undefined on in
 put line 43.
 
 
-LaTeX Warning: Citation `dragos2019TargetedTransStation' on page 103 undefined 
+LaTeX Warning: Citation `dragos2019TargetedTransStation' on page 105 undefined 
 on input line 44.
 
 
-LaTeX Warning: Citation `shehod2016gridadvantageus' on page 103 undefined on in
+LaTeX Warning: Citation `shehod2016gridadvantageus' on page 105 undefined on in
 put line 47.
 
 
-LaTeX Warning: Citation `rocha2017cybersecyrityanalysisScada' on page 103 undef
+LaTeX Warning: Citation `rocha2017cybersecyrityanalysisScada' on page 105 undef
 ined on input line 50.
 
 
-LaTeX Warning: Citation `2017crashoverridenostuxnet' on page 103 undefined on i
+LaTeX Warning: Citation `2017crashoverridenostuxnet' on page 105 undefined on i
 nput line 51.
 
 
-LaTeX Warning: Citation `vijayan2017firstmalwareCausedOutage' on page 103 undef
+LaTeX Warning: Citation `vijayan2017firstmalwareCausedOutage' on page 105 undef
 ined on input line 52.
 
 
-LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 103 undefi
+LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 105 undefi
 ned on input line 53.
 
 
-LaTeX Warning: Citation `2015ukrainegridattack' on page 103 undefined on input 
+LaTeX Warning: Citation `2015ukrainegridattack' on page 105 undefined on input 
 line 56.
 
 
-LaTeX Warning: Citation `industroyershortfact' on page 103 undefined on input l
+LaTeX Warning: Citation `industroyershortfact' on page 105 undefined on input l
 ine 57.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 103 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 105 undefined
  on input line 61.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 103 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 105 undefined on in
 put line 62.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 103 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 105 undefined
  on input line 65.
 
-[103
+[105
 
 
 
@@ -11204,87 +11881,87 @@ LaTeX Font Info:    Trying to load font information for TS1+phv on input line 7
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 104 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 106 undefined
  on input line 113.
 
 
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 104 undefined on in
+LaTeX Warning: Citation `boozallen2016lightwentout' on page 106 undefined on in
 put line 115.
 
 
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 104 undefined
+LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 106 undefined
  on input line 127.
 
-[104]
+[106]
 
-LaTeX Warning: Citation `Shahzad2014ScadaProtocolsPollingScenario' on page 105 
+LaTeX Warning: Citation `Shahzad2014ScadaProtocolsPollingScenario' on page 107 
 undefined on input line 134.
 
 
-LaTeX Warning: Citation `2017win32industroyer' on page 105 undefined on input l
+LaTeX Warning: Citation `2017win32industroyer' on page 107 undefined on input l
 ine 136.
 
 
-LaTeX Warning: Citation `yadav2020reviewScadaArchitecture' on page 105 undefine
+LaTeX Warning: Citation `yadav2020reviewScadaArchitecture' on page 107 undefine
 d on input line 137.
 
 
-LaTeX Warning: Citation `arrizabalaga2020surveyiiotProtocols' on page 105 undef
+LaTeX Warning: Citation `arrizabalaga2020surveyiiotProtocols' on page 107 undef
 ined on input line 138.
 
 
-LaTeX Warning: Citation `fauri2017EncryptionICS' on page 105 undefined on input
+LaTeX Warning: Citation `fauri2017EncryptionICS' on page 107 undefined on input
  line 139.
 
 
-LaTeX Warning: Citation `resch31102019IEC62351secureCommunication' on page 105 
+LaTeX Warning: Citation `resch31102019IEC62351secureCommunication' on page 107 
 undefined on input line 140.
 
 
-LaTeX Warning: Citation `levalle2020FuzzingICSProtocols' on page 105 undefined 
+LaTeX Warning: Citation `levalle2020FuzzingICSProtocols' on page 107 undefined 
 on input line 141.
 
 
-LaTeX Warning: Citation `blackhatusa2017' on page 105 undefined on input line 1
+LaTeX Warning: Citation `blackhatusa2017' on page 107 undefined on input line 1
 42.
 
 
-LaTeX Warning: Citation `blackhatusa2017' on page 105 undefined on input line 1
+LaTeX Warning: Citation `blackhatusa2017' on page 107 undefined on input line 1
 43.
 
 
-LaTeX Warning: Citation `abb30062017crashoverridenotification' on page 105 unde
+LaTeX Warning: Citation `abb30062017crashoverridenotification' on page 107 unde
 fined on input line 144.
 
 
-LaTeX Warning: Citation `spinner2018crashoverrideiot' on page 105 undefined on 
+LaTeX Warning: Citation `spinner2018crashoverrideiot' on page 107 undefined on 
 input line 145.
 
 
-LaTeX Warning: Citation `njccicthreat08102017crashovverrideprofile' on page 105
+LaTeX Warning: Citation `njccicthreat08102017crashovverrideprofile' on page 107
  undefined on input line 146.
 
 
-LaTeX Warning: Citation `slowikvb2018crashoverride' on page 105 undefined on in
+LaTeX Warning: Citation `slowikvb2018crashoverride' on page 107 undefined on in
 put line 147.
 
 
-LaTeX Warning: Citation `crashoverridenetwork' on page 105 undefined on input l
+LaTeX Warning: Citation `crashoverridenetwork' on page 107 undefined on input l
 ine 148.
 
 
-LaTeX Warning: Citation `wikiindustroyer' on page 105 undefined on input line 1
+LaTeX Warning: Citation `wikiindustroyer' on page 107 undefined on input line 1
 49.
 
 
-LaTeX Warning: Citation `icsSecurityRussianHacking' on page 105 undefined on in
+LaTeX Warning: Citation `icsSecurityRussianHacking' on page 107 undefined on in
 put line 150.
 
 
-LaTeX Warning: Citation `holappa2017threattoElectricityNetworks' on page 105 un
+LaTeX Warning: Citation `holappa2017threattoElectricityNetworks' on page 107 un
 defined on input line 151.
 
-) [105]
+) [107]
 \openout2 = `bijlage5.aux'.
 
  (bijlage5.tex
@@ -11488,7 +12165,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--61
 
  []
 
-[106
+[108
 
 
 
@@ -11966,7 +12643,7 @@ Overfull \hbox (127.98479pt too wide) in alignment at lines 138--206
  [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-[107]
+[109]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -12380,7 +13057,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--292
 
  []
 
-[108]
+[110]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -12515,7 +13192,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[109]
+[111]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -13160,7 +13837,7 @@ m/it/10.95 `; X; Inv; T; \OT1/ptmcm/m/n/10.95 ^^F)\OML/ptmcm/m/it/10.95 beatime
 dautomation:ThesemanticsofAisdefinedastheTTSS[] \OT1/ptmcm/m/n/10.95 =
  []
 
-[110]
+[112]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -13791,7 +14468,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--132
 
  []
 
-[111]
+[113]
 \openout2 = `bijlage6.aux'.
 
  (bijlage6.tex
@@ -13853,7 +14530,7 @@ Overfull \hbox (4.104pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
-[112
+[114
 
 
 
@@ -13867,8 +14544,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--85
 
  []
 
-[113]
-<plaatjes/agp.pdf, id=2580, 191.71625pt x 453.695pt>
+[115]
+<plaatjes/agp.pdf, id=2589, 191.71625pt x 453.695pt>
 File: plaatjes/agp.pdf Graphic file (type pdf)
 <use plaatjes/agp.pdf>
 Package pdftex.def Info: plaatjes/agp.pdf  used on input line 166.
@@ -13877,17 +14554,17 @@ File: plaatjes/agp.pdf Graphic file (type pdf)
 <use plaatjes/agp.pdf>
 Package pdftex.def Info: plaatjes/agp.pdf  used on input line 174.
 (pdftex.def)             Requested size: 182.09486pt x 430.95242pt.
-<plaatjes/agp.png, id=2583, 453.1329pt x 191.5155pt>
+<plaatjes/agp.png, id=2592, 453.1329pt x 191.5155pt>
 File: plaatjes/agp.png Graphic file (type png)
 <use plaatjes/agp.png>
 Package pdftex.def Info: plaatjes/agp.png  used on input line 187.
 (pdftex.def)             Requested size: 455.24411pt x 192.40923pt.
- [114 <./plaatjes/agp.pdf>] [115 <./plaatjes/agp.png>]
+ [116 <./plaatjes/agp.pdf>] [117 <./plaatjes/agp.png>]
 File: plaatjes/agp.pdf Graphic file (type pdf)
 <use plaatjes/agp.pdf>
 Package pdftex.def Info: plaatjes/agp.pdf  used on input line 198.
 (pdftex.def)             Requested size: 182.09486pt x 430.95242pt.
- [116]
+ [118]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 282.
@@ -13905,7 +14582,7 @@ Underfull \hbox (badness 3158) in paragraph at lines 351--356
 ol-le-dig do-cu-ment na de re-gel
  []
 
-[117]
+[119]
 (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -13915,7 +14592,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ))
-[118] (verslag.aux (dankbetuiging.aux) (afkortingen.aux) (bijlage1.aux)
+[120] (verslag.aux (dankbetuiging.aux) (afkortingen.aux) (bijlage1.aux)
 (bijlage2.aux) (bijlage3.aux) (bijlage4.aux) (bijlage5.aux) (bijlage6.aux))
 
 LaTeX Warning: There were undefined references.
@@ -13927,13 +14604,13 @@ Package rerunfilecheck Info: File `verslag.out' has not changed.
 (rerunfilecheck)             Checksum: 9F144511052A6E1EF85A998A5B1A7A42;7091.
  ) 
 Here is how much of TeX's memory you used:
- 35855 strings out of 475385
- 757674 string characters out of 2776908
- 1740319 words of memory out of 3000000
- 55715 multiletter control sequences out of 15000+600000
+ 35859 strings out of 475385
+ 757716 string characters out of 2776908
+ 1741329 words of memory out of 3000000
+ 55717 multiletter control sequences out of 15000+600000
  564123 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,26n,120p,1275b,1408s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 123i,26n,120p,1275b,1409s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/
 cmex9.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
@@ -13953,9 +14630,9 @@ C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C
 :/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><
 C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.p
 fb>
-Output written on verslag.pdf (125 pages, 979317 bytes).
+Output written on verslag.pdf (127 pages, 991409 bytes).
 PDF statistics:
- 2867 PDF objects out of 2984 (max. 8388607)
- 761 named destinations out of 1000 (max. 500000)
+ 2877 PDF objects out of 2984 (max. 8388607)
+ 763 named destinations out of 1000 (max. 500000)
  556 words of extra memory for PDF output out of 10000 (max. 10000000)
 
