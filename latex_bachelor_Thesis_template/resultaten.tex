@@ -2185,8 +2185,18 @@ blz 267
 
 
 blz 268 parralel compositioon
+Before we consider a reachability problem, we show how real-time systems can be modoeled as parralel compositions of timed automata [3,5]. We assume an interleavingor asynchroneous semantics for this operation. Let A1 = (\sum, S1, $\S^{1}_0$, X_1, I_1, T_1) and A_2 = (\sum_2, S1_2, $\S^{1}_0$, X_2, I_2, T_2) be two timed automata. Assume that the two automata have disjoint sets of clocks, that is X_1 \cap X_2 = $\emptyset$. Then, the parralel composition of A_1, and A_2 is the timed automation:
 
+A_1 || A2 = (\Sigma \cup $\Sigma$_2, S_1 x S2, $\S^{1}_0$ x  $\S^{2}_0$ , X_1 \cup X_2, I, T),
+where I(s_1,s_2)=I_1(s_1) \wedge I_2(s_2) and the edge relation T is given by the following rules:
 
+1 For a \in $\Sigma$_1 \cap $\Sigma$_2, if \langle s1,a, \varphi, \lambda_1, s_1' $\rangle$ \in T_1 and \langle s2,a, \varphi, \lambda_2, s_2' $\rangle$ \in T_2 then T will contain the transition \langle (s1,s2), a \varphi , \lambda_1 \cup \lambda_2, (s_1',s_2') $\rangle$
+2. For a \in $\Sigma$_1 - $\Sigma$_2, if $\langle$ s, a, $\varphi$, $\lambda$, s' \in T_1 and t \in S_2 then T will contain the transition \langle (s,t),a, $\varphi$, $\lambda$, (s', t) $\rangle$
+3. For a \in $\Sigma$_2 - $\Sigma$_1, if $\langle$ s, a, $\varphi$, $\lambda$, s' \in T_2 and t \in S_1 then T will contain the transition \langle (t,s),a, $\varphi$, $\lambda$, (t,s') $\rangle$
+
+Thus the locations of the parralel composition are pairs of locations from the component automata, and the invariant of such a location is the conjunction of the invariants of the component locations. There will be a transition in the parralel compoition for ach pair of transitions from the individual timed automata with the same action The source location of the transition will be the composite location obtained from the source locations of the individual transitions. Te target location will be the compositelocation obtained from the target locations of the individual transitions. The guard will be the conjunction of the guards for the individual transitions, and the set of clocks that are reset will be the union of sets that are reset by the individual transitions. If the action of  a transition is only an action of one of the two processes, then there will be a transition in the parralel composition for each location of the othertimed automation. The source and target locations of the original transition and the location fromthe other automation. All of the other components of the transition will remain the same.
+
+		
 blz 269 modelling with timed automata
 
 blz 274 clock regions
@@ -2227,8 +2237,117 @@ In this chapter we will describe an algorithm for solving the reachability probl
 blz 268 parralel composition
 
 blz 274 clock regions
+In the definition	 of timed automata, we allowed the clock constraints that serve as the invariants of locations and the guards of transitions to contain arbitrary rational constants.
+We can multiply the constants in each clock constraint by the least common multiple m of the denominators of all the constants to integers. The value of a clock can still be an arbitrary nonnegative real number. Note that applying this transformation can change the clock assignments in the set of reachable states of T(A). Fortunately, this does not cause a mjor problem. Ther reachale states of the original auomation can be obtained from the locations of te transformed automation by applying the inverse transformation, that is, dividing each clock value by m.
 
-For example, let A
+
+Th largest constant in the tranformed in the transformed automation is the product of m and the largest constant in the original automation. Thus, the transformation at worst results in quadratic blowup in the length of the encodings of th lock constraints[3]. This increase in complexity is acceptable, since the transformation simplifies certain operations on clock constraints that will be needed later in the chapter. We will apply this tranformation uniformly to all of th clock constraints that appear in the timed automata the we study. Consequently, in the future we can assume without loss of generality that all constants in clock constraints that we encounter are integers.
+
+In order to obtain a finite representation for the infinite state space of a timed automation, we define clock regions[7,8], which represents sets of clock assignments. If two states, which correspond to the  same location of the timed automation A, agree on the integral parts of all clock constraint in the invariant of a location or in the guard of a transition is satisfied or not. The ordering of the fractional parts of the clock values determines which clock will change its integral part first. This is because clock constraints cn involve only integers, and all clocks increase at the same rate.
+
+For example, let A be a timed automation with two clocks x1 and x2. Let s be a location in A with an outgoing transition e to some other location. Consider two states (s,v) and (s,v') in T(A) that correspond to location s. Suppose that v(x1) = 5.3, v(x2)=7.5, v'(x1)=5.5 and v'(x2) = 7.9. Assume that the guard \varphi associated with e is x1 \geq 8 \wedge x2 \geq 10. It is easy to see that if (s,v) eventually satisfies the guard, then so will (s, v').
+
+The value of a clock cn get arbitrarily large; however, if the clock is never compared to a constant greater than c, then the value of the clock will have no effect on the computation of A once it exceeds c. Suppose, for instance, that the block x is never compared to a constant greater than 100 in the invariant associated wit a location or in the guard of a transition.
+
+Then, based on the behaviour of A, it is impossible to distinguish between x having the value 101 and x having the value 1001.
+Alur,Courcoubetis, and Dill[7,8] show how to formalize this reasoning. For each clock x \in X, let cx, be the largest constant that x is compared with in the invariant of any location or in the guard of any transition. For t \in  $\Re^{+}$, let ft(t) be the fractional part of t, and let [t] be the integral part of t. Thus, t = [t] + fr(t). We define an equivalence relation \cong on the set of possible clock assignments as follows: Let v and v' be two clock assignments.
+Then v  \cong v' if and only if three conditions are  satisfied:
+
+For all x \in X either v(x) \geq cx, and v'(x) \geq gx or [v(x)] =[v'(x)].
+For all x,y \in X such that v(x) \leq cx and v(y) \leq cy, fr(v(x)) \leq fr(v(y)) if and only if fr(v'(x)) 
+\leq fr(v'(y))
+For all x \in X either v(x) \leq cx,
+fr(v(x)) =0 if and only if fr(v'(x)) =0.
+it is easy to see that \cong does indeed define anequivalence relation. The equivalence classes of \cong are called regions[7,8].  We will write [v] to denote the region which containsthe clock assignment v.Each region can be represented by specifying
+
+1. for every clock x \in X, once clock constraint from the set {x=c | c=0...., cx} $\cup${c -1 < x < c | c=1,.....cx} \cup {x > cx}
+2. for every pairof clocks x, y \in X such that c-1 < x< cand d-1<y< d are clock constraints in the first condition, whether fr(x) is less than, equal to, or greater than fr(y).
+
+Figure 17.7 which is taken from [8], shows the clockregions for a timed automationwith two clocks x and y where cx = 2 and cy =1. In this example, there are a total of 28 regions: 6 corner points, 14 open line segments and 8 open regions.
+
+We will use this observation to show that \cong has finite index and, consequently, that the  number of regions is finite. Our proofof this fact is based on the proof given in [8].
+
+
+
+
+
+Lemma 43
+The number of equivalence classes that \cong induces on C(X) is bounded by
+|X|! \cdot $2^{|X|}$ \cdot \prod (2xc +2)
+proof
+An equivalence class [v] of \cong can be described by a tripple	 of arrays i the following manner. For each block x \in X, the array \alpha tells which of the intervals {[],[]}
+contains the value v(x). Thus, the array \alpha represents the cloc assignment v if and only if for each clock x \in X, v(x)\in $\alpha$(x). The number of ways to choose \alpha is \prod.
+
+
+Let X_a be th set of clocks with nonzero fractional part. The array \beta: x_a $\rightarrow$ {1,....|A_a|} is a permutation of X_a, which gives the ordering of the fractional parts of the clocks in Xa with respect to \leq. Thusm the array \bta represents a clock assignment c if and if for each pair x,y \in X_a, if \beta(x) < $\beta$(y) then fr(v(x)) \leq fr(v(y)). For a given \alpha, the number of ways to choose \beta is bounded by |X_\alpha|!  which is bounded by |X|!.
+
+The third component  \gamma is a boolean array indeed by X_a that is used to specify which clocks in X_a have the same fractional part. For each clock c, \gamma(x) tells whether or not the fractional part of v(x) equals  the fractional part of its predecessor in the array \beta. Thus the array \gamma represents a clock assignment v if and only if for each x \n X, \gamma(x) equals 0 exactly when there is a clock \gamma \in X_alpha such that \beta(y) = \beta(x) +1 and fr(v(x)) equals fr(v(y)). The number of ways of choosing \gamma is bounded by the number of boolean arrays over X_\alpha, which is bounded by $2^{|X|}$.
+Hence, \alpha encoded the integral parts of he clock assignments, and \beta with \gamma encodes the ordering of their fractioal aprts. It is easy to see that the sets represented bytriples are equivalence of $\cong$ and that every equivalence class is represented by some triple. The bound given in the statement of the lemma is the product of the bounds associated with \alpha, \beta, and \gamma. This completes the proof of the lemma.
+
+
+The following properties of the equivalence relation $\cong$ are used in later  in this chapter.
+Lemma 44
+Let v1 and v2 be twoclock assignments1, let \varphi be a clock constraint, and let \lambda $\subseteq$ X be a set of clocks.
+1. if v1 $\cong$ v2 and t is a nonnegative integer, then v1 + t $\cong$ v2 +t.
+2. if v1 $\cong$ v2, then $\forall$ t1 \in $R^{|+|}$ $\exists$t_2 \in $R^{|+|}$[v1 +t1 $\cong$ v2 + t2]
+3. if v1 $\cong$ v2, then v1 satisfies \varphi if and only if v2 satisfies $\varphi$
+4. If v1 $\cong$ v2, then v1[$\lambda$:=0] $\cong$ v2 [$\lambda$:=0]
+
+Note that the first property may not hold if t is not an integer. For example, (2.8) $\cong$ (.1, .2),
+but (.2, .8) +.3 is not equivalent to (.1,.2) + .3. All of the properties except the second are straightforward to prove and will be left to the reader. A proof if the scond property is sketched below. The proof is not diificultm but it is somewhat tedious. It can be safely skipped when this chapter is read for the first time.
+
+
+
+Proof
+Assume that v1 \cong v2. We can assume that t1 > 0 because, otherwise, we can simply choose t2=0. Let X{x1,x2,.....,xn}. We can threat v1 as a vector v1 = \langle a1, ......, an $\rangle$, where a_i is the alue of clock x_i in v_1. Similarly, we let v2 = $\langle$ b1, ......, b_n \rangle. Since corresponding clocks have the same integer part, we can assume without loss of generality that 0 \leq a_i < 1 and 0 \leq b_i < 1. Also , assume that the clock values are sorrted into increasing order so that a_1 \leq a_2 \leq ... \leq a_n and b1 \leq b_2 \leq .... \leq b_n.
+
+
+case 1
+Assume that the largest element in v1 + t1 is less than or equal to 1. This case is trivial. We can easilty choose t2 so that v + t1 $\cong$ v2 + t2
+
+case 2
+Assume that  0 \leq t1 < 1. Let the first element of v1 +t1. That is greater than or equal to 1 be a_k+t1. Chhoose \in so that \in =0 if a_k+t_1 =1 and so that 0< \ni < b_k-b_k-1 if a_k+t_1 > 1. Note that b_k_-1 < b_k = b_k-1, then a_k=a_k-1 and a_+t_1 is not the first elment of v1+t1 that is greater than o equal to 1. We will show that v1+t1 \cong v2+(1+ \in - b_k). In order to show this we will split the vectors into two parts. Let
+
+L1= $\langle$ a_1 + t1, ...., a_k-1 + t1    $\rangle$, and
+L2= $\langle$  b_1 + (1 + \in - b_k), ..., b_k-1 + (1+ \in - b_k)  $\rangle$
+In each case it is straightforward to show that
+
+1. all of the elements are positive
+2. the elements are sorted in increaing order, and
+3. all of the elements are less than 1
+Because of these conditios it is easy to see that L_1 \cong L_2. Similarly, let 
+
+R_1= $\langle$ a_k + t1, ...., a_n + t1    $\rangle$, and
+R_2= $\langle$  b_k + (1 + \in - b_k), ..., b_k-1 + (1+ \in - b_k)  $\rangle$
+
+All of the elements in R_1 and R_2 are greater than or equal to 1. The fractional parts are given by R_1 - 1 and R_2 -1, respectively. For these vectors it is straightforward to show that
+
+1. all of the elements are nonnegative
+2. the elements are sorted in increasing order, and
+3. all of the elements are less than 1
+
+Moreover, an element in one vector is 0 if and only if the corresponding element in the order vector is 0. Thus R_1 -1 \cong R_2 -1. It follows immediately that R_1 $\cong$ R_2.
+It is not difficult to see that the fractioal parts of R_2 precede the fractional parts of L_2.
+Let i  \geq k and j < k. Then
+b_i +  (1 + \in - b_k) -1 \leq b_j + (1+ \in - b_k).
+is equivlent to b_i - b_j \leq 1, which is obviously true. The same relationship holds for the fractioal parts of R_1 and L_1, that is.
+a_i + t_1 -1 \leq a_j + t_1.
+
+hence , we obtain R_1 $\cdot$ L_1 \cong R_2 \cdot L_2, where "\cdot" is concatenation of vectors. This shows that for all t_1 with 0 \leq t1 < 1, there exits a t2 such that v_1 + t_1 \cong v2 + t_2 and completes the proof of Case 2.
+
+
+
+case 3
+
+
+Lemma 45
+
+Proof
+
+Theorem 31
+
+
+
 blz 280 clock zones
 blz 281 Intersection
 
@@ -2236,10 +2355,21 @@ blz 281 Clock reset
 
 
 blz 281 elapsing of time
-In principle, the three
+In principle, the three oeraions on clock zones described above can be used to construct a finite representationof the transition graph T(A) corresponding to a timed automation.
 
 
 Real-time System = Discrete System + Clock Variables by Rajeev Alur
+
+blz 2 actions
+The state of a system changes over time. We refer to the state changes of a
+system as actions. An action is a pair (\sigma,\sigma ') of states that consists of a source
+state \sigma and a target state \sigma '. Intuitively, if a system is in the source state \sigma,
+then the action (\sigma,\sigma ') takes the system into the target state \sigma'. We say that
+an action is enabled in its source state and disabled in all other states. Two
+actions (\sigma,\sigma '1) and (\sigma,\sigma '2) are consecutive if the second action is enabled in
+the target state of the rst action|i.e., if (\sigma '1=\sigma '2). The action (\sigma,\sigma ') is a nul l
+action if (\sigma=\sigma ')
+.
 
 blz 6 clocks and delays
 
