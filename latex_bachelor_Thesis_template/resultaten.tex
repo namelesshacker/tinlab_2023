@@ -2333,18 +2333,47 @@ b_i +  (1 + \in - b_k) -1 \leq b_j + (1+ \in - b_k).
 is equivlent to b_i - b_j \leq 1, which is obviously true. The same relationship holds for the fractioal parts of R_1 and L_1, that is.
 a_i + t_1 -1 \leq a_j + t_1.
 
-hence , we obtain R_1 $\cdot$ L_1 \cong R_2 \cdot L_2, where "\cdot" is concatenation of vectors. This shows that for all t_1 with 0 \leq t1 < 1, there exits a t2 such that v_1 + t_1 \cong v2 + t_2 and completes the proof of Case 2.
+hence , we obtain R_1 $\cdot$ L_1 \cong R_2 \cdot L_2, where "\cdot" is concatenation of vectors. This shows that for all t_1 with 0 \leq t1 < 1, there exits a t2 such that v_1 + t_1 \cong v2 + t_2 and completes the proof of 
 
 
 
 case 3
+Finally, supppose that t_1 \geq 1. Let t1'= t_1 - [t_1], so that 0 \leq t_1 < 1. Find t_2 such that v_1 + t_1 \cong v2 + t2. Then:
+v1 + t1 + [t1]  \cong v2 + t2 + [t1].
+
+If we choose t2 = [t1], then we have v1 + t1 \cong v2 + t2 as required. This completes the proof of the second property.
+
+The equivalence relation \cong over clock assignments an be extended to an equvalence relation over the state space of T(A) by requiring that equivalent states have identical locations and equivalent clock assignments: (s,v) \cong (s', v') if and only if s = s' and v \cong v'. The key property of he equivalence reltion \cong is given by the following lemma [5]:
 
 
 Lemma 45
+If v1 \cong v2 and (s, v_1)  $\xrightarrow[]{a}$ (s', v'). The transition \langle s, a, \varphi, \lambda, s' \rangle  that takes state (s, v1) to state (s', v1') corresponds to two transiions of the timed automation.
 
 Proof
+Assume that v1 \cong v2 and (s, v1)  $\xrightarrow[]{a}$ (s', v'1). The transition \langle s, a, \varphi, $\lambda$, s' $\rangle$ that takes state (s, v1) to state (s', v'1) corresponds to two transitions of the timed automation:
+
+a delay transition (s, v1)  $\xrightarrow[]{d1}$ (s, v_1 + d_1) for some d_1 \geq 0, and
+an action transition   (s, v1 +d1)  $\xrightarrow[]{a}$ (s', v_1') such that v_1 + d_1 satisfies \varphi and v'_1 = (v_1 + d_1)[\lambda :=0].
+
+
+
+Since v1 \cong v2 and v1 satisfies I(s), v2 also satisfies I(s). Furthermore, there exists d2 \geq 0 such that v1 + d1 \cong v2 + d2. Since v1 + d1 satisfies I(s), v2 +d2 also satisfies I(s). Because the clock constraint I(s) is convex and is satisfied by both v2 and v2 + d2, I(s) must be satisfied by v2 + e for all e such that 0 \leq e $\leq$ d2. Consequently, the delay transition (s, v2)  $\xrightarrow[]{d2}$ (s, v2 +d2) is legal.
+
+Since v1 + d1 \cong v2 +d2, both v1+ d1 and v2+ d2 must satisfy the clock constraint for the guard $\varphi$. Thus, the transition $\langle$ s, a, $\varphi$, \lambda , s' \rangle myst also be enabled in the state  *s, v_2 + d_2
+. Let v'_2 = (v_2 +d_2)[\lambda :=0]. Then v'_2 is equivalent to v'_1. Hence, there is an action transition (s, v_2 + d_2)  $\xrightarrow[]{a}$  (s', v'_2). Combining the delay transition with the action transition, we get (s, v_2)  $\xrightarrow[]{a}$ (s', v'_2) as required.
+
+As a result of the lemme, we can conostruct a finite state transition raph that is  bisimilaion equivalnt to the infinite state transition graph T(A). The finite state transition graph is called the region graph of A[7,8] and is denoted by R(A). A region is a pair (s, [v]). Since \cong  has a finite index, there are only a finite nuber of regions. The states of the region graph are  the regions of A. The construction of R(A) will have the property that whenever (s,v) is a state of T(A), the region (s, [v]) where s_0 is an initial state of A and v_0 is a clock assignment that assigns 0 to every clock. The transition relation of R(A) is defined so that bisimulation equivalence is guaranteed. There will be a transition labeled with a from the region (s,[v]) to the region (s', [v']) if and only there are assignments $\omega$ \in [v] and $\omega$' \in [v'] such that (s, $\omega$) can make a transition to (s', $\omega$')
+
+We summarize the construction of the region graph R(A) below. Let A = ($\sigma$, S, S_0, X, I, T) be a timed automation. Then,
+The states of R(A) have the form (s, [v]) where s \in S and [v] i a clock region
+The initial states have the form (s_0, [v]) where s_0 \in s_0 and v(x)=0 for all x \in X.
+R(A) has a transition ((s,[v]),a, (s',[v'])) if and only if (s, $\omega$)  $\xrightarrow[]{a}$  (s', $\omega$') for some $\omega$ \in [v] and some $\omega$' \in [v'].
+ We can use Lemma 45 to prove bisimulation equivalene.
 
 Theorem 31
+We will show that T(A) and R(A) are bisimilar. Define the bisimulation relation B by (s,v)B(s,[v]). It is easy to see that the initial state (s_0, v_0) corresponds o the  state (s_0, [v_0]). Next, we show that for each transtition of T(A), there is a corrresponding transition  of R(A), and vice versa. Suppose first that (s,v)B(s,[v]). Suppose on the other hand that (s,v)B(s,[v]) and that  (s,v)$\xrightarrow[]{a}$(s',[v']). Then there exit $\omega$ \cong v and $\omega$' $\cong$ v' such that (s', v") and (s,v) $\xrightarrow[]{a}$(s', v"). Hence v" $\cong$ $\omega$ $\cong$ v', so [v"] = [v']. By the definition of B, (s', v")
+B (s', [v"]), it follows that (s', v")B(s', [v']).
+
 
 
 
