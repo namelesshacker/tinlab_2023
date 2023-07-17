@@ -51,6 +51,9 @@ bool on=false, off=false;
 //bool gate_is_open[deur];
 int countCycle=0;
 
+
+chan initOpenProc,initClosingProc;
+
 bool togglePomp = false;
 bool startDown =false;
 bool startUp= true;
@@ -76,6 +79,8 @@ int[-1,10] waterlevel=0;
 const int MAX_schepen=3;
 typedef int[0,MAX_schepen-1] kenteken;
 chan schipklik[kenteken];
+chan register[kenteken];
+chan unregister[kenteken];
 //chan send[0,1],receive[0,1];
 
 chan notified_pomp_direction;
@@ -146,7 +151,7 @@ typedef int[0, aantal_sensoren-1] id_sensor;
 
 const int pompen = 1;
 typedef int[0,pompen-1] pomp_id;
-chan pomp_klik[pomp_id];
+chan pomp_klik;
 chan boot_aanwezig;
 chan toggle_pomp[pomp_id];
 
@@ -373,7 +378,22 @@ void reset()
 		<location id="id14" x="901" y="-374">
 			<name x="891" y="-408">end_cycle</name>
 		</location>
+		<location id="id15" x="807" y="-187">
+			<name x="797" y="-221">running</name>
+		</location>
+		<location id="id16" x="943" y="-255">
+			<name x="933" y="-289">finished</name>
+		</location>
 		<init ref="id2"/>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id13"/>
+			<nail x="824" y="-297"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id15"/>
+		</transition>
 		<transition>
 			<source ref="id14"/>
 			<target ref="id1"/>
@@ -389,11 +409,13 @@ void reset()
 		<transition>
 			<source ref="id13"/>
 			<target ref="id12"/>
-			<label kind="assignment" x="800" y="-374">process_finished=true, process_started =false</label>
+			<label kind="synchronisation" x="800" y="-391">initClosingProc!</label>
+			<label kind="assignment" x="773" y="-323">process_finished=true, process_started =false</label>
 		</transition>
 		<transition>
 			<source ref="id11"/>
 			<target ref="id13"/>
+			<label kind="synchronisation" x="732" y="-391">initOpenProc!</label>
 			<label kind="assignment" x="620" y="-331">process_started=true</label>
 		</transition>
 		<transition>
@@ -475,279 +497,350 @@ void reset()
 			<label kind="guard" x="460" y="-476">countCycle%3==0</label>
 			<label kind="assignment" x="460" y="-442">direction=0</label>
 		</transition>
-	</template>
-	<template>
-		<name>OpeningProc</name>
-		<location id="id15" x="0" y="0">
-		</location>
-		<location id="id16" x="-170" y="0">
-			<name x="-180" y="-34">OpeningHigh</name>
-		</location>
-		<location id="id17" x="238" y="0">
-			<name x="228" y="-34">OpeningLow</name>
-		</location>
-		<location id="id18" x="-272" y="0">
-		</location>
-		<location id="id19" x="-272" y="102">
-		</location>
-		<location id="id20" x="374" y="0">
-		</location>
-		<location id="id21" x="374" y="102">
-		</location>
-		<location id="id22" x="-170" y="102">
-		</location>
-		<location id="id23" x="238" y="102">
-		</location>
-		<location id="id24" x="476" y="102">
-		</location>
-		<location id="id25" x="-374" y="102">
-		</location>
-		<location id="id26" x="0" y="-102">
-		</location>
-		<init ref="id26"/>
 		<transition>
-			<source ref="id17"/>
-			<target ref="id26"/>
-			<nail x="238" y="-102"/>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="guard" x="723" y="-102">position==0</label>
+			<label kind="assignment" x="723" y="-68">waterlevel++</label>
+			<nail x="773" y="-51"/>
+			<nail x="705" y="-85"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="guard" x="859" y="-102">position==1</label>
+			<label kind="assignment" x="859" y="-68">waterlevel--</label>
+			<nail x="841" y="-51"/>
+			<nail x="909" y="-85"/>
 		</transition>
 		<transition>
 			<source ref="id16"/>
-			<target ref="id26"/>
-			<nail x="-170" y="-102"/>
+			<target ref="id15"/>
+			<label kind="guard" x="995" y="-255">position==0 &amp;&amp; waterlevel==10</label>
+			<nail x="960" y="-204"/>
+			<nail x="875" y="-162"/>
 		</transition>
 		<transition>
-			<source ref="id26"/>
-			<target ref="id15"/>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<label kind="guard" x="850" y="-332">position==1 &amp;&amp; waterlevel==0</label>
+			<nail x="807" y="-204"/>
+			<nail x="824" y="-238"/>
+			<nail x="892" y="-272"/>
 		</transition>
+	</template>
+	<template>
+		<name>OpeningProc</name>
+		<location id="id17" x="0" y="0">
+		</location>
+		<location id="id18" x="-170" y="0">
+			<name x="-180" y="-34">OpeningHigh</name>
+		</location>
+		<location id="id19" x="238" y="0">
+			<name x="119" y="-42">OpeningLow</name>
+		</location>
+		<location id="id20" x="-272" y="0">
+		</location>
+		<location id="id21" x="-272" y="102">
+		</location>
+		<location id="id22" x="374" y="0">
+		</location>
+		<location id="id23" x="374" y="102">
+		</location>
+		<location id="id24" x="-170" y="102">
+		</location>
+		<location id="id25" x="238" y="102">
+		</location>
+		<location id="id26" x="476" y="102">
+		</location>
+		<location id="id27" x="-374" y="102">
+		</location>
+		<location id="id28" x="0" y="-102">
+		</location>
+		<init ref="id28"/>
 		<transition>
 			<source ref="id24"/>
-			<target ref="id21"/>
-			<label kind="synchronisation" x="392" y="89">open_gate[direction]!</label>
+			<target ref="id24"/>
+			<label kind="select" x="-152" y="119">shipid:kenteken</label>
+			<label kind="synchronisation" x="-152" y="153">register[shipid]!</label>
+			<nail x="-170" y="170"/>
+			<nail x="-102" y="170"/>
+			<nail x="-102" y="102"/>
 		</transition>
 		<transition>
 			<source ref="id25"/>
-			<target ref="id19"/>
-			<label kind="synchronisation" x="-347" y="102">open_gate[direction]!</label>
+			<target ref="id25"/>
+			<label kind="select" x="170" y="187">shipid:kenteken</label>
+			<label kind="synchronisation" x="161" y="221">register[shipid]!</label>
+			<nail x="238" y="170"/>
+			<nail x="170" y="170"/>
+			<nail x="170" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id28"/>
+			<label kind="synchronisation" x="18" y="-119">pomp_klik!</label>
+			<label kind="assignment" x="18" y="-102">sluisToggle=true</label>
+			<nail x="238" y="-102"/>
 		</transition>
 		<transition>
 			<source ref="id18"/>
-			<target ref="id25"/>
+			<target ref="id28"/>
+			<label kind="synchronisation" x="-152" y="-119">pomp_klik!</label>
+			<label kind="assignment" x="-152" y="-102">sluisToggle=true</label>
+			<nail x="-170" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id17"/>
+			<label kind="synchronisation" x="0" y="-68">initOpenProc?</label>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="382" y="102">open_gate[direction]!</label>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id21"/>
+			<label kind="synchronisation" x="-347" y="102">open_gate[direction]!</label>
+		</transition>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id27"/>
 			<label kind="select" x="-347" y="17">stoplichtnummer: id_s</label>
 			<label kind="guard" x="-347" y="34">systemtime &lt;0900</label>
 			<label kind="synchronisation" x="-347" y="51">stoplichtklik[stoplichtnummer]!</label>
 			<nail x="-374" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id20"/>
-			<target ref="id24"/>
-			<label kind="select" x="392" y="4">stoplichtnummer: id_s</label>
-			<label kind="guard" x="392" y="21">systemtime &lt;1300</label>
-			<label kind="synchronisation" x="392" y="38">stoplichtklik[stoplichtnummer]!</label>
+			<source ref="id22"/>
+			<target ref="id26"/>
+			<label kind="select" x="510" y="-17">stoplichtnummer: id_s</label>
+			<label kind="guard" x="510" y="0">systemtime &lt;1300</label>
+			<label kind="synchronisation" x="510" y="17">stoplichtklik[stoplichtnummer]!</label>
 			<nail x="476" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id23"/>
-			<target ref="id17"/>
-			<label kind="select" x="238" y="0">deur_id:id_d</label>
-			<label kind="synchronisation" x="238" y="34">deurklik[deur_id]!</label>
+			<source ref="id25"/>
+			<target ref="id19"/>
+			<label kind="select" x="102" y="0">deur_id:id_d</label>
+			<label kind="synchronisation" x="85" y="34">deurklik[deur_id]!</label>
 		</transition>
 		<transition>
-			<source ref="id21"/>
-			<target ref="id23"/>
-			<label kind="select" x="256" y="51">shipid: kenteken</label>
-			<label kind="guard" x="256" y="68">position==0 &amp;&amp; systemtime&gt;0900</label>
-			<label kind="synchronisation" x="256" y="85">schipklik[shipid]!</label>
+			<source ref="id23"/>
+			<target ref="id25"/>
+			<label kind="select" x="246" y="110">shipid: kenteken</label>
+			<label kind="guard" x="238" y="127">position==1 &amp;&amp; systemtime&gt;0900</label>
+			<label kind="synchronisation" x="246" y="144">schipklik[shipid]!</label>
 			<nail x="348" y="102"/>
 		</transition>
 		<transition>
-			<source ref="id22"/>
-			<target ref="id16"/>
+			<source ref="id24"/>
+			<target ref="id18"/>
 			<label kind="select" x="-136" y="42">deur_id:id_d</label>
 			<label kind="synchronisation" x="-136" y="59">deurklik[deur_id]!</label>
 			<nail x="-170" y="85"/>
 			<nail x="-170" y="17"/>
 		</transition>
 		<transition>
-			<source ref="id19"/>
-			<target ref="id22"/>
+			<source ref="id21"/>
+			<target ref="id24"/>
 			<label kind="select" x="-272" y="153">shipid: kenteken</label>
 			<label kind="guard" x="-272" y="195">position==0 &amp;&amp; systemtime&gt;0900</label>
 			<label kind="synchronisation" x="-272" y="229">schipklik[shipid]!</label>
 		</transition>
 		<transition>
-			<source ref="id17"/>
-			<target ref="id20"/>
+			<source ref="id19"/>
+			<target ref="id22"/>
 			<label kind="select" x="256" y="-51">deur_id:id_d</label>
-			<label kind="synchronisation" x="256" y="-17">deurklik[deur_id]!</label>
+			<label kind="synchronisation" x="255" y="-34">deurklik[deur_id]!</label>
 		</transition>
 		<transition>
-			<source ref="id16"/>
-			<target ref="id18"/>
+			<source ref="id18"/>
+			<target ref="id20"/>
 			<label kind="select" x="-254" y="-51">deur_id:id_d</label>
 			<label kind="synchronisation" x="-254" y="-17">deurklik[deur_id]!</label>
 			<nail x="-178" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id15"/>
-			<target ref="id17"/>
-			<label kind="select" x="35" y="-51">deurnummer: id_d</label>
-			<label kind="guard" x="35" y="-34">systemtime &gt;1245&amp;&amp; systemtime &lt;2100</label>
+			<source ref="id17"/>
+			<target ref="id19"/>
+			<label kind="select" x="25" y="17">deurnummer: id_d</label>
+			<label kind="guard" x="8" y="17">systemtime &gt;1245&amp;&amp; systemtime &lt;2100</label>
 			<nail x="17" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id15"/>
-			<target ref="id16"/>
+			<source ref="id17"/>
+			<target ref="id18"/>
 			<label kind="select" x="-127" y="-59">deurnummer: id_d</label>
 			<label kind="guard" x="-152" y="-34">systemtime &gt;0845</label>
 		</transition>
 	</template>
 	<template>
 		<name>ClosingProc</name>
-		<location id="id27" x="374" y="102">
+		<location id="id29" x="374" y="102">
 		</location>
-		<location id="id28" x="238" y="0">
+		<location id="id30" x="238" y="0">
 			<name x="228" y="-34">ClosingLow</name>
 		</location>
-		<location id="id29" x="374" y="0">
+		<location id="id31" x="374" y="0">
 		</location>
-		<location id="id30" x="-272" y="102">
+		<location id="id32" x="-272" y="102">
 		</location>
-		<location id="id31" x="-170" y="0">
+		<location id="id33" x="-170" y="0">
 			<name x="-180" y="-34">ClosingHigh</name>
 		</location>
-		<location id="id32" x="-272" y="0">
+		<location id="id34" x="-272" y="0">
 		</location>
-		<location id="id33" x="0" y="0">
+		<location id="id35" x="0" y="0">
 		</location>
-		<location id="id34" x="-170" y="102">
+		<location id="id36" x="-170" y="102">
 		</location>
-		<location id="id35" x="238" y="102">
+		<location id="id37" x="238" y="102">
 		</location>
-		<location id="id36" x="-340" y="102">
+		<location id="id38" x="-340" y="102">
 		</location>
-		<location id="id37" x="476" y="102">
+		<location id="id39" x="476" y="102">
 		</location>
-		<location id="id38" x="0" y="-102">
+		<location id="id40" x="0" y="-102">
 		</location>
-		<init ref="id38"/>
+		<init ref="id40"/>
 		<transition>
-			<source ref="id28"/>
-			<target ref="id38"/>
-			<nail x="238" y="-102"/>
-		</transition>
-		<transition>
-			<source ref="id31"/>
-			<target ref="id38"/>
-			<nail x="-170" y="-102"/>
-		</transition>
-		<transition>
-			<source ref="id38"/>
-			<target ref="id33"/>
+			<source ref="id36"/>
+			<target ref="id36"/>
+			<label kind="select" x="-152" y="119">shipid:kenteken</label>
+			<label kind="synchronisation" x="-152" y="153">unregister[shipid]!</label>
+			<nail x="-170" y="170"/>
+			<nail x="-102" y="170"/>
+			<nail x="-102" y="102"/>
 		</transition>
 		<transition>
 			<source ref="id37"/>
-			<target ref="id27"/>
+			<target ref="id37"/>
+			<label kind="select" x="188" y="119">shipid:kenteken</label>
+			<label kind="synchronisation" x="188" y="153">unregister[shipid]!</label>
+			<nail x="238" y="170"/>
+			<nail x="170" y="170"/>
+			<nail x="170" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id40"/>
+			<nail x="238" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id40"/>
+			<nail x="-170" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id35"/>
+			<label kind="synchronisation" x="0" y="-68">initClosingProc?</label>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id29"/>
 			<label kind="synchronisation" x="392" y="114">close_gate[direction]!</label>
 		</transition>
 		<transition>
-			<source ref="id29"/>
-			<target ref="id37"/>
+			<source ref="id31"/>
+			<target ref="id39"/>
 			<label kind="select" x="552" y="8">stoplichtnummer: id_s</label>
 			<label kind="synchronisation" x="544" y="42">stoplichtklik[stoplichtnummer]!</label>
 			<nail x="476" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id36"/>
-			<target ref="id30"/>
+			<source ref="id38"/>
+			<target ref="id32"/>
 			<label kind="synchronisation" x="-322" y="106">close_gate[direction]!</label>
 		</transition>
 		<transition>
-			<source ref="id32"/>
-			<target ref="id36"/>
+			<source ref="id34"/>
+			<target ref="id38"/>
 			<label kind="select" x="-322" y="21">stoplichtnummer: id_s</label>
 			<label kind="synchronisation" x="-322" y="55">stoplichtklik[stoplichtnummer]!</label>
 			<nail x="-340" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id35"/>
-			<target ref="id28"/>
+			<source ref="id37"/>
+			<target ref="id30"/>
 			<label kind="select" x="238" y="0">deurnummer: id_d</label>
 			<label kind="synchronisation" x="238" y="34">deurklik[deurnummer]!</label>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id35"/>
+			<source ref="id29"/>
+			<target ref="id37"/>
+			<label kind="synchronisation" x="256" y="85">pomp_klik!</label>
 		</transition>
 		<transition>
-			<source ref="id34"/>
-			<target ref="id31"/>
+			<source ref="id36"/>
+			<target ref="id33"/>
 			<label kind="select" x="-170" y="0">deurnummer: id_d</label>
 			<label kind="synchronisation" x="-170" y="34">deurklik[deurnummer]!</label>
 		</transition>
 		<transition>
-			<source ref="id30"/>
-			<target ref="id34"/>
+			<source ref="id32"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="-254" y="85">pomp_klik!</label>
 		</transition>
 		<transition>
-			<source ref="id31"/>
-			<target ref="id32"/>
+			<source ref="id33"/>
+			<target ref="id34"/>
 			<label kind="select" x="-272" y="-93">deurnummer: id_d</label>
 			<label kind="synchronisation" x="-272" y="-68">deurklik[deurnummer]!</label>
 		</transition>
 		<transition>
-			<source ref="id28"/>
-			<target ref="id29"/>
+			<source ref="id30"/>
+			<target ref="id31"/>
 			<label kind="select" x="256" y="-51">deurnummer: id_d</label>
 			<label kind="synchronisation" x="256" y="-17">deurklik[deurnummer]!</label>
 		</transition>
 		<transition>
-			<source ref="id33"/>
-			<target ref="id28"/>
-			<label kind="assignment" x="35" y="0">position=!position</label>
+			<source ref="id35"/>
+			<target ref="id30"/>
+			<label kind="assignment" x="35" y="0">position=!position,sluisToggle=false</label>
 			<nail x="17" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id33"/>
-			<target ref="id31"/>
-			<label kind="assignment" x="-152" y="0">position=!position</label>
+			<source ref="id35"/>
+			<target ref="id33"/>
+			<label kind="assignment" x="-152" y="0">position=!position,sluisToggle=false</label>
 		</transition>
 	</template>
 	<template>
 		<name>waterlevelSensorLow</name>
-		<location id="id39" x="0" y="0">
+		<location id="id41" x="0" y="0">
 		</location>
-		<location id="id40" x="272" y="0">
+		<location id="id42" x="272" y="0">
 			<name x="262" y="-34">lowlevelFloat</name>
 		</location>
-		<location id="id41" x="136" y="0">
+		<location id="id43" x="136" y="0">
 		</location>
-		<location id="id42" x="204" y="-102">
+		<location id="id44" x="204" y="-102">
 			<name x="194" y="-136">error</name>
 		</location>
-		<init ref="id39"/>
+		<init ref="id41"/>
 		<transition>
-			<source ref="id42"/>
-			<target ref="id40"/>
+			<source ref="id44"/>
+			<target ref="id42"/>
 			<nail x="272" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id41"/>
-			<target ref="id42"/>
-			<label kind="guard" x="154" y="-136">waterniveau&lt;-1 || waterlevel&lt;-1</label>
+			<source ref="id43"/>
+			<target ref="id44"/>
+			<label kind="guard" x="59" y="-161">waterniveau&lt;-1 || waterlevel&lt;-1</label>
 			<nail x="136" y="-102"/>
 		</transition>
 		<transition>
 			<source ref="id41"/>
-			<target ref="id40"/>
-		</transition>
-		<transition>
-			<source ref="id39"/>
-			<target ref="id41"/>
+			<target ref="id43"/>
 			<label kind="guard" x="18" y="-34">sluisToggle==true</label>
 		</transition>
 		<transition>
-			<source ref="id40"/>
-			<target ref="id39"/>
+			<source ref="id42"/>
+			<target ref="id41"/>
 			<label kind="synchronisation" x="18" y="85">stop!</label>
 			<nail x="272" y="102"/>
 			<nail x="0" y="102"/>
@@ -755,40 +848,36 @@ void reset()
 	</template>
 	<template>
 		<name>waterlevelSensorHigh</name>
-		<location id="id43" x="0" y="0">
+		<location id="id45" x="0" y="0">
 		</location>
-		<location id="id44" x="272" y="0">
+		<location id="id46" x="272" y="0">
 			<name x="262" y="-34">highlevelFloat</name>
 		</location>
-		<location id="id45" x="136" y="0">
+		<location id="id47" x="136" y="0">
 		</location>
-		<location id="id46" x="204" y="-102">
+		<location id="id48" x="204" y="-102">
 			<name x="194" y="-136">error</name>
 		</location>
-		<init ref="id43"/>
+		<init ref="id45"/>
 		<transition>
-			<source ref="id46"/>
-			<target ref="id44"/>
+			<source ref="id48"/>
+			<target ref="id46"/>
 			<nail x="272" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id45"/>
-			<target ref="id46"/>
+			<source ref="id47"/>
+			<target ref="id48"/>
 			<label kind="guard" x="154" y="-136">waterniveau&gt; 6 ||waterlevel &gt;10</label>
 			<nail x="136" y="-102"/>
 		</transition>
 		<transition>
 			<source ref="id45"/>
-			<target ref="id44"/>
-		</transition>
-		<transition>
-			<source ref="id43"/>
-			<target ref="id45"/>
+			<target ref="id47"/>
 			<label kind="guard" x="18" y="-34">sluisToggle==true</label>
 		</transition>
 		<transition>
-			<source ref="id44"/>
-			<target ref="id43"/>
+			<source ref="id46"/>
+			<target ref="id45"/>
 			<label kind="synchronisation" x="18" y="85">stop!</label>
 			<nail x="272" y="102"/>
 			<nail x="0" y="102"/>
@@ -796,41 +885,41 @@ void reset()
 	</template>
 	<template>
 		<name>Error</name>
-		<location id="id47" x="0" y="0">
+		<location id="id49" x="0" y="0">
 			<name x="-10" y="-34">idle</name>
 		</location>
-		<location id="id48" x="136" y="0">
+		<location id="id50" x="136" y="0">
 			<name x="126" y="-34">check</name>
 		</location>
-		<location id="id49" x="272" y="0">
+		<location id="id51" x="272" y="0">
 			<name x="262" y="-34">fixed</name>
 		</location>
-		<location id="id50" x="272" y="-102">
+		<location id="id52" x="272" y="-102">
 			<name x="262" y="-136">ready</name>
 		</location>
-		<init ref="id47"/>
+		<init ref="id49"/>
 		<transition>
-			<source ref="id50"/>
-			<target ref="id47"/>
+			<source ref="id52"/>
+			<target ref="id49"/>
 			<nail x="0" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id49"/>
-			<target ref="id50"/>
+			<source ref="id51"/>
+			<target ref="id52"/>
 		</transition>
 		<transition>
-			<source ref="id48"/>
-			<target ref="id47"/>
+			<source ref="id50"/>
+			<target ref="id49"/>
 			<nail x="136" y="102"/>
 			<nail x="0" y="102"/>
 		</transition>
 		<transition>
-			<source ref="id48"/>
-			<target ref="id49"/>
+			<source ref="id50"/>
+			<target ref="id51"/>
 		</transition>
 		<transition>
-			<source ref="id47"/>
-			<target ref="id48"/>
+			<source ref="id49"/>
+			<target ref="id50"/>
 		</transition>
 	</template>
 	<template>
@@ -849,41 +938,41 @@ void reset()
 // parameter: const gatenr gatenummer
 clock x;
 int[0,1] currentstate;</declaration>
-		<location id="id51" x="0" y="0">
+		<location id="id53" x="0" y="0">
 			<name x="-17" y="8">closed</name>
 		</location>
-		<location id="id52" x="306" y="0">
+		<location id="id54" x="306" y="0">
 			<name x="280" y="8">closing</name>
 		</location>
-		<location id="id53" x="306" y="-204">
+		<location id="id55" x="306" y="-204">
 			<name x="296" y="-238">open</name>
 		</location>
-		<location id="id54" x="0" y="-204">
+		<location id="id56" x="0" y="-204">
 			<name x="-10" y="-238">opening</name>
 		</location>
-		<init ref="id51"/>
+		<init ref="id53"/>
 		<transition>
-			<source ref="id52"/>
-			<target ref="id51"/>
+			<source ref="id54"/>
+			<target ref="id53"/>
 			<label kind="assignment" x="18" y="0">deur_is_open[entrance_schip] := false</label>
 			<nail x="289" y="0"/>
 			<nail x="280" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id53"/>
-			<target ref="id52"/>
+			<source ref="id55"/>
+			<target ref="id54"/>
 			<label kind="synchronisation" x="306" y="-119">deurklik[d]!</label>
 		</transition>
 		<transition>
-			<source ref="id54"/>
-			<target ref="id53"/>
+			<source ref="id56"/>
+			<target ref="id55"/>
 			<label kind="guard" x="60" y="-238">currentstate==entrance_schip</label>
 			<label kind="assignment" x="60" y="-204">deur_is_open[entrance_schip] := true, x:=0</label>
 			<nail x="42" y="-204"/>
 		</transition>
 		<transition>
-			<source ref="id51"/>
-			<target ref="id54"/>
+			<source ref="id53"/>
+			<target ref="id56"/>
 			<label kind="synchronisation" x="0" y="-136">deurklik[d]!</label>
 			<nail x="0" y="-34"/>
 		</transition>
@@ -908,23 +997,23 @@ bool myDirection = false;
 clock x;
 
 </declaration>
-		<location id="id55" x="0" y="-102">
+		<location id="id57" x="0" y="-102">
 			<name x="-10" y="-136">ildle</name>
 		</location>
-		<location id="id56" x="0" y="51">
+		<location id="id58" x="0" y="51">
 			<name x="-10" y="17">varen</name>
 		</location>
-		<init ref="id55"/>
+		<init ref="id57"/>
 		<transition>
-			<source ref="id56"/>
-			<target ref="id55"/>
+			<source ref="id58"/>
+			<target ref="id57"/>
 			<nail x="8" y="51"/>
 			<nail x="170" y="51"/>
 			<nail x="170" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id55"/>
-			<target ref="id56"/>
+			<source ref="id57"/>
+			<target ref="id58"/>
 			<label kind="select" x="0" y="-76">shipid: kenteken</label>
 			<label kind="synchronisation" x="0" y="-42">schipklik[shipid]?</label>
 			<label kind="comments" x="-187" y="-76">sync:
@@ -937,75 +1026,38 @@ positie: int[0,1]</label>
 	</template>
 	<template>
 		<name>pomp</name>
-		<parameter>pomp_id id</parameter>
-		<location id="id57" x="-714" y="34">
+		<location id="id59" x="-714" y="34">
 			<name x="-724" y="0">pomp_uit</name>
 			<label kind="comments" x="-1334" y="127">ipv aan en uit states kan er ook gekozen worden voor de states laag en hoog</label>
 		</location>
-		<location id="id58" x="-612" y="170">
+		<location id="id60" x="-612" y="170">
 			<name x="-622" y="136">idle</name>
 		</location>
-		<location id="id59" x="-553" y="255">
+		<location id="id61" x="-553" y="255">
 			<name x="-563" y="221">ready</name>
 		</location>
-		<location id="id60" x="-417" y="425">
-			<name x="-427" y="391">running</name>
-		</location>
-		<location id="id61" x="-281" y="357">
-			<name x="-291" y="323">finished</name>
-		</location>
-		<init ref="id57"/>
-		<transition>
-			<source ref="id60"/>
-			<target ref="id60"/>
-			<label kind="guard" x="-501" y="510">position==0</label>
-			<label kind="assignment" x="-501" y="544">waterlevel++</label>
-			<nail x="-451" y="561"/>
-			<nail x="-519" y="527"/>
-		</transition>
-		<transition>
-			<source ref="id60"/>
-			<target ref="id60"/>
-			<label kind="select" x="-365" y="493">nummer: pomp_id</label>
-			<label kind="guard" x="-365" y="510">position==1</label>
-			<label kind="synchronisation" x="-365" y="527">pomp_klik[nummer]!</label>
-			<label kind="assignment" x="-365" y="544">waterlevel--</label>
-			<nail x="-383" y="561"/>
-			<nail x="-315" y="527"/>
-		</transition>
+		<init ref="id59"/>
 		<transition>
 			<source ref="id61"/>
 			<target ref="id60"/>
-			<label kind="guard" x="-331" y="395">position==0 &amp;&amp; waterlevel==10</label>
-			<nail x="-264" y="408"/>
-			<nail x="-349" y="450"/>
+			<label kind="guard" x="-602" y="204">sluisToggle==false</label>
+			<nail x="-620" y="221"/>
 		</transition>
 		<transition>
 			<source ref="id60"/>
 			<target ref="id61"/>
-			<label kind="guard" x="-382" y="323">position==1 &amp;&amp; waterlevel==0</label>
-			<nail x="-417" y="408"/>
-			<nail x="-400" y="374"/>
-			<nail x="-332" y="340"/>
+			<label kind="guard" x="-582" y="178">sluisToggle==true</label>
+		</transition>
+		<transition>
+			<source ref="id60"/>
+			<target ref="id59"/>
+			<label kind="synchronisation" x="-696" y="153">pomp_klik?</label>
+			<nail x="-714" y="170"/>
 		</transition>
 		<transition>
 			<source ref="id59"/>
 			<target ref="id60"/>
-		</transition>
-		<transition>
-			<source ref="id58"/>
-			<target ref="id59"/>
-		</transition>
-		<transition>
-			<source ref="id58"/>
-			<target ref="id57"/>
-			<label kind="synchronisation" x="-696" y="153">pomp_klik[id]?</label>
-			<nail x="-714" y="170"/>
-		</transition>
-		<transition>
-			<source ref="id57"/>
-			<target ref="id58"/>
-			<label kind="synchronisation" x="-662" y="17">pomp_klik[id]?</label>
+			<label kind="synchronisation" x="-662" y="17">pomp_klik?</label>
 			<nail x="-680" y="34"/>
 			<nail x="-612" y="34"/>
 		</transition>
@@ -1065,7 +1117,10 @@ void enqueue(kenteken element)
 {
      list[len++] = element;
 }
-
+void dequeue(kenteken element)
+{
+     list[element] = 0;
+}
 bool is_empty()
 {
     return false;
@@ -1137,11 +1192,17 @@ chan to_lock;
 		<transition>
 			<source ref="id63"/>
 			<target ref="id64"/>
+			<label kind="select" x="154" y="-51">shipid: kenteken</label>
+			<label kind="synchronisation" x="154" y="-17">unregister[shipid]?</label>
+			<label kind="assignment" x="154" y="0">dequeue(shipid)</label>
 			<nail x="136" y="0"/>
 		</transition>
 		<transition>
 			<source ref="id62"/>
 			<target ref="id63"/>
+			<label kind="select" x="52" y="-51">shipid: kenteken</label>
+			<label kind="synchronisation" x="52" y="-17">register[shipid]?</label>
+			<label kind="assignment" x="52" y="0">enqueue(shipid)</label>
 			<nail x="34" y="0"/>
 		</transition>
 	</template>
