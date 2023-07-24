@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  24 JUL 2023 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  24 JUL 2023 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2926,22 +2926,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1791 A timed automation is a 6-tuple A = (\Sigma
-                                                  , S, S_0, X, I, T) such th...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1797 T $\subseteq
-                   $ S x $\Sigma$ x C(X) x $2^{x}$ x S is a set of transitio...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 1790--1798
 
@@ -4138,55 +4122,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2083 ...the formula $\neq$ send $\vee$  receive_
-                                                  i. Thus, a computation pat...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2086 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2083--2086
-[]\T1/ptm/m/n/10.95 To il-lu-strate the use of fair-ness, co-n-ider again the c
-om-mu-ni-ca-tion pro-to-col for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2083--2086
-\T1/ptm/m/n/10.95 re-lia-ble chan-nels. There is one fair-ness con-s-traint for
- each chan-nelt-hat ex-pres-
- []
-
-
-Underfull \hbox (badness 6461) in paragraph at lines 2083--2086
-\T1/ptm/m/n/10.95 ses the re-li-a-bi-lity of that chan-nel. A pos-si-ble choice
- for the fair-ness con-s-traint as-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2083--2086
-\T1/ptm/m/n/10.95 so-ci-a-ted with chan-nel i is the set of sta-tes that sa-tis
-fy the for-mula $\OMS/pzccm/m/n/10.95 6\OT1/ptmcm/m/n/10.95 =$ \T1/ptm/m/n/10.9
-5 send $\OMS/pzccm/m/n/10.95 _$
- []
-
-
-Overfull \hbox (334.78462pt too wide) in paragraph at lines 2083--2086
-\T1/ptm/m/n/10.95 receive$[]\OML/ptmcm/m/it/10.95 :Thus; acomputationpathisfair
-ifandonlyifforeverychannel; infinitlyofteneitheramessageisreceived:Othernotions
-offairnessaredealtwithin\OT1/ptmcm/m/n/10.95 [116]\OML/ptmcm/m/it/10.95 :blz\OT
-1/ptmcm/m/n/10.95 36\OML/ptmcm/m/it/10.95 ctlmodelchecking$ 
- []
 
 [34] [35]
 ! Undefined control sequence.
@@ -9870,7 +9805,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/gally/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on verslag.pdf (111 pages, 949545 bytes).
+Output written on verslag.pdf (111 pages, 949185 bytes).
 PDF statistics:
  2902 PDF objects out of 2984 (max. 8388607)
  782 named destinations out of 1000 (max. 500000)

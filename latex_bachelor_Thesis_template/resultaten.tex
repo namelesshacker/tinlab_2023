@@ -1652,7 +1652,7 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 Het Sluisbeheeerder model wordt getoond in fuguur[]. Het model is een uitbreiding van een schutsluis met alle condities en effecten. De kleuren in de automation verwijizen naar de kleuren in de staat van de automata . De template begint met een initiele lokatie start. De sluisbeheerder initieert het proces door een aangekomen schip te registreren metbehulp van een sychronizate met het channel... over de edge richtng de lokatie "aanmelden." Dit symboliseert een opstartprocedure, ook wordt een functie enqueeu_aanmeldLijst() gebruikt om de juiste waarden te geven aan lokale en globale avariabelen. De lokatie aanmelden regisseert het opstellen van schepen boven of beneden van de sluiskolk. De template Schip synchronizeerd met de template Sluisbeheerder met het channel move_down[id] of move_up[id] en bereikt daarmee de volgende lokatie afhankelijk af de sluis boven of beneden is worden de schepen die in de opstellijst voorkomen, max 2, klaargemaakt voor invaren.. De templates Stoplicht en sluisdeur synchroniseren met de channels ... call_Deur en call_stoplicht.
 Het Sluisbeheerder model gebruikt de variabelen clock x, wachttijd_beneden, wachttijd_boven als invariant tussen de lokaties. Om op de hoogete te zijn van de invaar-/uitvaart van de verschillende schepen worden lijsten bijgehouden: list_wachtrij_beneden, list_pos_invaren_beneden, list_schepenInSluis, list_wachtrij_boven en list_pos_invaren_boven.
 
-Het model voltooit de volgende transitie op basis van de waarde van de boolean sluis_bove en sluis_beneden. en de lokale klok variabele x.
+Het model voltooit de volgende transitie op basis van de waarde van de boolean $sluis_bove$ en $sluis_beneden$. en de lokale klok variabele x.
 Vanaf de locatie invaarverbod_gecontroleerd  wordt gecontroleerd of er nog invarende schepen zijn die in de sluiskolk passen.
 Op de lokatie sluiskolk gereed zijn er 1 of meer schepen in de sluis. Als er nog plek is in de sluiskolk n er is nog een schip klaar om in te varen dan wordt dit gecontroleerd, de functie enqueu() voegt het schip toe aan de queue van de sluiskolk. De functie deque() verwijdert de schip van de lijst met invarende schepen. De variabele sluis_boven of sluis_beneden is waar, bij de switch voor het sluiten van deuren en het aanroepe van het stoplicht nr gelang de positie van  de laate binnenvarende schip (boven of beneden). Hierna bereikt de automation sluiskolk_afgesloten.
 
@@ -1788,12 +1788,12 @@ All inequalities of the form x $\prec$ c or c $\prec$ x are in C(X) where $\prec
 If $\varphi_1$ ad $\varphi_{1}$ are in C(X), then $\varphi_1$ $\wedge$ $\varphi$ is in C(X).
 
 Note that if X contains k clocks; then each clock constraints is a convex subset of k-dimensional Eucledian space.Thus, if two points satisfy a clock constraint, then all of the points	on the line sement connecting these points satisfy the clock constraint.
-A timed automation is a 6-tuple A = (\Sigma, S, S_0, X, I, T) such that: \\
-\Sigma is a finite alphabet  \\
+A timed automation is a 6-tuple A = ($\Sigma$, S, $S_0$, X, I, T) such that: \\
+$\Sigma$ is a finite alphabet  \\
 S is a finite set of locations \\
-S0 \subseteq S is a set of starting locations \\
+S0 $\subseteq$ S is a set of starting locations \\
 X is a set of clocks \\
-I : S \rightarrow C(X) is a mapping from locations to clock constraints called the location invariant. \\
+I : S $\rightarrow$ C(X) is a mapping from locations to clock constraints called the location invariant. \\
 T $\subseteq$ S x $\Sigma$ x C(X) x $2^{x}$ x S is a set of transitions. The 5-tuple $\langle$ s,a,$\varphi$, $\lambda$, s' $\rangle$ corresponds to a transition from location s to location s' labeled with a, a constraint $\varphi$ that specifies when the transition is enabled, and a set of clocks $\lambda$ $\subseteq$ X that  are reset when the transition is executed. \\
 
 
@@ -2080,7 +2080,7 @@ We say that $\pi$ is fair if and only if for every P $\in$ F, inf(\p) $\cap$ P $
 5. M, s $\models$  $_f$ p  $\Leftrightarrow$ there exists a fair path $\pi$ starting from s such that $\pi$ $\models$ $_f$ g1
 6. M, s $\models$  $_f$ p  $\Leftrightarrow$ for all fair paths $\pi$ starting from s, $\pi$ $\models$ $_f$ g1
 
-To illustrate the use of fairness, conider again the communication protocol for reliable channels. There is one fairness constraint for each channelthat expresses the reliability of that channel. A possible choice for the fairness constraint associated with channel i is the set of states that satisfy the formula $\neq$ send $\vee$  receive_i. Thus, a computation path is fair if and only if for every channel, infinitly often either a message is received. Other notions of fairness are dealt with in[116].
+To illustrate the use of fairness, conider again the communication protocol for reliable channels. There is one fairness constraint for each channelthat expresses the reliability of that channel. A possible choice for the fairness constraint associated with channel i is the set of states that satisfy the formula $\neq$ send $\vee$  $receive_i$. Thus, a computation path is fair if and only if for every channel, infinitly often either a message is received. Other notions of fairness are dealt with in[116].
 blz 36
 ctl model checking
 
