@@ -1442,56 +1442,6 @@ Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke
 
 
 
-moet de intitial state altijd in een loop zitten in uppaal?
-wat zijn urgent channels?
-rampen? er staat wel iets in de planning maar kan geen lessen of verdere documentatie of requirements terug vinden?	
-
-
-gesprek wessel:
-main controller slim dat direction een bool is. 
-pomp is te slim, zoiu alleen maar aan of uit moeten gaan, of nog weg en in pompen maar meer niet. niets met waterlevel en aantal schepen.
-schip: niet doen. als een schip zich aanmeld, dan gebeuren er dingen, maar gaat hij naar binnen? je weet niet wat dat schip gaat doen want menselijk gedrag. beter niet het schip uitgebreid maken, maar eerder de sluis. te veel aannames.
-
-wessel model: alleen als wachtrij vol zit, doet de sluis iets.
-deur heeft een parameter zodat er meerdere deuren in de simulator neergezet kunnnen worden. ook bij wachtrij.
-
-stoplichen kunnen er wel in maar als je simpeler wilt, gaan die als eerste weg.
-zes variabelen model is voorgesteld maar niet goed op gereageerd. alleen er van af weten is genoeg.
-rampen alleen voor persoonlijk verslag
-
-
-
-Om voor mezelf een beeld te krijgen van wat een sluis is en hoe deze moet werken is er een aantal foto's verzameld van sluizen.	
-
-
-
-Uit deze afbeelding blijkt het volgende:
-Hoogteverschip t.o.v NAP
-2 sluisdeuren
-stoplichten
-Uit een onderzoek naar de werking van de verschillende sluizen in nederland wordt rekening gehouden met de aanmelding van sluizen en de gebruiktstijd van sluizen.
-
-Met de aanmelding van schepen wordt omschreven welke acties er door de schipper de sluismeeter moet worden gedaan om de positie, tijdstip en lengte van een invarendship te communiveren.
-
-Met de gebruikstijd wordt  de daadwerkelijke tijd aangeduid waarin het scheepsverkeer/waterverkeer gebruik kan maken van de sluis en onder welke voorwaarden zoals wachttijd, gewicht, terugvaarmogelijkheden etc).
-
-Directe requirements van opdrachtgever:\\
-Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renova-tie van een groot aantal sluizen noodzakelijk is.  Een eerste verkenning heeft onsgeleerd dat het gecombineerd renoveren en automatiseren van het Nederlandsesluizenpark een aanzienlijke verbetering kan opleveren t.a.v.:\\
-- veiligheid\\
-- efficientie\\
-- capaciteit\\
-- onderhoudskosten\\
-- duurzaamheid\\
-In het kader van het onlangs afgesloten klimaatakkoord heeft de Nederlandseoverheid  daarom  besloten  over te gaan tot een ingrijpende renovatie van dediverse sluizen die ons land rijk is. Op het ministerie van infrastructuur en waterstaat is helaas onvoldoende kennis van ict en systemen aanwezig om eenen ander uit te voeren. Wij vragen u een model (of een onderling samenhangend aantal modellen)aan  te leveren, opdat ontwerpen van verschillende, volledig geautomatiseerde sluizen in de toekomst gerealiseerd kunnen worden.\\\\
-Eigen inbreng van deze requirements:\\
-Wij gaan er van uit dat het volgende van ons verwacht wordt:\\
-Maak een model dat als template dient gebruikt te worden voor het automatiseren van verschillende soorten sluizen. Verder moeten overwegingen gemaakt worden die goed onderbouwd zijn.\\\\ Aangezien er van ons alleen een model verwacht wordt, zullen wij ons geheel focussen op de fundamentele werking van de sluis en hierbij zullen wij ons dus niet bezig  houden met fysieke eisen zoals veiligheidshekjes en borden. Onze focus ligt geheel op de werking van de sluis; elke state waar de sluis zich in mag bevinden en welke beslissingen de sluis moet maken op basis van bestaande protocols en benoemde eisen. \\\\
-Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze bestaande uit de sluisdeuren, de sloplichten, de waterpomp en de boten.\\
-
-
-
-
-
 \begin{itemize}
 	\begin{minipage}{0.4\linewidth}
 		\item Vooraanmelding
@@ -1535,53 +1485,6 @@ Deze requirements zullen hieronder uitgewerkt worden, per sluisonderdeel, deze b
 
 
 
-
-
-\paragraph{Requirements definitie}
-Requirements zijn alleen die eisen die gesteld worden aan het gedrag of de kwaliteit van het systeem om te voorzien in de behoeften van een belanghebbende uit de business.
-
-
-
-
-invaardeuren en uitvaardeuren
-Gaan we uit van binnendeuren en buitendeuren? Er ontstaat dan een extra ruimte in de sluis. Hoeveel schepen kunnen in deze ruimte? Wat is de maximale wachtreij in deze ruimte en wat zijn de verkeersregels in deze nruimte?
-invaarstoplicht en uitvaarstoplicht}
-Als invaren is toegestaan hoe wordt dit dan doorgegeven aan de schepen in de sluis? moeten zij dan uit zichzelf wachten of krijgen zij een signaal dat zij wewl/niet mogen uitvaren? En moeten zij dan kiezen voor links, midden of rechts? Of maakt dat allemaal niets uit?
-
-invaarwachtrij en uitvaarwachtrij
-Als er meerder schepen in een sluiskolk zitten moet het systeem dan rekeneing houden met het schip dat als eerste is ingevaren en/of het langst in de sluis zit?
-
-
-Sluisdeuren en stoplichten
-De sluisdeuren aan weerszijde van de sluis  worden gebruikt om de toegang tot de sluiskolk mogelijk te maken en te bewaken in combinatie met de stoplicht.
-
-
-
-Waterpomp
-De waterpomp pompt water in de sluis of pompt water weg naar gelang de richting van het ingevaren schip.
-
-
-Initially the clutch is closed
-To open the clutch, it takes at least 100 ms and at most 150 ms
-To close the cluch, it takes at least 100 ms and at most 150 ms
-Initially the gearbox is neutral
-To release the gear, it takes at least 100 ms and at most 200 ms.
-To set a gear it takes at leasst 100 ms and at mose 300 ms.
-The engine is always in a predefined state called initial when no gear is set.
-To find zero torque in the engine, it takes at least 1150 ms and at most 400 ms. ut at 400 ms, the engine may enter an error state or find synchronous speed.
-The  engine may regulate on synchronous speed in at most 500 ms.
-When in an error state, the engine will regulate on synchrobous speed in at least 50 ms.
-
-
-A gear change should ne performed within 1 seond (P6-p*,P3)
-When an error arises, the system will reach a predefined error state marking the error (p9-p11)
-The system should be able to use all gears ( p2-p3)
-There will be no deadlocked stat in the system(p17)
-When the system indicates gear neutral, the engine should  be in initial state (p12)
-The gearbox controller will never indicate open or closed clutch when the clutch is closed or open respctively(p14)
-The gearbox controller will never indicate gear set or geur neutral wen the gear is nog set or idle respectively (p15)
-When the engine is regulating on torque, the clutch is closed (p16)
-
 \paragraph{Aandachtspunten}
 \begin{enumerate}
 	\item Voorrang tussen schepen onderling in de sluis?
@@ -1599,29 +1502,8 @@ When the engine is regulating on torque, the clutch is closed (p16)
 	\item De waterpomp wordt alleen aan en uitgezet
 	\item De waterpomp houdt geen rekening met waterstand
 	\item Houdt geen rekening met een schip in de sluis dat is blijven hangen.
-	
 \end{itemize}
 
-\paragraph{Functionele en niet-functionele eisen}
-
-\paragraph{specificaties}
-
-\paragraph{Het vier variabelen model van de sluis}
-Systemen (met daarin software) en de bijbehorende vier variabelen:
-\subparagraph{Monitored variabelen}
-: door sensoren gekwanticeerdefenomenen uit de omgeving
-\subparagraph{Controlled variabelen}
-door actuatoren bestuurde fenomenen uit de omgeving
-\subparagraph{Input variabelen}
-\subparagraph{Output variabelen}
-
-
-
-
-
-
-
-Op basis van de schets kunnen we vaststellen dat een sluismodel uit de volgende onderdelen bestaat.
 
 \begin{enumerate}
 	\item Een tweetal sluisdeuren. 
@@ -1644,818 +1526,217 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 
 
 
+	\subsubsection{De computation tree}
 
-
-
-
-4.2 5 en 6
-Het Sluisbeheeerder model wordt getoond in fuguur[]. Het model is een uitbreiding van een schutsluis met alle condities en effecten. De kleuren in de automation verwijizen naar de kleuren in de staat van de automata . De template begint met een initiele lokatie start. De sluisbeheerder initieert het proces door een aangekomen schip te registreren metbehulp van een sychronizate met het channel... over de edge richtng de lokatie "aanmelden." Dit symboliseert een opstartprocedure, ook wordt een functie enqueeu_aanmeldLijst() gebruikt om de juiste waarden te geven aan lokale en globale avariabelen. De lokatie aanmelden regisseert het opstellen van schepen boven of beneden van de sluiskolk. De template Schip synchronizeerd met de template Sluisbeheerder met het channel move_down[id] of move_up[id] en bereikt daarmee de volgende lokatie afhankelijk af de sluis boven of beneden is worden de schepen die in de opstellijst voorkomen, max 2, klaargemaakt voor invaren.. De templates Stoplicht en sluisdeur synchroniseren met de channels ... call_Deur en call_stoplicht.
-Het Sluisbeheerder model gebruikt de variabelen clock x, wachttijd_beneden, wachttijd_boven als invariant tussen de lokaties. Om op de hoogete te zijn van de invaar-/uitvaart van de verschillende schepen worden lijsten bijgehouden: list_wachtrij_beneden, list_pos_invaren_beneden, list_schepenInSluis, list_wachtrij_boven en list_pos_invaren_boven.
-
-Het model voltooit de volgende transitie op basis van de waarde van de boolean $sluis_bove$ en $sluis_beneden$. en de lokale klok variabele x.
-Vanaf de locatie invaarverbod_gecontroleerd  wordt gecontroleerd of er nog invarende schepen zijn die in de sluiskolk passen.
-Op de lokatie sluiskolk gereed zijn er 1 of meer schepen in de sluis. Als er nog plek is in de sluiskolk n er is nog een schip klaar om in te varen dan wordt dit gecontroleerd, de functie enqueu() voegt het schip toe aan de queue van de sluiskolk. De functie deque() verwijdert de schip van de lijst met invarende schepen. De variabele sluis_boven of sluis_beneden is waar, bij de switch voor het sluiten van deuren en het aanroepe van het stoplicht nr gelang de positie van  de laate binnenvarende schip (boven of beneden). Hierna bereikt de automation sluiskolk_afgesloten.
-
-
-
-De lokatie start_nivelleren kiest op basis van de variabelen sluis_boven en de variabelen sluis_beneden het nivellereingsprogramma.
-Heet nivellereingsprogramma is Aof B. De keuze voor het programma wordt bepaald door de variabelen van het schip dat in de sluis zit.
-
-De lokatie klaarmaken_voor_openen wordt bereikt als de   hoogte van de sluis  door het nivellereingsprogramma is bereikt.
-De positie van de kluis is bepaald door de schepen in de sluis. Vanuit deze lokatie wordt gekeken off de stoplichten gereed moeten worden gemaakt en of de sluisdeuren open mogen.
-Hierna volgt een transiie waarin de stoplichte op groen worden gezet en de sluisdeuren worden geopend voor de uitvaart van de schepen in de sluis.
-Als alle schepen zijn uitgevaren die uit moeten varen, worden de stoplichten op groen gezet en de deuren gesloten.
-
-
-De lokatie uitvaren_toegestaan heeft een verbinding(edge) met de lokatie sluis_afsluiten.
-Er is een select statement, e:id_t gebruikt als onderdeel van het prototocol om alle uitvarende schepen uit de queue van de sluiskolk te halen, en wordt dan ook gebruikt door de synchronisatie met de channel leave om de schepen uit de sluiskolk te begeleiden. De edge hieraan gekoppeld bevat de functie deque() om de variabelen  van de sluiskolk te resetten.
-
-Vanuit de positie van de sluis worden de schepen gesignaleerd op een invaarverbod en worden de deuren van de sluis gesloten.
-De lokatie sluiskolk_afgesloten is bereikt.
-
-Ship [guards, invariants, assignents, synchronizations, properties,aannames]
-De template Schip begint bij de Init lokatie. De lokatie is verbonden met de lokatie aangekomen met een edge waarbij een synchronizatie wordt aangeroepen met de template sluisbeheerder. De clock wordt op nul gezet. De lokatie aangekomen is verbonden met de lokatie aangemeld. De edge bevat een synchronizatie waarmee de edge een synchronizatie uitvoert met de template Sluisbheheerder.
-De volgende lokatie is  controleren. De edge waarmee de lokatie aangemeld in verbinding staat met de lokatie cnotroleren heeft een synchronisatie voor de template Sluisbeheerder. De lokatie controleren heeft ook een edge met de lokatie wachten. Een schip max maximaal 30 seconden wachten op de lokatie wachten voordat er een mogelijkheid is om opniew in aanmerking te komen voor een controle. Als een schip langer dan 30 tijdseenheden moet wachten de is er een mogelijkheid voor het schip te vertrekken. Hierbij eindigt het schip het invaarproces. Een schip kan dus na aanvaren maximaal 20 seconden wachten om toestemming te krijgen voor een positie invaren anders wordt deze verwezen naar een wachtrij.
-Hierna volgdde lokate invarene. De lokatie invarene implieert dat een schip in een invaarproces is dat eindigt in de lokatie gestopt.
-Hierop volgd de lokatie nivelleer_start. Hierop wordt een nivelleer_proces gestart. Daarbij is ee synchronisatie met de template Sluisbeheerder.
-De lokatie nivelleer_stop is een lokate waarin het nivelleerproces al is gestopt. Van hieruit is er een edge met de lokatie klaar voor vertrek. De edge synchroniseert hiermee met de template Sluisbeheerder.
-De lokatie klaar_voor_vertrek is verbonden met de lokatie Init. Met een guard x>=3 tijdseenheden mag een schip vertrekken.
-
-
-Deur
-De deur bevat de volgende lokaties: dicht, openend, open en sluitende.
-Een deur sluit niet in een enkele actie. Het proces die een deur dooploopt zijn de processen openend en sluitende. De finale lokaties zijn open en dicht.
-
-Nivelleermachine
-De nivelleermachine begint bij de lokatie uit. Met een synchronisatie wordt een nivelleermachine aangezet. De automatie kiest een programma en werkt deze uit in de lokatie bezig. Als ht programma is afgerond volgt de lokatie klaar. Na elk nivelleerproces wordt de machine uitgezet
-
-Stoplicht
-Een stoplicht heeft twee lokaties: rood en groen.
-
-
-
- 
-\paragraph{Liveness}
-Liveness properties are of the formn: something will eventually happen, e.g. when pressing the on button of the remote control of the television, then eventually the television should turn on. Or in a model of a  communication protocol, any message that has been sent should eventually be received.
-\paragraph{Fairness}
-\paragraph{Security}
-Safety propertires are of the form: "something bad will never happen". For instance, in a model of a nuclear power plant, a safety propertymight be, that the operating temperature is always (invariantly) under a certain threshold, or that a meltdown never occurs. A variation of this property is that "something will possibly never happen".
-For instance when playing a game, a safe state is one in which we can still win he game, hence we will possible not loose.
-The system cannot reach states or enable events that are fornidden by the requirements
-\paragraph{Performance}
-There requirements limit the maximum time to perform when no recoverable errors occur.
+\xymatrix@ur@!R=2pc{%
+	*+<1pc>[o][F-]{q_0}  \ar@(l,l)[]^<<<<{start} \ar@/^/[r]^0  \ar@/_/[d]_1 
+	& *+<1pc>[o][F-]{q_1} \ar@(ul,ur)[]^{0}  \ar@/^/[d]^1 \\
+	*+<1pc>[o][F-]{q_2} \ar@(dr,dl)[]^{1} \ar@/_/[r]_0 
+	& *+<1pc>[o][F=]{q_3} \ar@(l,l)[]^>>>>{start}  \ar@(dr,dl)[]^{1} \\
+	& *+<1pc>[o][F=]{q_4}
+	& *+<1pc>[o][F=]{q_5}
+	& *+<1pc>[o][F=]{q_6}
+	& *+<1pc>[o][F=]{q_7}
+	& *+<1pc>[o][F=]{q_8}
+	& *+<1pc>[o][F=]{q_9}
+	& *+<1pc>[o][F=]{q_10}
+ }
 
 
 
 
 
+\tikz[tree layout]\graph[nodes={draw, circle}] {
+	r -> 
+	{ a -> 	{ c }->{ d}->{e} ->{ f->{1,2,3}}->{g} ->{h}->{i} ->{j->{run,fin}} -> {k} -> {l} -> {m} -> {n}
+	},
+
+};
 
 
 
+\begin{tikzpicture}[>=latex',scale=0.5]
+	% set node style
+	
+	\begin{dot2tex}[dot,tikz,codeonly,styleonly,options=-s -tmath]
+		digraph G  {
+			node [style="n"];
+			p [label="+"];
+			t [texlbl="\LaTeX"];
+			6
+			8
+			10-> p;
+			6 -> t;
+			8 -> t;
+			t -> p;
+			{rank=same; 10;6;8}
+		}
+	\end{dot2tex}
+	\begin{pgfonlayer}{background}
+		\draw[rounded corners,fill=blue!20] (6.north west) -- (8.north east) -- (t.south east)--cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
 
+
+\[\begin{tikzcd}[column sep=1cm]
+	ABCDE\arrow[r, leftrightarrow, "\times"{anchor=center},"\text{label}","\text{label}"{below}]\arrow[d] & F\arrow[r]\arrow[d] & G\arrow[rr]\arrow[d] && H\arrow[d]\\
+	ABCDEFGH\arrow[r, leftrightarrow, "\times"{anchor=center}]\arrow[d] & II\arrow[r]\arrow[d] & JJ\arrow[rr,"\text{very long label}"]\arrow[d] && KK\arrow[d]\\
+	ABCD\arrow[r] & EEE\arrow[r] & FFF\arrow[rr] && GGG
+\end{tikzcd}\]
+
+\[\begin{tikzcd}[column sep=1cm]
+	ABCDE\arrow[r, leftrightarrow,] & F\arrow[r] & G\arrow[rr]&& H
+\end{tikzcd}\]
+\[
+\xymatrix {
+	& \ar[r] &
+	*++[o][F-]{q_0} \ar@(ur,ul)_1 \ar[r]^0 &
+	*++[o][F-]{q_2} \ar@(ur,ul)_1 \ar[r]^1 &
+	*++[o][F=]{q_1} \ar@(dr,ur)_{0,1}\\
+		*++[o][F=]{q_1} \ar@(dr,ur)_{0,1}
+}
+\]
+
+
+
+\paragraph{Models}
+
+\subparagraph{Maincontroller}
+\[
+\begin{tikzcd}%[every arrow/.append style=dash]  uncomment to remev arrowa
+	& \tikz{\node[draw,circle]{1}} \ar{d}&  & \tikz{\node[draw,circle]{2}} \ar{d}  \ar{r} &  \ar{r} & \ar{r} & \ar{r} &  \ar{r}& \tikz{\node[draw,circle]{2}}\ar{d} \\
+	\tikz{\node[draw,circle]{4}} \ar{d} & \tikz{\node[draw,circle]{2}}  \ar[bend right=15]{l} \ar{d} & & \ar{d} & \tikz{\node[draw,circle]{2}} &\tikz{\node[draw,circle]{2}}&\tikz{\node[draw,circle]{2}}&& \tikz{\node[draw,circle]{2}} \ar{d} &\\
+	\tikz{\node[draw,circle]{4}} \ar{u} \ar{r}  & \tikz{\node[draw,circle]{3}} \ar{r}  & \tikz{\node[draw,circle]{5}} \ar{r} &  \tikz{\node[draw,circle]{6}} \ar{r}  \ar{ru} & \tikz{\node[draw,circle]{7}} \ar{r} & \tikz{\node[draw,circle]{7}} \ar[crossing over]{ul}  \ar{r} & \tikz{\node[draw,circle]{8}} \ar{r} & \tikz{\node[draw,circle]{9}} \ar{r} \ar{d} & \tikz{\node[draw,circle]{10}}  \\
+	& & & &\tikz{\node[draw,circle]{1}} \ar[crossing over]{ul} \ar{ru}  & & \tikz{\node[draw,circle]{2}}  \ar[bend right=15]{r} & \tikz{\node[draw,circle]{2}} \ar[bend right=15]{l} \ar[bend right=15]{r}  & \tikz{\node[draw,circle]{2}} \ar[bend right=15]{l}
+\end{tikzcd}
+\]
+
+\subparagraph{Labeling functions}
+
+
+\[\begin{tikzcd}[column sep=1cm]
+	ABCDE\arrow[r, leftrightarrow,] & F\arrow[r] & G\arrow[rr]&& H
+\end{tikzcd}\]
+
+\subparagraph{Schip}
+\[
+\begin{tikzcd}
+	\tikz{\node[draw,circle]{1}} \ar{r} & \tikz{\node[draw,circle]{2}} \ar{d}\\
+	\tikz{\node[draw,circle]{4}} \ar{u} \ar{ur} \ar[bend right=15]{r} & \tikz{\node[draw,circle]{3}} \ar[crossing over]{ul} \ar[bend right=15]{l}
+\end{tikzcd}
+\]
+\subparagraph{Deur}
+\[
+\begin{tikzcd}
+	\tikz{\node[draw,circle]{1}} \ar{r} & \tikz{\node[draw,circle]{2}} \ar{d}\\
+	\tikz{\node[draw,circle]{4}} \ar{u} \ar{ur} \ar[bend right=15]{r} & \tikz{\node[draw,circle]{3}} \ar[crossing over]{ul} \ar[bend right=15]{l}
+\end{tikzcd}
+\]
+\subparagraph{Stoplicht}
+\[
+\begin{tikzcd}
+	\tikz{\node[draw,circle]{1}} \ar{r} & \tikz{\node[draw,circle]{2}} \ar{d}\\
+	\tikz{\node[draw,circle]{4}} \ar{u} \ar{ur} \ar[bend right=15]{r} & \tikz{\node[draw,circle]{3}} \ar[crossing over]{ul} \ar[bend right=15]{l}
+\end{tikzcd}
+\]
+\subparagraph{pomp}
+\[
+\begin{tikzcd}
+	\tikz{\node[draw,circle]{1}} \ar{r} & \tikz{\node[draw,circle]{2}} \ar{d}\\
+	\tikz{\node[draw,circle]{4}} \ar{u} \ar{ur} \ar[bend right=15]{r} & \tikz{\node[draw,circle]{3}} \ar[crossing over]{ul} \ar[bend right=15]{l}
+\end{tikzcd}
+\]
+\subparagraph{Sensor}
+\[
+\begin{tikzcd}
+	\tikz{\node[draw,circle]{1}} \ar{r} & \tikz{\node[draw,circle]{2}} \ar{d}\\
+	\tikz{\node[draw,circle]{4}} \ar{u} \ar{ur} \ar[bend right=15]{r} & \tikz{\node[draw,circle]{3}} \ar[crossing over]{ul} \ar[bend right=15]{l}
+\end{tikzcd}
+\]
 \hoofdstuk{Verificatie}
-     De safety en reachability requirements die formeel zijn gespecificeerd worden in Uppaal geverifieerd met de A en E state formule. Andrerere opreratoren zijn
-
-\paragraph{inleiding}
-Vanuit deze requiremenst kunnen verdere specificaties opgesteld worden.
-
-Even ter duidelijkheid: een requirement beschrijft wat een programma moet doen, en een specificatie beschrijft hoe men van plan is om deze requirements te realiseren.//
-Voorbeeld:// Requirement is dat de sluis meerdere boten moet kunnen verwerken; de specificatie zou hier zijn fdat de sluis minstens twee keer zo groot moet zijn dan de grootste boot die door de sluis kan.
-
-
-
-\paragraph{ctl}
-
-CTL formulas are based on the following operators:
-A ($\on$ every path")
-E ($\there$ exists a path")
-X ($\next$ time")
-G ($\globally$ or $\always$)
-F ($\eventually$ or $\nally)
-U ($\until$)
-R ($\release$)
-
-
-
-Deze zijn als volgt:
-\newline
-\newline
-A[] not maincontroller.rd1 imply
-\newline
-\newline
-A[] maincontroller.rd1 imply
-\newline
-\newline
-A[] not deadlock imply
-\newline
-\newline
-E<> maincontroller.rd1 imply
-\newline
-\newline
-E<> maincontroller.s7
-\newline
-\newline
-E<> maincontroller.s7d
-\newline
-\newline
-
-\paragraph{Formele specificaties}
-
-
-\paragraph{Timed automata}
-
-
-Before we consider a reachability problem, we show how real-time systems can be modoeled as parralel compositions of timed automata [3,5]. We assume an interleavingor asynchroneous semantics for this operation. Let A1 = ($\sum$, S1, $\S^{1}_0$, $X_1$, $I_1$, $T_1$) and $A_2$ = ($\sum_2$, $S1_2$, $\S^{1}_0$, $X_2$, $I_2$, $T_2$) be two timed automata. Assume that the two automata have disjoint sets of clocks, that is $X_1$ $\cap$ $X_2$ = $\emptyset$. Then, the parralel composition of $A_1$, and $A_2$ is the timed automation:
-
-$A_1$ || A2 = ($\Sigma$ $\cup$ $\Sigma_2$, $S_1$ x S2, $\S^{1}_0$ x  $\S^{2}_0$ , $X_1$ $\cup$ $X_2$, I, T),
-where I($s_1$,$s_2$)=$I_1$($s_1$) $\wedge$ $I_2$($s_2$) and the edge relation T is given by the following rules:\\ \newline
-
-1 For a $\in$ $\Sigma_1$ $\cap$ $\Sigma_2$, if $\langle$ s1,a, $\varphi$, $\lambda_1$, $s_1$' $\rangle$ $\in$ $T_1$ and $\langle$ s2,a, $\varphi$, $\lambda_2$, $s_2$' $\rangle$ $\in$ $T_2$ \\ then T will contain the transition $\langle$ (s1,s2), a $\varphi$ , $\lambda_1$ $\cup$ $\lambda_2$, ($s_1$',$s_2$') $\rangle$ \\ 
-2. For a $\in$ $\Sigma_1$ - $\Sigma_2$, if $\langle$ s, a, $\varphi$, $\lambda$, s' $\in T_1$ and t $\in$ $S_2$ then T will contain the transition $\langle$ (s,t),a, $\varphi$, $\lambda$, (s', t) $\rangle$ \\ \newline
-3. For a $\in$ $\Sigma_2$ - $\Sigma_1$, if $\langle$ s, a, $\varphi$, $\lambda$, s' $\in$ $T_2$ and t $\in$ $S_1$ then T will contain the transition $\langle$ (t,s),a, $\varphi$, $\lambda$, (t,s') $\rangle$
-
-Thus the locations of the parralel composition are pairs of locations from the component automata, and the invariant of such a location is the conjunction of the invariants of the component locations. There will be a transition in the parralel compoition for ach pair of transitions from the individual timed automata with the same action The source location of the transition will be the composite location obtained from the source locations of the individual transitions. Te target location will be the compositelocation obtained from the target locations of the individual transitions. The guard will be the conjunction of the guards for the individual transitions, and the set of clocks that are reset will be the union of sets that are reset by the individual transitions. If the action of  a transition is only an action of one of the two processes, then there will be a transition in the parralel composition for each location of the othertimed automation. The source and target locations of the original transition and the location fromthe other automation. All of the other components of the transition will remain the same.
-
-
-
-Timed automata
-A timed automation[8,99] is a finite augmented with a finite set of  real-valued clocks. We assume that transitions are instantaneous. However, time can elapse when the automation is in a state or location. When a transition occurs, some of the clocks ma be reset to zero. At any instant, the reading clock is equal to the time that has elapsed since the lat time the clock was reset. We assume that time passes at the same rate for all clocks. In order to prevent pathological behaviours, we only consider automata that are non-zeno, that is, only a finite number of transitions can happen within a finite amout of time.
-
-A clock constraint, called a guard, is associated with each transition. The transition can be taken only if the current values of the clocks satisfy the clock constraint. A clock cnstraint is also associated with each location of the automation. This constraint i called the invariant of the location. Time can elapse in the location only as long as the invariant of the location is true. An example of a timed automation is shown in Figure 17.1 The automation consists of two locations s0 and s1, two clocks x and y, and "a" transition from s0 to s1, and a "b" transition from s1 to s0. The automation starts in location s0. It can remain in that location as long as the clock y is less than or equal to 5. As soon as the value of y is greater than or equal to 3, the  automation can make an "a" transition to location s1 and reset the clock y to 0. the automation can remain in location s1 as long as y is less than or equal to 10 and x is less than or equal to 8. When y is at least 4 and x is at least 6, it can make a "b" transition back to location s0 and reset x.
-
-The remainder of this section contains a formal semantics for timed automata in terms of infinite state transition graphs[3,8]. We begin with a precise definition of clock constraints. Let X be a set of clock variables, ranging over the nonneative real numbers $\Re^{+}$. Define the set of clock constraints C(X) as follows:
-All inequalities of the form x $\prec$ c or c $\prec$ x are in C(X) where $\prec$ is either < or  $\lveq$ $\sm$ and c is a nonnegative rational number.
-If $\varphi_1$ ad $\varphi_{1}$ are in C(X), then $\varphi_1$ $\wedge$ $\varphi$ is in C(X).
-
-Note that if X contains k clocks; then each clock constraints is a convex subset of k-dimensional Eucledian space.Thus, if two points satisfy a clock constraint, then all of the points	on the line sement connecting these points satisfy the clock constraint.
-A timed automation is a 6-tuple A = ($\Sigma$, S, $S_0$, X, I, T) such that: \\
-$\Sigma$ is a finite alphabet  \\
-S is a finite set of locations \\
-S0 $\subseteq$ S is a set of starting locations \\
-X is a set of clocks \\
-I : S $\rightarrow$ C(X) is a mapping from locations to clock constraints called the location invariant. \\
-T $\subseteq$ S x $\Sigma$ x C(X) x $2^{x}$ x S is a set of transitions. The 5-tuple $\langle$ s,a,$\varphi$, $\lambda$, s' $\rangle$ corresponds to a transition from location s to location s' labeled with a, a constraint $\varphi$ that specifies when the transition is enabled, and a set of clocks $\lambda$ $\subseteq$ X that  are reset when the transition is executed. \\
-
-
-We will require that time be allowed to progress to infinity, that is, at each location the upper bound imposed on the clocks be either infinity, or smaller than the maximum bound imposed by the invariant and by the transitions outgoing from the location. In other words, it is possible either to stay at a location forever, or the invariant will force the automation to leave the location, and at that point at least one transition will be enabled. For timed automata, these constraints can be imposed syntactically.
-
-A model for a timed automation A is an infinite state transition graph $\tau$(A) = ($\Sigma$, Q, $Q^{0}$, R). Each state in Q is a pair (s, v) where s $\in$ S is a location and v : X $\rightarrow$  $R^{+}$ is a clock assignement, mapping each clock to a nonnegative real value. The set of initial states $Q_0$ is given by {(s,v)| s $\in$ $S_0$ $\wedge$ $\forall$ x  $\in$  X[v(x) =0]}. \\
-\newline
-In order to define the state transtion relation for $\tau$(A), we must first introduce some notation. For $\lambda$ $\subseteq$ X, define v[$\lambda$ := 0] to be the clock assignment that is the same as v for clocks in X - $\lambda$ and maps the clocks in $\lambda$ to 0. For d $\in$ $\Re$, define v +d as the clock assignment that maps each clock x $\in$ X to v(x) +d. The clock assignment v -d is defined in the same  manner.
-From the brief discussion in the introduction, we know that a timed automation has two basic types of transitions: \\
-\newline
-Delay transitions correspond to the elapsing of time while staying at some location. \\ \newline 
-We write (s, v) $\xrightarrow[]{d}$ (s, v+d), where d $\in$  $R^{+}$, provided that for every 0 $\leq$ e $\leq$ d, the invariant	l(s) holds for v +e. \\
-\newline
-Action transitions correspond to the execution of a transition	 from T. We write (s,v) $\xrightarrow[]{a}$ (s', v'), where a $\in$ $\Sigma$, provided that there is a transition $\langle$ s,a, $\varphi$, $\lambda$, s' $\rangle$ such that v satisfies $\varphi$ and v=[$\lambda$:=0]. \\ 
-\newline
-
-The transition relation R of $\tau$(A) is obtained by combining the delay and action transitions. We will write (s,v) R(s', v') or (s, v) $\xRightarrow[]{f(x)}$   (s', v') if there exists s" and v" such that (s,v) $\xrightarrow[]{d}$ (s", v")$\xrightarrow[]{a}$ (s', v') for some d $\in$ $\Re$.
-In this chapter we will describe an algorithm for solving the reachability problem for $\tau$(A): Given a set of initial states $Q_n$, we show how to compute the set of all states q $\in$ Q that are reachable from $Q_0$ by transitions in R. This problem is nontrivial because $\tau$ (A) has an infinite number of states. In order to accomplish this goal, it is necessary to use a finite representation for the infinite state space of $\tau$(A). Developing such representations is the main topic of te following sections.
-
-\paragraph{clock regions}
-In the definition	 of timed automata, we allowed the clock constraints that serve as the invariants of locations and the guards of transitions to contain arbitrary rational constants.
-We can multiply the constants in each clock constraint by the least common multiple m of the denominators of all the constants to integers. The value of a clock can still be an arbitrary nonnegative real number. Note that applying this transformation can change the clock assignments in the set of reachable states of T(A). Fortunately, this does not cause a mjor problem. Ther reachale states of the original auomation can be obtained from the locations of te transformed automation by applying the inverse transformation, that is, dividing each clock value by m.
-
-
-Th largest constant in the tranformed in the transformed automation is the product of m and the largest constant in the original automation. Thus, the transformation at worst results in quadratic blowup in the length of the encodings of th lock constraints[3]. This increase in complexity is acceptable, since the transformation simplifies certain operations on clock constraints that will be needed later in the chapter. We will apply this tranformation uniformly to all of th clock constraints that appear in the timed automata the we study. Consequently, in the future we can assume without loss of generality that all constants in clock constraints that we encounter are integers.
-
-In order to obtain a finite representation for the infinite state space of a timed automation, we define clock regions[7,8], which represents sets of clock assignments. If two states, which correspond to the  same location of the timed automation A, agree on the integral parts of all clock constraint in the invariant of a location or in the guard of a transition is satisfied or not. The ordering of the fractional parts of the clock values determines which clock will change its integral part first. This is because clock constraints cn involve only integers, and all clocks increase at the same rate.
-
-For example, let A be a timed automation with two clocks x1 and x2. Let s be a location in A with an outgoing transition e to some other location. Consider two states (s,v) and (s,v') in T(A) that correspond to location s. Suppose that v(x1) = 5.3, v(x2)=7.5, v'(x1)=5.5 and v'(x2) = 7.9. Assume that the guard $\varphi$ associated with e is x1 $\geq$ 8 $\wedge$ x2 $\geq$ 10. It is easy to see that if (s,v) eventually satisfies the guard, then so will (s, v'). \\
-\newline
-
-The value of a clock cn get arbitrarily large; however, if the clock is never compared to a constant greater than c, then the value of the clock will have no effect on the computation of A once it exceeds c. Suppose, for instance, that the block x is never compared to a constant greater than 100 in the invariant associated wit a location or in the guard of a transition.
-
-Then, based on the behaviour of A, it is impossible to distinguish between x having the value 101 and x having the value 1001.
-Alur,Courcoubetis, and Dill[7,8] show how to formalize this reasoning. For each clock x $\in$ X, let cx, be the largest constant that x is compared with in the invariant of any location or in the guard of any transition. For t $\in$  $\Re^{+}$, let ft(t) be the fractional part of t, and let [t] be the integral part of t. Thus, t = [t] + fr(t). We define an equivalence relation $\cong$ on the set of possible clock assignments as follows: Let v and v' be two clock assignments.
-Then v  $\cong$ v' if and only if three conditions are  satisfied: \\
-\newline
-
-For all x $\in$ X either v(x) $\geq$ cx, and v'(x) $\geq$ gx or [v(x)] =[v'(x)].
-For all x,y $\in$ X such that v(x) $\leq$ cx and v(y) $\leq$ cy, fr(v(x)) $\leq$ fr(v(y)) if and only if fr(v'(x)) 
-$\leq$ fr(v'(y))
-For all x $\in$ X either v(x) $\leq$ cx,
-fr(v(x)) =0 if and only if fr(v'(x)) =0.
-it is easy to see that $\cong$ does indeed define anequivalence relation. The equivalence classes of $\cong$ are called regions[7,8].  We will write [v] to denote the region which containsthe clock assignment v.Each region can be represented by specifying \\
-\newline
-
-1. for every clock x $\in$ X, once clock constraint from the set {x=c | c=0...., cx} $\cup${c -1 < x < c | c=1,.....cx} $\cup$ {x > cx}
-2. for every pairof clocks x, y $\in$ X such that c-1 < x< cand d-1<y< d are clock constraints in the first condition, whether fr(x) is less than, equal to, or greater than fr(y).
-
-Figure 17.7 which is taken from [8], shows the clockregions for a timed automationwith two clocks x and y where cx = 2 and cy =1. In this example, there are a total of 28 regions: 6 corner points, 14 open line segments and 8 open regions.
-
-We will use this observation to show that $\cong$ has finite index and, consequently, that the  number of regions is finite. Our proofof this fact is based on the proof given in [8].
-
-
-
-
-
-Lemma 43
-The number of equivalence classes that $\cong$ induces on C(X) is bounded by
-|X|! $\cdot$ $2^{|X|}$ $\cdot$ $\prod$ (2xc +2)
-proof
-An equivalence class [v] of $\cong$ can be described by a tripple	 of arrays i the following manner. For each block x $\in$ X, the array $\alpha$ tells which of the intervals {[],[]}
-contains the value v(x). Thus, the array $\alpha$ represents the cloc assignment v if and only if for each clock x $\in$ X, v(x)$\in$ $\alpha$(x). The number of ways to choose $\alpha$ is $\prod$. \\ 
-\newline
-
-
-Let $X_a$ be th set of clocks with nonzero fractional part. The array $\beta$: $x_a$ $\rightarrow$ {1,....|$A_a$|} is a permutation of $X_a$, which gives the ordering of the fractional parts of the clocks in Xa with respect to $\leq$. Thusm the array $\bta$ represents a clock assignment c if and if for each pair x,y $\in$ $X_a$, if $\beta$(x) < $\beta$(y) then fr(v(x)) $\leq$ fr(v(y)). For a given $\alpha$, the number of ways to choose $\beta$ is bounded by |$X_\alpha$|!  which is bounded by |X|!. \\
-\newline
-
-The third component  $\gamma$ is a boolean array indeed by $X_a$ that is used to specify which clocks in $X_a$ have the same fractional part. For each clock c, $\gamma$(x) tells whether or not the fractional part of v(x) equals  the fractional part of its predecessor in the array $\beta$. Thus the array $\gamma$ represents a clock assignment v if and only if for each x \n X, $\gamma$(x) equals 0 exactly when there is a clock $\gamma$ $\in$ $X_alpha$ such that $\beta$(y) = $\beta$(x) +1 and fr(v(x)) equals fr(v(y)). The number of ways of choosing $\gamma$ is bounded by the number of boolean arrays over $X_\alpha$, which is bounded by $2^{|X|}$.
-Hence, $\alpha$ encoded the integral parts of he clock assignments, and $\beta$ with $\gamma$ encodes the ordering of their fractioal aprts. It is easy to see that the sets represented bytriples are equivalence of $\cong$ and that every equivalence class is represented by some triple. The bound given in the statement of the lemma is the product of the bounds associated with $\alpha$, $\beta$, and $\gamma$. This completes the proof of the lemma. \\
-\newline
-
-
-The following properties of the equivalence relation $\cong$ are used in later  in this chapter.
-Lemma 44
-Let v1 and v2 be twoclock assignments1, let $\varphi$ be a clock constraint, and let $\lambda$ $\subseteq$ X be a set of clocks.
-1. if v1 $\cong$ v2 and t is a nonnegative integer, then v1 + t $\cong$ v2 +t.
-2. if v1 $\cong$ v2, then $\forall$ t1 $\in$ $R^{|+|}$ $\existst_2$ $\in$ $R^{|+|}$[v1 +t1 $\cong$ v2 + t2]
-3. if v1 $\cong$ v2, then v1 satisfies $\varphi$ if and only if v2 satisfies $\varphi$
-4. If v1 $\cong$ v2, then v1[$\lambda$:=0] $\cong$ v2 [$\lambda$:=0]
-\\
-\newline
-
-Note that the first property may not hold if t is not an integer. For example, (2.8) $\cong$ (.1, .2),
-but (.2, .8) +.3 is not equivalent to (.1,.2) + .3. All of the properties except the second are straightforward to prove and will be left to the reader. A proof if the scond property is sketched below. The proof is not diificultm but it is somewhat tedious. It can be safely skipped when this chapter is read for the first time.
-
-\\
-\newline
-
-Proof
-Assume that v1 $\cong$ v2. We can assume that t1 > 0 because, otherwise, we can simply choose t2=0. Let X{x1,x2,.....,xn}. We can threat v1 as a vector v1 = $\langle$ a1, ......, an $\rangle$, where $a_i$ is the alue of clock $x_i$ in $v_1$. Similarly, we let v2 = $\langle$ b1, ......, $b_n$ $\rangle$. Since corresponding clocks have the same integer part, we can assume without loss of generality that 0 $\leq$ $a_i$ < 1 and 0 $\leq$ $b_i$ < 1. Also , assume that the clock values are sorrted into increasing order so that $a_1$ $\leq$ $a_2$ $\leq$ ... $\leq$ $a_n$ and b1 $\leq$ $b_2$ $\leq$ .... $\leq$ $b_n$.
-
-
-case 1
-Assume that the largest element in v1 + t1 is less than or equal to 1. This case is trivial. We can easilty choose t2 so that v + t1 $\cong$ v2 + t2
-
-case 2
-Assume that  0 $\leq$ t1 < 1. Let the first element of v1 +t1. That is greater than or equal to 1 be $a_k$+t1. Chhoose $\in$ so that $\in$ =0 if $a_k+t_1$ =1 and so that 0< \ni < $b_k$-$b_k-1$ if $a_k$+$t_1$ > 1. Note that $b_k_$-1 < $b_k$ = $b_k$-1, then $a_k$=$a_k$-1 and $a_$+$t_1$ is not the first elment of v1+t1 that is greater than o equal to 1. We will show that v1+t1 $\cong$ v2+(1+ $\in$ - $b_k$). In order to show this we will split the vectors into two parts. Let
-
-L1= $\langle$ $a_1$ + t1, ...., $a_k$-1 + t1    $\rangle$, and
-L2= $\langle$  $b_1$ + (1 + $\in$ - $b_k$), ..., $b_k$-1 + (1+ $\in$ - $b_k$)  $\rangle$
-In each case it is straightforward to show that
-
-1. all of the elements are positive
-2. the elements are sorted in increaing order, and
-3. all of the elements are less than 1
-Because of these conditios it is easy to see that $L_1$ $\cong$ $L_2$. Similarly, let 
-
-$R_1$= $\langle$ $a_k$ + t1, ...., $a_n$ + t1    $\rangle$, and
-$R_2$= $\langle$  $b_k$ + (1 + $\in$ - $b_k$), ..., $b_k$-1 + (1+ $\in$ - $b_k$)  $\rangle$
-
-All of the elements in $R_1$ and $R_2$ are greater than or equal to 1. The fractional parts are given by $R_1$ - 1 and $R_2$ -1, respectively. For these vectors it is straightforward to show that
-
-1. all of the elements are nonnegative
-2. the elements are sorted in increasing order, and
-3. all of the elements are less than 1
-
-Moreover, an element in one vector is 0 if and only if the corresponding element in the order vector is 0. Thus $R_1$ -1 $\cong$ $R_2$ -1. It follows immediately that $R_1$ $\cong$ $R_2$.
-It is not difficult to see that the fractioal parts of $R_2$ precede the fractional parts of $L_2$.
-Let i  $\geq$ k and j < k. Then
-$b_i$ +  (1 + $\in$ - $b_k$) -1 $\leq$ $b_j$ + (1+ $\in$ - $b_k$).
-is equivlent to $b_i$ - $b_j$ $\leq$ 1, which is obviously true. The same relationship holds for the fractioal parts of $R_1$ and $L_1$, that is.
-$a_i$ + $t_1$ -1 $\leq$ $a_j$ + $t_1$.
-
-hence , we obtain $R_1$ $\cdot$ $L_1$ $\cong$ $R_2$ $\cdot$ $L_2$, where "$\cdot$" is concatenation of vectors. This shows that for all $t_1$ with 0 $\leq$ t1 < 1, there exits a t2 such that $v_1$ + $t_1$ $\cong$ v2 + $t_2$ and completes the proof of 
-
-
-
-case 3
-Finally, supppose that $t_1$ $\geq$ 1. Let t1'= $t_1$ - [$t_1$], so that 0 $\leq$ $t_1$ < 1. Find $t_2$ such that $v_1$ + $t_1$ $\cong$ v2 + t2. Then:
-v1 + t1 + [t1]  $\cong$ v2 + t2 + [t1].
-
-If we choose t2 = [t1], then we have v1 + t1 $\cong$ v2 + t2 as required. This completes the proof of the second property.
-
-The equivalence relation $\cong$ over clock assignments an be extended to an equvalence relation over the state space of T(A) by requiring that equivalent states have identical locations and equivalent clock assignments: (s,v) $\cong$ (s', v') if and only if s = s' and v $\cong$ v'. The key property of he equivalence reltion $\cong$ is given by the following lemma [5]:
-
-
-Lemma 45
-If v1 $\cong$ v2 and (s, $v_1$)  $\xrightarrow[]{a}$ (s', v'). The transition $\langle$ s, a, $\varphi$, $\lambda$, s' $\rangle$  that takes state (s, v1) to state (s', v1') corresponds to two transiions of the timed automation.
-
-Proof
-Assume that v1 $\cong$ v2 and (s, v1)  $\xrightarrow[]{a}$ (s', v'1). The transition $\langle$ s, a, $\varphi$, $\lambda$, s' $\rangle$ that takes state (s, v1) to state (s', v'1) corresponds to two transitions of the timed automation:
-
-a delay transition (s, v1)  $\xrightarrow[]{d1}$ (s, $v_1$ + $d_1$) for some $d_1$ $\geq$ 0, and
-an action transition   (s, v1 +d1)  $\xrightarrow[]{a}$ (s', $v_1$') such that $v_1$ + $d_1$ satisfies $\varphi$ and $v'_1$ = ($v_1$ + $d_1$)[$\lambda$ :=0].
-
-
-
-Since v1 $\cong$ v2 and v1 satisfies I(s), v2 also satisfies I(s). Furthermore, there exists d2 $\geq$ 0 such that v1 + d1 $\cong$ v2 + d2. Since v1 + d1 satisfies I(s), v2 +d2 also satisfies I(s). Because the clock constraint I(s) is convex and is satisfied by both v2 and v2 + d2, I(s) must be satisfied by v2 + e for all e such that 0 $\leq$ e $\leq$ d2. Consequently, the delay transition (s, v2)  $\xrightarrow[]{d2}$ (s, v2 +d2) is legal.
-
-Since v1 + d1 $\cong$ v2 +d2, both v1+ d1 and v2+ d2 must satisfy the clock constraint for the guard $\varphi$. Thus, the transition $\langle$ s, a, $\varphi$, $\lambda$ , s' $\rangle$ myst also be enabled in the state  *s, $v_2$ + $d_2$
-. Let $v'_2$ = ($v_2$ +$d_2$)[$\lambda$ :=0]. Then v'$_2$ is equivalent to $v'_1$. Hence, there is an action transition (s, $v_2$ + $d_2$)  $\xrightarrow[]{a}$  (s', $v'_2$). Combining the delay transition with the action transition, we get (s, $v_2$)  $\xrightarrow[]{a}$ (s', $v'_2$) as required.
-
-As a result of the lemme, we can conostruct a finite state transition raph that is  bisimilaion equivalnt to the infinite state transition graph T(A). The finite state transition graph is called the region graph of A[7,8] and is denoted by R(A). A region is a pair (s, [v]). Since $\cong$  has a finite index, there are only a finite nuber of regions. The states of the region graph are  the regions of A. The construction of R(A) will have the property that whenever (s,v) is a state of T(A), the region (s, [v]) where $s_0$ is an initial state of A and $v_0$ is a clock assignment that assigns 0 to every clock. The transition relation of R(A) is defined so that bisimulation equivalence is guaranteed. There will be a transition labeled with a from the region (s,[v]) to the region (s', [v']) if and only there are assignments $\omega$ $\in$ [v] and $\omega$' $\in$ [v'] such that (s, $\omega$) can make a transition to (s', $\omega$')
-
-We summarize the construction of the region graph R(A) below. Let A = ($\sigma$, S, $S_0$, X, I, T) be a timed automation. Then,
-The states of R(A) have the form (s, [v]) where s $\in$ S and [v] i a clock region
-The initial states have the form ($s_0$, [v]) where $s_0$ $\in$ $s_0$ and v(x)=0 for all x $\in$ X.
-R(A) has a transition ((s,[v]),a, (s',[v'])) if and only if (s, $\omega$)  $\xrightarrow[]{a}$  (s', $\omega$') for some $\omega$ $\in$ [v] and some $\omega$' $\in$ [v'].
-We can use Lemma 45 to prove bisimulation equivalene.
-
-Theorem 31
-We will show that T(A) and R(A) are bisimilar. Define the bisimulation relation B by (s,v)B(s,[v]). It is easy to see that the initial state ($s_0$, $v_0$) corresponds o the  state ($s_0$, [$v_0$]). Next, we show that for each transtition of T(A), there is a corrresponding transition  of R(A), and vice versa. Suppose first that (s,v)B(s,[v]). Suppose on the other hand that (s,v)B(s,[v]) and that  (s,v)$\xrightarrow[]{a}$(s',[v']). Then there exit $\omega$ $\cong$ v and $\omega$' $\cong$ v' such that (s', v") and (s,v) $\xrightarrow[]{a}$(s', v"). Hence v" $\cong$ $\omega$ $\cong$ v', so [v"] = [v']. By the definition of B, (s', v")
-B (s', [v"]), it follows that (s', v")B(s', [v']).
-
-
-\paragraph{Safety}
-Safety Properties are used to verify that something
-bad will never happen. Dit kan worden gespecificeerd met de volgende vergelijking
-
-\aqcap\\
-
-\square ( a_0 \implies (( \lnot a_2 \wedge \lnot a_3 ) \mathcal{U} a_1 ) \vee ( \lnot a_2 \wedge \lnot a_3 )) \\
-
-AG(p)
-M, s \models AG(p) $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \forall i \cdot M,\pi[i] \models p\\
-
-EG(p)
-M, s \models EG(p) $\Leftrightarrow$     \exists \pi \in  \sqcap (M,s) \cdot \forall i \cdot M,\pi[i] \models p\\
-
-AF(p)
-
-EF(p)
-
-AX(p)
-
-EX(p)
-
-A(p \cup q)
-M, s \models  A(p \cup q)   $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \exists k \cdot M,\pi[k] \models q \wedge ( \forall i \leq k \cdot M,\pi [i] \models p)\\
-E(p \cup q)
-
-A(p \Re q)
-
-E(p \Re q)
-
-\forall x \, (P(x) \to Q(x)) & premise \\
-\forall x \, P(x) & premise \\\hspace*{-30pt} \\
-
-
-P(x_0) & $\forall x \, \mathrm{e}$ 2 \\
-Q(x_0) & $\to \mathrm{e}$ 3, 4 \\
-
-\forall x \, Q(x) & $\forall x \, \mathrm{i}$ 3--5 \\
-
-
-
-
-
-
-
-\{a,b\} or \set†{a,b} \\
-\langle a,b \rangle or \gens†{a,b} \\
-
-
-f \colon A \to B \\
-
-f \circ g \\
-x \mapsto f(x) \\
-
-\begin{align*}
-	f \colon \mathbb{R} &\to \mathbb{R} \\
-	x &\mapsto x^2
-\end{align*}
-
-
+ We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. De meest gebruikte methode voor het bewij
+ 
+ zen van de correctheid van untimed programma's zijn aangepast voor timed programs.  We hebben nog geen aanpask gevonden voor het gebruik en bewijzen van correct gebruik van clocks.  Een bewijs voor het gebruik van real-time programmas met clocks is gegeven in T.A. Henzinger and P.W. Kopke. Verification methods for the di-
+ vergent runs of clock systems
+ 
+ In dit hoofdstuk formaliseren we de requirements ogegeven in de requiremenstlis tin hoofdstuk .. en bewijzen we de correcte toepassing met gebruik van de symbolic model-checker van Uppaal.
+ Het systeem is gemodelleerd als een netwerk van meerdere timed automata: controller, sluis, stoplicht, deur, pomp en schip.
+ 
+ Het bewijs vn corret gebruik kan ook worden aangetoond met help van bewijs voor inorrectgebruik
+ 
+ 
+ Verificatie resultaten
+ \paragraph{Het door ons uitgetippelde testpath of scenario}
+ 
+ \paragraph{Timed automata}
+ 
+ 
+\paragraph{Data variabelen}
+
+\paragraph{Acties}
+ 
+\paragraph{Clock regions}
+\cite{clarke2000Modelchecking21}
+\cite{clarke2000Modelchecking212}
+\cite{clarke2000Modelchecking223}
+\cite{clarke2000Modelchecking31}
+\cite{clarke2000Modelchecking32}
+\cite{clarke2000Modelchecking33}
+\cite{clarke2000Modelchecking411}
+\cite{clarke2000Modelchecking43}
+\cite{clarke2000Modelchecking63}
+\cite{clarke2000Modelchecking64}
+\cite{clarke2000Modelchecking661}
+\cite{clarke2000Modelchecking91}
+\cite{clarke2000Modelchecking102}
+\cite{clarke2000Modelchecking11}
+\cite{clarke2000Modelchecking122}
+\cite{clarke2000Modelchecking123}
+\cite{clarke2000Modelchecking132}
+\cite{clarke2000Modelchecking1321}
+\cite{clarke2000Modelchecking152}
+\cite{clarke2000Modelchecking171}
+\cite{clarke2000Modelchecking172}
+\cite{clarke2000Modelchecking173}
+\cite{audioSemanticsBengtsson}
+\cite{guidingAutomataBberm}
+\cite{gearTransitionLindahl1}
+\cite{gearTransitionLindahl2}
+\cite{martinelliScada}
+\cite{IgbalReconstructurintTransition1}
+\cite{IgbalReconstructurintTransition2}
+\cite{huangVerficationStoch}
+\cite{bengtssonUppaalVerification}
+\cite{pranaliVerificationWaterLevel}
+\cite{alexandreUppaalDefinition}
+\cite{behzadEvalQOS}
+\cite{behzadVariablesQoS}
+\cite{alur}
+\cite{alurDenseRealTime}
+\cite{alurSystemClok}
+\cite{alurModelHybrid}
+\cite{rijksoverheidSluizen}
+\cite{rijksoverheidSluisStroomschema}
+
+\paragraph{CTL logica}
+Alle veiligheid en reachability requirements formeel gespecificeerd in hoofdstuk ... zijn geverifieerd in uppaal met gebruik an A en E state formulae. Deze zijn als volgt:
 \newline \\
-M, s \models p $\Leftrightarrow$ p \in L(s) \\
-M, s \models \not f1 $\Leftrightarrow$ M, s \nvdash f1 \\
-M, s \models f1 \vee f2 $\Leftrightarrow$ M,s \models f1 or M,s \nvdash f2 \\
-M, s \models f1 \wedge f2 $\Leftrightarrow$  M,s \models f1 and M,s \nvdash f2 \\
-M, s \models \mathrm{E} g_{1} $\Leftrightarrow$ there is a path \pi  from ~  s ~   such ~  that  ~ M, \pi \models g1 \\
-M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from  ~  s, M, \pi \models g1 \\
-M, s \models p $\Leftrightarrow$ s is the first state of \piand M, s \models f1 \\
-M, s \models \not g_{1} $\Leftrightarrow$ M, \pi  \nvdash g1\\
-M, s \models p $\Leftrightarrow$  M, \pi  \models g1  or  M, \pi  M, \pi  \models g2\\
-M, s \models p $\Leftrightarrow$ M, \pi  \models g1  and  M, \pi  M, \pi  \models g2 \\
-M, s \models p $\Leftrightarrow$ M, $\pi^{1}$ \models g1 \\
-M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that  ~ M, $\pi^{k}$  \models g1\\
-M, s \models p $\Leftrightarrow$ for all i \ge 0,M,$\pi^{i}$ \models g1 \\
-M, s \models g1 \bugcup g2 $\Leftrightarrow$ ~  there  ~ exists  ~ ak  ~ \ge  ~ 0 ~  such ~  that  ~ M,  ~ $\pi^{k}$ \models g2\\
-and  ~ for  ~ all ~  0  ~ \le j < k, M,$\pi^{j}$ \models g1
-M, s \models p $\Leftrightarrow$ for all j \ge 0, if for ~  every  ~ i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2\\
-
-
-\paragraph{Reachability}
-Reachability properties are used to check whether
-a given state formula can be satisfied by some
-reachable state.
-
-\paragraph{Liveliness}
-Liveness properties are used to verify that
-something eventually will hold
-\paragraph{Security}
-
-\paragraph{Performance}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- We think of thevariables innV as the present sate variables and the variables in V'as next state variables. Each variable v i V has a corresponding next state variable in V', which we denote y v'. A valuation for the variables in V and V' can be vieuwed as designating an ordered pair of states or a transition, and we can represent setsof these valuations using formulas as above. We refer to a set of pairs of states as a transition relation. If R is a transition relation, then we write R(V,V') to denote a formula that represents it.
- In order to write specifications that describe properties of concurrent systems we need to define a set of atomic propositions AP. Atomic propositionswill typically have the form v=d where v $\in$ V and d $\in$ D. A proposition v =d will be truein a state s if s(v)=d. Whenv is a variable over the  boolean domain{True,False}, it is not necessarly to include both v = True and  v = False in AP.We will write v to indicate that s(v)=True and $\neq$ v to indicate that s(v)=False.
- We now show how to derive
- 
- blz 16
- 
- We now show how to derive Kripke M=(S,$S_0$,R,L) from the first order formulas $S_0$ and R that represent the concurrent system.
- The set of states is hthe set of all variations	for V
- the set of initial states $S_0$ is the set of all valuations $s_0$ for V that satisfy the formula $S_0$
- let s and s' be the two states, then R(s,s') holds if R evaluates to True when each v $\in$ V is assigned the value s(v) and each v' $\in$  V' is assigned the value s'(v).
- The labeling function L: S $\to$  $\2^{AP}$ is defined so that L(s) is the subsetof all atomic propositions true in s. If v is a variable over the boolean domain, then v $\in$ L(s) indicates that s(v)=True, and v $\notin$  L(s) indicates that s(v)=False.
- L: S $\t$o  $\2^{AP}$  is a function that labels each state with the set of atomic propositions true in that state\\
- 
-Because we require that the transition relation of a kripke structuer us always total, we must extend the relation R if some state s has no successor. In this case, we modify R so that R(s,s) holds.
-To illustrate the notions defined in this section we consider a simple system with variables x and y that range over D={0,1}. Thus, a valuation for the variables x and y is justa pair ($d_1$, $d_2$) $\in$ D x Dwhre $d_1$ is the value for x and $d_2$ is the value for y.
-
-blz 33
-Fairness
-A fairness constraint an be an arbitraty set of states, usually described by the formula of the logic. if fairness constraints are interpreted as sets of states, then a fair path must contain an element of each fairness constraint infinetely often. If fairness constrants are interpreted	 as CTL formula, then a path is fair if each constraint is true infnetely often along the path. The path quantifiers in the logic are then restricted fair paths.
-Formally, a fairkripke structure is a 4-tuple M = (S,R,L,F), where S, L and R are  defined as before and F $\subseteq$  $\2^{S}$  is a set of fairness constraints ( often called Buchi acceptance conditions) Let $\pi$ = $s_0,s_1$ be a path in M. Define 
-inf($\pi$) = {s| s=$s_i$ for infinitely many i}.
-
-We say that $\pi$ is fair if and only if for every P $\in$ F, inf(\p) $\cap$ P $\neq$ $\emptyset$. The semantics of CTL* wth respect to a fair kripke structure is very similar to the semantics of CTL* with respect to ordinary kripke structure. We will write M,s $\models_F$ f to indicate that the state formula f is true in state s of the fair Kripke structure M. Similarly, we write M, $\pi$ $\models$ $_f$ g to indicate that the path formula g is true along path $\pi$  in M. Only clauses 1, 5 and 6 in the origial semanticss change.
-1. M, s $\models$  $_f$ p  $\Leftrightarrow$ there exists a fair path from s and p $\in$ L(s)
-5. M, s $\models$  $_f$ p  $\Leftrightarrow$ there exists a fair path $\pi$ starting from s such that $\pi$ $\models$ $_f$ g1
-6. M, s $\models$  $_f$ p  $\Leftrightarrow$ for all fair paths $\pi$ starting from s, $\pi$ $\models$ $_f$ g1
-
-To illustrate the use of fairness, conider again the communication protocol for reliable channels. There is one fairness constraint for each channelthat expresses the reliability of that channel. A possible choice for the fairness constraint associated with channel i is the set of states that satisfy the formula $\neq$ send $\vee$  $receive_i$. Thus, a computation path is fair if and only if for every channel, infinitly often either a message is received. Other notions of fairness are dealt with in[116].
-blz 36
-ctl model checking
-
-The model checkingproblem is easy to describe. given a kripke structure M =(S,R,L) that represents a finite-state concurrent system and a termporal logic formula f expressing some desired specification, find the set of all states n S that satisfy f: {s $\in$ S | M, s $\models$ f} \\
-Let M = (S,R, L) be a kripke structur. Assume that we want to determine which states in S satisfy the CTL formula f. The algorithm will operate by labeling each state s with the set label(s) of subformulas of f which are true in s. Initially, label(s) is just L(s). The algorithm then goes through a series of stages.During the ith stage, subformulas with i-1 nested CTL operators are processed. When a subformula is processed, it is added to the labelig of each state in which it is true. Onze the algorithm terminates, we will have that M, s $models$ f iff f $\in$ label(s)
-blz 40
-Fairness constraints
-In this subsection we show how to extendthe CTL model checking algorithmto handle fairness constraints. Let M = (S,R,L,F) be a fair kripke structure. Let F = {P1, ..., $P_k$} be the setof fairness constraints. We will say that a strongly connnected component C of the graph of M is fair wth respect to F if and only if for each $P_i$ $\in$ F, there is a state $t_i$ $\in$ (C $\cap$  $P_i$). We first give an algorithmfor checking EG $f_1$ with respect to a fair structure. In order to establish the correctness of this algorith, we need a lemma that is analogous to Lemma 1.As before, let M' be obtained from M by deleting from S all of those states at which $f_1$ does not fairly hold. Thus, M'=(S',R',L',F') where $\S^{'}$ = {s $\in$ S | M,s $\models$ F f1}, R' = R|$_S$'xS', L' = L|$_s$;, and F' ={ $P_i$ $\cap$ S' | $P_i$ $\in$ F}.
-
-Lemma 2 M,s $\models$ F EG f1 iff the followingtow conditions are satisfied:
-1. s $\in$ S'
-2. There exists a path S' that leads from s to somenode t in a nontrivial fair strongly connected component of thr graph (S',R')
-
-In order to determine if M, s $\models$ f p for some p $\in$ AP, we check M,s $\models$ p $\wedge$ fair using the ordinary model-checking procedure.
-blz 68
-Fairness in model checking with fixpoint
-
-blz 69
-
-blz 70
-
-blz 71
-Counterexamples and whitnesses
-
-blz 72
-
-
-blz 73
-
-
-blz 74
-
-
-
-blz 121
-automata theory
-blz 141
-
-
-
-blz 171
-Equivalence and preorders between systems
-blz 172
-
-blz 173
-
-
-blz 174
-
-
-blz 175
-
-
-blz 176
-
-
-blz 177
-simulation relations
-blz 178
-
-blz 179
-
-blz 180
-
-
-blz 232
-INvariants
-blz 233
-
-
-blz 234
-
-
-blz 265
-
-blz 266
-
-blz 267
-
-
-blz 268 parralel compositioon
-Before we consider a reachability problem, we show how real-time systems can be modoeled as parralel compositions of timed automata [3,5]. We assume an interleavingor asynchroneous semantics for this operation. Let A1 = ($\sum$, S1, $\S^{1}_0$, $X_1$, $I_1$, $T_1$) and $A_2$ = ($\sum_2$, $S1_2$, $\S^{1}_0$, $X_2$, $I_2$, $T_2$) be two timed automata. Assume that the two automata have disjoint sets of clocks, that is $X_1$ $\cap$ $X_2$ = $\emptyset$. Then, the parralel composition of $A_1$, and $A_2$ is the timed automation:
-
-$A_1$ || A2 = ($\Sigma$ $\cup$ $\Sigma_2$, $S_1$ x S2, $\S^{1}_0$ x  $\S^{2}_0$ , $X_1$ $\cup$ $X_2$, I, T),
-where I($s_1$,$s_2$)=$I_1$($s_1$) $\wedge$ $I_2$($s_2$) and the edge relation T is given by the following rules:
-
-1 For a $\in$ $\Sigma_1$ $\cap$ $\Sigma_2$, if $\langle$ s1,a, $\varphi$, $\lambda_1$, $s_1$' $\rangle$ $\in$ $T_1$ and $\langle$ s2,a, $\varphi$, $\lambda_2$, $s_2$' $\rangle$  $T_2$ then T will contain the transition $\langle$ (s1,s2), a $\varphi$ , $\lambda_1$ $\cup$ $\lambda_2$, ($s_1$',$s_2$') $\rangle$
-2. For a $\in$ $\Sigma_1$ - $\Sigma_2$, if $\langle$ s, a, $\varphi$, $\lambda$, s' $\in$ $T_1$ and t $\in$ $S_2$ then T will contain the transition $\langle$ (s,t),a, $\varphi$, $\lambda$, (s', t) $\rangle$
-3. For a $\in$ $\Sigma_2$ - $\Sigma_1$, if $\langle$ s, a, $\varphi$, $\lambda$, s' $\in$ $T_2$ and t $\in$ $S_1$ then T will contain the transition $\langle$ (t,s),a, $\varphi$, $\lambda$, (t,s') $\rangle$
-
-Thus the locations of the parralel composition are pairs of locations from the component automata, and the invariant of such a location is the conjunction of the invariants of the component locations. There will be a transition in the parralel compoition for ach pair of transitions from the individual timed automata with the same action The source location of the transition will be the composite location obtained from the source locations of the individual transitions. Te target location will be the compositelocation obtained from the target locations of the individual transitions. The guard will be the conjunction of the guards for the individual transitions, and the set of clocks that are reset will be the union of sets that are reset by the individual transitions. If the action of  a transition is only an action of one of the two processes, then there will be a transition in the parralel composition for each location of the othertimed automation. The source and target locations of the original transition and the location fromthe other automation. All of the other components of the transition will remain the same.
-
-		
-blz 269 modelling with timed automata
-
-blz 274 clock regions
-
-blz 280 clock zones
-
-blz 281
-\paragraph{Timed automata}
-Timed automata
-A timed automation[8,99] is a finite augmented with a finite set of  real-valued clocks. We assume that transitions are instantaneous. However, time can elapse when the automation is in a state or location. When a transition occurs, some of the clocks ma be reset to zero. At any instant, the reading clock is equal to the time that has elapsed since the lat time the clock was reset. We assume that time passes at the same rate for all clocks. In order to prevent pathological behaviours, we only consider automata that are non-zeno, that is, only a finite number of transitions can happen within a finite amout of time.
-
-A clock constraint, called a guard, is associated with each transition. The transition can be taken only if the current values of the clocks satisfy the clock constraint. A clock cnstraint is also associated with each location of the automation. This constraint i called the invariant of the location. Time can elapse in the location only as long as the invariant of the location is true. An example of a timed automation is shown in Figure 17.1 The automation consists of two locations s0 and s1, two clocks x and y, and "a" transition from s0 to s1, and a "b" transition from s1 to s0. The automation starts in location s0. It can remain in that location as long as the clock y is less than or equal to 5. As soon as the value of y is greater than or equal to 3, the  automation can make an "a" transition to location s1 and reset the clock y to 0. the automation can remain in location s1 as long as y is less than or equal to 10 and x is less than or equal to 8. When y is at least 4 and x is at least 6, it can make a "b" transition back to location s0 and reset x.
-
-The remainder of this section contains a formal semantics for timed automata in terms of infinite state transition graphs[3,8]. We begin with a precise definition of clock constraints. Let X be a set of clock variables, ranging over the nonneative real numbers $\Re^{+}$. Define the set of clock constraints C(X) as follows:
-All inequalities of the form x $\prec$ c or c $\prec$ x are in C(X) where $\prec$ is either < or  $\leq$ $\sm$ and c is a nonnegative rational number.
-If $\varphi_1$ ad $\varphi_{1}$ are in C(X), then $\varphi_1$ $\wedge$ $\varphi$ is in C(X).
-
-Note that if X contains k clocks; then each clock constraints is a convex subset of k-dimensional Eucledian space.Thus, if two points satisfy a clock constraint, then all of the points	on the line sement connecting these points satisfy the clock constraint.
-A timed automation is a 6-tuple A = ($\Sigma$, S, $S_0$, X, I, T) such that
-$\Sigma$ is a finite alphabet
-S is a finite set of locations
-S0 $\subseteq$ S is a set of starting locations
-X is a set of clocks
-I : S $\rightarrow$ C(X) is a mapping from locations to clock constraints called the location invariant.
-T $\subseteq$ S x $\Sigma$ x C(X) x $2^{x}$ x S is a set of transitions. The 5-tuple $\langle$ s,a,$\varphi$, $\lambda$, s' $\rangle$ corresponds to a transition from location s to location s' labeled with a, a constraint $\varphi$ that specifies when the transition is enabled, and a set of clocks $\lambda$ $\subseteq$ X that  are reset when the transition is executed.
-
-
-We will require that time be allowed to progress to infinity, that is, at each location the upper bound imposed on the clocks be either infinity, or smaller than the maximum bound imposed by the invariant and by the transitions outgoing from the location. In other words, it is possible either to stay at a location forever, or the invariant will force the automation to leave the location, and at that point at least one transition will be enabled. For timed automata, these constraints can be imposed syntactically.
-
-A model for a timed automation A is an infinite state transition graph $\tau$(A) = ($\Sigma$, Q, $Q^{0}$, R). Each state in Q is a pair (s, v) where s $\in$ S is a location and v : X $\rightarrow$  $R^{+}$ is a clock assignement, mapping each clock to a nonnegative real value. The set of initial states $Q_0$ is given by {(s,v)| s $\in$ $S_0$ $\wedge$ $\forall$ x  $\in$  X[v(x) =0]}.
-In order to define the state transtion relation for $\tau$(A), we musr first introduce some notation. For $\lambda$ $\subseteq$ X, define v[$\lambda$ := 0] to be the clock assignment that is the same as v for clocks in X - $\lambda$ and maps the clocks in $\lambda$ to 0. For d $\in$ $\Re$, define v +d as the clock assignment that maps each clock x $\in$ X to v(x) +d. The clock assignment v -> d is defined in the same  manner. \\
-From the brief discussion in the introduction, we know that a timed automation has two basic types of transitions:
-Delay transitions correspond to the elapsing of time while staying at some location. We write (s, v) $\xrightarrow[]{d}$ (s, v+d), where d $\in$  $R^{+}$, provided that for every 0 $\leq$ e $\leq$ d, the invariant	l(s) holds for v +e. \\
-Action transitions correspond to the execution of a transition	 from T. We write (s,v) $\xrightarrow[]{a}$ (s', v'), where a $\in$ $\Sigma$, provided that there is a transition $\langle$ s,a, $\varphi$, $\lambda$, s' $\rangle$ such that v satisfies $\varphi$ and v=[$\lambda$:=0].
-
-The transition relation R of $\tau$(A) is obtained by combining the delay and action transitions. We will write (s,v) R(s', v') or (s, v) $\xRightarrow[]{f(x)}$   (s', v') if there exists s" and v" such that (s,v) $\xrightarrow[]{d}$ (s", v")$\xrightarrow[]{a}$ (s', v') for some d $\in$ $\Re$.
-In this chapter we will describe an algorithm for solving the reachability problem for $\tau$(A): Given a set of initial states $Q_n$, we show how to copute the set of all states q $\in$ Q that are reachable from $Q_0$ by transitions in R. This problem is nontrivial because $\tau$ (A) has an infinite number of states. In order to accomplish this goal, it is necessary to use a finite representation for the infinite state space of $\tau$(A). Developing such representations is the main topic of te following sections.
-
-blz 268 parralel composition
-
-blz 274 clock regions
-\paragraph{clock regions}
-In the definition	 of timed automata, we allowed the clock constraints that serve as the invariants of locations and the guards of transitions to contain arbitrary rational constants.
-We can multiply the constants in each clock constraint by the least common multiple m of the denominators of all the constants to integers. The value of a clock can still be an arbitrary nonnegative real number. Note that applying this transformation can change the clock assignments in the set of reachable states of T(A). Fortunately, this does not cause a mjor problem. Ther reachale states of the original auomation can be obtained from the locations of te transformed automation by applying the inverse transformation, that is, dividing each clock value by m.
-
-
-Th largest constant in the tranformed in the transformed automation is the product of m and the largest constant in the original automation. Thus, the transformation at worst results in quadratic blowup in the length of the encodings of th lock constraints[3]. This increase in complexity is acceptable, since the transformation simplifies certain operations on clock constraints that will be needed later in the chapter. We will apply this tranformation uniformly to all of th clock constraints that appear in the timed automata the we study. Consequently, in the future we can assume without loss of generality that all constants in clock constraints that we encounter are integers.
-
-In order to obtain a finite representation for the infinite state space of a timed automation, we define clock regions[7,8], which represents sets of clock assignments. If two states, which correspond to the  same location of the timed automation A, agree on the integral parts of all clock constraint in the invariant of a location or in the guard of a transition is satisfied or not. The ordering of the fractional parts of the clock values determines which clock will change its integral part first. This is because clock constraints cn involve only integers, and all clocks increase at the same rate.
-
-For example, let A be a timed automation with two clocks x1 and x2. Let s be a location in A with an outgoing transition e to some other location. Consider two states (s,v) and (s,v') in T(A) that correspond to location s. Suppose that v(x1) = 5.3, v(x2)=7.5, v'(x1)=5.5 and v'(x2) = 7.9. Assume that the guard $\varphi$ associated with e is x1 $\geq$ 8 $\wedge$ x2 $\geq$ 10. It is easy to see that if (s,v) eventually satisfies the guard, then so will (s, v').
-
-The value of a clock cn get arbitrarily large; however, if the clock is never compared to a constant greater than c, then the value of the clock will have no effect on the computation of A once it exceeds c. Suppose, for instance, that the block x is never compared to a constant greater than 100 in the invariant associated wit a location or in the guard of a transition.
-
-Then, based on the behaviour of A, it is impossible to distinguish between x having the value 101 and x having the value 1001.
-Alur,Courcoubetis, and Dill[7,8] show how to formalize this reasoning. For each clock x $\in$ X, let cx, be the largest constant that x is compared with in the invariant of any location or in the guard of any transition. For t $\in$  $\Re^{+}$, let ft(t) be the fractional part of t, and let [t] be the integral part of t. Thus, t = [t] + fr(t). We define an equivalence relation $\cong$ on the set of possible clock assignments as follows: Let v and v' be two clock assignments.
-Then v  $\cong$ v' if and only if three conditions are  satisfied:
-
-For all x $\in$ X either v(x) $\geq$ cx, and v'(x) $\geq$ gx or [v(x)] =[v'(x)].
-For all x,y $\in$ X such that v(x) $\leq$ cx and v(y) $\leq$ cy, fr(v(x)) $\leq$ fr(v(y)) if and only if fr(v'(x)) 
-$\leq$ fr(v'(y))
-For all x $\in$ X either v(x) $\leq$ cx,
-fr(v(x)) =0 if and only if fr(v'(x)) =0.
-it is easy to see that $\cong$ does indeed define anequivalence relation. The equivalence classes of $\cong$ are called regions[7,8].  We will write [v] to denote the region which containsthe clock assignment v.Each region can be represented by specifying
-
-1. for every clock x $\in$ X, once clock constraint from the set {x=c | c=0...., cx} $\cup${c -1 < x < c | c=1,.....cx} $\cup$ {x > cx}
-2. for every pairof clocks x, y $\in$ X such that c-1 < x< cand d-1<y< d are clock constraints in the first condition, whether fr(x) is less than, equal to, or greater than fr(y).
-
-Figure 17.7 which is taken from [8], shows the clockregions for a timed automationwith two clocks x and y where cx = 2 and cy =1. In this example, there are a total of 28 regions: 6 corner points, 14 open line segments and 8 open regions.
-
-We will use this observation to show that $\cong$ has finite index and, consequently, that the  number of regions is finite. Our proofof this fact is based on the proof given in [8].
-
-
-
-
-
-Lemma 43
-The number of equivalence classes that $\cong$ induces on C(X) is bounded by
-|X|! $\cdot$ $2^{|X|}$ $\cdot$ $\prod$ (2xc +2)
-proof
-An equivalence class [v] of $\cong$ can be described by a tripple	 of arrays i the following manner. For each block x $\in$ X, the array $\alpha$ tells which of the intervals {[],[]}
-contains the value v(x). Thus, the array $\alpha$ represents the cloc assignment v if and only if for each clock x $\in$ X, v(x)$\in$ $\alpha$(x). The number of ways to choose $\alpha$ is $\prod$.
-
-
-Let $X_a$ be th set of clocks with nonzero fractional part. The array $\beta$: $x_a$ $\rightarrow$ {1,....|$A_a$|} is a permutation of $X_a$, which gives the ordering of the fractional parts of the clocks in Xa with respect to $\leq$. Thusm the array $\beta$ represents a clock assignment c if and if for each pair x,y $\in$ $X_a$, if $\beta$(x) < $\beta$(y) then fr(v(x)) $\leq$ fr(v(y)). For a given $\alpha$, the number of ways to choose $\beta$ is bounded by |$X_\alpha$|!  which is bounded by |X|!. \\ \newline
-
-The third component  $\gamma$ is a boolean array indeed by $X_a$ that is used to specify which clocks in $X_a$ have the same fractional part. For each clock c, $\gamma$(x) tells whether or not the fractional part of v(x) equals  the fractional part of its predecessor in the array $\beta$. Thus the array $\gamma$ represents a clock assignment v if and only if for each x \n X, $\gamma$(x) equals 0 exactly when there is a clock $\gamma$ $\in$ $X_alpha$ such that $\beta$(y) = $\beta$(x) +1 and fr(v(x)) equals fr(v(y)). The number of ways of choosing $\gamma$ is bounded by the number of boolean arrays over $X_\alpha$, which is bounded by $2^{|X|}$.
-Hence, $\alpha$ encoded the integral parts of he clock assignments, and $\beta$ with $\gamma$ encodes the ordering of their fractioal aprts. It is easy to see that the sets represented bytriples are equivalence of $\cong$ and that every equivalence class is represented by some triple. The bound given in the statement of the lemma is the product of the bounds associated with $\alpha$, $\beta$, and $\gamma$. This completes the proof of the lemma. \\ \newline
-
-
-The following properties of the equivalence relation $\cong$ are used in later  in this chapter.
-Lemma 44
-Let v1 and v2 be twoclock assignments1, let $\varphi$ be a clock constraint, and let $\lambda$ $\subseteq$ X be a set of clocks.
-1. if v1 $\cong$ v2 and t is a nonnegative integer, then v1 + t $\cong$ v2 +t. \\ \newline
-2. if v1 $\cong$ v2, then $\forall$ t1 $\in$ $R^{|+|}$ $\existst_2$ $\in$ $R^{|+|}$[v1 +t1 $\cong$ v2 + t2] \\ \newline
-3. if v1 $\cong$ v2, then v1 satisfies $\varphi$ if and only if v2 satisfies $\varphi$ \\ \newline
-4. If v1 $\cong$ v2, then v1[$\lambda$:=0] $\cong$ v2 [$\lambda$:=0] \\ \newline
-
-Note that the first property may not hold if t is not an integer. For example, (2.8) $\cong$ (.1, .2),
-but (.2, .8) +.3 is not equivalent to (.1,.2) + .3. All of the properties except the second are straightforward to prove and will be left to the reader. A proof if the scond property is sketched below. The proof is not diificultm but it is somewhat tedious. It can be safely skipped when this chapter is read for the first time.
-
-
-
-Proof
-Assume that v1 $\cong$ v2. We can assume that t1 > 0 because, otherwise, we can simply choose t2=0. Let X{x1,x2,.....,xn}. We can threat v1 as a vector v1 = $\langle$ a1, ......, an $\rangle$, where $a_i$ is the alue of clock $x_i$ in $v_1$. Similarly, we let v2 = $\langle$ b1, ......, $b_n$ $\rangle$. Since corresponding clocks have the same integer part, we can assume without loss of generality that 0 $\leq$ $a_i$ < 1 and 0 $\leq$ $b_i$ < 1. Also , assume that the clock values are sorrted into increasing order so that $a_1$ $\leq$ $a_2$ $\leq$ ... $\leq$ $a_n$ and b1 $\leq$ $b_2$ $\leq$ .... $\leq$ $b_n$.
-
-
-case 1
-Assume that the largest element in v1 + t1 is less than or equal to 1. This case is trivial. We can easilty choose t2 so that v + t1 $\cong$ v2 + t2
-
-case 2
-Assume that  0 $\leq$ t1 < 1. Let the first element of v1 +t1. That is greater than or equal to 1 be $a_k$+t1. Chhoose $\in$ so that $\in$ =0 if $a_k$+$t_1$ =1 and so that 0< \ni < $b_k$-$b_k$-1 if $a_k$+$t_1$ > 1. Note that $b_k_$-1 < $b_k$ = $b_k$-1, then $a_k$=$a_k$-1 and $a_$+$t_1$ is not the first elment of v1+t1 that is greater than o equal to 1. We will show that v1+t1 $\cong$ v2+(1+ $\in$ - $b_k$). In order to show this we will split the vectors into two parts. Let
-
-L1= $\langle$ $a_1$ + t1, ...., $a_k$-1 + t1    $\rangle$, and
-L2= $\langle$  $b_1$ + (1 + $\in$ - $b_k$), ..., $b_k$-1 + (1+ $\in$ - $b_k$)  $\rangle$
-In each case it is straightforward to show that
-
-1. all of the elements are positive
-2. the elements are sorted in increaing order, and
-3. all of the elements are less than 1
-Because of these conditios it is easy to see that $L_1$ $\cong$ $L_2$. Similarly, let 
-
-$R_1$= $\langle$ $a_k$ + t1, ...., $a_n$ + t1    $\rangle$, and
-$R_2$= $\langle$  $b_k$ + (1 + $\in$ - $b_k$), ..., $b_k$-1 + (1+ $\in$ - $b_k$)  $\rangle$
-
-All of the elements in $R_1$ and $R_2$ are greater than or equal to 1. The fractional parts are given by $R_1$ - 1 and $R_2$ -1, respectively. For these vectors it is straightforward to show that
-
-1. all of the elements are nonnegative
-2. the elements are sorted in increasing order, and
-3. all of the elements are less than 1
-
-Moreover, an element in one vector is 0 if and only if the corresponding element in the order vector is 0. Thus $R_1$ -1 $\cong$ $R_2$ -1. It follows immediately that $R_1$ $\cong$ $R_2$.
-It is not difficult to see that the fractioal parts of $R_2$ precede the fractional parts of $L_2$.
-Let i  $\geq$ k and j < k. Then
-$b_i$ +  (1 + $\in$ - $b_k$) -1 $\leq$ $b_j$ + (1+ $\in$ - $b_k$).
-is equivlent to $b_i$ - $b_j$ $\leq$ 1, which is obviously true. The same relationship holds for the fractioal parts of $R_1$ and $L_1$, that is.
-$a_i$ + $t_1$ -1 $\leq$ $a_j$ + $t_1$.
-
-hence , we obtain $R_1$ $\cdot$ $L_1$ $\cong$ $R_2$ $\cdot$ $L_2$, where "$\cdot$" is concatenation of vectors. This shows that for all $t_1$ with 0 $\leq$ t1 < 1, there exits a t2 such that $v_1$ + $vt_1$ $\cong$ v2 + $t_2$ and completes the proof of 
-
-
-
-case 3
-Finally, supppose that $t_1$ $\geq$ 1. Let t1'= $t_1$ - [$t_1$], so that 0 $\leq$ $t_1$ < 1. Find $t_2$ such that $v_1$ + $t_1$ $\cong$ v2 + t2. Then:
-v1 + t1 + [t1]  $\cong$ v2 + t2 + [t1].
-
-If we choose t2 = [t1], then we have v1 + t1 $\cong$ v2 + t2 as required. This completes the proof of the second property.
-
-The equivalence relation $\cong$ over clock assignments an be extended to an equvalence relation over the state space of T(A) by requiring that equivalent states have identical locations and equivalent clock assignments: (s,v) $\cong$ (s', v') if and only if s = s' and v $\cong$ v'. The key property of he equivalence reltion $\cong$ is given by the following lemma [5]:
-
-
-Lemma 45
-If v1 $\cong$ v2 and (s, $v_1$)  $\xrightarrow[]{a}$ (s', v'). The transition $\langle$ s, a, $\varphi$, $\lambda$, s' $\rangle$  that takes state (s, v1) to state (s', v1') corresponds to two transiions of the timed automation.
-
-Proof
-Assume that v1 $\cong$ v2 and (s, v1)  $\xrightarrow[]{a}$ (s', v'1). The transition $\langle$ s, a, $\varphi$, $\lambda$, s' $\rangle$ that takes state (s, v1) to state (s', v'1) corresponds to two transitions of the timed automation:
-
-a delay transition (s, v1)  $\xrightarrow[]{d1}$ (s, $v_1$ + $d_1$) for some $d_1$ $\geq$ 0, and
-an action transition   (s, v1 +d1)  $\xrightarrow[]{a}$ (s', $v_1$') such that $v_1$ + $d_1$ satisfies $\varphi$ and $v'_1$ = ($v_1$v + $d_1$)[$\lambda$ :=0].
-
-
-
-Since v1 $\cong$ v2 and v1 satisfies I(s), v2 also satisfies I(s). Furthermore, there exists d2 $\geq$ 0 such that v1 + d1 $\cong$ v2 + d2. Since v1 + d1 satisfies I(s), v2 +d2 also satisfies I(s). Because the clock constraint I(s) is convex and is satisfied by both v2 and v2 + d2, I(s) must be satisfied by v2 + e for all e such that 0 $\leq$ e $\leq$ d2. Consequently, the delay transition (s, v2)  $\xrightarrow[]{d2}$ (s, v2 +d2) is legal.
-
-Since v1 + d1 $\cong$ v2 +d2, both v1+ d1 and v2+ d2 must satisfy the clock constraint for the guard $\varphi$. Thus, the transition $\langle$ s, a, $\varphi$, $\lambda$ , s' $\rangle$ myst also be enabled in the state  *s, $v_2$ + $d_2$
-. Let $v'_2$ = ($v_2$ +$d_2$)[$\lambda$ :=0]. Then $v'_2$ is equivalent to $v'_1$. Hence, there is an action transition (s, $v_2$ + $d_2$)  $\xrightarrow[]{a}$  (s', $v'_2$). Combining the delay transition with the action transition, we get (s, $v_2$)  $\xrightarrow[]{a}$ (s', $v'_2$) as required.
-
-As a result of the lemme, we can conostruct a finite state transition raph that is  bisimilaion equivalnt to the infinite state transition graph T(A). The finite state transition graph is called the region graph of A[7,8] and is denoted by R(A). A region is a pair (s, [v]). Since $\cong$  has a finite index, there are only a finite nuber of regions. The states of the region graph are  the regions of A. The construction of R(A) will have the property that whenever (s,v) is a state of T(A), the region (s, [v]) where $s_0$ is an initial state of A and $v_0$ is a clock assignment that assigns 0 to every clock. The transition relation of R(A) is defined so that bisimulation equivalence is guaranteed. There will be a transition labeled with a from the region (s,[v]) to the region (s', [v']) if and only there are assignments $\omega$ $\in$ [v] and $\omega$' $\in$ [v'] such that (s, $\omega$) can make a transition to (s', $\omega$')
-
-We summarize the construction of the region graph R(A) below. Let A = ($\sigma$, S, $S_0$, X, I, T) be a timed automation. Then,
-The states of R(A) have the form (s, [v]) where s $\in$ S and [v] i a clock region
-The initial states have the form ($s_0$, [v]) where $s_0$ $\in$ $s_0$ and v(x)=0 for all x $\in$ X.
-R(A) has a transition ((s,[v]),a, (s',[v'])) if and only if (s, $\omega$)  $\xrightarrow[]{a}$  (s', $\omega$') for some $\omega$ $\in$ [v] and some $\omega$' $\in$ [v'].
- We can use Lemma 45 to prove bisimulation equivalene.
-
-Theorem 31
-We will show that T(A) and R(A) are bisimilar. Define the bisimulation relation B by (s,v)B(s,[v]). It is easy to see that the initial state ($s_0$, $v_0$) corresponds o the  state ($s_0$, [$v_0$]). Next, we show that for each transtition of T(A), there is a corrresponding transition  of R(A), and vice versa. Suppose first that (s,v)B(s,[v]). Suppose on the other hand that (s,v)B(s,[v]) and that  (s,v)$\xrightarrow[]{a}$(s',[v']). Then there exit $\omega$ $\cong$ v and $\omega$' $\cong$ v' such that (s', v") and (s,v) $\xrightarrow[]{a}$(s', v"). Hence v" $\cong$ $\omega$ $\cong$ v', so [v"] = [v']. By the definition of B, (s', v")
-B (s', [v"]), it follows that (s', v")B(s', [v']).
-
-
-
-
-blz 280 clock zones
-blz 281 Intersection
-
-blz 281 Clock reset
-
-
-blz 281 elapsing of time
-In principle, the three oeraions on clock zones described above can be used to construct a finite representationof the transition graph T(A) corresponding to a timed automation.
-
-
-Real-time System = Discrete System + Clock Variables by Rajeev Alur
-
-blz 2 actions
-The state of a system changes over time. We refer to the state changes of a
-system as actions. An action is a pair ($\sigma$,$\sigma$ ') of states that consists of a source
-state $\sigma$ and a target state $\sigma$ '. Intuitively, if a system is in the source state $\sigma$,
-then the action ($\sigma$,$\sigma$ ') takes the system into the target state $\sigma$'. We say that
-an action is enabled in its source state and disabled in all other states. Two
-actions ($\sigma$,$\sigma$ '1) and ($\sigma$,$\sigma$ '2) are consecutive if the second action is enabled in
-the target state of the rst action|i.e., if ($\sigma$ '1=$\sigma$ '2). The action ($\sigma$,$\sigma$ ') is a nul l
-action if ($\sigma$=$\sigma$ ')
-.
-
-blz 6 clocks and delays
-
-Formally, the action ($\sigma$,$\sigma$ ') is a system action if for all clock variables x, either
-$\sigma$ '(x) = $\sigma$(x) or $\sigma$ '(x) = 0; the action ($\sigma$,$\sigma$ ') is a time action - or delay -if there
-is a nonnegative real $\delta$ the duration of the delay|such that $\sigma$ ' = ($\sigma$,$\sigma$ '). System
-actions have duration 0. Every null action is, by denition, both a system action and a delay of duration 0.
-
-
-
-blz 7 Clock constraints
-Let ($\sigma$, $\delta$) be a delay, let $\phi$ be a state predicate, and let $\psi$  be an action
-predicate. The characteristic function of $\phi$ maps each nonnegative real e < $\delta$ to
-1 if $\phi$ is true for $\sigma$ + e, and otherwise to 0; the characteristic function of   maps
-e to 1 iff $\psi$   is enabled in $\sigma$ + e. A state or action predicate varies finitely over the
-delay ($\sigma$, $\delta$) if its characteristic function has nitely many discontinuities in the
-interval (0,$\delta$). Abstractly, we restrict ourselves to state predicates and action
-predicates that vary nitely over all delays.
-
-
-blz 8 Clock-constrained systems
-A clock-constrained system S = ($\phi$, $\psi$ ) is a pair that consists of a timed state
-predicate 0|the initial condition of S|and a timed action predicate $\psi$ |the
-transition condition of S. The timed behavior $\sigma$ is a behavior of the clock-
-constrained system S if (1) the initial condition of S is initially true for $\sigma$
-and (2) the transition condition of S is invariantly true for $\sigma$. Every clock-
-constrained system S denes, then, the set of its divergent behaviors, which is
-denoted by [[S]].
-
-
-
-blz 9 Clock-constrained programs
-
-
-blz 10 Delay predicates
-
-
-blz 11 Real-time systems
-A real-time system S = ($\phi$, $\psi$, $\chi$) is a triple that consists of a clock-constrained system ($\phi$, $\psi$) and a delay predicate $\chi$ the environment condition
-of S. The timed behavior $\sigma$ is a behavior of the real-time system S if (1) $\sigma$ is a
-behavior of the clock-constrained system that underlies S and (2) the environ-
-ment condition of S is invariantly true for $\sigma$. Every real-time system S defines,
-then, the set of its divergent behaviors, which is denoted by [[S]].
-
-For example, the following real-time system S2 = ($\phi$, $\psi$, $\chi$)
-changes the value of m from 0 to 1 at time 3 at the earliest and at time 5 at the
-latest:
-$\phi$ = (m =0 $\wedge$ x =0)
-$\psi$ = (m $\geq$ 3 $\wedge$ m1' =1)
-$\chi$ = (m =0 $\wedge$ x < 5 ) $\vee$ (m=1)
-
-blz 12 Real-time executability
-
-blz 13 Real-time programs
-
-blz 15 Sequential real-time processes
-
-
-blz 17 Concurrent real-time processes
-
-
-blz 19 Embedded real-time processes
-
-blz 30 Verification of Safety Properties
-
-A safety property is simply a closed set of behaviors.
-\begin{equation*}
-	\begin{split}
-		x &= 1 \\
-		y &= 2 \\
-		\hline
-		x + y &= 3 
-	\end{split}
-\end{equation*}
-
-
-
-
+M, s $\models$ p $\Leftrightarrow$ p $\in$ L(s) \\
+M, s $\models$ $\not$ f1 $\Leftrightarrow$ M, s $\nvdash$ f1 \\
+M, s $\models$ f1 $\vee$ f2 $\Leftrightarrow$ M,s $\models$ f1 or M,s $\nvdash$ f2 \\
+M, s $\models$ f1 $\wedge$ f2 $\Leftrightarrow$  M,s $\models$ f1 and M,s $\nvdash$ f2 \\
+M, s $\models$ $\mathrm{E}$ $g_{1}$ $\Leftrightarrow$ there is a path $\pi$  from ~  s ~   such ~  that  ~ M, $\pi$ $\models$ g1 \\
+M, s $\models$ p $\Leftrightarrow$ for every path $\pi$  ~ starting from  ~  s, M, $\pi$ $\models$ g1 \\
+M, s $\models$ p $\Leftrightarrow$ s is the first state of $\piand$ M, s $\models$ f1 \\
+M, s $\models$ $\not$ $g_{1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash$ g1\\
+M, s $\models$ p $\Leftrightarrow$  M, $\pi$  $\models$ g1  or  M, $\pi$  M, $\pi$  $\models$ g2\\
+M, s $\models$ p $\Leftrightarrow$ M, $\pi$  $\models$ g1  and  M, $\pi$  M, $\pi$  $\models$ g2 \\
+M, s $\models$ p $\Leftrightarrow$ M, $\pi^{1}$ $\models$ g1 \\
+M, s $\models$ p $\Leftrightarrow$ there exists a k $\ge$ 0, such that  ~ M, $\pi^{k}$  $\models$ g1\\
+M, s $\models$ p $\Leftrightarrow$ for all i $\ge$ 0,M,$\pi^{i}$ $\models$ g1 \\
+M, s $\models$ g1 $\bugcup$ g2 $\Leftrightarrow$ ~  there  ~ exists  ~ ak  ~ $\ge$  ~ 0 ~  such ~  that  ~ M,  ~ $\pi^{k}$ $\models$ g2\\
+and  ~ for  ~ all ~  0  ~ $\le$ j < k, M,$\pi^{j}$ $\models$ g1
+M, s $\models$ p $\Leftrightarrow$ for all j $\ge$ 0, if for ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash$ g1 then M,$\pi^{j}$ $\models$ g2\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
