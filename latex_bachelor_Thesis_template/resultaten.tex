@@ -394,7 +394,8 @@ what is a good software specification
 	\item[Oorzaak]
 	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
-Inadequaat handelen van de piloten ondanks een defecte hoogtemeter en onvolledige instructies van de luchtverkeersleiding/
+Op woensdag 25 februari 2009 start een vliegtuig van Turlisch airlines neer met 9 doden als gevolg.
+Conclusies van het ovv luiden :Inadequaat handelen van de piloten ondanks een defecte hoogtemeter en onvolledige instructies van de luchtverkeersleiding.
 
 \cite{catsr25022009Boeing737AmsterdamCrash}
 
@@ -408,242 +409,117 @@ Inadequaat handelen van de piloten ondanks een defecte hoogtemeter en onvolledig
 \cite{flightstatstracker}
 
 
-\paragraph{tjernobyl}
+\paragraph{therac-25}
+
 
 \begin{description}
 	\item[Beschrijving]
+	
+	Softwarefout uit zich als hardwarefout de klachtafhandeling geen onderzoek geen second opinion is prioriteit wel 
+	gechecked na onderzoek bellen en geen prioriteit aanwezig te zijn alleen importeurs en fabriken mogen fouten 
+	in frabrieksinstellingen rapporteren 
+	Therac25 Systeem ligt plat veel voorkomende eror stdaardafhandeling om de error te verwerpen resultaat: 
+	de patient kreeg overdosis patient overleden onderzoek opgestart, stuatie niet reproduceerbar foutmarkering: 
+	gezien als uitzonderlijk, software aanpassing van groote magnitude 5; de oorzaak was waarschijlijk mechanisch 
+	maar neit vastgesteld; conceptueel odel niet aangepast probleemclassicificatie door autorititen het probleem 
+	en de impact daarvan anar beneden bijgesteld AEFL doe gedeeltelijke aanpassing om hardware na berisping 
+	Canadese autoriteit 
+	Derde patient overleden door eythema AECL wijst alle doodsoorzaken af AECL beweert dat geen vergeli- 
+	jkbare voorvalle bij andere machines of patienten zijn voorgekomen geen vervolgonderzoek vanwege garanties 
+	bedrijf gaat uit van geen mogelijke functionele fout 
+	vierde patient overleden aan overdodis ontstaan door bug in software onjuiste aanduiding bij de foutmelding 
+	verkeerde reactie/invoer ddoor operator communicatie tussen patient en operator werd onvoldoende gemon- 
+	itorred ( apparatuur niet aangesloten, en audio monitor kapot) engineer van AECL stelt geen fouten vast 
+	Engineer AECl kan fout niet reproduceren Geen communicate tussen bedrijf en uitgezonden technisci over 
+	vergelijkbare probleemgevallen 
+	vijfde geval malfunction 54 leidt tot overdosis en de dood fout gereproduceerd door operator bedrijf fout 
+	was daa entryspeed herpublicatie van de ongevallen en de eerdere ongevallen in de meia apparaat wel nog in 
+	gebruik genomen niet handig, waarschuwingsberichten en aanwijzingen voor een bugfix naar de gebruikers door 
+	druk van fda is bedrijf op zoek gegaan naar permanente oplossing 
+	zesde geval software fout door softwarefout otntstaat lightstruct .. op de patient na onderzoek door AECL 
+	blijkt niet alleen hardware de oorzak gebruikers direct geinformeerd oplossing gevonden, media ingeschakeld om transparantie af te dwingen door de gebruikersgroep en de FDA AECL gedwongen functionaliteit aan te passen 
+	Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoudbaarheid daarvan 
+	sheets
+	\cite{rogaway2004therac25}
+	~\cite{wikiTherac25}
+	reproduceren van de error. IN dit stuk wordt uitgelgd hoe het product werkt en waarom bepaalde beslssingen zijn genomen in de ontwerp/productiefase
+	\cite{lynch2017theracRaceConditions}
+	kort artikel met daarin een opsomming van alle fouten in het systeem en een korte uitleg
+	\cite{lim1998theracdisaster}
+	uitgebreid artikel over hoe de fout werd gereproduceerd en de resultaten daaruit voortkwamen. Alsnog werden er na de reproductie fase nog meer fouten gevonden.
+	\cite{fabio26102015therac25}
+	artikel
+	\cite{ethicsunwrappedTherac25}
+	onderzoeksartikel waarin de bug wordt uitgelgd: de racecondities, de bytepositie en het testen worden berkitiseerd envenals andere onderdelen van het softwareproces
+	onrealistisch testplan. In dit artikel egt de auteur het belang nog eens uit van goede requirements en implementatie, niet de software is waar het probleem ligt
+	geschiedenis
+	\cite{casesHistoryTherac25}
+	artikel
+	\cite{caballero2019Therac25}
+	computer error. De ongeval en de malfunction nog een keer uitgelegd
+	\cite{rose1994theracFatalDose}
+	rapport
+	\cite{levesonMITTherac25}
+	\cite{grant1978theracevaluation}
+	onderzoeksartkel
+	\cite{turnerTheracAccidentsInvestigations}
+	\cite{turner1993TheracAccidentsInvestigations}
+	uitgebreid artikel gaat hier ook wat meer over de hardware
+	\cite{wang2017industrialdesignengineering}
+	artikel waarin in 3 delen de problemaiekwordt blootgesteld
+	\cite{levesonturner1993theracpart2}
+	case study sheets
+	artikel waarin vooral de fabriikant ervan langs krijgt
+	\cite{porelloTheraccFailure}
+	lessons learned. Vooral de begrippen betrouwbaarheid, welgevalligheid, veilgheid en gebruiksvriendelijkheid
+	\cite{theracIncidents}
+	root-cause analysis
+	case study
+	\cite{huffbrown2004casestudyethicatherac}
+	case study
+	\cite{sebowikimedicalradiation}
+	opzetten van systematische acceptaatie test met therac als voorbeeld
+	\cite{hsia1995testtherac25}
+	artikel waarin een diagnose plaatvindt voor het bedrijf en de ingenieur/ontwerper
+	\cite{magsilvaTheracTesting}
+	rapport
+	oorzaken aangegeven in artikel
+	\cite{chemeuropetherac25}
+	het onderzoek en enkele ontwerptekeningen en oplossingen
+	\cite{statsenko10102016Therackillerbug}
+	\cite{therac25casestudy}
+	\cite{thomas1994theracinLotos},
+	\cite{twitter2019programmerbehindtherac}
+	wiki
+	\cite{wikibookstherac}
+	analyse
+	\cite{bozdagTherac25}
+	samenvatting
+	\cite{levesonTurnerTheracAbstract}
+	rapport over de fouten die de verschillende partijen hebben gemaakt( overheid, ingenieurs, bedrijf, operators) en de verbeterpunten
+	onderzoeksrapport
+	slides online over het technisch mankement
+	Wat is er gebeurd, nou het volgende:
+	Normal radiation treatments: 6,000 rads over a 3 week period, under certain conditions Therac-25 was delivering 60,000 rads during one session.
+	En wat ging er mis?
+	Paradigm Shift
+	Therac-25 replaced expensive hardware safety interlocks with software controls
+	Real-time software
+	Design
+	Race condition caused focusing element to be incorrectly set
+	No indication of actual hardware settings
+	Error messages appeared the same regardless of how important
+	Error messages were difficult to understand
+	All errors messages could be manually overridden
+	oorzaak-gevolg diagram
+	veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix waarmee het programma wordt uitgevoerd en de software-analyse door een consultat
+	\cite{stackexchange2021therac25code}
+	
 	\item[Datum en plaats] 
+	June 1985 and January 1987
 	\item[Oorzaak]
 	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
-Een ramp bij een kernreacor in de sovjetunie. Door een bedieningsfout in een testprocedure werd het vermogen van de koelinstallaties negatief beinvloed. Door een ontwerpfout in de noodstopprocedure kon in het systeem niet snel genoeg schakelen om remmende invloed uit te oefenen op het toenemende vermogen van de reactorkernen. Met brand en eksplosie tot gevolg.
-
-\cite{INSAVienna1992Chernobyl}
-Tsjernobyl
-\cite{wikiTjernobyl}
-\cite{rivmTjernobyl}
-\cite{andereTijdenTjernobyl}
-wat er is gebeurd en hoe het leven verdergaat
-\cite{kingskey19042022tjernobyl}
-pernsioenfondsen en de tjernobyl ramp
-In 2021 worden mensen nog steeds blootgesteld blijkt ut een gezamelijk onderzoek van greenpeace en oekraiense wetenschappers
-stijging van de nucliaire activiteit gemeten in tjernobyl
-Het toerisme  aspect
-De chronologie
-\cite{erikbork26042023reactor4}
-\cite{nosTjernobyl30jaarlater}
-Dieren in de omgeving van tjernobyl
-De chronologie
-Echtreme droogte zorgd voor gevaar
-\cite{knmi04052021tjernobylbosbrand}
-\cite{dodonovaKVIRisicoTjernobyl}
-Joernalistiek, entertainment en de waarheid
-\cite{dumarey04062020verhaalTjernobylWaarheid}
-Een onderzoek
-Huidige gevolgen van de explosie van toen
-\cite{sparkesNewScientistTjernoby}
-De ramp, hoe de mensen ermee omgingen en hoe er nu geleef wordt
-evaluatieonderzoek en amatregeen
-\cite{kernenergiened26041986chronologiemaatregelen}
-\cite{mapszoneReactor}
-Invloed van de mens op de omgeving
-Heroplevende splijtingsreacties
-docu van schooltv
-Radioactiviteit bereikt nederland
-documentaire en maatregelen
-\cite{kernhistoriek15062021tjernobyl}
-Het verhaal van een overledende
-Toerisme
-toerisme
-toerisme
-Dieren in de omgevong
-Toevluchtsoord voor vluchtelingen van de oorlog met russische seperatisten
-Ouderen die terugkeerden naar hun woonplaats na de gedwongen verhuizing door de autoriteiten
-De straling neemt weer toe
-Lessen geleerd van tjernobyl
-\cite{nucleairforumFeitenTjernobyl}
-Toerisme
-Bosbrand in tjernobyl
-invloed van de ramp op belgie
-\cite{kernongevalTjernobylFancGov}
-Boek recensie
-Fotos en berekeningen
-ontmanteling en toerisme
-Belangrijke lessen en overeenkomsten
-De journalistieke waarheid van de koude oorlog
-De lessen van
-\cite{arendswolters062019lessenTjernobyl}
-Een toristenattractie maken van tjernobyl
-De radioactieve straling toen en nu
-de 30km zone door de ogen van toeristen
-artikel
-stedentrip
-rapport
-\cite{damveld08052020tjernobyl}
-slapend monster
-docu
-krantenartikel
-hbo serie
-docuserie
-de  nieuwe sacrofaag
-hulp aan slachtoffers
-slapende reactor
-krantenartikel
-\cite{deVriestjernobylHolland}
-hbo serie
-internationale gevolgen
-toerisme
-nieuwe koepel
-media communicatie
-docu
-dieren
-koepel
-koepel
-\cite{ing3enieur29042015antistralingskoepel}
-toerisme
-toeristisch reiperspectief
-toerisme
-niwe koepel
-overschakelen naar duurzaamheid
-docu
-tjernobyl wekt nu duurazme energie
-toerisme
-overeenkomsten tjernobyl en fukushima
-drank en sla uit tjernobyl
-geen efficiente opslag is mogelijk
-wetenschappelijke artikelen
-zaterdag 26 april 1986. Er vind routineonderhoud plaats bij reactor 4, De controle wordt uitegevoerd door de dagploeg. Vnwege een test wordt jhet koelsysteem uitgeschakeld. Door omstandigheden wordt de test uitgesteld en wordt de verantwoordelijkheid overgedragen aan de avondploeg.
-De operator maakt bedieningsfouten waardoot de reactor bijna stil komt te liggen. En vervolgens probeert hij de reactor weer op gang te brengen. ondanks de snelle temperatuurstijging wordt het experiment doorgezet. Dan wordt ook het veiligheidssysteem stilgelgd. Terwijl het koelwater langzaam opwarmt, sluit hij de klep waarlangs de stoom naar de generator stroomt.
-
-De temperatuur van de reactorstaven neemt daarna snel toe. Terwijl er een oncontroleerbare kettingreactie op gang komt, laat het personeel in paniek de regelstaven zakken om de warmteontwikkeling af te remmen. Het is dan echter al te laat. Door een ontwerpfout loopt het vermogen razendsnel op tot 33.000 megawatt, ruim tien keer hoger dan normaal.
-
-In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.
-
-In de ravage vat het gloeiend hete grafiet in de reactor spontaan vlam. De uitslaande brand en een tweede explosie voeren een radioactieve rookwolk tot 8 kilometer hoogte. 
-In een poging het vuur in reactor 4 te doven, storten helikopters vanuit de lucht zand, lood en boorzuur in de reactorkern. Het mag echter niet baten.
-
-Intussen is de nucleaire brandstof zo heet geworden dat die door de bodem van het reactorvat dreigt te smelten. Als dat gebeurt, kan het bluswater onder het vat in één klap verdampen en dreigt een derde explosie die een groot deel van Europa onbewoonbaar zal maken. Om dit te voorkomen moet het water hoe dan ook worden weggepompt.
-
-Drie brandweermannen wagen zich daarvoor in de ruimte onder de reactor, blootgesteld aan 300 sievert per uur, 300.000 keer de dosis die een Nederlander jaarlijks maximaal mag oplopen. Ze slagen daarin, maar twee van hen overlijden enkele dagen later aan acute stralingsziekte.
-
-Hoewel geigertellers de dag na de ramp onrustbarende waarden aangeven, slaat het plaatselijk bestuur geen alarm. De bevolking is het niet gewend om vragen te stellen.
-
-De volgende dag blijkt er wel degelijk iets ernstigs aan de hand te zijn. In een lange rij bussen worden de 135.000 inwoners op 27 april uit het besmette gebied geëvacueerd, om er nooit meer terug te keren.
-
-De ramp is dan nog steeds geen wereldnieuws. De Sovjetautoriteiten blijken er niet eens van op de hoogte te zijn – president Gorbatsjov klaagt later dat hij via Zweden aan zijn informatie moest komen.
-\cite{verschuur14012013tjernobylreports}
-\cite{paperlessarchivesTjernobyl}
-\cite{vargos082000tjernobylconcerns}
-\cite{mauroNuclearRiskSociety}
-\cite{vienna06092005LookingBack}
-
-\paragraph{therac-25}
-
-\begin{description}
-\item[Beschrijving]
-\item[Datum en plaats] 
-\item[Oorzaak]
-%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
-\end{description}
-Softwarefout uit zich als hardwarefout de klachtafhandeling geen onderzoek geen second opinion is prioriteit wel 
-gechecked na onderzoek bellen en geen prioriteit aanwezig te zijn alleen importeurs en fabriken mogen fouten 
-in frabrieksinstellingen rapporteren 
-Therac25 Systeem ligt plat veel voorkomende eror stdaardafhandeling om de error te verwerpen resultaat: 
-de patient kreeg overdosis patient overleden onderzoek opgestart, stuatie niet reproduceerbar foutmarkering: 
-gezien als uitzonderlijk, software aanpassing van groote magnitude 5; de oorzaak was waarschijlijk mechanisch 
-maar neit vastgesteld; conceptueel odel niet aangepast probleemclassicificatie door autorititen het probleem 
-en de impact daarvan anar beneden bijgesteld AEFL doe gedeeltelijke aanpassing om hardware na berisping 
-Canadese autoriteit 
-Derde patient overleden door eythema AECL wijst alle doodsoorzaken af AECL beweert dat geen vergeli- 
-jkbare voorvalle bij andere machines of patienten zijn voorgekomen geen vervolgonderzoek vanwege garanties 
-bedrijf gaat uit van geen mogelijke functionele fout 
-vierde patient overleden aan overdodis ontstaan door bug in software onjuiste aanduiding bij de foutmelding 
-verkeerde reactie/invoer ddoor operator communicatie tussen patient en operator werd onvoldoende gemon- 
-itorred ( apparatuur niet aangesloten, en audio monitor kapot) engineer van AECL stelt geen fouten vast 
-Engineer AECl kan fout niet reproduceren Geen communicate tussen bedrijf en uitgezonden technisci over 
-vergelijkbare probleemgevallen 
-vijfde geval malfunction 54 leidt tot overdosis en de dood fout gereproduceerd door operator bedrijf fout 
-was daa entryspeed herpublicatie van de ongevallen en de eerdere ongevallen in de meia apparaat wel nog in 
-gebruik genomen niet handig, waarschuwingsberichten en aanwijzingen voor een bugfix naar de gebruikers door 
-druk van fda is bedrijf op zoek gegaan naar permanente oplossing 
-zesde geval software fout door softwarefout otntstaat lightstruct .. op de patient na onderzoek door AECL 
-blijkt niet alleen hardware de oorzak gebruikers direct geinformeerd oplossing gevonden, media ingeschakeld om transparantie af te dwingen door de gebruikersgroep en de FDA AECL gedwongen functionaliteit aan te passen 
-Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoudbaarheid daarvan 
-sheets
-\cite{rogaway2004therac25}
-~\cite{wikiTherac25}
-reproduceren van de error. IN dit stuk wordt uitgelgd hoe het product werkt en waarom bepaalde beslssingen zijn genomen in de ontwerp/productiefase
-\cite{lynch2017theracRaceConditions}
-kort artikel met daarin een opsomming van alle fouten in het systeem en een korte uitleg
-\cite{lim1998theracdisaster}
-uitgebreid artikel over hoe de fout werd gereproduceerd en de resultaten daaruit voortkwamen. Alsnog werden er na de reproductie fase nog meer fouten gevonden.
-\cite{fabio26102015therac25}
-artikel
-\cite{ethicsunwrappedTherac25}
-onderzoeksartikel waarin de bug wordt uitgelgd: de racecondities, de bytepositie en het testen worden berkitiseerd envenals andere onderdelen van het softwareproces
-onrealistisch testplan. In dit artikel egt de auteur het belang nog eens uit van goede requirements en implementatie, niet de software is waar het probleem ligt
-geschiedenis
-\cite{casesHistoryTherac25}
-artikel
-\cite{caballero2019Therac25}
-computer error. De ongeval en de malfunction nog een keer uitgelegd
-\cite{rose1994theracFatalDose}
-rapport
-\cite{levesonMITTherac25}
-\cite{grant1978theracevaluation}
-onderzoeksartkel
-\cite{turnerTheracAccidentsInvestigations}
-\cite{turner1993TheracAccidentsInvestigations}
-uitgebreid artikel gaat hier ook wat meer over de hardware
-\cite{wang2017industrialdesignengineering}
-artikel waarin in 3 delen de problemaiekwordt blootgesteld
-\cite{levesonturner1993theracpart2}
-case study sheets
-artikel waarin vooral de fabriikant ervan langs krijgt
-\cite{porelloTheraccFailure}
-lessons learned. Vooral de begrippen betrouwbaarheid, welgevalligheid, veilgheid en gebruiksvriendelijkheid
-\cite{theracIncidents}
-root-cause analysis
-case study
-\cite{huffbrown2004casestudyethicatherac}
-case study
-\cite{sebowikimedicalradiation}
-opzetten van systematische acceptaatie test met therac als voorbeeld
-\cite{hsia1995testtherac25}
-artikel waarin een diagnose plaatvindt voor het bedrijf en de ingenieur/ontwerper
-\cite{magsilvaTheracTesting}
-rapport
-oorzaken aangegeven in artikel
-\cite{chemeuropetherac25}
-het onderzoek en enkele ontwerptekeningen en oplossingen
-\cite{statsenko10102016Therackillerbug}
-\cite{therac25casestudy}
-\cite{thomas1994theracinLotos},
-\cite{twitter2019programmerbehindtherac}
-wiki
-\cite{wikibookstherac}
-analyse
-\cite{bozdagTherac25}
-samenvatting
-\cite{levesonTurnerTheracAbstract}
-rapport over de fouten die de verschillende partijen hebben gemaakt( overheid, ingenieurs, bedrijf, operators) en de verbeterpunten
-onderzoeksrapport
-slides online over het technisch mankement
-Wat is er gebeurd, nou het volgende:
-Normal radiation treatments: 6,000 rads over a 3 week period, under certain conditions Therac-25 was delivering 60,000 rads during one session.
-En wat ging er mis?
-Paradigm Shift
-Therac-25 replaced expensive hardware safety interlocks with software controls
-Real-time software
-Design
-Race condition caused focusing element to be incorrectly set
-No indication of actual hardware settings
-Error messages appeared the same regardless of how important
-Error messages were difficult to understand
-All errors messages could be manually overridden
-oorzaak-gevolg diagram
-veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix waarmee het programma wordt uitgevoerd en de software-analyse door een consultat
-\cite{stackexchange2021therac25code}
 
 
 
@@ -654,10 +530,8 @@ veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix wa
 
 \begin{description}
 \item[Beschrijving]
-\item[Datum en plaats] 
-\item[Oorzaak]
-%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
-\end{description}
+
+
 Door een softwarefout zijn er situaties ontstaan waarin het systeem informatie een onvoldoende informatie positie had om de juiste beslissingen te maken. Of dat de informatieverwerking niet juist was.
 
 
@@ -803,21 +677,26 @@ tesla crash report
 
 tesla crash publications overview
 
-\paragraph{slmramp}
-
-\begin{description}
-\item[Beschrijving]
 \item[Datum en plaats] 
 \item[Oorzaak]
 %Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
+
+\paragraph{slmramp}
+
+\begin{description}
+\item[Beschrijving]
+
 Toen de Anthony Nesty Zanderij naderde, was het daar, anders dan het weerbericht had voorspeld, mistig. Het zicht was evenwel niet zo slecht dat er niet op zicht kon worden geland. Gezagvoerder Will Rogers besloot echter via het Instrument Landing System (ILS) te landen, hoewel dit niet betrouwbaar was en hij voor zo'n landing ook geen toestemming had. De gezagvoerder brak drie landingspogingen af. Bij de vierde poging negeerde de bemanning de automatische waarschuwing (GPWS) dat het toestel te laag vloog. Het toestel raakte op 25 meter hoogte twee bomen. Het rolde om de lengteas en stortte om 04.27 uur plaatselijke tijd ondersteboven neer.
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 
 Uit onderzoek bleek dat de papieren van de bemanning niet in orde waren. 
 Geconcludeerd werd dat de gezagvoerder roekeloos had gehandeld door voor een ILS-landing te kiezen terwijl hij daar geen toestemming voor had, en door onvoldoende op de vlieghoogte te hebben gelet. 
 De SLM werd verweten de kwalificaties van de bemanning onvoldoende te hebben gecontroleerd.
 
- 
+
 
 \cite{espnSLMterugblik}
 \cite{dennisRosier01052020}
@@ -849,18 +728,15 @@ Welke andere betrokkeen? Enw at is hun verantwoordelijkheid
 Hadden de negatieve gevolgen voorkomen kunnen worden?
 Hoe werd er over veiligheid gedacht?
 
+\end{description}
+
 
 
 \paragraph{schipholbrand}
 
 \begin{description}
 \item[Beschrijving]
-\item[Datum en plaats] 
-\item[Oorzaak]
-%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
-\end{description}
 
-de registratie van werkzaamheden tijdens het a
 Wat is er gebeurd?
 \cite{schipholbrand27102005video}
 artikel
@@ -911,7 +787,7 @@ Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen
 Wat is er gedaan om de veiligheid van illegalen en gevangenissbewaarders te verbeteren
 Wat is er gebeurd?
 \cite{wikiSchipholbrand},\cite{schipholbrand27102005video}
- psychologische gevolgen
+psychologische gevolgen
 rapport
 \cite{onderzoeksraad2610schipholoost}
 artikel met video
@@ -956,15 +832,17 @@ publicaties
 Wat waren de regels destijds?
 Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen?
 Wat is er gedaan om de veiligheid van illegalen en gevangenissbewaarders te verbeteren
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
+
 
 \paragraph{explosie tanjin china }
 
 \begin{description}
 \item[Beschrijving]
-\item[Datum en plaats] 
-\item[Oorzaak]
-%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
-\end{description}
 
 Later bleek uit een onderzoek van de Chinese autoriteiten dat de explosie overeenkwam met de ontploffing van 450 ton TNT.[6] 
 De oorzaak van de explosie lag in de spontane zelfontbranding van 207 ton cellulosenitraat dat in containers was opgeslagen op het terminalterrein.[6] 
@@ -1049,6 +927,11 @@ veiigheidshandhaving
 \cite{euTaxationCustomsICSC}
 \cite{iloWHOChemSafetyCards}
 
+\item[Datum en plaats] 
+\item[Oorzaak]
+%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
 %@online{landryalameddine12112020beiruthelathsystem,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05906-y"},}
 %@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://news.sky.com/story/beirut-blast-cctv-captures-moment-huge-explosion-devastated-hospital-12047452"},}
 %@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.unodc.org/unodc/en/frontpage/2020/September/unodc-assists-lebanon-in-reestablishing-container-shipments-in-the-aftermath-of-the-port-of-beirut-explosion.html"},}
@@ -1128,16 +1011,217 @@ Ethiopian Airlines Flight 302
 
 
 
+\paragraph{Mali}
+
+\begin{description}
+	\item[Beschrijving]
+	
+	Een granaat explodeerd in een mortier
+	De medische zorg na het ongeval was neit voldoende
+	
+	
+	De algemeen militair verpleegkundige gaf aan het slachtoffer nar het vn-hospitaal in kidal te brengen
+	De chaauffeur van de bushmaster kende de locatie niet  en bracht het slachtoffer naar een door frane militairren bemand hospitaal mmet minder mediswche faciliteiten
+	Hierna alsnog overgebracht naar het vn-hospitaal.
+	Dit verlieop  neit door nederlandse maatstaven.
+	pas toen een nederlandse arts arrivveerde werd door de Tongolese artsen een buikoperatie uitgevoerd.
+	Dit gebrurde zonder adequate anesthesie.
+	Na de operatie werde de gewonde militair overgelogen naar nederland. En later naar nederland.
+	
+	
+	granaat stond niet op scherp en in afgegaan in veilige stand
+	Granaat werd opgeslagen in neit gekoelde containers waardoor deze aan te hoge temeperaturen zijn blootgesteld.
+	Door de comvinatie van vocht en warmte in de granaat zeer gevoelige explosieve stoffen werden gevormd.
+	Tijdens de oefening was de fatale granaat in de zon.
+	Het afsluitplaatje in de granaat bleek niet in staat om doorslag in veilige stand te voorkomen waarna de granaat explodeerde.
+	De moritren zijn aangeschaft bij de amerikanen. gredurende de aanschafperiode zijn procedures en controles op kwaliteit en veiligheid deels nagelaten.
+	Dit veiligheidsgarantie werd vermeld in het koopcontract.
+	Conclusie
+	Koopcontract werd niet goed doorgelezen
+	Geen controle op kwaliteit en veiligheid
+	Geen controle op kwaliteit en veiligheid
+	Zwakke plekken in het ontwerp
+	Geen controle op kwaliteit en veiligheid
+	opslag en gebruik in ongunstige condities
+	
+	De aanwezige medische voorzieningen waren nite volgends de nederlandse militaire richtlijnen
+	Het ontbreek aan medische toetsing vanuit de defensie organisatie
+	twijfels die werden geuit binnen de defensieorganisae vonden geen wrrklank
+	Ok het ongeval tijdens de mortieroefening was voor defensie geen aanleuiding om de medische voorzienignen te evalueren.
+	De inrichting van veilige medische zorg voor nederlandse militairen in kidal is ondergeschikt gemaakt aan de voortgang van de missie.
+	
+	
+	\cite{ovvMortierOngevalMaliVideo} 
+	\cite{bnnvara13062018malirapport}
+	\cite{eucal11012021malimissieverlengd}
+	\cite{nos21052014zorgenmalimissie}
+	\cite{meijnders}
+	\cite{bnrwebredactie}
+	\cite{keultjes01062016malimissiecoalitie}
+	\cite{veenhof18012019}
+	
+	\cite{isitman06012016militair}
+	\cite{nporadio11072016filmdemissie}
+	\cite{parlementairmonitor15122013mortierongeluk}
+	sollicitatie
+	de bureaucratie
+	aankomst
+	interview van de burgerbevolking
+	steun van de bevolking minuut 15:00
+	de organisatie minuut 23:00
+	De militaire briefing minuut 34:00
+	prioriteit minuut 39:00
+	briefing minuut 40:00
+	de communicatie met ministerie over inlichten minuut 44:00
+	\cite{DemissieFilm}
+	
+	
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+
+\paragraph{tjernobyl}
+
+\begin{description}
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+\end{description}
+Een ramp bij een kernreacor in de sovjetunie. Door een bedieningsfout in een testprocedure werd het vermogen van de koelinstallaties negatief beinvloed. Door een ontwerpfout in de noodstopprocedure kon in het systeem niet snel genoeg schakelen om remmende invloed uit te oefenen op het toenemende vermogen van de reactorkernen. Met brand en eksplosie tot gevolg.
+
+\cite{INSAVienna1992Chernobyl}
+Tsjernobyl
+\cite{wikiTjernobyl}
+\cite{rivmTjernobyl}
+\cite{andereTijdenTjernobyl}
+wat er is gebeurd en hoe het leven verdergaat
+\cite{kingskey19042022tjernobyl}
+pernsioenfondsen en de tjernobyl ramp
+In 2021 worden mensen nog steeds blootgesteld blijkt ut een gezamelijk onderzoek van greenpeace en oekraiense wetenschappers
+stijging van de nucliaire activiteit gemeten in tjernobyl
+Het toerisme  aspect
+De chronologie
+\cite{erikbork26042023reactor4}
+\cite{nosTjernobyl30jaarlater}
+Dieren in de omgeving van tjernobyl
+De chronologie
+Echtreme droogte zorgd voor gevaar
+\cite{knmi04052021tjernobylbosbrand}
+\cite{dodonovaKVIRisicoTjernobyl}
+Joernalistiek, entertainment en de waarheid
+\cite{dumarey04062020verhaalTjernobylWaarheid}
+Een onderzoek
+Huidige gevolgen van de explosie van toen
+\cite{sparkesNewScientistTjernoby}
+De ramp, hoe de mensen ermee omgingen en hoe er nu geleef wordt
+evaluatieonderzoek en amatregeen
+\cite{kernenergiened26041986chronologiemaatregelen}
+\cite{mapszoneReactor}
+Invloed van de mens op de omgeving
+Heroplevende splijtingsreacties
+docu van schooltv
+Radioactiviteit bereikt nederland
+documentaire en maatregelen
+\cite{kernhistoriek15062021tjernobyl}
+Het verhaal van een overledende
+Toerisme
+toerisme
+toerisme
+Dieren in de omgevong
+Toevluchtsoord voor vluchtelingen van de oorlog met russische seperatisten
+Ouderen die terugkeerden naar hun woonplaats na de gedwongen verhuizing door de autoriteiten
+De straling neemt weer toe
+Lessen geleerd van tjernobyl
+\cite{nucleairforumFeitenTjernobyl}
+Toerisme
+Bosbrand in tjernobyl
+invloed van de ramp op belgie
+\cite{kernongevalTjernobylFancGov}
+Boek recensie
+Fotos en berekeningen
+ontmanteling en toerisme
+Belangrijke lessen en overeenkomsten
+De journalistieke waarheid van de koude oorlog
+De lessen van
+\cite{arendswolters062019lessenTjernobyl}
+Een toristenattractie maken van tjernobyl
+De radioactieve straling toen en nu
+de 30km zone door de ogen van toeristen
+artikel
+stedentrip
+rapport
+\cite{damveld08052020tjernobyl}
+slapend monster
+docu
+krantenartikel
+hbo serie
+docuserie
+de  nieuwe sacrofaag
+hulp aan slachtoffers
+slapende reactor
+krantenartikel
+\cite{deVriestjernobylHolland}
+hbo serie
+internationale gevolgen
+toerisme
+nieuwe koepel
+media communicatie
+docu
+dieren
+koepel
+koepel
+\cite{ing3enieur29042015antistralingskoepel}
+toerisme
+toeristisch reiperspectief
+toerisme
+niwe koepel
+overschakelen naar duurzaamheid
+docu
+tjernobyl wekt nu duurazme energie
+toerisme
+overeenkomsten tjernobyl en fukushima
+drank en sla uit tjernobyl
+geen efficiente opslag is mogelijk
+wetenschappelijke artikelen
+zaterdag 26 april 1986. Er vind routineonderhoud plaats bij reactor 4, De controle wordt uitegevoerd door de dagploeg. Vnwege een test wordt jhet koelsysteem uitgeschakeld. Door omstandigheden wordt de test uitgesteld en wordt de verantwoordelijkheid overgedragen aan de avondploeg.
+De operator maakt bedieningsfouten waardoot de reactor bijna stil komt te liggen. En vervolgens probeert hij de reactor weer op gang te brengen. ondanks de snelle temperatuurstijging wordt het experiment doorgezet. Dan wordt ook het veiligheidssysteem stilgelgd. Terwijl het koelwater langzaam opwarmt, sluit hij de klep waarlangs de stoom naar de generator stroomt.
+
+De temperatuur van de reactorstaven neemt daarna snel toe. Terwijl er een oncontroleerbare kettingreactie op gang komt, laat het personeel in paniek de regelstaven zakken om de warmteontwikkeling af te remmen. Het is dan echter al te laat. Door een ontwerpfout loopt het vermogen razendsnel op tot 33.000 megawatt, ruim tien keer hoger dan normaal.
+
+In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.
+
+In de ravage vat het gloeiend hete grafiet in de reactor spontaan vlam. De uitslaande brand en een tweede explosie voeren een radioactieve rookwolk tot 8 kilometer hoogte. 
+In een poging het vuur in reactor 4 te doven, storten helikopters vanuit de lucht zand, lood en boorzuur in de reactorkern. Het mag echter niet baten.
+
+Intussen is de nucleaire brandstof zo heet geworden dat die door de bodem van het reactorvat dreigt te smelten. Als dat gebeurt, kan het bluswater onder het vat in één klap verdampen en dreigt een derde explosie die een groot deel van Europa onbewoonbaar zal maken. Om dit te voorkomen moet het water hoe dan ook worden weggepompt.
+
+Drie brandweermannen wagen zich daarvoor in de ruimte onder de reactor, blootgesteld aan 300 sievert per uur, 300.000 keer de dosis die een Nederlander jaarlijks maximaal mag oplopen. Ze slagen daarin, maar twee van hen overlijden enkele dagen later aan acute stralingsziekte.
+
+Hoewel geigertellers de dag na de ramp onrustbarende waarden aangeven, slaat het plaatselijk bestuur geen alarm. De bevolking is het niet gewend om vragen te stellen.
+
+De volgende dag blijkt er wel degelijk iets ernstigs aan de hand te zijn. In een lange rij bussen worden de 135.000 inwoners op 27 april uit het besmette gebied geëvacueerd, om er nooit meer terug te keren.
+
+De ramp is dan nog steeds geen wereldnieuws. De Sovjetautoriteiten blijken er niet eens van op de hoogte te zijn – president Gorbatsjov klaagt later dat hij via Zweden aan zijn informatie moest komen.
+\cite{verschuur14012013tjernobylreports}
+\cite{paperlessarchivesTjernobyl}
+\cite{vargos082000tjernobylconcerns}
+\cite{mauroNuclearRiskSociety}
+\cite{vienna06092005LookingBack}
+
+
+
 \paragraph{ Research case: De digitale aanval op de Oekrainese krachtcentrale}
 
 \begin{description}
-\item[Beschrijving]
-\item[Datum en plaats] 
-\item[Oorzaak]
-%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
+	\item[Beschrijving]
+	\item[Datum en plaats] 
+	\item[Oorzaak]
+	%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
 \end{description}
 
-op 23,december 2015  vind er een cyber aanval plaats op het elektriciteitsnet van de Oekraine. Dit was de eerste bekende aanval op een elektrisch contole  system.  Dit verslag geeft inzage in een analyse van de Ukraine cyber aanval,
+Op 23,december 2015  vind er een cyber aanval plaats op het elektriciteitsnet van de Oekraine. Dit was de eerste bekende aanval op een elektrisch contole  system.  Dit verslag geeft inzage in een analyse van de Ukraine cyber aanval,
 inclusief hoe de actoren zich zelf toegang gavan tot het controle systeem, welke methoden de acoren hebben gebruikt voor reconnaissance en vastleggen van het systeem, een gedetailleerde omshrijving van de aanval op 15 December 2015, en de methoden die gebruikt zijn door de aanvallers om hun sporen uit te wissen en daarmee het het stoppen van schade toebrengen  nog moeilker maken. Daarnaast wordter  een gedetailleerde omschrijving gevevenv an de beveiliging van de SCADA ccontrol systemen gebaeerd op bst practices, inclusief het control network ontwerp, technieken voor whtelisting, monitoring en loggen, en  opleiding van personeel.
 \cite{Whitehead2017ukrainepoweroutage}
 \cite{noauthor_2022-nm}
@@ -1190,6 +1274,7 @@ Oekraine wijst naar de russen \cite{zetter2016GridHack},
 \subparagraph{Aanbevelingen}
 \subparagraph{Resultaten}
 \subparagraph{De aanval}
+De reconstructie van de aanval bestaat uit een zetal stappen:
 1. An initial email spear phishing attack lures recipients
 into opening an attached Microsoft® document with a
 macro that installs Black Energy 3 (BE3) onto
@@ -1254,73 +1339,6 @@ Aangaande de gebeurtenissen in de oekraiene kunnen de volgende security controls
 
  
 
-
-\paragraph{Mali}
-
-\begin{description}
-\item[Beschrijving]
-\item[Datum en plaats] 
-\item[Oorzaak]
-%Beschrijf wat er mis ging in termen van het vier variabelen model/requirements/specificaties
-\end{description}
-Een granaat explodeerd in een mortier
-De medische zorg na het ongeval was neit voldoende
-
-
-De algemeen militair verpleegkundige gaf aan het slachtoffer nar het vn-hospitaal in kidal te brengen
-De chaauffeur van de bushmaster kende de locatie niet  en bracht het slachtoffer naar een door frane militairren bemand hospitaal mmet minder mediswche faciliteiten
-Hierna alsnog overgebracht naar het vn-hospitaal.
-Dit verlieop  neit door nederlandse maatstaven.
-pas toen een nederlandse arts arrivveerde werd door de Tongolese artsen een buikoperatie uitgevoerd.
-Dit gebrurde zonder adequate anesthesie.
-Na de operatie werde de gewonde militair overgelogen naar nederland. En later naar nederland.
-
-
-granaat stond niet op scherp en in afgegaan in veilige stand
-Granaat werd opgeslagen in neit gekoelde containers waardoor deze aan te hoge temeperaturen zijn blootgesteld.
-Door de comvinatie van vocht en warmte in de granaat zeer gevoelige explosieve stoffen werden gevormd.
-Tijdens de oefening was de fatale granaat in de zon.
-Het afsluitplaatje in de granaat bleek niet in staat om doorslag in veilige stand te voorkomen waarna de granaat explodeerde.
-De moritren zijn aangeschaft bij de amerikanen. gredurende de aanschafperiode zijn procedures en controles op kwaliteit en veiligheid deels nagelaten.
-Dit veiligheidsgarantie werd vermeld in het koopcontract.
-Conclusie
-Koopcontract werd niet goed doorgelezen
-Geen controle op kwaliteit en veiligheid
-Geen controle op kwaliteit en veiligheid
-Zwakke plekken in het ontwerp
-Geen controle op kwaliteit en veiligheid
-opslag en gebruik in ongunstige condities
-
-De aanwezige medische voorzieningen waren nite volgends de nederlandse militaire richtlijnen
-Het ontbreek aan medische toetsing vanuit de defensie organisatie
-twijfels die werden geuit binnen de defensieorganisae vonden geen wrrklank
-Ok het ongeval tijdens de mortieroefening was voor defensie geen aanleuiding om de medische voorzienignen te evalueren.
-De inrichting van veilige medische zorg voor nederlandse militairen in kidal is ondergeschikt gemaakt aan de voortgang van de missie.
-
-
-\cite{ovvMortierOngevalMaliVideo} 
-\cite{bnnvara13062018malirapport}
-\cite{eucal11012021malimissieverlengd}
-\cite{nos21052014zorgenmalimissie}
-\cite{meijnders}
-\cite{bnrwebredactie}
-\cite{keultjes01062016malimissiecoalitie}
-\cite{veenhof18012019}
-
-\cite{isitman06012016militair}
-\cite{nporadio11072016filmdemissie}
-\cite{parlementairmonitor15122013mortierongeluk}
-sollicitatie
-de bureaucratie
-aankomst
-interview van de burgerbevolking
-steun van de bevolking minuut 15:00
-de organisatie minuut 23:00
-De militaire briefing minuut 34:00
-prioriteit minuut 39:00
-briefing minuut 40:00
-de communicatie met ministerie over inlichten minuut 44:00
-\cite{DemissieFilm}
 
 
 

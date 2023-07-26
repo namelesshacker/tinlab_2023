@@ -41,35 +41,35 @@
 \contentsline {paragraph}{representingand using nonfunctional requirements: a process-oriented approach}{9}{section*.40}%
 \contentsline {paragraph}{bijlmerramp}{10}{section*.41}%
 \contentsline {paragraph}{ramp turkisch airlines vlucht 1951}{10}{section*.42}%
-\contentsline {paragraph}{tjernobyl}{10}{section*.43}%
-\contentsline {paragraph}{therac-25}{11}{section*.44}%
-\contentsline {paragraph}{tesla crash report}{12}{section*.45}%
-\contentsline {paragraph}{slmramp}{13}{section*.46}%
-\contentsline {paragraph}{schipholbrand}{14}{section*.47}%
-\contentsline {paragraph}{explosie tanjin china }{14}{section*.48}%
-\contentsline {paragraph}{ethiopian airlines}{15}{section*.49}%
-\contentsline {paragraph}{ Research case: De digitale aanval op de Oekrainese krachtcentrale}{15}{section*.50}%
-\contentsline {subparagraph}{Literaire analyse}{16}{section*.51}%
-\contentsline {subparagraph}{Motief}{16}{section*.52}%
-\contentsline {subparagraph}{Situatie Oekraiene}{16}{section*.53}%
-\contentsline {subparagraph}{Situatie algemeen}{16}{section*.54}%
-\contentsline {subparagraph}{Factoren}{16}{section*.55}%
-\contentsline {subparagraph}{Oorzaak}{16}{section*.56}%
-\contentsline {subparagraph}{Gebruikte materialen}{16}{section*.57}%
-\contentsline {subparagraph}{Uitvoering van de aanval}{16}{section*.58}%
-\contentsline {subparagraph}{Oplossingen}{16}{section*.59}%
-\contentsline {subparagraph}{Aanbevelingen}{16}{section*.60}%
-\contentsline {subparagraph}{Resultaten}{16}{section*.61}%
-\contentsline {subparagraph}{De aanval}{16}{section*.62}%
-\contentsline {subparagraph}{spearfishing}{16}{section*.63}%
-\contentsline {subparagraph}{blackenergy}{16}{section*.64}%
-\contentsline {subparagraph}{remote access capabilities}{17}{section*.65}%
-\contentsline {subparagraph}{serial-to-ethernet communication devices}{17}{section*.66}%
-\contentsline {subparagraph}{telephony denial of service attacks}{17}{section*.67}%
-\contentsline {subparagraph}{oplossingen}{17}{section*.68}%
-\contentsline {subparagraph}{Discussie}{17}{section*.69}%
-\contentsline {subparagraph}{Verder lezen}{17}{section*.70}%
-\contentsline {paragraph}{Mali}{17}{section*.71}%
+\contentsline {paragraph}{therac-25}{10}{section*.43}%
+\contentsline {paragraph}{tesla crash report}{11}{section*.44}%
+\contentsline {paragraph}{slmramp}{12}{section*.45}%
+\contentsline {paragraph}{schipholbrand}{12}{section*.46}%
+\contentsline {paragraph}{explosie tanjin china }{13}{section*.47}%
+\contentsline {paragraph}{ethiopian airlines}{13}{section*.48}%
+\contentsline {paragraph}{Mali}{14}{section*.49}%
+\contentsline {paragraph}{tjernobyl}{14}{section*.50}%
+\contentsline {paragraph}{ Research case: De digitale aanval op de Oekrainese krachtcentrale}{16}{section*.51}%
+\contentsline {subparagraph}{Literaire analyse}{16}{section*.52}%
+\contentsline {subparagraph}{Motief}{16}{section*.53}%
+\contentsline {subparagraph}{Situatie Oekraiene}{16}{section*.54}%
+\contentsline {subparagraph}{Situatie algemeen}{16}{section*.55}%
+\contentsline {subparagraph}{Factoren}{16}{section*.56}%
+\contentsline {subparagraph}{Oorzaak}{16}{section*.57}%
+\contentsline {subparagraph}{Gebruikte materialen}{16}{section*.58}%
+\contentsline {subparagraph}{Uitvoering van de aanval}{16}{section*.59}%
+\contentsline {subparagraph}{Oplossingen}{17}{section*.60}%
+\contentsline {subparagraph}{Aanbevelingen}{17}{section*.61}%
+\contentsline {subparagraph}{Resultaten}{17}{section*.62}%
+\contentsline {subparagraph}{De aanval}{17}{section*.63}%
+\contentsline {subparagraph}{spearfishing}{17}{section*.64}%
+\contentsline {subparagraph}{blackenergy}{17}{section*.65}%
+\contentsline {subparagraph}{remote access capabilities}{17}{section*.66}%
+\contentsline {subparagraph}{serial-to-ethernet communication devices}{17}{section*.67}%
+\contentsline {subparagraph}{telephony denial of service attacks}{17}{section*.68}%
+\contentsline {subparagraph}{oplossingen}{17}{section*.69}%
+\contentsline {subparagraph}{Discussie}{17}{section*.70}%
+\contentsline {subparagraph}{Verder lezen}{17}{section*.71}%
 \contentsline {paragraph}{AlgemeenDeelonerzoek naar veiligheidsrisico's voor sluizen}{18}{section*.72}%
 \contentsline {paragraph}{Wet en regelgeving voor sluizen}{18}{section*.73}%
 \contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{18}{section*.74}%
