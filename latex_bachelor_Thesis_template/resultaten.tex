@@ -1581,12 +1581,6 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 
 
 
-\tikz[tree layout]\graph[nodes={draw, circle}] {
-	r -> 
-	{ a -> 	{ c }->{ d}->{e} ->{ f->{1,2,3}}->{g} ->{h}->{i} ->{j->{run,fin}} -> {k} -> {l} -> {m} -> {n}
-	},
-
-};
 
 
 
@@ -1619,18 +1613,6 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 	ABCD\arrow[r] & EEE\arrow[r] & FFF\arrow[rr] && GGG
 \end{tikzcd}\]
 
-\[\begin{tikzcd}[column sep=1cm]
-	ABCDE\arrow[r, leftrightarrow,] & F\arrow[r] & G\arrow[rr]&& H
-\end{tikzcd}\]
-\[
-\xymatrix {
-	& \ar[r] &
-	*++[o][F-]{q_0} \ar@(ur,ul)_1 \ar[r]^0 &
-	*++[o][F-]{q_2} \ar@(ur,ul)_1 \ar[r]^1 &
-	*++[o][F=]{q_1} \ar@(dr,ur)_{0,1}\\
-		*++[o][F=]{q_1} \ar@(dr,ur)_{0,1}
-}
-\]
 
 
 
@@ -1645,58 +1627,7 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 	& & & &\tikz{\node[draw,circle]{1}} \ar[crossing over]{ul} \ar{ru}  & & \tikz{\node[draw,circle]{2}}  \ar[bend right=15]{r} & \tikz{\node[draw,circle]{2}} \ar[bend right=15]{l} \ar[bend right=15]{r}  & \tikz{\node[draw,circle]{2}} \ar[bend right=15]{l}
 \end{tikzcd}
 \]
-
-
-\begin{tikzpicture}[shorten >=1pt,node distance=2cm,auto]
-	\tikzstyle{every state}=[fill={rgb:black,1;white,10}]
-	
-	\node[state,initial]   (s)                      {$s$};
-	\node[state,accepting] (q_1) [below left of=s]  {$q_1$};
-	\node[state]           (q_2) [below of=q_1]     {$q_2$};
-	\node[state,accepting] (r_1) [below right of=s] {$r_1$};
-	\node[state]           (r_2) [below of=r_1]     {$r_2$};
-	\node[state]           (5) [above of=q_1]     {$r_2$};
-	
-	\path[->]
-	(s)   edge              node {a} (q_1)
-	edge              node {b} (r_1)
-	(q_1) edge [loop left]  node {a} (   )
-	edge [bend left]  node {b} (q_2)
-	(q_2) edge [loop left]  node {b} (   )
-	edge [bend left]  node {a} (q_1)
-	(r_1) edge [loop right] node {b} (   )
-	edge [bend left]  node {a} (r_2)
-	(r_2) edge [loop right] node {a} (   )
-	edge [bend left]  node {b} (r_1);
-\end{tikzpicture}
-
-
-\begin{tikzpicture}[>=latex',shorten >=1pt,node distance=2cm,on grid,auto]
-	\node[state] (q0-e) {$q_0/\epsilon$};
-	\node[state] (q0-1) [below right=of q0-e] {$q_0'/1$};
-	\node[state] (q1-0) [above right=of q0-1] {$q_1/0$};
-	\node[state] (q2-1) [below right=of q1-0] {$q_2/1$};
-
-	\node[state,initial,accepting] (q3-0) [below left=of q0-1] {$q_3/0$};
-	\node[state,accepting] (q3-1) [below right=of q0-1] {$q_3'/1$};
-
-	
-	\path[->] (q0-e) edge node {a} (q1-0);
-	\path[->] (q0-e) edge node {b} (q3-0);
-	\path[->] (q0-1) edge node {a} (q1-0);
-	\path[->] (q0-1) edge [bend right] node {b} (q3-0);
-	\path[->] (q1-0) edge node {a} (q3-1);
-	\path[->] (q1-0) edge node {b} (q2-1);
-	\path[->] (q2-1) edge node {a} (q0-1);
-	\path[->] (q2-1) edge node {b} (q3-1);
-	\path[->] (q3-0) edge node {a} (q3-1);
-	\path[->] (q3-0) edge [bend right] node {b} (q0-1);
-	\path[->] (q3-1) edge [loop below] node {a} (q3-1);
-	\path[->] (q3-1) edge node {b} (q0-1);
-
-	($(q3-1)+(4cm,0)$) ..  (q3-1);
-\end{tikzpicture}
-
+ 
 
 \begin{tikzpicture}[>=latex',shorten >=1pt,node distance=2cm,on grid,auto,scale=0.2]
 
@@ -1757,88 +1688,7 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 
 \end{tikzpicture}
 
-\begin{tikzpicture}[>=latex',shorten >=1pt,node distance=1.5cm,on grid,auto]
-
-	
-	\node[state,initial,accepting] (0)  {$0$};
-	\node[state] (1)  [ right =of 0]   {$q1$};
-
-\node[state] (2)  [ right =of 1]   {$q2$};
-\node[state] (3)  [ right =of 2]   {$q3$};
-
-\node[state] (11)  [ above right =of 3]   {$q10$};
-\node[state] (12)  [ below right =of 3]   {$q10$};
-\node[state] (4)  [ below =of 11]   {$q4$};
-\node[state] (5)  [ right =of 4]   {$q5$};
-\node[state] (6)  [ right =of 5]   {$q6$};
-\node[state] (7)  [ right =of 6]   {$q7$};
-\node[state] (8)  [ right =of 7]   {$q8$};
-\node[state] (9)  [ right =of 8]   {$q9$};
-\node[state] (10)  [ right =of 8]   {$q10$};
-\end{tikzpicture}
-
-
-\begin{tikzpicture}[->,>={Stealth[round]},shorten >=1pt,%
-	auto,node distance=2cm,on grid,semithick,
-	inner sep=2pt,bend angle=45]
-	\node[initial,state] (1)                    {$q_a$};
-	\node[state]         (2) [ right=of 1] {$2$};
-	\node[state]         (3) [ right=of 2] {$3$};
-
-	\node[state]         (A) [ right=of 3] {$A$};
-	\node[state]         (B) [above right=of A] {$B$};
-	\node[state]         (D) [below right=of A] {$D$};
-	\node[state]         (C) [below right=of B] {$C$};
-	\node[state]         (E) [below=of D]       {$E$};
-	\node[state] (6) [ right=of C] {$6$};
-	\node[state] (7) [ right=of 6] {$7$};
-	\node[state] (8) [ below=of 6] {$8$};
-	\node[state] (8) [ below=of B] {$8$};
-	
-	\path [every node/.style={font=\footnotesize}]
-	(A) edge              node {0,1,L} (B)
-	edge              node {1,1,R} (C)
-	(B) edge [loop above] node {1,1,L} (B)
-	edge              node {0,1,L} (C)
-	(C) edge              node {0,1,L} (D)
-	edge [bend left]  node {1,0,R} (E)
-	(D) edge [loop below] node {1,1,R} (D)
-	edge              node {0,1,R} (A)
-	(E) edge [bend left]  node {1,0,R} (A);
-\end{tikzpicture}
-
-
-\begin{tikzpicture}[
-	> = stealth, % arrow head style
-	shorten > = 1pt, % don't touch arrow head to node
-	auto,
-	node distance = 3cm, % distance between nodes
-	semithick % line style
-	]
-	
-	\tikzstyle{every state}=[
-	draw = black,
-	thick,
-	fill = white,
-	minimum size = 4mm
-	]
-	
-	\node[state] (s) {$s$};
-	\node[state] (v1) [above right of=s] {$v_1$};
-	\node[state] (v2) [right of=s] {$v_2$};
-	\node[state] (v3) [below right of=s] {$v_2$};
-	\node[state] (t) [right of=v2] {$t$};
-	
-	\path[->] (s) edge node {18} (v1);
-	\path[->] (s) edge node {1} (v2);
-	\path[->] (s) edge node {1} (v3);
-	\path[->] (v2) edge node {2} (v1);
-	\path[->] (v3) edge node {1} (v2);
-	\path[->] (v1) edge node {20} (t);
-	
-	\draw[red, dashed] (1, 2) -- (1, -2);
-\end{tikzpicture}
-
+ 
 \begin{tikzpicture}[shorten >=0.5pt,node distance=2cm,on grid,auto]
 	\node[state,initial] (0) {$q_0$};
 	\node[state] (1) [right=of 0] {$q_1$};
