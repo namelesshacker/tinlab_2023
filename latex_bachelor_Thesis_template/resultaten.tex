@@ -14,6 +14,32 @@ De verschillende factoren en achtergronden die  samenhangen met het modelleren v
 
 
 
+\paragraph{Wat is uppaal}
+
+Wat is Uppaal
+Uppaal is an integrated tool environment for modeling, simulation and verification of real-time systems, developed jointly by Basic Research in Computer Science at Aalborg University in Denmark and the Department of Information Technology at Uppsala University in Sweden. It is appropriate for systems that can be modeled as a collection of non-deterministic processes with finite control structure and real-valued clocks, communicating through channels or shared variables [WPD94, LPW97b]. Typical application areas include real-time controllers and communication protocols in particular, those where timing aspects are critical.
+
+
+model checking
+
+Wat is statistical model checking?
+Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
+https://www-verimag.imag.fr/Statistical-Model-Checking-814.html?lang=en#:~:text=Statistical%20Model%20Checking%20(SMC)%20is,from%20state%20space%20explosion%20issues.
+
+
+\cite{inriaStatsMoodCheck}
+\cite{ buddeModelChecker}
+\cite{AGHASuervey }
+
+
+Waarom gebruiken we statistisch model checking?
+To overcome the above difficulties we propose to work with Statistical Model Checking [KZHHJ09,You05,You06,SVA04,SVA05,SVA05b] an approach that has recently been proposed as an alternative to avoid an exhaustive exploration of the state-space of the model. The core idea of the approach is to conduct some simulations of the system, monitor them, and then use results from the statistic area (including sequential hypothesis testing or Monte Carlo simulation) in order to decide whether the system satisfies the property or not with some degree of confidence. By nature, SMC is a compromise between testing and classical model checking techniques. Simulation-based methods are known to be far less memory and time intensive than exhaustive ones, and are oftentimes the only option. 
+https://project.inria.fr/plasma-lab/statistical-model-checking/
+
+Alternatief
+Alternatieven voor Uppaal zijn Asynchronous Events,Vesta en MRMC.
+
+
 \paragraph{MODE CONFUSION }
 Mode confusion tredd op als gepbserveerd gedrag van een technisch systeem niet past in het gedragspatroon dat de gebruiker in zijn beeldvorming heeft  en ook niet met voorstellingsvermogen kan bevatten.
 \paragraph{Wat is automatiseringsparadox}
@@ -216,6 +242,12 @@ what is a good software specification
 \cite{informit30062008reqmanagement}
 \cite{altexsoft15092020writingSRS}
 
+
+\paragraph{Wat is een sluis}
+
+\paragraph{Recente ontwikkelingen op het gebied van sluisautomatisering}
+
+Het ministerie van verkeer en Waterstaat wil in het kader van het klimaatakkoord en onderzoek laten uitvoeren naar de staat van het sluizenpark in Nederland. Het onderzoek moet zich richten op het ontwerpen en ontwikkelen van een geautomatiseerd sluismodel dat geschikt is voor een brede toepassing. In het onderzoek moet naar voren komen wat de huidige staat is van de sluizen met oog op veiligheid, efficiëntie, capaciteit, onderhoud, duurzaamheid en automatisering. Het onderzoek geeft aan hoe een volledig model worden opgeleverd opdat ontwerp van verschillend volledig geautomatiseerde sluizen in de toekomst geautomatiseerd kunnen worden.  
 
 
 \paragraph{Studie naar rampen aan de hand van het vier variabelen model}
@@ -522,41 +554,26 @@ Aangaande de gebeurtenissen in de oekraiene kunnen de volgende security controls
 
 
 
-\paragraph{AlgemeenDeelonerzoek naar veiligheidsrisico's voor sluizen}
-Omdat we in deit onderzoek uitgaan van het uitbreiden van bestaande sluizen is er literatuurstudie gedaan naar sluizen. In de archieven van het ministerie van verkeer en waterstaat is er het rapport Design of waterlocks\cite{CivilEngineeringDivision}.
-Het programma van requirements kunnen we in ons model niet helemaal overnemen. 
-Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind, morphologie en bodemeigenschappen.
-Dan zijn er nog de functionele eigenschppen
 
-
-De gebruikerseigenschappen
-
-De onderhoudseisen
-
-Omgevingseisen
-
-omgevingseien in de constructiefase
-
-Constructievoorschriften
-
-benadering van de sluis en sluiskolk
-
-Dimensies van het watersluiscomplex
-
-
-Intake en discharge systemen
-
-Deuren. operationele mechanismen
-
-
-
-Sluishoofd
-
-
-Sluiskolk
-
-\paragraph{Wet en regelgeving voor sluizen}
 \paragraph{Safety critical systems}
+\cite{winceckCriticalToSafety}
+\cite{chambersHazardAnalysisSCS}
+\cite{rslater1998SCSAnalysis}
+\cite{knightchallengessafetyCritical}
+\cite{johnson2006devsafetycritical}
+\cite{daucriticalsafetyconsider}
+\cite{fallsafedesign}
+\cite{arForce2015VerificationExpectations}
+\cite{nebulaassessment}
+\cite{lalaArchitecturalPrinciples}
+\cite{mitNotesSafetyCritical}
+\cite{britishColumbia2020GuideSafetyCritical}
+\cite{fulvio1993safetycriticalsystems}
+\cite{dlrtabid}
+\cite{knight2010SafetyCritical}
+\cite{creavisafecritical}
+\cite{valdes2018SafetybyAutomation}
+\cite{2015whensafetymanagementsystemsfail}
 \paragraph{Ondeerzoeksresultaten naar sluisbeveiliging}
 
 
@@ -636,23 +653,429 @@ https://www.makeuseof.com/what-is-persuasive-technology/
 https://lib.ugent.be/catalog/rug01:001235489 
 https://cyberpsychology.eu/article/view/12270 
 \cite{tikkakuddonenpersuasiveTechnology}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Afbakening van requirements Wet en regelgeving voor sluizen}
+Omdat we in deit onderzoek uitgaan van het uitbreiden van bestaande sluizen is er literatuurstudie gedaan naar sluizen. In de archieven van het ministerie van verkeer en waterstaat is er het rapport Design of waterlocks\cite{CivilEngineeringDivision}.
+Het programma van requirements kunnen we in ons model niet helemaal overnemen. 
+Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind, morphologie en bodemeigenschappen.
 
+ 
 
+Preconditions
+Topography
+By means of maps (land, water, river, sea, ownership, regional and zoning plans) a detailed description
+of the environment should be provided, including any planned changes to existing situations, in so far
+as this is of importance to the lock and adjoining lock approaches. Special attention should be paid to
+historical, natural and scientific values. The maps should also show sewerage, cables and mains as well
+as drainage facilities in the area concerned.
+Existing lock (locks)
+Water levels (approx.)
+Wind
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Morphology
+Soil characteristics
+Functional requirements
+Functional requirements regarding navigation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+General
+Lock approaches
+Primarily as part of the traffic management in locking
+Stop over harbour
+Harbour of refuge
+Compulsory harbour
+Hazardous substances
+Leading jetties
+Chamber and heads
+The principal dimensions
+The design
+The facilities and equipment
+Functional requirements regarding the water retaining (structure)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Dan zijn er nog de functionele eigenschappen.
+ Functional requirements regarding water management
+General
+Limiting water loss
+Separation of salt and fresh water or clean and polluted water
+Water intake and discharge
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Functional requirements regarding the crossing, dry infrastructure
+Roads
+Cables and mains
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent  User requirements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Levels
+Locking levels
+Situating the lock
+Accessibility
+Smoothness and safety of dealing with traffic
+Design levels
+Normative High Water (NHW)
+Locking level high water gate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Possible preference for separating different kinds of vessels
+Separation in using line-up area, waiting area and chamber
+Separating vessels during locking
+Separation of vessels during over night stop
+Separation for use of the leading jetty (leidende steiger)
+Leading jetty for seagoing vessels
+Leading jetty for inland navigation
+Leading jetty for recreational navigation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Mooring facilities in chamber and lock approach
+Chamber
+Lock approaches
+Leading jetty
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Operating times
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Levelling times
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Operational management
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Process descriptions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Normal locking process
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Obstructions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+High water retaining structure
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Intake/discharge
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Salt /freshwater or clean/polluted water
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Information for operational management
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Procedures and facilities for negative operational situations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Power supply
+Levelling%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Collisions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Too low/too high water levels and inspections
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Problems with ice
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Operating
+Situating the control building
+Local control facilities
+Means of communication
+Choice (partly) automated and self-service
+Remote control of locks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Illumination, signalling and boarding
+Illumination (for details, see Lit. [2.1])
+Ship crews and operating personnel must take into account that comfort is decreased during locking that
+takes place through the night. Given the decreased visibility and orientation, extra effort is required. This
+effort has to be kept as low as possible in order to prevent decreased safety. For this purpose, suitable
+and economically sound illumination of the lock complex is essential.
+The lighting has to be geared to the ever-increasing use of central control at locks and has to be aimed
+at places where activities (manoeuvres, tying and untying, going on land) are executed.
+The locations drawing the attention of the individual captain for instance, are the free area, the line-up
+and waiting area, the chamber entrance, the chamber, lock grounds, chamber exit and the outlet area
+to the unlit waterway. The attention of operating personnel will particularly focus on the vessels in the
+line-up and waiting areas, inbound vessels, the chamber, the gates, the lock grounds and the sailing of
+outbound vessels.
+Given the necessity of illuminating the lock and lock approaches, a number of general minimum conditions
+are set. This illumination is compulsory and could be included in the design plan:
+• a clear view of the lock complex has to be provided for the benefit of orientation from the water;
+• the illumination has to be sufficiently even;
+• during arrival and departure dazzling, which is often caused by excessive glare of lock parts because
+of cameras etc., should be prevented;
+• in the control building the illumination should be adjusted to the outside environment and images
+recorded as TV pictures should have such contrast and definition that the operating personnel is given
+sufficient information;
+• uniformity in the illumination plan for the setup of light towers, height of points of light and light
+colour is desired.
+In Lit. [2.1], as extension of these conditions, a number of specific recommendations are made that are
+of importance to the design.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Required illumination level
+For the average value of illumination intensity on horizontal surfaces of the above-mentioned lock
+parts, 10 lux is adhered to. On vertical surfaces that are more often more striking due to the perpendicular
+directional view, a lower value of 3.5 lux can be used.
+At a number of critical parts of the lock (both for the captain and the lock master) a larger contrast is
+desired and can be achieved by stronger illumination of areas that should be in the light or providing
+these with white markings. The latter is preferable. At critical lock parts such as gates and leading
+jetties, the vertical illumination strength should be higher: 7 lux. On the chamber and mooring area
+where accurate visibility is required, the previously stated values of 10 lux for horizontal and 3.5 lux
+for vertical apply. The waiting area and the free area, where illumination is mostly for orientation,
+require an illumination level of 5 lux horizontal respectively 3.5 lux vertical.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Surrounding illumination and guidance
+Misleading illumination in the surrounding area can give the captain a wrong picture of the course of
+the waterway that provides access to the lock chamber. This can be prevented if the waterway or the
+lock complex is illuminated over a sufficient length or by adapting the surrounding illumination to the
+illumination of the complex. For visual guidance, differences in illumination strength at crossings
+should not exceed a factor 2.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Uniformity
+For the uniformity (E) of the illumination, a minimum value of Emin/Emax = 0.3 should be adhered
+to for both vertical and horizontal areas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Glare
+Unsafe situations due to dazzling should be avoided. The correct combination of armature, lamp and
+positioning is of importance.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Colour recognition and kind of lamp
+The colour of the light is one of the factors in the recognition of boards and signalling. Both white
+and yellow light can be used.
+In the lamp choice of illumination, both high-pressure and low-pressure lamps as well as energy
+saving lamps qualify. In the application of low-pressure (monochromatic) sodium (vapour) light,
+colour recognition is impossible. If this is the case, separate illumination of traffic signs is recommended.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Marking
+White markings are a good and inexpensive tool for obtaining sufficient contrast in the dark while using
+little light. Marking vertical surfaces, such as guiding structures and guard walls, to support the visual
+guidance of navigation is very effective.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Signalling
+Signalling should be executed according to the stipulations of the Police Regulations on Inland
+Navigation (‘Binnenvaart Politie Reglement’ (BPR))and the Rhine Navigation Police Regulations
+(‘Rijnvaart Politie Reglement’ (RPR)), (Lit. [2.4]).Signal indication and lock illumination choices should be
+adjusted to terrain illumination of the lock for the benefit of colour recognition; it should have sufficient
+attention value.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Boarding
+Boards should be executed in accordance with the stipulations of the BPR and RPR, (Lit. [2.4]).The colour
+recognition could be (substantially) reduced due to the terrain illumination. Sufficient attention should
+be paid to adjusting the illumination or to separate board illumination.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Illumination plan
+The user requirements for illumination should be incorporated in an illumination design plan.
+The chamber depth (distance between low normative water level and the lock coping) and the chamber
+width are of great importance. In Lit. [2.1] examples are provided for a number of chamber width
+categories (5-13 m, 13-20 m, 20-24 m, larger than 24 m; chamber depth about. 5 m) of the resulting
+illumination characteristics (such as illumination strength and uniformity), departing from the relationship
+between lock design and the given characteristics of illumination installation (such as positioning
+and illumination facilities).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Power supply
+Emergency power supply is required for vital parts of the installation so that, in case of malfunction,
+it can automatically take over the energy supply within minutes. A no-break facility is required for
+installation parts that lose data in case of power loss. In addition, emergency lights should be present.
 
+In essence, power is obtained from the public network. In consultation with the local power company,
+assessments have to be made about where this is possible and whether the connection contains
+sufficient capacity or whether this will have to be adjusted. Of importance is the total capacity required,
+voltage variations and frequency of the energy to be supplied. In addition to capacity for lock operation,
+the capacity for construction (civil and steel) will have to be determined. It could be taken into consideration
+whether the cables for construction could later become part of the supply for the lock.
+The lock complex should contain the necessary facilities for high tension, transformers and low-tension
+equipment. In addition, room is reserved and facilities provided for cable location lines from the low-tension
+area to the various lock parts (cable racks, cable channels, cable shafts, lead-through pipes etc.)
+Take into account the other cables and mains required for lock operation as well as those for third parties
+(Par. 2.3.4.2). For emergency power supply generators and no-break installations, see Par. 2.4.6.3.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Availability
+Introduction
+Causes of non-availability
+Water levels above and below locking levels
+Guidelines on the boundaries of locking levels are provided in Par. 2.4.1.1 (maximum and minimum
+locking levels). Overall, this results in non-availability smaller than 2% of the time.
+The specific boundaries should be set on economic grounds.
+Too much wind, bad visibility
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Malfunctions of installations, operating mechanisms and operating
+Based on the previously mentioned economic considerations, requirements will have to be drafted for
+the design of the lock or the series of locks for the acceptable risk of failure of these facilities. As an
+example, the values applied for the renovation of the ‘Zuider- en de Kleine sluisin IJmuiden’ are stated
+(Lit. [2.13]). Not available due to:
+• malfunction installations : ≤ 0,5% of the time
+• malfunction operating mechanisms : ≤ 0,5% of the time
+• malfunction operation : ≤ 0,25% of the time
+The number of times that malfunction occurs could also be a determining factor.
+Not every malfunction results in complete obstruction. The objective is to limit the duration of the malfunction
+as much as possible (alerting, responding, spare parts).
+For emergency power supply and no-break installations, please see Par. 2.4.6.3.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Collisions
+For non-availability due to collisions, at best a forecast can be made, based on the information available
+for similar locks with a corresponding navigation volume. As an example, the ‘Zuidersluis bij IJmuiden’
+(Lit. [2.13]) is mentioned, where the non-availability due to significant damage due to collisions amounted
+to 17 hours per annum (about 0.2% of the time). Other locks could provide a different picture.
+Within economically acceptable boundaries, the objective will be to limit the collisions and consequences
+thereof. The accent is placed on gates (and operating mechanisms), moveable bridges and – to a
+lesser degree – on berthing jetties and guide structures.
+Measures to decrease risk of collision are, among others:
+• good design of approach jetties (Par. 2.3.1.3 and 2.4.2.2);
+• positioning of the flooring of moveable bridges – in opened condition – outside the outer walls of the
+lock (Par. 2.3.4.1);
+• anti-collision structures in front of the gates (Par. 2.4.11.1). This is an expensive facility that will only
+be applied in special cases;
+• protection of operating mechanism on gates. Preventing collisions with the operating mechanism can
+be effected by fitting a tail end to the gate and connecting this to the operating mechanism
+(Renovation Oranjesluizen). An extended operating mechanism chamber could also be used so that
+the vulnerable cylinder rod cannot be hit in the lock (Middensluis IJmuiden).
+Measures to limit the duration of the repairs (obstruction) are, among others, having the spare gates and
+spare parts available (Par. 2.5.2 en 2.5.3).
+Maintenance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Protecting constructions from damage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Collision protection for gates
+Mitre gates and pivot (leaf) gates must be fitted with wood fender on the outside surfaces of the
+opened gates to protect the construction from damage caused by inbound and outbound vessels. Wood
+fender can also be fitted to other gates in places where they might be hit by vessels.
+In special circumstances (for instance Wijk bij Duurstede, Tiel, Belfeld, Panheel, Twenthe-kanaal) trap
+constructions are positioned in front of the closed gates. The energy of vessels that do not stop in time
+is absorbed here and the construction prevents the gates from being hit (see par. 17.3.3). For this purpose,
+cables (cable nets) and friction drums can be used. For the circumstances and setup of these constructions,
+we refer to Lit. [2.15]. It does concern expensive constructions for which the investments will
+have to be weighed against the risk of failure of the water retaining structure, the navigation interests
+etc.
+Anti-collision devices protecting lock gates could be economically sound at high-lift locks.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Collision protection for concrete and sheet pile constructions
+Construction surfaces against which vessels moor or along which they shave, have to be as smooth as
+possible in order to guide well and limit potential damage (construction and vessel). For inland navigation,
+a concrete structure meets the requirements. In the case of other construction materials such as
+sheet pile, the flat surface should be made of wooden or synthetic posts and rails wherever possible. This
+system can be limited to the day surfaces that vessels meet.
+Additional facilities are necessary in places where concrete surfaces are interrupted or come to an end
+because of expansion joints, gate and ladder recesses. In the case of expansion joints, it will be sufficient
+to use (sizeable) bevelled edges, steel corner protection profiles should be applied in recesses. Corner
+guards made of tropical hardwood can also be fitted, especially where it concerns rugged navigation
+such as tug-pushed dumb barges and sea-going vessels. As protection from hawsers etc, the top of the
+wall should be fitted with steel capstone profiles. In locks for large ocean going vessels, floating wooden
+frames (the Netherlands) or rubber wheel fenders (Belgium) are used.
+The facilities are intended to minimize damage to vessels and constructions, but also to prevent backing
+up and friction effects during mooring and unmooring of vessels with large side surfaces, thereby
+decreasing the pass through time.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Facilities against vandalism
+Lightning protection
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Safety
+Facilities for drowning persons
+For rescuing people who accidentally end up in the water, ladders should be fitted to the chamber wall
+and to (high) smooth walls in the lock approach. At the upper end, these ladders are equipped with
+handgrips. For offering help from the quayside, life-saving devices (life buoy, hooks) should be present
+on the lock coping in a clearly visible place. Ladders in the chamber and the lock approach also have an
+accessibility function. For locations and distances, also see par. 2.4.13.2 and 2.4.13.3.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Safety facilities
+Design and management of safety facilities of personnel will be executed in accordance with Health and
+Safety Regulations, construction regulations, labour regulations and safety regulations (CE directives).
+A number of facilities are mentioned below.
+Railings are attached to the top of gates. If the lock coping is more than 2.5 m above minimum locking
+level, fencing is placed behind the bollards. This fencing is always desirable where it concerns recreational
+navigation and where tourists are allowed on the lock coping.
+In the technical areas, workshops, bridges, control portals, rolling gate casings and the like, where work
+is executed and people walk around where there are differences in height in the surrounding area,
+railings are provided. From a height difference of 0.60 m or more with the surrounding area, a railing
+has to be provided at 1 – 1.10 m. Height differences of more than 12 m require the railing to be placed
+at a height of 1.20. Often, additional protection against falling is provided from height differences of
+more than 2.5 m such as safety lines, lifelines, harness belts and the like.
+Steel ladders should not be in regular use. Straight stairs, a spiral staircase or step ladders should be
+installed. Ladders can be used between vertical (90o) and 75o and be equipped with simple round rungs.
+The ladder width is between 0.38 and 0.46 m and the step distance is between 0.25 – 0.20 m.
+If the ladder connects with the (landing) coping, the distance between the styles of the ladder should be
+enlarged to 0.60 and it has to be connected to the railing. If the ladders are higher than 3.60 m, they
+have to be provided with a safety cage. This cage has an inside measurement of 0.76 m and starts from
+2.40 m above the ground. At ladder heights above 6 m, an intermediate landing is required.
+Basement chambers that could possibly flood (for instance those of operating mechanisms of mitre
+gates) have to be provided with an exit that can be opened from the inside. In addition, sufficient
+natural ventilation will be required as well as plunger pumps.
+The area in which the operating mechanisms are working need to be shielded from the environment to
+ensure that nobody gets stuck between machine parts. The lock complex should have sufficient and visible
+First Aid provisions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fire fighting
+Accessibility of lock and lock approaches
+Lock Infrastructure
+Accessibility of vessels in the lock
+Accessibility of vessels in the lock approache
+Accessibility of vessels with dangerous goods in the lock approaches
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Supplemental client wishes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Life span requirements
+Design life span of lock complex
+Steel parts
+Electrical installations
+Hardware and software
+Sheet pile constructions
+Guiding structures
+Maintenance requirements
+Maintenance strategy
+Spare gates
+Spare parts and materials
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To lay lock open (or not)
+Nowadays, it is no longer usual to lay open the complete lock for maintenance. The reasons are that it
+is often too costly (measures required against floating up) and that the main construction of chamber
+and heads are maintenance free, the probable exception being wood fenders for sheet pile constructions
+and floating frames at sea locks. The latter parts should be easy to replace. Incidental repairs to head
+constructions could be executed by divers or in diving bells.
+Inspection and maintenance focus on gate supports (sill and side seals), fulcrums, and gate conduction,
+in other words, parts that are located in the head. There are two possibilities:
+1. Lying open a head, for which stop log weirs or dewatering weirs and rabbets are necessary.
+2. Removable pivot-inspection chambers and other local steel dewatering means for the fulcrums,
+support and gate condition. This also includes the dewatering stop logs for the gate recesses for lift
+and roller-bearing gates.
+Gate supports and rabbets are also required for the drainage. These means for water removal are stored
+in the near vicinity in a highly accessible place and could possibly be used for several locks.
+The choice between two possibilities depends on the inspection and maintenance frequency, the costs
+and the duration of the obstruction for navigation. Option 1, in which too much space is laid open is, in
+essence, usually only applied at smaller locks.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Accessibility for personnel
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Monitoring
+Monitoring is a permanent measuring and registration system for normative parameters for the condition
+of structures, the loads and stresses that they are submitted to and the degree in which corrosion
+processes have progressed. Even though the application in construction is still limited, it is necessary to
+keep up with the rapid developments. Monitoring is useful, certainly for places of lock structures that are
+difficult to inspect (for instance at soil facing side) and for erosion processes that are hardly visible on the
+surface (such as chloride penetration).
+Cathodic protection can be used as a monitoring system at the same time.
+Electrical installation, hard- en software
+Storage areas and workshops
+Environmental requirements in the use phase
+Aesthetics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent In ons model houden we geen rekening met omgevingseisen zoals de materialen gebruiket voor de bouw, recreatie, bodemvervuiling, grondwaterverlies. Oo is er geen rekening gehouden met verkeer, communicatiekabels onderwater en netspanningskabels.
+
+Environmental requirements with regard to building materials
+Recreation
+Environmental requirements in the construction phase
+Required building site and final grounds
+Polluted soil
+Groundwater withdrawal
+Upkeep/maintenance of road and navigation traffic, cables and mains
+Upkeep/maintenance of the water retaining structure
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent Permits and procedures at the construction of a lock
+Construction permits and zoning plan amendments
+Demolition permit
+Flood Defence Act
+Environmental Management Act (M.E.R.)
+Act on Earth Removal
+Pollution of Surface Waters Act
+Groundwater Act permit
+Water management Act
+Soil Protection Act
+Nature Conservation Act
+Management of Waterways and Public Works Act (Wet beheer RWS-werken)
+Noise Abatement Act
+Provincial Road Ordinance
+Building Materials (Soil and Surface Waters Protection) Decree
+Other permits and exemptions
+Standards and guidelines
+Standards
+Guidelines
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Checklist}
 
 
 \paragraph{Analyse}
 \paragraph{Conclusie}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-\hoofdstuk{Uppaal model}
 
-
+\hoofdstuk{Requirements}
 \paragraph{Inleiding}
-
-
-
 
 De meeste sluizen die zich in Nederland bevinden zijn schutsluizen; deze sluizen zijn bedoeld om boten, zowel vrachtschepen als pleziervaart afhangend van de locatie van de sluis, te verwerken. Om deze reden gaan wij deze dus ook verwerken in ons model. Mocht een sluis niet bedoeld zijn om boten te verwerken, dan zou dit model alsnog toegepast kunnen worden opp desbetreffende sluis.
 Boten worden toegevoed aan de queue. Hoe dit gebeurt, dat ligt aan de specifieke sluis.  Sinds wij een template maken, hoeven wij geen rekening te hounden met hoe de schepen in de queue komen. Het enige wat wij hoeven te doen, is de data verwerken.
@@ -699,6 +1122,20 @@ Uit het zojuist genoemnde scenario valt het volgende op te maken.
 	\item Er wordt gekeken wat het niveo van de waterpeil in de sluiskolk is.
 	\item Er wordt gekeken of de sluisdeuren gereed zijn voor invarende schepen.
 \end{enumerate}
+
+\paragraph{overzicht}
+
+\paragraph{Conclusie}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\hoofdstuk{Uppaal model}
+
+
+\paragraph{Inleiding}
+
+
+
 
 
 
