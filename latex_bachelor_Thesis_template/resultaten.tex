@@ -556,6 +556,434 @@ Aangaande de gebeurtenissen in de oekraiene kunnen de volgende security controls
 
 
 \paragraph{Safety critical systems}
+
+
+https://www.icheme.org/media/8976/xxiv-poster-11.pdf
+https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV55Chambers.pdf
+https://users.ece.cmu.edu/~koopman/des_s99/safety_critical/
+WHAT ARE SAFETY-CRITICAL SYSTEMS?
+
+Traditional Systems
+Traditional areas that have been considered the home of safetycritical systems include medical care, commercial aircraft, nuclear
+power, and weapons. Failure in these areas can quickly lead to
+human life being put in danger, loss of equipment, and so on.
+
+Non-traditional Systems
+Emergency 911 service is an example of a critical infrastructure
+application. Other examples are transportation control, banking
+and financial systems, electricity generation and distribution, telecommunications, and the management of water systems
+
+4.1 Technology
+
+
+https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf
+https://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf
+https://www.dau.edu/tools/se-brainbook/Pages/Design%20Considerations/Critical-Safety-Item.aspx
+https://daytonaero.com/wp-content/uploads/AC-17-01.pdf
+https://nebula.esa.int/content/assessment-methodology-certification-safety-gnc-critical-space-systems
+https://www.cs.unc.edu/~anderson/teach/comp790/papers/safety_critical_arch.pdf
+https://www.cs.uct.ac.za/mit_notes/human_computer_interaction/htmls/ch02s10.html
+
+1.       The Assembly is aware that the use of computers in safety-related applications is growing, particularly in areas such as control systems of aeroplanes, high-speed trains and nuclear power stations, medical equipment and medical records, anti-lock braking systems for vehicles and machine engineering in general, and last but not least, modern weapons and their guidance systems.
+
+2.       Many recent accidents (for example, plane crashes due to computer failure, malfunctioning robot killing a mechanic, patient dying because of malfunctioning of computer-controlled intravenous drip, rocket launch failure traced to computer error, software piracy etc.) cause public concern and raise the question of the reliability of such systems.
+
+
+How has the problem of safety-critical software arisen? Essentially from an ever-increasing complexity in engineering. One may compare the steam locomotive of 1830 with the APOLLO Moon spacecraft of 1970 as an example. In 1917 WM FARREN designed, supervised the construction of and testflew an aircraft - the CE 1 and with acceptable safety! [2]. Even in 1965 a chief designer would be familiar with all the decisions taken in the design of a complex product such as an aircraft or ship. The management operation was deeply hierarchical [3] , but as systems became more complex and design teams included more and more specialists it became necessary to formalise the interfaces between the specialist groups to gain benefit and yet maintain overall design disciplines. This led to the matrix design management system in the 1970s to cope with design teams 50 times larger than before [4].
+
+A difficulty embodied in tackling the safety related to software in engineered products arises because of software complexity and the mathematical rigour of some parts of it distorts and clouds the fundamental processes of creative engineering design. 
+
+Before discussing safety definitions and integrity a brief mention of design techniques to enhance safety. One way of increasing safety is to develop more reliable components and systems. At the outset, once the general preliminary design is defined there will be a "safety budget" allocating tolerable levels of integrity for every subsystem. Then Reliability Analysis evaluates the probability of failure and Failure Mode Effect and Criticality Analysis deals with the likely results of failure. Once the "life" of a part has been measured then the inspection and maintenance function will act to replace the part with a new one in good time. Another technique is to design an item to "fail-safe" i.e. even if it does fail it does not create a safety risk before the fault can be rectified. This has been extensively used on structures and coping with the development of fatigue cracks. "Fail- operate", "fault tolerant design" and "graceful degradation of systems" are other methods.
+
+
+
+https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dcbbc29d/EGBC-Safety-Critical-Software-V1-0.pdf.aspx
+https://assembly.coe.int/nw/xml/XRef/X2H-Xref-ViewHTML.asp?FileID=7144&lang=EN
+https://www.dlr.de/ft/en/desktopdefault.aspx/tabid-1360/1856_read-36215/
+https://ieeexplore.ieee.org/document/1007998
+https://coreavi.com/the-future-of-safety-critical-systems-in-the-emerging-autonomous-world/
+https://verticalmag.com/features/whensafetymanagementsystemsfail/
+
+
+fault stress
+cause consequence analysis
+hazops
+fmeca/fha/fmea
+fmeca = failure modes, effect and criticality anaysis
+step 1 functional block diagram
+setp 2 idendity failure modes ( complete failures, partial failure, intermittant failure, gradual failure)
+step 3 accesss criticality
+step 4 repeat for potential consequences
+step 5 identify cause and occurence rate
+step 6 deteermine detection failures
+-type 1 the controls prevent the cause of failure mode from occuring, or reduce their rate of occurence
+-type 2 hes controls detect the cause of the failure mode and the lead to corrective action
+-type 3 these controls detect the failure mode before the product operaton, subsequent operations, or the end user
+step 7  calculate risk priority numbers
+RPN = secerity index * occurence index * detection index
+step 8 finalyze hazard analysis
+pra is aprt of hazard analysis, probaility risk analysis, the probability that product will work for T withour failure, R(T) = exp(-T/MTTF)
+decision theory
+risk = frequency * cost
+mttf
+Bellcore: reliability prediction procedure
+
+Criticality level
+
+36
+41
+58
+59
+62
+73
+84
+104 Safety-critical software development
+Software designed by
+-hazard elminination
+-hazard reduction
+-hazrd controls
+Software implementation issues
+-dangerous practices
+-choie of safe languages
+105 leveson taxonomy of design techniques
+-hazard elimination/avoidance: substitution, elimination, decoupling,	human error removal, removal of hazardous materials
+-hazrd reduction:
+--design for control
+-incremental control
+-intermediate states
+-decision aids
+-monitoring
+-- add barriers
+-hard/software lcoks
+--minimize single point failures
+-increase safety margins
+-exploit redundancy
+-allow for recovery
+
+-hazard control: limit eposure ( back to normal fast exceptions), isolate and contain ( dont let things get worse, fail-safe (panic shut downs and watchdog code
+-hazard minimization
+software desigg techniques: fault taulerance
+-avoid common mode failures
+-nred for design diversity
+- samre requiremenrs, different programmers, different contractors,
+-redundant hardware mau duplicate, any faults if software is the same
+- N-version programming, shared requirements or diffrent implementations where voring ensures agreement
+-what about timing differences, comparison of continous values, wha is requirements wrong, performance of cost voting
+-exception handling emchanism
+- use run-time system to detect faults by raising exceptions or pass control to appropriate handler
+-propagate o outmost scope hen fail
+-recovery blocks: write acceptance test for modules, if it failes then eecut alternative
+-must be able to restore the states: take a sapshot/checkpoint, if failure then restore snapshot
+-control redundancy inclues: N-version programming, recovery blocks, exception handling
+-error detecting/correcting codes
+-chcksum agreements
+-no task scheduler but bare machine
+-restrict language subsets
+-memory jumps
+-overwrites
+-semantics
+-precision: interger, floating point, oeprations...
+-data typing issues
+-exception handling: is runtime recovery supported
+-memory monitoring: guard againt  memory depletion
+-separate compilation by typw checking agross modules
+
+software development
+-planning proces
+* coordinate development activities
+-software development processes
+* requirements proces
+* design process
+* coding process
+* integration proces
+-software integral	 processes
+* verification proces
+* configuration management
+* quality assurance
+8 certification liaison
+sofwtare developmnt key issues
+- traceability and lifecycle focus
+-designed engineering reps
+-recommended practices
+-design verification
+-design validation
+
+safety-critical software developemnt conclusions
+-software design by
+* hazard elimination
+* hazard reduction
+* hazard control
+- software implementation issues: dangerous practices and choice of safe languages
+Hardware Design: fault tolerant architectures
+-the basiscs of hardware  management
+*preferred pars list
+* vendor and device selection
+* critical devices, techniques and vendors
+* device specifications
+* sccreening
+* part obsolescence
+*FRACAS (Failure reporting, Analysis and corrective Action
+Types of faults:
+* Design faults: erroneous requirements, erroneous software, erroneous hardware
+* management/ regulators
+* Intermittent faults
+-fault occurs and recurs over time
+-fault connections can recur
+* Transient faults
+- fault occurs but may not recurr
+-electromagnetif interference
+* Permanent faults:
+- fault persists
+-physical damage to processor
+- fault models
+-hardware redundancy
+
+Software faults
+-specification errors
+-coding errors
+- tranaltion errors
+-runtime errors
+
+Active redundancy
+Standby redundancy
+Triple Modular redundancy
+
+Fault detection
+-runctionality checks
+* routine to check hardware works
+-signal comparisons
+* copare signal in same units
+-information redundancy
+* parity checking, M out of N codes
+-watchdog times
+* reset if system times out
+-bus monitoring
+* check processor is alive
+-power monitoring
+* time to respond if power is lost
+
+
+Validation and verification
+-Verifiction is about proof and proof is about argument and an argument must be correct but not a mathematical holy grail
+* does it meet the requirements
+- show that  implementation is same as functional requirements
+- too costly and time consuming all safety behaviour in specification
+verification supported by:
+* determinism (repeted tests)
+* separate safety-critical functions
+* well defined processes
+* simplucity and decoupling
+-Validation
+* are the requirements any good
+-during design
+* external review before commission
+* external review before commission
+-during implementation
+* additional constainrs discovered
+* additional requirements emmerges
+-during operations
+* were the asumptions valid
+* especialy environental factors
+Validation summary of key issues
+-who validates validator
+* external agenets must be approved
+-who validates validation
+* clarify links to certification
+- what happens if  validation fails
+* must have feedback mechanism
+* lnks to process improvement
+
+
+
+222
+228 mode confusion
+241 individul human error
+- slips, lapses and mistakes
+- rasmussen: skill, rules, knowledge
+- reason,generic error modelling
+- risk homeostasis
+242 what is error
+* deviation from optimal performance
+- very vieuw achieve the optimal
+* failure to achieve desired outcome
+-desired outcome can be unsafe
+* departure from intended plan
+-but environment may hange plan
+244 types of errors
+- slips
+* correct plan but incorrect action
+* more readily observed
+-lapses
+* correct plan but incorrect action
+* failure of memory so more covert
+-mistakes
+* incorrect plan
+* more complex, less understood
+-human error modeling 
+*analyse/distinguish error types
+247 Skills, rules and knowledge: SKR
+-signals
+*sensory data from environment
+* continuous variables
+*Gibson direct perception
+-signs
+* indicate state of the environment
+* with conventions for action
+* activate stored pater into action
+-symbols
+* can be formally processed
+8 related by convention to state
+248
+-skill-bases errors
+* variability if human performance
+-rule based errors
+* isclassification of situations
+* application fo wring rule
+* incorrect recoll of correct rule
+-knowdlegedebased errors
+* incomplete/incorrect knwoledge
+* worload and external constraints
+249
+- How do we account for slips ansd lapsesin SKR?
+can we distinguish more detailed error forms and more diverse error forms?
+Before an error is detected the operation is typically skill based
+250 Monitoring failures
+-Normal monitoring
+* typical berore error is spotted
+* preoprogrammed behaviours plus
+* attentional checks on progress
+-Attentional checks
+* are actions acording to plan?
+* willl plan still achieve outcome
+- Failure in the checks pften leads to a slip or a lapse
+-Reason also identifies overattention failues
+251 Problem solving failures
+-humans are pattern matchers
+* prefer to use rules
+* before effort of nkkowledge level
+-local state information
+* idexes stored problem hadling
+* schemata, frames, scripts
+-misapplication of good rules
+* incorrect situation assessment
+* over-generatisation of rules
+-application of bad rules
+* encoding deficiencies
+* action deficiencies
+252 knowledge based failures
+-thematic vagabonding
+* superficial analysis/ behaviour
+* fit from issues to issue
+-encysting
+* myopic attention to small details
+* metal-level issues may be ignored
+-reason
+* individual fails to recognise failure
+* does not face up to consequences
+
+254 GEMS: Error detection
+- dont try to elmininate errors but focus on their detection
+-self monitoring
+* correction of postural deviations
+* correction of motor responses
+* detecton of speech errors
+* detection of actin slips
+*detection of problem solving error
+-how do we support these activities
+* standard checks procedures
+* error hypotheses or suspicion
+* use simulation based training
+255
+256 
+258 GEMS: practical application
+-Eliminate error affoardancecs
+* increase visibility of task
+* show users constraints on action
+-Decision support systems
+* dont just present events
+* provide trend information
+* what if subjunctve displays
+* prostheses/ mental crushes
+-Memory aids for maintainance
+* often overlooked
+*aviation task cards
+* must maintain minatainance data
+-improve training
+* procedures or heuristics
+* simulator or training
+-error management
+* avoid high-risk strategies
+* high probability/cost of failure
+-ecological interface design
+* rasmussen and vincente
+8 10 guidelines
+-self-awaireness
+* when might i make and error
+* contentious
+261 GEMS outstanding issues
+-problem of intention
+* is an error a slip or lapse
+* is an error a mistake or intention
+-give an observations of error
+* afermath of accident/incident
+*guilt, insecurity, fear, anger
+-can we expect valid answers
+- can we make valid inferences
+263 Risk Homeostasis theory
+265 individual human error
+- slips, lapses and mistakes
+- rasmusses: skill, rules, knowledge
+- Reason: generic error modeling
+- Risk homeostasis
+266
+- workload
+-situation awareness
+-crew resource management
+267
+-high workload
+* stretches users resources
+-low workload
+* wasts user resources
+* can inhibit ability to respons
+-cannot be seen directly
+* is infered from behaviour
+269
+- various approaches
+* wickens on perceptual channels
+* kanwowiz on problem solving
+* hart on oerall experience
+- holistic vs atomic approaches
+* FAA a gestalt concept
+* cannot measure in isolation
+* many xperimentalists disagree
+-single-user vs team approaches
+* workload is dynamic
+* shared/distributed between a team
+* many previous studies ignore this
+270 Workload
+- how do we measure workload
+-subjective ratings
+* NASA TLX, task load index
+* consider individual differences
+-secondary tasks
+* performance on aditional task
+* obtrusive & difficult to generalise
+-physiological measures
+* heart rate, skin temperture
+* lost of data but hard to interpret
+271
+- how to reduce workload
+-function allocation
+* staticof dynamic allocation
+* to crew, systems or others (ATC)
+-Automation
+* but it can increase workload
+* of change nature
+-Crew recourswe management
+*crew coordination
+* deision making
+* situation awareness
+* more revew activities isnerted into standard operating procedures
 \cite{winceckCriticalToSafety}
 \cite{chambersHazardAnalysisSCS}
 \cite{rslater1998SCSAnalysis}

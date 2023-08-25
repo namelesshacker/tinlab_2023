@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  17 AUG 2023 10:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  25 AUG 2023 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,7 +1048,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write5
-runsystem(echo 'write18-test-2023817635'>"verslag.w18")...disabled (restricted)
+runsystem(echo 'write18-test-2023825970'>"verslag.w18")...disabled (restricted)
 .
 
 
@@ -2551,7 +2551,7 @@ Package xypdf Info: Line width: 0.43788pt on input line 104.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<plaatjes/logohr.png, id=146, 255.20343pt x 255.20343pt>
+<plaatjes/logohr.png, id=150, 255.20343pt x 255.20343pt>
 File: plaatjes/logohr.png Graphic file (type png)
 <use plaatjes/logohr.png>
 Package pdftex.def Info: plaatjes/logohr.png  used on input line 111.
@@ -2863,227 +2863,369 @@ nput line 502.
 Underfull \vbox (badness 1881) has occurred while \output is active []
 
  [8]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.563 https://users.ece.cmu.edu/~koopman/des_
+                                             s99/safety_critical/
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-LaTeX Warning: Citation `daucriticalsafetyconsider' on page 9 undefined on inpu
-t line 564.
-
-
-LaTeX Warning: Citation `nebulaassessment' on page 9 undefined on input line 56
-7.
-
-
-LaTeX Warning: Citation `dlrtabid' on page 9 undefined on input line 572.
-
-
-LaTeX Warning: Citation `knight2010SafetyCritical' on page 9 undefined on input
- line 573.
-
-
-LaTeX Warning: Citation `creavisafecritical' on page 9 undefined on input line 
-574.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.565 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 9 undefined on i
-nput line 575.
+Underfull \hbox (badness 10000) in paragraph at lines 561--565
+ []\T1/ptm/b/n/10.95 Safety cri-ti-cal sys-tems[] \T1/ptm/m/n/10.95 https://www
+.icheme.org/media/8976/xxiv-poster-
+ []
 
 
-LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 9 undefin
-ed on input line 576.
+Underfull \hbox (badness 10000) in paragraph at lines 561--565
+\T1/ptm/m/n/10.95 11.pdf https://crpit.scem.westernsydney.edu.au/confpapers/CRP
+ITV55Chambers.pdf
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--589
+Underfull \hbox (badness 10000) in paragraph at lines 561--565
+\T1/ptm/m/n/10.95 https://users.ece.cmu.edu/ koopman/des$[]\OT1/ptmcm/m/n/10.95
+ 99\OML/ptmcm/m/it/10.95 =safety[]ritical=WHATARESAFETY \OMS/pzccm/m/n/10.95 ^^
+@
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.584 ...du/~anderson/teach/comp790/papers/safety_
+                                                  critical_arch.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.586 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--586
+[]\T1/ptm/m/n/10.95 https://users.encs.concordia.ca/ ymz-hang/-cour-ses/re-li-a
+-bi-li-ty-/ICSE02Knight.pdf
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--586
+\T1/ptm/m/n/10.95 https://www.dcs.gla.ac.uk/ jo-hnson/-tea-ching/-sa-fe-ty-/s-l
+i-des/pt2.pdf https://www.dau.edu/tools/se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--586
+\T1/ptm/m/n/10.95 brainbook/Pages/Designhttps://daytonaero.com/wp-content/uploa
+ds/AC-17-01.pdf
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--586
+\T1/ptm/m/n/10.95 https://nebula.esa.int/content/assessment-methodology-certifi
+cation-safety-gnc-critical-space-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--586
+\T1/ptm/m/n/10.95 systems https://www.cs.unc.edu/ anderson/teach/comp790/papers
+/safety$[]\OML/ptmcm/m/it/10.95 ritical[]rch:pdfhttps \OT1/ptmcm/m/n/10.95 :
+ []
+
+[9]
+! Misplaced alignment tab character &.
+l.601 ...l/XRef/X2H-Xref-ViewHTML.asp?FileID=7144&
+                                                  lang=EN
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.602 ...t/en/desktopdefault.aspx/tabid-1360/1856_
+                                                  read-36215/
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.606 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--606
+[]\T1/ptm/m/n/10.95 https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dc
+bbc29d/EGBC-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--606
+\T1/ptm/m/n/10.95 Safety-Critical-Software-V1-0.pdf.aspx https://assembly.coe.i
+nt/nw/xml/XRef/X2H-Xref-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--606
+\T1/ptm/m/n/10.95 ViewHTML.asp?FileID=7144lang=EN https://www.dlr.de/ft/en/desk
+topdefault.aspx/tabid-
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 600--606
+\OML/ptmcm/m/it/10.95 future \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 of 
+\OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 safety \OMS/pzccm/m/n/10.95 ^^@ 
+\OML/ptmcm/m/it/10.95 critical \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 s
+ystems \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 in \OMS/pzccm/m/n/10.95 ^
+^@ \OML/ptmcm/m/it/10.95 the \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 eme
+rging \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 autonomous \OMS/pzccm/m/n/
+10.95 ^^@ \OML/ptmcm/m/it/10.95 world=https \OT1/ptmcm/m/n/10.95 :
+ []
+
+[10] [11]
+! Misplaced alignment tab character &.
+l.970 * obtrusive &
+                    difficult to generalise
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Citation `daucriticalsafetyconsider' on page 12 undefined on inp
+ut line 992.
+
+
+LaTeX Warning: Citation `nebulaassessment' on page 12 undefined on input line 9
+95.
+
+
+LaTeX Warning: Citation `dlrtabid' on page 12 undefined on input line 1000.
+
+
+LaTeX Warning: Citation `knight2010SafetyCritical' on page 12 undefined on inpu
+t line 1001.
+
+
+LaTeX Warning: Citation `creavisafecritical' on page 12 undefined on input line
+ 1002.
+
+
+LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 12 undefined on 
+input line 1003.
+
+
+LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 12 undefi
+ned on input line 1004.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1017
 []\T1/ptm/m/n/10.95 Volgens het on-der-zoek is er de af-ge-lo-pen ja-ren wel he
 t no-dige ge-�n-ves-teerd om
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--589
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1017
 \T1/ptm/m/n/10.95 de be-vei-li-ging op te schroe-ven, maar deze maat-re-ge-len 
 zijn nog on-vol-doende door-ge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--589
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1017
 \T1/ptm/m/n/10.95 voerd. https://www.nu.nl/internet/5814282/rekenkamer-waterwer
 ken-niet-goed-beveiligd-tegen-
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 583--589
+Underfull \hbox (badness 2042) in paragraph at lines 1011--1017
 \T1/ptm/m/n/10.95 cyberaanvallen.html [[]] rap-port Di-gi-tale dijk-ver-zwa-rin
 g: cy-ber-se-cu-rity en vi-tale wa-ter-wer-ken
  []
 
-[9]
 
-LaTeX Warning: Citation `kramerZeeland' on page 10 undefined on input line 590.
-
-
-
-LaTeX Warning: Citation `thkwaterwerken' on page 10 undefined on input line 601
+LaTeX Warning: Citation `kramerZeeland' on page 13 undefined on input line 1018
 .
 
 
-LaTeX Warning: Citation `rekenkamercybersecWater' on page 10 undefined on input
- line 604.
+LaTeX Warning: Citation `thkwaterwerken' on page 13 undefined on input line 102
+9.
 
 
-LaTeX Warning: Citation `hackerWaterwerk' on page 10 undefined on input line 60
-7.
+LaTeX Warning: Citation `rekenkamercybersecWater' on page 13 undefined on input
+ line 1032.
 
 
-LaTeX Warning: Citation `kramerZeeland' on page 10 undefined on input line 610.
+LaTeX Warning: Citation `hackerWaterwerk' on page 13 undefined on input line 10
+35.
+
+
+LaTeX Warning: Citation `kramerZeeland' on page 13 undefined on input line 1038
+.
+
+[13]
+
+LaTeX Warning: Citation `cybersecWaterwerk' on page 14 undefined on input line 
+1043.
+
+
+LaTeX Warning: Citation `cybersecWaterschappen' on page 14 undefined on input l
+ine 1046.
+
+
+LaTeX Warning: Citation `cybersecZuidHolland' on page 14 undefined on input lin
+e 1049.
+
+
+LaTeX Warning: Citation `waterwerkNED' on page 14 undefined on input line 1053.
 
 
 
-LaTeX Warning: Citation `cybersecWaterwerk' on page 10 undefined on input line 
-615.
+LaTeX Warning: Citation `veiligheidwaterland' on page 14 undefined on input lin
+e 1057.
 
 
-LaTeX Warning: Citation `cybersecWaterschappen' on page 10 undefined on input l
-ine 618.
+LaTeX Warning: Citation `humanTechpersuasiveTech' on page 14 undefined on input
+ line 1070.
 
 
-LaTeX Warning: Citation `cybersecZuidHolland' on page 10 undefined on input lin
-e 621.
+LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 14 unde
+fined on input line 1074.
 
 
-LaTeX Warning: Citation `waterwerkNED' on page 10 undefined on input line 625.
-
-[10]
-
-LaTeX Warning: Citation `veiligheidwaterland' on page 11 undefined on input lin
-e 629.
+LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 14 unde
+fined on input line 1076.
 
 
-LaTeX Warning: Citation `humanTechpersuasiveTech' on page 11 undefined on input
- line 642.
+LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 14 un
+defined on input line 1078.
 
 
-LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 11 unde
-fined on input line 646.
+LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 14 
+undefined on input line 1080.
 
 
-LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 11 unde
-fined on input line 648.
+LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 14 undefine
+d on input line 1083.
 
 
-LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 11 un
-defined on input line 650.
-
-
-LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 11 
-undefined on input line 652.
-
-
-LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 11 undefine
-d on input line 655.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 640--657
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 []\T1/ptm/m/n/10.95 persuasive tech-no-logy https://www.humanetech.com/youth/pe
 rsuasive-technology
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--657
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 \T1/ptm/m/n/10.95 [[]] https://www.minddistrict.com/blog/persuasive-technology-
 new-insights-in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--657
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 \T1/ptm/m/n/10.95 behavioural-change https://www.sciencedirect.com/book/9781558
 606432/persuasive-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--657
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 \T1/ptm/m/n/10.95 technology https://spectrum.ieee.org/how-persuasive-technolog
 y-can-change-your-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--657
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 \T1/ptm/m/n/10.95 habits [[]] https://www.frontiersin.org/articles/10.3389/frai
 .2020.00007/full [[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--657
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 \T1/ptm/m/n/10.95 https://psmag.com/environment/captology-fogg-invisible-manipu
 lative-power-persuasive-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--657
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1085
 \T1/ptm/m/n/10.95 technology-81301 [[]] https://www.makeuseof.com/what-is-persu
 asive-technology/ [[]]
  []
 
 
-LaTeX Warning: Citation `CivilEngineeringDivision' on page 11 undefined on inpu
-t line 658.
+LaTeX Warning: Citation `CivilEngineeringDivision' on page 14 undefined on inpu
+t line 1086.
 
-[11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-
-! LaTeX Error: Unicode character ≤ (U+2264)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.885 • malfunction installations : ≤
-                                          0,5% of the time
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ≤ (U+2264)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.886 • malfunction operating mechanisms : ≤
-                                                 0,5% of the time
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ≤ (U+2264)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.887 • malfunction operation : ≤
-                                      0,25% of the time
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
+[14]
 Underfull \vbox (badness 1881) has occurred while \output is active []
 
- [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [15]
+[16]
 
- [14]
-[15] [16
+! LaTeX Error: Unicode character ≤ (U+2264)
+               not set up for use with LaTeX.
 
-] [17] <xymatrix
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1373 • malfunction installations : ≤
+                                           0,5% of the time
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ≤ (U+2264)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1374 • malfunction operating mechanisms : ≤
+                                                  0,5% of the time
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ≤ (U+2264)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1375 • malfunction operation : ≤
+                                       0,25% of the time
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[17] [18] [19] [20] [21] [22
+
+] [23] <xymatrix
 Runaway argument?
 {*+<1pc>[o][F-]{q_0} \ar @(l,l)[]^<<<<{start} \ar @/^/[r]^0 \ar @/_/[\ETC.
 ! Paragraph ended before \next@ was complete.
 <to be read again> 
                    \par 
-l.1149 
+l.1696 
        
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3111,7 +3253,7 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1176 	\begin{pgfonlayer}{background}
+l.1723 	\begin{pgfonlayer}{background}
                                       
 (That was another \errmessage.)
 
@@ -3122,7 +3264,7 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1177 ...ded corners,fill=blue!20] (6.north west)
+l.1724 ...ded corners,fill=blue!20] (6.north west)
                                                    -- (8.north east) -- (t.s...
 (That was another \errmessage.)
 
@@ -3133,7 +3275,7 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1177 ...lue!20] (6.north west) -- (8.north east)
+l.1724 ...lue!20] (6.north west) -- (8.north east)
                                                    -- (t.south east)--cycle;
 (That was another \errmessage.)
 
@@ -3144,19 +3286,19 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1177 ...est) -- (8.north east) -- (t.south east)
+l.1724 ...est) -- (8.north east) -- (t.south east)
                                                   --cycle;
 (That was another \errmessage.)
 
 
-! LaTeX Error: \begin{tikzpicture} on input line 1159 ended by \end{pgfonlayer}
+! LaTeX Error: \begin{tikzpicture} on input line 1706 ended by \end{pgfonlayer}
 .
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1178 	\end{pgfonlayer}
+l.1725 	\end{pgfonlayer}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3165,7 +3307,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 \pgfsys@call@end ->\pgfsys@end@save 
                                     \pgfsys@endscope 
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3176,7 +3318,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \endpgfscope ...pgflinewidth =\pgfscope@linewidth 
                                                   \global \let \pgf@strokeco...
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3187,7 +3329,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \global 
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3196,7 +3338,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \global 
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -3208,7 +3350,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3219,7 +3361,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \endpgfpicture ...globally \endgroup \hss \egroup 
                                                   \pgf@restore@layerlist@fro...
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3230,7 +3372,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3241,7 +3383,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \endpgfpicture ...dpicture \endgroup \hss \egroup 
                                                   \pgfsys@typesetpicturebox ...
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3256,7 +3398,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3265,7 +3407,7 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3276,21 +3418,21 @@ my insertion and my current dilemma will both disappear.
 ! Xy-pic error: An \xy environment is not closed correctly..
 \xyerror@ ...#2}\fi \errmessage {Xy-pic error: #1}
                                                   }
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 I expected \string \endxy . You probably have an umatched {} grouping.
 
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.1179 \end{tikzpicture}
+l.1726 \end{tikzpicture}
                         
 Things are pretty mixed up, but I think the worst is over.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3298,7 +3440,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3306,7 +3448,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3314,7 +3456,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3322,7 +3464,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3330,7 +3472,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3338,7 +3480,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3346,7 +3488,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3354,7 +3496,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3362,7 +3504,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3370,7 +3512,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3378,7 +3520,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3386,7 +3528,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3394,7 +3536,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3402,7 +3544,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3410,7 +3552,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3418,7 +3560,7 @@ not appear between \csname and \endcsname.
 ! Argument of \language@active@arg" has an extra }.
 <inserted text> 
                 \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3431,7 +3573,7 @@ Runaway argument?
 ! Paragraph ended before \language@active@arg" was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3442,7 +3584,7 @@ Runaway argument?
 ! Paragraph ended before \pgfkeys@addpath was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3451,7 +3593,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3459,7 +3601,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3467,7 +3609,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3477,7 +3619,7 @@ Runaway argument?
 ! Paragraph ended before \pgfkeys@splitter was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3488,7 +3630,7 @@ Missing character: There is no / in font nullfont!
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3501,17 +3643,17 @@ db@x \hbox {label}\par ' and I am going to ignore it. Perhaps you misspelled it
 See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help
 ...
-l.1183 I think the culprit is a tikzcd arrow in cell 1-1.
+l.1730 I think the culprit is a tikzcd arrow in cell 1-1.
 \errmessage ...currentrow -\tikzcd@currentcolumn }
                                                   
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 (That was another \errmessage.)
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3519,7 +3661,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3527,7 +3669,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3535,7 +3677,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3543,7 +3685,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3551,7 +3693,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3559,7 +3701,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3567,7 +3709,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3575,7 +3717,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3583,7 +3725,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3591,7 +3733,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3599,7 +3741,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3607,7 +3749,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3615,7 +3757,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3623,7 +3765,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3631,7 +3773,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3650,14 +3792,14 @@ Missing character: There is no w in font nullfont!
 ! Extra \endcsname.
 \pgfutil@doifcolorelse ...ng \color@ #1\endcsname 
                                                   \relax \let \pgf@next =\pg...
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3676,7 +3818,7 @@ Missing character: There is no w in font nullfont!
 ! Extra \endcsname.
 <argument> ...sname pgf@sh@s@\tikz@key \endcsname 
                                                   \relax \pgfkeys {/errors/u...
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -3688,10 +3830,10 @@ lled it.
 See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help
 ...
-l.1183 I think the culprit is a tikzcd arrow in cell 1-1.
+l.1730 I think the culprit is a tikzcd arrow in cell 1-1.
 \errmessage ...currentrow -\tikzcd@currentcolumn }
                                                   
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 (That was another \errmessage.)
 
@@ -3701,10 +3843,10 @@ l.1186 \end{tikzcd}
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help
 ...
-l.1183 I think the culprit is a tikzcd arrow in cell 1-1.
+l.1730 I think the culprit is a tikzcd arrow in cell 1-1.
 \errmessage ...currentrow -\tikzcd@currentcolumn }
                                                   
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3712,7 +3854,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3720,7 +3862,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3728,7 +3870,7 @@ not appear between \csname and \endcsname.
 ! Argument of \@secondoffive has an extra }.
 <inserted text> 
                 \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3741,7 +3883,7 @@ Runaway argument?
 ! Paragraph ended before \@secondoffive was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3753,10 +3895,10 @@ My plan is to forget the whole thing and hope for the best.
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help
 ...
-l.1183 I think the culprit is a tikzcd arrow in cell 1-1.
+l.1730 I think the culprit is a tikzcd arrow in cell 1-1.
 \errmessage ...currentrow -\tikzcd@currentcolumn }
                                                   
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3764,7 +3906,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3772,7 +3914,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3780,7 +3922,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3788,7 +3930,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3796,7 +3938,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3804,7 +3946,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3812,7 +3954,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3820,7 +3962,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3828,7 +3970,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3836,7 +3978,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3844,7 +3986,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3852,7 +3994,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3860,7 +4002,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3868,7 +4010,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3876,7 +4018,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3884,7 +4026,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3895,10 +4037,10 @@ not appear between \csname and \endcsname.
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help
 ...
-l.1184 I think the culprit is a tikzcd arrow in cell 2-1.
+l.1731 I think the culprit is a tikzcd arrow in cell 2-1.
 \errmessage ...currentrow -\tikzcd@currentcolumn }
                                                   
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3906,7 +4048,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3914,7 +4056,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \times 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3922,7 +4064,7 @@ not appear between \csname and \endcsname.
 ! Argument of \@secondoffive has an extra }.
 <inserted text> 
                 \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3935,7 +4077,7 @@ Runaway argument?
 ! Paragraph ended before \@secondoffive was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3947,10 +4089,10 @@ My plan is to forget the whole thing and hope for the best.
 See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help
 ...
-l.1184 I think the culprit is a tikzcd arrow in cell 2-1.
+l.1731 I think the culprit is a tikzcd arrow in cell 2-1.
 \errmessage ...currentrow -\tikzcd@currentcolumn }
                                                   
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3958,7 +4100,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Argument of \language@active@arg" has an extra }.
 <inserted text> 
                 \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3971,7 +4113,7 @@ Runaway argument?
 ! Paragraph ended before \language@active@arg" was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3982,7 +4124,7 @@ Runaway argument?
 ! Paragraph ended before \pgfkeys@addpath was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3991,7 +4133,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3999,7 +4141,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -4007,7 +4149,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \protect 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -4017,7 +4159,7 @@ Runaway argument?
 ! Paragraph ended before \pgfkeys@splitter was complete.
 <to be read again> 
                    \par 
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -4033,200 +4175,200 @@ spelled it.
 See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help
 ...
-l.1184 I think the culprit is a tikzcd arrow in cell 2-3.
+l.1731 I think the culprit is a tikzcd arrow in cell 2-3.
 \errmessage ...currentrow -\tikzcd@currentcolumn }
                                                   
-l.1186 \end{tikzcd}
+l.1733 \end{tikzcd}
                    \]
 (That was another \errmessage.)
 
 
-Overfull \hbox (75.89026pt too wide) detected at line 1201
+Overfull \hbox (75.89026pt too wide) detected at line 1748
 []
  []
 
 
-Overfull \hbox (124.54742pt too wide) in paragraph at lines 1261--1262
+Overfull \hbox (124.54742pt too wide) in paragraph at lines 1808--1809
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [24
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
-[20]
+ [25]
+[26]
 
-LaTeX Warning: Citation `clarke2000Modelchecking21' on page 21 undefined on inp
-ut line 1436.
+LaTeX Warning: Citation `clarke2000Modelchecking21' on page 27 undefined on inp
+ut line 1983.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking212' on page 21 undefined on in
-put line 1437.
+LaTeX Warning: Citation `clarke2000Modelchecking212' on page 27 undefined on in
+put line 1984.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking223' on page 21 undefined on in
-put line 1438.
+LaTeX Warning: Citation `clarke2000Modelchecking223' on page 27 undefined on in
+put line 1985.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking31' on page 21 undefined on inp
-ut line 1439.
+LaTeX Warning: Citation `clarke2000Modelchecking31' on page 27 undefined on inp
+ut line 1986.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking32' on page 21 undefined on inp
-ut line 1440.
+LaTeX Warning: Citation `clarke2000Modelchecking32' on page 27 undefined on inp
+ut line 1987.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking33' on page 21 undefined on inp
-ut line 1441.
+LaTeX Warning: Citation `clarke2000Modelchecking33' on page 27 undefined on inp
+ut line 1988.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking411' on page 21 undefined on in
-put line 1442.
+LaTeX Warning: Citation `clarke2000Modelchecking411' on page 27 undefined on in
+put line 1989.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking43' on page 21 undefined on inp
-ut line 1443.
+LaTeX Warning: Citation `clarke2000Modelchecking43' on page 27 undefined on inp
+ut line 1990.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking63' on page 21 undefined on inp
-ut line 1444.
+LaTeX Warning: Citation `clarke2000Modelchecking63' on page 27 undefined on inp
+ut line 1991.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking64' on page 21 undefined on inp
-ut line 1445.
+LaTeX Warning: Citation `clarke2000Modelchecking64' on page 27 undefined on inp
+ut line 1992.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking661' on page 21 undefined on in
-put line 1446.
+LaTeX Warning: Citation `clarke2000Modelchecking661' on page 27 undefined on in
+put line 1993.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking91' on page 21 undefined on inp
-ut line 1447.
+LaTeX Warning: Citation `clarke2000Modelchecking91' on page 27 undefined on inp
+ut line 1994.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking102' on page 21 undefined on in
-put line 1448.
+LaTeX Warning: Citation `clarke2000Modelchecking102' on page 27 undefined on in
+put line 1995.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking11' on page 21 undefined on inp
-ut line 1449.
+LaTeX Warning: Citation `clarke2000Modelchecking11' on page 27 undefined on inp
+ut line 1996.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking122' on page 21 undefined on in
-put line 1450.
+LaTeX Warning: Citation `clarke2000Modelchecking122' on page 27 undefined on in
+put line 1997.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking123' on page 21 undefined on in
-put line 1451.
+LaTeX Warning: Citation `clarke2000Modelchecking123' on page 27 undefined on in
+put line 1998.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking132' on page 21 undefined on in
-put line 1452.
+LaTeX Warning: Citation `clarke2000Modelchecking132' on page 27 undefined on in
+put line 1999.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 21 undefined on i
-nput line 1453.
+LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 27 undefined on i
+nput line 2000.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking152' on page 21 undefined on in
-put line 1454.
+LaTeX Warning: Citation `clarke2000Modelchecking152' on page 27 undefined on in
+put line 2001.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking171' on page 21 undefined on in
-put line 1455.
+LaTeX Warning: Citation `clarke2000Modelchecking171' on page 27 undefined on in
+put line 2002.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking172' on page 21 undefined on in
-put line 1456.
+LaTeX Warning: Citation `clarke2000Modelchecking172' on page 27 undefined on in
+put line 2003.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking173' on page 21 undefined on in
-put line 1457.
+LaTeX Warning: Citation `clarke2000Modelchecking173' on page 27 undefined on in
+put line 2004.
 
 
-LaTeX Warning: Citation `audioSemanticsBengtsson' on page 21 undefined on input
- line 1458.
+LaTeX Warning: Citation `audioSemanticsBengtsson' on page 27 undefined on input
+ line 2005.
 
 
-LaTeX Warning: Citation `guidingAutomataBberm' on page 21 undefined on input li
-ne 1459.
+LaTeX Warning: Citation `guidingAutomataBberm' on page 27 undefined on input li
+ne 2006.
 
 
-LaTeX Warning: Citation `gearTransitionLindahl1' on page 21 undefined on input 
-line 1460.
+LaTeX Warning: Citation `gearTransitionLindahl1' on page 27 undefined on input 
+line 2007.
 
 
-LaTeX Warning: Citation `gearTransitionLindahl2' on page 21 undefined on input 
-line 1461.
+LaTeX Warning: Citation `gearTransitionLindahl2' on page 27 undefined on input 
+line 2008.
 
 
-LaTeX Warning: Citation `martinelliScada' on page 21 undefined on input line 14
-62.
+LaTeX Warning: Citation `martinelliScada' on page 27 undefined on input line 20
+09.
 
 
-LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 21 undefined
- on input line 1463.
+LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 27 undefined
+ on input line 2010.
 
 
-LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 21 undefined
- on input line 1464.
+LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 27 undefined
+ on input line 2011.
 
 
-LaTeX Warning: Citation `huangVerficationStoch' on page 21 undefined on input l
-ine 1465.
+LaTeX Warning: Citation `huangVerficationStoch' on page 27 undefined on input l
+ine 2012.
 
 
-LaTeX Warning: Citation `bengtssonUppaalVerification' on page 21 undefined on i
-nput line 1466.
+LaTeX Warning: Citation `bengtssonUppaalVerification' on page 27 undefined on i
+nput line 2013.
 
 
-LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 21 undefined on
- input line 1467.
+LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 27 undefined on
+ input line 2014.
 
 
-LaTeX Warning: Citation `alexandreUppaalDefinition' on page 21 undefined on inp
-ut line 1468.
+LaTeX Warning: Citation `alexandreUppaalDefinition' on page 27 undefined on inp
+ut line 2015.
 
 
-LaTeX Warning: Citation `behzadEvalQOS' on page 21 undefined on input line 1469
+LaTeX Warning: Citation `behzadEvalQOS' on page 27 undefined on input line 2016
 .
 
 
-LaTeX Warning: Citation `behzadVariablesQoS' on page 21 undefined on input line
- 1470.
+LaTeX Warning: Citation `behzadVariablesQoS' on page 27 undefined on input line
+ 2017.
 
 
-LaTeX Warning: Citation `alur' on page 21 undefined on input line 1471.
+LaTeX Warning: Citation `alur' on page 27 undefined on input line 2018.
 
 
-LaTeX Warning: Citation `alurDenseRealTime' on page 21 undefined on input line 
-1472.
+LaTeX Warning: Citation `alurDenseRealTime' on page 27 undefined on input line 
+2019.
 
 
-LaTeX Warning: Citation `alurSystemClok' on page 21 undefined on input line 147
-3.
+LaTeX Warning: Citation `alurSystemClok' on page 27 undefined on input line 202
+0.
 
 
-LaTeX Warning: Citation `alurModelHybrid' on page 21 undefined on input line 14
-74.
+LaTeX Warning: Citation `alurModelHybrid' on page 27 undefined on input line 20
+21.
 
 
-LaTeX Warning: Citation `rijksoverheidSluizen' on page 21 undefined on input li
-ne 1475.
+LaTeX Warning: Citation `rijksoverheidSluizen' on page 27 undefined on input li
+ne 2022.
 
 
-LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 21 undefined o
-n input line 1476.
+LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 27 undefined o
+n input line 2023.
 
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1482 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
+l.2029 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
                                                   $ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4237,7 +4379,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1483 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
+l.2030 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4248,7 +4390,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1484 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
+l.2031 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4259,7 +4401,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \piand 
                        
-l.1487 ...htarrow$ s is the first state of $\piand
+l.2034 ...htarrow$ s is the first state of $\piand
                                                   $ M, s $\models$ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4270,7 +4412,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1488 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
+l.2035 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
                                                   $ g1\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4281,7 +4423,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \bugcup 
                         
-l.1494 M, s $\models$ g1 $\bugcup
+l.2041 M, s $\models$ g1 $\bugcup
                                  $ g2 $\Leftrightarrow$ ~  there  ~ exists  ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4292,7 +4434,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1496 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
+l.2043 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
                                                   $ g1 then M,$\pi^{j}$ $\mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4301,20 +4443,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1479--1497
+Underfull \hbox (badness 10000) in paragraph at lines 2026--2044
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1479--1497
+Underfull \hbox (badness 10000) in paragraph at lines 2026--2044
 
  []
 
-[21
+[27
 
-] [22]) (discussie.tex [23
+] [28]) (discussie.tex [29
 
-]) (bronnen.tex [24
+]) (bronnen.tex [30
 
 ]
 Overfull \hbox (270.53256pt too wide) in paragraph at lines 14--16
@@ -4401,7 +4543,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 /ptm/m/n/10.95 re-pre-sen-t-in-gand using non-func-ti-o-nal
  []
 
-[25
+[31
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
@@ -4518,7 +4660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 2019 / 03 /
  []
 
-[26]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 [][]$\T1/pcr/m/n/10.95 https : / / www . cyber . nj . gov / threat-[]center / t
 hreat-[]profiles / ics-[]malware-[]variants /
@@ -4582,7 +4724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
  / 2017 / 06 /
  []
 
-[27]
+[33]
 Overfull \hbox (203.51889pt too wide) in paragraph at lines 177--178
 [][]$\T1/pcr/m/n/10.95 https : / / www . cybersecurityintelligence . com / blog
  / attack-[]on-[]ukraines-[]power-[]grid-[]targeted-[]transmission-[]stations-[
@@ -4658,7 +4800,7 @@ Overfull \hbox (40.56918pt too wide) in paragraph at lines 193--194
 ning-[]unprecedented-[]hack-[]ukraines-[]power-[]grid/$[][] 
  []
 
-[28
+[34
 pdfTeX warning (ext4): destination with the same identifier (name{cite.desarnau
 d2017cyberattacks}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -4745,7 +4887,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--237
 sluizen _ in _ of _ bij _ een _ waterkering _ -[] _
  []
 
-[29
+[35
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -4939,7 +5081,7 @@ erstallig-[]onderhoud-[]wachtplaatsen-[]bruggen-[]en-[]sluizen-[]zuid-[]holland
 -[]zorgelijk/$[][] 
  []
 
-[30
+[36
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -5078,7 +5220,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.280 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://people.physics.carleton.ca...
 
-LaTeX Warning: Citation `' on page 31 undefined on input line 281.
+LaTeX Warning: Citation `' on page 37 undefined on input line 281.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 280--282
@@ -5094,9 +5236,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.283 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=-7...
 
-LaTeX Warning: Citation `' on page 31 undefined on input line 284.
+LaTeX Warning: Citation `' on page 37 undefined on input line 284.
 
-[31]
+[37]
 Underfull \hbox (badness 5147) in paragraph at lines 286--288
 [][]$\T1/pcr/m/n/10.95 https : / / www . bugsnag . com / blog / bug-[]day-[]rac
 e-[]condition-[]therac-[]25$[][] \T1/ptm/m/n/10.95 kort ar-ti-kel met
@@ -5116,7 +5258,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.294 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://thedailywtf.com/articles/t...
 
-LaTeX Warning: Citation `' on page 32 undefined on input line 295.
+LaTeX Warning: Citation `' on page 38 undefined on input line 295.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
@@ -5126,7 +5268,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.297 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.computer.org/csdl/maga...
 
-LaTeX Warning: Citation `' on page 32 undefined on input line 298.
+LaTeX Warning: Citation `' on page 38 undefined on input line 298.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 297--300
@@ -5158,7 +5300,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 316--319
 ndouts / Therac / Therac _ 2 . html$[][] \T1/ptm/m/n/10.95 case study
  []
 
-[32]
+[38]
 Underfull \hbox (badness 6493) in paragraph at lines 319--321
 [][]$\T1/pcr/m/n/10.95 http : / / users . csc . calpoly . edu / ~jdalbey / SWE 
 / Papers / THERAC25 . html$[][] \T1/ptm/m/n/10.95 les-sons lear-ned.
@@ -5202,9 +5344,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.350 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.cs.colostate.edu/~biem...
 
-LaTeX Warning: Citation `' on page 33 undefined on input line 351.
+LaTeX Warning: Citation `' on page 39 undefined on input line 351.
 
-[33]
+[39]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5212,7 +5354,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.354 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.cs.ucf.edu/~dcm/Teachi...
 
-LaTeX Warning: Citation `' on page 34 undefined on input line 355.
+LaTeX Warning: Citation `' on page 40 undefined on input line 355.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 354--361
@@ -5228,7 +5370,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.371 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://hci.cs.siue.edu/NSF/Files/...
 
-LaTeX Warning: Citation `' on page 34 undefined on input line 372.
+LaTeX Warning: Citation `' on page 40 undefined on input line 372.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 371--374
@@ -5244,7 +5386,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.374 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.thinkreliability.com/I...
 
-LaTeX Warning: Citation `' on page 34 undefined on input line 375.
+LaTeX Warning: Citation `' on page 40 undefined on input line 375.
 
 
 Underfull \hbox (badness 2564) in paragraph at lines 374--377
@@ -5313,7 +5455,7 @@ Underfull \hbox (badness 1688) in paragraph at lines 423--425
 9 / 04 / excellent _ analy . html$[][] \T1/ptm/m/n/10.95 fout in de
  []
 
-[34]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 425--427
 [][]$\T1/pcr/m/n/10.95 https : / / www . forbes . com / sites / georgeavetisov 
 / 2019 / 03 / 19 /
@@ -5405,7 +5547,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--452
 events / news /
  []
 
-[35]
+[41]
 Overfull \hbox (97.91391pt too wide) in paragraph at lines 454--457
 [][]$\T1/pcr/m/n/10.95 https : / / www . flightglobal . com / airframers / boei
 ng-[]delays-[]737-[]max-[]10-[]deliveries-[]two-[]years-[]to-[]2023 /
@@ -5506,7 +5648,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--483
 ]09-[]2020$[][] \T1/ptm/m/n/10.95 Cul-tuur-ver-an-de-ring, de-
  []
 
-[36]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 483--485
 [][]$\T1/pcr/m/n/10.95 https : / / www . aerospacetestinginternational . com / 
 features /
@@ -5593,7 +5735,7 @@ nd-[]why-[]software-[]engineers-[]should-[]pay-[]attention-[]a041290994bd$[][]
 
  []
 
-[37]
+[43]
 Overfull \hbox (333.96176pt too wide) in paragraph at lines 507--509
 [][]$\T1/pcr/m/n/10.95 https : / / www . marketscreener . com / news / latest /
  China-[]studies-[]Boeing-[]737-[]MAX-[]recertification-[]wants-[]safety-[]conc
@@ -5732,7 +5874,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.550 			\bibitem{ID}
                       ... \LaTeX:\\ \url{https://www.reachingoutacrossdurham...
-[38]
+[44]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5869,7 +6011,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 579--581
 book-[]2015 / forum-[]the-[]abyss-[] % E5 %
  []
 
-[39]
+[45]
 Overfull \hbox (6.56235pt too wide) in paragraph at lines 582--584
 [][]$\T1/pcr/m/n/10.95 https : / / www . cicm . org . my / images / articles / 
 CICM-[]Article-[]on-[]Tianjin-[]Blast-[]Oct2015 .
@@ -5979,7 +6121,7 @@ Overfull \hbox (62.90707pt too wide) in paragraph at lines 606--607
 nspections-[]in-[]china-[]follow-[]tianjin-[]explosion$[][] 
  []
 
-[40]
+[46]
 Overfull \hbox (147.67416pt too wide) in paragraph at lines 607--608
 [][]$\T1/pcr/m/n/10.95 https : / / www . thehindu . com / news / international 
 / investigation-[]begun-[]into-[]china-[]gas-[]explosion-[]as-[]toll-[]rises /
@@ -6129,7 +6271,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.644 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.wsj.com/articles/BL-CJ...
-[41]
+[47]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6276,7 +6418,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--679
  2f2015 % 2f08 % 2f12 %
  []
 
-[42]
+[48]
 Overfull \hbox (296.87045pt too wide) in paragraph at lines 681--682
 [][]$\T1/pcr/m/n/10.95 https : / / www . businessinsider . com / the-[]chemical
 -[]explosion-[]in-[]china-[]killed-[]more-[]than-[]100-[]people-[]and-[]the-[]d
@@ -6346,7 +6488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 711--713
 []defects /
  []
 
-[43]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 713--716
 [][]$\T1/pcr/m/n/10.95 https : / / cio . economictimes . indiatimes . com / new
 s / digital-[]security /
@@ -6433,7 +6575,7 @@ Overfull \hbox (19.2313pt too wide) in paragraph at lines 746--752
 e-[]model-[]3-[]production-[]report-[]1846353323$[][]
  []
 
-[44]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 752--754
 [][]$\T1/pcr/m/n/10.95 https : / / www . bloomberg . com / graphics / 2019-[]te
 sla-[]model-[]3-[]survey / autopilot . html$[][]
@@ -6550,7 +6692,7 @@ Overfull \hbox (18.7313pt too wide) in paragraph at lines 779--780
 l-[]y-[]ev-[]safety-[]quality-[]issues-[]problems/$[][] 
  []
 
-[45]
+[51]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6747,7 +6889,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 798--802
 lligence-[]and-[]big-[]data / ?sh =
  []
 
-[46]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 807--808
 [][]$\T1/pcr/m/n/10.95 https : / / www . cnn . com / 2021 / 04 / 21 / tech / te
 sla-[]full-[]self-[]driving-[]launch / index .
@@ -6830,7 +6972,7 @@ Overfull \hbox (47.15366pt too wide) in paragraph at lines 825--826
 esla-[]autopilot-[]and-[]how-[]adas-[]will-[]save-[]lives$[][] 
  []
 
-[47]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 827--828
 [][]$\T1/pcr/m/n/10.95 https : / / static . tti . tamu . edu / conferences / tr
 affic-[]safety19 / presentations / lunch /
@@ -6994,7 +7136,7 @@ Overfull \hbox (75.57602pt too wide) in paragraph at lines 846--847
 a-[]crashes-[]report-[]new-[]orders-[]in-[]china-[]free-[]falling/$[][] 
  []
 
-[48]
+[54]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7155,7 +7297,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 862--863
 021 / 04 / 18 /
  []
 
-[49]
+[55]
 Overfull \hbox (359.29965pt too wide) in paragraph at lines 864--865
 [][]$\T1/pcr/m/n/10.95 https : / / www . firstpost . com / tech / news-[]analys
 is / tesla-[]model-[]s-[]involved-[]in-[]fatal-[]crash-[]in-[]the-[]us-[]did-[]
@@ -7257,7 +7399,7 @@ Overfull \hbox (56.3226pt too wide) in paragraph at lines 915--917
 ommunicatie-[]na-[]vliegramp-[]vertoonde-[]gebreken$[][]
  []
 
-[50]
+[56]
 Overfull \hbox (113.66733pt too wide) in paragraph at lines 935--936
 [][]$\T1/pcr/m/n/10.95 https : / / joop . bnnvara . nl / nieuws / rapport-[]haa
 lbaarheid-[]en-[]houdbaarheid-[]van-[]mali-[]missie-[]twijfelachtig$[][] 
@@ -7345,7 +7487,7 @@ militairen-[]vrijuit-[]hij-[]probeerde-[]zijn-[]leven-[]te-[]redden~afe4c7a0/$[
 ][] 
  []
 
-[51]
+[57]
 Overfull \hbox (142.58969pt too wide) in paragraph at lines 992--997
 [][]$\T1/pcr/m/n/10.95 https : / / www . onderzoeksraad . nl / nl / page / 392 
 / brand-[]cellencomplex-[]schiphol-[]oost-[]nacht-[]van-[]26-[]op-[]27-[]oktobe
@@ -7408,7 +7550,7 @@ Overfull \hbox (73.57602pt too wide) in paragraph at lines 1031--1032
 evergoeding-[]voor-[]verdachte-[]schipholbrand~a6c7c51d /
  []
 
-[52]
+[58]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7529,7 +7671,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1070 							\bibitem{ID}
                            ... \LaTeX:\\ \url{https://permanent.fdlp.gov/gpo...
-[53]
+[59]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7665,7 +7807,7 @@ Overfull \hbox (170.51205pt too wide) in paragraph at lines 1107--1108
 eleden$[][] 
  []
 
-[54]
+[60]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7729,7 +7871,7 @@ Underfull \hbox (badness 4647) in paragraph at lines 1143--1149
 []in-[]tsjernobyl-[]gaat-[]door$[][] \T1/ptm/m/n/10.95 pern-si-oen-
  []
 
-[55
+[61
 pdfTeX warning (ext4): destination with the same identifier (name{cite.aviation
 SLMCrashAccidentInvestigation}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -7815,7 +7957,7 @@ Underfull \hbox (badness 4229) in paragraph at lines 1187--1194
 e-cen-sie Fo-tos en be-re-ke-nin-gen ont-man-te-ling en
  []
 
-[56]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 1194--1201
 [][]$\T1/pcr/m/n/10.95 https : / / magazines . autoriteitnvs . nl / nieuwsbrief
 -[]anvs / 2019 / 02 /
@@ -7898,7 +8040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1280--1281
 671061 _ Attacking _ IEC-[]60870-[]5-[]104 _
  []
 
-[57]
+[63]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7968,7 +8110,7 @@ Overfull \hbox (61.90707pt too wide) in paragraph at lines 1300--1301
  docs / 1900-[]bedieningstijden-[]groningen-[]drenthe .
  []
 
-[58]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 1302--1303
 [][]$\T1/pcr/m/n/10.95 https : / / www . bhic . nl / media / document / file / 
 rien-[]biemans-[]sluis-[]en-[]stuw-[]bij-[]lith .
@@ -8072,7 +8214,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1314--1331
 / 2014 / 05 /
  []
 
-[59]
+[65]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8202,7 +8344,7 @@ Overfull \hbox (8.76712pt too wide) in paragraph at lines 1397--1398
 0809 / slides / TheUppaalModelChecker-[]Julian .
  []
 
-[60]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 1410--1411
 [][]$\T1/pcr/m/n/10.95 http : / / www . cs . ru . nl / ~fvaan / PV / what _ is 
 _ a _ good _ model . html# : ~ : text = A % 20good % 20model %
@@ -8315,7 +8457,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1466 						\bibitem{ID}
                           ... \LaTeX:\\ \url{https://bdtechtalks.com/2020/07...
-[61]
+[67]
 Underfull \hbox (badness 10000) in paragraph at lines 1474--1475
 [][]$\T1/pcr/m/n/10.95 https : / / safety-[]work . org / fileadmin / safety-[]w
 ork / articles / Verwechslung _ von _
@@ -8394,7 +8536,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1495--1496
 ages / Design % 20Considerations /
  []
 
-[62]
+[68]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8465,7 +8607,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1513 						\bibitem{ID}
                           ... \LaTeX:\\ \url{http://aerossurance.com/safety-...
-[63]
+[69]
 Overfull \hbox (112.28763pt too wide) in paragraph at lines 1516--1517
 [][]$\T1/pcr/m/n/10.95 https : / / aviation . stackexchange . com / questions /
  46677 / what-[]are-[]the-[]design-[]parameters-[]for-[]airliner-[]safety$[][] 
@@ -8571,7 +8713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1532--1533
 uploads / 2019 / 01 /
  []
 
-[64]
+[70]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8712,7 +8854,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1565--1566
  . com / opinion / editorials /
  []
 
-[65]
+[71]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8844,7 +8986,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1581--1582
  / arqs / bra _ arquivos /
  []
 
-[66]
+[72]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8986,7 +9128,7 @@ Overfull \hbox (22.93607pt too wide) in paragraph at lines 1619--1620
 []737-[]max-[]will-[]one-[]safest-[]aircraft-[]history/$[][] 
  []
 
-[67]
+[73]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.boeing73
 7maxdisplay}) has been already used, duplicate ignored
 <to be read again> 
@@ -9152,7 +9294,7 @@ Overfull \hbox (86.36526pt too wide) in paragraph at lines 1662--1663
  
  []
 
-[68]
+[74]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.beningo0
 2052019boeinglessons}) has been already used, duplicate ignored
 <to be read again> 
@@ -9321,7 +9463,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.koenig11
                    \relax 
 l.1704 ...	\bibitem{koenig11122019737crashesnofix}
                                                    ... \LaTeX:\\ \url{https:...
-[69]
+[75]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.dohertyl
 indeman15032019737problems}) has been already used, duplicate ignored
 <to be read again> 
@@ -9490,12 +9632,12 @@ Overfull \hbox (227.47708pt too wide) in paragraph at lines 1738--1741
 h-[]metal-[]fatigue-[]-[]ntsb/$[][]
  []
 
-) (evaluatie.tex [70]) [71
+) (evaluatie.tex [76]) [77
 
 ]
 \openout2 = `bijlage2.aux'.
 
- (bijlage2.tex) [72
+ (bijlage2.tex) [78
 
 
 ]
@@ -9511,7 +9653,7 @@ Overfull \hbox (4.104pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
-[73
+[79
 
 
 
@@ -9575,24 +9717,24 @@ Overfull \hbox (4.104pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
-) [74]
+) [80]
 \openout2 = `bijlage4.aux'.
 
  (bijlage4.tex
 
-LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 75 undefined on 
+LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 81 undefined on 
 input line 18.
 
-[75
+[81
 
 
 
 ]
 
-LaTeX Warning: Citation `Shahzad2014ScadaProtocolsPollingScenario' on page 76 u
+LaTeX Warning: Citation `Shahzad2014ScadaProtocolsPollingScenario' on page 82 u
 ndefined on input line 97.
 
-) [76] [77]
+) [82] [83]
 \openout2 = `bijlage6.aux'.
 
  (bijlage6.tex
@@ -9654,7 +9796,7 @@ Overfull \hbox (4.104pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
-[78
+[84
 
 
 
@@ -9668,8 +9810,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--85
 
  []
 
-[79]
-<plaatjes/agp.pdf, id=2448, 191.71625pt x 453.695pt>
+[85]
+<plaatjes/agp.pdf, id=2472, 191.71625pt x 453.695pt>
 File: plaatjes/agp.pdf Graphic file (type pdf)
 <use plaatjes/agp.pdf>
 Package pdftex.def Info: plaatjes/agp.pdf  used on input line 166.
@@ -9678,17 +9820,17 @@ File: plaatjes/agp.pdf Graphic file (type pdf)
 <use plaatjes/agp.pdf>
 Package pdftex.def Info: plaatjes/agp.pdf  used on input line 174.
 (pdftex.def)             Requested size: 182.09486pt x 430.95242pt.
-<plaatjes/agp.png, id=2451, 453.1329pt x 191.5155pt>
+<plaatjes/agp.png, id=2475, 453.1329pt x 191.5155pt>
 File: plaatjes/agp.png Graphic file (type png)
 <use plaatjes/agp.png>
 Package pdftex.def Info: plaatjes/agp.png  used on input line 187.
 (pdftex.def)             Requested size: 455.24411pt x 192.40923pt.
- [80 <./plaatjes/agp.pdf>] [81 <./plaatjes/agp.png>]
+ [86 <./plaatjes/agp.pdf>] [87 <./plaatjes/agp.png>]
 File: plaatjes/agp.pdf Graphic file (type pdf)
 <use plaatjes/agp.pdf>
 Package pdftex.def Info: plaatjes/agp.pdf  used on input line 198.
 (pdftex.def)             Requested size: 182.09486pt x 430.95242pt.
- [82]
+ [88]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 282.
@@ -9706,7 +9848,7 @@ Underfull \hbox (badness 3158) in paragraph at lines 351--356
 ol-le-dig do-cu-ment na de re-gel
  []
 
-[83]
+[89]
 (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -9716,145 +9858,145 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ))
-[84]
+[90]
 \openout2 = `bijlage7.aux'.
 
  (bijlage7.tex
 
-LaTeX Warning: Citation `aviationsafety04101992airplaneCrashBijlmer' on page 85
+LaTeX Warning: Citation `aviationsafety04101992airplaneCrashBijlmer' on page 91
  undefined on input line 18.
 
-[85
+[91
 
 
 
 
 ]
 
-LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 86 undef
+LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 92 undef
 ined on input line 30.
 
 
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 86 undefined on input
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 92 undefined on input
  line 52.
 
 
-LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 86 undefined on i
+LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 92 undefined on i
 nput line 75.
 
-[86]
+[92]
 
-LaTeX Warning: Citation `twitter2019programmerbehindtherac' on page 87 undefine
+LaTeX Warning: Citation `twitter2019programmerbehindtherac' on page 93 undefine
 d on input line 253.
 
-[87] [88]
+[93] [94]
 
-LaTeX Warning: Citation `bdickson29072020teslalevelfive' on page 89 undefined o
+LaTeX Warning: Citation `bdickson29072020teslalevelfive' on page 95 undefined o
 n input line 376.
 
 
-LaTeX Warning: Citation `dcruz17062022tesladesignthink' on page 89 undefined on
+LaTeX Warning: Citation `dcruz17062022tesladesignthink' on page 95 undefined on
  input line 377.
 
 
-LaTeX Warning: Citation `globaltimes08052021guangdongcrash' on page 89 undefine
+LaTeX Warning: Citation `globaltimes08052021guangdongcrash' on page 95 undefine
 d on input line 423.
 
 
-LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 89 undefined
+LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 95 undefined
  on input line 424.
 
 
-LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 89 undefined on
+LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 95 undefined on
  input line 425.
 
 
-LaTeX Warning: Citation `guardian15052021teslacrashHandsOnWheel' on page 89 und
+LaTeX Warning: Citation `guardian15052021teslacrashHandsOnWheel' on page 95 und
 efined on input line 426.
 
 
-LaTeX Warning: Citation `Puzzanghera13092017TeslaSharesBlame' on page 89 undefi
+LaTeX Warning: Citation `Puzzanghera13092017TeslaSharesBlame' on page 95 undefi
 ned on input line 427.
 
 
-LaTeX Warning: Citation `jaillet02022017teslaAutopilotLimitations' on page 89 u
+LaTeX Warning: Citation `jaillet02022017teslaAutopilotLimitations' on page 95 u
 ndefined on input line 428.
 
 
-LaTeX Warning: Citation `reuters03102019teslaAutoParkingFail' on page 89 undefi
+LaTeX Warning: Citation `reuters03102019teslaAutoParkingFail' on page 95 undefi
 ned on input line 429.
 
 
-LaTeX Warning: Citation `dowling23042021' on page 89 undefined on input line 43
+LaTeX Warning: Citation `dowling23042021' on page 95 undefined on input line 43
 0.
 
 
-LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 89 undefined on
+LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 95 undefined on
  input line 431.
 
 
 LaTeX Warning: Citation `kierstein18032021teslaAutopilotCrashStationary' on pag
-e 89 undefined on input line 432.
+e 95 undefined on input line 432.
 
 
-LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 89 und
+LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 95 und
 efined on input line 433.
 
 
-LaTeX Warning: Citation `' on page 89 undefined on input line 518.
+LaTeX Warning: Citation `' on page 95 undefined on input line 518.
 
-[89]
+[95]
 
-LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 90 undefined on 
+LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 96 undefined on 
 input line 614.
 
 
-LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 90 undefin
+LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 96 undefin
 ed on input line 616.
 
 
-LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 90 undefined
+LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 96 undefined
  on input line 618.
 
 
-LaTeX Warning: Citation `mcgarryExplosions2017' on page 90 undefined on input l
+LaTeX Warning: Citation `mcgarryExplosions2017' on page 96 undefined on input l
 ine 659.
 
 
-LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 90 undefined o
+LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 96 undefined o
 n input line 661.
 
 
-LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 90 undefined on 
+LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 96 undefined on 
 input line 663.
 
-[90]
+[96]
 
-LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 91 undefined 
+LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 97 undefined 
 on input line 719.
 
 
-LaTeX Warning: Citation `humanTechpersuasiveTech' on page 91 undefined on input
+LaTeX Warning: Citation `humanTechpersuasiveTech' on page 97 undefined on input
  line 781.
 
 
-LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 91 unde
+LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 97 unde
 fined on input line 785.
 
 
-LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 91 unde
+LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 97 unde
 fined on input line 787.
 
 
-LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 91 un
+LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 97 un
 defined on input line 789.
 
 
-LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 91 
+LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 97 
 undefined on input line 791.
 
 
-LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 91 undefine
+LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 97 undefine
 d on input line 794.
 
 
@@ -9900,27 +10042,28 @@ asive-technology/ [[]]
  []
 
 
-LaTeX Warning: Citation `noauthor_2022-nm' on page 91 undefined on input line 8
+LaTeX Warning: Citation `noauthor_2022-nm' on page 97 undefined on input line 8
 09.
 
-[91]
+[97]
 
-LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 92 undefined on 
+LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 98 undefined on 
 input line 828.
 
-[92]
+[98]
 Overfull \hbox (22.81348pt too wide) in paragraph at lines 915--920
  []\T1/ptm/b/n/10.95 Verder le-zen[] \T1/ptm/m/n/10.95 [[]], [[]], [[]], [[]], 
 [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]. 
  []
 
-[93]
+[99]
 
-LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 94 undefined on in
-put line 967.
+LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 100 undefined on i
+nput line 967.
 
 
-LaTeX Warning: Citation `DemissieFilm' on page 94 undefined on input line 989.
+LaTeX Warning: Citation `DemissieFilm' on page 100 undefined on input line 989.
+
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1006--1012
@@ -9946,67 +10089,67 @@ Underfull \hbox (badness 2042) in paragraph at lines 1006--1012
 g: cy-ber-se-cu-rity en vi-tale wa-ter-wer-ken
  []
 
-[94]
+[100]
 
-LaTeX Warning: Citation `kramerZeeland' on page 95 undefined on input line 1013
+LaTeX Warning: Citation `kramerZeeland' on page 101 undefined on input line 101
+3.
+
+
+LaTeX Warning: Citation `thkwaterwerken' on page 101 undefined on input line 10
+24.
+
+
+LaTeX Warning: Citation `rekenkamercybersecWater' on page 101 undefined on inpu
+t line 1027.
+
+
+LaTeX Warning: Citation `hackerWaterwerk' on page 101 undefined on input line 1
+030.
+
+
+LaTeX Warning: Citation `kramerZeeland' on page 101 undefined on input line 103
+3.
+
+
+LaTeX Warning: Citation `cybersecWaterwerk' on page 101 undefined on input line
+ 1038.
+
+
+LaTeX Warning: Citation `cybersecWaterschappen' on page 101 undefined on input 
+line 1041.
+
+
+LaTeX Warning: Citation `cybersecZuidHolland' on page 101 undefined on input li
+ne 1044.
+
+[101]
+
+LaTeX Warning: Citation `waterwerkNED' on page 102 undefined on input line 1048
 .
 
 
-LaTeX Warning: Citation `thkwaterwerken' on page 95 undefined on input line 102
-4.
+LaTeX Warning: Citation `veiligheidwaterland' on page 102 undefined on input li
+ne 1052.
 
 
-LaTeX Warning: Citation `rekenkamercybersecWater' on page 95 undefined on input
- line 1027.
+LaTeX Warning: Citation `hrw03082021investigateBeirutBlast' on page 102 undefin
+ed on input line 1068.
 
 
-LaTeX Warning: Citation `hackerWaterwerk' on page 95 undefined on input line 10
-30.
+LaTeX Warning: Citation `souaibyElHussein112020Beirutstory' on page 102 undefin
+ed on input line 1070.
 
 
-LaTeX Warning: Citation `kramerZeeland' on page 95 undefined on input line 1033
-.
+LaTeX Warning: Citation `ifrc2020chemicalexplosionBeirutPort' on page 102 undef
+ined on input line 1072.
 
 
-LaTeX Warning: Citation `cybersecWaterwerk' on page 95 undefined on input line 
-1038.
+LaTeX Warning: Citation `boogers092002RampenRegelsRichtlijnen' on page 102 unde
+fined on input line 1100.
 
 
-LaTeX Warning: Citation `cybersecWaterschappen' on page 95 undefined on input l
-ine 1041.
-
-
-LaTeX Warning: Citation `cybersecZuidHolland' on page 95 undefined on input lin
-e 1044.
-
-[95]
-
-LaTeX Warning: Citation `waterwerkNED' on page 96 undefined on input line 1048.
-
-
-
-LaTeX Warning: Citation `veiligheidwaterland' on page 96 undefined on input lin
-e 1052.
-
-
-LaTeX Warning: Citation `hrw03082021investigateBeirutBlast' on page 96 undefine
-d on input line 1068.
-
-
-LaTeX Warning: Citation `souaibyElHussein112020Beirutstory' on page 96 undefine
-d on input line 1070.
-
-
-LaTeX Warning: Citation `ifrc2020chemicalexplosionBeirutPort' on page 96 undefi
-ned on input line 1072.
-
-
-LaTeX Warning: Citation `boogers092002RampenRegelsRichtlijnen' on page 96 undef
-ined on input line 1100.
-
-
-LaTeX Warning: Citation `sprongken19032018CourtProcedureDigital' on page 96 und
-efined on input line 1118.
+LaTeX Warning: Citation `sprongken19032018CourtProcedureDigital' on page 102 un
+defined on input line 1118.
 
 ! Missing $ inserted.
 <inserted text> 
@@ -10017,8 +10160,8 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `PROCESREGLEMENTEcourt' on page 96 undefined on input l
-ine 1120.
+LaTeX Warning: Citation `PROCESREGLEMENTEcourt' on page 102 undefined on input 
+line 1120.
 
 ! Missing $ inserted.
 <inserted text> 
@@ -10034,16 +10177,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1116--1121
 ce-and-no-place/ [[]] http://www.e-
  []
 
-[96]
+[102]
 
-LaTeX Warning: Citation `molukseTreinkaping' on page 97 undefined on input line
- 1134.
+LaTeX Warning: Citation `molukseTreinkaping' on page 103 undefined on input lin
+e 1134.
 
 
-LaTeX Warning: Citation `oVVSchietongevalOssendrecht' on page 97 undefined on i
-nput line 1155.
+LaTeX Warning: Citation `oVVSchietongevalOssendrecht' on page 103 undefined on 
+input line 1155.
 
-) [97]
+) [103]
 \openout2 = `bijlage9.aux'.
 
  (bijlage9.tex
@@ -10066,7 +10209,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--50
 
  []
 
-[98
+[104
 
 
 
@@ -10082,7 +10225,7 @@ l.108 invaarstoplicht en uitvaarstoplicht}
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-[99] [100]
+[105] [106]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -10294,7 +10437,7 @@ eerder:Delokatieklaar[]oor[]ertrekisverbondenmetdelokatieInit:Meteenguardx >\OT
 1/ptmcm/m/n/10.95 =
  []
 
-[101]) [102]
+[107]) [108]
 \openout2 = `bijlage10.aux'.
 
  (bijlage10.tex
@@ -10464,7 +10607,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
 
-[103
+[109
 
 
 
@@ -10497,7 +10640,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--84
 
  []
 
-[104]
+[110]
 Underfull \hbox (badness 10000) in paragraph at lines 88--98
 
  []
@@ -10548,7 +10691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
-[105]
+[111]
 Underfull \hbox (badness 10000) in paragraph at lines 116--120
 
  []
@@ -10618,7 +10761,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-[106]
+[112]
 ! Undefined control sequence.
 <recently read> \existst 
                          
@@ -10729,7 +10872,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[107]
+[113]
 ! Undefined control sequence.
 l.254 \aqcap
             \\
@@ -10847,7 +10990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 
-[108]
+[114]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -11237,7 +11380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--327
 
  []
 
-[109]
+[115]
 
 LaTeX Warning: Command \t invalid in math mode on input line 353.
 
@@ -11335,7 +11478,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[110] [111]
+[116] [117]
 ! Undefined control sequence.
 <recently read> \sm 
                     
@@ -11347,7 +11490,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[112]
+[118]
 ! Undefined control sequence.
 <recently read> \xRightarrow 
                              
@@ -11359,7 +11502,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[113]
+[119]
 Underfull \hbox (badness 10000) in paragraph at lines 547--548
 
  []
@@ -11388,7 +11531,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--551
 
  []
 
-[114]
+[120]
 ! Undefined control sequence.
 <recently read> \existst 
                          
@@ -11488,7 +11631,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[115] [116]
+[121] [122]
 
 ! LaTeX Error: Unicode character  (U+000B)
                not set up for use with LaTeX.
@@ -11517,15 +11660,15 @@ l.689 predicate ^^^
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-) [117]
+) [123]
 \openout2 = `bijlage11.aux'.
 
- (bijlage11.tex [118
+ (bijlage11.tex [124
 
 
 
 
-]) [119] (verslag.aux (dankbetuiging.aux)
+]) [125] (verslag.aux (dankbetuiging.aux)
 (afkortingen.aux) (bijlage2.aux) (bijlage3.aux) (bijlage4.aux) (bijlage6.aux)
 (bijlage7.aux) (bijlage9.aux) (bijlage10.aux) (bijlage11.aux))
 
@@ -11534,84 +11677,34 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `verslag.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `verslag.out':
-(rerunfilecheck)             Before: 3FC5EA7F6C7A2ED3025D8ED9A68E3DD2;3590
-(rerunfilecheck)             After:  8604D2DA3BA0FDD46F0806A10F26D024;3696.
+Package rerunfilecheck Info: File `verslag.out' has not changed.
+(rerunfilecheck)             Checksum: 8604D2DA3BA0FDD46F0806A10F26D024;3696.
  ) 
 Here is how much of TeX's memory you used:
- 40867 strings out of 475385
- 852883 string characters out of 2776908
+ 40865 strings out of 475385
+ 852840 string characters out of 2776908
  1632810 words of memory out of 3000000
- 60530 multiletter control sequences out of 15000+600000
+ 60533 multiletter control sequences out of 15000+600000
  545977 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,26n,99p,3241b,1520s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{appendix*.150} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{appendix*.137} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{appendix*.122} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{appendix*.77} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{appendix*.58} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{appendix*.57} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.56} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.55} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.54} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.53} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.46} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
-sers/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/eurosym/feymr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/symbols/msam10.pfb><C:/Users/gally/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/gally/AppData/
-Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/gally/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gally/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/gally/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on verslag.pdf (126 pages, 1071157 bytes).
+{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/eurosym/feymr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/gally/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/gally/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/gally/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gally/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/gally/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on verslag.pdf (132 pages, 1094952 bytes).
 PDF statistics:
- 3309 PDF objects out of 3580 (max. 8388607)
- 832 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3325 PDF objects out of 3580 (max. 8388607)
+ 827 named destinations out of 1000 (max. 500000)
+ 388 words of extra memory for PDF output out of 10000 (max. 10000000)
 
