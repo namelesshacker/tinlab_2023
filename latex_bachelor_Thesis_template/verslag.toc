@@ -41,15 +41,14 @@
 \contentsline {paragraph}{Conclusie}{20}{section*.40}%
 \contentsline {chapter}{Uppaal model}{21}{chapter*.41}%
 \contentsline {paragraph}{Inleiding}{21}{section*.42}%
-\contentsline {subsection}{\numberline {0.0.1}Semantiek}{21}{subsection.0.0.1}%
 \contentsline {chapter}{Verificatie}{22}{chapter*.43}%
-\contentsline {paragraph}{Het door ons uitgetippelde testpath of scenario}{22}{section*.44}%
-\contentsline {paragraph}{Timed automata}{22}{section*.45}%
-\contentsline {paragraph}{Data variabelen}{22}{section*.46}%
-\contentsline {paragraph}{Acties}{22}{section*.47}%
-\contentsline {paragraph}{Clock regions}{22}{section*.48}%
-\contentsline {paragraph}{CTL logica}{22}{section*.49}%
-\contentsline {chapter}{Conclusie}{24}{chapter*.50}%
-\contentsline {chapter}{Discussie}{25}{chapter*.51}%
-\contentsline {chapter}{Bronnen}{71}{chapter*.52}%
-\contentsline {chapter}{Evaluatie}{72}{chapter*.53}%
+\contentsline {subsection}{\numberline {0.0.1}Semantiek}{22}{subsection.0.0.1}%
+\contentsline {paragraph}{Timed automata}{23}{section*.44}%
+\contentsline {paragraph}{Data variabelen}{23}{section*.45}%
+\contentsline {paragraph}{Acties}{23}{section*.46}%
+\contentsline {paragraph}{Clock regions}{23}{section*.47}%
+\contentsline {paragraph}{CTL logica}{23}{section*.48}%
+\contentsline {chapter}{Conclusie}{24}{chapter*.49}%
+\contentsline {chapter}{Discussie}{25}{chapter*.50}%
+\contentsline {chapter}{Bronnen}{71}{chapter*.51}%
+\contentsline {chapter}{Evaluatie}{72}{chapter*.52}%

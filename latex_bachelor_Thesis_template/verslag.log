@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  8 SEP 2023 20:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  8 SEP 2023 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,7 +1048,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write5
-runsystem(echo 'write18-test-2023981216'>"verslag.w18")...disabled (restricted)
+runsystem(echo 'write18-test-2023981341'>"verslag.w18")...disabled (restricted)
 .
 
 
@@ -3357,180 +3357,322 @@ LaTeX Warning: Citation `CivilEngineeringDivision' on page 20 undefined on inpu
 t line 1504.
 
 [20]
+<plaatjes/sluispassage.png, id=1141, 490.83376pt x 689.57625pt>
+File: plaatjes/sluispassage.png Graphic file (type png)
+<use plaatjes/sluispassage.png>
+Package pdftex.def Info: plaatjes/sluispassage.png  used on input line 1524.
+(pdftex.def)             Requested size: 220.87314pt x 310.30644pt.
+ [21
+
+ <./plaatjes/sluispassage.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1532.
+(hyperref)                than one, level fixed on input line 1552.
 
-[21
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1556 ...$\langle$ s, a, $\phi$ , $\lambda$, $s^$
+                                                   $\rangle$ $\in$ T is een ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
 
-]
+! Missing } inserted.
+<inserted text> 
+                }
+l.1556 ...$\langle$ s, a, $\phi$ , $\lambda$, $s^$
+                                                   $\rangle$ $\in$ T is een ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-LaTeX Warning: Citation `clarke2000Modelchecking21' on page 22 undefined on inp
-ut line 1559.
 
+LaTeX Warning: Citation `03CHAPTER3' on page 22 undefined on input line 1559.
 
-LaTeX Warning: Citation `clarke2000Modelchecking212' on page 22 undefined on in
-put line 1560.
 
+LaTeX Warning: Citation `04_giWorkshop2000' on page 22 undefined on input line 
+1561.
 
-LaTeX Warning: Citation `clarke2000Modelchecking223' on page 22 undefined on in
-put line 1561.
 
-
-LaTeX Warning: Citation `clarke2000Modelchecking31' on page 22 undefined on inp
-ut line 1562.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking32' on page 22 undefined on inp
-ut line 1563.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking33' on page 22 undefined on inp
-ut line 1564.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking411' on page 22 undefined on in
-put line 1565.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking43' on page 22 undefined on inp
-ut line 1566.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking63' on page 22 undefined on inp
-ut line 1567.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking64' on page 22 undefined on inp
-ut line 1568.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking661' on page 22 undefined on in
-put line 1569.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking91' on page 22 undefined on inp
-ut line 1570.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking102' on page 22 undefined on in
-put line 1571.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking11' on page 22 undefined on inp
-ut line 1572.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking122' on page 22 undefined on in
-put line 1573.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking123' on page 22 undefined on in
-put line 1574.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking132' on page 22 undefined on in
-put line 1575.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 22 undefined on i
-nput line 1576.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking152' on page 22 undefined on in
-put line 1577.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking171' on page 22 undefined on in
-put line 1578.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking172' on page 22 undefined on in
-put line 1579.
-
-
-LaTeX Warning: Citation `clarke2000Modelchecking173' on page 22 undefined on in
-put line 1580.
-
-
-LaTeX Warning: Citation `audioSemanticsBengtsson' on page 22 undefined on input
- line 1581.
-
-
-LaTeX Warning: Citation `guidingAutomataBberm' on page 22 undefined on input li
-ne 1582.
-
-
-LaTeX Warning: Citation `gearTransitionLindahl1' on page 22 undefined on input 
-line 1583.
-
-
-LaTeX Warning: Citation `gearTransitionLindahl2' on page 22 undefined on input 
-line 1584.
-
-
-LaTeX Warning: Citation `martinelliScada' on page 22 undefined on input line 15
-85.
-
-
-LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 22 undefined
- on input line 1586.
-
-
-LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 22 undefined
- on input line 1587.
-
-
-LaTeX Warning: Citation `huangVerficationStoch' on page 22 undefined on input l
-ine 1588.
-
-
-LaTeX Warning: Citation `bengtssonUppaalVerification' on page 22 undefined on i
-nput line 1589.
-
-
-LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 22 undefined on
- input line 1590.
-
-
-LaTeX Warning: Citation `alexandreUppaalDefinition' on page 22 undefined on inp
-ut line 1591.
-
-
-LaTeX Warning: Citation `behzadEvalQOS' on page 22 undefined on input line 1592
+LaTeX Warning: Citation `pelanekFormal' on page 22 undefined on input line 1562
 .
 
 
-LaTeX Warning: Citation `behzadVariablesQoS' on page 22 undefined on input line
- 1593.
+LaTeX Warning: Citation `jiyanpatil07TOC' on page 22 undefined on input line 15
+64.
 
 
-LaTeX Warning: Citation `alur' on page 22 undefined on input line 1594.
+LaTeX Warning: Citation `latin06' on page 22 undefined on input line 1566.
 
 
-LaTeX Warning: Citation `alurDenseRealTime' on page 22 undefined on input line 
-1595.
+LaTeX Warning: Citation `realtimeForms' on page 22 undefined on input line 1567
+.
 
 
-LaTeX Warning: Citation `alurSystemClok' on page 22 undefined on input line 159
-6.
+LaTeX Warning: Citation `verification' on page 22 undefined on input line 1568.
 
 
-LaTeX Warning: Citation `alurModelHybrid' on page 22 undefined on input line 15
-97.
+
+LaTeX Warning: Citation `uppaal' on page 22 undefined on input line 1569.
 
 
-LaTeX Warning: Citation `rijksoverheidSluizen' on page 22 undefined on input li
-ne 1598.
+LaTeX Warning: Citation `03CHAPTER3' on page 22 undefined on input line 1574.
 
 
-LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 22 undefined o
-n input line 1599.
+! LaTeX Error: Unicode character φ (U+03C6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1576 ...Uppaal query language. A TCTL formula φ
+                                                   is satisfiable iff there ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ∈ (U+2208)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1578 ...\langle$A, µ$\rangle$ and a state s ∈
+                                                  $\in$S, such that M, s $\m...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character φ (U+03C6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1578 ...s ∈$\in$S, such that M, s $\models$ φ
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Citation `isbn9789526031033' on page 22 undefined on input line 
+1579.
+
+
+LaTeX Warning: Citation `nourollahi20191215' on page 22 undefined on input line
+ 1583.
+
+
+LaTeX Warning: Citation `Lecture2' on page 22 undefined on input line 1584.
+
+
+LaTeX Warning: Citation `LIPIcs-TIME-2021-12' on page 22 undefined on input lin
+e 1586.
+
+
+LaTeX Warning: Citation `mctutorial' on page 22 undefined on input line 1588.
+
+
+LaTeX Warning: Citation `FULLTEXT02' on page 22 undefined on input line 1589.
+
+
+LaTeX Warning: Citation `stanfordRealtime' on page 22 undefined on input line 1
+590.
+
+
+LaTeX Warning: Citation `baierKatoenModelChecking' on page 22 undefined on inpu
+t line 1591.
+
+
+LaTeX Warning: Citation `nourollahi20191215' on page 22 undefined on input line
+ 1598.
+
+[22
+
+]
+
+LaTeX Warning: Citation `clarke2000Modelchecking21' on page 23 undefined on inp
+ut line 1605.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking212' on page 23 undefined on in
+put line 1606.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking223' on page 23 undefined on in
+put line 1607.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking31' on page 23 undefined on inp
+ut line 1608.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking32' on page 23 undefined on inp
+ut line 1609.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking33' on page 23 undefined on inp
+ut line 1610.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking411' on page 23 undefined on in
+put line 1611.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking43' on page 23 undefined on inp
+ut line 1612.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking63' on page 23 undefined on inp
+ut line 1613.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking64' on page 23 undefined on inp
+ut line 1614.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking661' on page 23 undefined on in
+put line 1615.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking91' on page 23 undefined on inp
+ut line 1616.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking102' on page 23 undefined on in
+put line 1617.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking11' on page 23 undefined on inp
+ut line 1618.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking122' on page 23 undefined on in
+put line 1619.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking123' on page 23 undefined on in
+put line 1620.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking132' on page 23 undefined on in
+put line 1621.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 23 undefined on i
+nput line 1622.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking152' on page 23 undefined on in
+put line 1623.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking171' on page 23 undefined on in
+put line 1624.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking172' on page 23 undefined on in
+put line 1625.
+
+
+LaTeX Warning: Citation `clarke2000Modelchecking173' on page 23 undefined on in
+put line 1626.
+
+
+LaTeX Warning: Citation `audioSemanticsBengtsson' on page 23 undefined on input
+ line 1627.
+
+
+LaTeX Warning: Citation `guidingAutomataBberm' on page 23 undefined on input li
+ne 1628.
+
+
+LaTeX Warning: Citation `gearTransitionLindahl1' on page 23 undefined on input 
+line 1629.
+
+
+LaTeX Warning: Citation `gearTransitionLindahl2' on page 23 undefined on input 
+line 1630.
+
+
+LaTeX Warning: Citation `martinelliScada' on page 23 undefined on input line 16
+31.
+
+
+LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 23 undefined
+ on input line 1632.
+
+
+LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 23 undefined
+ on input line 1633.
+
+
+LaTeX Warning: Citation `huangVerficationStoch' on page 23 undefined on input l
+ine 1634.
+
+
+LaTeX Warning: Citation `bengtssonUppaalVerification' on page 23 undefined on i
+nput line 1635.
+
+
+LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 23 undefined on
+ input line 1636.
+
+
+LaTeX Warning: Citation `alexandreUppaalDefinition' on page 23 undefined on inp
+ut line 1637.
+
+
+LaTeX Warning: Citation `behzadEvalQOS' on page 23 undefined on input line 1638
+.
+
+
+LaTeX Warning: Citation `behzadVariablesQoS' on page 23 undefined on input line
+ 1639.
+
+
+LaTeX Warning: Citation `alur' on page 23 undefined on input line 1640.
+
+
+LaTeX Warning: Citation `alurDenseRealTime' on page 23 undefined on input line 
+1641.
+
+
+LaTeX Warning: Citation `alurSystemClok' on page 23 undefined on input line 164
+2.
+
+
+LaTeX Warning: Citation `alurModelHybrid' on page 23 undefined on input line 16
+43.
+
+
+LaTeX Warning: Citation `rijksoverheidSluizen' on page 23 undefined on input li
+ne 1644.
+
+
+LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 23 undefined o
+n input line 1645.
+
+
+LaTeX Warning: Citation `latin06' on page 23 undefined on input line 1651.
+
+
+LaTeX Warning: Citation `realtimeForms' on page 23 undefined on input line 1651
+.
 
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1605 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
+l.1653 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
                                                   $ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3541,7 +3683,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1606 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
+l.1654 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3552,7 +3694,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1607 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
+l.1655 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3563,7 +3705,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \piand 
                        
-l.1610 ...htarrow$ s is the first state of $\piand
+l.1658 ...htarrow$ s is the first state of $\piand
                                                   $ M, s $\models$ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3574,7 +3716,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1611 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
+l.1659 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
                                                   $ g1\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3585,7 +3727,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \bugcup 
                         
-l.1617 M, s $\models$ g1 $\bugcup
+l.1665 M, s $\models$ g1 $\bugcup
                                  $ g2 $\Leftrightarrow$ ~  there  ~ exists  ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3596,7 +3738,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1619 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
+l.1667 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
                                                   $ g1 then M,$\pi^{j}$ $\mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3605,75 +3747,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1602--1620
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1668
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1602--1620
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1668
 
  []
-
-[22
-
-]
-
-LaTeX Warning: Citation `pelanekFormal' on page 23 undefined on input line 1626
-.
-
-
-LaTeX Warning: Citation `jiyanpatil07TOC' on page 23 undefined on input line 16
-27.
-
-
-LaTeX Warning: Citation `04_giWorkshop2000' on page 23 undefined on input line 
-1628.
-
-
-LaTeX Warning: Citation `latin06' on page 23 undefined on input line 1629.
-
-
-LaTeX Warning: Citation `realtimeForms' on page 23 undefined on input line 1630
-.
-
-
-LaTeX Warning: Citation `verification' on page 23 undefined on input line 1631.
-
-
-
-LaTeX Warning: Citation `uppaal' on page 23 undefined on input line 1632.
-
-
-LaTeX Warning: Citation `03CHAPTER3' on page 23 undefined on input line 1633.
-
-
-LaTeX Warning: Citation `isbn9789526031033' on page 23 undefined on input line 
-1634.
-
-
-LaTeX Warning: Citation `nourollahi20191215' on page 23 undefined on input line
- 1635.
-
-
-LaTeX Warning: Citation `Lecture2' on page 23 undefined on input line 1636.
-
-
-LaTeX Warning: Citation `LIPIcs-TIME-2021-12' on page 23 undefined on input lin
-e 1637.
-
-
-LaTeX Warning: Citation `mctutorial' on page 23 undefined on input line 1638.
-
-
-LaTeX Warning: Citation `FULLTEXT02' on page 23 undefined on input line 1639.
-
-
-LaTeX Warning: Citation `stanfordRealtime' on page 23 undefined on input line 1
-640.
-
-
-LaTeX Warning: Citation `baierKatoenModelChecking' on page 23 undefined on inpu
-t line 1641.
 
 [23]) (discussie.tex [24
 
@@ -8863,16 +8944,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `verslag.out' has not changed.
-(rerunfilecheck)             Checksum: F94B36353399640F33329CEF88736820;1201.
+(rerunfilecheck)             Checksum: 92636CEE8824142729022BA10A4EA49F;1201.
  ) 
 Here is how much of TeX's memory you used:
- 38828 strings out of 475385
- 815321 string characters out of 2776908
- 1421669 words of memory out of 3000000
- 58825 multiletter control sequences out of 15000+600000
+ 38840 strings out of 475385
+ 815558 string characters out of 2776908
+ 1421713 words of memory out of 3000000
+ 58836 multiletter control sequences out of 15000+600000
  535006 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,8n,99p,3241b,580s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 90i,9n,99p,3241b,580s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
 /Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
 0.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
@@ -8883,9 +8964,9 @@ pe1/urw/symbol/usyr.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/times/utmb8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/times/utmr8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on verslag.pdf (78 pages, 782266 bytes).
+Output written on verslag.pdf (78 pages, 826394 bytes).
 PDF statistics:
- 2608 PDF objects out of 2984 (max. 8388607)
+ 2610 PDF objects out of 2984 (max. 8388607)
  577 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 

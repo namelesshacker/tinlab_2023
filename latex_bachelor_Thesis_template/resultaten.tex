@@ -1519,6 +1519,10 @@ Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind,
 \paragraph{Inleiding}
 
 
+\begin{center}
+	\figuur{scale=0.45,angle=180}{plaatjes/sluispassage.png}{PDFA}{Vaste breedte
+		(pdf)}
+\end{center}
 
 
 
@@ -1529,7 +1533,6 @@ Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind,
 
 
 
-\subsection{Semantiek}
 
 
 
@@ -1545,16 +1548,105 @@ Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind,
  Het bewijs vn corret gebruik kan ook worden aangetoond met help van bewijs voor inorrectgebruik
  
  
- Verificatie resultaten
- \paragraph{Het door ons uitgetippelde testpath of scenario}
+ 
+\subsection{Semantiek}
+
+
+About transition
+A transition is composed of
+a unique source location
+a unique target location
+a guard, i.e. an enabling condition (g := x ∼ c|g ∧ g, where
+∼∈ {<, ≤, =, ≥, >}
+a label (that can be used for synchronization)
+a subset (potentially empty) of clocks to be reset
+
+a clock valuation is a function v: X $\trightarrow$ $R^+$ \\
+v[Y:=0] is the valuation obtained from v by resetting clocks from Y:  \\
+
+\begin{math}
+	$v[Y:=0]$=\left\{
+	\begin{array}{ll}
+		1, & \mbox{0 x $\in$ Y}.\\
+		0, & \mbox{otherwise}.
+	\end{array}
+	\right.
+\end{math}
+\\
+
+v+d = flow of time (d units) \\
+(v +d)(x) = v(x)+d  \\
+v $\models$ c means that valuation v satisfies the constraint c
+
+evaluation of a clock constraint (v $\models$ g) \\
+\begin{enumerate}
+	\item $\vee$ $\models$ g x  < k iff ν(x) < k
+	\item $\vee$ $\models$ x ≤ k iff ν(x) ≤ k
+	\item $\vee$ $\models$ g1 ∧ g2 iff ν $\models$ g1 and ν $\models$ g2
+\end{enumerate} 
+\\
+\\
+\\
+
+(s', v") and (s,v) $\xrightarrow[]{a}$(s', v").
+
+Action transitions correspond to the execution of a transition	 from T. We write (s,v) $\xrightarrow[]{a}$ (s', v'), where a \in $\Sigma$, provided that there is a transition $\langle$ s,a, $\varphi$, $\lambda$, s' $\rangle$ such that v satisfies $\varphi$ and v=[$\lambda$:=0].
+
+a delay transition (s, v1)  $\xrightarrow[]{$$\delta$(d)}$ (s, v_1 + d_1) for some $d_1$ $\geq$ 0, and
+an action transition   (s, v1 +d1)  $\xrightarrow[]{a}$ (s', v_1') such that $v_1$ + $d_1$ satisfies $\varphi$ and v'_1 = (v_1 + d_1)[$\lambda $:=0].
+
+
+
+ Defnition 3.1 Timed automata
+A timed automation is een 6-tuple A $\langle$ $\sigma$ ,S,$S_0$, X, I, T$\rangle$, waarin geldt dat $\sigma$ een eindige alfabet voorsteld; S is een eindig srt van lcoaties (states); $S_0$ $\subseteq$ S is een set van initiele locaties; X is een set van clocks; I : S $\rightarrow$ $\Phi$(x) is de locatie invariant; en T $\subseteq$ S $\times$ $\sigma$ $\times$ $\Phi$(X) $\times$ $2^x$ $\times$ S is een set van transities.
+De 5-tuple $\langle$ s, a, $\phi$ , $\lambda$, $s^$ $\rangle$ $\in$ T is een ransitie van locatie s naar locatie s' die correspondeert met actie gelabeld als a, De constraint op de clock $\phi$ speificeert wanneer de transitite wordt uitgevoerd, en $\lambda$ $\subseteq$ X is de set van clocks die worden gereset wanneer de transitie wordt uitgevoerd.
+
+ De semantics van een timed automationA is gedefinieerd door de associatie met een transitiesysteem., T(A). Ten alle tijde geldt, de configuraties van een globale state van het systeem worden gemodelleerd door de gegeven timed automation in een bepaalde locatie, s, van de automation en clock interpretatie, v, welke een reele waarde toekent aan een klok. Dus de configuratie is een paar (s,v) waar s $\in$ S en v : $\rightarrow$ $R^+$. De set van initiele configuraties is gegeven door de set { (s,v) | s $\in$ $\wedge$ $\forall$ x $\in$ X $[v(x) =0]$}. In andere woorden, de set van initiele locaties waarin alle clocs gelijk gezet zijn aan 0.
+ \cite{03CHAPTER3}
+ 
+ Operatoren, definities clock zones en regios's zijn we in artikel . \cite{04_giWorkshop2000}
+ \cite{pelanekFormal} 
+ In het artikel worden de formele definitie en verificatie va   state transitites uitgelegd met de daarbij behorende eindige set van states Q, q0 als initiele state, $\sigma$ is de einndige set van symbole ut de input alfabet, de se van transities vertegenwoordogd door E, de set van states 'F'
+ \cite{jiyanpatil07TOC}
+ Met deze kennis zou het mogelijk zijn om een Verification and control of real-time systems te kunnen uitvoeren in timed automata
+ \cite{latin06}
+ \cite{realtimeForms}
+ \cite{verification}
+ \cite{uppaal}
+ De delay en ation transites zijn wel in dit verslag opgenomen. Maar de clock regions, regions automata, en zone automata zijn niet overgenomen in onze studie.
+
+ 
+
+ \cite{03CHAPTER3}
+ Wel is duidelijk de Formal Syntax and Semantics en de TEMPORAL LOGICS. Maar de vertaling van 
+ Network of Timed Automata naar Uppaal query language. A TCTL formula φ is satisfiable iff there is a labeled timed automaton
+ Wel is overgenomen de Definition 3.7 (Satisfaction relation) 
+ M = $\langle$A, µ$\rangle$ and a state s ∈$\in$S, such that M, s $\models$ φ.
+ \cite{isbn9789526031033}
+ Timed automata [4] [57] are hereby to model timed systems. These are finite-state automata
+ equipped with clocks used to specify constraints on the amount of time that can elapse
+ between two events (blz 46). Timed kripke structures (blz63) (blz 69) (blz 78) blz 99.
+ \cite{nourollahi20191215}
+ \cite{Lecture2}
+ Timed Transition Systems (blz 3). Clock Constraints. (blz 4) Timed Automata.  (blz 4). Timed Computation Tree Logic.  (blz 6,7)
+ \cite{LIPIcs-TIME-2021-12}
+ Properties and Temporal L
+ \cite{mctutorial}
+ \cite{FULLTEXT02}
+ \cite{stanfordRealtime}
+ \cite{baierKatoenModelChecking}
+ 
  
  \paragraph{Timed automata}
- 
+  Timed automata [4] [57] are hereby to model timed systems. These are finite-state automata
+ equipped with clocks used to specify constraints on the amount of time that can elapse
+ between two events (blz 46). Timed kripke structures (blz63) (blz 69) (blz 78) blz 99.
+ \cite{nourollahi20191215}
  
 \paragraph{Data variabelen}
-
+Dat variabelen zijn onder andere: water hoog  en laag, en aanal schepen in de queue.
 \paragraph{Acties}
- 
+ Acties in het model zijn onder andere: invaren, uitvaren, deuren openen en sluiten, nivelleren
 \paragraph{Clock regions}
 \cite{clarke2000Modelchecking21}
 \cite{clarke2000Modelchecking212}
@@ -1600,7 +1692,9 @@ Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind,
 
 \paragraph{CTL logica}
 Alle veiligheid en reachability requirements formeel gespecificeerd in hoofdstuk ... zijn geverifieerd in uppaal met gebruik an A en E state formulae. Deze zijn als volgt:
+$\sim$, $\xi$ , $\cong$,$\overset{\Delta}{=}$ or equal by definition, $\uplus$
 \newline \\
+Om aan te tonen dat de gedefinieerde specificaties altijd geldig zijn moet de basisi specificatie inductief worden opgelost. \cite{latin06} blz 73,82,83,90,91,92,93,98,104,156,197, 225, 236, 315, 317, 318\cite{realtimeForms}
 M, s $\models$ p $\Leftrightarrow$ p $\in$ L(s) \\
 M, s $\models$ $\not$ f1 $\Leftrightarrow$ M, s $\nvdash$ f1 \\
 M, s $\models$ f1 $\vee$ f2 $\Leftrightarrow$ M,s $\models$ f1 or M,s $\nvdash$ f2 \\
@@ -1617,45 +1711,37 @@ M, s $\models$ p $\Leftrightarrow$ for all i $\ge$ 0,M,$\pi^{i}$ $\models$ g1 \\
 M, s $\models$ g1 $\bugcup$ g2 $\Leftrightarrow$ ~  there  ~ exists  ~ ak  ~ $\ge$  ~ 0 ~  such ~  that  ~ M,  ~ $\pi^{k}$ $\models$ g2\\
 and  ~ for  ~ all ~  0  ~ $\le$ j < k, M,$\pi^{j}$ $\models$ g1
 M, s $\models$ p $\Leftrightarrow$ for all j $\ge$ 0, if for ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash$ g1 then M,$\pi^{j}$ $\models$ g2\\
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Queries voor een  time based specificatie in Uppaal worden volgens literatuur \cite{04_giWorkshop2000} gedefinieerd als:
 
-Het is mij niet gelukt de wiskundigee notitie van clocked ctl formulae te specificeren voor modelel checking. Het is wel gelukt de operatoren ,E<G<F en X te grbruiken voor de definitie van onze specificaties.
- Tijdens ons ozneroek naar de clock zones en regios's zijn we in artikel . \cite{04_giWorkshop2000}
- \cite{pelanekFormal} 
- In het artikel worden de formele definitie en verificatie va   state transitites uitgelegd met de daarbij behorende eindige set van states Q, q0 als initiele state, $\sigma$ is de einndige set van symbole ut de input alfabet, de se van transities vertegenwoordogd door E, de set van states 'F'
- \cite{jiyanpatil07TOC}
- Met deze kennis zou het mogelijk zijn om een Verification and control of real-time systems te kunnen uitvoeren in timed automata
-\cite{latin06}
-\cite{realtimeForms}
-\cite{verification}
-\cite{uppaal}
-De delay en ation transites zijn wel in dit verslag opgenomen. Maar de clock regions, regions automata, en zone automata zijn niet overgenomen in onze studie.
-Defnition 3.1 Timed automata
-A timed automation is een 6-tuple A $\langle$ $\sigma$ ,S,S_0, X, I, T$\rangle$, waarin geldt dat $\sigma$ een eindige alfabet voorsteld; S is een eindig srt van lcoaties (states); S_0 $\subseteq$ S is een set van initiele locaties; X is een set van clocks; I : S $\rightarrow$ $\Phi$(x) is de locatie invariant; en T $\subseteq$ S $\times$ $\sigma$ $\times$ $\Phi$(X) $\times$ 2^x $\times$ S is een set van transities.
-De 5-tuple $\langle$ s, a, $\phi$ , $\lambda$^s^ $\rangle$ $\in$ T is een ransitie van locatie s naar locatie s' die correspondeert met actie gelabeld als a, De constraint op de clock $\phi$ speificeert wanneer de transitite wordt uitgevoerd, en $\lambda$ $\subseteq$ X is de set van clocks die worden gereset wanneer de transitie wordt uitgevoerd.
+It is at all times possible that a weak sequence A with time interval(s) [x, y]
+occurs
+It is at all times possible that a weak sequence A with time interval(s) [x, y] does
+not occur
+It is at all times possible that a strong sequence A with time interval(s) [x, y]
+occurs
+It is at all times possible that an element of set A occurs within the interval [x, y]
+. It is at all times possible that all elements of set A occur simultaneously within the
+interval [x, y]
+It is at all times possible that all elements of set A occur exclusively within the
+interval [x, y]
+It is at all times possible that an element of set A never occurs within the
+interval [x, y
+. It is at all times possible that all elements of set A never occur simultaneously
+within the interval [x, y]
+. It is at all times possible that all elements of set A never occur exclusively within
+the interval [x, y]
+ It is at all times true that if a strong sequence A with time interval(s) [x1, y1] occurs
+then it must happen within [x2, y2] time unit(s) that an element of set B occurs
+It is inevitable that if all elements of set A occur simultaneously within the
+interval [x1, y1] then it is possible at some time later that a weak sequence B with
+time interval(s) [x2, y2] occurs
+. It is at all times true that if all elements of set A always occur simultaneously
+within the interval [x1, y1] then it must happen in exactly [z] time unit(s) that all
+elements of set B occur simultaneously within the interval [x2, y2]
 
-De semantics van een timed automationA is gedefinieerd door de associatie met een transitiesysteem., T(A). Ten alle tijde geldt, de configuraties van een globale state van het systeem worden gemodelleerd door de gegeven timed automation in een bepaalde locatie, s, van de automation en clock interpretatie, v, welke een reele waarde toekent aan een klok. Dus de configuratie is een paar (s,v) waar s $\in$ S en v : $\rightarrow$ R^+. De set van initiele configuraties is gegeven door de set { (s,v) | s $\in$ $\wedge$ $\forall$ x $\in$ X [v(x) =0].}. In andere woorden, de set van initiele locaties waarin alle clocs gelijk gezet zijn aan 0.
-\cite{03CHAPTER3}
-Wel is duidelijk de Formal Syntax and Semantics en de TEMPORAL LOGICS. Maar de vertaling van 
- Network of Timed Automata naar Uppaal query language. A TCTL formula φ is satisfiable iff there is a labeled timed automaton
- Wel is overgenomen de Definition 3.7 (Satisfaction relation) 
- M = $\langle$A, µ$\rangle$ and a state s ∈$\in$S, such that M, s $\models$ φ.
-\cite{isbn9789526031033}
-Timed automata [4] [57] are hereby to model timed systems. These are finite-state automata
-equipped with clocks used to specify constraints on the amount of time that can elapse
-between two events (blz 46). Timed kripke structures (blz63) (blz 69) (blz 78) blz 99.
-\cite{nourollahi20191215}
-\cite{Lecture2}
-Timed Transition Systems (blz 3). Clock Constraints. (blz 4) Timed Automata.  (blz 4). Timed Computation Tree Logic.  (blz 6,7)
-\cite{LIPIcs-TIME-2021-12}
-Properties and Temporal L
-\cite{mctutorial}
-\cite{FULLTEXT02}
-\cite{stanfordRealtime}
-\cite{baierKatoenModelChecking}
-
+AG EF_[_x_,_y_] $\vee$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \hoofdstuk{Conclusie}
 
