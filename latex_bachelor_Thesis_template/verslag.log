@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  8 SEP 2023 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  8 SEP 2023 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,7 +1048,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write5
-runsystem(echo 'write18-test-2023981025'>"verslag.w18")...disabled (restricted)
+runsystem(echo 'write18-test-2023981216'>"verslag.w18")...disabled (restricted)
 .
 
 
@@ -2374,7 +2374,7 @@ LaTeX Warning: Label `ID' multiply defined.
 
 LaTeX Warning: Label `reuters23022021777metalfatigue' multiply defined.
 
-(bijlage7.aux))
+)
 \openout1 = `verslag.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
@@ -2382,8 +2382,7 @@ LaTeX Font Info:    ... okay on input line 104.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 104.
 LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
  104.
-
-(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omspzccm.fd
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 104.
@@ -2518,7 +2517,7 @@ Package xypdf Info: Line width: 0.43788pt on input line 104.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<plaatjes/logohr.png, id=106, 255.20343pt x 255.20343pt>
+<plaatjes/logohr.png, id=90, 255.20343pt x 255.20343pt>
 File: plaatjes/logohr.png Graphic file (type png)
 <use plaatjes/logohr.png>
 Package pdftex.def Info: plaatjes/logohr.png  used on input line 111.
@@ -2619,33 +2618,32 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[4] [5
+[4] [5] [6]
 
-] [6] [7]
-
-LaTeX Warning: Citation `boehmBoseLeeRequirementsNegotiations' on page 8 undefi
+LaTeX Warning: Citation `boehmBoseLeeRequirementsNegotiations' on page 7 undefi
 ned on input line 281.
 
 
-LaTeX Warning: Citation `muHungJinLiu2013inconsistencyReqs' on page 8 undefined
+LaTeX Warning: Citation `muHungJinLiu2013inconsistencyReqs' on page 7 undefined
  on input line 282.
 
 
-LaTeX Warning: Citation `hunterNuseibeh1996manageSpecs' on page 8 undefined on 
+LaTeX Warning: Citation `hunterNuseibeh1996manageSpecs' on page 7 undefined on 
 input line 283.
 
 
-LaTeX Warning: Citation `myloloupos1992representingReqs' on page 8 undefined on
+LaTeX Warning: Citation `myloloupos1992representingReqs' on page 7 undefined on
  input line 284.
 
 
-LaTeX Warning: Citation `zavePamela4darkCorners' on page 8 undefined on input l
+LaTeX Warning: Citation `zavePamela4darkCorners' on page 7 undefined on input l
 ine 285.
 
 
-LaTeX Warning: Citation `zavePAmela1997regEngineering' on page 8 undefined on i
+LaTeX Warning: Citation `zavePAmela1997regEngineering' on page 7 undefined on i
 nput line 286.
 
+[7]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2654,7 +2652,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.310 \newline
-               Voor deze studie is onderzoek gedaan naar verschillende rampe...
+               \indent Voor deze studie is onderzoek gedaan naar verschillen...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2666,154 +2664,136 @@ undefined on input line 311.
 
 
 LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 8 undefi
-ned on input line 312.
+ned on input line 316.
+
+
+LaTeX Warning: Citation `aviationsafety04101992airplaneCrashBijlmer' on page 8 
+undefined on input line 331.
+
+
+LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 8 undefi
+ned on input line 332.
 
 
 LaTeX Warning: Citation `twitter2019programmerbehindtherac' on page 8 undefined
- on input line 360.
+ on input line 446.
+
+
+LaTeX Warning: Citation `twitter2019programmerbehindtherac' on page 8 undefined
+ on input line 478.
+
+
+LaTeX Warning: Citation `impakterTeslaCrash' on page 8 undefined on input line 
+485.
 
 
 LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 8 undefined 
-on input line 369.
+on input line 487.
 
 
 LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 8 undefined on 
-input line 372.
+input line 490.
 
 
 LaTeX Warning: Citation `guardian15052021teslacrashHandsOnWheel' on page 8 unde
-fined on input line 374.
+fined on input line 492.
 
 
 LaTeX Warning: Citation `Puzzanghera13092017TeslaSharesBlame' on page 8 undefin
-ed on input line 376.
+ed on input line 494.
 
 
 LaTeX Warning: Citation `jaillet02022017teslaAutopilotLimitations' on page 8 un
-defined on input line 378.
+defined on input line 496.
 
 
 LaTeX Warning: Citation `reuters03102019teslaAutoParkingFail' on page 8 undefin
-ed on input line 379.
+ed on input line 497.
 
 
-LaTeX Warning: Citation `dowling23042021' on page 8 undefined on input line 380
+LaTeX Warning: Citation `dowling23042021' on page 8 undefined on input line 498
 .
 
 
 LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 8 undefined on 
-input line 382.
+input line 500.
 
 
 LaTeX Warning: Citation `kierstein18032021teslaAutopilotCrashStationary' on pag
-e 8 undefined on input line 385.
+e 8 undefined on input line 503.
 
 
 LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 8 unde
-fined on input line 386.
+fined on input line 504.
 
 
-LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 8 undefined on i
-nput line 472.
+LaTeX Warning: Citation `bdickson29072020teslalevelfive' on page 8 undefined on
+ input line 632.
 
 
-LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 8 undefine
-d on input line 473.
+LaTeX Warning: Citation `dcruz17062022tesladesignthink' on page 8 undefined on 
+input line 633.
 
 
-LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 8 undefined 
-on input line 473.
+LaTeX Warning: Citation `globaltimes08052021guangdongcrash' on page 8 undefined
+ on input line 674.
 
 
-LaTeX Warning: Citation `mcgarryExplosions2017' on page 8 undefined on input li
-ne 479.
+LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 8 undefined 
+on input line 675.
 
 
-LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 8 undefined on
- input line 479.
+LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 8 undefined on 
+input line 676.
 
 
-LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 8 undefined on i
-nput line 480.
+LaTeX Warning: Citation `guardian15052021teslacrashHandsOnWheel' on page 8 unde
+fined on input line 677.
 
 
-LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 8 undefined o
-n input line 485.
+LaTeX Warning: Citation `Puzzanghera13092017TeslaSharesBlame' on page 8 undefin
+ed on input line 678.
 
 
-LaTeX Warning: Citation `uran05042019SPOF' on page 8 undefined on input line 48
-9.
+LaTeX Warning: Citation `jaillet02022017teslaAutopilotLimitations' on page 8 un
+defined on input line 679.
 
 
-LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 8 undefined on inp
-ut line 501.
+LaTeX Warning: Citation `reuters03102019teslaAutoParkingFail' on page 8 undefin
+ed on input line 680.
 
 
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 8 undefined on input 
-line 513.
+LaTeX Warning: Citation `dowling23042021' on page 8 undefined on input line 681
+.
 
 
-LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 8 undefined on in
-put line 526.
+LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 8 undefined on 
+input line 682.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--537
-[]\T1/ptm/m/n/10.95 tesla au-to-pi-lot fea-tu-res voor dataverzameling[[]],[[]]
-. De
+LaTeX Warning: Citation `kierstein18032021teslaAutopilotCrashStationary' on pag
+e 8 undefined on input line 683.
+
+
+LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 8 unde
+fined on input line 684.
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 310--704
+\T1/ptm/m/n/10.95 vei-lig-heids-vraag-stuk [[]] vei-ig-heids-vraag-stuk van-weg
+e touch screen [[]] vei-lig-heids-vraag-stuk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--537
-\T1/ptm/m/n/10.95 eer-ste te-sla crash is van juni 2016 [][]$\T1/pcr/m/n/10.95 
-https : / / impakter . com /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--537
-\T1/pcr/m/n/10.95 tesla-[]autopilot-[]crashes-[]with-[]at-[]least-[]a-[]dozen-[
-]dead-[]whos-[]fault-[]man-[]or-[]machine / # :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--537
-\T1/pcr/m/n/10.95 ~ : text = The % 20first % 20known % 20death % 20reportedly ,
-[] trailer % 20against % 20the % 20bright %
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 310--537
-\T1/ptm/m/n/10.95 le-ven kwa-men. Een per-soon had plaats ge-no-men als bij-rij
--der en de an-dere per-soon als pas-
- []
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 310--537
-\T1/ptm/m/n/10.95 sa-gier ach-ter de stoel van de be-stuur-der. Waar-schijn-lij
-k was de au-to-pi-loot niet in-ge-scha-keld.
- []
-
-
-Underfull \hbox (badness 4981) in paragraph at lines 310--537
-[]\T1/ptm/m/n/10.95 De slm-ramp op 07/06/1989 [[]],[[]] [[]],[[]],[[]], [[]],[[
-]], [[]],[[]],[[]],
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--537
+Underfull \hbox (badness 10000) in paragraph at lines 310--704
 []\T1/ptm/m/n/10.95 De schip-hol-brand op 27/10/2005[[]],[[]],[[]], [[]],[[]],[
 []],[[]],[[]],[[]],
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 310--537
-\T1/ptm/m/n/10.95 ma-ken en onderhouden[[]], [[]],[[]], [[]],[[]],[[]],[[]],[[]
-],[[]], [[]],[[]],[[]],[[]],
- []
-
-
-Underfull \hbox (badness 3019) in paragraph at lines 310--537
-\T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],
- [[]],[[]], [[]],[[]],[[]],
+Underfull \hbox (badness 3078) in paragraph at lines 310--704
+\T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]], [[]],[[]],[[]]. 27/1
+0/2005 11 do-den on-der
  []
 
 [8]
@@ -2823,336 +2803,122 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `noauthor_2022-nm' on page 11 undefined on input line 5
-41.
+ [11]
 
+LaTeX Warning: Citation `' on page 12 undefined on input line 722.
 
-LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 11 undefined on 
-input line 558.
 
-[11]
+LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 12 undefined on 
+input line 811.
 
-LaTeX Warning: Citation `aviationsafety04101992airplaneCrashBijlmer' on page 12
- undefined on input line 624.
 
-[12
+LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 12 undefin
+ed on input line 812.
 
-]
 
-LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 13 undef
-ined on input line 636.
+LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 12 undefined
+ on input line 812.
 
 
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 13 undefined on input
- line 658.
+LaTeX Warning: Citation `mcgarryExplosions2017' on page 12 undefined on input l
+ine 818.
 
 
-LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 13 undefined on i
-nput line 681.
+LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 12 undefined o
+n input line 818.
 
-[13]
 
-LaTeX Warning: Citation `twitter2019programmerbehindtherac' on page 14 undefine
-d on input line 859.
+LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 12 undefined on 
+input line 819.
 
-[14] [15]
 
-LaTeX Warning: Citation `bdickson29072020teslalevelfive' on page 16 undefined o
-n input line 982.
+LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 12 undefined on 
+input line 829.
 
 
-LaTeX Warning: Citation `dcruz17062022tesladesignthink' on page 16 undefined on
- input line 983.
+LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 12 undefin
+ed on input line 831.
 
 
-LaTeX Warning: Citation `globaltimes08052021guangdongcrash' on page 16 undefine
-d on input line 1029.
+LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 12 undefined
+ on input line 833.
 
 
-LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 16 undefined
- on input line 1030.
+LaTeX Warning: Citation `mcgarryExplosions2017' on page 12 undefined on input l
+ine 874.
 
 
-LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 16 undefined on
- input line 1031.
+LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 12 undefined o
+n input line 876.
 
 
-LaTeX Warning: Citation `guardian15052021teslacrashHandsOnWheel' on page 16 und
-efined on input line 1032.
+LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 12 undefined on 
+input line 878.
 
 
-LaTeX Warning: Citation `Puzzanghera13092017TeslaSharesBlame' on page 16 undefi
-ned on input line 1033.
+LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 12 undefined 
+on input line 904.
 
 
-LaTeX Warning: Citation `jaillet02022017teslaAutopilotLimitations' on page 16 u
-ndefined on input line 1034.
+LaTeX Warning: Citation `uran05042019SPOF' on page 12 undefined on input line 9
+08.
 
 
-LaTeX Warning: Citation `reuters03102019teslaAutoParkingFail' on page 16 undefi
-ned on input line 1035.
+LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 12 undefined 
+on input line 924.
 
 
-LaTeX Warning: Citation `dowling23042021' on page 16 undefined on input line 10
-36.
+LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 12 undefined on in
+put line 1000.
 
 
-LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 16 undefined on
- input line 1037.
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 12 undefined on input
+ line 1012.
 
 
-LaTeX Warning: Citation `kierstein18032021teslaAutopilotCrashStationary' on pag
-e 16 undefined on input line 1038.
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 12 undefined on input
+ line 1018.
 
 
-LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 16 und
-efined on input line 1039.
+LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 12 undefined on i
+nput line 1041.
 
 
-LaTeX Warning: Citation `' on page 16 undefined on input line 1124.
+LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 12 undefined on i
+nput line 1137.
 
-[16]
 
-LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 17 undefined on 
-input line 1220.
+LaTeX Warning: Citation `noauthor_2022-nm' on page 12 undefined on input line 1
+151.
 
 
-LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 17 undefin
-ed on input line 1222.
+LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 12 undefined on 
+input line 1168.
 
 
-LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 17 undefined
- on input line 1224.
-
-
-LaTeX Warning: Citation `mcgarryExplosions2017' on page 17 undefined on input l
-ine 1265.
-
-
-LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 17 undefined o
-n input line 1267.
-
-
-LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 17 undefined on 
-input line 1269.
-
-[17]
-
-LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 18 undefined 
-on input line 1325.
-
-
-LaTeX Warning: Citation `humanTechpersuasiveTech' on page 18 undefined on input
- line 1387.
-
-
-LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 18 unde
-fined on input line 1391.
-
-
-LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 18 unde
-fined on input line 1393.
-
-
-LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 18 un
-defined on input line 1395.
-
-
-LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 18 
-undefined on input line 1397.
-
-
-LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 18 undefine
-d on input line 1400.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1401
-[]\T1/ptm/m/n/10.95 persuasive tech-no-logy https://www.humanetech.com/youth/pe
-rsuasive-technology
+Underfull \hbox (badness 4621) in paragraph at lines 705--1217
+\T1/ptm/m/n/10.95 ma-ken en onderhouden[[]], [[]],[[]], [[]],[[]],[[]],[[]],[[]
+],[[]], [[]],[[]],[[]],[[]],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1401
-\T1/ptm/m/n/10.95 [[]] https://www.minddistrict.com/blog/persuasive-technology-
-new-insights-in-
+Underfull \hbox (badness 3019) in paragraph at lines 705--1217
+\T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],
+ [[]],[[]], [[]],[[]],[[]],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1401
-\T1/ptm/m/n/10.95 behavioural-change https://www.sciencedirect.com/book/9781558
-606432/persuasive-
- []
+Underfull \vbox (badness 1881) has occurred while \output is active []
 
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1401
-\T1/ptm/m/n/10.95 technology https://spectrum.ieee.org/how-persuasive-technolog
-y-can-change-your-
- []
+ [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1401
-\T1/ptm/m/n/10.95 habits [[]] https://www.frontiersin.org/articles/10.3389/frai
-.2020.00007/full [[]]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1401
-\T1/ptm/m/n/10.95 https://psmag.com/environment/captology-fogg-invisible-manipu
-lative-power-persuasive-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1401
-\T1/ptm/m/n/10.95 technology-81301 [[]] https://www.makeuseof.com/what-is-persu
-asive-technology/ [[]]
- []
-
-
-LaTeX Warning: Citation `noauthor_2022-nm' on page 18 undefined on input line 1
-415.
-
-[18]
-
-LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 19 undefined on 
-input line 1434.
-
-[19]
-Overfull \hbox (22.81348pt too wide) in paragraph at lines 1521--1526
- []\T1/ptm/b/n/10.95 Verder le-zen[] \T1/ptm/m/n/10.95 [[]], [[]], [[]], [[]], 
-[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]. 
- []
-
-[20]
-
-LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 21 undefined on in
-put line 1573.
-
-
-LaTeX Warning: Citation `DemissieFilm' on page 21 undefined on input line 1595.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1618
-[]\T1/ptm/m/n/10.95 Volgens het on-der-zoek is er de af-ge-lo-pen ja-ren wel he
-t no-dige ge-�n-ves-teerd om
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1618
-\T1/ptm/m/n/10.95 de be-vei-li-ging op te schroe-ven, maar deze maat-re-ge-len 
-zijn nog on-vol-doende door-ge-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1618
-\T1/ptm/m/n/10.95 voerd. https://www.nu.nl/internet/5814282/rekenkamer-waterwer
-ken-niet-goed-beveiligd-tegen-
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 1612--1618
-\T1/ptm/m/n/10.95 cyberaanvallen.html [[]] rap-port Di-gi-tale dijk-ver-zwa-rin
-g: cy-ber-se-cu-rity en vi-tale wa-ter-wer-ken
- []
-
-[21]
-
-LaTeX Warning: Citation `kramerZeeland' on page 22 undefined on input line 1619
-.
-
-
-LaTeX Warning: Citation `thkwaterwerken' on page 22 undefined on input line 163
-0.
-
-
-LaTeX Warning: Citation `rekenkamercybersecWater' on page 22 undefined on input
- line 1633.
-
-
-LaTeX Warning: Citation `hackerWaterwerk' on page 22 undefined on input line 16
-36.
-
-
-LaTeX Warning: Citation `kramerZeeland' on page 22 undefined on input line 1639
-.
-
-
-LaTeX Warning: Citation `cybersecWaterwerk' on page 22 undefined on input line 
-1644.
-
-
-LaTeX Warning: Citation `cybersecWaterschappen' on page 22 undefined on input l
-ine 1647.
-
-
-LaTeX Warning: Citation `cybersecZuidHolland' on page 22 undefined on input lin
-e 1650.
-
-[22]
-
-LaTeX Warning: Citation `waterwerkNED' on page 23 undefined on input line 1654.
-
-
-
-LaTeX Warning: Citation `veiligheidwaterland' on page 23 undefined on input lin
-e 1658.
-
-
-LaTeX Warning: Citation `hrw03082021investigateBeirutBlast' on page 23 undefine
-d on input line 1674.
-
-
-LaTeX Warning: Citation `souaibyElHussein112020Beirutstory' on page 23 undefine
-d on input line 1676.
-
-
-LaTeX Warning: Citation `ifrc2020chemicalexplosionBeirutPort' on page 23 undefi
-ned on input line 1678.
-
-
-LaTeX Warning: Citation `boogers092002RampenRegelsRichtlijnen' on page 23 undef
-ined on input line 1706.
-
-
-LaTeX Warning: Citation `sprongken19032018CourtProcedureDigital' on page 23 und
-efined on input line 1724.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1725 ...ds/2018/03/Procesreglement-e-Court-2017_
-                                                  20180201.pdf
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Citation `PROCESREGLEMENTEcourt' on page 23 undefined on input l
-ine 1726.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1727 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1722--1727
-\T1/ptm/m/n/10.95 niet od-ner-zocht https://www.njb.nl/blogs/a-court-with-no-fa
-ce-and-no-place/ [[]] http://www.e-
- []
-
-[23]
-
-LaTeX Warning: Citation `molukseTreinkaping' on page 24 undefined on input line
- 1740.
-
-
-LaTeX Warning: Citation `oVVSchietongevalOssendrecht' on page 24 undefined on i
-nput line 1761.
-
+ [14]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3160,97 +2926,274 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1773 \newline
-                \indent Dan zijn er nog andere ongelukken met de stint, de s...
-
+l.1219 \newline
+                \indent explosie in libabon, beirut
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1785 https://users.ece.cmu.edu/~koopman/des_
-                                              s99/safety_critical/
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+
+LaTeX Warning: Citation `hrw03082021investigateBeirutBlast' on page 15 undefine
+d on input line 1223.
+
+
+LaTeX Warning: Citation `souaibyElHussein112020Beirutstory' on page 15 undefine
+d on input line 1224.
+
+
+LaTeX Warning: Citation `ifrc2020chemicalexplosionBeirutPort' on page 15 undefi
+ned on input line 1225.
+
+
+LaTeX Warning: Citation `boogers092002RampenRegelsRichtlijnen' on page 15 undef
+ined on input line 1237.
+
+
+LaTeX Warning: Citation `sprongken19032018CourtProcedureDigital' on page 15 und
+efined on input line 1244.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1787 
+l.1245 ...ds/2018/03/Procesreglement-e-Court-2017_
+                                                  20180201.pdf
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Citation `PROCESREGLEMENTEcourt' on page 15 undefined on input l
+ine 1246.
+
+
+LaTeX Warning: Citation `molukseTreinkaping' on page 15 undefined on input line
+ 1250.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 1252.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.1252 ...sten, geen toezicht op de lokatie. E\r w
+                                                  as een instructuur in ople...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 1252.
+
+
+
+LaTeX Warning: Citation `oVVSchietongevalOssendrecht' on page 15 undefined on i
+nput line 1262.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1274 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1783--1787
- []\T1/ptm/b/n/10.95 Safety cri-ti-cal sys-tems[] \T1/ptm/m/n/10.95 https://www
-.icheme.org/media/8976/xxiv-poster-
+Underfull \hbox (badness 4441) in paragraph at lines 1219--1274
+[]\T1/ptm/m/n/10.95 ecourt in ne-der-landse recht-spraak niet od-ner-zocht http
+s://www.njb.nl/blogs/a-court-with-no-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1783--1787
-\T1/ptm/m/n/10.95 11.pdf https://crpit.scem.westernsydney.edu.au/confpapers/CRP
-ITV55Chambers.pdf
+Underfull \hbox (badness 10000) in paragraph at lines 1219--1274
+\T1/ptm/m/n/10.95 face-and-no-place/ [[]] http://www.e-court.nl/wp-content/uplo
+ads/2018/03/Procesreglement-e-Court-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1783--1787
-\T1/ptm/m/n/10.95 https://users.ece.cmu.edu/ koopman/des$[]\OT1/ptmcm/m/n/10.95
- 99\OML/ptmcm/m/it/10.95 =safety[]ritical=WHATARESAFETY \OMS/pzccm/m/n/10.95 ^^
-@
- []
-
-[24]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1806 ...u/~anderson/teach/comp790/papers/safety_
-                                                  critical_arch.pdf
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1808 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1808
-[]\T1/ptm/m/n/10.95 https://users.encs.concordia.ca/ ymz-hang/-cour-ses/re-li-a
--bi-li-ty-/ICSE02Knight.pdf
+Overfull \hbox (5275.28006pt too wide) in paragraph at lines 1219--1274
+[]\OML/ptmcm/m/it/10.95 Rampschietpartijmilitairossendrecht:Eenmilitaireoverlee
+dopeenschietbaaninossendrachtdooronvoldoendebegeleidingvancursisten; geentoezic
+htopdelokatie:E[]aseeninstructuurinopleidingdienietvolledigwasmmeegenomeninhetp
+orocesenookwasergeenbaancommandantaanwezig:Geenvandeaanweziginstructeurtshaddej
+uistepapierenomdecursistentebegeleiden:Deaanweziginstruceurhadgeenzichopdeinstr
+ucteurinopleiding; evenmindeanderemilitairen:Indeinstructiehandleidingontbreken
+richtlijnenvoorbijzondereschietbanen:Ookwasergeenkeuring:Doorpersonelstekortise
+rgeenandachtbesteedaandocumentastie\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 
+eenslyllabus\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 hoeenmetwelkerisico[]so
+efeningnenmoetenwordeningericht:Okwerdervoorafgeenveiliheidsanaklysegedaan:Hetg
+ebrekaanlesmateriaalendeskundigenisgemeldbinnendedefensieorganisatiemaarditheef
+tnietgeleidtotenigeveranderingindesituatie:OpeenafgekeurdescheitbaanTezichtdoor
+eeninstructeurinopleidingdiezelfgeenpersoonlijkebegeleidingheeftgehadtijdensdeu
+itvoeringBelangrijkisdatdefensiehaartakenkanuitvoerenmetpersoneeldatisgetraindi
+nsituatiesdiederisicosvandewerkomgevingaandecursistenkunnenlatenzien:ConclusieZ
+ondergekwalificeerdeinstructuers:ZondertoezichtZonderlesmateriaalZonderadequate
+veiligheidsanalysehttps \OT1/ptmcm/m/n/10.95 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1808
-\T1/ptm/m/n/10.95 https://www.dcs.gla.ac.uk/ jo-hnson/-tea-ching/-sa-fe-ty-/s-l
-i-des/pt2.pdf https://www.dau.edu/tools/se-
+Overfull \hbox (1043.092pt too wide) in paragraph at lines 1219--1274
+\OML/ptmcm/m/it/10.95 ==www:youtube:com=watch\OT1/ptmcm/m/n/10.95 ?\OML/ptmcm/m
+/it/10.95 v \OT1/ptmcm/m/n/10.95 = 6\OML/ptmcm/m/it/10.95 jmkDClGDHo\OT1/ptmcm/
+m/n/10.95 [[]][[]][[]][[]]\OML/ptmcm/m/it/10.95 Watisderolvandefensie\OT1/ptmcm
+/m/n/10.95 ?\OML/ptmcm/m/it/10.95 Watisergedaanomdeveligheidvandemedewerkerstew
+aarborgen\OT1/ptmcm/m/n/10.95 ?\OML/ptmcm/m/it/10.95 Waaromzijndezeregelsnietna
+geleefd\OT1/ptmcm/m/n/10.95 ?\OML/ptmcm/m/it/10.95 Watzijndegevolgen\OT1/ptmcm/
+m/n/10.95 ?\OML/ptmcm/m/it/10.95 Zijndeactiesdienaderhandzijnondernomenwelredel
+ijknaardeslachtoffers; hetnationaleveiligheisbeeldendemedewerkers\OT1/ptmcm/m/n
+/10.95 ?[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1808
-\T1/ptm/m/n/10.95 brainbook/Pages/Designhttps://daytonaero.com/wp-content/uploa
-ds/AC-17-01.pdf
+Overfull \hbox (5.09753pt too wide) in paragraph at lines 1219--1274
+[]\OML/ptmcm/m/it/10.95 Danzijnernogandereongelukkenmetdestint; deshietpartijop
+militairencomplexinossendrecht; stint \OMS/pzccm/m/n/10.95 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1808
-\T1/ptm/m/n/10.95 https://nebula.esa.int/content/assessment-methodology-certifi
-cation-safety-gnc-critical-space-
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+
+LaTeX Warning: Citation `humanTechpersuasiveTech' on page 16 undefined on input
+ line 1287.
+
+
+LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 16 unde
+fined on input line 1291.
+
+
+LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 16 unde
+fined on input line 1293.
+
+
+LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 16 un
+defined on input line 1295.
+
+
+LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 16 
+undefined on input line 1297.
+
+
+LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 16 undefine
+d on input line 1300.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1301
+[]\T1/ptm/m/n/10.95 persuasive tech-no-logy https://www.humanetech.com/youth/pe
+rsuasive-technology
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1808
-\T1/ptm/m/n/10.95 systems https://www.cs.unc.edu/ anderson/teach/comp790/papers
-/safety$[]\OML/ptmcm/m/it/10.95 ritical[]rch:pdfhttps \OT1/ptmcm/m/n/10.95 :
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1301
+\T1/ptm/m/n/10.95 [[]] https://www.minddistrict.com/blog/persuasive-technology-
+new-insights-in-
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1301
+\T1/ptm/m/n/10.95 behavioural-change https://www.sciencedirect.com/book/9781558
+606432/persuasive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1301
+\T1/ptm/m/n/10.95 technology https://spectrum.ieee.org/how-persuasive-technolog
+y-can-change-your-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1301
+\T1/ptm/m/n/10.95 habits [[]] https://www.frontiersin.org/articles/10.3389/frai
+.2020.00007/full [[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1301
+\T1/ptm/m/n/10.95 https://psmag.com/environment/captology-fogg-invisible-manipu
+lative-power-persuasive-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1285--1301
+\T1/ptm/m/n/10.95 technology-81301 [[]] https://www.makeuseof.com/what-is-persu
+asive-technology/ [[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1327
+[]\T1/ptm/m/n/10.95 Volgens het on-der-zoek is er de af-ge-lo-pen ja-ren wel he
+t no-dige ge-�n-ves-teerd om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1327
+\T1/ptm/m/n/10.95 de be-vei-li-ging op te schroe-ven, maar deze maat-re-ge-len 
+zijn nog on-vol-doende door-ge-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1327
+\T1/ptm/m/n/10.95 voerd. https://www.nu.nl/internet/5814282/rekenkamer-waterwer
+ken-niet-goed-beveiligd-tegen-
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 1321--1327
+\T1/ptm/m/n/10.95 cyberaanvallen.html [[]] rap-port Di-gi-tale dijk-ver-zwa-rin
+g: cy-ber-se-cu-rity en vi-tale wa-ter-wer-ken
+ []
+
+[16]
+
+LaTeX Warning: Citation `kramerZeeland' on page 17 undefined on input line 1328
+.
+
+
+LaTeX Warning: Citation `thkwaterwerken' on page 17 undefined on input line 133
+9.
+
+
+LaTeX Warning: Citation `rekenkamercybersecWater' on page 17 undefined on input
+ line 1342.
+
+
+LaTeX Warning: Citation `hackerWaterwerk' on page 17 undefined on input line 13
+45.
+
+
+LaTeX Warning: Citation `kramerZeeland' on page 17 undefined on input line 1348
+.
+
+
+LaTeX Warning: Citation `cybersecWaterwerk' on page 17 undefined on input line 
+1353.
+
+[17]
+
+LaTeX Warning: Citation `cybersecWaterschappen' on page 18 undefined on input l
+ine 1356.
+
+
+LaTeX Warning: Citation `cybersecZuidHolland' on page 18 undefined on input lin
+e 1359.
+
+
+LaTeX Warning: Citation `waterwerkNED' on page 18 undefined on input line 1363.
+
+
+
+LaTeX Warning: Citation `veiligheidwaterland' on page 18 undefined on input lin
+e 1367.
+
+
+LaTeX Warning: Citation `daucriticalsafetyconsider' on page 18 undefined on inp
+ut line 1396.
+
+
+LaTeX Warning: Citation `nebulaassessment' on page 18 undefined on input line 1
+399.
+
+[18]
 ! Misplaced alignment tab character &.
-l.1823 .../XRef/X2H-Xref-ViewHTML.asp?FileID=7144&
+l.1414 .../XRef/X2H-Xref-ViewHTML.asp?FileID=7144&
                                                   lang=EN
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3259,673 +3202,335 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1824 .../en/desktopdefault.aspx/tabid-1360/1856_
-                                                  read-36215/
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1828 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Citation `dlrtabid' on page 19 undefined on input line 1416.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1828
-[]\T1/ptm/m/n/10.95 https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dc
-bbc29d/EGBC-
- []
+LaTeX Warning: Citation `knight2010SafetyCritical' on page 19 undefined on inpu
+t line 1417.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1828
-\T1/ptm/m/n/10.95 Safety-Critical-Software-V1-0.pdf.aspx https://assembly.coe.i
-nt/nw/xml/XRef/X2H-Xref-
- []
+LaTeX Warning: Citation `creavisafecritical' on page 19 undefined on input line
+ 1418.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1828
-\T1/ptm/m/n/10.95 ViewHTML.asp?FileID=7144lang=EN https://www.dlr.de/ft/en/desk
-topdefault.aspx/tabid-
- []
+LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 19 undefined on 
+input line 1419.
 
 
-Underfull \hbox (badness 2608) in paragraph at lines 1822--1828
-\OML/ptmcm/m/it/10.95 future \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 of 
-\OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 safety \OMS/pzccm/m/n/10.95 ^^@ 
-\OML/ptmcm/m/it/10.95 critical \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 s
-ystems \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 in \OMS/pzccm/m/n/10.95 ^
-^@ \OML/ptmcm/m/it/10.95 the \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 eme
-rging \OMS/pzccm/m/n/10.95 ^^@ \OML/ptmcm/m/it/10.95 autonomous \OMS/pzccm/m/n/
-10.95 ^^@ \OML/ptmcm/m/it/10.95 world=https \OT1/ptmcm/m/n/10.95 :
- []
-
-[25] [26]
-! Misplaced alignment tab character &.
-l.2192 * obtrusive &
-                     difficult to generalise
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 19 undefi
+ned on input line 1422.
 
 
-LaTeX Warning: Citation `daucriticalsafetyconsider' on page 27 undefined on inp
-ut line 2214.
-
-
-LaTeX Warning: Citation `nebulaassessment' on page 27 undefined on input line 2
-217.
-
-
-LaTeX Warning: Citation `dlrtabid' on page 27 undefined on input line 2222.
-
-
-LaTeX Warning: Citation `knight2010SafetyCritical' on page 27 undefined on inpu
-t line 2223.
-
-
-LaTeX Warning: Citation `creavisafecritical' on page 27 undefined on input line
- 2224.
-
-
-LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 27 undefined on 
-input line 2225.
-
-
-LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 27 undefi
-ned on input line 2226.
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 2233--2239
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1435
 []\T1/ptm/m/n/10.95 Volgens het on-der-zoek is er de af-ge-lo-pen ja-ren wel he
 t no-dige ge-�n-ves-teerd om
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2233--2239
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1435
 \T1/ptm/m/n/10.95 de be-vei-li-ging op te schroe-ven, maar deze maat-re-ge-len 
 zijn nog on-vol-doende door-ge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2233--2239
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1435
 \T1/ptm/m/n/10.95 voerd. https://www.nu.nl/internet/5814282/rekenkamer-waterwer
 ken-niet-goed-beveiligd-tegen-
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 2233--2239
+Underfull \hbox (badness 2042) in paragraph at lines 1429--1435
 \T1/ptm/m/n/10.95 cyberaanvallen.html [[]] rap-port Di-gi-tale dijk-ver-zwa-rin
 g: cy-ber-se-cu-rity en vi-tale wa-ter-wer-ken
  []
 
 
-LaTeX Warning: Citation `kramerZeeland' on page 28 undefined on input line 2240
+LaTeX Warning: Citation `kramerZeeland' on page 19 undefined on input line 1436
 .
 
 
-LaTeX Warning: Citation `thkwaterwerken' on page 28 undefined on input line 225
-1.
-
-[28]
-
-LaTeX Warning: Citation `rekenkamercybersecWater' on page 29 undefined on input
- line 2254.
+LaTeX Warning: Citation `thkwaterwerken' on page 19 undefined on input line 144
+7.
 
 
-LaTeX Warning: Citation `hackerWaterwerk' on page 29 undefined on input line 22
-57.
+LaTeX Warning: Citation `rekenkamercybersecWater' on page 19 undefined on input
+ line 1450.
 
 
-LaTeX Warning: Citation `kramerZeeland' on page 29 undefined on input line 2260
+LaTeX Warning: Citation `hackerWaterwerk' on page 19 undefined on input line 14
+53.
+
+
+LaTeX Warning: Citation `kramerZeeland' on page 19 undefined on input line 1456
 .
 
+[19]
 
-LaTeX Warning: Citation `cybersecWaterwerk' on page 29 undefined on input line 
-2265.
-
-
-LaTeX Warning: Citation `cybersecWaterschappen' on page 29 undefined on input l
-ine 2268.
+LaTeX Warning: Citation `cybersecWaterwerk' on page 20 undefined on input line 
+1461.
 
 
-LaTeX Warning: Citation `cybersecZuidHolland' on page 29 undefined on input lin
-e 2271.
+LaTeX Warning: Citation `cybersecWaterschappen' on page 20 undefined on input l
+ine 1464.
 
 
-LaTeX Warning: Citation `waterwerkNED' on page 29 undefined on input line 2275.
+LaTeX Warning: Citation `cybersecZuidHolland' on page 20 undefined on input lin
+e 1467.
+
+
+LaTeX Warning: Citation `waterwerkNED' on page 20 undefined on input line 1471.
 
 
 
-LaTeX Warning: Citation `veiligheidwaterland' on page 29 undefined on input lin
-e 2279.
+LaTeX Warning: Citation `veiligheidwaterland' on page 20 undefined on input lin
+e 1475.
 
 
-LaTeX Warning: Citation `humanTechpersuasiveTech' on page 29 undefined on input
- line 2292.
+LaTeX Warning: Citation `humanTechpersuasiveTech' on page 20 undefined on input
+ line 1488.
 
 
-LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 29 unde
-fined on input line 2296.
+LaTeX Warning: Citation `rezenfeld01012018persuasiveTecgHabits' on page 20 unde
+fined on input line 1492.
 
 
-LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 29 unde
-fined on input line 2298.
+LaTeX Warning: Citation `aldenaini28042020persuasiveTechTrends' on page 20 unde
+fined on input line 1494.
 
 
-LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 29 un
-defined on input line 2300.
+LaTeX Warning: Citation `larson14062017persuasivetechmanipulates' on page 20 un
+defined on input line 1496.
 
 
-LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 29 
-undefined on input line 2302.
+LaTeX Warning: Citation `tanzem22012022persuasivetechchanginglives' on page 20 
+undefined on input line 1498.
 
 
-LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 29 undefine
-d on input line 2305.
+LaTeX Warning: Citation `tikkakuddonenpersuasiveTechnology' on page 20 undefine
+d on input line 1501.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2307
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1503
 []\T1/ptm/m/n/10.95 persuasive tech-no-logy https://www.humanetech.com/youth/pe
 rsuasive-technology
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2307
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1503
 \T1/ptm/m/n/10.95 [[]] https://www.minddistrict.com/blog/persuasive-technology-
 new-insights-in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2307
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1503
 \T1/ptm/m/n/10.95 behavioural-change https://www.sciencedirect.com/book/9781558
 606432/persuasive-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2307
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1503
 \T1/ptm/m/n/10.95 technology https://spectrum.ieee.org/how-persuasive-technolog
 y-can-change-your-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2307
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1503
 \T1/ptm/m/n/10.95 habits [[]] https://www.frontiersin.org/articles/10.3389/frai
 .2020.00007/full [[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2307
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1503
 \T1/ptm/m/n/10.95 https://psmag.com/environment/captology-fogg-invisible-manipu
 lative-power-persuasive-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2290--2307
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1503
 \T1/ptm/m/n/10.95 technology-81301 [[]] https://www.makeuseof.com/what-is-persu
 asive-technology/ [[]]
  []
 
 
-LaTeX Warning: Citation `CivilEngineeringDivision' on page 29 undefined on inpu
-t line 2308.
+LaTeX Warning: Citation `CivilEngineeringDivision' on page 20 undefined on inpu
+t line 1504.
 
-[29] [30] [31
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 2362--2374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2362--2374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2362--2374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2362--2374
-
- []
-
-[32
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 2380--2417
-[]$[]$ $[]$
- []
-
-! Too many }'s.
-l.2432 invaarstoplicht en uitvaarstoplicht}
-                                           
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-[33] [34]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2536 ...rocedure, ook wordt een functie enqueeu_
-                                                  aanmeldLijst() gebruikt om...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2538 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (2599.30183pt too wide) in paragraph at lines 2535--2538
-\T1/ptm/m/n/10.95 enqueeu$[]\OML/ptmcm/m/it/10.95 anmeldLijst\OT1/ptmcm/m/n/10.
-95 ()\OML/ptmcm/m/it/10.95 gebruiktomdejuistewaardentegevenaanlokaleenglobaleav
-ariabelen:Delokatieaanmeldenregisseerthetopstellenvanschepenbovenofbenedenvande
-sluiskolk:DetemplateSchipsynchronizeerdmetdetemplateSluisbeheerdermethetchannel
-move[]own\OT1/ptmcm/m/n/10.95 [\OML/ptmcm/m/it/10.95 id\OT1/ptmcm/m/n/10.95 ]\O
-ML/ptmcm/m/it/10.95 ofmove[]p\OT1/ptmcm/m/n/10.95 [\OML/ptmcm/m/it/10.95 id\OT1
-/ptmcm/m/n/10.95 ]\OML/ptmcm/m/it/10.95 enbereiktdaarmeedevolgendelokatieafhank
-elijkafdesluisbovenofbenedeniswordendeschependieindeopstellijstvoorkomen; max\O
-T1/ptmcm/m/n/10.95 2\OML/ptmcm/m/it/10.95 ; klaargemaaktvoorinvaren::Detemplate
-sStoplichtensluisdeursynchroniserenmetdechannels:::call[]eurencall[]toplicht:He
-tSluisbeheerdermodelgebruiktdevariabelenclockx; wachttijd[]eneden; wachttijd[]o
-venalsinvarianttussendelokaties:Omopdehoogetetezijnvandeinvaar \OMS/pzccm/m/n/1
-0.95 ^^@
- []
-
-
-Overfull \hbox (287.7377pt too wide) in paragraph at lines 2535--2538
-\OML/ptmcm/m/it/10.95 =uitvaartvandeverschillendeschepenwordenlijstenbijgehoude
-n \OT1/ptmcm/m/n/10.95 : \OML/ptmcm/m/it/10.95 list[]achtrij[]eneden; list[]os[
-]nvaren[]eneden; list[]chepenInSluis; list[]achtrij[]ovenenlist[]os[]nvaren[]ov
-en:$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2540 Vanaf de locatie invaarverbod_
-                                     gecontroleerd  wordt gecontroleerd of e...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2542 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 7308) in paragraph at lines 2539--2542
-[]\T1/ptm/m/n/10.95 Het mo-del vol-tooit de vol-gende tran-si-tie op ba-sis van
- de waarde van de boolean
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2539--2542
-\OML/ptmcm/m/it/10.95 sluis[]ove$ \T1/ptm/m/n/10.95 en $\OML/ptmcm/m/it/10.95 s
-luis[]eneden$\T1/ptm/m/n/10.95 . en de lo-kale klok va-ri-a-bele x. Vanaf de lo
--ca-tie
- []
-
-
-Overfull \hbox (2284.8724pt too wide) in paragraph at lines 2539--2542
-\T1/ptm/m/n/10.95 invaarverbod$[]\OML/ptmcm/m/it/10.95 econtroleerdwordtgecontr
-oleerdofernoginvarendeschepenzijndieindesluiskolkpassen:Opdelokatiesluiskolkger
-eedzijner\OT1/ptmcm/m/n/10.95 1\OML/ptmcm/m/it/10.95 ofmeerschepenindesluis:Als
-ernogplekisindesluiskolknerisnogeenschipklaaromintevarendanwordtditgecontroleer
-d; defunctieenqueu\OT1/ptmcm/m/n/10.95 ()\OML/ptmcm/m/it/10.95 voegthetschiptoe
-aandequeuevandesluiskolk:Defunctiedeque\OT1/ptmcm/m/n/10.95 ()\OML/ptmcm/m/it/1
-0.95 verwijdertdeschipvandelijstmetinvarendeschepen:Devariabelesluis[]ovenofslu
-is[]enedeniswaar; bijdeswitchvoorhetsluitenvandeurenenhetaanroepevanhetstoplich
-tnrgelangdepositievandelaatebinnenvarendeschip\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/
-m/it/10.95 bovenofbeneden\OT1/ptmcm/m/n/10.95 )\OML/ptmcm/m/it/10.95 :Hiernaber
-eiktdeautomationsluiskolk[]fgesloten:$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2545 De lokatie start_
-                        nivelleren kiest op basis van de variabelen sluis_bo...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2547 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (653.87943pt too wide) in paragraph at lines 2545--2547
-[]\T1/ptm/m/n/10.95 De lo-ka-tie start$[]\OML/ptmcm/m/it/10.95 ivellerenkiestop
-basisvandevariabelensluis[]ovenendevariabelensluis[]enedenhetnivellereingsprogr
-amma:HeetnivellereingsprogrammaisAofB:Dekeuzevoorhetprogrammawordtbepaalddoorde
-variabelenvanhetschipdatindesluiszit:$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2548 De lokatie klaarmaken_
-                             voor_openen wordt bereikt als de   hoogte van d...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2552 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (1862.04189pt too wide) in paragraph at lines 2548--2552
-[]\T1/ptm/m/n/10.95 De lo-ka-tie klaarmaken$[]\OML/ptmcm/m/it/10.95 oor[]penenw
-ordtbereiktalsdehoogtevandesluisdoorhetnivellereingsprogrammaisbereikt:Depositi
-evandekluisisbepaalddoordeschepenindesluis:Vanuitdezelokatiewordtgekekenoffdest
-oplichtengereedmoetenwordengemaaktenofdesluisdeurenopenmogen:Hiernavolgteentran
-siiewaarindestoplichteopgroenwordengezetendesluisdeurenwordengeopendvoordeuitva
-artvandeschepenindesluis:Alsalleschepenzijnuitgevarendieuitmoetenvaren; wordend
-estoplichtenopgroengezetendedeurengesloten:$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2554 De lokatie uitvaren_
-                           toegestaan heeft een verbinding(edge) met de loka...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2556 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (49.87509pt too wide) in paragraph at lines 2554--2556
-[]\T1/ptm/m/n/10.95 De lo-ka-tie uitvaren$[]\OML/ptmcm/m/it/10.95 oegestaanheef
-teenverbinding\OT1/ptmcm/m/n/10.95 (\OML/ptmcm/m/it/10.95 edge\OT1/ptmcm/m/n/10
-.95 )\OML/ptmcm/m/it/10.95 metdelokatiesluis[]fsluiten:Eriseenselectstatement; 
-e \OT1/ptmcm/m/n/10.95 :
- []
-
-
-Overfull \hbox (872.38048pt too wide) in paragraph at lines 2554--2556
-\OML/ptmcm/m/it/10.95 id[]gebruiktalsonderdeelvanhetprototocolomalleuitvarendes
-chepenuitdequeuevandesluiskolktehalen; enwordtdanookgebruiktdoordesynchronisati
-emetdechannelleaveomdeschepenuitdesluiskolktebegeleiden:Deedgehieraangekoppeldb
-evatdefunctiedeque\OT1/ptmcm/m/n/10.95 ()\OML/ptmcm/m/it/10.95 omdevariabelenva
-ndesluiskolkteresetten:$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2558 De lokatie sluiskolk_
-                            afgesloten is bereikt.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2559 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2564 Hierop volgd de lokatie nivelleer_
-                                         start. Hierop wordt een nivelleer_p...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2567 
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (1197.03763pt too wide) in paragraph at lines 2560--2567
-\T1/ptm/m/n/10.95 nivelleer$[]\OML/ptmcm/m/it/10.95 tart:Hieropwordteennivellee
-r[]rocesgestart:DaarbijiseesynchronisatiemetdetemplateSluisbeheerder:Delokatien
-ivelleer[]topiseenlokatewaarinhetnivelleerprocesalisgestopt:Vanhieruitisereened
-gemetdelokatieklaarvoorvertrek:DeedgesynchroniseerthiermeemetdetemplateSluisbeh
-eerder:Delokatieklaar[]oor[]ertrekisverbondenmetdelokatieInit:Meteenguardx >\OT
-1/ptmcm/m/n/10.95 =
- []
-
-[35] <xymatrix
-Runaway argument?
-{*+<1pc>[o][F-]{q_0} \ar @(l,l)[]^<<<<{start} \ar @/^/[r]^0 \ar @/_/[\ETC.
-! Paragraph ended before \next@ was complete.
-<to be read again> 
-                   \par 
-l.2607 
-       
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
+[20]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 2617.
+(hyperref)                than one, level fixed on input line 1532.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.2617 \subsection{Semantiek}
-                             
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+[21
 
-! Xy-pic error: An \xy environment is not closed correctly..
-\xyerror@ ...#2}\fi \errmessage {Xy-pic error: #1}
-                                                  }
-l.2617 \subsection{Semantiek}
-                             
-I expected \string \endxy . You probably have an umatched {} grouping.
+]
 
-[36]
+LaTeX Warning: Citation `clarke2000Modelchecking21' on page 22 undefined on inp
+ut line 1559.
 
-LaTeX Warning: Citation `clarke2000Modelchecking21' on page 37 undefined on inp
-ut line 2644.
 
+LaTeX Warning: Citation `clarke2000Modelchecking212' on page 22 undefined on in
+put line 1560.
 
-LaTeX Warning: Citation `clarke2000Modelchecking212' on page 37 undefined on in
-put line 2645.
 
+LaTeX Warning: Citation `clarke2000Modelchecking223' on page 22 undefined on in
+put line 1561.
 
-LaTeX Warning: Citation `clarke2000Modelchecking223' on page 37 undefined on in
-put line 2646.
 
+LaTeX Warning: Citation `clarke2000Modelchecking31' on page 22 undefined on inp
+ut line 1562.
 
-LaTeX Warning: Citation `clarke2000Modelchecking31' on page 37 undefined on inp
-ut line 2647.
 
+LaTeX Warning: Citation `clarke2000Modelchecking32' on page 22 undefined on inp
+ut line 1563.
 
-LaTeX Warning: Citation `clarke2000Modelchecking32' on page 37 undefined on inp
-ut line 2648.
 
+LaTeX Warning: Citation `clarke2000Modelchecking33' on page 22 undefined on inp
+ut line 1564.
 
-LaTeX Warning: Citation `clarke2000Modelchecking33' on page 37 undefined on inp
-ut line 2649.
 
+LaTeX Warning: Citation `clarke2000Modelchecking411' on page 22 undefined on in
+put line 1565.
 
-LaTeX Warning: Citation `clarke2000Modelchecking411' on page 37 undefined on in
-put line 2650.
 
+LaTeX Warning: Citation `clarke2000Modelchecking43' on page 22 undefined on inp
+ut line 1566.
 
-LaTeX Warning: Citation `clarke2000Modelchecking43' on page 37 undefined on inp
-ut line 2651.
 
+LaTeX Warning: Citation `clarke2000Modelchecking63' on page 22 undefined on inp
+ut line 1567.
 
-LaTeX Warning: Citation `clarke2000Modelchecking63' on page 37 undefined on inp
-ut line 2652.
 
+LaTeX Warning: Citation `clarke2000Modelchecking64' on page 22 undefined on inp
+ut line 1568.
 
-LaTeX Warning: Citation `clarke2000Modelchecking64' on page 37 undefined on inp
-ut line 2653.
 
+LaTeX Warning: Citation `clarke2000Modelchecking661' on page 22 undefined on in
+put line 1569.
 
-LaTeX Warning: Citation `clarke2000Modelchecking661' on page 37 undefined on in
-put line 2654.
 
+LaTeX Warning: Citation `clarke2000Modelchecking91' on page 22 undefined on inp
+ut line 1570.
 
-LaTeX Warning: Citation `clarke2000Modelchecking91' on page 37 undefined on inp
-ut line 2655.
 
+LaTeX Warning: Citation `clarke2000Modelchecking102' on page 22 undefined on in
+put line 1571.
 
-LaTeX Warning: Citation `clarke2000Modelchecking102' on page 37 undefined on in
-put line 2656.
 
+LaTeX Warning: Citation `clarke2000Modelchecking11' on page 22 undefined on inp
+ut line 1572.
 
-LaTeX Warning: Citation `clarke2000Modelchecking11' on page 37 undefined on inp
-ut line 2657.
 
+LaTeX Warning: Citation `clarke2000Modelchecking122' on page 22 undefined on in
+put line 1573.
 
-LaTeX Warning: Citation `clarke2000Modelchecking122' on page 37 undefined on in
-put line 2658.
 
+LaTeX Warning: Citation `clarke2000Modelchecking123' on page 22 undefined on in
+put line 1574.
 
-LaTeX Warning: Citation `clarke2000Modelchecking123' on page 37 undefined on in
-put line 2659.
 
+LaTeX Warning: Citation `clarke2000Modelchecking132' on page 22 undefined on in
+put line 1575.
 
-LaTeX Warning: Citation `clarke2000Modelchecking132' on page 37 undefined on in
-put line 2660.
 
+LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 22 undefined on i
+nput line 1576.
 
-LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 37 undefined on i
-nput line 2661.
 
+LaTeX Warning: Citation `clarke2000Modelchecking152' on page 22 undefined on in
+put line 1577.
 
-LaTeX Warning: Citation `clarke2000Modelchecking152' on page 37 undefined on in
-put line 2662.
 
+LaTeX Warning: Citation `clarke2000Modelchecking171' on page 22 undefined on in
+put line 1578.
 
-LaTeX Warning: Citation `clarke2000Modelchecking171' on page 37 undefined on in
-put line 2663.
 
+LaTeX Warning: Citation `clarke2000Modelchecking172' on page 22 undefined on in
+put line 1579.
 
-LaTeX Warning: Citation `clarke2000Modelchecking172' on page 37 undefined on in
-put line 2664.
 
+LaTeX Warning: Citation `clarke2000Modelchecking173' on page 22 undefined on in
+put line 1580.
 
-LaTeX Warning: Citation `clarke2000Modelchecking173' on page 37 undefined on in
-put line 2665.
 
+LaTeX Warning: Citation `audioSemanticsBengtsson' on page 22 undefined on input
+ line 1581.
 
-LaTeX Warning: Citation `audioSemanticsBengtsson' on page 37 undefined on input
- line 2666.
 
+LaTeX Warning: Citation `guidingAutomataBberm' on page 22 undefined on input li
+ne 1582.
 
-LaTeX Warning: Citation `guidingAutomataBberm' on page 37 undefined on input li
-ne 2667.
 
+LaTeX Warning: Citation `gearTransitionLindahl1' on page 22 undefined on input 
+line 1583.
 
-LaTeX Warning: Citation `gearTransitionLindahl1' on page 37 undefined on input 
-line 2668.
 
+LaTeX Warning: Citation `gearTransitionLindahl2' on page 22 undefined on input 
+line 1584.
 
-LaTeX Warning: Citation `gearTransitionLindahl2' on page 37 undefined on input 
-line 2669.
 
+LaTeX Warning: Citation `martinelliScada' on page 22 undefined on input line 15
+85.
 
-LaTeX Warning: Citation `martinelliScada' on page 37 undefined on input line 26
-70.
 
+LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 22 undefined
+ on input line 1586.
 
-LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 37 undefined
- on input line 2671.
 
+LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 22 undefined
+ on input line 1587.
 
-LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 37 undefined
- on input line 2672.
 
+LaTeX Warning: Citation `huangVerficationStoch' on page 22 undefined on input l
+ine 1588.
 
-LaTeX Warning: Citation `huangVerficationStoch' on page 37 undefined on input l
-ine 2673.
 
+LaTeX Warning: Citation `bengtssonUppaalVerification' on page 22 undefined on i
+nput line 1589.
 
-LaTeX Warning: Citation `bengtssonUppaalVerification' on page 37 undefined on i
-nput line 2674.
 
+LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 22 undefined on
+ input line 1590.
 
-LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 37 undefined on
- input line 2675.
 
+LaTeX Warning: Citation `alexandreUppaalDefinition' on page 22 undefined on inp
+ut line 1591.
 
-LaTeX Warning: Citation `alexandreUppaalDefinition' on page 37 undefined on inp
-ut line 2676.
 
-
-LaTeX Warning: Citation `behzadEvalQOS' on page 37 undefined on input line 2677
+LaTeX Warning: Citation `behzadEvalQOS' on page 22 undefined on input line 1592
 .
 
 
-LaTeX Warning: Citation `behzadVariablesQoS' on page 37 undefined on input line
- 2678.
+LaTeX Warning: Citation `behzadVariablesQoS' on page 22 undefined on input line
+ 1593.
 
 
-LaTeX Warning: Citation `alur' on page 37 undefined on input line 2679.
+LaTeX Warning: Citation `alur' on page 22 undefined on input line 1594.
 
 
-LaTeX Warning: Citation `alurDenseRealTime' on page 37 undefined on input line 
-2680.
+LaTeX Warning: Citation `alurDenseRealTime' on page 22 undefined on input line 
+1595.
 
 
-LaTeX Warning: Citation `alurSystemClok' on page 37 undefined on input line 268
-1.
+LaTeX Warning: Citation `alurSystemClok' on page 22 undefined on input line 159
+6.
 
 
-LaTeX Warning: Citation `alurModelHybrid' on page 37 undefined on input line 26
-82.
+LaTeX Warning: Citation `alurModelHybrid' on page 22 undefined on input line 15
+97.
 
 
-LaTeX Warning: Citation `rijksoverheidSluizen' on page 37 undefined on input li
-ne 2683.
+LaTeX Warning: Citation `rijksoverheidSluizen' on page 22 undefined on input li
+ne 1598.
 
 
-LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 37 undefined o
-n input line 2684.
+LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 22 undefined o
+n input line 1599.
 
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.2690 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
+l.1605 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
                                                   $ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3936,7 +3541,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.2691 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
+l.1606 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3947,7 +3552,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.2692 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
+l.1607 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3958,7 +3563,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \piand 
                        
-l.2695 ...htarrow$ s is the first state of $\piand
+l.1610 ...htarrow$ s is the first state of $\piand
                                                   $ M, s $\models$ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3969,7 +3574,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.2696 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
+l.1611 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
                                                   $ g1\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3980,7 +3585,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \bugcup 
                         
-l.2702 M, s $\models$ g1 $\bugcup
+l.1617 M, s $\models$ g1 $\bugcup
                                  $ g2 $\Leftrightarrow$ ~  there  ~ exists  ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3991,7 +3596,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.2704 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
+l.1619 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
                                                   $ g1 then M,$\pi^{j}$ $\mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4000,62 +3605,81 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2687--2705
+Underfull \hbox (badness 10000) in paragraph at lines 1602--1620
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2687--2705
+Underfull \hbox (badness 10000) in paragraph at lines 1602--1620
 
  []
 
-[37
+[22
 
-] [38]) (discussie.tex [39
+]
 
-] [40
-
-] [41] [42]
-
-! LaTeX Error: Unicode character ≤ (U+2264)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294 • malfunction installations : ≤
-                                          0,5% of the time
-You may provide a definition with
-\DeclareUnicodeCharacter 
+LaTeX Warning: Citation `pelanekFormal' on page 23 undefined on input line 1626
+.
 
 
-! LaTeX Error: Unicode character ≤ (U+2264)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.295 • malfunction operating mechanisms : ≤
-                                                 0,5% of the time
-You may provide a definition with
-\DeclareUnicodeCharacter 
+LaTeX Warning: Citation `jiyanpatil07TOC' on page 23 undefined on input line 16
+27.
 
 
-! LaTeX Error: Unicode character ≤ (U+2264)
-               not set up for use with LaTeX.
+LaTeX Warning: Citation `04_giWorkshop2000' on page 23 undefined on input line 
+1628.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296 • malfunction operation : ≤
-                                      0,25% of the time
-You may provide a definition with
-\DeclareUnicodeCharacter 
 
-[43] [44] [45]) (bronnen.tex [46]
+LaTeX Warning: Citation `latin06' on page 23 undefined on input line 1629.
+
+
+LaTeX Warning: Citation `realtimeForms' on page 23 undefined on input line 1630
+.
+
+
+LaTeX Warning: Citation `verification' on page 23 undefined on input line 1631.
+
+
+
+LaTeX Warning: Citation `uppaal' on page 23 undefined on input line 1632.
+
+
+LaTeX Warning: Citation `03CHAPTER3' on page 23 undefined on input line 1633.
+
+
+LaTeX Warning: Citation `isbn9789526031033' on page 23 undefined on input line 
+1634.
+
+
+LaTeX Warning: Citation `nourollahi20191215' on page 23 undefined on input line
+ 1635.
+
+
+LaTeX Warning: Citation `Lecture2' on page 23 undefined on input line 1636.
+
+
+LaTeX Warning: Citation `LIPIcs-TIME-2021-12' on page 23 undefined on input lin
+e 1637.
+
+
+LaTeX Warning: Citation `mctutorial' on page 23 undefined on input line 1638.
+
+
+LaTeX Warning: Citation `FULLTEXT02' on page 23 undefined on input line 1639.
+
+
+LaTeX Warning: Citation `stanfordRealtime' on page 23 undefined on input line 1
+640.
+
+
+LaTeX Warning: Citation `baierKatoenModelChecking' on page 23 undefined on inpu
+t line 1641.
+
+[23]) (discussie.tex [24
+
+]) (bronnen.tex [25
+
+]
 Overfull \hbox (270.53256pt too wide) in paragraph at lines 14--16
 [][]$\T1/pcr/m/n/10.95 https : / / www . waterkant . net / suriname / 2023 / 05
  / 29 / milieuactivist-[]sleur-[]zeer-[]grote-[]onwaarheden-[]staan-[]in-[]cyan
@@ -4140,7 +3764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 /ptm/m/n/10.95 re-pre-sen-t-in-gand using non-func-ti-o-nal
  []
 
-[47
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
@@ -4257,7 +3881,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 2019 / 03 /
  []
 
-[48]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 [][]$\T1/pcr/m/n/10.95 https : / / www . cyber . nj . gov / threat-[]center / t
 hreat-[]profiles / ics-[]malware-[]variants /
@@ -4321,7 +3945,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
  / 2017 / 06 /
  []
 
-[49]
+[28]
 Overfull \hbox (203.51889pt too wide) in paragraph at lines 177--178
 [][]$\T1/pcr/m/n/10.95 https : / / www . cybersecurityintelligence . com / blog
  / attack-[]on-[]ukraines-[]power-[]grid-[]targeted-[]transmission-[]stations-[
@@ -4397,7 +4021,7 @@ Overfull \hbox (40.56918pt too wide) in paragraph at lines 193--194
 ning-[]unprecedented-[]hack-[]ukraines-[]power-[]grid/$[][] 
  []
 
-[50
+[29
 pdfTeX warning (ext4): destination with the same identifier (name{cite.desarnau
 d2017cyberattacks}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -4484,7 +4108,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--237
 sluizen _ in _ of _ bij _ een _ waterkering _ -[] _
  []
 
-[51
+[30
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -4678,7 +4302,7 @@ erstallig-[]onderhoud-[]wachtplaatsen-[]bruggen-[]en-[]sluizen-[]zuid-[]holland
 -[]zorgelijk/$[][] 
  []
 
-[52
+[31
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -4817,7 +4441,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.280 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://people.physics.carleton.ca...
 
-LaTeX Warning: Citation `' on page 53 undefined on input line 281.
+LaTeX Warning: Citation `' on page 32 undefined on input line 281.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 280--282
@@ -4833,9 +4457,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.283 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=-7...
 
-LaTeX Warning: Citation `' on page 53 undefined on input line 284.
+LaTeX Warning: Citation `' on page 32 undefined on input line 284.
 
-[53]
+[32]
 Underfull \hbox (badness 5147) in paragraph at lines 286--288
 [][]$\T1/pcr/m/n/10.95 https : / / www . bugsnag . com / blog / bug-[]day-[]rac
 e-[]condition-[]therac-[]25$[][] \T1/ptm/m/n/10.95 kort ar-ti-kel met
@@ -4855,7 +4479,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.294 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://thedailywtf.com/articles/t...
 
-LaTeX Warning: Citation `' on page 54 undefined on input line 295.
+LaTeX Warning: Citation `' on page 33 undefined on input line 295.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
@@ -4865,7 +4489,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.297 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.computer.org/csdl/maga...
 
-LaTeX Warning: Citation `' on page 54 undefined on input line 298.
+LaTeX Warning: Citation `' on page 33 undefined on input line 298.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 297--300
@@ -4897,7 +4521,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 316--319
 ndouts / Therac / Therac _ 2 . html$[][] \T1/ptm/m/n/10.95 case study
  []
 
-[54]
+[33]
 Underfull \hbox (badness 6493) in paragraph at lines 319--321
 [][]$\T1/pcr/m/n/10.95 http : / / users . csc . calpoly . edu / ~jdalbey / SWE 
 / Papers / THERAC25 . html$[][] \T1/ptm/m/n/10.95 les-sons lear-ned.
@@ -4941,9 +4565,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.350 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.cs.colostate.edu/~biem...
 
-LaTeX Warning: Citation `' on page 55 undefined on input line 351.
+LaTeX Warning: Citation `' on page 34 undefined on input line 351.
 
-[55]
+[34]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -4951,7 +4575,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.354 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.cs.ucf.edu/~dcm/Teachi...
 
-LaTeX Warning: Citation `' on page 56 undefined on input line 355.
+LaTeX Warning: Citation `' on page 35 undefined on input line 355.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 354--361
@@ -4967,7 +4591,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.371 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://hci.cs.siue.edu/NSF/Files/...
 
-LaTeX Warning: Citation `' on page 56 undefined on input line 372.
+LaTeX Warning: Citation `' on page 35 undefined on input line 372.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 371--374
@@ -4983,7 +4607,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.374 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.thinkreliability.com/I...
 
-LaTeX Warning: Citation `' on page 56 undefined on input line 375.
+LaTeX Warning: Citation `' on page 35 undefined on input line 375.
 
 
 Underfull \hbox (badness 2564) in paragraph at lines 374--377
@@ -5052,7 +4676,7 @@ Underfull \hbox (badness 1688) in paragraph at lines 423--425
 9 / 04 / excellent _ analy . html$[][] \T1/ptm/m/n/10.95 fout in de
  []
 
-[56]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 425--427
 [][]$\T1/pcr/m/n/10.95 https : / / www . forbes . com / sites / georgeavetisov 
 / 2019 / 03 / 19 /
@@ -5144,7 +4768,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--452
 events / news /
  []
 
-[57]
+[36]
 Overfull \hbox (97.91391pt too wide) in paragraph at lines 454--457
 [][]$\T1/pcr/m/n/10.95 https : / / www . flightglobal . com / airframers / boei
 ng-[]delays-[]737-[]max-[]10-[]deliveries-[]two-[]years-[]to-[]2023 /
@@ -5245,7 +4869,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--483
 ]09-[]2020$[][] \T1/ptm/m/n/10.95 Cul-tuur-ver-an-de-ring, de-
  []
 
-[58]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 483--485
 [][]$\T1/pcr/m/n/10.95 https : / / www . aerospacetestinginternational . com / 
 features /
@@ -5332,7 +4956,7 @@ nd-[]why-[]software-[]engineers-[]should-[]pay-[]attention-[]a041290994bd$[][]
 
  []
 
-[59]
+[38]
 Overfull \hbox (333.96176pt too wide) in paragraph at lines 507--509
 [][]$\T1/pcr/m/n/10.95 https : / / www . marketscreener . com / news / latest /
  China-[]studies-[]Boeing-[]737-[]MAX-[]recertification-[]wants-[]safety-[]conc
@@ -5471,7 +5095,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.550 			\bibitem{ID}
                       ... \LaTeX:\\ \url{https://www.reachingoutacrossdurham...
-[60]
+[39]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5608,7 +5232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 579--581
 book-[]2015 / forum-[]the-[]abyss-[] % E5 %
  []
 
-[61]
+[40]
 Overfull \hbox (6.56235pt too wide) in paragraph at lines 582--584
 [][]$\T1/pcr/m/n/10.95 https : / / www . cicm . org . my / images / articles / 
 CICM-[]Article-[]on-[]Tianjin-[]Blast-[]Oct2015 .
@@ -5718,7 +5342,7 @@ Overfull \hbox (62.90707pt too wide) in paragraph at lines 606--607
 nspections-[]in-[]china-[]follow-[]tianjin-[]explosion$[][] 
  []
 
-[62]
+[41]
 Overfull \hbox (147.67416pt too wide) in paragraph at lines 607--608
 [][]$\T1/pcr/m/n/10.95 https : / / www . thehindu . com / news / international 
 / investigation-[]begun-[]into-[]china-[]gas-[]explosion-[]as-[]toll-[]rises /
@@ -5868,7 +5492,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.644 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.wsj.com/articles/BL-CJ...
-[63]
+[42]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6015,7 +5639,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--679
  2f2015 % 2f08 % 2f12 %
  []
 
-[64]
+[43]
 Overfull \hbox (296.87045pt too wide) in paragraph at lines 681--682
 [][]$\T1/pcr/m/n/10.95 https : / / www . businessinsider . com / the-[]chemical
 -[]explosion-[]in-[]china-[]killed-[]more-[]than-[]100-[]people-[]and-[]the-[]d
@@ -6085,7 +5709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 711--713
 []defects /
  []
 
-[65]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 713--716
 [][]$\T1/pcr/m/n/10.95 https : / / cio . economictimes . indiatimes . com / new
 s / digital-[]security /
@@ -6172,7 +5796,7 @@ Overfull \hbox (19.2313pt too wide) in paragraph at lines 746--752
 e-[]model-[]3-[]production-[]report-[]1846353323$[][]
  []
 
-[66]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 752--754
 [][]$\T1/pcr/m/n/10.95 https : / / www . bloomberg . com / graphics / 2019-[]te
 sla-[]model-[]3-[]survey / autopilot . html$[][]
@@ -6289,7 +5913,7 @@ Overfull \hbox (18.7313pt too wide) in paragraph at lines 779--780
 l-[]y-[]ev-[]safety-[]quality-[]issues-[]problems/$[][] 
  []
 
-[67]
+[46]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6486,7 +6110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 798--802
 lligence-[]and-[]big-[]data / ?sh =
  []
 
-[68]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 807--808
 [][]$\T1/pcr/m/n/10.95 https : / / www . cnn . com / 2021 / 04 / 21 / tech / te
 sla-[]full-[]self-[]driving-[]launch / index .
@@ -6569,7 +6193,7 @@ Overfull \hbox (47.15366pt too wide) in paragraph at lines 825--826
 esla-[]autopilot-[]and-[]how-[]adas-[]will-[]save-[]lives$[][] 
  []
 
-[69]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 827--828
 [][]$\T1/pcr/m/n/10.95 https : / / static . tti . tamu . edu / conferences / tr
 affic-[]safety19 / presentations / lunch /
@@ -6733,7 +6357,7 @@ Overfull \hbox (75.57602pt too wide) in paragraph at lines 846--847
 a-[]crashes-[]report-[]new-[]orders-[]in-[]china-[]free-[]falling/$[][] 
  []
 
-[70]
+[49]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6894,7 +6518,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 862--863
 021 / 04 / 18 /
  []
 
-[71]
+[50]
 Overfull \hbox (359.29965pt too wide) in paragraph at lines 864--865
 [][]$\T1/pcr/m/n/10.95 https : / / www . firstpost . com / tech / news-[]analys
 is / tesla-[]model-[]s-[]involved-[]in-[]fatal-[]crash-[]in-[]the-[]us-[]did-[]
@@ -6996,7 +6620,7 @@ Overfull \hbox (56.3226pt too wide) in paragraph at lines 915--917
 ommunicatie-[]na-[]vliegramp-[]vertoonde-[]gebreken$[][]
  []
 
-[72]
+[51]
 Overfull \hbox (113.66733pt too wide) in paragraph at lines 935--936
 [][]$\T1/pcr/m/n/10.95 https : / / joop . bnnvara . nl / nieuws / rapport-[]haa
 lbaarheid-[]en-[]houdbaarheid-[]van-[]mali-[]missie-[]twijfelachtig$[][] 
@@ -7084,7 +6708,7 @@ militairen-[]vrijuit-[]hij-[]probeerde-[]zijn-[]leven-[]te-[]redden~afe4c7a0/$[
 ][] 
  []
 
-[73]
+[52]
 Overfull \hbox (142.58969pt too wide) in paragraph at lines 992--997
 [][]$\T1/pcr/m/n/10.95 https : / / www . onderzoeksraad . nl / nl / page / 392 
 / brand-[]cellencomplex-[]schiphol-[]oost-[]nacht-[]van-[]26-[]op-[]27-[]oktobe
@@ -7147,7 +6771,7 @@ Overfull \hbox (73.57602pt too wide) in paragraph at lines 1031--1032
 evergoeding-[]voor-[]verdachte-[]schipholbrand~a6c7c51d /
  []
 
-[74]
+[53]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7268,7 +6892,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1070 							\bibitem{ID}
                            ... \LaTeX:\\ \url{https://permanent.fdlp.gov/gpo...
-[75]
+[54]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7404,7 +7028,7 @@ Overfull \hbox (170.51205pt too wide) in paragraph at lines 1107--1108
 eleden$[][] 
  []
 
-[76]
+[55]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7468,7 +7092,7 @@ Underfull \hbox (badness 4647) in paragraph at lines 1143--1149
 []in-[]tsjernobyl-[]gaat-[]door$[][] \T1/ptm/m/n/10.95 pern-si-oen-
  []
 
-[77
+[56
 pdfTeX warning (ext4): destination with the same identifier (name{cite.aviation
 SLMCrashAccidentInvestigation}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -7554,7 +7178,7 @@ Underfull \hbox (badness 4229) in paragraph at lines 1187--1194
 e-cen-sie Fo-tos en be-re-ke-nin-gen ont-man-te-ling en
  []
 
-[78]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 1194--1201
 [][]$\T1/pcr/m/n/10.95 https : / / magazines . autoriteitnvs . nl / nieuwsbrief
 -[]anvs / 2019 / 02 /
@@ -7637,7 +7261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1280--1281
 671061 _ Attacking _ IEC-[]60870-[]5-[]104 _
  []
 
-[79]
+[58]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7707,7 +7331,7 @@ Overfull \hbox (61.90707pt too wide) in paragraph at lines 1300--1301
  docs / 1900-[]bedieningstijden-[]groningen-[]drenthe .
  []
 
-[80]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 1302--1303
 [][]$\T1/pcr/m/n/10.95 https : / / www . bhic . nl / media / document / file / 
 rien-[]biemans-[]sluis-[]en-[]stuw-[]bij-[]lith .
@@ -7811,7 +7435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1314--1331
 / 2014 / 05 /
  []
 
-[81]
+[60]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7941,7 +7565,7 @@ Overfull \hbox (8.76712pt too wide) in paragraph at lines 1397--1398
 0809 / slides / TheUppaalModelChecker-[]Julian .
  []
 
-[82]
+[61]
 Underfull \hbox (badness 10000) in paragraph at lines 1410--1411
 [][]$\T1/pcr/m/n/10.95 http : / / www . cs . ru . nl / ~fvaan / PV / what _ is 
 _ a _ good _ model . html# : ~ : text = A % 20good % 20model %
@@ -8054,7 +7678,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1466 						\bibitem{ID}
                           ... \LaTeX:\\ \url{https://bdtechtalks.com/2020/07...
-[83]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 1474--1475
 [][]$\T1/pcr/m/n/10.95 https : / / safety-[]work . org / fileadmin / safety-[]w
 ork / articles / Verwechslung _ von _
@@ -8133,7 +7757,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1495--1496
 ages / Design % 20Considerations /
  []
 
-[84]
+[63]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8204,7 +7828,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1513 						\bibitem{ID}
                           ... \LaTeX:\\ \url{http://aerossurance.com/safety-...
-[85]
+[64]
 Overfull \hbox (112.28763pt too wide) in paragraph at lines 1516--1517
 [][]$\T1/pcr/m/n/10.95 https : / / aviation . stackexchange . com / questions /
  46677 / what-[]are-[]the-[]design-[]parameters-[]for-[]airliner-[]safety$[][] 
@@ -8310,7 +7934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1532--1533
 uploads / 2019 / 01 /
  []
 
-[86]
+[65]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8451,7 +8075,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1565--1566
  . com / opinion / editorials /
  []
 
-[87]
+[66]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8583,7 +8207,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1581--1582
  / arqs / bra _ arquivos /
  []
 
-[88]
+[67]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8725,7 +8349,7 @@ Overfull \hbox (22.93607pt too wide) in paragraph at lines 1619--1620
 []737-[]max-[]will-[]one-[]safest-[]aircraft-[]history/$[][] 
  []
 
-[89]
+[68]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.boeing73
 7maxdisplay}) has been already used, duplicate ignored
 <to be read again> 
@@ -8891,7 +8515,7 @@ Overfull \hbox (86.36526pt too wide) in paragraph at lines 1662--1663
  
  []
 
-[90]
+[69]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.beningo0
 2052019boeinglessons}) has been already used, duplicate ignored
 <to be read again> 
@@ -9060,7 +8684,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.koenig11
                    \relax 
 l.1704 ...	\bibitem{koenig11122019737crashesnofix}
                                                    ... \LaTeX:\\ \url{https:...
-[91]
+[70]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.dohertyl
 indeman15032019737problems}) has been already used, duplicate ignored
 <to be read again> 
@@ -9229,7 +8853,7 @@ Overfull \hbox (227.47708pt too wide) in paragraph at lines 1738--1741
 h-[]metal-[]fatigue-[]-[]ntsb/$[][]
  []
 
-) (evaluatie.tex [92]) [93
+) (evaluatie.tex [71]) [72
 
 ] (verslag.aux (dankbetuiging.aux) (afkortingen.aux))
 
@@ -9238,40 +8862,30 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `verslag.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `verslag.out':
-(rerunfilecheck)             Before: 9F8C4F611E3055FEDEB637EF8201121A;1686
-(rerunfilecheck)             After:  0C12CD43F1A257FF31D324676642D417;1575.
+Package rerunfilecheck Info: File `verslag.out' has not changed.
+(rerunfilecheck)             Checksum: F94B36353399640F33329CEF88736820;1201.
  ) 
 Here is how much of TeX's memory you used:
- 38935 strings out of 475385
- 816520 string characters out of 2776908
- 1404263 words of memory out of 3000000
- 58841 multiletter control sequences out of 15000+600000
- 533893 words of font info for 131 fonts, out of 8000000 for 9000
+ 38828 strings out of 475385
+ 815321 string characters out of 2776908
+ 1421669 words of memory out of 3000000
+ 58825 multiletter control sequences out of 15000+600000
+ 535006 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,8n,99p,3241b,588s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{appendix*.110} has been referenced but does not exi
-st, replaced by a fixed one
-
-{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
-sers/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/
-urw/courier/ucrr8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type
-1/urw/symbol/usyr.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/times/utmb8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/times/utmr8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on verslag.pdf (99 pages, 880437 bytes).
+ 90i,8n,99p,3241b,580s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/courier/ucrr8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/urw/symbol/usyr.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmb8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on verslag.pdf (78 pages, 782266 bytes).
 PDF statistics:
- 2894 PDF objects out of 2984 (max. 8388607)
- 667 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2608 PDF objects out of 2984 (max. 8388607)
+ 577 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 

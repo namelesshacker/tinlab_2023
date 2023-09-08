@@ -19,93 +19,37 @@
 \contentsline {paragraph}{MODE CONFUSION }{4}{section*.18}%
 \contentsline {paragraph}{Wat is automatiseringsparadox}{4}{section*.19}%
 \contentsline {paragraph}{4 variabelen model}{4}{section*.20}%
-\contentsline {chapter}{World a machine samenvating}{5}{chapter*.21}%
-\contentsline {paragraph}{World and machine samenvatting}{5}{section*.22}%
-\contentsline {paragraph}{6 Variable model}{6}{section*.23}%
-\contentsline {paragraph}{Conceptueel model}{7}{section*.24}%
-\contentsline {paragraph}{Requirementsengineering}{7}{section*.25}%
-\contentsline {paragraph}{Wat is een sluis}{8}{section*.26}%
-\contentsline {paragraph}{Recente ontwikkelingen op het gebied van sluisautomatisering}{8}{section*.27}%
-\contentsline {paragraph}{Studie naar rampen aan de hand van het vier variabelen model}{8}{section*.28}%
-\contentsline {chapter}{rampen extra}{12}{chapter*.29}%
-\contentsline {paragraph}{bijlmerramp}{12}{section*.30}%
-\contentsline {paragraph}{ramp turkisch airlines vlucht 1951}{13}{section*.31}%
-\contentsline {paragraph}{tjernobyl}{13}{section*.32}%
-\contentsline {paragraph}{therac-25}{14}{section*.33}%
-\contentsline {paragraph}{tesla crash report}{15}{section*.34}%
-\contentsline {paragraph}{slmramp}{16}{section*.35}%
-\contentsline {paragraph}{schipholbrand}{16}{section*.36}%
-\contentsline {paragraph}{explosie tanjin china }{17}{section*.37}%
-\contentsline {paragraph}{ethiopian airlines}{17}{section*.38}%
-\contentsline {paragraph}{ethiek}{18}{section*.39}%
-\contentsline {paragraph}{ Research case: De digitale aanval op de Oekrainese krachtcentrale}{18}{section*.40}%
-\contentsline {subparagraph}{Literaire analyse}{19}{section*.41}%
-\contentsline {subparagraph}{Motief}{19}{section*.42}%
-\contentsline {subparagraph}{Situatie Oekraiene}{19}{section*.43}%
-\contentsline {subparagraph}{Situatie algemeen}{19}{section*.44}%
-\contentsline {subparagraph}{Factoren}{19}{section*.45}%
-\contentsline {subparagraph}{Oorzaak}{19}{section*.46}%
-\contentsline {subparagraph}{Gebruikte materialen}{19}{section*.47}%
-\contentsline {subparagraph}{Uitvoering van de aanval}{19}{section*.48}%
-\contentsline {subparagraph}{Oplossingen}{19}{section*.49}%
-\contentsline {subparagraph}{Aanbevelingen}{19}{section*.50}%
-\contentsline {subparagraph}{Resultaten}{19}{section*.51}%
-\contentsline {subparagraph}{De aanval}{20}{section*.52}%
-\contentsline {subparagraph}{spearfishing}{20}{section*.53}%
-\contentsline {subparagraph}{blackenergy}{20}{section*.54}%
-\contentsline {subparagraph}{remote access capabilities}{20}{section*.55}%
-\contentsline {subparagraph}{serial-to-ethernet communication devices}{20}{section*.56}%
-\contentsline {subparagraph}{telephony denial of service attacks}{20}{section*.57}%
-\contentsline {subparagraph}{oplossingen}{20}{section*.58}%
-\contentsline {subparagraph}{Discussie}{20}{section*.59}%
-\contentsline {subparagraph}{Verder lezen}{20}{section*.60}%
-\contentsline {paragraph}{Mali}{20}{section*.61}%
-\contentsline {paragraph}{Analyse}{21}{section*.62}%
-\contentsline {paragraph}{Conclusie}{21}{section*.63}%
-\contentsline {paragraph}{Deelonderzoeken}{21}{section*.64}%
-\contentsline {paragraph}{AlgemeenDeelonerzoek naar veiligheidsrisico's voor sluizen}{21}{section*.65}%
-\contentsline {paragraph}{Wet en regelgeving voor sluizen}{21}{section*.66}%
-\contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{21}{section*.67}%
-\contentsline {subsubsection}{explosie in libabon, beirut }{23}{section*.68}%
-\contentsline {subsubsection}{stint ongeluk}{23}{section*.69}%
-\contentsline {subsubsection}{vuurwerkramp in enschede }{23}{section*.70}%
-\contentsline {subsubsection}{ecourt in nederlandse rechtspraak}{24}{section*.71}%
-\contentsline {paragraph}{molukse treinkaping }{24}{section*.72}%
-\contentsline {subsubsection}{Ramp schietpartij militair ossendrecht }{24}{section*.73}%
-\contentsline {paragraph}{Safety critical systems}{25}{section*.74}%
-\contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{28}{section*.75}%
-\contentsline {paragraph}{ethiek}{29}{section*.76}%
-\contentsline {paragraph}{Afbakening van requirements Wet en regelgeving voor sluizen}{29}{section*.77}%
-\contentsline {paragraph}{Analyse}{29}{section*.78}%
-\contentsline {paragraph}{Conclusie}{30}{section*.79}%
-\contentsline {chapter}{Uppaal model}{31}{chapter*.80}%
-\contentsline {paragraph}{Inleiding}{31}{section*.81}%
-\contentsline {chapter}{Model}{32}{chapter*.82}%
-\contentsline {paragraph}{Requirements definitie}{33}{section*.83}%
-\contentsline {paragraph}{Aandachtspunten}{34}{section*.84}%
-\contentsline {subparagraph}{Afbakening}{34}{section*.85}%
-\contentsline {paragraph}{Functionele en niet-functionele eisen}{34}{section*.86}%
-\contentsline {paragraph}{specificaties}{34}{section*.87}%
-\contentsline {paragraph}{Het vier variabelen model van de sluis}{34}{section*.88}%
-\contentsline {subparagraph}{Monitored variabelen}{34}{section*.89}%
-\contentsline {subparagraph}{Controlled variabelen}{34}{section*.90}%
-\contentsline {subparagraph}{Input variabelen}{34}{section*.91}%
-\contentsline {subparagraph}{Output variabelen}{35}{section*.92}%
-\contentsline {paragraph}{Liveness}{36}{section*.93}%
-\contentsline {paragraph}{Fairness}{36}{section*.94}%
-\contentsline {paragraph}{Security}{36}{section*.95}%
-\contentsline {paragraph}{Performance}{36}{section*.96}%
-\contentsline {subsubsection}{De computation tree}{36}{section*.97}%
-\contentsline {subsection}{\numberline {0.0.1}Semantiek}{36}{subsection.0.0.1}%
-\contentsline {chapter}{Verificatie}{37}{chapter*.98}%
-\contentsline {paragraph}{Het door ons uitgetippelde testpath of scenario}{37}{section*.99}%
-\contentsline {paragraph}{Timed automata}{37}{section*.100}%
-\contentsline {paragraph}{Data variabelen}{37}{section*.101}%
-\contentsline {paragraph}{Acties}{37}{section*.102}%
-\contentsline {paragraph}{Clock regions}{37}{section*.103}%
-\contentsline {paragraph}{CTL logica}{37}{section*.104}%
-\contentsline {chapter}{Conclusie}{39}{chapter*.105}%
-\contentsline {chapter}{Discussie}{40}{chapter*.106}%
-\contentsline {paragraph}{Checklist}{46}{section*.107}%
-\contentsline {chapter}{Bronnen}{92}{chapter*.108}%
-\contentsline {chapter}{Evaluatie}{93}{chapter*.109}%
+\contentsline {paragraph}{World and machine samenvatting}{4}{section*.21}%
+\contentsline {paragraph}{6 Variable model}{6}{section*.22}%
+\contentsline {paragraph}{Conceptueel model}{6}{section*.23}%
+\contentsline {paragraph}{Requirementsengineering}{6}{section*.24}%
+\contentsline {paragraph}{Wat is een sluis}{8}{section*.25}%
+\contentsline {paragraph}{Recente ontwikkelingen op het gebied van sluisautomatisering}{8}{section*.26}%
+\contentsline {paragraph}{Studie naar rampen aan de hand van het vier variabelen model}{8}{section*.27}%
+\contentsline {paragraph}{ethiek}{16}{section*.28}%
+\contentsline {paragraph}{Analyse}{16}{section*.29}%
+\contentsline {paragraph}{Conclusie}{16}{section*.30}%
+\contentsline {paragraph}{Deelonderzoeken}{16}{section*.31}%
+\contentsline {paragraph}{AlgemeenDeelonerzoek naar veiligheidsrisico's voor sluizen}{16}{section*.32}%
+\contentsline {paragraph}{Wet en regelgeving voor sluizen}{16}{section*.33}%
+\contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{16}{section*.34}%
+\contentsline {paragraph}{Safety critical systems}{18}{section*.35}%
+\contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{19}{section*.36}%
+\contentsline {paragraph}{ethiek}{20}{section*.37}%
+\contentsline {paragraph}{Afbakening van requirements Wet en regelgeving voor sluizen}{20}{section*.38}%
+\contentsline {paragraph}{Analyse}{20}{section*.39}%
+\contentsline {paragraph}{Conclusie}{20}{section*.40}%
+\contentsline {chapter}{Uppaal model}{21}{chapter*.41}%
+\contentsline {paragraph}{Inleiding}{21}{section*.42}%
+\contentsline {subsection}{\numberline {0.0.1}Semantiek}{21}{subsection.0.0.1}%
+\contentsline {chapter}{Verificatie}{22}{chapter*.43}%
+\contentsline {paragraph}{Het door ons uitgetippelde testpath of scenario}{22}{section*.44}%
+\contentsline {paragraph}{Timed automata}{22}{section*.45}%
+\contentsline {paragraph}{Data variabelen}{22}{section*.46}%
+\contentsline {paragraph}{Acties}{22}{section*.47}%
+\contentsline {paragraph}{Clock regions}{22}{section*.48}%
+\contentsline {paragraph}{CTL logica}{22}{section*.49}%
+\contentsline {chapter}{Conclusie}{24}{chapter*.50}%
+\contentsline {chapter}{Discussie}{25}{chapter*.51}%
+\contentsline {chapter}{Bronnen}{71}{chapter*.52}%
+\contentsline {chapter}{Evaluatie}{72}{chapter*.53}%
