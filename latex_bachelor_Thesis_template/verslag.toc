@@ -48,7 +48,7 @@
 \contentsline {paragraph}{Acties}{23}{section*.46}%
 \contentsline {paragraph}{Clock regions}{23}{section*.47}%
 \contentsline {paragraph}{CTL logica}{23}{section*.48}%
-\contentsline {chapter}{Conclusie}{24}{chapter*.49}%
-\contentsline {chapter}{Discussie}{25}{chapter*.50}%
-\contentsline {chapter}{Bronnen}{71}{chapter*.51}%
-\contentsline {chapter}{Evaluatie}{72}{chapter*.52}%
+\contentsline {chapter}{Conclusie}{26}{chapter*.49}%
+\contentsline {chapter}{Discussie}{27}{chapter*.50}%
+\contentsline {chapter}{Bronnen}{73}{chapter*.51}%
+\contentsline {chapter}{Evaluatie}{74}{chapter*.52}%

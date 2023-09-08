@@ -1712,6 +1712,83 @@ M, s $\models$ g1 $\bugcup$ g2 $\Leftrightarrow$ ~  there  ~ exists  ~ ak  ~ $\g
 and  ~ for  ~ all ~  0  ~ $\le$ j < k, M,$\pi^{j}$ $\models$ g1
 M, s $\models$ p $\Leftrightarrow$ for all j $\ge$ 0, if for ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash$ g1 then M,$\pi^{j}$ $\models$ g2\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Safety properties
+Following L. Lamport, a safety property states that
+something bad must never happen. The “bad thing” represents a
+critical system state that should never occur, for instance a train
+being inside a crossing with the gates open. Taking a Boolean observable C : Time −→ {0, 1}, where C(t) = 1 expresses that at
+time t the system is in the critical state, this safety property can be
+expressed by the formula:
+$\forall$ t \in Time $\dot{}$ $\neg$ C(t)
+
+
+Here C(t) abbreviates C(t) = 1 and thus ¬C(t) denotes that at time
+t the system is not in the critical state. Thus for all time points it
+is not the case that the system is in the critical state.
+In general, a safety property is characterised as a property that can be falsified in bounded time. In case of (1.1) exhibiting a single
+time point t0 with C(t0) suffices to show that (1.1) does not hold.
+In the example, a crossing with permanently closed gates is safe,
+but it is unacceptable for the waiting cars and pedestrians. Therefore
+we need other types of properties.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+liveness properties
+Safety properties state what may or may not occur,
+but do not require that anything ever does happen. Liveness properties state what must occur. The simplest form of a liveness property guarantees that something good eventually does happen. The
+“good thing” represents a desirable system state, for instance the
+gates being open for the road traffic. Taking a Boolean observable
+G : Time −→ {0, 1}, where G(t) = 1 expresses that at time t the
+system is in the good state, this liveness property can be expressed
+by the formula: 
+$\exists$t $\in$ Time $\dot{}$ G(t).
+In other words, there exists a time point in which the system is in the
+good state. Note that this property cannot be falsified in bounded
+time. If for any time point t0 only ¬G(t) has been observed for
+t ≤ t0, we cannot complain that (1.2) is violated because eventually
+does not say how long it will take for the good state to occur.
+Such liveness property is not strong enough in the context of realtime systems. Here one would like to see a time bound when the
+good state occurs. This brings us to the next kind of property.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+bounded response properties
+
+A bounded response property states that
+a desired system reaction to an input occurs within a time interval
+[b, e] with lower bound b ∈ Time and upper bound e ∈ Time where
+b ≤ e. For example, whenever a pedestrian at a traffic light pushes
+the button to cross the road, the light for pedestrians should turn
+green within a time interval of, say, [10, 15]. The need for an upper
+bound is clear: the pedestrian wants to cross the road within a short
+time (and not eventually). However, also a lower bound is needed
+because the traffic light must not change from green to red instantaneously, but only after a yellow phase of, say, 10 seconds to allow
+cars to slow down gently.
+With P(t) representing the pushing of the button at time t and
+G(t) representing a green traffic light for the pedestrians at time t,
+we can express the desired property by the formula
+$\forall$ t1 $\in$ Time $\dot{}$ (P(t1) $\rightarrow$ $\exists$t2 \in [t1 + 10, t1 + 15] $\dot{}$ G(t2))
+Note that this property can be falsified in bounded time. When
+for some time point t1 with P(t1) we find out that during the time
+interval [t1 + 10, t1 + 15] no green light for the pedestrians appeared,
+property (1.3) is violated.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Duration properties
+
+A duration property is more subtle. It requires that
+for observation intervals [b, e] satisfying a certain condition A(b, e)
+the accumulated time in which the system is in a certain critical
+state has an upper bound u(b, e). For example, the leak state of a
+gas burner, where gas escapes without a flame burning, should occur
+at most 5% of the time of a whole day.
+To measure the accumulated time t of a critical state C(t) in a
+given interval [b, e] we use the integral notion of mathematical calculus:
+
+\[ \int_{b}^{e} C(t) \,dx \]	
+
+Then the duration property can be expressed by a formula:
+
+
+\[
+$\forall$ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq$  u(b,e)
+\]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Queries voor een  time based specificatie in Uppaal worden volgens literatuur \cite{04_giWorkshop2000} gedefinieerd als:
 
 It is at all times possible that a weak sequence A with time interval(s) [x, y]
