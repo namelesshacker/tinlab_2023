@@ -91,3 +91,17 @@ schip 3 heeft prioriteit en mag in gate
 
 
 
+
+
+
+zoek een regel
+.*(\r?\n|$)
+
+
+behoudt 
+\{[^{}]*\}
+
+vervang de rest
+
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {},}
+

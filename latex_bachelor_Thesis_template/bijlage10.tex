@@ -338,6 +338,47 @@ something eventually will hold
 
 \paragraph{Performance}
 
+
+
+About transition
+A transition is composed of
+a unique source location
+a unique target location
+a guard, i.e. an enabling condition (g := x ∼ c|g ∧ g, where
+∼∈ {<, ≤, =, ≥, >}
+a label (that can be used for synchronization)
+a subset (potentially empty) of clocks to be reset
+
+a clock valuation is a function v: X $\trightarrow$ $R^+$
+v[Y:=0] is the valuation obtained from v by resetting clocks from Y: 
+
+\begin{math}
+	$v[Y:=0]$=\left\{
+	\begin{array}{ll}
+		1, & \mbox{0 x $\in$ Y}.\\
+		0, & \mbox{otherwise}.
+	\end{array}
+	\right.
+\end{math}
+
+
+v+d = flow of time (d units)
+(v +d)(x) = v(x)+d
+v $\implies$ c meansthat valuationv satisfies the constraint c
+
+evaluation of a clock constraint (v $\implies$ g)
+v $\implies$ g x  < k iff ν(x) < k
+ν |= x ≤ k iff ν(x) ≤ k
+ν |= g1 ∧ g2 iff ν |= g1 and ν |= g2
+
+(s', v") and (s,v) $\xrightarrow[]{a}$(s', v").
+
+Action transitions correspond to the execution of a transition	 from T. We write (s,v) $\xrightarrow[]{a}$ (s', v'), where a \in $\Sigma$, provided that there is a transition $\langle$ s,a, $\varphi$, $\lambda$, s' $\rangle$ such that v satisfies $\varphi$ and v=[$\lambda$:=0].
+
+a delay transition (s, v1)  $\xrightarrow[]{$$\delta$(d)}$ (s, v_1 + d_1) for some $d_1$ $\geq$ 0, and
+an action transition   (s, v1 +d1)  $\xrightarrow[]{a}$ (s', v_1') such that $v_1$ + $d_1$ satisfies $\varphi$ and v'_1 = (v_1 + d_1)[$\lambda $:=0].
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 We think of thevariables innV as the present sate variables and the variables in V'as next state variables. Each variable v i V has a corresponding next state variable in V', which we denote y v'. A valuation for the variables in V and V' can be vieuwed as designating an ordered pair of states or a transition, and we can represent setsof these valuations using formulas as above. We refer to a set of pairs of states as a transition relation. If R is a transition relation, then we write R(V,V') to denote a formula that represents it.
 In order to write specifications that describe properties of concurrent systems we need to define a set of atomic propositions AP. Atomic propositionswill typically have the form v=d where v $\in$ V and d $\in$ D. A proposition v =d will be truein a state s if s(v)=d. Whenv is a variable over the  boolean domain{True,False}, it is not necessarly to include both v = True and  v = False in AP.We will write v to indicate that s(v)=True and $\neq$ v to indicate that s(v)=False.
