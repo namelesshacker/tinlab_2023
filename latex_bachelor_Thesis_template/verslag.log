@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  8 SEP 2023 23:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  8 SEP 2023 23:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,7 +1048,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write5
-runsystem(echo 'write18-test-2023981415'>"verslag.w18")...disabled (restricted)
+runsystem(echo 'write18-test-2023981420'>"verslag.w18")...disabled (restricted)
 .
 
 
@@ -3366,10 +3366,6 @@ Package pdftex.def Info: plaatjes/sluispassage.png  used on input line 1524.
 
  <./plaatjes/sluispassage.png>]
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1552.
-
-
 ! LaTeX Error: Unicode character ∼ (U+223C)
                not set up for use with LaTeX.
 
@@ -4270,76 +4266,19 @@ n/10.95 1)\OML/ptmcm/m/it/10.95 wefindoutthatduringthetimeinterval\OT1/ptmcm/m/
 n/10.95 [\OML/ptmcm/m/it/10.95 t\OT1/ptmcm/m/n/10.95 1 +
  []
 
-[24]
-! Display math should end with $$.
-<to be read again> 
-                   \leq 
-l.1787 ...et$    ( \[ \int_{b}^{e} C(t) \,dx $\leq
-                                                  $ u(b,e) \] )
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1787 ...et$    ( \[ \int_{b}^{e} C(t) \,dx $\leq
-                                                  $ u(b,e) \] )
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1787 ... \int_{b}^{e} C(t) \,dx $\leq$ u(b,e) \]
-                                                   )
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1787 ... \int_{b}^{e} C(t) \,dx $\leq$ u(b,e) \]
-                                                   )
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.1787 ... \int_{b}^{e} C(t) \,dx $\leq$ u(b,e) \]
-                                                   )
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Extra }, or forgotten \right.
-l.1791  \left( \int_b0}
-                       ^{e} f(x)\,dx\right)=g(y).
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 ! Display math should end with $$.
 <to be read again> 
                    \forall 
-l.1796 $\forall
+l.1789 $\forall
                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}...
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
+[24]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1796 $\forall
+l.1789 $\forall
                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4347,7 +4286,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1796 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
+l.1789 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
                                                   _b^{e}C(t)\,\mathrm{d}t $\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4355,7 +4294,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1796 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
+l.1789 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
                                                   $  u(b,e)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4367,7 +4306,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1797 \]
+l.1790 \]
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4376,7 +4315,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1797 \]
+l.1790 \]
          
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4387,47 +4326,47 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.1797 \]
+l.1790 \]
          
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
 LaTeX Warning: Citation `04_giWorkshop2000' on page 25 undefined on input line 
-1799.
+1793.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1827 AG EF_
+l.1821 AG EF_
              [_x_,_y_] $\vee$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Double subscript.
-l.1827 AG EF_[_
+l.1821 AG EF_[_
                x_,_y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1827 AG EF_[_x_
+l.1821 AG EF_[_x_
                  ,_y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1827 AG EF_[_x_,_
+l.1821 AG EF_[_x_,_
                    y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1827 AG EF_[_x_,_y_
+l.1821 AG EF_[_x_,_y_
                      ] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1827 AG EF_[_x_,_y_] $\vee
+l.1821 AG EF_[_x_,_y_] $\vee
                             $
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9619,33 +9558,51 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `verslag.out' has not changed.
-(rerunfilecheck)             Checksum: 92636CEE8824142729022BA10A4EA49F;1201.
+
+Package rerunfilecheck Warning: File `verslag.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `verslag.out':
+(rerunfilecheck)             Before: 92636CEE8824142729022BA10A4EA49F;1201
+(rerunfilecheck)             After:  A5084B4DF8A63D53603F68F717773415;1094.
  ) 
 Here is how much of TeX's memory you used:
- 38862 strings out of 475385
- 815741 string characters out of 2776908
- 1420713 words of memory out of 3000000
- 58848 multiletter control sequences out of 15000+600000
- 536895 words of font info for 138 fonts, out of 8000000 for 9000
+ 38863 strings out of 475385
+ 815753 string characters out of 2776908
+ 1421713 words of memory out of 3000000
+ 58846 multiletter control sequences out of 15000+600000
+ 532448 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,12n,99p,3241b,580s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C
-:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.
-pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmex10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cmextra/cmex9.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gally/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/gally/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gally/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on verslag.pdf (80 pages, 854217 bytes).
+
+pdfTeX warning (dest): name{chapter*.50} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter*.49} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.0.0.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+{C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:\
+Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk
+><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mex10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cmextra/cmex9.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gally/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gally/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/gally/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gally/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on verslag.pdf (80 pages, 853661 bytes).
 PDF statistics:
- 2637 PDF objects out of 2984 (max. 8388607)
- 582 named destinations out of 1000 (max. 500000)
+ 2642 PDF objects out of 2984 (max. 8388607)
+ 586 named destinations out of 1000 (max. 500000)
  263 words of extra memory for PDF output out of 10000 (max. 10000000)
 

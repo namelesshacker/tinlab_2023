@@ -42,13 +42,14 @@
 \contentsline {chapter}{Uppaal model}{21}{chapter*.41}%
 \contentsline {paragraph}{Inleiding}{21}{section*.42}%
 \contentsline {chapter}{Verificatie}{22}{chapter*.43}%
-\contentsline {subsection}{\numberline {0.0.1}Semantiek}{22}{subsection.0.0.1}%
-\contentsline {paragraph}{Timed automata}{23}{section*.44}%
-\contentsline {paragraph}{Data variabelen}{23}{section*.45}%
-\contentsline {paragraph}{Acties}{23}{section*.46}%
-\contentsline {paragraph}{Clock regions}{23}{section*.47}%
-\contentsline {paragraph}{CTL logica}{23}{section*.48}%
-\contentsline {chapter}{Conclusie}{26}{chapter*.49}%
-\contentsline {chapter}{Discussie}{27}{chapter*.50}%
-\contentsline {chapter}{Bronnen}{73}{chapter*.51}%
-\contentsline {chapter}{Evaluatie}{74}{chapter*.52}%
+\contentsline {paragraph}{Semantiek}{22}{section*.44}%
+\contentsline {paragraph}{Timed automata}{23}{section*.45}%
+\contentsline {paragraph}{Data variabelen}{23}{section*.46}%
+\contentsline {paragraph}{Acties}{23}{section*.47}%
+\contentsline {paragraph}{Clock regions}{23}{section*.48}%
+\contentsline {paragraph}{CTL logica}{23}{section*.49}%
+\contentsline {paragraph}{Andere duration properties}{25}{section*.50}%
+\contentsline {chapter}{Conclusie}{26}{chapter*.51}%
+\contentsline {chapter}{Discussie}{27}{chapter*.52}%
+\contentsline {chapter}{Bronnen}{73}{chapter*.53}%
+\contentsline {chapter}{Evaluatie}{74}{chapter*.54}%
