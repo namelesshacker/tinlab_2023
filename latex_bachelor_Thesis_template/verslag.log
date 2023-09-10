@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  10 SEP 2023 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  11 SEP 2023 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,8 +1048,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write5
-runsystem(echo 'write18-test-20239101434'>"verslag.w18")...disabled (restricted
-).
+runsystem(echo 'write18-test-20239116'>"verslag.w18")...disabled (restricted).
 
 
 
@@ -2661,75 +2660,34 @@ l.206  \bibitem{ID}
 I'm forgetting what you said and using zero instead.
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.233  \bibitem{ID}
-                    ... \LaTeX:\\ \url{}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 233
-[][]
- []
-
-! Undefined control sequence.
-<argument> \@listctr 
-                     
-l.233  \bibitem{ID}
-                    ... \LaTeX:\\ \url{}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.233  \bibitem{ID}
-                    ... \LaTeX:\\ \url{}
-I'm forgetting what you said and using zero instead.
-
-
 LaTeX Warning: Citation `boehmBoseLeeRequirementsNegotiations' on page 7 undefi
-ned on input line 275.
+ned on input line 254.
 
 
 LaTeX Warning: Citation `muHungJinLiu2013inconsistencyReqs' on page 7 undefined
- on input line 276.
+ on input line 255.
 
 
 LaTeX Warning: Citation `hunterNuseibeh1996manageSpecs' on page 7 undefined on 
-input line 277.
+input line 256.
 
 
 LaTeX Warning: Citation `myloloupos1992representingReqs' on page 7 undefined on
- input line 278.
+ input line 257.
 
 
 LaTeX Warning: Citation `zavePamela4darkCorners' on page 7 undefined on input l
-ine 279.
+ine 258.
 
 
 LaTeX Warning: Citation `zavePAmela1997regEngineering' on page 7 undefined on i
-nput line 280.
+nput line 259.
 
 
 LaTeX Warning: Citation `woudagemaalSluizen' on page 7 undefined on input line 
-297.
+276.
 
-[7
-pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.303 
-      ]
+[7]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2737,7 +2695,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.306 \newline
+l.285 \newline
                \indent Voor deze studie is onderzoek gedaan naar verschillen...
 
 Your command was ignored.
@@ -2746,128 +2704,152 @@ or  <return>  to continue without it.
 
 
 LaTeX Warning: Citation `aviationsafety04101992airplaneCrashBijlmer' on page 8 
-undefined on input line 307.
+undefined on input line 286.
 
 
 LaTeX Warning: Citation `aviationsafety04101992airplaneCrashBijlmer' on page 8 
-undefined on input line 316.
+undefined on input line 295.
 
 
 LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 8 undefi
-ned on input line 317.
+ned on input line 296.
 
 
 LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 8 undefi
-ned on input line 331.
+ned on input line 310.
 
 [8]
 
 LaTeX Warning: Citation `twitter2019programmerbehindtherac' on page 9 undefined
- on input line 542.
+ on input line 521.
 
 
 LaTeX Warning: Citation `impakterTeslaCrash' on page 9 undefined on input line 
-549.
+528.
 
 
 LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 9 undefined 
-on input line 551.
+on input line 530.
 
 
 LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 9 undefined on 
-input line 554.
+input line 533.
 
 
 LaTeX Warning: Citation `guardian15052021teslacrashHandsOnWheel' on page 9 unde
-fined on input line 556.
+fined on input line 535.
 
 
 LaTeX Warning: Citation `Puzzanghera13092017TeslaSharesBlame' on page 9 undefin
-ed on input line 558.
+ed on input line 537.
 
 
 LaTeX Warning: Citation `jaillet02022017teslaAutopilotLimitations' on page 9 un
-defined on input line 560.
+defined on input line 539.
 
 
 LaTeX Warning: Citation `reuters03102019teslaAutoParkingFail' on page 9 undefin
-ed on input line 561.
+ed on input line 540.
 
 
-LaTeX Warning: Citation `dowling23042021' on page 9 undefined on input line 562
+LaTeX Warning: Citation `dowling23042021' on page 9 undefined on input line 541
 .
 
 
 LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 9 undefined on 
-input line 564.
+input line 543.
 
 
 LaTeX Warning: Citation `kierstein18032021teslaAutopilotCrashStationary' on pag
-e 9 undefined on input line 567.
+e 9 undefined on input line 546.
 
 
 LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 9 unde
-fined on input line 568.
+fined on input line 547.
 
 
 LaTeX Warning: Citation `bdickson29072020teslalevelfive' on page 9 undefined on
- input line 696.
+ input line 675.
 
 
 LaTeX Warning: Citation `dcruz17062022tesladesignthink' on page 9 undefined on 
-input line 697.
+input line 676.
 
 
 LaTeX Warning: Citation `globaltimes08052021guangdongcrash' on page 9 undefined
- on input line 738.
+ on input line 717.
 
 
 LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 9 undefined 
-on input line 739.
+on input line 718.
 
 
 LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 9 undefined on 
-input line 740.
+input line 719.
 
 
 LaTeX Warning: Citation `guardian15052021teslacrashHandsOnWheel' on page 9 unde
-fined on input line 741.
+fined on input line 720.
 
 
 LaTeX Warning: Citation `Puzzanghera13092017TeslaSharesBlame' on page 9 undefin
-ed on input line 742.
+ed on input line 721.
 
 
 LaTeX Warning: Citation `jaillet02022017teslaAutopilotLimitations' on page 9 un
-defined on input line 743.
+defined on input line 722.
 
 
 LaTeX Warning: Citation `reuters03102019teslaAutoParkingFail' on page 9 undefin
-ed on input line 744.
+ed on input line 723.
 
 
-LaTeX Warning: Citation `dowling23042021' on page 9 undefined on input line 745
+LaTeX Warning: Citation `dowling23042021' on page 9 undefined on input line 724
 .
 
 
 LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 9 undefined on 
-input line 746.
+input line 725.
 
 
 LaTeX Warning: Citation `kierstein18032021teslaAutopilotCrashStationary' on pag
-e 9 undefined on input line 747.
+e 9 undefined on input line 726.
 
 
 LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 9 unde
-fined on input line 748.
+fined on input line 727.
 
 
 LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 9 undefined on i
-nput line 875.
+nput line 854.
 
 
 LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 9 undefine
-d on input line 876.
+d on input line 855.
+
+
+LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 9 undefined 
+on input line 855.
+
+
+LaTeX Warning: Citation `mcgarryExplosions2017' on page 9 undefined on input li
+ne 861.
+
+
+LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 9 undefined on
+ input line 861.
+
+
+LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 9 undefined on i
+nput line 862.
+
+
+LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 9 undefined on i
+nput line 872.
+
+
+LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 9 undefine
+d on input line 874.
 
 
 LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 9 undefined 
@@ -2875,68 +2857,44 @@ on input line 876.
 
 
 LaTeX Warning: Citation `mcgarryExplosions2017' on page 9 undefined on input li
-ne 882.
+ne 917.
 
 
 LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 9 undefined on
- input line 882.
+ input line 919.
 
 
 LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 9 undefined on i
-nput line 883.
-
-
-LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 9 undefined on i
-nput line 893.
-
-
-LaTeX Warning: Citation `staff31082015tanjinblastunrevealed' on page 9 undefine
-d on input line 895.
-
-
-LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 9 undefined 
-on input line 897.
-
-
-LaTeX Warning: Citation `mcgarryExplosions2017' on page 9 undefined on input li
-ne 938.
-
-
-LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 9 undefined on
- input line 940.
-
-
-LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 9 undefined on i
-nput line 942.
+nput line 921.
 
 
 LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 9 undefined o
-n input line 968.
+n input line 947.
 
 
-LaTeX Warning: Citation `uran05042019SPOF' on page 9 undefined on input line 97
-2.
+LaTeX Warning: Citation `uran05042019SPOF' on page 9 undefined on input line 95
+1.
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 516--988
+Underfull \hbox (badness 1688) in paragraph at lines 495--967
 \T1/ptm/m/n/10.95 vei-lig-heids-vraag-stuk [[]] vei-ig-heids-vraag-stuk van-weg
 e touch screen [[]] vei-lig-heids-vraag-stuk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--988
+Underfull \hbox (badness 10000) in paragraph at lines 495--967
 []\T1/ptm/m/n/10.95 De schip-hol-brand op 27/10/2005[[]],[[]],[[]], [[]],[[]],[
 []],[[]],[[]],[[]],
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 516--988
+Underfull \hbox (badness 3078) in paragraph at lines 495--967
 \T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]], [[]],[[]],[[]]. 27/1
 0/2005 11 do-den on-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--988
+Underfull \hbox (badness 10000) in paragraph at lines 495--967
 \T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]]
 ,[[]],[[]],[[]],[[]],
  []
@@ -2945,39 +2903,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 516--988
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \vbox (badness 1881) has occurred while \output is active []
 
- [11]
-
-LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 12 undefined 
-on input line 997.
+LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 11 undefined 
+on input line 976.
 
 
-LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 12 undefined on in
-put line 1073.
+LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 11 undefined on in
+put line 1052.
 
 
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 12 undefined on input
- line 1085.
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 11 undefined on input
+ line 1064.
 
 
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 12 undefined on input
- line 1091.
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 11 undefined on input
+ line 1070.
 
 
-LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 12 undefined on i
-nput line 1205.
+LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 11 undefined on i
+nput line 1184.
 
 
-LaTeX Warning: Citation `noauthor_2022-nm' on page 12 undefined on input line 1
-219.
+LaTeX Warning: Citation `noauthor_2022-nm' on page 11 undefined on input line 1
+198.
 
 
-LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 12 undefined on 
-input line 1236.
+LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 11 undefined on 
+input line 1215.
 
-
-Underfull \vbox (badness 1881) has occurred while \output is active []
+[11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
 
@@ -2987,7 +2942,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1287 \newline
+l.1266 \newline
                 \indent explosie in libabon, beirut
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2995,41 +2950,40 @@ or  <return>  to continue without it.
 
 
 LaTeX Warning: Citation `hrw03082021investigateBeirutBlast' on page 13 undefine
-d on input line 1291.
+d on input line 1270.
 
 
 LaTeX Warning: Citation `souaibyElHussein112020Beirutstory' on page 13 undefine
-d on input line 1292.
+d on input line 1271.
 
 
 LaTeX Warning: Citation `ifrc2020chemicalexplosionBeirutPort' on page 13 undefi
-ned on input line 1293.
+ned on input line 1272.
 
 
 LaTeX Warning: Citation `boogers092002RampenRegelsRichtlijnen' on page 13 undef
-ined on input line 1305.
+ined on input line 1284.
 
 
 LaTeX Warning: Citation `sprongken19032018CourtProcedureDigital' on page 13 und
-efined on input line 1312.
+efined on input line 1291.
 
 
 LaTeX Warning: Citation `PROCESREGLEMENTEcourt' on page 13 undefined on input l
-ine 1314.
+ine 1293.
 
 
 LaTeX Warning: Citation `molukseTreinkaping' on page 13 undefined on input line
- 1318.
+ 1297.
 
 
 LaTeX Warning: Citation `ovvVideoOssendrecht' on page 13 undefined on input lin
-e 1329.
+e 1308.
 
 
 LaTeX Warning: Citation `oVVSchietongevalOssendrecht' on page 13 undefined on i
-nput line 1330.
+nput line 1309.
 
-[13]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3037,88 +2991,89 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1336 \newline
+l.1315 \newline
                 \indent Dan zijn er nog andere ongelukken met de stint, de s...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+[13]
 
 LaTeX Warning: Citation `daucriticalsafetyconsider' on page 14 undefined on inp
-ut line 1442.
+ut line 1421.
 
 
 LaTeX Warning: Citation `nebulaassessment' on page 14 undefined on input line 1
-445.
+424.
 
 
-LaTeX Warning: Citation `dlrtabid' on page 14 undefined on input line 1462.
+LaTeX Warning: Citation `dlrtabid' on page 14 undefined on input line 1441.
 
 
 LaTeX Warning: Citation `knight2010SafetyCritical' on page 14 undefined on inpu
-t line 1463.
+t line 1442.
 
 
 LaTeX Warning: Citation `creavisafecritical' on page 14 undefined on input line
- 1464.
+ 1443.
 
 
 LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 14 undefined on 
-input line 1465.
+input line 1444.
 
 
 LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 14 undefi
-ned on input line 1468.
+ned on input line 1447.
 
 [14]
 
-LaTeX Warning: Citation `thkwaterwerken' on page 15 undefined on input line 148
-1.
+LaTeX Warning: Citation `thkwaterwerken' on page 15 undefined on input line 146
+0.
 
 
 LaTeX Warning: Citation `rekenkamercybersecWater' on page 15 undefined on input
- line 1481.
+ line 1460.
 
 
 LaTeX Warning: Citation `hackerWaterwerk' on page 15 undefined on input line 14
-83.
+62.
 
 
-LaTeX Warning: Citation `kramerZeeland' on page 15 undefined on input line 1484
+LaTeX Warning: Citation `kramerZeeland' on page 15 undefined on input line 1463
 .
 
 
 LaTeX Warning: Citation `cybersecWaterwerk' on page 15 undefined on input line 
-1486.
+1465.
 
 
 LaTeX Warning: Citation `cybersecWaterschappen' on page 15 undefined on input l
-ine 1488.
+ine 1467.
 
 
 LaTeX Warning: Citation `cybersecZuidHolland' on page 15 undefined on input lin
-e 1489.
+e 1468.
 
 
-LaTeX Warning: Citation `waterwerkNED' on page 15 undefined on input line 1491.
+LaTeX Warning: Citation `waterwerkNED' on page 15 undefined on input line 1470.
 
 
 
 LaTeX Warning: Citation `veiligheidwaterland' on page 15 undefined on input lin
-e 1492.
+e 1471.
 
 
 LaTeX Warning: Citation `CivilEngineeringDivision' on page 15 undefined on inpu
-t line 1498.
+t line 1477.
 
-[15] [16]
-<plaatjes/sluispassage.png, id=1051, 490.83376pt x 689.57625pt>
+[15]
+<plaatjes/sluispassage.png, id=1046, 490.83376pt x 689.57625pt>
 File: plaatjes/sluispassage.png Graphic file (type png)
 <use plaatjes/sluispassage.png>
-Package pdftex.def Info: plaatjes/sluispassage.png  used on input line 1518.
+Package pdftex.def Info: plaatjes/sluispassage.png  used on input line 1497.
 (pdftex.def)             Requested size: 220.87314pt x 310.30644pt.
- [17
+ [16
 
  <./plaatjes/sluispassage.png>]
 
@@ -3129,7 +3084,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1553 ..., i.e. an enabling condition (g := x ∼
+l.1532 ..., i.e. an enabling condition (g := x ∼
                                                    c|g ∧ g, where
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3142,7 +3097,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1553 ...n enabling condition (g := x ∼ c|g ∧
+l.1532 ...n enabling condition (g := x ∼ c|g ∧
                                                    g, where
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3155,7 +3110,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1554 ∼
+l.1533 ∼
           ∈ {<, ≤, =, ≥, >}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3168,7 +3123,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1554 ∼∈
+l.1533 ∼∈
               {<, ≤, =, ≥, >}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3181,7 +3136,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1554 ∼∈ {<, ≤
+l.1533 ∼∈ {<, ≤
                      , =, ≥, >}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3194,7 +3149,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1554 ∼∈ {<, ≤, =, ≥
+l.1533 ∼∈ {<, ≤, =, ≥
                              , >}
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3202,7 +3157,7 @@ You may provide a definition with
 ! Undefined control sequence.
 <recently read> \trightarrow 
                              
-l.1558 ...luation is a function v: X $\trightarrow
+l.1537 ...luation is a function v: X $\trightarrow
                                                   $ $R^+$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3211,17 +3166,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1558--1560
+Underfull \hbox (badness 10000) in paragraph at lines 1537--1539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1561--1570
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1575--1577
+Underfull \hbox (badness 10000) in paragraph at lines 1554--1556
 
  []
 
@@ -3233,7 +3188,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1577 	\item $\vee$ $\models$ g x  < k iff ν
+l.1556 	\item $\vee$ $\models$ g x  < k iff ν
                                               (x) < k
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3246,7 +3201,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1578 	\item $\vee$ $\models$ x ≤
+l.1557 	\item $\vee$ $\models$ x ≤
                                      k iff ν(x) ≤ k
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3259,7 +3214,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1578 	\item $\vee$ $\models$ x ≤ k iff ν
+l.1557 	\item $\vee$ $\models$ x ≤ k iff ν
                                              (x) ≤ k
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3272,7 +3227,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1578 ...m $\vee$ $\models$ x ≤ k iff ν(x) ≤
+l.1557 ...m $\vee$ $\models$ x ≤ k iff ν(x) ≤
                                                    k
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3285,7 +3240,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1579 	\item $\vee$ $\models$ g1 ∧
+l.1558 	\item $\vee$ $\models$ g1 ∧
                                       g2 iff ν $\models$ g1 and ν $\models...
 
 You may provide a definition with
@@ -3299,7 +3254,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1579 	\item $\vee$ $\models$ g1 ∧ g2 iff ν
+l.1558 	\item $\vee$ $\models$ g1 ∧ g2 iff ν
                                                 $\models$ g1 and ν $\models...
 
 You may provide a definition with
@@ -3313,7 +3268,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1579 ...ls$ g1 ∧ g2 iff ν $\models$ g1 and ν
+l.1558 ...ls$ g1 ∧ g2 iff ν $\models$ g1 and ν
                                                    $\models$ g2
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3325,7 +3280,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1582 \\
+l.1561 \\
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3338,7 +3293,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1583 \\
+l.1562 \\
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3351,7 +3306,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1584 
+l.1563 
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3360,7 +3315,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1587 ...\xrightarrow[]{a}$ (s', v'), where a \in
+l.1566 ...\xrightarrow[]{a}$ (s', v'), where a \in
                                                    $\Sigma$, provided that t...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3368,7 +3323,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1587 ...rrow[]{a}$ (s', v'), where a \in $\Sigma
+l.1566 ...rrow[]{a}$ (s', v'), where a \in $\Sigma
                                                   $, provided that there is ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3376,7 +3331,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1589 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
+l.1568 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
                                                   $ (s, v_1 + d_1) for some ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3387,7 +3342,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1589 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
+l.1568 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
                                                   $ (s, v_1 + d_1) for some ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3395,14 +3350,14 @@ you left one out. Proceed, with fingers crossed.
 ! Limit controls must follow a math operator.
 \ext@arrow ...x to\wd \tw@ {\unhbox \z@ }}\limits 
                                                   \@ifnotempty {#7}{^{\if 0#...
-l.1589 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
+l.1568 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
                                                   $ (s, v_1 + d_1) for some ...
 I'm ignoring this misplaced \limits or \nolimits command.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1589 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
+l.1568 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
                                                   $ (s, v_1 + d_1) for some ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3413,7 +3368,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1589 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
+l.1568 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
                                                   $ (s, v_1 + d_1) for some ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3421,7 +3376,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.1589 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
+l.1568 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
                                                   $ (s, v_1 + d_1) for some ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3432,7 +3387,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \ext@arrow ...fi #6\if 0#2\else \mkern #2mu\fi }}}
                                                   
-l.1589 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
+l.1568 ...n (s, v1)  $\xrightarrow[]{$$\delta$(d)}
                                                   $ (s, v_1 + d_1) for some ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3443,7 +3398,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1589 ...)  $\xrightarrow[]{$$\delta$(d)}$ (s, v_
+l.1568 ...)  $\xrightarrow[]{$$\delta$(d)}$ (s, v_
                                                   1 + d_1) for some $d_1$ $\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3451,7 +3406,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1589 ...\delta$(d)}$ (s, v_1 + d_1) for some $d_
+l.1568 ...\delta$(d)}$ (s, v_1 + d_1) for some $d_
                                                   1$ $\geq$ 0, and
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3459,7 +3414,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 ...(s, v1 +d1)  $\xrightarrow[]{a}$ (s', v_
+l.1569 ...(s, v1 +d1)  $\xrightarrow[]{a}$ (s', v_
                                                   1') such that $v_1$ + $d_1...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3467,7 +3422,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 ...ightarrow[]{a}$ (s', v_1') such that $v_
+l.1569 ...ightarrow[]{a}$ (s', v_1') such that $v_
                                                   1$ + $d_1$ satisfies $\var...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3475,7 +3430,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 ...v_1$ + $d_1$ satisfies $\varphi$ and v'_
+l.1569 ...v_1$ + $d_1$ satisfies $\varphi$ and v'_
                                                   1 = (v_1 + d_1)[$\lambda $...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3483,7 +3438,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 ...\varphi$ and v'_1 = (v_1 + d_1)[$\lambda
+l.1569 ...\varphi$ and v'_1 = (v_1 + d_1)[$\lambda
                                                    $:=0].
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3491,7 +3446,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.1596 ...$\langle$ s, a, $\phi$ , $\lambda$, $s^$
+l.1575 ...$\langle$ s, a, $\phi$ , $\lambda$, $s^$
                                                    $\rangle$ $\in$ T is een ...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -3501,7 +3456,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1596 ...$\langle$ s, a, $\phi$ , $\lambda$, $s^$
+l.1575 ...$\langle$ s, a, $\phi$ , $\lambda$, $s^$
                                                    $\rangle$ $\in$ T is een ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3509,40 +3464,40 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[18
+[17
 
 ]
 
-LaTeX Warning: Citation `03CHAPTER3' on page 19 undefined on input line 1599.
+LaTeX Warning: Citation `03CHAPTER3' on page 18 undefined on input line 1578.
 
 
-LaTeX Warning: Citation `04_giWorkshop2000' on page 19 undefined on input line 
-1601.
+LaTeX Warning: Citation `04_giWorkshop2000' on page 18 undefined on input line 
+1580.
 
 
-LaTeX Warning: Citation `pelanekFormal' on page 19 undefined on input line 1602
+LaTeX Warning: Citation `pelanekFormal' on page 18 undefined on input line 1581
 .
 
 
-LaTeX Warning: Citation `jiyanpatil07TOC' on page 19 undefined on input line 16
-04.
+LaTeX Warning: Citation `jiyanpatil07TOC' on page 18 undefined on input line 15
+83.
 
 
-LaTeX Warning: Citation `latin06' on page 19 undefined on input line 1606.
+LaTeX Warning: Citation `latin06' on page 18 undefined on input line 1585.
 
 
-LaTeX Warning: Citation `realtimeForms' on page 19 undefined on input line 1607
+LaTeX Warning: Citation `realtimeForms' on page 18 undefined on input line 1586
 .
 
 
-LaTeX Warning: Citation `verification' on page 19 undefined on input line 1608.
+LaTeX Warning: Citation `verification' on page 18 undefined on input line 1587.
 
 
 
-LaTeX Warning: Citation `uppaal' on page 19 undefined on input line 1609.
+LaTeX Warning: Citation `uppaal' on page 18 undefined on input line 1588.
 
 
-LaTeX Warning: Citation `03CHAPTER3' on page 19 undefined on input line 1614.
+LaTeX Warning: Citation `03CHAPTER3' on page 18 undefined on input line 1593.
 
 
 ! LaTeX Error: Unicode character φ (U+03C6)
@@ -3552,7 +3507,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1616 ...Uppaal query language. A TCTL formula φ
+l.1595 ...Uppaal query language. A TCTL formula φ
                                                    is satisfiable iff there ...
 
 You may provide a definition with
@@ -3566,7 +3521,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1618 ...\langle$A, µ$\rangle$ and a state s ∈
+l.1597 ...\langle$A, µ$\rangle$ and a state s ∈
                                                   $\in$S, such that M, s $\m...
 
 You may provide a definition with
@@ -3580,231 +3535,231 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1618 ...s ∈$\in$S, such that M, s $\models$ φ
+l.1597 ...s ∈$\in$S, such that M, s $\models$ φ
                                                   .
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-LaTeX Warning: Citation `isbn9789526031033' on page 19 undefined on input line 
-1619.
+LaTeX Warning: Citation `isbn9789526031033' on page 18 undefined on input line 
+1598.
 
 
-LaTeX Warning: Citation `nourollahi20191215' on page 19 undefined on input line
- 1623.
+LaTeX Warning: Citation `nourollahi20191215' on page 18 undefined on input line
+ 1602.
 
 
-LaTeX Warning: Citation `Lecture2' on page 19 undefined on input line 1624.
+LaTeX Warning: Citation `Lecture2' on page 18 undefined on input line 1603.
 
 
-LaTeX Warning: Citation `LIPIcs-TIME-2021-12' on page 19 undefined on input lin
-e 1626.
+LaTeX Warning: Citation `LIPIcs-TIME-2021-12' on page 18 undefined on input lin
+e 1605.
 
 
-LaTeX Warning: Citation `mctutorial' on page 19 undefined on input line 1628.
+LaTeX Warning: Citation `mctutorial' on page 18 undefined on input line 1607.
 
 
-LaTeX Warning: Citation `FULLTEXT02' on page 19 undefined on input line 1629.
+LaTeX Warning: Citation `FULLTEXT02' on page 18 undefined on input line 1608.
 
 
-LaTeX Warning: Citation `stanfordRealtime' on page 19 undefined on input line 1
-630.
+LaTeX Warning: Citation `stanfordRealtime' on page 18 undefined on input line 1
+609.
 
 
-LaTeX Warning: Citation `baierKatoenModelChecking' on page 19 undefined on inpu
-t line 1631.
+LaTeX Warning: Citation `baierKatoenModelChecking' on page 18 undefined on inpu
+t line 1610.
 
 
-LaTeX Warning: Citation `nourollahi20191215' on page 19 undefined on input line
- 1638.
+LaTeX Warning: Citation `nourollahi20191215' on page 18 undefined on input line
+ 1617.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking' on page 19 undefined on input
- line 1645.
+LaTeX Warning: Citation `clarke2000Modelchecking' on page 18 undefined on input
+ line 1624.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking' on page 19 undefined on input
- line 1646.
+LaTeX Warning: Citation `clarke2000Modelchecking' on page 18 undefined on input
+ line 1625.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking21' on page 19 undefined on inp
-ut line 1647.
+LaTeX Warning: Citation `clarke2000Modelchecking21' on page 18 undefined on inp
+ut line 1626.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking212' on page 19 undefined on in
-put line 1648.
+LaTeX Warning: Citation `clarke2000Modelchecking212' on page 18 undefined on in
+put line 1627.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking223' on page 19 undefined on in
-put line 1649.
+LaTeX Warning: Citation `clarke2000Modelchecking223' on page 18 undefined on in
+put line 1628.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking31' on page 19 undefined on inp
-ut line 1650.
+LaTeX Warning: Citation `clarke2000Modelchecking31' on page 18 undefined on inp
+ut line 1629.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking32' on page 19 undefined on inp
-ut line 1651.
+LaTeX Warning: Citation `clarke2000Modelchecking32' on page 18 undefined on inp
+ut line 1630.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking33' on page 19 undefined on inp
-ut line 1652.
+LaTeX Warning: Citation `clarke2000Modelchecking33' on page 18 undefined on inp
+ut line 1631.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking411' on page 19 undefined on in
-put line 1653.
+LaTeX Warning: Citation `clarke2000Modelchecking411' on page 18 undefined on in
+put line 1632.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking43' on page 19 undefined on inp
-ut line 1654.
+LaTeX Warning: Citation `clarke2000Modelchecking43' on page 18 undefined on inp
+ut line 1633.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking63' on page 19 undefined on inp
-ut line 1655.
+LaTeX Warning: Citation `clarke2000Modelchecking63' on page 18 undefined on inp
+ut line 1634.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking64' on page 19 undefined on inp
-ut line 1656.
+LaTeX Warning: Citation `clarke2000Modelchecking64' on page 18 undefined on inp
+ut line 1635.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking661' on page 19 undefined on in
-put line 1657.
+LaTeX Warning: Citation `clarke2000Modelchecking661' on page 18 undefined on in
+put line 1636.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking91' on page 19 undefined on inp
-ut line 1658.
+LaTeX Warning: Citation `clarke2000Modelchecking91' on page 18 undefined on inp
+ut line 1637.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking102' on page 19 undefined on in
-put line 1659.
+LaTeX Warning: Citation `clarke2000Modelchecking102' on page 18 undefined on in
+put line 1638.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking11' on page 19 undefined on inp
-ut line 1660.
+LaTeX Warning: Citation `clarke2000Modelchecking11' on page 18 undefined on inp
+ut line 1639.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking122' on page 19 undefined on in
-put line 1661.
+LaTeX Warning: Citation `clarke2000Modelchecking122' on page 18 undefined on in
+put line 1640.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking123' on page 19 undefined on in
-put line 1662.
+LaTeX Warning: Citation `clarke2000Modelchecking123' on page 18 undefined on in
+put line 1641.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking132' on page 19 undefined on in
-put line 1663.
+LaTeX Warning: Citation `clarke2000Modelchecking132' on page 18 undefined on in
+put line 1642.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 19 undefined on i
-nput line 1664.
+LaTeX Warning: Citation `clarke2000Modelchecking1321' on page 18 undefined on i
+nput line 1643.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking152' on page 19 undefined on in
-put line 1665.
+LaTeX Warning: Citation `clarke2000Modelchecking152' on page 18 undefined on in
+put line 1644.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking171' on page 19 undefined on in
-put line 1666.
+LaTeX Warning: Citation `clarke2000Modelchecking171' on page 18 undefined on in
+put line 1645.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking172' on page 19 undefined on in
-put line 1667.
+LaTeX Warning: Citation `clarke2000Modelchecking172' on page 18 undefined on in
+put line 1646.
 
 
-LaTeX Warning: Citation `clarke2000Modelchecking173' on page 19 undefined on in
-put line 1668.
+LaTeX Warning: Citation `clarke2000Modelchecking173' on page 18 undefined on in
+put line 1647.
 
 
-LaTeX Warning: Citation `audioSemanticsBengtsson' on page 19 undefined on input
- line 1670.
+LaTeX Warning: Citation `audioSemanticsBengtsson' on page 18 undefined on input
+ line 1649.
 
 
-LaTeX Warning: Citation `guidingAutomataBberm' on page 19 undefined on input li
-ne 1671.
+LaTeX Warning: Citation `guidingAutomataBberm' on page 18 undefined on input li
+ne 1650.
 
 
-LaTeX Warning: Citation `gearTransitionLindahl1' on page 19 undefined on input 
-line 1672.
+LaTeX Warning: Citation `gearTransitionLindahl1' on page 18 undefined on input 
+line 1651.
 
 
-LaTeX Warning: Citation `gearTransitionLindahl2' on page 19 undefined on input 
-line 1673.
+LaTeX Warning: Citation `gearTransitionLindahl2' on page 18 undefined on input 
+line 1652.
 
 
-LaTeX Warning: Citation `martinelliScada' on page 19 undefined on input line 16
-74.
+LaTeX Warning: Citation `martinelliScada' on page 18 undefined on input line 16
+53.
 
 
-LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 19 undefined
- on input line 1675.
+LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 18 undefined
+ on input line 1654.
 
 
-LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 19 undefined
- on input line 1676.
+LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 18 undefined
+ on input line 1655.
 
 
-LaTeX Warning: Citation `huangVerficationStoch' on page 19 undefined on input l
-ine 1677.
+LaTeX Warning: Citation `huangVerficationStoch' on page 18 undefined on input l
+ine 1656.
 
 
-LaTeX Warning: Citation `bengtssonUppaalVerification' on page 19 undefined on i
-nput line 1678.
+LaTeX Warning: Citation `bengtssonUppaalVerification' on page 18 undefined on i
+nput line 1657.
 
 
-LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 19 undefined on
- input line 1679.
+LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 18 undefined on
+ input line 1658.
 
 
-LaTeX Warning: Citation `alexandreUppaalDefinition' on page 19 undefined on inp
-ut line 1680.
+LaTeX Warning: Citation `alexandreUppaalDefinition' on page 18 undefined on inp
+ut line 1659.
 
 
-LaTeX Warning: Citation `behzadEvalQOS' on page 19 undefined on input line 1681
+LaTeX Warning: Citation `behzadEvalQOS' on page 18 undefined on input line 1660
 .
 
 
-LaTeX Warning: Citation `behzadVariablesQoS' on page 19 undefined on input line
- 1682.
+LaTeX Warning: Citation `behzadVariablesQoS' on page 18 undefined on input line
+ 1661.
 
 
-LaTeX Warning: Citation `alur' on page 19 undefined on input line 1683.
+LaTeX Warning: Citation `alur' on page 18 undefined on input line 1662.
 
 
-LaTeX Warning: Citation `alurDenseRealTime' on page 19 undefined on input line 
-1684.
+LaTeX Warning: Citation `alurDenseRealTime' on page 18 undefined on input line 
+1663.
 
 
-LaTeX Warning: Citation `alurSystemClok' on page 19 undefined on input line 168
-5.
+LaTeX Warning: Citation `alurSystemClok' on page 18 undefined on input line 166
+4.
 
 
-LaTeX Warning: Citation `alurModelHybrid' on page 19 undefined on input line 16
-86.
+LaTeX Warning: Citation `alurModelHybrid' on page 18 undefined on input line 16
+65.
 
 
-LaTeX Warning: Citation `rijksoverheidSluizen' on page 19 undefined on input li
-ne 1687.
+LaTeX Warning: Citation `rijksoverheidSluizen' on page 18 undefined on input li
+ne 1666.
 
 
-LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 19 undefined o
-n input line 1688.
+LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 18 undefined o
+n input line 1667.
 
 
-LaTeX Warning: Citation `latin06' on page 19 undefined on input line 1694.
+LaTeX Warning: Citation `latin06' on page 18 undefined on input line 1673.
 
 
-LaTeX Warning: Citation `realtimeForms' on page 19 undefined on input line 1694
+LaTeX Warning: Citation `realtimeForms' on page 18 undefined on input line 1673
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1691--1695
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1674
 
  []
 
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1698 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
+l.1677 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
                                                   $ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3815,7 +3770,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1699 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
+l.1678 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3826,7 +3781,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1700 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
+l.1679 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3837,7 +3792,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \piand 
                        
-l.1703 ...htarrow$ s is the first state of $\piand
+l.1682 ...htarrow$ s is the first state of $\piand
                                                   $ M, s $\models$ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3848,7 +3803,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1704 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
+l.1683 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
                                                   $ g1\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3859,7 +3814,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \bugcup 
                         
-l.1710 M, s $\models$ g1 $\bugcup
+l.1689 M, s $\models$ g1 $\bugcup
                                  $ g2 $\Leftrightarrow$ ~  there  ~ exists  ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3870,7 +3825,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1712 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
+l.1691 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
                                                   $ g1 then M,$\pi^{j}$ $\mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3886,7 +3841,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1718 ...Taking a Boolean observable C : Time −
+l.1697 ...Taking a Boolean observable C : Time −
                                                   → {0, 1}, where C(t) = 1...
 
 You may provide a definition with
@@ -3894,11 +3849,11 @@ You may provide a definition with
 
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 1718.
+            Default family used instead on input line 1697.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1721 $\forall$ t \in
+l.1700 $\forall$ t \in
                        Time $\dot{}$ $\neg$ C(t)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3910,7 +3865,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1721 $\forall$ t \in Time $\dot{}
+l.1700 $\forall$ t \in Time $\dot{}
                                    $ $\neg$ C(t)
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3918,12 +3873,12 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1721 $\forall$ t \in Time $\dot{}$ $\neg
+l.1700 $\forall$ t \in Time $\dot{}$ $\neg
                                           $ C(t)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[19]
+[18]
 
 ! LaTeX Error: Unicode character − (U+2212)
                not set up for use with LaTeX.
@@ -3932,14 +3887,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1738 G : Time −
+l.1717 G : Time −
                    → {0, 1}, where G(t) = 1 expresses that at time t the
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 1738.
+            Default family used instead on input line 1717.
 
 ! LaTeX Error: Unicode character ≤ (U+2264)
                not set up for use with LaTeX.
@@ -3948,7 +3903,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1745 t ≤
+l.1724 t ≤
              t0, we cannot complain that (1.2) is violated because eventually
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3961,7 +3916,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1754 [b, e] with lower bound b ∈
+l.1733 [b, e] with lower bound b ∈
                                      Time and upper bound e ∈ Time where
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3974,7 +3929,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1754 ...r bound b ∈ Time and upper bound e ∈
+l.1733 ...r bound b ∈ Time and upper bound e ∈
                                                    Time where
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3987,7 +3942,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1755 b ≤
+l.1734 b ≤
              e. For example, whenever a pedestrian at a traffic light pushes
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -3995,7 +3950,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1765 ...{}$ (P(t1) $\rightarrow$ $\exists$t2 \in
+l.1744 ...{}$ (P(t1) $\rightarrow$ $\exists$t2 \in
                                                    [t1 + 10, t1 + 15] $\dot{...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4007,7 +3962,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1765 ...exists$t2 \in [t1 + 10, t1 + 15] $\dot{}
+l.1744 ...exists$t2 \in [t1 + 10, t1 + 15] $\dot{}
                                                   $ G(t2))
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4015,13 +3970,13 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1772 
+l.1751 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (167.95674pt too wide) in paragraph at lines 1752--1772
+Overfull \hbox (167.95674pt too wide) in paragraph at lines 1731--1751
 \OT1/ptmcm/m/n/10.95 15]$$\OML/ptmcm/m/it/10.95 G\OT1/ptmcm/m/n/10.95 (\OML/ptm
 cm/m/it/10.95 t\OT1/ptmcm/m/n/10.95 2))\OML/ptmcm/m/it/10.95 Notethatthisproper
 tycanbefalsifiedinboundedtime:Whenforsometimepointt\OT1/ptmcm/m/n/10.95 1\OML/p
@@ -4030,11 +3985,11 @@ n/10.95 1)\OML/ptmcm/m/it/10.95 wefindoutthatduringthetimeinterval\OT1/ptmcm/m/
 n/10.95 [\OML/ptmcm/m/it/10.95 t\OT1/ptmcm/m/n/10.95 1 +
  []
 
-[20]
+[19]
 ! Display math should end with $$.
 <to be read again> 
                    \forall 
-l.1788 $\forall
+l.1767 $\forall
                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}...
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -4042,7 +3997,7 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1788 $\forall
+l.1767 $\forall
                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4050,7 +4005,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1788 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
+l.1767 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
                                                   _b^{e}C(t)\,\mathrm{d}t $\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4058,7 +4013,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1788 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
+l.1767 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
                                                   $  u(b,e)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4070,7 +4025,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1789 \]
+l.1768 \]
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4079,7 +4034,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1789 \]
+l.1768 \]
          
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4090,54 +4045,54 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.1789 \]
+l.1768 \]
          
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-LaTeX Warning: Citation `04_giWorkshop2000' on page 21 undefined on input line 
-1792.
+LaTeX Warning: Citation `04_giWorkshop2000' on page 20 undefined on input line 
+1771.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1820 AG EF_
+l.1799 AG EF_
              [_x_,_y_] $\vee$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Double subscript.
-l.1820 AG EF_[_
+l.1799 AG EF_[_
                x_,_y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1820 AG EF_[_x_
+l.1799 AG EF_[_x_
                  ,_y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1820 AG EF_[_x_,_
+l.1799 AG EF_[_x_,_
                    y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1820 AG EF_[_x_,_y_
+l.1799 AG EF_[_x_,_y_
                      ] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1820 AG EF_[_x_,_y_] $\vee
+l.1799 AG EF_[_x_,_y_] $\vee
                             $
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[21]) (discussie.tex [22
+[20]) (discussie.tex [21
 
-]) (bronnen.tex [23
+]) (bronnen.tex [22
 
 ]
 Overfull \hbox (270.53256pt too wide) in paragraph at lines 14--16
@@ -4224,7 +4179,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--43
 /ptm/m/n/10.95 re-pre-sen-t-in-gand using non-func-ti-o-nal
  []
 
-[24
+[23
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
@@ -4341,7 +4296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 2019 / 03 /
  []
 
-[25]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 [][]$\T1/pcr/m/n/10.95 https : / / www . cyber . nj . gov / threat-[]center / t
 hreat-[]profiles / ics-[]malware-[]variants /
@@ -4405,7 +4360,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
  / 2017 / 06 /
  []
 
-[26]
+[25]
 Overfull \hbox (203.51889pt too wide) in paragraph at lines 177--178
 [][]$\T1/pcr/m/n/10.95 https : / / www . cybersecurityintelligence . com / blog
  / attack-[]on-[]ukraines-[]power-[]grid-[]targeted-[]transmission-[]stations-[
@@ -4481,7 +4436,7 @@ Overfull \hbox (40.56918pt too wide) in paragraph at lines 193--194
 ning-[]unprecedented-[]hack-[]ukraines-[]power-[]grid/$[][] 
  []
 
-[27
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{cite.desarnau
 d2017cyberattacks}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -4596,7 +4551,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.237 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://api1.ibabs.eu/publicdownlo...
-[28]
+[27]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -4783,7 +4738,7 @@ erstallig-[]onderhoud-[]wachtplaatsen-[]bruggen-[]en-[]sluizen-[]zuid-[]holland
 -[]zorgelijk/$[][] 
  []
 
-[29]
+[28]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -4910,7 +4865,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.280 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://people.physics.carleton.ca...
 
-LaTeX Warning: Citation `' on page 30 undefined on input line 281.
+LaTeX Warning: Citation `' on page 29 undefined on input line 281.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 280--282
@@ -4926,9 +4881,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.283 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=-7...
 
-LaTeX Warning: Citation `' on page 30 undefined on input line 284.
+LaTeX Warning: Citation `' on page 29 undefined on input line 284.
 
-[30]
+[29]
 Underfull \hbox (badness 5147) in paragraph at lines 286--288
 [][]$\T1/pcr/m/n/10.95 https : / / www . bugsnag . com / blog / bug-[]day-[]rac
 e-[]condition-[]therac-[]25$[][] \T1/ptm/m/n/10.95 kort ar-ti-kel met
@@ -4948,7 +4903,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.294 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://thedailywtf.com/articles/t...
 
-LaTeX Warning: Citation `' on page 31 undefined on input line 295.
+LaTeX Warning: Citation `' on page 30 undefined on input line 295.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
@@ -4958,7 +4913,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.297 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.computer.org/csdl/maga...
 
-LaTeX Warning: Citation `' on page 31 undefined on input line 298.
+LaTeX Warning: Citation `' on page 30 undefined on input line 298.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 297--300
@@ -4990,7 +4945,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 316--319
 ndouts / Therac / Therac _ 2 . html$[][] \T1/ptm/m/n/10.95 case study
  []
 
-[31]
+[30]
 Underfull \hbox (badness 6493) in paragraph at lines 319--321
 [][]$\T1/pcr/m/n/10.95 http : / / users . csc . calpoly . edu / ~jdalbey / SWE 
 / Papers / THERAC25 . html$[][] \T1/ptm/m/n/10.95 les-sons lear-ned.
@@ -5034,9 +4989,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.350 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.cs.colostate.edu/~biem...
 
-LaTeX Warning: Citation `' on page 32 undefined on input line 351.
+LaTeX Warning: Citation `' on page 31 undefined on input line 351.
 
-[32]
+[31]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5044,7 +4999,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.354 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.cs.ucf.edu/~dcm/Teachi...
 
-LaTeX Warning: Citation `' on page 33 undefined on input line 355.
+LaTeX Warning: Citation `' on page 32 undefined on input line 355.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 354--361
@@ -5060,7 +5015,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.371 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://hci.cs.siue.edu/NSF/Files/...
 
-LaTeX Warning: Citation `' on page 33 undefined on input line 372.
+LaTeX Warning: Citation `' on page 32 undefined on input line 372.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 371--374
@@ -5076,7 +5031,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
 l.374 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.thinkreliability.com/I...
 
-LaTeX Warning: Citation `' on page 33 undefined on input line 375.
+LaTeX Warning: Citation `' on page 32 undefined on input line 375.
 
 
 Underfull \hbox (badness 2564) in paragraph at lines 374--377
@@ -5145,7 +5100,7 @@ Underfull \hbox (badness 1688) in paragraph at lines 423--425
 9 / 04 / excellent _ analy . html$[][] \T1/ptm/m/n/10.95 fout in de
  []
 
-[33]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 425--427
 [][]$\T1/pcr/m/n/10.95 https : / / www . forbes . com / sites / georgeavetisov 
 / 2019 / 03 / 19 /
@@ -5237,7 +5192,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--452
 events / news /
  []
 
-[34]
+[33]
 Overfull \hbox (97.91391pt too wide) in paragraph at lines 454--457
 [][]$\T1/pcr/m/n/10.95 https : / / www . flightglobal . com / airframers / boei
 ng-[]delays-[]737-[]max-[]10-[]deliveries-[]two-[]years-[]to-[]2023 /
@@ -5338,7 +5293,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--483
 ]09-[]2020$[][] \T1/ptm/m/n/10.95 Cul-tuur-ver-an-de-ring, de-
  []
 
-[35]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 483--485
 [][]$\T1/pcr/m/n/10.95 https : / / www . aerospacetestinginternational . com / 
 features /
@@ -5425,7 +5380,7 @@ nd-[]why-[]software-[]engineers-[]should-[]pay-[]attention-[]a041290994bd$[][]
 
  []
 
-[36]
+[35]
 Overfull \hbox (333.96176pt too wide) in paragraph at lines 507--509
 [][]$\T1/pcr/m/n/10.95 https : / / www . marketscreener . com / news / latest /
  China-[]studies-[]Boeing-[]737-[]MAX-[]recertification-[]wants-[]safety-[]conc
@@ -5564,7 +5519,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.550 			\bibitem{ID}
                       ... \LaTeX:\\ \url{https://www.reachingoutacrossdurham...
-[37]
+[36]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -5701,7 +5656,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 579--581
 book-[]2015 / forum-[]the-[]abyss-[] % E5 %
  []
 
-[38]
+[37]
 Overfull \hbox (6.56235pt too wide) in paragraph at lines 582--584
 [][]$\T1/pcr/m/n/10.95 https : / / www . cicm . org . my / images / articles / 
 CICM-[]Article-[]on-[]Tianjin-[]Blast-[]Oct2015 .
@@ -5811,7 +5766,7 @@ Overfull \hbox (62.90707pt too wide) in paragraph at lines 606--607
 nspections-[]in-[]china-[]follow-[]tianjin-[]explosion$[][] 
  []
 
-[39]
+[38]
 Overfull \hbox (147.67416pt too wide) in paragraph at lines 607--608
 [][]$\T1/pcr/m/n/10.95 https : / / www . thehindu . com / news / international 
 / investigation-[]begun-[]into-[]china-[]gas-[]explosion-[]as-[]toll-[]rises /
@@ -5961,7 +5916,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.644 				\bibitem{ID}
                        ... \LaTeX:\\ \url{https://www.wsj.com/articles/BL-CJ...
-[40]
+[39]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6108,7 +6063,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 678--679
  2f2015 % 2f08 % 2f12 %
  []
 
-[41]
+[40]
 Overfull \hbox (296.87045pt too wide) in paragraph at lines 681--682
 [][]$\T1/pcr/m/n/10.95 https : / / www . businessinsider . com / the-[]chemical
 -[]explosion-[]in-[]china-[]killed-[]more-[]than-[]100-[]people-[]and-[]the-[]d
@@ -6178,7 +6133,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 711--713
 []defects /
  []
 
-[42]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 713--716
 [][]$\T1/pcr/m/n/10.95 https : / / cio . economictimes . indiatimes . com / new
 s / digital-[]security /
@@ -6265,7 +6220,7 @@ Overfull \hbox (19.2313pt too wide) in paragraph at lines 746--752
 e-[]model-[]3-[]production-[]report-[]1846353323$[][]
  []
 
-[43]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 752--754
 [][]$\T1/pcr/m/n/10.95 https : / / www . bloomberg . com / graphics / 2019-[]te
 sla-[]model-[]3-[]survey / autopilot . html$[][]
@@ -6382,7 +6337,7 @@ Overfull \hbox (18.7313pt too wide) in paragraph at lines 779--780
 l-[]y-[]ev-[]safety-[]quality-[]issues-[]problems/$[][] 
  []
 
-[44]
+[43]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6579,7 +6534,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 798--802
 lligence-[]and-[]big-[]data / ?sh =
  []
 
-[45]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 807--808
 [][]$\T1/pcr/m/n/10.95 https : / / www . cnn . com / 2021 / 04 / 21 / tech / te
 sla-[]full-[]self-[]driving-[]launch / index .
@@ -6662,7 +6617,7 @@ Overfull \hbox (47.15366pt too wide) in paragraph at lines 825--826
 esla-[]autopilot-[]and-[]how-[]adas-[]will-[]save-[]lives$[][] 
  []
 
-[46]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 827--828
 [][]$\T1/pcr/m/n/10.95 https : / / static . tti . tamu . edu / conferences / tr
 affic-[]safety19 / presentations / lunch /
@@ -6826,7 +6781,7 @@ Overfull \hbox (75.57602pt too wide) in paragraph at lines 846--847
 a-[]crashes-[]report-[]new-[]orders-[]in-[]china-[]free-[]falling/$[][] 
  []
 
-[47]
+[46]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -6987,7 +6942,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 862--863
 021 / 04 / 18 /
  []
 
-[48]
+[47]
 Overfull \hbox (359.29965pt too wide) in paragraph at lines 864--865
 [][]$\T1/pcr/m/n/10.95 https : / / www . firstpost . com / tech / news-[]analys
 is / tesla-[]model-[]s-[]involved-[]in-[]fatal-[]crash-[]in-[]the-[]us-[]did-[]
@@ -7089,7 +7044,7 @@ Overfull \hbox (56.3226pt too wide) in paragraph at lines 915--917
 ommunicatie-[]na-[]vliegramp-[]vertoonde-[]gebreken$[][]
  []
 
-[49]
+[48]
 Overfull \hbox (113.66733pt too wide) in paragraph at lines 935--936
 [][]$\T1/pcr/m/n/10.95 https : / / joop . bnnvara . nl / nieuws / rapport-[]haa
 lbaarheid-[]en-[]houdbaarheid-[]van-[]mali-[]missie-[]twijfelachtig$[][] 
@@ -7177,7 +7132,7 @@ militairen-[]vrijuit-[]hij-[]probeerde-[]zijn-[]leven-[]te-[]redden~afe4c7a0/$[
 ][] 
  []
 
-[50]
+[49]
 Overfull \hbox (142.58969pt too wide) in paragraph at lines 992--997
 [][]$\T1/pcr/m/n/10.95 https : / / www . onderzoeksraad . nl / nl / page / 392 
 / brand-[]cellencomplex-[]schiphol-[]oost-[]nacht-[]van-[]26-[]op-[]27-[]oktobe
@@ -7240,7 +7195,7 @@ Overfull \hbox (73.57602pt too wide) in paragraph at lines 1031--1032
 evergoeding-[]voor-[]verdachte-[]schipholbrand~a6c7c51d /
  []
 
-[51]
+[50]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7361,7 +7316,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1070 							\bibitem{ID}
                            ... \LaTeX:\\ \url{https://permanent.fdlp.gov/gpo...
-[52]
+[51]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7497,7 +7452,7 @@ Overfull \hbox (170.51205pt too wide) in paragraph at lines 1107--1108
 eleden$[][] 
  []
 
-[53]
+[52]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7561,7 +7516,7 @@ Underfull \hbox (badness 4647) in paragraph at lines 1143--1149
 []in-[]tsjernobyl-[]gaat-[]door$[][] \T1/ptm/m/n/10.95 pern-si-oen-
  []
 
-[54
+[53
 pdfTeX warning (ext4): destination with the same identifier (name{cite.aviation
 SLMCrashAccidentInvestigation}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -7647,7 +7602,7 @@ Underfull \hbox (badness 4229) in paragraph at lines 1187--1194
 e-cen-sie Fo-tos en be-re-ke-nin-gen ont-man-te-ling en
  []
 
-[55]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 1194--1201
 [][]$\T1/pcr/m/n/10.95 https : / / magazines . autoriteitnvs . nl / nieuwsbrief
 -[]anvs / 2019 / 02 /
@@ -7730,7 +7685,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1280--1281
 671061 _ Attacking _ IEC-[]60870-[]5-[]104 _
  []
 
-[56]
+[55]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -7800,7 +7755,7 @@ Overfull \hbox (61.90707pt too wide) in paragraph at lines 1300--1301
  docs / 1900-[]bedieningstijden-[]groningen-[]drenthe .
  []
 
-[57]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 1302--1303
 [][]$\T1/pcr/m/n/10.95 https : / / www . bhic . nl / media / document / file / 
 rien-[]biemans-[]sluis-[]en-[]stuw-[]bij-[]lith .
@@ -7904,7 +7859,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1314--1331
 / 2014 / 05 /
  []
 
-[58]
+[57]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8034,7 +7989,7 @@ Overfull \hbox (8.76712pt too wide) in paragraph at lines 1397--1398
 0809 / slides / TheUppaalModelChecker-[]Julian .
  []
 
-[59]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 1410--1411
 [][]$\T1/pcr/m/n/10.95 http : / / www . cs . ru . nl / ~fvaan / PV / what _ is 
 _ a _ good _ model . html# : ~ : text = A % 20good % 20model %
@@ -8147,7 +8102,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1466 						\bibitem{ID}
                           ... \LaTeX:\\ \url{https://bdtechtalks.com/2020/07...
-[60]
+[59]
 Underfull \hbox (badness 10000) in paragraph at lines 1474--1475
 [][]$\T1/pcr/m/n/10.95 https : / / safety-[]work . org / fileadmin / safety-[]w
 ork / articles / Verwechslung _ von _
@@ -8226,7 +8181,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1495--1496
 ages / Design % 20Considerations /
  []
 
-[61]
+[60]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8297,7 +8252,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
                    \relax 
 l.1513 						\bibitem{ID}
                           ... \LaTeX:\\ \url{http://aerossurance.com/safety-...
-[62]
+[61]
 Overfull \hbox (112.28763pt too wide) in paragraph at lines 1516--1517
 [][]$\T1/pcr/m/n/10.95 https : / / aviation . stackexchange . com / questions /
  46677 / what-[]are-[]the-[]design-[]parameters-[]for-[]airliner-[]safety$[][] 
@@ -8403,7 +8358,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1532--1533
 uploads / 2019 / 01 /
  []
 
-[63]
+[62]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8544,7 +8499,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1565--1566
  . com / opinion / editorials /
  []
 
-[64]
+[63]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8676,7 +8631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1581--1582
  / arqs / bra _ arquivos /
  []
 
-[65]
+[64]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.ID}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -8818,7 +8773,7 @@ Overfull \hbox (22.93607pt too wide) in paragraph at lines 1619--1620
 []737-[]max-[]will-[]one-[]safest-[]aircraft-[]history/$[][] 
  []
 
-[66]
+[65]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.boeing73
 7maxdisplay}) has been already used, duplicate ignored
 <to be read again> 
@@ -8984,7 +8939,7 @@ Overfull \hbox (86.36526pt too wide) in paragraph at lines 1662--1663
  
  []
 
-[67]
+[66]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.beningo0
 2052019boeinglessons}) has been already used, duplicate ignored
 <to be read again> 
@@ -9153,7 +9108,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.koenig11
                    \relax 
 l.1704 ...	\bibitem{koenig11122019737crashesnofix}
                                                    ... \LaTeX:\\ \url{https:...
-[68]
+[67]
 pdfTeX warning (ext4): destination with the same identifier (name{cite.dohertyl
 indeman15032019737problems}) has been already used, duplicate ignored
 <to be read again> 
@@ -9322,7 +9277,7 @@ Overfull \hbox (227.47708pt too wide) in paragraph at lines 1738--1741
 h-[]metal-[]fatigue-[]-[]ntsb/$[][]
  []
 
-) (evaluatie.tex [69]) [70
+) (evaluatie.tex [68]) [69
 
 ] (verslag.aux (dankbetuiging.aux) (afkortingen.aux))
 
@@ -9335,9 +9290,9 @@ Package rerunfilecheck Info: File `verslag.out' has not changed.
 (rerunfilecheck)             Checksum: 2986DD75F0BE78E377B924E0696E6C16;1094.
  ) 
 Here is how much of TeX's memory you used:
- 38843 strings out of 475385
- 815518 string characters out of 2776908
- 1409601 words of memory out of 3000000
+ 38842 strings out of 475385
+ 815511 string characters out of 2776908
+ 1408127 words of memory out of 3000000
  58841 multiletter control sequences out of 15000+600000
  532448 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -9355,9 +9310,9 @@ cal/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gally/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on verslag.pdf (76 pages, 818092 bytes).
+Output written on verslag.pdf (75 pages, 817260 bytes).
 PDF statistics:
- 2549 PDF objects out of 2984 (max. 8388607)
- 571 named destinations out of 1000 (max. 500000)
+ 2543 PDF objects out of 2984 (max. 8388607)
+ 570 named destinations out of 1000 (max. 500000)
  255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
