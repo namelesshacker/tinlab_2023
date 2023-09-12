@@ -17,14 +17,14 @@ De verschillende factoren en achtergronden die  samenhangen met het modelleren v
 \paragraph{Wat is uppaal}
 
 Wat is Uppaal
-Uppaal is an integrated tool environment for modeling, simulation and verification of real-time systems, developed jointly by Basic Research in Computer Science at Aalborg University in Denmark and the Department of Information Technology at Uppsala University in Sweden. It is appropriate for systems that can be modeled as a collection of non-deterministic processes with finite control structure and real-valued clocks, communicating through channels or shared variables [WPD94, LPW97b]. Typical application areas include real-time controllers and communication protocols in particular, those where timing aspects are critical.
+Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time systemen, gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden. Het is geschikt voor systemen die kunnen worden gemodelleerd als een verzameling niet-deterministische processen met een eindige controlestructuur en klokken met reële waarde, die communiceren via kanalen of gedeelde variabelen [WPD94, LPW97b]. Typische toepassingsgebieden zijn met name real-time controllers en communicatieprotocollen, waarbij timingaspecten van cruciaal belang zijn. \cite{uppaalFeatures}
 
 
 model checking
 
 Wat is statistical model checking?
 Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
-https://www-verimag.imag.fr/Statistical-Model-Checking-814.html?lang=en#:~:text=Statistical%20Model%20Checking%20(SMC)%20is,from%20state%20space%20explosion%20issues.
+\cite{verimagStatsModelChecking}.
 
 
 \cite{inriaStatsMoodCheck}
@@ -33,8 +33,8 @@ https://www-verimag.imag.fr/Statistical-Model-Checking-814.html?lang=en#:~:text=
 
 
 Waarom gebruiken we statistisch model checking?
-To overcome the above difficulties we propose to work with Statistical Model Checking [KZHHJ09,You05,You06,SVA04,SVA05,SVA05b] an approach that has recently been proposed as an alternative to avoid an exhaustive exploration of the state-space of the model. The core idea of the approach is to conduct some simulations of the system, monitor them, and then use results from the statistic area (including sequential hypothesis testing or Monte Carlo simulation) in order to decide whether the system satisfies the property or not with some degree of confidence. By nature, SMC is a compromise between testing and classical model checking techniques. Simulation-based methods are known to be far less memory and time intensive than exhaustive ones, and are oftentimes the only option. 
-https://project.inria.fr/plasma-lab/statistical-model-checking/
+Om de bovenstaande problemen te overwinnen stellen we voor om te werken met Statistical Model Checking [KZHHJ09,You05,You06,SVA04,SVA05,SVA05b], een aanpak die onlangs is voorgesteld als alternatief om een uitputtende verkenning van de toestandsruimte van het model te vermijden. Het kernidee van de aanpak is om een aantal simulaties van het systeem uit te voeren, deze te monitoren en vervolgens de resultaten uit het statistische gebied te gebruiken (inclusief het testen van sequentiële hypothesen of Monte Carlo-simulaties) om te beslissen of het systeem aan de eigenschap voldoet of niet. mate van vertrouwen. Van nature is SMC een compromis tussen testen en klassieke modelcontroletechnieken. Het is bekend dat op simulatie gebaseerde methoden veel minder geheugen- en tijdintensief zijn dan uitputtende methoden, en vaak de enige optie zijn.
+\cite{inriaStatsMoodCheck}
 
 Alternatief
 Alternatieven voor Uppaal zijn Asynchronous Events,Vesta en MRMC.
@@ -59,7 +59,7 @@ Gemak dient de mens. Als er veel energie wordt gestoken in de ontwikkeling van h
 Het 4 variabelen model kort toegelicht
 Monitored variabelen: door sensoren gekwantificeerde fenomenen uit de omgeving, bijv temperatuur
 
-Controlled variabelen: door actuatoren \bestuurde fenomenen uit de omgeving
+Controlled variabelen: door actuatoren bestuurde fenomenen uit de omgeving
 For example, monitored variables might be the pressure and temperature
 inside a nuclear reactor while controlled variables might be visual and audible alarms, as well
 as the trip signal that initiates a reactor shutdown; whenever the temperature or pressure reach
@@ -81,59 +81,6 @@ false indicates the opposite
 
 
 \paragraph{World and machine samenvatting}
-Waarom zijn wij engineers? Omdat we bruikbare apparaten willen laten functioneren in de wereld waarin we leven. Dat doen we door de machine te beschrijven en deze beschrijving van instructies bieden we aan onze computer opdat deze als de attribuut en gedragingen uitleest zoals wij die hebben omschreven. Dit alles op basis van theoretische funderingen en praktisch inzicht. 
-
-Het doel van een machine is om te worden geinstalleerd en te worden gebruikt. De eisen die we stellen zitten in de omgeving en in de wereld en de machine is slechts de oplossing die we bedenken om aan een eis te voldoen. 
-
-De relatie machine-wereld world gecategoriseerd in: 
-Het modelleer aspect: waar een machine de wereld simuleert 
-
-Het interface aspect: waar er fysieke interactie is tussen de machine en de wereld 
-
-Het engineering aspect: waar de machine zich gedraagt als een controlemotor gebruikmakend van de gedragingen van de omgeving in de wereld 
-
-Het probleem aspect: waar de omgeving in de wereld en de omvang van het probleem invloed heeft op de machine en de oplossing 
-
-Het modelleer  of simulatie aspect over een deel van de wereld. Er zijn data,object en proces modellen. Het doel van een model is toegang te geven tot informatie over die wereld. Door het opvangen van statische weergaven en gebeurtenissen kunnen wij deze gebruiken van opgeslagen informatie die we kunnen hergebruiken. Een model kan bruikbare informatie bevatten omdat zowel het model als de wereld warin het model zich bevind gemeenschappelijke omschrijvingen hebben die waar zijn voor zwel het model als voor de wereld. Daarbij moet gesteld worden dat de interpretatie van een model verschilt met een interpretatie van de wereld. 
-
-Omdat zowel de wereld als de machine fysieke realiteiten zijn an niet slechts abstracties, zijn de gemeenschappelijke beschrijvingen slechts een deel van de werkelijheid van beide objecten. For elk object zijn er meerdere beschrijvingen. Toch maken niet alle omschrijvingen deel uit van het getoonde reportoire. Zoals niet alle eigenschappen van een boek; meer dan een auteur, pseudoniemen, een onderdeel van een reeks, een gerevisiteerde versie, worden gereflecteerd in een database.  
-
-Het interface aspect. Een machine kan een probleem in de wereld oplossen als de wereld en de machine phenomena kunnen uitwisselen. Maar de participatie is niet symmetrisch: een status kan als phenomena worden uitgewisseld maar slechts een partij kan er invloed op uitoefenen maar beiden kunnen dezelfde status signaleren. 
-
-Het engineering aspect gaat over requirements, specificaties, en programma’s. Requirements hebben betrekking op phenomena in de wereld. Een programma heeft alleen betrekking tot de machinale phenomena. Het doel van programma’s is om eigenschappen en gedragingen te omschrijven van de machine ten behoeve van de gebruiker. Tussen de requirements en de programma’s zitten de specificaties. Omdat programma’s dan wel beschrijvingen zijn van een gewenste machine, maar dat moeten beschrijvingen zijn van de  machines  die de computers kunnen uitvoeren zodanig dat de computer deze beschrijvingen ook zo kan interpreteren. De engineer moet  de eigenschappen van de wereld kennen en begrijpen en deze eigenschappen manipuleren en laten werken met als doel het dienen van het systeem. 
-
-Het probleem aspect. Het onderscheid tussen specificatie en implementatie. Het probleem zit in de relatie van de machine en de wereld. De machine brengt de oplossing maar het probleem zit in de wereld. Een vertoog over een probleem moet dus gaan over de wereld en over de opvatting die de gebruiker heeft in de wereld. Omdat de wereld veelzijdig is moeten we ervan uit gaan dat er verschillende soorten problemen zijn. Een realistisch probleem wordt dus niet opgelost met een simpele hiërarchische structurele aanpak en een homogene decompositie maar met een paralleele structurele oplossing waar beide kanten van het probleem worden opgelost. 
-
-
-
-Ontkenningen 
-
-We hebben als engineers de taak om een machine te bouwen aan de hand van de specificaties opgeleverd door de opdrachtgever. Een engineer heeft niet als taak de fitheid voor een doeleind te onderzoeken, maar wel de haalbaarheid naar een doeleind aan de hand van kennis, tijd, resources, budget en ontwikkelmethodiek. Daaruit komt naar voren dat een engineer zich richt op: elicitation (schetsen van een requirement), description (omschrijving) en analyse van de requirements waaraan het systeem moet voldoen. Vertaalt naar de volgende vragen: Wat is precies de klantwens?  Wat is de precieze omschrijving van het probleem? Voor welke doelen wordt het systeem gebouwd? Welke functies moet het systeem hebben? 
-
-Denial by hacking: obsessief bezig zijn met een systeem omdat het de gebruiker veel macht geeft. Een uitgebreidheid van een systeem zorgt er soms voor dat mensen niet meer geprikkeld zijn na te denken over probleemstellingen, domein beschrijvingen en analyse. 
-
-Denial by a abstraction. Wiskundige benaderingen van werkelijke problemen is  een belangrijke intellectuele strategie om problemen te formuleren. Een software ontwikkelaar moet een probleem kunnen omschrijven in zo min mogelijk woorden, maar de complexiteit ligt in de oplossing. 
-
-Denial by vagueness. De vaagheid van een omschrijving is terug te vinden in: 
-
-Von Neumann’s principe ,Principe van reductionisme ,Shanley principe en het Montaingnes’s principe.
-Het Von Neumand principe uitgelegd
-Voor een vocabulair  moet een grondslag zijn ontwikkeld waarmee gesproken kan worden over de wereld en de machine. Belangrijke phenomenen moeten geindtifieerd worden, door middel van een grondregel  of ‘herkenningsregel’ moet een fenomeen worden herkend, en vervolgens het fenomeen een formele term geven die gebruikt wordt als duiding van een bepaalde omschrijving. Dan moet voor de formele term een symbool gevonden worden. Samen vormen de grondregel en het symbool een designatie. 
-
-Principe van reductionisme 
-
-Simpelweg het openbreken van termen met een weerlegbare definitie totdat alle begrippen die worden gebruikt om iets te duiden  niet meer te herconstrueren zijn in hun definitie. 
-
-Shanley principe 
-
-Er bestaan volgens dit principe geen scherpe verdelingen in de wereld zoals wetenschappers soms denken. Een strenge opvatting over de wereld waarin een individu geclassificeerd kan worden als een onsamenhangend geheel. Maar dat is slechts een opname van een beeld. De werkelijkheid staat soms toe dat een elementair individueel object in verschillende classificaties verschillende getypeerd kan worden in een andere setting of view. 
-
-Montaignes principe 
-
-De incative mood; gaat over wat we beweren waar te zijn. 
-
-De optitative mood; gaat over wat we willen dat waar is 
-
 
 \paragraph{6 Variable model}
 Optitatieve statements omschrijven de omgeving zoals we het willen zien vanwege de machine. 
@@ -179,7 +126,7 @@ systeem.
 Om de juiste requirements te verzamelen en selecteren hebben we meer kennis nodig van de methoden hiervoor gebruikt in het domein van requirementsengineering. Daarom is een literatuurstudie gedaan naar rapporten en artikelen die ons meer informatie over dit onderwerp verschaffen.
  Uitdagingen in requirementsengineering zijn incomplete requirements en specifcates, veranderende requirements en specificates en grote, complexe oftwaresystemen.
  
- Het article the worlds a stage biedt inzicht in de requirementstechnieken voor een ambulance in london. In het artikel gaan de onderzoeks in op de volgende onderwerpen: 
+ Het article the worlds a stage \cite{breitmanLeiteCesar2002reallifeReqs}biedt inzicht in de requirementstechnieken voor een ambulance in london. In het artikel gaan de onderzoeks in op de volgende onderwerpen: 
  viewpoints, sociale ascpecten,evolutie, non-functional requirements, conflict resolution, traceability
  
  Goal of this paper is requirement  engineering on London aulance service
@@ -203,9 +150,9 @@ Om de juiste requirements te verzamelen en selecteren hebben we meer kennis nodi
  3) agreement dimensions
  Domain: part of the worl in which the computer system effects will be felt, inclusing its peoples, organizational structure, related legislation, physical location and met only the compyter systems
  
- \bibitem{ID} ... \LaTeX:\\ \url{}
  
- Het artikel "from inconsistencyhandling to non-conanical requirements management: a logical perspective" geeft enkele tips voor het omgaan met inconsistente requirements:
+ 
+ Het artikel "from inconsistencyhandling to non-conanical requirements management: a logical perspective" \cite{muHungJinLiu2013inconsistencyReqs}geeft enkele tips voor het omgaan met inconsistente requirements:
  
  1) identifying non-canonicalrequirements
  2) measuring them
@@ -213,7 +160,7 @@ Om de juiste requirements te verzamelen en selecteren hebben we meer kennis nodi
  4) choosing acccptable probosals
  5) revising them acccording to the proposals
 
-Het artikel "managing inconsistent specification: reasoning, analysis, action" zoekt een ontologische benadering voor het omgaan met inconsistenties in de requirements specificaties.
+Het artikel "managing inconsistent specification: reasoning, analysis, action" \cite{hunterNuseibeh1996manageSpecs} zoekt een ontologische benadering voor het omgaan met inconsistenties in de requirements specificaties.
 Voor de omshrijving van een specificatie kun je gebruik maken van logica. Daarbij kun je onderschei maken in klasieke logica quasi -logica.
 Wat ook een rol kan spelen in domain interpretatie. De achtergrond van de gebruikers speelt ook een rol.
 Zo is er e=onderscheid te maken in de volgende groepen: users, customers, domain experts, designers,, manufacturers
@@ -232,7 +179,7 @@ block[objects, classes, methods, messages, inheritance]
 [goals,agents, alternative, events, actions,existence modalities,agent responsibilities]
 
 
-Het artikel "representing and using nonfunctional requirements: a process-oriented approach"" gaat in op een het proces van requirements acquisitie. Hierbij in ogenschouw de acquisitie van prestaties, ontwerp en aanpasbaarheid vanuit bijvoorbeeld gebruikersperspectief. Enkele vragen vanuit dit perspectief zijn:
+Het artikel "representing and using nonfunctional requirements: a process-oriented approach" \cite{myloloupos1992representingReqs} gaat in op een het proces van requirements acquisitie. Hierbij in ogenschouw de acquisitie van prestaties, ontwerp en aanpasbaarheid vanuit bijvoorbeeld gebruikersperspectief. Enkele vragen vanuit dit perspectief zijn:
 -Hoe goed werkt het product
 -Hoe goed wordt de bron gebruikt?>> Efficiency
 -How veilig is het product >> integrity
@@ -250,7 +197,10 @@ Dan is er nog de aanpasbaarheid.
 - hoe makkelijk is het om een wijziging door te voeren>>flexibility
 -hoe makkelijk is het om andere system aan te sluiten >> portability
 - hoe makkelijk is het om het product te transporteren >> interoperability
--hoe makkelijk is het om te converteren tot een systeem gebruiksklaar voor communiceren met andere systemen>> reaseability \cite{jonkerTreurKlush200informativeAgents}
+-hoe makkelijk is het om te converteren tot een systeem gebruiksklaar voor communiceren met andere systemen>> reaseability \cite{myloloupos1992representingReqs}
+
+
+\cite{jonkerTreurKlush200informativeAgents}
 \cite{boehmBoseLeeRequirementsNegotiations}
 \cite{muHungJinLiu2013inconsistencyReqs}
 \cite{hunterNuseibeh1996manageSpecs}
@@ -1263,7 +1213,7 @@ Aangaande de gebeurtenissen in de oekraiene kunnen de volgende security controls
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newline \indent explosie in libabon, beirut 
+  explosie in libabon, beirut 
 Op 23 september 2013 voer het vrachtschip de Rhosus onder Moldavische vlag[7] van Batoemi in Georgië naar Beira in Mozambique met 2.750 ton ammoniumnitraat
 Gezien het ernstige gevaar van het bewaren van deze goederen in de hangar onder ongeschikte klimatologische omstandigheden, herhalen we ons verzoek aan de marine-instantie om deze goederen onmiddellijk weer te exporteren om de veiligheid van de haven en de mensen die er werken te verzekeren, of om akkoord te gaan om ze te verkopen.
 Voorafgaand aan de explosie was er een brand in een opslagplaats. 
@@ -1401,19 +1351,19 @@ Zonder adequate veiligheidsanalyse
 \cite{winceckCriticalToSafety}
 \cite{chambersHazardAnalysisSCS}
 \cite{rslater1998SCSAnalysis}
-Traditional Systems
-Traditional areas that have been considered the home of safetycritical systems include medical care, commercial aircraft, nuclear
-power, and weapons. Failure in these areas can quickly lead to
-human life being put in danger, loss of equipment, and so on.
-
-Non-traditional Systems
-Emergency 911 service is an example of a critical infrastructure
-application. Other examples are transportation control, banking
-and financial systems, electricity generation and distribution, telecommunications, and the management of water systems
-
-4.1 Technology
-
-https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf
+%Traditional Systems
+%Traditional areas that have been considered the home of safetycritical systems include medical care, commercial aircraft, nuclear
+%power, and weapons. Failure in these areas can quickly lead to
+%human life being put in danger, loss of equipment, and so on.
+%
+%Non-traditional Systems
+%Emergency 911 service is an example of a critical infrastructure
+%application. Other examples are transportation control, banking
+%and financial systems, electricity generation and distribution, telecommunications, and the management of water systems
+%
+%4.1 Technology
+%
+%https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf
 \cite{knightchallengessafetyCritical}
 
 https://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf
@@ -1425,16 +1375,16 @@ https://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf
 \cite{lalaArchitecturalPrinciples}
 \cite{mitNotesSafetyCritical}
 \cite{britishColumbia2020GuideSafetyCritical}
-1.       The Assembly is aware that the use of computers in safety-related applications is growing, particularly in areas such as control systems of aeroplanes, high-speed trains and nuclear power stations, medical equipment and medical records, anti-lock braking systems for vehicles and machine engineering in general, and last but not least, modern weapons and their guidance systems.
-
-2.       Many recent accidents (for example, plane crashes due to computer failure, malfunctioning robot killing a mechanic, patient dying because of malfunctioning of computer-controlled intravenous drip, rocket launch failure traced to computer error, software piracy etc.) cause public concern and raise the question of the reliability of such systems.
-
-
-How has the problem of safety-critical software arisen? Essentially from an ever-increasing complexity in engineering. One may compare the steam locomotive of 1830 with the APOLLO Moon spacecraft of 1970 as an example. In 1917 WM FARREN designed, supervised the construction of and testflew an aircraft - the CE 1 and with acceptable safety! [2]. Even in 1965 a chief designer would be familiar with all the decisions taken in the design of a complex product such as an aircraft or ship. The management operation was deeply hierarchical [3] , but as systems became more complex and design teams included more and more specialists it became necessary to formalise the interfaces between the specialist groups to gain benefit and yet maintain overall design disciplines. This led to the matrix design management system in the 1970s to cope with design teams 50 times larger than before [4].
-
-A difficulty embodied in tackling the safety related to software in engineered products arises because of software complexity and the mathematical rigour of some parts of it distorts and clouds the fundamental processes of creative engineering design. 
-
-Before discussing safety definitions and integrity a brief mention of design techniques to enhance safety. One way of increasing safety is to develop more reliable components and systems. At the outset, once the general preliminary design is defined there will be a "safety budget" allocating tolerable levels of integrity for every subsystem. Then Reliability Analysis evaluates the probability of failure and Failure Mode Effect and Criticality Analysis deals with the likely results of failure. Once the "life" of a part has been measured then the inspection and maintenance function will act to replace the part with a new one in good time. Another technique is to design an item to "fail-safe" i.e. even if it does fail it does not create a safety risk before the fault can be rectified. This has been extensively used on structures and coping with the development of fatigue cracks. "Fail- operate", "fault tolerant design" and "graceful degradation of systems" are other methods.
+%1.       The Assembly is aware that the use of computers in safety-related applications is growing, particularly in areas such as control systems of aeroplanes, high-speed trains and nuclear power stations, medical equipment and medical records, anti-lock braking systems for vehicles and machine engineering in general, and last but not least, modern weapons and their guidance systems.
+%
+%2.       Many recent accidents (for example, plane crashes due to computer failure, malfunctioning robot killing a mechanic, patient dying because of malfunctioning of computer-controlled intravenous drip, rocket launch failure traced to computer error, software piracy etc.) cause public concern and raise the question of the reliability of such systems.
+%
+%
+%How has the problem of safety-critical software arisen? Essentially from an ever-increasing complexity in engineering. One may compare the steam locomotive of 1830 with the APOLLO Moon spacecraft of 1970 as an example. In 1917 WM FARREN designed, supervised the construction of and testflew an aircraft - the CE 1 and with acceptable safety! [2]. Even in 1965 a chief designer would be familiar with all the decisions taken in the design of a complex product such as an aircraft or ship. The management operation was deeply hierarchical [3] , but as systems became more complex and design teams included more and more specialists it became necessary to formalise the interfaces between the specialist groups to gain benefit and yet maintain overall design disciplines. This led to the matrix design management system in the 1970s to cope with design teams 50 times larger than before [4].
+%
+%A difficulty embodied in tackling the safety related to software in engineered products arises because of software complexity and the mathematical rigour of some parts of it distorts and clouds the fundamental processes of creative engineering design. 
+%
+%Before discussing safety definitions and integrity a brief mention of design techniques to enhance safety. One way of increasing safety is to develop more reliable components and systems. At the outset, once the general preliminary design is defined there will be a "safety budget" allocating tolerable levels of integrity for every subsystem. Then Reliability Analysis evaluates the probability of failure and Failure Mode Effect and Criticality Analysis deals with the likely results of failure. Once the "life" of a part has been measured then the inspection and maintenance function will act to replace the part with a new one in good time. Another technique is to design an item to "fail-safe" i.e. even if it does fail it does not create a safety risk before the fault can be rectified. This has been extensively used on structures and coping with the development of fatigue cracks. "Fail- operate", "fault tolerant design" and "graceful degradation of systems" are other methods.
 
 
 \cite{fulvio1993safetycriticalsystems}
@@ -1523,92 +1473,6 @@ Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind,
  
  
 \paragraph{Semantiek}
-
-
-About transition
-A transition is composed of
-a unique source location
-a unique target location
-a guard, i.e. an enabling condition (g := x ∼ c|g ∧ g, where
-∼∈ {<, ≤, =, ≥, >}
-a label (that can be used for synchronization)
-a subset (potentially empty) of clocks to be reset
-
-a clock valuation is a function v: X $\trightarrow$ $R^+$ \\
-v[Y:=0] is the valuation obtained from v by resetting clocks from Y:  \\
-
-\begin{math}
-	$v[Y:=0]$=\left\{
-	\begin{array}{ll}
-		1, & \mbox{0 x $\in$ Y}.\\
-		0, & \mbox{otherwise}.
-	\end{array}
-	\right.
-\end{math}
-\\
-
-v+d = flow of time (d units) \\
-(v +d)(x) = v(x)+d  \\
-v $\models$ c means that valuation v satisfies the constraint c
-
-evaluation of a clock constraint (v $\models$ g) \\
-\begin{enumerate}
-	\item $\vee$ $\models$ g x  < k iff ν(x) < k
-	\item $\vee$ $\models$ x ≤ k iff ν(x) ≤ k
-	\item $\vee$ $\models$ g1 ∧ g2 iff ν $\models$ g1 and ν $\models$ g2
-\end{enumerate} 
-\\
-\\
-\\
-
-(s', v") and (s,v) $\xrightarrow[]{a}$(s', v").
-
-Action transitions correspond to the execution of a transition	 from T. We write (s,v) $\xrightarrow[]{a}$ (s', v'), where a \in $\Sigma$, provided that there is a transition $\langle$ s,a, $\varphi$, $\lambda$, s' $\rangle$ such that v satisfies $\varphi$ and v=[$\lambda$:=0].
-
-a delay transition (s, v1)  $\xrightarrow[]{$$\delta$(d)}$ (s, v_1 + d_1) for some $d_1$ $\geq$ 0, and
-an action transition   (s, v1 +d1)  $\xrightarrow[]{a}$ (s', v_1') such that $v_1$ + $d_1$ satisfies $\varphi$ and v'_1 = (v_1 + d_1)[$\lambda $:=0].
-
-
-
- Defnition 3.1 Timed automata
-A timed automation is een 6-tuple A $\langle$ $\sigma$ ,S,$S_0$, X, I, T$\rangle$, waarin geldt dat $\sigma$ een eindige alfabet voorsteld; S is een eindig srt van lcoaties (states); $S_0$ $\subseteq$ S is een set van initiele locaties; X is een set van clocks; I : S $\rightarrow$ $\Phi$(x) is de locatie invariant; en T $\subseteq$ S $\times$ $\sigma$ $\times$ $\Phi$(X) $\times$ $2^x$ $\times$ S is een set van transities.
-De 5-tuple $\langle$ s, a, $\phi$ , $\lambda$, $s^$ $\rangle$ $\in$ T is een ransitie van locatie s naar locatie s' die correspondeert met actie gelabeld als a, De constraint op de clock $\phi$ speificeert wanneer de transitite wordt uitgevoerd, en $\lambda$ $\subseteq$ X is de set van clocks die worden gereset wanneer de transitie wordt uitgevoerd.
-
- De semantics van een timed automationA is gedefinieerd door de associatie met een transitiesysteem., T(A). Ten alle tijde geldt, de configuraties van een globale state van het systeem worden gemodelleerd door de gegeven timed automation in een bepaalde locatie, s, van de automation en clock interpretatie, v, welke een reele waarde toekent aan een klok. Dus de configuratie is een paar (s,v) waar s $\in$ S en v : $\rightarrow$ $R^+$. De set van initiele configuraties is gegeven door de set { (s,v) | s $\in$ $\wedge$ $\forall$ x $\in$ X $[v(x) =0]$}. In andere woorden, de set van initiele locaties waarin alle clocs gelijk gezet zijn aan 0.
- \cite{03CHAPTER3}
- 
- Operatoren, definities clock zones en regios's zijn we in artikel . \cite{04_giWorkshop2000}
- \cite{pelanekFormal} 
- In het artikel worden de formele definitie en verificatie va   state transitites uitgelegd met de daarbij behorende eindige set van states Q, q0 als initiele state, $\sigma$ is de einndige set van symbole ut de input alfabet, de se van transities vertegenwoordogd door E, de set van states 'F'
- \cite{jiyanpatil07TOC}
- Met deze kennis zou het mogelijk zijn om een Verification and control of real-time systems te kunnen uitvoeren in timed automata
- \cite{latin06}
- \cite{realtimeForms}
- \cite{verification}
- \cite{uppaal}
- De delay en ation transites zijn wel in dit verslag opgenomen. Maar de clock regions, regions automata, en zone automata zijn niet overgenomen in onze studie.
-
- 
-
- \cite{03CHAPTER3}
- Wel is duidelijk de Formal Syntax and Semantics en de TEMPORAL LOGICS. Maar de vertaling van 
- Network of Timed Automata naar Uppaal query language. A TCTL formula φ is satisfiable iff there is a labeled timed automaton
- Wel is overgenomen de Definition 3.7 (Satisfaction relation) 
- M = $\langle$A, µ$\rangle$ and a state s ∈$\in$S, such that M, s $\models$ φ.
- \cite{isbn9789526031033}
- Timed automata [4] [57] are hereby to model timed systems. These are finite-state automata
- equipped with clocks used to specify constraints on the amount of time that can elapse
- between two events (blz 46). Timed kripke structures (blz63) (blz 69) (blz 78) blz 99.
- \cite{nourollahi20191215}
- \cite{Lecture2}
- Timed Transition Systems (blz 3). Clock Constraints. (blz 4) Timed Automata.  (blz 4). Timed Computation Tree Logic.  (blz 6,7)
- \cite{LIPIcs-TIME-2021-12}
- Properties and Temporal L
- \cite{mctutorial}
- \cite{FULLTEXT02}
- \cite{stanfordRealtime}
- \cite{baierKatoenModelChecking}
- 
  
  \paragraph{Timed automata}
   Timed automata [4] [57] are hereby to model timed systems. These are finite-state automata
@@ -1622,29 +1486,28 @@ Dat variabelen zijn onder andere: water hoog  en laag, en aanal schepen in de qu
  Acties in het model zijn onder andere: invaren, uitvaren, deuren openen en sluiten, nivelleren
 \paragraph{Clock regions}
 \cite{clarke2000Modelchecking}
-\cite[p.~5]{clarke2000Modelchecking}
-\cite{clarke2000Modelchecking21}
-\cite{clarke2000Modelchecking212}
-\cite{clarke2000Modelchecking223}
-\cite{clarke2000Modelchecking31}
-\cite{clarke2000Modelchecking32}
-\cite{clarke2000Modelchecking33}
-\cite{clarke2000Modelchecking411}
-\cite{clarke2000Modelchecking43}
-\cite{clarke2000Modelchecking63}
-\cite{clarke2000Modelchecking64}
-\cite{clarke2000Modelchecking661}
-\cite{clarke2000Modelchecking91}
-\cite{clarke2000Modelchecking102}
-\cite{clarke2000Modelchecking11}
-\cite{clarke2000Modelchecking122}
-\cite{clarke2000Modelchecking123}
-\cite{clarke2000Modelchecking132}
-\cite{clarke2000Modelchecking1321}
-\cite{clarke2000Modelchecking152}
-\cite{clarke2000Modelchecking171}
-\cite{clarke2000Modelchecking172}
-\cite{clarke2000Modelchecking173}
+\cite[p.~14]{clarke2000Modelchecking}
+\cite[p.~16--20]{clarke2000Modelchecking}
+\cite[p.~22-24]{clarke2000Modelchecking}
+\cite[p.27--29]{clarke2000Modelchecking}
+\cite[p.~30]{clarke2000Modelchecking}
+\cite[p.~32]{clarke2000Modelchecking}
+\cite[p.~40--41]{clarke2000Modelchecking}
+\cite[p.~46--49]{clarke2000Modelchecking}
+\cite[p.~68--71]{clarke2000Modelchecking}
+\cite[p.~71]{clarke2000Modelchecking}
+\cite[p.~79]{clarke2000Modelchecking}
+\cite[p.~121]{clarke2000Modelchecking}
+\cite[p.~144--145]{clarke2000Modelchecking}
+\cite[p.~178]{clarke2000Modelchecking}
+\cite[p.~189]{clarke2000Modelchecking}
+\cite[p.~197]{clarke2000Modelchecking}
+\cite[p.~199--203]{clarke2000Modelchecking}
+\cite[p.~215--236]{clarke2000Modelchecking}
+\cite[p.~265--268]{clarke2000Modelchecking}
+\cite[p.~268]{clarke2000Modelchecking}
+\cite[p.~274--281]{clarke2000Modelchecking}
+
 
 \cite{audioSemanticsBengtsson}
 \cite{guidingAutomataBberm}
@@ -1820,7 +1683,6 @@ Was het makkelijk te onderzoeken? Waarom?
 
 
 Wat heb ik geleerd
-Ik heb erg veel geleerd van het veilig opzetten van VPN’s. Een VPN opzettenhad ik namelijk nog nooit gedaan. Het opzetten van SSH en het aanmaken vanVM’s was al bekend. Ook had ik nog nooit met UDP sockets geprogrammeerd.Verder heb ik geleerd hoe ik in de praktijk een VM in een VLAN kan zetten enhoe VLAN’s netwerken van elkaar kunnen scheiden.Het leukste onderdeel van het project, was dat wonderbaarlijk mijn gekozenoplossing elegant werkte. UDP Servers en clients zijn gerealiseerd met minderdan enkele regels logisch scipt. Ik had aan genomen dat het werken met socketsin shell absoluut rampzalig zou uitpakken. Ik ben blij dat het opdracht zo vrijwas, zodat ik experimenteel kon zijn met mijn implementatie.
 
 
 

@@ -57,22 +57,21 @@
 \usepackage[all]{xy}
 \usepackage{dot2texi}
 %\usepackage{tikz}
-\usetikzlibrary{cd}
-\usetikzlibrary{graphdrawing.trees}
-\usetikzlibrary{graphs}
-\usetikzlibrary{graphdrawing}
-\usetikzlibrary{arrows,automata,positioning}
-\usetikzlibrary{automata,arrows,trees,positioning,shapes,calc}
+%\usetikzlibrary{cd}
+%\usetikzlibrary{graphdrawing.trees}
+%\usetikzlibrary{graphs}
+%\usetikzlibrary{graphdrawing}
+%\usetikzlibrary{arrows,automata,positioning}
+%\usetikzlibrary{automata,arrows,trees,positioning,shapes,calc}
 %\usetikzlibrary {arrows.meta,automata,positioning}
 
 %\usegdlibrary{trees}
 \usepackage[svgnames, table]{xcolor}
 %\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 %\usepackage[automark,headsepline,plainheadsepline, plainfootsepline, footsepline]{scrlayer-scrpage}
 %\pagestyle{scrheadings}
-
 %Tabelle
 \usepackage{multirow, makecell, cellspace, bigstrut}
 \usepackage{ragged2e}
@@ -98,7 +97,7 @@
 %\usepackage{}
 
 \usepackage[svgnames, table]{xcolor}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
 \begin{document}
@@ -127,6 +126,7 @@
 \input{resultaten} %(verplicht) hoofdverslag
 \input{discussie}   %(verplicht) geaggregeerde conclusies en aanbevelingen
 %\input{aanbeveling}   %(verplicht) geaggregeerde conclusies en aanbevelingen
+\typeout{} 
 \ifpublic
   \iflanguage{dutch}{\def\bibname{\normalsize{Bronnen}}}
                     {\def\bibname{\normalsize{References}}}
