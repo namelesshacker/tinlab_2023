@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  11 SEP 2023 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  14 SEP 2023 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,8 +1048,8 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write5
-runsystem(echo 'write18-test-20239111391'>"verslag.w18")...disabled (restricted
-).
+runsystem(echo 'write18-test-2023914638'>"verslag.w18")...disabled (restricted)
+.
 
 
 
@@ -1227,7 +1227,855 @@ Try typing  <return>  to proceed.
 (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(verslag.aux (dankbetuiging.aux) (afkortingen.aux))
+(verslag.aux (dankbetuiging.aux) (afkortingen.aux)
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label ` ' multiply defined.
+
+
+LaTeX Warning: Label `slowik2019ReassasUkraine2016Attack' multiply defined.
+
+
+LaTeX Warning: Label `desarnaud2017cyberattacks' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `aviationSLMCrashAccidentInvestigation' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `owens21032017ukrainemitigationstrategies' multiply define
+d.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `grammatikis2019AttackIEC6087505104' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `gates18112020boeingcrisis' multiply defined.
+
+
+LaTeX Warning: Label `boeing737maxsoftwareprobles' multiply defined.
+
+
+LaTeX Warning: Label `avetisov19032019boeingmalwarestate' multiply defined.
+
+
+LaTeX Warning: Label `thompson23112020nationalsecurityboeing' multiply defined.
+
+
+
+LaTeX Warning: Label `gates21032019FAAControlSystem' multiply defined.
+
+
+LaTeX Warning: Label `faa18112020boeingreview' multiply defined.
+
+
+LaTeX Warning: Label `wiki737maxgroundings' multiply defined.
+
+
+LaTeX Warning: Label `campbell02052019boengcrashhumanerrors' multiply defined.
+
+
+LaTeX Warning: Label `hawkins22032019737maxairplanes' multiply defined.
+
+
+LaTeX Warning: Label `thomas30082020737safest' multiply defined.
+
+
+LaTeX Warning: Label `boeing737maxdisplay' multiply defined.
+
+
+LaTeX Warning: Label `fehrm24112020737changes' multiply defined.
+
+
+LaTeX Warning: Label `travis18042019737maxsoftwaredevop' multiply defined.
+
+
+LaTeX Warning: Label `barnett05052019737maxcrisis' multiply defined.
+
+
+LaTeX Warning: Label `easa27012021737maxsafereturn' multiply defined.
+
+
+LaTeX Warning: Label `touitou11032019737tragedies' multiply defined.
+
+
+LaTeX Warning: Label `hemmerdinger02022021737maxdeliveries' multiply defined.
+
+
+LaTeX Warning: Label `bielby27022021faaimprovesafety' multiply defined.
+
+
+LaTeX Warning: Label `boyle18112020737maxupgrade' multiply defined.
+
+
+LaTeX Warning: Label `bergstraburgess122019737maxMcasAlgorithm' multiply define
+d.
+
+
+LaTeX Warning: Label `737mcas' multiply defined.
+
+
+LaTeX Warning: Label `newburger17052019boeingcrisis' multiply defined.
+
+
+LaTeX Warning: Label `arstechnica22012020737problems' multiply defined.
+
+
+LaTeX Warning: Label `german190620217372yaftergrounded' multiply defined.
+
+
+LaTeX Warning: Label `beningo02052019boeinglessons' multiply defined.
+
+
+LaTeX Warning: Label `duran05042019boeingspof' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `makichuck24012021737fearflying' multiply defined.
+
+
+LaTeX Warning: Label `caa737modifications' multiply defined.
+
+
+LaTeX Warning: Label `oestergaard14122020boeingdeliveries' multiply defined.
+
+
+LaTeX Warning: Label `reenberg787flaws' multiply defined.
+
+
+LaTeX Warning: Label `fitch16092020737backlogrisks' multiply defined.
+
+
+LaTeX Warning: Label `willis27082020737maxfailures' multiply defined.
+
+
+LaTeX Warning: Label `ostrower11062020more737changes' multiply defined.
+
+
+LaTeX Warning: Label `hruska13122019faaknown737crashrate' multiply defined.
+
+
+LaTeX Warning: Label `bloomberg26092019failedpred' multiply defined.
+
+
+LaTeX Warning: Label `whiteman09072020boengcancelstock' multiply defined.
+
+
+LaTeX Warning: Label `leopold09192019boeingreliability' multiply defined.
+
+
+LaTeX Warning: Label `koenig11122019737crashesnofix' multiply defined.
+
+
+LaTeX Warning: Label `dohertylindeman15032019737problems' multiply defined.
+
+
+LaTeX Warning: Label `stodder02102019corruptoversight' multiply defined.
+
+
+LaTeX Warning: Label `afacwaLostSafeguards' multiply defined.
+
+
+LaTeX Warning: Label `swayne18032019profitssafety' multiply defined.
+
+
+LaTeX Warning: Label `freed26022021liftaustraliaban' multiply defined.
+
+
+LaTeX Warning: Label `reed15032019softwareattention' multiply defined.
+
+
+LaTeX Warning: Label `news17032019softwareexplains' multiply defined.
+
+
+LaTeX Warning: Label `legget21122020eu737maxsafe' multiply defined.
+
+
+LaTeX Warning: Label `marketscreener0103221737chinarecertification' multiply de
+fined.
+
+
+LaTeX Warning: Label `euractiv22022021737firegrounds' multiply defined.
+
+
+LaTeX Warning: Label `benny18022019737returnUAE' multiply defined.
+
+
+LaTeX Warning: Label `biersmichel22022021777grounds' multiply defined.
+
+
+LaTeX Warning: Label `ID' multiply defined.
+
+
+LaTeX Warning: Label `reuters23022021777metalfatigue' multiply defined.
+
+
+LaTeX Warning: Label `lam1994' multiply defined.
+
+
+LaTeX Warning: Label `Oos1996' multiply defined.
+
+
+LaTeX Warning: Label `wikibooks' multiply defined.
+
+)
 \openout1 = `verslag.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
@@ -1235,8 +2083,7 @@ LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 103.
 LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
  103.
-
-(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omspzccm.fd
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 103.
@@ -1501,10 +2348,6 @@ LaTeX Warning: Citation `myloloupos1992representingReqs' on page 5 undefined on
 
 [5]
 
-LaTeX Warning: Citation `jonkerTreurKlush200informativeAgents' on page 6 undefi
-ned on input line 203.
-
-
 LaTeX Warning: Citation `boehmBoseLeeRequirementsNegotiations' on page 6 undefi
 ned on input line 204.
 
@@ -1529,48 +2372,8 @@ LaTeX Warning: Citation `zavePAmela1997regEngineering' on page 6 undefined on i
 nput line 209.
 
 
-LaTeX Warning: Citation `fvaandrager2322010Goodmodel' on page 6 undefined on in
-put line 215.
-
-
-LaTeX Warning: Citation `onix01102022devopmodel' on page 6 undefined on input l
-ine 216.
-
-
-LaTeX Warning: Citation `sulemani04012021softwareprocesmodel' on page 6 undefin
-ed on input line 217.
-
-
-LaTeX Warning: Citation `globalluxsoft18102017softdev' on page 6 undefined on i
-nput line 218.
-
-
-LaTeX Warning: Citation `wiegers30052022SRS' on page 6 undefined on input line 
-219.
-
-
-LaTeX Warning: Citation `muller06092020goodspecification' on page 6 undefined o
-n input line 220.
-
-
-LaTeX Warning: Citation `informit30062008reqmanagement' on page 6 undefined on 
-input line 221.
-
-
-LaTeX Warning: Citation `altexsoft15092020writingSRS' on page 6 undefined on in
-put line 222.
-
-
 LaTeX Warning: Citation `woudagemaalSluizen' on page 6 undefined on input line 
 226.
-
-
-LaTeX Warning: Citation `bardetsluizenAmsterdam' on page 6 undefined on input l
-ine 227.
-
-
-LaTeX Warning: Citation `historischesluizen' on page 6 undefined on input line 
-228.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -1599,206 +2402,13 @@ LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 6 undefi
 ned on input line 246.
 
 
-LaTeX Warning: Citation `zuilen23022019Tijdlijnpoldercrash' on page 6 undefined
- on input line 247.
-
-
-LaTeX Warning: Citation `wikinews04032009techfoutailines1951' on page 6 undefin
-ed on input line 248.
-
-
-LaTeX Warning: Citation `luchtvaartnieuws21012020boeing737conclusies' on page 6
- undefined on input line 249.
-
-
-LaTeX Warning: Citation `adformatie280220209communicatiegebreken' on page 6 und
-efined on input line 250.
-
-
-LaTeX Warning: Citation `spinnael25022009onderzoekpolderbaancrash' on page 6 un
-defined on input line 251.
-
-
-LaTeX Warning: Citation `crashTurkishAirlines' on page 6 undefined on input lin
-e 252.
-
-
-LaTeX Warning: Citation `flightradar24' on page 6 undefined on input line 253.
-
-
-LaTeX Warning: Citation `flightstatstracker' on page 6 undefined on input line 
-254.
-
-
 LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 6 undefi
 ned on input line 260.
 
-
-LaTeX Warning: Citation `zuilen23022019Tijdlijnpoldercrash' on page 6 undefined
- on input line 261.
-
-
-LaTeX Warning: Citation `wikinews04032009techfoutailines1951' on page 6 undefin
-ed on input line 262.
-
-
-LaTeX Warning: Citation `luchtvaartnieuws21012020boeing737conclusies' on page 6
- undefined on input line 263.
-
-
-LaTeX Warning: Citation `adformatie280220209communicatiegebreken' on page 6 und
-efined on input line 264.
-
-
-LaTeX Warning: Citation `spinnael25022009onderzoekpolderbaancrash' on page 6 un
-defined on input line 265.
-
-
-LaTeX Warning: Citation `crashTurkishAirlines' on page 6 undefined on input lin
-e 266.
-
-
-LaTeX Warning: Citation `flightradar24' on page 6 undefined on input line 267.
-
-
-LaTeX Warning: Citation `flightstatstracker' on page 6 undefined on input line 
-268.
-
 [6]
-
-LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 7 undefined on in
-put line 445.
-
-
-LaTeX Warning: Citation `stackexchange2021therac25code' on page 7 undefined on 
-input line 463.
-
-
-LaTeX Warning: Citation `rogaway2004therac25' on page 7 undefined on input line
- 464.
-
-
-LaTeX Warning: Citation `wikiTherac25' on page 7 undefined on input line 465.
-
-
-LaTeX Warning: Citation `lynch2017theracRaceConditions' on page 7 undefined on 
-input line 466.
-
-
-LaTeX Warning: Citation `lim1998theracdisaster' on page 7 undefined on input li
-ne 466.
-
-
-LaTeX Warning: Citation `fabio26102015therac25' on page 7 undefined on input li
-ne 467.
-
-
-LaTeX Warning: Citation `ethicsunwrappedTherac25' on page 7 undefined on input 
-line 467.
-
-
-LaTeX Warning: Citation `casesHistoryTherac25' on page 7 undefined on input lin
-e 467.
-
-
-LaTeX Warning: Citation `caballero2019Therac25' on page 7 undefined on input li
-ne 467.
-
-
-LaTeX Warning: Citation `rose1994theracFatalDose' on page 7 undefined on input 
-line 467.
-
-
-LaTeX Warning: Citation `levesonMITTherac25' on page 7 undefined on input line 
-467.
-
-
-LaTeX Warning: Citation `grant1978theracevaluation' on page 7 undefined on inpu
-t line 468.
-
-
-LaTeX Warning: Citation `turnerTheracAccidentsInvestigations' on page 7 undefin
-ed on input line 468.
-
-
-LaTeX Warning: Citation `turner1993TheracAccidentsInvestigations' on page 7 und
-efined on input line 468.
-
-
-LaTeX Warning: Citation `wang2017industrialdesignengineering' on page 7 undefin
-ed on input line 468.
-
-
-LaTeX Warning: Citation `levesonturner1993theracpart2' on page 7 undefined on i
-nput line 468.
-
-
-LaTeX Warning: Citation `porelloTheraccFailure' on page 7 undefined on input li
-ne 468.
-
-
-LaTeX Warning: Citation `theracIncidents' on page 7 undefined on input line 468
-.
-
-
-LaTeX Warning: Citation `huffbrown2004casestudyethicatherac' on page 7 undefine
-d on input line 469.
-
-
-LaTeX Warning: Citation `sebowikimedicalradiation' on page 7 undefined on input
- line 470.
-
-
-LaTeX Warning: Citation `hsia1995testtherac25' on page 7 undefined on input lin
-e 470.
-
-
-LaTeX Warning: Citation `magsilvaTheracTesting' on page 7 undefined on input li
-ne 470.
-
-
-LaTeX Warning: Citation `chemeuropetherac25' on page 7 undefined on input line 
-471.
-
-
-LaTeX Warning: Citation `statsenko10102016Therackillerbug' on page 7 undefined 
-on input line 471.
-
-
-LaTeX Warning: Citation `therac25casestudy' on page 7 undefined on input line 4
-71.
-
-
-LaTeX Warning: Citation `thomas1994theracinLotos' on page 7 undefined on input 
-line 471.
-
 
 LaTeX Warning: Citation `twitter2019programmerbehindtherac' on page 7 undefined
  on input line 471.
-
-
-LaTeX Warning: Citation `wikibookstherac' on page 7 undefined on input line 471
-.
-
-
-LaTeX Warning: Citation `bozdagTherac25' on page 7 undefined on input line 472.
-
-
-
-LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 7 undefined on in
-put line 472.
-
-
-LaTeX Warning: Citation `stackexchange2021therac25code' on page 7 undefined on 
-input line 472.
-
-
-LaTeX Warning: Citation `denneyjdsupraFeds' on page 7 undefined on input line 4
-76.
-
-
-LaTeX Warning: Citation `gritti24062020tesladataengine' on page 7 undefined on 
-input line 476.
 
 
 LaTeX Warning: Citation `impakterTeslaCrash' on page 7 undefined on input line 
@@ -1807,38 +2417,6 @@ LaTeX Warning: Citation `impakterTeslaCrash' on page 7 undefined on input line
 
 LaTeX Warning: Citation `anderson30042021secondteslacrash' on page 7 undefined 
 on input line 480.
-
-
-LaTeX Warning: Citation `raynal20042021probeTeslaCrash' on page 7 undefined on 
-input line 480.
-
-
-LaTeX Warning: Citation `firstpress11052021fatalnonautopilot' on page 7 undefin
-ed on input line 480.
-
-
-LaTeX Warning: Citation `cochran18042021nodriverTeslaCrash' on page 7 undefined
- on input line 480.
-
-
-LaTeX Warning: Citation `gitlin11052021autopilot' on page 7 undefined on input 
-line 480.
-
-
-LaTeX Warning: Citation `sommerfield12072021NHTSAmandateresult' on page 7 undef
-ined on input line 480.
-
-
-LaTeX Warning: Citation `hawkins30062021nhtsarequiresreporting' on page 7 undef
-ined on input line 480.
-
-
-LaTeX Warning: Citation `wilson19042021teslacrashregulators' on page 7 undefine
-d on input line 480.
-
-
-LaTeX Warning: Citation `mcfarland22042021selfdrivingrisks' on page 7 undefined
- on input line 480.
 
 
 LaTeX Warning: Citation `oremus21062017fatalTeslaCrash' on page 7 undefined on 
@@ -1869,10 +2447,6 @@ LaTeX Warning: Citation `young05112021fatalTeslaReport' on page 7 undefined on
 input line 493.
 
 
-LaTeX Warning: Citation `tiungteslasoftwarecrash' on page 7 undefined on input 
-line 494.
-
-
 LaTeX Warning: Citation `kierstein18032021teslaAutopilotCrashStationary' on pag
 e 7 undefined on input line 496.
 
@@ -1881,416 +2455,12 @@ LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 7 unde
 fined on input line 497.
 
 
-LaTeX Warning: Citation `saferoardsCrashesAutonomousvehicles' on page 7 undefin
-ed on input line 498.
-
-
-LaTeX Warning: Citation `stephardson18032021revieuwingtesla' on page 7 undefine
-d on input line 499.
-
-
-LaTeX Warning: Citation `habib28062016NHTSATeslaReport' on page 7 undefined on 
-input line 501.
-
-
-LaTeX Warning: Citation `darkReading17112020TeslaBackup' on page 7 undefined on
- input line 502.
-
-
-LaTeX Warning: Citation `heilweil26022020teslaAutopilot' on page 7 undefined on
- input line 503.
-
-
-LaTeX Warning: Citation `teslaFDSCrash' on page 7 undefined on input line 506.
-
-
-LaTeX Warning: Citation `teslaCrashesCauses' on page 7 undefined on input line 
-508.
-
-
-LaTeX Warning: Citation `teslacrashOvervieuw' on page 7 undefined on input line
- 509.
-
-
-LaTeX Warning: Citation `tesladeaths' on page 7 undefined on input line 510.
-
-
-LaTeX Warning: Citation `evan01042019teslaautopilotIntersection' on page 7 unde
-fined on input line 514.
-
-
-LaTeX Warning: Citation `lambert31062020q2safetyreport' on page 7 undefined on 
-input line 515.
-
-
-LaTeX Warning: Citation `templeton06092019HTSBReportTesla' on page 7 undefined 
-on input line 516.
-
-
-LaTeX Warning: Citation `dowling23042021autopilottricking' on page 7 undefined 
-on input line 517.
-
-
-LaTeX Warning: Citation `wiredBloutoothHackTesla' on page 7 undefined on input 
-line 518.
-
-
-LaTeX Warning: Citation `preston14012021NHTSATeslaRecall' on page 7 undefined o
-n input line 519.
-
-
-LaTeX Warning: Citation `leyden23032020TeslaInterfaceHack' on page 7 undefined 
-on input line 521.
-
-
-LaTeX Warning: Citation `mitchell01072020teslabatterycooling' on page 7 undefin
-ed on input line 523.
-
-
-LaTeX Warning: Citation `stumpff04052020TeslaPersonalData' on page 7 undefined 
-on input line 525.
-
-
-LaTeX Warning: Citation `mitchell24022020AIDataTesla' on page 7 undefined on in
-put line 527.
-
-
-LaTeX Warning: Citation `fottrell03092018TeslaSecurityChecks' on page 7 undefin
-ed on input line 531.
-
-
-LaTeX Warning: Citation `kirk26112020modelX' on page 7 undefined on input line 
-533.
-
-
-LaTeX Warning: Citation `bbc24022021hyundaiBatteryFireFix' on page 7 undefined 
-on input line 535.
-
-
-LaTeX Warning: Citation `hawkins22102022' on page 7 undefined on input line 537
-.
-
-
-LaTeX Warning: Citation `griemannExaminSelfDriving' on page 7 undefined on inpu
-t line 539.
-
-
-LaTeX Warning: Citation `berry21042021teslacrashtexas' on page 7 undefined on i
-nput line 542.
-
-
-LaTeX Warning: Citation `hull23072021regulatorsaftercrash' on page 7 undefined 
-on input line 543.
-
-
-LaTeX Warning: Citation `wikiTeslaAutopilot' on page 7 undefined on input line 
-544.
-
-
-LaTeX Warning: Citation `tasking07062017TeslaAugmentedSafety' on page 7 undefin
-ed on input line 548.
-
-
-LaTeX Warning: Citation `ackerman01072016TeslaImperfect' on page 7 undefined on
- input line 548.
-
-
-LaTeX Warning: Citation `Harkey30052019SafeSystemVehicle' on page 7 undefined o
-n input line 550.
-
-
-LaTeX Warning: Citation `szymkowski29062021nhtsaTeslaCrashReports' on page 7 un
-defined on input line 553.
-
-
-LaTeX Warning: Citation `teslaFDSCrash' on page 7 undefined on input line 555.
-
-
-LaTeX Warning: Citation `teslaCrashesCauses' on page 7 undefined on input line 
-556.
-
-
-LaTeX Warning: Citation `teslacrashOvervieuw' on page 7 undefined on input line
- 557.
-
-
-LaTeX Warning: Citation `tesladeaths' on page 7 undefined on input line 558.
-
-
-LaTeX Warning: Citation `evan01042019teslaautopilotIntersection' on page 7 unde
-fined on input line 560.
-
-
-LaTeX Warning: Citation `testVehicleSafetyReport' on page 7 undefined on input 
-line 561.
-
-
-LaTeX Warning: Citation `lambert31062020q2safetyreport' on page 7 undefined on 
-input line 563.
-
-
-LaTeX Warning: Citation `wiredBloutoothHackTesla' on page 7 undefined on input 
-line 566.
-
-
-LaTeX Warning: Citation `preston14012021NHTSATeslaRecall' on page 7 undefined o
-n input line 568.
-
-
-LaTeX Warning: Citation `cio25112020belgianTeslaHack' on page 7 undefined on in
-put line 570.
-
-
-LaTeX Warning: Citation `templeton06092019HTSBReportTesla' on page 7 undefined 
-on input line 573.
-
-
-LaTeX Warning: Citation `darkReading17112020TeslaBackup' on page 7 undefined on
- input line 576.
-
-
-LaTeX Warning: Citation `leyden23032020TeslaInterfaceHack' on page 7 undefined 
-on input line 578.
-
-
-LaTeX Warning: Citation `huddlestonjr03042019ChineseTeslaHack' on page 7 undefi
-ned on input line 580.
-
-
-LaTeX Warning: Citation `heilweil26022020teslaAutopilot' on page 7 undefined on
- input line 583.
-
-
-LaTeX Warning: Citation `blanco04102019NHTSATesla' on page 7 undefined on input
- line 587.
-
-
-LaTeX Warning: Citation `mitchell01072020teslabatterycooling' on page 7 undefin
-ed on input line 591.
-
-
-LaTeX Warning: Citation `bbc26022020AutopilotCrash' on page 7 undefined on inpu
-t line 593.
-
-
-LaTeX Warning: Citation `stumpff04052020TeslaPersonalData' on page 7 undefined 
-on input line 596.
-
-
-LaTeX Warning: Citation `levin08062018teslaautopilotsafety' on page 7 undefined
- on input line 598.
-
-
-LaTeX Warning: Citation `cbrook06082021TeslaInsideDataThreft' on page 7 undefin
-ed on input line 601.
-
-
-LaTeX Warning: Citation `shilling25022021Tesla' on page 7 undefined on input li
-ne 602.
-
-
-LaTeX Warning: Citation `randall05112019modelSurvey' on page 7 undefined on inp
-ut line 608.
-
-
-LaTeX Warning: Citation `fottrell03092018TeslaSecurityChecks' on page 7 undefin
-ed on input line 611.
-
-
-LaTeX Warning: Citation `kirk26112020modelX' on page 7 undefined on input line 
-615.
-
-
-LaTeX Warning: Citation `bbc24022021hyundaiBatteryFireFix' on page 7 undefined 
-on input line 617.
-
-
-LaTeX Warning: Citation `hawkins22102022' on page 7 undefined on input line 619
-.
-
-
-LaTeX Warning: Citation `gritti24062020tesladataengine' on page 7 undefined on 
-input line 620.
-
-
-LaTeX Warning: Citation `bouchard07052019teslaDeepLearning' on page 7 undefined
- on input line 621.
-
-
-LaTeX Warning: Citation `Srikanth2019teslabigdata' on page 7 undefined on input
- line 622.
-
-
-LaTeX Warning: Citation `rangaiah25022020teslaAI' on page 7 undefined on input 
-line 623.
-
-
-LaTeX Warning: Citation `marr08012018taslabigdataAI' on page 7 undefined on inp
-ut line 624.
-
-
 LaTeX Warning: Citation `bdickson29072020teslalevelfive' on page 7 undefined on
  input line 625.
 
 
 LaTeX Warning: Citation `dcruz17062022tesladesignthink' on page 7 undefined on 
 input line 626.
-
-
-LaTeX Warning: Citation `mcfarland22042021selfdrivingrisks' on page 7 undefined
- on input line 627.
-
-
-LaTeX Warning: Citation `hawkins18032021fedgovinvest' on page 7 undefined on in
-put line 628.
-
-
-LaTeX Warning: Citation `berry21042021teslacrashtexas' on page 7 undefined on i
-nput line 629.
-
-
-LaTeX Warning: Citation `hull23072021regulatorsaftercrash' on page 7 undefined 
-on input line 630.
-
-
-LaTeX Warning: Citation `wikiTeslaAutopilot' on page 7 undefined on input line 
-631.
-
-
-LaTeX Warning: Citation `nhtsaAutomatedVehiclesSafety' on page 7 undefined on i
-nput line 632.
-
-
-LaTeX Warning: Citation `dowling23042021autopilottricking' on page 7 undefined 
-on input line 633.
-
-
-LaTeX Warning: Citation `wilson19042021teslacrashregulators' on page 7 undefine
-d on input line 634.
-
-
-LaTeX Warning: Citation `seamans22062021aikillerap' on page 7 undefined on inpu
-t line 635.
-
-
-LaTeX Warning: Citation `mitchell24022020AIDataTesla' on page 7 undefined on in
-put line 636.
-
-
-LaTeX Warning: Citation `denneyjdsupraFeds' on page 7 undefined on input line 6
-37.
-
-
-LaTeX Warning: Citation `siddiqui22102020TeslaCriticism' on page 7 undefined on
- input line 638.
-
-
-LaTeX Warning: Citation `ackerman01072016TeslaImperfect' on page 7 undefined on
- input line 639.
-
-
-LaTeX Warning: Citation `greene04092019misuseautopilot' on page 7 undefined on 
-input line 640.
-
-
-LaTeX Warning: Citation `michralli26112019ubserautocarcrsash' on page 7 undefin
-ed on input line 641.
-
-
-LaTeX Warning: Citation `pitmann21072021wrongfullautodeath' on page 7 undefined
- on input line 642.
-
-
-LaTeX Warning: Citation `stackexchange102019teslacarmistake' on page 7 undefine
-d on input line 643.
-
-
-LaTeX Warning: Citation `tasking07062017TeslaAugmentedSafety' on page 7 undefin
-ed on input line 644.
-
-
-LaTeX Warning: Citation `griemannExaminSelfDriving' on page 7 undefined on inpu
-t line 645.
-
-
-LaTeX Warning: Citation `Harkey30052019SafeSystemVehicle' on page 7 undefined o
-n input line 646.
-
-
-LaTeX Warning: Citation `shepardson18062021TeslaDeaths' on page 7 undefined on 
-input line 648.
-
-
-LaTeX Warning: Citation `hawkins30062021nhtsarequiresreporting' on page 7 undef
-ined on input line 649.
-
-
-LaTeX Warning: Citation `hawkins10052021autopilotnotavailable' on page 7 undefi
-ned on input line 650.
-
-
-LaTeX Warning: Citation `szymkowski29062021nhtsaTeslaCrashReports' on page 7 un
-defined on input line 651.
-
-
-LaTeX Warning: Citation `abc1112052021AutopilotNotinTeslaCrash' on page 7 undef
-ined on input line 652.
-
-
-LaTeX Warning: Citation `ankel18062021regulatorsinvestigateAutopilot' on page 7
- undefined on input line 653.
-
-
-LaTeX Warning: Citation `sommerfield12072021NHTSAmandateresult' on page 7 undef
-ined on input line 654.
-
-
-LaTeX Warning: Citation `saferoardsCrashesAutonomousvehicles' on page 7 undefin
-ed on input line 655.
-
-
-LaTeX Warning: Citation `stephardson18032021revieuwingtesla' on page 7 undefine
-d on input line 656.
-
-
-LaTeX Warning: Citation `krishner30062021NHTSAreport' on page 7 undefined on in
-put line 657.
-
-
-LaTeX Warning: Citation `gitlin11052021autopilot' on page 7 undefined on input 
-line 658.
-
-
-LaTeX Warning: Citation `mitchell19012017investigationstop' on page 7 undefined
- on input line 659.
-
-
-LaTeX Warning: Citation `gordon10052021teslaprelimreport' on page 7 undefined o
-n input line 660.
-
-
-LaTeX Warning: Citation `shaper07062018' on page 7 undefined on input line 661.
-
-
-
-LaTeX Warning: Citation `cochran18042021nodriverTeslaCrash' on page 7 undefined
- on input line 662.
-
-
-LaTeX Warning: Citation `habib28062016NHTSATeslaReport' on page 7 undefined on 
-input line 663.
-
-
-LaTeX Warning: Citation `firstpress11052021fatalnonautopilot' on page 7 undefin
-ed on input line 664.
-
-
-LaTeX Warning: Citation `raynal20042021probeTeslaCrash' on page 7 undefined on 
-input line 665.
-
-
-LaTeX Warning: Citation `tiungteslasoftwarecrash' on page 7 undefined on input 
-line 666.
 
 
 LaTeX Warning: Citation `globaltimes08052021guangdongcrash' on page 7 undefined
@@ -2337,158 +2507,6 @@ LaTeX Warning: Citation `janssen20062017teslacrashdetailflorida' on page 7 unde
 fined on input line 677.
 
 
-LaTeX Warning: Citation `espnSLMterugblik' on page 7 undefined on input line 68
-5.
-
-
-LaTeX Warning: Citation `dennisRosier01052020' on page 7 undefined on input lin
-e 685.
-
-
-LaTeX Warning: Citation `hassing07062020slmramp' on page 7 undefined on input l
-ine 686.
-
-
-LaTeX Warning: Citation `amsterdamArchiefSLM' on page 7 undefined on input line
- 686.
-
-
-LaTeX Warning: Citation `rtvOost06062019nabestaande' on page 7 undefined on inp
-ut line 686.
-
-
-LaTeX Warning: Citation `breda07062021AndroSnel' on page 7 undefined on input l
-ine 687.
-
-
-LaTeX Warning: Citation `andereTijdenSLMCrash' on page 7 undefined on input lin
-e 687.
-
-
-LaTeX Warning: Citation `aviationReport' on page 7 undefined on input line 688.
-
-
-
-LaTeX Warning: Citation `aviationSLMCrashAccidentInvestigation' on page 7 undef
-ined on input line 688.
-
-
-LaTeX Warning: Citation `mcDonnelDouglasCommissionReportSLMCrash' on page 7 und
-efined on input line 688.
-
-
-LaTeX Warning: Citation `wikiSRFlight764' on page 7 undefined on input line 689
-.
-
-
-LaTeX Warning: Citation `nos07062019SLMTerugblik' on page 7 undefined on input 
-line 689.
-
-
-LaTeX Warning: Citation `dagvantoenSLMCrash' on page 7 undefined on input line 
-689.
-
-
-LaTeX Warning: Citation `waterkantNesty07061989' on page 7 undefined on input l
-ine 689.
-
-
-LaTeX Warning: Citation `eduNandlalSRCrash' on page 7 undefined on input line 6
-89.
-
-
-LaTeX Warning: Citation `oldjetsSRAirways' on page 7 undefined on input line 68
-9.
-
-
-LaTeX Warning: Citation `cloudberg02012021srflight764' on page 7 undefined on i
-nput line 689.
-
-
-LaTeX Warning: Citation `apnews07061989srplanecrash' on page 7 undefined on inp
-ut line 689.
-
-
-LaTeX Warning: Citation `schipholbrand27102005video' on page 7 undefined on inp
-ut line 691.
-
-
-LaTeX Warning: Citation `schipholbrand27102005video' on page 7 undefined on inp
-ut line 691.
-
-
-LaTeX Warning: Citation `onderzoeksraad2610schipholoost' on page 7 undefined on
- input line 691.
-
-
-LaTeX Warning: Citation `schipholbrandvideoargos' on page 7 undefined on input 
-line 692.
-
-
-LaTeX Warning: Citation `nunl30052023feitenoverzicht' on page 7 undefined on in
-put line 692.
-
-
-LaTeX Warning: Citation `parlementairemonitorschipholbrand' on page 7 undefined
- on input line 692.
-
-
-LaTeX Warning: Citation `videonpoNOVA13112008' on page 7 undefined on input lin
-e 692.
-
-
-LaTeX Warning: Citation `rizoomes01052014schipholbrand' on page 7 undefined on 
-input line 692.
-
-
-LaTeX Warning: Citation `heuvelkroesschipholbrandcamerabeelden' on page 7 undef
-ined on input line 692.
-
-
-LaTeX Warning: Citation `wikiSchipholbrand' on page 7 undefined on input line 6
-93.
-
-
-LaTeX Warning: Citation `schipholbrand27102005video' on page 7 undefined on inp
-ut line 693.
-
-
-LaTeX Warning: Citation `onderzoeksraad2610schipholoost' on page 7 undefined on
- input line 693.
-
-
-LaTeX Warning: Citation `schipholbrandvideoargos' on page 7 undefined on input 
-line 693.
-
-
-LaTeX Warning: Citation `nunl30052023feitenoverzicht' on page 7 undefined on in
-put line 693.
-
-
-LaTeX Warning: Citation `singeluitgeverijenSchipholbrand' on page 7 undefined o
-n input line 693.
-
-
-LaTeX Warning: Citation `eenvandaagschipholbrand' on page 7 undefined on input 
-line 693.
-
-
-LaTeX Warning: Citation `parlementairemonitorschipholbrand' on page 7 undefined
- on input line 693.
-
-
-LaTeX Warning: Citation `videonpoNOVA13112008' on page 7 undefined on input lin
-e 694.
-
-
-LaTeX Warning: Citation `rizoomes01052014schipholbrand' on page 7 undefined on 
-input line 694.
-
-
-LaTeX Warning: Citation `heuvelkroesschipholbrandcamerabeelden' on page 7 undef
-ined on input line 694.
-
-
 LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 7 undefined on i
 nput line 804.
 
@@ -2499,106 +2517,6 @@ d on input line 805.
 
 LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 7 undefined 
 on input line 805.
-
-
-LaTeX Warning: Citation `pinghuang2410201TanjinFactreport' on page 7 undefined 
-on input line 806.
-
-
-LaTeX Warning: Citation `portoTanjinExplosionSight' on page 7 undefined on inpu
-t line 806.
-
-
-LaTeX Warning: Citation `imago17082015TanjinApartmentImages' on page 7 undefine
-d on input line 806.
-
-
-LaTeX Warning: Citation `trager14082015Chemicalblast' on page 7 undefined on in
-put line 806.
-
-
-LaTeX Warning: Citation `pangeramo27082015TanjinExplosion' on page 7 undefined 
-on input line 806.
-
-
-LaTeX Warning: Citation `ap06082020ammaniumnitrate' on page 7 undefined on inpu
-t line 806.
-
-
-LaTeX Warning: Citation `morris14082015TanjinIndustryImpact' on page 7 undefine
-d on input line 807.
-
-
-LaTeX Warning: Citation `milesyu20082015exposingtoxicgovlines' on page 7 undefi
-ned on input line 807.
-
-
-LaTeX Warning: Citation `artemis30032016tanjininsurance' on page 7 undefined on
- input line 807.
-
-
-LaTeX Warning: Citation `aidenxiatanjinblast' on page 7 undefined on input line
- 807.
-
-
-LaTeX Warning: Citation `danwangTanjinflexreport' on page 7 undefined on input 
-line 808.
-
-
-LaTeX Warning: Citation `keyHighlightsTanjin' on page 7 undefined on input line
- 808.
-
-
-LaTeX Warning: Citation `hartley13082015videofootage' on page 7 undefined on in
-put line 808.
-
-
-LaTeX Warning: Citation `odonnel01062017firetanjinblast2015' on page 7 undefine
-d on input line 808.
-
-
-LaTeX Warning: Citation `fan15082015newyorkermistrustchina' on page 7 undefined
- on input line 809.
-
-
-LaTeX Warning: Citation `yanlidongchinamediaframingTanjin' on page 7 undefined 
-on input line 809.
-
-
-LaTeX Warning: Citation `evans27092017TnjinInsurance' on page 7 undefined on in
-put line 809.
-
-
-LaTeX Warning: Citation `jasi26032019chineschemplant' on page 7 undefined on in
-put line 809.
-
-
-LaTeX Warning: Citation `shiqingTanjinExecutiveSentence' on page 7 undefined on
- input line 809.
-
-
-LaTeX Warning: Citation `sophiebeach15082015' on page 7 undefined on input line
- 809.
-
-
-LaTeX Warning: Citation `hamzeh05082020BeirutBlast' on page 7 undefined on inpu
-t line 809.
-
-
-LaTeX Warning: Citation `chemwatch18082015TanjiinExplosion' on page 7 undefined
- on input line 809.
-
-
-LaTeX Warning: Citation `thehindu15062019chinaExplosion' on page 7 undefined on
- input line 810.
-
-
-LaTeX Warning: Citation `santagotimes24032019chinablast' on page 7 undefined on
- input line 810.
-
-
-LaTeX Warning: Citation `klingecorp28042020causedTanjin' on page 7 undefined on
- input line 811.
 
 
 LaTeX Warning: Citation `mcgarryExplosions2017' on page 7 undefined on input li
@@ -2613,70 +2531,6 @@ LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 7 undefined on i
 nput line 812.
 
 
-LaTeX Warning: Citation `tremblay11022016chineseInvestigatorsTanjin' on page 7 
-undefined on input line 812.
-
-
-LaTeX Warning: Citation `taylor13082015TanjinExplosianAftermath' on page 7 unde
-fined on input line 812.
-
-
-LaTeX Warning: Citation `associatedPresss13082013' on page 7 undefined on input
- line 813.
-
-
-LaTeX Warning: Citation `un20082015InvestigationTanjin' on page 7 undefined on 
-input line 813.
-
-
-LaTeX Warning: Citation `france2412082015TnjinExplosion' on page 7 undefined on
- input line 813.
-
-
-LaTeX Warning: Citation `npr14082015TanjinCause' on page 7 undefined on input l
-ine 813.
-
-
-LaTeX Warning: Citation `bbc05022016TanjinResponsibles' on page 7 undefined on 
-input line 813.
-
-
-LaTeX Warning: Citation `CBodeen15082015TanjinExplosion' on page 7 undefined on
- input line 813.
-
-
-LaTeX Warning: Citation `reutersTanjinInsurance' on page 7 undefined on input l
-ine 813.
-
-
-LaTeX Warning: Citation `yu082016evaluationTanjin2015' on page 7 undefined on i
-nput line 813.
-
-
-LaTeX Warning: Citation `wiki2015TanjinExplosions' on page 7 undefined on input
- line 813.
-
-
-LaTeX Warning: Citation `bbc17082015whathappenedTanjin' on page 7 undefined on 
-input line 813.
-
-
-LaTeX Warning: Citation `mortimer19082016taijinexplosioncrater' on page 7 undef
-ined on input line 814.
-
-
-LaTeX Warning: Citation `internationallabourofficeChmControlTooliit' on page 7 
-undefined on input line 814.
-
-
-LaTeX Warning: Citation `euTaxationCustomsICSC' on page 7 undefined on input li
-ne 814.
-
-
-LaTeX Warning: Citation `iloWHOChemSafetyCards' on page 7 undefined on input li
-ne 815.
-
-
 LaTeX Warning: Citation `jiang16042019TanjinExplosion' on page 7 undefined on i
 nput line 822.
 
@@ -2687,106 +2541,6 @@ d on input line 824.
 
 LaTeX Warning: Citation `chinafile18082015tanjinexplosion' on page 7 undefined 
 on input line 826.
-
-
-LaTeX Warning: Citation `pinghuang2410201TanjinFactreport' on page 7 undefined 
-on input line 828.
-
-
-LaTeX Warning: Citation `portoTanjinExplosionSight' on page 7 undefined on inpu
-t line 830.
-
-
-LaTeX Warning: Citation `imago17082015TanjinApartmentImages' on page 7 undefine
-d on input line 831.
-
-
-LaTeX Warning: Citation `trager14082015Chemicalblast' on page 7 undefined on in
-put line 832.
-
-
-LaTeX Warning: Citation `pangeramo27082015TanjinExplosion' on page 7 undefined 
-on input line 833.
-
-
-LaTeX Warning: Citation `ap06082020ammaniumnitrate' on page 7 undefined on inpu
-t line 835.
-
-
-LaTeX Warning: Citation `morris14082015TanjinIndustryImpact' on page 7 undefine
-d on input line 837.
-
-
-LaTeX Warning: Citation `milesyu20082015exposingtoxicgovlines' on page 7 undefi
-ned on input line 839.
-
-
-LaTeX Warning: Citation `artemis30032016tanjininsurance' on page 7 undefined on
- input line 841.
-
-
-LaTeX Warning: Citation `aidenxiatanjinblast' on page 7 undefined on input line
- 842.
-
-
-LaTeX Warning: Citation `danwangTanjinflexreport' on page 7 undefined on input 
-line 844.
-
-
-LaTeX Warning: Citation `keyHighlightsTanjin' on page 7 undefined on input line
- 845.
-
-
-LaTeX Warning: Citation `hartley13082015videofootage' on page 7 undefined on in
-put line 847.
-
-
-LaTeX Warning: Citation `odonnel01062017firetanjinblast2015' on page 7 undefine
-d on input line 848.
-
-
-LaTeX Warning: Citation `fan15082015newyorkermistrustchina' on page 7 undefined
- on input line 850.
-
-
-LaTeX Warning: Citation `yanlidongchinamediaframingTanjin' on page 7 undefined 
-on input line 852.
-
-
-LaTeX Warning: Citation `evans27092017TnjinInsurance' on page 7 undefined on in
-put line 853.
-
-
-LaTeX Warning: Citation `jasi26032019chineschemplant' on page 7 undefined on in
-put line 855.
-
-
-LaTeX Warning: Citation `shiqingTanjinExecutiveSentence' on page 7 undefined on
- input line 856.
-
-
-LaTeX Warning: Citation `sophiebeach15082015' on page 7 undefined on input line
- 858.
-
-
-LaTeX Warning: Citation `hamzeh05082020BeirutBlast' on page 7 undefined on inpu
-t line 860.
-
-
-LaTeX Warning: Citation `chemwatch18082015TanjiinExplosion' on page 7 undefined
- on input line 861.
-
-
-LaTeX Warning: Citation `thehindu15062019chinaExplosion' on page 7 undefined on
- input line 862.
-
-
-LaTeX Warning: Citation `santagotimes24032019chinablast' on page 7 undefined on
- input line 863.
-
-
-LaTeX Warning: Citation `klingecorp28042020causedTanjin' on page 7 undefined on
- input line 865.
 
 
 LaTeX Warning: Citation `mcgarryExplosions2017' on page 7 undefined on input li
@@ -2801,175 +2555,35 @@ LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 7 undefined on i
 nput line 871.
 
 
-LaTeX Warning: Citation `tremblay11022016chineseInvestigatorsTanjin' on page 7 
-undefined on input line 875.
-
-
-LaTeX Warning: Citation `taylor13082015TanjinExplosianAftermath' on page 7 unde
-fined on input line 877.
-
-
-LaTeX Warning: Citation `associatedPresss13082013' on page 7 undefined on input
- line 879.
-
-
-LaTeX Warning: Citation `un20082015InvestigationTanjin' on page 7 undefined on 
-input line 880.
-
-
-LaTeX Warning: Citation `france2412082015TnjinExplosion' on page 7 undefined on
- input line 881.
-
-
-LaTeX Warning: Citation `npr14082015TanjinCause' on page 7 undefined on input l
-ine 882.
-
-
-LaTeX Warning: Citation `bbc05022016TanjinResponsibles' on page 7 undefined on 
-input line 884.
-
-
-LaTeX Warning: Citation `CBodeen15082015TanjinExplosion' on page 7 undefined on
- input line 886.
-
-
-LaTeX Warning: Citation `reutersTanjinInsurance' on page 7 undefined on input l
-ine 887.
-
-
-LaTeX Warning: Citation `yu082016evaluationTanjin2015' on page 7 undefined on i
-nput line 888.
-
-
-LaTeX Warning: Citation `wiki2015TanjinExplosions' on page 7 undefined on input
- line 889.
-
-
-LaTeX Warning: Citation `bbc17082015whathappenedTanjin' on page 7 undefined on 
-input line 890.
-
-
-LaTeX Warning: Citation `mortimer19082016taijinexplosioncrater' on page 7 undef
-ined on input line 891.
-
-
-LaTeX Warning: Citation `internationallabourofficeChmControlTooliit' on page 7 
-undefined on input line 893.
-
-
-LaTeX Warning: Citation `euTaxationCustomsICSC' on page 7 undefined on input li
-ne 894.
-
-
-LaTeX Warning: Citation `iloWHOChemSafetyCards' on page 7 undefined on input li
-ne 895.
-
-
 LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 7 undefined o
 n input line 897.
-
-
-LaTeX Warning: Citation `gates18112020boeingcrisis' on page 7 undefined on inpu
-t line 897.
-
-
-LaTeX Warning: Citation `boeing737maxsoftwareprobles' on page 7 undefined on in
-put line 898.
-
-
-LaTeX Warning: Citation `avetisov19032019boeingmalwarestate' on page 7 undefine
-d on input line 898.
-
-
-LaTeX Warning: Citation `thompson23112020nationalsecurityboeing' on page 7 unde
-fined on input line 898.
-
-
-LaTeX Warning: Citation `wiki737maxgroundings' on page 7 undefined on input lin
-e 899.
-
-
-LaTeX Warning: Citation `campbell02052019boengcrashhumanerrors' on page 7 undef
-ined on input line 899.
-
-
-LaTeX Warning: Citation `hawkins22032019737maxairplanes' on page 7 undefined on
- input line 901.
-
-
-LaTeX Warning: Citation `barnett05052019737maxcrisis' on page 7 undefined on in
-put line 901.
-
-
-LaTeX Warning: Citation `thomas30082020737safest' on page 7 undefined on input 
-line 901.
-
-
-LaTeX Warning: Citation `boyle18112020737maxupgrade' on page 7 undefined on inp
-ut line 901.
-
-
-LaTeX Warning: Citation `bergstraburgess122019737maxMcasAlgorithm' on page 7 un
-defined on input line 901.
-
-
-LaTeX Warning: Citation `737mcas' on page 7 undefined on input line 901.
-
-
-LaTeX Warning: Citation `german190620217372yaftergrounded' on page 7 undefined 
-on input line 901.
-
-
-LaTeX Warning: Citation `beningo02052019boeinglessons' on page 7 undefined on i
-nput line 901.
-
-
-LaTeX Warning: Citation `bloomberg26092019failedpred' on page 7 undefined on in
-put line 901.
-
-
-LaTeX Warning: Citation `afacwaLostSafeguards' on page 7 undefined on input lin
-e 901.
 
 
 LaTeX Warning: Citation `uran05042019SPOF' on page 7 undefined on input line 90
 1.
 
 
-LaTeX Warning: Citation `boeing737maxdisplay' on page 7 undefined on input line
- 902.
-
-
-LaTeX Warning: Citation `fehrm24112020737changes' on page 7 undefined on input 
-line 903.
-
-
-LaTeX Warning: Citation `dohertylindeman15032019737problems' on page 7 undefine
-d on input line 903.
-
-
-LaTeX Warning: Citation `travis18042019737maxsoftwaredevop' on page 7 undefined
- on input line 904.
-
-
-LaTeX Warning: Citation `touitou11032019737tragedies' on page 7 undefined on in
-put line 907.
-
-
-LaTeX Warning: Citation `caa737modifications' on page 7 undefined on input line
- 908.
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 445--917
-[]\T1/ptm/m/n/10.95 De schip-hol-brand op 27/10/2005[[]],[[]],[[]], [[]],[[]],[
-[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],
+Underfull \hbox (badness 1688) in paragraph at lines 445--917
+\T1/ptm/m/n/10.95 vei-lig-heids-vraag-stuk [[]] vei-ig-heids-vraag-stuk van-weg
+e touch screen [[]] vei-lig-heids-vraag-stuk
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 445--917
-\T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]], [[]],[[]]
-,[[]],[[]], [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]], [[]],[[]], [[]],[[]],[[]],
+Underfull \hbox (badness 10000) in paragraph at lines 445--917
+[]\T1/ptm/m/n/10.95 De schip-hol-brand op 27/10/2005[[]],[[]],[[]], [[]],[[]],[
+[]],[[]],[[]],[[]],
+ []
 
+
+Underfull \hbox (badness 3078) in paragraph at lines 445--917
+\T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]], [[]],[[]],[[]]. 27/1
+0/2005 11 do-den on-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--917
+\T1/ptm/m/n/10.95 [[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]], [[]],[[]],[[]],[[]]
+,[[]],[[]],[[]],[[]],
  []
 
 [7]
@@ -2984,250 +2598,8 @@ LaTeX Warning: Citation `caliskan09112013747boeingkalman' on page 10 undefined
 on input line 926.
 
 
-LaTeX Warning: Citation `gates18112020boeingcrisis' on page 10 undefined on inp
-ut line 927.
-
-
-LaTeX Warning: Citation `boeing737maxsoftwareprobles' on page 10 undefined on i
-nput line 928.
-
-
-LaTeX Warning: Citation `avetisov19032019boeingmalwarestate' on page 10 undefin
-ed on input line 929.
-
-
-LaTeX Warning: Citation `thompson23112020nationalsecurityboeing' on page 10 und
-efined on input line 930.
-
-
-LaTeX Warning: Citation `gates21032019FAAControlSystem' on page 10 undefined on
- input line 931.
-
-
-LaTeX Warning: Citation `faa18112020boeingreview' on page 10 undefined on input
- line 932.
-
-
-LaTeX Warning: Citation `wiki737maxgroundings' on page 10 undefined on input li
-ne 933.
-
-
-LaTeX Warning: Citation `campbell02052019boengcrashhumanerrors' on page 10 unde
-fined on input line 934.
-
-
-LaTeX Warning: Citation `hawkins22032019737maxairplanes' on page 10 undefined o
-n input line 935.
-
-
-LaTeX Warning: Citation `thomas30082020737safest' on page 10 undefined on input
- line 936.
-
-
-LaTeX Warning: Citation `boeing737maxdisplay' on page 10 undefined on input lin
-e 937.
-
-
-LaTeX Warning: Citation `fehrm24112020737changes' on page 10 undefined on input
- line 938.
-
-
-LaTeX Warning: Citation `travis18042019737maxsoftwaredevop' on page 10 undefine
-d on input line 939.
-
-
-LaTeX Warning: Citation `barnett05052019737maxcrisis' on page 10 undefined on i
-nput line 940.
-
-
-LaTeX Warning: Citation `easa27012021737maxsafereturn' on page 10 undefined on 
-input line 941.
-
-
-LaTeX Warning: Citation `touitou11032019737tragedies' on page 10 undefined on i
-nput line 942.
-
-
-LaTeX Warning: Citation `hemmerdinger02022021737maxdeliveries' on page 10 undef
-ined on input line 943.
-
-
-LaTeX Warning: Citation `bielby27022021faaimprovesafety' on page 10 undefined o
-n input line 944.
-
-
-LaTeX Warning: Citation `boyle18112020737maxupgrade' on page 10 undefined on in
-put line 945.
-
-
-LaTeX Warning: Citation `bergstraburgess122019737maxMcasAlgorithm' on page 10 u
-ndefined on input line 946.
-
-
-LaTeX Warning: Citation `737mcas' on page 10 undefined on input line 947.
-
-
-LaTeX Warning: Citation `newburger17052019boeingcrisis' on page 10 undefined on
- input line 948.
-
-
-LaTeX Warning: Citation `arstechnica22012020737problems' on page 10 undefined o
-n input line 949.
-
-
-LaTeX Warning: Citation `german190620217372yaftergrounded' on page 10 undefined
- on input line 950.
-
-
-LaTeX Warning: Citation `beningo02052019boeinglessons' on page 10 undefined on 
-input line 951.
-
-
-LaTeX Warning: Citation `duran05042019boeingspof' on page 10 undefined on input
- line 952.
-
-
-LaTeX Warning: Citation `makichuck24012021737fearflying' on page 10 undefined o
-n input line 953.
-
-
-LaTeX Warning: Citation `caa737modifications' on page 10 undefined on input lin
-e 954.
-
-
-LaTeX Warning: Citation `oestergaard14122020boeingdeliveries' on page 10 undefi
-ned on input line 955.
-
-
-LaTeX Warning: Citation `reenberg787flaws' on page 10 undefined on input line 9
-56.
-
-
-LaTeX Warning: Citation `fitch16092020737backlogrisks' on page 10 undefined on 
-input line 957.
-
-
-LaTeX Warning: Citation `willis27082020737maxfailures' on page 10 undefined on 
-input line 958.
-
-
-LaTeX Warning: Citation `ostrower11062020more737changes' on page 10 undefined o
-n input line 959.
-
-
-LaTeX Warning: Citation `hruska13122019faaknown737crashrate' on page 10 undefin
-ed on input line 960.
-
-
-LaTeX Warning: Citation `bloomberg26092019failedpred' on page 10 undefined on i
-nput line 961.
-
-
-LaTeX Warning: Citation `whiteman09072020boengcancelstock' on page 10 undefined
- on input line 962.
-
-
-LaTeX Warning: Citation `leopold09192019boeingreliability' on page 10 undefined
- on input line 963.
-
-
-LaTeX Warning: Citation `koenig11122019737crashesnofix' on page 10 undefined on
- input line 964.
-
-
-LaTeX Warning: Citation `dohertylindeman15032019737problems' on page 10 undefin
-ed on input line 965.
-
-
-LaTeX Warning: Citation `stodder02102019corruptoversight' on page 10 undefined 
-on input line 966.
-
-
-LaTeX Warning: Citation `afacwaLostSafeguards' on page 10 undefined on input li
-ne 967.
-
-
-LaTeX Warning: Citation `swayne18032019profitssafety' on page 10 undefined on i
-nput line 968.
-
-
-LaTeX Warning: Citation `freed26022021liftaustraliaban' on page 10 undefined on
- input line 969.
-
-
-LaTeX Warning: Citation `reed15032019softwareattention' on page 10 undefined on
- input line 970.
-
-
-LaTeX Warning: Citation `news17032019softwareexplains' on page 10 undefined on 
-input line 971.
-
-
-LaTeX Warning: Citation `legget21122020eu737maxsafe' on page 10 undefined on in
-put line 972.
-
-
-LaTeX Warning: Citation `marketscreener0103221737chinarecertification' on page 
-10 undefined on input line 973.
-
-
-LaTeX Warning: Citation `euractiv22022021737firegrounds' on page 10 undefined o
-n input line 974.
-
-
-LaTeX Warning: Citation `benny18022019737returnUAE' on page 10 undefined on inp
-ut line 975.
-
-
-LaTeX Warning: Citation `biersmichel22022021777grounds' on page 10 undefined on
- input line 976.
-
-
-LaTeX Warning: Citation `reuters23022021777metalfatigue' on page 10 undefined o
-n input line 977.
-
-
 LaTeX Warning: Citation `ovvMortierOngevalMaliVideo' on page 10 undefined on in
 put line 1002.
-
-
-LaTeX Warning: Citation `bnnvara13062018malirapport' on page 10 undefined on in
-put line 1003.
-
-
-LaTeX Warning: Citation `eucal11012021malimissieverlengd' on page 10 undefined 
-on input line 1004.
-
-
-LaTeX Warning: Citation `nos21052014zorgenmalimissie' on page 10 undefined on i
-nput line 1005.
-
-
-LaTeX Warning: Citation `meijnders' on page 10 undefined on input line 1006.
-
-
-LaTeX Warning: Citation `bnrwebredactie' on page 10 undefined on input line 100
-7.
-
-
-LaTeX Warning: Citation `keultjes01062016malimissiecoalitie' on page 10 undefin
-ed on input line 1008.
-
-
-LaTeX Warning: Citation `veenhof18012019' on page 10 undefined on input line 10
-09.
-
-
-LaTeX Warning: Citation `isitman06012016militair' on page 10 undefined on input
- line 1010.
-
-
-LaTeX Warning: Citation `nporadio11072016filmdemissie' on page 10 undefined on 
-input line 1011.
-
-
-LaTeX Warning: Citation `parlementairmonitor15122013mortierongeluk' on page 10 
-undefined on input line 1012.
 
 
 LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 10 undefined on input
@@ -3238,403 +2610,16 @@ LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 10 undefined on input
  line 1020.
 
 
-LaTeX Warning: Citation `wikiTjernobyl' on page 10 undefined on input line 1022
-.
-
-
-LaTeX Warning: Citation `rivmTjernobyl' on page 10 undefined on input line 1023
-.
-
-
-LaTeX Warning: Citation `andereTijdenTjernobyl' on page 10 undefined on input l
-ine 1024.
-
-
-LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 10 undefined on inp
-ut line 1026.
-
-
-LaTeX Warning: Citation `erikbork26042023reactor4' on page 10 undefined on inpu
-t line 1027.
-
-
-LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 10 undefined on input
- line 1028.
-
-
-LaTeX Warning: Citation `verschuur14012013tjernobylreports' on page 10 undefine
-d on input line 1120.
-
-
-LaTeX Warning: Citation `paperlessarchivesTjernobyl' on page 10 undefined on in
-put line 1121.
-
-
-LaTeX Warning: Citation `vargos082000tjernobylconcerns' on page 10 undefined on
- input line 1122.
-
-
-LaTeX Warning: Citation `mauroNuclearRiskSociety' on page 10 undefined on input
- line 1123.
-
-
-LaTeX Warning: Citation `vienna06092005LookingBack' on page 10 undefined on inp
-ut line 1124.
-
-
-LaTeX Warning: Citation `wikiTjernobyl' on page 10 undefined on input line 1125
-.
-
-
-LaTeX Warning: Citation `rivmTjernobyl' on page 10 undefined on input line 1126
-.
-
-
-LaTeX Warning: Citation `andereTijdenTjernobyl' on page 10 undefined on input l
-ine 1127.
-
-
-LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 10 undefined on inp
-ut line 1128.
-
-
-LaTeX Warning: Citation `erikbork26042023reactor4' on page 10 undefined on inpu
-t line 1129.
-
-
-LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 10 undefined on input
- line 1130.
-
-
-LaTeX Warning: Citation `knmi04052021tjernobylbosbrand' on page 10 undefined on
- input line 1131.
-
-
-LaTeX Warning: Citation `dodonovaKVIRisicoTjernobyl' on page 10 undefined on in
-put line 1132.
-
-
-LaTeX Warning: Citation `dumarey04062020verhaalTjernobylWaarheid' on page 10 un
-defined on input line 1133.
-
-
 LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 10 undefined on i
 nput line 1134.
-
-
-LaTeX Warning: Citation `kernenergiened26041986chronologiemaatregelen' on page 
-10 undefined on input line 1135.
-
-
-LaTeX Warning: Citation `mapszoneReactor' on page 10 undefined on input line 11
-36.
-
-
-LaTeX Warning: Citation `kernhistoriek15062021tjernobyl' on page 10 undefined o
-n input line 1137.
-
-
-LaTeX Warning: Citation `nucleairforumFeitenTjernobyl' on page 10 undefined on 
-input line 1138.
-
-
-LaTeX Warning: Citation `kernongevalTjernobylFancGov' on page 10 undefined on i
-nput line 1139.
-
-
-LaTeX Warning: Citation `arendswolters062019lessenTjernobyl' on page 10 undefin
-ed on input line 1140.
-
-
-LaTeX Warning: Citation `damveld08052020tjernobyl' on page 10 undefined on inpu
-t line 1140.
-
-
-LaTeX Warning: Citation `deVriestjernobylHolland' on page 10 undefined on input
- line 1141.
-
-
-LaTeX Warning: Citation `ing3enieur29042015antistralingskoepel' on page 10 unde
-fined on input line 1141.
-
-
-LaTeX Warning: Citation `verschuur14012013tjernobylreports' on page 10 undefine
-d on input line 1142.
-
-
-LaTeX Warning: Citation `paperlessarchivesTjernobyl' on page 10 undefined on in
-put line 1142.
-
-
-LaTeX Warning: Citation `vargos082000tjernobylconcerns' on page 10 undefined on
- input line 1142.
-
-
-LaTeX Warning: Citation `mauroNuclearRiskSociety' on page 10 undefined on input
- line 1142.
-
-
-LaTeX Warning: Citation `vienna06092005LookingBack' on page 10 undefined on inp
-ut line 1142.
-
-
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 10 undefined 
-on input line 1147.
 
 
 LaTeX Warning: Citation `noauthor_2022-nm' on page 10 undefined on input line 1
 148.
 
 
-LaTeX Warning: Citation `zetter2016GridHack' on page 10 undefined on input line
- 1149.
-
-
-LaTeX Warning: Citation `owens21032017ukrainemitigationstrategies' on page 10 u
-ndefined on input line 1150.
-
-
-LaTeX Warning: Citation `cerulus2019FrontlineRussiaAttack' on page 10 undefined
- on input line 1151.
-
-
-LaTeX Warning: Citation `grammatikis2019AttackIEC6087505104' on page 10 undefin
-ed on input line 1152.
-
-
-LaTeX Warning: Citation `hidajat2016ScadaSimulator' on page 10 undefined on inp
-ut line 1153.
-
-
-LaTeX Warning: Citation `uscert20072021crashmalware' on page 10 undefined on in
-put line 1154.
-
-
-LaTeX Warning: Citation `zetter12062017malwareanalysis' on page 10 undefined on
- input line 1155.
-
-
-LaTeX Warning: Citation `icsRussianHackingCyberWeapon' on page 10 undefined on 
-input line 1156.
-
-
-LaTeX Warning: Citation `usgovC2M2' on page 10 undefined on input line 1157.
-
-
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 10 undefined 
-on input line 1160.
-
-
-LaTeX Warning: Citation `zetter2016GridHack' on page 10 undefined on input line
- 1160.
-
-
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 10 undefined on inp
-ut line 1160.
-
-
-LaTeX Warning: Citation `finklejan2016UsBlamesRussianSandworm' on page 10 undef
-ined on input line 1160.
-
-
-LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 10 undefined on inp
-ut line 1160.
-
-
-LaTeX Warning: Citation `caseli04112016intrusiondetectioncontrolsystem' on page
- 10 undefined on input line 1160.
-
-
-LaTeX Warning: Citation `rochascadatesting' on page 10 undefined on input line 
-1160.
-
-
-LaTeX Warning: Citation `hidajat2016ScadaSimulator' on page 10 undefined on inp
-ut line 1160.
-
-
-LaTeX Warning: Citation `zetter2017moreDangerousMalware' on page 10 undefined o
-n input line 1160.
-
-
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 10 undefined 
-on input line 1162.
-
-
-LaTeX Warning: Citation `zetter2016GridHack' on page 10 undefined on input line
- 1163.
-
-
-LaTeX Warning: Citation `zetter2016GridHack' on page 10 undefined on input line
- 1164.
-
-
 LaTeX Warning: Citation `greenberg2017Cyberwartestlab' on page 10 undefined on 
 input line 1165.
-
-
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 10 undefined on inp
-ut line 1166.
-
-
-LaTeX Warning: Citation `finkle08012016russiansandwormhackers' on page 10 undef
-ined on input line 1167.
-
-
-LaTeX Warning: Citation `zinets15022017ukrainechargesrussia' on page 10 undefin
-ed on input line 1168.
-
-
-LaTeX Warning: Citation `mcelfresh2016cyberattackhowandwhy' on page 10 undefine
-d on input line 1169.
-
-
-LaTeX Warning: Citation `parkwalstorm11102017russiagridattack' on page 10 undef
-ined on input line 1170.
-
-
-LaTeX Warning: Citation `drago2017CrashOverride' on page 10 undefined on input 
-line 1172.
-
-
-LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 10 undefin
-ed on input line 1173.
-
-
-LaTeX Warning: Citation `cerulus2019FrontlineRussiaAttack' on page 10 undefined
- on input line 1175.
-
-
-LaTeX Warning: Citation `desarnaud2017cyberattacks' on page 10 undefined on inp
-ut line 1176.
-
-
-LaTeX Warning: Citation `dragos2019TargetedTransStation' on page 10 undefined o
-n input line 1177.
-
-
-LaTeX Warning: Citation `shehod2016gridadvantageus' on page 10 undefined on inp
-ut line 1179.
-
-
-LaTeX Warning: Citation `rocha2017cybersecyrityanalysisScada' on page 10 undefi
-ned on input line 1181.
-
-
-LaTeX Warning: Citation `2017crashoverridenostuxnet' on page 10 undefined on in
-put line 1182.
-
-
-LaTeX Warning: Citation `vijayan2017firstmalwareCausedOutage' on page 10 undefi
-ned on input line 1183.
-
-
-LaTeX Warning: Citation `slowik2019ReassasUkraine2016Attack' on page 10 undefin
-ed on input line 1184.
-
-
-LaTeX Warning: Citation `2015ukrainegridattack' on page 10 undefined on input l
-ine 1186.
-
-
-LaTeX Warning: Citation `industroyershortfact' on page 10 undefined on input li
-ne 1187.
-
-
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 10 undefined 
-on input line 1189.
-
-
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 10 undefined on inp
-ut line 1190.
-
-
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 10 undefined 
-on input line 1192.
-
-
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 10 undefined 
-on input line 1193.
-
-
-LaTeX Warning: Citation `boozallen2016lightwentout' on page 10 undefined on inp
-ut line 1194.
-
-
-LaTeX Warning: Citation `Whitehead2017ukrainepoweroutage' on page 10 undefined 
-on input line 1205.
-
-
-LaTeX Warning: Citation `shahzad2014ScadaProtocolsPollingScenario' on page 10 u
-ndefined on input line 1208.
-
-
-LaTeX Warning: Citation `grammatikis2019AttackIEC6087505104' on page 10 undefin
-ed on input line 1209.
-
-
-LaTeX Warning: Citation `2017win32industroyer' on page 10 undefined on input li
-ne 1210.
-
-
-LaTeX Warning: Citation `yadav2020reviewScadaArchitecture' on page 10 undefined
- on input line 1211.
-
-
-LaTeX Warning: Citation `arrizabalaga2020surveyiiotProtocols' on page 10 undefi
-ned on input line 1212.
-
-
-LaTeX Warning: Citation `fauri2017EncryptionICS' on page 10 undefined on input 
-line 1212.
-
-
-LaTeX Warning: Citation `resch31102019IEC62351secureCommunication' on page 10 u
-ndefined on input line 1212.
-
-
-LaTeX Warning: Citation `levalle2020FuzzingICSProtocols' on page 10 undefined o
-n input line 1212.
-
-
-LaTeX Warning: Citation `blackhatusa2017' on page 10 undefined on input line 12
-12.
-
-
-LaTeX Warning: Citation `blackhatusa2017' on page 10 undefined on input line 12
-12.
-
-
-LaTeX Warning: Citation `abb30062017crashoverridenotification' on page 10 undef
-ined on input line 1212.
-
-
-LaTeX Warning: Citation `spinner2018crashoverrideiot' on page 10 undefined on i
-nput line 1212.
-
-
-LaTeX Warning: Citation `njccicthreat08102017crashovverrideprofile' on page 10 
-undefined on input line 1212.
-
-
-LaTeX Warning: Citation `slowikvb2018crashoverride' on page 10 undefined on inp
-ut line 1212.
-
-
-LaTeX Warning: Citation `crashoverridenetwork' on page 10 undefined on input li
-ne 1212.
-
-
-LaTeX Warning: Citation `wikiindustroyer' on page 10 undefined on input line 12
-12.
-
-
-LaTeX Warning: Citation `icsSecurityRussianHacking' on page 10 undefined on inp
-ut line 1212.
-
-
-LaTeX Warning: Citation `holappa2017threattoElectricityNetworks' on page 10 und
-efined on input line 1212.
 
 [10]
 
@@ -3650,9 +2635,6 @@ LaTeX Warning: Citation `ifrc2020chemicalexplosionBeirutPort' on page 11 undefi
 ned on input line 1222.
 
 
-LaTeX Warning: Citation `TNOStint' on page 11 undefined on input line 1231.
-
-
 LaTeX Warning: Citation `boogers092002RampenRegelsRichtlijnen' on page 11 undef
 ined on input line 1234.
 
@@ -3664,31 +2646,19 @@ efined on input line 1241.
 LaTeX Warning: Citation `PROCESREGLEMENTEcourt' on page 11 undefined on input l
 ine 1243.
 
+[11]
 
-LaTeX Warning: Citation `molukseTreinkaping' on page 11 undefined on input line
+LaTeX Warning: Citation `molukseTreinkaping' on page 12 undefined on input line
  1247.
 
 
-LaTeX Warning: Citation `ovvVideoOssendrecht' on page 11 undefined on input lin
+LaTeX Warning: Citation `ovvVideoOssendrecht' on page 12 undefined on input lin
 e 1258.
 
 
-LaTeX Warning: Citation `oVVSchietongevalOssendrecht' on page 11 undefined on i
+LaTeX Warning: Citation `oVVSchietongevalOssendrecht' on page 12 undefined on i
 nput line 1259.
 
-
-LaTeX Warning: Citation `nos22032016ossendrecht' on page 11 undefined on input 
-line 1260.
-
-
-LaTeX Warning: Citation `ovv04042016lessenongevalossendrecht' on page 11 undefi
-ned on input line 1261.
-
-
-LaTeX Warning: Citation `quekelboere10052017doodossendrecht' on page 11 undefin
-ed on input line 1262.
-
-[11]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3704,313 +2674,265 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `winceckCriticalToSafety' on page 12 undefined on input
- line 1351.
-
-
-LaTeX Warning: Citation `chambersHazardAnalysisSCS' on page 12 undefined on inp
-ut line 1352.
-
-
-LaTeX Warning: Citation `rslater1998SCSAnalysis' on page 12 undefined on input 
-line 1353.
-
-
-LaTeX Warning: Citation `knightchallengessafetyCritical' on page 12 undefined o
-n input line 1367.
-
-
-LaTeX Warning: Citation `johnson2006devsafetycritical' on page 12 undefined on 
-input line 1370.
-
-
 LaTeX Warning: Citation `daucriticalsafetyconsider' on page 12 undefined on inp
-ut line 1371.
-
-
-LaTeX Warning: Citation `fallsafedesign' on page 12 undefined on input line 137
-2.
-
-
-LaTeX Warning: Citation `arForce2015VerificationExpectations' on page 12 undefi
-ned on input line 1373.
+ut line 1398.
 
 
 LaTeX Warning: Citation `nebulaassessment' on page 12 undefined on input line 1
-374.
+401.
 
 
-LaTeX Warning: Citation `lalaArchitecturalPrinciples' on page 12 undefined on i
-nput line 1375.
-
-
-LaTeX Warning: Citation `mitNotesSafetyCritical' on page 12 undefined on input 
-line 1376.
-
-
-LaTeX Warning: Citation `britishColumbia2020GuideSafetyCritical' on page 12 und
-efined on input line 1377.
-
-
-LaTeX Warning: Citation `fulvio1993safetycriticalsystems' on page 12 undefined 
-on input line 1390.
-
-
-LaTeX Warning: Citation `dlrtabid' on page 12 undefined on input line 1391.
+LaTeX Warning: Citation `dlrtabid' on page 12 undefined on input line 1418.
 
 
 LaTeX Warning: Citation `knight2010SafetyCritical' on page 12 undefined on inpu
-t line 1392.
+t line 1419.
 
 
 LaTeX Warning: Citation `creavisafecritical' on page 12 undefined on input line
- 1393.
+ 1420.
 
 
 LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 12 undefined on 
-input line 1394.
+input line 1421.
 
 
 LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 12 undefi
-ned on input line 1397.
-
-
-LaTeX Warning: Citation `hdsr30092022lichtprojectieswaterliniesluizen' on page 
-12 undefined on input line 1406.
-
-
-LaTeX Warning: Citation `thkwaterwerken' on page 12 undefined on input line 141
-0.
-
-
-LaTeX Warning: Citation `rekenkamercybersecWater' on page 12 undefined on input
- line 1410.
-
-
-LaTeX Warning: Citation `hackerWaterwerk' on page 12 undefined on input line 14
-12.
-
-
-LaTeX Warning: Citation `kramerZeeland' on page 12 undefined on input line 1413
-.
-
-
-LaTeX Warning: Citation `cybersecWaterwerk' on page 12 undefined on input line 
-1415.
-
-
-LaTeX Warning: Citation `cybersecWaterschappen' on page 12 undefined on input l
-ine 1417.
-
-
-LaTeX Warning: Citation `cybersecZuidHolland' on page 12 undefined on input lin
-e 1418.
-
-
-LaTeX Warning: Citation `waterwerkNED' on page 12 undefined on input line 1420.
-
-
-
-LaTeX Warning: Citation `veiligheidwaterland' on page 12 undefined on input lin
-e 1421.
+ned on input line 1424.
 
 [12]
 
+LaTeX Warning: Citation `thkwaterwerken' on page 13 undefined on input line 143
+7.
+
+
+LaTeX Warning: Citation `rekenkamercybersecWater' on page 13 undefined on input
+ line 1437.
+
+
+LaTeX Warning: Citation `hackerWaterwerk' on page 13 undefined on input line 14
+39.
+
+
+LaTeX Warning: Citation `kramerZeeland' on page 13 undefined on input line 1440
+.
+
+
+LaTeX Warning: Citation `cybersecWaterwerk' on page 13 undefined on input line 
+1442.
+
+
+LaTeX Warning: Citation `cybersecWaterschappen' on page 13 undefined on input l
+ine 1444.
+
+
+LaTeX Warning: Citation `cybersecZuidHolland' on page 13 undefined on input lin
+e 1445.
+
+
+LaTeX Warning: Citation `waterwerkNED' on page 13 undefined on input line 1447.
+
+
+
+LaTeX Warning: Citation `veiligheidwaterland' on page 13 undefined on input lin
+e 1448.
+
+
 LaTeX Warning: Citation `CivilEngineeringDivision' on page 13 undefined on inpu
-t line 1427.
+t line 1454.
 
 [13]
-<plaatjes/sluispassage.png, id=215, 490.83376pt x 689.57625pt>
+<plaatjes/sluispassage.png, id=1036, 490.83376pt x 689.57625pt>
 File: plaatjes/sluispassage.png Graphic file (type png)
 <use plaatjes/sluispassage.png>
-Package pdftex.def Info: plaatjes/sluispassage.png  used on input line 1447.
+Package pdftex.def Info: plaatjes/sluispassage.png  used on input line 1474.
 (pdftex.def)             Requested size: 220.87314pt x 310.30644pt.
  [14
 
  <./plaatjes/sluispassage.png>]
 
 LaTeX Warning: Citation `nourollahi20191215' on page 15 undefined on input line
- 1481.
+ 1508.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1488.
+ line 1515.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1489.
+ line 1516.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1490.
+ line 1517.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1491.
+ line 1518.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1492.
+ line 1519.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1493.
+ line 1520.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1494.
+ line 1521.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1495.
+ line 1522.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1496.
+ line 1523.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1497.
+ line 1524.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1498.
+ line 1525.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1499.
+ line 1526.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1500.
+ line 1527.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1501.
+ line 1528.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1502.
+ line 1529.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1503.
+ line 1530.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1504.
+ line 1531.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1505.
+ line 1532.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1506.
+ line 1533.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1507.
+ line 1534.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1508.
+ line 1535.
 
 
 LaTeX Warning: Citation `clarke2000Modelchecking' on page 15 undefined on input
- line 1509.
+ line 1536.
 
 
 LaTeX Warning: Citation `audioSemanticsBengtsson' on page 15 undefined on input
- line 1512.
+ line 1539.
 
 
 LaTeX Warning: Citation `guidingAutomataBberm' on page 15 undefined on input li
-ne 1513.
+ne 1540.
 
 
 LaTeX Warning: Citation `gearTransitionLindahl1' on page 15 undefined on input 
-line 1514.
+line 1541.
 
 
 LaTeX Warning: Citation `gearTransitionLindahl2' on page 15 undefined on input 
-line 1515.
+line 1542.
 
 
 LaTeX Warning: Citation `martinelliScada' on page 15 undefined on input line 15
-16.
+43.
 
 
 LaTeX Warning: Citation `IgbalReconstructurintTransition1' on page 15 undefined
- on input line 1517.
+ on input line 1544.
 
 
 LaTeX Warning: Citation `IgbalReconstructurintTransition2' on page 15 undefined
- on input line 1518.
+ on input line 1545.
 
 
 LaTeX Warning: Citation `huangVerficationStoch' on page 15 undefined on input l
-ine 1519.
+ine 1546.
 
 
 LaTeX Warning: Citation `bengtssonUppaalVerification' on page 15 undefined on i
-nput line 1520.
+nput line 1547.
 
 
 LaTeX Warning: Citation `pranaliVerificationWaterLevel' on page 15 undefined on
- input line 1521.
+ input line 1548.
 
 
 LaTeX Warning: Citation `alexandreUppaalDefinition' on page 15 undefined on inp
-ut line 1522.
+ut line 1549.
 
 
-LaTeX Warning: Citation `behzadEvalQOS' on page 15 undefined on input line 1523
+LaTeX Warning: Citation `behzadEvalQOS' on page 15 undefined on input line 1550
 .
 
 
 LaTeX Warning: Citation `behzadVariablesQoS' on page 15 undefined on input line
- 1524.
+ 1551.
 
 
-LaTeX Warning: Citation `alur' on page 15 undefined on input line 1525.
+LaTeX Warning: Citation `alur' on page 15 undefined on input line 1552.
 
 
 LaTeX Warning: Citation `alurDenseRealTime' on page 15 undefined on input line 
-1526.
+1553.
 
 
-LaTeX Warning: Citation `alurSystemClok' on page 15 undefined on input line 152
-7.
+LaTeX Warning: Citation `alurSystemClok' on page 15 undefined on input line 155
+4.
 
 
 LaTeX Warning: Citation `alurModelHybrid' on page 15 undefined on input line 15
-28.
+55.
 
 
 LaTeX Warning: Citation `rijksoverheidSluizen' on page 15 undefined on input li
-ne 1529.
+ne 1556.
 
 
 LaTeX Warning: Citation `rijksoverheidSluisStroomschema' on page 15 undefined o
-n input line 1530.
+n input line 1557.
 
 
-LaTeX Warning: Citation `latin06' on page 15 undefined on input line 1536.
+LaTeX Warning: Citation `latin06' on page 15 undefined on input line 1563.
 
 
-LaTeX Warning: Citation `realtimeForms' on page 15 undefined on input line 1536
+LaTeX Warning: Citation `realtimeForms' on page 15 undefined on input line 1563
 .
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1533--1537
+Underfull \hbox (badness 10000) in paragraph at lines 1560--1564
 
  []
 
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1540 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
+l.1567 ...\not$ f1 $\Leftrightarrow$ M, s $\nvdash
                                                   $ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4021,7 +2943,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1541 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
+l.1568 ...tarrow$ M,s $\models$ f1 or M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4032,7 +2954,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1542 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
+l.1569 ...rrow$  M,s $\models$ f1 and M,s $\nvdash
                                                   $ f2 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4043,7 +2965,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \piand 
                        
-l.1545 ...htarrow$ s is the first state of $\piand
+l.1572 ...htarrow$ s is the first state of $\piand
                                                   $ M, s $\models$ f1 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4054,7 +2976,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1546 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
+l.1573 ...1}$ $\Leftrightarrow$ M, $\pi$  $\nvdash
                                                   $ g1\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4065,7 +2987,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \bugcup 
                         
-l.1552 M, s $\models$ g1 $\bugcup
+l.1579 M, s $\models$ g1 $\bugcup
                                  $ g2 $\Leftrightarrow$ ~  there  ~ exists  ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4076,7 +2998,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \nvdash 
                         
-l.1554 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
+l.1581 ...r ~  every  ~ i < j,M,$\pi^{i}$ $\nvdash
                                                   $ g1 then M,$\pi^{j}$ $\mo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4092,7 +3014,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1560 ...Taking a Boolean observable C : Time −
+l.1587 ...Taking a Boolean observable C : Time −
                                                   → {0, 1}, where C(t) = 1...
 
 You may provide a definition with
@@ -4100,11 +3022,11 @@ You may provide a definition with
 
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 1560.
+            Default family used instead on input line 1587.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1563 $\forall$ t \in
+l.1590 $\forall$ t \in
                        Time $\dot{}$ $\neg$ C(t)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4116,7 +3038,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1563 $\forall$ t \in Time $\dot{}
+l.1590 $\forall$ t \in Time $\dot{}
                                    $ $\neg$ C(t)
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4124,7 +3046,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1563 $\forall$ t \in Time $\dot{}$ $\neg
+l.1590 $\forall$ t \in Time $\dot{}$ $\neg
                                           $ C(t)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4140,14 +3062,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1580 G : Time −
+l.1607 G : Time −
                    → {0, 1}, where G(t) = 1 expresses that at time t the
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 1580.
+            Default family used instead on input line 1607.
 
 ! LaTeX Error: Unicode character ≤ (U+2264)
                not set up for use with LaTeX.
@@ -4156,7 +3078,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1587 t ≤
+l.1614 t ≤
              t0, we cannot complain that (1.2) is violated because eventually
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -4169,7 +3091,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1596 [b, e] with lower bound b ∈
+l.1623 [b, e] with lower bound b ∈
                                      Time and upper bound e ∈ Time where
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -4182,7 +3104,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1596 ...r bound b ∈ Time and upper bound e ∈
+l.1623 ...r bound b ∈ Time and upper bound e ∈
                                                    Time where
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -4195,7 +3117,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1597 b ≤
+l.1624 b ≤
              e. For example, whenever a pedestrian at a traffic light pushes
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -4203,7 +3125,7 @@ You may provide a definition with
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1607 ...{}$ (P(t1) $\rightarrow$ $\exists$t2 \in
+l.1634 ...{}$ (P(t1) $\rightarrow$ $\exists$t2 \in
                                                    [t1 + 10, t1 + 15] $\dot{...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4215,7 +3137,7 @@ See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1607 ...exists$t2 \in [t1 + 10, t1 + 15] $\dot{}
+l.1634 ...exists$t2 \in [t1 + 10, t1 + 15] $\dot{}
                                                   $ G(t2))
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4223,13 +3145,13 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1614 
+l.1641 
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (167.95674pt too wide) in paragraph at lines 1594--1614
+Overfull \hbox (167.95674pt too wide) in paragraph at lines 1621--1641
 \OT1/ptmcm/m/n/10.95 15]$$\OML/ptmcm/m/it/10.95 G\OT1/ptmcm/m/n/10.95 (\OML/ptm
 cm/m/it/10.95 t\OT1/ptmcm/m/n/10.95 2))\OML/ptmcm/m/it/10.95 Notethatthisproper
 tycanbefalsifiedinboundedtime:Whenforsometimepointt\OT1/ptmcm/m/n/10.95 1\OML/p
@@ -4242,7 +3164,7 @@ n/10.95 [\OML/ptmcm/m/it/10.95 t\OT1/ptmcm/m/n/10.95 1 +
 ! Display math should end with $$.
 <to be read again> 
                    \forall 
-l.1630 $\forall
+l.1657 $\forall
                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}...
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -4250,7 +3172,7 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1630 $\forall
+l.1657 $\forall
                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4258,7 +3180,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1630 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
+l.1657 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
                                                   _b^{e}C(t)\,\mathrm{d}t $\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4266,7 +3188,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1630 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
+l.1657 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
                                                   $  u(b,e)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4278,7 +3200,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1631 \]
+l.1658 \]
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -4287,7 +3209,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1631 \]
+l.1658 \]
          
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4298,47 +3220,47 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.1631 \]
+l.1658 \]
          
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
 LaTeX Warning: Citation `04_giWorkshop2000' on page 17 undefined on input line 
-1634.
+1661.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1662 AG EF_
+l.1689 AG EF_
              [_x_,_y_] $\vee$
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Double subscript.
-l.1662 AG EF_[_
+l.1689 AG EF_[_
                x_,_y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1662 AG EF_[_x_
+l.1689 AG EF_[_x_
                  ,_y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1662 AG EF_[_x_,_
+l.1689 AG EF_[_x_,_
                    y_] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.1662 AG EF_[_x_,_y_
+l.1689 AG EF_[_x_,_y_
                      ] $\vee$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1662 AG EF_[_x_,_y_] $\vee
+l.1689 AG EF_[_x_,_y_] $\vee
                             $
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -9517,10 +8439,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.reuters2
 l.1739 ...\bibitem{reuters23022021777metalfatigue}
                                                    ... \LaTeX:\\ \url{https:...
 
-LaTeX Warning: Citation `reuters23022021777metalfatigue' on page 65 undefined o
-n input line 1740.
-
-
 Overfull \hbox (227.47708pt too wide) in paragraph at lines 1739--1742
 [][]$\T1/pcr/m/n/10.95 https : / / www . timeslive . co . za / news / world / 2
 021-[]02-[]23-[]damage-[]to-[]united-[]boeing-[]777-[]engine-[]consistent-[]wit
@@ -9554,7 +8472,7 @@ l.1771 \bibitem{wikibooks}
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `verslag.out' has not changed.
 (rerunfilecheck)             Checksum: 2986DD75F0BE78E377B924E0696E6C16;1094.
@@ -9562,11 +8480,11 @@ Package rerunfilecheck Info: File `verslag.out' has not changed.
 Here is how much of TeX's memory you used:
  34584 strings out of 475385
  686339 string characters out of 2776908
- 1223423 words of memory out of 3000000
+ 1255946 words of memory out of 3000000
  54682 multiletter control sequences out of 15000+600000
  531335 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,9n,99p,3241b,595s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 90i,9n,99p,3241b,580s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C
 :\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.
 pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
@@ -9579,9 +8497,9 @@ ams/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/gally/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/gally/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/gally/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on verslag.pdf (73 pages, 693075 bytes).
+Output written on verslag.pdf (73 pages, 795039 bytes).
 PDF statistics:
- 2040 PDF objects out of 2073 (max. 8388607)
+ 2528 PDF objects out of 2984 (max. 8388607)
  565 named destinations out of 1000 (max. 500000)
  255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
