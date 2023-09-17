@@ -49,7 +49,7 @@ bool direction = 0;
 //const int deuren = 2;
 //typedef int[0,deuren-1] deur;
 //bool gate_is_open[deur];
-int countCycle=0;
+//int countCycle=0;
 
 
 chan initOpenProc,initClosingProc;
@@ -93,9 +93,9 @@ const int aantal_wachtrijen=3;
 const int SIZE=3;
 //queue_of_ships stack[SIZE];
 //int myarray[3] := {stack[SIZE], stack[SIZE], stack[SIZE]};
-int wachtrij_beneden[SIZE];
+//int wachtrij_beneden[SIZE];
 //int stack[SIZE];
-int wachtrij_boven[SIZE];
+//int wachtrij_boven[SIZE];
 //int[0, 2] myarray[stack[SIZE]];
 //int queues[queue];
 
@@ -157,7 +157,7 @@ chan pomp_klik;
 
 
 
-chan send[kenteken], receive[kenteken];
+//chan send[kenteken], receive[kenteken];
 
 //const int positions=2;
 //typedef int[0,positions-1] locatie;
@@ -166,7 +166,7 @@ chan send[kenteken], receive[kenteken];
 clock systemtime;
 clock processtime;
 
-chan	done, ready, run, stop;</declaration>
+//chan	done, ready, run, stop;</declaration>
 	<template>
 		<name>opening</name>
 		<location id="id0" x="136" y="-340">
@@ -646,324 +646,6 @@ update:</label>
 		</transition>
 	</template>
 	<template>
-		<name>main</name>
-		<declaration>
-/**
- * Requirements
- * Voordat het template de states stoplicht en deur heeft bereikt is de richting van het schip bekend en tegengesteld aan de huidige positie.
- * In de idle stand is het mogeljk dat de clocktijd niet gelijk is aan nul, omdat het systeem alleen op 120 tijdseenheden en 
- * Een pomp is actief als er nul of 1 of 2 schepen in de sluis zitten.
- * De sluis heeft een trigger waarmee een actie kan worden gestart met een preconditie gerelateerd aan 1 van de volgende tenplates:schip,stoplicht,systeemtime,pomp,deur.
- *
- *
-*/
-clock systemtime;
-int  thresholdUp = 0900;
-int thresholdDown=1300;
-
-
-
-
-
-bool waterlockStartPosition()
-{
-
-    return false;
-}
-
-
-
-
-// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
-// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
-
-/** stack
- * de lengte van de datastructuur
-*/
-const int time_step = 2;
-
-
-
-
-/**
- *
-*/
-int[0,SIZE] head =0;
-
-/** pop
- *
-*/
-kenteken pop_left()
-{
-    kenteken temp;
-    //temp=stack[--head]; // neem de head voordat we de waarde uitlezen
-    //stack[head]=0; // verwijder de waarde
-    return temp;
-    
-}
-
-
-kenteken pop_center()
-{
-    kenteken temp;
-    //temp=stack[--head]; // neem de head voordat we de waarde uitlezen
-    //stack[head]=0; // verwijder de waarde
-    return temp;
-    
-}
-
-kenteken pop_right()
-{
-    kenteken temp;
-    //temp=stack[--head]; // neem de head voordat we de waarde uitlezen
-    //stack[head]=0; // verwijder de waarde
-    return temp;
-    
-}
-
-
-/** push
- *
-*/
-void push(kenteken p)
-{
-    //stack[head++]=p;
-}
-
-
-/** isFull
- *
-*/
-bool isFull()
-{
-    return (head==SIZE);
-}
-
-
-/** isEmpty
- *
-*/
-bool isEmpty()
-{
- return (head ==0);
-}
-
-void reset()
-{}</declaration>
-		<location id="id32" x="522" y="294">
-			<name x="437" y="252">startCycle</name>
-		</location>
-		<location id="id33" x="1134" y="294">
-			<name x="1159" y="209">WatermonitoringOn</name>
-		</location>
-		<location id="id34" x="386" y="192">
-			<name x="376" y="158">idle</name>
-		</location>
-		<location id="id35" x="386" y="294">
-			<name x="376" y="260">onstate</name>
-		</location>
-		<location id="id36" x="284" y="294">
-			<name x="274" y="260">offstate</name>
-		</location>
-		<location id="id37" x="726" y="438">
-		</location>
-		<location id="id38" x="828" y="294">
-			<name x="818" y="260">changing</name>
-		</location>
-		<location id="id39" x="624" y="294">
-		</location>
-		<location id="id40" x="726" y="294">
-			<name x="709" y="472">DefaultLow</name>
-		</location>
-		<location id="id41" x="726" y="158">
-			<name x="716" y="124">DefaultHigh</name>
-		</location>
-		<location id="id42" x="386" y="90">
-			<name x="376" y="56">begin</name>
-		</location>
-		<location id="id43" x="896" y="294">
-			<name x="886" y="260">openLock</name>
-		</location>
-		<location id="id44" x="1032" y="294">
-			<name x="1022" y="260">free_all</name>
-		</location>
-		<location id="id45" x="964" y="294">
-			<name x="955" y="260">closeLock</name>
-		</location>
-		<location id="id46" x="1083" y="294">
-			<name x="1073" y="260">end_cycle</name>
-		</location>
-		<location id="id47" x="989" y="481">
-			<name x="979" y="447">running</name>
-		</location>
-		<location id="id48" x="1125" y="413">
-			<name x="1115" y="379">finished</name>
-		</location>
-		<init ref="id34"/>
-		<transition>
-			<source ref="id48"/>
-			<target ref="id45"/>
-		</transition>
-		<transition>
-			<source ref="id45"/>
-			<target ref="id47"/>
-			<label kind="comments" x="976" y="413">select:
-guard: initOpenProc==true
-sync:
-update:</label>
-		</transition>
-		<transition>
-			<source ref="id46"/>
-			<target ref="id33"/>
-		</transition>
-		<transition>
-			<source ref="id44"/>
-			<target ref="id46"/>
-		</transition>
-		<transition>
-			<source ref="id32"/>
-			<target ref="id39"/>
-		</transition>
-		<transition>
-			<source ref="id45"/>
-			<target ref="id44"/>
-			<label kind="comments" x="437" y="481">select:
-guard:initClosingProc==true
-sync:
-update:process_finished=true, process_started =false</label>
-		</transition>
-		<transition>
-			<source ref="id43"/>
-			<target ref="id45"/>
-			<label kind="comments" x="1049" y="73">select:
-guard:
-sync:
-update:process_started=true , lockOpen=false</label>
-		</transition>
-		<transition>
-			<source ref="id38"/>
-			<target ref="id43"/>
-		</transition>
-		<transition>
-			<source ref="id42"/>
-			<target ref="id34"/>
-		</transition>
-		<transition>
-			<source ref="id35"/>
-			<target ref="id32"/>
-			<label kind="guard" x="428" y="269">position==0</label>
-			<nail x="479" y="294"/>
-		</transition>
-		<transition>
-			<source ref="id36"/>
-			<target ref="id35"/>
-			<nail x="343" y="362"/>
-			<nail x="386" y="362"/>
-		</transition>
-		<transition>
-			<source ref="id36"/>
-			<target ref="id36"/>
-			<nail x="318" y="362"/>
-			<nail x="250" y="362"/>
-		</transition>
-		<transition>
-			<source ref="id36"/>
-			<target ref="id35"/>
-		</transition>
-		<transition>
-			<source ref="id34"/>
-			<target ref="id36"/>
-			<label kind="guard" x="12" y="201">systemtime &lt;08&amp;&amp; systemtime &gt;21</label>
-			<nail x="284" y="192"/>
-		</transition>
-		<transition>
-			<source ref="id34"/>
-			<target ref="id35"/>
-			<label kind="guard" x="386" y="226">systemtime &gt;08&amp;&amp; systemtime &lt;21</label>
-			<nail x="386" y="226"/>
-		</transition>
-		<transition>
-			<source ref="id33"/>
-			<target ref="id32"/>
-			<label kind="comments" x="540" y="47">select:
-guard: process_finished==true &amp;&amp; process_started==false&amp;&amp; systemtime&gt;=60
-sync:
-update:systemtime=0</label>
-			<nail x="1134" y="184"/>
-			<nail x="1134" y="22"/>
-			<nail x="522" y="22"/>
-		</transition>
-		<transition>
-			<source ref="id37"/>
-			<target ref="id38"/>
-		</transition>
-		<transition>
-			<source ref="id39"/>
-			<target ref="id37"/>
-			<label kind="guard" x="642" y="332">countCycle%3!=0</label>
-			<label kind="assignment" x="642" y="345">direction=1</label>
-		</transition>
-		<transition>
-			<source ref="id38"/>
-			<target ref="id40"/>
-		</transition>
-		<transition>
-			<source ref="id40"/>
-			<target ref="id39"/>
-		</transition>
-		<transition>
-			<source ref="id41"/>
-			<target ref="id38"/>
-		</transition>
-		<transition>
-			<source ref="id39"/>
-			<target ref="id41"/>
-			<label kind="guard" x="642" y="192">countCycle%3==0</label>
-			<label kind="assignment" x="642" y="226">direction=0</label>
-		</transition>
-		<transition>
-			<source ref="id47"/>
-			<target ref="id47"/>
-			<label kind="comments" x="905" y="625">select:
-guard: position==0 &amp;&amp; waterlevel&lt;10
-sync:
-update: waterlevel++</label>
-			<nail x="955" y="617"/>
-			<nail x="887" y="583"/>
-		</transition>
-		<transition>
-			<source ref="id47"/>
-			<target ref="id47"/>
-			<label kind="comments" x="1041" y="625">select:
-guard:position==1
-sync:
-update:waterlevel--</label>
-			<nail x="1023" y="617"/>
-			<nail x="1091" y="583"/>
-		</transition>
-		<transition>
-			<source ref="id48"/>
-			<target ref="id47"/>
-			<label kind="comments" x="1075" y="510">select:
-guard: position==0 &amp;&amp; waterlevel==10
-sync:
-update:</label>
-			<nail x="1142" y="464"/>
-			<nail x="1057" y="506"/>
-		</transition>
-		<transition>
-			<source ref="id47"/>
-			<target ref="id48"/>
-			<label kind="comments" x="1024" y="438">select:
-guard: (position==1 &amp;&amp; waterlevel==0) || (position==0 &amp;&amp; waterlevel==10)
-sync:
-update:</label>
-			<nail x="989" y="464"/>
-			<nail x="1006" y="430"/>
-			<nail x="1074" y="396"/>
-		</transition>
-	</template>
-	<template>
 		<name>maincontroller</name>
 		<declaration>
 /**
@@ -975,6 +657,8 @@ update:</label>
  *
  *
 */
+
+/**
 clock systemtime;
 int  thresholdUp = 0900;
 int thresholdDown=1300;
@@ -989,6 +673,7 @@ bool waterlockStartPosition()
     return false;
 }
 
+*/
 
 
 
@@ -998,7 +683,7 @@ bool waterlockStartPosition()
 /** stack
  * de lengte van de datastructuur
 */
-const int time_step = 2;
+//const int time_step = 2;
 
 
 
@@ -1006,11 +691,13 @@ const int time_step = 2;
 /**
  *
 */
-int[0,SIZE] head =0;
+//int[0,SIZE] head =0;
 
 /** pop
  *
 */
+
+/**
 kenteken pop_left()
 {
     kenteken temp;
@@ -1019,8 +706,8 @@ kenteken pop_left()
     return temp;
     
 }
-
-
+*/
+/**
 kenteken pop_center()
 {
     kenteken temp;
@@ -1029,7 +716,8 @@ kenteken pop_center()
     return temp;
     
 }
-
+*/
+/**
 kenteken pop_right()
 {
     kenteken temp;
@@ -1038,88 +726,97 @@ kenteken pop_right()
     return temp;
     
 }
-
+*/
 
 /** push
  *
 */
+/**
 void push(kenteken p)
 {
     //stack[head++]=p;
 }
-
+*/
 
 /** isFull
  *
 */
+/**
 bool isFull()
 {
     return (head==SIZE);
 }
-
+*/
 
 /** isEmpty
  *
 */
+
+/**
 bool isEmpty()
 {
  return (head ==0);
 }
+*/
 
+/**
 void reset()
-{}</declaration>
-		<location id="id49" x="340" y="-374">
+{}
+
+*/</declaration>
+		<location id="id32" x="340" y="-374">
 			<name x="255" y="-416">startCycle</name>
 		</location>
-		<location id="id50" x="952" y="-374">
+		<location id="id33" x="952" y="-374">
 			<name x="977" y="-459">WatermonitoringOn</name>
 		</location>
-		<location id="id51" x="204" y="-374">
+		<location id="id34" x="204" y="-374">
 			<name x="194" y="-408">idle</name>
 		</location>
-		<location id="id52" x="544" y="-230">
+		<location id="id35" x="544" y="-230">
 		</location>
-		<location id="id53" x="646" y="-374">
-			<name x="636" y="-408">changing</name>
+		<location id="id36" x="646" y="-374">
+			<name x="636" y="-408">posTaken</name>
 		</location>
-		<location id="id54" x="442" y="-374">
+		<location id="id37" x="442" y="-374">
+			<name x="432" y="-408">positioning</name>
 		</location>
-		<location id="id55" x="544" y="-510">
+		<location id="id38" x="544" y="-510">
 			<name x="534" y="-544">DefaultHigh</name>
 		</location>
-		<location id="id56" x="714" y="-374">
-			<name x="704" y="-408">openLock</name>
+		<location id="id39" x="714" y="-374">
+			<name x="704" y="-408">procStart</name>
 		</location>
-		<location id="id57" x="850" y="-374">
+		<location id="id40" x="850" y="-374">
 			<name x="840" y="-408">free_all</name>
 		</location>
-		<location id="id58" x="782" y="-374">
-			<name x="773" y="-408">closeLock</name>
+		<location id="id41" x="782" y="-374">
+			<name x="773" y="-408">procEnd</name>
 		</location>
-		<location id="id59" x="901" y="-374">
+		<location id="id42" x="901" y="-374">
 			<name x="891" y="-408">end_cycle</name>
 		</location>
-		<location id="id60" x="714" y="-204">
+		<location id="id43" x="714" y="-204">
 			<name x="704" y="-238">running</name>
 		</location>
-		<location id="id61" x="850" y="-204">
+		<location id="id44" x="850" y="-204">
 			<name x="840" y="-238">finished</name>
 		</location>
-		<init ref="id51"/>
+		<init ref="id34"/>
 		<transition>
-			<source ref="id57"/>
-			<target ref="id59"/>
+			<source ref="id40"/>
+			<target ref="id42"/>
 		</transition>
 		<transition>
-			<source ref="id61"/>
-			<target ref="id58"/>
+			<source ref="id44"/>
+			<target ref="id41"/>
 			<label kind="synchronisation" x="800" y="-289">initClosingProc!</label>
 			<nail x="850" y="-272"/>
 			<nail x="782" y="-272"/>
 		</transition>
 		<transition>
-			<source ref="id56"/>
-			<target ref="id60"/>
+			<source ref="id39"/>
+			<target ref="id43"/>
 			<label kind="synchronisation" x="714" y="-306">initOpenProc!</label>
 			<label kind="comments" x="561" y="-306">select:
 guard:  
@@ -1127,59 +824,59 @@ sync:initOpenProc!
 update:</label>
 		</transition>
 		<transition>
-			<source ref="id59"/>
-			<target ref="id50"/>
+			<source ref="id42"/>
+			<target ref="id33"/>
 		</transition>
 		<transition>
-			<source ref="id49"/>
-			<target ref="id54"/>
+			<source ref="id32"/>
+			<target ref="id37"/>
 		</transition>
 		<transition>
-			<source ref="id58"/>
-			<target ref="id57"/>
-			<label kind="comments" x="800" y="-349">select:
+			<source ref="id41"/>
+			<target ref="id40"/>
+			<label kind="comments" x="782" y="-535">select:
 guard:  
 sync:initClosingProc!
 update:</label>
 		</transition>
 		<transition>
-			<source ref="id53"/>
-			<target ref="id56"/>
+			<source ref="id36"/>
+			<target ref="id39"/>
 		</transition>
 		<transition>
-			<source ref="id51"/>
-			<target ref="id49"/>
+			<source ref="id34"/>
+			<target ref="id32"/>
 			<nail x="297" y="-374"/>
 		</transition>
 		<transition>
-			<source ref="id50"/>
-			<target ref="id49"/>
+			<source ref="id33"/>
+			<target ref="id32"/>
 			<label kind="assignment" x="358" y="-646">systemtime=0</label>
 			<nail x="952" y="-484"/>
 			<nail x="952" y="-646"/>
 			<nail x="340" y="-646"/>
 		</transition>
 		<transition>
-			<source ref="id52"/>
-			<target ref="id53"/>
+			<source ref="id35"/>
+			<target ref="id36"/>
 		</transition>
 		<transition>
-			<source ref="id54"/>
-			<target ref="id52"/>
+			<source ref="id37"/>
+			<target ref="id35"/>
 			<label kind="assignment" x="460" y="-323">direction=1</label>
 		</transition>
 		<transition>
-			<source ref="id55"/>
-			<target ref="id53"/>
+			<source ref="id38"/>
+			<target ref="id36"/>
 		</transition>
 		<transition>
-			<source ref="id54"/>
-			<target ref="id55"/>
+			<source ref="id37"/>
+			<target ref="id38"/>
 			<label kind="assignment" x="460" y="-442">direction=0</label>
 		</transition>
 		<transition>
-			<source ref="id60"/>
-			<target ref="id61"/>
+			<source ref="id43"/>
+			<target ref="id44"/>
 			<label kind="comments" x="986" y="-408">select:
 guard: (position==1 &amp;&amp; waterlevel==0) || (position==0 &amp;&amp; waterlevel==10)
 sync:
@@ -1190,370 +887,42 @@ update:</label>
 		</transition>
 	</template>
 	<template>
-		<name>requestGenerator</name>
-		<location id="id62" x="0" y="0">
-		</location>
-		<location id="id63" x="-170" y="204">
-		</location>
-		<location id="id64" x="170" y="204">
-		</location>
-		<init ref="id62"/>
-		<transition>
-			<source ref="id63"/>
-			<target ref="id62"/>
-			<nail x="-170" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id64"/>
-			<target ref="id62"/>
-			<nail x="170" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id62"/>
-			<target ref="id64"/>
-		</transition>
-		<transition>
-			<source ref="id62"/>
-			<target ref="id63"/>
-		</transition>
-	</template>
-	<template>
-		<name>OpeningProc</name>
-		<location id="id65" x="0" y="0">
-		</location>
-		<location id="id66" x="-170" y="0">
-			<name x="-180" y="-34">OpeningHigh</name>
-		</location>
-		<location id="id67" x="238" y="0">
-			<name x="119" y="-42">OpeningLow</name>
-		</location>
-		<location id="id68" x="-272" y="0">
-		</location>
-		<location id="id69" x="-272" y="102">
-		</location>
-		<location id="id70" x="374" y="0">
-		</location>
-		<location id="id71" x="374" y="102">
-		</location>
-		<location id="id72" x="-170" y="102">
-		</location>
-		<location id="id73" x="238" y="102">
-		</location>
-		<location id="id74" x="476" y="102">
-		</location>
-		<location id="id75" x="-374" y="102">
-		</location>
-		<location id="id76" x="0" y="-102">
-		</location>
-		<init ref="id76"/>
-		<transition>
-			<source ref="id72"/>
-			<target ref="id72"/>
-			<label kind="select" x="-152" y="119">shipid:kenteken</label>
-			<label kind="synchronisation" x="-152" y="153">register[shipid]!</label>
-			<nail x="-170" y="170"/>
-			<nail x="-102" y="170"/>
-			<nail x="-102" y="102"/>
-		</transition>
-		<transition>
-			<source ref="id73"/>
-			<target ref="id73"/>
-			<label kind="select" x="170" y="187">shipid:kenteken</label>
-			<label kind="synchronisation" x="161" y="221">register[shipid]!</label>
-			<nail x="238" y="170"/>
-			<nail x="170" y="170"/>
-			<nail x="170" y="102"/>
-		</transition>
-		<transition>
-			<source ref="id67"/>
-			<target ref="id76"/>
-			<label kind="synchronisation" x="18" y="-119">pomp_klik!</label>
-			<label kind="assignment" x="18" y="-102">sluisToggle=true</label>
-			<nail x="238" y="-102"/>
-		</transition>
-		<transition>
-			<source ref="id66"/>
-			<target ref="id76"/>
-			<label kind="synchronisation" x="-152" y="-119">pomp_klik!</label>
-			<label kind="assignment" x="-152" y="-102">sluisToggle=true</label>
-			<nail x="-170" y="-102"/>
-		</transition>
-		<transition>
-			<source ref="id76"/>
-			<target ref="id65"/>
-			<label kind="synchronisation" x="0" y="-68">initOpenProc?</label>
-			<label kind="comments" x="0" y="-26">select
-guard: initOpenProc==true
-sync:
-update:</label>
-		</transition>
-		<transition>
-			<source ref="id74"/>
-			<target ref="id71"/>
-			<label kind="comments" x="392" y="127">select:
-guard:  
-sync:open_gate[direction]!
-update:</label>
-		</transition>
-		<transition>
-			<source ref="id75"/>
-			<target ref="id69"/>
-			<label kind="comments" x="-356" y="127">select:
-guard:open_gate[direction]!
-sync:
-update:</label>
-		</transition>
-		<transition>
-			<source ref="id68"/>
-			<target ref="id75"/>
-			<label kind="select" x="-347" y="17">stoplichtnummer: id_s</label>
-			<label kind="guard" x="-347" y="34">systemtime &lt;0900</label>
-			<label kind="synchronisation" x="-347" y="51">stoplichtklik[stoplichtnummer]!</label>
-			<nail x="-374" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id70"/>
-			<target ref="id74"/>
-			<label kind="select" x="510" y="-17">stoplichtnummer: id_s</label>
-			<label kind="guard" x="510" y="0">systemtime &lt;1300</label>
-			<label kind="synchronisation" x="510" y="17">stoplichtklik[stoplichtnummer]!</label>
-			<nail x="476" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id73"/>
-			<target ref="id67"/>
-			<label kind="select" x="102" y="0">deur_id:id_d</label>
-			<label kind="synchronisation" x="85" y="34">deurklik[deur_id]!</label>
-		</transition>
-		<transition>
-			<source ref="id71"/>
-			<target ref="id73"/>
-			<label kind="select" x="246" y="110">shipid: kenteken</label>
-			<label kind="guard" x="238" y="127">position==1 &amp;&amp; systemtime&gt;0900</label>
-			<label kind="synchronisation" x="246" y="144">schipklik[shipid]!</label>
-			<nail x="348" y="102"/>
-		</transition>
-		<transition>
-			<source ref="id72"/>
-			<target ref="id66"/>
-			<label kind="select" x="-136" y="42">deur_id:id_d</label>
-			<label kind="synchronisation" x="-136" y="59">deurklik[deur_id]!</label>
-			<nail x="-170" y="85"/>
-			<nail x="-170" y="17"/>
-		</transition>
-		<transition>
-			<source ref="id69"/>
-			<target ref="id72"/>
-			<label kind="select" x="-272" y="153">shipid: kenteken</label>
-			<label kind="guard" x="-272" y="195">position==0 &amp;&amp; systemtime&gt;0900</label>
-			<label kind="synchronisation" x="-272" y="229">schipklik[shipid]!</label>
-		</transition>
-		<transition>
-			<source ref="id67"/>
-			<target ref="id70"/>
-			<label kind="select" x="256" y="-51">deur_id:id_d</label>
-			<label kind="synchronisation" x="255" y="-34">deurklik[deur_id]!</label>
-		</transition>
-		<transition>
-			<source ref="id66"/>
-			<target ref="id68"/>
-			<label kind="select" x="-254" y="-51">deur_id:id_d</label>
-			<label kind="synchronisation" x="-254" y="-17">deurklik[deur_id]!</label>
-			<nail x="-178" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id65"/>
-			<target ref="id67"/>
-			<label kind="select" x="25" y="17">deurnummer: id_d</label>
-			<label kind="guard" x="8" y="17">systemtime &gt;1245&amp;&amp; systemtime &lt;2100</label>
-			<nail x="17" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id65"/>
-			<target ref="id66"/>
-			<label kind="select" x="-127" y="-59">deurnummer: id_d</label>
-			<label kind="guard" x="-152" y="-34">systemtime &gt;0845</label>
-		</transition>
-	</template>
-	<template>
-		<name>ClosingProc</name>
-		<location id="id77" x="374" y="102">
-		</location>
-		<location id="id78" x="238" y="0">
-			<name x="228" y="-34">ClosingLow</name>
-		</location>
-		<location id="id79" x="374" y="0">
-		</location>
-		<location id="id80" x="-272" y="102">
-		</location>
-		<location id="id81" x="-170" y="0">
-			<name x="-180" y="-34">ClosingHigh</name>
-		</location>
-		<location id="id82" x="-272" y="0">
-		</location>
-		<location id="id83" x="0" y="0">
-		</location>
-		<location id="id84" x="-170" y="102">
-		</location>
-		<location id="id85" x="238" y="102">
-		</location>
-		<location id="id86" x="-340" y="102">
-		</location>
-		<location id="id87" x="476" y="102">
-		</location>
-		<location id="id88" x="0" y="-102">
-		</location>
-		<init ref="id88"/>
-		<transition>
-			<source ref="id84"/>
-			<target ref="id84"/>
-			<label kind="select" x="-152" y="119">shipid:kenteken</label>
-			<label kind="synchronisation" x="-152" y="153">unregister[shipid]!</label>
-			<nail x="-170" y="170"/>
-			<nail x="-102" y="170"/>
-			<nail x="-102" y="102"/>
-		</transition>
-		<transition>
-			<source ref="id85"/>
-			<target ref="id85"/>
-			<label kind="select" x="188" y="119">shipid:kenteken</label>
-			<label kind="synchronisation" x="188" y="153">unregister[shipid]!</label>
-			<nail x="238" y="170"/>
-			<nail x="170" y="170"/>
-			<nail x="170" y="102"/>
-		</transition>
-		<transition>
-			<source ref="id78"/>
-			<target ref="id88"/>
-			<nail x="238" y="-102"/>
-		</transition>
-		<transition>
-			<source ref="id81"/>
-			<target ref="id88"/>
-			<nail x="-170" y="-102"/>
-		</transition>
-		<transition>
-			<source ref="id88"/>
-			<target ref="id83"/>
-			<label kind="synchronisation" x="0" y="-68">initClosingProc?</label>
-			<label kind="comments" x="0" y="-26">select
-guard: initClosingProc==true
-sync:
-update:</label>
-		</transition>
-		<transition>
-			<source ref="id87"/>
-			<target ref="id77"/>
-			<label kind="comments" x="392" y="127">select:
-guard:open_gate[direction]!
-sync: close_gate[direction]!
-update:</label>
-		</transition>
-		<transition>
-			<source ref="id79"/>
-			<target ref="id87"/>
-			<label kind="select" x="552" y="8">stoplichtnummer: id_s</label>
-			<label kind="synchronisation" x="544" y="42">stoplichtklik[stoplichtnummer]!</label>
-			<nail x="476" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id86"/>
-			<target ref="id80"/>
-			<label kind="comments" x="-322" y="127">select:
-guard:open_gate[direction]!
-sync: close_gate[direction]!
-update:</label>
-		</transition>
-		<transition>
-			<source ref="id82"/>
-			<target ref="id86"/>
-			<label kind="select" x="-322" y="21">stoplichtnummer: id_s</label>
-			<label kind="synchronisation" x="-322" y="55">stoplichtklik[stoplichtnummer]!</label>
-			<nail x="-340" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id85"/>
-			<target ref="id78"/>
-			<label kind="select" x="238" y="0">deurnummer: id_d</label>
-			<label kind="synchronisation" x="238" y="34">deurklik[deurnummer]!</label>
-		</transition>
-		<transition>
-			<source ref="id77"/>
-			<target ref="id85"/>
-			<label kind="synchronisation" x="256" y="85">pomp_klik!</label>
-		</transition>
-		<transition>
-			<source ref="id84"/>
-			<target ref="id81"/>
-			<label kind="select" x="-170" y="0">deurnummer: id_d</label>
-			<label kind="synchronisation" x="-170" y="34">deurklik[deurnummer]!</label>
-		</transition>
-		<transition>
-			<source ref="id80"/>
-			<target ref="id84"/>
-			<label kind="synchronisation" x="-254" y="85">pomp_klik!</label>
-		</transition>
-		<transition>
-			<source ref="id81"/>
-			<target ref="id82"/>
-			<label kind="select" x="-272" y="-93">deurnummer: id_d</label>
-			<label kind="synchronisation" x="-272" y="-68">deurklik[deurnummer]!</label>
-		</transition>
-		<transition>
-			<source ref="id78"/>
-			<target ref="id79"/>
-			<label kind="select" x="256" y="-51">deurnummer: id_d</label>
-			<label kind="synchronisation" x="256" y="-17">deurklik[deurnummer]!</label>
-		</transition>
-		<transition>
-			<source ref="id83"/>
-			<target ref="id78"/>
-			<label kind="assignment" x="35" y="0">position=!position,sluisToggle=false</label>
-			<nail x="17" y="0"/>
-		</transition>
-		<transition>
-			<source ref="id83"/>
-			<target ref="id81"/>
-			<label kind="assignment" x="-152" y="0">position=!position,sluisToggle=false</label>
-		</transition>
-	</template>
-	<template>
 		<name>Error</name>
-		<location id="id89" x="0" y="0">
+		<location id="id45" x="0" y="0">
 			<name x="-10" y="-34">idle</name>
 		</location>
-		<location id="id90" x="136" y="0">
+		<location id="id46" x="136" y="0">
 			<name x="126" y="-34">check</name>
 		</location>
-		<location id="id91" x="272" y="0">
+		<location id="id47" x="272" y="0">
 			<name x="262" y="-34">fixed</name>
 		</location>
-		<location id="id92" x="272" y="-102">
+		<location id="id48" x="272" y="-102">
 			<name x="262" y="-136">ready</name>
 		</location>
-		<init ref="id89"/>
+		<init ref="id45"/>
 		<transition>
-			<source ref="id92"/>
-			<target ref="id89"/>
+			<source ref="id48"/>
+			<target ref="id45"/>
 			<nail x="0" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id91"/>
-			<target ref="id92"/>
+			<source ref="id47"/>
+			<target ref="id48"/>
 		</transition>
 		<transition>
-			<source ref="id90"/>
-			<target ref="id89"/>
+			<source ref="id46"/>
+			<target ref="id45"/>
 			<nail x="136" y="102"/>
 			<nail x="0" y="102"/>
 		</transition>
 		<transition>
-			<source ref="id90"/>
-			<target ref="id91"/>
+			<source ref="id46"/>
+			<target ref="id47"/>
 		</transition>
 		<transition>
-			<source ref="id89"/>
-			<target ref="id90"/>
+			<source ref="id45"/>
+			<target ref="id46"/>
 		</transition>
 	</template>
 	<template>
@@ -1571,24 +940,24 @@ update:</label>
 */
 // parameter: const gatenr gatenummer
 clock x;
-int[0,1] currentstate;</declaration>
-		<location id="id93" x="0" y="0">
+//int[0,1] currentstate;</declaration>
+		<location id="id49" x="0" y="0">
 			<name x="-17" y="8">closed</name>
 		</location>
-		<location id="id94" x="0" y="-204">
+		<location id="id50" x="0" y="-204">
 			<name x="-10" y="-238">opening</name>
 		</location>
-		<init ref="id93"/>
+		<init ref="id49"/>
 		<transition>
-			<source ref="id94"/>
-			<target ref="id93"/>
+			<source ref="id50"/>
+			<target ref="id49"/>
 			<label kind="synchronisation" x="102" y="-161">deurklik[d]?</label>
 			<nail x="68" y="-170"/>
 			<nail x="68" y="-34"/>
 		</transition>
 		<transition>
-			<source ref="id93"/>
-			<target ref="id94"/>
+			<source ref="id49"/>
+			<target ref="id50"/>
 			<label kind="synchronisation" x="-178" y="-153">deurklik[d]?</label>
 			<nail x="-68" y="-34"/>
 			<nail x="-68" y="-170"/>
@@ -1609,29 +978,29 @@ int[0,1] currentstate;</declaration>
  *
 */
 // const kenteken schipid
-int positie =0;
-bool myDirection = false;
+//int positie =0;
+//bool myDirection = false;
 clock x;
 
 </declaration>
-		<location id="id95" x="0" y="-102">
+		<location id="id51" x="0" y="-102">
 			<name x="-10" y="-136">ildle</name>
 		</location>
-		<location id="id96" x="0" y="51">
+		<location id="id52" x="0" y="51">
 			<name x="-10" y="17">varen</name>
 		</location>
-		<init ref="id95"/>
+		<init ref="id51"/>
 		<transition>
-			<source ref="id96"/>
-			<target ref="id95"/>
+			<source ref="id52"/>
+			<target ref="id51"/>
 			<label kind="guard" x="26" y="17">x&gt;5</label>
 			<nail x="8" y="51"/>
 			<nail x="170" y="51"/>
 			<nail x="170" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id95"/>
-			<target ref="id96"/>
+			<source ref="id51"/>
+			<target ref="id52"/>
 			<label kind="select" x="0" y="-76">shipid: kenteken</label>
 			<label kind="synchronisation" x="0" y="-42">schipklik[shipid]?</label>
 			<label kind="comments" x="-187" y="-76">sync:
@@ -1644,17 +1013,17 @@ positie: int[0,1]</label>
 	</template>
 	<template>
 		<name>pomp</name>
-		<location id="id97" x="-714" y="34">
+		<location id="id53" x="-714" y="34">
 			<name x="-724" y="0">pomp_uit</name>
 			<label kind="comments" x="-1334" y="127">ipv aan en uit states kan er ook gekozen worden voor de states laag en hoog</label>
 		</location>
-		<location id="id98" x="-612" y="170">
+		<location id="id54" x="-612" y="170">
 			<name x="-622" y="136">idle</name>
 		</location>
-		<init ref="id97"/>
+		<init ref="id53"/>
 		<transition>
-			<source ref="id98"/>
-			<target ref="id98"/>
+			<source ref="id54"/>
+			<target ref="id54"/>
 			<label kind="guard" x="-731" y="204">sluisToggle==false &amp;&amp; position==0 &amp;&amp; waterlevel&lt;10</label>
 			<label kind="assignment" x="-612" y="221">waterlevel++</label>
 			<label kind="comments" x="-824" y="229">select:
@@ -1665,8 +1034,8 @@ update: waterlevel++</label>
 			<nail x="-578" y="272"/>
 		</transition>
 		<transition>
-			<source ref="id98"/>
-			<target ref="id98"/>
+			<source ref="id54"/>
+			<target ref="id54"/>
 			<label kind="guard" x="-594" y="136">position==1 &amp;&amp; waterlevel&gt;-10</label>
 			<label kind="assignment" x="-594" y="170">waterlevel--</label>
 			<label kind="comments" x="-527" y="-50">select:
@@ -1677,14 +1046,14 @@ update:waterlevel--</label>
 			<nail x="-510" y="204"/>
 		</transition>
 		<transition>
-			<source ref="id98"/>
-			<target ref="id97"/>
+			<source ref="id54"/>
+			<target ref="id53"/>
 			<label kind="synchronisation" x="-696" y="153">pomp_klik?</label>
 			<nail x="-714" y="170"/>
 		</transition>
 		<transition>
-			<source ref="id97"/>
-			<target ref="id98"/>
+			<source ref="id53"/>
+			<target ref="id54"/>
 			<label kind="synchronisation" x="-662" y="17">pomp_klik?</label>
 			<nail x="-680" y="34"/>
 			<nail x="-612" y="34"/>
@@ -1783,42 +1152,34 @@ chan lock_full;
 
 chan to_lock;
 //chan go_out;</declaration>
-		<location id="id99" x="0" y="0">
+		<location id="id55" x="0" y="0">
 			<name x="-10" y="-34">idle</name>
 		</location>
-		<location id="id100" x="119" y="0">
+		<location id="id56" x="119" y="0">
 			<name x="109" y="-34">add</name>
 		</location>
-		<location id="id101" x="238" y="0">
+		<location id="id57" x="238" y="0">
 			<name x="228" y="-34">release</name>
 		</location>
-		<init ref="id99"/>
+		<init ref="id55"/>
 		<transition>
-			<source ref="id101"/>
-			<target ref="id101"/>
-			<label kind="guard" x="273" y="-84">x&lt;2</label>
-			<nail x="272" y="-25"/>
-			<nail x="340" y="-68"/>
-			<nail x="340" y="68"/>
-		</transition>
-		<transition>
-			<source ref="id101"/>
-			<target ref="id99"/>
+			<source ref="id57"/>
+			<target ref="id55"/>
 			<nail x="238" y="25"/>
 			<nail x="238" y="102"/>
 			<nail x="0" y="102"/>
 		</transition>
 		<transition>
-			<source ref="id100"/>
-			<target ref="id101"/>
+			<source ref="id56"/>
+			<target ref="id57"/>
 			<label kind="select" x="154" y="-51">shipid: kenteken</label>
 			<label kind="synchronisation" x="154" y="-17">unregister[shipid]?</label>
 			<label kind="assignment" x="154" y="0">dequeue(shipid)</label>
 			<nail x="136" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id99"/>
-			<target ref="id100"/>
+			<source ref="id55"/>
+			<target ref="id56"/>
 			<label kind="select" x="52" y="-51">shipid: kenteken</label>
 			<label kind="synchronisation" x="52" y="-17">register[shipid]?</label>
 			<label kind="assignment" x="52" y="0">enqueue(shipid)</label>
@@ -1848,23 +1209,23 @@ update:enqueue(shipid)</label>
 // stoplicht 2
 // stoplicht 3
 clock timer;</declaration>
-		<location id="id102" x="0" y="0">
+		<location id="id58" x="0" y="0">
 			<name x="-10" y="-34">rood</name>
 		</location>
-		<location id="id103" x="272" y="0">
+		<location id="id59" x="272" y="0">
 			<name x="262" y="-34">groen</name>
 		</location>
-		<init ref="id102"/>
+		<init ref="id58"/>
 		<transition>
-			<source ref="id102"/>
-			<target ref="id103"/>
+			<source ref="id58"/>
+			<target ref="id59"/>
 			<label kind="synchronisation" x="93" y="-42">stoplichtklik[s]?</label>
 			<nail x="34" y="0"/>
 			<nail x="170" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id103"/>
-			<target ref="id102"/>
+			<source ref="id59"/>
+			<target ref="id58"/>
 			<label kind="synchronisation" x="18" y="119">stoplichtklik[s]?</label>
 			<nail x="272" y="136"/>
 			<nail x="0" y="136"/>
@@ -1884,6 +1245,54 @@ system maincontroller,deur,pomp,sluis,schip,stoplight,opening,closing;
 		<query>
 			<formula>A[] Queue.list[N-1]==0</formula>
 			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] deur</formula>
+			<comment>Hoe lang blijft deur open</comment>
+		</query>
+		<query>
+			<formula>A[] deur</formula>
+			<comment>hoelang duurt openen</comment>
+		</query>
+		<query>
+			<formula>A[] deur</formula>
+			<comment>Hoelang duurt sluiten van een deur</comment>
+		</query>
+		<query>
+			<formula>A[] stoplight</formula>
+			<comment>Hooelang blijft stoplicht op groen</comment>
+		</query>
+		<query>
+			<formula>A[] stoplight</formula>
+			<comment>Hoelang duurt van rood naar groen</comment>
+		</query>
+		<query>
+			<formula>A[] stoplight</formula>
+			<comment>Hoelang duurt van groen naar rood</comment>
+		</query>
+		<query>
+			<formula>A[] schip</formula>
+			<comment>Hoe snel vaart schip in</comment>
+		</query>
+		<query>
+			<formula>A[] schip</formula>
+			<comment>Hoe lang blijft schip in sluis</comment>
+		</query>
+		<query>
+			<formula>A[] schip</formula>
+			<comment>Hoe sne vaart schip uit de sluis?</comment>
+		</query>
+		<query>
+			<formula>A[] pomp</formula>
+			<comment>Hoe lang duurt pomp aanzetten</comment>
+		</query>
+		<query>
+			<formula>A[] pomp</formula>
+			<comment>Hoelang blijft pomp bezig</comment>
+		</query>
+		<query>
+			<formula>A[] pomp</formula>
+			<comment>Hoe snel gaat pomp uit</comment>
 		</query>
 	</queries>
 </nta>
