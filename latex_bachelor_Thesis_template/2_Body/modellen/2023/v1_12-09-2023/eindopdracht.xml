@@ -1255,7 +1255,19 @@ system maincontroller,deur,pomp,sluis,schip,stoplight,proc1,proc2;
 		</query>
 		<query>
 			<formula>A[] sluis</formula>
-			<comment>Wanneer is sluis actief</comment>
+			<comment>Wanneer is sluis actief
+
+
+A[] !deadlock
+A[] not (Sluis.Tussenstop5 &amp;&amp; Deur.Klaar_voor_uitvaart)
+A[]  (Sluis.Voorbereiden imply Deur.Dicht)
+A[]  (Deur.Dicht imply Counter==0)
+A[]  (Buitenstoplicht.Groen imply invaren_allowed==true)
+A[] ! (Binnenstoplicht.Groen imply invaren_allowed==false)
+A[]  (globale_tijd&gt;30)
+E&lt;&gt;  (Schip.Stoppen and (Counter &gt;5))
+A[] (Schip.Vertrekken imply Sluisdeur.Dicht)
+</comment>
 		</query>
 	</queries>
 </nta>
