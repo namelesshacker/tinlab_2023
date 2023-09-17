@@ -43,7 +43,7 @@ chan start;
 clock realtime;
 //bool entrance_schip,schip_boven=true,schip_beneden=false;
 bool direction = 0;
-//bool process_started = false;
+bool process_busy = false;
 //bool process_finished = false;
 //bool on=false, off=false;
 //const int deuren = 2;
@@ -76,7 +76,7 @@ int[-10,10] waterlevel=0;
 
 
 // identifier voor schepen
-const int MAX_schepen=2;
+const int MAX_schepen=1;
 typedef int[0,MAX_schepen-1] kenteken;
 chan schipklik[kenteken];
 chan register[kenteken];
@@ -168,7 +168,7 @@ clock processtime;
 
 //chan	done, ready, run, stop;</declaration>
 	<template>
-		<name>opening</name>
+		<name>proc1</name>
 		<location id="id0" x="136" y="-340">
 		</location>
 		<location id="id1" x="136" y="-612">
@@ -214,7 +214,7 @@ clock processtime;
 			<source ref="id15"/>
 			<target ref="id9"/>
 			<label kind="synchronisation" x="-221" y="-586">pomp_klik!</label>
-			<label kind="assignment" x="-136" y="-501">sluisToggle=true</label>
+			<label kind="assignment" x="-136" y="-501">sluisToggle=true,process_busy=false</label>
 			<label kind="comments" x="-170" y="-714">select:
 guard
 sync:
@@ -234,7 +234,7 @@ update:</label>
 			<source ref="id14"/>
 			<target ref="id9"/>
 			<label kind="synchronisation" x="-357" y="-586">pomp_klik!</label>
-			<label kind="assignment" x="-408" y="-493">sluisToggle=true</label>
+			<label kind="assignment" x="-408" y="-493">sluisToggle=true,process_busy=false</label>
 			<label kind="comments" x="-409" y="-765">select:
 guard
 sync:
@@ -379,6 +379,7 @@ update:</label>
 		<transition>
 			<source ref="id9"/>
 			<target ref="id12"/>
+			<label kind="guard" x="-238" y="-425">process_busy==false</label>
 			<label kind="synchronisation" x="-238" y="-408">initOpenProc?</label>
 		</transition>
 		<transition>
@@ -387,6 +388,7 @@ update:</label>
 			<label kind="select" x="-229" y="-365">deurnummer: id_d</label>
 			<label kind="guard" x="-229" y="-340">position==1&amp;&amp; systemtime &gt;08</label>
 			<label kind="synchronisation" x="-203" y="-357">deurklik[position]!</label>
+			<label kind="assignment" x="-203" y="-340">process_busy=true</label>
 			<label kind="comments" x="-212" y="-246">select:
 guard:systemtime &gt;1245&amp;&amp; systemtime &lt;2100
 sync:
@@ -399,6 +401,7 @@ update:</label>
 			<label kind="select" x="-382" y="-314">deurnummer: id_d</label>
 			<label kind="guard" x="-390" y="-374">position==0 &amp;&amp; systemtime &gt;08</label>
 			<label kind="synchronisation" x="-390" y="-357">deurklik[position]!</label>
+			<label kind="assignment" x="-390" y="-340">process_busy=true</label>
 			<label kind="comments" x="-391" y="-255">select:
 guard: systemtime &gt;0845
 sync:
@@ -406,7 +409,7 @@ update:</label>
 		</transition>
 	</template>
 	<template>
-		<name>closing</name>
+		<name>proc2</name>
 		<location id="id16" x="-54418" y="-187">
 		</location>
 		<location id="id17" x="-54307" y="-187">
@@ -452,7 +455,7 @@ update:</label>
 			<source ref="id31"/>
 			<target ref="id25"/>
 			<label kind="synchronisation" x="-54664" y="-433">pomp_klik!</label>
-			<label kind="assignment" x="-54579" y="-348">sluisToggle=true</label>
+			<label kind="assignment" x="-54579" y="-348">sluisToggle=true,process_busy=false</label>
 			<label kind="comments" x="-54613" y="-561">select:
 guard
 sync:
@@ -472,7 +475,7 @@ update:</label>
 			<source ref="id30"/>
 			<target ref="id25"/>
 			<label kind="synchronisation" x="-54800" y="-433">pomp_klik!</label>
-			<label kind="assignment" x="-54851" y="-340">sluisToggle=true</label>
+			<label kind="assignment" x="-54851" y="-340">sluisToggle=true,process_busy=false</label>
 			<label kind="comments" x="-54852" y="-612">select:
 guard
 sync:
@@ -617,6 +620,7 @@ update:</label>
 		<transition>
 			<source ref="id25"/>
 			<target ref="id28"/>
+			<label kind="guard" x="-54681" y="-272">process_busy==false</label>
 			<label kind="synchronisation" x="-54681" y="-255">initClosingProc?</label>
 		</transition>
 		<transition>
@@ -625,7 +629,7 @@ update:</label>
 			<label kind="select" x="-54672" y="-212">deurnummer: id_d</label>
 			<label kind="guard" x="-54672" y="-187">position==1&amp;&amp; systemtime &gt;08</label>
 			<label kind="synchronisation" x="-54646" y="-204">deurklik[direction]!</label>
-			<label kind="assignment" x="-54646" y="-187">position=!position,sluisToggle=false</label>
+			<label kind="assignment" x="-54646" y="-187">position=!position,sluisToggle=false,process_busy=true</label>
 			<label kind="comments" x="-54655" y="-93">select:
 guard:systemtime &gt;1245&amp;&amp; systemtime &lt;2100
 sync:
@@ -638,7 +642,7 @@ update:</label>
 			<label kind="select" x="-54825" y="-161">deurnummer: id_d</label>
 			<label kind="guard" x="-54833" y="-221">position==0 &amp;&amp; systemtime &gt;08</label>
 			<label kind="synchronisation" x="-54833" y="-204">deurklik[direction]!</label>
-			<label kind="assignment" x="-54833" y="-187">position=!position,sluisToggle=false</label>
+			<label kind="assignment" x="-54833" y="-187">position=!position,sluisToggle=false,process_busy=true</label>
 			<label kind="comments" x="-54834" y="-102">select:
 guard: systemtime &gt;0845
 sync:
@@ -787,36 +791,30 @@ void reset()
 		<location id="id39" x="714" y="-374">
 			<name x="704" y="-408">procStart</name>
 		</location>
-		<location id="id40" x="850" y="-374">
-			<name x="840" y="-408">free_all</name>
-		</location>
-		<location id="id41" x="782" y="-374">
+		<location id="id40" x="782" y="-374">
 			<name x="773" y="-408">procEnd</name>
 		</location>
-		<location id="id42" x="901" y="-374">
-			<name x="891" y="-408">end_cycle</name>
-		</location>
-		<location id="id43" x="714" y="-204">
+		<location id="id41" x="714" y="-204">
 			<name x="704" y="-238">running</name>
 		</location>
-		<location id="id44" x="850" y="-204">
+		<location id="id42" x="850" y="-204">
 			<name x="840" y="-238">finished</name>
 		</location>
 		<init ref="id34"/>
 		<transition>
 			<source ref="id40"/>
-			<target ref="id42"/>
+			<target ref="id33"/>
 		</transition>
 		<transition>
-			<source ref="id44"/>
-			<target ref="id41"/>
+			<source ref="id42"/>
+			<target ref="id40"/>
 			<label kind="synchronisation" x="800" y="-289">initClosingProc!</label>
 			<nail x="850" y="-272"/>
 			<nail x="782" y="-272"/>
 		</transition>
 		<transition>
 			<source ref="id39"/>
-			<target ref="id43"/>
+			<target ref="id41"/>
 			<label kind="synchronisation" x="714" y="-306">initOpenProc!</label>
 			<label kind="comments" x="561" y="-306">select:
 guard:  
@@ -824,20 +822,8 @@ sync:initOpenProc!
 update:</label>
 		</transition>
 		<transition>
-			<source ref="id42"/>
-			<target ref="id33"/>
-		</transition>
-		<transition>
 			<source ref="id32"/>
 			<target ref="id37"/>
-		</transition>
-		<transition>
-			<source ref="id41"/>
-			<target ref="id40"/>
-			<label kind="comments" x="782" y="-535">select:
-guard:  
-sync:initClosingProc!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id36"/>
@@ -875,8 +861,8 @@ update:</label>
 			<label kind="assignment" x="460" y="-442">direction=0</label>
 		</transition>
 		<transition>
-			<source ref="id43"/>
-			<target ref="id44"/>
+			<source ref="id41"/>
+			<target ref="id42"/>
 			<label kind="comments" x="986" y="-408">select:
 guard: (position==1 &amp;&amp; waterlevel==0) || (position==0 &amp;&amp; waterlevel==10)
 sync:
@@ -884,45 +870,6 @@ update:</label>
 			<nail x="756" y="-204"/>
 			<nail x="782" y="-204"/>
 			<nail x="816" y="-204"/>
-		</transition>
-	</template>
-	<template>
-		<name>Error</name>
-		<location id="id45" x="0" y="0">
-			<name x="-10" y="-34">idle</name>
-		</location>
-		<location id="id46" x="136" y="0">
-			<name x="126" y="-34">check</name>
-		</location>
-		<location id="id47" x="272" y="0">
-			<name x="262" y="-34">fixed</name>
-		</location>
-		<location id="id48" x="272" y="-102">
-			<name x="262" y="-136">ready</name>
-		</location>
-		<init ref="id45"/>
-		<transition>
-			<source ref="id48"/>
-			<target ref="id45"/>
-			<nail x="0" y="-102"/>
-		</transition>
-		<transition>
-			<source ref="id47"/>
-			<target ref="id48"/>
-		</transition>
-		<transition>
-			<source ref="id46"/>
-			<target ref="id45"/>
-			<nail x="136" y="102"/>
-			<nail x="0" y="102"/>
-		</transition>
-		<transition>
-			<source ref="id46"/>
-			<target ref="id47"/>
-		</transition>
-		<transition>
-			<source ref="id45"/>
-			<target ref="id46"/>
 		</transition>
 	</template>
 	<template>
@@ -941,23 +888,23 @@ update:</label>
 // parameter: const gatenr gatenummer
 clock x;
 //int[0,1] currentstate;</declaration>
-		<location id="id49" x="0" y="0">
+		<location id="id43" x="0" y="0">
 			<name x="-17" y="8">closed</name>
 		</location>
-		<location id="id50" x="0" y="-204">
+		<location id="id44" x="0" y="-204">
 			<name x="-10" y="-238">opening</name>
 		</location>
-		<init ref="id49"/>
+		<init ref="id43"/>
 		<transition>
-			<source ref="id50"/>
-			<target ref="id49"/>
+			<source ref="id44"/>
+			<target ref="id43"/>
 			<label kind="synchronisation" x="102" y="-161">deurklik[d]?</label>
 			<nail x="68" y="-170"/>
 			<nail x="68" y="-34"/>
 		</transition>
 		<transition>
-			<source ref="id49"/>
-			<target ref="id50"/>
+			<source ref="id43"/>
+			<target ref="id44"/>
 			<label kind="synchronisation" x="-178" y="-153">deurklik[d]?</label>
 			<nail x="-68" y="-34"/>
 			<nail x="-68" y="-170"/>
@@ -983,24 +930,24 @@ clock x;
 clock x;
 
 </declaration>
-		<location id="id51" x="0" y="-102">
+		<location id="id45" x="0" y="-102">
 			<name x="-10" y="-136">ildle</name>
 		</location>
-		<location id="id52" x="0" y="51">
+		<location id="id46" x="0" y="51">
 			<name x="-10" y="17">varen</name>
 		</location>
-		<init ref="id51"/>
+		<init ref="id45"/>
 		<transition>
-			<source ref="id52"/>
-			<target ref="id51"/>
+			<source ref="id46"/>
+			<target ref="id45"/>
 			<label kind="guard" x="26" y="17">x&gt;5</label>
 			<nail x="8" y="51"/>
 			<nail x="170" y="51"/>
 			<nail x="170" y="-102"/>
 		</transition>
 		<transition>
-			<source ref="id51"/>
-			<target ref="id52"/>
+			<source ref="id45"/>
+			<target ref="id46"/>
 			<label kind="select" x="0" y="-76">shipid: kenteken</label>
 			<label kind="synchronisation" x="0" y="-42">schipklik[shipid]?</label>
 			<label kind="comments" x="-187" y="-76">sync:
@@ -1013,29 +960,29 @@ positie: int[0,1]</label>
 	</template>
 	<template>
 		<name>pomp</name>
-		<location id="id53" x="-714" y="34">
+		<location id="id47" x="-714" y="34">
 			<name x="-724" y="0">pomp_uit</name>
-			<label kind="comments" x="-1334" y="127">ipv aan en uit states kan er ook gekozen worden voor de states laag en hoog</label>
+			<label kind="comments" x="-901" y="374">ipv aan en uit states kan er ook gekozen worden voor de states laag en hoog</label>
 		</location>
-		<location id="id54" x="-612" y="170">
+		<location id="id48" x="-612" y="170">
 			<name x="-622" y="136">idle</name>
 		</location>
-		<init ref="id53"/>
+		<init ref="id47"/>
 		<transition>
-			<source ref="id54"/>
-			<target ref="id54"/>
-			<label kind="guard" x="-731" y="204">sluisToggle==false &amp;&amp; position==0 &amp;&amp; waterlevel&lt;10</label>
+			<source ref="id48"/>
+			<target ref="id48"/>
+			<label kind="guard" x="-731" y="204">position==0 &amp;&amp; waterlevel&lt;10</label>
 			<label kind="assignment" x="-612" y="221">waterlevel++</label>
 			<label kind="comments" x="-824" y="229">select:
-guard: 
+guard: sluisToggle==false 
 sync:
 update: waterlevel++</label>
 			<nail x="-612" y="272"/>
 			<nail x="-578" y="272"/>
 		</transition>
 		<transition>
-			<source ref="id54"/>
-			<target ref="id54"/>
+			<source ref="id48"/>
+			<target ref="id48"/>
 			<label kind="guard" x="-594" y="136">position==1 &amp;&amp; waterlevel&gt;-10</label>
 			<label kind="assignment" x="-594" y="170">waterlevel--</label>
 			<label kind="comments" x="-527" y="-50">select:
@@ -1046,14 +993,14 @@ update:waterlevel--</label>
 			<nail x="-510" y="204"/>
 		</transition>
 		<transition>
-			<source ref="id54"/>
-			<target ref="id53"/>
+			<source ref="id48"/>
+			<target ref="id47"/>
 			<label kind="synchronisation" x="-696" y="153">pomp_klik?</label>
 			<nail x="-714" y="170"/>
 		</transition>
 		<transition>
-			<source ref="id53"/>
-			<target ref="id54"/>
+			<source ref="id47"/>
+			<target ref="id48"/>
 			<label kind="synchronisation" x="-662" y="17">pomp_klik?</label>
 			<nail x="-680" y="34"/>
 			<nail x="-612" y="34"/>
@@ -1152,34 +1099,34 @@ chan lock_full;
 
 chan to_lock;
 //chan go_out;</declaration>
-		<location id="id55" x="0" y="0">
+		<location id="id49" x="0" y="0">
 			<name x="-10" y="-34">idle</name>
 		</location>
-		<location id="id56" x="119" y="0">
+		<location id="id50" x="119" y="0">
 			<name x="109" y="-34">add</name>
 		</location>
-		<location id="id57" x="238" y="0">
+		<location id="id51" x="238" y="0">
 			<name x="228" y="-34">release</name>
 		</location>
-		<init ref="id55"/>
+		<init ref="id49"/>
 		<transition>
-			<source ref="id57"/>
-			<target ref="id55"/>
+			<source ref="id51"/>
+			<target ref="id49"/>
 			<nail x="238" y="25"/>
 			<nail x="238" y="102"/>
 			<nail x="0" y="102"/>
 		</transition>
 		<transition>
-			<source ref="id56"/>
-			<target ref="id57"/>
+			<source ref="id50"/>
+			<target ref="id51"/>
 			<label kind="select" x="154" y="-51">shipid: kenteken</label>
 			<label kind="synchronisation" x="154" y="-17">unregister[shipid]?</label>
 			<label kind="assignment" x="154" y="0">dequeue(shipid)</label>
 			<nail x="136" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id55"/>
-			<target ref="id56"/>
+			<source ref="id49"/>
+			<target ref="id50"/>
 			<label kind="select" x="52" y="-51">shipid: kenteken</label>
 			<label kind="synchronisation" x="52" y="-17">register[shipid]?</label>
 			<label kind="assignment" x="52" y="0">enqueue(shipid)</label>
@@ -1209,23 +1156,23 @@ update:enqueue(shipid)</label>
 // stoplicht 2
 // stoplicht 3
 clock timer;</declaration>
-		<location id="id58" x="0" y="0">
+		<location id="id52" x="0" y="0">
 			<name x="-10" y="-34">rood</name>
 		</location>
-		<location id="id59" x="272" y="0">
+		<location id="id53" x="272" y="0">
 			<name x="262" y="-34">groen</name>
 		</location>
-		<init ref="id58"/>
+		<init ref="id52"/>
 		<transition>
-			<source ref="id58"/>
-			<target ref="id59"/>
+			<source ref="id52"/>
+			<target ref="id53"/>
 			<label kind="synchronisation" x="93" y="-42">stoplichtklik[s]?</label>
 			<nail x="34" y="0"/>
 			<nail x="170" y="0"/>
 		</transition>
 		<transition>
-			<source ref="id59"/>
-			<target ref="id58"/>
+			<source ref="id53"/>
+			<target ref="id52"/>
 			<label kind="synchronisation" x="18" y="119">stoplichtklik[s]?</label>
 			<nail x="272" y="136"/>
 			<nail x="0" y="136"/>
@@ -1234,7 +1181,7 @@ clock timer;</declaration>
 	<system>// Place template instantiations here.
 //Process = Template();
 // List one or more processes to be composed into a system.
-system maincontroller,deur,pomp,sluis,schip,stoplight,opening,closing;
+system maincontroller,deur,pomp,sluis,schip,stoplight,proc1,proc2;
 //system maincontroller,deur,pomp,sluis,schip,stoplight,OpeningProc,ClosingProc;
 //system newmain,newmainOpeningProc,request,priorityQueue,priorityQueue,newmainClosingProc,sensorLow,sensorHigh,waterlevelSensorLow,waterlevelSensorHigh,newpomp,newdeur,sluis;</system>
 	<queries>
@@ -1293,6 +1240,22 @@ system maincontroller,deur,pomp,sluis,schip,stoplight,opening,closing;
 		<query>
 			<formula>A[] pomp</formula>
 			<comment>Hoe snel gaat pomp uit</comment>
+		</query>
+		<query>
+			<formula>A[] sluis</formula>
+			<comment>Hoeveel schepen in de sluis</comment>
+		</query>
+		<query>
+			<formula>A[] wachtrij</formula>
+			<comment>Hoeveel schepen in de wachtrij beneden</comment>
+		</query>
+		<query>
+			<formula>A[] wachtrij</formula>
+			<comment>Hoeveel schepen in de wachtrij boven</comment>
+		</query>
+		<query>
+			<formula>A[] sluis</formula>
+			<comment>Wanneer is sluis actief</comment>
 		</query>
 	</queries>
 </nta>
