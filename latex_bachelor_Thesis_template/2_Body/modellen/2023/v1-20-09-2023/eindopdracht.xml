@@ -1297,8 +1297,34 @@ A[] (Schip.Vertrekken imply Sluisdeur.Dicht)
 			<comment>Train 0 can cross bridge while the other trains are waiting to cross.</comment>
 		</query>
 		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
 			<formula>===== Safety Properties:</formula>
 			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] forall (i : id_t) forall (j : id_t) Train(i).Cross &amp;&amp; Train(j).Cross imply i == j</formula>
+			<comment>There is never more than one train crossing the bridge (at
+any time instance).
+			</comment>
 		</query>
 		<query>
 			<formula>A[] forall (i : id_t) forall (j : id_t) Train(i).Cross &amp;&amp; Train(j).Cross imply i == j</formula>
@@ -1310,6 +1336,10 @@ any time instance).
 			<formula>A[] Gate.list[N] == 0</formula>
 			<comment>There can never be N elements in the queue (thus the array will not overflow).
 			</comment>
+		</query>
+		<query>
+			<formula>A[] Gate.list[N] == 0</formula>
+			<comment>There can never be N elements in the queue (thus the array will not overflow).</comment>
 		</query>
 		<query>
 			<formula>===== Liveness Properties:
@@ -1343,6 +1373,99 @@ any time instance).
 		<query>
 			<formula>Train(5).Appr --&gt; Train(5).Cross</formula>
 			<comment></comment>
+		</query>
+		<query>
+			<formula>schip(0).Appr --&gt; schip(0).Cross</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>schip(1).Appr --&gt; schip(1).Cross</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>==== Time interval checking:</formula>
+			<comment>
+
+
+E&lt;&gt; (Receiver.FIN and timevalid==1 and g&lt;maxtime)
+A[] (Receiver.FIN and timevalid==1 and g&gt;=maxtime)
+
+A[] now&gt;=200 imply
+(Belt.end &amp;&amp; Jobber1.begin &amp;&amp; Jobber2.begin)
+
+
+A[] now&gt;=150 imply
+(Belt.end &amp;&amp; Jobber1.begin &amp;&amp; Jobber2.begin)
+
+
+A[] now&gt;=110 imply
+(Belt.end &amp;&amp; Jobber1.begin &amp;&amp; Jobber2.begin)
+
+
+A[] now&gt;=127 imply
+(Belt.end &amp;&amp; Jobber1.begin &amp;&amp; Jobber2.begin)
+
+
+A[] now&gt;=126 imply
+(Belt.end &amp;&amp; Jobber1.begin &amp;&amp; Jobber2.begin)
+
+
+A[] Obs.taken imply (x&gt;=2 and x&lt;=3) to show that the transition is taken when x is in
+the interval [2, 3].
+• E&lt;&gt; Obs.idle and x&gt;2 : it is possible to take the transition with x in the interval (2, 3].
+• A[] Obs.idle imply x&lt;=3 : to show that the upper bound is respected.
+The former property E&lt;&gt; Obs.idle and x&gt;3 no longer holds.
+
+
+https://www.it.uu.se/research/group/darts/uppaal/small_tutorial.pdf
+https://arxiv.org/pdf/2211.03817.pdf
+
+
+
+Recall the Train Crossing example of the
+previous section. The following queries estimates the
+probabilities that Train(0) and Train(5) will be in the
+crossing before 100 time-units:
+
+Fig. 9: The cumulative probability distribution of
+Pr[&lt;=T](&lt;&gt; Train(5).Cross).
+Pr[&lt;=100](&lt;&gt; Train(0).Cross)
+Pr[&lt;=100](&lt;&gt; Train(5).Cross)
+https://dial.uclouvain.be/pr/boreal/object/boreal:211928/datastream/PDF_01/view
+
+
+Example 3. In the Train Gate example, it might be sufficient to confirm that the probability that Train(5)
+reaches the crossing within 100 time-units is larger than
+that of Train(0). Posing the query:
+
+Pr[&lt;=100](&lt;&gt;Train(5).Cross) &gt;=
+Pr[&lt;=100](&lt;&gt;Train(0).Cross)
+
+
+Example 4. As an interesting property of the Train Crossing example, we want to know the average of the maximum number of trains that are stopped within the first
+20 time-units:
+E[&lt;=20; 20000](max: sum(i:id_t) Train(i).Stop)
+https://dial.uclouvain.be/pr/boreal/object/boreal:211928/datastream/PDF_01/view
+
+
+
+
+reachability
+http://lmf.di.uminho.pt//ac-1718/slides/AC1718-4-Uppaal1.pdf
+
+
+
+http://www2.ing.unipi.it/~a008669/didattica/FMSS2021/FormalMethods5.pdf
+
+
+
+http://www2.imm.dtu.dk/courses/02917/03-UPPAAL.pdf
+
+
+
+
+http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
+</comment>
 		</query>
 	</queries>
 </nta>

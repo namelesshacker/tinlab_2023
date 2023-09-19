@@ -1297,8 +1297,34 @@ A[] (Schip.Vertrekken imply Sluisdeur.Dicht)
 			<comment>Train 0 can cross bridge while the other trains are waiting to cross.</comment>
 		</query>
 		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
 			<formula>===== Safety Properties:</formula>
 			<comment></comment>
+		</query>
+		<query>
+			<formula>A[] forall (i : id_t) forall (j : id_t) Train(i).Cross &amp;&amp; Train(j).Cross imply i == j</formula>
+			<comment>There is never more than one train crossing the bridge (at
+any time instance).
+			</comment>
 		</query>
 		<query>
 			<formula>A[] forall (i : id_t) forall (j : id_t) Train(i).Cross &amp;&amp; Train(j).Cross imply i == j</formula>
@@ -1310,6 +1336,10 @@ any time instance).
 			<formula>A[] Gate.list[N] == 0</formula>
 			<comment>There can never be N elements in the queue (thus the array will not overflow).
 			</comment>
+		</query>
+		<query>
+			<formula>A[] Gate.list[N] == 0</formula>
+			<comment>There can never be N elements in the queue (thus the array will not overflow).</comment>
 		</query>
 		<query>
 			<formula>===== Liveness Properties:
@@ -1342,6 +1372,14 @@ any time instance).
 		</query>
 		<query>
 			<formula>Train(5).Appr --&gt; Train(5).Cross</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>schip(0).Appr --&gt; schip(0).Cross</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>schip(1).Appr --&gt; schip(1).Cross</formula>
 			<comment></comment>
 		</query>
 	</queries>
