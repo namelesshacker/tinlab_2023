@@ -1297,23 +1297,26 @@ A[] (Schip.Vertrekken imply Sluisdeur.Dicht)
 			<comment>Train 0 can cross bridge while the other trains are waiting to cross.</comment>
 		</query>
 		<query>
-			<formula></formula>
+			<formula>E&lt;&gt; sluis.add</formula>
 			<comment></comment>
 		</query>
 		<query>
-			<formula></formula>
+			<formula>E&lt;&gt; schip(0).varen
+			</formula>
 			<comment></comment>
 		</query>
 		<query>
-			<formula></formula>
+			<formula>E&lt;&gt; schip(1).varen
+			</formula>
 			<comment></comment>
 		</query>
 		<query>
-			<formula></formula>
+			<formula>E&lt;&gt; schip(0).varen and schip(1).idle
+			</formula>
 			<comment></comment>
 		</query>
 		<query>
-			<formula></formula>
+			<formula>E&lt;&gt; schip(0).Cross and (forall (i : id_t) i != 0 imply schip(i).Stop)</formula>
 			<comment></comment>
 		</query>
 		<query>
@@ -1333,12 +1336,28 @@ any time instance).
 			</comment>
 		</query>
 		<query>
+			<formula>A[] forall (i : kenteken) forall (j : kenteken) schip(i).Cross &amp;&amp; schip(j).Cross imply i == j</formula>
+			<comment>schip</comment>
+		</query>
+		<query>
+			<formula>A[] forall (i : id_q) forall (j : id_q) sluis(i).Cross &amp;&amp; sluis(j).Cross imply i == j</formula>
+			<comment>sluis</comment>
+		</query>
+		<query>
+			<formula>A[] forall (i : id_s) forall (j : id_s) stoplicht(i).Cross &amp;&amp; stoplicht(j).Cross imply i == j</formula>
+			<comment>stoplicht</comment>
+		</query>
+		<query>
+			<formula>A[] forall (i : id_d) forall (j : id_d) deur(i).Cross &amp;&amp; deur(j).Cross imply i == j</formula>
+			<comment>deur</comment>
+		</query>
+		<query>
 			<formula>A[] Gate.list[N] == 0</formula>
 			<comment>There can never be N elements in the queue (thus the array will not overflow).
 			</comment>
 		</query>
 		<query>
-			<formula>A[] Gate.list[N] == 0</formula>
+			<formula>A[] sluis.list[N] == 0</formula>
 			<comment>There can never be N elements in the queue (thus the array will not overflow).</comment>
 		</query>
 		<query>
@@ -1375,11 +1394,19 @@ any time instance).
 			<comment></comment>
 		</query>
 		<query>
-			<formula>schip(0).Appr --&gt; schip(0).Cross</formula>
+			<formula>stoplight(0).rood --&gt; schip(0).idle</formula>
 			<comment></comment>
 		</query>
 		<query>
-			<formula>schip(1).Appr --&gt; schip(1).Cross</formula>
+			<formula>stoplight(0).groen --&gt; schip(0).varen</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>stoplight(1).rood --&gt; schip(1).idle</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>stoplight(0).groen --&gt; schip(0).varen</formula>
 			<comment></comment>
 		</query>
 		<query>
