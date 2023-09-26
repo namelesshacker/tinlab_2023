@@ -1,0 +1,11 @@
+\bibitem{morris14082015TanjinIndustryImpact} ... \LaTeX:\\ \url{https://fortune.com/2015/08/14/tianjin-port-explosion-shipping-delays/}
+is er sprake van een doofpot
+\bibitem{milesyu20082015exposingtoxicgovlines} ... \LaTeX:\\ \url{https://www.washingtontimes.com/news/2015/aug/20/inside-china-tianjin-explosions-cover-up-exposes-b/}
+eigendomsverzekering
+\bibitem{artemis30032016tanjininsurance} ... \LaTeX:\\ \url{https://www.artemis.bm/news/tianjin-explosions-property-insurance-loss-could-reach-3-5bn-swiss-re/}
+\bibitem{aidenxiatanjinblast} ... \LaTeX:\\ \url{https://www.thechinastory.org/yearbooks/yearbook-2015/forum-the-abyss-%E5%9D%8E/tianjin-explosions/}
+effecten op de lange termijn
+\bibitem{danwangTanjinflexreport} ... \LaTeX:\\ \url{https://www.flexport.com/blog/tianjin-explosion-effect-on-supply-chains/}
+\bibitem{keyHighlightsTanjin} ... \LaTeX:\\ \url{https://www.cicm.org.my/images/articles/CICM-Article-on-Tianjin-Blast-Oct2015.pdf}
+lessons learned
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.genre.com/knowledge/blog/lessons-from-the-tianjin-explosion-en.html}

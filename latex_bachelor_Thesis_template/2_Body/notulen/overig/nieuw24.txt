@@ -1,0 +1,222 @@
+select:
+guard:systemtime <1300
+sync:stoplichtklik[stoplichtnummer]!
+update:
+
+
+
+stoplichtnummer: id_s
+
+
+
+
+E:\Backup Mijn Documenten\Hogeschool vakken\TINLab advnced algorithms\tinlab_advanced_algoriths
+E:\kennisontwikkeling\ontwikkelprojecten\tools en development\TI collegejaar 2018-2019\langstudeersers openstaande vakken
+E:\Backup Mijn Documenten\Hogeschool vakken\TINLab advnced algorithms\tinlab_advanced_algoriths\modellen\tinlab
+
+
+E<> p
+p-->p
+p --> q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A<> q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			
+E<> p
+G<>
+• G - all states in a path ( “[]” in UPPAAL).
+F<>
+• F - some state in a path ( “<>” in UPPAAL).
+A<> p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+A[] p
+• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+						
+						
+						
+Real-time System = Discrete System + Clock Variables by Rajeev Alur
+
+
+
+
+
+Zie hier een referentie naar Royce~\cite{royce1987managing} en nog een naar Clarke~\cite{modelchecking}\ldots
+
+
+
+
+attenuator
+\newline \indent Dan zijn er nog andere ongelukken met de stint, de shietpartij op militairencomplex in ossendrecht, stint-ongeluk, de enschedese vuurwerkramp en de molukse treinkaping. Meer recentelijk de coronacrisis.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newline \indent  ecourt in nederlandse rechtspraak
+niet odnerzocht
+
+\cite{sprongken19032018CourtProcedureDigital}
+
+\cite{PROCESREGLEMENTEcourt}
+
+
+
+
+
+E:\kennisontwikkeling\ontwikkelprojecten\tools en development\TI collegejaar 2018-2019\langstudeersers openstaande vakken
+E:\kennisontwikkeling\ontwikkelprojecten\tools en development\TI collegejaar 2017-2018\security -cryptografie getaltheorie\cryptografie-20180705T042711Z-001\cryptografie
+
+E:\kennisontwikkeling\netwerken
+
+
+
+@online{aviationsafety04101992airplaneCrashBijlmer,
+	ALTauthor = {author},
+	ALTeditor = {editor},
+	title = {title},
+	date = {date},
+	url = {https://aviation-safety.net/database/record.php?id=19921004-2&lang=nl  },
+}
+
+
+
+@online{catsr25022009Boeing737AmsterdamCrash,
+	ALTauthor = {author},
+	ALTeditor = {editor},
+	title = {title},
+	date = {date},
+	url = {https://catsr.vse.gmu.edu/SYST460/TA1951_AccidentReport.pdf  },
+}
+
+
+
+
+
+Bijlage A performance
+@online{kumarUppaalDMAMACProtocol,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://home.hvl.no/ansatte/aaks/articles/2015IKT617.pdf"},}
+
+test specification
+@online{larsenRealtimeUppaalTesting,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://d-nb.info/987511998/34"},}
+
+sheet 24 tot 65
+@online{proenza102008UppaalModelChecker,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"http://ppedreiras.av.it.pt/resources/empse0809/slides/TheUppaalModelChecker-Julian.pdf"},}
+
+
+2.3.4.2
+4.7
+
+coffie apparaat
+
+@online{uppaalCoffeeMachine,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"https://www.comp.nus.edu.sg/~cs5270/Notes/chapt6a.pdf"},}
+
+
+
+\bibitem{ } ... \LaTeX:\\ \url{https://www.researchgate.net/publication/2548016_The_world's_a_stage_a_survey_on_requirements_engineering_using_a_real-life_case_study_Karin_Koogan_Breitman_Julio_Cesar_S_do_Prado_Leite }
+\bibitem{tikkakuddonenpersuasiveTechnology} ... \LaTeX:\\ \url{https://cyberpsychology.eu/article/view/12270}
+\bibitem{tanzem22012022persuasivetechchanginglives} ... \LaTeX:\\ \url{https://www.makeuseof.com/what-is-persuasive-technology/}
+\bibitem{larson14062017persuasivetechmanipulates} ... \LaTeX:\\ \url{https://psmag.com/environment/captology-fogg-invisible-manipulative-power-persuasive-technology-81301}
+\bibitem{humanTechpersuasiveTech} ... \LaTeX:\\ \url{https://www.humanetech.com/youth/persuasive-technology}
+\bibitem{rezenfeld01012018persuasiveTecgHabits} ... \LaTeX:\\ \url{https://spectrum.ieee.org/how-persuasive-technology-can-change-your-habits }
+\bibitem{aldenaini28042020persuasiveTechTrends} ... \LaTeX:\\ \url{https://www.frontiersin.org/articles/10.3389/frai.2020.00007/full }
+\bibitem{2014russiansandworm} ... \LaTeX:\\ \url{https://www.wired.com/2014/10/russian-sandworm-hack-isight/}
+\bibitem{mcelfresh2016cyberattackhowandwhy} ... \LaTeX:\\ \url{https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-was-done-52802}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{osti2018historycontrolsystemIncidents} ... \LaTeX:\\ \url{https://www.osti.gov/biblio/1505628}
+\bibitem{caseli04112016intrusiondetectioncontrolsystem} ... \LaTeX:\\ \url{https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf}
+\bibitem{rochascadatesting} ... \LaTeX:\\ \url{https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf}
+\bibitem{levalle2020FuzzingICSProtocols} ... \LaTeX:\\ \url{https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/}
+\bibitem{resch31102019IEC62351secureCommunication} ... \LaTeX:\\ \url{http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-industry.aspx}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{arrizabalaga2020surveyiiotProtocols} ... \LaTeX:\\ \url{https://dl.acm.org/doi/fullHtml/10.1145/3381038}
+\bibitem{yadav2020reviewScadaArchitecture} ... \LaTeX:\\ \url{https://arxiv.org/pdf/2001.02925.pdf}
+\bibitem{cis20072021crashoverridemalware} ... \LaTeX:\\ \url{https://www.us-cert.gov/ncas/alerts/TA17-163A}
+\bibitem{holappa2017threattoElectricityNetworks} ... \LaTeX:\\ \url{https://www.nixu.com/fi/node/53}
+\bibitem{shehod2016gridadvantageus} ... \LaTeX:\\ \url{http://web.mit.edu/smadnick/www/wp/2016-22.pdf}
+\bibitem{parkwalstorm11102017russiagridattack} ... \LaTeX:\\ \url{https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/}
+\bibitem{drago2017CrashOverride} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf}
+\bibitem{wikiindustroyer} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Industroyer}
+\bibitem{crashoverridenetwork} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Crash_Override_Network}
+\bibitem{slowikvb2018crashoverride} ... \LaTeX:\\ \url{https://www.virusbulletin.com/virusbulletin/2019/03/vb2018-paper-anatomy-attack-detecting-and-defeating-crashoverride/}
+\bibitem{njccicthreat08102017crashovverrideprofile} ... \LaTeX:\\ \url{https://www.cyber.nj.gov/threat-center/threat-profiles/ics-malware-variants/crashoverride}
+\bibitem{crashoverrideindustroyermalware} ... \LaTeX:\\ \url{https://www.webopedia.com/TERM/C/crashoverride-industroyer-malware.html}
+\bibitem{incibe23062017crashoverrideback} ... \LaTeX:\\ \url{https://www.incibe-cert.es/en/blog/crashoverride-malware-ics-back-again}
+\bibitem{industroyershortfact} ... \LaTeX:\\ \url{https://rhebo.com/en/service/glossar/industroyer-25114/}
+\bibitem{vijayan2017firstmalwareCausedOutage} ... \LaTeX:\\ \url{https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-caused-2016-ukraine-outage/d/d-id/1329114}
+\bibitem{ferrante2017crashoverrideredflag} ... \LaTeX:\\ \url{https://www.powermag.com/why-crashoverride-is-a-red-flag-for-u-s-power-companies/}
+\bibitem{2017cashoverrideindustroyerAlto} ... \LaTeX:\\ \url{https://blog.paloaltonetworks.com/2017/06/crashoverrideindustroyer-protections-palo-alto-networks-customers/}
+\bibitem{spinner2018crashoverrideiot} ... \LaTeX:\\ \url{https://iiot-world.com/ics-security/cybersecurity/five-cybersecurity-experts-about-crashoverride-malware-main-dangers-and-lessons-for-iiot/}
+\bibitem{abb30062017crashoverridenotification} ... \LaTeX:\\ \url{https://search.abb.com/library/Download.aspx?DocumentID=9AKK107045A1003&amp;LanguageCode=en&amp;DocumentPartId=&amp;Action=Launch}
+\bibitem{blackhatusa2017} ... \LaTeX:\\ \url{https://www.blackhat.com/us-17/briefings/schedule/#industroyercrashoverride-zero-things-cool-about-a-threat-group-targeting-the-power-grid-6159}
+\bibitem{humanitcrashalert} ... \LaTeX:\\ \url{https://humanit.asia/ta17-163a/}
+\bibitem{sroberts2017CrashoerrideCronicles} ... \LaTeX:\\ \url{https://medium.com/@sroberts/the-crash-override-chronicles-overall-8389ef178fdf}
+\bibitem{parker2020industrialsystemsattack} ... \LaTeX:\\ \url{https://www.oilandgaseng.com/articles/the-most-infamous-cyber-attacks-on-industrial-systems/}
+\bibitem{kirk2017threatIndustrialControls} ... \LaTeX:\\ \url{https://www.bankinfosecurity.com/power-grid-malware-platform-threatens-industrial-controls-a-9987}
+\bibitem{chalfant2017USElectricGrid} ... \LaTeX:\\ \url{https://thehill.com/policy/cybersecurity/337877-crash-override-malware-heightens-fears-for-us-electric-grid}
+\bibitem{fbiWarningcrashOverride} ... \LaTeX:\\ \url{https://www.inguardians.com/dhs-fbi-warn-of-attacks-against-us-energy-manufacturing-companies-and-employees/}
+\bibitem{davies2017crashoveerideUkraineAttack} ... \LaTeX:\\ \url{https://rethinkresearch.biz/articles/industroyer-crashoverride-malware-behind-ukraine-utility-attack/}
+\bibitem{slowik2018securitySessions} ... \LaTeX:\\ \url{https://electricenergyonline.com/energy/magazine/1104/article/Security-Sessions-Combating-ICS-Threats.htm}
+\bibitem{ENCS2017crashoverridemodules} ... \LaTeX:\\ \url{https://www.smart-energy.com/regional-news/europe-uk/encs-crash-override-virus/}
+\bibitem{brocklehurst2017crashoverridegridtakedown} ... \LaTeX:\\ \url{https://isssource.com/crashoverride-designed-for-grid-takedown/}
+\bibitem{20170613_crashoverride} ... \LaTeX:\\ \url{https://gigazine.net/gsc_news/en/20170613-crashoverride/}
+\bibitem{leetaru2017crashoverridehomefront} ... \LaTeX:\\ \url{https://www.forbes.com/sites/kalevleetaru/2017/06/24/crash-override-and-how-cyberwarfare-is-bringing-conflict-to-the-homefront/#42eb8984277c}
+\bibitem{fti2017redflag} ... \LaTeX:\\ \url{https://fticybersecurity.com/2017-11/crashoverride-red-flag-u-s-power-companies/}
+\bibitem{27001academy2014Whitepaper} ... \LaTeX:\\ \url{https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/NL/Checklist_of_ISO_27001_Mandatory_Documentation_NL.pdf}
+\bibitem{2017info_isoiec27019} ... \LaTeX:\\ \url{https://webstore.iec.ch/preview/info_isoiec27019%7Bed1.0%7Den.pdf}
+\bibitem{iec623512023serseries} ... \LaTeX:\\ \url{https://webstore.iec.ch/publication/6912}
+\bibitem{iec623512011Withdrawn} ... \LaTeX:\\ \url{https://webstore.iec.ch/publication/6911}
+\bibitem{IEC62351sheet} ... \LaTeX:\\ \url{https://www.ipcomm.de/protocol/IEC62351/en/sheet.html}
+\bibitem{NISTOIR2014GuidelinesCyverSec} ... \LaTeX:\\ \url{https://nvlpubs.nist.gov/nistpubs/ir/2014/NIST.IR.7628r1.pdf}
+\bibitem{ukraiinnesandwormteam} ... \LaTeX:\\ \url{https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-sandworm-team.html/cybersecurity-audit-checklist. }
+\bibitem{politicsrussagridukraine} ... \LaTeX:\\ \url{https://edition.cnn.com/2016/02/11/politics/ukraine-power-grid-attack-russia-us/index.html/ukraine-sees-russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E. }
+\bibitem{Whitehead2017ukrainepoweroutage} \LaTeX:\\ \url{https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{zetter2017moreDangerousMalware} ... \LaTeX:\\ \url{https://www.vice.com/en/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer}
+\bibitem{icsSecurityRussianHacking} ... \LaTeX:\\ \url{https://www.wallix.com/blog/ics-security-russian-hacking}
+\bibitem{rocha2017cybersecyrityanalysisScada} ... \LaTeX:\\ \url{https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/}
+\bibitem{cheah2008testingiec60870} ... \LaTeX:\\ \url{http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0513EED48102FDAD1BD940260EF12B11?doi=10.1.1.548.7490&amp;rep=rep1&amp;type=pdf}
+\bibitem{holappa2017threattoElectricityNetworks} ... \LaTeX:\\ \url{https://www.nixu.com/fi/node/53}
+\bibitem{icsSecurityRussianHacking} ... \LaTeX:\\ \url{ https://www.wallix.com/blog/ics-security-russian-hacking}
+\bibitem{wikiindustroyer} ... \LaTeX:\\ \url{ https://en.wikipedia.org/wiki/Industroyer}
+\bibitem{rocha2017cybersecyrityanalysisScada} ... \LaTeX:\\ \url{https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/}
+\bibitem{crashoverridenetwork} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Crash_Override_Network}
+\bibitem{slowikvb2018crashoverride} ... \LaTeX:\\ \url{ https://www.virusbulletin.com/virusbulletin/2019/03/vb2018-paper-anatomy-attack-detecting-and-defeating-crashoverride/}
+\bibitem{njccicthreat08102017crashovverrideprofile} ... \LaTeX:\\ \url{ https://www.cyber.nj.gov/threat-center/threat-profiles/ics-malware-variants/crashoverride}
+\bibitem{spinner2018crashoverrideiot} ... \LaTeX:\\ \url{https://iiot-world.com/ics-security/cybersecurity/five-cybersecurity-experts-about-crashoverride-malware-main-dangers-and-lessons-for-iiot/}
+\bibitem{abb30062017crashoverridenotification} ... \LaTeX:\\ \url{ https://search.abb.com/library/Download.aspx?DocumentID=9AKK107045A1003&amp;LanguageCode=en&amp;DocumentPartId=&amp;Action=Launch}
+\bibitem{blackhatusa2017} ... \LaTeX:\\ \url{ https://www.blackhat.com/us-17/briefings/schedule/#industroyercrashoverride-zero-things-cool-about-a-threat-group-targeting-the-power-grid-6159}
+\bibitem{levalle2020FuzzingICSProtocols} ... \LaTeX:\\ \url{https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/}
+\bibitem{resch31102019IEC62351secureCommunication} ... \LaTeX:\\ \url{http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-industry.aspx}
+\bibitem{fauri2017EncryptionICS} ... \LaTeX:\\ \url{https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf}
+\bibitem{arrizabalaga2020surveyiiotProtocols} ... \LaTeX:\\ \url{https://dl.acm.org/doi/fullHtml/10.1145/3381038}
+\bibitem{yadav2020reviewScadaArchitecture} ... \LaTeX:\\ \url{https://arxiv.org/pdf/2001.02925.pdf}
+\bibitem{2017win32industroyer} ... \LaTeX:\\ \url{https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf}
+\bibitem{grammatikis2019AttackIEC6087505104} ... \LaTeX:\\ \url{"https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems"}
+\bibitem{shahzad2014ScadaProtocolsPollingScenario} ... \LaTeX:\\ \url{https://scialert.net/fulltext/?doi=tasr.2014.396.405}
+\bibitem{boozallen2016lightwentout} ... \LaTeX:\\ \url{"https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-lights-went-out.pdf"}
+\bibitem{industroyershortfact} ... \LaTeX:\\ \url{https://rhebo.com/en/service/glossar/industroyer-25114/}
+\bibitem{2015ukrainegridattack} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/2015_Ukraine_power_grid_hack}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{vijayan2017firstmalwareCausedOutage} ... \LaTeX:\\ \url{https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-caused-2016-ukraine-outage/d/d-id/1329114}
+\bibitem{2017crashoverridenostuxnet} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-electric-grids-but-its-no-stuxnet/}
+\bibitem{shehod2016gridadvantageus} ... \LaTeX:\\ \url{http://web.mit.edu/smadnick/www/wp/2016-22.pdf}
+\bibitem{dragos2019TargetedTransStation} ... \LaTeX:\\ \url{https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-transmission-stations-4530.html}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{drago2017CrashOverride} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf}
+\bibitem{parkwalstorm11102017russiagridattack} ... \LaTeX:\\ \url{https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/}
+\bibitem{mcelfresh2016cyberattackhowandwhy} ... \LaTeX:\\ \url{https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-was-done-52802}
+\bibitem{zinets15022017ukrainechargesrussia} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-crisis-cyber-idUSKBN15U2CN}
+\bibitem{finkle08012016russiansandwormhackers} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-sandworm-hackers-for-ukraine-outage-idUSKBN0UM00N20160108}
+\bibitem{greenberg2017Cyberwartestlab } ... \LaTeX:\\ \url{https://www.wired.com/story/russian-hackers-attack-ukraine/}
+\bibitem{finklejan2016UsBlamesRussianSandworm} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{caseli04112016intrusiondetectioncontrolsystem} ... \LaTeX:\\ \url{ https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf}
+\bibitem{rochascadatesting} ... \LaTeX:\\ \url{https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf}
+\bibitem{zetter2017moreDangerousMalware} ... \LaTeX:\\ \url{ https://www.vice.com/en/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer}
+\bibitem{Whitehead2017ukrainepoweroutage} ... \LaTeX:\\ \url{https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{zetter2016GridHack} ... \LaTeX:\\ \url{https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/}
+\bibitem{owens21032017ukrainemitigationstrategies} ... \LaTeX:\\ \url{ https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{virsec2017DeepDiveIndustroyer} ... \LaTeX:\\ \url{https://virsec.com/virsec-hack-analysis-deep-dive-into-industroyer-aka-crash-override/}
+\bibitem{fauri2017EncryptionICS} ... \LaTeX:\\ \url{https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf}
+\bibitem{2017IEC61850} ... \LaTeX:\\ \url{http://blog.nettedautomation.com/2017/}
+\bibitem{2017win32industroyer} ... \LaTeX:\\ \url{https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf}
+\bibitem{dragos2019TargetedTransStation} ... \LaTeX:\\ \url{https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-transmission-stations-4530.html}
+\bibitem{2017crashoverridenostuxnet} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-electric-grids-but-its-no-stuxnet/}

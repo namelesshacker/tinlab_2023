@@ -1,0 +1,119 @@
+\bibitem{winceckCriticalToSafety} ... \LaTeX:\\ \url{https://www.icheme.org/media/8976/xxiv-poster-11.pdf}
+\bibitem{chambersHazardAnalysisSCS} ... \LaTeX:\\ \url{https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV55Chambers.pdf}
+\bibitem{rslater1998SCSAnalysis} ... \LaTeX:\\ \url{https://users.ece.cmu.edu/~koopman/des_s99/safety_critical/}
+\bibitem{knightchallengessafetyCritical} ... \LaTeX:\\ \url{https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf}
+\bibitem{johnson2006devsafetycritical} ... \LaTeX:\\ \url{http://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf}
+\bibitem{daucriticalsafetyconsider} ... \LaTeX:\\ \url{https://www.dau.edu/tools/se-brainbook/Pages/Design%20Considerations/Critical-Safety-Item.aspx}
+\bibitem{fallsafedesign} ... \LaTeX:\\ \url{https://faculty.up.edu/lulay/MEStudentPage/failsafe.pdf}
+\bibitem{arForce2015VerificationExpectations} ... \LaTeX:\\ \url{https://daytonaero.com/wp-content/uploads/AC-17-01.pdf}
+\bibitem{nebulaassessment} ... \LaTeX:\\ \url{https://nebula.esa.int/content/assessment-methodology-certification-safety-gnc-critical-space-systems}
+\bibitem{lalaArchitecturalPrinciples} ... \LaTeX:\\ \url{https://www.cs.unc.edu/~anderson/teach/comp790/papers/safety_critical_arch.pdf}
+\bibitem{mitNotesSafetyCritical} ... \LaTeX:\\ \url{https://www.cs.uct.ac.za/mit_notes/human_computer_interaction/htmls/ch02s10.html}
+\bibitem{britishColumbia2020GuideSafetyCritical} ... \LaTeX:\\ \url{https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dcbbc29d/EGBC-Safety-Critical-Software-V1-0.pdf.aspx}
+\bibitem{fulvio1993safetycriticalsystems} ... \LaTeX:\\ \url{https://assembly.coe.int/nw/xml/XRef/X2H-Xref-ViewHTML.asp?FileID=7144&lang=EN}
+\bibitem{dlrtabid} ... \LaTeX:\\ \url{https://www.dlr.de/ft/en/desktopdefault.aspx/tabid-1360/1856_read-36215/}
+\bibitem{knight2010SafetyCritical} ... \LaTeX:\\ \url{https://ieeexplore.ieee.org/document/1007998}
+\bibitem{creavisafecritical} ... \LaTeX:\\ \url{https://coreavi.com/the-future-of-safety-critical-systems-in-the-emerging-autonomous-world/}
+\bibitem{valdes2018SafetybyAutomation} ... \LaTeX:\\ \url{https://www.intechopen.com/chapters/59838}
+\bibitem{2015whensafetymanagementsystemsfail} ... \LaTeX:\\ \url{https://verticalmag.com/features/whensafetymanagementsystemsfail/}
+
+
+https://www.icheme.org/media/8976/xxiv-poster-11.pdf
+https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV55Chambers.pdf
+https://users.ece.cmu.edu/~koopman/des_s99/safety_critical/
+https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf
+https://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf
+https://www.dau.edu/tools/se-brainbook/Pages/Design%20Considerations/Critical-Safety-Item.aspx
+https://daytonaero.com/wp-content/uploads/AC-17-01.pdf
+https://nebula.esa.int/content/assessment-methodology-certification-safety-gnc-critical-space-systems
+https://www.cs.unc.edu/~anderson/teach/comp790/papers/safety_critical_arch.pdf
+https://www.cs.uct.ac.za/mit_notes/human_computer_interaction/htmls/ch02s10.html
+https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dcbbc29d/EGBC-Safety-Critical-Software-V1-0.pdf.aspx
+https://assembly.coe.int/nw/xml/XRef/X2H-Xref-ViewHTML.asp?FileID=7144&lang=EN
+https://www.dlr.de/ft/en/desktopdefault.aspx/tabid-1360/1856_read-36215/
+https://ieeexplore.ieee.org/document/1007998
+https://coreavi.com/the-future-of-safety-critical-systems-in-the-emerging-autonomous-world/
+https://verticalmag.com/features/whensafetymanagementsystemsfail/
+
+
+blz 44
+file:///C:/Users/gally/Downloads/models/uppaal.pdf
+
+
+blz 12, 14
+file:///C:/Users/gally/Downloads/models/03CHAPTER3.pdf
+
+
+
+blz 28, 46
+file:///C:/Users/gally/Downloads/models/nourollahi20191215.pdf
+
+
+blz 4,5
+file:///C:/Users/gally/Downloads/models/LIPIcs-TIME-2021-12.pdf
+
+
+
+file:///C:/Users/gally/Downloads/models/ADA328565.pdf
+
+
+
+ M, s |= p iff p ∈ L(s)
+M, s |= ¬φ iff M, s 2 φ
+M, s |= φ1 → φ2 iff M, s 2 φ1 or M, s |= φ2
+M, s |= EXφ iff ∃t ∈ S, s.t. (s, t) ∈ R and M, t |= φ
+M, s |= E(φ1Uφ2) iff ∃π = s0, s1, s2, ... ∈ T rM(s) :
+∃(i ≥ 0)[M, si
+|= φ2 ∧ ∀(0 ≤ j < i)M, sj
+|= φ1]
+M, s |= A(φ1Uφ2) iff ∀π = s0, s1, s2, ... ∈ T rM(s) :
+∃(i ≥ 0)[M, si
+|= φ2 ∧ ∀(0 ≤ j < i)M, sj
+|= φ1]
+
+
+
+https://www.cs.unc.edu/~anderson/teach/comp790/papers/safety_critical_arch.pdf
+https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf
+https://research.cs.queensu.ca/home/cisc853/readings/papers/SafetyCriticalKnight.pdf
+https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV55Chambers.pdf
+https://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf
+https://www.icheme.org/media/8976/xxiv-poster-11.pdf
+https://verticalmag.com/features/whensafetymanagementsystemsfail/
+
+
+
+https://www.fi.muni.cz/~xpelanek/IA158/slides/timed-automata.pdf
+https://medium.com/@jiyanpatil07/timed-automata-in-toc-and-its-applications-4ca7e1c9be3d
+file:///C:/Users/gally/Downloads/models/04_giWorkshop2000.pdf
+file:///C:/Users/gally/Downloads/models/latin06.pdf
+file:///C:/Users/gally/Downloads/models/real-time-systems-formal-specification-and-automatic-verific.pdf
+file:///C:/Users/gally/Downloads/models/verification.pdf
+file:///C:/Users/gally/Downloads/models/uppaal.pdf
+file:///C:/Users/gally/Downloads/models/03CHAPTER3.pdf
+file:///C:/Users/gally/Downloads/models/isbn9789526031033.pdf
+file:///C:/Users/gally/Downloads/models/nourollahi20191215.pdf
+file:///C:/Users/gally/Downloads/models/Lecture2.pdf
+file:///C:/Users/gally/Downloads/models/LIPIcs-TIME-2021-12.pdf
+file:///C:/Users/gally/Downloads/models/mc-tutorial.pdf
+file:///C:/Users/gally/Downloads/models/ADA328565.pdf
+file:///C:/Users/gally/Downloads/models/_principles_of_model_checking.pdf
+file:///C:/Users/gally/Downloads/models/ICTERI-2013-p-475-489-SMSV.pdf
+https://www.fi.muni.cz/~xpelanek/IA158/slides/timed-automata.pdf
+https://www.fi.muni.cz/~xpelanek/IA158/slides/verification.pdf
+http://www.lsv.fr/Publis/PAPERS/PDF/BFLMOW-hmc17.pdf
+https://cse.iitkgp.ac.in/~pallab/testing_and_verification/Lec-10-Model-Checking.pdf
+https://www.theobakker.net/pdf/sluizen.pdf
+https://wiki.woudagemaal.nl/w/index.php/Sluizen
+https://www.stowa.nl/sites/default/files/assets/PUBLICATIES/Publicaties%202000-2010/Publicaties%202000-2004/STOWA%202004-XX%20boekenreeks%2020.pdf
+
+
+https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/MathSymb.html
+https://tdcapply.cfa.harvard.edu/help_latex_symbols/
+
+
+position==1 && waterlevel==0
+systemtime >0800&& systemtime <2100
+systemtime <0800&& systemtime >2100
+process_finished==true && process_started==false&& systemtime>=60
+systemtime=0 & kostprijs--

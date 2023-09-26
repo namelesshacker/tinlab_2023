@@ -1,0 +1,62 @@
+int kostprijs = 1000;
+
+////
+
+const int N = 4;          // Number of tasks.
+typedef int[0,N-1] pid_t; // Process IDs.
+
+chan	done, ready, run, stop;
+clock 	time;
+
+const int E[pid_t] = { 20, 20, 10, 10 };		// 
+const int L[pid_t] = { 40, 20, 10, 10 };		// [ E[i] , L[i] ] Ready interval
+const int D[pid_t] = { 40, 20, 10, 10 };		// Deadlines
+const int C[pid_t] = {  5,  4,  2,  1 };    	// Computation Times
+const int P[pid_t] = {  1,  2,  3,  4 };		// Priorities
+
+// Task queue
+pid_t taskQueue[pid_t];
+int[0,N] len = N;
+
+void initialize()
+{
+  // Bubble-sort tasks into the queue.
+  bool picked[pid_t];
+  for(i : pid_t)
+  {
+    int max = -1, t = -1;
+    for(j : pid_t)
+    {
+      if (!picked[j] && P[j] > max)
+      {
+        max = P[j];
+        t = j;
+      }
+    }
+    picked[t] = true;
+    taskQueue[i] = t;
+  }
+}
+
+pid_t head()   { return taskQueue[0]; }
+bool isEmpty() { return len == 0; }
+
+void add(pid_t id)
+{
+  pid_t i, tmp;
+  taskQueue[len] = id;
+  for(i = len ; i > 0 && P[taskQueue[i]] > P[taskQueue[i-1]]; --i)
+  {
+    tmp = taskQueue[i];
+    taskQueue[i] = taskQueue[i-1];
+    taskQueue[i-1] = tmp;
+  }
+  len++;
+}
+
+void remove()
+{
+  int i;
+  for(i = 0; i+1 < N; ++i) { taskQueue[i] = taskQueue[i+1]; }
+  taskQueue[--len] = 0;
+}

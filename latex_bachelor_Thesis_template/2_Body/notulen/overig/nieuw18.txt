@@ -1,0 +1,511 @@
+
+  \section{Lijst proposities}
+ \begin{tabular} { |s|p{6cm}|p{6cm}||p{6cm}|  }
+    \hline
+     Requirement index & specificatie index & omschrijving \\
+    \hline
+    Requirement index & specificatie index & omschrijving \\
+    Requirement index & specificatie index & omschrijving \\
+    Requirement index & specificatie index & omschrijving \\
+    
+    \hline
+    \end{tabular}
+	
+	
+	
+	
+	
+ 
+ \cite{productBacklog}
+  \cite{reqAnalyseWiki}
+   \cite{chilicoReqs}
+    \cite{informatieReqs}
+	\cite{qualitybsReqs}
+	
+	Er bestaat ook een 6-variabelen model. . .Wat is dat?
+	\cite{icsoft16a}
+	Wat voor soorten requirements zijn er zoal te vinden?
+	Hoe verkrijgt men requirements?
+	Wat voor requirement elicitation technieken zijn er zoal?
+	Wat is het verschil tussen functionele en niet-functionele
+	requirements?
+	Wat verstaat men onder mode confusion?
+	\cite{automationModeConfusion}
+	Wat verstaat men onder de automatiseringsparadox?
+	\cite{thompsonModeConfusion}
+		\includegraphics[width=8cm]{4varparnas.png}
+
+
+
+
+
+
+\begin{longtblr}[
+caption = {The benefits and drawbacks of various gait analysis systems.},
+  label = {tab:my-tab1}
+                ]{hlines=0.5pt, vlines=0.5pt,
+                  colspec = {Q[1, l,m, bg=gray!30] X[1,l,h] X[1,l,h]},
+                   colsep = 2pt,
+                  rowhead = 1,
+                   row{1} = {font=\small\bfseries, c, bg=gray!50}, 
+                   rows   = {font=\small}, 
+                  measure = vbox,
+                  }
+    \hline
+     Scope & CCTL proposities \\
+    \hline
+
+     - & \square ( a_0 \implies (( \lnot a_2 \wedge \lnot a_3 ) \mathcal{U} a_1 ) \vee ( \lnot a_2 \wedge \lnot a_3 )) \\
+     AG(p) &  M, s \models AG(p) $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \forall i \cdot M,\pi[i] \models p \\
+     EG(p) &  M, s \models EG(p) $\Leftrightarrow$     \exists \pi \in  \sqcap (M,s) \cdot \forall i \cdot M,\pi[i] \models p \\
+     AF(p) &   M, s \models AF(p) $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \exists i \cdot M,\pi[i] \models p\\
+     EF(p) &    M, s \models EG(p) $\Leftrightarrow$     \exists \pi \in  \sqcap (M,s) \cdot \forall i \cdot M,\pi[i] \models p\\
+     AX(p) & M, s \models AX(p) $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot M,\pi[1] \models p \\
+     EX(p) &  M, s \models EX(p) $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot M,\pi[1] \models p \\
+     A(p \cup q) &  M, s \models  A(p \cup q)   $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \exists k \cdot M,\pi[k] \models q \wedge ( \forall i \leq k \cdot M,\pi [i] \models p) \\
+     E(p \cup q) & M, s \models  E(p \cup q)   $\Leftrightarrow$     \exists \pi \in  \sqcap (M,s) \cdot \exists k \cdot M,\pi[k] \models q \wedge ( \forall i \leq k \cdot M,\pi [i] \models p) \\
+      A(p \Re q) &  M, s \models  A(p \Re q)   $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \forall  k \cdot  \wedge ( \forall i \leq k \cdot M,\pi [i] \models \neg p) = (M,\pi [k] ]  \models q \\
+     E(p \Re q) &  M, s \models  E(p \Re q)   $\Leftrightarrow$     \forall \pi \in  \sqcap (M,s) \cdot \forall  k \cdot  \wedge ( \forall i \leq k \cdot M,\pi [i] \models \neg p) = (M,\pi [k] ] \models q \\
+     - &  \\
+     - & M, s \models p $\Leftrightarrow$ p \in L(s) \\
+     - &  M, s \models \not f1 $\Leftrightarrow$ M, s \nvdash f1 \\
+     - & M, s \models f1 \vee f2 $\Leftrightarrow$ M,s \models f1 or M,s \nvdash f2 \\
+     - &  M, s \models f1 \wedge f2 $\Leftrightarrow$  M,s \models f1 and M,s \nvdash f2 \\
+     - &  M, s \models \mathrm{E} g_{1} $\Leftrightarrow$ there is a path \pi  from ~  s ~   such ~  that  ~ M, \pi \models g1 \\
+     - &  M, s \models p $\Leftrightarrow$ for every path \pi  ~ starting from  ~  s, M, \pi \models g1 \\
+     - & M, s \models p $\Leftrightarrow$ s is the first state of \piand M, s \models f1 \\
+     - &  M, s \models \not g_{1} $\Leftrightarrow$ M, \pi  \nvdash g1 \\
+     - & M, s \models p $\Leftrightarrow$  M, \pi  \models g1  or  M, \pi  M, \pi  \models g2 \\
+     - &  M, s \models p $\Leftrightarrow$ M, \pi  \models g1  and  M, \pi  M, \pi  \models g2 \\
+     - & M, s \models p $\Leftrightarrow$ M, $\pi^{1}$ \models g1 \\
+     - &  M, s \models p $\Leftrightarrow$ there exists a k \ge 0, such that  ~ M, $\pi^{k}$  \models g1 \\
+     - & M, s \models p $\Leftrightarrow$ for all i \ge 0,M,$\pi^{i}$ \models g1 \\
+     - &  M, s \models g1 \bugcup g2 $\Leftrightarrow$ ~  there  ~ exists  ~ ak  ~ \ge  ~ 0 ~  such ~  that  ~ M,  ~ $\pi^{k}$ \models g2 \\
+     - & and  ~ for  ~ all ~  0  ~ \le j < k, M,$\pi^{j}$ \models g1 \\
+     - &  M, s \models p $\Leftrightarrow$ for all j \ge 0, if for ~  every  ~ i < j,M,$\pi^{i}$ \nvdash g1 then M,$\pi^{j}$ \models g2 \\
+       \hline
+\end{longtblr}
+
+
+
+
+
+
+
+
+\begin{tabular} { |s|p{6cm}|p{2cm}|p{2cm}|p{1cm}| }
+    \hline
+     Index & Definitie & Specificatie & Tijdseenheden\\
+    \hline
+     R  & In eerste instantie is de  sluis gesloten & Specificatie& nvt\\
+     R & Een schip geeft een signaal aan een sluismeester.& Specificatie & nvt\\
+	 R & Er wordt gekeken of er wel plek is in de sluis .& Specificatie & nvt\\
+	 R & Er wordt gekeken of de nivelleermachine is afgerond. & Specificatie& nvt\\
+ R & Er wordt gekeken wat het niveo van de waterpeil in de sluiskolk is. & Specificatie& nvt\\
+	 R & Er wordt gekeken of de sluisdeuren gereed zijn voor invarende schepen. & Specificatie& nvt\\
+     R   &  Om de sluisdeur te openen, is het noodzakelijk dat& Specificatie& nvt\\
+     R    &  Om de sluisdeur te sluiten, is het noodzakelijk dat & Specificatie& nvt\\
+     R     & In eerste instantie is de sluispomp uit& Specificatie& nvt\\
+     R      & Het duurt ongeveer ..tijdseenheden mm de sluispomp van de uitstand te halen wanneer de sluisdeuren zijn gesloten. & Specificatie& nvt\\
+     R       & Het duurt in alle states max ... tijdseenheden om het gewenste waterlevel te realiseren. & Specificatie& nvt\\
+    R &  Gebruikskaar maken voor een cyclus duurt minimaal ... tijdseengeden en maximaal ... tijdseenheden & Specificatie& nvt\\
+    R &  De stoplicht is altijd in een predefined state "rood" wanneer er geen schip komt aanvaren& Specificatie& nvt\\
+   R   & Om een volledig lege sluis te krijgen duurt ... tijdseenheden. Behalve rond 13.00 uur, want dan mag er een schip in de sluis zitten terwijl de uitgangspositie van de sluis verandert& Specificatie& nvt\\
+   R  &  Als een schip dreigt vast te lopen tussen de sluisdeuren dan zullen de & Specificatie& nvt\\
+   R   &  Als een het waterpeil dreigt over te lopen, vanwege de grootte van het schip dan zal de sluispomp minder water in de sluiskolk pompen& Specificatie& nvt\\
+
+  R   &  Als een het waterpeil dreigt over te lopen, vanwege de grootte van het schip dan zal de sluispomp minder water in de sluiskolk pompen& Specificatie& nvt\\
+    \hline
+    \end{tabular}
+
+
+
+
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = { },}
+
+
+
+
+
+
+\cite{zuilen23022019Tijdlijnpoldercrash}
+\cite{wikinews04032009techfoutailines1951}
+\cite{luchtvaartnieuws21012020boeing737conclusies}
+\cite{adformatie280220209communicatiegebreken}
+\cite{spinnael25022009onderzoekpolderbaancrash}
+\cite{crashTurkishAirlines}
+\cite{flightradar24}
+\cite{flightstatstracker}. 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Tsjernobyl
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=Xw3SFOfbR84}
+\bibitem{wikiTjernobyl} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Kernramp_van_Tsjernobyl}
+\bibitem{rivmTjernobyl} ... \LaTeX:\\ \url{https://www.rivm.nl/straling-en-radioactiviteit/stralingsincidenten-en-kernongevallen/tsjernobyl}
+\bibitem{andereTijdenTjernobyl} ... \LaTeX:\\ \url{https://www.anderetijden.nl/aflevering/599/Tsjernobyl-als-Nederlandse-ramp}
+wat er is gebeurd en hoe het leven verdergaat
+\bibitem{kingskey19042022tjernobyl} ... \LaTeX:\\ \url{https://www.nationalgeographic.nl/het-leven-in-tsjernobyl-gaat-door}
+pernsioenfondsen en de tjernobyl ramp
+In 2021 worden mensen nog steeds blootgesteld blijkt ut een gezamelijk onderzoek van greenpeace en oekraiense wetenschappers
+stijging van de nucliaire activiteit gemeten in tjernobyl
+Het toerisme  aspect
+De chronologie
+\bibitem{erikbork26042023reactor4} ... \LaTeX:\\ \url{https://historianet.nl/maatschappij/rampen/tsjernobyl-atoomhel-bij-reactor-4}
+\bibitem{nosTjernobyl30jaarlater} ... \LaTeX:\\ \url{https://nos.nl/artikel/2101523-de-spookstad-van-tsjernobyl-30-jaar-later}
+Dieren in de omgeving van tjernobyl
+De chronologie
+Echtreme droogte zorgd voor gevaar
+\bibitem{knmi04052021tjernobylbosbrand} ... \LaTeX:\\ \url{https://www.knmi.nl/over-het-knmi/nieuws/35-jaar-na-tsjernobyl-liggen-branden-op-de-loer}
+\bibitem{dodonovaKVIRisicoTjernobyl} ... \LaTeX:\\ \url{https://www.kivi.nl/afdelingen/risicobeheer-en-techniek/columns/kernramp-tsjernobyl-het-dilemma-van-scherbitsky}
+Joernalistiek, entertainment en de waarheid
+\bibitem{dumarey04062020verhaalTjernobylWaarheid} ... \LaTeX:\\ \url{https://www.vrt.be/vrtnws/nl/2020/04/06/in-de-ban-van-tsjernobyl-vooruitblik/}
+Een onderzoek
+
+Huidige gevolgen van de explosie van toen
+\bibitem{sparkesNewScientistTjernoby;} ... \LaTeX:\\ \url{https://www.newscientist.nl/nieuws/steeds-meer-kernreacties-in-ontoegankelijke-ruimte-in-tsjernobyl/}
+De ramp, hoe de mensen ermee omgingen en hoe er nu geleef wordt
+
+evaluatieonderzoek en amatregeen
+\bibitem{kernenergiened26041986chronologiemaatregelen} ... \LaTeX:\\ \url{https://www.kernenergieinnederland.nl/node/308}
+\bibitem{mapszoneReactor} ... \LaTeX:\\ \url{https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=nl&t=h&msa=0&ll=51.388923%2C30.099792&spn=0.685583%2C1.645203&z=9&source=embed&mid=1MLcOcMK_WrIJYMuTf0VVuYnMqQI}
+Invloed van de mens op de omgeving
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.animalstoday.nl/mens-schadelijker-natuur-tsjernobyl/}
+Heroplevende splijtingsreacties
+docu van schooltv
+Radioactiviteit bereikt nederland
+documentaire en maatregelen
+\bibitem{kernhistoriek15062021tjernobyl} ... \LaTeX:\\ \url{https://historiek.net/kernramp-van-tsjernobyl-1986/8769/}
+Het verhaal van een overledende
+Toerisme
+toerisme
+toerisme
+Dieren in de omgevong
+Toevluchtsoord voor vluchtelingen van de oorlog met russische seperatisten
+Ouderen die terugkeerden naar hun woonplaats na de gedwongen verhuizing door de autoriteiten
+De straling neemt weer toe
+Lessen geleerd van tjernobyl
+\bibitem{nucleairforumFeitenTjernobyl} ... \LaTeX:\\ \url{https://www.nucleairforum.be/thema/veiligheid-als-prioriteit/tsjernobyl-de-feiten}
+Toerisme
+Bosbrand in tjernobyl
+invloed van de ramp op belgie
+\bibitem{kernongevalTjernobylFancGov} ... \LaTeX:\\ \url{https://fanc.fgov.be/nl/noodsituaties/zware-ongevallen-het-buitenland/1986-kernongeval-tsjernobyl}
+Boek recensie
+Fotos en berekeningen
+ontmanteling en toerisme
+Belangrijke lessen en overeenkomsten
+De journalistieke waarheid van de koude oorlog
+De lessen van
+\bibitem{arendswolters062019lessenTjernobyl} ... \LaTeX:\\ \url{https://magazines.autoriteitnvs.nl/nieuwsbrief-anvs/2019/02/de-lessen-van-tsjernobyl}
+Een toristenattractie maken van tjernobyl
+De radioactieve straling toen en nu
+de 30km zone door de ogen van toeristen
+artikel
+stedentrip
+rapport
+\bibitem{damveld08052020tjernobyl} ... \LaTeX:\\ \url{https://wisenederland.nl/wp-content/uploads/2020/06/TSJERNOBYL.pdf}
+slapend monster
+docu
+krantenartikel
+hbo serie
+docuserie
+de  nieuwe sacrofaag
+hulp aan slachtoffers
+slapende reactor
+krantenartikel
+\bibitem{deVriestjernobylHolland} ... \LaTeX:\\ \url{https://onh.nl/verhaal/besmette-melk-en-radioactieve-spinazie-tsjernobyl-in-holland}
+hbo serie
+internationale gevolgen
+toerisme
+nieuwe koepel
+media communicatie
+docu
+dieren
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.amboanthos.nl/boek/nacht-in-tsjernobyl/}
+koepel
+koepel
+\bibitem{ing3enieur29042015antistralingskoepel} ... \LaTeX:\\ \url{https://www.deingenieur.nl/artikel/nieuwe-antistralingskoepel-tsjernobyl-bijna-af}
+toerisme
+toeristisch reiperspectief
+toerisme
+niwe koepel
+overschakelen naar duurzaamheid
+docu
+tjernobyl wekt nu duurazme energie
+toerisme
+overeenkomsten tjernobyl en fukushima
+drank en sla uit tjernobyl
+geen efficiente opslag is mogelijk
+
+wetenschappelijke artikelen
+
+zaterdag 26 april 1986. Er vind routineonderhoud plaats bij reactor 4, De controle wordt uitegevoerd door de dagploeg. Vnwege een test wordt jhet koelsysteem uitgeschakeld. Door omstandigheden wordt de test uitgesteld en wordt de verantwoordelijkheid overgedragen aan de avondploeg.
+De operator maakt bedieningsfouten waardoot de reactor bijna stil komt te liggen. En vervolgens probeert hij de reactor weer op gang te brengen. ondanks de snelle temperatuurstijging wordt het experiment doorgezet. Dan wordt ook het veiligheidssysteem stilgelgd. Terwijl het koelwater langzaam opwarmt, sluit hij de klep waarlangs de stoom naar de generator stroomt.
+
+De temperatuur van de reactorstaven neemt daarna snel toe. Terwijl er een oncontroleerbare kettingreactie op gang komt, laat het personeel in paniek de regelstaven zakken om de warmteontwikkeling af te remmen. Het is dan echter al te laat. Door een ontwerpfout loopt het vermogen razendsnel op tot 33.000 megawatt, ruim tien keer hoger dan normaal.
+
+In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.}
+
+In de ravage vat het gloeiend hete grafiet in de reactor spontaan vlam. De uitslaande brand en een tweede explosie voeren een radioactieve rookwolk tot 8 kilometer hoogte. 
+In een poging het vuur in reactor 4 te doven, storten helikopters vanuit de lucht zand, lood en boorzuur in de reactorkern. Het mag echter niet baten.
+
+Intussen is de nucleaire brandstof zo heet geworden dat die door de bodem van het reactorvat dreigt te smelten. Als dat gebeurt, kan het bluswater onder het vat in één klap verdampen en dreigt een derde explosie die een groot deel van Europa onbewoonbaar zal maken. Om dit te voorkomen moet het water hoe dan ook worden weggepompt.
+
+Drie brandweermannen wagen zich daarvoor in de ruimte onder de reactor, blootgesteld aan 300 sievert per uur, 300.000 keer de dosis die een Nederlander jaarlijks maximaal mag oplopen. Ze slagen daarin, maar twee van hen overlijden enkele dagen later aan acute stralingsziekte.
+
+Hoewel geigertellers de dag na de ramp onrustbarende waarden aangeven, slaat het plaatselijk bestuur geen alarm. De bevolking is het niet gewend om vragen te stellen.
+
+De volgende dag blijkt er wel degelijk iets ernstigs aan de hand te zijn. In een lange rij bussen worden de 135.000 inwoners op 27 april uit het besmette gebied geëvacueerd, om er nooit meer terug te keren.
+
+De ramp is dan nog steeds geen wereldnieuws. De Sovjetautoriteiten blijken er niet eens van op de hoogte te zijn – president Gorbatsjov klaagt later dat hij via Zweden aan zijn informatie moest komen.
+
+
+\bibitem{verschuur14012013tjernobylreports} ... \LaTeX:\\ \url{http://essay.utwente.nl/63353/1/Verschuur,_W._-_s0123617_(verslag).pdf}
+\bibitem{paperlessarchivesTjernobyl} ... \LaTeX:\\ \url{https://www.paperlessarchives.com/chernobyl_nuclear_accident_doc.html}
+\bibitem{vargos082000tjernobylconcerns} ... \LaTeX:\\ \url{https://www.pnnl.gov/main/publications/external/technical_reports/pnnl-13294.pdf}
+\bibitem{mauroNuclearRiskSociety} ... \LaTeX:\\ \url{http://www.geocities.ws/scannapuerci/demauroinnovation.pdf}
+\bibitem{vienna06092005LookingBack} ... \LaTeX:\\ \url{https://www-pub.iaea.org/MTCD/publications/PDF/Pub1312_web.pdf}
+
+
+rivmTjernobyl
+
+
+\bibitem{bnnvara13062018malirapport} ... \LaTeX:\\ \url{https://joop.bnnvara.nl/nieuws/rapport-haalbaarheid-en-houdbaarheid-van-mali-missie-twijfelachtig}
+\bibitem{eucal11012021malimissieverlengd} ... \LaTeX:\\ \url{https://www.consilium.europa.eu/nl/press/press-releases/2021/01/11/eucap-sahel-mali-mission-extended-until-31-january-2023-and-mandate-adjusted/}
+\bibitem{nos21052014zorgenmalimissie} ... \LaTeX:\\ \url{https://nos.nl/artikel/650637-kamer-bezorgd-over-mali-missie}
+\bibitem{meijnders} ... \LaTeX:\\ \url{https://www.bnr.nl/nieuws/10015679/koenders-positief-tegenover-verlening-mali-missie}
+\bibitem{bnrwebredactie} ... \LaTeX:\\ \url{https://www.bnr.nl/nieuws/politiek/10345553/kabinet-wil-mali-missie-stoppen-verrassend-besluit}
+\bibitem{keultjes01062016malimissiecoalitie} ... \LaTeX:\\ \url{https://www.ad.nl/nieuws/clash-om-mali-missie-dreigt-binnen-coalitie~a4151d4f/}
+\bibitem{veenhof18012019} ... \LaTeX:\\ \url{https://www.nd.nl/cultuur/boeken/536861/boek-kijkje-bij-de-mali-missie}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=jmZ6uSbpCvg}
+\bibitem{isitman06012016militair} ... \LaTeX:\\ \url{https://www.ewmagazine.nl/nederland/achtergrond/2016/07/twee-nederlanse-militairen-dood-bij-oefening-mali-missie-325226/}
+\bibitem{nporadio11072016filmdemissie} ... \LaTeX:\\ \url{https://www.nporadio1.nl/nieuws/cultuur-media/9e3b076e-5401-4630-bf39-f925213c5b6b/onverwachte-openhartigheid-over-missie-in-mali}
+\bibitem{parlementairmonitor15122013mortierongeluk} ... \LaTeX:\\ \url{https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vjfm5p0nujzw?ctx=vj2mc67lofnr}
+
+
+
+vlucht 1951
+\bibitem{ID} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Turkish_Airlines-vlucht_1951}
+technisch rapport
+\bibitem{ID} ... \LaTeX:\\ \url{file:///C:/Users/gally/Downloads/rapport_ta_nl_aangepast.pdf}
+beschrijving
+terugblik met overlevenden
+tijdlijn
+\bibitem{zuilen23022019Tijdlijnpoldercrash} ... \LaTeX:\\ \url{https://www.noordhollandsdagblad.nl/cnt/dmf20190221_65390940}
+artikel
+terugblik met overlevenden
+advies raad voor de veiligheid
+de overlevende, de oorzaak, regeling, herdenking, smartengeld
+verhaal van een overlevende
+herdenking
+herdenking
+bemanning deed niets met foutmelding
+parlementaire besluitenlijst
+kamervragen over de onafhankelijkheid van de raad voor veiligheid
+verhaal van een overlevende
+beschrijvend artikel van letsel en gewonden
+\bibitem{ntvg20012010letsel} ... \LaTeX:\\ \url{https://www.ntvg.nl/artikelen/vliegtuigongeval-schiphol-25-02-2009-letsels-en-verdeling-van-gewonden}
+technische fout als oorzaak
+\bibitem{wikinews04032009techfoutailines1951} ... \LaTeX:\\ \url{https://nl.wikinews.org/wiki/Technische_fout_oorzaak_vliegtuigcrash_Turkish_Airlines-vlucht_1951}
+gesprek met pieter van vollenhove voorzitter van de onderzoeksraad voor veiligheid
+onderzoeksraad voor veiligheid is onderdruk gezet
+\bibitem{luchtvaartnieuws21012020boeing737conclusies} ... \LaTeX:\\ \url{https://www.luchtvaartnieuws.nl/nieuws/categorie/72/algemeen/conclusies-crash-tk1951-na-amerikaanse-druk-afgezwakt}
+niuwesartikel
+feitenverloop
+\bibitem{adformatie280220209communicatiegebreken} ... \LaTeX:\\ \url{https://www.adformatie.nl/contentmarketing/communicatie-na-vliegramp-vertoonde-gebreken}
+zwarte doos
+\bibitem{spinnael25022009onderzoekpolderbaancrash} ... \LaTeX:\\ \url{https://flightlevel.be/244/onderzoek-polderbaan-crash-turkish-airlines-1951/}
+\bibitem{crashTurkishAirlines} ... \LaTeX:\\ \url{http://wikimapia.org/11633002/nl/Crash-Turkish-Airlines-vlucht-1951}
+\bibitem{flightradar24} ... \LaTeX:\\ \url{https://www.flightradar24.com/data/flights/tk1951}
+\bibitem{flightstatstracker} ... \LaTeX:\\ \url{https://www.flightstats.com/v2/flight-tracker/TK/1951}
+
+
+
+
+
+
+
+
+
+
+
+
+
+schipholbrand
+
+Wat is er gebeurd?
+\bibitem{wikiSchipholbrand} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Schipholbrand}
+artikel
+\bibitem{schipholbrand27102005video} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=1i-hfEzxFfk}
+psychologische gevolgen
+rapport
+\bibitem{onderzoeksraad2610schipholoost} ... \LaTeX:\\ \url{https://www.onderzoeksraad.nl/nl/page/392/brand-cellencomplex-schiphol-oost-nacht-van-26-op-27-oktober}
+artikel met video
+herdenking
+impact op de persoon
+herdenking
+\bibitem{schipholbrandvideoargos} ... \LaTeX:\\ \url{https://www.vpro.nl/argos/speel~POMS_VPRO_461907~schadevergoeding-voor-ex-verdachte-schipholbrand~.html}
+chronologie
+\bibitem{nunl30052023feitenoverzicht} ... \LaTeX:\\ \url{https://www.nu.nl/binnenland/3355935/feitenoverzicht-schipholbrand-en-rechtszaken.html}
+tijdlijn
+\bibitem{singeluitgeverijenSchipholbrand} ... \LaTeX:\\ \url{https://www.singeluitgeverijen.nl/isbn/de-schipholbrand/}
+vervolgens van ministers
+beeldanalyse en reconstructie
+\bibitem{eenvandaagschipholbrand} ... \LaTeX:\\ \url{https://eenvandaag.avrotros.nl/item/schipholbrand-niet-ontstaan-in-cel-11/}
+herdenking
+korte samenvatting
+rapport
+artikel
+verwijzing naar het rapport vanuit de politieke oppositie
+beeld vanuit de gevangenisbewaarder
+nationaliteit slachtoffers schipholbrand
+verblijfsvergunning voor de slachtoffers
+gen schadevergoeding voor de verdachte
+verdachte voor de rechter
+geen schadevergoeding voor verdachte
+artikel wat ging er mis bji de schipholbrand
+brand veroorzaakt door een peuk
+smaadschrift
+bewakers worden niet vervolgd
+proces schipholbrand moet over en de brandveilgheid moet worden verbeterd
+de rol van het parlement in de evaluatie
+\bibitem{parlementairemonitorschipholbrand} ... \LaTeX:\\ \url{https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vi3aof7awcxg}
+onderzoeksmemo
+herdenking
+\bibitem{ID} ... \LaTeX:\\ \url{https://archief.ntr.nl/nova/page/detail/uitzendingen/3847/Den%20Haag%20Vandaag_%20herdenking%20Schipholbrand.html}
+herdenking
+invloed van de ramp op samenleving
+\bibitem{videonpoNOVA13112008} ... \LaTeX:\\ \url{https://www.npostart.nl/heropen-onderzoek-schipholbrand/13-11-2008/POMS_NTR_103332}
+opmerkelijk rapport gestolen in de nasleep
+\bibitem{schipperSchipholbrand} ... \LaTeX:\\ \url{https://www.nd.nl/nieuws/nederland/600395/schipholbrand-blijft-schrijnen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ed.nl/economie/om-geen-schadevergoeding-voor-verdachte-schipholbrand~a6c7c51d/63042600/?referrer=https%3A%2F%2Fwww.google.com%2F}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.groene.nl/artikel/schipholbrand-vereist-debat}
+\bibitem{rizoomes01052014schipholbrand} ... \LaTeX:\\ \url{https://www.rizoomes.nl/brandweer/brand-cellencomplex-schiphol/}
+
+
+
+publicaties
+\bibitem{heuvelkroesschipholbrandcamerabeelden} ... \LaTeX:\\ \url{http://www.msnp.nl/downloads/Onderzoeksmemo%20beeldanalyse%20Schipholbrand%20prot.pdf}
+
+Wat waren de regels destijds?
+Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen?
+Wat is er gedaan om de veiligheid van illegalen en gevangenissbewaarders te verbeteren
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+vuurwerkramp enschede
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=OMkIsj8FsHw}
+\bibitem{ID} ... \LaTeX:\\ \url{https://depot03.archiefweb.eu/archives/archiefweb/20210703085353/http://www.vuurwerkramp.enschede.nl/publicaties/00005/#.YOAlp-gzaUk}
+
+Wat waren de afspraken omtrent vuurwerkopslag?
+Waarom werden de voorschriften neit nageleefd?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+explosie in beirut
+\bibitem{landryalameddine12112020beiruthelathsystem} ... \LaTeX:\\ \url{https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05906-y}
+\bibitem{ID} ... \LaTeX:\\ \url{https://news.sky.com/story/beirut-blast-cctv-captures-moment-huge-explosion-devastated-hospital-12047452}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.unodc.org/unodc/en/frontpage/2020/September/unodc-assists-lebanon-in-reestablishing-container-shipments-in-the-aftermath-of-the-port-of-beirut-explosion.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://reliefweb.int/sites/reliefweb.int/files/resources/LEB201-Lebanon-Emergency-Response.pdf}
+\bibitem{yadav07082020handlingexplosivesBeirut} ... \LaTeX:\\ \url{https://www.downtoearth.org.in/news/governance/beirut-blast-lessons-time-for-india-to-strengthen-handling-of-explosives-chemicals-72707}
+\bibitem{graham21082020rootsImpactBeirutBlast} ... \LaTeX:\\ \url{https://www.justsecurity.org/72122/the-cost-of-resilience-the-roots-and-impacts-of-the-beirut-blast/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.fire-magazine.com/the-port-of-beirut-explosion-a-timely-reminder}
+\bibitem{neusaeter07082020beirutexplosioneval} ... \LaTeX:\\ \url{https://www.ctvnews.ca/sci-tech/mapping-the-beirut-explosion-what-the-impact-would-look-like-in-canadian-cities-1.5053932}
+
+
+secyrity:
+\bibitem{ID} ... \LaTeX:\\ \url{https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf}
+
+
+secyrity:
+\bibitem{ID} ... \LaTeX:\\ \url{https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf}
+
+
+
+
+
+
+
+
+
+
+\bibitem{holappa2017threattoElectricityNetworks} ... \LaTeX:\\ \url{https://www.nixu.com/fi/node/53}
+\bibitem{icsSecurityRussianHacking} ... \LaTeX:\\ \url{ https://www.wallix.com/blog/ics-security-russian-hacking}
+\bibitem{wikiindustroyer} ... \LaTeX:\\ \url{ https://en.wikipedia.org/wiki/Industroyer}
+\bibitem{rocha2017cybersecyrityanalysisScada} ... \LaTeX:\\ \url{https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/}
+\bibitem{crashoverridenetwork} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Crash_Override_Network}
+\bibitem{slowikvb2018crashoverride} ... \LaTeX:\\ \url{ https://www.virusbulletin.com/virusbulletin/2019/03/vb2018-paper-anatomy-attack-detecting-and-defeating-crashoverride/}
+\bibitem{njccicthreat08102017crashovverrideprofile} ... \LaTeX:\\ \url{ https://www.cyber.nj.gov/threat-center/threat-profiles/ics-malware-variants/crashoverride}
+\bibitem{spinner2018crashoverrideiot} ... \LaTeX:\\ \url{https://iiot-world.com/ics-security/cybersecurity/five-cybersecurity-experts-about-crashoverride-malware-main-dangers-and-lessons-for-iiot/}
+\bibitem{abb30062017crashoverridenotification} ... \LaTeX:\\ \url{ https://search.abb.com/library/Download.aspx?DocumentID=9AKK107045A1003&amp;LanguageCode=en&amp;DocumentPartId=&amp;Action=Launch}
+\bibitem{blackhatusa2017} ... \LaTeX:\\ \url{ https://www.blackhat.com/us-17/briefings/schedule/#industroyercrashoverride-zero-things-cool-about-a-threat-group-targeting-the-power-grid-6159}
+\bibitem{levalle2020FuzzingICSProtocols} ... \LaTeX:\\ \url{https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/}
+\bibitem{resch31102019IEC62351secureCommunication} ... \LaTeX:\\ \url{http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-industry.aspx}
+\bibitem{fauri2017EncryptionICS} ... \LaTeX:\\ \url{https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf}
+\bibitem{arrizabalaga2020surveyiiotProtocols} ... \LaTeX:\\ \url{https://dl.acm.org/doi/fullHtml/10.1145/3381038}
+\bibitem{yadav2020reviewScadaArchitecture} ... \LaTeX:\\ \url{https://arxiv.org/pdf/2001.02925.pdf}
+\bibitem{2017win32industroyer} ... \LaTeX:\\ \url{https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf}
+\bibitem{grammatikis2019AttackIEC6087505104} ... \LaTeX:\\ \url{"https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems"}
+\bibitem{shahzad2014ScadaProtocolsPollingScenario} ... \LaTeX:\\ \url{https://scialert.net/fulltext/?doi=tasr.2014.396.405}
+\bibitem{boozallen2016lightwentout} ... \LaTeX:\\ \url{"https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-lights-went-out.pdf"}
+\bibitem{industroyershortfact} ... \LaTeX:\\ \url{https://rhebo.com/en/service/glossar/industroyer-25114/}
+\bibitem{2015ukrainegridattack} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/2015_Ukraine_power_grid_hack}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{vijayan2017firstmalwareCausedOutage} ... \LaTeX:\\ \url{https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-caused-2016-ukraine-outage/d/d-id/1329114}
+\bibitem{2017crashoverridenostuxnet} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-electric-grids-but-its-no-stuxnet/}
+\bibitem{shehod2016gridadvantageus} ... \LaTeX:\\ \url{http://web.mit.edu/smadnick/www/wp/2016-22.pdf}
+\bibitem{dragos2019TargetedTransStation} ... \LaTeX:\\ \url{https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-transmission-stations-4530.html}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{drago2017CrashOverride} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf}
+\bibitem{parkwalstorm11102017russiagridattack} ... \LaTeX:\\ \url{https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/}
+\bibitem{mcelfresh2016cyberattackhowandwhy} ... \LaTeX:\\ \url{https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-was-done-52802}
+\bibitem{zinets15022017ukrainechargesrussia} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-crisis-cyber-idUSKBN15U2CN}
+\bibitem{finkle08012016russiansandwormhackers} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-sandworm-hackers-for-ukraine-outage-idUSKBN0UM00N20160108}
+\bibitem{greenberg2017Cyberwartestlab } ... \LaTeX:\\ \url{https://www.wired.com/story/russian-hackers-attack-ukraine/}
+\bibitem{finklejan2016UsBlamesRussianSandworm} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{caseli04112016intrusiondetectioncontrolsystem} ... \LaTeX:\\ \url{ https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf
+}
+\bibitem{rochascadatesting} ... \LaTeX:\\ \url{https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf}
+\bibitem{zetter2017moreDangerousMalware} ... \LaTeX:\\ \url{ https://www.vice.com/en/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer}
+\bibitem{Whitehead2017ukrainepoweroutage} ... \LaTeX:\\ \url{https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{zetter2016GridHack} ... \LaTeX:\\ \url{https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/}
+\bibitem{owens21032017ukrainemitigationstrategies} ... \LaTeX:\\ \url{ https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{virsec2017DeepDiveIndustroyer} ... \LaTeX:\\ \url{https://virsec.com/virsec-hack-analysis-deep-dive-into-industroyer-aka-crash-override/}
+\bibitem{fauri2017EncryptionICS} ... \LaTeX:\\ \url{https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf}
+\bibitem{2017IEC61850} ... \LaTeX:\\ \url{http://blog.nettedautomation.com/2017/}
+\bibitem{2017win32industroyer} ... \LaTeX:\\ \url{https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf}
+\bibitem{dragos2019TargetedTransStation} ... \LaTeX:\\ \url{https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-transmission-stations-4530.html}
+\bibitem{2017crashoverridenostuxnet} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-electric-grids-but-its-no-stuxnet/}
+\bibitem{thkwaterwerken} ... \LaTeX:\\ \url{https://tkhsecurity.com/nl/waterwerken/}
+\bibitem{rekenkamercybersecWater} ... \LaTeX:\\ \url{https://www.h2owaternetwerk.nl/h2o-actueel/rekenkamer-vitale-waterwerken-nog-onvoldoende-beschermd-tegen-cyberaanvallen}
+\bibitem{veiligheidwaterland} ... \LaTeX:\\ \url{http://www.wesemann.nl/nl/nieuws-en-pers/274-veiligheid-op-het-water-en-op-het-land.html}
+\bibitem{waterwerkNED} ... \LaTeX:\\ \url{https://www.vtmgroep.nl/blog/waterwerken-in-nederland-onvoldoende-beveiligd-tegen-cyberaanvallen}
+\bibitem{cybersecZuidHolland} ... \LaTeX:\\ \url{https://expert.rittal.nl/wp-content/uploads/2017/05/Referentieverhaal-Provincie-Zuid-Holland.pdf}
+\bibitem{cybersecWaterschappen} ... \LaTeX:\\ \url{https://www.rtlnieuws.nl/nieuws/nederland/artikel/3758966/cyberbeveiliging-waterschappen-hapert-sluizen-kunnen-worden}
+\bibitem{cybersecWaterwerk} ... \LaTeX:\\ \url{https://www.watersport-tv.nl/nw-31400-7-3715235/nieuws/cybersecurity_vitale_waterwerken_niet_waterdicht.html}
+\bibitem{hackerWaterwerk} ... \LaTeX:\\ \url{https://www.volkskrant.nl/nieuws-achtergrond/hacker-dringt-door-in-controlekamer-waterwerk-cyberterrorist-kan-ons-land-onder-water-zetten~b6fcbc3c/?referrer=https%3A%2F%2Fwww.google.com%2F}
+\bibitem{kramerZeeland} ... \LaTeX:\\ \url{https://www.rekenkamer.nl/publicaties/rapporten/2019/03/28/digitale-dijkverzwaring-cybersecurity-en-vitale-waterwerken}
+\bibitem{magazijnKramers} ... \LaTeX:\\ \url{https://www.magazinesrijkswaterstaat.nl/bereikbaarzeeland/2021/01/krammersluizencomplex-verleden-heden-en-toekomst}
+%\chapter{Deelonderzoek naar veiligheidsrisico's en eisen voor sluizen}
+%Gevonden weblinks in google op 07-04-2023 met zoekopdracht: "veiligheidsrisico's voor sluizen en waterwerken"
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.tweedekamer.nl/downloads/document?id=80443e97-f17e-499c-b3f2-ad608f32e1aa&title=Rapportage%20Staat%20van%20de%20infra%20RWS%20%28definitief%29.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.nu.nl/internet/5814282/rekenkamer-waterwerken-niet-goed-beveiligd-tegen-cyberaanvallen.html}
+\bibitem{linne21122022onderhousluis} ... \LaTeX:\\ \url{https://www.deltalimburg.nl/article/9824/Onderhoudswerkzaamheden+aan+Sluis+Linne+afgerond}
+\bibitem{sluisterneuzenveiligheid} ... \LaTeX:\\ \url{https://nieuwesluisterneuzen.eu/veiligheid}
+\bibitem{mrdmarinesupport} ... \LaTeX:\\ \url{https://www.mrdmarinesupport.nl/nl/maritieme-dienstverlening/ondersteuning-veiligheid/}
+\bibitem{krabbendam27052021infrasitrrisicobeoordeling} ... \LaTeX:\\ \url{https://www.infrasite.nl/bouwen/2021/05/27/veiligheid-voorop-begin-project-sluis-of-brug-altijd-met-risicobeoordeling/}
+\bibitem{bedieningsluisVechterweerdVilsteren} ... \LaTeX:\\ \url{https://www.wdodelta.nl/bediening-schutsluizen-vechterweerd-en-vilsteren}
+\bibitem{krabbedam21052021sluisHeel} ... \LaTeX:\\ \url{https://www.infrasite.nl/waterbouw-deltas/2021/05/21/sluis-heel-onder-handen-genomen/}
+\bibitem{hdsr30092022lichtprojectieswaterliniesluizen} ... \LaTeX:\\ \url{https://www.hdsr.nl/actueel/nieuws/@154100/lichtprojecties-zetten-waterliniesluizen/}
+\bibitem{nos28032019rekenkamerhackwaterwerk} ... \LaTeX:\\ \url{https://nos.nl/artikel/2277937-rekenkamer-hack-aanval-op-waterwerk-niet-altijd-opgemerkt}
+\bibitem{sluisLinne08012023} ... \LaTeX:\\ \url{https://varendoejesamen.nl/kenniscentrum/artikel/onderhoud-sluis-linne-afgerond}
+\bibitem{gww29032021kantelendesluisdeur} ... \LaTeX:\\ \url{https://www.gww-bouw.nl/artikel/de-eerste-sluis-met-kantelende-sluisdeur/}
+\bibitem{tkh03022018sluisbeheerScadaZeeland} ... \LaTeX:\\ \url{https://tkhsecurity.com/nl/waterwerken/}
+\bibitem{h2o28032019dreigingsniveaurekenkamer} ... \LaTeX:\\ \url{https://www.h2owaternetwerk.nl/h2o-actueel/rekenkamer-vitale-waterwerken-nog-onvoldoende-beschermd-tegen-cyberaanvallen}
+\bibitem{krammersluizencomplex} ... \LaTeX:\\ \url{https://www.magazinesrijkswaterstaat.nl/bereikbaarzeeland/2021/01/krammersluizencomplex-verleden-heden-en-toekomst}

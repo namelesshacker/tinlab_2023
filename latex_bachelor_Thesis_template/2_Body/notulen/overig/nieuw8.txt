@@ -1,0 +1,1773 @@
+
+misc{para,
+	Author = {{IEEE Referencing}},
+	Howpublished = {\url{http://libguides.bhtafe.edu.au/content.php?pid=88814&sid=660920}},
+	Keywords = {paraphrasing, plagariasm, citation, quotation},
+	Lastchecked = {19/04/2017},
+	Title = {{How to Cite\/Quote in Your Assignment}}}
+
+misc{ieee-write,
+	Author = {{IEEE Authorship Series}},
+	Howpublished = {\url{http://ieeeauthorcenter.ieee.org/wp-content/uploads/How-to-Write-for-Technical-Periodicals-and-Conferences.pdf}},
+	Institution = {{IEEE}},
+	Keywords = {writing, paragraph, sentences, ethics},
+	Lastchecked = {18/04/2017},
+	Title = {How to Write for Technical Periodicals \& Conferences}}
+
+
+
+@article{schon2017agile,
+  title={Agile Requirements Engineering: A systematic literature review},
+  author={Sch\"on, Eva-Maria and Thomaschewski, J\"org and Escalona, Maria Jose},
+  journal={Computer Standards \& Interfaces},
+  volume={49},
+  pages={79--91},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@inproceedings{royce1987managing,
+  title={Managing the development of large software systems: concepts and techniques},
+  author={Royce, Winston W},
+  booktitle={Proceedings of the 9th international conference on Software Engineering},
+  pages={328--338},
+  year=1987,
+  organization={IEEE Computer Society Press}
+}
+
+@article{leveson1993investigation,
+  title={An investigation of the Therac-25 accidents},
+  author={Leveson, Nancy G and Turner, Clark S},
+  journal={IEEE computer},
+  volume={26},
+  number={7},
+  pages={18--41},
+  year={1993}
+}
+@book{modelchecking,
+ author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ title = {Model Checking},
+ year = {1999},
+ isbn = {0-262-03270-8},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+}
+@inproceedings{nuseibeh2000requirements,
+  title={Requirements engineering: a roadmap},
+  author={Nuseibeh, Bashar and Easterbrook, Steve},
+  booktitle={Proceedings of the Conference on the Future of Software Engineering},
+  pages={35--46},
+  year={2000},
+  organization={ACM}
+}
+
+
+	
+\bibitem{inriaStatsMoodCheck} ... \LaTeX:\\ \url{https://project.inria.fr/plasma-lab/statistical-model-checking/}
+\bibitem{buddeModelChecker} ... \LaTeX:\\ \url{https://ris.utwente.nl/ws/portalfiles/portal/28200786/A_statistical_model_checker.pdf}
+\bibitem{AGHASuervey} ... \LaTeX:\\ \url{https://dl.acm.org/doi/pdf/10.1145/3158668}
+
+ \bibitem{bicker21102016automatiseringsparadox} ... \LaTeX:\\ \url{https://www.debicker.eu/de-automatiseringsparadox/}
+ \bibitem{vseautoparadox} ... \LaTeX:\\ \url{https://vse.nl/de-paradox-van-de-industriele-automatisering/}
+ \bibitem{blogxot21112016slimapparaat} ... \LaTeX:\\ \url{https://blog.xot.nl/2016/11/21/slimme-apparaten-maken-ons-dom-en-kwetsbaar/index.html}
+ 
+\bibitem{damian1999RequirementsEngineeringChallenge } ... \LaTeX:\\ \url{https://www.hindawi.com/journals/ijae/2014/472395/ }
+
+%   
+%
+%challenges in requirements engineering
+%
+%\bibitem{damian1999RequirementsEngineeringChallenge } ... \LaTeX:\\ \url{https://www.researchgate.net/publication/2462377_Challenges_in_Requirements_Engineering }
+%why goals-oriented for requirements engineering
+%
+%\bibitem{lapouchnian2005goalorientedReqs} ... \LaTeX:\\ \url{https://www.researchgate.net/publication/249901480_Goal-Oriented_Requirements_Engineering_An_Overview_of_the_Current_Research }
+%design and build of collaborative information agents
+%
+\bibitem{jonkerTreurKlush200informativeAgents} ... \LaTeX:\\ \url{https://www.researchgate.net/publication/221622575_Design_of_Collaborative_Information_Agents }
+%treating nfiras first gradefor its testability
+%\bibitem{ } ... \LaTeX:\\ \url{ }
+%software requirements negotiation a theory ui based spiral approach
+%
+\bibitem{boehmBoseLeeRequirementsNegotiations } ... \LaTeX:\\ \url{https://www.cs.rug.nl/search/uploads/Teaching/RE2009Fall/paper/1995_Boehm_ICSE_Software%20Requirements%20Negotiation%20and%20Renegotiation%20Aids%20A%20Theory-W%20Based%20Spiral%20Approach.pdf }
+%the worlds a stage: a survey on requirementsengineering using a real life case study
+%
+%\bibitem{breitmanLeiteCesar2002reallifeReqs } ... \LaTeX:\\ \url{https://www.researchgate.net/publication/2548016_The_world's_a_stage_a_survey_on_requirements_engineering_using_a_real-life_case_study_Karin_Koogan_Breitman_Julio_Cesar_S_do_Prado_Leite }
+%from inconsistencyhandling to non-conanical requirements management: a logical perspective
+%
+\bibitem{muHungJinLiu2013inconsistencyReqs } ... \LaTeX:\\ \url{https://www.researchgate.net/publication/257272175_From_inconsistency_handling_to_non-canonical_requirements_management_A_logical_perspective }
+%managing inconsistent specification: reasoning, analysis, action
+%
+\bibitem{ hunterNuseibeh1996manageSpecs} ... \LaTeX:\\ \url{https://www.researchgate.net/publication/2635497_Managing_Inconsistent_Specifications_Reasoning_Analysis_and_Action  }
+%representingand using nonfunctional requirements: a process-oriented approach
+%
+\bibitem{ myloloupos1992representingReqs} ... \LaTeX:\\ \url{https://www.researchgate.net/publication/3187474_Representing_and_Using_Non-Functional_Requirements_A_Process-Oriented_Approach }
+%Four dark corners of requirements engineering
+%
+\bibitem{zavePamela4darkCorners } ... \LaTeX:\\ \url{ http://www.cse.msu.edu/~chengb/RE-491/Papers/dark-corners-re-zave-jackson.pdf }
+%classification of research methods in requirements engineering
+%
+\bibitem{zavePAmela1997regEngineering } ... \LaTeX:\\ \url{https://www.researchgate.net/publication/220565934_Classification_of_Research_Efforts_in_Requirements_Engineering }
+%agent-basedtactocs for goal-oriented requirements elaboration
+%
+%\bibitem{ } ... \LaTeX:\\ \url{https://www.researchgate.net/publication/3952082_Agent-based_tactics_for_goal-oriented_requirements_elaboration }
+%challenges in requirements engineering
+%\bibitem{ } ... \LaTeX:\\ \url{ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%why goals-oriented for requirements engineering
+%\bibitem{ } ... \LaTeX:\\ \url{ }
+%scann 0087
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%design and build ofcollaborative information agents
+%\bibitem{ } ... \LaTeX:\\ \url{ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%treating nfiras first gradefor its testability
+%\bibitem{ } ... \LaTeX:\\ \url{ }
+%scan 0089
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%software requirements negotiation a theory ui based spiral approach
+%\bibitem{ } ... \LaTeX:\\ \url{ }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%the worlds a stage: a survey on requirementsengineering using a real life case study
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibitem{ } ... \LaTeX:\\ \url{ }
+%
+
+\bibitem{tikkakuddonenpersuasiveTechnology} ... \LaTeX:\\ \url{https://cyberpsychology.eu/article/view/12270}
+\bibitem{tanzem22012022persuasivetechchanginglives} ... \LaTeX:\\ \url{https://www.makeuseof.com/what-is-persuasive-technology/}
+\bibitem{larson14062017persuasivetechmanipulates} ... \LaTeX:\\ \url{https://psmag.com/environment/captology-fogg-invisible-manipulative-power-persuasive-technology-81301}
+\bibitem{humanTechpersuasiveTech} ... \LaTeX:\\ \url{https://www.humanetech.com/youth/persuasive-technology}
+\bibitem{rezenfeld01012018persuasiveTecgHabits} ... \LaTeX:\\ \url{https://spectrum.ieee.org/how-persuasive-technology-can-change-your-habits }
+\bibitem{aldenaini28042020persuasiveTechTrends} ... \LaTeX:\\ \url{https://www.frontiersin.org/articles/10.3389/frai.2020.00007/full }
+
+
+\bibitem{2014russiansandworm} ... \LaTeX:\\ \url{https://www.wired.com/2014/10/russian-sandworm-hack-isight/}
+\bibitem{mcelfresh2016cyberattackhowandwhy} ... \LaTeX:\\ \url{https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-was-done-52802}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{osti2018historycontrolsystemIncidents} ... \LaTeX:\\ \url{https://www.osti.gov/biblio/1505628}
+\bibitem{caseli04112016intrusiondetectioncontrolsystem} ... \LaTeX:\\ \url{https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf}
+\bibitem{rochascadatesting} ... \LaTeX:\\ \url{https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf}
+\bibitem{levalle2020FuzzingICSProtocols} ... \LaTeX:\\ \url{https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/}
+\bibitem{resch31102019IEC62351secureCommunication} ... \LaTeX:\\ \url{http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-industry.aspx}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{arrizabalaga2020surveyiiotProtocols} ... \LaTeX:\\ \url{https://dl.acm.org/doi/fullHtml/10.1145/3381038}
+\bibitem{yadav2020reviewScadaArchitecture} ... \LaTeX:\\ \url{https://arxiv.org/pdf/2001.02925.pdf}
+\bibitem{cis20072021crashoverridemalware} ... \LaTeX:\\ \url{https://www.us-cert.gov/ncas/alerts/TA17-163A}
+\bibitem{holappa2017threattoElectricityNetworks} ... \LaTeX:\\ \url{https://www.nixu.com/fi/node/53}
+\bibitem{shehod2016gridadvantageus} ... \LaTeX:\\ \url{http://web.mit.edu/smadnick/www/wp/2016-22.pdf}
+\bibitem{parkwalstorm11102017russiagridattack} ... \LaTeX:\\ \url{https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/}
+\bibitem{drago2017CrashOverride} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf}
+\bibitem{wikiindustroyer} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Industroyer}
+\bibitem{crashoverridenetwork} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Crash_Override_Network}
+\bibitem{slowikvb2018crashoverride} ... \LaTeX:\\ \url{https://www.virusbulletin.com/virusbulletin/2019/03/vb2018-paper-anatomy-attack-detecting-and-defeating-crashoverride/}
+\bibitem{njccicthreat08102017crashovverrideprofile} ... \LaTeX:\\ \url{https://www.cyber.nj.gov/threat-center/threat-profiles/ics-malware-variants/crashoverride}
+\bibitem{crashoverrideindustroyermalware} ... \LaTeX:\\ \url{https://www.webopedia.com/TERM/C/crashoverride-industroyer-malware.html}
+\bibitem{incibe23062017crashoverrideback} ... \LaTeX:\\ \url{https://www.incibe-cert.es/en/blog/crashoverride-malware-ics-back-again}
+\bibitem{industroyershortfact} ... \LaTeX:\\ \url{https://rhebo.com/en/service/glossar/industroyer-25114/}
+\bibitem{vijayan2017firstmalwareCausedOutage} ... \LaTeX:\\ \url{https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-caused-2016-ukraine-outage/d/d-id/1329114}
+\bibitem{ferrante2017crashoverrideredflag} ... \LaTeX:\\ \url{https://www.powermag.com/why-crashoverride-is-a-red-flag-for-u-s-power-companies/}
+\bibitem{2017cashoverrideindustroyerAlto} ... \LaTeX:\\ \url{https://blog.paloaltonetworks.com/2017/06/crashoverrideindustroyer-protections-palo-alto-networks-customers/}
+\bibitem{spinner2018crashoverrideiot} ... \LaTeX:\\ \url{https://iiot-world.com/ics-security/cybersecurity/five-cybersecurity-experts-about-crashoverride-malware-main-dangers-and-lessons-for-iiot/}
+\bibitem{abb30062017crashoverridenotification} ... \LaTeX:\\ \url{https://search.abb.com/library/Download.aspx?DocumentID=9AKK107045A1003&amp;LanguageCode=en&amp;DocumentPartId=&amp;Action=Launch}
+\bibitem{blackhatusa2017} ... \LaTeX:\\ \url{https://www.blackhat.com/us-17/briefings/schedule/#industroyercrashoverride-zero-things-cool-about-a-threat-group-targeting-the-power-grid-6159}
+\bibitem{humanitcrashalert} ... \LaTeX:\\ \url{https://humanit.asia/ta17-163a/}
+\bibitem{sroberts2017CrashoerrideCronicles} ... \LaTeX:\\ \url{https://medium.com/@sroberts/the-crash-override-chronicles-overall-8389ef178fdf}
+\bibitem{parker2020industrialsystemsattack} ... \LaTeX:\\ \url{https://www.oilandgaseng.com/articles/the-most-infamous-cyber-attacks-on-industrial-systems/}
+\bibitem{kirk2017threatIndustrialControls} ... \LaTeX:\\ \url{https://www.bankinfosecurity.com/power-grid-malware-platform-threatens-industrial-controls-a-9987}
+\bibitem{chalfant2017USElectricGrid} ... \LaTeX:\\ \url{https://thehill.com/policy/cybersecurity/337877-crash-override-malware-heightens-fears-for-us-electric-grid}
+\bibitem{fbiWarningcrashOverride} ... \LaTeX:\\ \url{https://www.inguardians.com/dhs-fbi-warn-of-attacks-against-us-energy-manufacturing-companies-and-employees/}
+\bibitem{davies2017crashoveerideUkraineAttack} ... \LaTeX:\\ \url{https://rethinkresearch.biz/articles/industroyer-crashoverride-malware-behind-ukraine-utility-attack/}
+\bibitem{slowik2018securitySessions} ... \LaTeX:\\ \url{https://electricenergyonline.com/energy/magazine/1104/article/Security-Sessions-Combating-ICS-Threats.htm}
+\bibitem{ENCS2017crashoverridemodules} ... \LaTeX:\\ \url{https://www.smart-energy.com/regional-news/europe-uk/encs-crash-override-virus/}
+\bibitem{brocklehurst2017crashoverridegridtakedown} ... \LaTeX:\\ \url{https://isssource.com/crashoverride-designed-for-grid-takedown/}
+\bibitem{20170613_crashoverride} ... \LaTeX:\\ \url{https://gigazine.net/gsc_news/en/20170613-crashoverride/}
+\bibitem{leetaru2017crashoverridehomefront} ... \LaTeX:\\ \url{https://www.forbes.com/sites/kalevleetaru/2017/06/24/crash-override-and-how-cyberwarfare-is-bringing-conflict-to-the-homefront/#42eb8984277c}
+\bibitem{fti2017redflag} ... \LaTeX:\\ \url{https://fticybersecurity.com/2017-11/crashoverride-red-flag-u-s-power-companies/}
+\bibitem{27001academy2014Whitepaper} ... \LaTeX:\\ \url{https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/NL/Checklist_of_ISO_27001_Mandatory_Documentation_NL.pdf}
+\bibitem{2017info_isoiec27019} ... \LaTeX:\\ \url{https://webstore.iec.ch/preview/info_isoiec27019%7Bed1.0%7Den.pdf}
+\bibitem{iec623512023serseries} ... \LaTeX:\\ \url{https://webstore.iec.ch/publication/6912}
+\bibitem{iec623512011Withdrawn} ... \LaTeX:\\ \url{https://webstore.iec.ch/publication/6911}
+\bibitem{IEC62351sheet} ... \LaTeX:\\ \url{https://www.ipcomm.de/protocol/IEC62351/en/sheet.html}
+\bibitem{NISTOIR2014GuidelinesCyverSec} ... \LaTeX:\\ \url{https://nvlpubs.nist.gov/nistpubs/ir/2014/NIST.IR.7628r1.pdf}
+\bibitem{ukraiinnesandwormteam} ... \LaTeX:\\ \url{https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-sandworm-team.html/cybersecurity-audit-checklist. }
+\bibitem{politicsrussagridukraine} ... \LaTeX:\\ \url{https://edition.cnn.com/2016/02/11/politics/ukraine-power-grid-attack-russia-us/index.html/ukraine-sees-russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E. }
+\bibitem{Whitehead2017ukrainepoweroutage} \LaTeX:\\ \url{https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{zetter2017moreDangerousMalware} ... \LaTeX:\\ \url{https://www.vice.com/en/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer}
+\bibitem{icsSecurityRussianHacking} ... \LaTeX:\\ \url{https://www.wallix.com/blog/ics-security-russian-hacking}
+\bibitem{rocha2017cybersecyrityanalysisScada} ... \LaTeX:\\ \url{https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/}
+\bibitem{cheah2008testingiec60870} ... \LaTeX:\\ \url{http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0513EED48102FDAD1BD940260EF12B11?doi=10.1.1.548.7490&amp;rep=rep1&amp;type=pdf}
+
+
+
+
+\bibitem{holappa2017threattoElectricityNetworks} ... \LaTeX:\\ \url{https://www.nixu.com/fi/node/53}
+\bibitem{icsSecurityRussianHacking} ... \LaTeX:\\ \url{ https://www.wallix.com/blog/ics-security-russian-hacking}
+\bibitem{wikiindustroyer} ... \LaTeX:\\ \url{ https://en.wikipedia.org/wiki/Industroyer}
+\bibitem{rocha2017cybersecyrityanalysisScada} ... \LaTeX:\\ \url{https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/}
+\bibitem{crashoverridenetwork} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Crash_Override_Network}
+\bibitem{slowikvb2018crashoverride} ... \LaTeX:\\ \url{ https://www.virusbulletin.com/virusbulletin/2019/03/vb2018-paper-anatomy-attack-detecting-and-defeating-crashoverride/}
+\bibitem{njccicthreat08102017crashovverrideprofile} ... \LaTeX:\\ \url{ https://www.cyber.nj.gov/threat-center/threat-profiles/ics-malware-variants/crashoverride}
+\bibitem{spinner2018crashoverrideiot} ... \LaTeX:\\ \url{https://iiot-world.com/ics-security/cybersecurity/five-cybersecurity-experts-about-crashoverride-malware-main-dangers-and-lessons-for-iiot/}
+\bibitem{abb30062017crashoverridenotification} ... \LaTeX:\\ \url{ https://search.abb.com/library/Download.aspx?DocumentID=9AKK107045A1003&amp;LanguageCode=en&amp;DocumentPartId=&amp;Action=Launch}
+\bibitem{blackhatusa2017} ... \LaTeX:\\ \url{ https://www.blackhat.com/us-17/briefings/schedule/#industroyercrashoverride-zero-things-cool-about-a-threat-group-targeting-the-power-grid-6159}
+\bibitem{levalle2020FuzzingICSProtocols} ... \LaTeX:\\ \url{https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/}
+\bibitem{resch31102019IEC62351secureCommunication} ... \LaTeX:\\ \url{http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-industry.aspx}
+\bibitem{fauri2017EncryptionICS} ... \LaTeX:\\ \url{https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf}
+\bibitem{arrizabalaga2020surveyiiotProtocols} ... \LaTeX:\\ \url{https://dl.acm.org/doi/fullHtml/10.1145/3381038}
+\bibitem{yadav2020reviewScadaArchitecture} ... \LaTeX:\\ \url{https://arxiv.org/pdf/2001.02925.pdf}
+\bibitem{2017win32industroyer} ... \LaTeX:\\ \url{https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf}
+\bibitem{grammatikis2019AttackIEC6087505104} ... \LaTeX:\\ \url{"https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems"}
+\bibitem{shahzad2014ScadaProtocolsPollingScenario} ... \LaTeX:\\ \url{https://scialert.net/fulltext/?doi=tasr.2014.396.405}
+\bibitem{boozallen2016lightwentout} ... \LaTeX:\\ \url{"https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-lights-went-out.pdf"}
+\bibitem{industroyershortfact} ... \LaTeX:\\ \url{https://rhebo.com/en/service/glossar/industroyer-25114/}
+\bibitem{2015ukrainegridattack} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/2015_Ukraine_power_grid_hack}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{vijayan2017firstmalwareCausedOutage} ... \LaTeX:\\ \url{https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-caused-2016-ukraine-outage/d/d-id/1329114}
+\bibitem{2017crashoverridenostuxnet} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-electric-grids-but-its-no-stuxnet/}
+\bibitem{shehod2016gridadvantageus} ... \LaTeX:\\ \url{http://web.mit.edu/smadnick/www/wp/2016-22.pdf}
+\bibitem{dragos2019TargetedTransStation} ... \LaTeX:\\ \url{https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-transmission-stations-4530.html}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{slowik2019ReassasUkraine2016Attack} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf}
+\bibitem{drago2017CrashOverride} ... \LaTeX:\\ \url{https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf}
+\bibitem{parkwalstorm11102017russiagridattack} ... \LaTeX:\\ \url{https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/}
+\bibitem{mcelfresh2016cyberattackhowandwhy} ... \LaTeX:\\ \url{https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-was-done-52802}
+\bibitem{zinets15022017ukrainechargesrussia} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-crisis-cyber-idUSKBN15U2CN}
+\bibitem{finkle08012016russiansandwormhackers} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-sandworm-hackers-for-ukraine-outage-idUSKBN0UM00N20160108}
+\bibitem{greenberg2017Cyberwartestlab } ... \LaTeX:\\ \url{https://www.wired.com/story/russian-hackers-attack-ukraine/}
+\bibitem{finklejan2016UsBlamesRussianSandworm} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108}
+\bibitem{desarnaud2017cyberattacks} ... \LaTeX:\\ \url{https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf}
+\bibitem{caseli04112016intrusiondetectioncontrolsystem} ... \LaTeX:\\ \url{ https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf
+}
+\bibitem{rochascadatesting} ... \LaTeX:\\ \url{https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf}
+\bibitem{zetter2017moreDangerousMalware} ... \LaTeX:\\ \url{ https://www.vice.com/en/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer}
+\bibitem{Whitehead2017ukrainepoweroutage} ... \LaTeX:\\ \url{https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{zetter2016GridHack} ... \LaTeX:\\ \url{https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/}
+\bibitem{owens21032017ukrainemitigationstrategies} ... \LaTeX:\\ \url{ https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{virsec2017DeepDiveIndustroyer} ... \LaTeX:\\ \url{https://virsec.com/virsec-hack-analysis-deep-dive-into-industroyer-aka-crash-override/}
+\bibitem{fauri2017EncryptionICS} ... \LaTeX:\\ \url{https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf}
+\bibitem{2017IEC61850} ... \LaTeX:\\ \url{http://blog.nettedautomation.com/2017/}
+\bibitem{2017win32industroyer} ... \LaTeX:\\ \url{https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf}
+\bibitem{dragos2019TargetedTransStation} ... \LaTeX:\\ \url{https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-transmission-stations-4530.html}
+\bibitem{2017crashoverridenostuxnet} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-electric-grids-but-its-no-stuxnet/}
+\bibitem{thkwaterwerken} ... \LaTeX:\\ \url{https://tkhsecurity.com/nl/waterwerken/}
+\bibitem{rekenkamercybersecWater} ... \LaTeX:\\ \url{https://www.h2owaternetwerk.nl/h2o-actueel/rekenkamer-vitale-waterwerken-nog-onvoldoende-beschermd-tegen-cyberaanvallen}
+\bibitem{veiligheidwaterland} ... \LaTeX:\\ \url{http://www.wesemann.nl/nl/nieuws-en-pers/274-veiligheid-op-het-water-en-op-het-land.html}
+\bibitem{waterwerkNED} ... \LaTeX:\\ \url{https://www.vtmgroep.nl/blog/waterwerken-in-nederland-onvoldoende-beveiligd-tegen-cyberaanvallen}
+\bibitem{cybersecZuidHolland} ... \LaTeX:\\ \url{https://expert.rittal.nl/wp-content/uploads/2017/05/Referentieverhaal-Provincie-Zuid-Holland.pdf}
+\bibitem{cybersecWaterschappen} ... \LaTeX:\\ \url{https://www.rtlnieuws.nl/nieuws/nederland/artikel/3758966/cyberbeveiliging-waterschappen-hapert-sluizen-kunnen-worden}
+\bibitem{cybersecWaterwerk} ... \LaTeX:\\ \url{https://www.watersport-tv.nl/nw-31400-7-3715235/nieuws/cybersecurity_vitale_waterwerken_niet_waterdicht.html}
+\bibitem{hackerWaterwerk} ... \LaTeX:\\ \url{https://www.volkskrant.nl/nieuws-achtergrond/hacker-dringt-door-in-controlekamer-waterwerk-cyberterrorist-kan-ons-land-onder-water-zetten~b6fcbc3c/?referrer=https%3A%2F%2Fwww.google.com%2F}
+\bibitem{kramerZeeland} ... \LaTeX:\\ \url{https://www.rekenkamer.nl/publicaties/rapporten/2019/03/28/digitale-dijkverzwaring-cybersecurity-en-vitale-waterwerken}
+\bibitem{magazijnKramers} ... \LaTeX:\\ \url{https://www.magazinesrijkswaterstaat.nl/bereikbaarzeeland/2021/01/krammersluizencomplex-verleden-heden-en-toekomst}
+%\chapter{Deelonderzoek naar veiligheidsrisico's en eisen voor sluizen}
+%Gevonden weblinks in google op 07-04-2023 met zoekopdracht: "veiligheidsrisico's voor sluizen en waterwerken"
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.tweedekamer.nl/downloads/document?id=80443e97-f17e-499c-b3f2-ad608f32e1aa&title=Rapportage%20Staat%20van%20de%20infra%20RWS%20%28definitief%29.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.nu.nl/internet/5814282/rekenkamer-waterwerken-niet-goed-beveiligd-tegen-cyberaanvallen.html}
+\bibitem{linne21122022onderhousluis} ... \LaTeX:\\ \url{https://www.deltalimburg.nl/article/9824/Onderhoudswerkzaamheden+aan+Sluis+Linne+afgerond}
+\bibitem{sluisterneuzenveiligheid} ... \LaTeX:\\ \url{https://nieuwesluisterneuzen.eu/veiligheid}
+\bibitem{mrdmarinesupport} ... \LaTeX:\\ \url{https://www.mrdmarinesupport.nl/nl/maritieme-dienstverlening/ondersteuning-veiligheid/}
+\bibitem{krabbendam27052021infrasitrrisicobeoordeling} ... \LaTeX:\\ \url{https://www.infrasite.nl/bouwen/2021/05/27/veiligheid-voorop-begin-project-sluis-of-brug-altijd-met-risicobeoordeling/}
+\bibitem{bedieningsluisVechterweerdVilsteren} ... \LaTeX:\\ \url{https://www.wdodelta.nl/bediening-schutsluizen-vechterweerd-en-vilsteren}
+\bibitem{krabbedam21052021sluisHeel} ... \LaTeX:\\ \url{https://www.infrasite.nl/waterbouw-deltas/2021/05/21/sluis-heel-onder-handen-genomen/}
+\bibitem{hdsr30092022lichtprojectieswaterliniesluizen} ... \LaTeX:\\ \url{https://www.hdsr.nl/actueel/nieuws/@154100/lichtprojecties-zetten-waterliniesluizen/}
+\bibitem{nos28032019rekenkamerhackwaterwerk} ... \LaTeX:\\ \url{https://nos.nl/artikel/2277937-rekenkamer-hack-aanval-op-waterwerk-niet-altijd-opgemerkt}
+\bibitem{sluisLinne08012023} ... \LaTeX:\\ \url{https://varendoejesamen.nl/kenniscentrum/artikel/onderhoud-sluis-linne-afgerond}
+\bibitem{gww29032021kantelendesluisdeur} ... \LaTeX:\\ \url{https://www.gww-bouw.nl/artikel/de-eerste-sluis-met-kantelende-sluisdeur/}
+\bibitem{tkh03022018sluisbeheerScadaZeeland} ... \LaTeX:\\ \url{https://tkhsecurity.com/nl/waterwerken/}
+\bibitem{h2o28032019dreigingsniveaurekenkamer} ... \LaTeX:\\ \url{https://www.h2owaternetwerk.nl/h2o-actueel/rekenkamer-vitale-waterwerken-nog-onvoldoende-beschermd-tegen-cyberaanvallen}
+\bibitem{krammersluizencomplex} ... \LaTeX:\\ \url{https://www.magazinesrijkswaterstaat.nl/bereikbaarzeeland/2021/01/krammersluizencomplex-verleden-heden-en-toekomst}
+
+%Gevonden weblinks in google op 07-04-2023 met zoekopdracht: "wet en regelgeving voor sluizen"
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.hdsr.nl/publish/pages/86927/sluizen_in_of_bij_een_waterkering_-_uitvoeringsregels.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://api1.ibabs.eu/publicdownload.aspx?site=sluis&id=100100292}
+\bibitem{ID} ... \LaTeX:\\ \url{https://services.pilz.nl/wp-content/uploads/2021/12/brochure_bruggen_2018.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://lokaleregelgeving.overheid.nl/CVDR375606/6}
+\bibitem{ID} ... \LaTeX:\\ \url{https://zoek.officielebekendmakingen.nl/stb-2019-27.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://a-quin.nl/nieuws/veiligheid-van-bruggen-sluizen-waarborgen-wie-wat-hoe/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.gemeentesluis.nl/Bestuur_en_Organisatie/Wetten_Regels_Bekendmakingen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.overijssel.nl/onderwerpen/verkeer-en-vervoer/varen-in-overijssel/informatie-bedieningstijden-sluizen-en-bruggen-noordwest-overijssel/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.rijkswaterstaat.nl/water/wetten-regels-en-vergunningen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.schuttevaer.nl/nieuws/actueel/2022/11/23/binnenvaart-zit-klem-tussen-regels-en-realiteit-kapotte-steigers-en-gesperde-sluizen-dwingen-tot-doorvaren/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://repository.officiele-overheidspublicaties.nl/CVDR/CVDR271406/1/html/CVDR271406_1.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.zeeland.nl/actueel/bedieningstijden-sluizen-en-bruggen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.amsterdam.nl/verkeer-vervoer/varen-amsterdam/regels-varen/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.schielandendekrimpenerwaard.nl/wat-doen-we/regels-en-afspraken-over-beheer-keur-en-leggers/}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.wetboek-online.nl/wet/Wet%20tot%20samenvoeging%20van%20de%20gemeenten%20Aardenburg%20en%20Sluis.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.rijnland.net/regels-op-een-rij/richtlijnen-en-akkoorden/alle-regelgeving-van-rijnland/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.itbb.nl/diensten/advies-ce-markering-europese-richtlijnen/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.portofamsterdam.com/nl/scheepvaart/zeevaart/regelgeving}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.watersportverbond.nl/nieuws/achterstallig-onderhoud-wachtplaatsen-bruggen-en-sluizen-zuid-holland-zorgelijk/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://varendoejesamen.nl/nieuws}
+\bibitem{ID}...\LaTeX:\\\url{https://www.flevoland.nl/wat-doen-we/flevowegen-vlot-en-veilig-door-flevoland/water/varen-in-flevoland/bediening-bruggen-en-sluizen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32020L0012&from=DE}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.werkenvoornederland.nl/organisatie/rijkswaterstaat/ict-middelen-maken-om-bruggen-sluizen-en-tunnels-te-besturen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.lobocom.nl/infra-bruggen-sluizen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://waterrecreatienederland.nl/content/uploads/2018/04/richtlijnen-vaarwegen-2017.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.wetterskipfryslan.nl/melden-en-regelen/vergunningen-wetten-en-regels}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.onlinezeilschool.nl/sluizen/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.provincie.drenthe.nl/onderwerpen/verkeer-vervoer/vaarwegen/rondje-drenthe/bedieningstijden/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.sciencedirect.com/science/article/pii/S0167642315001033}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cas.mcmaster.ca/~lawford/papers/AVoCS2013.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://core.ac.uk/download/pdf/38891842.pdf}
+\bibitem{rogaway2004therac25} ... \LaTeX:\\ \url{https://web.cs.ucdavis.edu/~rogaway/classes/188/winter04/therac-25.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://people.physics.carleton.ca/~drogers/egs_windows_collection/tsld008.htm}
+\bibitem{wikiTherac25} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Therac-25}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=-7gVqBY52MY}
+reproduceren van de error. IN dit stuk wordt uitgelgd hoe het product werkt en waarom bepaalde beslssingen zijn genomen in de ontwerp/productiefase
+\bibitem{lynch2017theracRaceConditions} ... \LaTeX:\\ \url{https://www.bugsnag.com/blog/bug-day-race-condition-therac-25}
+kort artikel met daarin een opsomming van alle fouten in het systeem en een korte uitleg
+\bibitem{lim1998theracdisaster} ... \LaTeX:\\ \url{https://www.bowdoin.edu/~allen/courses/cs260/readings/therac.pdf}
+uitgebreid artikel over hoe de fout werd gereproduceerd en de resultaten daaruit voortkwamen. Alsnog werden er na de reproductie fase nog meer fouten gevonden.
+\bibitem{fabio26102015therac25} ... \LaTeX:\\ \url{https://hackaday.com/2015/10/26/killed-by-a-machine-the-therac-25/}
+artikel
+\bibitem{ethicsunwrappedTherac25} ... \LaTeX:\\ \url{https://ethicsunwrapped.utexas.edu/case-study/therac-25}
+onderzoeksartikel waarin de bug wordt uitgelgd: de racecondities, de bytepositie en het testen worden berkitiseerd envenals andere onderdelen van het softwareproces
+\bibitem{ID} ... \LaTeX:\\ \url{https://thedailywtf.com/articles/the-therac-25-incident}
+onrealistisch testplan. In dit artikel egt de auteur het belang nog eens uit van goede requirements en implementatie, niet de software is waar het probleem ligt
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.computer.org/csdl/magazine/co/2017/11/mco2017110008/13rRUxAStVR}
+geschiedenis
+\bibitem{casesHistoryTherac25} ... \LaTeX:\\ \url{http://computingcases.org/case_materials/therac/case_history/Case%20History.html}
+artikel
+\bibitem{caballero2019Therac25} ... \LaTeX:\\ \url{https://medium.com/swlh/software-architecture-therac-25-the-killer-radiation-machine-8a05e0705d5b}
+computer error. De ongeval en de malfunction nog een keer uitgelegd
+\bibitem{rose1994theracFatalDose} ... \LaTeX:\\ \url{http://www.ccnr.org/fatal_dose.html}
+\bibitem{levesonMITTherac25} ... \LaTeX:\\ \url{http://sunnyday.mit.edu/papers/therac.pdf}
+\bibitem{grant1978theracevaluation} ... \LaTeX:\\ \url{https://pubmed.ncbi.nlm.nih.gov/101762/}
+onderzoeksartkel
+\bibitem{turnerTheracAccidentsInvestigations} ... \LaTeX:\\ \url{http://www1.cs.columbia.edu/~junfeng/08fa-e6998/sched/readings/therac25.pdf}
+\bibitem{turner1993TheracAccidentsInvestigations} ... \LaTeX:\\ \url{https://ieeexplore.ieee.org/document/274940}
+uitgebreid artikel gaat hier ook wat meer over de hardware
+\bibitem{wang2017industrialdesignengineering} ... \LaTeX:\\ \url{https://www.linkedin.com/pulse/therac-25-industrial-design-engineering-systems-wang-ph-d-cre-acb/}
+artikel waarin in 3 delen de problemaiekwordt blootgesteld
+\bibitem{levesonturner1993theracpart2} ... \LaTeX:\\ \url{http://www.cse.msu.edu/~cse470/Public/Handouts/Therac/Therac_2.html}
+case study sheets
+artikel waarin vooral de fabriikant ervan langs krijgt
+\bibitem{porelloTheraccFailure} ... \LaTeX:\\ \url{http://users.csc.calpoly.edu/~jdalbey/SWE/Papers/THERAC25.html}
+lessons learned. Vooral de begrippen betrouwbaarheid, welgevalligheid, veilgheid en gebruiksvriendelijkheid
+\bibitem{theracIncidents} ... \LaTeX:\\ \url{https://bohr.wlu.ca/cp164/therac/therac25.htm}
+root-cause analysis
+case study
+\bibitem{huffbrown2004casestudyethicatherac} ... \LaTeX:\\ \url{https://dusk.geo.orst.edu/ethics/papers/Therac.Huff.pdf}
+case study
+\bibitem{sebowikimedicalradiation} ... \LaTeX:\\ \url{https://www.sebokwiki.org/wiki/Medical_Radiation}
+opzetten van systematische acceptaatie test met therac als voorbeeld
+\bibitem{hsia1995testtherac25} ... \LaTeX:\\ \url{https://www.sciencedirect.com/science/article/pii/S1474667017448245}
+artikel waarin een diagnose plaatvindt voor het bedrijf en de ingenieur/ontwerper
+\bibitem{magsilvaTheracTesting} ... \LaTeX:\\ \url{https://magsilva.pro.br/apps/wiki/testing/Therac_25}
+rapport
+oorzaken aangegeven in artikel
+\bibitem{chemeuropetherac25} ... \LaTeX:\\ \url{https://www.chemeurope.com/en/encyclopedia/Therac-25.html}
+het onderzoek en enkele ontwerptekeningen en oplossingen
+\bibitem{statsenko10102016Therackillerbug} ... \LaTeX:\\ \url{https://pvs-studio.com/en/blog/posts/0438/}
+
+\bibitem{therac25casestudy} ... \LaTeX:\\ \url{https://www.coursera.org/lecture/software-design-threats-mitigations/therac-25-case-study-VmQPa}
+\bibitem{thomas1994theracinLotos} ... \LaTeX:\\ \url{https://www.semanticscholar.org/paper/The-story-of-the-Therac-25-in-LOTOS-Thomas/6c9c6024cf95aadae8b7edf1160e0e4500410eb9}
+
+\bibitem{twiitter2019programmerbehindtherac} ... \LaTeX:\\ \url{https://news.ycombinator.com/item?id=21679287}
+wiki
+\bibitem{wikibookstherac} ... \LaTeX:\\ \url{https://en.wikibooks.org/wiki/Professionalism/Therac-25}
+analyse
+\bibitem{bozdagTherac25} ... \LaTeX:\\ \url{https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.369&rep=rep1&type=pdf}
+samenvatting
+\bibitem{levesonTurnerTheracAbstract} ... \LaTeX:\\ \url{https://onlineethics.org/cases/resources-engineering-and-science-ethics/investigation-therac-25-accidents-abstract}
+rapport over de fouten die de verschillende partijen hebben gemaakt( overheid, ingenieurs, bedrijf, operators) en de verbeterpunten
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cs.colostate.edu/~bieman/CS314/Notes/therac25.pdf}
+onderzoeksrapport
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cs.ucf.edu/~dcm/Teaching/COP4600-Fall2010/Literature/Therac25-Leveson.pdf}
+slides online over het technisch mankement
+Wat is er gebeurd, nou het volgende:
+Normal radiation treatments: 6,000 rads over a 3 week period, under certain conditions Therac-25 was delivering 60,000 rads during one session.
+En wat ging er mis?
+Paradigm Shift
+Therac-25 replaced expensive hardware safety interlocks with software controls
+Real-time software
+Design
+Race condition caused focusing element to be incorrectly set
+No indication of actual hardware settings
+Error messages appeared the same regardless of how important
+Error messages were difficult to understand
+All errors messages could be manually overridden
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://hci.cs.siue.edu/NSF/Files/Semester/Week13-2/PPT-Text/Slide13.html}
+
+oorzaak-gevolg diagram
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.thinkreliability.com/InstructorBlogs/Blog-Therac-25.pdf}
+
+veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix waarmee het programma wordt uitgevoerd en de software-analyse door een consultat
+\bibitem{stackexchange2021therac25code} ... \LaTeX:\\ \url{https://sqa.stackexchange.com/questions/9798/asking-for-help-with-this-therac-25-bugged-code-i-dont-understand-the-explanat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Krakend zorgssteem door covid-19 in suriname
+vaccinatieterkort
+communicatie met bevolking
+communicatie met binnenland
+testen van vaccinaties
+besmetting vanuit eht buitenland
+isolatie na vakantie en voor toeristen
+tekort aan ic-personeel
+tekort aan ic-bedden
+tekort aan zuurtstof
+tekort aan middelen}
+
+Wat blijkt hieruit:
+de impact van de crisis wereldwijd
+de afhnakelijkheid van landen op goede samenwerking
+Nut en noodzaak van regelgeving
+Naveling van maatregels
+Communicatie over beleid vanuit de overheid naar de burgers
+Belang van een verzorgingstaat
+Een wetenschappelijke ontwikkeling die kan inspelen op gevoelige 'trends
+De impact van een lockdown op de economie
+Afschaling van andere noodzakelijke no-covid zorg
+De bereikbaarheid van een ziekenhuis
+Waar heeft het toe geleid?
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.waterkant.net/suriname/2007/02/06/school-in-suriname-gesloten-om-zenuwgasvoorraad/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Nationaal_Co%C3%B6rdinatiecentrum_voor_Rampenbeheersing}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.examenkamer.nl/index.php/27-vca-examens-in-suriname}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Waterramp suriname met cyanice
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+boeing 737 crashes
+
+
+algemene vragen
+oorzaken
+\bibitem{gates18112020boeingcrisis} ... \LaTeX:\\ \url{https://www.seattletimes.com/business/boeing-aerospace/what-led-to-boeings-737-max-crisis-a-qa/}
+\bibitem{boeing737maxsoftwareprobles} ... \LaTeX:\\ \url{https://www.schneier.com/blog/archives/2019/04/excellent_analy.html}
+fout in de software
+\bibitem{avetisov19032019boeingmalwarestate} ... \LaTeX:\\ \url{https://www.forbes.com/sites/georgeavetisov/2019/03/19/malware-at-30000-feet-what-the-737-max-says-about-the-state-of-airplane-software-security/?sh=4d26f7052a9e}
+het nationaal veiligheidsbelang
+\bibitem{thompson23112020nationalsecurityboeing} ... \LaTeX:\\ \url{https://www.forbes.com/sites/lorenthompson/2020/11/23/five-reasons-return-of-boeings-737-max-to-service-is-important-to-national-security/?sh=2128ea552018}
+falend toezicht
+\bibitem{gates21032019FAAControlSystem} ... \LaTeX:\\ \url{https://www.seattletimes.com/business/boeing-aerospace/failed-certification-faa-missed-safety-issues-in-the-737-max-system-implicated-in-the-lion-air-crash/}
+onderzoeksrapport
+\bibitem{faa18112020boeingreview} ... \LaTeX:\\ \url{https://www.faa.gov/foia/electronic_reading_room/boeing_reading_room/media/737_RTS_Summary.pdf}
+\bibitem{wiki737maxgroundings} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings}
+veiligheidsrisico's
+menselijke fouten
+\bibitem{campbell02052019boengcrashhumanerrors} ... \LaTeX:\\ \url{https://www.theverge.com/2019/5/2/18518176/boeing-737-max-crash-problems-human-error-mcas-faa}
+overzicht van crashes
+\bibitem{hawkins22032019737maxairplanes} ... \LaTeX:\\ \url{https://www.theverge.com/2019/3/22/18275736/boeing-737-max-plane-crashes-grounded-problems-info-details-explained-reasons}
+veiligheidsopmerking
+\bibitem{thomas30082020737safest} ... \LaTeX:\\ \url{https://www.airlineratings.com/news/boeings-737-max-will-one-safest-aircraft-history/}
+aanpassingen
+\bibitem{boeing737maxdisplay} ... \LaTeX:\\ \url{https://www.boeing.com/commercial/737max/737-max-software-updates.page}
+waarschuwingen//output signalen
+\bibitem{fehrm24112020737changes} ... \LaTeX:\\ \url{https://leehamnews.com/2020/11/24/boeing-737-max-changes-beyond-mcas/}
+software gerelateerde fouten
+\bibitem{travis18042019737maxsoftwaredevop} ... \LaTeX:\\ \url{https://spectrum.ieee.org/aerospace/aviation/how-the-boeing-737-max-disaster-looks-to-a-software-developer}
+onderzoeksrapport
+de rol van de publieke opinie
+\bibitem{barnett05052019737maxcrisis} ... \LaTeX:\\ \url{https://pubsonline.informs.org/do/10.1287/orms.2019.05.05/full/}
+onderzoek van europese luchtvaart agentschap
+\bibitem{easa27012021737maxsafereturn} ... \LaTeX:\\ \url{https://www.easa.europa.eu/newsroom-and-events/news/easa-declares-boeing-737-max-safe-return-service-europe}
+veiligheidsvraagstuk
+\bibitem{touitou11032019737tragedies} ... \LaTeX:\\ \url{https://phys.org/news/2019-03-boeing-max-safety-tragedies.html}
+artikel over sensoren
+\bibitem{hemmerdinger02022021737maxdeliveries} ... \LaTeX:\\ \url{https://www.flightglobal.com/airframers/boeing-delays-737-max-10-deliveries-two-years-to-2023/142245.article}
+goedkeuring van europese luchtvaart autoriteiten
+advies aan de faa
+\bibitem{bielby27022021faaimprovesafety} ... \LaTeX:\\ \url{https://www.hstoday.us/subject-matter-areas/airport-aviation-security/oig-tells-faa-to-improve-safety-oversight-following-boeing-737-max-review/}
+\bibitem{boyle18112020737maxupgrade} ... \LaTeX:\\ \url{https://www.geekwire.com/2020/faas-go-ahead-737-maxs-return-flight-kicks-off-massive-software-upgrade/}
+\bibitem{bergstraburgess122019737maxMcasAlgorithm} ... \LaTeX:\\ \url{https://www.researchgate.net/publication/338420944_A_Promise_Theoretic_Account_of_the_Boeing_737_Max_MCAS_Algorithm_Affair}
+achtergrond informatie
+\bibitem{737mcas} ... \LaTeX:\\ \url{http://www.b737.org.uk/mcas.htm}
+algemeen vertrouwen
+\bibitem{newburger17052019boeingcrisis} ... \LaTeX:\\ \url{https://www.cnbc.com/2019/05/16/what-you-need-to-know-about-boeings-737-max-crisis.html}
+toestemming europese autoriteiten
+problemen
+\bibitem{arstechnica22012020737problems} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2020/01/737-max-fix-slips-to-summer-and-thats-just-one-of-boeings-problems/}
+uitgebreid artikel over de onderzoeken en het vliegverbod
+\bibitem{german190620217372yaftergrounded} ... \LaTeX:\\ \url{https://www.cnet.com/news/boeing-737-max-8-all-about-the-aircraft-flight-ban-and-investigations/}
+computers als oorzaak
+lessons learned
+\bibitem{beningo02052019boeinglessons} ... \LaTeX:\\ \url{https://www.designnews.com/electronics-test/5-lessons-learn-boeing-737-max-fiasco}
+\bibitem{duran05042019boeingspof} ... \LaTeX:\\ \url{https://www.eurocontrol.int/publication/effects-network-extra-standby-aircraft-and-boeing-737-max-grounding}
+single point of failure
+\bibitem{uran05042019SPOF} ... \LaTeX:\\ \url{https://dmd.solutions/blog/2019/04/05/how-a-single-point-of-failure-spof-in-the-mcas-software-could-have-caused-the-boeing-737-max-crash-in-ethiopia/}
+\bibitem{makichuck24012021737fearflying} ... \LaTeX:\\ \url{https://asiatimes.com/2021/01/boeings-737-max-and-the-fear-of-flying/}
+lijst van tehnische aanpassingen
+\bibitem{caa737modifications} ... \LaTeX:\\ \url{https://www.caa.co.uk/Consumers/Guide-to-aviation/Boeing-737-MAX/}
+\bibitem{oestergaard14122020boeingdeliveries} ... \LaTeX:\\ \url{https://dsm.forecastinternational.com/wordpress/2020/12/14/airbus-and-boeing-report-november-2020-commercial-aircraft-orders-and-deliveries/}
+code lek
+\bibitem{reenberg787flaws} ... \LaTeX:\\ \url{https://www.wired.com/story/boeing-787-code-leak-security-flaws/}
+\bibitem{fitch16092020737backlogrisks} ... \LaTeX:\\ \url{https://www.fitchratings.com/research/corporate-finance/boeing-737-max-return-backlog-risks-remain-16-09-2020}
+Cultuurverandering, deregulatie, systeemwijziging of gewoon een kwestie van competentie
+\bibitem{willis27082020737maxfailures} ... \LaTeX:\\ \url{https://www.aerospacetestinginternational.com/features/what-broke-the-737-max.html}
+extra aanpassingen
+\bibitem{ostrower11062020more737changes} ... \LaTeX:\\ \url{https://theaircurrent.com/aviation-safety/boeings-737-max-software-done-but-regulators-plot-more-changes-after-jets-return/}
+wat ging er mis een analyse van een ex-iloot
+De utoriteiten waren op de hoogte
+\bibitem{hruska13122019faaknown737crashrate} ... \LaTeX:\\ \url{https://www.extremetech.com/extreme/303373-the-faa-knew-the-737-max-was-dangerous-and-kept-it-flying-anyway}
+kwaliteiten van het alarmsysteem niet goed bekend
+\bibitem{bloomberg26092019failedpred} ... \LaTeX:\\ \url{https://time.com/5687473/boeing-737-alarm-system/}
+\bibitem{whiteman09072020boengcancelstock} ... \LaTeX:\\ \url{https://www.nasdaq.com/articles/boeing-gets-dealt-another-737-max-cancellation-blow.-what-it-means-for-boeing-stock-2020}
+\bibitem{leopold09192019boeingreliability} ... \LaTeX:\\ \url{https://www.eetimes.com/boeing-crashes-highlight-a-worsening-reliability-crisis/}
+veiligheidsvraagstuk
+\bibitem{koenig11122019737crashesnofix} ... \LaTeX:\\ \url{https://www.latimes.com/business/story/2019-12-11/faa-boeing-737-max-crashes}
+probleemanalyse, veiligheidsvraagstuk
+\bibitem{dohertylindeman15032019737problems} ... \LaTeX:\\ \url{https://www.politico.com/story/2019/03/15/boeing-737-max-grounding-1223072}
+falend toezicht
+\bibitem{stodder02102019corruptoversight} ... \LaTeX:\\ \url{https://www.pogo.org/analysis/2019/10/corrupted-oversight-the-faa-boeing-and-the-737-max/}
+\bibitem{afacwaLostSafeguards} ... \LaTeX:\\ \url{https://www.afacwa.org/the_inside_story_of_mcas_seattle_times}
+doelstellingen en veiligheidsvraagstukken
+\bibitem{swayne18032019profitssafety} ... \LaTeX:\\ \url{https://www.marxist.com/737-max-scandal-boeing-putting-profits-before-safety.htm}
+\bibitem{freed26022021liftaustraliaban} ... \LaTeX:\\ \url{https://finance.yahoo.com/news/australia-lifts-ban-boeing-737-035817682.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAHZCJYy_0A5VS2WiPoCvH4xdrRNkmkdsv5EWJ2RLIz_AS-rxsTty6AF1_HlmJiRyWYqCXDi4p0Xs4isYkNkCq2Pfo-pQ60Xz_IfTNjm4FgoZiBMC4zpZlB6F0fwecrjE_ujAXZzG4xPJnWCd8-G3VLlPTY8h3H31eQ1i8hY9AIyy}
+autoriteiten krijgen tik op de vingers
+\bibitem{reed15032019softwareattention} ... \LaTeX:\\ \url{https://medium.com/@jpaulreed/the-737max-and-why-software-engineers-should-pay-attention-a041290994bd}
+\bibitem{news17032019softwareexplains} ... \LaTeX:\\ \url{https://news.ycombinator.com/item?id=19414775}
+\bibitem{legget21122020eu737maxsafe} ... \LaTeX:\\ \url{https://www.bbc.com/news/55366320}
+\bibitem{marketscreener0103221737chinarecertification} ... \LaTeX:\\ \url{https://www.marketscreener.com/news/latest/China-studies-Boeing-737-MAX-recertification-wants-safety-concerns-fully-addressed--32569125/}
+motor in brand
+\bibitem{euractiv22022021737firegrounds} ... \LaTeX:\\ \url{https://www.euractiv.com/section/aviation/news/boeing-grounds-777s-after-engine-fire/}
+\bibitem{benny18022019737returnUAE} ... \LaTeX:\\ \url{https://gulfnews.com/business/aviation/uae-airspace-to-see-return-of-boeing-737-max-1.1613627548923}
+motor in brand gevlogen
+\bibitem{biersmichel22022021777grounds} ... \LaTeX:\\ \url{https://techxplore.com/news/2021-02-boeing-urges-grounding-777s.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.politico.eu/article/uk-temporarily-bans-some-boeing-aircraft-after-pratt-whitney-engine-incidents/}
+\bibitem{reuters23022021777metalfatigue} ... \LaTeX:\\ \url{https://www.timeslive.co.za/news/world/2021-02-23-damage-to-united-boeing-777-engine-consistent-with-metal-fatigue--ntsb/}
+faa was niet kritisch genoeg
+\bibitem{ID} ... \LaTeX:\\ \url{https://federalnewsnetwork.com/government-news/2021/02/federal-watchdog-blasts-faa-over-certification-of-boeing-jet/}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+china explosion 2015 tianjin
+verhaal van brandweermannen
+
+%\cite{staff31082015tanjinblastunrevealed}
+artikel
+
+%\cite{chinafile18082015tanjinexplosion}
+invloed van social media
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.economist.com/asia/2015/08/18/a-blast-in-tianjin-sets-off-an-explosion-online}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://america.cgtn.com/2015/08/12/explosion-reported-in-tianjin-china}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://factcheck.afp.com/no-photo-was-taken-chinese-city-tianjin-august-2015}
+
+vergelijking van twee rampen
+\bibitem{ID} ... \LaTeX:\\ \url{https://airshare.air-inc.com/how-does-the-beirut-explosion-compare-to-tianjin}
+
+overheid en media
+\bibitem{ID} ... \LaTeX:\\ \url{https://newbloommag.net/2015/08/17/tianjin-explosion/}
+
+chemische industrie ondeer de loep
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.voanews.com/east-asia-pacific/tianjin-blast-puts-spotlight-chemical-industry}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://abcnews.go.com/International/apocalyptic-aftermath-devastating-images-tianjin-china-explosions/story?id=33057017}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.reachingoutacrossdurham.co.uk/osk/tianjin-explosion-2021}
+
+\bibitem{pinghuang2410201TanjinFactreport} ... \LaTeX:\\ \url{https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/prs.11789}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.automotivelogistics.media/thousands-of-cars-destroyed-in-tianjin-port-explosions/13570.article}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.joc.com/port-news/asian-ports/port-tianjin/tianjin-port-explosions-could-be-most-expensive-maritime-disaster_20150826.html}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.bloomberg.com/news/articles/2015-08-12/explosion-in-northern-china-shatters-windows-causes-injuries}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://unece.org/fileadmin/DAM/env/documents/2016/TEIA/OECD_WGCA_24-27_OCT_2016/Session_3_Zhao_-__Introduction_of_Tianjin_Accident_-_Jinsong_Zhao.pdf}
+
+gemaakte fouten
+\bibitem{portoTanjinExplosionSight} ... \LaTeX:\\ \url{https://porteconomicsmanagement.org/pemp/contents/part6/port-resilience/site-2015-tianjin-port-explosions/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.alamy.com/stock-image-tianjin-china-17th-aug-2015-tianjin-explosion-aftermath-blast-site-165334778.html}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.popularmechanics.com/technology/news/a16871/massive-explosions-china-city-of-tianjin/}
+
+\bibitem{imago17082015TanjinApartmentImages} ... \LaTeX:\\ \url{https://www.imago-images.com/st/0080815934}
+\bibitem{trager14082015Chemicalblast} ... \LaTeX:\\ \url{https://www.chemistryworld.com/news/deadly-chemical-blast-at-chinese-port/8857.article}
+\bibitem{pangeramo27082015TanjinExplosion} ... \LaTeX:\\ \url{https://www.process-worldwide.com/tianjin-explosion-from-chemical-perspective-insights-and-backgrounds-a-502381/}
+vergelijking met andere explosies
+\bibitem{ap06082020ammaniumnitrate} ... \LaTeX:\\ \url{https://apnews.com/article/lebanon-fires-us-news-explosions-middle-east-53f4206a7f1db0812262a15d22e1e58f}
+invloed van de ramp op de industrie
+\bibitem{morris14082015TanjinIndustryImpact} ... \LaTeX:\\ \url{https://fortune.com/2015/08/14/tianjin-port-explosion-shipping-delays/}
+is er sprake van een doofpot
+\bibitem{milesyu20082015exposingtoxicgovlines} ... \LaTeX:\\ \url{https://www.washingtontimes.com/news/2015/aug/20/inside-china-tianjin-explosions-cover-up-exposes-b/}
+eigendomsverzekering
+\bibitem{artemis30032016tanjininsurance} ... \LaTeX:\\ \url{https://www.artemis.bm/news/tianjin-explosions-property-insurance-loss-could-reach-3-5bn-swiss-re/}
+\bibitem{aidenxiatanjinblast} ... \LaTeX:\\ \url{https://www.thechinastory.org/yearbooks/yearbook-2015/forum-the-abyss-%E5%9D%8E/tianjin-explosions/}
+effecten op de lange termijn
+\bibitem{danwangTanjinflexreport} ... \LaTeX:\\ \url{https://www.flexport.com/blog/tianjin-explosion-effect-on-supply-chains/}
+\bibitem{keyHighlightsTanjin} ... \LaTeX:\\ \url{https://www.cicm.org.my/images/articles/CICM-Article-on-Tianjin-Blast-Oct2015.pdf}
+lessons learned
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.genre.com/knowledge/blog/lessons-from-the-tianjin-explosion-en.html}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ft.com/content/ad62904c-44ce-11e5-b3b2-1672f710807b}
+
+\bibitem{hartley13082015videofootage} ... \LaTeX:\\ \url{https://www.huffingtonpost.co.uk/2015/08/13/tianjin-explosion-china-shocking-footage-caught-on-camera_n_7980888.html}
+\bibitem{odonnel01062017firetanjinblast2015} ... \LaTeX:\\ \url{https://www.thatsmags.com/china/post/19189/massive-fire-rocks-tianjin-port}
+gevolgen voor de industrie@online{{[^{}]*},	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {},}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.everstream.ai/risk-center/special-reports/the-jiangsu-yancheng-explosion/}
+
+\bibitem{fan15082015newyorkermistrustchina} ... \LaTeX:\\ \url{https://www.newyorker.com/news/news-desk/after-tianjin-an-outbreak-of-mistrust-in-china}
+framing vanuit de chinese media
+\bibitem{yanlidongchinamediaframingTanjin} ... \LaTeX:\\ \url{https://www.neliti.com/publications/101997/the-chinese-media-framing-of-the-2015s-tianjin-explosion}
+\bibitem{evans27092017TnjinInsurance} ... \LaTeX:\\ \url{https://www.reinsurancene.ws/chinese-insurers-settle-1-5-billion-tianjin-blast-claims/}
+niewsartikel
+\bibitem{jasi26032019chineschemplant} ... \LaTeX:\\ \url{https://www.thechemicalengineer.com/news/update-78-confirmed-dead-after-chinese-chemicals-plant-explosion/}
+\bibitem{shiqingTanjinExecutiveSentence} ... \LaTeX:\\ \url{https://www.caixinglobal.com/2016-11-10/chinese-executive-receives-suspended-death-sentence-over-2015-tianjin-warehouse-blast-101006325.html}
+toegang tot de ramplplek vanuit de okale journalistiek
+\bibitem{sophiebeach15082015} ... \LaTeX:\\ \url{https://chinadigitaltimes.net/2015/08/he-xiaoxin-how-far-can-i-go-and-how-much-can-i-do/}
+artikel
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.wnpr.org/post/china-examines-aftermath-immense-twin-explosions-killed-dozens}
+
+\bibitem{hamzeh05082020BeirutBlast} ... \LaTeX:\\ \url{https://theconversation.com/what-is-ammonium-nitrate-the-chemical-that-exploded-in-beirut-143979}
+\bibitem{chemwatch18082015TanjiinExplosion} ... \LaTeX:\\ \url{https://chemicalwatch.com/36730/nationwide-inspections-in-china-follow-tianjin-explosion}
+\bibitem{thehindu15062019chinaExplosion} ... \LaTeX:\\ \url{https://www.thehindu.com/news/international/investigation-begun-into-china-gas-explosion-as-toll-rises/article34818324.ece}
+\bibitem{santagotimes24032019chinablast} ... \LaTeX:\\ \url{https://santiagotimes.cl/2019/03/24/64-killed-600-injured-in-china-chemical-plant-blast/}
+oorzaken
+\bibitem{klingecorp28042020causedTanjin} ... \LaTeX:\\ \url{https://klingecorp.com/blog/what-caused-the-tianjin-explosions/}
+case study
+\bibitem{mcgarryExplosions2017} ... \LaTeX:\\ \url{https://www.preventionweb.net/educational/view/57235/}
+niewsartikel
+\bibitem{roswnfeld13082015TanjinReports} ... \LaTeX:\\ \url{https://www.cnbc.com/2015/08/12/explosion-in-tianjin-china.html}
+chronologische uiteenzetting
+\bibitem{aria12082015explosionaTanjin} ... \LaTeX:\\ \url{https://www.aria.developpement-durable.gouv.fr/wp-content/files_mf/A46803_a46803_fiche_impel_006.pdf}
+corruptie
+
+mismanagement als oorzaak
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.nytimes.com/2016/02/06/world/asia/tianjin-explosions-were-result-of-mismanagement-china-finds.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://cen.acs.org/articles/94/web/2016/02/Chinese-Investigators-Identify-Cause-Tianjin.html}
+autoriteiten publiceren onderoeksrapport
+\bibitem{tremblay11022016chineseInvestigatorsTanjin} ... \LaTeX:\\ \url{https://cen.acs.org/articles/94/i7/Chinese-Investigators-Identify-Cause-Tianjin.html}
+fotos van de rampplek
+\bibitem{taylor13082015TanjinExplosianAftermath} ... \LaTeX:\\ \url{https://www.theatlantic.com/photo/2015/08/photos-of-the-aftermath-of-the-massive-explosions-in-tianjin-china/401228/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://edition.cnn.com/2015/08/13/asia/china-tianjin-explosions/index.html}
+niuwesartiekel
+\bibitem{associatedPresss13082013} ... \LaTeX:\\ \url{https://www.cbc.ca/news/world/china-explosion-tianjin-1.3189455}
+verantwoordelijke
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.thestar.com/news/world/2016/11/09/chinese-executive-gets-death-sentence-over-tianjin-explosion-in-2015.html}
+
+risicobeperking/controle
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.swissre.com/en/china/news-insights/articles/analysis-of-tianjin-port-explosion-china.html}
+
+censuur
+\bibitem{ID} ... \LaTeX:\\ \url{https://foreignpolicy.com/2015/09/10/censored-china-young-survivor-tianjin-explosion-viral-post/}
+
+censuur
+\bibitem{ID} ... \LaTeX:\\ \url{https://qz.com/756872/a-year-after-the-tianjin-blast-public-mourning-and-discussion-about-it-are-still-censored-in-china/}
+
+verschillende artikelen
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.scmp.com/topics/tianjin-warehouse-explosion-2015}
+
+\bibitem{cjb27664} ... \LaTeX:\\ \url{https://www.wsj.com/articles/BL-CJB-27664}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.nbcnews.com/news/world/tianjin-explosions-californian-witness-filmed-dramatic-china-blasts-n409701}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://ui.adsabs.harvard.edu/abs/2016AGUFM.S13D..06P/abstract}
+afwikkeling van de ramp
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://chinadialogue.net/en/pollution/9188-back-to-the-blast-zone-one-year-after-the-tianjin-explosion/}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.wired.com/2015/08/chinas-huge-tianjin-explosion-looked-like-space/}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.abc.net.au/news/2015-08-13/explosion-rocks-north-chinese-city-of-tianjin/6693336?nw=0}
+
+ambtenaren onderzocht
+
+risico-inschatting
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.mdpi.com/2071-1050/12/3/1169/htm}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.mdpi.com/2071-1050/12/3/1169/htm}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cbsnews.com/news/tianjin-port-china-massive-explosion-hundreds-injured/}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.hkjcdpri.org.hk/download/casestudies/Tianjin_CASE.pdf}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://time.com/3996168/tianjin-explosion-china-pictures/}
+
+onderzoeksrapport
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.hfw.com/Tianjin-Port-explosion-August-2015}
+
+\bibitem{un20082015InvestigationTanjin} ... \LaTeX:\\ \url{https://news.un.org/en/story/2015/08/506912-following-tianjin-explosion-un-expert-calls-china-ensure-transparent}
+\bibitem{france2412082015TnjinExplosion} ... \LaTeX:\\ \url{https://www.france24.com/en/20150812-huge-explosions-rock-chinese-city-tianjin}
+\bibitem{npr14082015TanjinCause} ... \LaTeX:\\ \url{https://choice.npr.org/index.html?origin=https://www.npr.org/2015/08/14/432280627/what-caused-the-warehouse-explosions-in-tianjin-china}
+123 verantwoordelijken
+\bibitem{bbc05022016TanjinResponsibles} ... \LaTeX:\\ \url{https://www.bbc.com/news/world-asia-china-35506311}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.washingtonpost.com/gdpr-consent/?next_url=https%3a%2f%2fwww.washingtonpost.com%2fnews%2fworldviews%2fwp%2f2015%2f08%2f12%2fvideos-show-chinese-city-of-tianjin-rocked-by-enormous-explosion%2f}
+
+lang artiekel
+\bibitem{CBodeen15082015TanjinExplosion} ... \LaTeX:\\ \url{https://www.businessinsider.com/the-chemical-explosion-in-china-killed-more-than-100-people-and-the-devastation-is-unreal-2015-8?international=true&r=US&IR=T}
+\bibitem{ID} ... \LaTeX:\\ \url{https://pubmed.ncbi.nlm.nih.gov/27311537/}
+
+\bibitem{reutersTanjinInsurance} ... \LaTeX:\\ \url{https://www.reuters.com/article/us-china-blast-insurance-idUSKCN0QM0N220150817}
+\bibitem{yu082016evaluationTanjin2015} ... \LaTeX:\\ \url{https://www.sciencedirect.com/science/article/abs/pii/S0305417916300079}
+\bibitem{wiki2015TanjinExplosions} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/2015_Tianjin_explosions}
+\bibitem{bbc17082015whathappenedTanjin} ... \LaTeX:\\ \url{https://www.bbc.com/news/world-asia-china-33844084}
+\bibitem{mortimer19082016taijinexplosioncrater} ... \LaTeX:\\ \url{https://www.independent.co.uk/news/world/asia/tianjin-explosion-photos-china-chemical-factory-accident-crater-revealed-a7199591.html}
+veiigheidshandhaving
+\bibitem{internationallabourofficeChmControlTooliit} ... \LaTeX:\\ \url{https://www.ilo.org/legacy/english/protection/safework/ctrl_banding/toolkit/main_guide.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://echa.europa.eu/documents/10162/21332507/guide_chemical_safety_sme_en.pdf}
+
+\bibitem{euTaxationCustomsICSC} ... \LaTeX:\\ \url{https://ec.europa.eu/taxation_customs/dds2/SAMANCTA/EN/Safety/AppendixD_EN.htm}
+\bibitem{iloWHOChemSafetyCards} ... \LaTeX:\\ \url{https://www.ilo.org/safework/info/publications/WCMS_113134/lang--en/index.htm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+tesla autopilot crashes
+
+
+veiigheidsrisico
+\bibitem{evan01042019teslaautopilotIntersection} ... \LaTeX:\\ \url{https://spectrum.ieee.org/cars-that-think/transportation/self-driving/three-small-stickers-on-road-can-steer-tesla-autopilot-into-oncoming-lane}
+\bibitem{globaltimes08052021guangdongcrash} ... \LaTeX:\\ \url{https://www.globaltimes.cn/page/202105/1222902.shtml}
+ 
+\bibitem{testVehicleSafetyReport} ... \LaTeX:\\ \url{https://www.tesla.com/VehicleSafetyReport}
+veiligheidsrapport mbt autopilot
+\bibitem{lambert31062020q2safetyreport} ... \LaTeX:\\ \url{https://electrek.co/2020/07/31/tesla-q2-2020-safety-report-strong-improvement-autopilot-accidents/}
+consumentenrapport
+bluetooth veiligheidsvraagstuk
+\bibitem{wiredBloutoothHackTesla} ... \LaTeX:\\ \url{https://www.wired.com/story/tesla-model-x-hack-bluetooth/}
+veiigheidsvraagstuk vanwege touch screen
+\bibitem{preston14012021NHTSATeslaRecall} ... \LaTeX:\\ \url{https://www.consumerreports.org/car-recalls-defects/nhtsa-asks-tesla-to-recall-model-s-model-x-touch-screen-safety-issues/}
+veiligheidsvraagstuk
+\bibitem{cio25112020belgianTeslaHack} ... \LaTeX:\\ \url{https://cio.economictimes.indiatimes.com/news/digital-security/security-researchers-hack-steal-tesla-model-x-within-minutes/79406553}
+veiligheidsvraagstuk
+rapport over autopilot
+\bibitem{templeton06092019HTSBReportTesla} ... \LaTeX:\\ \url{https://www.forbes.com/sites/bradtempleton/2019/09/06/ntsb-report-on-tesla-autopilot-accident-shows-whats-inside-and-its-not-pretty-for-fsd/?sh=6905e7d4dc55}
+de invloed van de bestuurder bij tesla ongeluk
+\bibitem{Dickey08012021SuddenTeslaAcceleration} ... \LaTeX:\\ \url{https://techcrunch.com/2021/01/08/nhtsa-tesla-sudden-unintended-acceleration-driver-error/}
+veiligheidsvraagstuk
+\bibitem{darkReading17112020TeslaBackup} ... \LaTeX:\\ \url{https://www.darkreading.com/threat-intelligence/security-risks-discovered-in-tesla-backup-gateway/d/d-id/1339462}
+veiligheidsvraagstuk
+\bibitem{leyden23032020TeslaInterfaceHack} ... \LaTeX:\\ \url{https://portswigger.net/daily-swig/web-based-attack-crashes-tesla-driver-interface}
+veiigheidsvraagstuk
+\bibitem{huddlestonjr03042019ChineseTeslaHack} ... \LaTeX:\\ \url{https://www.cnbc.com/2019/04/03/chinese-hackers-tricked-teslas-autopilot-into-switching-lanes.html}
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+\bibitem{heilweil26022020teslaAutopilot} ... \LaTeX:\\ \url{https://www.vox.com/recode/2020/2/26/21154502/tesla-autopilot-fatal-crashes}
+rapport over ongeluk
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+\bibitem{blanco04102019NHTSATesla} ... \LaTeX:\\ \url{https://www.caranddriver.com/news/a29369387/nhtsa-tesla-safety/}
+veiligheidsvraagstuk
+ransomware aanval op tesla
+tesla batterij is veiligheidsvraagstuk geworden
+\bibitem{mitchell01072020teslabatterycooling} ... \LaTeX:\\ \url{https://www.latimes.com/business/story/2020-07-01/federal-safety-officials-probe-tesla-battery-cooling-system}
+ongeluk
+\bibitem{bbc26022020AutopilotCrash} ... \LaTeX:\\ \url{https://www.bbc.com/news/technology-51645566}
+veiligheidsvraagstuk
+veiligheidsvraagstuk
+\bibitem{stumpff04052020TeslaPersonalData} ... \LaTeX:\\ \url{https://www.thedrive.com/news/33272/tesla-discarded-old-car-parts-with-customers-personal-data-passwords-report}
+dodelijk ongeluk
+\bibitem{levin08062018teslaautopilotsafety} ... \LaTeX:\\ \url{https://www.theguardian.com/technology/2018/jun/07/tesla-fatal-crash-silicon-valley-autopilot-mode-report}
+veiligheidsvraagstuk: ransomware
+veiligheidsvraagstuk: medewerker in de fout
+\bibitem{cbrook06082021TeslaInsideDataThreft} ... \LaTeX:\\ \url{https://digitalguardian.com/blog/tesla-data-theft-case-illustrates-danger-insider-threat}
+\bibitem{shilling25022021Tesla} ... \LaTeX:\\ \url{https://jalopnik.com/tesla-is-stopping-some-model-3-production-report-1846353323}
+veiligheidsvraagstuk: hackers je systeem laten testen
+verdedigen tegenover ransomware
+veiligheidsrisico
+prijzen omlaag
+autopilot
+\bibitem{randall05112019modelSurvey} ... \LaTeX:\\ \url{https://www.bloomberg.com/graphics/2019-tesla-model-3-survey/autopilot.html}
+malware door een medewerker
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.teslarati.com/tesla-employee-fbi-thwarts-russian-cybersecurity-attack/}
+dodelijk ongeluk
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.marketwatch.com/story/apple-engineer-killed-in-tesla-suv-crash-on-silicon-valley-freeway-was-playing-videogame-ntsb-2020-02-25}
+\bibitem{fottrell03092018TeslaSecurityChecks} ... \LaTeX:\\ \url{https://www.marketwatch.com/story/nearly-100-of-teslas-stolen-in-the-us-since-2011-have-been-recovered-2018-08-10}
+waarom een tesla stelen bijna onmogelijk is
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.welivesecurity.com/2019/03/25/white-hats-hack-tesla-keep/}
+veiligheidsonderzoek
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.tripwire.com/state-of-security/security-data-protection/tesla-encouraging-good-faith-security-research-in-bug-bounty-program/}
+softwarefout maakt diestal mogelijk
+\bibitem{kirk26112020modelX} ... \LaTeX:\\ \url{https://www.bankinfosecurity.com/tesla-model-x-stolen-in-minutes-using-software-flaws-a-15462}
+fouten ontdekt in onderzoek
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cnet.com/roadshow/news/tesla-ev-appeal-loyalty-study/}
+\bibitem{bbc24022021hyundaiBatteryFireFix} ... \LaTeX:\\ \url{https://www.bbc.com/news/technology-56156801}
+
+
+\bibitem{teslaFDSCrash} ... \LaTeX:\\ \url{https://www.washingtonpost.com/technology/2023/06/10/tesla-autopilot-crashes-elon-musk/}
+\bibitem{teslaCrashesCauses} ... \LaTeX:\\ \url{https://www.autopilotreview.com/tesla-autopilot-accidents-causes/}
+\bibitem{teslacrashOvervieuw} ... \LaTeX:\\ \url{https://www.skynettoday.com/briefs/tesla-investigations}
+\bibitem{tesladeaths} ... \LaTeX:\\ \url{https://www.tesladeaths.com/}
+
+
+
+
+tesla cloud gehacked
+\bibitem{ID} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2018/02/tesla-cloud-resources-are-hacked-to-run-cryptocurrency-mining-malware/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.motortrend.com/news/tesla-model-y-ev-safety-quality-issues-problems/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://securityledger.com/2019/04/hackers-remotely-steer-tesla-model-s-using-autopilot-system/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.pcmag.com/news/report-tesla-suspends-model-3-production-in-california-until-march-7}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.scmp.com/business/money/article/3121173/tesla-conduct-complete-self-inspection-after-chinese-regulators}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.businesswire.com/news/home/20180220005222/en/RedLock-Releases-Cloud-Security-Report-Highlighting-Focus-on-Shared-Responsibilities-Uncovers-Cloud-Related-Exposures-at-Tesla}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.epa.gov/automotive-trends/highlights-automotive-trends-report}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.livemint.com/Companies/o2QLbtJc9EQ7ZcpxqgFbBP/Teslas-reward-for-finding-security-bugs-Model-3.html}
+\bibitem{evans11062018} ... \LaTeX:\\ \url{https://revealnews.org/blog/tesla-fired-safety-official-for-reporting-unsafe-conditions-lawsuit-says/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://heimdalsecurity.com/blog/security-alert-teslacrypt-4-0-unbreakable-encryption-worse-data-leakage/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.eweek.com/cloud/tesla-cloud-account-data-breach-revealed-in-redlock-security-report/}
+\bibitem{hawkins22102022} ... \LaTeX:\\ \url{https://www.theverge.com/2020/10/21/21527577/tesla-full-self-driving-autopilot-beta-software-update}
+\bibitem{ID} ... \LaTeX:\\ \url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}
+\bibitem{gritti24062020tesladataengine} ... \LaTeX:\\ \url{https://www.braincreators.com/brainpower/insights/teslas-data-engine-and-what-we-should-all-learn-from-it}
+\bibitem{ID} ... \LaTeX:\\ \url{https://bernardmarr.com/default.asp?contentID=1251}
+\bibitem{ID} ... \LaTeX:\\ \url{https://arstechnica.com/cars/2019/10/how-teslas-latest-acquisition-could-accelerate-autopilot-development/}
+\bibitem{bouchard07052019teslaDeepLearning} ... \LaTeX:\\ \url{https://towardsdatascience.com/teslas-deep-learning-at-scale-7eed85b235d3}
+\bibitem{ID} ... \LaTeX:\\ \url{file:///C:/Users/gally/Downloads/applsci-10-02749-v2.pdf}
+\bibitem{Srikanth2019teslabigdata} ... \LaTeX:\\ \url{https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/}
+\bibitem{rangaiah25022020teslaAI} ... \LaTeX:\\ \url{https://www.analyticssteps.com/blogs/how-tesla-making-use-artificial-intelligence-its-operations}
+\bibitem{marr08012018taslabigdataAI} ... \LaTeX:\\ \url{https://www.forbes.com/sites/bernardmarr/2018/01/08/the-amazing-ways-tesla-is-using-artificial-intelligence-and-big-data/?sh=5e396aa24270}
+\bibitem{bdickson29072020teslalevelfive} ... \LaTeX:\\ \url{https://bdtechtalks.com/2020/07/29/self-driving-tesla-car-deep-learning/}
+
+\bibitem{dcruz17062022tesladesignthink} ... \LaTeX:\\ \url{https://www.mygreatlearning.com/blog/teslas-new-ai-for-self-driving-cars/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.techiexpert.com/how-tesla-is-using-artificial-intelligence-and-big-data/}
+
+
+
+
+
+\bibitem{mcfarland22042021selfdrivingrisks} ... \LaTeX:\\ \url{https://www.cnn.com/2021/04/21/tech/tesla-full-self-driving-launch/index.html}
+\bibitem{hawkins18032021fedgovinvest} ... \LaTeX:\\ \url{https://www.theverge.com/2021/3/18/22338427/tesla-autopilot-crash-michigan-nhtsa-investigation}
+\bibitem{berry21042021teslacrashtexas} ... \LaTeX:\\ \url{https://www.wionews.com/technology/doctor-among-victims-of-lethal-tesla-car-crash-in-texas-378950}
+\bibitem{hull23072021regulatorsaftercrash} ... \LaTeX:\\ \url{https://www.bloomberg.com/news/newsletters/2021-06-23/hyperdrive-daily-after-30-tesla-crashes-what-s-a-regulator-to-do}
+\bibitem{wikiTeslaAutopilot} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Tesla_Autopilot}
+\bibitem{nhtsaAutomatedVehiclesSafety} ... \LaTeX:\\ \url{https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety}
+\bibitem{dowling23042021autopilottricking} ... \LaTeX:\\ \url{https://www.caradvice.com.au/947080/elon-musk-responds-to-deadly-texas-tesla-crash-as-consumer-reports-reveals-how-autopilot-can-be-tricked/}
+\bibitem{wilson19042021teslacrashregulators} ... \LaTeX:\\ \url{https://usa.streetsblog.org/2021/04/19/regulators-could-have-prevented-fatal-tesla-crash/}
+
+\bibitem{seamans22062021aikillerap} ... \LaTeX:\\ \url{https://www.brookings.edu/research/autonomous-vehicles-as-a-killer-app-for-ai/}
+\bibitem{mitchell24022020AIDataTesla} ... \LaTeX:\\ \url{https://www.latimes.com/business/story/2020-02-24/autopilot-data-secrecy}
+\bibitem{denneyjdsupraFeds} ... \LaTeX:\\ \url{https://www.jdsupra.com/post/contentViewerEmbed.aspx?fid=9844cae0-aa5a-45a5-988f-7f02fa5709c1}
+\bibitem{siddiqui22102020TeslaCriticism} ... \LaTeX:\\ \url{https://www.washingtonpost.com/technology/2020/10/21/tesla-self-driving/}
+\bibitem{ackerman01072016TeslaImperfect} ... \LaTeX:\\ \url{https://spectrum.ieee.org/cars-that-think/transportation/self-driving/fatal-tesla-autopilot-crash-reminds-us-that-robots-arent-perfect}
+\bibitem{greene04092019misuseautopilot} ... \LaTeX:\\ \url{https://thenextweb.com/news/another-tesla-owner-is-dead-because-of-autopilot}
+\bibitem{michralli26112019ubserautocarcrsash} ... \LaTeX:\\ \url{https://towardsdatascience.com/another-self-driving-car-accident-another-ai-development-lesson-b2ce3dbb4444}
+\bibitem{pitmann21072021wrongfullautodeath} ... \LaTeX:\\ \url{https://www.theautochannel.com/news/2021/07/21/1024631-is-it-still-wrongful-death-if-car-is-driving-itself.html}
+\bibitem{stackexchange102019teslacarmistake} ... \LaTeX:\\ \url{https://ai.stackexchange.com/questions/1488/why-did-a-tesla-car-mistake-a-truck-with-a-bright-sky}
+\bibitem{tasking07062017TeslaAugmentedSafety} ... \LaTeX:\\ \url{https://resources.tasking.com/p/benefits-tesla-autopilot-and-how-adas-will-save-lives}
+\bibitem{griemannExaminSelfDriving} ... \LaTeX:\\ \url{https://www.jipitec.eu/issues/jipitec-9-3-2018/4806}
+\bibitem{Harkey30052019SafeSystemVehicle} ... \LaTeX:\\ \url{https://static.tti.tamu.edu/conferences/traffic-safety19/presentations/lunch/harkey.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://thepressfree.com/have-google-and-amazon-backed-the-wrong-technology/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.irishtimes.com/business/innovation/robotaxis-have-google-and-amazon-backed-the-wrong-technology-1.4626749}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.afr.com/technology/how-teslas-autopilot-got-it-wrong-in-fatal-crash-20160704-gpxsje}
+\bibitem{ID} ... \LaTeX:\\ \url{https://economictimes.indiatimes.com/markets/stocks/news/what-me-worry-fed-chiefs-emotional-tone-can-drive-markets-study-suggests/articleshow/84618073.cms}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ehstoday.com/safety/article/21919260/ntsb-fatal-crash-involving-tesla-autopilot-resulted-from-driver-errors-overreliance-on-automation}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.vanityfair.com/news/2016/07/how-the-media-screwed-up-the-fatal-tesla-accident}
+
+
+tesla crash report
+\bibitem{shepardson18062021TeslaDeaths} ... \LaTeX:\\ \url{https://www.reuters.com/business/autos-transportation/us-safety-agency-says-it-has-opened-probes-into-10-tesla-crash-deaths-since-2016-2021-06-17/}
+\bibitem{hawkins30062021nhtsarequiresreporting} ... \LaTeX:\\ \url{https://www.politico.com/news/2021/05/18/ntsb-tesla-owner-was-in-drivers-seat-before-april-texas-crash-489272}
+\bibitem{hawkins10052021autopilotnotavailable} ... \LaTeX:\\ \url{https://www.theverge.com/2021/5/10/22429198/tesla-ntsb-texas-crash-driverless-preliminary-report}
+\bibitem{szymkowski29062021nhtsaTeslaCrashReports} ... \LaTeX:\\ \url{https://www.cnet.com/roadshow/news/tesla-autopilot-nhtsa-crash-report-self-driving-car-driver-assist-system/}
+\bibitem{abc1112052021AutopilotNotinTeslaCrash} ... \LaTeX:\\ \url{https://abc11.com/tesla-crash-battery-fire-national-transportation-safety-board-driverless/10619772/}
+\bibitem{ankel18062021regulatorsinvestigateAutopilot} ... \LaTeX:\\ \url{https://www.businessinsider.com/tesla-autopilot-crashes-regulators-open-probes-into-30-report-2021-6?international=true&r=US&IR=T}
+\bibitem{sommerfield12072021NHTSAmandateresult} ... \LaTeX:\\ \url{https://driving.ca/column/lorraine/lorraine-explains-what-the-nhtsas-self-driving-car-crash-reporting-mandate-will-find-out}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.teslarati.com/tesla-model-s-crash-texas-ntsb-preliminary-report/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://insideevs.com/news/506498/ntsb-report-tesla-texas-crash/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://electrek.co/2021/06/03/tesla-tsla-crashes-report-new-orders-in-china-free-falling/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.newsy.com/stories/ntsb-releases-report-on-fatal-tesla-crash/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ndtv.com/world-news/autopilot-not-used-in-april-tesla-crash-says-us-report-2439146}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.autocar.co.nz/autocar-news-app/fatal-driverless-tesla-crash-report-shows-autopilot-not-to-blame}
+\bibitem{ID} ... \LaTeX:\\ \url{https://teleperformance-waha.sabacloud.com/Saba/Web_spf/EU2PRD0152/app/dashboard}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.independent.co.uk/news/world/americas/tesla-texas-crash-model-s-autopilot-b1845286.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.wired.com/2017/01/probing-teslas-deadly-crash-feds-say-yay-self-driving/}
+\bibitem{saferoardsCrashesAutonomousvehicles} ... \LaTeX:\\ \url{https://saferoads.org/wp-content/uploads/2020/03/AV-Crash-List-with-Photos-February-2020.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://mashable.com/article/nthsa-tesla-autopilot-model-x-crash-investigation}
+\bibitem{stephardson18032021revieuwingtesla} ... \LaTeX:\\ \url{https://www.usnews.com/news/top-news/articles/2021-03-18/us-safety-agency-reviewing-23-tesla-crashes-three-from-recent-weeks}
+\bibitem{krishner30062021NHTSAreport} ... \LaTeX:\\ \url{https://chicago.suntimes.com/consumer-affairs/2021/6/30/22557122/nhtsa-automated-driving-crash-reports-tesla-national-highway-traffic-safety-administration}
+\bibitem{gitlin11052021autopilot} ... \LaTeX:\\ \url{https://arstechnica.com/cars/2021/05/ntsb-finds-no-reason-to-suspect-autopilot-in-fatal-tesla-crash/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://jalopnik.com/the-ntsb-to-partially-blame-teslas-autopilot-in-fatal-c-1803136365}
+\bibitem{mitchell19012017investigationstop} ... \LaTeX:\\ \url{https://www.latimes.com/business/autos/la-fi-hy-tesla-autopilot-20170119-story.html}
+\bibitem{gordon10052021teslaprelimreport} ... \LaTeX:\\ \url{https://www.vice.com/en/article/z3xxaw/ntsb-releases-preliminary-report-on-tesla-crash-that-killed-two-people}
+\bibitem{shaper07062018} ... \LaTeX:\\ \url{https://choice.npr.org/index.html?origin=https://www.npr.org/2018/06/07/618081406/no-driver-input-detected-in-seconds-before-deadly-tesla-crash-ntsb-finds}
+\bibitem{cochran18042021nodriverTeslaCrash} ... \LaTeX:\\ \url{https://www.click2houston.com/news/local/2021/04/18/2-men-dead-after-fiery-tesla-crash-in-spring-officials-say/}
+\bibitem{habib28062016NHTSATeslaReport} ... \LaTeX:\\ \url{https://static.nhtsa.gov/odi/inv/2016/INCLA-PE16007-7876.pdf}
+\bibitem{firstpress11052021fatalnonautopilot} ... \LaTeX:\\ \url{https://www.firstpost.com/tech/news-analysis/tesla-model-s-involved-in-fatal-crash-in-the-us-did-not-use-autopilot-says-ntsb-report-9609911.html}
+\bibitem{raynal20042021probeTeslaCrash} ... \LaTeX:\\ \url{https://www.autoweek.com/news/green-cars/a36173804/both-local-police-and-nhtsa-probe-tesla-crash/}
+\bibitem{tiungteslasoftwarecrash} ... \LaTeX:\\ \url{https://www.zdnet.com/article/apple-and-tesla-under-fire-over-software-engineers-fatal-autopilot-crash/}
+\bibitem{globaltimes08052021guangdongcrash} ... \LaTeX:\\\url{"https://www.globaltimes.cn/page/202105/1222902.shtml}
+\bibitem{anderson30042021secondteslacrash}, ... \LaTeX:\\\url{"https://www.carscoops.com/2021/04/ntsb-to-release-report-on-deadly-tesla-crash-within-a-month/}
+\bibitem{oremus21062017fatalTeslaCrash} ... \LaTeX:\\ \url{https://slate.com/technology/2017/06/a-new-report-on-what-happened-in-the-fatal-tesla-autopilot-crash.html}
+\bibitem{guardian15052021teslacrashHandsOnWheel} ... \LaTeX:\\ \url{https://www.theguardian.com/us-news/2021/may/15/tesla-fatal-california-crash-autopilot}
+\bibitem{Puzzanghera13092017TeslaSharesBlame} ... \LaTeX:\\ \url{https://www.stuff.co.nz/motoring/news/96797272/tesla-shares-some-blame-in-fatal-autopilot-crash-report}
+\bibitem{jaillet02022017teslaAutopilotLimitations} ... \LaTeX:\\ \url{https://www.overdriveonline.com/business/article/14891759/dot-report-on-fatal-2016-tesla-crash-with-tractor-trailer-blames-limitations-of-autopilot-mode}
+\bibitem{reuters03102019teslaAutoParkingFail} ... \LaTeX:\\ \url{https://venturebeat.com/2019/10/03/regulators-investigate-teslas-automated-parking-feature-following-crash-reports/}
+\bibitem{dowling23042021} ... \LaTeX:\\ \url{https://www.caradvice.com.au/947080/elon-musk-responds-to-deadly-texas-tesla-crash-as-consumer-reports-reveals-how-autopilot-can-be-tricked/}
+\bibitem{young05112021fatalTeslaReport} ... \LaTeX:\\ \url{https://www.consumeraffairs.com/news/ntsb-releases-report-on-fatal-tesla-crash-in-texas-051121.html}
+\bibitem{kierstein18032021teslaAutopilotCrashStationary} ... \LaTeX:\\ \url{https://www.motortrend.com/news/tesla-michigan-state-autopilot-crash-report/}
+\bibitem{janssen20062017teslacrashdetailflorida} ... \LaTeX:\\ \url{https://tweakers.net/nieuws/126145/onderzoeksraad-vs-publiceert-technische-details-tesla-crash-in-florida.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://gizmodo.com/new-documents-reveal-one-driver-s-agony-and-confusion-d-1841720801}
+
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.google.com/search?q=tesla+crash+report&rlz=1C1AVUC_enNL953NL953&ei=p3kNYa6sLI_UsAeSoZrwDw&start=100&sa=N&ved=2ahUKEwjum77s_ZzyAhUPKuwKHZKQBv44WhDw0wN6BAgBEEg&biw=1920&bih=933}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+vlucht 1951
+\bibitem{ID} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Turkish_Airlines-vlucht_1951}
+technisch rapport
+\bibitem{ID} ... \LaTeX:\\ \url{file:///C:/Users/gally/Downloads/rapport_ta_nl_aangepast.pdf}
+beschrijving
+terugblik met overlevenden
+tijdlijn
+\bibitem{zuilen23022019Tijdlijnpoldercrash} ... \LaTeX:\\ \url{https://www.noordhollandsdagblad.nl/cnt/dmf20190221_65390940}
+artikel
+terugblik met overlevenden
+advies raad voor de veiligheid
+de overlevende, de oorzaak, regeling, herdenking, smartengeld
+verhaal van een overlevende
+herdenking
+herdenking
+bemanning deed niets met foutmelding
+parlementaire besluitenlijst
+kamervragen over de onafhankelijkheid van de raad voor veiligheid
+verhaal van een overlevende
+beschrijvend artikel van letsel en gewonden
+\bibitem{ntvg20012010letsel} ... \LaTeX:\\ \url{https://www.ntvg.nl/artikelen/vliegtuigongeval-schiphol-25-02-2009-letsels-en-verdeling-van-gewonden}
+technische fout als oorzaak
+\bibitem{wikinews04032009techfoutailines1951} ... \LaTeX:\\ \url{https://nl.wikinews.org/wiki/Technische_fout_oorzaak_vliegtuigcrash_Turkish_Airlines-vlucht_1951}
+gesprek met pieter van vollenhove voorzitter van de onderzoeksraad voor veiligheid
+onderzoeksraad voor veiligheid is onderdruk gezet
+\bibitem{luchtvaartnieuws21012020boeing737conclusies} ... \LaTeX:\\ \url{https://www.luchtvaartnieuws.nl/nieuws/categorie/72/algemeen/conclusies-crash-tk1951-na-amerikaanse-druk-afgezwakt}
+niuwesartikel
+feitenverloop
+\bibitem{adformatie280220209communicatiegebreken} ... \LaTeX:\\ \url{https://www.adformatie.nl/contentmarketing/communicatie-na-vliegramp-vertoonde-gebreken}
+zwarte doos
+\bibitem{spinnael25022009onderzoekpolderbaancrash} ... \LaTeX:\\ \url{https://flightlevel.be/244/onderzoek-polderbaan-crash-turkish-airlines-1951/}
+\bibitem{crashTurkishAirlines} ... \LaTeX:\\ \url{http://wikimapia.org/11633002/nl/Crash-Turkish-Airlines-vlucht-1951}
+\bibitem{flightradar24} ... \LaTeX:\\ \url{https://www.flightradar24.com/data/flights/tk1951}
+\bibitem{flightstatstracker} ... \LaTeX:\\ \url{https://www.flightstats.com/v2/flight-tracker/TK/1951}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+de mali missie
+
+
+\bibitem{bnnvara13062018malirapport} ... \LaTeX:\\ \url{https://joop.bnnvara.nl/nieuws/rapport-haalbaarheid-en-houdbaarheid-van-mali-missie-twijfelachtig}
+\bibitem{eucal11012021malimissieverlengd} ... \LaTeX:\\ \url{https://www.consilium.europa.eu/nl/press/press-releases/2021/01/11/eucap-sahel-mali-mission-extended-until-31-january-2023-and-mandate-adjusted/}
+\bibitem{nos21052014zorgenmalimissie} ... \LaTeX:\\ \url{https://nos.nl/artikel/650637-kamer-bezorgd-over-mali-missie}
+\bibitem{meijnders} ... \LaTeX:\\ \url{https://www.bnr.nl/nieuws/10015679/koenders-positief-tegenover-verlening-mali-missie}
+\bibitem{bnrwebredactie} ... \LaTeX:\\ \url{https://www.bnr.nl/nieuws/politiek/10345553/kabinet-wil-mali-missie-stoppen-verrassend-besluit}
+\bibitem{keultjes01062016malimissiecoalitie} ... \LaTeX:\\ \url{https://www.ad.nl/nieuws/clash-om-mali-missie-dreigt-binnen-coalitie~a4151d4f/}
+\bibitem{veenhof18012019} ... \LaTeX:\\ \url{https://www.nd.nl/cultuur/boeken/536861/boek-kijkje-bij-de-mali-missie}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=jmZ6uSbpCvg}
+\bibitem{isitman06012016militair} ... \LaTeX:\\ \url{https://www.ewmagazine.nl/nederland/achtergrond/2016/07/twee-nederlanse-militairen-dood-bij-oefening-mali-missie-325226/}
+\bibitem{nporadio11072016filmdemissie} ... \LaTeX:\\ \url{https://www.nporadio1.nl/nieuws/cultuur-media/9e3b076e-5401-4630-bf39-f925213c5b6b/onverwachte-openhartigheid-over-missie-in-mali}
+\bibitem{parlementairmonitor15122013mortierongeluk} ... \LaTeX:\\ \url{https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vjfm5p0nujzw?ctx=vj2mc67lofnr}
+
+
+sollicitatie
+de bureaucratie
+aankomst
+interview van de burgerbevolking
+steun van de bevolking minuut 15:00
+de organisatie minuut 23:00
+De militaire briefing minuut 34:00
+prioriteit minuut 39:00
+briefing minuut 40:00
+de communicatie met ministerie over inlichten minuut 44:00
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.2doc.nl/documentaires/series/2doc/2016/juli/de-missie.html}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+militair overleden door schietoefening in ossendrecht
+
+
+\bibitem{nos22032016ossendrecht} ... \LaTeX:\\ \url{https://amp.nos.nl/artikel/2094524-militair-omgekomen-bij-schietoefening-ossendrecht.html}
+
+\bibitem{ovv04042016lessenongevalossendrecht} ... \LaTeX:\\ \url{https://www.onderzoeksraad.nl/nl/page/4293/lessen-uit-schietongeval-ossendrecht}
+
+\bibitem{quekelboere10052017doodossendrecht} ... \LaTeX:\\ \url{https://www.bndestem.nl/bergen-op-zoom/dood-van-militair-sander-klap-35-in-ossendrecht-was-ongeluk-militairen-vrijuit-hij-probeerde-zijn-leven-te-redden~afe4c7a0/}
+
+
+Wat is de rol van defensie?
+Wat is er gedaan om de veligheid van de medewerkers te waarborgen?
+Waarom zijn deze regels niet nageleefd?
+Wat zijn de gevolgen?
+Zijn de acties die naderhand zijn ondernomen wel redelijk naar de slachtoffers, het nationale veiligheisbeeld en de medewerkers?
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+schipholbrand
+
+Wat is er gebeurd?
+\bibitem{wikiSchipholbrand} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Schipholbrand}
+artikel
+\bibitem{schipholbrand27102005video} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=1i-hfEzxFfk}
+psychologische gevolgen
+rapport
+\bibitem{onderzoeksraad2610schipholoost} ... \LaTeX:\\ \url{https://www.onderzoeksraad.nl/nl/page/392/brand-cellencomplex-schiphol-oost-nacht-van-26-op-27-oktober}
+artikel met video
+herdenking
+impact op de persoon
+herdenking
+\bibitem{schipholbrandvideoargos} ... \LaTeX:\\ \url{https://www.vpro.nl/argos/speel~POMS_VPRO_461907~schadevergoeding-voor-ex-verdachte-schipholbrand~.html}
+chronologie
+\bibitem{nunl30052023feitenoverzicht} ... \LaTeX:\\ \url{https://www.nu.nl/binnenland/3355935/feitenoverzicht-schipholbrand-en-rechtszaken.html}
+tijdlijn
+\bibitem{singeluitgeverijenSchipholbrand} ... \LaTeX:\\ \url{https://www.singeluitgeverijen.nl/isbn/de-schipholbrand/}
+vervolgens van ministers
+beeldanalyse en reconstructie
+\bibitem{eenvandaagschipholbrand} ... \LaTeX:\\ \url{https://eenvandaag.avrotros.nl/item/schipholbrand-niet-ontstaan-in-cel-11/}
+herdenking
+korte samenvatting
+rapport
+artikel
+verwijzing naar het rapport vanuit de politieke oppositie
+beeld vanuit de gevangenisbewaarder
+nationaliteit slachtoffers schipholbrand
+verblijfsvergunning voor de slachtoffers
+gen schadevergoeding voor de verdachte
+verdachte voor de rechter
+geen schadevergoeding voor verdachte
+artikel wat ging er mis bji de schipholbrand
+brand veroorzaakt door een peuk
+smaadschrift
+bewakers worden niet vervolgd
+proces schipholbrand moet over en de brandveilgheid moet worden verbeterd
+de rol van het parlement in de evaluatie
+\bibitem{parlementairemonitorschipholbrand} ... \LaTeX:\\ \url{https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vi3aof7awcxg}
+onderzoeksmemo
+herdenking
+\bibitem{ID} ... \LaTeX:\\ \url{https://archief.ntr.nl/nova/page/detail/uitzendingen/3847/Den%20Haag%20Vandaag_%20herdenking%20Schipholbrand.html}
+herdenking
+invloed van de ramp op samenleving
+\bibitem{videonpoNOVA13112008} ... \LaTeX:\\ \url{https://www.npostart.nl/heropen-onderzoek-schipholbrand/13-11-2008/POMS_NTR_103332}
+opmerkelijk rapport gestolen in de nasleep
+\bibitem{schipperSchipholbrand} ... \LaTeX:\\ \url{https://www.nd.nl/nieuws/nederland/600395/schipholbrand-blijft-schrijnen}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ed.nl/economie/om-geen-schadevergoeding-voor-verdachte-schipholbrand~a6c7c51d/63042600/?referrer=https%3A%2F%2Fwww.google.com%2F}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.groene.nl/artikel/schipholbrand-vereist-debat}
+\bibitem{rizoomes01052014schipholbrand} ... \LaTeX:\\ \url{https://www.rizoomes.nl/brandweer/brand-cellencomplex-schiphol/}
+
+
+
+publicaties
+\bibitem{heuvelkroesschipholbrandcamerabeelden} ... \LaTeX:\\ \url{http://www.msnp.nl/downloads/Onderzoeksmemo%20beeldanalyse%20Schipholbrand%20prot.pdf}
+
+Wat waren de regels destijds?
+Waren de autoriteiten in staat om op tijd in te grijpen of om erger te voorkomen?
+Wat is er gedaan om de veiligheid van illegalen en gevangenissbewaarders te verbeteren
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+vuurwerkramp enschede
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=OMkIsj8FsHw}
+\bibitem{ID} ... \LaTeX:\\ \url{https://depot03.archiefweb.eu/archives/archiefweb/20210703085353/http://www.vuurwerkramp.enschede.nl/publicaties/00005/#.YOAlp-gzaUk}
+
+Wat waren de afspraken omtrent vuurwerkopslag?
+Waarom werden de voorschriften neit nageleefd?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+explosie in beirut
+\bibitem{landryalameddine12112020beiruthelathsystem} ... \LaTeX:\\ \url{https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-020-05906-y}
+\bibitem{ID} ... \LaTeX:\\ \url{https://news.sky.com/story/beirut-blast-cctv-captures-moment-huge-explosion-devastated-hospital-12047452}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.unodc.org/unodc/en/frontpage/2020/September/unodc-assists-lebanon-in-reestablishing-container-shipments-in-the-aftermath-of-the-port-of-beirut-explosion.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://reliefweb.int/sites/reliefweb.int/files/resources/LEB201-Lebanon-Emergency-Response.pdf}
+\bibitem{yadav07082020handlingexplosivesBeirut} ... \LaTeX:\\ \url{https://www.downtoearth.org.in/news/governance/beirut-blast-lessons-time-for-india-to-strengthen-handling-of-explosives-chemicals-72707}
+\bibitem{graham21082020rootsImpactBeirutBlast} ... \LaTeX:\\ \url{https://www.justsecurity.org/72122/the-cost-of-resilience-the-roots-and-impacts-of-the-beirut-blast/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.fire-magazine.com/the-port-of-beirut-explosion-a-timely-reminder}
+\bibitem{neusaeter07082020beirutexplosioneval} ... \LaTeX:\\ \url{https://www.ctvnews.ca/sci-tech/mapping-the-beirut-explosion-what-the-impact-would-look-like-in-canadian-cities-1.5053932}
+
+
+secyrity:
+\bibitem{ID} ... \LaTeX:\\ \url{https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf}
+
+
+secyrity:
+\bibitem{ID} ... \LaTeX:\\ \url{https://permanent.fdlp.gov/gpo45474/AN_advisory.pdf}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+bijlmerramp
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+slmramp
+Wat is er gebeurd?
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.srnieuws.com/suriname/290721/slm-ramp-herdacht/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://werkgroepcaraibischeletteren.nl/documentaire-waarom-nou-jij-over-de-slm-ramp-in-89/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.vpro.nl/speel~WO_NTR_15390142~andere-tijden-17-apr-2019-3-09-min-fouten-en-misstanden-leiden-tot-de-slm-ramp~.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.canonvannederland.nl/nl/kalender/06/1989-06-07}
+\bibitem{ID} ... \LaTeX:\\ \url{https://vijfeeuwenmigratie.nl/archief-herdenkingen-slm-ramp}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.hulpverleningsforum.nl/index.php?topic=84702.0}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.nporadio1.nl/fragmenten/focus/f792e720-bd85-4c18-8a71-b334d9d5de7e/2019-04-17-slm-ramp-een-paar-cowboys-hebben-achter-de-stuurknuppel-gezeten}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.waterkant.net/suriname/2017/06/07/herdenking-slm-ramp-28-jaar-geleden-suriname/}
+\bibitem{espnSLMterugblik} ... \LaTeX:\\ \url{https://www.espn.nl/video/clip?id=8744942}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.themediabrothers.nl/tag/slm-ramp/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.rijnmond.nl/nieuws/182546/30-jaar-na-de-SLM-ramp-Ik-mis-mijn-broer-nog-elke-dag}
+\bibitem{dennisRosier01052020} ... \LaTeX:\\ \url{https://www.voetbalkrant.com/nieuws/2020-05-01/het-vergeten-verhaal-van-de-slm-ramp}
+\bibitem{hassing07062020slmramp} ... \LaTeX:\\ \url{https://www.bd.nl/sport/de-slm-ramp-en-het-hartverscheurende-verhaal-van-jerry-en-winnie-haatrecht~ae4ce105/?referrer=https%3A%2F%2Fwww.google.com%2F}
+\bibitem{amsterdamArchiefSLM} ... \LaTeX:\\ \url{https://www.amsterdam.nl/stadsarchief/nieuws/slm-ramp/}
+\bibitem{rtvOost06062019nabestaande} ... \LaTeX:\\ \url{https://www.rtvoost.nl/nieuws/313496/Nabestaande-SLM-ramp-Heb-ik-wel-mijn-broer-en-moeder-begraven}
+\bibitem{breda07062021AndroSnel} ... \LaTeX:\\ \url{https://www.bredavandaag.nl/nieuws/algemeen/337919/nac-herdenkt-andro-knel-slm-ramp-precies-32-jaar-geleden}
+\bibitem{andereTijdenSLMCrash} ... \LaTeX:\\ \url{https://www.anderetijden.nl/aflevering/792/Een-aangekondigde-vliegramp}
+\bibitem{aviationSLMCrashAccidentInvestigation} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/SLM-ramp}
+database
+\bibitem{aviationReport} ... \LaTeX:\\ \url{https://aviation-safety.net/database/record.php?id=19890607-2}
+rapport
+\bibitem{aviationSLMCrashAccidentInvestigation} ... \LaTeX:\\ \url{https://reports.aviation-safety.net/1989/19890607-2_DC86_N1809E.pdf}
+\bibitem{mcDonnelDouglasCommissionReportSLMCrash} ... \LaTeX:\\ \url{https://aviation-safety.net/investigation/cvr/transcripts/cvr_py764.php}
+\bibitem{wikiSRFlight764} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Surinam_Airways_Flight_764}
+\bibitem{ID} ... \LaTeX:\\ \url{https://web.archive.org/web/20050113010822/https://www.ntsb.gov/ntsb/brief.asp?ev_id=34510&key=0}
+\bibitem{nos07062019SLMTerugblik} ... \LaTeX:\\ \url{https://nos.nl/artikel/2287986-slm-vliegramp-van-precies-30-jaar-geleden-trof-ook-nederlands-voetbal}
+\bibitem{dagvantoenSLMCrash} ... \LaTeX:\\ \url{https://www.dagvantoen.nl/vliegtuigcrash-slm-bij-zanderij-meer-dan-170-doden/}
+\bibitem{waterkantNesty07061989} ... \LaTeX:\\ \url{https://www.waterkant.net/suriname/2006/06/07/vliegramp-suriname-op-7-juni-1989-2/}
+uitgebreid engels artikel
+\bibitem{eduNandlalSRCrash} ... \LaTeX:\\ \url{http://www.edufd.nl/planecrash/}
+ntsb investigtion
+\bibitem{oldjetsSRAirways} ... \LaTeX:\\ \url{http://www.oldjets.net/slm-dc-8-crash.html}
+uitgebreid engels artikel
+\bibitem{cloudberg02012021srflight764} ... \LaTeX:\\ \url{https://admiralcloudberg.medium.com/contract-to-kill-the-crash-of-surinam-airways-flight-764-828979c7efe2}
+persbericht
+\bibitem{apnews07061989srplanecrash} ... \LaTeX:\\ \url{https://apnews.com/article/5b240d758ee4c5422381cc7cdc98566b}
+Wat is de rol van de autoriteiten?
+Welke andere betrokkeen? Enw at is hun verantwoordelijkheid
+Hadden de negatieve gevolgen voorkomen kunnen worden?
+Hoe werd er over veiligheid gedacht?
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Tsjernobyl
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=Xw3SFOfbR84}
+\bibitem{wikiTjernobyl} ... \LaTeX:\\ \url{https://nl.wikipedia.org/wiki/Kernramp_van_Tsjernobyl}
+\bibitem{rivmTjernobyl} ... \LaTeX:\\ \url{https://www.rivm.nl/straling-en-radioactiviteit/stralingsincidenten-en-kernongevallen/tsjernobyl}
+\bibitem{andereTijdenTjernobyl} ... \LaTeX:\\ \url{https://www.anderetijden.nl/aflevering/599/Tsjernobyl-als-Nederlandse-ramp}
+wat er is gebeurd en hoe het leven verdergaat
+\bibitem{kingskey19042022tjernobyl} ... \LaTeX:\\ \url{https://www.nationalgeographic.nl/het-leven-in-tsjernobyl-gaat-door}
+pernsioenfondsen en de tjernobyl ramp
+In 2021 worden mensen nog steeds blootgesteld blijkt ut een gezamelijk onderzoek van greenpeace en oekraiense wetenschappers
+stijging van de nucliaire activiteit gemeten in tjernobyl
+Het toerisme  aspect
+De chronologie
+\bibitem{erikbork26042023reactor4} ... \LaTeX:\\ \url{https://historianet.nl/maatschappij/rampen/tsjernobyl-atoomhel-bij-reactor-4}
+\bibitem{nosTjernobyl30jaarlater} ... \LaTeX:\\ \url{https://nos.nl/artikel/2101523-de-spookstad-van-tsjernobyl-30-jaar-later}
+Dieren in de omgeving van tjernobyl
+De chronologie
+Echtreme droogte zorgd voor gevaar
+\bibitem{knmi04052021tjernobylbosbrand} ... \LaTeX:\\ \url{https://www.knmi.nl/over-het-knmi/nieuws/35-jaar-na-tsjernobyl-liggen-branden-op-de-loer}
+\bibitem{dodonovaKVIRisicoTjernobyl} ... \LaTeX:\\ \url{https://www.kivi.nl/afdelingen/risicobeheer-en-techniek/columns/kernramp-tsjernobyl-het-dilemma-van-scherbitsky}
+Joernalistiek, entertainment en de waarheid
+\bibitem{dumarey04062020verhaalTjernobylWaarheid} ... \LaTeX:\\ \url{https://www.vrt.be/vrtnws/nl/2020/04/06/in-de-ban-van-tsjernobyl-vooruitblik/}
+Een onderzoek
+
+Huidige gevolgen van de explosie van toen
+\bibitem{sparkesNewScientistTjernoby;} ... \LaTeX:\\ \url{https://www.newscientist.nl/nieuws/steeds-meer-kernreacties-in-ontoegankelijke-ruimte-in-tsjernobyl/}
+De ramp, hoe de mensen ermee omgingen en hoe er nu geleef wordt
+
+evaluatieonderzoek en amatregeen
+\bibitem{kernenergiened26041986chronologiemaatregelen} ... \LaTeX:\\ \url{https://www.kernenergieinnederland.nl/node/308}
+\bibitem{mapszoneReactor} ... \LaTeX:\\ \url{https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=nl&t=h&msa=0&ll=51.388923%2C30.099792&spn=0.685583%2C1.645203&z=9&source=embed&mid=1MLcOcMK_WrIJYMuTf0VVuYnMqQI}
+Invloed van de mens op de omgeving
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.animalstoday.nl/mens-schadelijker-natuur-tsjernobyl/}
+Heroplevende splijtingsreacties
+docu van schooltv
+Radioactiviteit bereikt nederland
+documentaire en maatregelen
+\bibitem{kernhistoriek15062021tjernobyl} ... \LaTeX:\\ \url{https://historiek.net/kernramp-van-tsjernobyl-1986/8769/}
+Het verhaal van een overledende
+Toerisme
+toerisme
+toerisme
+Dieren in de omgevong
+Toevluchtsoord voor vluchtelingen van de oorlog met russische seperatisten
+Ouderen die terugkeerden naar hun woonplaats na de gedwongen verhuizing door de autoriteiten
+De straling neemt weer toe
+Lessen geleerd van tjernobyl
+\bibitem{nucleairforumFeitenTjernobyl} ... \LaTeX:\\ \url{https://www.nucleairforum.be/thema/veiligheid-als-prioriteit/tsjernobyl-de-feiten}
+Toerisme
+Bosbrand in tjernobyl
+invloed van de ramp op belgie
+\bibitem{kernongevalTjernobylFancGov} ... \LaTeX:\\ \url{https://fanc.fgov.be/nl/noodsituaties/zware-ongevallen-het-buitenland/1986-kernongeval-tsjernobyl}
+Boek recensie
+Fotos en berekeningen
+ontmanteling en toerisme
+Belangrijke lessen en overeenkomsten
+De journalistieke waarheid van de koude oorlog
+De lessen van
+\bibitem{arendswolters062019lessenTjernobyl} ... \LaTeX:\\ \url{https://magazines.autoriteitnvs.nl/nieuwsbrief-anvs/2019/02/de-lessen-van-tsjernobyl}
+Een toristenattractie maken van tjernobyl
+De radioactieve straling toen en nu
+de 30km zone door de ogen van toeristen
+artikel
+stedentrip
+rapport
+\bibitem{damveld08052020tjernobyl} ... \LaTeX:\\ \url{https://wisenederland.nl/wp-content/uploads/2020/06/TSJERNOBYL.pdf}
+slapend monster
+docu
+krantenartikel
+hbo serie
+docuserie
+de  nieuwe sacrofaag
+hulp aan slachtoffers
+slapende reactor
+krantenartikel
+\bibitem{deVriestjernobylHolland} ... \LaTeX:\\ \url{https://onh.nl/verhaal/besmette-melk-en-radioactieve-spinazie-tsjernobyl-in-holland}
+hbo serie
+internationale gevolgen
+toerisme
+nieuwe koepel
+media communicatie
+docu
+dieren
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.amboanthos.nl/boek/nacht-in-tsjernobyl/}
+koepel
+koepel
+\bibitem{ing3enieur29042015antistralingskoepel} ... \LaTeX:\\ \url{https://www.deingenieur.nl/artikel/nieuwe-antistralingskoepel-tsjernobyl-bijna-af}
+toerisme
+toeristisch reiperspectief
+toerisme
+niwe koepel
+overschakelen naar duurzaamheid
+docu
+tjernobyl wekt nu duurazme energie
+toerisme
+overeenkomsten tjernobyl en fukushima
+drank en sla uit tjernobyl
+geen efficiente opslag is mogelijk
+
+wetenschappelijke artikelen
+
+zaterdag 26 april 1986. Er vind routineonderhoud plaats bij reactor 4, De controle wordt uitegevoerd door de dagploeg. Vnwege een test wordt jhet koelsysteem uitgeschakeld. Door omstandigheden wordt de test uitgesteld en wordt de verantwoordelijkheid overgedragen aan de avondploeg.
+De operator maakt bedieningsfouten waardoot de reactor bijna stil komt te liggen. En vervolgens probeert hij de reactor weer op gang te brengen. ondanks de snelle temperatuurstijging wordt het experiment doorgezet. Dan wordt ook het veiligheidssysteem stilgelgd. Terwijl het koelwater langzaam opwarmt, sluit hij de klep waarlangs de stoom naar de generator stroomt.
+
+De temperatuur van de reactorstaven neemt daarna snel toe. Terwijl er een oncontroleerbare kettingreactie op gang komt, laat het personeel in paniek de regelstaven zakken om de warmteontwikkeling af te remmen. Het is dan echter al te laat. Door een ontwerpfout loopt het vermogen razendsnel op tot 33.000 megawatt, ruim tien keer hoger dan normaal.
+
+In een oogwenk verandert al het koelwater in stoom. De ontploffing die daarop volgt, blaast het 2000 ton zware deksel van de reactor af.}
+
+In de ravage vat het gloeiend hete grafiet in de reactor spontaan vlam. De uitslaande brand en een tweede explosie voeren een radioactieve rookwolk tot 8 kilometer hoogte. 
+In een poging het vuur in reactor 4 te doven, storten helikopters vanuit de lucht zand, lood en boorzuur in de reactorkern. Het mag echter niet baten.
+
+Intussen is de nucleaire brandstof zo heet geworden dat die door de bodem van het reactorvat dreigt te smelten. Als dat gebeurt, kan het bluswater onder het vat in één klap verdampen en dreigt een derde explosie die een groot deel van Europa onbewoonbaar zal maken. Om dit te voorkomen moet het water hoe dan ook worden weggepompt.
+
+Drie brandweermannen wagen zich daarvoor in de ruimte onder de reactor, blootgesteld aan 300 sievert per uur, 300.000 keer de dosis die een Nederlander jaarlijks maximaal mag oplopen. Ze slagen daarin, maar twee van hen overlijden enkele dagen later aan acute stralingsziekte.
+
+Hoewel geigertellers de dag na de ramp onrustbarende waarden aangeven, slaat het plaatselijk bestuur geen alarm. De bevolking is het niet gewend om vragen te stellen.
+
+De volgende dag blijkt er wel degelijk iets ernstigs aan de hand te zijn. In een lange rij bussen worden de 135.000 inwoners op 27 april uit het besmette gebied geëvacueerd, om er nooit meer terug te keren.
+
+De ramp is dan nog steeds geen wereldnieuws. De Sovjetautoriteiten blijken er niet eens van op de hoogte te zijn – president Gorbatsjov klaagt later dat hij via Zweden aan zijn informatie moest komen.
+
+
+\bibitem{verschuur14012013tjernobylreports} ... \LaTeX:\\ \url{http://essay.utwente.nl/63353/1/Verschuur,_W._-_s0123617_(verslag).pdf}
+\bibitem{paperlessarchivesTjernobyl} ... \LaTeX:\\ \url{https://www.paperlessarchives.com/chernobyl_nuclear_accident_doc.html}
+\bibitem{vargos082000tjernobylconcerns} ... \LaTeX:\\ \url{https://www.pnnl.gov/main/publications/external/technical_reports/pnnl-13294.pdf}
+\bibitem{mauroNuclearRiskSociety} ... \LaTeX:\\ \url{http://www.geocities.ws/scannapuerci/demauroinnovation.pdf}
+\bibitem{vienna06092005LookingBack} ... \LaTeX:\\ \url{https://www-pub.iaea.org/MTCD/publications/PDF/Pub1312_web.pdf}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+MH17
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+oekraine powergrid
+\bibitem{owens21032017ukrainemitigationstrategies} ... \LaTeX:\\ \url{https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.us-cert.gov/ics/alerts/IR-ALERT-H-16-056-01}
+
+\bibitem{cerulus2019FrontlineRussiaAttack} ... \LaTeX:\\ \url{https://www.politico.eu/article/ukraine-cyber-war-frontline-russia-malware-attacks/}
+
+\bibitem{grammatikis2019AttackIEC6087505104} ... \LaTeX:\\ \url{https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems}
+
+\bibitem{hidajat2016ScadaSimulator} ... \LaTeX:\\ \url{https://www.diva-portal.org/smash/get/diva2:1046339/FULLTEXT01.pdf}
+
+\bibitem{uscert20072021crashmalware} ... \LaTeX:\\ \url{https://www.us-cert.gov/ncas/alerts/TA17-163A}
+\bibitem{zetter12062017malwareanalysis} ... \LaTeX:\\ \url{https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer}
+\bibitem{icsRussianHackingCyberWeapon} ... \LaTeX:\\ \url{http://blog.wallix.com/ics-security-russian-hacking}
+\bibitem{usgovC2M2} ... \LaTeX:\\ \url{https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-cybersecurity-0}
+
+bediening werking schutsluizen pdf
+\bibitem{varendoejesamenVeiligSluisvaren} ... \LaTeX:\\ \url{https://www.varendoejesamen.nl/storage/app/media/downloads/vlot-en-veilig-door-brug-en-sluis-.pdf}
+\bibitem{vlaamsewaterwegen012014} ... \LaTeX:\\ \url{http://www.scarphout.be/assets/bedieningstijden2014.pdf}
+\bibitem{bardetsluizenAmsterdam} ... \LaTeX:\\ \url{https://www.theobakker.net/pdf/sluizen.pdf}
+\bibitem{dvsbedieningsluizenenbruggen} ... \LaTeX:\\ \url{http://www.watersportalmanak.nl/files/File/Brugbediengstijden_watersport.pdf}
+\bibitem{crowstappenplanmachinerichtlijnen} ... \LaTeX:\\ \url{https://www.crow.nl/downloads/pdf/verkeer-en-vervoer/verkeersmanagement/verkeersregelinstallaties/stappenplan-machinerichtlijnen_web.aspx}
+\bibitem{rijksoverheidrwsonderzoeksrapporten} ... \LaTeX:\\ \url{https://puc.overheid.nl/rijkswaterstaat/doc/PUC_95170_31/}
+\bibitem{bedieningstijdensluizenenbruggen} ... \LaTeX:\\ \url{http://wsv.wsvdegors.nl/wp-content/uploads/2017/05/Bedieningstijden_201701.pdf}
+\bibitem{sluiscomplexkornwerderzand} ... \LaTeX:\\ \url{https://www.commissiemer.nl/projectdocumenten/00004717.pdf}
+\bibitem{varengroningendrenthe} ... \LaTeX:\\ \url{https://tasmanroutes.nl/wp-content/uploads/docs/1900-bedieningstijden-groningen-drenthe.pdf}
+\bibitem{wallemuldergetijhoogteverschillen} ... \LaTeX:\\ \url{http://www.vliz.be/docs/groterede/GR21_Zeesluis.pdf}
+\bibitem{biemandssluizenLith} ... \LaTeX:\\ \url{https://www.bhic.nl/media/document/file/rien-biemans-sluis-en-stuw-bij-lith.pdf}
+\bibitem{weilerburgers11062018zoutindringingschutsluizen} ... \LaTeX:\\ \url{https://www.nattekunstwerkenvandetoekomst.nl/upload/documents/tinymce/KpNK-2017-SKW-01c001-v1-Zoutindringing-door-schutsluizen-overzicht-projecten-en-aanzet-formulering-tbv-netwerkmodellen.pdf}
+\bibitem{rwsrichtlijnvaarwegen2011} ... \LaTeX:\\ \url{https://www.arnhemspeil.nl/nap/dok/2011-12-00-rijkswaterstaat-richtlijnen-vaarwegen.pdf}
+\bibitem{slotterwisscha02062016swimwaywaddenzee} ... \LaTeX:\\ \url{https://rijkewaddenzee.nl/wp-content/uploads/2016/08/Inventarisatie-toestand-vispasseerbaarheid-zoet-zout-overgangen-Waddenzee-2-6-2016-PRW-rapportage-Definitief.pdf}
+\bibitem{visvriendelijksluisbeheer06012014} ... \LaTeX:\\ \url{http://www.nevepaling.nl/files/Image//nederlands/informatiecentrum/2014-definitieve-voorkeursvariantennotitie-visvriendelijk-sluisbeheer-afsluitdijk-en-houtribdijk//2014_definitieve_voorkeursvariantennotitie_visvriendelijk_sluisbeheer_afsluitdijk_en_houtribdijk.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ifv.nl/kennisplein/Documents/20120614-BwNL-Handboek-brandbeveiligingsinstallaties.pdf}
+\bibitem{aubel112016sluiscomplexHeumen} ... \LaTeX:\\ \url{https://ienc-kennisportaal.nl/wp-content/uploads/2017/01/Objectbeschrijving-Heumen.pdf}
+\bibitem{arends052005schutsluisstolwijkschevliet} ... \LaTeX:\\ \url{https://library.wur.nl/edepot/websites/stolwijkersluis/presentatie-data/data/pdf/TUDelft-bouwhistorisch-onderzoek.pdf}
+\bibitem{multidomeinbediening} ... \LaTeX:\\ \url{https://www.icentrale.nl/wp-content/uploads/bsk-pdf-manager/2019/01/20170929_Project-2.02-Deliverable-Gehele-werkpakket-2.02.pdf}
+\bibitem{historischesluizen} ... \LaTeX:\\ \url{https://www.stowa.nl/sites/default/files/assets/PUBLICATIES/Publicaties%202000-2010/Publicaties%202000-2004/STOWA%202004-XX%20boekenreeks%2020.pdf}
+\bibitem{nmmag2017centralebediening} ... \LaTeX:\\ \url{https://www.nm-magazine.nl/pdf/NM_Magazine_2017-3.pdf}
+\bibitem{knooppuntvaarwegenFryslanGroningenDrenthe} ... \LaTeX:\\ \url{https://www.varendoejesamen.nl/storage/app/media/knooppunten/knooppuntenboekje_03_Friesland_Groningen_Drenthe.pdf}
+\bibitem{afsluitdijk052015} ... \LaTeX:\\ \url{https://deafsluitdijk.nl/wp-content/uploads/2014/05/Plan-project-MER-Afsluitdijk.pdf}
+
+what is a good software specification
+\bibitem{fvaandrager2322010Goodmodel} ... \LaTeX:\\ \url{http://www.cs.ru.nl/~fvaan/PV/what_is_a_good_model.html#:~:text=A%20good%20model%20has%20a%20clearly%20specified%20purpose%20and%20(ideally,code%20generation%2C%20and%20test%20generation.}
+
+\bibitem{onix01102022devopmodel} ... \LaTeX:\\ \url{https://onix-systems.com/blog/7-basic-software-development-models-which-one-to-choose}
+\bibitem{sulemani04012021softwareprocesmodel} ... \LaTeX:\\ \url{https://www.educative.io/blog/software-process-model-types}
+
+\bibitem{globalluxsoft18102017softdev} ... \LaTeX:\\ \url{https://medium.com/globalluxsoft/5-popular-software-development-models-with-their-pros-and-cons-12a486b569dc}
+\bibitem{wiegers30052022SRS} ... \LaTeX:\\ \url{https://www.jamasoftware.com/blog/characteristics-of-excellent-requirements/}
+\bibitem{muller06092020goodspecification} ... \LaTeX:\\ \url{https://www.gaudisite.nl/ValidationOfRequirementsSlides.pdf}
+\bibitem{informit30062008reqmanagement} ... \LaTeX:\\ \url{https://www.informit.com/articles/article.aspx?p=1152528&seqNum=4}
+\bibitem{altexsoft15092020writingSRS} ... \LaTeX:\\ \url{https://www.altexsoft.com/blog/software-requirements-specification/}
+\bibitem{ID} ... \LaTeX:\\ \url{E:\Backup Mijn Documenten\Hogeschool vakken\TINLab advnced algorithms\tinlab_advanced_algoriths\achtergrondinfo research}
+sheet 28 transitorische relaties vertalen van ctl naar ltl
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/buchi/lec16_Buchi+LTL.pdf}
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/buchi/lect4.pdf}
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/buchi/lecture8.pdf}
+%transitie relaties in LTL sheet 8
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/CS%20267%20Automated%20Verification/l2.pdf}
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/FORMAL%20METHODS/slide3.pdf}
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/FORMAL%20METHODS/slide4.pdf}
+%hf 4.2
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/properties%20ctl/Chapter-4-Formal-Methods-LTL-CTL-TRAFFIC-LIGHT-EXAMPLE-pages-18-24.pdf}
+
+
+%\bibitem{ID} ... \LaTeX:\\ \url{E:\Backup Mijn Documenten\Hogeschool vakken\TINLab advnced algorithms\tinlab_advanced_algoriths\lesmateriaal\modelchecking.pdf}
+%
+%
+%
+%
+%
+%\bibitem{ID} ... \LaTeX:\\ \url{E:\Backup Mijn Documenten\Hogeschool vakken\TINLab advnced algorithms\tinlab_advanced_algoriths\lesmateriaal}
+%
+%parallelle compositie
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/properties%20ctl/model.pdf}
+
+Urgent locations
+Is hetzelfde als het toevoegen van een clock x, met een invariant x<=o op de locatie. Zolang een systeem in een urgente locatie zit mag er geen tijd verstrijken
+Bjivoorbeeld als een sluis klaar is engeen schpeen in de sluis. Dan moet er een urgentie zijn dat alle schepen waar mogelijk worden opgesteld voor invaren. Als er geen schepen in de wachtrij en er staan geenschepen klaar om in te varen dn is er misschien urgentie om aan de andere kant schepen op te halen.
+Commited locations
+Als een of meerdere locaties ingesteld zijn als committed. Een committed state kan niet vertragen  en de volgende transitie moet een transitie zijn waarin de uitgaande edge komt van een committed edge
+
+
+zeno gedrag: de mogelijkheid dat in een eindige hoeveelheid tijd een oneindig antal handelingen kan worden verricht.
+Bijvoorbeeld tijdens het nivelleren
+Bij het opstellen van schepen
+Bij het laten wachten van schepen
+Bij het invaren van schepen
+%\bibitem{ID} ... \LaTeX:\\ \url{file:///E:/Backup%20Mijn%20Documenten/Hogeschool%20vakken/TINLab%20advnced%20algorithms/tinlab_advanced_algoriths/achtergrondinfo%20research/properties%20ctl/std.pdf}
+
+
+
+\bibitem{TNOStint} ... \LaTeX:\\ \url{https://repository.tno.nl/islandora/object/uuid%3Acdef48df-da49-46b6-8678-5c62a88a0090 }
+
+
+
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://wayback.archive-it.org/9650/20200409062940/http:/p3-raw.greenpeace.org/international/Global/international/publications/nuclear/2016/Nuclear_Scars.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://bdtechtalks.com/2020/07/29/self-driving-tesla-car-deep-learning/}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% critical sagfety systems algemeent
+\bibitem{winceckCriticalToSafety} ... \LaTeX:\\ \url{https://www.icheme.org/media/8976/xxiv-poster-11.pdf}
+\bibitem{chambersHazardAnalysisSCS} ... \LaTeX:\\ \url{https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV55Chambers.pdf}
+\bibitem{rslater1998SCSAnalysis} ... \LaTeX:\\ \url{https://users.ece.cmu.edu/~koopman/des_s99/safety_critical/}
+\bibitem{knightchallengessafetyCritical} ... \LaTeX:\\ \url{https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf}
+\bibitem{johnson2006devsafetycritical} ... \LaTeX:\\ \url{http://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf}
+\bibitem{daucriticalsafetyconsider} ... \LaTeX:\\ \url{https://www.dau.edu/tools/se-brainbook/Pages/Design%20Considerations/Critical-Safety-Item.aspx}
+\bibitem{fallsafedesign} ... \LaTeX:\\ \url{https://faculty.up.edu/lulay/MEStudentPage/failsafe.pdf}
+\bibitem{arForce2015VerificationExpectations} ... \LaTeX:\\ \url{https://daytonaero.com/wp-content/uploads/AC-17-01.pdf}
+\bibitem{nebulaassessment} ... \LaTeX:\\ \url{https://nebula.esa.int/content/assessment-methodology-certification-safety-gnc-critical-space-systems}
+\bibitem{lalaArchitecturalPrinciples} ... \LaTeX:\\ \url{https://www.cs.unc.edu/~anderson/teach/comp790/papers/safety_critical_arch.pdf}
+\bibitem{mitNotesSafetyCritical} ... \LaTeX:\\ \url{https://www.cs.uct.ac.za/mit_notes/human_computer_interaction/htmls/ch02s10.html}
+\bibitem{britishColumbia2020GuideSafetyCritical} ... \LaTeX:\\ \url{https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dcbbc29d/EGBC-Safety-Critical-Software-V1-0.pdf.aspx}
+\bibitem{fulvio1993safetycriticalsystems} ... \LaTeX:\\ \url{https://assembly.coe.int/nw/xml/XRef/X2H-Xref-ViewHTML.asp?FileID=7144&lang=EN}
+\bibitem{dlrtabid} ... \LaTeX:\\ \url{https://www.dlr.de/ft/en/desktopdefault.aspx/tabid-1360/1856_read-36215/}
+\bibitem{knight2010SafetyCritical} ... \LaTeX:\\ \url{https://ieeexplore.ieee.org/document/1007998}
+\bibitem{creavisafecritical} ... \LaTeX:\\ \url{https://coreavi.com/the-future-of-safety-critical-systems-in-the-emerging-autonomous-world/}
+\bibitem{valdes2018SafetybyAutomation} ... \LaTeX:\\ \url{https://www.intechopen.com/chapters/59838}
+\bibitem{2015whensafetymanagementsystemsfail} ... \LaTeX:\\ \url{https://verticalmag.com/features/whensafetymanagementsystemsfail/}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+critical safety systems chemicals
+\bibitem{esc16022021scsdeveloping} ... \LaTeX:\\ \url{https://esc.uk.net/safety-critical-systems}
+\bibitem{oecd2008chemsafeperfindct} ... \LaTeX:\\ \url{https://www.oecd.org/chemicalsafety/chemical-accidents/41269710.pdf}
+\bibitem{issa2003chemicalsID} ... \LaTeX:\\ \url{https://safety-work.org/fileadmin/safety-work/articles/Verwechslung_von_Chemikalien/Stoffverwechslung_e.pdf}
+\bibitem{sommerville2008CriticalSystems} ... \LaTeX:\\ \url{https://ifs.host.cs.st-andrews.ac.uk/Books/SE9/Web/Dependability/CritSys.html}
+\bibitem{identifyinglaboratoryHazards} ... \LaTeX:\\ \url{https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/identifying-and-evaluating-hazards-in-research-laboratories.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.computer.org/csdl/magazine/so/2017/04/mso2017040049/13rRUxCitHw}
+\bibitem{ID} ... \LaTeX:\\ \url{https://msquair.files.wordpress.com/2012/06/assca-guiding-philosophic-principles-on-the-design-and-acquisition-of-safety-critical-systems-v1-6.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://epsc.be/Documents/PS+Fundamentals/_/EPSC_Process%20Safety%20Fundamentals%20-%20Booklet_March2021.pdf}
+\bibitem{winceckCriticalToSafety} ... \LaTeX:\\ \url{https://www.icheme.org/media/8976/xxiv-poster-11.pdf}
+\bibitem{chambersHazardAnalysisSCS} ... \LaTeX:\\ \url{https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV55Chambers.pdf}
+\bibitem{rslater1998SCSAnalysis} ... \LaTeX:\\ \url{https://users.ece.cmu.edu/~koopman/des_s99/safety_critical/}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+https://www.openriskmanual.org/wiki/Category:Risk_Management
+https://www.openriskmanual.org/wiki/Category:Risk_Analysis
+https://www.openriskmanual.org/wiki/Category:Risk_Aggregation
+https://www.openriskmanual.org/wiki/Category:Risk_Management_Biases
+https://www.openriskmanual.org/wiki/Category:Risk_Aggregation
+https://www.openriskmanual.org/wiki/Category:Quantitative_Risk_Management
+https://www.openriskmanual.org/wiki/Category:Model_Risk
+https://www.openriskmanual.org/wiki/Category:Model_Validation
+https://www.openriskmanual.org/wiki/Category:Risk_Data
+https://www.openriskmanual.org/wiki/Category:Risk_Data_Ontology
+https://www.openriskmanual.org/wiki/Category:Risk_Model_Ontology
+https://www.openriskmanual.org/wiki/Category:Risk_Models
+https://www.openriskmanual.org/wiki/Category:Transition_Matrix
+https://www.openriskmanual.org/wiki/Category:Prepayment_Risk_Models
+https://www.openriskmanual.org/wiki/Category:Portfolio_Risk_Models
+https://www.openriskmanual.org/wiki/Category:LGD_Models
+https://www.openriskmanual.org/wiki/Category:Credit_Scoring_Models
+https://www.openriskmanual.org/wiki/Category:Risk_Management_Pathologies
+https://www.openriskmanual.org/wiki/Category:Risk_Measurement
+https://www.openriskmanual.org/wiki/Category:Risk_Concentration
+https://www.openriskmanual.org/wiki/Category:Concentration_Measurement
+https://www.openriskmanual.org/wiki/Category:Geographic_Concentration
+https://www.openriskmanual.org/wiki/Category:Name_Concentration
+https://www.openriskmanual.org/wiki/Category:Sector_Concentration
+https://www.openriskmanual.org/wiki/Category:Systemic_Risk
+https://www.openriskmanual.org/wiki/Category:Threat_Model
+https://www.openriskmanual.org/wiki/Category:Internal_Governance
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+critical safety systems airplanes
+\bibitem{ID} ... \LaTeX:\\ \url{file:///C:/Users/gally/Downloads/AGARDAG300.pdf}
+\bibitem{brat2015verifysafetyflightcritical} ... \LaTeX:\\ \url{https://arxiv.org/abs/1502.02605}
+\bibitem{knightchallengessafetyCritical} ... \LaTeX:\\ \url{https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.jstor.org/stable/44682826}
+\bibitem{johnson2006devsafetycritical} ... \LaTeX:\\ \url{http://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf}
+\bibitem{yeagerSafetyCritical} ... \LaTeX:\\ \url{https://sites.google.com/site/cis115textbook/safety-critical-systems}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.dau.edu/tools/se-brainbook/Pages/Design%20Considerations/Critical-Safety-Item.aspx}
+\bibitem{ID} ... \LaTeX:\\ \url{https://mcdpinc.com/safety-critical-systems}
+\bibitem{fallsafedesign} ... \LaTeX:\\ \url{https://faculty.up.edu/lulay/MEStudentPage/failsafe.pdf}
+\bibitem{2008manualflightsafetyParts} ... \LaTeX:\\ \url{https://www.enidine.com/CorporateSite/media/itt/Resources/Distributors/EndUserDocuments/Suppliers_Documents/QAM03_Rev_E.pdf}
+\bibitem{arForce2015VerificationExpectations} ... \LaTeX:\\ \url{https://daytonaero.com/wp-content/uploads/AC-17-01.pdf}
+\bibitem{harvardRiskResearchaircraft} ... \LaTeX:\\ \url{https://rmas.fad.harvard.edu/pages/chartered-private-aircraft-0}
+\bibitem{ID} ... \LaTeX:\\ \url{https://pubmed.ncbi.nlm.nih.gov/7966484/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://nebula.esa.int/content/assessment-methodology-certification-safety-gnc-critical-space-systems}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.aopa.org/training-and-safety/online-learning/safety-spotlights/aircraft-systems}
+\bibitem{lalaArchitecturalPrinciples} ... \LaTeX:\\ \url{https://www.cs.unc.edu/~anderson/teach/comp790/papers/safety_critical_arch.pdf}
+\bibitem{andersenromanski2011verificationsafetycritical} ... \LaTeX:\\ \url{https://queue.acm.org/detail.cfm?id=2024356}
+\bibitem{aviatioLawGeneralDefinitions} ... \LaTeX:\\ \url{https://www.law.cornell.edu/cfr/text/14/1.1}
+\bibitem{ntsb2006safetyreportTransportAirplanes} ... \LaTeX:\\ \url{http://libraryonline.erau.edu/online-full-text/ntsb/safety-reports/SR06-02.pdf}
+\bibitem{mitNotesSafetyCritical} ... \LaTeX:\\ \url{https://www.cs.uct.ac.za/mit_notes/human_computer_interaction/htmls/ch02s10.html}
+\bibitem{ID} ... \LaTeX:\\ \url{https://flightsafety.org/}
+\bibitem{kochenfender2020aisafetycritical} ... \LaTeX:\\ \url{https://engineering.stanford.edu/magazine/article/mykel-kochenderfer-ai-and-safety-critical-systems}
+\bibitem{humanfactorsAviationSafety} ... \LaTeX:\\ \url{https://www.faasafety.gov/files/gslac/courses/content/258/1097/AMT_Handbook_Addendum_Human_Factors.pdf}
+\bibitem{eulegislator2000safetyregulation} ... \LaTeX:\\ \url{https://www.eurocontrol.int/sites/default/files/2019-06/src-doc-1-e1.0.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://aerossurance.com/safety-management/critical-maintenance-tasks/}
+\bibitem{gao2020aviationcybersecurity} ... \LaTeX:\\ \url{https://www.gao.gov/assets/gao-21-86.pdf}
+\bibitem{roleofcodeinsoftware} ... \LaTeX:\\ \url{https://criticalsoftware.com/en/news/coding-the-skies}
+\bibitem{airlie2018designparameters} ... \LaTeX:\\ \url{https://aviation.stackexchange.com/questions/46677/what-are-the-design-parameters-for-airliner-safety}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cantwell.senate.gov/news/press-releases/cantwells-comprehensive-bipartisan-bicameral-aircraft-safety-and-certification-reforms-signed-into-law}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.forbes.com/advisor/travel-rewards/737-max-what-is-safety-anyway/}
+\bibitem{humanfactors2010Aviation} ... \LaTeX:\\ \url{https://www.tandfonline.com/doi/full/10.1080/00140130903521587}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.doi.gov/aviation/safety}
+\bibitem{courtin2018safetyconsiderations} ... \LaTeX:\\ \url{https://dspace.mit.edu/bitstream/handle/1721.1/118438/ICAT_2018_07_Christoper%20Courtin_Report.pdf?sequence=1&isAllowed=y}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.defence.gov.au/dasp/Docs/Manuals/7001053/eTAMMweb/1049.htm}
+\bibitem{prentice2014Failedaviationprogram} ... \LaTeX:\\ \url{https://www.aviationpros.com/aircraft/commercial-airline/article/10239806/staying-legal-another-failed-faa-safety-program}
+\bibitem{civilAviationConsulting} ... \LaTeX:\\ \url{https://www.iata.org/en/services/consulting/safety-operations/}
+\bibitem{olivercalvardpotocnik2017Aviationautomation} ... \LaTeX:\\ \url{https://hbr.org/2017/09/the-tragic-crash-of-flight-af447-shows-the-unlikely-but-catastrophic-consequences-of-automation}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.infosys.com/industries/communication-services/documents/landing-gear-design-and-development.pdf}
+\bibitem{airforce2000SystemSafety} ... \LaTeX:\\ \url{https://www.acqnotes.com/Attachments/AF_System-Safety-HNDBK.pdf}
+\bibitem{fed2019SafeSecureSUAS} ... \LaTeX:\\ \url{https://www.transportation.gov/testimony/state-airline-safety-federal-oversight-commercial-aviation}
+\bibitem{AirportSafety} ... \LaTeX:\\ \url{https://www.federalregister.gov/documents/2019/02/13/2019-00758/safe-and-secure-operations-of-small-unmanned-aircraft-systems}
+\bibitem{ID} ... \LaTeX:\\ \url{https://archive.etsc.eu/documents/safety%20in%20airports.pdf}
+\bibitem{passengerSafety} ... \LaTeX:\\ \url{https://journals.sagepub.com/doi/pdf/10.1177/002029400403700202}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.unmannedsystems.ca/wp-content/uploads/2019/01/DRAFT-AC-922-001-RPAS-SAFETY-ASSURANCE.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ccsdualsnap.com/pressure-switches-in-aerospace-applications/}
+\bibitem{britishColumbia2020GuideSafetyCritical} ... \LaTeX:\\ \url{https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dcbbc29d/EGBC-Safety-Critical-Software-V1-0.pdf.aspx}
+\bibitem{uscongres2019aircraftresearch} ... \LaTeX:\\ \url{https://readwrite.com/2018/12/21/air-travel-is-far-safer-than-you-think-heres-why/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://fas.org/sgp/crs/misc/R45939.pdf}
+\bibitem{ariAssociation2018} ... \LaTeX:\\ \url{https://cdn.ymaws.com/www.astna.org/resource/collection/4392B20B-D0DB-4E76-959C-6989214920E9/ASTNA_Safety_Position_Paper_2018_FINAL.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://transportation.house.gov/imo/media/doc/2020.09.15%20FINAL%20737%20MAX%20Report%20for%20Public%20Release.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.transportstyrelsen.se/globalassets/global/luftfart/seminarier_och_information/seminarier-2016/luftvardighet-camo-och-145-verkstader/11b-critical-task-fpl.pdf}
+\bibitem{fox2005HelicopterSafety} ... \LaTeX:\\ \url{https://www.h-a-c.ca/IHSS_Helicopter_Safety_History_05.pdf}
+\bibitem{fulvio1993safetycriticalsystems} ... \LaTeX:\\ \url{https://assembly.coe.int/nw/xml/XRef/X2H-Xref-ViewHTML.asp?FileID=7144&lang=EN}
+\bibitem{rakas2018criticalsystemsFailures} ... \LaTeX:\\ \url{https://www.skybrary.aero/index.php/Cockpit_Automation_-_Advantages_and_Safety_Challenges}
+\bibitem{ID} ... \LaTeX:\\ \url{https://ntrs.nasa.gov/citations/20120014507}
+\bibitem{cockpitAutomation} ... \LaTeX:\\ \url{https://www.sciencedirect.com/science/article/abs/pii/S092575351730601X}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.semanticscholar.org/paper/Safety-critical-avionics-for-the-777-primary-flight-Yeh/8facf90f4a9051c3ab8ce11e39d0893118268d90}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.easa.europa.eu/faq/19013}
+\bibitem{belcaatrovalidateSafetyCritical} ... \LaTeX:\\ \url{https://ntrs.nasa.gov/api/citations/20120014507/downloads/20120014507.pdf}
+\bibitem{civilAviationsAuthority}... \LaTeX:\\\url{"https://publicapps.caa.co.uk/modalapplication.aspx?catid=1&pagetype=65&appid=11&mode=list&type=subcat&id=32}
+\bibitem{ID} ... \LaTeX:\\ \url{https://definitions.uslegal.com/f/flight-safety-critical-aircraft-part/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://nbaa.org/nbaa-aviation-groups-ask-congress-to-prevent-5g-interference-to-critical-safety-systems/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.dlr.de/ft/en/desktopdefault.aspx/tabid-1360/1856_read-36215/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.fsd.lrg.tum.de/research/safety-critical/}
+\bibitem{knight2010SafetyCritical} ... \LaTeX:\\ \url{https://ieeexplore.ieee.org/document/1007998}
+\bibitem{AAA052005IdentifySCHitems} ... \LaTeX:\\ \url{https://www.faa.gov/about/office_org/headquarters_offices/ast/licenses_permits/media/RLVGuide_01-05_05.pdf}
+\bibitem{devTopics01032020} ... \LaTeX:\\ \url{https://smallbusinessprogramming.com/safety-critical-software-15-things-every-developer-should-know/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://coreavi.com/the-future-of-safety-critical-systems-in-the-emerging-autonomous-world/}
+\bibitem{valdes2018SafetybyAutomation} ... \LaTeX:\\ \url{https://www.intechopen.com/chapters/59838}
+\bibitem{2015whensafetymanagementsystemsfail} ... \LaTeX:\\ \url{https://verticalmag.com/features/whensafetymanagementsystemsfail/}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+critical safety systems fireworks
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.hsdl.org/c/firework-safety/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Fireworks}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.seattletimes.com/subscribe/signup-offers/?pw=redirect&subsource=paywall&return=https://www.seattletimes.com/opinion/editorials/firework-safety-even-more-critical-after-heat-wave/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.nrcan.gc.ca/sites/www.nrcan.gc.ca/files/mineralsmetals/pdf/mms-smm/expl-expl/20170828-G05-09E_ACC.pdf}
+\bibitem{fireworksinjuries2021duringcovid} ... \LaTeX:\\ \url{https://www.prnewswire.com/news-releases/fireworks-related-injuries-and-deaths-spiked-during-the-covid-19-pandemic-301322243.html}
+\bibitem{osha2017safetymanagementexplosives} ... \LaTeX:\\ \url{https://www.osha.gov/sites/default/files/publications/OSHA3912.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.firelinx.com/wp-content/uploads/2021/02/FLX-Issues-in-Firing-System-Safety.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.eig2.org.uk/wp-content/uploads/WTOFD-Blue-Guide.pdf}
+\bibitem{hse2014explosiveregulations} ... \LaTeX:\\ \url{https://www.hse.gov.uk/explosives/er2014-fireworks-retail-prem.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.firerescue1.com/firefighter-safety/articles/11-fireworks-safety-videos-from-the-serious-to-the-humorous-fHy0M4pT2gjcQ8jA/}
+\bibitem{pirone2016lessonslearnedfireworks} ... \LaTeX:\\ \url{https://www.aidic.it/cet/16/53/044.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.alarmascasas.com.mx/sites/default/files/85006-0061%20--%20FireWorks%20Brochure.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ehs.ufl.edu/programs/fire/fireworks/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.interlogix.com.au/documents/FireWorks%20Features%20and%20Operation%20(fire%20only).pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://townhall.virginia.gov/l/GetFile.cfm?File=C:%5CTownHall%5Cdocroot%5CGuidanceDocs%5C960%5CGDoc_DFP_4448_v1.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://ec.europa.eu/growth/sectors/chemicals/specific-chemicals_en}
+\bibitem{safehandlepyrotechnics} ... \LaTeX:\\ \url{http://www.iiakm.org/ojakm/articles/2015/volume3_3/OJAKM_Volume3_3pp27-36.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.bristol.gov.uk/documents/20182/1175006/Fireworks+in+retail+premises/6aa6ee24-5b74-43b4-a1d9-747689b1dbc9}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.eversys.com.br/imagens/uploads/arqs/bra_arquivos/04-software-gerenciador-fireworks-brochura.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.doiserbia.nb.rs/img/doi/0354-9836/2016/0354-98361500050G.pdf}
+\bibitem{costinFireworksEmbedded} ... \LaTeX:\\ \url{http://s3.eurecom.fr/docs/wisec14_Costin.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.firetechsystems.com/assets/uploads/2018/09/FireWorks-Brochure.pdf}
+\bibitem{ritz2020firesafety} ... \LaTeX:\\ \url{https://blog.ritzsafety.com/fireworks-safety-tips}
+\bibitem{lawson2018criticalsystems} ... \LaTeX:\\ \url{https://www.engineerlive.com/content/fire-detection-and-protection-through-safety-critical-systems}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+algemene vragen
+
+algemene vragen
+oorzaken
+\bibitem{gates18112020boeingcrisis} ... \LaTeX:\\ \url{https://www.seattletimes.com/business/boeing-aerospace/what-led-to-boeings-737-max-crisis-a-qa/}
+
+\bibitem{boeing737maxsoftwareprobles} ... \LaTeX:\\ \url{https://www.schneier.com/blog/archives/2019/04/excellent_analy.html}
+
+fout in de software
+\bibitem{avetisov19032019boeingmalwarestate} ... \LaTeX:\\ \url{https://www.forbes.com/sites/georgeavetisov/2019/03/19/malware-at-30000-feet-what-the-737-max-says-about-the-state-of-airplane-software-security/?sh=4d26f7052a9e}
+
+het nationaal veiligheidsbelang
+\bibitem{thompson23112020nationalsecurityboeing} ... \LaTeX:\\ \url{https://www.forbes.com/sites/lorenthompson/2020/11/23/five-reasons-return-of-boeings-737-max-to-service-is-important-to-national-security/?sh=2128ea552018}
+
+falend toezicht
+\bibitem{gates21032019FAAControlSystem} ... \LaTeX:\\ \url{https://www.seattletimes.com/business/boeing-aerospace/failed-certification-faa-missed-safety-issues-in-the-737-max-system-implicated-in-the-lion-air-crash/}
+
+onderzoeksrapport
+\bibitem{faa18112020boeingreview} ... \LaTeX:\\ \url{https://www.faa.gov/foia/electronic_reading_room/boeing_reading_room/media/737_RTS_Summary.pdf}
+
+\bibitem{wiki737maxgroundings} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings}
+
+veiligheidsrisico's
+menselijke fouten
+\bibitem{campbell02052019boengcrashhumanerrors} ... \LaTeX:\\ \url{https://www.theverge.com/2019/5/2/18518176/boeing-737-max-crash-problems-human-error-mcas-faa}
+
+overzicht van crashes
+\bibitem{hawkins22032019737maxairplanes} ... \LaTeX:\\ \url{https://www.theverge.com/2019/3/22/18275736/boeing-737-max-plane-crashes-grounded-problems-info-details-explained-reasons}
+
+veiligheidsopmerking
+\bibitem{thomas30082020737safest} ... \LaTeX:\\ \url{https://www.airlineratings.com/news/boeings-737-max-will-one-safest-aircraft-history/}
+
+aanpassingen
+\bibitem{boeing737maxdisplay} ... \LaTeX:\\ \url{https://www.boeing.com/commercial/737max/737-max-software-updates.page}
+
+waarschuwingen//output signalen
+\bibitem{fehrm24112020737changes} ... \LaTeX:\\ \url{https://leehamnews.com/2020/11/24/boeing-737-max-changes-beyond-mcas/}
+
+software gerelateerde fouten
+\bibitem{travis18042019737maxsoftwaredevop} ... \LaTeX:\\ \url{https://spectrum.ieee.org/aerospace/aviation/how-the-boeing-737-max-disaster-looks-to-a-software-developer}
+
+onderzoeksrapport
+de rol van de publieke opinie
+\bibitem{barnett05052019737maxcrisis} ... \LaTeX:\\ \url{https://pubsonline.informs.org/do/10.1287/orms.2019.05.05/full/}
+
+onderzoek van europese luchtvaart agentschap
+\bibitem{easa27012021737maxsafereturn} ... \LaTeX:\\ \url{https://www.easa.europa.eu/newsroom-and-events/news/easa-declares-boeing-737-max-safe-return-service-europe}
+
+\veiligheidsvraagstuk
+\bibitem{touitou11032019737tragedies} ... \LaTeX:\\ \url{https://phys.org/news/2019-03-boeing-max-safety-tragedies.html}
+
+artikel over sensoren
+\bibitem{hemmerdinger02022021737maxdeliveries} ... \LaTeX:\\ \url{https://www.flightglobal.com/airframers/boeing-delays-737-max-10-deliveries-two-years-to-2023/142245.article}
+
+goedkeuring van europese luchtvaart autoriteiten
+advies aan de faa
+\bibitem{bielby27022021faaimprovesafety} ... \LaTeX:\\ \url{https://www.hstoday.us/subject-matter-areas/airport-aviation-security/oig-tells-faa-to-improve-safety-oversight-following-boeing-737-max-review/}
+
+\bibitem{boyle18112020737maxupgrade} ... \LaTeX:\\ \url{https://www.geekwire.com/2020/faas-go-ahead-737-maxs-return-flight-kicks-off-massive-software-upgrade/}
+
+\bibitem{bergstraburgess122019737maxMcasAlgorithm} ... \LaTeX:\\ \url{https://www.researchgate.net/publication/338420944_A_Promise_Theoretic_Account_of_the_Boeing_737_Max_MCAS_Algorithm_Affair}
+
+achtergrond informatie
+\bibitem{737mcas} ... \LaTeX:\\ \url{http://www.b737.org.uk/mcas.htm}
+
+algemeen vertrouwen
+\bibitem{newburger17052019boeingcrisis} ... \LaTeX:\\ \url{https://www.cnbc.com/2019/05/16/what-you-need-to-know-about-boeings-737-max-crisis.html}
+
+toestemming europese autoriteiten
+problemen
+\bibitem{arstechnica22012020737problems} ... \LaTeX:\\ \url{https://arstechnica.com/information-technology/2020/01/737-max-fix-slips-to-summer-and-thats-just-one-of-boeings-problems/}
+
+uitgebreid artikel over de onderzoeken en het vliegverbod
+\bibitem{german190620217372yaftergrounded} ... \LaTeX:\\ \url{https://www.cnet.com/news/boeing-737-max-8-all-about-the-aircraft-flight-ban-and-investigations/}
+
+computers als oorzaak
+lessons learned
+\bibitem{beningo02052019boeinglessons} ... \LaTeX:\\ \url{https://www.designnews.com/electronics-test/5-lessons-learn-boeing-737-max-fiasco}
+
+\bibitem{duran05042019boeingspof} ... \LaTeX:\\ \url{https://www.eurocontrol.int/publication/effects-network-extra-standby-aircraft-and-boeing-737-max-grounding}
+
+single point of failure
+\bibitem{ID} ... \LaTeX:\\ \url{https://dmd.solutions/blog/2019/04/05/how-a-single-point-of-failure-spof-in-the-mcas-software-could-have-caused-the-boeing-737-max-crash-in-ethiopia/}
+
+
+\bibitem{makichuck24012021737fearflying} ... \LaTeX:\\ \url{https://asiatimes.com/2021/01/boeings-737-max-and-the-fear-of-flying/}
+
+lijst van tehnische aanpassingen
+\bibitem{caa737modifications} ... \LaTeX:\\ \url{https://www.caa.co.uk/Consumers/Guide-to-aviation/Boeing-737-MAX/}
+
+\bibitem{oestergaard14122020boeingdeliveries} ... \LaTeX:\\ \url{https://dsm.forecastinternational.com/wordpress/2020/12/14/airbus-and-boeing-report-november-2020-commercial-aircraft-orders-and-deliveries/}
+
+code lek
+\bibitem{reenberg787flaws} ... \LaTeX:\\ \url{https://www.wired.com/story/boeing-787-code-leak-security-flaws/}
+
+\bibitem{fitch16092020737backlogrisks} ... \LaTeX:\\ \url{https://www.fitchratings.com/research/corporate-finance/boeing-737-max-return-backlog-risks-remain-16-09-2020}
+
+Cultuurverandering, deregulatie, systeemwijziging of gewoon een kwestie van competentie
+\bibitem{willis27082020737maxfailures} ... \LaTeX:\\ \url{https://www.aerospacetestinginternational.com/features/what-broke-the-737-max.html}
+
+extra aanpassingen
+\bibitem{ostrower11062020more737changes} ... \LaTeX:\\ \url{https://theaircurrent.com/aviation-safety/boeings-737-max-software-done-but-regulators-plot-more-changes-after-jets-return/}
+
+wat ging er mis een analyse van een ex-iloot
+De utoriteiten waren op de hoogte
+\bibitem{hruska13122019faaknown737crashrate} ... \LaTeX:\\ \url{https://www.extremetech.com/extreme/303373-the-faa-knew-the-737-max-was-dangerous-and-kept-it-flying-anyway}
+
+kwaliteiten van het alarmsysteem niet goed bekend
+\bibitem{bloomberg26092019failedpred} ... \LaTeX:\\ \url{https://time.com/5687473/boeing-737-alarm-system/}
+
+\bibitem{whiteman09072020boengcancelstock} ... \LaTeX:\\ \url{https://www.nasdaq.com/articles/boeing-gets-dealt-another-737-max-cancellation-blow.-what-it-means-for-boeing-stock-2020}
+
+\bibitem{leopold09192019boeingreliability} ... \LaTeX:\\ \url{https://www.eetimes.com/boeing-crashes-highlight-a-worsening-reliability-crisis/}
+
+veiligheidsvraagstuk
+\bibitem{koenig11122019737crashesnofix} ... \LaTeX:\\ \url{https://www.latimes.com/business/story/2019-12-11/faa-boeing-737-max-crashes}
+
+probleemanalyse, veiligheidsvraagstuk
+\bibitem{dohertylindeman15032019737problems} ... \LaTeX:\\ \url{https://www.politico.com/story/2019/03/15/boeing-737-max-grounding-1223072}
+
+falend toezicht
+\bibitem{stodder02102019corruptoversight} ... \LaTeX:\\ \url{https://www.pogo.org/analysis/2019/10/corrupted-oversight-the-faa-boeing-and-the-737-max/}
+
+\bibitem{afacwaLostSafeguards} ... \LaTeX:\\ \url{https://www.afacwa.org/the_inside_story_of_mcas_seattle_times}
+
+doelstellingen en veiligheidsvraagstukken
+\bibitem{swayne18032019profitssafety} ... \LaTeX:\\ \url{https://www.marxist.com/737-max-scandal-boeing-putting-profits-before-safety.htm}
+
+\bibitem{freed26022021liftaustraliaban} ... \LaTeX:\\ \url{https://finance.yahoo.com/news/australia-lifts-ban-boeing-737-035817682.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAHZCJYy_0A5VS2WiPoCvH4xdrRNkmkdsv5EWJ2RLIz_AS-rxsTty6AF1_HlmJiRyWYqCXDi4p0Xs4isYkNkCq2Pfo-pQ60Xz_IfTNjm4FgoZiBMC4zpZlB6F0fwecrjE_ujAXZzG4xPJnWCd8-G3VLlPTY8h3H31eQ1i8hY9AIyy}
+
+autoriteiten krijgen tik op de vingers
+\bibitem{reed15032019softwareattention} ... \LaTeX:\\ \url{https://medium.com/@jpaulreed/the-737max-and-why-software-engineers-should-pay-attention-a041290994bd}
+
+\bibitem{news17032019softwareexplains} ... \LaTeX:\\ \url{https://news.ycombinator.com/item?id=19414775}
+
+\bibitem{legget21122020eu737maxsafe} ... \LaTeX:\\ \url{https://www.bbc.com/news/55366320}
+
+\bibitem{marketscreener0103221737chinarecertification} ... \LaTeX:\\ \url{https://www.marketscreener.com/news/latest/China-studies-Boeing-737-MAX-recertification-wants-safety-concerns-fully-addressed--32569125/}
+
+motor in brand
+\bibitem{euractiv22022021737firegrounds} ... \LaTeX:\\ \url{https://www.euractiv.com/section/aviation/news/boeing-grounds-777s-after-engine-fire/}
+
+\bibitem{benny18022019737returnUAE} ... \LaTeX:\\ \url{https://gulfnews.com/business/aviation/uae-airspace-to-see-return-of-boeing-737-max-1.1613627548923}
+
+motor in brand gevlogen
+\bibitem{biersmichel22022021777grounds} ... \LaTeX:\\ \url{https://techxplore.com/news/2021-02-boeing-urges-grounding-777s.html}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.politico.eu/article/uk-temporarily-bans-some-boeing-aircraft-after-pratt-whitney-engine-incidents/}
+
+\bibitem{reuters23022021777metalfatigue} ... \LaTeX:\\ \url{https://www.timeslive.co.za/news/world/2021-02-23-damage-to-united-boeing-777-engine-consistent-with-metal-fatigue--ntsb/}
+
+faa was niet kritisch genoeg
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bibitem{clarke2000Modelchecking21} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, 2.1 Modelling Concurrent Systems \emph{Model checking},Second Printing 2000, pp. 14, June 1996. \url{}
+\bibitem{clarke2000Modelchecking212} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "2.1.2 Granularity of transitions" \emph{Model checking},Second Printing 2000, pp. 16-20, June 1996. 
+\bibitem{clarke2000Modelchecking223} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "2.2.3 Concurrent programs Shared variables" \emph{Model checking},Second Printing 2000, pp. 22-24, June 1996.
+\bibitem{clarke2000Modelchecking31} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "3.1 The computation Tree logic CTL*" \emph{Model checking},Second Printing 2000, pp. 27-29, June 1996.
+\bibitem{clarke2000Modelchecking32} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "3.2 CTL and LTL" \emph{Model checking},Second Printing 2000, pp. 30, June 1996.
+\bibitem{clarke2000Modelchecking33} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "3.3 Fairness" \emph{Model checking},Second Printing 2000, pp. 32, June 1996.
+\bibitem{clarke2000Modelchecking411} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "4.1.1 Fairness constraints" \emph{Model checking},Second Printing 2000, pp. 40-41, June 1996.
+\bibitem{clarke2000Modelchecking43} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "4.3 CTL model checking" \emph{Model checking},Second Printing 2000, pp. 46-49, June 1996.
+\bibitem{clarke2000Modelchecking63} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "6.3 Fairness in Symbolic model checking" \emph{Model checking},Second Printing 2000, pp. 68-71, June 1996.
+\bibitem{clarke2000Modelchecking64} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "6.4 Counterexamples and whitness" \emph{Model checking},Second Printing 2000, pp. 71, June 1996.
+\bibitem{clarke2000Modelchecking661} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "6.6.1PArtitioned Trasition relation" \emph{Model checking},Second Printing 2000, pp. 79, June 1996.
+\bibitem{clarke2000Modelchecking91} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "9.1 Automata on finite and infinite words" \emph{Model checking},Second Printing 2000, pp. 121, June 1996.
+\bibitem{clarke2000Modelchecking102} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "10.2 Independence and invisibility" \emph{Model checking},Second Printing 2000, pp. 144-145, June 1996.
+\bibitem{clarke2000Modelchecking11} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "11 Equivalences and preorders between structures Fair simulation relation" \emph{Model checking},Second Printing 2000, pp. 178, June 1996.
+\bibitem{clarke2000Modelchecking122} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "12.2 Justfying Assume-Guarantee Proofs" \emph{Model checking},Second Printing 2000, pp. 189, June 1996.
+\bibitem{clarke2000Modelchecking123} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "12.3Verifying a CPU controller" \emph{Model checking},Second Printing 2000, pp. 189, June 1996.
+\bibitem{clarke2000Modelchecking132} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "13.2 Data abstraction, Atomic propositions" \emph{Model checking},Second Printing 2000, pp. 197, June 1996.
+\bibitem{clarke2000Modelchecking1321} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "13.2.1 Computing approximations" \emph{Model checking},Second Printing 2000, pp. 199-203, June 1996.
+\bibitem{clarke2000Modelchecking152} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "15.2 Invarints" \emph{Model checking},Second Printing 2000, pp. 215-236, June 1996.
+\bibitem{clarke2000Modelchecking171} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "17.1 Timed Automata" \emph{Model checking},Second Printing 2000, pp. 265-268, June 1996.
+\bibitem{clarke2000Modelchecking172} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "17.2 Parralel composition" \emph{Model checking},Second Printing 2000, pp. 268, June 1996.
+\bibitem{clarke2000Modelchecking173} Edmund M. Clarke, Jr. Orna Grumberg, and Doron A Peled, "17.3 Clock regions" \emph{Model checking},Second Printing 2000, pp. 274-281, June 1996.
+\bibitem{audioSemanticsBengtsson}Johan Bengtsson a W. O. David GriÆoen, Kare J. Kristoffersen c Kim G. Larsen d Fredrik Larsson, Paul Pettersson a Wang Yi, "2.3 Semantics" \emph{Automated Verfication of an Audio Control Protocol Using UPPAAL}, pp. 6-7 , June 1996.
+\bibitem{guidingAutomataBberm} Gerd Behrmann1, Ansgar Fehnkery, Thomas Hune, Kim Larsen,Paul Pettersson, and Judi Romijn, "UNiformlyPriced Timed Automata" \emph{Efficient Guiding Towards Cost-Optimality in UPPAAL?}, pp. 5-6 , June 1996.
+\bibitem{gearTransitionLindahl1} Magnus Lindahl, Paul Petterson, and Wang Yi, "2.1 Transition Systemsand Timed Trees" \emph{Formal design and analysis of a gear controller}, pp. 2, June 1996.
+\bibitem{gearTransitionLindahl2} Magnus Lindahl, Paul Petterson, and Wang Yi, "2.3 Network automata" \emph{Formal design and analysis of a gear controller}, pp. 3, June 1996.
+\bibitem{martinelliScada} Fabio Martinelli, Francesco Mercaldo, Antonella Santoney, Christina Tavolato-W¨otzlz, Paul Tavolatox, "Chapter name" \emph{Timed Automata Networks for SCADA Attacks Real-Time Mitigation}, pp. 2, June 1996.
+\bibitem{IgbalReconstructurintTransition1} Junaid Iqbal,Jüri Vain,Dragos Truscan,Ivan Porres, "2.1Timed input-output transition systems" \emph{Reconstructing Timed Symbolic Traces from rtioco-based Timed Test Sequences using Backward-Induction.}, pp. 2, June 1996.
+\bibitem{IgbalReconstructurintTransition2} Junaid Iqbal,Jüri Vain,Dragos Truscan,Ivan Porres, "2.1 Uppaal Timed automata" \emph{Reconstructing Timed Symbolic Traces from rtioco-based Timed Test Sequences using Backward-Induction.}, pp. 3, June 1996.
+\bibitem{huangVerficationStoch} Li Huang, Tian Liang and Eun-Young Kangy, "Extension of PrCCSL" \emph{Formal Verification of Dynamic and Stochastic Behaviors for Automotive Systems}, pp. 3, June 1996.
+\bibitem{bengtssonUppaalVerification} Johan Bengtsson W.O.David Griffioen; Kare J. Kristffersen,Kim G. Larsen Fredrik Larsson Paul Pettersson Wang Yi, "The commmitted Uppaal Model" \emph{Verifcation of an Audio Protocol with Bus Collision Using UPPAAL?}, pp. 5, June 1996.
+\bibitem{pranaliVerificationWaterLevel} Pranali S. Tekale,Ramakalyan Ayyagari,S D Sudarsan ,Raoul Jetley, "4.3 Formal verification" \emph{A Review of Formal Methods for Intelligent Adaptive Systems with an Application to Intelligent Water Level Monitoring System}, pp. 5, June 1996.
+\bibitem{alexandreUppaalDefinition} Alexandre David,Gerd Behrmann,Kim G. Larsen,Wang Yi, "2 Notations Definition  1,2 and 3" \emph{A Tool Architecture for the Next Generation of UPPAAL}, pp. 5, June 1996.
+\bibitem{behzadEvalQOS} Behzad Bordbar, Rachid Anane and Kozo Okano, "Chapter name" \emph{An Evaluation Mechanism for QoS Management in Wireless Systems}, pp. , June 1996.
+\bibitem{behzadVariablesQoS} Behzad Bordbar and Kozo Okano, "Chapter 2 Timed Automatawith data variables and Uppaal" \emph{Verification of Timeliness QoS Properties in Multimedia Systems}, pp. 2-4, June 1996.
+\bibitem{alur} Rajeev Alur, Lalita Jategaonkar Jagadeesany, Joseph J. Kottz,and James E. Von Olnhausenz, "Chapter name" \emph{Model-Checking of Real-Time Systems: A Telecommunications Application Experience Report}, pp. , June 1996.
+\bibitem{alurDenseRealTime} Rajeev Alur,Costas Courcoubetis, David Dill,and James E. Von Olnhausenz, "Chapter name" \emph{Model-Checking in Dense Real-time}, pp. , June 1996.
+\bibitem{alurSystemClok} Rajeev Alur,Thomas A. Henzinger, "2.2 Clock constraints" \emph{Real-time System =Discrete System + Clock Variables}, pp. , June 1996.
+\bibitem{alurModelHybrid} Rajeev Alur,Thomas A. Henzinger,N. Halbwachs,T.A. Henzinger,P.-H. Ho,X. Nicollin,A. Olivero,J. Sifakis,S. Yovine, "2 A model for hybrid systems" \emph{The Algorithmic Analysis of Hybrid Systems}, pp. , June 1996.
+\bibitem{rijksoverheidSluizen} Rijksoverheid, "Chapter name" \emph{Richtlijn vaarwegen},  HF 4  pp. 79-113, June 1996.
+\bibitem{rijksoverheidSluisStroomschema} Rijksoverheid, "Chapter name" \emph{Richtlijn vaarwegen}, HF 7  pp. 159, June 1996.
+
+
+\bibitem{CivilEngineeringDivision} Ministry of Transport, Public Works and Water Management,Directorate-General Public Works and Water Management, "Chapter name" \emph{Design of locks}, HF 7  pp. 159, June 1996.
+

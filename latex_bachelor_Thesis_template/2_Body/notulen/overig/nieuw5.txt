@@ -1,0 +1,123 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+critical safety systems chemicals
+\bibitem{esc16022021scsdeveloping} ... \LaTeX:\\ \url{https://esc.uk.net/safety-critical-systems}
+\bibitem{oecd2008chemsafeperfindct} ... \LaTeX:\\ \url{https://www.oecd.org/chemicalsafety/chemical-accidents/41269710.pdf}
+\bibitem{issa2003chemicalsID} ... \LaTeX:\\ \url{https://safety-work.org/fileadmin/safety-work/articles/Verwechslung_von_Chemikalien/Stoffverwechslung_e.pdf}
+\bibitem{sommerville2008CriticalSystems} ... \LaTeX:\\ \url{https://ifs.host.cs.st-andrews.ac.uk/Books/SE9/Web/Dependability/CritSys.html}
+\bibitem{identifyinglaboratoryHazards} ... \LaTeX:\\ \url{https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/identifying-and-evaluating-hazards-in-research-laboratories.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.computer.org/csdl/magazine/so/2017/04/mso2017040049/13rRUxCitHw}
+\bibitem{ID} ... \LaTeX:\\ \url{https://msquair.files.wordpress.com/2012/06/assca-guiding-philosophic-principles-on-the-design-and-acquisition-of-safety-critical-systems-v1-6.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://epsc.be/Documents/PS+Fundamentals/_/EPSC_Process%20Safety%20Fundamentals%20-%20Booklet_March2021.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% critical sagfety systems algemeent
+\bibitem{winceckCriticalToSafety} ... \LaTeX:\\ \url{https://www.icheme.org/media/8976/xxiv-poster-11.pdf}
+\bibitem{chambersHazardAnalysisSCS} ... \LaTeX:\\ \url{https://crpit.scem.westernsydney.edu.au/confpapers/CRPITV55Chambers.pdf}
+\bibitem{rslater1998SCSAnalysis} ... \LaTeX:\\ \url{https://users.ece.cmu.edu/~koopman/des_s99/safety_critical/}
+\bibitem{knightchallengessafetyCritical} ... \LaTeX:\\ \url{https://users.encs.concordia.ca/~ymzhang/courses/reliability/ICSE02Knight.pdf}
+\bibitem{johnson2006devsafetycritical} ... \LaTeX:\\ \url{http://www.dcs.gla.ac.uk/~johnson/teaching/safety/slides/pt2.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.dau.edu/tools/se-brainbook/Pages/Design%20Considerations/Critical-Safety-Item.aspx}
+\bibitem{fallsafedesign} ... \LaTeX:\\ \url{https://faculty.up.edu/lulay/MEStudentPage/failsafe.pdf}
+\bibitem{arForce2015VerificationExpectations} ... \LaTeX:\\ \url{https://daytonaero.com/wp-content/uploads/AC-17-01.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://nebula.esa.int/content/assessment-methodology-certification-safety-gnc-critical-space-systems}
+\bibitem{lalaArchitecturalPrinciples} ... \LaTeX:\\ \url{https://www.cs.unc.edu/~anderson/teach/comp790/papers/safety_critical_arch.pdf}
+\bibitem{mitNotesSafetyCritical} ... \LaTeX:\\ \url{https://www.cs.uct.ac.za/mit_notes/human_computer_interaction/htmls/ch02s10.html}
+\bibitem{britishColumbia2020GuideSafetyCritical} ... \LaTeX:\\ \url{https://www.egbc.ca/getmedia/78073fda-5a83-4f0f-b12f-0a40dcbbc29d/EGBC-Safety-Critical-Software-V1-0.pdf.aspx}
+\bibitem{fulvio1993safetycriticalsystems} ... \LaTeX:\\ \url{https://assembly.coe.int/nw/xml/XRef/X2H-Xref-ViewHTML.asp?FileID=7144&lang=EN}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.dlr.de/ft/en/desktopdefault.aspx/tabid-1360/1856_read-36215/}
+\bibitem{knight2010SafetyCritical} ... \LaTeX:\\ \url{https://ieeexplore.ieee.org/document/1007998}
+\bibitem{ID} ... \LaTeX:\\ \url{https://coreavi.com/the-future-of-safety-critical-systems-in-the-emerging-autonomous-world/}
+\bibitem{valdes2018SafetybyAutomation} ... \LaTeX:\\ \url{https://www.intechopen.com/chapters/59838}
+\bibitem{2015whensafetymanagementsystemsfail} ... \LaTeX:\\ \url{https://verticalmag.com/features/whensafetymanagementsystemsfail/}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+critical safety systems airplanes
+\bibitem{ID} ... \LaTeX:\\ \url{file:///C:/Users/gally/Downloads/AGARDAG300.pdf}
+\bibitem{brat2015verifysafetyflightcritical} ... \LaTeX:\\ \url{https://arxiv.org/abs/1502.02605}
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.jstor.org/stable/44682826}
+\bibitem{yeagerSafetyCritical} ... \LaTeX:\\ \url{https://sites.google.com/site/cis115textbook/safety-critical-systems}
+\bibitem{ID} ... \LaTeX:\\ \url{https://mcdpinc.com/safety-critical-systems}
+\bibitem{2008manualflightsafetyParts} ... \LaTeX:\\ \url{https://www.enidine.com/CorporateSite/media/itt/Resources/Distributors/EndUserDocuments/Suppliers_Documents/QAM03_Rev_E.pdf}
+\bibitem{harvardRiskResearchaircraft} ... \LaTeX:\\ \url{https://rmas.fad.harvard.edu/pages/chartered-private-aircraft-0}
+\bibitem{ID} ... \LaTeX:\\ \url{https://pubmed.ncbi.nlm.nih.gov/7966484/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.aopa.org/training-and-safety/online-learning/safety-spotlights/aircraft-systems}
+\bibitem{andersenromanski2011verificationsafetycritical} ... \LaTeX:\\ \url{https://queue.acm.org/detail.cfm?id=2024356}
+\bibitem{aviatioLawGeneralDefinitions} ... \LaTeX:\\ \url{https://www.law.cornell.edu/cfr/text/14/1.1}
+\bibitem{ntsb2006safetyreportTransportAirplanes} ... \LaTeX:\\ \url{http://libraryonline.erau.edu/online-full-text/ntsb/safety-reports/SR06-02.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://flightsafety.org/}
+\bibitem{kochenfender2020aisafetycritical} ... \LaTeX:\\ \url{https://engineering.stanford.edu/magazine/article/mykel-kochenderfer-ai-and-safety-critical-systems}
+\bibitem{humanfactorsAviationSafety} ... \LaTeX:\\ \url{https://www.faasafety.gov/files/gslac/courses/content/258/1097/AMT_Handbook_Addendum_Human_Factors.pdf}
+\bibitem{eulegislator2000safetyregulation} ... \LaTeX:\\ \url{https://www.eurocontrol.int/sites/default/files/2019-06/src-doc-1-e1.0.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://aerossurance.com/safety-management/critical-maintenance-tasks/}
+\bibitem{gao2020aviationcybersecurity} ... \LaTeX:\\ \url{https://www.gao.gov/assets/gao-21-86.pdf}
+\bibitem{roleofcodeinsoftware} ... \LaTeX:\\ \url{https://criticalsoftware.com/en/news/coding-the-skies}
+\bibitem{airlie2018designparameters} ... \LaTeX:\\ \url{https://aviation.stackexchange.com/questions/46677/what-are-the-design-parameters-for-airliner-safety}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cantwell.senate.gov/news/press-releases/cantwells-comprehensive-bipartisan-bicameral-aircraft-safety-and-certification-reforms-signed-into-law}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.forbes.com/advisor/travel-rewards/737-max-what-is-safety-anyway/}
+\bibitem{humanfactors2010Aviation} ... \LaTeX:\\ \url{https://www.tandfonline.com/doi/full/10.1080/00140130903521587}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.doi.gov/aviation/safety}
+\bibitem{courtin2018safetyconsiderations} ... \LaTeX:\\ \url{https://dspace.mit.edu/bitstream/handle/1721.1/118438/ICAT_2018_07_Christoper%20Courtin_Report.pdf?sequence=1&isAllowed=y}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.defence.gov.au/dasp/Docs/Manuals/7001053/eTAMMweb/1049.htm}
+\bibitem{prentice2014Failedaviationprogram} ... \LaTeX:\\ \url{https://www.aviationpros.com/aircraft/commercial-airline/article/10239806/staying-legal-another-failed-faa-safety-program}
+\bibitem{civilAviationConsulting} ... \LaTeX:\\ \url{https://www.iata.org/en/services/consulting/safety-operations/}
+\bibitem{olivercalvardpotocnik2017Aviationautomation} ... \LaTeX:\\ \url{https://hbr.org/2017/09/the-tragic-crash-of-flight-af447-shows-the-unlikely-but-catastrophic-consequences-of-automation}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.infosys.com/industries/communication-services/documents/landing-gear-design-and-development.pdf}
+\bibitem{airforce2000SystemSafety} ... \LaTeX:\\ \url{https://www.acqnotes.com/Attachments/AF_System-Safety-HNDBK.pdf}
+\bibitem{fed2019SafeSecureSUAS} ... \LaTeX:\\ \url{https://www.transportation.gov/testimony/state-airline-safety-federal-oversight-commercial-aviation}
+\bibitem{AirportSafety} ... \LaTeX:\\ \url{https://www.federalregister.gov/documents/2019/02/13/2019-00758/safe-and-secure-operations-of-small-unmanned-aircraft-systems}
+\bibitem{ID} ... \LaTeX:\\ \url{https://archive.etsc.eu/documents/safety%20in%20airports.pdf}
+\bibitem{passengerSafety} ... \LaTeX:\\ \url{https://journals.sagepub.com/doi/pdf/10.1177/002029400403700202}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.unmannedsystems.ca/wp-content/uploads/2019/01/DRAFT-AC-922-001-RPAS-SAFETY-ASSURANCE.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ccsdualsnap.com/pressure-switches-in-aerospace-applications/}
+\bibitem{uscongres2019aircraftresearch} ... \LaTeX:\\ \url{https://readwrite.com/2018/12/21/air-travel-is-far-safer-than-you-think-heres-why/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://fas.org/sgp/crs/misc/R45939.pdf}
+\bibitem{ariAssociation2018} ... \LaTeX:\\ \url{https://cdn.ymaws.com/www.astna.org/resource/collection/4392B20B-D0DB-4E76-959C-6989214920E9/ASTNA_Safety_Position_Paper_2018_FINAL.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://transportation.house.gov/imo/media/doc/2020.09.15%20FINAL%20737%20MAX%20Report%20for%20Public%20Release.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.transportstyrelsen.se/globalassets/global/luftfart/seminarier_och_information/seminarier-2016/luftvardighet-camo-och-145-verkstader/11b-critical-task-fpl.pdf}
+\bibitem{fox2005HelicopterSafety} ... \LaTeX:\\ \url{https://www.h-a-c.ca/IHSS_Helicopter_Safety_History_05.pdf}
+\bibitem{rakas2018criticalsystemsFailures} ... \LaTeX:\\ \url{https://www.skybrary.aero/index.php/Cockpit_Automation_-_Advantages_and_Safety_Challenges}
+\bibitem{ID} ... \LaTeX:\\ \url{https://ntrs.nasa.gov/citations/20120014507}
+\bibitem{cockpitAutomation} ... \LaTeX:\\ \url{https://www.sciencedirect.com/science/article/abs/pii/S092575351730601X}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.semanticscholar.org/paper/Safety-critical-avionics-for-the-777-primary-flight-Yeh/8facf90f4a9051c3ab8ce11e39d0893118268d90}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.easa.europa.eu/faq/19013}
+\bibitem{belcaatrovalidateSafetyCritical} ... \LaTeX:\\ \url{https://ntrs.nasa.gov/api/citations/20120014507/downloads/20120014507.pdf}
+\bibitem{civilAviationsAuthority}... \LaTeX:\\\url{"https://publicapps.caa.co.uk/modalapplication.aspx?catid=1&pagetype=65&appid=11&mode=list&type=subcat&id=32}
+\bibitem{ID} ... \LaTeX:\\ \url{https://definitions.uslegal.com/f/flight-safety-critical-aircraft-part/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://nbaa.org/nbaa-aviation-groups-ask-congress-to-prevent-5g-interference-to-critical-safety-systems/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.fsd.lrg.tum.de/research/safety-critical/}
+\bibitem{AAA052005IdentifySCHitems} ... \LaTeX:\\ \url{https://www.faa.gov/about/office_org/headquarters_offices/ast/licenses_permits/media/RLVGuide_01-05_05.pdf}
+\bibitem{devTopics01032020} ... \LaTeX:\\ \url{https://smallbusinessprogramming.com/safety-critical-software-15-things-every-developer-should-know/}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+critical safety systems fireworks
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.hsdl.org/c/firework-safety/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Fireworks}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.seattletimes.com/subscribe/signup-offers/?pw=redirect&subsource=paywall&return=https://www.seattletimes.com/opinion/editorials/firework-safety-even-more-critical-after-heat-wave/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.nrcan.gc.ca/sites/www.nrcan.gc.ca/files/mineralsmetals/pdf/mms-smm/expl-expl/20170828-G05-09E_ACC.pdf}
+\bibitem{fireworksinjuries2021duringcovid} ... \LaTeX:\\ \url{https://www.prnewswire.com/news-releases/fireworks-related-injuries-and-deaths-spiked-during-the-covid-19-pandemic-301322243.html}
+\bibitem{osha2017safetymanagementexplosives} ... \LaTeX:\\ \url{https://www.osha.gov/sites/default/files/publications/OSHA3912.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.firelinx.com/wp-content/uploads/2021/02/FLX-Issues-in-Firing-System-Safety.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.eig2.org.uk/wp-content/uploads/WTOFD-Blue-Guide.pdf}
+\bibitem{hse2014explosiveregulations} ... \LaTeX:\\ \url{https://www.hse.gov.uk/explosives/er2014-fireworks-retail-prem.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.firerescue1.com/firefighter-safety/articles/11-fireworks-safety-videos-from-the-serious-to-the-humorous-fHy0M4pT2gjcQ8jA/}
+\bibitem{pirone2016lessonslearnedfireworks} ... \LaTeX:\\ \url{https://www.aidic.it/cet/16/53/044.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.alarmascasas.com.mx/sites/default/files/85006-0061%20--%20FireWorks%20Brochure.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.ehs.ufl.edu/programs/fire/fireworks/}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.interlogix.com.au/documents/FireWorks%20Features%20and%20Operation%20(fire%20only).pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://townhall.virginia.gov/l/GetFile.cfm?File=C:%5CTownHall%5Cdocroot%5CGuidanceDocs%5C960%5CGDoc_DFP_4448_v1.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://ec.europa.eu/growth/sectors/chemicals/specific-chemicals_en}
+\bibitem{safehandlepyrotechnics} ... \LaTeX:\\ \url{http://www.iiakm.org/ojakm/articles/2015/volume3_3/OJAKM_Volume3_3pp27-36.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.bristol.gov.uk/documents/20182/1175006/Fireworks+in+retail+premises/6aa6ee24-5b74-43b4-a1d9-747689b1dbc9}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.eversys.com.br/imagens/uploads/arqs/bra_arquivos/04-software-gerenciador-fireworks-brochura.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{http://www.doiserbia.nb.rs/img/doi/0354-9836/2016/0354-98361500050G.pdf}
+\bibitem{costinFireworksEmbedded} ... \LaTeX:\\ \url{http://s3.eurecom.fr/docs/wisec14_Costin.pdf}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.firetechsystems.com/assets/uploads/2018/09/FireWorks-Brochure.pdf}
+\bibitem{ritz2020firesafety} ... \LaTeX:\\ \url{https://blog.ritzsafety.com/fireworks-safety-tips}
+\bibitem{lawson2018criticalsystems} ... \LaTeX:\\ \url{https://www.engineerlive.com/content/fire-detection-and-protection-through-safety-critical-systems}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,121 @@
+
+
+
+E<> (Receiver.FIN and timevalid==1 and g<maxtime)
+A[] (Receiver.FIN and timevalid==1 and g>=maxtime)
+
+A[] now>=200 imply
+(Belt.end && Jobber1.begin && Jobber2.begin)
+
+
+A[] now>=150 imply
+(Belt.end && Jobber1.begin && Jobber2.begin)
+
+
+A[] now>=110 imply
+(Belt.end && Jobber1.begin && Jobber2.begin)
+
+
+A[] now>=127 imply
+(Belt.end && Jobber1.begin && Jobber2.begin)
+
+
+A[] now>=126 imply
+(Belt.end && Jobber1.begin && Jobber2.begin)
+
+
+A[] Obs.taken imply (x>=2 and x<=3) to show that the transition is taken when x is in
+the interval [2, 3].
+• E<> Obs.idle and x>2 : it is possible to take the transition with x in the interval (2, 3].
+• A[] Obs.idle imply x<=3 : to show that the upper bound is respected.
+The former property E<> Obs.idle and x>3 no longer holds.
+
+
+https://www.it.uu.se/research/group/darts/uppaal/small_tutorial.pdf
+https://arxiv.org/pdf/2211.03817.pdf
+
+
+
+Recall the Train Crossing example of the
+previous section. The following queries estimates the
+probabilities that Train(0) and Train(5) will be in the
+crossing before 100 time-units:
+
+Fig. 9: The cumulative probability distribution of
+Pr[<=T](<> Train(5).Cross).
+Pr[<=100](<> Train(0).Cross)
+Pr[<=100](<> Train(5).Cross)
+https://dial.uclouvain.be/pr/boreal/object/boreal:211928/datastream/PDF_01/view
+
+
+Example 3. In the Train Gate example, it might be sufficient to confirm that the probability that Train(5)
+reaches the crossing within 100 time-units is larger than
+that of Train(0). Posing the query:
+
+Pr[<=100](<>Train(5).Cross) >=
+Pr[<=100](<>Train(0).Cross)
+
+
+Example 4. As an interesting property of the Train Crossing example, we want to know the average of the maximum number of trains that are stopped within the first
+20 time-units:
+E[<=20; 20000](max: sum(i:id_t) Train(i).Stop)
+https://dial.uclouvain.be/pr/boreal/object/boreal:211928/datastream/PDF_01/view
+
+
+
+
+reachability
+http://lmf.di.uminho.pt//ac-1718/slides/AC1718-4-Uppaal1.pdf
+
+
+
+http://www2.ing.unipi.it/~a008669/didattica/FMSS2021/FormalMethods5.pdf
+
+
+
+http://www2.imm.dtu.dk/courses/02917/03-UPPAAL.pdf
+
+
+
+
+http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

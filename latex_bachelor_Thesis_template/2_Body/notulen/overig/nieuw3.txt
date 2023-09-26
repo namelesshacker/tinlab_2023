@@ -1,0 +1,123 @@
+
+
+
+The model checkingproblem is easy to describe. given a kripke structure M =(S,R,L) that represents a finite-state concurrent system and a termporal logic formula f expressing some desired specification, find the set of all states n S that satisfy f: {s \in S | M, s \models f} \\
+Let M = (S,R, L) be a kripke structur. Assume that we want to determine which states in S satisfy the CTL formula f. The algorithm will operate by labeling each state s with the set label(s) of subformulas of f which are true in s. Initially, label(s) is just L(s). The algorithm then goes through a series of stages.During the ith stage, subformulas with i-1 nested CTL operators are processed. When a subformula is processed, it is added to the labelig of each state in which it is true. Onze the algorithm terminates, we will have that M, s \models f iff f \in label(s)
+
+
+Timed automata
+A timed automation[8,99] is a finite augmented with a finite set of  real-valued clocks. We assume that transitions are instantaneous. However, time can elapse when the automation is in a state or location. When a transition occurs, some of the clocks ma be reset to zero. At any instant, the reading clock is equal to the time that has elapsed since the lat time the clock was reset. We assume that time passes at the same rate for all clocks. In order to prevent pathological behaviours, we only consider automata that are non-zeno, that is, only a finite number of transitions can happen within a finite amout of time.
+
+A clock constraint, called a guard, is associated with each transition. The transition can be taken only if the current values of the clocks satisfy the clock constraint. A clock cnstraint is also associated with each location of the automation. This constraint i called the invariant of the location. Time can elapse in the location only as long as the invariant of the location is true. An example of a timed automation is shown in Figure 17.1 The automation consists of two locations s0 and s1, two clocks x and y, and "a" transition from s0 to s1, and a "b" transition from s1 to s0. The automation starts in location s0. It can remain in that location as long as the clock y is less than or equal to 5. As soon as the value of y is greater than or equal to 3, the  automation can make an "a" transition to location s1 and reset the clock y to 0. the automation can remain in location s1 as long as y is less than or equal to 10 and x is less than or equal to 8. When y is at least 4 and x is at least 6, it can make a "b" transition back to location s0 and reset x.
+
+The remainder of this section contains a formal semantics for timed automata in terms of infinite state transition graphs[3,8]. We begin with a precise definition of clock constraints. Let X be a set of clock variables, ranging over the nonneative real numbers $\Re^{+}$. Define the set of clock constraints C(X) as follows:
+All inequalities of the form x \prec c or c \prec x are in C(X) where \prec is either < or  \leq \sm and c is a nonnegative rational number.
+If $\varphi$_1 ad $\varphi_{1}$ are in C(X), then $\varphi_1$ $\wedge$ $\varphi$ is in C(X).
+
+Note that if X contains k clocks; then each clock constraints is a convex subset of k-dimensional Eucledian space.Thus, if two points satisfy a clock constraint, then all of the points	on the line sement connecting these points satisfy the clock constraint.
+A timed automation is a 6-tuple A = (\Sigma, S, S_0, X, I, T) such that: \\
+\Sigma is a finite alphabet  \\
+S is a finite set of locations \\
+S0 \subseteq S is a set of starting locations \\
+X is a set of clocks \\
+I : S \rightarrow C(X) is a mapping from locations to clock constraints called the location invariant. \\
+T $\subseteq$ S x $\Sigma$ x C(X) x $2^{x}$ x S is a set of transitions. The 5-tuple $\langle$ s,a,$\varphi$, $\lambda$, s' $\rangle$ corresponds to a transition from location s to location s' labeled with a, a constraint $\varphi$ that specifies when the transition is enabled, and a set of clocks $\lambda$ $\subseteq$ X that  are reset when the transition is executed. \\
+
+
+We will require that time be allowed to progress to infinity, that is, at each location the upper bound imposed on the clocks be either infinity, or smaller than the maximum bound imposed by the invariant and by the transitions outgoing from the location. In other words, it is possible either to stay at a location forever, or the invariant will force the automation to leave the location, and at that point at least one transition will be enabled. For timed automata, these constraints can be imposed syntactically.
+
+A model for a timed automation A is an infinite state transition graph \tau(A) = ($\Sigma$, Q, $Q^{0}$, R). Each state in Q is a pair (s, v) where s \in S is a location and v : X $\rightarrow$  $R^{+}$ is a clock assignement, mapping each clock to a nonnegative real value. The set of initial states Q_0 is given by {(s,v)| s \in S_0 \wedge $\forall$ x  $\in$  X[v(x) =0]}. \\
+\newline
+In order to define the state transtion relation for \tau(A), we must first introduce some notation. For $\lambda$ $\subseteq$ X, define v[\lambda := 0] to be the clock assignment that is the same as v for clocks in X - $\lambda$ and maps the clocks in $\lambda$ to 0. For d \in \Re, define v +d as the clock assignment that maps each clock x \in X to v(x) +d. The clock assignment v -d is defined in the same  manner.
+From the brief discussion in the introduction, we know that a timed automation has two basic types of transitions: \\
+\newline
+Delay transitions correspond to the elapsing of time while staying at some location. \\ \newline 
+We write (s, v) $\xrightarrow[]{d}$ (s, v+d), where d \in  $R^{+}$, provided that for every 0 \leq e \leq d, the invariant	l(s) holds for v +e. \\
+\newline
+Action transitions correspond to the execution of a transition	 from T. We write (s,v) $\xrightarrow[]{a}$ (s', v'), where a \in $\Sigma$, provided that there is a transition $\langle$ s,a, $\varphi$, $\lambda$, s' $\rangle$ such that v satisfies $\varphi$ and v=[$\lambda$:=0]. \\ 
+\newline
+
+The transition relation R of \tau(A) is obtained by combining the delay and action transitions. We will write (s,v) R(s', v') or (s, v) $\xRightarrow[]{f(x)}$   (s', v') if there exists s" and v" such that (s,v) $\xrightarrow[]{d}$ (s", v")$\xrightarrow[]{a}$ (s', v') for some d \in \Re.
+In this chapter we will describe an algorithm for solving the reachability problem for \tau(A): Given a set of initial states Q_n, we show how to compute the set of all states q \in Q that are reachable from Q_0 by transitions in R. This problem is nontrivial because \tau (A) has an infinite number of states. In order to accomplish this goal, it is necessary to use a finite representation for the infinite state space of $\tau$(A). Developing such representations is the main topic of te following sections.
+
+
+ We think of thevariables innV as the present sate variables and the variables in V'as next state variables. Each variable v i V has a corresponding next state variable in V', which we denote y v'. A valuation for the variables in V and V' can be vieuwed as designating an ordered pair of states or a transition, and we can represent setsof these valuations using formulas as above. We refer to a set of pairs of states as a transition relation. If R is a transition relation, then we write R(V,V') to denote a formula that represents it.
+ In order to write specifications that describe properties of concurrent systems we need to define a set of atomic propositions AP. Atomic propositionswill typically have the form v=d where v \in V and d \in D. A proposition v =d will be truein a state s if s(v)=d. Whenv is a variable over the  boolean domain{True,False}, it is not necessarly to include both v = True and  v = False in AP.We will write v to indicate that s(v)=True and \neq v to indicate that s(v)=False.
+ We now show how to derive
+ 
+ blz 16
+ 
+ We now show how to derive Kripke M=(S,S_0,R,L) from the first order formulas S_0 and R that represent the concurrent system.
+ The set of states is hthe set of all variations	for V
+ the set of initial states S_0 is the set of all valuations s_0 for V that satisfy the formula S_0
+ let s and s' be the two states, then R(s,s') holds if R evaluates to True when each v \in V is assigned the value s(v) and each v' \in  V' is assigned the value s'(v).
+ The labeling function L: S \to  $\2^{AP}$ is defined so that L(s) is the subsetof all atomic propositions true in s. If v is a variable over the boolean domain, then v \in L(s) indicates that s(v)=True, and v $\notin$  L(s) indicates that s(v)=False.
+ L: S \to  $\2^{AP}$  is a function that labels each state with the set of atomic propositions true in that state\\
+ 
+Because we require that the transition relation of a kripke structuer us always total, we must extend the relation R if some state s has no successor. In this case, we modify R so that R(s,s) holds.
+To illustrate the notions defined in this section we consider a simple system with variables x and y that range over D={0,1}. Thus, a valuation for the variables x and y is justa pair (d_1, d_2) \in D x Dwhre d_1 is the value for x and d_2 is the value for y.
+
+
+
+
+
+
+\paragraph{parralel compositioon}
+Before we consider a reachability problem, we show how real-time systems can be modoeled as parralel compositions of timed automata [3,5]. We assume an interleavingor asynchroneous semantics for this operation. Let A1 = (\sum, S1, $\S^{1}_0$, X_1, I_1, T_1) and A_2 = (\sum_2, S1_2, $\S^{1}_0$, X_2, I_2, T_2) be two timed automata. Assume that the two automata have disjoint sets of clocks, that is X_1 \cap X_2 = $\emptyset$. Then, the parralel composition of A_1, and A_2 is the timed automation:
+
+A_1 || A2 = (\Sigma \cup $\Sigma$_2, S_1 x S2, $\S^{1}_0$ x  $\S^{2}_0$ , X_1 \cup X_2, I, T),
+where I(s_1,s_2)=I_1(s_1) \wedge I_2(s_2) and the edge relation T is given by the following rules:
+
+1 For a \in $\Sigma$_1 \cap $\Sigma$_2, if \langle s1,a, \varphi, \lambda_1, s_1' $\rangle$ \in T_1 and \langle s2,a, \varphi, \lambda_2, s_2' $\rangle$ \in T_2 then T will contain the transition \langle (s1,s2), a \varphi , \lambda_1 \cup \lambda_2, (s_1',s_2') $\rangle$
+2. For a \in $\Sigma$_1 - $\Sigma$_2, if $\langle$ s, a, $\varphi$, $\lambda$, s' \in T_1 and t \in S_2 then T will contain the transition \langle (s,t),a, $\varphi$, $\lambda$, (s', t) $\rangle$
+3. For a \in $\Sigma$_2 - $\Sigma$_1, if $\langle$ s, a, $\varphi$, $\lambda$, s' \in T_2 and t \in S_1 then T will contain the transition \langle (t,s),a, $\varphi$, $\lambda$, (t,s') $\rangle$
+
+Thus the locations of the parralel composition are pairs of locations from the component automata, and the invariant of such a location is the conjunction of the invariants of the component locations. There will be a transition in the parralel compoition for ach pair of transitions from the individual timed automata with the same action The source location of the transition will be the composite location obtained from the source locations of the individual transitions. Te target location will be the compositelocation obtained from the target locations of the individual transitions. The guard will be the conjunction of the guards for the individual transitions, and the set of clocks that are reset will be the union of sets that are reset by the individual transitions. If the action of  a transition is only an action of one of the two processes, then there will be a transition in the parralel composition for each location of the othertimed automation. The source and target locations of the original transition and the location fromthe other automation. All of the other components of the transition will remain the same.
+
+
+
+\paragraph{Safety}
+Safety Properties are used to verify that something
+bad will never happen. Dit kan worden gespecificeerd met de volgende vergelijking
+
+
+
+
+
+
+\paragraph{Reachability}
+Reachability properties are used to check whether
+a given state formula can be satisfied by some
+reachable state.
+
+\paragraph{Liveliness}
+Liveness properties are used to verify that
+something eventually will hold
+\paragraph{Security}
+
+\paragraph{Performance}
+
+\paragraph{Fairness}
+Fairness
+A fairness constraint an be an arbitraty set of states, usually described by the formula of the logic. if fairness constraints are interpreted as sets of states, then a fair path must contain an element of each fairness constraint infinetely often. If fairness constrants are interpreted	 as CTL formula, then a path is fair if each constraint is true infnetely often along the path. The path quantifiers in the logic are then restricted fair paths.
+Formally, a fairkripke structure is a 4-tuple M = (S,R,L,F), where S, L and R are  defined as before and F \subseteq  $\2^{S}$  is a set of fairness constraints ( often called Buchi acceptance conditions) Let \pi = s_0,s_1 be a path in M. Define 
+inf(\pi) = {s| s=s_i for infinitely many i}.
+
+We say that \pi is fair if and only if for every P \in F, inf(\p) \cap P \neq $\emptyset$. The semantics of CTL* wth respect to a fair kripke structure is very similar to the semantics of CTL* with respect to ordinary kripke structure. We will write M,s \models_F f to indicate that the state formula f is true in state s of the fair Kripke structure M. Similarly, we write M, $\pi$ \models _f g to indicate that the path formula g is true along path \pi  in M. Only clauses 1, 5 and 6 in the origial semanticss change.
+1. M, s \models  _f p  $\Leftrightarrow$ there exists a fair path from s and p \in L(s)
+5. M, s \models  _f p  $\Leftrightarrow$ there exists a fair path \pi starting from s such that \pi \models _f g1
+6. M, s \models  _f p  $\Leftrightarrow$ for all fair paths \pi starting from s, \pi \models _f g1
+
+To illustrate the use of fairness, conider again the communication protocol for reliable channels. There is one fairness constraint for each channelthat expresses the reliability of that channel. A possible choice for the fairness constraint associated with channel i is the set of states that satisfy the formula \neq send \vee  receive_i. Thus, a computation path is fair if and only if for every channel, infinitly often either a message is received. Other notions of fairness are dealt with in[116].
+
+
+Fairness constraints
+In this subsection we show how to extendthe CTL model checking algorithmto handle fairness constraints. Let M = (S,R,L,F) be a fair kripke structure. Let F = {P1, ..., P_k} be the setof fairness constraints. We will say that a strongly connnected component C of the graph of M is fair wth respect to F if and only if for each P_i \in F, there is a state t_i \in (C \cap  P_i). We first give an algorithmfor checking EG f_1 with respect to a fair structure. In order to establish the correctness of this algorith, we need a lemma that is analogous to Lemma 1.As before, let M' be obtained from M by deleting from S all of those states at which f_1 does not fairly hold. Thus, M'=(S',R',L',F') where $\S^{'}$ = {s \in S | M,s \models F f1}, R' = R|_S'xS', L' = L|_s;, and F' ={ P_i \cap S' | P_i \in F}.
+
+Lemma 2 M,s \models F EG f1 iff the followingtow conditions are satisfied:
+1. s \in S'
+2. There exists a path S' that leads from s to somenode t in a nontrivial fair strongly connected component of thr graph (S',R')
+
+In order to determine if M, s \models f p for some p \in AP, we check M,s \models p \wedge fair using the ordinary model-checking procedure.
+
+
