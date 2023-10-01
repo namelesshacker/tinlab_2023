@@ -1,0 +1,36 @@
+
+We meten wanneer een schip komt aan-/ uitvaren (laag,hoog), in de sluis is (hoog,laag).
+We meten het waterlevel van de pijl.
+We bepalen de versnelling van de schepen, deuren en waterpomp.
+ 
+Formnal specification
+Sommige safety en reachability requirements die gespecificeerd moeten worden zijn hieronder aangegeven.
+De deur mag alleen  geopend zijn als er een schip wil in-/uitvaren.
+De stoplicht mag alleen op groen staan als de deuren zijn geopend.
+De pomp mag alleen worden aangezet als alle sluisdeuren dicht zijn, de stoplichten op rood.
+Een schip bereikt de finished state alleen als de positie van de final state verschilt met de positie van de initial state.
+Er is geen deadlock formatie in het systeem.
+Het monitoring mechanisme van het systeem werkt als volgd:
+Op geen enkel moment, positie hoog of laag zijn de hoogte en laagte sensore 0 of 1 tegelijkertijd.
+Op geen enkel moment, positie hoog of laag zijn aan weerszijnde de sluisdeuren open en stoplichten op groen.
+
+
+Formnal verification
+De safety en reachability requirements die formeel zijn gespecificeerd   worden in Uppaal geverifieerd met de A en E state formule. Deze zijn als volgd:
+A[] not maincontroller.rd1 imply
+A[] maincontroller.rd1 imply
+A[] not deadlock imply
+E<> maincontroller.rd1 imply
+E<> maincontroller.s7
+E<> maincontroller.s7d
+
+
+
+digitale televisie
+modem
+koelkast
+rijstkoker
+waterkoker
+magnetron
+oven
+cvketel

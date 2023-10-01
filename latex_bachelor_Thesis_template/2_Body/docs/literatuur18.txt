@@ -1,0 +1,4964 @@
+
+\paragraph{Systeem versus softwareengineering}
+\paragraph{requirements}
+%requirements are a usable representation of a need.
+Specificaties
+The software requirement specificatie bevat een omschrijving van functies en mogelijkheden die het product moet kunnen bieden. In de specificatie wordt ook vastgelegd welke beperkingen en aannames worden gedaan. De specificatie wordt soms verduidelijks aan de hand van use cases en user stories.
+The document also defines constraints and assumptions. The SRS can be a single document communicating functional requirements or it may accompany other software documentation like user stories and use cases.
+type requirements 
+hoe requirements elicitation toepassen 
+Creating requirements is a complex task as it includes a set of processes such as elicitation, analysis, specification, validation, and management. In this article, we’ll discuss the main types of requirements for software products and provide a number of recommendations for their use.
+Het iseen manier van onderzoek en ontdekken van de requirements van een systeem van de gebruikers, klanten en andere stakeholders.
+Dit kan uitgevoerd worden door:
+Brainstorming
+Document analyse
+Focus group
+Interface analyse
+Interviews observaties
+Process modellering
+Prototypingh
+Requirement workshops
+surveys/questionaiire
+\paragraph{specificaties}
+\paragraph{functioneel vs niiet-functioneel}
+\subparagraph{subparagraph}
+\paragraph{Automatiseringsparadox}
+ 
+therac-25 
+Softwarefout uit zich als hardwarefout de klachtafhandeling geen onderzoek geen second opinion is prioriteit wel 
+gechecked na onderzoek bellen en geen prioriteit aanwezig te zijn alleen importeurs en fabriken mogen fouten 
+in frabrieksinstellingen rapporteren 
+Therac25 Systeem ligt plat veel voorkomende eror stdaardafhandeling om de error te verwerpen resultaat: 
+de patient kreeg overdosis patient overleden onderzoek opgestart, stuatie niet reproduceerbar foutmarkering: 
+gezien als uitzonderlijk, software aanpassing van groote magnitude 5; de oorzaak was waarschijlijk mechanisch 
+maar neit vastgesteld; conceptueel odel niet aangepast probleemclassicificatie door autorititen het probleem 
+en de impact daarvan anar beneden bijgesteld AEFL doe gedeeltelijke aanpassing om hardware na berisping 
+Canadese autoriteit 
+Derde patient overleden door eythema AECL wijst alle doodsoorzaken af AECL beweert dat geen vergeli- 
+jkbare voorvalle bij andere machines of patienten zijn voorgekomen geen vervolgonderzoek vanwege garanties 
+bedrijf gaat uit van geen mogelijke functionele fout 
+vierde patient overleden aan overdodis ontstaan door bug in software onjuiste aanduiding bij de foutmelding 
+verkeerde reactie/invoer ddoor operator communicatie tussen patient en operator werd onvoldoende gemon- 
+itorred ( apparatuur niet aangesloten, en audio monitor kapot) engineer van AECL stelt geen fouten vast 
+Engineer AECl kan fout niet reproduceren Geen communicate tussen bedrijf en uitgezonden technisci over 
+vergelijkbare probleemgevallen 
+vijfde geval malfunction 54 leidt tot overdosis en de dood fout gereproduceerd door operator bedrijf fout 
+was daa entryspeed herpublicatie van de ongevallen en de eerdere ongevallen in de meia apparaat wel nog in 
+gebruik genomen niet handig, waarschuwingsberichten en aanwijzingen voor een bugfix naar de gebruikers door 
+druk van fda is bedrijf op zoek gegaan naar permanente oplossing 
+zesde geval software fout door softwarefout otntstaat lightstruct .. op de patient na onderzoek door AECL 
+blijkt niet alleen hardware de oorzak gebruikers direct geinformeerd oplossing gevonden, media ingeschakeld om 
+transparantie af te dwingen door de gebruikersgroep en de FDA AECL gedwongen functionaliteit aan te passen 
+Engineers hebben meer studie moeten maken van gebruikte technologie en onderhoudbaarheid daarvan 
+mode confusion 
+Mode confusion treed op als geobserveerd gedrag van een technisch systeem niet past in het gedragspatroon 
+dat de gebruiker in zijn beeldvorming heeft en ook niet met voorstellingsvermogen kan bevatten 
+\subparagraph{automatiseringsparadox }
+Gemak dient de mens. Als er veel energie wordt gestoken in de ontwikkeling van hulmiddelen die taken van 
+werknemers overemen heeft dat tot resultaat dat veel productieprocessen worden geautomatiseerd. De vraag is 
+dan of vanuit mechnisch wereldpunt de robot niet de rol van de mens overneemt en of de mens nog de kwaliteiten 
+heeft om het werk zelf te doen 
+\subparagraph{functioneel vs non-functionele eisen }
+We kunnen requirements onderverdelen in functionele en niet-functionele nrequirements
+Functional requirements define what a product must do, what its features and functions are.
+Nonfunctional requirements describe the general properties of a system. They are also known as quality attributes.
+https://www.altexsoft.com/blog/business/functional-and-non-functional-requirements-specification-and-types/
+\paragraph{} 
+Om een goed verhaal op te stellen, moet vooraf aan enkele voorwaarden
+worden voldaan. De eerste voorwaarde is de geschiktheid van het
+afstudeerproject. Als een afstudeerproject niet tot keuzes leidt, kan
+men zich afvragen of dat wel een echte afstudeeropdracht is. Een
+afstudeerproject zonder onderzoeksaspecten is ook verdacht. Daarnaast
+moet een afstudeerproject passen in het profiel van een opleiding om
+beoordeelbaar te zijn. De andere voorwaarde voor goed een verhaal is
+de registratie van werkzaamheden tijdens het afstudeerproject. Dit
+voorkomt dat men dingen vergeet.
+\chapter{Deelonderzoek naar veiligheidsrisico's en eisen voor sluizzen}
+Gevonden weblinks in google op 07-04-2023 met zoekopdracht: "veiligheidsrisico's voor sluizen en waterwerken"
+https://www.tweedekamer.nl/downloads/document?id=80443e97-f17e-499c-b3f2-ad608f32e1aa&title=Rapportage%20Staat%20van%20de%20infra%20RWS%20%28definitief%29.pdf
+https://www.nu.nl/internet/5814282/rekenkamer-waterwerken-niet-goed-beveiligd-tegen-cyberaanvallen.html
+https://www.deltalimburg.nl/article/9824/Onderhoudswerkzaamheden+aan+Sluis+Linne+afgerond
+https://nieuwesluisterneuzen.eu/veiligheid
+https://www.mrdmarinesupport.nl/nl/maritieme-dienstverlening/ondersteuning-veiligheid/
+https://www.infrasite.nl/bouwen/2021/05/27/veiligheid-voorop-begin-project-sluis-of-brug-altijd-met-risicobeoordeling/
+https://www.wdodelta.nl/bediening-schutsluizen-vechterweerd-en-vilsteren
+https://www.infrasite.nl/waterbouw-deltas/2021/05/21/sluis-heel-onder-handen-genomen/
+https://www.hdsr.nl/actueel/nieuws/@154100/lichtprojecties-zetten-waterliniesluizen/
+https://nos.nl/artikel/2277937-rekenkamer-hack-aanval-op-waterwerk-niet-altijd-opgemerkt
+https://magazine.vhbinfra.nl/1-4/zeesluis-ijmuiden/
+https://varendoejesamen.nl/kenniscentrum/artikel/onderhoud-sluis-linne-afgerond
+https://www.noorderzijlvest.nl/_flysystem/media/vragen-webinar-30-8-2021-en-inloop-2-9-2021-nieuwe-waterwerken-zoutkamp.pdf
+https://eenvandaag.avrotros.nl/item/sluizen-en-gemalen-kunnen-eenvoudig-worden-gehackt/
+https://www.gww-bouw.nl/artikel/de-eerste-sluis-met-kantelende-sluisdeur/
+https://tkhsecurity.com/nl/waterwerken/
+https://www.h2owaternetwerk.nl/h2o-actueel/rekenkamer-vitale-waterwerken-nog-onvoldoende-beschermd-tegen-cyberaanvallen
+https://anteagroup.nl/diensten/beweegbare-en-vaste-kunstwerken/sluizen
+https://balmbv.nl/sluizen-in-tiel-voor-decennia-beschermd/
+https://www.volkskrant.nl/nieuws-achtergrond/hacker-dringt-door-in-controlekamer-waterwerk-cyberterrorist-kan-ons-land-onder-water-zetten~b6fcbc3c/?referrer=https%3A%2F%2Fwww.google.com%2F
+https://www.magazinesrijkswaterstaat.nl/bereikbaarzeeland/2021/01/krammersluizencomplex-verleden-heden-en-toekomst
+https://www.noord-holland.nl/Actueel/Archief/2022/September_2022/Hollandse_Waterlinies_in_de_schijnwerpers
+https://www.watersport-tv.nl/nw-31400-7-3715235/nieuws/cybersecurity_vitale_waterwerken_niet_waterdicht.html
+https://www.tonverheijen.nl/artikelen/bruggen-sluizen-en-tunnels-kunnen-ook-gehackt-worden
+https://nuactueel.noordhoff.nl/hackers-zetten-zo-de-sluizen-open-hv-bb/
+https://binnenvaartkrant.nl/waterwerken-zijn-kwetsbaar-voor-cyberaanvallen
+https://www.rtlnieuws.nl/nieuws/nederland/artikel/3758966/cyberbeveiliging-waterschappen-hapert-sluizen-kunnen-worden
+https://expert.rittal.nl/wp-content/uploads/2017/05/Referentieverhaal-Provincie-Zuid-Holland.pdf
+https://www.vtmgroep.nl/blog/waterwerken-in-nederland-onvoldoende-beveiligd-tegen-cyberaanvallen
+https://www.securitymanagement.nl/waterwerken-nog-altijd-te-hacken/
+https://www.heijmans.nl/nl/verhalen/waterwerken/
+https://www.tno.nl/nl/duurzaam/veilige-duurzame-leefomgeving/infrastructuur/natte-infrastructuur/
+https://www.computable.nl/artikel/nieuws/security/6634379/250449/waterwerken-slecht-beveiligd-tegen-hackers.html
+https://www.cobouw.nl/271317/tunnels-bruggen-en-sluizen-onvoldoende-beschermd-tegen-hackers
+https://www.zuid-holland.nl/onderwerpen/verkeer-vervoer/vaarwegen/
+http://www.wesemann.nl/nl/nieuws-en-pers/274-veiligheid-op-het-water-en-op-het-land.html
+https://www.rekenkamer.nl/actueel/nieuws/2019/03/28/cybersecurity-vitale-waterwerken-niet-waterdicht
+https://www.rijkswaterstaat.nl/over-ons/onze-organisatie/vervanging-en-renovatie
+https://www.arbo-online.nl/22896/werkzaamheden-langs-het-water
+\chapter{Deelonderzoek wet en regelgeving voor sluizen}
+Gevonden weblinks in google op 07-04-2023 met zoekopdracht: "wet en regelgeving voor sluizen"
+https://www.hdsr.nl/publish/pages/86927/sluizen_in_of_bij_een_waterkering_-_uitvoeringsregels.pdf
+https://api1.ibabs.eu/publicdownload.aspx?site=sluis&id=100100292
+https://services.pilz.nl/wp-content/uploads/2021/12/brochure_bruggen_2018.pdf
+https://lokaleregelgeving.overheid.nl/CVDR375606/6
+https://zoek.officielebekendmakingen.nl/stb-2019-27.html
+https://a-quin.nl/nieuws/veiligheid-van-bruggen-sluizen-waarborgen-wie-wat-hoe/
+https://www.gemeentesluis.nl/Bestuur_en_Organisatie/Wetten_Regels_Bekendmakingen
+https://www.overijssel.nl/onderwerpen/verkeer-en-vervoer/varen-in-overijssel/informatie-bedieningstijden-sluizen-en-bruggen-noordwest-overijssel/
+https://www.rijkswaterstaat.nl/water/wetten-regels-en-vergunningen
+https://www.schuttevaer.nl/nieuws/actueel/2022/11/23/binnenvaart-zit-klem-tussen-regels-en-realiteit-kapotte-steigers-en-gesperde-sluizen-dwingen-tot-doorvaren/
+https://repository.officiele-overheidspublicaties.nl/CVDR/CVDR271406/1/html/CVDR271406_1.html
+https://www.zeeland.nl/actueel/bedieningstijden-sluizen-en-bruggen
+https://www.amsterdam.nl/verkeer-vervoer/varen-amsterdam/regels-varen/
+https://www.schielandendekrimpenerwaard.nl/wat-doen-we/regels-en-afspraken-over-beheer-keur-en-leggers/
+http://www.wetboek-online.nl/wet/Wet%20tot%20samenvoeging%20van%20de%20gemeenten%20Aardenburg%20en%20Sluis.html
+https://www.rijnland.net/regels-op-een-rij/richtlijnen-en-akkoorden/alle-regelgeving-van-rijnland/
+https://www.itbb.nl/diensten/advies-ce-markering-europese-richtlijnen/
+https://www.portofamsterdam.com/nl/scheepvaart/zeevaart/regelgeving
+https://www.watersportverbond.nl/nieuws/achterstallig-onderhoud-wachtplaatsen-bruggen-en-sluizen-zuid-holland-zorgelijk/
+https://varendoejesamen.nl/nieuws
+https://www.flevoland.nl/wat-doen-we/flevowegen-vlot-en-veilig-door-flevoland/water/varen-in-flevoland/bediening-bruggen-en-sluizen
+https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32020L0012&from=DE
+https://www.werkenvoornederland.nl/organisatie/rijkswaterstaat/ict-middelen-maken-om-bruggen-sluizen-en-tunnels-te-besturen
+https://www.lobocom.nl/infra-bruggen-sluizen
+https://waterrecreatienederland.nl/content/uploads/2018/04/richtlijnen-vaarwegen-2017.pdf
+https://www.wetterskipfryslan.nl/melden-en-regelen/vergunningen-wetten-en-regels
+https://www.onlinezeilschool.nl/sluizen/
+https://www.provincie.drenthe.nl/onderwerpen/verkeer-vervoer/vaarwegen/rondje-drenthe/bedieningstijden/
+De ontsluiting van het binnenland
+de lucht
+luchtkartering
+operatie sprinkhaan
+over land:wegaanleg in het oerwoud door s-landsbeheer
+de wederopbouw van het boswezen
+de ontsluting van het bos door LBB
+Over land: aanleg van wegen door houtconcessionarissen
+De kabaleboweg
+ontwerp
+uitvoering
+de wegen paranam-afobaka en brownsweg-atjoni
+paranam-afobaka
+browsweg -pokigron/Atjoni
+geplande maar niet gerealiseerde wegen
+bruggen
+pikin saronbrug
+kwintibrug
+carolinabrug
+het aanleggen van laterietwegen
+lateriet in de wegenbouw
+ontwerp en aanleg
+toekomst: een weg naar brazilie
+pan-american highway system
+initiatief voor de integratie van de regionale infrastructuur van zuid-amerika
+Het west-surinameplan
+het ontstaan
+bauziet in het bakhuis
+het kabalebo-project
+ontsluiting van het veldonderzoek
+het salzgitter rapport
+het norconsult rapport
+hoe het verder ging
+bevaarbaarheid van de corantijn
+spoorlijn naar bakhuis
+Apoera
+De CONS en West-Suriname
+Groot-paramaribo
+groei en stedenbouwkundige ontwikkeling
+situatie in 1945
+ruimtelijke planning
+overheidskaveling en woningbuwprocessen
+particuliere verkavelingen
+Verkeer
+Wegen
+ontwatering
+de periode tot 1965
+de periode 1965 tot 1975
+Het MOP en het urgentieprogramma 1976-1986
+De periode 1986 tot 2001
+Masterplan 2001 en de periode daarna
+Drinkwatervoorziening
+De periode tot 1970
+De periode 1970 tot 1990
+De periode na 1990
+Grondwater als bron voor drinkwater
+De swm als organisatie
+De oost-west verbinding
+Het begin
+Meerzorg-albina
+meerzorg-moengo
+moengo-albina
+meerzorg-albina
+paramaribo-coppenamepunt
+Jenny-Ingikondre en Ingikondre-Burnside
+Burnside-wageningen
+Wageningen-henar
+Henar-Nickerie/veerverbindingen Guyana
+Veren en bruggen
+Veren
+Bruggen pover de commewijne- saramacca- en nickerierivier
+bruggen over de suriname-coppenamerivier
+evaluatie en conclusies
+Kust en oeververdediging
+Kustmorfologie
+dynamische kust
+klustafslag
+Zeespiegelstijding en bodemdaling
+zeedijk nickerierivier
+zeedijk coronie
+Oeververdediging commewijne en surinamerivier
+overige dijken
+overige infrastructuur
+Meerzorg- nieuw amsterdam - alkmaar
+weg naar zanderij (Kennedy Highway)
+martin luther king highway
+Larecoweg
+Diverse wegen
+Bruggen
+Dertig-bruggen project
+brug bij Uitkijk
+Vliegvelden
+Havens
+Paramaribo
+Nieu-Nickerie
+bevaarbaarheid
+kanalen
+verbetering saramaccakanaal
+kanaal paranam-moengo
+jamaerkanaal
+spoorverbinding paramaribo-onverwacht
+ C:\Users\gally\Documents\Hogeschool vakken v2\tinlab\tinlab2023_v1\latex_bachelor_Thesis_template\2_Body\modellen\custom_sluis_04
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_5.pdf
+https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf
+https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/
+http://web.mit.edu/smadnick/www/wp/2016-22.pdf
+https://en.wikipedia.org/wiki/December_2015_Ukraine_power_grid_cyberattack
+https://www.wired.com/story/russian-hackers-attack-ukraine/
+https://www.linkedin.com/notifications/
+https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-lights-went-out.pdf
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm-idUSKBN0UM00N20160108
+https://www.wired.com/2016/01/everything-we-know-about-ukraines-power-plant-hack/
+https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-sandworm-team.html
+https://www.us-cert.gov/ics/alerts/IR-ALERT-H-16-056-01
+https://www.sans.org/blog/confirmation-of-a-coordinated-attack-on-the-ukrainian-power-grid/
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-sandworm-hackers-for-ukraine-outage-idUSKBN0UM00N20160108
+https://www.reuters.com/article/us-ukraine-crisis-cyber-idUSKBN15U2CN
+https://www.wired.com/2014/10/russian-sandworm-hack-isight/
+https://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-connection/
+https://blog.trendmicro.com/trendlabs-security-intelligence/killdisk-and-blackenergy-are-not-just-energy-sector-threats/
+https://www.nerc.com/pa/CI/ESISAC/Documents/E-ISAC_SANS_Ukraine_DUC_18Mar2016.pdf
+https://www.politico.eu/article/ukraine-cyber-war-frontline-russia-malware-attacks/
+https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-was-done-52802
+https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructures_2017_2.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://www.osti.gov/servlets/purl/1505628
+https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-attacks/
+IEC_60870-5
+http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0513EED48102FDAD1BD940260EF12B11?doi=10.1.1.548.7490&amp;rep=rep1&amp;type=pdf
+https://scialert.net/fulltext/?doi=tasr.2014.396.405
+https://www.researchgate.net/publication/333671061_Attacking_IEC-60870-5-104_SCADA_Systems
+http://www.salvage-project.com/uploads/4/9/5/5/49558369/art3_-_salvage_2015_-_cyber_security_in_communication_of_scada_systems_using_iec_61850.pdf
+https://eg.uc.pt/bitstream/10316/35720/1/Security%20Probes%20for%20Industrial%20Control%20Networks.pdf
+https://owlcyberdefense.com/products/data-diode-products/software-modules/iec-104/
+https://ris.utwente.nl/ws/files/6028066/3-s2_0-B9780128015957000227.pdf
+https://waterfall-security.com/static/Waterfall-for-IEC-60870-5-104_FINAL.pdf
+http://www.scada.sl/2013/11/last-week-four-guys-of-scada.html
+https://repositorio-aberto.up.pt/bitstream/10216/119066/2/315683.pdf
+https://www.diva-portal.org/smash/get/diva2:1046339/FULLTEXT01.pdf
+https://www.semanticscholar.org/paper/Cybersecurity-analysis-of-a-SCADA-system-under-and-Rocha/dfa7c12551ebe7b24da8d806e87e946051a57cb9
+https://control.com/forums/threads/comparison-between-iec60870-5-103-and-modbus-rtu.20317/
+https://www.blackhat.com/docs/us-17/wednesday/us-17-Staggs-Adventures-In-Attacking-Wind-Farm-Control-Networks.pdf
+https://www.securonix.com/web/wp-content/uploads/2019/08/RSAC_2019_Scada_Attack_Detection_101.pdf
+https://dreamlab.net/en/blog/post/fuzzing-ics-protocols/
+https://library.e.abb.com/public/f74f9c8be95f4cd09b0b1fbbde699108/4CAE000416_RTU_Secure%20communications_web.pdf
+https://www.slideshare.net/qqlan/scada-zn
+https://virsec.com/virsec-hack-analysis-deep-dive-into-industroyer-aka-crash-override/
+https://tutcris.tut.fi/portal/files/16294332/jafary_1534.pdf
+http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-industry.aspx
+https://www.win.tue.nl/~setalle/2017_fauri_encryption.pdf
+https://assets.barracuda.com/assets/docs/dms/Barracuda_CloudGen_Firewall_SB_Security_for_ICS_and_OT.pdf
+https://www.checkpoint.com/products/industrial-control-systems-appliances/
+https://www.dragos.com/wp-content/uploads/CRASHOVERRIDE.pdf
+https://dl.acm.org/doi/fullHtml/10.1145/3381038
+https://arxiv.org/pdf/2001.02925.pdf
+http://blog.nettedautomation.com/2017/
+CRASHOVERRIDE
+https://www.dragos.com/wp-content/uploads/CrashOverride-01.pdf
+https://www.welivesecurity.com/wp-content/uploads/2017/06/Win32_Industroyer.pdf
+https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-transmission-stations-4530.html
+https://www.recordedfuture.com/crashoverride-malware-overview/
+https://www.us-cert.gov/ncas/alerts/TA17-163A
+https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-caused-2016-ukraine-outage/d/d-id/1329114
+https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-electric-grids-but-its-no-stuxnet/
+https://www.accenture.com/_acnmedia/pdf-69/accenture-managing-malware-crash-override.pdf
+https://www.nixu.com/fi/node/53
+https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-industroyer
+https://ics.sans.org/media/E-ISAC_SANS_Ukraine_DUC_6.pdf
+http://blog.wallix.com/ics-security-russian-hacking
+https://digitalsupport.ge.com/servlet/fileField?retURL=%2Fapex%2FKnowledgeDetail%3Fid%3DkA21A000000HShPSAW%26lang%3Den_US%26Type%3DArticle__kav&amp;entityId=ka21A000000HccQQAS&amp;fi
+eld=File_1__Body__s
+https://www.dragos.com/resource/crashoverride-analyzing-the-malware-that-attacks-power-grids/
+https://en.wikipedia.org/wiki/Industroyer
+https://en.wikipedia.org/wiki/Crash_Override_Network
+https://www.virusbulletin.com/virusbulletin/2019/03/vb2018-paper-anatomy-attack-detecting-and-
+defeating-crashoverride/
+https://www.nixu.com/blog/crashoverride-threat-electricity-networks
+https://www.youtube.com/watch?v=TH17hSH1PGQ
+https://www.cyber.nj.gov/threat-center/threat-profiles/ics-malware-variants/crashoverride
+https://thecyberwire.com/stories/f0c289436fff6d87ec93227b77dd3d88/crashoverride-its-
+aftermath-and-its-implications
+https://www.webopedia.com/TERM/C/crashoverride-industroyer-malware.html
+https://collaborate.mitre.org/attackics/index.php/Software/S0001
+https://www.accenture.com/us-en/blogs/blogs-crashoverride-malware-alert
+https://www.incibe-cert.es/en/blog/crashoverride-malware-ics-back-again
+https://rhebo.com/en/service/glossar/industroyer-25114/
+https://www.csoonline.com/article/3200828/crash-override-malware-that-took-down-a-power-grid-
+may-have-been-a-test-run.html
+https://www.darkreading.com/threat-intelligence/first-malware-designed-solely-for-electric-grids-
+caused-2016-ukraine-outage/d/d-id/1329114
+https://www.belden.com/blog/industrial-security/crashoverride-first-malware-platform-designed-
+to-take-down-electric-grids
+https://www.cyberbit.com/blog/ot-security/industroyer-crashoverride-ot-malware/
+https://arstechnica.com/information-technology/2017/06/crash-override-malware-may-sabotage-
+electric-grids-but-its-no-stuxnet/
+https://blog.claroty.com/crashoverride-a.ka.industroyer-detection-and-alerting-in-claroty-platform
+https://www.tenable.com/in-the-news/crashoverride-ics-attack-targets-vulnerable-electrical-grid
+https://www.powermag.com/why-crashoverride-is-a-red-flag-for-u-s-power-companies/
+https://searchsecurity.techtarget.com/news/450420683/CrashOverride-ICS-attack-targets-
+vulnerable-electrical-grid
+https://www.fda.gov/media/123073/download
+https://cyberx-labs.com/glossary/industroyer-crashoverride-crash-override/
+https://tehtris.com/en/egambit-endpoint-security-versus-crashoverride/
+https://blog.paloaltonetworks.com/2017/06/crashoverrideindustroyer-protections-palo-alto-
+networks-customers/
+https://www.waterisac.org/portal/new-vulnerability-discovery-reportedly-abuses-same-protocol-
+used-industroyercrashoverride
+https://www.msspalert.com/cybersecurity-breaches-and-attacks/u-s-dept-of-homeland-securitys-
+crashoverride-malware-warning-to-utilities/
+https://iiot-world.com/ics-security/cybersecurity/five-cybersecurity-experts-about-crashoverride-
+malware-main-dangers-and-lessons-for-iiot/
+https://www.forescout.com/company/blog/crashoverride-protect-your-ics-network-against-the-
+newest-malware/
+https://search.abb.com/library/Download.aspx?DocumentID=9AKK107045A1003&amp;LanguageCode=en
+&amp;DocumentPartId=&amp;Action=Launch
+https://blog.checkpoint.com/2017/06/21/crashoverride/
+https://www.blackhat.com/us-17/briefings/schedule/#industroyercrashoverride-zero-things-cool-
+about-a-threat-group-targeting-the-power-grid-6159
+https://www.sans.org/webcasts/notpetya-dragonfly-20-crashoverride-time-active-cyber-defense-ics-scada-networks-105955
+https://humanit.asia/ta17-163a/
+https://www.vice.com/en_us/article/zmeyg8/ukraine-power-grid-malware-crashoverride-
+industroyer
+https://keybase.io/crashoverride
+https://medium.com/@sroberts/the-crash-override-chronicles-overall-8389ef178fdf
+https://www.oilandgaseng.com/articles/the-most-infamous-cyber-attacks-on-industrial-systems/
+https://www.bankinfosecurity.com/power-grid-malware-platform-threatens-industrial-controls-a-
+9987
+https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-
+description?Name=Trojan:Win32/CrashOverride.C!dha&amp;ThreatID=2147726161
+https://www.cybersecurityintelligence.com/blog/attack-on-ukraines-power-grid-targeted-
+transmission-stations-4530.html
+https://thehill.com/policy/cybersecurity/337877-crash-override-malware-heightens-fears-for-us-electric-grid
+https://choice.npr.org/index.html?origin=https://www.npr.org/2017/09/08/548661962/in-crash-override-zoe-quinn-shares-her-boss-battle-against-online-harassment
+https://pylos.co/2018/11/03/crashoverride-when-advanced-actors-look-like-amateurs/
+https://www.inguardians.com/dhs-fbi-warn-of-attacks-against-us-energy-manufacturing-companies-and-employees/
+https://blog.emergeits.com/alert-homeland-security-finds-u-s-power-grid-vulnerable-to-crashoverride-malware-3
+https://www.cyberthreatalliance.org/member-share/stuxnet-to-crashoverride-to-trisis-evaluating-the-history-and-future-of-integrity-based-attacks-on-industrial-environments/
+https://rethinkresearch.biz/articles/industroyer-crashoverride-malware-behind-ukraine-utility-attack/
+https://electricenergyonline.com/energy/magazine/1104/article/Security-Sessions-Combating-ICS-Threats.htm
+https://www.smart-energy.com/regional-news/europe-uk/encs-crash-override-virus/
+https://securityaffairs.co/wordpress/59989/malware/industroyer-malware.html
+https://isssource.com/crashoverride-designed-for-grid-takedown/
+https://gigazine.net/gsc_news/en/20170613-crashoverride/
+https://www.ethicalhacker.net/members/crashoverride/
+https://www.theglobeandmail.com/arts/books-and-media/book-reviews/review-zoe-quinns-crash-override-and-ellen-paos-reset-explore-the-sexism-of-tech-culture/article36431282/
+https://www.forbes.com/sites/kalevleetaru/2017/06/24/crash-override-and-how-cyberwarfare-is-bringing-conflict-to-the-homefront/#42eb8984277c
+https://www.computerworld.com/article/2883732/crash-override-network-combats-online-harassment.html
+https://fticybersecurity.com/2017-11/crashoverride-red-flag-u-s-power-companies/
+https://www.publicpower.org/periodical/article/e-isac-offers-special-webinar-june-16-crashoverride-malware
+https://blogs.dnvgl.com/energy/industroyer-and-industrial-control-systems
+https://www.theverge.com/2015/1/17/7628567/crash-override
+http://digitaleragroup.com/blog/industry-reactions-to-crashoverride-malware-feedback-
+friday/?style=turquoise
+https://www.us-cert.gov/ics/Recommended-Practices
+iso standaarden
+https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/04/201902-Handreiking-
+Information-Security-Management-System-ISMS-v2.0.pdf
+https://info.advisera.com/hubfs/27001Academy/27001Academy_FreeDownloads/NL/Checklist_of_I
+SO_27001_Mandatory_Documentation_NL.pdf
+https://www.iso.org/isoiec-27001-information-security.html
+https://www.iso27001security.com/html/faq.html
+https://www.iso27001security.com/ISO27k_FAQ.pdf
+https://www.iso27001security.com/ISO27k_GDPR_mapping_release_1.pdf
+https://webstore.iec.ch/preview/info_isoiec27019%7Bed1.0%7Den.pdf
+https://web.archive.org/web/20150924001524/http://www.epri.com/abstracts/Pages/ProductAbstr
+act.aspx?ProductId=000000003002003738
+https://webstore.iec.ch/publication/25948
+https://webstore.iec.ch/publication/6912
+https://webstore.iec.ch/publication/6911
+https://www.ipcomm.de/protocol/IEC62351/en/sheet.html
+UK NCSC Guidelines
+BDEW and Oesterreichs Energie
+NERC CIP
+https://www.energy.gov/ceser/activities/cybersecurity-critical-energy-infrastructure/energy-sector-
+cybersecurity-0
+cybersecurity-0-1
+https://nvlpubs.nist.gov/nistpubs/ir/2010/NIST.IR.7628.pdf
+https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r4.pdf
+https://nvlpubs.nist.gov/nistpubs/ir/2014/NIST.IR.7628r1.pdf
+Bibliografie
+(n.d.). Retrieved from rand.org: https://www.rand.org/pubs/research_reports/RR2081.html
+(n.d.). Retrieved from dpstele.com: https://dpstele.com/blog%20major%20scada%20hacks
+/checklist/network-security-audit-checklist/#related-checklists. (n.d.). Retrieved from process.st:
+https://www.process.st/checklist/network-security-audit-checklist/#related-checklists
+(2016 ). Retrieved from https://www.fireeye.com/blog/threat-research/2016/01/ukraine-and-
+sandworm-team.html
+cybersecurity-audit-checklist. (n.d.). Retrieved from reciprocitylabs.com:
+https://reciprocitylabs.com/cybersecurity-audit-checklist/
+ukraine-power-grid-attack-russia-us. (2016, 2 11). Retrieved from edition.cnn.com:
+https://edition.cnn.com/2016/02/11/politics/ukraine-power-grid-attack-russia-us/index.html
+ukraine-sees-russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E. (n.d.). Retrieved from
+reuters.com: https://www.reuters.com/article/us-ukraine-cybersecurity/ukraine-sees-
+russian-hand-in-cyber-attacks-on-power-grid-idUSKCN0VL18E
+https://www.boozallen.com/content/dam/boozallen/documents/2016/09/ukraine-report-when-the-
+lights-went-out.pdf
+https://www.reuters.com/article/us-ukraine-cybersecurity-sandworm/u-s-firm-blames-russian-
+sandworm-hackers-for-ukraine-outage-idUSKBN0UM00N20160108
+https://blog.trendmicro.com/trendlabs-security-intelligence/sandworm-to-blacken-the-scada-
+connection/
+https://blog.trendmicro.com/trendlabs-security-intelligence/killdisk-and-blackenergy-are-not-just-
+energy-sector-threats/
+https://theconversation.com/cyberattack-on-ukraine-grid-heres-how-it-worked-and-perhaps-why-it-
+was-done-52802
+https://www.ifri.org/sites/default/files/atoms/files/desarnaud_cyber_attacks_energy_infrastructure
+s_2017_2.pdf
+https://ec.europa.eu/energy/sites/ener/files/evaluation_of_risks_of_cyber-
+incidents_and_on_costs_of_preventing_cyber-incidents_in_the_energy_sector.pdf
+https://jsis.washington.edu/news/cyberattack-critical-infrastructure-russia-ukrainian-power-grid-
+attacks/
+http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=0513EED48102FDAD1BD940260EF12B11?
+doi=10.1.1.548.7490&amp;rep=rep1&amp;type=pdf
+http://www.salvage-project.com/uploads/4/9/5/5/49558369/art3_-_salvage_2015_-
+_cyber_security_in_communication_of_scada_systems_using_iec_61850.pdf
+https://eg.uc.pt/bitstream/10316/35720/1/Security%20Probes%20for%20Industrial%20Control%20
+Networks.pdf
+https://www.semanticscholar.org/paper/Cybersecurity-analysis-of-a-SCADA-system-under-and-
+Rocha/dfa7c12551ebe7b24da8d806e87e946051a57cb9
+https://www.blackhat.com/docs/us-17/wednesday/us-17-Staggs-Adventures-In-Attacking-Wind-
+Farm-Control-Networks.pdf
+https://www.securonix.com/web/wp-
+content/uploads/2019/08/RSAC_2019_Scada_Attack_Detection_101.pdf
+https://library.e.abb.com/public/f74f9c8be95f4cd09b0b1fbbde699108/4CAE000416_RTU_Secure%2
+0communications_web.pdf
+http://www.connectivity4ir.co.uk/article/175490/IEC-62351--Secure-communication-in-the-energy-
+industry.aspx
+https://assets.barracuda.com/assets/docs/dms/Barracuda_CloudGen_Firewall_SB_Security_for_ICS_
+and_OT.pdf
+https://digitalsupport.ge.com/servlet/fileField?retURL=%2Fapex%2FKnowledgeDetail%3Fid%3DkA21
+A000000HShPSAW%26lang%3Den_US%26Type%3DArticle__kav&amp;entityId=ka21A000000HccQQAS&amp;fi
+waterschappen onderzoek
+https://www.stowa.nl/
+https://www.rijksoverheid.nl/documenten/rapporten/2021/11/16/bijlage-4-onderzoek-wendbaarder-belastingstelsel-waterschappen
+https://prodemos.nl/kennis-en-debat/publicaties/informatie-over-politiek/het-waterschap/wat-doet-het-waterschap/
+https://www.cbs.nl/nl-nl/onze-diensten/methoden/onderzoeksomschrijvingen/korte-onderzoeksbeschrijvingen/financien-waterschappen
+https://unievanwaterschappen.nl/onderzoek-duurzame-energie-van-waterschappen-in-de-regio/
+https://www.nporadio1.nl/nieuws/onderzoek/a02ecc19-57bb-46e7-a73b-6924c1a1288d/de-provincies-houden-niet-genoeg-toezicht-op-de-waterschappen
+https://www.aquon.nl/
+https://www.waterschappen.nl/onderzoek-naar-minder-geneesmiddelenresten-water/
+https://www.aenowaterschappen.nl/nieuws/imago-onderzoek-naar-werken-voor-waterschappen
+https://www.schreurs-groep.nl/onderzoek-naar-grondwaterbeheer-waterschappen-verschenen/
+https://www.wdodelta.nl/uniek-en-innovatief-onderzoek-naar-productie-waterstof-is-gamechanger
+https://www.aenowaterschappen.nl/nieuws/sectoraal-medewerkersonderzoek-toont-betrokken-en-trotse-medewerkers
+https://www.waterschaprivierenland.nl/rapport-kis
+https://www.waterschaprivierenland.nl/rekenkamercommissie
+https://www.binnenlandsbestuur.nl/ruimte-en-milieu/waarom-zoveel-ongeldige-en-blanco-stemmen-voor-verkiezing-waterschappen
+https://www.provincie.drenthe.nl/drenthedichtbij/diversen/nieuws-provincie/@141067/provincies-waterschappen-waterbedrijf/
+https://www.tauw.nl/nieuws/raamcontract-beleid-en-onderzoek-voor-3-waterschappen.html
+https://www.aqualysis.nl/
+https://www.brabantsedelta.nl/onderzoek-beekherstel-het-merkske
+https://www.milon.nl/waterbodemonderzoeken-beheersgebied-waterschap-aa-en-maas/
+https://www.nvrr.nl/nieuws/10018/huiswerk-voor-provincies-waterschappen-en-gemeenten-bij-invoering-woo/
+https://www.h2owaternetwerk.nl/h2o-actueel/waterschap-vrij-onbekend-als-werkgever
+http://www.renewablaw.nl/nl/project/juridisch-onderzoek-voor-de-unie-van-waterschappen/
+https://kylbv.nl/voor-verschillende-waterschappen-is-kyl-bezig-om-een-onderzoek-uit-te-voeren-naar-de-kwaliteit-van-data/
+https://www.groene.nl/artikel/de-waterschappen-zijn-wel-degelijk-politiek
+https://www.vechtstromen.nl/@43775/ei-columbus-emmen-nieuw-onderzoek/
+https://scheldestromen.nl/onderzoek-naar-hergebruik-gezuiverd-afvalwater-bij-rzwi-ritthem
+https://www.waterforum.net/onderzoek-waterschappen-en-rijkswaterstaat-hebben-nauwelijks-zicht-op-emissies-1-700-zeer-zorgwekkende-stoffen/
+https://www.schielandendekrimpenerwaard.nl/duurzaam-waterschap/themista/pilot-onderzoek-gestart-op-installaties-van-de-waterschappen/
+https://nwbbank.com/public-finance/klimaatmonitor-waterschappen
+https://www.wshd.nl/nomineer-een-sloot-voor-onderzoek-naar-waterkwaliteit
+https://www.vallei-veluwe.nl/wat-doet-waterschap/circulair/duurzame-etalage/onderzoek-verwijdering-medicijnresten/
+https://www.agv.nl/werk-in-uitvoering/bodemonderzoek-in-horstermeerpolder-en-omgeving/
+https://vwvw.nl/cao/arbeidsvoorwaarden/3-beloning/ss-33-toelagen/wachtdienst
+https://library.wur.nl/WebQuery/hydrotheek/862948
+https://www.rn7.nl/nieuws/7775506-waterschappen-erkennen-blinde-vlek-waar-gaat-al-het-grondwater-heen
+https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/themaoverstijgend/brochures_en_publicaties/onderzoeksrapport-auditrapport-portaal-gemeenten-en-waterschappen
+https://www.bndestem.nl/brabant/waterschappen-starten-onderzoek-naar-effect-rubbergranulaat-op-waterkwaliteit~a9bb1855/
+https://www.hhdelfland.nl/actueel/nieuws/2022/november/citizen-science-onderzoek-druk/
+https://gemeente.emmen.nl/wat-doen-gemeente-provincie-en-waterschap
+https://research.utwente.nl/en/publications/meer-zicht-op-het-democratisch-middenbestuur-het-kiezersonderzoek
+https://www.veenweiden.nl/nutrienten-en-waterkwaliteit/agrariers-en-waterschappen-starten-proefpolder-kringlooplandbouw/
+https://www.rtvoost.nl/nieuws/2098454/geen-onafhankelijk-onderzoek-naar-relatie-waterschap-vechtstromen-en-nederlandse-aardolie-maatschappij
+https://www.naturetoday.com/intl/nl/nature-reports/message/?msg=29272
+https://www.hdsr.nl/werk/werken-we-samen/samen-werken-we-schoon-gezond-water/
+https://www.partijvoordedieren.nl/bijdragen/bijdrage-arissen-dertigledendebat-over-waterschappen-die-geen-onderzoek-deden-naar-de-effecten-van-rubbergranulaat-in-kunstgrasvelden
+https://www.provinciegroningen.nl/actueel/nieuws/nieuwsartikel/groninger-overheden-willen-onderlinge-samenwerking-verder-verbeteren-naar-aanleiding-van-onderzoek/
+https://wos.nl/nieuws/artikel/waterschap-gaat-watervervuilende-kassen-opsporen-via-dna-onderzoek
+https://www.helpdeskwater.nl/actueel/@262803/waterschap-zuiderzeeland-zoekt-innovatieve-ideeen/
+https://www.bureauintegriteit.nl/waterschap-op-stoom
+https://www.riskenbusiness.nl/nieuws/markt/faculteit-bouwkunde-onderzoekt-samenwerking-markt-en-waterschappen/
+https://igo.nl/nieuws/actueel/artikel/31511/Waterschap-Hollandse-Delta-start-onderzoek-naar-aanpak-klokkenluider
+https://www.iob-evaluatie.nl/resultaten/eu-beleidscoordinatie
+https://natuurenmilieu.nl/nieuws-artikel/waterkwaliteit-van-de-kleine-wateren-in-nederland-blijft-zorgelijk/
+https://www.navigator.nl/document/id2b0510de31ea46a2aa638cf323b6833b/belastingblad-voortgang-onderzoek-cab-naar-belastingstelsel-waterschappen
+https://groenehart.info/onderzoek-waterschappen/
+https://www.kadaster.nl/boeren-en-waterschappen-werken-samen-aan-waterbeheer
+https://www.rvo.nl/onderwerpen/visserijregelingen/ontheffingen-kust-en-binnenwateren
+https://www.sikb.nl/archeologie/archeologie-en-waterbeheer
+https://www.parlementairemonitor.nl/9353000/1/j9vvij5epmj1ey0/vkuufy8jo3zy
+https://klimaatadaptatienederland.nl/@250569/waterschap-hollandse-delta-waterkwaliteit/
+https://www.groothellevoet.nl/nieuws/algemeen/169680/waterschap-hollandse-delta-start-onderzoek-naar-aanpak-rondom-k
+https://www.versbeton.nl/2021/11/belangenverstrengeling-bij-waterschapsbestuurders-een-op-de-drie-vermeldde-dubbele-pet-niet/
+https://www.vandenbosch-partners.nl/ons_team/paul+van+den+berg
+https://muskusrattenbestrijding.nl/
+https://www.nu.nl/binnenland/4959155/waterschappen-onderzochten-effecten-korrels-in-kunstgrasmat-niet.html
+https://bsgw.nl/nl/nieuws/onderzoek-aansluiting-woz-waarde-op-marktwaarde
+https://pointer.kro-ncrv.nl/boerenbelang-weegt-zwaar-bij-het-waterschap
+https://www.kwrwater.nl/actueel/waterschappen-en-tki-watertechnologie-sluiten-aan-bij-core-water/
+https://www.tudelft.nl/2022/infrastructures/waterschap-limburg-en-tu-delft-versterken-samenwerking
+https://www.westerwoldeactueel.nl/2022/03/01/provincies-waterschappen-en-waterbedrijf-voeren-onderzoek-uit-naar-samenstelling-van-de-ondergrond/
+https://www.rwbwater.nl/medicijnresten-fosfaat/
+https://www.melkvee.nl/artikel/69481-nmv-meer-onderzoek-nodig-voor-nieuwe-heffingen-waterschap/
+https://www.wetterskipfryslan.nl/news/nederlanders-moeten-bijdragen-aan-waterbeheer
+https://www.rug.nl/feb/news/current/vast-differences-between-water-authority_s-tax-rates
+https://www.linqiot.nl/blog/2020/7/24/onderzoek-naar-gezamenlijke-hoofdpost-waterschap-zuiderzeeland-en-gemeente-almere-ncds8
+https://www.cultureelerfgoed.nl/actueel/nieuws/2021/09/16/kennis-uit-het-verleden-bewijst-nut-voor-wateropgaven-van-nu
+
+
+
+
+
+
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+/*
+https://inf.mit.bme.hu/sites/default/files/materials/category/kateg%C3%B3ria/oktat%C3%A1s/v%C3%A1laszthat%C3%B3-t%C3%A1rgyak/kritikus-be%C3%A1gyazott-rendszerek/15/05_Formal_modelling_verification.pdf
+http://www.inf.u-szeged.hu/~zlnemeth/modell2008/UPPAAL/KGL%20UPPAAL.pdf
+http://disc-cps15.imtlucca.it/pdf/Larsen.pdf
+https://link.springer.com/chapter/10.1007/978-3-642-40213-5_8
+https://www.researchgate.net/figure/UPPAAL-model-of-a-train_fig5_221644958
+https://www.researchgate.net/figure/Example-of-Uppaal-Stratego-model-a-Timed-Game-Automata-modeling-a-car-passing-a-town_fig1_318746326
+https://www.it.uu.se/research/group/darts/papers/texts/new-tutorial.pdf
+https://www.es.tu-darmstadt.de/es/team/lars-luthmann/copta-analysis/
+https://www.researchgate.net/figure/UPPAAL-model-of-the-gate_fig2_220687010
+https://www.cs.ru.nl/~fvaan/PC/chapter.pdf
+http://people.cs.aau.dk/~srba/courses/SV-05/slides/l11-3x2.pdf
+http://people.cs.aau.dk/~kgl/SSFT2015/SMC%20tutorial.pdf
+http://www.lsv.fr/~bouyer/files/movep14.pdf
+http://people.cs.aau.dk/~ask/MTV/material/rt-uppaal.pdf
+http://www.cs.ru.nl/~fvaan/PV/what_is_a_good_model.html
+
+
+
+*/
+</declaration><template><name x="5" y="5">Template</name><declaration>// Place local declarations here.
+</declaration><location id="id0" x="16" y="-40"></location><init ref="id0"/></template><template><name x="32" y="16">Door</name><parameter>bool &amp;activated, urgent chan &amp;pushed, urgent chan &amp;closed1, urgent chan &amp;closed2</parameter><declaration>clock x;</declaration><location id="id1" x="224" y="96"><name x="248" y="104">wait</name></location><location id="id2" x="96" y="368"><name x="24" y="352">closing</name><label kind="invariant" x="40" y="368">x&lt;=6</label></location><location id="id3" x="96" y="224"><name x="120" y="208">closed</name><label kind="invariant" x="120" y="224">x&lt;=5</label></location><location id="id4" x="224" y="368"><name x="248" y="352">open</name><label kind="invariant" x="248" y="368">x&lt;=8</label></location><location id="id5" x="224" y="224"><name x="248" y="208">opening</name><label kind="invariant" x="248" y="224">x&lt;=6</label></location><location id="id6" x="96" y="96"><name x="112" y="104">idle</name></location><init ref="id6"/><transition><source ref="id3"/><target ref="id3"/><label kind="synchronisation" x="24" y="192">closed1!</label><nail x="56" y="248"/><nail x="56" y="224"/></transition><transition><source ref="id3"/><target ref="id6"/><label kind="guard" x="56" y="152">x&gt;=5</label></transition><transition><source ref="id2"/><target ref="id3"/><label kind="guard" x="40" y="264">x==6</label><label kind="assignment" x="40" y="288">x=0,
+activated=false</label></transition><transition><source ref="id6"/><target ref="id6"/><label kind="synchronisation" x="16" y="64">closed1!</label><nail x="56" y="120"/><nail x="56" y="96"/></transition><transition><source ref="id6"/><target ref="id1"/><label kind="synchronisation" x="128" y="48">pushed?</label><label kind="assignment" x="120" y="64">activated = true</label></transition><transition><source ref="id4"/><target ref="id2"/><label kind="guard" x="136" y="344">x&gt;=4</label><label kind="assignment" x="144" y="376">x=0</label></transition><transition><source ref="id5"/><target ref="id4"/><label kind="guard" x="232" y="264">x==6</label><label kind="assignment" x="232" y="288">x=0</label></transition><transition><source ref="id1"/><target ref="id5"/><label kind="synchronisation" x="232" y="136">closed2?</label><label kind="assignment" x="232" y="152">x=0</label></transition><transition><source ref="id1"/><target ref="id1"/><label kind="synchronisation" x="280" y="80">closed1!</label><nail x="272" y="72"/><nail x="272" y="96"/></transition></template><template><name x="32" y="16">User</name><parameter>bool &amp;activated, urgent chan &amp;pushed</parameter><declaration>clock w;</declaration><location id="id7" x="192" y="160"></location><location id="id8" x="96" y="96"><name x="72" y="64">idle</name></location><init ref="id8"/><transition><source ref="id8"/><target ref="id7"/><label kind="guard" x="72" y="168">!activated</label><label kind="assignment" x="72" y="184">w=0</label><nail x="96" y="160"/></transition><transition><source ref="id7"/><target ref="id8"/><label kind="synchronisation" x="152" y="72">pushed!</label><nail x="192" y="96"/></transition></template><template><name x="40" y="16">Train</name><parameter>const id_t id</parameter><declaration>clock x;</declaration><location id="id9" x="96" y="96"><name x="48" y="80">Safe</name></location><location id="id10" x="176" y="320"><name x="192" y="328">Stop</name></location><location id="id11" x="256" y="96"><name x="272" y="80">Cross</name><label kind="invariant" x="272" y="96">x&lt;=5</label></location><location id="id12" x="96" y="232"><name x="32" y="216">Appr</name><label kind="invariant" x="32" y="232">x&lt;=20</label></location><location id="id13" x="256" y="232"><name x="272" y="216">Start</name><label kind="invariant" x="272" y="232">x&lt;= 15</label></location><init ref="id9"/><transition><source ref="id12"/><target ref="id11"/><label kind="guard" x="184" y="160">x&gt;=10</label><label kind="assignment" x="184" y="176">x=0</label></transition><transition><source ref="id12"/><target ref="id10"/><label kind="guard" x="88" y="280">x&lt;=10</label><label kind="synchronisation" x="88" y="296">stop[id]?</label></transition><transition><source ref="id11"/><target ref="id9"/><label kind="guard" x="184" y="56">x&gt;=3</label><label kind="synchronisation" x="184" y="72">leave[id]!</label></transition><transition><source ref="id9"/><target ref="id12"/><label kind="synchronisation" x="32" y="128">appr[id]!</label><label kind="assignment" x="32" y="144">x=0</label></transition><transition><source ref="id13"/><target ref="id11"/><label kind="guard" x="264" y="160">x&gt;=7</label><label kind="assignment" x="264" y="176">x=0</label></transition><transition><source ref="id10"/><target ref="id13"/><label kind="synchronisation" x="224" y="280">go[id]?</label><label kind="assignment" x="224" y="296">x=0</label></transition></template><template><name x="40" y="16">Gate</name><declaration>id_t list[N+1];
+int[0,N] len;
+
+// Put an element at the end of the queue
+void enqueue(id_t element)
+{
+        list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                list[i] = list[i + 1];
+                i++;
+        }
+        list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_t front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return list[len - 1];
+}</declaration><location id="id14" x="192" y="360"><committed/></location><location id="id15" x="192" y="264"><name x="208" y="264">Occ</name></location><location id="id16" x="192" y="128"><name x="208" y="96">Free</name></location><init ref="id16"/><transition><source ref="id15"/><target ref="id14"/><label kind="select" x="104" y="288">e : id_t</label><label kind="synchronisation" x="104" y="304">appr[e]?</label><label kind="assignment" x="104" y="320">enqueue(e)</label></transition><transition><source ref="id15"/><target ref="id16"/><label kind="select" x="296" y="152">e : id_t</label><label kind="guard" x="296" y="168">e == front()</label><label kind="synchronisation" x="296" y="184">leave[e]?</label><label kind="assignment" x="296" y="200">dequeue()</label><nail x="288" y="264"/><nail x="288" y="128"/></transition><transition><source ref="id14"/><target ref="id15"/><label kind="synchronisation" x="224" y="304">stop[tail()]!</label><nail x="216" y="312"/></transition><transition><source ref="id16"/><target ref="id15"/><label kind="guard" x="104" y="168">len &gt; 0</label><label kind="synchronisation" x="104" y="184">go[front()]!</label><nail x="96" y="128"/><nail x="96" y="264"/></transition><transition><source ref="id16"/><target ref="id15"/><label kind="select" x="200" y="152">e : id_t</label><label kind="guard" x="200" y="168">len == 0</label><label kind="synchronisation" x="200" y="184">appr[e]?</label><label kind="assignment" x="200" y="200">enqueue(e)</label></transition></template><template><name x="5" y="5">Train2</name><declaration>// Place local declarations here.
+clock x;</declaration><location id="id17" x="256" y="128"><name x="246" y="98">On</name><label kind="invariant" x="246" y="143">x &lt; 20</label></location><location id="id18" x="256" y="-160"><name x="246" y="-190">Before</name><label kind="invariant" x="246" y="-145">x&lt; 30</label></location><location id="id19" x="16" y="-40"><name x="6" y="-70">Far</name></location><init ref="id19"/><transition><source ref="id18"/><target ref="id17"/><label kind="guard" x="196" y="-46">20&lt;x &amp;&amp; x&lt;30 &amp;&amp; a</label><label kind="assignment" x="196" y="-16">x:=0</label></transition><transition><source ref="id17"/><target ref="id19"/><label kind="guard" x="76" y="14">10 &lt; x  &amp;&amp; x&lt; 20</label><label kind="synchronisation" x="76" y="29">Exit!</label></transition><transition><source ref="id19"/><target ref="id18"/><label kind="synchronisation" x="76" y="-115">App!</label><label kind="assignment" x="76" y="-100">x:=0</label></transition></template><template><name>Gate2</name><location id="id20" x="0" y="160"><name x="-10" y="130">Raising</name><label kind="invariant" x="-10" y="175">Hg &lt; 10</label></location><location id="id21" x="256" y="160"><name x="246" y="130">Close</name></location><location id="id22" x="256" y="0"><name x="246" y="-30">Lowering</name></location><location id="id23" x="0" y="0"><name x="-10" y="-30">Open</name></location><init ref="id23"/><transition><source ref="id20"/><target ref="id23"/><label kind="guard" x="-96" y="64">Hg &lt; 10 &amp;&amp; a</label></transition><transition><source ref="id21"/><target ref="id20"/><label kind="synchronisation" x="68" y="145">GoUp?</label><label kind="assignment" x="68" y="160">Hg:=0</label></transition><transition><source ref="id22"/><target ref="id21"/><label kind="guard" x="196" y="50">Hg&lt;10 &amp;&amp; a</label></transition><transition><source ref="id23"/><target ref="id22"/><label kind="synchronisation" x="68" y="-15">GoDown?</label><label kind="assignment" x="68" y="0">Hg :=0</label></transition></template><template><name>Controller2</name><location id="id24" x="480" y="0"></location><location id="id25" x="224" y="0"><name x="214" y="-30">c0</name></location><location id="id26" x="0" y="0"><label kind="invariant" x="-10" y="15">c1 &amp;&amp; Hc &lt;=20</label></location><init ref="id26"/><transition><source ref="id26"/><target ref="id25"/><label kind="synchronisation" x="112" y="72">GoUp!</label><label kind="assignment" x="120" y="88">Hc=20</label><nail x="64" y="64"/><nail x="192" y="64"/></transition><transition><source ref="id24"/><target ref="id25"/><label kind="guard" x="328" y="80">Hc &lt;=10</label><label kind="synchronisation" x="328" y="104">GoDown!</label><nail x="416" y="64"/><nail x="272" y="64"/><nail x="256" y="64"/></transition><transition><source ref="id26"/><target ref="id24"/><label kind="synchronisation" x="208" y="-128">App?</label><nail x="96" y="-96"/><nail x="352" y="-96"/><nail x="384" y="-96"/></transition><transition><source ref="id26"/><target ref="id26"/><label kind="synchronisation" x="-16" y="-96">Exit?</label><nail x="-32" y="-64"/><nail x="32" y="-64"/></transition><transition><source ref="id24"/><target ref="id24"/><label kind="synchronisation" x="472" y="72">App?</label><nail x="512" y="64"/><nail x="448" y="64"/></transition><transition><source ref="id24"/><target ref="id24"/><label kind="synchronisation" x="464" y="-96">Exit?</label><nail x="448" y="-64"/><nail x="512" y="-64"/></transition><transition><source ref="id25"/><target ref="id24"/><label kind="synchronisation" x="292" y="-15">App?</label><label kind="assignment" x="292" y="0">Hc:=0</label></transition><transition><source ref="id25"/><target ref="id26"/><label kind="synchronisation" x="72" y="-24">Exit?</label><label kind="assignment" x="112" y="-24">Hc:=0</label></transition></template><template><name x="5" y="5">lamp</name><parameter>id_l lampnr</parameter><declaration>// Place local declarations here.
+
+void functie()
+{
+	
+}
+
+lumen sterkte;
+
+
+// wacht 5 tijdseenheden
+clock x;
+
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+//	return false;
+	
+	if(lampnr &lt; 2 &amp;&amp; bright&lt;6) return true;
+	else if(lampnr&gt;1 &amp;&amp; bright&gt;=6) return true;
+	else return false;
+
+}
+
+
+//verschillende tijdseenheden voor even en oneven lampnummers</declaration><location id="id27" x="328" y="-48"><name x="352" y="-80">aan</name><label kind="invariant" x="352" y="-56">isForMe()</label></location><location id="id28" x="16" y="-40"><name x="6" y="-70">uit</name></location><init ref="id28"/><transition><source ref="id27"/><target ref="id28"/><label kind="guard" x="144" y="-144">x&gt;=5</label><nail x="288" y="-104"/><nail x="48" y="-112"/></transition><transition><source ref="id28"/><target ref="id27"/><label kind="synchronisation" x="112" y="16">klik?</label><label kind="assignment" x="96" y="40">sterkte:=bright, x:=0</label><nail x="48" y="8"/><nail x="304" y="16"/></transition></template><template><name>knop</name><declaration>
+
+clock x;</declaration><location id="id29" x="0" y="0"></location><init ref="id29"/><transition><source ref="id29"/><target ref="id29"/><label kind="select" x="72" y="40">temp:lumen</label><label kind="guard" x="72" y="-24">x&gt;=1</label><label kind="synchronisation" x="72" y="-8">klik!</label><label kind="assignment" x="72" y="8">x:=0,
+bright:=temp</label><nail x="56" y="40"/><nail x="64" y="-64"/></transition></template><template><name x="32" y="16">Soldier</name><parameter>const int delay</parameter><declaration>clock y;</declaration><location id="id30" x="288" y="80"></location><location id="id31" x="288" y="216"><name x="272" y="232">safe</name></location><location id="id32" x="64" y="216"></location><location id="id33" x="64" y="80"><name x="56" y="48">unsafe</name></location><init ref="id33"/><transition><source ref="id32"/><target ref="id33"/><label kind="guard" x="72" y="176">y &gt;= delay</label><label kind="synchronisation" x="72" y="120">release!</label></transition><transition><source ref="id31"/><target ref="id32"/><label kind="guard" x="208" y="224">L == 1</label><label kind="synchronisation" x="216" y="192">take !</label><label kind="assignment" x="104" y="224">y = 0</label></transition><transition><source ref="id30"/><target ref="id31"/><label kind="guard" x="296" y="112">y &gt;= delay</label><label kind="synchronisation" x="296" y="160">release!</label></transition><transition><source ref="id33"/><target ref="id30"/><label kind="guard" x="120" y="56">L == 0</label><label kind="synchronisation" x="120" y="88">take !</label><label kind="assignment" x="216" y="56">y = 0</label></transition></template><template><name x="32" y="-16">Torch</name><location id="id34" x="200" y="192"><name x="192" y="200">one</name></location><location id="id35" x="200" y="48"><urgent/></location><location id="id36" x="64" y="120"><name x="48" y="88">free</name></location><location id="id37" x="336" y="120"><name x="328" y="88">two</name></location><init ref="id36"/><transition><source ref="id36"/><target ref="id35"/><label kind="synchronisation" x="104" y="56">take?</label></transition><transition><source ref="id35"/><target ref="id34"/></transition><transition><source ref="id35"/><target ref="id37"/><label kind="synchronisation" x="264" y="56">take?</label></transition><transition><source ref="id34"/><target ref="id36"/><label kind="synchronisation" x="96" y="176">release?</label><label kind="assignment" x="32" y="144">L = 1 - L</label></transition><transition><source ref="id37"/><target ref="id34"/><label kind="synchronisation" x="256" y="176">release?</label></transition></template><template><name x="16" y="-8">P</name><parameter>const id_t pid</parameter><declaration>clock x;
+const int k = 2;</declaration><location id="id38" x="216" y="176"><name x="216" y="192">wait</name></location><location id="id39" x="216" y="48"><name x="216" y="16">req</name><label kind="invariant" x="240" y="32">x&lt;=k</label></location><location id="id40" x="64" y="48"><name x="54" y="18">A</name></location><location id="id41" x="64" y="176"><name x="56" y="192">cs</name></location><init ref="id40"/><transition><source ref="id40"/><target ref="id39"/><label kind="guard" x="88" y="24">id== 0</label><label kind="assignment" x="160" y="24">x = 0</label></transition><transition><source ref="id39"/><target ref="id38"/><label kind="guard" x="144" y="72">x&lt;=k</label><label kind="assignment" x="144" y="104">x = 0,
+id = pid</label></transition><transition><source ref="id38"/><target ref="id39"/><label kind="guard" x="264" y="120">id== 0</label><label kind="assignment" x="264" y="88">x = 0</label><nail x="251" y="146"/><nail x="251" y="82"/></transition><transition><source ref="id38"/><target ref="id41"/><label kind="guard" x="96" y="184">x&gt;k &amp;&amp; id==pid</label></transition><transition><source ref="id41"/><target ref="id40"/><label kind="assignment" x="8" y="80">id = 0</label></transition></template><system>// Place template instantiations here.
+Process = Template();
+
+// List one or more processes to be composed into a system.
+system Process;</system></nta>
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+
+chan push;
+int i;
+
+
+chan klik;
+const int MAX = 4;
+typedef int[0,MAX-1] id_l;
+typedef int[0,2] lumen;
+lumen bright;
+
+
+/////////
+const int N = 6;         // # trains
+typedef int[0,N-1] id_t;
+
+chan        appr[N], stop[N], leave[N];
+urgent chan go[N];
+</declaration><template><name x="5" y="5">Knop</name><declaration>// Place local declarations here.
+</declaration><location id="id0" x="0" y="-32"></location><init ref="id0"/><transition><source ref="id0"/><target ref="id0"/><label kind="guard" x="-60" y="-62">i&lt;5</label><label kind="synchronisation" x="-60" y="-47">push!</label><nail x="64" y="32"/><nail x="64" y="-96"/></transition></template><template><name>Loop</name><location id="id1" x="128" y="0"></location><location id="id2" x="0" y="0"></location><init ref="id2"/><transition><source ref="id1"/><target ref="id2"/><nail x="96" y="-32"/><nail x="32" y="-32"/></transition><transition><source ref="id2"/><target ref="id1"/><label kind="synchronisation" x="4" y="-15">push?</label><label kind="assignment" x="4" y="0">i++</label><nail x="32" y="32"/><nail x="96" y="32"/></transition></template><template><name>Schip</name><parameter>const id_t id</parameter><declaration>
+bool left_entrance;
+bool center;
+bool right_entrance;
+
+
+clock x;</declaration><location id="id3" x="96" y="256"><name x="86" y="226">Stop</name></location><location id="id4" x="192" y="160"><name x="182" y="130">Start</name><label kind="invariant" x="182" y="175">x&lt;=15</label></location><location id="id5" x="0" y="160"><name x="-10" y="130">Appr</name><label kind="invariant" x="-10" y="175">x&lt;=20</label></location><location id="id6" x="192" y="0"><name x="182" y="-30">Cross</name><label kind="invariant" x="182" y="15">x&lt;=5</label></location><location id="id7" x="0" y="0"><name x="-10" y="-30">Safe</name></location><init ref="id7"/><transition><source ref="id5"/><target ref="id6"/><label kind="guard" x="36" y="50">x&gt;=10</label><label kind="assignment" x="36" y="80">x:=0</label></transition><transition><source ref="id6"/><target ref="id7"/><label kind="guard" x="36" y="-30">x&gt;=3</label><label kind="synchronisation" x="36" y="-15">leave[id]!</label><nail x="96" y="0"/></transition><transition><source ref="id4"/><target ref="id6"/><label kind="guard" x="132" y="50">x&gt;=7</label><label kind="assignment" x="132" y="80">x:=0</label></transition><transition><source ref="id3"/><target ref="id4"/><label kind="synchronisation" x="84" y="193">go[id]?</label><label kind="assignment" x="84" y="208">x:=0</label><nail x="144" y="208"/></transition><transition><source ref="id5"/><target ref="id3"/><label kind="guard" x="-12" y="178">x&lt;=10</label><label kind="synchronisation" x="-12" y="193">stop[id]?</label></transition><transition><source ref="id7"/><target ref="id5"/><label kind="synchronisation" x="-60" y="65">appr[id]!</label><label kind="assignment" x="-60" y="80">x:=0</label></transition></template><template><name>Kade</name><location id="id8" x="0" y="0"></location><init ref="id8"/></template><template><name>Sluisdeur</name><location id="id9" x="0" y="0"></location><init ref="id9"/></template><template><name>Stoplicht</name><parameter>id_l lampnr</parameter><declaration>/*
+clock x;
+
+bool signal_ship;
+
+void isForMe(){
+
+
+}
+
+
+
+
+
+*/
+
+// Place local declarations here.
+
+void functie()
+{
+	
+}
+
+lumen sterkte;
+
+
+// wacht 5 tijdseenheden
+clock x;
+
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+//	return false;
+	
+	if(lampnr &lt; 2 &amp;&amp; bright&lt;6) return true;
+	else if(lampnr&gt;1 &amp;&amp; bright&gt;=6) return true;
+	else return false;
+
+}
+
+
+//verschillende tijdseenheden voor even en oneven lampnummers</declaration><location id="id10" x="192" y="0"><name x="182" y="-30">Aan</name></location><location id="id11" x="0" y="0"><name x="-10" y="-30">Uit</name></location><init ref="id11"/><transition><source ref="id10"/><target ref="id11"/><label kind="guard" x="36" y="-30">x&gt;=5</label><nail x="160" y="-32"/><nail x="32" y="-32"/></transition><transition><source ref="id11"/><target ref="id10"/><label kind="synchronisation" x="36" y="-15">klik?</label><label kind="assignment" x="36" y="0">sterkte:=bright, x:=0</label><nail x="32" y="32"/><nail x="160" y="32"/></transition></template><template><name>Nivelleer</name><location id="id12" x="0" y="0"></location><init ref="id12"/></template><template><name>Gate</name><declaration>id_t list[N+1];
+int[0,N] len;
+
+// Put an element at the end of the queue
+void enqueue(id_t element)
+{
+        list[len++] = element;
+}
+
+// Remove the front element of the queue
+void dequeue()
+{
+        int i = 0;
+        len -= 1;
+        while (i &lt; len)
+        {
+                list[i] = list[i + 1];
+                i++;
+        }
+        list[i] = 0;
+}
+
+// Returns the front element of the queue
+id_t front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return list[len - 1];
+}</declaration><location id="id13" x="0" y="320"><name x="-10" y="290">Stopping</name><committed/></location><location id="id14" x="0" y="224"><name x="-10" y="194">Occ</name></location><location id="id15" x="0" y="128"></location><location id="id16" x="0" y="0"><name x="-10" y="-30">Free</name><committed/></location><init ref="id16"/><transition><source ref="id13"/><target ref="id14"/><label kind="synchronisation" x="40" y="264">stop[tail()]!</label><nail x="32" y="288"/><nail x="32" y="256"/></transition><transition><source ref="id14"/><target ref="id16"/><label kind="select" x="152" y="64">e:id_t</label><label kind="guard" x="152" y="79">e==front()</label><label kind="synchronisation" x="152" y="94">leave[e]?</label><label kind="assignment" x="152" y="109">dequeue()</label><nail x="128" y="224"/><nail x="128" y="0"/></transition><transition><source ref="id16"/><target ref="id14"/><label kind="guard" x="-208" y="81">len &gt; 0</label><label kind="synchronisation" x="-208" y="96">go[front()]!</label><nail x="-128" y="0"/><nail x="-128" y="224"/></transition><transition><source ref="id14"/><target ref="id13"/><label kind="select" x="-60" y="227">e:id_t</label><label kind="synchronisation" x="-60" y="257">appr[e]?</label><label kind="assignment" x="-60" y="272">enqueue(e)</label></transition><transition><source ref="id15"/><target ref="id14"/><label kind="select" x="-60" y="131">e:id_t</label><label kind="synchronisation" x="-60" y="161">appr[e]?</label><label kind="assignment" x="-60" y="176">enqueue(e)</label></transition><transition><source ref="id16"/><target ref="id15"/><label kind="guard" x="-60" y="34">len==0</label></transition></template><template><name>User</name><location id="id17" x="0" y="0"></location><init ref="id17"/></template><template><name>StoplichtBediening</name><declaration>clock x;</declaration><location id="id18" x="0" y="0"></location><init ref="id18"/><transition><source ref="id18"/><target ref="id18"/><label kind="select" x="-60" y="-45">temp:lumen</label><label kind="guard" x="-60" y="-30">x&gt;=1</label><label kind="synchronisation" x="-60" y="-15">klik!</label><label kind="assignment" x="-60" y="0">x:=0, bright:=temp</label><nail x="64" y="64"/><nail x="64" y="-64"/></transition></template><template><name>Gate2</name><location id="id19" x="32" y="352"></location><location id="id20" x="-32" y="352"></location><location id="id21" x="-96" y="288"></location><location id="id22" x="0" y="288"></location><location id="id23" x="0" y="192"></location><location id="id24" x="0" y="96"></location><location id="id25" x="96" y="96"></location><location id="id26" x="-96" y="0"></location><location id="id27" x="0" y="0"></location><init ref="id27"/><transition><source ref="id23"/><target ref="id22"/></transition><transition><source ref="id24"/><target ref="id23"/></transition><transition><source ref="id27"/><target ref="id24"/></transition><transition><source ref="id25"/><target ref="id27"/><nail x="96" y="0"/></transition><transition><source ref="id22"/><target ref="id25"/><nail x="96" y="288"/></transition><transition><source ref="id19"/><target ref="id22"/></transition><transition><source ref="id20"/><target ref="id19"/></transition><transition><source ref="id22"/><target ref="id20"/></transition><transition><source ref="id21"/><target ref="id22"/></transition><transition><source ref="id26"/><target ref="id21"/></transition><transition><source ref="id27"/><target ref="id26"/></transition></template><system>// Place template instantiations here.
+
+// List one or more processes to be composed into a system.
+system Knop, Loop;</system></nta>
+
+
+
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+chan press_stoplicht, aan, uit,press;
+chan door_open, door_closed;
+bool deur1, deur2, deur3, deur4;
+bool entrance_schip1, leave_schip1, entrace_schip2, leave_schip2;
+
+
+chan adjust_water_level, RestartCycle;
+chan Activate1, Activate2, Activate3, Start,Stop;
+int c, f,t;
+</declaration><template><name x="5" y="5">light</name><declaration>// Place local declarations here.
+clock x;</declaration><location id="id0" x="192" y="-96"><name x="182" y="-126">green</name></location><location id="id1" x="64" y="-96"><name x="56" y="-144">red</name></location><location id="id2" x="-64" y="-96"><name x="-74" y="-126">off</name></location><init ref="id2"/><transition><source ref="id0"/><target ref="id2"/><label kind="synchronisation" x="64" y="32">press?</label><nail x="192" y="64"/><nail x="-64" y="64"/></transition><transition><source ref="id1"/><target ref="id0"/><label kind="guard" x="96" y="-135">x&lt;5</label><label kind="synchronisation" x="96" y="-120">press?</label></transition><transition><source ref="id1"/><target ref="id2"/><label kind="guard" x="-32" y="-96">x&gt;=5</label><label kind="synchronisation" x="-32" y="-81">press?</label><nail x="32" y="-32"/><nail x="-32" y="-32"/></transition><transition><source ref="id2"/><target ref="id1"/><label kind="synchronisation" x="-32" y="-232">press?</label><label kind="assignment" x="-32" y="-217">x:=0</label><nail x="-32" y="-160"/><nail x="32" y="-160"/></transition></template><template><name>Schip</name><location id="id3" x="640" y="-128"><name x="630" y="-158">cross</name></location><location id="id4" x="640" y="0"><name x="630" y="-30">doors_opened</name></location><location id="id5" x="640" y="128"><name x="630" y="98">opening_doors</name></location><location id="id6" x="544" y="224"><name x="534" y="194">level_set</name></location><location id="id7" x="448" y="128"><name x="438" y="98">set_water_level</name></location><location id="id8" x="448" y="0"><name x="438" y="-30">doors_closed</name></location><location id="id9" x="320" y="0"><name x="310" y="-30">close_doors</name></location><location id="id10" x="192" y="0"></location><location id="id11" x="192" y="0"><name x="182" y="-30">entered</name></location><location id="id12" x="192" y="128"></location><location id="id13" x="96" y="224"><name x="86" y="194">Waiting</name></location><location id="id14" x="0" y="128"><name x="-10" y="98">appr</name></location><location id="id15" x="0" y="0"></location><init ref="id15"/><transition><source ref="id4"/><target ref="id3"/></transition><transition><source ref="id5"/><target ref="id4"/></transition><transition><source ref="id6"/><target ref="id5"/></transition><transition><source ref="id7"/><target ref="id6"/></transition><transition><source ref="id8"/><target ref="id7"/><label kind="synchronisation" x="388" y="49">adjust_water_level!</label></transition><transition><source ref="id3"/><target ref="id15"/><nail x="0" y="-128"/></transition><transition><source ref="id12"/><target ref="id10"/><label kind="guard" x="208" y="88">entrance_schip1==true</label></transition><transition><source ref="id10"/><target ref="id9"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id10"/><target ref="id11"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id9"/><target ref="id8"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id10"/><target ref="id11"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id10"/><target ref="id11"/></transition><transition><source ref="id11"/><target ref="id10"/></transition><transition><source ref="id14"/><target ref="id11"/><label kind="guard" x="36" y="34">entrance_schip1==true</label></transition><transition><source ref="id13"/><target ref="id12"/></transition><transition><source ref="id14"/><target ref="id13"/><label kind="guard" x="-12" y="146">entrance_schip1==false</label></transition><transition><source ref="id15"/><target ref="id14"/></transition></template><template><name>light_knop</name><location id="id16" x="0" y="0"></location><init ref="id16"/><transition><source ref="id16"/><target ref="id16"/><label kind="synchronisation" x="-60" y="-15">press!</label><nail x="64" y="-64"/><nail x="64" y="64"/></transition></template><template><name>deur</name><location id="id17" x="0" y="128"><name x="-10" y="98">Closing</name></location><location id="id18" x="128" y="128"><name x="118" y="98">Open</name></location><location id="id19" x="128" y="0"><name x="118" y="-30">Opening</name></location><location id="id20" x="0" y="0"><name x="-10" y="-30">Closed</name></location><init ref="id20"/><transition><source ref="id20"/><target ref="id20"/><nail x="-64" y="-32"/><nail x="-32" y="-64"/></transition><transition><source ref="id17"/><target ref="id20"/></transition><transition><source ref="id18"/><target ref="id17"/><label kind="synchronisation" x="4" y="113">door_closed?</label></transition><transition><source ref="id19"/><target ref="id18"/></transition><transition><source ref="id20"/><target ref="id19"/><label kind="synchronisation" x="4" y="-15">door_open?</label></transition></template><template><name>sluis</name><location id="id21" x="256" y="0"></location><location id="id22" x="0" y="0"></location><init ref="id22"/><transition><source ref="id21"/><target ref="id22"/><nail x="224" y="-64"/><nail x="32" y="-64"/></transition><transition><source ref="id22"/><target ref="id21"/><nail x="32" y="64"/><nail x="224" y="64"/></transition></template><template><name>deurbediening</name><location id="id23" x="160" y="96"><label kind="invariant" x="150" y="111">entrance_schip1=true</label></location><location id="id24" x="0" y="0"></location><init ref="id24"/><transition><source ref="id23"/><target ref="id24"/><label kind="synchronisation" x="24" y="104">door_closed!</label><nail x="0" y="96"/></transition><transition><source ref="id24"/><target ref="id23"/><label kind="synchronisation" x="48" y="-32">door_open!</label><nail x="160" y="0"/></transition></template><template><name>nivelleer</name><location id="id25" x="0" y="0"></location><init ref="id25"/></template><template><name x="5" y="5">controller</name><declaration>// Place local declarations here.
+</declaration><location id="id26" x="-224" y="-32"></location><location id="id27" x="128" y="-160"><name x="118" y="-190">One</name><urgent/></location><location id="id28" x="128" y="96"><name x="128" y="112">three</name></location><location id="id29" x="256" y="-32"><name x="246" y="-62">WaterMonitoringOn</name></location><location id="id30" x="128" y="-32"><name x="118" y="-62">Two</name></location><location id="id31" x="0" y="-32"><name x="-152" y="-32">StartOfCycle</name></location><init ref="id26"/><transition><source ref="id26"/><target ref="id31"/><label kind="synchronisation" x="-172" y="-47">adjust_water_level?</label></transition><transition><source ref="id29"/><target ref="id31"/><label kind="synchronisation" x="64" y="-256">RestartCycle?</label><nail x="256" y="-224"/><nail x="0" y="-224"/></transition><transition><source ref="id27"/><target ref="id29"/><label kind="synchronisation" x="168" y="-152">Activate1!</label></transition><transition><source ref="id30"/><target ref="id29"/><label kind="synchronisation" x="152" y="-56">Activate2!</label></transition><transition><source ref="id28"/><target ref="id29"/><label kind="synchronisation" x="192" y="48">Activate3!</label></transition><transition><source ref="id31"/><target ref="id28"/><label kind="guard" x="-64" y="48">c==1 &amp;&amp; f==1 &amp;&amp;  t==0</label></transition><transition><source ref="id31"/><target ref="id27"/><label kind="guard" x="64" y="-144">c==0</label><nail x="80" y="-112"/></transition><transition><source ref="id31"/><target ref="id30"/><label kind="guard" x="24" y="-56">c==1 &amp;&amp; f==0</label></transition></template><template><name>conductive</name><location id="id32" x="320" y="0"><name x="310" y="-30">HighLevelElectrode</name></location><location id="id33" x="128" y="0"><name x="88" y="-32">LowLevelElectrode</name></location><location id="id34" x="0" y="0"><name x="-10" y="-30">On_1</name></location><init ref="id34"/><transition><source ref="id32"/><target ref="id34"/><label kind="synchronisation" x="160" y="112">Stop!</label><nail x="320" y="96"/><nail x="0" y="96"/></transition><transition><source ref="id33"/><target ref="id32"/><label kind="synchronisation" x="176" y="8">Start!</label></transition><transition><source ref="id34"/><target ref="id33"/><label kind="synchronisation" x="16" y="8">Activate1?</label></transition></template><template><name>magnetic</name><location id="id35" x="384" y="0"><name x="374" y="-30">HighLevelFloat</name></location><location id="id36" x="128" y="0"><name x="118" y="-30">LowLevelFloat</name></location><location id="id37" x="0" y="0"><name x="-10" y="-30">On_2</name></location><init ref="id37"/><transition><source ref="id35"/><target ref="id37"/><label kind="synchronisation" x="168" y="104">Stop!</label><nail x="384" y="96"/><nail x="0" y="96"/></transition><transition><source ref="id36"/><target ref="id35"/><label kind="synchronisation" x="196" y="-15">Start!</label></transition><transition><source ref="id37"/><target ref="id36"/><label kind="synchronisation" x="4" y="-15">Activate1?</label></transition></template><template><name>timer</name><declaration>clock x;</declaration><location id="id38" x="288" y="96"><name x="312" y="88">TankFilling</name></location><location id="id39" x="288" y="-96"><name x="278" y="-126">TankEmptying</name></location><location id="id40" x="384" y="0"><name x="374" y="-30">OffDelayTimer</name></location><location id="id41" x="192" y="0"><name x="216" y="-8">OnDelayTimer</name></location><location id="id42" x="0" y="0"></location><init ref="id42"/><transition><source ref="id38"/><target ref="id41"/><label kind="guard" x="180" y="18">x&gt;=90</label><label kind="synchronisation" x="180" y="33">Stop!</label></transition><transition><source ref="id40"/><target ref="id38"/><label kind="assignment" x="360" y="40">x:=0</label></transition><transition><source ref="id39"/><target ref="id40"/><label kind="guard" x="276" y="-78">x&gt;1320</label><label kind="synchronisation" x="352" y="-72">Start!</label></transition><transition><source ref="id41"/><target ref="id39"/><label kind="assignment" x="180" y="-48">x:=0</label></transition><transition><source ref="id42"/><target ref="id41"/><label kind="synchronisation" x="56" y="-24">Activate3?</label><nail x="104" y="0"/></transition></template><template><name>motor</name><declaration>clock w;</declaration><location id="id43" x="192" y="0"><name x="182" y="-30">On</name><label kind="invariant" x="182" y="15">w&lt;=90</label></location><location id="id44" x="0" y="0"><name x="-64" y="-16">OFF</name><label kind="invariant" x="72" y="-120">w&lt;=1440</label></location><init ref="id44"/><transition><source ref="id44"/><target ref="id44"/><label kind="synchronisation" x="-64" y="-96">RestartCycle!</label><nail x="-64" y="-64"/><nail x="-24" y="-64"/><nail x="0" y="-64"/></transition><transition><source ref="id43"/><target ref="id44"/><label kind="synchronisation" x="88" y="-136">Stop?</label><label kind="assignment" x="36" y="0">w:=0</label><nail x="160" y="96"/><nail x="96" y="96"/><nail x="32" y="96"/></transition><transition><source ref="id44"/><target ref="id43"/><label kind="synchronisation" x="88" y="-136">Start?</label><label kind="assignment" x="36" y="0">w:=0</label><nail x="32" y="-96"/><nail x="160" y="-96"/></transition></template><system>// Place template instantiations here.
+
+
+// List one or more processes to be composed into a system.
+system Process;</system></nta>
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_1.dtd'><nta><declaration>// Place global declarations here.
+
+
+
+const int N = 2;         // # trains
+typedef int[0,N-1] id_t;
+
+chan        appr[N], stop[N], leave[N];
+urgent chan go[N];
+
+int i;
+chan set_level, reset;
+bool set_waterlevel;
+
+
+bool deur_open_1, deur_open_2, open_all;
+chan open_doors, close_doors;
+</declaration><template><name x="5" y="5">Schip_l</name><parameter>const id_t id</parameter><declaration>// Place local declarations here.
+clock x;</declaration><location id="id0" x="544" y="-96"><name x="534" y="-126">Cross2</name></location><location id="id1" x="64" y="224"><name x="54" y="194">Stop</name></location><location id="id2" x="256" y="-32"><name x="182" y="-62">Cross1</name></location><location id="id3" x="160" y="96"><name x="150" y="66">Start</name></location><location id="id4" x="-32" y="96"><name x="-42" y="66">Appr</name><label kind="invariant" x="-42" y="111">x&lt;=20</label></location><location id="id5" x="-32" y="-96"><name x="-42" y="-126">Safe</name></location><init ref="id5"/><transition><source ref="id2"/><target ref="id0"/><label kind="guard" x="424" y="-64">x&gt;5</label><label kind="synchronisation" x="340" y="-79">leave[id]!</label><label kind="assignment" x="340" y="-64">x:=0</label><nail x="544" y="-32"/></transition><transition><source ref="id4"/><target ref="id2"/><label kind="guard" x="-16" y="-64">x&gt;=10</label><label kind="assignment" x="52" y="32">x=0</label><nail x="96" y="96"/><nail x="96" y="-32"/></transition><transition><source ref="id0"/><target ref="id5"/><label kind="guard" x="196" y="-126">x&gt;=3</label><label kind="synchronisation" x="196" y="-111">close_doors!</label></transition><transition><source ref="id3"/><target ref="id2"/><label kind="guard" x="224" y="24">x&gt;7</label><nail x="256" y="96"/></transition><transition><source ref="id1"/><target ref="id3"/><label kind="synchronisation" x="52" y="145">go[id]?</label><label kind="assignment" x="52" y="160">x=0</label></transition><transition><source ref="id4"/><target ref="id1"/><label kind="guard" x="-44" y="130">x&lt;=10</label><label kind="synchronisation" x="-44" y="145">stop[id]?</label></transition><transition><source ref="id5"/><target ref="id4"/><label kind="synchronisation" x="-92" y="-15">appr[id]!</label><label kind="assignment" x="-92" y="0">x=0</label></transition></template><template><name>Schip_r</name><parameter>const id_t id</parameter><declaration>
+
+clock x;</declaration><location id="id6" x="-64" y="-96"><name x="-74" y="-126">Cross2</name></location><location id="id7" x="128" y="160"><name x="118" y="130">set_level</name></location><location id="id8" x="224" y="-160"><name x="214" y="-190">Cross1</name></location><location id="id9" x="224" y="32"><name x="214" y="2">Restart</name><label kind="invariant" x="214" y="47">x&lt;=10</label></location><location id="id10" x="32" y="32"><name x="22" y="2">Entering</name></location><location id="id11" x="-256" y="160"><name x="-266" y="130">Stop</name></location><location id="id12" x="-160" y="32"><name x="-170" y="2">Start</name><label kind="invariant" x="-170" y="47">x&lt;=15</label></location><location id="id13" x="-352" y="32"><name x="-362" y="2">Appr</name><label kind="invariant" x="-362" y="47">x&lt;=20</label></location><location id="id14" x="-352" y="-160"><name x="-362" y="-190">Safe</name></location><init ref="id14"/><transition><source ref="id13"/><target ref="id6"/><label kind="guard" x="-264" y="-136">deur_open_2==true &amp;&amp; x&gt;=10</label><label kind="assignment" x="-280" y="-88">x=0</label><nail x="-224" y="32"/><nail x="-224" y="-96"/></transition><transition><source ref="id8"/><target ref="id14"/><label kind="synchronisation" x="-124" y="-175">leave[id]!</label></transition><transition><source ref="id9"/><target ref="id8"/></transition><transition><source ref="id7"/><target ref="id9"/><label kind="assignment" x="116" y="96">x=0</label></transition><transition><source ref="id10"/><target ref="id7"/></transition><transition><source ref="id6"/><target ref="id10"/><nail x="32" y="-96"/></transition><transition><source ref="id12"/><target ref="id6"/><label kind="guard" x="-96" y="-32">x&gt;=7</label><nail x="-64" y="32"/></transition><transition><source ref="id11"/><target ref="id12"/><label kind="synchronisation" x="-268" y="81">go[id]?</label><label kind="assignment" x="-268" y="96">x=0</label><nail x="-224" y="120"/></transition><transition><source ref="id13"/><target ref="id11"/><label kind="guard" x="-364" y="66">x&lt;=10</label><label kind="synchronisation" x="-364" y="81">stop[id]?</label></transition><transition><source ref="id14"/><target ref="id13"/><label kind="synchronisation" x="-412" y="-79">appr[id]!</label></transition></template><template><name>Controller</name><declaration>
+clock x;
+
+id_t list[N+1];
+int[0,N] len;
+
+void enqueue(id_t element)
+{
+	list[len++] = element;
+}
+
+void dequeue()
+{
+	int i =0;
+	len -= 1;
+	while(i &lt; len)
+	{
+		list[i] = list[i+1];
+		i++;
+	}
+	list[i]=0;
+}
+// Returns the front element of the queue
+id_t front()
+{
+   return list[0];
+}
+
+// Returns the last element of the queue
+id_t tail()
+{
+   return list[len - 1];
+}
+
+
+bool check()
+{
+	// deur_open_1, deur_open_2
+	if(deur_open_1== false &amp;&amp; deur_open_2==false) return true;
+	else return false;
+	
+}</declaration><location id="id15" x="448" y="160"></location><location id="id16" x="448" y="32"></location><location id="id17" x="320" y="288"></location><location id="id18" x="160" y="288"><name x="150" y="258">Still_open</name></location><location id="id19" x="96" y="192"><name x="8" y="160">Check_If_closed</name></location><location id="id20" x="320" y="-96"><name x="310" y="-126">final_close</name></location><location id="id21" x="192" y="-96"><name x="182" y="-126">second_closing</name><label kind="invariant" x="182" y="-81">x&lt;=18</label><committed/></location><location id="id22" x="64" y="64"><name x="54" y="34">doors_closed</name></location><location id="id23" x="64" y="0"><name x="54" y="-30">first_closing</name></location><location id="id24" x="-96" y="0"><name x="-106" y="-30">doors_opened</name></location><location id="id25" x="-96" y="-64"><name x="-106" y="-94">opening_doors</name></location><location id="id26" x="192" y="32"><name x="182" y="2">doors_reopened</name></location><location id="id27" x="192" y="128"><name x="182" y="98">reopening_doors</name></location><location id="id28" x="192" y="192"><name x="182" y="162">water_level_set</name><committed/></location><location id="id29" x="0" y="320"><name x="-10" y="290">Full</name><committed/></location><location id="id30" x="0" y="192"><name x="-40" y="160">Occ</name></location><location id="id31" x="0" y="-128"><name x="-10" y="-158">Free</name></location><init ref="id31"/><transition><source ref="id27"/><target ref="id16"/><label kind="guard" x="664" y="-16">deur_open_2==false &amp;&amp; deur_open_1==false</label><label kind="synchronisation" x="260" y="65">open_doors!</label><nail x="640" y="256"/><nail x="640" y="-64"/></transition><transition><source ref="id30"/><target ref="id19"/><label kind="guard" x="8" y="352">set_waterlevel==true</label><label kind="synchronisation" x="48" y="336">reset!</label><nail x="32" y="320"/><nail x="96" y="320"/></transition><transition><source ref="id16"/><target ref="id26"/><label kind="synchronisation" x="260" y="17">reset!</label></transition><transition><source ref="id15"/><target ref="id16"/><label kind="guard" x="552" y="48">deur_open_2==false</label><label kind="synchronisation" x="560" y="72">open_doors!</label><nail x="544" y="128"/><nail x="544" y="64"/></transition><transition><source ref="id15"/><target ref="id16"/><label kind="guard" x="388" y="66">deur_open_1==false</label><label kind="synchronisation" x="392" y="80">open_doors!</label></transition><transition><source ref="id27"/><target ref="id15"/><label kind="guard" x="260" y="114">deur_open_2==false || deur_open_1==false</label></transition><transition><source ref="id17"/><target ref="id28"/><label kind="synchronisation" x="196" y="225">set_level!</label></transition><transition><source ref="id18"/><target ref="id17"/><label kind="guard" x="184" y="296">deur_open_1==true</label><label kind="synchronisation" x="208" y="376">close_doors!</label></transition><transition><source ref="id18"/><target ref="id17"/><label kind="guard" x="192" y="416">deur_open_2==true</label><label kind="synchronisation" x="200" y="320">close_doors!</label><nail x="192" y="352"/><nail x="288" y="352"/></transition><transition><source ref="id19"/><target ref="id18"/><label kind="guard" x="24" y="232">deur_open_2==true || deur_open_1==true</label></transition><transition><source ref="id30"/><target ref="id19"/><label kind="guard" x="0" y="200">set_waterlevel==false</label></transition><transition><source ref="id19"/><target ref="id28"/><label kind="guard" x="112" y="200">check()==true</label><label kind="synchronisation" x="120" y="168">set_level!</label></transition><transition><source ref="id20"/><target ref="id31"/><label kind="guard" x="100" y="-142">x&lt;=20</label><label kind="assignment" x="100" y="-112">x=0</label><nail x="320" y="-128"/></transition><transition><source ref="id21"/><target ref="id20"/></transition><transition><source ref="id26"/><target ref="id21"/><label kind="select" x="136" y="-77">e:id_t</label><label kind="guard" x="136" y="-62">e==front()</label><label kind="synchronisation" x="136" y="-47">leave[e]?</label><label kind="assignment" x="136" y="-32">dequeue(), x:=0</label></transition><transition><source ref="id22"/><target ref="id30"/><label kind="select" x="-28" y="83">e:id_t</label><label kind="synchronisation" x="-28" y="113">appr[e]?</label><label kind="assignment" x="-28" y="128">enqueue(e)</label><nail x="64" y="160"/><nail x="0" y="160"/></transition><transition><source ref="id23"/><target ref="id22"/><label kind="synchronisation" x="4" y="17">close_doors!</label></transition><transition><source ref="id24"/><target ref="id23"/></transition><transition><source ref="id25"/><target ref="id24"/><label kind="synchronisation" x="-156" y="-47">open_doors!</label></transition><transition><source ref="id31"/><target ref="id25"/><label kind="guard" x="-108" y="-126">len==0</label><nail x="0" y="-96"/><nail x="-96" y="-96"/></transition><transition><source ref="id27"/><target ref="id26"/><label kind="guard" x="132" y="50">x&lt;=18 &amp;&amp; (deur_open_2==true &amp;&amp; deur_open_1==true)</label><label kind="synchronisation" x="132" y="65">reset!</label><label kind="assignment" x="132" y="80">x=0</label></transition><transition><source ref="id28"/><target ref="id27"/><label kind="synchronisation" x="132" y="145">open_doors!</label></transition><transition><source ref="id31"/><target ref="id30"/><label kind="guard" x="-240" y="65">len&gt;0</label><label kind="synchronisation" x="-240" y="80">go[front()]!</label><nail x="-160" y="-128"/><nail x="-160" y="192"/></transition><transition><source ref="id29"/><target ref="id30"/><label kind="synchronisation" x="-136" y="288">stop[tail()]!</label><nail x="-136" y="280"/><nail x="-136" y="216"/></transition><transition><source ref="id30"/><target ref="id29"/><label kind="select" x="-68" y="243">e:id_t</label><label kind="guard" x="-72" y="224">len&lt;2</label><label kind="synchronisation" x="-72" y="256">appr[e]?</label><label kind="assignment" x="-72" y="272">enqueue(e)</label></transition></template><template><name>nivelleer</name><location id="id32" x="-192" y="0"><name x="-202" y="-30">Nivelleren</name></location><location id="id33" x="-320" y="0"><name x="-330" y="-30">start_niveau</name></location><init ref="id33"/><transition><source ref="id32"/><target ref="id33"/><label kind="synchronisation" x="-296" y="-64">reset?</label><label kind="assignment" x="-328" y="48">i:=0, set_waterlevel=false</label><nail x="-224" y="-32"/><nail x="-288" y="-32"/></transition><transition><source ref="id33"/><target ref="id32"/><label kind="synchronisation" x="-288" y="0">set_level?</label></transition></template><template><name>Sluisdeur_l</name><declaration>
+clock x;</declaration><location id="id34" x="-288" y="0"><name x="-298" y="-30">Open</name></location><location id="id35" x="-544" y="0"><name x="-584" y="-32">Closed</name></location><init ref="id35"/><transition><source ref="id34"/><target ref="id35"/><label kind="synchronisation" x="-464" y="72">close_doors?</label><label kind="assignment" x="-480" y="112">deur_open_1=false</label><nail x="-352" y="64"/><nail x="-480" y="64"/></transition><transition><source ref="id35"/><target ref="id34"/><label kind="synchronisation" x="-480" y="-120">open_doors?</label><label kind="assignment" x="-480" y="-152">deur_open_1=true</label><nail x="-480" y="-64"/><nail x="-352" y="-64"/></transition></template><template><name>Sluisdeur_r</name><declaration>
+
+clock x;</declaration><location id="id36" x="-352" y="0"><name x="-362" y="-30">Open</name></location><location id="id37" x="-608" y="0"><name x="-664" y="-32">Closed</name></location><init ref="id37"/><transition><source ref="id36"/><target ref="id37"/><label kind="synchronisation" x="-520" y="80">close_doors?</label><label kind="assignment" x="-544" y="120">deur_open_2=false</label><nail x="-416" y="64"/><nail x="-544" y="64"/></transition><transition><source ref="id37"/><target ref="id36"/><label kind="synchronisation" x="-536" y="-144">open_doors?</label><label kind="assignment" x="-544" y="-120">deur_open_2 = true</label><nail x="-544" y="-64"/><nail x="-416" y="-64"/></transition></template><template><name>check</name><declaration>
+
+
+bool check()
+{
+	// deur_open_1, deur_open_2
+	if(deur_open_1== false &amp;&amp; deur_open_2==false) return true;
+	else return false;
+	
+}</declaration><location id="id38" x="0" y="0"><name x="-10" y="-30">Init</name></location><init ref="id38"/><transition><source ref="id38"/><target ref="id38"/><label kind="synchronisation" x="144" y="-40">close_doors!</label><nail x="128" y="64"/><nail x="128" y="-96"/></transition></template><system>// Place template instantiations here.
+
+
+// List one or more processes to be composed into a system.
+system Schip_l,  Controller, nivelleer, Sluisdeur_l, Sluisdeur_r;</system></nta>
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+// for more uppaal documentation https://docs.uppaal.org/language-reference/expressions/
+
+
+/** product id
+ *
+*/
+typedef int[0,1] id_p;
+
+/**
+ *
+*/
+chan in,out;
+
+
+/**
+ *
+*/
+id_p pass;
+
+
+/**
+ * postitie van schip beneden (0) of boven(1)
+*/
+typedef int[0,1] m_pos;
+
+/**
+ *
+*/
+m_pos positie;
+
+/**
+ * knop voor de pomp 
+*/ 
+chan klik,pklik2,pklik3;
+
+/**
+ * knop voor de schip 
+*/ 
+chan schipklik;
+
+
+/**
+ * knop voor de stoplicht 
+*/ 
+chan stoplichtklik;
+
+/**
+ * knop voor de deur 
+*/ 
+chan deurklik;
+
+
+/**
+ * uitgaan van aanvoer, afvoer, sluis
+ * max aantal sluiskolken
+*/ 
+const int MAX=1;
+
+/**
+ * declaratie voor een sluiskolk
+*/
+typedef int[0,MAX-1] id_l;
+
+/**
+ * waterniveau in meter
+*/ 
+typedef int[0,10] meter;
+
+/**
+ *
+*/
+meter waterlevel;</declaration>
+	<template>
+		<name>pompbediening</name>
+		<declaration>/**
+ *
+*/
+
+
+
+/**
+ *
+*/
+clock x;</declaration>
+		<location id="id0" x="-85" y="-68">
+			<committed/>
+		</location>
+		<location id="id1" x="-85" y="68">
+			<committed/>
+		</location>
+		<location id="id2" x="-170" y="0">
+			<name x="-180" y="-34">S0</name>
+		</location>
+		<location id="id3" x="0" y="0">
+			<name x="-10" y="-34">aan</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-152" y="17">pklik2?</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="select" x="18" y="-22">temp:meter</label>
+			<label kind="guard" x="18" y="-5">x&gt;=1</label>
+			<label kind="synchronisation" x="18" y="12">klik!</label>
+			<label kind="assignment" x="18" y="29">x:=0,
+waterlevel:=temp</label>
+			<nail x="102" y="76"/>
+			<nail x="102" y="-102"/>
+		</transition>
+	</template>
+	<template>
+		<name>deur</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock d;</declaration>
+		<location id="id4" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<location id="id5" x="0" y="-136">
+			<name x="-10" y="-170">S3</name>
+			<urgent/>
+		</location>
+		<location id="id6" x="170" y="-136">
+			<name x="160" y="-170">S2</name>
+		</location>
+		<location id="id7" x="170" y="0">
+			<name x="160" y="-34">S1</name>
+			<urgent/>
+		</location>
+		<location id="id8" x="0" y="0">
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="18" y="-17">deurklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>stoplicht</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock s;</declaration>
+		<location id="id9" x="272" y="0">
+			<name x="262" y="-34">groen</name>
+		</location>
+		<location id="id10" x="136" y="0">
+			<name x="126" y="-34">oranje</name>
+		</location>
+		<location id="id11" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<init ref="id11"/>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<nail x="102" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<nail x="272" y="-68"/>
+			<nail x="170" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id11"/>
+			<nail x="272" y="102"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="18" y="-17">stoplichtklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>pomp</name>
+		<parameter>id_l pompnr</parameter>
+		<declaration>/**
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+*/
+
+/**
+ *
+*/
+void functie()
+{
+	
+}
+
+meter level;
+
+/**
+ *
+*/
+// wacht 5 tijdseenheden
+clock x;
+/**
+ *
+*/
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omlaag
+bool isLaag()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omhoog
+bool isHoog()
+{
+    if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+
+</declaration>
+		<location id="id12" x="204" y="0">
+			<name x="194" y="-34">S1</name>
+			<label kind="invariant" x="194" y="17">isForMe()</label>
+		</location>
+		<location id="id13" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<init ref="id13"/>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="guard" x="154" y="-68">x&gt;=5</label>
+			<nail x="204" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-84" y="17">klik?</label>
+			<label kind="assignment" x="-84" y="34">level:=waterlevel, x:=0</label>
+			<nail x="0" y="68"/>
+			<nail x="204" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<parameter>id_p schipid</parameter>
+		<declaration>/**
+ * Een schip vaart naar meld zich aan waar hij wil en volgt de instructies op van de sluismeester of controlsystem in de sluis
+*/
+
+
+
+/**
+ *
+*/
+clock x;
+
+ </declaration>
+		<location id="id14" x="255" y="0">
+			<name x="245" y="-34">aan</name>
+		</location>
+		<location id="id15" x="340" y="102">
+			<name x="330" y="68">varen</name>
+		</location>
+		<location id="id16" x="340" y="-102">
+			<name x="330" y="-136">pauzeren</name>
+		</location>
+		<location id="id17" x="340" y="0">
+		</location>
+		<location id="id18" x="170" y="0">
+			<name x="160" y="-34">opstarten</name>
+		</location>
+		<location id="id19" x="0" y="0">
+			<name x="-10" y="-34">uit</name>
+		</location>
+		<init ref="id19"/>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id17"/>
+			<label kind="select" x="273" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="273" y="0">positie:=locatie</label>
+			<label kind="comments" x="273" y="25">x : int[0,1] -&gt; start hoog of laag</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id14"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="358" y="119">schipklik!</label>
+			<nail x="408" y="170"/>
+			<nail x="272" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<nail x="510" y="68"/>
+			<nail x="510" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<nail x="408" y="-68"/>
+			<nail x="408" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id15"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id19"/>
+			<label kind="guard" x="18" y="-136">x&gt;=30</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id19"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="select" x="18" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="18" y="0">positie:=locatie</label>
+		</transition>
+	</template>
+	<template>
+		<name x="5" y="5">aanvoer</name>
+		<declaration>// Place local declarations here.
+
+clock x;</declaration>
+		<location id="id20" x="0" y="0">
+		</location>
+		<init ref="id20"/>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id20"/>
+			<label kind="select" x="26" y="4">p:id_p</label>
+			<label kind="guard" x="161" y="-68">x&gt;=1</label>
+			<label kind="synchronisation" x="26" y="38">in!</label>
+			<label kind="assignment" x="161" y="-34">x:=0,pass:=p</label>
+			<nail x="8" y="8"/>
+			<nail x="136" y="102"/>
+			<nail x="136" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id21" x="136" y="-102">
+			<label kind="comments" x="255" y="-119">voordat er een andere transitie in het gehele systeem  mag worden genomen is deze state committed; er verstrijkt geen tijd, er zal mteen een uitgaande transitie moeten worden genomen; dus eerst dit dan dat</label>
+			<committed/>
+		</location>
+		<location id="id22" x="0" y="0">
+		</location>
+		<init ref="id22"/>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="assignment" x="-127" y="-42">received:=pass</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id21"/>
+			<label kind="guard" x="161" y="-59">x&gt;=1</label>
+			<label kind="synchronisation" x="161" y="-42">out!</label>
+			<label kind="assignment" x="161" y="-25">x:=0</label>
+			<nail x="136" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>sluis</name>
+		<declaration>// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
+// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
+
+/** stack
+ * de lengte van de datastructuur
+*/
+ 
+const int SIZE=5;
+
+/** stack
+ *
+*/
+id_p stack[SIZE];
+
+
+/**
+ *
+*/
+int[0,SIZE] head =0;
+
+/** pop
+ *
+*/
+id_p pop()
+{
+    id_p temp;
+    temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+/** push
+ *
+*/
+void push(id_p p)
+{
+    stack[head++]=p;
+}
+
+
+/** isFull
+ *
+*/
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+
+/** isEmpty
+ *
+*/
+bool isEmpty()
+{
+ return (head ==0);
+}</declaration>
+		<location id="id23" x="204" y="136">
+			<name x="194" y="102">S10</name>
+		</location>
+		<location id="id24" x="204" y="238">
+			<name x="194" y="204">S9</name>
+		</location>
+		<location id="id25" x="102" y="238">
+			<name x="92" y="204">S8</name>
+		</location>
+		<location id="id26" x="0" y="238">
+			<name x="-10" y="204">S7</name>
+		</location>
+		<location id="id27" x="-102" y="238">
+			<name x="-112" y="204">S6</name>
+		</location>
+		<location id="id28" x="-204" y="238">
+			<name x="-214" y="204">S5</name>
+		</location>
+		<location id="id29" x="-204" y="136">
+			<name x="-214" y="102">S4</name>
+		</location>
+		<location id="id30" x="-204" y="34">
+			<name x="-214" y="0">S3</name>
+		</location>
+		<location id="id31" x="-68" y="0">
+			<name x="-78" y="-34">S2</name>
+		</location>
+		<location id="id32" x="0" y="-170">
+			<name x="-10" y="-204">S1</name>
+		</location>
+		<location id="id33" x="0" y="-340">
+			<name x="-10" y="-374">S0</name>
+		</location>
+		<location id="id34" x="0" y="-170">
+		</location>
+		<location id="id35" x="68" y="0">
+			<name x="58" y="-34">S12</name>
+		</location>
+		<location id="id36" x="204" y="34">
+			<name x="194" y="0">S11</name>
+		</location>
+		<init ref="id33"/>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-187" y="-51">positie==0</label>
+			<nail x="-136" y="-34"/>
+			<nail x="-170" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="-186" y="221">pklik2!</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id28"/>
+			<label kind="synchronisation" x="-204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id29"/>
+			<label kind="synchronisation" x="-204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id32"/>
+			<label kind="guard" x="51" y="-119">!isEmpty()</label>
+			<label kind="synchronisation" x="51" y="-102">out?</label>
+			<label kind="assignment" x="51" y="-85">pass:=pop()</label>
+			<nail x="34" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-144" y="25">positie==1</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id31"/>
+			<label kind="guard" x="-102" y="-119">!isFull()</label>
+			<label kind="synchronisation" x="-76" y="-102">in?</label>
+			<label kind="assignment" x="-128" y="-85">push(pass)</label>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id32"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id34"/>
+			<label kind="synchronisation" x="0" y="-272">schipklik?</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="-238" y="-194">!isFull()</label>
+			<label kind="synchronisation" x="-238" y="-177">in?</label>
+			<label kind="assignment" x="-238" y="-160">push(pass)</label>
+			<nail x="-85" y="-136"/>
+			<nail x="-170" y="-102"/>
+			<nail x="-170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="170" y="-229">!isEmpty()</label>
+			<label kind="synchronisation" x="170" y="-212">out?</label>
+			<label kind="assignment" x="170" y="-195">pass:=pop()</label>
+			<nail x="170" y="-102"/>
+			<nail x="170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id36"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ 
+// List one or more processes to be composed into a system.
+//system schip,aanvoer,afvoer;
+ 
+//system pomp,pompbediening;   
+
+
+system schip,aanvoer,afvoer,sluis,pomp,deur,stoplicht,pompbediening;</system>
+	<queries>
+		<query>
+			<formula>p--&gt;p
+			</formula>
+			<comment>p --&gt; q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A&lt;&gt; q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			</comment>
+		</query>
+		<query>
+			<formula>E[]p
+			</formula>
+			<comment>E - exists a path ( “E” in UPPAAL).
+E[] p – p is potentially always true. 
+• There exists a path in which p is true in all states.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; p
+			</formula>
+			<comment>• E&lt;&gt; p – it is possible to reach a state in which p is  satisfied
+• p is true in (at least) one reachable state.
+			</comment>
+		</query>
+		<query>
+			<formula>G&lt;&gt;
+			</formula>
+			<comment>• G - all states in a path ( “[]” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>F&lt;&gt;
+			</formula>
+			<comment>• F - some state in a path ( “&lt;&gt;” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>A&lt;&gt; p
+			</formula>
+			<comment>A&lt;&gt; p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+			</comment>
+		</query>
+		<query>
+			<formula>A[] p
+			</formula>
+			<comment>• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+// for more uppaal documentation https://docs.uppaal.org/language-reference/expressions/
+
+
+/** product id
+ *
+*/
+typedef int[0,1] id_p;
+
+/**
+ *
+*/
+chan in,out;
+
+
+/**
+ *
+*/
+id_p pass;
+
+
+/**
+ * postitie van schip beneden (0) of boven(1)
+*/
+typedef int[0,1] m_pos;
+
+/**
+ *
+*/
+m_pos positie;
+
+/**
+ * knop voor de pomp 
+*/ 
+chan klik,pklik2,pklik3;
+
+/**
+ * knop voor de schip 
+*/ 
+chan schipklik;
+
+
+/**
+ * knop voor de stoplicht 
+*/ 
+chan stoplichtklik;
+
+/**
+ * knop voor de deur 
+*/ 
+chan deurklik;
+
+
+/**
+ * uitgaan van aanvoer, afvoer, sluis
+ * max aantal sluiskolken
+*/ 
+const int MAX=1;
+
+/**
+ * declaratie voor een sluiskolk
+*/
+typedef int[0,MAX-1] id_l;
+
+/**
+ * waterniveau in meter
+*/ 
+typedef int[0,10] meter;
+
+/**
+ *
+*/
+meter waterlevel;</declaration>
+	<template>
+		<name>pompbediening</name>
+		<declaration>/**
+ *
+*/
+
+
+
+/**
+ *
+*/
+clock x;</declaration>
+		<location id="id0" x="-85" y="-68">
+			<committed/>
+		</location>
+		<location id="id1" x="-85" y="68">
+			<committed/>
+		</location>
+		<location id="id2" x="-170" y="0">
+			<name x="-180" y="-34">S0</name>
+		</location>
+		<location id="id3" x="0" y="0">
+			<name x="-10" y="-34">aan</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-152" y="17">pklik2?</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="select" x="18" y="-22">temp:meter</label>
+			<label kind="guard" x="18" y="-5">x&gt;=1</label>
+			<label kind="synchronisation" x="18" y="12">klik!</label>
+			<label kind="assignment" x="18" y="29">x:=0,
+waterlevel:=temp</label>
+			<nail x="102" y="76"/>
+			<nail x="102" y="-102"/>
+		</transition>
+	</template>
+	<template>
+		<name>deur</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock d;</declaration>
+		<location id="id4" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<location id="id5" x="0" y="-136">
+			<name x="-10" y="-170">S3</name>
+			<urgent/>
+		</location>
+		<location id="id6" x="170" y="-136">
+			<name x="160" y="-170">S2</name>
+		</location>
+		<location id="id7" x="170" y="0">
+			<name x="160" y="-34">S1</name>
+			<urgent/>
+		</location>
+		<location id="id8" x="0" y="0">
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="18" y="-17">deurklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>stoplicht</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock s;</declaration>
+		<location id="id9" x="272" y="0">
+			<name x="262" y="-34">groen</name>
+		</location>
+		<location id="id10" x="136" y="0">
+			<name x="126" y="-34">oranje</name>
+		</location>
+		<location id="id11" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<init ref="id11"/>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<nail x="102" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<nail x="272" y="-68"/>
+			<nail x="170" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id11"/>
+			<nail x="272" y="102"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="18" y="-17">stoplichtklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>pomp</name>
+		<parameter>id_l pompnr</parameter>
+		<declaration>/**
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+*/
+
+/**
+ *
+*/
+void functie()
+{
+	
+}
+
+meter level;
+
+/**
+ *
+*/
+// wacht 5 tijdseenheden
+clock x;
+/**
+ *
+*/
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omlaag
+bool isLaag()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omhoog
+bool isHoog()
+{
+    if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+
+</declaration>
+		<location id="id12" x="204" y="0">
+			<name x="194" y="-34">S1</name>
+			<label kind="invariant" x="194" y="17">isForMe()</label>
+		</location>
+		<location id="id13" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<init ref="id13"/>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="guard" x="154" y="-68">x&gt;=5</label>
+			<nail x="204" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-84" y="17">klik?</label>
+			<label kind="assignment" x="-84" y="34">level:=waterlevel, x:=0</label>
+			<nail x="0" y="68"/>
+			<nail x="204" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<parameter>id_p schipid</parameter>
+		<declaration>/**
+ * Een schip vaart naar meld zich aan waar hij wil en volgt de instructies op van de sluismeester of controlsystem in de sluis
+*/
+
+
+
+/**
+ *
+*/
+clock x;
+
+ </declaration>
+		<location id="id14" x="255" y="0">
+			<name x="245" y="-34">aan</name>
+		</location>
+		<location id="id15" x="340" y="102">
+			<name x="330" y="68">varen</name>
+		</location>
+		<location id="id16" x="340" y="-102">
+			<name x="330" y="-136">pauzeren</name>
+		</location>
+		<location id="id17" x="340" y="0">
+		</location>
+		<location id="id18" x="170" y="0">
+			<name x="160" y="-34">opstarten</name>
+		</location>
+		<location id="id19" x="0" y="0">
+			<name x="-10" y="-34">uit</name>
+		</location>
+		<init ref="id19"/>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id17"/>
+			<label kind="select" x="273" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="273" y="0">positie:=locatie</label>
+			<label kind="comments" x="273" y="25">x : int[0,1] -&gt; start hoog of laag</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id14"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="358" y="119">schipklik!</label>
+			<nail x="408" y="170"/>
+			<nail x="272" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<nail x="510" y="68"/>
+			<nail x="510" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<nail x="408" y="-68"/>
+			<nail x="408" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id15"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id19"/>
+			<label kind="guard" x="18" y="-136">x&gt;=30</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id19"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="select" x="18" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="18" y="0">positie:=locatie</label>
+		</transition>
+	</template>
+	<template>
+		<name x="5" y="5">aanvoer</name>
+		<declaration>// Place local declarations here.
+
+clock x;</declaration>
+		<location id="id20" x="0" y="0">
+		</location>
+		<init ref="id20"/>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id20"/>
+			<label kind="select" x="26" y="4">p:id_p</label>
+			<label kind="guard" x="161" y="-68">x&gt;=1</label>
+			<label kind="synchronisation" x="26" y="38">in!</label>
+			<label kind="assignment" x="161" y="-34">x:=0,pass:=p</label>
+			<nail x="8" y="8"/>
+			<nail x="136" y="102"/>
+			<nail x="136" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id21" x="136" y="-102">
+			<label kind="comments" x="255" y="-119">voordat er een andere transitie in het gehele systeem  mag worden genomen is deze state committed; er verstrijkt geen tijd, er zal mteen een uitgaande transitie moeten worden genomen; dus eerst dit dan dat</label>
+			<committed/>
+		</location>
+		<location id="id22" x="0" y="0">
+		</location>
+		<init ref="id22"/>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="assignment" x="-127" y="-42">received:=pass</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id21"/>
+			<label kind="guard" x="161" y="-59">x&gt;=1</label>
+			<label kind="synchronisation" x="161" y="-42">out!</label>
+			<label kind="assignment" x="161" y="-25">x:=0</label>
+			<nail x="136" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>sluis</name>
+		<declaration>// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
+// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
+
+/** stack
+ * de lengte van de datastructuur
+*/
+ 
+const int SIZE=5;
+
+/** stack
+ *
+*/
+id_p stack[SIZE];
+
+
+/**
+ *
+*/
+int[0,SIZE] head =0;
+
+/** pop
+ *
+*/
+id_p pop()
+{
+    id_p temp;
+    temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+/** push
+ *
+*/
+void push(id_p p)
+{
+    stack[head++]=p;
+}
+
+
+/** isFull
+ *
+*/
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+
+/** isEmpty
+ *
+*/
+bool isEmpty()
+{
+ return (head ==0);
+}</declaration>
+		<location id="id23" x="204" y="136">
+			<name x="194" y="102">S10</name>
+		</location>
+		<location id="id24" x="204" y="238">
+			<name x="194" y="204">S9</name>
+		</location>
+		<location id="id25" x="102" y="238">
+			<name x="92" y="204">S8</name>
+		</location>
+		<location id="id26" x="0" y="238">
+			<name x="-10" y="204">S7</name>
+		</location>
+		<location id="id27" x="-102" y="238">
+			<name x="-112" y="204">S6</name>
+		</location>
+		<location id="id28" x="-204" y="238">
+			<name x="-214" y="204">S5</name>
+		</location>
+		<location id="id29" x="-204" y="136">
+			<name x="-214" y="102">S4</name>
+		</location>
+		<location id="id30" x="-204" y="34">
+			<name x="-214" y="0">S3</name>
+		</location>
+		<location id="id31" x="-68" y="0">
+			<name x="-78" y="-34">S2</name>
+		</location>
+		<location id="id32" x="0" y="-170">
+			<name x="-10" y="-204">S1</name>
+		</location>
+		<location id="id33" x="0" y="-340">
+			<name x="-10" y="-374">S0</name>
+		</location>
+		<location id="id34" x="0" y="-170">
+		</location>
+		<location id="id35" x="68" y="0">
+			<name x="58" y="-34">S12</name>
+		</location>
+		<location id="id36" x="204" y="34">
+			<name x="194" y="0">S11</name>
+		</location>
+		<init ref="id33"/>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-187" y="-51">positie==0</label>
+			<nail x="-136" y="-34"/>
+			<nail x="-170" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="-186" y="221">pklik2!</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id28"/>
+			<label kind="synchronisation" x="-204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id29"/>
+			<label kind="synchronisation" x="-204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id32"/>
+			<label kind="guard" x="51" y="-119">!isEmpty()</label>
+			<label kind="synchronisation" x="51" y="-102">out?</label>
+			<label kind="assignment" x="51" y="-85">pass:=pop()</label>
+			<nail x="34" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-144" y="25">positie==1</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id31"/>
+			<label kind="guard" x="-102" y="-119">!isFull()</label>
+			<label kind="synchronisation" x="-76" y="-102">in?</label>
+			<label kind="assignment" x="-128" y="-85">push(pass)</label>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id32"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id34"/>
+			<label kind="synchronisation" x="0" y="-272">schipklik?</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="-238" y="-194">!isFull()</label>
+			<label kind="synchronisation" x="-238" y="-177">in?</label>
+			<label kind="assignment" x="-238" y="-160">push(pass)</label>
+			<nail x="-85" y="-136"/>
+			<nail x="-170" y="-102"/>
+			<nail x="-170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="170" y="-229">!isEmpty()</label>
+			<label kind="synchronisation" x="170" y="-212">out?</label>
+			<label kind="assignment" x="170" y="-195">pass:=pop()</label>
+			<nail x="170" y="-102"/>
+			<nail x="170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id36"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ 
+// List one or more processes to be composed into a system.
+//system schip,aanvoer,afvoer;
+ 
+//system pomp,pompbediening;   
+
+
+system schip,aanvoer,afvoer,sluis,pomp,deur,stoplicht,pompbediening;</system>
+	<queries>
+		<query>
+			<formula>p--&gt;p
+			</formula>
+			<comment>p --&gt; q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A&lt;&gt; q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			</comment>
+		</query>
+		<query>
+			<formula>E[]p
+			</formula>
+			<comment>E - exists a path ( “E” in UPPAAL).
+E[] p – p is potentially always true. 
+• There exists a path in which p is true in all states.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; p
+			</formula>
+			<comment>• E&lt;&gt; p – it is possible to reach a state in which p is  satisfied
+• p is true in (at least) one reachable state.
+			</comment>
+		</query>
+		<query>
+			<formula>G&lt;&gt;
+			</formula>
+			<comment>• G - all states in a path ( “[]” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>F&lt;&gt;
+			</formula>
+			<comment>• F - some state in a path ( “&lt;&gt;” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>A&lt;&gt; p
+			</formula>
+			<comment>A&lt;&gt; p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+			</comment>
+		</query>
+		<query>
+			<formula>A[] p
+			</formula>
+			<comment>• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+// for more uppaal documentation https://docs.uppaal.org/language-reference/expressions/
+
+/** Requirementsoverzicht
+ * Een sluis heeft deuren voor openenen en sluiten.
+ * Een sluis heeft stoplichten met rood en groen waarmee toestemming al dann wel neit wordt gegeven voor schepen voor invaren of uitvaren.
+ * Een schip heeft een positie en een doel
+ * Een schip kan zich aanmelden
+ * De pompbediening handelt de aanvraag van invarende, wachtende en uitvarende schepen af
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart beneden.
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart boven.
+ * Een schip kan in een wachtrij staan voordat deze een sluis verlaat.
+ * Als een sluis vol is komt een schip automatisch in een wachtrij.
+ * Een sluis heeft een pomp(nivelleeersystseem) voor  hoog, midden, laag.
+ * Een sluis houdt bij hoeveel schepen invaren.
+ * Een sluis houdt bij wat de waterstand is.
+ *
+ * 
+*/
+
+/** product id
+ *
+*/
+typedef int[0,1] id_p;
+
+/**
+ *
+*/
+chan in,out;
+
+
+/**
+ *
+*/
+id_p pass;
+
+
+/**
+ * postitie van schip beneden (0) of boven(1)
+*/
+typedef int[0,1] m_pos;
+
+/**
+ *
+*/
+m_pos positie;
+
+/**
+ * knop voor de pomp 
+*/ 
+chan klik,pklik2,pklik3;
+
+/**
+ * knop voor de schip 
+*/ 
+chan schipklik;
+
+
+/**
+ * knop voor de stoplicht 
+*/ 
+chan stoplichtklik;
+
+/**
+ * knop voor de deur 
+*/ 
+chan deurklik;
+
+
+/**
+ * uitgaan van aanvoer, afvoer, sluis
+ * max aantal sluiskolken
+*/ 
+const int MAX=2;
+
+/**
+ * declaratie voor een sluiskolk
+*/
+typedef int[0,MAX-1] id_l;
+
+/**
+ * waterniveau in meter
+*/ 
+typedef int[0,10] meter;
+
+/**
+ *
+*/
+meter waterlevel;</declaration>
+	<template>
+		<name>pompbediening</name>
+		<declaration>/**
+ *
+*/
+
+
+
+/**
+ *
+*/
+clock x;</declaration>
+		<location id="id0" x="-85" y="-68">
+			<committed/>
+		</location>
+		<location id="id1" x="-85" y="68">
+			<committed/>
+		</location>
+		<location id="id2" x="-170" y="0">
+			<name x="-180" y="-34">S0</name>
+		</location>
+		<location id="id3" x="0" y="0">
+			<name x="-10" y="-34">aan</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-152" y="17">pklik2?</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="select" x="18" y="-22">temp:meter</label>
+			<label kind="guard" x="18" y="-5">x&gt;=1</label>
+			<label kind="synchronisation" x="18" y="12">klik!</label>
+			<label kind="assignment" x="18" y="29">x:=0,
+waterlevel:=temp</label>
+			<nail x="102" y="76"/>
+			<nail x="102" y="-102"/>
+		</transition>
+	</template>
+	<template>
+		<name>deur</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock d;</declaration>
+		<location id="id4" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<location id="id5" x="0" y="-136">
+			<name x="-10" y="-170">S3</name>
+			<urgent/>
+		</location>
+		<location id="id6" x="170" y="-136">
+			<name x="160" y="-170">S2</name>
+		</location>
+		<location id="id7" x="170" y="0">
+			<name x="160" y="-34">S1</name>
+			<urgent/>
+		</location>
+		<location id="id8" x="0" y="0">
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="18" y="-17">deurklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>stoplicht</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock s;</declaration>
+		<location id="id9" x="272" y="0">
+			<name x="262" y="-34">groen</name>
+		</location>
+		<location id="id10" x="136" y="0">
+			<name x="126" y="-34">oranje</name>
+		</location>
+		<location id="id11" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<init ref="id11"/>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<nail x="102" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<nail x="272" y="-68"/>
+			<nail x="170" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id11"/>
+			<nail x="272" y="102"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="18" y="-17">stoplichtklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>pomp</name>
+		<parameter>id_l pompnr</parameter>
+		<declaration>/**
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+*/
+
+/**
+ *
+*/
+void functie()
+{
+	
+}
+
+meter level;
+
+/**
+ *
+*/
+// wacht 5 tijdseenheden
+clock x;
+/**
+ *
+*/
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omlaag
+bool isLaag()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omhoog
+bool isHoog()
+{
+    if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+
+</declaration>
+		<location id="id12" x="204" y="0">
+			<name x="194" y="-34">S1</name>
+			<label kind="invariant" x="194" y="17">isForMe()</label>
+		</location>
+		<location id="id13" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<init ref="id13"/>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="guard" x="154" y="-68">x&gt;=5</label>
+			<nail x="204" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-84" y="17">klik?</label>
+			<label kind="assignment" x="-84" y="34">level:=waterlevel, x:=0</label>
+			<nail x="0" y="68"/>
+			<nail x="204" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<parameter>id_p schipid</parameter>
+		<declaration>/**
+ * Een schip vaart naar meld zich aan waar hij wil en volgt de instructies op van de sluismeester of controlsystem in de sluis
+*/
+
+
+
+/**
+ *
+*/
+clock x;
+
+ </declaration>
+		<location id="id14" x="255" y="0">
+			<name x="245" y="-34">aan</name>
+		</location>
+		<location id="id15" x="340" y="102">
+			<name x="330" y="68">varen</name>
+		</location>
+		<location id="id16" x="340" y="-102">
+			<name x="330" y="-136">pauzeren</name>
+		</location>
+		<location id="id17" x="340" y="0">
+		</location>
+		<location id="id18" x="170" y="0">
+			<name x="160" y="-34">opstarten</name>
+		</location>
+		<location id="id19" x="0" y="0">
+			<name x="-10" y="-34">uit</name>
+		</location>
+		<init ref="id19"/>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id17"/>
+			<label kind="select" x="273" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="273" y="0">positie:=locatie</label>
+			<label kind="comments" x="273" y="25">x : int[0,1] -&gt; start hoog of laag</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id14"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="358" y="119">schipklik!</label>
+			<nail x="408" y="170"/>
+			<nail x="272" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<nail x="510" y="68"/>
+			<nail x="510" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<nail x="408" y="-68"/>
+			<nail x="408" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id15"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id19"/>
+			<label kind="guard" x="18" y="-136">x&gt;=30</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id19"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="select" x="18" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="18" y="0">positie:=locatie</label>
+		</transition>
+	</template>
+	<template>
+		<name x="5" y="5">aanvoer</name>
+		<declaration>// Place local declarations here.
+
+clock x;</declaration>
+		<location id="id20" x="0" y="0">
+		</location>
+		<init ref="id20"/>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id20"/>
+			<label kind="select" x="26" y="4">p:id_p</label>
+			<label kind="guard" x="161" y="-68">x&gt;=1</label>
+			<label kind="synchronisation" x="26" y="38">in!</label>
+			<label kind="assignment" x="161" y="-34">x:=0,pass:=p</label>
+			<nail x="8" y="8"/>
+			<nail x="136" y="102"/>
+			<nail x="136" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id21" x="136" y="-102">
+			<label kind="comments" x="255" y="-119">voordat er een andere transitie in het gehele systeem  mag worden genomen is deze state committed; er verstrijkt geen tijd, er zal mteen een uitgaande transitie moeten worden genomen; dus eerst dit dan dat</label>
+			<committed/>
+		</location>
+		<location id="id22" x="0" y="0">
+		</location>
+		<init ref="id22"/>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="assignment" x="-127" y="-42">received:=pass</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id21"/>
+			<label kind="guard" x="161" y="-59">x&gt;=1</label>
+			<label kind="synchronisation" x="161" y="-42">out!</label>
+			<label kind="assignment" x="161" y="-25">x:=0</label>
+			<nail x="136" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>sluis</name>
+		<declaration>// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
+// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
+
+/** stack
+ * de lengte van de datastructuur
+*/
+ 
+const int SIZE=5;
+
+/** stack
+ *
+*/
+id_p stack[SIZE];
+
+/** wachtrijboven
+ *
+*/
+id_p wachtrijboven[SIZE];
+
+/** aantalschepeninsluis
+ *
+*/
+id_p aantalschepeninsluis[SIZE];
+
+/** wachtrijbeneden
+ *
+*/
+id_p wachtrijbeneden[SIZE];
+
+
+/**
+ *
+*/
+int[0,SIZE] head =0;
+
+/** pop
+ *
+*/
+id_p pop()
+{
+    id_p temp;
+    temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+/** push
+ *
+*/
+void push(id_p p)
+{
+    stack[head++]=p;
+}
+
+
+/** isFull
+ *
+*/
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+
+/** isEmpty
+ *
+*/
+bool isEmpty()
+{
+ return (head ==0);
+}</declaration>
+		<location id="id23" x="204" y="136">
+			<name x="194" y="102">S10</name>
+		</location>
+		<location id="id24" x="204" y="238">
+			<name x="194" y="204">S9</name>
+		</location>
+		<location id="id25" x="102" y="238">
+			<name x="92" y="204">S8</name>
+		</location>
+		<location id="id26" x="0" y="238">
+			<name x="-10" y="204">S7</name>
+		</location>
+		<location id="id27" x="-102" y="238">
+			<name x="-112" y="204">S6</name>
+		</location>
+		<location id="id28" x="-204" y="238">
+			<name x="-214" y="204">S5</name>
+		</location>
+		<location id="id29" x="-204" y="136">
+			<name x="-214" y="102">S4</name>
+		</location>
+		<location id="id30" x="-204" y="34">
+			<name x="-214" y="0">S3</name>
+		</location>
+		<location id="id31" x="-68" y="0">
+			<name x="-78" y="-34">S2</name>
+		</location>
+		<location id="id32" x="0" y="-170">
+			<name x="-10" y="-204">S1</name>
+		</location>
+		<location id="id33" x="0" y="-340">
+			<name x="-10" y="-374">S0</name>
+		</location>
+		<location id="id34" x="0" y="-170">
+		</location>
+		<location id="id35" x="68" y="0">
+			<name x="58" y="-34">S12</name>
+		</location>
+		<location id="id36" x="204" y="34">
+			<name x="194" y="0">S11</name>
+		</location>
+		<init ref="id33"/>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-187" y="-51">positie==0</label>
+			<nail x="-136" y="-34"/>
+			<nail x="-170" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="-186" y="221">pklik2!</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id28"/>
+			<label kind="synchronisation" x="-204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id29"/>
+			<label kind="synchronisation" x="-204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id32"/>
+			<label kind="guard" x="51" y="-119">!isEmpty()</label>
+			<label kind="synchronisation" x="51" y="-102">out?</label>
+			<label kind="assignment" x="51" y="-85">pass:=pop()</label>
+			<nail x="34" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-144" y="25">positie==1</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id31"/>
+			<label kind="guard" x="-102" y="-119">!isFull()</label>
+			<label kind="synchronisation" x="-76" y="-102">in?</label>
+			<label kind="assignment" x="-128" y="-85">push(pass)</label>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id32"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id34"/>
+			<label kind="synchronisation" x="0" y="-272">schipklik?</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="-238" y="-194">!isFull()</label>
+			<label kind="synchronisation" x="-238" y="-177">in?</label>
+			<label kind="assignment" x="-238" y="-160">push(pass)</label>
+			<nail x="-85" y="-136"/>
+			<nail x="-170" y="-102"/>
+			<nail x="-170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="170" y="-229">!isEmpty()</label>
+			<label kind="synchronisation" x="170" y="-212">out?</label>
+			<label kind="assignment" x="170" y="-195">pass:=pop()</label>
+			<nail x="170" y="-102"/>
+			<nail x="170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id36"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ 
+// List one or more processes to be composed into a system.
+//system schip,aanvoer,afvoer;
+ 
+//system pomp,pompbediening;   
+
+
+system schip,aanvoer,afvoer,sluis,pomp,deur,stoplicht,pompbediening;</system>
+	<queries>
+		<query>
+			<formula>p--&gt;p
+			</formula>
+			<comment>p --&gt; q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A&lt;&gt; q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			</comment>
+		</query>
+		<query>
+			<formula>E[]p
+			</formula>
+			<comment>E - exists a path ( “E” in UPPAAL).
+E[] p – p is potentially always true. 
+• There exists a path in which p is true in all states.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; p
+			</formula>
+			<comment>• E&lt;&gt; p – it is possible to reach a state in which p is  satisfied
+• p is true in (at least) one reachable state.
+			</comment>
+		</query>
+		<query>
+			<formula>G&lt;&gt;
+			</formula>
+			<comment>• G - all states in a path ( “[]” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>F&lt;&gt;
+			</formula>
+			<comment>• F - some state in a path ( “&lt;&gt;” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>A&lt;&gt; p
+			</formula>
+			<comment>A&lt;&gt; p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+			</comment>
+		</query>
+		<query>
+			<formula>A[] p
+			</formula>
+			<comment>• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+// for more uppaal documentation https://docs.uppaal.org/language-reference/expressions/
+
+
+/** product id
+ *
+*/
+typedef int[0,1] id_p;
+
+/**
+ *
+*/
+chan in,out;
+
+
+/**
+ *
+*/
+id_p pass;
+
+
+/**
+ * postitie van schip beneden (0) of boven(1)
+*/
+typedef int[0,1] m_pos;
+
+/**
+ *
+*/
+m_pos positie;
+
+/**
+ * knop voor de pomp 
+*/ 
+chan klik,pklik2,pklik3;
+
+/**
+ * knop voor de schip 
+*/ 
+chan schipklik;
+
+
+/**
+ * knop voor de stoplicht 
+*/ 
+chan stoplichtklik;
+
+/**
+ * knop voor de deur 
+*/ 
+chan deurklik;
+
+
+/**
+ * uitgaan van aanvoer, afvoer, sluis
+ * max aantal sluiskolken
+*/ 
+const int MAX=1;
+
+/**
+ * declaratie voor een sluiskolk
+*/
+typedef int[0,MAX-1] id_l;
+
+/**
+ * waterniveau in meter
+*/ 
+typedef int[0,10] meter;
+
+/**
+ *
+*/
+meter waterlevel;</declaration>
+	<template>
+		<name>pompbediening</name>
+		<declaration>/**
+ *
+*/
+
+
+
+/**
+ *
+*/
+clock x;</declaration>
+		<location id="id0" x="-85" y="-68">
+			<committed/>
+		</location>
+		<location id="id1" x="-85" y="68">
+			<committed/>
+		</location>
+		<location id="id2" x="-170" y="0">
+			<name x="-180" y="-34">S0</name>
+		</location>
+		<location id="id3" x="0" y="0">
+			<name x="-10" y="-34">aan</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-152" y="17">pklik2?</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="select" x="18" y="-22">temp:meter</label>
+			<label kind="guard" x="18" y="-5">x&gt;=1</label>
+			<label kind="synchronisation" x="18" y="12">klik!</label>
+			<label kind="assignment" x="18" y="29">x:=0,
+waterlevel:=temp</label>
+			<nail x="102" y="76"/>
+			<nail x="102" y="-102"/>
+		</transition>
+	</template>
+	<template>
+		<name>deur</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock d;</declaration>
+		<location id="id4" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<location id="id5" x="0" y="-136">
+			<name x="-10" y="-170">S3</name>
+			<urgent/>
+		</location>
+		<location id="id6" x="170" y="-136">
+			<name x="160" y="-170">S2</name>
+		</location>
+		<location id="id7" x="170" y="0">
+			<name x="160" y="-34">S1</name>
+			<urgent/>
+		</location>
+		<location id="id8" x="0" y="0">
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="18" y="-17">deurklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>stoplicht</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock s;</declaration>
+		<location id="id9" x="272" y="0">
+			<name x="262" y="-34">groen</name>
+		</location>
+		<location id="id10" x="136" y="0">
+			<name x="126" y="-34">oranje</name>
+		</location>
+		<location id="id11" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<init ref="id11"/>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<nail x="102" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<nail x="272" y="-68"/>
+			<nail x="170" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id11"/>
+			<nail x="272" y="102"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="18" y="-17">stoplichtklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>pomp</name>
+		<parameter>id_l pompnr</parameter>
+		<declaration>/**
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+*/
+
+/**
+ *
+*/
+void functie()
+{
+	
+}
+
+meter level;
+
+/**
+ *
+*/
+// wacht 5 tijdseenheden
+clock x;
+/**
+ *
+*/
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omlaag
+bool isLaag()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omhoog
+bool isHoog()
+{
+    if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+
+</declaration>
+		<location id="id12" x="204" y="0">
+			<name x="194" y="-34">S1</name>
+			<label kind="invariant" x="194" y="17">isForMe()</label>
+		</location>
+		<location id="id13" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<init ref="id13"/>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="guard" x="154" y="-68">x&gt;=5</label>
+			<nail x="204" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-84" y="17">klik?</label>
+			<label kind="assignment" x="-84" y="34">level:=waterlevel, x:=0</label>
+			<nail x="0" y="68"/>
+			<nail x="204" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<parameter>id_p schipid</parameter>
+		<declaration>/**
+ * Een schip vaart naar meld zich aan waar hij wil en volgt de instructies op van de sluismeester of controlsystem in de sluis
+*/
+
+
+
+/**
+ *
+*/
+clock x;
+
+ </declaration>
+		<location id="id14" x="255" y="0">
+			<name x="245" y="-34">aan</name>
+		</location>
+		<location id="id15" x="340" y="102">
+			<name x="330" y="68">varen</name>
+		</location>
+		<location id="id16" x="340" y="-102">
+			<name x="330" y="-136">pauzeren</name>
+		</location>
+		<location id="id17" x="340" y="0">
+		</location>
+		<location id="id18" x="170" y="0">
+			<name x="160" y="-34">opstarten</name>
+		</location>
+		<location id="id19" x="0" y="0">
+			<name x="-10" y="-34">uit</name>
+		</location>
+		<init ref="id19"/>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id17"/>
+			<label kind="select" x="273" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="273" y="0">positie:=locatie</label>
+			<label kind="comments" x="273" y="25">x : int[0,1] -&gt; start hoog of laag</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id14"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="358" y="119">schipklik!</label>
+			<nail x="408" y="170"/>
+			<nail x="272" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<nail x="510" y="68"/>
+			<nail x="510" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<nail x="408" y="-68"/>
+			<nail x="408" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id15"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id19"/>
+			<label kind="guard" x="18" y="-136">x&gt;=30</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id19"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="select" x="18" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="18" y="0">positie:=locatie</label>
+		</transition>
+	</template>
+	<template>
+		<name x="5" y="5">aanvoer</name>
+		<declaration>// Place local declarations here.
+
+clock x;</declaration>
+		<location id="id20" x="0" y="0">
+		</location>
+		<init ref="id20"/>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id20"/>
+			<label kind="select" x="26" y="4">p:id_p</label>
+			<label kind="guard" x="161" y="-68">x&gt;=1</label>
+			<label kind="synchronisation" x="26" y="38">in!</label>
+			<label kind="assignment" x="161" y="-34">x:=0,pass:=p</label>
+			<nail x="8" y="8"/>
+			<nail x="136" y="102"/>
+			<nail x="136" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id21" x="136" y="-102">
+			<label kind="comments" x="255" y="-119">voordat er een andere transitie in het gehele systeem  mag worden genomen is deze state committed; er verstrijkt geen tijd, er zal mteen een uitgaande transitie moeten worden genomen; dus eerst dit dan dat</label>
+			<committed/>
+		</location>
+		<location id="id22" x="0" y="0">
+		</location>
+		<init ref="id22"/>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="assignment" x="-127" y="-42">received:=pass</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id21"/>
+			<label kind="guard" x="161" y="-59">x&gt;=1</label>
+			<label kind="synchronisation" x="161" y="-42">out!</label>
+			<label kind="assignment" x="161" y="-25">x:=0</label>
+			<nail x="136" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>sluis</name>
+		<declaration>// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
+// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
+
+/** stack
+ * de lengte van de datastructuur
+*/
+ 
+const int SIZE=5;
+
+/** stack
+ *
+*/
+id_p stack[SIZE];
+
+
+/**
+ *
+*/
+int[0,SIZE] head =0;
+
+/** pop
+ *
+*/
+id_p pop()
+{
+    id_p temp;
+    temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+/** push
+ *
+*/
+void push(id_p p)
+{
+    stack[head++]=p;
+}
+
+
+/** isFull
+ *
+*/
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+
+/** isEmpty
+ *
+*/
+bool isEmpty()
+{
+ return (head ==0);
+}</declaration>
+		<location id="id23" x="204" y="136">
+			<name x="194" y="102">S10</name>
+		</location>
+		<location id="id24" x="204" y="238">
+			<name x="194" y="204">S9</name>
+		</location>
+		<location id="id25" x="102" y="238">
+			<name x="92" y="204">S8</name>
+		</location>
+		<location id="id26" x="0" y="238">
+			<name x="-10" y="204">S7</name>
+		</location>
+		<location id="id27" x="-102" y="238">
+			<name x="-112" y="204">S6</name>
+		</location>
+		<location id="id28" x="-204" y="238">
+			<name x="-214" y="204">S5</name>
+		</location>
+		<location id="id29" x="-204" y="136">
+			<name x="-214" y="102">S4</name>
+		</location>
+		<location id="id30" x="-204" y="34">
+			<name x="-214" y="0">S3</name>
+		</location>
+		<location id="id31" x="-68" y="0">
+			<name x="-78" y="-34">S2</name>
+		</location>
+		<location id="id32" x="0" y="-170">
+			<name x="-10" y="-204">S1</name>
+		</location>
+		<location id="id33" x="0" y="-340">
+			<name x="-10" y="-374">S0</name>
+		</location>
+		<location id="id34" x="0" y="-170">
+		</location>
+		<location id="id35" x="68" y="0">
+			<name x="58" y="-34">S12</name>
+		</location>
+		<location id="id36" x="204" y="34">
+			<name x="194" y="0">S11</name>
+		</location>
+		<init ref="id33"/>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-187" y="-51">positie==0</label>
+			<nail x="-136" y="-34"/>
+			<nail x="-170" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id25"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="-186" y="221">pklik2!</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id28"/>
+			<label kind="synchronisation" x="-204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id29"/>
+			<label kind="synchronisation" x="-204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id32"/>
+			<label kind="guard" x="51" y="-119">!isEmpty()</label>
+			<label kind="synchronisation" x="51" y="-102">out?</label>
+			<label kind="assignment" x="51" y="-85">pass:=pop()</label>
+			<nail x="34" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="-144" y="25">positie==1</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id31"/>
+			<label kind="guard" x="-102" y="-119">!isFull()</label>
+			<label kind="synchronisation" x="-76" y="-102">in?</label>
+			<label kind="assignment" x="-128" y="-85">push(pass)</label>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id32"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id34"/>
+			<label kind="synchronisation" x="0" y="-272">schipklik?</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="-238" y="-194">!isFull()</label>
+			<label kind="synchronisation" x="-238" y="-177">in?</label>
+			<label kind="assignment" x="-238" y="-160">push(pass)</label>
+			<nail x="-85" y="-136"/>
+			<nail x="-170" y="-102"/>
+			<nail x="-170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id34"/>
+			<label kind="guard" x="170" y="-229">!isEmpty()</label>
+			<label kind="synchronisation" x="170" y="-212">out?</label>
+			<label kind="assignment" x="170" y="-195">pass:=pop()</label>
+			<nail x="170" y="-102"/>
+			<nail x="170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id36"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ 
+// List one or more processes to be composed into a system.
+//system schip,aanvoer,afvoer;
+ 
+//system pomp,pompbediening;   
+
+
+system schip,aanvoer,afvoer,sluis,pomp,deur,stoplicht,pompbediening;</system>
+	<queries>
+		<query>
+			<formula>p--&gt;p
+			</formula>
+			<comment>p --&gt; q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A&lt;&gt; q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			</comment>
+		</query>
+		<query>
+			<formula>E[]p
+			</formula>
+			<comment>E - exists a path ( “E” in UPPAAL).
+E[] p – p is potentially always true. 
+• There exists a path in which p is true in all states.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; p
+			</formula>
+			<comment>• E&lt;&gt; p – it is possible to reach a state in which p is  satisfied
+• p is true in (at least) one reachable state.
+			</comment>
+		</query>
+		<query>
+			<formula>G&lt;&gt;
+			</formula>
+			<comment>• G - all states in a path ( “[]” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>F&lt;&gt;
+			</formula>
+			<comment>• F - some state in a path ( “&lt;&gt;” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>A&lt;&gt; p
+			</formula>
+			<comment>A&lt;&gt; p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+			</comment>
+		</query>
+		<query>
+			<formula>A[] p
+			</formula>
+			<comment>• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>
+/** Uitleg
+ * We willen een systeem hebben
+ * Dt systeem moet,de eisen ontaanrden in requirements
+ * We bouwen een model
+ * We gaan die requirements vertalen naar logica
+ * We gaan kijken of logische uitspraken kloppen en van toepassing zijn op het model dat we hebben
+ *
+ * Je wilt een systeem
+ * je zet de requirements neer
+ * je maakt het model
+ * vertaal requirements naar logica
+ * logica laat je op het model los
+ *
+ * Voorbeeld video 202203014 minuut 25
+*/
+
+/** Requirementsoverzicht
+ * Een sluis heeft deuren voor openenen en sluiten.
+ * Een sluis heeft stoplichten met rood en groen waarmee toestemming al dann wel neit wordt gegeven voor schepen voor invaren of uitvaren.
+ * Een schip heeft een positie en een doel
+ * Een schip kan zich aanmelden
+ * De pompbediening handelt de aanvraag van invarende, wachtende en uitvarende schepen af
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart beneden.
+ * Een schip kan in een wachtrij staan voodat hij een sluis invaart boven.
+ * Een schip kan in een wachtrij staan voordat deze een sluis verlaat.
+ * Als een sluis vol is komt een schip automatisch in een wachtrij.
+ * Een sluis heeft een pomp(nivelleeersystseem) voor  hoog, midden, laag.
+ * Een sluis houdt bij hoeveel schepen invaren.
+ * Een sluis houdt bij wat de waterstand is.
+ *
+ * 
+*/
+
+
+/** Templates
+ * Schip
+ * Stoplicht uitvaren boven
+ * Stoplicht invaren boven
+ * Aanvoer wachtrij boven
+ * Afvoer wachtrij boven
+ * Aanvoer sluiskolk
+ * Afvoer sluiskolk
+ * Nivelleermachine
+ * Aanvoer wachtrij beneden
+ * Afvoer wachtrij beneden
+ * Stoplicht uitvaren beneden
+ * Stoplicht invaren beneden
+ * Waterlevel
+ *
+ *
+*/
+
+
+
+/** product id
+ *
+*/
+typedef int[0,1] id_p;
+
+/**
+ *
+*/
+chan in,out;
+
+
+/**
+ *
+*/
+id_p pass;
+
+
+/**
+ * postitie van schip beneden (0) of boven(1)
+*/
+typedef int[0,1] m_pos;
+
+/**
+ *
+*/
+m_pos positie;
+
+/**
+ * knop voor de pomp 
+*/ 
+chan klik,pklik2,pklik3;
+
+/**
+ * knop voor de schip 
+*/ 
+chan schipklik;
+
+
+/**
+ * knop voor de stoplicht 
+*/ 
+chan stoplichtklik;
+
+/**
+ * knop voor de deur 
+*/ 
+chan deurklik;
+
+
+/**
+ * uitgaan van aanvoer, afvoer, sluis
+ * max aantal sluiskolken
+*/ 
+const int MAX=2;
+
+/**
+ * declaratie voor een sluiskolk
+*/
+typedef int[0,MAX-1] id_l;
+
+/**
+ * waterniveau in meter
+*/ 
+typedef int[0,10] meter;
+
+/**
+ *
+*/
+meter waterlevel;</declaration>
+	<template>
+		<name>pompbediening</name>
+		<declaration>/**
+ *
+*/
+
+
+
+/**
+ *
+*/
+clock x;</declaration>
+		<location id="id0" x="-85" y="-68">
+			<committed/>
+		</location>
+		<location id="id1" x="-85" y="68">
+			<committed/>
+		</location>
+		<location id="id2" x="-170" y="0">
+			<name x="-180" y="-34">S0</name>
+		</location>
+		<location id="id3" x="0" y="0">
+			<name x="-10" y="-34">aan</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id0"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id3"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-152" y="17">pklik2?</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="select" x="18" y="-22">temp:meter</label>
+			<label kind="guard" x="18" y="-5">x&gt;=1</label>
+			<label kind="synchronisation" x="18" y="12">klik!</label>
+			<label kind="assignment" x="18" y="29">x:=0,
+waterlevel:=temp</label>
+			<nail x="102" y="76"/>
+			<nail x="102" y="-102"/>
+		</transition>
+	</template>
+	<template>
+		<name>deur</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock d;</declaration>
+		<location id="id4" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<location id="id5" x="0" y="-136">
+			<name x="-10" y="-170">S3</name>
+			<urgent/>
+		</location>
+		<location id="id6" x="170" y="-136">
+			<name x="160" y="-170">S2</name>
+		</location>
+		<location id="id7" x="170" y="0">
+			<name x="160" y="-34">S1</name>
+			<urgent/>
+		</location>
+		<location id="id8" x="0" y="0">
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id8"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id7"/>
+			<label kind="synchronisation" x="18" y="-17">deurklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>stoplicht</name>
+		<declaration>/**
+ *
+*/
+
+
+/**
+ *
+*/
+clock s;</declaration>
+		<location id="id9" x="272" y="0">
+			<name x="262" y="-34">groen</name>
+		</location>
+		<location id="id10" x="136" y="0">
+			<name x="126" y="-34">oranje</name>
+		</location>
+		<location id="id11" x="0" y="0">
+			<name x="-10" y="-34">rood</name>
+		</location>
+		<init ref="id11"/>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id11"/>
+			<nail x="102" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<nail x="272" y="-68"/>
+			<nail x="170" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id11"/>
+			<nail x="272" y="102"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id9"/>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="synchronisation" x="18" y="-17">stoplichtklik?</label>
+		</transition>
+	</template>
+	<template>
+		<name>stoplicht_boven</name>
+		<location id="id12" x="0" y="0">
+		</location>
+		<init ref="id12"/>
+	</template>
+	<template>
+		<name>stoplicht_beneden</name>
+		<location id="id13" x="0" y="0">
+		</location>
+		<init ref="id13"/>
+	</template>
+	<template>
+		<name>Aanvoer_wachtrij_boven</name>
+		<declaration>clock x;</declaration>
+		<location id="id14" x="0" y="0">
+		</location>
+		<init ref="id14"/>
+	</template>
+	<template>
+		<name>Afvoer_wachtrij_boven</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id15" x="0" y="0">
+		</location>
+		<init ref="id15"/>
+	</template>
+	<template>
+		<name>Aanvoer_wachtrij_beneden</name>
+		<declaration>clock x;</declaration>
+		<location id="id16" x="0" y="0">
+		</location>
+		<init ref="id16"/>
+	</template>
+	<template>
+		<name>Afvoer_wachtrij_beneden</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id17" x="0" y="0">
+		</location>
+		<init ref="id17"/>
+	</template>
+	<template>
+		<name>Stoplicht_uitvaren_beneden</name>
+		<location id="id18" x="0" y="0">
+		</location>
+		<init ref="id18"/>
+	</template>
+	<template>
+		<name>Stoplicht_invaren_beneden</name>
+		<location id="id19" x="0" y="0">
+		</location>
+		<init ref="id19"/>
+	</template>
+	<template>
+		<name>pomp</name>
+		<parameter>id_l pompnr</parameter>
+		<declaration>/**
+ * de pomp moet aan de hand van een input paranter weten of hij eerst vullen of wegpompen
+*/
+
+/**
+ *
+*/
+void functie()
+{
+	
+}
+
+meter level;
+
+/**
+ *
+*/
+// wacht 5 tijdseenheden
+clock x;
+/**
+ *
+*/
+// een constraint op een bepaalde variabele
+bool isForMe()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omlaag
+bool isLaag()
+{
+	if(pompnr &lt; 2 &amp;&amp; waterlevel&lt;6) return true;
+	else return false;
+}
+
+/**
+ *
+*/
+//pomp omhoog
+bool isHoog()
+{
+    if(pompnr&gt;1 &amp;&amp; waterlevel&gt;=6) return true;
+	else return false;
+}
+
+
+</declaration>
+		<location id="id20" x="204" y="0">
+			<name x="194" y="-34">S1</name>
+			<label kind="invariant" x="194" y="17">isForMe()</label>
+		</location>
+		<location id="id21" x="0" y="0">
+			<name x="-10" y="-34">S0</name>
+		</location>
+		<init ref="id21"/>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id21"/>
+			<label kind="guard" x="154" y="-68">x&gt;=5</label>
+			<nail x="204" y="-68"/>
+			<nail x="0" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id20"/>
+			<label kind="synchronisation" x="-84" y="17">klik?</label>
+			<label kind="assignment" x="-84" y="34">level:=waterlevel, x:=0</label>
+			<nail x="0" y="68"/>
+			<nail x="204" y="68"/>
+		</transition>
+	</template>
+	<template>
+		<name>schip</name>
+		<parameter>id_p schipid</parameter>
+		<declaration>/**
+ * Een schip vaart naar meld zich aan waar hij wil en volgt de instructies op van de sluismeester of controlsystem in de sluis
+*/
+
+
+
+/**
+ *
+*/
+clock x;
+
+ </declaration>
+		<location id="id22" x="255" y="0">
+			<name x="245" y="-34">aan</name>
+		</location>
+		<location id="id23" x="340" y="102">
+			<name x="330" y="68">varen</name>
+		</location>
+		<location id="id24" x="340" y="-102">
+			<name x="330" y="-136">pauzeren</name>
+		</location>
+		<location id="id25" x="340" y="0">
+		</location>
+		<location id="id26" x="170" y="0">
+			<name x="160" y="-34">opstarten</name>
+		</location>
+		<location id="id27" x="0" y="0">
+			<name x="-10" y="-34">uit</name>
+		</location>
+		<init ref="id27"/>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id25"/>
+			<label kind="select" x="273" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="273" y="0">positie:=locatie</label>
+			<label kind="comments" x="273" y="25">x : int[0,1] -&gt; start hoog of laag</label>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id22"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id23"/>
+			<label kind="synchronisation" x="358" y="119">schipklik!</label>
+			<nail x="408" y="170"/>
+			<nail x="272" y="170"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id24"/>
+			<nail x="510" y="68"/>
+			<nail x="510" y="-68"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id23"/>
+			<nail x="408" y="-68"/>
+			<nail x="408" y="68"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id23"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id27"/>
+			<label kind="guard" x="18" y="-136">x&gt;=30</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id27"/>
+			<nail x="0" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id24"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id26"/>
+			<label kind="select" x="18" y="-51">locatie : m_pos</label>
+			<label kind="assignment" x="18" y="0">positie:=locatie</label>
+		</transition>
+	</template>
+	<template>
+		<name>Template0</name>
+		<parameter>int kenteken, int doel, int positie</parameter>
+		<location id="id28" x="0" y="0">
+		</location>
+		<init ref="id28"/>
+	</template>
+	<template>
+		<name x="5" y="5">aanvoer</name>
+		<declaration>// Place local declarations here.
+
+clock x;</declaration>
+		<location id="id29" x="0" y="0">
+		</location>
+		<init ref="id29"/>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id29"/>
+			<label kind="select" x="26" y="4">p:id_p</label>
+			<label kind="guard" x="161" y="-68">x&gt;=1</label>
+			<label kind="synchronisation" x="26" y="38">in!</label>
+			<label kind="assignment" x="161" y="-34">x:=0,pass:=p</label>
+			<nail x="8" y="8"/>
+			<nail x="136" y="102"/>
+			<nail x="136" y="-136"/>
+		</transition>
+	</template>
+	<template>
+		<name>afvoer</name>
+		<declaration>clock x;
+
+
+// een product dat de machine weggeeft wordt hier in de variabele zodat ik kan controlere dat wat de machine uitgaat ook correct wordt afgegeven
+id_p received;
+
+</declaration>
+		<location id="id30" x="136" y="-102">
+			<label kind="comments" x="255" y="-119">voordat er een andere transitie in het gehele systeem  mag worden genomen is deze state committed; er verstrijkt geen tijd, er zal mteen een uitgaande transitie moeten worden genomen; dus eerst dit dan dat</label>
+			<committed/>
+		</location>
+		<location id="id31" x="0" y="0">
+		</location>
+		<init ref="id31"/>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id31"/>
+			<label kind="assignment" x="-127" y="-42">received:=pass</label>
+			<nail x="0" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id30"/>
+			<label kind="guard" x="161" y="-59">x&gt;=1</label>
+			<label kind="synchronisation" x="161" y="-42">out!</label>
+			<label kind="assignment" x="161" y="-25">x:=0</label>
+			<nail x="136" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>sluis</name>
+		<declaration>// een schip kan zich anamelden bij de sluis(control system); een machine; deze voert bewerkingen uit op de omgeving met informatie van de beheerder
+// de sluis bedient de waterpomp,sluisdeur,stoplicht,aanvoer en afvoer van schepen
+
+/** stack
+ * de lengte van de statische datastructuur in de sluis
+*/
+ 
+const int SIZE=5;
+
+/** stack
+ * de lengte van de statische datastructuur in de wachtrij boven
+*/
+ 
+const int SIZE_w_boven=2;
+
+/** stack
+ * de lengte van de statische datastructuur in de wachtrj beneden
+*/
+ 
+const int SIZE_w_beneden=2;
+
+/** stack
+ *
+*/
+id_p stack[SIZE];
+
+/** wachtrijboven
+ *
+*/
+id_p wachtrijboven[SIZE];
+
+/** aantalschepeninsluis
+ *
+*/
+id_p aantalschepeninsluis[SIZE];
+
+/** wachtrijbeneden
+ *
+*/
+id_p wachtrijbeneden[SIZE];
+
+
+/**
+ *
+*/
+int[0,SIZE] head =0;
+
+/** pop
+ *
+*/
+id_p pop()
+{
+    id_p temp;
+    temp=stack[--head]; // neem de head voordat we de waarde uitlezen
+    stack[head]=0; // verwijder de waarde
+    return temp;
+    
+}
+
+
+/** push
+ *
+*/
+void push(id_p p)
+{
+    stack[head++]=p;
+}
+
+
+/** isFull
+ *
+*/
+bool isFull()
+{
+    return (head==SIZE);
+}
+
+
+/** isEmpty
+ *
+*/
+bool isEmpty()
+{
+ return (head ==0);
+}</declaration>
+		<location id="id32" x="204" y="136">
+			<name x="194" y="102">S10</name>
+		</location>
+		<location id="id33" x="204" y="238">
+			<name x="194" y="204">S9</name>
+		</location>
+		<location id="id34" x="102" y="238">
+			<name x="92" y="204">S8</name>
+		</location>
+		<location id="id35" x="0" y="238">
+			<name x="-10" y="204">S7</name>
+		</location>
+		<location id="id36" x="-102" y="238">
+			<name x="-112" y="204">S6</name>
+		</location>
+		<location id="id37" x="-204" y="238">
+			<name x="-214" y="204">S5</name>
+		</location>
+		<location id="id38" x="-204" y="136">
+			<name x="-214" y="102">S4</name>
+		</location>
+		<location id="id39" x="-204" y="34">
+			<name x="-214" y="0">S3</name>
+		</location>
+		<location id="id40" x="-68" y="0">
+			<name x="-78" y="-34">S2</name>
+		</location>
+		<location id="id41" x="0" y="-170">
+			<name x="-10" y="-204">S1</name>
+		</location>
+		<location id="id42" x="0" y="-340">
+			<name x="-10" y="-374">S0</name>
+		</location>
+		<location id="id43" x="0" y="-170">
+		</location>
+		<location id="id44" x="68" y="0">
+			<name x="58" y="-34">S12</name>
+		</location>
+		<location id="id45" x="204" y="34">
+			<name x="194" y="0">S11</name>
+		</location>
+		<init ref="id42"/>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id39"/>
+			<label kind="guard" x="-187" y="-51">positie==0</label>
+			<nail x="-136" y="-34"/>
+			<nail x="-170" y="0"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id45"/>
+			<label kind="synchronisation" x="204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id32"/>
+			<label kind="synchronisation" x="204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id33"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id34"/>
+		</transition>
+		<transition>
+			<source ref="id36"/>
+			<target ref="id35"/>
+		</transition>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="-186" y="221">pklik2!</label>
+		</transition>
+		<transition>
+			<source ref="id38"/>
+			<target ref="id37"/>
+			<label kind="synchronisation" x="-204" y="170">deurklik!</label>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id38"/>
+			<label kind="synchronisation" x="-204" y="68">stoplichtklik!</label>
+		</transition>
+		<transition>
+			<source ref="id44"/>
+			<target ref="id41"/>
+			<label kind="guard" x="51" y="-119">!isEmpty()</label>
+			<label kind="synchronisation" x="51" y="-102">out?</label>
+			<label kind="assignment" x="51" y="-85">pass:=pop()</label>
+			<nail x="34" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id39"/>
+			<label kind="guard" x="-144" y="25">positie==1</label>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id40"/>
+			<label kind="guard" x="-102" y="-119">!isFull()</label>
+			<label kind="synchronisation" x="-76" y="-102">in?</label>
+			<label kind="assignment" x="-128" y="-85">push(pass)</label>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id43"/>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id41"/>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id43"/>
+		</transition>
+		<transition>
+			<source ref="id42"/>
+			<target ref="id43"/>
+			<label kind="synchronisation" x="0" y="-272">schipklik?</label>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id43"/>
+			<label kind="guard" x="-238" y="-194">!isFull()</label>
+			<label kind="synchronisation" x="-238" y="-177">in?</label>
+			<label kind="assignment" x="-238" y="-160">push(pass)</label>
+			<nail x="-85" y="-136"/>
+			<nail x="-170" y="-102"/>
+			<nail x="-170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id43"/>
+			<target ref="id43"/>
+			<label kind="guard" x="170" y="-229">!isEmpty()</label>
+			<label kind="synchronisation" x="170" y="-212">out?</label>
+			<label kind="assignment" x="170" y="-195">pass:=pop()</label>
+			<nail x="170" y="-102"/>
+			<nail x="170" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id44"/>
+			<target ref="id45"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+ 
+// List one or more processes to be composed into a system.
+//system schip,aanvoer,afvoer;
+ 
+//system pomp,pompbediening;   
+
+
+system schip,aanvoer,afvoer,sluis,pomp,deur,stoplicht,pompbediening;</system>
+	<queries>
+		<query>
+			<formula>p--&gt;p
+			</formula>
+			<comment>p --&gt; q – if p becomes true, q will inevitably become true.
+ same as A[]( p imply A&lt;&gt; q ) 
+• In all paths, if p becomes true, q will inevitably become
+true.
+			</comment>
+		</query>
+		<query>
+			<formula>E[]p
+			</formula>
+			<comment>E - exists a path ( “E” in UPPAAL).
+E[] p – p is potentially always true. 
+• There exists a path in which p is true in all states.
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; p
+			</formula>
+			<comment>• E&lt;&gt; p – it is possible to reach a state in which p is  satisfied
+• p is true in (at least) one reachable state.
+			</comment>
+		</query>
+		<query>
+			<formula>G&lt;&gt;
+			</formula>
+			<comment>• G - all states in a path ( “[]” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>F&lt;&gt;
+			</formula>
+			<comment>• F - some state in a path ( “&lt;&gt;” in UPPAAL).
+			</comment>
+		</query>
+		<query>
+			<formula>A&lt;&gt; p
+			</formula>
+			<comment>A&lt;&gt; p – p will inevitable become true, the automaton is
+guaranteed to eventually reach a state in which p is true. 
+p is true in some state of all paths
+			</comment>
+		</query>
+		<query>
+			<formula>A[] p
+			</formula>
+			<comment>• A - for all paths ( “A” in UPPAAL).
+A[] p – p holds invariantly. 
+• p is true in all reachable states.
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not deadlock
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+Introduction
+Recente ontwikkelingen op het gebied van sluisautomatisering
+Wat is een sluis?
+Wat worrdt er omschreven en wat is er geleerd?
+Wat is uppaal?
+Welke aanpak is gekozen en welke studies liggen hieraan ten grondslag?
+Leeswijzer, hoe is dit verslag opgebouwd?
+Preliminaries
+Times transition systems and timed traces
+Wat is dit?
+Welke de definities worden gebruikt?
+Timed automata with data variables
+Networks of automata
+A logic for safety and bounded response time properties
+Wat was onze logica bij aanvang van het project?
+syntax and semantics
+Welke de definities worden gebruikt?
+Verifying bounded response tume properties by reachability analysis
+Welke versie van Uppaal gebruiken wij en welke beperkingen heeft deze software voor het bereiken van onze doelstelling
+
+The gear controller
+Functionality
+Requirements
+
+Performance
+These requiremenrrs limit the maximum time to perform a gear change when no inreoverable errors occur.
+1) A gear change should be completed within 1.5 seconds unless an unrecoverable error ocurs.
+b) A gear change, under normal operation conditions should ne performced within 1 second
+Predeictability
+The predictability requirements are to ensire strict synhronization and control betwee components.
+a) There should be no deadlocks in the system
+b) When the engine is regulating torque, the clutch should be closed.
+c) When a gear is set, he engine shoud  be regulating torque.
+Functionality
+The followin requirements are to ensure the desired functionality of the gear controller.
+a) It is able to use all gears.
+b) It uses the engine to enhance zero torque and synchronous speed over the transition.
+c) It uses the gearbox to set and release gears.
+d) It is allowed to use the clutch in difficult conditions.
+e) It does not request zero torque when changing from neutral gear.
+f) The gear controller does not request synchronous speed when changing to neutral gear.
+Error detection
+Th gear controller detects and indicates error only when:
+a) the clutch is not openend in time;
+b) the clutch is not closed in time;
+c) the gearbox is not able to set a gear in time,
+the gearbox is not able to release a gear in time.
+
+Formal description of the system
+Formal validation and verification
+Requirement specification
+Time bound derivation
+Verification results
+Conclusion
+Acknowledgement
+References
+
+
+
+
+
+
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+E:\Backup Mijn Documenten\Hogeschool vakken\TINLab advnced algorithms herkansing\oud\New folder\tinlab_advanced_algoriths\achtergrondinfo research\overig
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+E:\downloads\software requirement
+search-ms:displayname=Zoekresultaten%20voor%20New%20Volume%20(E%3A)&crumb=System.Generic.String%3Atinlab&crumb=location:E%3A%5C
+
+
+
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+realtime==thresholdDown && systemtime==0
+direction=false
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+
+\paragraph{The need for formal methodes}
+\paragraph{hardware and software verification}
+\paragraph{The process of model checking}
+\paragraph{Temporal Logic and model checking}
+\paragraph{Symbolic  Algorothism}
+\paragraph{Partial order reduction}
+\paragraph{Other approaches to the sate explosion}
+\paragraph{Modeling Concurrent systems}
+\paragraph{Concurrent systems}
+\paragraph{Example of program Translation}
+\paragraph{The computation Tree Logic}
+\paragraph{CTL and LTL}
+\paragraph{Fairness}
+\paragraph{CTL Model checking}
+\paragraph{LTL Model checking by Tablea}
+\paragraph{CTL model checking}
+\paragraph{Representing boolean formulas}
+\paragraph{Representing kripke structures}
+\paragraph{Fixpoint representations}
+\paragraph{Symbolic model checking for CTL}
+\paragraph{Fairness in Symbolic model checking}
+\paragraph{Counterexamples and witnesses}
+\paragraph{An ALU example}
+\paragraph{Relational Product Computations}
+\paragraph{Symbolic LTL Model Checknig}
+\paragraph{The propositional mu-calculus}
+\paragraph{Evaluating Fxpoint Formulas}
+\paragraph{Representing mu-calculus formulas using OBDDs}
+\paragraph{Translating CTL into the mu-calculus}
+\paragraph{Comoplexity considerations}
+\paragraph{The smv model checker}
+\paragraph{A realistic example}
+\paragraph{Automata on finine and infinite words}
+\paragraph{model checking using automata}
+\paragraph{checking emptiness}
+\paragraph{Translating LTL into automata}
+\paragraph{On-the-fly model checking}
+\paragraph{Checking language containment symbolically}
+\paragraph{Concurrency in Aynchronous systems}
+\paragraph{Independendce and invisibility}
+\paragraph{Partial order reduction for LTL}
+\paragraph{An example}
+\paragraph{Calculating Ample sets}
+\paragraph{Correctness of the algorithm}
+\paragraph{Partial order reduction in SPIN}
+\paragraph{An example}
+\paragraph{Calculating Ample Sets}
+\paragraph{Correctness of the algorithm}
+\paragraph{Partial order reduction in SPIN}
+\paragraph{Equivalence of Preorder Algorithms}
+\paragraph{Tableau construction}
+\paragraph{Composition of structures}
+\paragraph{justifying assume guarantee proofs}
+\paragraph{Verifying a cpu controller}
+\paragraph{Cone of influence reduction}
+\paragraph{Data abstraction}
+\paragraph{Groups and symetru}
+\paragraph{Quiotient models}
+\paragraph{Model checking with symmetry}
+\paragraph{Complexity issues}
+\paragraph{Emperical results}
+\paragraph{Tempaal logic for ininite families}
+\paragraph{Invariants}
+\paragraph{Futurebus+Example Reconsidered}
+\paragraph{Graph and network grammars}
+\paragraph{Undecidability result for a familty of token rings}
+\paragraph{Real-time systems and rate-monitonic scheduling}
+\paragraph{Model checking real-time systems}
+\paragraph{RTCTL Model checking}
+\paragraph{Quantitative Temporal Analysys: Minimum/Maximum Delay}
+\paragraph{Example: An aircraft controller}
+\paragraph{Timed Automata}
+
+
+
+
+Onlin
+\cite{Whitehead2017ukrainepoweroutage}
+
+@online{Whitehead2017ukrainepoweroutage,	ALTauthor = {David E. Whitehead, Kevin Owens, Dennis Gammel, and Jess Smith},	ALTeditor = {editor},	title = {title},	date = {March 21–23, 2017},	url = {https://na.eventscloud.com/file_uploads/aed4bc20e84d2839b83c18bcba7e2876_Owens1.pdf},}
+
+E:\Hogeschool vakken v2
+E:\#Root\Users\gally\Documents\Hogeschool vakken v2
+E:\Hogeschool vakken v2\Tinlab 2022
+E:\Hogeschool vakken v2
+E:\Backup Mijn Documenten 2\Hogeschool vakken v2
+E:\Hogeschool vakken v2\Tinlab 2022\tinlab2022
+E:\Backup Mijn Documenten 2\Hogeschool vakken v2\Tinlab sluizen
+E:\Backup Mijn Documenten\Hogeschool vakken\TINLab advnced algorithms herkansing\oud\New folder
+E:\Hogeschool vakken v2\Tinlab 2022\tinlab2022
+
+
+
+
+
+
+
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+
+
+
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+
+
+
+
+
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################
+
+
+
+##########################################
+##########################################
+##############			  ################
+##############			  ################
+##############			  ################
+##########################################
+##########################################

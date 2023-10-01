@@ -1,0 +1,257 @@
+(?<=@online{).*?(?=,)
+
+^.*(\/http|.http).*$
+
+
+(http|http).*?(?="},)
+(?<=@online{).*(http|http).*?(?="},)
+(http|http).*?(?="},)
+
+
+
+/^.*?\b((?<=@online{))\b.*?\b((http|http).*?(?="},))\b.*?$/m
+
+
+
+/^.*?\bcat\b.*?\bmat\b.*?$/m
+(http|http).*?(?="},)
+
+
+/^.*?(?:\b|_)cat(?:\b|_).*?(?:\b|_)mat(?:\b|_).*?$/m
+
+/^.*?(?:\b|_)first phrase here(?:\b|_).*?(?:\b|_)second phrase here(?:\b|_).*?$/m
+
+
+/^.*?(?:\b|_)(first(?:\b|_).*?(?:\b|_)second|second(?:\b|_).*?(?:\b|_)first)(?:\b|_).*?$/m
+
+
+(.* word1.* word2.* )|(.* word2.* word1.*)
+
+\bcat\b.*\bmat\b
+
+
+(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})
+
+
+
+url aanpassen voor dataset
+Search for: ^(.+)$
+Replace with: "\1"
+
+
+
+/(?=.*?(string1))(?=.*?(string2))/is
+
+
+(string1(.|\n)*string2)|(string2(.|\n)*string1)
+
+(((.|\n)*)String1((.|\n)*)String2)|(((.|\n)*)String2((.|\n)*)String1)
+
+ m
+^(.*)$ => "$1
+([^,]*)(,|$)
+
+identifier
+(?<=@online{).*?(?=,)
+htmlstring
+(http|http).*?(?="},)
+or
+(http[s].*)
+look 4 two substings
+\b(?:cat|front)\b|\*
+or
+\b(?:(?<=@online{).*?(?=,)|(http|http).*?(?="},))\b|\*
+or
+\b(?:(?<=@online{).*?(?=,)|(http[s].*))\b|\*
+
+
+
+
+
+\bibitem{(?<=@online{).*?(?=,)} Wikibooks \LaTeX:\\
+\url{(http|http).*?(?="},)}
+
+search
+/[\w-]+.(jpg|png|txt)/g
+
+
+search
+\w.+
+test
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"\1"},}
+test
+@online{ID,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"$&"},}
+
+
+https://stackoverflow.com/questions/283608/using-regex-to-prefix-and-append-in-notepad
+
+
+search
+@\w.+}
+
+
+
+
+
+
+search id
+\b(?:(\b(?:(?<=@online{).*?(?=,)| )\b|\*)|front)\b|\*
+replace
+\b(?:(\b(?:(?<=@online{).*?(?=,)| )\b|\*)|(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,}))\b|\*
+
+
+
+\b(?:(\b(?:(?<=@online{).*?(?=,)| )\b|\*)|(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,}))\b|\*
+
+searh
+@\w.+}
+replace
+\bibitem{(?<=@online{).*?(?=,)} Wikibooks \LaTeX:\\\url{(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})}
+
+
+\bibitem{oid} Wikibooks \LaTeX:\\
+\url{https://www.waterkant.net/suriname/2023/05/29/milieuactivist-sleur-zeer-grote-onwaarheden-staan-in-cyanide-onderzoeksrapport/}
+
+
+
+ignore
+^((?!ignoreme).)*$
+ignore
+^((?!\ignoreme1\b)(?!\ignoreme2\b)(?!\ignoreme3\b).)*$
+ignore
+^((?!hawkins18032021fedgovinvest\b)(?!(http|http).*?(?="},)\b).)*$
+ignore
+(?<=@online{).*?(?!hull23072021regulatorsaftercrash$)(?=,)
+ignore
+^((?!hawkins18032021fedgovinvest\b)(?!nhtsaAutomatedVehiclesSafety\b).)*$
+ignore 
+^((?!hawkins18032021fedgovinvest\b)(?!((http|http).*?(?="},))\b).)*$
+ignore 
+^((?!hawkins18032021fedgovinvest\b)(?!()\b).)*$
+ignore
+(http|http).*?(?="},)
+ignore
+^((?!((http|http).*?(?="},))\b)(?!()\b).)*$
+ignore
+\b(?!(http|http).*?(?="},)|front)\b|\*
+ignore
+\b(?!((http|http).*?(?="},))|front)\b|\*
+ignore
+(?<=@online{).*?(?=,)
+ignore
+^.*(\/http|.http).*$
+ignore
+(http|http).*?(?="},)
+(?<=@online{).*(http|http).*?(?="},)
+(http|http).*?(?="},)
+ignore
+^(.*)$ => "$1
+([^,]*)(,|$)
+ignore
+identifier
+(?<=@online{).*?(?=,)
+htmlstring
+(http|http).*?(?="},)
+or
+(http[s].*)
+look 4 two substings
+\b(?:cat|front)\b|\*
+or
+\b(?:(?<=@online{).*?(?=,)|(http|http).*?(?="},))\b|\*
+or
+\b(?:(?<=@online{).*?(?=,)|(http[s].*))\b|\*
+ignore
+\b(?:(?<=@online{).*?(?=,)|(http[s].*))\b|\*
+ignore
+\b(?!((?<=@online{).*?(?=,))|(http[s].*))\b|\*
+ignore
+^.*?\b((?<=@online{))\b.*?\b((http|https).*?(?="},))\b.*?$
+find
+@\w.+}
+find id 
+\b(?:(\b(?:(?<=@online{).*?(?=,)| )\b|\*)|front)\b|\*
+find id
+(?<=@online{).*?(?=,)
+find url
+(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})
+find id and url
+\b(?:(\b(?:(?<=@online{).*?(?=,)| )\b|\*)|(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,}))\b|\*
+
+
+
+
+
+(?!mcfarland22042021selfdrivingrisks)\w+s
+^.*(\/http|.http).*$
+
+
+(http|http).*?(?="},)
+(?<=@online{).*(http|http).*?(?="},)
+(http|http).*?(?="},)
+
+
+
+/^.*?\b((?<=@online{))\b.*?\b((http|http).*?(?="},))\b.*?$/m
+
+
+
+/^.*?\bcat\b.*?\bmat\b.*?$/m
+(http|http).*?(?="},)
+
+
+/^.*?(?:\b|_)cat(?:\b|_).*?(?:\b|_)mat(?:\b|_).*?$/m
+
+/^.*?(?:\b|_)first phrase here(?:\b|_).*?(?:\b|_)second phrase here(?:\b|_).*?$/m
+
+
+/^.*?(?:\b|_)(first(?:\b|_).*?(?:\b|_)second|second(?:\b|_).*?(?:\b|_)first)(?:\b|_).*?$/m
+
+
+(.* word1.* word2.* )|(.* word2.* word1.*)
+
+\bcat\b.*\bmat\b
+
+
+(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})
+
+
+
+url aanpassen voor dataset
+Search for: ^(.+)$
+Replace with: "\1"
+
+
+
+/(?=.*?(string1))(?=.*?(string2))/is
+
+
+(string1(.|\n)*string2)|(string2(.|\n)*string1)
+
+(((.|\n)*)String1((.|\n)*)String2)|(((.|\n)*)String2((.|\n)*)String1)
+
+ m
+^(.*)$ => "$1
+([^,]*)(,|$)
+
+find
+@online
+replace
+\bibitem{
+
+find
+,	ALTauthor = {author},	ALTeditor = {editor},	title = {title},	date = {date},	url = {"
+replace
+} ... \LaTeX:\\ \url{
+
+
+find
+"},}
+replace
+}
+
+\bibitem{oid} Wikibooks \LaTeX:\\
+\url{https://www.waterkant.net/suriname/2023/05/29/milieuactivist-sleur-zeer-grote-onwaarheden-staan-in-cyanide-onderzoeksrapport/}
+
+
+
+

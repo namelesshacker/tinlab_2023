@@ -1,0 +1,325 @@
+
+
+
+git remote add origin2 https://github.com/namelesshacker/shiny_app.git
+git add .
+git commit -m 'initial commit'
+ git config --global user.email "gally_gb@hotmail.com"
+ git config --global user.name "namelesshacker"
+  git commit -m 'initial commit'
+ git branch newBranch
+  git checkout newBranch
+   git push origin2 newBranch
+
+
+
+
+git remote add origin2 https://github.com/namelesshacker/shiny_app.git
+git add .
+git commit -m 'initial commit'
+git config --global user.email "gally_gb@hotmail.com"
+git config --global user.name "namelesshacker"
+git commit -m 'initial commit'
+git branch newBranch
+git checkout newBranch
+git push origin2 newBranch
+
+
+   
+git add .
+git commit -m 'initial commit with workingswed viewer'
+git branch shiny_swh3d_patch_1_v1
+git checkout shiny_swh3d_patch_1_v1
+git push origin2 shiny_swh3d_patch_1_v1
+
+git branch -r
+git checkout origin2/master
+git switch -c release_v1
+git add .
+git commit -m 'initial commit with workingswed viewer'
+git push origin2 release_v1
+
+git branch test
+ git checkout test
+  git add .
+git commit -m "first commit"
+git push origin test
+git push origin2/master test
+git branch -a
+git rm -r *
+git ls-files
+ git rm -r osm_module
+dir
+cd shiny_auth/
+ 
+git rm -r *
+git commit -m 'initial commit with workingswed viewer'
+git ls-files
+git add .
+git commit -m 'initial commit with workingswed viewer'
+git checkout test
+ git ls-files
+git add .
+git push origin2 test
+git branch test2
+ git add .
+
+
+git init
+git add .
+git push origin2 test3
+git rm -r  nvm_module
+git commit -m 'delete folders replaced'
+
+
+
+
+
+
+
+
+
+
+
+git init
+git commit -m "first commit"
+
+git remote add origin https://github.com/namelesshacker/SweetHome3DOnlinemanager.git
+
+ git branch -M main
+ git add .
+ git commit -m "first commit"
+git push origin main
+
+ git add .
+
+git remote add origin https://github.com/namelesshacker/SweetHome3DOnlinemanager.git
+git commit -m 'initial commit'
+ git branch sh3dviewer
+ git push origin sh3dviewer
+
+
+
+
+
+git remote add origin2 https://github.com/namelesshacker/computer_graphics.git
+git add .
+git commit -m 'initial commit'
+ git config --global user.email "gally_gb@hotmail.com"
+ git config --global user.name "namelesshacker"
+  git commit -m 'initial commit'
+ git branch newBranch
+  git checkout newBranch
+   git push origin2 newBranch
+   
+   
+   
+
+git remote add origin2 https://github.com/namelesshacker/computer_graphics.git
+git add .
+git commit -m 'initial commit'
+git config --global user.email "gally_gb@hotmail.com"
+git config --global user.name "namelesshacker"
+git commit -m 'initial commit'
+git branch newBranch
+git checkout newBranch
+git push origin2 newBranch
+
+
+   
+git add .
+git commit -m 'initial commit with workingswed viewer'
+git branch shiny_swh3d_patch_1_v1
+git checkout shiny_swh3d_patch_1_v1
+git push origin2 shiny_swh3d_patch_1_v1
+
+git branch -r
+git checkout origin2/master
+git switch -c release_v1
+git add .
+git commit -m 'initial commit with workingswed viewer'
+git push origin2 release_v1
+
+git branch test
+ git checkout test
+  git add .
+git commit -m "first commit"
+git push origin test
+git push origin2/master test
+git branch -a
+git rm -r *
+git ls-files
+ git rm -r osm_module
+dir
+cd shiny_auth/
+ 
+git rm -r *
+git commit -m 'initial commit with workingswed viewer'
+git ls-files
+git add .
+git commit -m 'initial commit with workingswed viewer'
+git checkout test
+ git ls-files
+git add .
+git push origin2 test
+git branch test2
+ git add .
+
+
+git init
+git add .
+git push origin2 test3
+git rm -r  nvm_module
+git commit -m 'delete folders replaced'
+
+
+
+
+
+
+
+
+
+
+
+git init
+git commit -m "first commit"
+
+git remote add origin https://github.com/namelesshacker/SweetHome3DOnlinemanager.git
+
+ git branch -M main
+ git add .
+ git commit -m "first commit"
+git push origin main
+
+ git add .
+
+git remote add origin https://github.com/namelesshacker/SweetHome3DOnlinemanager.git
+git commit -m 'initial commit'
+ git branch sh3dviewer
+ git push origin sh3dviewer
+
+
+
+git remote add origin https://github.com/namelesshacker/computer_graphics.git
+git add .
+git commit -m 'initial commit'
+
+git reflog
+git revert <commitID>
+
+ git checkout opdracht2
+
+   git push origin opdracht2
+
+
+git branch opdracht3
+git branch opdracht4
+git branch eindopdracht
+
+
+how to make branch from previous commit
+git checkout <commit-hash>
+or
+git checkout HEAD~3
+then do
+git switch -c my-new-feature-branch
+
+
+
+git init
+git remote add origin https://github.com/namelesshacker/computer_graphics.git
+
+
+
+https://www.quora.com/How-do-you-pull-code-from-Git-without-losing-local-changes
+
+git stash 
+git pull origin master 
+git stash pop 
+
+
+
+overwrite local changes
+ # Checkout the brancg you are interested in 
+$ git fetch 
+$ git reset —hard origin/<branch name> 
+
+
+
+stashing
+
+git stash
+
+or
+
+git stash save "feature X"
+
+Now you pull the code
+
+git pull origin master
+
+Restore the work you were doing for feature X using below command
+
+git stash apply
+
+
+
+other
+
+rm -rf .git #to remove git and restart
+
+git init .
+
+git branch -m master main OR git checkout -b main
+
+git remote add origin <HTTPS LINK>
+
+git remote -v
+
+git pull origin main
+
+
+pull from repo without overwrite local changes
+
+
+
+
+git stash
+git pull
+git stash pop
+
+
+https://stackoverflow.com/questions/19216411/how-do-i-pull-files-from-remote-without-overwriting-local-files
+
+
+
+aal remote branches
+
+git ls-remote --heads origin
+
+git ls-remote --heads <remote-name>
+
+https://stackoverflow.com/questions/3471827/how-do-i-list-all-remote-branches-in-git-1-7
+
+ git remote show origin
+ 
+ 
+ 
+ git ls-remote --heads origin
+
+
+goit checkpout to refs
+https://stackoverflow.com/questions/13638235/git-checkout-remote-reference
+fatal: reference is not a tree
+https://stackoverflow.com/questions/2155887/git-submodule-head-reference-is-not-a-tree-error
+https://github.com/actions/checkout/issues/23
+https://travis-ci.community/t/the-command-git-checkout-qf-sha1-failed-and-exited-with-128-reference-is-not-a-tree/11520
+https://developercommunity.visualstudio.com/t/git-checkout-error-reference-is-not-a-tree/891579
+https://community.atlassian.com/t5/Bitbucket-questions/Getting-error-with-git-fatal-reference-is-not-a-tree/qaq-p/852310
+https://stackoverflow.com/questions/3471827/how-do-i-list-all-remote-branches-in-git-1-7
+git cant push to remote branch
+https://stackoverflow.com/questions/56068998/git-cannot-push-to-the-remote-branch-other-than-master
+https://www.freecodecamp.org/news/git-push-to-remote-branch-how-to-push-a-local-branch-to-origin/
+https://www.freecodecamp.org/news/error-failed-to-push-some-refs-to-how-to-fix-in-git/
+

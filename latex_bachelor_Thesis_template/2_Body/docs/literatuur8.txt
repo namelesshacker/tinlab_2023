@@ -1,0 +1,38 @@
+
+
+tesla
+slm
+tanjin
+mali
+therac
+
+http://192.168.178.66/
+
+netwerklocatie toevoegen
+\\nasshare\testshare
+inloggegevens opgeven
+
+
+netwerklocatie toevoegen
+\\nasshare\myssd
+inloggegevens opgeven
+
+
+https://www.youtube.com/watch?v=sk-L4JvCGuo&list=PL-69xFi03dP9zQn8gHGcVwf-X6ShkNU27&index=4
+
+https://www.youtube.com/watch?v=_-WeIgHdxwA&list=PL-69xFi03dP9zQn8gHGcVwf-X6ShkNU27
+
+https://www.youtube.com/watch?v=Z9oxXx1rZAA
+
+tcp
+UpnP mapoping
+terminal
+DyDNS
+SSL
+WebDAV
+FTP
+https://www.batna24.com/products/DNXELJLMHRMMJN/NAS542_1.0.2.pdf
+
+
+admin
+Will2h@ck123

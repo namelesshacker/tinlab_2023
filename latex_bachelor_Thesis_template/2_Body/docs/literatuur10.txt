@@ -1,0 +1,164 @@
+ 
+
+
+
+ 
+
+
+ethiopian airlines
+
+
+
+
+
+
+
+
+
+Therac
+
+
+sheets
+\bibitem{rogaway2004therac25} ... \LaTeX:\\ \url{https://web.cs.ucdavis.edu/~rogaway/classes/188/winter04/therac-25.pdf}
+\cite{rogaway2004therac25}
+\bibitem{ID} ... \LaTeX:\\ \url{https://people.physics.carleton.ca/~drogers/egs_windows_collection/tsld008.htm}
+\cite{}
+\bibitem{wikiTherac25} ... \LaTeX:\\ \url{https://en.wikipedia.org/wiki/Therac-25}
+\cite{wikiTherac25}
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.youtube.com/watch?v=-7gVqBY52MY}
+\cite{}
+reproduceren van de error. IN dit stuk wordt uitgelgd hoe het product werkt en waarom bepaalde beslssingen zijn genomen in de ontwerp/productiefase
+\bibitem{lynch2017theracRaceConditions} ... \LaTeX:\\ \url{https://www.bugsnag.com/blog/bug-day-race-condition-therac-25}
+\cite{lynch2017theracRaceConditions}
+kort artikel met daarin een opsomming van alle fouten in het systeem en een korte uitleg
+\bibitem{lim1998theracdisaster} ... \LaTeX:\\ \url{https://www.bowdoin.edu/~allen/courses/cs260/readings/therac.pdf}
+\cite{lim1998theracdisaster}
+uitgebreid artikel over hoe de fout werd gereproduceerd en de resultaten daaruit voortkwamen. Alsnog werden er na de reproductie fase nog meer fouten gevonden.
+\bibitem{fabio26102015therac25} ... \LaTeX:\\ \url{https://hackaday.com/2015/10/26/killed-by-a-machine-the-therac-25/}
+\cite{fabio26102015therac25}
+artikel
+\bibitem{ethicsunwrappedTherac25} ... \LaTeX:\\ \url{https://ethicsunwrapped.utexas.edu/case-study/therac-25}
+\cite{ethicsunwrappedTherac25}
+onderzoeksartikel waarin de bug wordt uitgelgd: de racecondities, de bytepositie en het testen worden berkitiseerd envenals andere onderdelen van het softwareproces
+\bibitem{ID} ... \LaTeX:\\ \url{https://thedailywtf.com/articles/the-therac-25-incident}
+\cite{}
+onrealistisch testplan. In dit artikel egt de auteur het belang nog eens uit van goede requirements en implementatie, niet de software is waar het probleem ligt
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.computer.org/csdl/magazine/co/2017/11/mco2017110008/13rRUxAStVR}
+\cite{}
+geschiedenis
+\bibitem{casesHistoryTherac25} ... \LaTeX:\\ \url{http://computingcases.org/case_materials/therac/case_history/Case%20History.html}
+\cite{casesHistoryTherac25}
+artikel
+\bibitem{caballero2019Therac25} ... \LaTeX:\\ \url{https://medium.com/swlh/software-architecture-therac-25-the-killer-radiation-machine-8a05e0705d5b}
+\cite{caballero2019Therac25}
+computer error. De ongeval en de malfunction nog een keer uitgelegd
+\bibitem{rose1994theracFatalDose} ... \LaTeX:\\ \url{http://www.ccnr.org/fatal_dose.html}
+\cite{rose1994theracFatalDose}
+rapport
+\bibitem{levesonMITTherac25} ... \LaTeX:\\ \url{http://sunnyday.mit.edu/papers/therac.pdf}
+\cite{levesonMITTherac25}
+\bibitem{grant1978theracevaluation} ... \LaTeX:\\ \url{https://pubmed.ncbi.nlm.nih.gov/101762/}
+\cite{grant1978theracevaluation}
+onderzoeksartkel
+\bibitem{turnerTheracAccidentsInvestigations} ... \LaTeX:\\ \url{http://www1.cs.columbia.edu/~junfeng/08fa-e6998/sched/readings/therac25.pdf}
+\cite{turnerTheracAccidentsInvestigations}
+\bibitem{turner1993TheracAccidentsInvestigations} ... \LaTeX:\\ \url{https://ieeexplore.ieee.org/document/274940}
+\cite{turner1993TheracAccidentsInvestigations}
+uitgebreid artikel gaat hier ook wat meer over de hardware
+\bibitem{wang2017industrialdesignengineering} ... \LaTeX:\\ \url{https://www.linkedin.com/pulse/therac-25-industrial-design-engineering-systems-wang-ph-d-cre-acb/}
+\cite{wang2017industrialdesignengineering}
+artikel waarin in 3 delen de problemaiekwordt blootgesteld
+\bibitem{levesonturner1993theracpart2} ... \LaTeX:\\ \url{http://www.cse.msu.edu/~cse470/Public/Handouts/Therac/Therac_2.html}
+\cite{levesonturner1993theracpart2}
+case study sheets
+artikel waarin vooral de fabriikant ervan langs krijgt
+\bibitem{porelloTheraccFailure} ... \LaTeX:\\ \url{http://users.csc.calpoly.edu/~jdalbey/SWE/Papers/THERAC25.html}
+\cite{porelloTheraccFailure}
+lessons learned. Vooral de begrippen betrouwbaarheid, welgevalligheid, veilgheid en gebruiksvriendelijkheid
+\bibitem{theracIncidents} ... \LaTeX:\\ \url{https://bohr.wlu.ca/cp164/therac/therac25.htm}
+\cite{theracIncidents}
+root-cause analysis
+case study
+\bibitem{huffbrown2004casestudyethicatherac} ... \LaTeX:\\ \url{https://dusk.geo.orst.edu/ethics/papers/Therac.Huff.pdf}
+\cite{huffbrown2004casestudyethicatherac}
+case study
+\bibitem{sebowikimedicalradiation} ... \LaTeX:\\ \url{https://www.sebokwiki.org/wiki/Medical_Radiation}
+\cite{sebowikimedicalradiation}
+opzetten van systematische acceptaatie test met therac als voorbeeld
+\bibitem{hsia1995testtherac25} ... \LaTeX:\\ \url{https://www.sciencedirect.com/science/article/pii/S1474667017448245}
+\cite{hsia1995testtherac25}
+artikel waarin een diagnose plaatvindt voor het bedrijf en de ingenieur/ontwerper
+\bibitem{magsilvaTheracTesting} ... \LaTeX:\\ \url{https://magsilva.pro.br/apps/wiki/testing/Therac_25}
+\cite{magsilvaTheracTesting}
+rapport
+oorzaken aangegeven in artikel
+\bibitem{chemeuropetherac25} ... \LaTeX:\\ \url{https://www.chemeurope.com/en/encyclopedia/Therac-25.html}
+\cite{chemeuropetherac25}
+het onderzoek en enkele ontwerptekeningen en oplossingen
+\bibitem{statsenko10102016Therackillerbug} ... \LaTeX:\\ \url{https://pvs-studio.com/en/blog/posts/0438/}
+\cite{statsenko10102016Therackillerbug}
+\bibitem{therac25casestudy} ... \LaTeX:\\ \url{https://www.coursera.org/lecture/software-design-threats-mitigations/therac-25-case-study-VmQPa}
+\cite{therac25casestudy}
+\bibitem{thomas1994theracinLotos} ... \LaTeX:\\ \url{https://www.semanticscholar.org/paper/The-story-of-the-Therac-25-in-LOTOS-Thomas/6c9c6024cf95aadae8b7edf1160e0e4500410eb9}
+\cite{thomas1994theracinLotos}
+\bibitem{twiitter2019programmerbehindtherac} ... \LaTeX:\\ \url{https://news.ycombinator.com/item?id=21679287}
+\cite{twitter2019programmerbehindtherac}
+wiki
+\bibitem{wikibookstherac} ... \LaTeX:\\ \url{https://en.wikibooks.org/wiki/Professionalism/Therac-25}
+\cite{wikibookstherac}
+analyse
+\bibitem{bozdagTherac25} ... \LaTeX:\\ \url{https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.369&rep=rep1&type=pdf}
+\cite{bozdagTherac25}
+samenvatting
+
+\bibitem{levesonTurnerTheracAbstract} ... \LaTeX:\\ \url{https://onlineethics.org/cases/resources-engineering-and-science-ethics/investigation-therac-25-accidents-abstract}
+\cite{levesonTurnerTheracAbstract}
+
+rapport over de fouten die de verschillende partijen hebben gemaakt( overheid, ingenieurs, bedrijf, operators) en de verbeterpunten
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cs.colostate.edu/~bieman/CS314/Notes/therac25.pdf}
+\cite{}
+onderzoeksrapport
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.cs.ucf.edu/~dcm/Teaching/COP4600-Fall2010/Literature/Therac25-Leveson.pdf}
+\cite{}
+slides online over het technisch mankement
+Wat is er gebeurd, nou het volgende:
+Normal radiation treatments: 6,000 rads over a 3 week period, under certain conditions Therac-25 was delivering 60,000 rads during one session.
+En wat ging er mis?
+Paradigm Shift
+
+Therac-25 replaced expensive hardware safety interlocks with software controls
+Real-time software
+Design
+Race condition caused focusing element to be incorrectly set
+No indication of actual hardware settings
+Error messages appeared the same regardless of how important
+Error messages were difficult to understand
+All errors messages could be manually overridden
+
+\bibitem{ID} ... \LaTeX:\\ \url{https://hci.cs.siue.edu/NSF/Files/Semester/Week13-2/PPT-Text/Slide13.html}
+\cite{}
+oorzaak-gevolg diagram
+\bibitem{ID} ... \LaTeX:\\ \url{https://www.thinkreliability.com/InstructorBlogs/Blog-Therac-25.pdf}
+\cite{}
+veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix waarmee het programma wordt uitgevoerd en de software-analyse door een consultat
+\bibitem{stackexchange2021therac25code} ... \LaTeX:\\ \url{https://sqa.stackexchange.com/questions/9798/asking-for-help-with-this-therac-25-bugged-code-i-dont-understand-the-explanat}
+\cite{stackexchange2021therac25code}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

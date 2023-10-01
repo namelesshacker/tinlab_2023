@@ -1,0 +1,51 @@
+
+
+theorems
+bfhlpr-tacas01.pdf
+bo-icfem03.pdf
+dimacs95.pdf
+fase2002.pdf
+lpw-sttt01.pdf
+
+constants
+bgkllpw-cav96.pdf
+
+waterlock
+dias2017-paper4.pdf
+
+
+
+
+
+ctl
+
+https://tex.stackexchange.com/questions/107633/how-can-i-set-the-node-size-for-a-tikz-image-to-be-the-same-for-all-nodes
+
+https://tex.stackexchange.com/questions/364824/drawing-tree-like-symbols
+
+https://tex.stackexchange.com/questions/85006/writing-linear-temporal-logic-in-latex
+
+Writing Linear Temporal Logic in LaTeX
+I am writing some LTL (Linear Temporal Logic) statements in LaTeX and am having issues finding any packages online or information as to this can be done. Any help would be appreciated.
+tex.stackexchange.com
+
+
+
+
+
+clocks
+http://www.iste.co.uk/data/doc_wrkszvritcbv.pdf
+https://tdcapply.cfa.harvard.edu/help_latex_symbols/
+https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/MathSymb.html
+https://libguides.ntu.edu.sg/LaTeX/maths
+LibGuides: LaTeX: Mathematical Typesetting
+This topic guide was created to complement the Introduction to LaTeX workshop conducted by the Library and point users to resources and tips related to using LaTeX and Overleaf.
+libguides.ntu.edu.sg
+
+https://texblog.org/2014/04/09/whitespace-in-math-mode/
+
+Whitespace in math mode
+There are a number of predefined commands to add whitespace in LaTeX math mode. These are summarized in the list below. Example usage of medium space \\: Here, we use whitespace to separate s…
+texblog.org
+
+https://www.math.uci.edu/~xiangwen/pdf/LaTeX-Math-Symbols.pdf
