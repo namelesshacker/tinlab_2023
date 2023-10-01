@@ -1509,11 +1509,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 </comment>
 		</query>
 		<query>
-			<formula>A[] </formula>
-			<comment>     P6 In het geval dat er geen  errors zijn (  in de stoplichten, sluisdeuren)  and ideal (wachtrij) scenario,  
-</comment>
-		</query>
-		<query>
 			<formula>A[] maincontroller.endCycle --&gt; systemtime &lt; 100</formula>
 			<comment>     a) dan is een cyclus gegarandeerd  binnen 100 ms (including 100 ms)  (undefined)  
 </comment>
@@ -1534,21 +1529,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 </comment>
 		</query>
 		<query>
-			<formula>A[] </formula>
-			<comment>     c) het is onmogelijk   om van richting te veranderen   in minder dan 400  ms als de  pomp al op niveau x is  
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     c') het is mogelijk om van   richting te veranderen in   minder dan 400 ms als de pomp al op niveau x is  
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     P7 Als zich geen errors   voordoen bij stoplicht en deur,maar   de waterpomp uitvalt:  
-</comment>
-		</query>
-		<query>
 			<formula>A[] (gate().closed and gate(1).closed) imply pomp.idle</formula>
 			<comment>     p12 Wanneer beide sluisdeuren in   state gesloten zijn, dan is de pomp in   zijn initiale state of 100 ms  verwijderd van zijn initiele state  
 </comment>
@@ -1564,11 +1544,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 			<comment>     b) Als de deur is gesloten   dan bevind de maincontroller zich   in een predefined state   </comment>
 		</query>
 		<query>
-			<formula>A[] </formula>
-			<comment>     p16 If engine regulation is   on torque, then the clutch is closed   (undefined)  (Engine.Torque imply Clutch.closed
-</comment>
-		</query>
-		<query>
 			<formula>A[] direction=1 and maincontroller.procStart -&gt;  pomp.uit and gate(0).open and gate(1).open and (stoplight(0).green and stoplight(1).green  )
 </formula>
 			<comment>     p17Voor invaren geldt altijd: waterlevel,   pomp uit, sluisdeuren open en   stoplicht op groen   </comment>
@@ -1576,11 +1551,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 		<query>
 			<formula>A[] direction=1 and posiion ==0 and maincontroller.procStart -&gt;  pomp.uit and gate(0).open and gate(1).open and (stoplight(0).green and stoplight(1).green  )</formula>
 			<comment>     p18 Als een schip van rechts binnen komt en sluisdeuren zijn dicht   dan moet het stoplicht op rood,   de pomnp in transitie van laag  naar hoog en niet andersom   !main.direction -&gt; forall  (i:id_d) forall (j:id_s) gate(i).closed text{&amp;&amp;}  stoplight.rood text{&amp;&amp;} main.rd_1
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p19 uitvarenden hebben voorang  op invarenden  
 </comment>
 		</query>
 		<query>
@@ -1600,32 +1570,12 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 		</query>
 		<query>
 			<formula>A[] </formula>
-			<comment>     p23 urgent locations; het is niet   mogelijk om hier te wachten  
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p24 urgent syn; een synchronisatie moet direct worden uitgevoerd als de guards geldig zijn  
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
 			<comment>     p25 als een schip binnen is, en er zijn wachtende schepen,  dan moet het stoplicht via oranje naar rood  
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p26 committed; als deze staat actief is dan wordt de eerst volgende transitie uitaande van deze state  
 </comment>
 		</query>
 		<query>
 			<formula>A[] schip(0)</formula>
 			<comment>     p27 als een schjip binnen vaart mnoiet hij ook eft binnen zijn en niet binnenvaren, dit geldt ook voor   
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p28 sluisdeuren en pompen  dus deze zijn committed.  
 </comment>
 		</query>
 		<query>
@@ -1652,21 +1602,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 			<formula>A[] schip.varen   maincontroller.s12 || maincontroller.s13 -&gt; (!maincontroller.rn1 and !maincontroller.rn2)
 </formula>
 			<comment>     p33 Een schip mag alleen uitvaren  als de pomp klaar is, de  sleusdeuren open.    </comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p34 Een sluis ontvang een aankomst  signaal van een schip en bestuurt  de sluisdeuren en de pomp.   
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p35 De sensor is een onderdeel  van de sluis en ontvangt signalen  van naderende schepen.   
-</comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p36 De sleusdeur voor boven en beneden  kunnen beiden open en dicht.  De sluisdeur wordt  aangestuurd door de sluis.   
-</comment>
 		</query>
 		<query>
 			<formula>A[] pomp.pomp_active -&gt; maincontroller.s6    forall(i:id_d) gate(i).closed</formula>
@@ -1704,11 +1639,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 </comment>
 		</query>
 		<query>
-			<formula>A[] </formula>
-			<comment>     p44 Er is een pad waarvoor geld dat als  een schip wilt stoppen dat  er meer dan 5 schepen  in de sluis zitten.  
-</comment>
-		</query>
-		<query>
 			<formula>A[] schip(0).groen ||  schip(1).groen imply  (maincontroller.procEnd || maincontroller.endCycle) and (deur(0).closed and deur(1).closed)</formula>
 			<comment>     p45 Voor alle paden geldt   als schip vrtrekt   is sluisdeur dicht  
 </comment>
@@ -1732,11 +1662,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 			<formula>A[] forall(i:id_s) stoplight.groen -&gt;  gate(0).open  gate(1).open  (maincontroller.pomp1_idle ||  maincontroller.pomp2_idle)
 </formula>
 			<comment>     p49 EEn stoplich staat altijd   op groen als de deuren open staan   en de pomp niet bezig is.   </comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>     p50 In geen enkele staat van de   sluis behalve tussen de  lowergate en uppergate en   uppergate en lowergate en  de staten AtArrivalLow en   AtEnteringHigh is de wachttijd   langer dan 5 tijdseenheden  
-</comment>
 		</query>
 		<query>
 			<formula>A[] (maincontroller.waterlevel&lt;waterlaag) -&gt;  sluisIsBezig==false</formula>
