@@ -59,7 +59,7 @@ clock systemtime;
 			<name x="-110" y="-374">OpeningLow</name>
 		</location>
 		<location id="id4" x="-646" y="-442">
-			<name x="-656" y="-476">l4</name>
+			<name x="-656" y="-476">crossleft</name>
 		</location>
 		<location id="id5" x="-646" y="-612">
 			<name x="-656" y="-646">l5</name>
@@ -84,7 +84,7 @@ clock systemtime;
 			<name x="-248" y="-374">s0</name>
 		</location>
 		<location id="id13" x="136" y="-442">
-			<name x="126" y="-476">r4</name>
+			<name x="126" y="-476">crossright</name>
 		</location>
 		<location id="id14" x="-408" y="-612">
 			<name x="-418" y="-646">l6</name>
@@ -104,40 +104,24 @@ clock systemtime;
 			<target ref="id9"/>
 			<label kind="synchronisation" x="-221" y="-586">pomp_klik!</label>
 			<label kind="assignment" x="-136" y="-501">sluisToggle=true,process_busy=false</label>
-			<label kind="comments" x="-170" y="-714">select:
-guard
-sync:
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id1"/>
 			<target ref="id15"/>
 			<label kind="select" x="-51" y="-637">deur_id:id_d</label>
 			<label kind="synchronisation" x="-84" y="-629">deurklik[position]!</label>
-			<label kind="comments" x="-42" y="-714">select:
-guard
-sync:deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id14"/>
 			<target ref="id9"/>
 			<label kind="synchronisation" x="-357" y="-586">pomp_klik!</label>
 			<label kind="assignment" x="-408" y="-493">sluisToggle=true,process_busy=false</label>
-			<label kind="comments" x="-409" y="-765">select:
-guard
-sync:
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id11"/>
 			<target ref="id14"/>
 			<label kind="select" x="-603" y="-654">deur_id:id_d</label>
 			<label kind="synchronisation" x="-628" y="-629">deurklik[position]!</label>
-			<label kind="comments" x="-620" y="-731">select:
-guard
-sync: deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id10"/>
@@ -148,10 +132,6 @@ update:</label>
 			<target ref="id1"/>
 			<label kind="select" x="8" y="-578">shipid: kenteken</label>
 			<label kind="synchronisation" x="0" y="-544">register[shipid]!</label>
-			<label kind="comments" x="229" y="-561">select:
-guard:position==1 &amp;&amp; systemtime&gt;0900
-sync:schipklik[shipid]!
-update:</label>
 			<nail x="136" y="-476"/>
 		</transition>
 		<transition>
@@ -159,63 +139,34 @@ update:</label>
 			<target ref="id13"/>
 			<label kind="select" x="136" y="-442">shipid: kenteken</label>
 			<label kind="synchronisation" x="136" y="-408">schipklik[shipid]!</label>
-			<label kind="comments" x="246" y="-348">select:
-guard
-sync:open_gate[direction]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id3"/>
 			<target ref="id2"/>
 			<label kind="synchronisation" x="-68" y="-331">stoplichtklik[position]!</label>
-			<label kind="comments" x="17" y="-314">select:
-guard
-sync:deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id4"/>
 			<target ref="id5"/>
 			<label kind="select" x="-646" y="-578">shipid:kenteken</label>
 			<label kind="synchronisation" x="-646" y="-544">register[shipid]!</label>
-			<label kind="comments" x="-960" y="-663">select:
-guard:position==0 &amp;&amp; systemtime&gt;0900
-sync:schipklik[shipid]!
-update:
-
-select:
-guard
-sync:register[shipid]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id6"/>
 			<target ref="id4"/>
 			<label kind="select" x="-646" y="-442">shipid: kenteken</label>
 			<label kind="synchronisation" x="-646" y="-408">schipklik[shipid]!</label>
-			<label kind="comments" x="-841" y="-425">select:
-guard
-sync: open_gate[direction]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id7"/>
 			<target ref="id6"/>
 			<label kind="select" x="-578" y="-340">stoplichtnummer: id_s</label>
 			<label kind="synchronisation" x="-595" y="-314">stoplichtklik[position]!</label>
-			<label kind="comments" x="-790" y="-238">select:
-guard:systemtime &lt;0900
-sync:stoplichtklik[stoplichtnummer]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id8"/>
 			<target ref="id7"/>
 			<label kind="synchronisation" x="-561" y="-289">stoplichtklik[position]!</label>
-			<label kind="comments" x="-552" y="-246">select:deur_id:id_d
-guard
-sync:deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id10"/>
@@ -270,6 +221,7 @@ update:</label>
 			<target ref="id12"/>
 			<label kind="guard" x="-212" y="-425">process_busy==false</label>
 			<label kind="synchronisation" x="-238" y="-408">initOpenProc?</label>
+			<label kind="assignment" x="-238" y="-391">process_busy=true</label>
 		</transition>
 		<transition>
 			<source ref="id12"/>
@@ -278,10 +230,6 @@ update:</label>
 			<label kind="guard" x="-204" y="-442">position==1 &amp;&amp; systemtime &gt;13</label>
 			<label kind="synchronisation" x="-229" y="-340">deurklik[position]!</label>
 			<label kind="assignment" x="-229" y="-297">process_busy=true</label>
-			<label kind="comments" x="-212" y="-246">select:
-guard:position==1 &amp;&amp; systemtime &gt;13 &amp;&amp; systemtime &lt;21 systemtime &lt;2100
-sync:
-update:</label>
 			<nail x="-221" y="-340"/>
 		</transition>
 		<transition>
@@ -291,10 +239,6 @@ update:</label>
 			<label kind="guard" x="-561" y="-433">position==0 &amp;&amp; systemtime &gt;08</label>
 			<label kind="synchronisation" x="-390" y="-357">deurklik[position]!</label>
 			<label kind="assignment" x="-390" y="-340">process_busy=true</label>
-			<label kind="comments" x="-391" y="-255">select:
-guard: position==0 &amp;&amp; systemtime &gt;08 &amp;&amp; systemtime &lt;13
-sync:
-update:</label>
 		</transition>
 	</template>
 	<template>
@@ -313,7 +257,7 @@ update:</label>
 			<name x="-54555" y="-221">ClosingLow</name>
 		</location>
 		<location id="id20" x="-55089" y="-289">
-			<name x="-55099" y="-323">l4</name>
+			<name x="-55099" y="-323">crossleft</name>
 		</location>
 		<location id="id21" x="-55089" y="-459">
 		</location>
@@ -338,7 +282,7 @@ update:</label>
 			<name x="-54691" y="-221">s0</name>
 		</location>
 		<location id="id29" x="-54307" y="-289">
-			<name x="-54317" y="-323">r4</name>
+			<name x="-54317" y="-323">crossright</name>
 		</location>
 		<location id="id30" x="-54851" y="-459">
 			<name x="-54861" y="-493">l6</name>
@@ -358,40 +302,24 @@ update:</label>
 			<target ref="id25"/>
 			<label kind="synchronisation" x="-54664" y="-433">pomp_klik!</label>
 			<label kind="assignment" x="-54579" y="-348">sluisToggle=true,process_busy=false</label>
-			<label kind="comments" x="-54613" y="-561">select:
-guard
-sync:
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id18"/>
 			<target ref="id31"/>
 			<label kind="select" x="-54494" y="-484">deur_id:id_d</label>
 			<label kind="synchronisation" x="-54527" y="-476">deurklik[direction]!</label>
-			<label kind="comments" x="-54485" y="-561">select:
-guard
-sync:deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id30"/>
 			<target ref="id25"/>
 			<label kind="synchronisation" x="-54800" y="-433">pomp_klik!</label>
 			<label kind="assignment" x="-54851" y="-340">sluisToggle=true,process_busy=false</label>
-			<label kind="comments" x="-54852" y="-612">select:
-guard
-sync:
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id27"/>
 			<target ref="id30"/>
 			<label kind="select" x="-55046" y="-501">deur_id:id_d</label>
 			<label kind="synchronisation" x="-55071" y="-476">deurklik[direction]!</label>
-			<label kind="comments" x="-55063" y="-578">select:
-guard
-sync: deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id26"/>
@@ -402,10 +330,6 @@ update:</label>
 			<target ref="id18"/>
 			<label kind="select" x="-54435" y="-425">shipid: kenteken</label>
 			<label kind="synchronisation" x="-54443" y="-391">unregister[shipid]!</label>
-			<label kind="comments" x="-54214" y="-408">select:
-guard:position==1 &amp;&amp; systemtime&gt;0900
-sync:schipklik[shipid]!
-update:</label>
 			<nail x="-54307" y="-323"/>
 		</transition>
 		<transition>
@@ -413,63 +337,34 @@ update:</label>
 			<target ref="id29"/>
 			<label kind="select" x="-54307" y="-289">shipid: kenteken</label>
 			<label kind="synchronisation" x="-54307" y="-255">schipklik[shipid]!</label>
-			<label kind="comments" x="-54197" y="-195">select:
-guard
-sync:open_gate[direction]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id19"/>
 			<target ref="id16"/>
 			<label kind="synchronisation" x="-54553" y="-212">stoplichtklik[direction]!</label>
-			<label kind="comments" x="-54426" y="-161">select:
-guard
-sync:deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id20"/>
 			<target ref="id21"/>
 			<label kind="select" x="-55089" y="-425">shipid:kenteken</label>
 			<label kind="synchronisation" x="-55089" y="-391">unregister[shipid]!</label>
-			<label kind="comments" x="-55403" y="-510">select:
-guard:position==0 &amp;&amp; systemtime&gt;0900
-sync:schipklik[shipid]!
-update:
-
-select:
-guard
-sync:register[shipid]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id22"/>
 			<target ref="id20"/>
 			<label kind="select" x="-55089" y="-289">shipid: kenteken</label>
 			<label kind="synchronisation" x="-55089" y="-255">schipklik[shipid]!</label>
-			<label kind="comments" x="-55284" y="-272">select:
-guard
-sync: open_gate[direction]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id23"/>
 			<target ref="id22"/>
 			<label kind="select" x="-55021" y="-187">stoplichtnummer: id_s</label>
 			<label kind="synchronisation" x="-55038" y="-161">stoplichtklik[direction]!</label>
-			<label kind="comments" x="-55233" y="-85">select:
-guard:systemtime &lt;0900
-sync:stoplichtklik[stoplichtnummer]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id24"/>
 			<target ref="id23"/>
 			<label kind="synchronisation" x="-54969" y="-212">stoplichtklik[direction]!</label>
-			<label kind="comments" x="-54995" y="-93">select:deur_id:id_d
-guard
-sync:deurklik[deur_id]!
-update:</label>
 		</transition>
 		<transition>
 			<source ref="id26"/>
@@ -524,6 +419,7 @@ update:</label>
 			<target ref="id28"/>
 			<label kind="guard" x="-54655" y="-280">process_busy==false</label>
 			<label kind="synchronisation" x="-54655" y="-255">initClosingProc?</label>
+			<label kind="assignment" x="-54681" y="-238">process_busy=true</label>
 		</transition>
 		<transition>
 			<source ref="id28"/>
@@ -532,10 +428,6 @@ update:</label>
 			<label kind="guard" x="-54672" y="-144">position==1 &amp;&amp; systemtime &gt;13</label>
 			<label kind="synchronisation" x="-54663" y="-119">deurklik[direction]!</label>
 			<label kind="assignment" x="-54646" y="-187">position=!position</label>
-			<label kind="comments" x="-54655" y="-93">select:
-guard: position==1 &amp;&amp; systemtime &gt;13 &amp;&amp; systemtime &lt;21
-sync:
-update:</label>
 			<nail x="-54664" y="-187"/>
 		</transition>
 		<transition>
@@ -546,10 +438,6 @@ update:</label>
 			<label kind="synchronisation" x="-54825" y="-212">deurklik[direction]!</label>
 			<label kind="assignment" x="-54893" y="-170">position=!position</label>
 			<label kind="testcode">guard:</label>
-			<label kind="comments" x="-54834" y="-102">select:
-guard:position==0 &amp;&amp; systemtime &gt;08 &amp;&amp; systemtime &lt;13
-sync:
-update:</label>
 		</transition>
 	</template>
 	<template>
@@ -1206,12 +1094,6 @@ A[] (Schip.Vertrekken imply Sluisdeur.Dicht)
 			<comment></comment>
 		</query>
 		<query>
-			<formula>A[] forall (i : id_t) forall (j : id_t) Train(i).Cross &amp;&amp; Train(j).Cross imply i == j</formula>
-			<comment>There is never more than one train crossing the bridge (at
-any time instance).
-			</comment>
-		</query>
-		<query>
 			<formula>A[] forall (i : kenteken) forall (j : kenteken) schip(i).varen &amp;&amp; sluis.list[j] imply i == j</formula>
 			<comment>Tijgelijkertijd kan er kunnen meer dan één schip invaren</comment>
 		</query>
@@ -1221,7 +1103,9 @@ any time instance).
 		</query>
 		<query>
 			<formula>A[] forall (i : id_d) forall (j : id_d) deur(i).open &amp;&amp; deur(j).open imply i == j</formula>
-			<comment>deurHet is nooit mogelijk dat beide deuren open zijn.</comment>
+			<comment>Het is nooit mogelijk dat beide deuren open zijn.
+
+			</comment>
 		</query>
 		<query>
 			<formula>A[] proc1.process_busy==false</formula>
@@ -1248,32 +1132,36 @@ any time instance).
 			<comment></comment>
 		</query>
 		<query>
+			<formula>E&lt;&gt; schip(0).varen and (forall (i : kenteken) i != 0 imply schip(i).idle)</formula>
+			<comment></comment>
+		</query>
+		<query>
 			<formula>===== Liveness Properties:
 			</formula>
 			<comment></comment>
 		</query>
 		<query>
-			<formula>E&lt;&gt; stoplight(0).rood --&gt; schip(0).idle imply systemtime &lt;=50</formula>
+			<formula>E&lt;&gt; stoplight(0).rood imply schip(0).idle imply systemtime &lt;=50</formula>
 			<comment>Als een stoplicht rood is, dan zal het schip uiteindelijk gaan wachten.
 A[] (p imply A&lt;&gt; q)</comment>
 		</query>
 		<query>
-			<formula>E&lt;&gt; stoplight(0).groen --&gt; schip(0).varen</formula>
+			<formula>E&lt;&gt; stoplight(0).groen imply schip(0).varen</formula>
 			<comment>Als een stoplicht groen is, dan zal het schip uiteindelijk gaan varen.
 A[] (p imply A&lt;&gt; q)</comment>
 		</query>
 		<query>
-			<formula>E&lt;&gt; stoplight(1).rood --&gt; schip(1).idle</formula>
+			<formula>E&lt;&gt; stoplight(1).rood imply schip(1).idle</formula>
 			<comment>Als een stoplicht rood is, dan zal het schip uiteindelijk gaan wachten
 A[] (p imply A&lt;&gt; q)</comment>
 		</query>
 		<query>
-			<formula>E&lt;&gt; stoplight(0).groen --&gt; schip(0).varen</formula>
+			<formula>E&lt;&gt; stoplight(0).groen imply schip(0).varen</formula>
 			<comment>Als een stoplicht rood is, dan zal het schip uiteindelijk gaan wachten.
 A[] (p imply A&lt;&gt; q)</comment>
 		</query>
 		<query>
-			<formula>A[] !((Gate(0).open or Gate(1).open) and (Pump(0).pomp_aan or Pump(1).pomp_aan))</formula>
+			<formula>A[] not ((deur(0).open || deur(1).open) imply pomp.aan)</formula>
 			<comment>Er is in elk pad geen state waarbij een van de deuren open is en een pomp aan is
 A[] (p imply A&lt;&gt; q)</comment>
 		</query>
@@ -1367,273 +1255,6 @@ http://uu.diva-portal.org/smash/get/diva2:116821/FULLTEXT01.pdf
 		<query>
 			<formula>==== Other property checks</formula>
 			<comment></comment>
-		</query>
-		<query>
-			<formula>A[] </formula>
-			<comment>       P1 Het is mogelijk dat  de sluis van richting verandert.   !Main.Direction
-</comment>
-		</query>
-		<query>
-			<formula>E&lt;&gt; sluisIsBezig==true waterlevel&gt;10</formula>
-			<comment>    P2 Het is mogelijk dat  de sluispomp in een cyclus teveeel  water heeft gepompt en dat er  daardoor water weggepompt dan wel  bijgekompt dient te worden   main.waterlevel
-</comment>
-		</query>
-		<query>
-			<formula>A[]  systemtime &lt; 100 --&gt;</formula>
-			<comment>     P3 Het is al binnen 100 ms mogelijk omte  achterhalen aan welke kant de sluisdeuren  open moeten.  
-</comment>
-		</query>
-		<query>
-			<formula>A[] direction==0 --&gt; !(waterlevel)</formula>
-			<comment>     P4 Als de richting van een schip gelijk  is aan N, dan is het waterlevel  niet gelijk aan 1-5 of R  
-</comment>
-		</query>
-		<query>
-			<formula>A[] deur(0).open and deur(1).open --&gt; pomp.idle</formula>
-			<comment> P5 De sluispomp is nooit in  positie AAN, wanneer de sluisdeuren  open zijn.  
-</comment>
-		</query>
-		<query>
-			<formula>A[] maincontroller.endCycle --&gt; systemtime &lt; 100</formula>
-			<comment>     a) dan is een cyclus gegarandeerd  binnen 100 ms (including 100 ms)  (undefined)  
-</comment>
-		</query>
-		<query>
-			<formula>A[] maincontroller.endCyle imply systemtime&gt;=8</formula>
-			<comment>     a') dan is een cyclus niet   gegarandeerd binnen   100 ms  
-</comment>
-		</query>
-		<query>
-			<formula>A[] direction==1 and maincontroller.endCycle imply systemtime&gt;150 </formula>
-			<comment>     b)  dan is het onmogelijk   om van beneden naar boven te varen,   of andersom binnen 150 ms  
-</comment>
-		</query>
-		<query>
-			<formula>A[] direction==0 and maincontroller.endCycle imply systemtime&gt;150 </formula>
-			<comment>     b') dan is het mogelijk   om van beneden naar boven te varen, of   andersom binnen 150 ms  
-</comment>
-		</query>
-		<query>
-			<formula>A[] (gate().closed and gate(1).closed) imply pomp.idle</formula>
-			<comment>     p12 Wanneer beide sluisdeuren in   state gesloten zijn, dan is de pomp in   zijn initiale state of 100 ms  verwijderd van zijn initiele state  
-</comment>
-		</query>
-		<query>
-			<formula>A[] (gate(0).open||gate(1).open)  -&gt; (pomp.idle )
-</formula>
-			<comment>     a) Als de deur open is  (ongeacht boven of beneden,  dan bevind de sluispomp   zich in een  idle state</comment>
-		</query>
-		<query>
-			<formula>A[] gate(0).closed -&gt; maincontroller.running
-</formula>
-			<comment>     b) Als de deur is gesloten   dan bevind de maincontroller zich   in een predefined state   </comment>
-		</query>
-		<query>
-			<formula>A[] direction=1 and maincontroller.procStart -&gt;  pomp.uit and gate(0).open and gate(1).open and (stoplight(0).green and stoplight(1).green  )
-</formula>
-			<comment>     p17Voor invaren geldt altijd: waterlevel,   pomp uit, sluisdeuren open en   stoplicht op groen   </comment>
-		</query>
-		<query>
-			<formula>A[] direction=1 and posiion ==0 and maincontroller.procStart -&gt;  pomp.uit and gate(0).open and gate(1).open and (stoplight(0).green and stoplight(1).green  )</formula>
-			<comment>     p18 Als een schip van rechts binnen komt en sluisdeuren zijn dicht   dan moet het stoplicht op rood,   de pomnp in transitie van laag  naar hoog en niet andersom   !main.direction -&gt; forall  (i:id_d) forall (j:id_s) gate(i).closed text{&amp;&amp;}  stoplight.rood text{&amp;&amp;} main.rd_1
-</comment>
-		</query>
-		<query>
-			<formula>A[] proc1.s0 imply (gate(0).open and stoplight(0).groen )  ||  ( gate(1).open and  stoplight(1).groen)
-</formula>
-			<comment>      p20 Voor invarenden geldt pomp uit, sleusdeur open en stoplicht op groen   </comment>
-		</query>
-		<query>
-			<formula>A[] pomp.aan imply  forall  (i:id_d) forall(j:id_s )  gate(i).closed stoplight(j).rood</formula>
-			<comment>     p21 voor nivelleren geldt pomp is aan, sluisduren zijn doicht en het stoplicht is op rood   
-</comment>
-		</query>
-		<query>
-			<formula>A[] (schip(0).varen || schip(1).varen) and maincontroller.procEnd imply (deur(0).open || deur(1).open) and (waterlevel ==10 || waterlevel==-10) and ((stoplicht(0).groen || stoplicht(1).groen))</formula>
-			<comment>     p22 Als een schip vertrekt dan zijn altijd, sleusdeuren open, waterlevel gereed op niveau 5 of 0 en stoplicht direct op groen   
-</comment>
-		</query>
-		<query>
-			<formula>A[] schip(0)</formula>
-			<comment>     p27 als een schjip binnen vaart mnoiet hij ook eft binnen zijn en niet binnenvaren, dit geldt ook voor   
-</comment>
-		</query>
-		<query>
-			<formula>A[] (schip(0).varen || schip(1).varen --&gt; forall(i:kenteken) sluis.register(i)</formula>
-			<comment>     p28 Een schip komt aanvaren en geeft een signaal  aan de sluis.   
-</comment>
-		</query>
-		<query>
-			<formula>A[]  Queue.list[N-1] == 2 -&gt;  (Sluiskolk.list[N]==1  ||Sluiskolk.list[N]==2)</formula>
-			<comment>     p29 Indien er meer dan twee  schepen in de sluis zitten dan wordt  het ship geplaats in de wachrij.    
-</comment>
-		</query>
-		<query>
-			<formula>A[] maincontroller.s6   schip.varen -&gt;  Queue.list[N-1] &lt;2</formula>
-			<comment>     p30 Een schip kan pas naar binnenrijden als de sluisdeuren open zijn, het stoplicht is op groen er er zijn minder dan 2 schepen in de sluis.    
-</comment>
-		</query>
-		<query>
-			<formula>A[]  Queue.list[N-1] == 2
-</formula>
-			<comment>     p32 Eenmaal in de sluis zal  het schip moeten wachten  op de sluis en de pomp.  </comment>
-		</query>
-		<query>
-			<formula>A[] schip.varen   maincontroller.s12 || maincontroller.s13 -&gt; (!maincontroller.rn1 and !maincontroller.rn2)
-</formula>
-			<comment>     p33 Een schip mag alleen uitvaren  als de pomp klaar is, de  sleusdeuren open.    </comment>
-		</query>
-		<query>
-			<formula>A[] pomp.pomp_active -&gt; maincontroller.s6    forall(i:id_d) gate(i).closed</formula>
-			<comment>     p37 Een pomp begint met pompen bij een  signaal van de sluis.  Een sluis op zijn beurt geeft  alleen een signaal aan de pomp als  de sleudeuren dichtzijn   
-</comment>
-		</query>
-		<query>
-			<formula>A[] not deadlock</formula>
-			<comment>      p38 Geen deadlock  
-</comment>
-		</query>
-		<query>
-			<formula>A[] not forall(i:id_d)  gate(i).closed -&gt;(maincontroller.s12||maincontroller.s13)</formula>
-			<comment>     p39 Voor geen enkel pad geldt  dat als  de deuren gesloten zijn  volgens de kluis dat er een  deur openstaat om een schip  naar buiten te laten.   
-</comment>
-		</query>
-		<query>
-			<formula>A[] maincontroller.posTaken imply  forall(gate(0).closed)</formula>
-			<comment>     p40 Voor alle paden geld dat als  een sluis aan het voorbereiden is,  dan zijn alle deuren dcht.   
-</comment>
-		</query>
-		<query>
-			<formula>A[] deur(0).closed and (deur(1).closed imply</formula>
-			<comment>     p41 Voor alle paden geld dat  als een deur dicht is het aantal  schepen in de kade gelijk is aan nul  
-</comment>
-		</query>
-		<query>
-			<formula>A[] not stoplight(2).groen ||  stoplight(3).groen -&gt; maincontroller.procStart</formula>
-			<comment>     p42 Voor geen enkel pad  geld dat als het binnenstoplicht  op groen staat dat het niet toegestaan  in naar binnen te varen   
-</comment>
-		</query>
-		<query>
-			<formula>A[]  maincontroller.endCycle and systemtime&gt;30</formula>
-			<comment>     p43 Voor alle paden geldt  dat de globale tijd langer is dan   30 tijdseenheden  
-</comment>
-		</query>
-		<query>
-			<formula>A[] schip(0).groen ||  schip(1).groen imply  (maincontroller.procEnd || maincontroller.endCycle) and (deur(0).closed and deur(1).closed)</formula>
-			<comment>     p45 Voor alle paden geldt   als schip vrtrekt   is sluisdeur dicht  
-</comment>
-		</query>
-		<query>
-			<formula>A[] (deur(0).closed and stoplicht(0).rood)||(deur(1).closed and stoplicht(1).rood) imply pomp.uit</formula>
-			<comment>      p46 Voor alle paden geldt als   stoplicht op rood sluisdeuren dicht   en schip vertrokken dan   is de nivelleermachine uit  
-</comment>
-		</query>
-		<query>
-			<formula>E&lt;&gt; schip.varen and direction==1 and gate(0).open</formula>
-			<comment>     p47 Er is geen pad waarop   een schip vertrekt  vanuit de rechtersluisdeur en   de linkersluisdeur is open en  linkeruitaartstoplicht   en linkeruitvaartsoplicht opgroen    en nibelleermachine is aan  
-</comment>
-		</query>
-		<query>
-			<formula>A[] forall(i:id_s) stoplight.groen -&gt;  gate(0).open  gate(1).open  (maincontroller.pomp1_idle ||  maincontroller.pomp2_idle)
-</formula>
-			<comment>     p49 EEn stoplich staat altijd   op groen als de deuren open staan   en de pomp niet bezig is.   </comment>
-		</query>
-		<query>
-			<formula>A[] (maincontroller.waterlevel&lt;waterlaag) -&gt;  sluisIsBezig==false</formula>
-			<comment>      p51 Voor alle paden in een  pomp geldt dat als water level lager   is dan waterlaag   pompwaterweg is altijd false    
-</comment>
-		</query>
-		<query>
-			<formula>A[] waterlevel &gt; 10 --&gt; pomp.sluisIsBezig==false</formula>
-			<comment>     p52 Voor alle paden gelft dat als   water level hoger is dan waterhoog dan is   pompwater altjd false  
-</comment>
-		</query>
-		<query>
-			<formula>A[] not maincontroller.rn1 ||  maincontroller.rn2 -&gt; gate(0).open   gate(1).open   Queue.list[N-1] == 0   ((stoplight(0).groen||stoplight(1).groen) || (stoplight(3).groen stoplight(4).groen))
-</formula>
-			<comment>     p53 Het zal nooit gebeuren   dat een pomp water toevoegt   als deuren open   zjn, geen schip   in sluis en stoplicht op groen   </comment>
-		</query>
-		<query>
-			<formula>A[] (maincontroller.blocked1 ||  maincontroller.blocked2) -&gt; Queue.list[N-1] &gt;0   gate(0).closed  gate(1).closed  maincontroller.waterlevel==maincontroller.waterlevel_laag</formula>
-			<comment>     p54 Het kan gebeuren dat bij   pompr het stoplicht op rood staat,   het schip in de sluis en   deur is dicht,  en waterstand gelijk aan waterlaag   
-</comment>
-		</query>
-		<query>
-			<formula>A[] maincontroller.rn1||maincontroller.rn2  -&gt; gate(0).closed   maincontroller.waterlevel==waterlaag
-</formula>
-			<comment>     p55 Er is een mogelijkheid  dat vanuit pomp get stoplicht op rood  wordt gezet en waterlevel  gelijk is aan waterlaag   </comment>
-		</query>
-		<query>
-			<formula>A[] maincontroller.rn1||maincontroller.rn2  -&gt;maincontroller.waterlevel==  maincontroller.waterlaag
-</formula>
-			<comment>     p56 Het kan voorkomen dat bij  state pompaan het waterniveau gelijk  is aan waterlaag   </comment>
-		</query>
-		<query>
-			<formula>A[] E&lt;&gt; gate(0).open  and (maincontroller.direction ==0  ||maincontroller.direction==1)
-</formula>
-			<comment>     p57 Voor alle paden gelt dat er een   mogelijkheid is dat deur is open/dicht en   sluis nivelleert omhoog/omlaag   </comment>
-		</query>
-		<query>
-			<formula>E&lt;&gt; P0.S1 and P0.x&gt;0</formula>
-			<comment>E&lt;&gt; P0.S1 and P0.x&gt;0 : it is possible to wait in S1 of P0.</comment>
-		</query>
-		<query>
-			<formula>A[] P1.S1 imply P1.x==0</formula>
-			<comment>A[] P1.S1 imply P1.x==0 : it is not possible to wait in S1 of P1.</comment>
-		</query>
-		<query>
-			<formula>E&lt;&gt; Obs.idle and x&gt;2</formula>
-			<comment>E&lt;&gt; Obs.idle and x&gt;2 : it is possible to take the transition when x is between 2 and 3. The upper bound 3 is checked with the next property.</comment>
-		</query>
-		<query>
-			<formula>E[systemtime&lt;=500;1000] (max: G*(1-main.AssertViolation || main.main Term)).</formula>
-			<comment>https://cister-labs.pt/f-ide2021/images/preprints/F-IDE_2021_paper_12.pdf</comment>
-		</query>
-		<query>
-			<formula>A[] forall (x:int[0,42])</formula>
-			<comment>http://www.artist-embedded.org/docs/Events/2006/ChinaSchool/15_3-2-UPAAL.pdf</comment>
-		</query>
-		<query>
-			<formula>A[] forall(x:int[0,4])array[x];</formula>
-			<comment>http://www.artist-embedded.org/docs/Events/2006/ChinaSchool/15_3-2-UPAAL.pdf</comment>
-		</query>
-		<query>
-			<formula>A [] forall (i: t_id ) forall (j : t_id ) Initializer . Initialized &amp;&amp; i != j imply
-( Train (i ). curSeg != Train (j) . curSeg ) &amp;&amp;
-( Train (i ). DoubleSegment imply Train (i ). headSeg != Train (j ). curSeg ) &amp;&amp;
-( Train (i ). DoubleSegment &amp;&amp; Train (j). DoubleSegment imply Train (i).
-headSeg != Train (j). headSeg )</formula>
-			<comment>https://backend.orbit.dtu.dk/ws/portalfiles/portal/223213323/main_2_.pdf</comment>
-		</query>
-		<query>
-			<formula></formula>
-			<comment>
-</comment>
-		</query>
-		<query>
-			<formula> E&lt;&gt; exists(i:id_t) level[i] == 1</formula>
-			<comment></comment>
-		</query>
-		<query>
-			<formula>P_Identification.Scan_Result –&gt;P_Identification.Baudrate_Tested== Baudrate_Dev</formula>
-			<comment>https://subs.emis.de/LNI/Proceedings/Proceedings186/182.pdf</comment>
-		</query>
-		<query>
-			<formula>E&lt;&gt; Transaction(TRANSACTIONS-1).Restart</formula>
-			<comment>http://www.cs.vsb.cz/kot/download/Publications/2008_IMCSIT_Kot.pdf</comment>
-		</query>
-		<query>
-			<formula></formula>
-			<comment>https://escholarship.org/content/qt1193n1qj/qt1193n1qj_noSplash_6cf89dd8732aeb031f01a02cf49cb4f4.pdf?t=oeisf8</comment>
-		</query>
-		<query>
-			<formula></formula>
-			<comment>http://e-theses.imtlucca.it/190/1/Morichetta_phdthesis.pdf</comment>
-		</query>
-		<query>
-			<formula>A[]forall(i : id_t) Cluster.Done imply (Job(i).waiting == 1 &amp;&amp; Job(i).running == 1)
-</formula>
-			<comment>https://skemman.is/bitstream/1946/28907/1/JonFridrikJonatanssonMasterThesis.pdf</comment>
 		</query>
 		<query>
 			<formula>==== More info</formula>
