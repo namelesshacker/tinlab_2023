@@ -1,47 +1,91 @@
 \babel@toc {dutch}{}\relax 
-\babel@toc {dutch}{}\relax 
-\contentsline {chapter}{Samenvatting}{ii}{chapter*.1}%
-\contentsline {chapter}{Dankbetuiging}{iv}{chapter*.2}%
-\contentsline {chapter}{Trefwoorden}{vi}{chapter*.4}%
-\contentsline {chapter}{Inleiding}{1}{chapter*.5}%
-\contentsline {paragraph}{Algemeen}{1}{section*.6}%
-\contentsline {paragraph}{Probleemanalyse}{1}{section*.7}%
-\contentsline {paragraph}{Waarom nu}{1}{section*.8}%
-\contentsline {paragraph}{Gewenst resultaat }{1}{section*.9}%
-\contentsline {paragraph}{Scope}{1}{section*.10}%
-\contentsline {paragraph}{Onderzoeksvragen }{2}{section*.11}%
-\contentsline {paragraph}{Design goals}{2}{section*.12}%
-\contentsline {paragraph}{Methodologie}{2}{section*.13}%
-\contentsline {paragraph}{Afbakening}{2}{section*.14}%
-\contentsline {paragraph}{Leeswijzer}{2}{section*.15}%
-\contentsline {chapter}{Theoretisch kader}{3}{chapter*.16}%
-\contentsline {paragraph}{Wat is uppaal}{3}{section*.17}%
-\contentsline {paragraph}{MODE CONFUSION }{4}{section*.18}%
-\contentsline {paragraph}{Wat is automatiseringsparadox}{4}{section*.19}%
-\contentsline {paragraph}{4 variabelen model}{4}{section*.20}%
-\contentsline {paragraph}{World and machine samenvatting}{4}{section*.21}%
-\contentsline {paragraph}{6 Variable model}{4}{section*.22}%
-\contentsline {paragraph}{Conceptueel model}{4}{section*.23}%
-\contentsline {paragraph}{Requirementsengineering}{5}{section*.24}%
-\contentsline {paragraph}{Wat is een sluis}{6}{section*.25}%
-\contentsline {paragraph}{Recente ontwikkelingen op het gebied van sluisautomatisering}{6}{section*.26}%
-\contentsline {paragraph}{Studie naar rampen aan de hand van het vier variabelen model}{6}{section*.27}%
-\contentsline {paragraph}{Safety critical systems}{12}{section*.28}%
-\contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{12}{section*.29}%
-\contentsline {paragraph}{Afbakening van requirements Wet en regelgeving voor sluizen}{13}{section*.30}%
-\contentsline {paragraph}{Analyse}{13}{section*.31}%
-\contentsline {paragraph}{Conclusie}{13}{section*.32}%
-\contentsline {chapter}{Uppaal model}{14}{chapter*.33}%
-\contentsline {paragraph}{Inleiding}{14}{section*.34}%
-\contentsline {chapter}{Verificatie}{15}{chapter*.35}%
-\contentsline {paragraph}{Semantiek}{15}{section*.36}%
-\contentsline {paragraph}{Timed automata}{15}{section*.37}%
-\contentsline {paragraph}{Data variabelen}{15}{section*.38}%
-\contentsline {paragraph}{Acties}{15}{section*.39}%
-\contentsline {paragraph}{Clock regions}{15}{section*.40}%
-\contentsline {paragraph}{CTL logica}{15}{section*.41}%
-\contentsline {paragraph}{Andere duration properties}{17}{section*.42}%
-\contentsline {chapter}{Conclusie}{18}{chapter*.43}%
-\contentsline {chapter}{Discussie}{19}{chapter*.44}%
-\contentsline {chapter}{Bronnen}{66}{chapter*.45}%
-\contentsline {chapter}{Evaluatie}{67}{chapter*.46}%
+\contentsline {section}{\numberline {1}Inleiding}{3}{}%
+\contentsline {paragraph}{Algemeen}{3}{}%
+\contentsline {paragraph}{Probleemanalyse}{3}{}%
+\contentsline {paragraph}{Waarom nu}{3}{}%
+\contentsline {paragraph}{Gewenst resultaat }{3}{}%
+\contentsline {paragraph}{Scope}{3}{}%
+\contentsline {paragraph}{Onderzoeksvragen }{4}{}%
+\contentsline {paragraph}{Design goals}{4}{}%
+\contentsline {paragraph}{Methodologie}{4}{}%
+\contentsline {paragraph}{Afbakening}{4}{}%
+\contentsline {paragraph}{Leeswijzer}{4}{}%
+\contentsline {section}{\numberline {2}Theoretisch kader}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Begrippen, tools en literatuur}{5}{}%
+\contentsline {paragraph}{Wat is uppaal}{5}{}%
+\contentsline {paragraph}{Wat is statistical model checking?}{5}{}%
+\contentsline {paragraph}{Waarom gebruiken we statistisch model checking?}{5}{}%
+\contentsline {paragraph}{MODE CONFUSION }{5}{}%
+\contentsline {paragraph}{Wat is automatiseringsparadox}{5}{}%
+\contentsline {paragraph}{4 variabelen model}{5}{}%
+\contentsline {paragraph}{6 Variable model}{6}{}%
+\contentsline {paragraph}{World and machine samenvatting}{6}{}%
+\contentsline {paragraph}{Systeem vs software requirement}{7}{}%
+\contentsline {paragraph}{Requirementsengineering}{7}{}%
+\contentsline {paragraph}{Wat is een sluis}{8}{}%
+\contentsline {paragraph}{Recente ontwikkelingen op het gebied van sluisautomatisering}{8}{}%
+\contentsline {subsection}{\numberline {2.2}Rampen}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Therac-25}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}China explosie 2015 Tianjin}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}tesla autopilot crashes}{11}{}%
+\contentsline {subsubsection}{\numberline {2.2.5}de malimissie}{12}{}%
+\contentsline {subsubsection}{\numberline {2.2.6}militair overleden door schietoefening in ossendrecht}{13}{}%
+\contentsline {subsubsection}{\numberline {2.2.7}schipholbrand}{13}{}%
+\contentsline {subsubsection}{\numberline {2.2.8}explosie in beirut}{14}{}%
+\contentsline {subsubsection}{\numberline {2.2.9}Bijlmerramp}{14}{}%
+\contentsline {subsubsection}{\numberline {2.2.10}1951}{14}{}%
+\contentsline {subsubsection}{\numberline {2.2.11}slmramp}{15}{}%
+\contentsline {subsubsection}{\numberline {2.2.12}Tsjernobyl}{15}{}%
+\contentsline {subsubsection}{\numberline {2.2.13}oekraine powergrid}{15}{}%
+\contentsline {subsubsection}{\numberline {2.2.14}Stint}{16}{}%
+\contentsline {subsubsection}{\numberline {2.2.15}Safety critical systems}{17}{}%
+\contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{17}{}%
+\contentsline {paragraph}{Afbakening van requirements Wet en regelgeving voor sluizen}{18}{}%
+\contentsline {section}{\numberline {3}Logica}{19}{}%
+\contentsline {subsection}{\numberline {3.1}Propositielogica}{19}{}%
+\contentsline {subsection}{\numberline {3.2}Predicatenlogica}{19}{}%
+\contentsline {section}{\numberline {4}Computation tree logic}{20}{}%
+\contentsline {subsection}{\numberline {4.1}Algemeen}{20}{}%
+\contentsline {subsection}{\numberline {4.2}De Kripke structuur}{20}{}%
+\contentsline {subsection}{\numberline {4.3}Soorten transitie}{21}{}%
+\contentsline {subsection}{\numberline {4.4}Tijd}{21}{}%
+\contentsline {paragraph}{Modelling en transities}{21}{}%
+\contentsline {paragraph}{Clock regions:Timed transitions en clock constraints}{21}{}%
+\contentsline {paragraph}{CTL logica}{22}{}%
+\contentsline {paragraph}{Timed automata}{22}{}%
+\contentsline {subsection}{\numberline {4.5}Guards en invarianten}{22}{}%
+\contentsline {paragraph}{Urgent locations}{22}{}%
+\contentsline {paragraph}{Commited locations}{22}{}%
+\contentsline {subsection}{\numberline {4.6}Safety}{22}{}%
+\contentsline {paragraph}{Andere duration properties}{23}{}%
+\contentsline {subsection}{\numberline {4.7}Fairness}{24}{}%
+\contentsline {paragraph}{Data variabelen}{25}{}%
+\contentsline {paragraph}{Acties}{25}{}%
+\contentsline {subsection}{\numberline {4.8}Deadlock}{25}{}%
+\contentsline {subsection}{\numberline {4.9}Zeno gedrag}{25}{}%
+\contentsline {section}{\numberline {5}Verificatie}{25}{}%
+\contentsline {paragraph}{overzicht}{26}{}%
+\contentsline {section}{\numberline {6}Conclusie}{27}{}%
+\contentsline {section}{\numberline {A}Edmud Clarke model checking samenvating}{28}{}%
+\contentsline {section}{\numberline {B}Ontwikkelgeschiedenis}{31}{}%
+\contentsline {subsection}{\numberline {B.1}Ontwerpen: 2 juni}{35}{}%
+\contentsline {subsection}{\numberline {B.2}Ontwerpen: 2 mei}{38}{}%
+\contentsline {subsection}{\numberline {B.3}Ontwerpen:4 juli }{42}{}%
+\contentsline {subsection}{\numberline {B.4}Ontwerpen: 6 juni}{49}{}%
+\contentsline {subsection}{\numberline {B.5}Ontwerpen: 8 juni }{53}{}%
+\contentsline {subsection}{\numberline {B.6}Ontwerpen: 10 april}{57}{}%
+\contentsline {subsection}{\numberline {B.7}Ontwerpen: 12 juni}{60}{}%
+\contentsline {subsection}{\numberline {B.8}Ontwerpen: 12 september}{66}{}%
+\contentsline {subsection}{\numberline {B.9}Ontwerpen: 13 april}{67}{}%
+\contentsline {subsection}{\numberline {B.10}Ontwerpen: 13 juni}{70}{}%
+\contentsline {subsection}{\numberline {B.11}Ontwerpen: 15 april}{75}{}%
+\contentsline {subsection}{\numberline {B.12}Ontwerpen:16 juli }{78}{}%
+\contentsline {subsection}{\numberline {B.13}Ontwerpen: 17 april}{82}{}%
+\contentsline {subsection}{\numberline {B.14}Ontwerpen: 1 mei}{85}{}%
+\contentsline {subsection}{\numberline {B.15}Ontwerpen: 19 september versie 2}{90}{}%
+\contentsline {subsection}{\numberline {B.16}Ontwerpen: 20 september}{93}{}%
+\contentsline {subsection}{\numberline {B.17}Ontwerpen: 22 mei}{96}{}%
+\contentsline {subsection}{\numberline {B.18}Ontwerpen: 23 juni }{100}{}%
+\contentsline {subsection}{\numberline {B.19}Ontwerpen: 26 april}{106}{}%
+\contentsline {subsection}{\numberline {B.20}Ontwerpen: 30 april versie 1}{109}{}%
