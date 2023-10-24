@@ -1,91 +1,88 @@
 \babel@toc {dutch}{}\relax 
-\contentsline {section}{\numberline {1}Inleiding}{3}{}%
-\contentsline {paragraph}{Algemeen}{3}{}%
-\contentsline {paragraph}{Probleemanalyse}{3}{}%
-\contentsline {paragraph}{Waarom nu}{3}{}%
-\contentsline {paragraph}{Gewenst resultaat }{3}{}%
-\contentsline {paragraph}{Scope}{3}{}%
-\contentsline {paragraph}{Onderzoeksvragen }{4}{}%
-\contentsline {paragraph}{Design goals}{4}{}%
-\contentsline {paragraph}{Methodologie}{4}{}%
-\contentsline {paragraph}{Afbakening}{4}{}%
-\contentsline {paragraph}{Leeswijzer}{4}{}%
+\contentsline {section}{\numberline {1}Inleiding}{2}{}%
+\contentsline {paragraph}{Algemeen}{2}{}%
+\contentsline {paragraph}{Probleemanalyse}{2}{}%
+\contentsline {paragraph}{Waarom nu}{2}{}%
+\contentsline {paragraph}{Gewenst resultaat }{2}{}%
+\contentsline {paragraph}{Scope}{2}{}%
+\contentsline {paragraph}{Onderzoeksvragen }{3}{}%
+\contentsline {paragraph}{Design goals}{3}{}%
+\contentsline {paragraph}{Leeswijzer}{3}{}%
 \contentsline {section}{\numberline {2}Theoretisch kader}{4}{}%
-\contentsline {subsection}{\numberline {2.1}Begrippen, tools en literatuur}{5}{}%
-\contentsline {paragraph}{Wat is uppaal}{5}{}%
-\contentsline {paragraph}{Wat is statistical model checking?}{5}{}%
-\contentsline {paragraph}{Waarom gebruiken we statistisch model checking?}{5}{}%
-\contentsline {paragraph}{MODE CONFUSION }{5}{}%
+\contentsline {subsection}{\numberline {2.1}Begrippen, tools en literatuur}{4}{}%
+\contentsline {paragraph}{Wat is uppaal}{4}{}%
+\contentsline {paragraph}{Wat is statistical model checking?}{4}{}%
+\contentsline {paragraph}{Waarom gebruiken we statistisch model checking?}{4}{}%
+\contentsline {paragraph}{MODE CONFUSION }{4}{}%
 \contentsline {paragraph}{Wat is automatiseringsparadox}{5}{}%
 \contentsline {paragraph}{4 variabelen model}{5}{}%
-\contentsline {paragraph}{6 Variable model}{6}{}%
+\contentsline {paragraph}{6 Variable model}{5}{}%
 \contentsline {paragraph}{World and machine samenvatting}{6}{}%
-\contentsline {paragraph}{Systeem vs software requirement}{7}{}%
-\contentsline {paragraph}{Requirementsengineering}{7}{}%
-\contentsline {paragraph}{Wat is een sluis}{8}{}%
+\contentsline {paragraph}{Systeem vs software requirement}{6}{}%
+\contentsline {paragraph}{Requirementsengineering}{6}{}%
+\contentsline {paragraph}{Wat is een sluis}{7}{}%
 \contentsline {paragraph}{Recente ontwikkelingen op het gebied van sluisautomatisering}{8}{}%
 \contentsline {subsection}{\numberline {2.2}Rampen}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Therac-25}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Therac-25}{8}{}%
+\contentsline {paragraph}{Beschrijving}{8}{}%
+\contentsline {paragraph}{Datum en Plaats}{8}{}%
+\contentsline {paragraph}{Oorzaak}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{9}{}%
+\contentsline {paragraph}{Beschrijving}{9}{}%
+\contentsline {paragraph}{Datum en Plaats}{9}{}%
+\contentsline {paragraph}{Oorzaak}{9}{}%
 \contentsline {subsubsection}{\numberline {2.2.3}China explosie 2015 Tianjin}{10}{}%
-\contentsline {subsubsection}{\numberline {2.2.4}tesla autopilot crashes}{11}{}%
-\contentsline {subsubsection}{\numberline {2.2.5}de malimissie}{12}{}%
-\contentsline {subsubsection}{\numberline {2.2.6}militair overleden door schietoefening in ossendrecht}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7}schipholbrand}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.8}explosie in beirut}{14}{}%
-\contentsline {subsubsection}{\numberline {2.2.9}Bijlmerramp}{14}{}%
-\contentsline {subsubsection}{\numberline {2.2.10}1951}{14}{}%
-\contentsline {subsubsection}{\numberline {2.2.11}slmramp}{15}{}%
-\contentsline {subsubsection}{\numberline {2.2.12}Tsjernobyl}{15}{}%
-\contentsline {subsubsection}{\numberline {2.2.13}oekraine powergrid}{15}{}%
-\contentsline {subsubsection}{\numberline {2.2.14}Stint}{16}{}%
-\contentsline {subsubsection}{\numberline {2.2.15}Safety critical systems}{17}{}%
-\contentsline {paragraph}{Ondeerzoeksresultaten naar sluisbeveiliging}{17}{}%
-\contentsline {paragraph}{Afbakening van requirements Wet en regelgeving voor sluizen}{18}{}%
-\contentsline {section}{\numberline {3}Logica}{19}{}%
-\contentsline {subsection}{\numberline {3.1}Propositielogica}{19}{}%
-\contentsline {subsection}{\numberline {3.2}Predicatenlogica}{19}{}%
-\contentsline {section}{\numberline {4}Computation tree logic}{20}{}%
-\contentsline {subsection}{\numberline {4.1}Algemeen}{20}{}%
-\contentsline {subsection}{\numberline {4.2}De Kripke structuur}{20}{}%
-\contentsline {subsection}{\numberline {4.3}Soorten transitie}{21}{}%
-\contentsline {subsection}{\numberline {4.4}Tijd}{21}{}%
-\contentsline {paragraph}{Modelling en transities}{21}{}%
-\contentsline {paragraph}{Clock regions:Timed transitions en clock constraints}{21}{}%
-\contentsline {paragraph}{CTL logica}{22}{}%
-\contentsline {paragraph}{Timed automata}{22}{}%
-\contentsline {subsection}{\numberline {4.5}Guards en invarianten}{22}{}%
-\contentsline {paragraph}{Urgent locations}{22}{}%
-\contentsline {paragraph}{Commited locations}{22}{}%
-\contentsline {subsection}{\numberline {4.6}Safety}{22}{}%
-\contentsline {paragraph}{Andere duration properties}{23}{}%
-\contentsline {subsection}{\numberline {4.7}Fairness}{24}{}%
-\contentsline {paragraph}{Data variabelen}{25}{}%
-\contentsline {paragraph}{Acties}{25}{}%
-\contentsline {subsection}{\numberline {4.8}Deadlock}{25}{}%
-\contentsline {subsection}{\numberline {4.9}Zeno gedrag}{25}{}%
-\contentsline {section}{\numberline {5}Verificatie}{25}{}%
-\contentsline {paragraph}{overzicht}{26}{}%
-\contentsline {section}{\numberline {6}Conclusie}{27}{}%
-\contentsline {section}{\numberline {A}Edmud Clarke model checking samenvating}{28}{}%
-\contentsline {section}{\numberline {B}Ontwikkelgeschiedenis}{31}{}%
-\contentsline {subsection}{\numberline {B.1}Ontwerpen: 2 juni}{35}{}%
-\contentsline {subsection}{\numberline {B.2}Ontwerpen: 2 mei}{38}{}%
-\contentsline {subsection}{\numberline {B.3}Ontwerpen:4 juli }{42}{}%
-\contentsline {subsection}{\numberline {B.4}Ontwerpen: 6 juni}{49}{}%
-\contentsline {subsection}{\numberline {B.5}Ontwerpen: 8 juni }{53}{}%
-\contentsline {subsection}{\numberline {B.6}Ontwerpen: 10 april}{57}{}%
-\contentsline {subsection}{\numberline {B.7}Ontwerpen: 12 juni}{60}{}%
-\contentsline {subsection}{\numberline {B.8}Ontwerpen: 12 september}{66}{}%
-\contentsline {subsection}{\numberline {B.9}Ontwerpen: 13 april}{67}{}%
-\contentsline {subsection}{\numberline {B.10}Ontwerpen: 13 juni}{70}{}%
-\contentsline {subsection}{\numberline {B.11}Ontwerpen: 15 april}{75}{}%
-\contentsline {subsection}{\numberline {B.12}Ontwerpen:16 juli }{78}{}%
-\contentsline {subsection}{\numberline {B.13}Ontwerpen: 17 april}{82}{}%
-\contentsline {subsection}{\numberline {B.14}Ontwerpen: 1 mei}{85}{}%
-\contentsline {subsection}{\numberline {B.15}Ontwerpen: 19 september versie 2}{90}{}%
-\contentsline {subsection}{\numberline {B.16}Ontwerpen: 20 september}{93}{}%
-\contentsline {subsection}{\numberline {B.17}Ontwerpen: 22 mei}{96}{}%
-\contentsline {subsection}{\numberline {B.18}Ontwerpen: 23 juni }{100}{}%
-\contentsline {subsection}{\numberline {B.19}Ontwerpen: 26 april}{106}{}%
-\contentsline {subsection}{\numberline {B.20}Ontwerpen: 30 april versie 1}{109}{}%
+\contentsline {paragraph}{Beschrijving}{10}{}%
+\contentsline {paragraph}{Datum en Plaats}{10}{}%
+\contentsline {paragraph}{Oorzaak}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}de malimissie}{10}{}%
+\contentsline {paragraph}{Beschrijving}{10}{}%
+\contentsline {paragraph}{Datum en Plaats}{11}{}%
+\contentsline {paragraph}{Oorzaak}{11}{}%
+\contentsline {subsubsection}{\numberline {2.2.5}schipholbrand}{11}{}%
+\contentsline {paragraph}{Beschrijving}{11}{}%
+\contentsline {paragraph}{Datum en Plaats}{11}{}%
+\contentsline {paragraph}{Oorzaak}{11}{}%
+\contentsline {subsubsection}{\numberline {2.2.6}1951}{12}{}%
+\contentsline {paragraph}{Beschrijving}{12}{}%
+\contentsline {paragraph}{Datum en Plaats}{12}{}%
+\contentsline {paragraph}{Oorzaak}{12}{}%
+\contentsline {subsubsection}{\numberline {2.2.7}slmramp}{12}{}%
+\contentsline {paragraph}{Beschrijving}{12}{}%
+\contentsline {paragraph}{Datum en Plaats}{12}{}%
+\contentsline {paragraph}{Oorzaak}{13}{}%
+\contentsline {subsubsection}{\numberline {2.2.8}Tsjernobyl}{13}{}%
+\contentsline {paragraph}{Beschrijving}{13}{}%
+\contentsline {paragraph}{Datum en Plaats}{13}{}%
+\contentsline {paragraph}{Oorzaak}{13}{}%
+\contentsline {subsubsection}{\numberline {2.2.9}Safety critical systems}{13}{}%
+\contentsline {paragraph}{Afbakening van requirements Wet en regelgeving voor sluizen}{14}{}%
+\contentsline {subsection}{\numberline {2.3}De Kripke structuur}{14}{}%
+\contentsline {subsection}{\numberline {2.4}Soorten modellen}{14}{}%
+\contentsline {subsection}{\numberline {2.5}Tijd}{14}{}%
+\contentsline {subsubsection}{\numberline {2.5.1}Een begrensde responseigenschap}{14}{}%
+\contentsline {subsubsection}{\numberline {2.5.2}Duration properties}{14}{}%
+\contentsline {paragraph}{Andere duration properties}{15}{}%
+\contentsline {subsection}{\numberline {2.6}Guards en invarianten}{15}{}%
+\contentsline {subsection}{\numberline {2.7}Deadlock}{15}{}%
+\contentsline {subsection}{\numberline {2.8}Zeno gedrag}{16}{}%
+\contentsline {section}{\numberline {3}Logica}{16}{}%
+\contentsline {subsection}{\numberline {3.1}Propositielogica}{16}{}%
+\contentsline {subsection}{\numberline {3.2}Predicatenlogica}{16}{}%
+\contentsline {subsection}{\numberline {3.3}Kwantoren}{17}{}%
+\contentsline {subsection}{\numberline {3.4}Dualiteiten}{17}{}%
+\contentsline {section}{\numberline {4}Computation tree logic}{17}{}%
+\contentsline {subsection}{\numberline {4.1}Algemeen}{17}{}%
+\contentsline {subsection}{\numberline {4.2}Operator: AG}{17}{}%
+\contentsline {subsection}{\numberline {4.3}Operator: EG}{18}{}%
+\contentsline {subsection}{\numberline {4.4}Operator: AF}{18}{}%
+\contentsline {subsection}{\numberline {4.5}Operator: EF}{18}{}%
+\contentsline {subsection}{\numberline {4.6}Operator: AX}{18}{}%
+\contentsline {subsection}{\numberline {4.7}Operator: EX}{18}{}%
+\contentsline {subsection}{\numberline {4.8}Operator: p U q}{18}{}%
+\contentsline {subsection}{\numberline {4.9}Operator: p R q}{18}{}%
+\contentsline {subsection}{\numberline {4.10}Fairness}{18}{}%
+\contentsline {paragraph}{Data variabelen}{18}{}%
+\contentsline {paragraph}{Acties}{18}{}%
+\contentsline {subsection}{\numberline {4.11}liveness properties}{18}{}%
+\contentsline {section}{\numberline {5}Conclusie}{19}{}%
