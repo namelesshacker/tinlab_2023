@@ -203,107 +203,107 @@
 	Domein eingenschappen  zijn beschrijvende statementsover een omgeving en zijn feiten. Domein hypotheses  zijn ook beschrijvende uitspraken over een omgeving, maar zijn aannames. 
 	Verwachtingen zijn ook aannames, maar dat zijn voorschrijvende uitspraken die behaald worden door actoren als personen, sensoren en actuators. 
 	
-	\paragraph{World and machine samenvatting}
-	Inderdeel van deze cursus is de studie van het artikel World as a machine \cite{jacksonworldmachine}
-	Software engineering maakt het gebruik van fysieke apparaten mogelijk. Het is een beschrijving van de machine. Het doel van een machine ligt in de wereld.
-	Commando afhandeling wordt niet  beoordeeld door examinering van de software, maar door te kijken naar de kwaliteit van de geprogrammeerde documenten en het gebruik, gemak en voldoening voor de operators.
-	Het probleem is de requirement dat ligt in de wereld en de machine is de oplossing die we bedenken. De  relatie tussen machine en wereld  blijkt uit de volgende 4 facetten:
-	\begin{itemize}
-		\item 1 modelling facet:
-		\item interface facet:
-		\item engineering facet:
-		\item problem facet: requirements, specificaties en programmas zijn subsets van  domeinen bestaande uit wereldlijke en machinale fenomenen. Decompositie van  probleem verloopt parralel en niet hierarchisch.
-	\end{itemize}
-	denial bij knowledge: net meer het wiel uitvinden
-	denial by hacking: obsessief toegewijs aan interactie met computers
-	denial by abstraction: aoftwareproblemen kunnen bevangen worden in enkele simpele woorden. Het moeilijke is problemen op te splitsen.
-	Denial by vageueness: vaag taalgebruik om probleem te verhullen
-	
-	Formal recognizable description
-	Gebruikte event als grondterm en geen english noun. Dit is reognizable.
-	De wereld is niet strongly typed
-	verschil tussen aannemen(optatief) en willen zien(indicatief)
-	
-	
-	
-	
-	\paragraph{Systeem vs software requirement}
-	Ter verduidelijking van het het verschil tussen systeemrequirement en softwarerequirement hieronder een overzicht:
-	
-	
-	Een system requirement is een uitspraak over wereld fenomenen (gedeeld of niet) of doelen
-	die bereikt moeten worden. En systeem requirement is met enige regelmaat informeel, niet precies geformuleerd.
-	Systemen gaan een zekere interactie aan met hun omgeving:Sensoren: meten fenomenen uit de omgeving (temperatuur,druk, licht, geluid, etc.). Actuatoren: veranderen iets in de omgeving (mechanische,electrisch, pneumatisch, etc.)
-	
-	Een software requirement/specifcatie is een uitspraak over gedeelde fenomenen of doelen die de machine
-	moet bereiken middels de onderdelen waar die machine uit of middels de fenomenen waar de machine controle
-	over heeft. Is doorgaans preciezer, meetbaar, exact geformuleerd.
-	
-	Software kan niet direct communiceren met de buitenwereld.Snapt derhalve niets van de buitenwereld. Kan alleen maar bestaan in en communiceren met het systeem.
-	
-	
-	\paragraph{Requirementsengineering}
-	
-	Om de juiste requirements te verzamelen en selecteren hebben we meer kennis nodig van de methoden hiervoor gebruikt in het domein van requirementsengineering.
-	\cite{jonkerTreurKlush200informativeAgents}
-	\cite{boehmBoseLeeRequirementsNegotiations}
-	\cite{muHungJinLiu2013inconsistencyReqs}
-	\cite{hunterNuseibeh1996manageSpecs}
-	
-	\cite{zavePamela4darkCorners}
-	\cite{zavePAmela1997regEngineering}.
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	what is a good software specification
-	
-	
-	\begin{itemize}
-		\item Een goed model heeft een duidelijk gespecificeerd modelleringsobject, dat wil zeggen dat het duidelijk is wat het model beschrijft.  %A good model has a clearly specified object of modelling, that is, it is clear what thing the model describes. 
-		\item Een goed model heeft een duidelijk omschreven doel en draagt (idealiter) bij aan de realisatie van dat doel. %A good model has a clearly specified purpose and (ideally) contributes to the realization of that purpose.
-		\item Een goed model is traceerbaar: elk structureel element van een model (1) komt overeen met een aspect van het modelobject, of (2) codeert voor impliciete domeinkennis, of (3) codeert voor een aanvullende aanname. %A good model is traceable: each structural element of a model either (1) corresponds to an aspect of the object of modelling, or (2) encodes some implicit domain knowledge, or (3) encodes some additional assumption. 
-		\item Een goed model is waarheidsgetrouw: relevante eigenschappen van het model moeten ook worden overgedragen op (behouden voor) het object van modellering. %A good model is truthful: relevant properties of the model should also carry over to (hold for) the object of modelling.
-		\item Een goed model is eenvoudig (maar niet te eenvoudig). %A good model is simple (but not too simple).
-		\item Een goed model is uitbreidbaar en herbruikbaar, dat wil zeggen dat het is ontworpen om te evolueren en te worden gebruikt buiten het oorspronkelijke doel. %A good model is extensible and reusable, that is, it has been designed to evolve and be used beyond its original purpose. 
-		\item Er is een goed model ontworpen en gecodeerd voor interoperabiliteit en het delen van semantiek. %A good model has been designed and encoded for interoperability and sharing of semantics. 
-	\end{itemize}
-	
-	
-	\cite{fvaandrager2322010Goodmodel}. Meer artikelen zijn: 
-	\cite{onix01102022devopmodel}
-	\cite{sulemani04012021softwareprocesmodel}
-	\cite{globalluxsoft18102017softdev}
-	\cite{wiegers30052022SRS}
-	\cite{muller06092020goodspecification}
-	\cite{informit30062008reqmanagement}
-	\cite{altexsoft15092020writingSRS}
-	
-	
-	\paragraph{Wat is een sluis}
-	Een sluis is ook een scheiding tussen 2 wateren, maar met deuren. Hierdoor is het mogelijk het waterpeil te beïnvloeden. Sluizen reguleren het waterpeil zodat schepen kunnen passeren. Een stuw is een vaste of beweegbare afdamming tussen 2 wateren. \cite{rijkSluisdef}
-	
-	\cite{woudagemaalSluizen}
-	\cite{bardetsluizenAmsterdam}
-	\cite{historischesluizen}
-	Een model van een sluispasssage kan worden gemodelleerd met procestates zoals het model aangeboden door Rijkswaterstaat
-	\begin{center}
-		
-		\includegraphics[width=10cm]{stroomschema_sluispassage.png} % also works with logo.pdf
-		
-	\end{center}
-	
-	
-	
-	
-	\cite[p.79~--113]{rijksoverheidSluizen}
-	\cite[p.159]{rijksoverheidSluisStroomschema},
-	
-	
-	
-	
-	\paragraph{Recente ontwikkelingen op het gebied van sluisautomatisering}
-	
-	Het ministerie van verkeer en Waterstaat wil in het kader van het klimaatakkoord en onderzoek laten uitvoeren naar de staat van het sluizenpark in Nederland. Het onderzoek moet zich richten op het ontwerpen en ontwikkelen van een geautomatiseerd sluismodel dat geschikt is voor een brede toepassing. In het onderzoek moet naar voren komen wat de huidige staat is van de sluizen met oog op veiligheid, efficiëntie, capaciteit, onderhoud, duurzaamheid en automatisering. Het onderzoek geeft aan hoe een volledig model worden opgeleverd opdat ontwerp van verschillend volledig geautomatiseerde sluizen in de toekomst geautomatiseerd kunnen worden.  
+%	\paragraph{World and machine samenvatting}
+%	Inderdeel van deze cursus is de studie van het artikel World as a machine \cite{jacksonworldmachine}
+%	Software engineering maakt het gebruik van fysieke apparaten mogelijk. Het is een beschrijving van de machine. Het doel van een machine ligt in de wereld.
+%	Commando afhandeling wordt niet  beoordeeld door examinering van de software, maar door te kijken naar de kwaliteit van de geprogrammeerde documenten en het gebruik, gemak en voldoening voor de operators.
+%	Het probleem is de requirement dat ligt in de wereld en de machine is de oplossing die we bedenken. De  relatie tussen machine en wereld  blijkt uit de volgende 4 facetten:
+%	\begin{itemize}
+%		\item 1 modelling facet:
+%		\item interface facet:
+%		\item engineering facet:
+%		\item problem facet: requirements, specificaties en programmas zijn subsets van  domeinen bestaande uit wereldlijke en machinale fenomenen. Decompositie van  probleem verloopt parralel en niet hierarchisch.
+%	\end{itemize}
+%	denial bij knowledge: net meer het wiel uitvinden
+%	denial by hacking: obsessief toegewijs aan interactie met computers
+%	denial by abstraction: aoftwareproblemen kunnen bevangen worden in enkele simpele woorden. Het moeilijke is problemen op te splitsen.
+%	Denial by vageueness: vaag taalgebruik om probleem te verhullen
+%	
+%	Formal recognizable description
+%	Gebruikte event als grondterm en geen english noun. Dit is reognizable.
+%	De wereld is niet strongly typed
+%	verschil tussen aannemen(optatief) en willen zien(indicatief)
+%	
+%	
+%	
+%	
+%	\paragraph{Systeem vs software requirement}
+%	Ter verduidelijking van het het verschil tussen systeemrequirement en softwarerequirement hieronder een overzicht:
+%	
+%	
+%	Een system requirement is een uitspraak over wereld fenomenen (gedeeld of niet) of doelen
+%	die bereikt moeten worden. En systeem requirement is met enige regelmaat informeel, niet precies geformuleerd.
+%	Systemen gaan een zekere interactie aan met hun omgeving:Sensoren: meten fenomenen uit de omgeving (temperatuur,druk, licht, geluid, etc.). Actuatoren: veranderen iets in de omgeving (mechanische,electrisch, pneumatisch, etc.)
+%	
+%	Een software requirement/specifcatie is een uitspraak over gedeelde fenomenen of doelen die de machine
+%	moet bereiken middels de onderdelen waar die machine uit of middels de fenomenen waar de machine controle
+%	over heeft. Is doorgaans preciezer, meetbaar, exact geformuleerd.
+%	
+%	Software kan niet direct communiceren met de buitenwereld.Snapt derhalve niets van de buitenwereld. Kan alleen maar bestaan in en communiceren met het systeem.
+%	
+%	
+%	\paragraph{Requirementsengineering}
+%	
+%	Om de juiste requirements te verzamelen en selecteren hebben we meer kennis nodig van de methoden hiervoor gebruikt in het domein van requirementsengineering.
+%	\cite{jonkerTreurKlush200informativeAgents}
+%	\cite{boehmBoseLeeRequirementsNegotiations}
+%	\cite{muHungJinLiu2013inconsistencyReqs}
+%	\cite{hunterNuseibeh1996manageSpecs}
+%	
+%	\cite{zavePamela4darkCorners}
+%	\cite{zavePAmela1997regEngineering}.
+%	
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	
+%	what is a good software specification
+%	
+%	
+%	\begin{itemize}
+%		\item Een goed model heeft een duidelijk gespecificeerd modelleringsobject, dat wil zeggen dat het duidelijk is wat het model beschrijft.  %A good model has a clearly specified object of modelling, that is, it is clear what thing the model describes. 
+%		\item Een goed model heeft een duidelijk omschreven doel en draagt (idealiter) bij aan de realisatie van dat doel. %A good model has a clearly specified purpose and (ideally) contributes to the realization of that purpose.
+%		\item Een goed model is traceerbaar: elk structureel element van een model (1) komt overeen met een aspect van het modelobject, of (2) codeert voor impliciete domeinkennis, of (3) codeert voor een aanvullende aanname. %A good model is traceable: each structural element of a model either (1) corresponds to an aspect of the object of modelling, or (2) encodes some implicit domain knowledge, or (3) encodes some additional assumption. 
+%		\item Een goed model is waarheidsgetrouw: relevante eigenschappen van het model moeten ook worden overgedragen op (behouden voor) het object van modellering. %A good model is truthful: relevant properties of the model should also carry over to (hold for) the object of modelling.
+%		\item Een goed model is eenvoudig (maar niet te eenvoudig). %A good model is simple (but not too simple).
+%		\item Een goed model is uitbreidbaar en herbruikbaar, dat wil zeggen dat het is ontworpen om te evolueren en te worden gebruikt buiten het oorspronkelijke doel. %A good model is extensible and reusable, that is, it has been designed to evolve and be used beyond its original purpose. 
+%		\item Er is een goed model ontworpen en gecodeerd voor interoperabiliteit en het delen van semantiek. %A good model has been designed and encoded for interoperability and sharing of semantics. 
+%	\end{itemize}
+%	
+%	
+%	\cite{fvaandrager2322010Goodmodel}. Meer artikelen zijn: 
+%	\cite{onix01102022devopmodel}
+%	\cite{sulemani04012021softwareprocesmodel}
+%	\cite{globalluxsoft18102017softdev}
+%	\cite{wiegers30052022SRS}
+%	\cite{muller06092020goodspecification}
+%	\cite{informit30062008reqmanagement}
+%	\cite{altexsoft15092020writingSRS}
+%	
+%	
+%	\paragraph{Wat is een sluis}
+%	Een sluis is ook een scheiding tussen 2 wateren, maar met deuren. Hierdoor is het mogelijk het waterpeil te beïnvloeden. Sluizen reguleren het waterpeil zodat schepen kunnen passeren. Een stuw is een vaste of beweegbare afdamming tussen 2 wateren. \cite{rijkSluisdef}
+%	
+%	\cite{woudagemaalSluizen}
+%	\cite{bardetsluizenAmsterdam}
+%	\cite{historischesluizen}
+%	Een model van een sluispasssage kan worden gemodelleerd met procestates zoals het model aangeboden door Rijkswaterstaat
+%	\begin{center}
+%		
+%		\includegraphics[width=10cm]{stroomschema_sluispassage.png} % also works with logo.pdf
+%		
+%	\end{center}
+%	
+%	
+%	
+%	
+%	\cite[p.79~--113]{rijksoverheidSluizen}
+%	\cite[p.159]{rijksoverheidSluisStroomschema},
+%	
+%	
+%	
+%	
+%	\paragraph{Recente ontwikkelingen op het gebied van sluisautomatisering}
+%	
+%	Het ministerie van verkeer en Waterstaat wil in het kader van het klimaatakkoord en onderzoek laten uitvoeren naar de staat van het sluizenpark in Nederland. Het onderzoek moet zich richten op het ontwerpen en ontwikkelen van een geautomatiseerd sluismodel dat geschikt is voor een brede toepassing. In het onderzoek moet naar voren komen wat de huidige staat is van de sluizen met oog op veiligheid, efficiëntie, capaciteit, onderhoud, duurzaamheid en automatisering. Het onderzoek geeft aan hoe een volledig model worden opgeleverd opdat ontwerp van verschillend volledig geautomatiseerde sluizen in de toekomst geautomatiseerd kunnen worden.  
 	
 	
 	\subsection{Rampen}
@@ -572,11 +572,11 @@ Terwijl de therac 20 afhankelijk was van mechanische vergrendelingen werd er bij
 	
 	\paragraph{Beschrijving}
 		
-	Ethiopian Airlines Flight 302 was a scheduled international passenger flight from Bole International Airport in Addis Ababa, Ethiopia to Jomo Kenyatta International Airport in Nairobi, Kenya. On 10 March 2019, the Boeing 737 MAX 8 aircraft which operated the flight crashed near the town of Bishoftu six minutes after takeoff, killing all 157 people aboard.
-	
-	Flight 302 is Ethiopian Airlines's deadliest accident to date, surpassing the fatal hijacking of Flight 961 resulting in a crash near the Comoros in 1996.[2][3] It is also the deadliest aircraft accident to occur in Ethiopia, surpassing the crash of an Ethiopian Air Force Antonov An-26 in 1982, which killed 73.[4]
-	
-	This was the second MAX 8 accident in less than five months after the crash of Lion Air Flight 610.[2][5][6][7] Both crashes prompted a two-year worldwide long term grounding of the jet and an investigation into how the aircraft was approved for passenger service.
+Ethiopische Airlines-vlucht 302 was een geplande internationale passagiersvlucht van Bole International Airport in Addis Abeba, Ethiopië naar Jomo Kenyatta International Airport in Nairobi, Kenia. Op 10 maart 2019 stortte het Boeing 737 MAX 8-vliegtuig dat de vlucht uitvoerde zes minuten na het opstijgen neer nabij de stad Bishoftu, waarbij alle 157 mensen aan boord omkwamen.
+
+Vlucht 302 is het dodelijkste ongeval van Ethiopië Airlines tot nu toe en overtreft de fatale kaping van vlucht 961, resulterend in een crash nabij de Comoren in 1996. Het is ook het dodelijkste vliegtuigongeluk dat zich in Ethiopië heeft voorgedaan, en overtreft de crash van een Antonov An-26 van de Ethiopische luchtmacht in 1982, waarbij 73 mensen omkwamen.
+
+Dit was het tweede MAX 8-ongeluk in minder dan vijf maanden na de crash van Lion Air-vlucht 610. Beide crashes waren aanleiding voor een twee jaar durende wereldwijde langdurige aan de grond houden van het vliegtuig en een onderzoek naar de manier waarop het vliegtuig werd goedgekeurd voor passagiersvervoer.
 	\paragraph{Datum en Plaats}
 	\newline \indent  Op  10/03/2019 2019 stort vlucht ET302 van Ethiopian airlines neer.  \cite{gates18112020boeingcrisis},
 	\cite{boeing737maxsoftwareprobles},\cite{avetisov19032019boeingmalwarestate},\cite{thompson23112020nationalsecurityboeing},
@@ -1511,11 +1511,11 @@ Terwijl de therac 20 afhankelijk was van mechanische vergrendelingen werd er bij
 	
 	De kennis van de mens is veranwoordelijk voor jet scheppen van kennis. Opdoen van kennis van veiligeheidsintegriteit ten overstaan van ontwetendheid. Kennisdoelen zijn daarom altijd belangrijk en kunnen worden onderscheiden in 3 domeinen: cognitief, affectief en psychomotorisch.\cite{winceckCriticalToSafety}
 	Een Veiligheidsanalyse is een manier voor het evalueren  van ongelukken en risicos op verschillende niveaus. Met een veiligheidsanalyse wordt gekeken naar mensen en systemen die worden blootgesteld aan een gevaar/risico en de mogelijkheid deze te minimaliseren.
-	Veiligheid is moeilijk te defiinieren omdat het een vaag concept is.
+	Veiligheid is moeilijk te definiëren omdat het een vaag concept is.
 	Een veiligheidsanalist  moet kennis hebben van het systeem, maar ook ervaring met het systeem en vooral hoe een fout in het systeem zich voordoet.
 	Volgens Stoney\cite{chambersHazardAnalysisSCS} is veiligheid een aspect dat de veiligheid van mensenleven  of de omgevig niet in gevaar brengt.
-	De interactie tussen systeem en omgeing levert kennis op door ad-hoc ervaring. Maar ook is kennis van abstractis en systeemdoelen belangrijk.
-	Het kwalificeren van informatie moet ook op waarde geschat worden Een verkeerde schatting kan fataal zijn. Zelfs als een veiliegheidsanalse is is gedaan waarbij risicos zijn gedefinieerd en geprioretiseerd is een definitie vaneen veiligheidsnivea moetlik. Sos zijn hier richtlijnen voor en soms ook niet.
+	De interactie tussen systeem en omgeving levert kennis op door ad-hoc ervaring. Maar ook is kennis van abstractie en systeemdoelen belangrijk.
+	Het kwalificeren van informatie moet ook op waarde geschat worden Een verkeerde schatting kan fataal zijn. Zelfs als een veiligheidsanalyse  is gedaan waarbij risicos zijn gedefinieerd en geprioretiseerd is een definitie van een veiligheidsniveau nodig. Soms zijn hier richtlijnen voor en soms ook niet.
 	Er zijn voorbeelden van tools en technieken te gebruiken voor een veiligheidsanalyse. En dat zijn 
 	\begin{enumerate}
 		\item   checklists voor critical safety items
@@ -1583,16 +1583,23 @@ Terwijl de therac 20 afhankelijk was van mechanische vergrendelingen werd er bij
 %	Dan is er nog de Beveiligde VPN oplossing. M2M Services levert aan inmiddels 220 gemeenten en waterschappen beveiligde connectiviteitsoplossingen voor het beheer van pompen, riolen en gemalen. Om risico’s op beveiligingsincidenten te voorkomen maakt het bedrijf gebruik van een VPN oplossing, waarbij de verbinding optimaal beveiligd is middels encryptie en authenticatie\cite{waterwerkNED}.
 %	Veiligheid op het water én op het land Gebruik van lampbewaking \cite{veiligheidwaterland}. 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\paragraph{Afbakening van requirements Wet en regelgeving voor sluizen}
-	Omdat we in dit onderzoek uitgaan van het uitbreiden van bestaande sluizen is er literatuurstudie gedaan naar sluizen. In de archieven van het ministerie van verkeer en waterstaat is er het rapport Design of waterlocks\cite{CivilEngineeringDivision}.
-	Het programma van requirements kunnen we in ons model niet helemaal overnemen. 
-	Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind, morphologie en bodemeigenschappen.
+%	\paragraph{Afbakening van requirements Wet en regelgeving voor sluizen}
+%	Omdat we in dit onderzoek uitgaan van het uitbreiden van bestaande sluizen is er literatuurstudie gedaan naar sluizen. In de archieven van het ministerie van verkeer en waterstaat is er het rapport Design of waterlocks\cite{CivilEngineeringDivision}.
+%	Het programma van requirements kunnen we in ons model niet helemaal overnemen. 
+%	Zo zijn er precondities zaols topgrafie,bestaande watersluizen,waterlevel, wind, morphologie en bodemeigenschappen.
 	
 	\setion{Modellen}
 	
 	\subsection{De Kripke structuur}
 	
 	\subsection{Soorten modellen}
+	
+	
+	\subsubsection{LTL}
+	
+	\subsubsection{CTL}
+	
+	\subsubsection{buchi Automata}
 	
 	\subsection{Tijd}
 	\subsubsection{Een begrensde responseigenschap}
@@ -1670,6 +1677,28 @@ Terwijl de therac 20 afhankelijk was van mechanische vergrendelingen werd er bij
 	\end{itemize}
 	
 	\subsection{Guards en invarianten}
+	
+	he system is a composition of parallel processes
+	each process is modeled as an automaton
+	the automaton has a set of positions,
+	position changes are done using edges /
+	transitions.
+	The state of the system is characterized by
+	the current
+	position of each automaton,
+	values of variables, and
+	clock status.
+	transitions can be controlled using guards
+	and synchronizations
+	guard is a condition over variables and clocks
+	specifying when a transition is possible.
+	
+	
+	Invariant . . . Conjunction of conditions of the form x <e or x <= e,
+	where
+	x is a link to a clock,
+	e is calculated to an integer.
+	It can refer to clocks, integer variables, constants.
 	
  
 	
@@ -1762,8 +1791,77 @@ Terwijl de therac 20 afhankelijk was van mechanische vergrendelingen werd er bij
 	Er zijn hoofdzakelijk twee soorten kwantoren: universele kwantoren en existentiële kwantoren. Daarnaast hebben we ook andere soorten kwantoren, zoals geneste kwantoren en kwantoren in standaard Engels gebruik. Kwantificator wordt voornamelijk gebruikt om aan te tonen dat voor hoeveel elementen een beschreven predikaat waar is. Het laat ook zien dat voor alle mogelijke waarden of voor sommige waarde(n) in het universum van het discours het predikaat waar is of niet.
 	
 %	https://www.javatpoint.com/quantifiers-in-discrete-mathematics
-	
+
+Tot dusverre hebben wij in de voorbeelduitspraken “voor alle x” en “er is een x” gekoppeld
+aan alle voorkomens van x in een universum. De uitspraak “er is een x in het
+universum van x met de eigenschap P” wordt weergegeven als:
+
+
+Soms willen wij zo’n universum beperken. Zo’n beperkt deel van een universum, een
+domein, is het gebied waaruit de gebonden variabele moet putten. De beschrijving van
+het domein D(x) wordt onder de kwantor geplaatst.
+
+
+De beschrijving van het domein D(x) is zelf ook een predikaat. Het is een eigenschap D
+die toegekend wordt aan de variabele x. Het is mogelijk dat zo’n domein D leeg is. Men
+zou dat kunnen noteren met :9x D(x). Het lege domein wordt meestal aangegeven met
+het Q teken voor een leeg domein:
+
+In de volgende voorbeelden wordt het domein van de kwantor beschreven met een predikaat
+(1 < x < 4). De uitspraak “alle getallen in het domein van de getallen tussen de een
+en de vier, zijn priemgetallen” wordt genoteerd als:
+
+Wij kunnen dit ook schrijven als “alle getallen, indien zij tussen een en vier liggen, zijn
+priemgetallen”. Het domein is implicatief gekoppeld aan de eigenschap P(x). Dit noemen
+wij een domeinoverheveling:
+
+Zo’n overheveling van het domein kunnen wij eveneens toepassen in een uitspraak met
+een existenti¨ele kwantor. De uitspraak “er is een getal tussen de een en vier, dat een
+priemgetal is” wordt genoteerd als:
+
+Deze uitspraak is het zelfde als “er is een getal, dat tussen de een en vier ligt en priemgetal
+is”. Het domein wordt conjunctief gekoppeld aan de eigenschap P(x):
+
+
+Als er geen domein wordt opgegeven, dan bedoelt men alle objecten in het universum van
+x. Zo’n universum kan eindig of oneindig veel objecten bevatten. Het studentenuniversum
+is bijvoorbeeld eindig, daarentegen is het universum van de re¨ele getallen oneindig.
+In dit hoofdstuk behandelen wij de kwantorformules over eindige universa. Gelukkig zijn
+wij in de informatica tevreden met eindige universa voor onze algoritmen. Eindige universa
+worden vaak aangegeven met symbolische grenzen, zoals bijvoorbeeld: 0;1;2: : :n.
+In hoofdstuk 5 worden kwantorformules afgeleid die algemeen geldig zijn, ook voor oneindige
+universa.
+
+Met de universele kwantor 8x bedoelen wij alle waarden van x binnen het opgegeven
+domein. Als het domein niet wordt opgegeven, dan bedoelen wij een of meer waarden x
+uit een eindig universum. Bijvoorbeeld:
+
+
+Met de existenti¨ele kwantor 9x bedoelen wij ´e´en of meer waarden van x uit het opgegeven
+domein. Als het domein niet wordt opgegeven, dan bedoelen wij een of meer waarden x
+uit een eindig universum. Bijvoorbeeld:
+
+
+
+
+
 	\subsection{Dualiteiten}
+	The identities in Table 1-1 are arranged in pairs, as, for example, (2a) and (2b).We now consider the principle
+	behind this arrangement. Suppose E is an equation of set algebra. The dual E
+	∗ of E is the equation obtained by
+	replacing each occurrence of ∪, ∩, U and ∅ in E by ∩, ∪, ∅, and U, respectively. For example, the dual of
+	(U ∩ A) ∪ (B ∩ A) = A is (∅ ∪ A) ∩ (B ∪ A) = A
+	Observe that the pairs of laws in Table 1-1 are duals of each other. It is a fact of set algebra, called the principle
+	of duality, that if any equation E is an identity then its dual E
+	∗ is also an identity.
+	
+		book discrecte match by schaum in ch 1.5
+	Theorem 15.1 (Principle of Duality): The dual of any theorem in a Boolean algebra is also a theorem.
+	In other words, if any statement is a consequence of the axioms of a Boolean algebra, then the dual is also a
+	consequence of those axioms since the dual statement can be proven by using the dual of each step of the proof
+	of the original statement.
+	
+	book discrecte match by schaum in ch 15.3
 	
 	
 	Principle of Duality in Discrete Mathematics
