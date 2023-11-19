@@ -1910,21 +1910,23 @@
 	\section{Computation tree logic}
 	
 	\subsection{Algemeen}
-	Computational Tree Logic (CTL) is een vertakkingstijdlogica
+	Computatieboomlogica (CTL) is een vertakkingstijdlogica
 	dat omvat zowel de propositionele connectieven als
 	temporele verbindingen AX, EX, AU, EU, AG, EG, AF,
-	en EF. \newline
-
-%	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. De kripke structuur is een set van locaties, transities, guards, klokken en data-variabelen .
+	en EF.
 	
-	CTL Logica an worden uitgebreid met Temporal logic. Dat is een formele taal voor het specificeren en redeneren over hoe de het gedrag van een systeem verandert in de loop van de tijd
-	De temporele logica breidt de propositielogica uit met modale/temporele operatoren.
-		Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
-	States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
-	Een belangrijk gebruik bij temporele logica is de representatie van toekomstige systeemeigenschappen
-	gecontroleerd door een modelchecker. \newline
-	De eerder genoemde temporele verbindingen beginnen met  'A' of 'E'. Informeel betekenen A en E ‘langs alle paden’ en ‘langs 	ten minste één pad”, respectievelijk; terwijl X, F, G en
+	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. De kripke structuur is een set van locaties, transities, guards, klokken en data-variabelen .
+	
+	Temporal logic
+	− formele taal voor het specificeren en redeneren over hoe de
+	Het gedrag van een systeem verandert in de loop van de tijd
+	− breidt de propositielogica uit met modale/temporele operatoren
+	− een belangrijk gebruik: representatie van toekomstige systeemeigenschappen
+	gecontroleerd door een modelchecker
+	
+	
+	Informeel betekenen A en E ‘langs alle paden’ en ‘langs
+	ten minste één pad”, respectievelijk; terwijl X, F, G en
 	U verwijst naar ‘volgende staat’, ‘een toekomstige staat’, ‘hele toekomst’
 	staten,” en “Tot.”
 	
@@ -1933,12 +1935,9 @@
 	dat hangt af van een transitiesysteem M = (S, →, L), a
 	toestand s van M, en een CTL-formule φ:
 	
-	De Syntaxis van CTL is opgesplitst in state- en padformules en voldoet aan volgende:
-	\begin{enumerate}
-		\item  specificeer respectievelijk eigenschappen van toestanden/paden
-			\item een CTL-formule is een toestandsformule
-	\end{enumerate}
-
+	Syntaxis van CTL is opgesplitst in state- en padformules
+	− specificeer respectievelijk eigenschappen van toestanden/paden
+	− een CTL-formule is een toestandsformule
 	
 	
 	State formulae: 
@@ -1948,96 +1947,97 @@
 	Path formulae 
 	waarbij φ een toestandsformule (stateformula) is
 	
-	Bij CTL-logica moet elke padkwantificator  worden gevolgd door een temporele kwantificator in de
-	syntactische boom van elke formule.
+	Elke padkwantificator moet worden gevolgd door een temporele kwantificator in de
+	syntactische boom van elke formule
 	
 	
-%Gegeven een CTL-formule φ en een eindig presenteerbaar model M, geldt M |= φ?
-%◮ Eindig presenteerbare boom = transitiesysteem over AP.
-%◮ De boom = de ontvouwing van A.
-%Let op het verschil met LTL-modellen:
-%◮ Een transitiesysteem belichaamt een ontelbare reeks modellen voor LTL!
-%◮ Een transitiesysteem belichaamt een uniek model voor CTL!
-%	
-%
-%	
-%	• Assumptions:
-%	• Finite number of processes, each having a finite number of
-%	finite-valued variables.
-%	• Finite length of CTL formula
-%	• Problem: Determine whether φ is true in a finite structure M.
-%	• Algorithm overview:
-%	1 Convert φ in terms of AF, EU, EX, ∧, ∨, ⊥.
-%	2 Label the states of M with the subformulas of φ that are satisfied
-%	there.
-%	3 If starting state s0 is labeled with φ, then φ holds on M; i.e.,
-%	(s0 ∈ {s|M,s |= φ}) ⇒ (M |= φ)
-%	
-%	• Suppose ψ is a subformula of φ and states satisfying all the
-%	immediate subformulas of ψ have already been labeled.
-%	• We want to determine which states to label with ψ.
-%	• If ψ is:
-%	• ⊥: Then no states are labeled with ⊥
-%	• p: label s with p if p ∈ L(s).
-%	• ψ1 ∧ ψ2: label s with ψ1 ∧ ψ2 if s is already labeled both with ψ1 and
-%	with ψ2.
-%	• ¬ψ1
-%	: label s with ¬ψ1
-%	if s is not already labeled with ψ1
-%	.
-%	• EX ψ1
-%	: label any state with EX ψ1
-%	if one of its successors is labeled
-%	with ψ1
-%	.
+	Gegeven een CTL-formule φ en een eindig presenteerbaar model M, geldt M |= φ?
+	◮ Eindig presenteerbare boom = transitiesysteem over AP.
+	◮ De boom = de ontvouwing van A.
+	Let op het verschil met LTL-modellen:
+	◮ Een transitiesysteem belichaamt een ontelbare reeks modellen voor LTL!
+	◮ Een transitiesysteem belichaamt een uniek model voor CTL!
+	
+	CTL Model Checking
+	
+	• Assumptions:
+	• Finite number of processes, each having a finite number of
+	finite-valued variables.
+	• Finite length of CTL formula
+	• Problem: Determine whether φ is true in a finite structure M.
+	• Algorithm overview:
+	1 Convert φ in terms of AF, EU, EX, ∧, ∨, ⊥.
+	2 Label the states of M with the subformulas of φ that are satisfied
+	there.
+	3 If starting state s0 is labeled with φ, then φ holds on M; i.e.,
+	(s0 ∈ {s|M,s |= φ}) ⇒ (M |= φ)
+	
+	• Suppose ψ is a subformula of φ and states satisfying all the
+	immediate subformulas of ψ have already been labeled.
+	• We want to determine which states to label with ψ.
+	• If ψ is:
+	• ⊥: Then no states are labeled with ⊥
+	• p: label s with p if p ∈ L(s).
+	• ψ1 ∧ ψ2: label s with ψ1 ∧ ψ2 if s is already labeled both with ψ1 and
+	with ψ2.
+	• ¬ψ1
+	: label s with ¬ψ1
+	if s is not already labeled with ψ1
+	.
+	• EX ψ1
+	: label any state with EX ψ1
+	if one of its successors is labeled
+	with ψ1
+	.
 	
 	
-%	https://www.uio.no/studier/emner/matnat/ifi/INF5140/v17/slides/clt-antonio.pdf
-%	
-%	
-%	
-%	https://www.inf.ed.ac.uk/teaching/courses/propm/papers/CTL.pdf
-%	
-%	
-%	https://www.cs.cmu.edu/~emc/15414-f12/lecture/temporal_logics.pdf
-%	https://stackoverflow.com/questions/37516092/how-can-i-change-these-into-ctl-spec-in-nusmv-model
-%	https://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2011/7/poly_logiques_temporelles.pdf
-%	https://ltsmin.utwente.nl/assets/man/ltsmin-ctl.html
-%	https://www.inf.unibz.it/~artale/FM/slide4.pdf
-%	https://www.depts.ttu.edu/cs/research/documents/ksattlc.pdf
-%	https://www.cs.utexas.edu/~draju/Verification/class2.pdf
-%	https://www.cl.cam.ac.uk/~djg11/pubs/temporal.html
+	https://www.uio.no/studier/emner/matnat/ifi/INF5140/v17/slides/clt-antonio.pdf
 	
 	
 	
+	https://www.inf.ed.ac.uk/teaching/courses/propm/papers/CTL.pdf
+	
+	
+	https://www.cs.cmu.edu/~emc/15414-f12/lecture/temporal_logics.pdf
+	https://stackoverflow.com/questions/37516092/how-can-i-change-these-into-ctl-spec-in-nusmv-model
+	https://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2011/7/poly_logiques_temporelles.pdf
+	https://ltsmin.utwente.nl/assets/man/ltsmin-ctl.html
+	https://www.inf.unibz.it/~artale/FM/slide4.pdf
+	https://www.depts.ttu.edu/cs/research/documents/ksattlc.pdf
+	https://www.cs.utexas.edu/~draju/Verification/class2.pdf
+	https://www.cl.cam.ac.uk/~djg11/pubs/temporal.html
 	
 	
 	
-		Een overzicht van meerdere temporele operators:
+	
+	
+	
+	Een overzicht van meerde temporal operators:
 	\begin{enumerate}
-		\item F ooit of in de doekomst, The future time operator (F) is used to specify
+		\item F sometime in the Future, The future time operator (F) is used to specify
 		that some property eventually holds at some
 		state in our path
-		\item G Voor alle paden vanaf de huidige ppositie, The global operator (G) is used to specify that
+		\item G Globally in the future, The global operator (G) is used to specify that
 		some property holds for all states of a particular path.
-		\item X de volgende state, The next time operator (X) is used to specify
+		\item X neXtime, The next time operator (X) is used to specify
 		that some property holds in the second state
 		of a path.
-		\item U totdat, The until operator (U) is a binary operator,
+		\item U until, The until operator (U) is a binary operator,
 		and is used to specify that the first property
 		holds in all states preceding the one where the
 		second property is satisfied
-		\item R de release operator, The release operator (R) is also a binary operator, and is used to specify that the second	property holds in all states along a path up to
+		\item R the release operator, The release operator (R) is also a binary operator, and is used to specify that the second
+		property holds in all states along a path up to
 		and including the first state that satisfies the
 		first property. The first property is not required
 		to be eventually satisfied.
 	\end{enumerate}
-%	Path quantifiers: 
-%	\begin{enumerate}
-%		\item E there Exists a path
-%		\item A in All paths
-%		
-%	\end{enumerate}
+	Path quantifiers: 
+	\begin{enumerate}
+		\item E there Exists a path
+		\item A in All paths
+		
+	\end{enumerate}
 	
 	%	\subsection{De Kripke structuur}
 	%	Een getimede automatisering is een 6-tupel A = ($\Sigma$, S, $S_0$, X, I, T) zodat: \\
@@ -2210,20 +2210,22 @@
 	We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. 
 	
 	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
-
-
+	
+	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
+	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
+	States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
 	
 	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
 	
-	AG P: in all possible execution paths, P is always true.  Ofwel voor alle paden geldt dat p geldig is in alle states.
-
+	AG P: in all possible execution paths, P is always true. 
 	
-
+	
+	
 	\subsection{Operator: EG}
- 
-	EG P: in at least one execution path, P is always true. Ofwel, in ten minste een pad geldt dat P in alle states waar is
+	EGp - p holds globally.
+	EG P: in at least one execution path, P is always true.
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een enkele reeks van opeenvolgende toestanden.
-    In de huidige reeks heeft elke toestand een label p , en  is de atomaire toestandsformule p waar in die toestand behorend tot deze reeks.
+	In de huidige reeks heeft elke toestand een label p , en  is de atomaire toestandsformule p waar in die toestand behorend tot deze reeks.
 	
 	
 	\subsection{Operator: AF}
@@ -2233,12 +2235,12 @@
 	
 	Repeat: label any state with AF ψ1 if all successor states are labeled
 	with AF ψ1, until there is no change.
-		AF P: in all possible execution paths, sooner or later P will be true. Ofwel in voor alle paden geldt, dat vroeg of laat p geldig is.
-		
-		Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Deze vertakkende tijdpadformule strekt zich uit over meerdere paden met in de toekomst een geldige  opvolgende  toestand.
-		 Als voor alle paden geldt dat deze vanaf de huidige toestan er in  de toekomst een toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand.
-		
-		
+	AF P: in all possible execution paths, sooner or later P will be true.
+	
+	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Deze vertakkende tijdpadformule strekt zich uit over meerdere paden met in de toekomst een geldige  opvolgende  toestand.
+	Als voor alle paden geldt dat deze vanaf de huidige toestan er in  de toekomst een toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand.
+	
+	
 	\subsection{Operator: EF}
 	EF, there exists a path where finally ,from the current state, along which some state satisfies
 	EF P: in at least one execution path, sooner or later P will be true.
@@ -2306,8 +2308,8 @@
 	https://ltsmin.utwente.nl/assets/man/ltsmin-ctl.html
 	
 	
-
-
+	
+	
 	AX P: in all possible execution paths, in the next state P is true.
 	A[P U Q]: in all possible execution paths, P is true * until Q is true (at least once).
 	
@@ -2319,7 +2321,7 @@
 	
 	https://stackoverflow.com/questions/37516092/how-can-i-change-these-into-ctl-spec-in-nusmv-model
 	
-
+	
 	
 	
 	\subsection{Fairness}
