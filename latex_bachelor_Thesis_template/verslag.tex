@@ -49,74 +49,76 @@
 	\newpage
 	\section{Inleiding}
 	
-	
-	\paragraph{Algemeen}
-	
-	Het ministerie van verkeer en Waterstaat wil in het kader van het klimaatakkoord en onderzoek laten uitvoeren naar de staat van het sluizenpark in Nederland. Het onderzoek moet zich richten op het ontwerpen en ontwikkelen van een geautomatiseerd sluismodel dat geschikt is voor een brede toepassing. In het onderzoek moet naar voren komen wat de huidige staat is van de sluizen met oog op veiligheid, efficiëntie, capaciteit, onderhoud, duurzaamheid en automatisering. Het onderzoek geeft aan hoe een volledig model worden opgeleverd opdat ontwerp van verschillend volledig geautomatiseerde sluizen in de toekomst geautomatiseerd kunnen worden.  
-	
-	
-	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	\paragraph{Probleemanalyse}
-	
-	Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renovatie van een groot aantal sluizen noodzakelijk is.  Uit een eerste verkenning is gebleken  dat het gecombineerd renoveren en automatiseren van het Nederlandsesluizenpark een aanzienlijke verbetering kan opleveren t.a.v. 
-	Op  het  ministerie  van  infrastructuur  enwaterstaat is helaas onvoldoende kennis van ict en systemen aanwezig om eenen ander uit te voeren 
-	
-	\paragraph{Waarom nu}
-	In  het  kader  van  het  onlangs  afgesloten  klimaatakkoord  heeft  de  Nederlandseoverheid  daarom  besloten  over  te  gaan  tot  een  ingrijpende  renovatie  van  dediverse  sluizen  die  ons  land  rijk  is.     
-	
-	\paragraph{Gewenst resultaat }
-	
-	
-	Wij vragen u een model (of een onderling samenhangend aantal modellen)aan  te  leveren,  opdat  ontwerpen  van  verschillende,  volledig  geautomatiseerdesluizen in de toekomst gerealiseerd kunnen worden. 
-	Zoals  gesteld  in  de  brief  is  het  de  bedoeling  dat  een  sluis  gemodelleerd  wordten  dat  bewezen  kan  worden  dat  de  te  bouwen  sluis  een  aantal  eigenschappenbezit.  
-	
-	Ons doel is een uppaal model van een sluis op te leveren. We wilen een fysiek systeem vastleggen in software, ofwel een domeini uit de echte wereld overplaatsen naar het conditionele. De phenomenen  uit de echte wereld wprden gemonitored met sensoren.
-	De phenomenen uit de wereld worden kenbaar gemaakt aan het softwaresystem in de vorm van variabele data.
-	Welke data wordt opgevangen, opgeslagen en uitgelezen wrdt vastgelegd in de requirements. De manier waarop dit gebeurt wordt vastegelegd in specificaties.
-	De requirements worden verkregen door requirements engineers. Dit variert  van concepten en best-practices uit observaties, interviews, stakehoders anaysis, focus group, document analysis, het verkennen van user requirements, 
-	task analysis, surveys en problem analysis.
-	Requirements worden onderverdeeld in functioneel en niet-functioneel.
-	Functionele requirements omschrijven de klantwens, ofwel functie en gedrag. Niet-functionele requirements/eisen zijn beperkt  tot vereisten die aan systemen worden opgelegd. Ze hebben betrekking op kwaliteitsattributen als: schaalbaarheid, onderhoudbaarheid, beveiliging, betrouwbaarheid.
-	Belangrijk is de vraag wat is een goed model. Voor het testen van een goed model of een specificatie zij verschillendetechnieken. In de biomedische wereld wordt er een onderscheidt gemaakt tussen  in vivo "levendig" in vitro "afgeschieden experiment" en insilico "een gecomputeriseerd model".
-	
-	\paragraph{Scope}
-	
-	He gaat om het simuleren van een geautomatiseerde sluis. Wat voor type sluis wordt niet gemeld en ook niet uit welke onderdelen. Belangrijk is dat het model werkt en dat het voldoet aan de eisen die gebaseerd zijn op basis van literatuuronderzoek, observatie, interviews, brainstorming of een andere vorm van requirements elicitation.
-	
-	\paragraph{Onderzoeksvragen }
-	
-	Hoe kan een geautomatiseerde sluis worden gemodeleerd met oog op ontwikkel- en onderhoudskosten,veiligheid, efficientie en capaciteit
-	
-	
-	
-	
-	
-	\begin{enumerate}
-		
-		\item Welke requirements en kwaliteitseisen komen naar voren bij de analyse van een rampenonderzoek
-		\item Welke veiligheidseisen er zijn voor sluizen in nederland. 
-		\item Hoe kan in uppaal  een model worden getest dat voldoet aan de requirements/eisen volgens het rampenonderzoek?
-	\end{enumerate}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	
-	\paragraph{Design goals}
-	Het systeem moet minimaal aan de volgende prestatie eisen voldoen 
-	
-	\begin{enumerate}
-		\item   Requirements gebaseerd op rampenanalyse
-		\item Model testbaar in upaal
-	\end{enumerate}
-	
-	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\paragraph{Leeswijzer}
-	In  de methodologie wordt de lezer uitgelegd met welke methoden de onderzoeksvragen zijn beantwoord. In het hoofdstuk Onderzoek worden alle resultaten behandeld die naar voren zijn gekomen bij het deskresearch. De analyse van de verzamelde data wordt gedaan in het hoofdstuk analyse. Hierin wordt behandeld zoekopdracht naar IoT cloud platforms, feature extractie, prijs-berekening en prijs-feature vergelijking. In het ontwerp komen de uml diagrammen en systeemschetsen naar voren. In de  de hoofdstukken Prototype, IoT cloud en Firmware wordt de implementatie behandeld van het IoT cloud platform in een bestaand project.
+	In dit verslag ga ik in op de kennis en achtergrondinformatie die nodig is voor het toepassen van Time-based bodel technieken. 
+	 Door de toenemende complexiteit van systemen is het gebruik van modellen en de toepassing van timebased model checking  op industriele controle systemen een manier van modelleren van het systeem en de requirements zodat er een bijdagre kan worden geleverd aan de acceptatie van  simulatie-/modeltechniek voor de industrie.\cite{RijnensupervisorsynthesisLock}. 
+	 De behandelde onderwerpen zijin requirements-engineering, computational Tree Logic, propositielogica en predicatenlogica.
+%	\paragraph{Algemeen}
+%	
+%	Het ministerie van verkeer en Waterstaat wil in het kader van het klimaatakkoord en onderzoek laten uitvoeren naar de staat van het sluizenpark in Nederland. Het onderzoek moet zich richten op het ontwerpen en ontwikkelen van een geautomatiseerd sluismodel dat geschikt is voor een brede toepassing. In het onderzoek moet naar voren komen wat de huidige staat is van de sluizen met oog op veiligheid, efficiëntie, capaciteit, onderhoud, duurzaamheid en automatisering. Het onderzoek geeft aan hoe een volledig model worden opgeleverd opdat ontwerp van verschillend volledig geautomatiseerde sluizen in de toekomst geautomatiseerd kunnen worden.  
+%	
+%	
+%	
+%	
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	
+%	\paragraph{Probleemanalyse}
+%	
+%	Na grondige analyse van het Nederlandse sluizenpark is gebleken dat renovatie van een groot aantal sluizen noodzakelijk is.  Uit een eerste verkenning is gebleken  dat het gecombineerd renoveren en automatiseren van het Nederlandsesluizenpark een aanzienlijke verbetering kan opleveren t.a.v. 
+%	Op  het  ministerie  van  infrastructuur  enwaterstaat is helaas onvoldoende kennis van ict en systemen aanwezig om eenen ander uit te voeren 
+%	
+%	\paragraph{Waarom nu}
+%	In  het  kader  van  het  onlangs  afgesloten  klimaatakkoord  heeft  de  Nederlandseoverheid  daarom  besloten  over  te  gaan  tot  een  ingrijpende  renovatie  van  dediverse  sluizen  die  ons  land  rijk  is.     
+%	
+%	\paragraph{Gewenst resultaat }
+%	
+%	
+%	Wij vragen u een model (of een onderling samenhangend aantal modellen)aan  te  leveren,  opdat  ontwerpen  van  verschillende,  volledig  geautomatiseerdesluizen in de toekomst gerealiseerd kunnen worden. 
+%	Zoals  gesteld  in  de  brief  is  het  de  bedoeling  dat  een  sluis  gemodelleerd  wordten  dat  bewezen  kan  worden  dat  de  te  bouwen  sluis  een  aantal  eigenschappenbezit.  
+%	
+%	Ons doel is een uppaal model van een sluis op te leveren. We wilen een fysiek systeem vastleggen in software, ofwel een domeini uit de echte wereld overplaatsen naar het conditionele. De phenomenen  uit de echte wereld wprden gemonitored met sensoren.
+%	De phenomenen uit de wereld worden kenbaar gemaakt aan het softwaresystem in de vorm van variabele data.
+%	Welke data wordt opgevangen, opgeslagen en uitgelezen wrdt vastgelegd in de requirements. De manier waarop dit gebeurt wordt vastegelegd in specificaties.
+%	De requirements worden verkregen door requirements engineers. Dit variert  van concepten en best-practices uit observaties, interviews, stakehoders anaysis, focus group, document analysis, het verkennen van user requirements, 
+%	task analysis, surveys en problem analysis.
+%	Requirements worden onderverdeeld in functioneel en niet-functioneel.
+%	Functionele requirements omschrijven de klantwens, ofwel functie en gedrag. Niet-functionele requirements/eisen zijn beperkt  tot vereisten die aan systemen worden opgelegd. Ze hebben betrekking op kwaliteitsattributen als: schaalbaarheid, onderhoudbaarheid, beveiliging, betrouwbaarheid.
+%	Belangrijk is de vraag wat is een goed model. Voor het testen van een goed model of een specificatie zij verschillendetechnieken. In de biomedische wereld wordt er een onderscheidt gemaakt tussen  in vivo "levendig" in vitro "afgeschieden experiment" en insilico "een gecomputeriseerd model".
+%	
+%	\paragraph{Scope}
+%	
+%	He gaat om het simuleren van een geautomatiseerde sluis. Wat voor type sluis wordt niet gemeld en ook niet uit welke onderdelen. Belangrijk is dat het model werkt en dat het voldoet aan de eisen die gebaseerd zijn op basis van literatuuronderzoek, observatie, interviews, brainstorming of een andere vorm van requirements elicitation.
+%	
+%	\paragraph{Onderzoeksvragen }
+%	
+%	Hoe kan een geautomatiseerde sluis worden gemodeleerd met oog op ontwikkel- en onderhoudskosten,veiligheid, efficientie en capaciteit
+%	
+%	
+%	
+%	
+%	
+%	\begin{enumerate}
+%		
+%		\item Welke requirements en kwaliteitseisen komen naar voren bij de analyse van een rampenonderzoek
+%		\item Welke veiligheidseisen er zijn voor sluizen in nederland. 
+%		\item Hoe kan in uppaal  een model worden getest dat voldoet aan de requirements/eisen volgens het rampenonderzoek?
+%	\end{enumerate}
+%	
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	
+%	
+%	\paragraph{Design goals}
+%	Het systeem moet minimaal aan de volgende prestatie eisen voldoen 
+%	
+%	\begin{enumerate}
+%		\item   Requirements gebaseerd op rampenanalyse
+%		\item Model testbaar in upaal
+%	\end{enumerate}
+%	
+%	
+%	
+%	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\paragraph{Leeswijzer}
+%	In  de methodologie wordt de lezer uitgelegd met welke methoden de onderzoeksvragen zijn beantwoord. In het hoofdstuk Onderzoek worden alle resultaten behandeld die naar voren zijn gekomen bij het deskresearch. De analyse van de verzamelde data wordt gedaan in het hoofdstuk analyse. Hierin wordt behandeld zoekopdracht naar IoT cloud platforms, feature extractie, prijs-berekening en prijs-feature vergelijking. In het ontwerp komen de uml diagrammen en systeemschetsen naar voren. In de  de hoofdstukken Prototype, IoT cloud en Firmware wordt de implementatie behandeld van het IoT cloud platform in een bestaand project.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
@@ -127,11 +129,11 @@
 	
 	
 	\section{Theoretisch kader}
-	In het eerste hoofdstuk is duidelijk geworden wat de onderzoeksvraag is, namelijk ‘Hoe kan een geautomatiseerde sluis worden gemodeleerd met oog op ontwikkel- en onderhoudskosten,veiligheid, efficientie en capaciteit’. Door de toenemende complexiteit van systemen is het gebruik van modellen en de toepassing van timebased model checking  op industriele controle systemen een manier van modelleren van het systeem en de requirements zodat er een bijdagre kan worden geleverd aan de acceptatie van  simulatie-/modeltechniek voor de industrie.\cite{RijnensupervisorsynthesisLock}. Of dit ook het geval is bij het modellereren van sluizen is nu de vraag.
+
 	
-	De bestudering van rampen aan de hand van het vier-variabelen model biedt maakt het analyseren mogelijk van rampsituaties. Van een aantal rampen is een beschrijving gegeven met datum, plaats en oorzaak. De analyse van de 4-variabelen modellen zal gebruikt worden voor de requirementsdefinitie, ontwerp en ontwikkeling van het sluismodel. 
+	In dit hoofdstuk houdt ik me bezig met de bestudering van rampen aan de hand van het vier-variabelen model  maakt het analyseren mogelijk van rampsituaties. Van een aantal rampen is een beschrijving gegeven met datum, plaats en oorzaak. De analyse van de 4-variabelen modellen zal gebruikt worden voor de requirementsdefinitie, ontwerp en ontwikkeling van het sluismodel. 
 	
-	De verschillende factoren en achtergronden die  samenhangen met het modelleren van een sluis zullen in dit hoofdstuk toegelicht worden. Bovendien worden er hypotheses gevormd die de basis vormen voor debeantwoording van de onderzoeksvraag. 
+
 	
 	\subsection{Begrippen, tools en literatuur}
 	
@@ -556,16 +558,16 @@
 	%All errors messages could be manually overridden
 	%oorzaak-gevolg diagram
 	%veiligheidsanalyse naar de rapportage van foutmeldingen, de beslissingsmatrix waarmee het programma wordt uitgevoerd en de software-analyse door een consultat
-	\cite{stackexchange2021therac25code}
-	\cite{rogaway2004therac25},
-	\cite{wikiTherac25}, 
-	\cite{lynch2017theracRaceConditions},	\cite{lim1998theracdisaster}, 
-	\cite{fabio26102015therac25},	 	\cite{ethicsunwrappedTherac25}, 	\cite{casesHistoryTherac25},	 	\cite{caballero2019Therac25}, 	\cite{rose1994theracFatalDose}, 	\cite{levesonMITTherac25},
-	\cite{grant1978theracevaluation},	 	\cite{turnerTheracAccidentsInvestigations},	\cite{turner1993TheracAccidentsInvestigations}, 	\cite{wang2017industrialdesignengineering}, 	\cite{levesonturner1993theracpart2},	\cite{porelloTheraccFailure},\cite{theracIncidents}, 
-	\cite{huffbrown2004casestudyethicatherac}, 
-	\cite{sebowikimedicalradiation},	\cite{hsia1995testtherac25},	\cite{magsilvaTheracTesting},
-	\cite{chemeuropetherac25},	\cite{statsenko10102016Therackillerbug},	\cite{therac25casestudy},	\cite{thomas1994theracinLotos} ,	\cite{wikibookstherac}, 
-	\cite{bozdagTherac25},	\cite{levesonTurnerTheracAbstract}, 	\cite{stackexchange2021therac25code}.
+%	\cite{stackexchange2021therac25code}
+%	\cite{rogaway2004therac25},
+%	\cite{wikiTherac25}, 
+%	\cite{lynch2017theracRaceConditions},	\cite{lim1998theracdisaster}, 
+%	\cite{fabio26102015therac25},	 	\cite{ethicsunwrappedTherac25}, 	\cite{casesHistoryTherac25},	 	\cite{caballero2019Therac25}, 	\cite{rose1994theracFatalDose}, 	\cite{levesonMITTherac25},
+%	\cite{grant1978theracevaluation},	 	\cite{turnerTheracAccidentsInvestigations},	\cite{turner1993TheracAccidentsInvestigations}, 	\cite{wang2017industrialdesignengineering}, 	\cite{levesonturner1993theracpart2},	\cite{porelloTheraccFailure},\cite{theracIncidents}, 
+%	\cite{huffbrown2004casestudyethicatherac}, 
+%	\cite{sebowikimedicalradiation},	\cite{hsia1995testtherac25},	\cite{magsilvaTheracTesting},
+%	\cite{chemeuropetherac25},	\cite{statsenko10102016Therackillerbug},	\cite{therac25casestudy},	\cite{thomas1994theracinLotos} ,	\cite{wikibookstherac}, 
+%	\cite{bozdagTherac25},	\cite{levesonTurnerTheracAbstract}, 	\cite{stackexchange2021therac25code}.
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	\subsubsection{Ethiopian Airlines Flight 302,boeing 737 crashes}
@@ -578,18 +580,17 @@
 	
 	Dit was het tweede MAX 8-ongeluk in minder dan vijf maanden na de crash van Lion Air-vlucht 610. Beide crashes waren aanleiding voor een twee jaar durende wereldwijde langdurige aan de grond houden van het vliegtuig en een onderzoek naar de manier waarop het vliegtuig werd goedgekeurd voor passagiersvervoer.
 	\paragraph{Datum en Plaats}
-	\newline \indent  Op  10/03/2019 2019 stort vlucht ET302 van Ethiopian airlines neer.  \cite{gates18112020boeingcrisis},
-	\cite{boeing737maxsoftwareprobles},\cite{avetisov19032019boeingmalwarestate},\cite{thompson23112020nationalsecurityboeing},
-	\cite{wiki737maxgroundings},\cite{campbell02052019boengcrashhumanerrors}.
+%	\newline \indent  Op  10/03/2019 2019 stort vlucht ET302 van Ethiopian airlines neer.  \cite{gates18112020boeingcrisis},
+%	\cite{boeing737maxsoftwareprobles},\cite{avetisov19032019boeingmalwarestate},\cite{thompson23112020nationalsecurityboeing},
+%	\cite{wiki737maxgroundings},\cite{campbell02052019boengcrashhumanerrors}.
 	
 	
 	\paragraph{Oorzaak}
 	
 	De technische oorzaak ligt bij het MCAS flight control system. Dit systeem werd geimplementeerd om kosten te reduceren en opleidingen voor piloten  in te korten.  Deze single point of failure \cite{uran05042019SPOF}
 	werd getriggerd door een enkele angle-of-attack sensor\cite{boeing737maxdisplay}.
-	Behalve de MCAS waren er nog andere failures\cite{fehrm24112020737changes}, en ook deze failures \cite{dohertylindeman15032019737problems}
-	\cite{travis18042019737maxsoftwaredevop}, Bij de  nieuwe boeing 737 max model werden tests uitgevoerd in volledige flight simulators. Nieuwe   regels van het FAA instituut vereisten ondersteuning bij het uitvoeren van enkele manouvres. Tijdens testvluchten uitgevoerd binnen een jaar voor certificatie werd het pitch-up fenomeen geconstateerd waarop het mcas systeem werd aangepast. 
-	\cite{hawkins22032019737maxairplanes},\cite{barnett05052019737maxcrisis}, \cite{thomas30082020737safest},\cite{boyle18112020737maxupgrade},\cite{bergstraburgess122019737maxMcasAlgorithm},\cite{737mcas},\cite{german190620217372yaftergrounded},\cite{beningo02052019boeinglessons},\cite{bloomberg26092019failedpred},\cite{afacwaLostSafeguards}.
+	 Bij de  nieuwe boeing 737 max model werden tests uitgevoerd in volledige flight simulators. Nieuwe   regels van het FAA instituut vereisten ondersteuning bij het uitvoeren van enkele manouvres. Tijdens testvluchten uitgevoerd binnen een jaar voor certificatie werd het pitch-up fenomeen geconstateerd waarop het mcas systeem werd aangepast. 
+%	\cite{hawkins22032019737maxairplanes},\cite{barnett05052019737maxcrisis}, \cite{thomas30082020737safest},\cite{boyle18112020737maxupgrade},\cite{bergstraburgess122019737maxMcasAlgorithm},\cite{737mcas},\cite{german190620217372yaftergrounded},\cite{beningo02052019boeinglessons},\cite{bloomberg26092019failedpred},\cite{afacwaLostSafeguards}.
 	%\cite{easa27012021737maxsafereturn},
 	%safety record van de boeing
 	%\cite{touitou11032019737tragedies}.
@@ -612,57 +613,57 @@
 		\item missiekritische toepassing van technologie%mission-critical applicaion
 		\item geen regelgevingsregime voor foutieve risicoanalyse %no regulatory regime on faulthy risk analysis
 	\end{itemize}
-	\cite{gates18112020boeingcrisis}
-	\cite{boeing737maxsoftwareprobles}
-	\cite{avetisov19032019boeingmalwarestate}
-	\cite{thompson23112020nationalsecurityboeing}
-	\cite{gates21032019FAAControlSystem}
-	\cite{faa18112020boeingreview}
-	\cite{wiki737maxgroundings}
-	\cite{campbell02052019boengcrashhumanerrors}
-	\cite{hawkins22032019737maxairplanes}
-	\cite{thomas30082020737safest}
-	\cite{boeing737maxdisplay}
-	\cite{fehrm24112020737changes}
-	\cite{travis18042019737maxsoftwaredevop}
-	\cite{barnett05052019737maxcrisis}
-	\cite{easa27012021737maxsafereturn}
-	\cite{touitou11032019737tragedies}
-	\cite{hemmerdinger02022021737maxdeliveries}
-	\cite{bielby27022021faaimprovesafety}
-	\cite{boyle18112020737maxupgrade}
-	\cite{bergstraburgess122019737maxMcasAlgorithm}
-	\cite{737mcas}
-	\cite{newburger17052019boeingcrisis}
-	\cite{arstechnica22012020737problems}
-	\cite{german190620217372yaftergrounded}
-	\cite{beningo02052019boeinglessons}
-	\cite{duran05042019boeingspof}
-	\cite{makichuck24012021737fearflying}
-	\cite{caa737modifications}
-	\cite{oestergaard14122020boeingdeliveries}
-	\cite{reenberg787flaws}
-	\cite{fitch16092020737backlogrisks}
-	\cite{willis27082020737maxfailures}
-	\cite{ostrower11062020more737changes}
-	\cite{hruska13122019faaknown737crashrate}
-	\cite{bloomberg26092019failedpred}
-	\cite{whiteman09072020boengcancelstock}
-	\cite{leopold09192019boeingreliability}
-	\cite{koenig11122019737crashesnofix}
-	\cite{dohertylindeman15032019737problems}
-	\cite{stodder02102019corruptoversight}
-	\cite{afacwaLostSafeguards}
-	\cite{swayne18032019profitssafety}
-	\cite{freed26022021liftaustraliaban}
-	\cite{reed15032019softwareattention}
-	\cite{news17032019softwareexplains}
-	\cite{legget21122020eu737maxsafe}
-	\cite{marketscreener0103221737chinarecertification}
-	\cite{euractiv22022021737firegrounds}
-	\cite{benny18022019737returnUAE}
-	\cite{biersmichel22022021777grounds}
-	\cite{reuters23022021777metalfatigue}
+%	\cite{gates18112020boeingcrisis}
+%	\cite{boeing737maxsoftwareprobles}
+%	\cite{avetisov19032019boeingmalwarestate}
+%	\cite{thompson23112020nationalsecurityboeing}
+%	\cite{gates21032019FAAControlSystem}
+%	\cite{faa18112020boeingreview}
+%	\cite{wiki737maxgroundings}
+%	\cite{campbell02052019boengcrashhumanerrors}
+%	\cite{hawkins22032019737maxairplanes}
+%	\cite{thomas30082020737safest}
+%	\cite{boeing737maxdisplay}
+%	\cite{fehrm24112020737changes}
+%	\cite{travis18042019737maxsoftwaredevop}
+%	\cite{barnett05052019737maxcrisis}
+%	\cite{easa27012021737maxsafereturn}
+%	\cite{touitou11032019737tragedies}
+%	\cite{hemmerdinger02022021737maxdeliveries}
+%	\cite{bielby27022021faaimprovesafety}
+%	\cite{boyle18112020737maxupgrade}
+%	\cite{bergstraburgess122019737maxMcasAlgorithm}
+%	\cite{737mcas}
+%	\cite{newburger17052019boeingcrisis}
+%	\cite{arstechnica22012020737problems}
+%	\cite{german190620217372yaftergrounded}
+%	\cite{beningo02052019boeinglessons}
+%	\cite{duran05042019boeingspof}
+%	\cite{makichuck24012021737fearflying}
+%	\cite{caa737modifications}
+%	\cite{oestergaard14122020boeingdeliveries}
+%	\cite{reenberg787flaws}
+%	\cite{fitch16092020737backlogrisks}
+%	\cite{willis27082020737maxfailures}
+%	\cite{ostrower11062020more737changes}
+%	\cite{hruska13122019faaknown737crashrate}
+%	\cite{bloomberg26092019failedpred}
+%	\cite{whiteman09072020boengcancelstock}
+%	\cite{leopold09192019boeingreliability}
+%	\cite{koenig11122019737crashesnofix}
+%	\cite{dohertylindeman15032019737problems}
+%	\cite{stodder02102019corruptoversight}
+%	\cite{afacwaLostSafeguards}
+%	\cite{swayne18032019profitssafety}
+%	\cite{freed26022021liftaustraliaban}
+%	\cite{reed15032019softwareattention}
+%	\cite{news17032019softwareexplains}
+%	\cite{legget21122020eu737maxsafe}
+%	\cite{marketscreener0103221737chinarecertification}
+%	\cite{euractiv22022021737firegrounds}
+%	\cite{benny18022019737returnUAE}
+%	\cite{biersmichel22022021777grounds}
+%	\cite{reuters23022021777metalfatigue}
 	
 	% One minute into the flight, the first officer, acting on the instructions of the captain, reported a "flight control" problem to the control tower.
 	% Two minutes into the flight, the plane's MCAS system activated, pitching the plane into a dive toward the ground. The pilots struggled to control it and managed to prevent the nose from diving further, but the plane continued to lose altitude.
@@ -680,8 +681,8 @@
 	Opgeslagen materialen  waren: calcium carbine, sodium nitraat, potassium nitraat, amminiak nitraat en cyanide.
 	Ook is er veel kritiek geweest op de acties van de autoriteiten. Zo was er censuur vanuit de overheid op de journalistiek.
 	Ook was er naar alle warschijnlijkheid sprake van corruptie. Zo bleek achteraf dat een van de grootste aandeelhouders Dong Shexuang de zoon te zijn van een oud-politiechef in Tanjin haven, genaamd Dong Pijun
-	De overheid beloofde strengere toezicht en alle bedrijven moeten een risico-inventariatie maken en onderhouden .\cite{pinghuang2410201TanjinFactreport},\cite{portoTanjinExplosionSight},\cite{imago17082015TanjinApartmentImages},\cite{trager14082015Chemicalblast},\cite{pangeramo27082015TanjinExplosion},\cite{ap06082020ammaniumnitrate},\cite{morris14082015TanjinIndustryImpact},\cite{milesyu20082015exposingtoxicgovlines},\cite{artemis30032016tanjininsurance},\cite{aidenxiatanjinblast},\cite{danwangTanjinflexreport},\cite{keyHighlightsTanjin},\cite{hartley13082015videofootage},\cite{odonnel01062017firetanjinblast2015},\cite{fan15082015newyorkermistrustchina},\cite{yanlidongchinamediaframingTanjin},\cite{evans27092017TnjinInsurance},\cite{jasi26032019chineschemplant},\cite{shiqingTanjinExecutiveSentence},\cite{sophiebeach15082015},\cite{hamzeh05082020BeirutBlast},\cite{chemwatch18082015TanjiinExplosion},\cite{thehindu15062019chinaExplosion},\cite{santagotimes24032019chinablast},\cite{klingecorp28042020causedTanjin},\cite{mcgarryExplosions2017},\cite{roswnfeld13082015TanjinReports},\cite{aria12082015explosionaTanjin},\cite{tremblay11022016chineseInvestigatorsTanjin},\cite{taylor13082015TanjinExplosianAftermath},\cite{associatedPresss13082013},\cite{un20082015InvestigationTanjin},\cite{france2412082015TnjinExplosion},\cite{npr14082015TanjinCause},\cite{bbc05022016TanjinResponsibles},\cite{CBodeen15082015TanjinExplosion},\cite{reutersTanjinInsurance},\cite{yu082016evaluationTanjin2015},\cite{wiki2015TanjinExplosions},\cite{bbc17082015whathappenedTanjin},\cite{mortimer19082016taijinexplosioncrater},\cite{internationallabourofficeChmControlTooliit},\cite{euTaxationCustomsICSC},
-	\cite{iloWHOChemSafetyCards}.
+%	De overheid beloofde strengere toezicht en alle bedrijven moeten een risico-inventariatie maken en onderhouden .\cite{pinghuang2410201TanjinFactreport},\cite{portoTanjinExplosionSight},\cite{imago17082015TanjinApartmentImages},\cite{trager14082015Chemicalblast},\cite{pangeramo27082015TanjinExplosion},\cite{ap06082020ammaniumnitrate},\cite{morris14082015TanjinIndustryImpact},\cite{milesyu20082015exposingtoxicgovlines},\cite{artemis30032016tanjininsurance},\cite{aidenxiatanjinblast},\cite{danwangTanjinflexreport},\cite{keyHighlightsTanjin},\cite{hartley13082015videofootage},\cite{odonnel01062017firetanjinblast2015},\cite{fan15082015newyorkermistrustchina},\cite{yanlidongchinamediaframingTanjin},\cite{evans27092017TnjinInsurance},\cite{jasi26032019chineschemplant},\cite{shiqingTanjinExecutiveSentence},\cite{sophiebeach15082015},\cite{hamzeh05082020BeirutBlast},\cite{chemwatch18082015TanjiinExplosion},\cite{thehindu15062019chinaExplosion},\cite{santagotimes24032019chinablast},\cite{klingecorp28042020causedTanjin},\cite{mcgarryExplosions2017},\cite{roswnfeld13082015TanjinReports},\cite{aria12082015explosionaTanjin},\cite{tremblay11022016chineseInvestigatorsTanjin},\cite{taylor13082015TanjinExplosianAftermath},\cite{associatedPresss13082013},\cite{un20082015InvestigationTanjin},\cite{france2412082015TnjinExplosion},\cite{npr14082015TanjinCause},\cite{bbc05022016TanjinResponsibles},\cite{CBodeen15082015TanjinExplosion},\cite{reutersTanjinInsurance},\cite{yu082016evaluationTanjin2015},\cite{wiki2015TanjinExplosions},\cite{bbc17082015whathappenedTanjin},\cite{mortimer19082016taijinexplosioncrater},\cite{internationallabourofficeChmControlTooliit},\cite{euTaxationCustomsICSC},
+%	\cite{iloWHOChemSafetyCards}.
 	\paragraph{Datum en Plaats} 	\newline \indent 
 	Op 12 augustus 2015 waren er twee explosies bij de Rulthai logistiek. Deze faciliteit zorgde voor de opslag van  gevaarlijke stoffen.
 	De explosie tanjin china 12/08/2015. 
@@ -964,15 +965,15 @@
 	Aanwezige militair brengt slachtoffer naar de fransen, vervolgens naar de Tongolezen. Maar de kwaliteit van personeel liet te wensen over.
 	Er werd een Nederlandse arts overgevlogen. De slachtoffers werden overgevlogen naar Gao omvervolgens te worden oergevolgen naar Nederland.
 	Conclusie van de OVV\cite{bnnvara13062018malirapport}
-	\cite{eucal11012021malimissieverlengd}
-	\cite{nos21052014zorgenmalimissie}
-	\cite{meijnders}
-	\cite{bnrwebredactie}
-	\cite{keultjes01062016malimissiecoalitie}
-	\cite{veenhof18012019}
-	\cite{isitman06012016militair}
-	\cite{nporadio11072016filmdemissie}
-	\cite{parlementairmonitor15122013mortierongeluk} luidt dat:
+%	\cite{eucal11012021malimissieverlengd}
+%	\cite{nos21052014zorgenmalimissie}
+%	\cite{meijnders}
+%	\cite{bnrwebredactie}
+%	\cite{keultjes01062016malimissiecoalitie}
+%	\cite{veenhof18012019}
+%	\cite{isitman06012016militair}
+%	\cite{nporadio11072016filmdemissie}
+%	\cite{parlementairmonitor15122013mortierongeluk} luidt dat:
 	\begin{itemize}
 		\item Koopcontract werd niet goed doorgelezen
 		\item Geen controle op kwaliteit en veiligheid
@@ -1019,30 +1020,34 @@
 	\subsubsection{schipholbrand}
 	\paragraph{Beschrijving}
 	Bij de schipholbrand op 27/10/2005 . 
-	vielen zeker 11 doden onder mmigranten in de cellenclomplexen van schiphol-oost. Doodsoorzaak van de slachtffoffers is verstikking. Het gebrouw voldeed niet aan de eisen voor brandveiligheid, personeel was niet goed getraind voor dergelijke situaties en de hulpverlening kwam door verschillende factoren te laat op gang\cite{schipholbrand27102005video},\cite{schipholbrand27102005video},\cite{onderzoeksraad2610schipholoost},
-	\cite{schipholbrandvideoargos},\cite{nunl30052023feitenoverzicht},\cite{parlementairemonitorschipholbrand},\cite{videonpoNOVA13112008},\cite{rizoomes01052014schipholbrand},\cite{heuvelkroesschipholbrandcamerabeelden},
-	\cite{wikiSchipholbrand},\cite{schipholbrand27102005video},\cite{onderzoeksraad2610schipholoost},\cite{schipholbrandvideoargos},\cite{nunl30052023feitenoverzicht},\cite{singeluitgeverijenSchipholbrand},\cite{eenvandaagschipholbrand},\cite{parlementairemonitorschipholbrand},
-	\cite{videonpoNOVA13112008},\cite{rizoomes01052014schipholbrand},\cite{heuvelkroesschipholbrandcamerabeelden}. \\
+	vielen zeker 11 doden onder mmigranten in de cellenclomplexen van schiphol-oost. Doodsoorzaak van de slachtffoffers is verstikking. Het gebrouw voldeed niet aan de eisen voor brandveiligheid, personeel was niet goed getraind voor dergelijke situaties en de hulpverlening kwam door verschillende factoren te laat op gang.
+	%\cite{schipholbrand27102005video},\cite{schipholbrand27102005video},\cite{onderzoeksraad2610schipholoost},
+%	\cite{schipholbrandvideoargos},\cite{nunl30052023feitenoverzicht},\cite{parlementairemonitorschipholbrand},\cite{videonpoNOVA13112008},\cite{rizoomes01052014schipholbrand},\cite{heuvelkroesschipholbrandcamerabeelden},
+%	\cite{wikiSchipholbrand},\cite{schipholbrand27102005video},\cite{onderzoeksraad2610schipholoost},\cite{schipholbrandvideoargos},\cite{nunl30052023feitenoverzicht},\cite{singeluitgeverijenSchipholbrand},\cite{eenvandaagschipholbrand},\cite{parlementairemonitorschipholbrand},
+%	\cite{videonpoNOVA13112008},\cite{rizoomes01052014schipholbrand},\cite{heuvelkroesschipholbrandcamerabeelden}. \\
 	\paragraph{Datum en Plaats}
 	Bij de vleugels j en k  van cellenclomplexen van schiphol-oost op 27/10/2005  . 
 	\paragraph{Oorzaak}
 	\newline \indent 
-	Volgens de onderzoekers van het OVV waren er geen specifieke eisen gesteld aan  vleugels j en k door dienst jutitiele inrichtingen. Ook had dit instituut te weinig aandacht voor extra risicos. Daarnaast heeft de rijksgebouwendienst heeft zijn verantwoordelijkheid onvoldoende ingevuld, want vleugel j en k van het cellencomplex voldeden niet aan de eisen van de bouwregelgeving. Ook heeft de rijksgebouwendienst  voorafafgaand onvoldoende gebruik gemaakt van onderzoek naar eerdere brand in de c-vleugel. De gemeente Haarlemmermeer heeft bouwvergunning gegeven terwijl vleugels  j en k niet voldeden aan de bouwregelgeving.\\
-	De brandveiligheid is ook onderzocht door de OVV.
-	In de brandmeldinstallatie is op verzoek van dienst jutitiele inrichtingen een vertraging van 3 minuten ingesteld,deze vertraging is niet formeel afgestemd met de brandweer, de vertraging is daarom door de brandweer niet vertaald in aangepast beleid. Bovendien was het inbouwen van de vertraging  in strijd met de bouwvergunning waarbij werd uitgegaan van een directte automatische doormelding bij brand. \\
-	De brandweer was niet op de hoogte van de actuele situatie op het cellencomplex, hierdoor had zij problemen met toegang te krijgen tot het complex, met als gevolg een langere opkomsttijd dan de norm.
-	Er was geen gezamelijke oefenervaring met het personeel van het cellencomplex.
-	De brandweer is in strijd met het calamiteitenplan niet goed opgevangen en begeleid door de aanwezige bhv'ers, hierdoor kreeg de brandweer moeilijk toegang tot de brandende vleugel en werde de bluswerkzamheden vertraagd.
-	Bij aankomst werd de brandweer slecht geinformeerd over het aantal en de plaatst van de nog aanwezige celbewoners, de brandweer heeft tijd verloren met het zoeken anaar informatie over de situatie en de mogelijk nog aanwezige slachtoffers
-	De bhv was onvoldoende opgeleid, geinstrueerd en geoefend voor de reddingsoperatie waar zij verantwoordelijk voor was. \\
 	Doordat de deur van cel 11 niet werd gesloten kreeg de brand zuurstof waardoor deze kont uitbreiden de aanwezigheid van grote hoeveelheid brandbare materialen, fungeerde als brandstof waardoor de brand zich verder kon ontwikkelen zowel binnen als buiten de cel.Doordat de dakluiken niet  werken werd de rook en warmte niet afgevoerd, dit heeft de reddingsoperatie van de bewaarders belemmmerd en het mede onmogelijk gemaakt alle celdeuren te openen. Door de schilcontructie van het cellencomplex was het mogelijk dat de brand zich kon uitbreiden naar de andere cellen en naar de gang.\\
-	De bewoners van vleugel k zijn in eerste instantie geevacueerd naar vleugel j in plaatst van kruislings naar vleugel A.
-	Door de evacuatie naar vleugel j bleven de bewoners geconfronteerd met de brand, waardoor er onnodig sprake was van angstgevoelens. Daarnaast werden de bewoners  onvoldoende geinformeerd over de actuele situatie tijdens de brand en over de overplaatsing naar andere centra. \\
-	Er was geen evauactieplan dat voorziet in de overplaatsing van gedetineerden naar ander penetintiaire inrichtingen
-	Bij de evacuatie naar andere detentiecentra is te weinig aandacht geweest voor ademhalingsproblemen van gedetineerden.
-	Ook ging de grote instroom van gedetineerde in andere centra  ten koste van kwaliteit van de opvang en nazorg.
-	Zorgverlening te veel afhankelijk van ad-hoc maatregelen.
-	De dienst jutitiele inrichtingen en de locatiedirecteur hadden geen duidelijk zicht op welke celbewoner naar welk detentiecetrum was overgeplaatst
+	Dit is onopgemerkt gebleven doorat er geen speicifieke eisen werden gesteld bij de bouw van vleugels j en k. Was er te weinig aandacht voor bouwregels en onderzoek naar eeerdere branden in het cellencomplex. Bovendien waren bhv'ers niet goed opgeleid en was er geen goede afstemming met de brandweer.
+	Er was geen evauactieplan dat voorziet in de overplaatsing van gedetineerden naar ander penetintiaire inrichtingen. En had men te weinig aandacht voor de traceerbaarheid van celbewoners en bovendien voor ademhalingsproblemen van gedetineerden.
+%	Volgens de onderzoekers van het OVV waren er geen specifieke eisen gesteld aan  vleugels j en k door dienst jutitiele inrichtingen. Ook had dit instituut te weinig aandacht voor extra risicos. Daarnaast heeft de rijksgebouwendienst heeft zijn verantwoordelijkheid onvoldoende ingevuld, want vleugel j en k van het cellencomplex voldeden niet aan de eisen van de bouwregelgeving. Ook heeft de rijksgebouwendienst  voorafafgaand onvoldoende gebruik gemaakt van onderzoek naar eerdere brand in de c-vleugel. De gemeente Haarlemmermeer heeft bouwvergunning gegeven terwijl vleugels  j en k niet voldeden aan de bouwregelgeving.\\
+%	De brandveiligheid is ook onderzocht door de OVV.
+%	In de brandmeldinstallatie is op verzoek van dienst jutitiele inrichtingen een vertraging van 3 minuten ingesteld,deze vertraging is niet formeel afgestemd met de brandweer, de vertraging is daarom door de brandweer niet vertaald in aangepast beleid. Bovendien was het inbouwen van de vertraging  in strijd met de bouwvergunning waarbij werd uitgegaan van een directte automatische doormelding bij brand. \\
+%	De brandweer was niet op de hoogte van de actuele situatie op het cellencomplex, hierdoor had zij problemen met toegang te krijgen tot het complex, met als gevolg een langere opkomsttijd dan de norm.
+%	Er was geen gezamelijke oefenervaring met het personeel van het cellencomplex.
+%	De brandweer is in strijd met het calamiteitenplan niet goed opgevangen en begeleid door de aanwezige bhv'ers, hierdoor kreeg de brandweer moeilijk toegang tot de brandende vleugel en werde de bluswerkzamheden vertraagd.
+%	Bij aankomst werd de brandweer slecht geinformeerd over het aantal en de plaatst van de nog aanwezige celbewoners, de brandweer heeft tijd verloren met het zoeken anaar informatie over de situatie en de mogelijk nog aanwezige slachtoffers
+%	De bhv was onvoldoende opgeleid, geinstrueerd en geoefend voor de reddingsoperatie waar zij verantwoordelijk voor was. \\
+%	Doordat de deur van cel 11 niet werd gesloten kreeg de brand zuurstof waardoor deze kont uitbreiden de aanwezigheid van grote hoeveelheid brandbare materialen, fungeerde als brandstof waardoor de brand zich verder kon ontwikkelen zowel binnen als buiten de cel.Doordat de dakluiken niet  werken werd de rook en warmte niet afgevoerd, dit heeft de reddingsoperatie van de bewaarders belemmmerd en het mede onmogelijk gemaakt alle celdeuren te openen. Door de schilcontructie van het cellencomplex was het mogelijk dat de brand zich kon uitbreiden naar de andere cellen en naar de gang.\\
+%	De bewoners van vleugel k zijn in eerste instantie geevacueerd naar vleugel j in plaatst van kruislings naar vleugel A.
+%	Door de evacuatie naar vleugel j bleven de bewoners geconfronteerd met de brand, waardoor er onnodig sprake was van angstgevoelens. Daarnaast werden de bewoners  onvoldoende geinformeerd over de actuele situatie tijdens de brand en over de overplaatsing naar andere centra. \\
+%	Er was geen evauactieplan dat voorziet in de overplaatsing van gedetineerden naar ander penetintiaire inrichtingen
+%	Bij de evacuatie naar andere detentiecentra is te weinig aandacht geweest voor ademhalingsproblemen van gedetineerden.
+%	Ook ging de grote instroom van gedetineerde in andere centra  ten koste van kwaliteit van de opvang en nazorg.
+%	Zorgverlening te veel afhankelijk van ad-hoc maatregelen.
+%	De dienst jutitiele inrichtingen en de locatiedirecteur hadden geen duidelijk zicht op welke celbewoner naar welk detentiecetrum was overgeplaatst
 	%
 	%Wat is er gebeurd?
 	%\cite{schipholbrand27102005video}
@@ -1165,21 +1170,21 @@
 	%Op de avond van de 4e oktober 1992 was landingsbaan 06 (de Kaagbaan) in gebruik. De piloot verzocht de luchtverkeersleiding op Schiphol echter een noodlanding te mogen maken op de Buitenveldertbaan (baan 27). Waarom hij juist deze baan koos, is nooit duidelijk geworden. Een keuze voor deze baan lag niet voor de hand; omdat de wind uit het noordoosten kwam, zou het toestel met flinke staartwind moeten landen. Langs de landingsbaan waren enkele grote brandweerwagens van Schiphol geplaatst. Deze zogeheten crashtenders moesten een brand tijdens de landing meteen blussen. Na de crash werd één zwarte doos teruggevonden. De bijbehorende band was in vier stukken gebroken, waardoor de laatste 2 minuten en 45 seconden ervan niet meer te gebruiken waren. De doos werd voor onderzoek naar Washington gestuurd en leverde uiteindelijk onderstaande informatie op.
 	%Om goed uit te komen voor de landingsbaan vloog het beschadigde toestel eerst nog een rondje boven Amsterdam. Tijdens dit rondje gaf de gezagvoerder de copiloot opdracht de vleugelkleppen (flaps) uit te schuiven. Links schoven de kleppen uit, maar doordat de afgebroken motor 3 de rechtervleugel had beschadigd schoven de kleppen op die vleugel niet uit. Als gevolg hiervan kreeg het toestel links meer draagvermogen dan rechts. De piloot meldde aan de verkeersleiding dat er ook problemen met de flaps waren.
 	%Aanvankelijk ging het aanvliegen van de Buitenveldertbaan goed. Op het moment dat het vliegtuig daalde tot onder de 1500 voet en snelheid minderde, raakte het echter compleet onbestuurbaar en maakte het een ongecontroleerde, scherpe bocht naar rechts. Over de radio was te horen dat de gezagvoerder zijn copiloot in het Hebreeuws opdracht gaf om alle kleppen in te trekken en het landingsgestel uit te klappen. Vervolgens meldde de copiloot in het Engels aan de luchtverkeersleider dat het toestel zou gaan neerstorten. Uit later onderzoek bleek dat het vliegtuig eerder enkel recht bleef vanwege de hoge snelheid (280 knopen, zijnde 519 km/u). 
-	Doordat de rechtervleugel beschadigd was, was het moeilijker om het vliegtuig recht te houden. Alleen de hoge snelheid zorgde ervoor dat er nog voldoende draagvermogen was. Toen bij het inzetten van de landing de snelheid verlaagd werd, werd het draagvermogen van de rechtervleugel echter dusdanig gering dat het toestel niet meer onder controle te houden was en een duikvlucht naar rechts maakte.
-	\cite{aviationsafety04101992airplaneCrashBijlmer}
-	\cite{catsr25022009Boeing737AmsterdamCrash}
-	\cite{BijlmerrampWiki}
-	\cite{ElAlFlight1862}
-	\cite{bijlmerReconstruction}
-	\cite{bijlmer5}
-	\cite{dataReconstruct}
-	\cite{dataReconstructBijlmermeerairplane1992}
-	\cite{dataReconstructBijlmermeerairplane}
-	\cite{dataReconstructBijlmermeerairplaneSimul}
-	\cite{smailiDataReconstruction}
-	\cite{smailiDataReconstructionBijlmer}
-	\cite{pilotedSimulator}
-	\cite{accidentReport}
+%	Doordat de rechtervleugel beschadigd was, was het moeilijker om het vliegtuig recht te houden. Alleen de hoge snelheid zorgde ervoor dat er nog voldoende draagvermogen was. Toen bij het inzetten van de landing de snelheid verlaagd werd, werd het draagvermogen van de rechtervleugel echter dusdanig gering dat het toestel niet meer onder controle te houden was en een duikvlucht naar rechts maakte.
+%	\cite{aviationsafety04101992airplaneCrashBijlmer}
+%	\cite{catsr25022009Boeing737AmsterdamCrash}
+%	\cite{BijlmerrampWiki}
+%	\cite{ElAlFlight1862}
+%	\cite{bijlmerReconstruction}
+%	\cite{bijlmer5}
+%	\cite{dataReconstruct}
+%	\cite{dataReconstructBijlmermeerairplane1992}
+%	\cite{dataReconstructBijlmermeerairplane}
+%	\cite{dataReconstructBijlmermeerairplaneSimul}
+%	\cite{smailiDataReconstruction}
+%	\cite{smailiDataReconstructionBijlmer}
+%	\cite{pilotedSimulator}
+%	\cite{accidentReport}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsubsection{1951}
 	\paragraph{Beschrijving}
@@ -1194,14 +1199,14 @@
 	\paragraph{Oorzaak}
 	De automatische reactie van het toestel werd getriggerd door een fout gevoelige radio altimeter waardoor de automatische gashendel de energiemotot op actief stelde.
 	Inadequaat handelen van de piloten ondanks een defecte hoogtemeter en onvolledige instructies van de luchtverkeersleiding
-	\cite{zuilen23022019Tijdlijnpoldercrash}
-	\cite{wikinews04032009techfoutailines1951}
-	\cite{luchtvaartnieuws21012020boeing737conclusies}
-	\cite{adformatie280220209communicatiegebreken}
-	\cite{spinnael25022009onderzoekpolderbaancrash}
-	\cite{crashTurkishAirlines}
-	\cite{flightradar24}
-	\cite{flightstatstracker}. 
+%	\cite{zuilen23022019Tijdlijnpoldercrash}
+%	\cite{wikinews04032009techfoutailines1951}
+%	\cite{luchtvaartnieuws21012020boeing737conclusies}
+%	\cite{adformatie280220209communicatiegebreken}
+%	\cite{spinnael25022009onderzoekpolderbaancrash}
+%	\cite{crashTurkishAirlines}
+%	\cite{flightradar24}
+%	\cite{flightstatstracker}. 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsubsection{slmramp}
 	\paragraph{Beschrijving}
@@ -1213,11 +1218,11 @@
 	
 	Uit onderzoek bleek dat de papieren van de bemanning niet in orde ware door nalatigheid in de crew-member screening.Geconcludeerd werd dat de gezagvoerder roekeloos had gehandeld door voor een ILS-landing te kiezen terwijl hij daar geen toestemming voor had, en door onvoldoende op de vlieghoogte te hebben gelet. 
 	De SLM werd verweten de kwalificaties van de bemanning onvoldoende te hebben gecontroleerd. De Oorzaak van de ramp bleek achteraf het roekeloos besturen door de kapitein onder de minimum hoogte leidde tot collissie met een boom.
-	\cite{espnSLMterugblik},\cite{dennisRosier01052020}
-	\cite{hassing07062020slmramp},\cite{amsterdamArchiefSLM},\cite{rtvOost06062019nabestaande},
-	\cite{breda07062021AndroSnel},\cite{andereTijdenSLMCrash},
-	\cite{aviationReport},\cite{aviationSLMCrashAccidentInvestigation},\cite{mcDonnelDouglasCommissionReportSLMCrash},
-	\cite{wikiSRFlight764},\cite{nos07062019SLMTerugblik},\cite{dagvantoenSLMCrash},\cite{waterkantNesty07061989},\cite{eduNandlalSRCrash},\cite{oldjetsSRAirways},\cite{cloudberg02012021srflight764},\cite{apnews07061989srplanecrash}.
+%	\cite{espnSLMterugblik},\cite{dennisRosier01052020}
+%	\cite{hassing07062020slmramp},\cite{amsterdamArchiefSLM},\cite{rtvOost06062019nabestaande},
+%	\cite{breda07062021AndroSnel},\cite{andereTijdenSLMCrash},
+%	\cite{aviationReport},\cite{aviationSLMCrashAccidentInvestigation},\cite{mcDonnelDouglasCommissionReportSLMCrash},
+%	\cite{wikiSRFlight764},\cite{nos07062019SLMTerugblik},\cite{dagvantoenSLMCrash},\cite{waterkantNesty07061989},\cite{eduNandlalSRCrash},\cite{oldjetsSRAirways},\cite{cloudberg02012021srflight764},\cite{apnews07061989srplanecrash}.
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsubsection{Tsjernobyl}
 	\paragraph{Beschrijving}
@@ -1327,29 +1332,29 @@
 	%Hoewel geigertellers de dag na de ramp onrustbarende waarden aangeven, slaat het plaatselijk bestuur geen alarm. De bevolking is het niet gewend om vragen te stellen.
 	%De volgende dag blijkt er wel degelijk iets ernstigs aan de hand te zijn. In een lange rij bussen worden de 135.000 inwoners op 27 april uit het besmette gebied geëvacueerd, om er nooit meer terug te keren.
 	%De ramp is dan nog steeds geen wereldnieuws. De Sovjetautoriteiten blijken er niet eens van op de hoogte te zijn – president Gorbatsjov klaagt later dat hij via Zweden aan zijn informatie moest komen.
-	\cite{verschuur14012013tjernobylreports}
-	\cite{paperlessarchivesTjernobyl}
-	\cite{vargos082000tjernobylconcerns}
-	\cite{mauroNuclearRiskSociety}
-	\cite{vienna06092005LookingBack}
-	\cite{wikiTjernobyl},
-	\cite{rivmTjernobyl},
-	\cite{andereTijdenTjernobyl},
-	\cite{kingskey19042022tjernobyl},
-	\cite{erikbork26042023reactor4},
-	%\cite{nosTjernobyl30jaarlater},
-	\cite{knmi04052021tjernobylbosbrand},
-	\cite{dodonovaKVIRisicoTjernobyl},
-	\cite{dumarey04062020verhaalTjernobylWaarheid},
-	\cite{sparkesNewScientistTjernoby},
-	\cite{kernenergiened26041986chronologiemaatregelen},
-	\cite{mapszoneReactor},
-	\cite{kernhistoriek15062021tjernobyl},
-	\cite{nucleairforumFeitenTjernobyl},
-	\cite{kernongevalTjernobylFancGov},
-	\cite{arendswolters062019lessenTjernobyl},\cite{damveld08052020tjernobyl},
-	\cite{deVriestjernobylHolland},\cite{ing3enieur29042015antistralingskoepel},
-	\cite{verschuur14012013tjernobylreports},\cite{paperlessarchivesTjernobyl},\cite{vargos082000tjernobylconcerns},\cite{mauroNuclearRiskSociety},\cite{vienna06092005LookingBack}
+%	\cite{verschuur14012013tjernobylreports}
+%	\cite{paperlessarchivesTjernobyl}
+%	\cite{vargos082000tjernobylconcerns}
+%	\cite{mauroNuclearRiskSociety}
+%	\cite{vienna06092005LookingBack}
+%	\cite{wikiTjernobyl},
+%	\cite{rivmTjernobyl},
+%	\cite{andereTijdenTjernobyl},
+%	\cite{kingskey19042022tjernobyl},
+%	\cite{erikbork26042023reactor4},
+%	%\cite{nosTjernobyl30jaarlater},
+%	\cite{knmi04052021tjernobylbosbrand},
+%	\cite{dodonovaKVIRisicoTjernobyl},
+%	\cite{dumarey04062020verhaalTjernobylWaarheid},
+%	\cite{sparkesNewScientistTjernoby},
+%	\cite{kernenergiened26041986chronologiemaatregelen},
+%	\cite{mapszoneReactor},
+%	\cite{kernhistoriek15062021tjernobyl},
+%	\cite{nucleairforumFeitenTjernobyl},
+%	\cite{kernongevalTjernobylFancGov},
+%	\cite{arendswolters062019lessenTjernobyl},\cite{damveld08052020tjernobyl},
+%	\cite{deVriestjernobylHolland},\cite{ing3enieur29042015antistralingskoepel},
+%	\cite{verschuur14012013tjernobylreports},\cite{paperlessarchivesTjernobyl},\cite{vargos082000tjernobylconcerns},\cite{mauroNuclearRiskSociety},\cite{vienna06092005LookingBack}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%	\subsubsection{oekraine powergrid}
 	%			\paragraph{Beschrijving}
@@ -1603,24 +1608,24 @@
 	
 	\subsection{Tijd}
 	\subsubsection{Een begrensde responseigenschap}
-	Een begrensde responseigenschap stelt dat
-	een gewenste systeemreactie op een invoer vindt plaats binnen een tijdsinterval
-	[b, e] met ondergrens b ∈ Tijd en bovengrens e ∈ Tijd waar
-	b ≤ e. Bijvoorbeeld wanneer een voetganger bij een stoplicht duwt
-	op de knop om over te steken, moet het licht voor voetgangers draaien
-	groen binnen een tijdsinterval van bijvoorbeeld [10, 15]. De behoefte aan een bovenwerk
-	grens is duidelijk: de voetganger wil binnen korte tijd de weg oversteken
-	tijd (en niet uiteindelijk). Er is echter ook een ondergrens nodig
-	omdat het verkeerslicht niet ogenblikkelijk van groen naar rood mag gaan, maar pas na een gele fase van bijvoorbeeld 10 seconden om
-	auto's zachtjes afremmen.
-	Waarbij P(t) het indrukken van de knop op tijdstip t en voorstelt
-	G(t) die een groen verkeerslicht voor de voetgangers voorstelt op tijdstip t,
-	we kunnen de gewenste eigenschap uitdrukken met de formule
-	$\forall$ t1 $\in$ Tijd $\dot{}$ (P(t1) $\rightarrow$ $\exists$t2 \in [t1 + 10, t1 + 15] $\dot{}$ G(t2 ))
-	Merk op dat deze eigenschap binnen een bepaalde tijd kan worden vervalst. Wanneer
-	voor een bepaald tijdstip t1 met P(t1) ontdekken we dat gedurende de tijd
-	interval [t1 + 10, t1 + 15] verscheen geen groen licht voor de voetgangers,
-	eigendom (1.3) wordt geschonden.
+%	Een begrensde responseigenschap stelt dat
+%	een gewenste systeemreactie op een invoer vindt plaats binnen een tijdsinterval
+%	[b, e] met ondergrens b ∈ Tijd en bovengrens e ∈ Tijd waar
+%	b ≤ e. Bijvoorbeeld wanneer een voetganger bij een stoplicht duwt
+%	op de knop om over te steken, moet het licht voor voetgangers draaien
+%	groen binnen een tijdsinterval van bijvoorbeeld [10, 15]. De behoefte aan een bovenwerk
+%	grens is duidelijk: de voetganger wil binnen korte tijd de weg oversteken
+%	tijd (en niet uiteindelijk). Er is echter ook een ondergrens nodig
+%	omdat het verkeerslicht niet ogenblikkelijk van groen naar rood mag gaan, maar pas na een gele fase van bijvoorbeeld 10 seconden om
+%	auto's zachtjes afremmen.
+%	Waarbij P(t) het indrukken van de knop op tijdstip t en voorstelt
+%	G(t) die een groen verkeerslicht voor de voetgangers voorstelt op tijdstip t,
+%	we kunnen de gewenste eigenschap uitdrukken met de formule
+%	$\forall$ t1 $\in$ Tijd $\dot{}$ (P(t1) $\rightarrow$ $\exists$t2 \in [t1 + 10, t1 + 15] $\dot{}$ G(t2 ))
+%	Merk op dat deze eigenschap binnen een bepaalde tijd kan worden vervalst. Wanneer
+%	voor een bepaald tijdstip t1 met P(t1) ontdekken we dat gedurende de tijd
+%	interval [t1 + 10, t1 + 15] verscheen geen groen licht voor de voetgangers,
+%	eigendom (1.3) wordt geschonden.
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%	\subsubsection{Duration properties}
 	%	
@@ -1845,68 +1850,77 @@
 	
 	
 	\subsection{Dualiteiten}
-	The identities in Table 1-1 are arranged in pairs, as, for example, (2a) and (2b).We now consider the principle
-	behind this arrangement. Suppose E is an equation of set algebra. The dual E
-	∗ of E is the equation obtained by
-	replacing each occurrence of ∪, ∩, U and ∅ in E by ∩, ∪, ∅, and U, respectively. For example, the dual of
-	(U ∩ A) ∪ (B ∩ A) = A is (∅ ∪ A) ∩ (B ∪ A) = A
-	Observe that the pairs of laws in Table 1-1 are duals of each other. It is a fact of set algebra, called the principle
-	of duality, that if any equation E is an identity then its dual E
-	∗ is also an identity.
 	
-	book discrecte match by schaum in ch 1.5
-	Theorem 15.1 (Principle of Duality): The dual of any theorem in a Boolean algebra is also a theorem.
-	In other words, if any statement is a consequence of the axioms of a Boolean algebra, then the dual is also a
-	consequence of those axioms since the dual statement can be proven by using the dual of each step of the proof
-	of the original statement.
-	
-	book discrecte match by schaum in ch 15.3
-	
-	
-	Principle of Duality in Discrete Mathematics
+
 	Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.
-	https://www.javatpoint.com/principle-of-duality-in-discrete-mathematics
+ 
 	
-	
-	https://www.brainkart.com/article/Mathematical-Logic--Duality_41291/
+
 	
 	
 	Dualiteit, in de wiskunde, principe waarbij de ene ware uitspraak uit de andere kan worden verkregen door slechts twee woorden met elkaar te verwisselen. Het is een eigenschap die behoort tot de tak van de algebra die bekend staat als de roostertheorie en die betrokken is bij de concepten van orde en structuur die in verschillende wiskundige systemen voorkomen. Een wiskundige structuur wordt een rooster genoemd als deze op een bepaalde manier kan worden geordend (zie volgorde). Projectieve meetkunde, verzamelingenleer en symbolische logica zijn voorbeelden van systemen met onderliggende roosterstructuren, en hebben daarom ook principes van dualiteit.
-	
-	https://www.britannica.com/science/duality
-	
-	
-	Duality in mathematics is not a theorem, but a “principle”. It has a
-	simple origin, it is very powerful and useful, and has a long history going
-	back hundreds of years. Over time it has been adapted and modified
-	and so we can still use it in novel situations. It appears in many
-	subjects in mathematics (geometry, algebra, analysis) and in physics.
-	Fundamentally, duality gives two different points of view of looking at
-	the same object. There are many things that have two different points
-	of view and in principle they are all dualities.
-	Linear duality in the plane. 
-	Linear algebra.
-	Fourier transform.
-	Fourier series.
-	Poisson summation formula
-	Fourier theory
-	(3) Non-compact Lie groups.
-	Intersection pairing.
-	Poincar´e duality
-	Hodge theorem.
-	https://fme.upc.edu/ca/arxius/butlleti-digital/riemann/071218_conferencia_atiyah-d_article.pdf
-	
-	
-	Duality is known to be a very general as well as a broad concept, without a strict definition that captures all those uses. There usually is a precise definition when duality is applied to specific concepts, for just that context. The common idea is that there are two things that basically are just two sides of the same coin.
-	
-	In mathematics, we can define duality as a principle that translates concepts, theorems, or mathematical structures into other concepts, theorems, or structures, in a one-to-one fashion, often by means of an involution operation: if the dual of let’s suppose A is equal to B, then we can say that the dual of B is A.
-	
-	https://www.vedantu.com/maths/duality
-	
-	
-	https://academickids.com/encyclopedia/index.php/Duality_%28mathematics%29
-	
-	https://math.berkeley.edu/~shiyu/s15capstone/materials/Capstone_Duals.pdf
+%	The identities in Table 1-1 are arranged in pairs, as, for example, (2a) and (2b).We now consider the principle
+%	behind this arrangement. Suppose E is an equation of set algebra. The dual E
+%	∗ of E is the equation obtained by
+%	replacing each occurrence of ∪, ∩, U and ∅ in E by ∩, ∪, ∅, and U, respectively. For example, the dual of
+%	(U ∩ A) ∪ (B ∩ A) = A is (∅ ∪ A) ∩ (B ∪ A) = A
+%	Observe that the pairs of laws in Table 1-1 are duals of each other. It is a fact of set algebra, called the principle
+%	of duality, that if any equation E is an identity then its dual E
+%	∗ is also an identity.
+%	
+%	book discrecte match by schaum in ch 1.5
+%	Theorem 15.1 (Principle of Duality): The dual of any theorem in a Boolean algebra is also a theorem.
+%	In other words, if any statement is a consequence of the axioms of a Boolean algebra, then the dual is also a
+%	consequence of those axioms since the dual statement can be proven by using the dual of each step of the proof
+%	of the original statement.
+%	
+%	book discrecte match by schaum in ch 15.3
+%	
+%	
+%	Principle of Duality in Discrete Mathematics
+%	Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.
+%	https://www.javatpoint.com/principle-of-duality-in-discrete-mathematics
+%	
+%	
+%	https://www.brainkart.com/article/Mathematical-Logic--Duality_41291/
+%	
+%	
+%	Dualiteit, in de wiskunde, principe waarbij de ene ware uitspraak uit de andere kan worden verkregen door slechts twee woorden met elkaar te verwisselen. Het is een eigenschap die behoort tot de tak van de algebra die bekend staat als de roostertheorie en die betrokken is bij de concepten van orde en structuur die in verschillende wiskundige systemen voorkomen. Een wiskundige structuur wordt een rooster genoemd als deze op een bepaalde manier kan worden geordend (zie volgorde). Projectieve meetkunde, verzamelingenleer en symbolische logica zijn voorbeelden van systemen met onderliggende roosterstructuren, en hebben daarom ook principes van dualiteit.
+%	
+%	https://www.britannica.com/science/duality
+%	
+%	
+%	Duality in mathematics is not a theorem, but a “principle”. It has a
+%	simple origin, it is very powerful and useful, and has a long history going
+%	back hundreds of years. Over time it has been adapted and modified
+%	and so we can still use it in novel situations. It appears in many
+%	subjects in mathematics (geometry, algebra, analysis) and in physics.
+%	Fundamentally, duality gives two different points of view of looking at
+%	the same object. There are many things that have two different points
+%	of view and in principle they are all dualities.
+%	Linear duality in the plane. 
+%	Linear algebra.
+%	Fourier transform.
+%	Fourier series.
+%	Poisson summation formula
+%	Fourier theory
+%	(3) Non-compact Lie groups.
+%	Intersection pairing.
+%	Poincar´e duality
+%	Hodge theorem.
+%	https://fme.upc.edu/ca/arxius/butlleti-digital/riemann/071218_conferencia_atiyah-d_article.pdf
+%	
+%	
+%	Duality is known to be a very general as well as a broad concept, without a strict definition that captures all those uses. There usually is a precise definition when duality is applied to specific concepts, for just that context. The common idea is that there are two things that basically are just two sides of the same coin.
+%	
+%	In mathematics, we can define duality as a principle that translates concepts, theorems, or mathematical structures into other concepts, theorems, or structures, in a one-to-one fashion, often by means of an involution operation: if the dual of let’s suppose A is equal to B, then we can say that the dual of B is A.
+%	
+%	https://www.vedantu.com/maths/duality
+%	
+%	
+%	https://academickids.com/encyclopedia/index.php/Duality_%28mathematics%29
+%	
+%	https://math.berkeley.edu/~shiyu/s15capstone/materials/Capstone_Duals.pdf
 	\section{Computation tree logic}
 	
 	\subsection{Algemeen}
@@ -1914,99 +1928,101 @@
 	dat omvat zowel de propositionele connectieven als
 	temporele verbindingen AX, EX, AU, EU, AG, EG, AF,
 	en EF.
+%	
+%	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. 
+	We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. 
+
+Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
+
+Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
+Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
+States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
+
+Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
+
 	
-	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. De kripke structuur is een set van locaties, transities, guards, klokken en data-variabelen .
-	
+	De kripke structuur is een set van locaties, transities, guards, klokken en data-variabelen .	
 	Temporal logic
 	− formele taal voor het specificeren en redeneren over hoe de
 	Het gedrag van een systeem verandert in de loop van de tijd
 	− breidt de propositielogica uit met modale/temporele operatoren
 	− een belangrijk gebruik: representatie van toekomstige systeemeigenschappen
-	gecontroleerd door een modelchecker
-	
-	
+	gecontroleerd door een modelchecker.	
 	Informeel betekenen A en E ‘langs alle paden’ en ‘langs
 	ten minste één pad”, respectievelijk; terwijl X, F, G en
 	U verwijst naar ‘volgende staat’, ‘een toekomstige staat’, ‘hele toekomst’
-	staten,” en “Tot.”
-	
+	staten,” en “Tot.”	
 	We gebruiken structurele inductie op CTL-formules om te definiëren
 	een tevredenheidsrelatie: M,s impliceert phi
 	dat hangt af van een transitiesysteem M = (S, →, L), a
-	toestand s van M, en een CTL-formule φ:
-	
+	toestand s van M, en een CTL-formule $\phi$.	
 	Syntaxis van CTL is opgesplitst in state- en padformules
 	− specificeer respectievelijk eigenschappen van toestanden/paden
-	− een CTL-formule is een toestandsformule
-	
-	
+	− een CTL-formule is een toestandsformule	
 	State formulae: 
-	waarbij een E AP en ψ een padformule is voor een atomaire propositie
-	
-	
+	waarbij een E AP en ψ een padformule is voor een atomaire propositie	
 	Path formulae 
-	waarbij φ een toestandsformule (stateformula) is
-	
+	waarbij φ een toestandsformule (stateformula) is	
 	Elke padkwantificator moet worden gevolgd door een temporele kwantificator in de
 	syntactische boom van elke formule
 	
 	
-	Gegeven een CTL-formule φ en een eindig presenteerbaar model M, geldt M |= φ?
-	◮ Eindig presenteerbare boom = transitiesysteem over AP.
-	◮ De boom = de ontvouwing van A.
-	Let op het verschil met LTL-modellen:
-	◮ Een transitiesysteem belichaamt een ontelbare reeks modellen voor LTL!
-	◮ Een transitiesysteem belichaamt een uniek model voor CTL!
-	
-	CTL Model Checking
-	
-	• Assumptions:
-	• Finite number of processes, each having a finite number of
-	finite-valued variables.
-	• Finite length of CTL formula
-	• Problem: Determine whether φ is true in a finite structure M.
-	• Algorithm overview:
-	1 Convert φ in terms of AF, EU, EX, ∧, ∨, ⊥.
-	2 Label the states of M with the subformulas of φ that are satisfied
-	there.
-	3 If starting state s0 is labeled with φ, then φ holds on M; i.e.,
-	(s0 ∈ {s|M,s |= φ}) ⇒ (M |= φ)
-	
-	• Suppose ψ is a subformula of φ and states satisfying all the
-	immediate subformulas of ψ have already been labeled.
-	• We want to determine which states to label with ψ.
-	• If ψ is:
-	• ⊥: Then no states are labeled with ⊥
-	• p: label s with p if p ∈ L(s).
-	• ψ1 ∧ ψ2: label s with ψ1 ∧ ψ2 if s is already labeled both with ψ1 and
-	with ψ2.
-	• ¬ψ1
-	: label s with ¬ψ1
-	if s is not already labeled with ψ1
-	.
-	• EX ψ1
-	: label any state with EX ψ1
-	if one of its successors is labeled
-	with ψ1
-	.
-	
-	
-	https://www.uio.no/studier/emner/matnat/ifi/INF5140/v17/slides/clt-antonio.pdf
-	
-	
-	
-	https://www.inf.ed.ac.uk/teaching/courses/propm/papers/CTL.pdf
-	
-	
-	https://www.cs.cmu.edu/~emc/15414-f12/lecture/temporal_logics.pdf
-	https://stackoverflow.com/questions/37516092/how-can-i-change-these-into-ctl-spec-in-nusmv-model
-	https://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2011/7/poly_logiques_temporelles.pdf
-	https://ltsmin.utwente.nl/assets/man/ltsmin-ctl.html
-	https://www.inf.unibz.it/~artale/FM/slide4.pdf
-	https://www.depts.ttu.edu/cs/research/documents/ksattlc.pdf
-	https://www.cs.utexas.edu/~draju/Verification/class2.pdf
-	https://www.cl.cam.ac.uk/~djg11/pubs/temporal.html
-	
+%	Gegeven een CTL-formule φ en een eindig presenteerbaar model M, geldt M |= φ?
+%	◮ Eindig presenteerbare boom = transitiesysteem over AP.
+%	◮ De boom = de ontvouwing van A.
+%	Let op het verschil met LTL-modellen:
+%	◮ Een transitiesysteem belichaamt een ontelbare reeks modellen voor LTL!
+%	◮ Een transitiesysteem belichaamt een uniek model voor CTL!
+%	
+%	CTL Model Checking
+%	
+%	• Assumptions:
+%	• Finite number of processes, each having a finite number of
+%	finite-valued variables.
+%	• Finite length of CTL formula
+%	• Problem: Determine whether φ is true in a finite structure M.
+%	• Algorithm overview:
+%	1 Convert φ in terms of AF, EU, EX, ∧, ∨, ⊥.
+%	2 Label the states of M with the subformulas of φ that are satisfied
+%	there.
+%	3 If starting state s0 is labeled with φ, then φ holds on M; i.e.,
+%	(s0 ∈ {s|M,s |= φ}) ⇒ (M |= φ)
+%	
+%	• Suppose ψ is a subformula of φ and states satisfying all the
+%	immediate subformulas of ψ have already been labeled.
+%	• We want to determine which states to label with ψ.
+%	• If ψ is:
+%	• ⊥: Then no states are labeled with ⊥
+%	• p: label s with p if p ∈ L(s).
+%	• ψ1 ∧ ψ2: label s with ψ1 ∧ ψ2 if s is already labeled both with ψ1 and
+%	with ψ2.
+%	• ¬ψ1
+%	: label s with ¬ψ1
+%	if s is not already labeled with ψ1
+%	.
+%	• EX ψ1
+%	: label any state with EX ψ1
+%	if one of its successors is labeled
+%	with ψ1
+%	.
+%	
+%	
+%	https://www.uio.no/studier/emner/matnat/ifi/INF5140/v17/slides/clt-antonio.pdf
+%	
+%	
+%	
+%	https://www.inf.ed.ac.uk/teaching/courses/propm/papers/CTL.pdf
+%	
+%	
+%	https://www.cs.cmu.edu/~emc/15414-f12/lecture/temporal_logics.pdf
+%	https://stackoverflow.com/questions/37516092/how-can-i-change-these-into-ctl-spec-in-nusmv-model
+%	https://people.irisa.fr/Francois.Schwarzentruber/mit2_cvfp_2011/7/poly_logiques_temporelles.pdf
+%	https://ltsmin.utwente.nl/assets/man/ltsmin-ctl.html
+%	https://www.inf.unibz.it/~artale/FM/slide4.pdf
+%	https://www.depts.ttu.edu/cs/research/documents/ksattlc.pdf
+%	https://www.cs.utexas.edu/~draju/Verification/class2.pdf
+%	https://www.cl.cam.ac.uk/~djg11/pubs/temporal.html
+%	
 	
 	
 	
@@ -2207,15 +2223,7 @@
 	%	Als een of meerdere locaties ingesteld zijn als committed. Een committed state kan niet vertragen  en de volgende transitie moet een transitie zijn waarin de uitgaande edge komt van een committed edge
 	%	
 	\subsection{Operator: AG}
-	We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. 
-	
-	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
-	
-	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
-	States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
-	
-	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
+
 	
 	AG P: in all possible execution paths, P is always true. 
 	
@@ -2292,34 +2300,34 @@
 	om uiteindelijk tevreden te zijn.
 	
 	
-	Temporal Operators
-	– AFp - p holds sometime in the future.
-	– AGp - p holds globally.
-	– AXp - p holds next time.
-	– A(pUq) - p holds until q holds.
-	– EFp - p holds sometime in the future.
-	– EGp - p holds globally.
-	– EXp - p holds next time.
-	– E(pUq) - p holds until q holds.
-	– p and q are some temporal logic formulas.
-	– Ex.: A(req  ® AF ack), AG (Øgrant1 Ú Øgrant2)
-	
-	
-	https://ltsmin.utwente.nl/assets/man/ltsmin-ctl.html
-	
-	
-	
-	
-	AX P: in all possible execution paths, in the next state P is true.
-	A[P U Q]: in all possible execution paths, P is true * until Q is true (at least once).
-	
-	EF P: in at least one execution path, sooner or later P will be true.
-	
-	EG P: in at least one execution path, P is always true.
-	EX P: in at least one execution path, in the next state P is true.
-	E[P U Q]: in at least one execution path, P is true * until Q is true (at least once).
-	
-	https://stackoverflow.com/questions/37516092/how-can-i-change-these-into-ctl-spec-in-nusmv-model
+%	Temporal Operators
+%	– AFp - p holds sometime in the future.
+%	– AGp - p holds globally.
+%	– AXp - p holds next time.
+%	– A(pUq) - p holds until q holds.
+%	– EFp - p holds sometime in the future.
+%	– EGp - p holds globally.
+%	– EXp - p holds next time.
+%	– E(pUq) - p holds until q holds.
+%	– p and q are some temporal logic formulas.
+%	– Ex.: A(req  ® AF ack), AG (Øgrant1 Ú Øgrant2)
+%	
+%	
+%	https://ltsmin.utwente.nl/assets/man/ltsmin-ctl.html
+%	
+%	
+%	
+%	
+%	AX P: in all possible execution paths, in the next state P is true.
+%	A[P U Q]: in all possible execution paths, P is true * until Q is true (at least once).
+%	
+%	EF P: in at least one execution path, sooner or later P will be true.
+%	
+%	EG P: in at least one execution path, P is always true.
+%	EX P: in at least one execution path, in the next state P is true.
+%	E[P U Q]: in at least one execution path, P is true * until Q is true (at least once).
+%	
+%	https://stackoverflow.com/questions/37516092/how-can-i-change-these-into-ctl-spec-in-nusmv-model
 	
 	
 	
@@ -2491,22 +2499,22 @@
 		%		\hline
 		%	\end{longtblr}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Conclusie}
-	
-	
-	
-	Op basis van de onderzoeksresultaten uit de literatuurstudie komt naar voren dat veilgheid een aspect is dat meot worden meegenomen bij de requirements engineering proces.
-	Bij de therac waren er diverse problemen: communicatie, doorontwikkeling, controle en toetsing
-	Bij de boeing 737 crashes was het probleem van controle en communicatie naar medewerkers
-	Uit de evaluatie van de china explosion 2015 tianjin komt naar voren dat communicatie, transparantie en veiligheid niet altijd prioriteit hadden bij de lokale autoriteiten
-	Bij de tesla autopilot crashes komen soms onvoldoende onderbouwde ontwerpkeuzes naar voren die niet goed zij  afgewogen tegenover het gedrag van de bestuurder.
-	De ramp in Tsjernobyl toont aan hoe autoriteiten een ramp in de doofpot proberen te stoppen
-	Uit de concepten die zijn ontwikkeld en gevisualiseerd in  het hoofdstuk ontwikkelgeschiedenis blijkt dat het implementeren van veiligheid in  realtimesystemen niet volledig is geimplementeerd. Geprobeerd is om de afhandeling van schepen  in te regelen vai procedures gebruikt door een maincontroller. Een task scheduler in het concept van 19 meiEen waterlevelsensor en en priorityqueue in templates van 12 juni, 13 juni, 23 juni en 16 juli. Of een error handling template in het concept van 22 mei, 6 juni.
-	Dit resulteerde in de concepten van 19 en 20 september
-	Tijdens de studie is naar voren gekomen dat de meilijkheid van modelleren in uppaal vooraal ligt bij de definitie van de propositie logca voor time-based model checking en dan met name clocks en regions.
-	Was het makkelijk te onderzoeken? Waarom?
-	Wat heb ik geleerd
-	Belangrijkste leerpunt van deze studie is het belang van reqirements en specificaties. Een oede requirementsdefinitie is belangrijk voorde ontwikkeling van een model alsook het testen van de specificaties en de evaluatie hiervan.
+%	\section{Conclusie}
+%	
+%	
+%	
+%	Op basis van de onderzoeksresultaten uit de literatuurstudie komt naar voren dat veilgheid een aspect is dat meot worden meegenomen bij de requirements engineering proces.
+%	Bij de therac waren er diverse problemen: communicatie, doorontwikkeling, controle en toetsing
+%	Bij de boeing 737 crashes was het probleem van controle en communicatie naar medewerkers
+%	Uit de evaluatie van de china explosion 2015 tianjin komt naar voren dat communicatie, transparantie en veiligheid niet altijd prioriteit hadden bij de lokale autoriteiten
+%	Bij de tesla autopilot crashes komen soms onvoldoende onderbouwde ontwerpkeuzes naar voren die niet goed zij  afgewogen tegenover het gedrag van de bestuurder.
+%	De ramp in Tsjernobyl toont aan hoe autoriteiten een ramp in de doofpot proberen te stoppen
+%	Uit de concepten die zijn ontwikkeld en gevisualiseerd in  het hoofdstuk ontwikkelgeschiedenis blijkt dat het implementeren van veiligheid in  realtimesystemen niet volledig is geimplementeerd. Geprobeerd is om de afhandeling van schepen  in te regelen vai procedures gebruikt door een maincontroller. Een task scheduler in het concept van 19 meiEen waterlevelsensor en en priorityqueue in templates van 12 juni, 13 juni, 23 juni en 16 juli. Of een error handling template in het concept van 22 mei, 6 juni.
+%	Dit resulteerde in de concepten van 19 en 20 september
+%	Tijdens de studie is naar voren gekomen dat de meilijkheid van modelleren in uppaal vooraal ligt bij de definitie van de propositie logca voor time-based model checking en dan met name clocks en regions.
+%	Was het makkelijk te onderzoeken? Waarom?
+%	Wat heb ik geleerd
+%	Belangrijkste leerpunt van deze studie is het belang van reqirements en specificaties. Een oede requirementsdefinitie is belangrijk voorde ontwikkeling van een model alsook het testen van de specificaties en de evaluatie hiervan.
 	
 	
 	\newpage

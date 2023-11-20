@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  3 NOV 2023 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  19 NOV 2023 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,47 +375,48 @@ Package pdftex.def Info: logohr.png  used on input line 42.
 {C:/Users/gally/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logohr.png
 >] (verslag.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 12.
+(Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 12.
+(Font)              <5> on input line 4.
 )
 \tf@toc=\write3
 \openout3 = `verslag.toc'.
 
- [1] [2] [3]
+ [1]
 
-LaTeX Warning: Citation `RijnensupervisorsynthesisLock' on page 4 undefined on 
-input line 130.
+LaTeX Warning: Citation `RijnensupervisorsynthesisLock' on page 2 undefined on 
+input line 53.
 
+[2]
 
-LaTeX Warning: Citation `inriaStatsMoodCheck' on page 4 undefined on input line
- 144.
-
-
-LaTeX Warning: Citation `buddeModelChecker' on page 4 undefined on input line 1
-45.
+LaTeX Warning: Citation `inriaStatsMoodCheck' on page 3 undefined on input line
+ 146.
 
 
-LaTeX Warning: Citation `inriaStatsMoodCheck' on page 4 undefined on input line
- 150.
-
-[4]
-
-LaTeX Warning: Citation `bicker21102016automatiseringsparadox' on page 5 undefi
-ned on input line 158.
+LaTeX Warning: Citation `buddeModelChecker' on page 3 undefined on input line 1
+47.
 
 
-LaTeX Warning: Citation `vseautoparadox' on page 5 undefined on input line 159.
+LaTeX Warning: Citation `inriaStatsMoodCheck' on page 3 undefined on input line
+ 152.
+
+
+LaTeX Warning: Citation `bicker21102016automatiseringsparadox' on page 3 undefi
+ned on input line 160.
+
+
+LaTeX Warning: Citation `vseautoparadox' on page 3 undefined on input line 161.
 
 
 
-LaTeX Warning: Citation `blogxot21112016slimapparaat' on page 5 undefined on in
-put line 160.
+LaTeX Warning: Citation `blogxot21112016slimapparaat' on page 3 undefined on in
+put line 162.
 
 
-LaTeX Warning: Citation `ImplementabilityOf4VarSCP2015' on page 5 undefined on 
-input line 169.
+LaTeX Warning: Citation `ImplementabilityOf4VarSCP2015' on page 3 undefined on 
+input line 171.
 
+[3]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -423,14 +424,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.311 	\newline
+l.313 	\newline
                 \indent Voor deze studie is onderzoek gedaan naar verschille...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[5]
+[4]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -438,619 +439,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.399 	\newline
+l.401 	\newline
                 \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 6 undefined on in
-put line 541.
+LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 5 undefined on in
+put line 543.
 
+[5]
 
-LaTeX Warning: Citation `stackexchange2021therac25code' on page 6 undefined on 
-input line 559.
+LaTeX Warning: Citation `uran05042019SPOF' on page 6 undefined on input line 59
+0.
 
 
-LaTeX Warning: Citation `rogaway2004therac25' on page 6 undefined on input line
- 560.
-
-
-LaTeX Warning: Citation `wikiTherac25' on page 6 undefined on input line 561.
-
-
-LaTeX Warning: Citation `lynch2017theracRaceConditions' on page 6 undefined on 
-input line 562.
-
-
-LaTeX Warning: Citation `lim1998theracdisaster' on page 6 undefined on input li
-ne 562.
-
-
-LaTeX Warning: Citation `fabio26102015therac25' on page 6 undefined on input li
-ne 563.
-
-
-LaTeX Warning: Citation `ethicsunwrappedTherac25' on page 6 undefined on input 
-line 563.
-
-
-LaTeX Warning: Citation `casesHistoryTherac25' on page 6 undefined on input lin
-e 563.
-
-
-LaTeX Warning: Citation `caballero2019Therac25' on page 6 undefined on input li
-ne 563.
-
-
-LaTeX Warning: Citation `rose1994theracFatalDose' on page 6 undefined on input 
-line 563.
-
-
-LaTeX Warning: Citation `levesonMITTherac25' on page 6 undefined on input line 
-563.
-
-
-LaTeX Warning: Citation `grant1978theracevaluation' on page 6 undefined on inpu
-t line 564.
-
-
-LaTeX Warning: Citation `turnerTheracAccidentsInvestigations' on page 6 undefin
-ed on input line 564.
-
-
-LaTeX Warning: Citation `turner1993TheracAccidentsInvestigations' on page 6 und
-efined on input line 564.
-
-
-LaTeX Warning: Citation `wang2017industrialdesignengineering' on page 6 undefin
-ed on input line 564.
-
-
-LaTeX Warning: Citation `levesonturner1993theracpart2' on page 6 undefined on i
-nput line 564.
-
-
-LaTeX Warning: Citation `porelloTheraccFailure' on page 6 undefined on input li
-ne 564.
-
-
-LaTeX Warning: Citation `theracIncidents' on page 6 undefined on input line 564
-.
-
-
-LaTeX Warning: Citation `huffbrown2004casestudyethicatherac' on page 6 undefine
-d on input line 565.
-
-
-LaTeX Warning: Citation `sebowikimedicalradiation' on page 6 undefined on input
- line 566.
-
-
-LaTeX Warning: Citation `hsia1995testtherac25' on page 6 undefined on input lin
-e 566.
-
-
-LaTeX Warning: Citation `magsilvaTheracTesting' on page 6 undefined on input li
-ne 566.
-
-
-LaTeX Warning: Citation `chemeuropetherac25' on page 6 undefined on input line 
-567.
-
-
-LaTeX Warning: Citation `statsenko10102016Therackillerbug' on page 6 undefined 
-on input line 567.
-
-
-LaTeX Warning: Citation `therac25casestudy' on page 6 undefined on input line 5
-67.
-
-
-LaTeX Warning: Citation `thomas1994theracinLotos' on page 6 undefined on input 
-line 567.
-
-
-LaTeX Warning: Citation `wikibookstherac' on page 6 undefined on input line 567
-.
-
-
-LaTeX Warning: Citation `bozdagTherac25' on page 6 undefined on input line 568.
-
-
-
-LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 6 undefined on in
-put line 568.
-
-
-LaTeX Warning: Citation `stackexchange2021therac25code' on page 6 undefined on 
-input line 568.
-
-[6]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.581 	\newline
-                \indent  Op  10/03/2019 2019 stort vlucht ET302 van Ethiopia...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Citation `gates18112020boeingcrisis' on page 7 undefined on inpu
-t line 581.
-
-
-LaTeX Warning: Citation `boeing737maxsoftwareprobles' on page 7 undefined on in
-put line 582.
-
-
-LaTeX Warning: Citation `avetisov19032019boeingmalwarestate' on page 7 undefine
-d on input line 582.
-
-
-LaTeX Warning: Citation `thompson23112020nationalsecurityboeing' on page 7 unde
-fined on input line 582.
-
-
-LaTeX Warning: Citation `wiki737maxgroundings' on page 7 undefined on input lin
-e 583.
-
-
-LaTeX Warning: Citation `campbell02052019boengcrashhumanerrors' on page 7 undef
-ined on input line 583.
-
-
-LaTeX Warning: Citation `uran05042019SPOF' on page 7 undefined on input line 58
-8.
-
-
-LaTeX Warning: Citation `boeing737maxdisplay' on page 7 undefined on input line
- 589.
-
-
-LaTeX Warning: Citation `fehrm24112020737changes' on page 7 undefined on input 
-line 590.
-
-
-LaTeX Warning: Citation `dohertylindeman15032019737problems' on page 7 undefine
-d on input line 590.
-
-
-LaTeX Warning: Citation `travis18042019737maxsoftwaredevop' on page 7 undefined
- on input line 591.
-
-
-LaTeX Warning: Citation `hawkins22032019737maxairplanes' on page 7 undefined on
- input line 592.
-
-
-LaTeX Warning: Citation `barnett05052019737maxcrisis' on page 7 undefined on in
-put line 592.
-
-
-LaTeX Warning: Citation `thomas30082020737safest' on page 7 undefined on input 
-line 592.
-
-
-LaTeX Warning: Citation `boyle18112020737maxupgrade' on page 7 undefined on inp
-ut line 592.
-
-
-LaTeX Warning: Citation `bergstraburgess122019737maxMcasAlgorithm' on page 7 un
-defined on input line 592.
-
-
-LaTeX Warning: Citation `737mcas' on page 7 undefined on input line 592.
-
-
-LaTeX Warning: Citation `german190620217372yaftergrounded' on page 7 undefined 
-on input line 592.
-
-
-LaTeX Warning: Citation `beningo02052019boeinglessons' on page 7 undefined on i
-nput line 592.
-
-
-LaTeX Warning: Citation `bloomberg26092019failedpred' on page 7 undefined on in
-put line 592.
-
-
-LaTeX Warning: Citation `afacwaLostSafeguards' on page 7 undefined on input lin
-e 592.
-
-
-LaTeX Warning: Citation `gates18112020boeingcrisis' on page 7 undefined on inpu
-t line 615.
-
-
-LaTeX Warning: Citation `boeing737maxsoftwareprobles' on page 7 undefined on in
-put line 616.
-
-
-LaTeX Warning: Citation `avetisov19032019boeingmalwarestate' on page 7 undefine
-d on input line 617.
-
-
-LaTeX Warning: Citation `thompson23112020nationalsecurityboeing' on page 7 unde
-fined on input line 618.
-
-
-LaTeX Warning: Citation `gates21032019FAAControlSystem' on page 7 undefined on 
-input line 619.
-
-
-LaTeX Warning: Citation `faa18112020boeingreview' on page 7 undefined on input 
-line 620.
-
-
-LaTeX Warning: Citation `wiki737maxgroundings' on page 7 undefined on input lin
-e 621.
-
-
-LaTeX Warning: Citation `campbell02052019boengcrashhumanerrors' on page 7 undef
-ined on input line 622.
-
-
-LaTeX Warning: Citation `hawkins22032019737maxairplanes' on page 7 undefined on
- input line 623.
-
-
-LaTeX Warning: Citation `thomas30082020737safest' on page 7 undefined on input 
-line 624.
-
-
-LaTeX Warning: Citation `boeing737maxdisplay' on page 7 undefined on input line
- 625.
-
-
-LaTeX Warning: Citation `fehrm24112020737changes' on page 7 undefined on input 
-line 626.
-
-
-LaTeX Warning: Citation `travis18042019737maxsoftwaredevop' on page 7 undefined
- on input line 627.
-
-
-LaTeX Warning: Citation `barnett05052019737maxcrisis' on page 7 undefined on in
-put line 628.
-
-
-LaTeX Warning: Citation `easa27012021737maxsafereturn' on page 7 undefined on i
-nput line 629.
-
-
-LaTeX Warning: Citation `touitou11032019737tragedies' on page 7 undefined on in
-put line 630.
-
-
-LaTeX Warning: Citation `hemmerdinger02022021737maxdeliveries' on page 7 undefi
-ned on input line 631.
-
-
-LaTeX Warning: Citation `bielby27022021faaimprovesafety' on page 7 undefined on
- input line 632.
-
-
-LaTeX Warning: Citation `boyle18112020737maxupgrade' on page 7 undefined on inp
-ut line 633.
-
-
-LaTeX Warning: Citation `bergstraburgess122019737maxMcasAlgorithm' on page 7 un
-defined on input line 634.
-
-
-LaTeX Warning: Citation `737mcas' on page 7 undefined on input line 635.
-
-
-LaTeX Warning: Citation `newburger17052019boeingcrisis' on page 7 undefined on 
-input line 636.
-
-
-LaTeX Warning: Citation `arstechnica22012020737problems' on page 7 undefined on
- input line 637.
-
-
-LaTeX Warning: Citation `german190620217372yaftergrounded' on page 7 undefined 
-on input line 638.
-
-
-LaTeX Warning: Citation `beningo02052019boeinglessons' on page 7 undefined on i
-nput line 639.
-
-
-LaTeX Warning: Citation `duran05042019boeingspof' on page 7 undefined on input 
-line 640.
-
-
-LaTeX Warning: Citation `makichuck24012021737fearflying' on page 7 undefined on
- input line 641.
-
-
-LaTeX Warning: Citation `caa737modifications' on page 7 undefined on input line
- 642.
-
-
-LaTeX Warning: Citation `oestergaard14122020boeingdeliveries' on page 7 undefin
-ed on input line 643.
-
-
-LaTeX Warning: Citation `reenberg787flaws' on page 7 undefined on input line 64
-4.
-
-
-LaTeX Warning: Citation `fitch16092020737backlogrisks' on page 7 undefined on i
-nput line 645.
-
-
-LaTeX Warning: Citation `willis27082020737maxfailures' on page 7 undefined on i
-nput line 646.
-
-
-LaTeX Warning: Citation `ostrower11062020more737changes' on page 7 undefined on
- input line 647.
-
-
-LaTeX Warning: Citation `hruska13122019faaknown737crashrate' on page 7 undefine
-d on input line 648.
-
-
-LaTeX Warning: Citation `bloomberg26092019failedpred' on page 7 undefined on in
-put line 649.
-
-
-LaTeX Warning: Citation `whiteman09072020boengcancelstock' on page 7 undefined 
-on input line 650.
-
-
-LaTeX Warning: Citation `leopold09192019boeingreliability' on page 7 undefined 
-on input line 651.
-
-
-LaTeX Warning: Citation `koenig11122019737crashesnofix' on page 7 undefined on 
-input line 652.
-
-
-LaTeX Warning: Citation `dohertylindeman15032019737problems' on page 7 undefine
-d on input line 653.
-
-
-LaTeX Warning: Citation `stodder02102019corruptoversight' on page 7 undefined o
-n input line 654.
-
-
-LaTeX Warning: Citation `afacwaLostSafeguards' on page 7 undefined on input lin
-e 655.
-
-
-LaTeX Warning: Citation `swayne18032019profitssafety' on page 7 undefined on in
-put line 656.
-
-
-LaTeX Warning: Citation `freed26022021liftaustraliaban' on page 7 undefined on 
-input line 657.
-
-
-LaTeX Warning: Citation `reed15032019softwareattention' on page 7 undefined on 
-input line 658.
-
-
-LaTeX Warning: Citation `news17032019softwareexplains' on page 7 undefined on i
-nput line 659.
-
-
-LaTeX Warning: Citation `legget21122020eu737maxsafe' on page 7 undefined on inp
-ut line 660.
-
-
-LaTeX Warning: Citation `marketscreener0103221737chinarecertification' on page 
-7 undefined on input line 661.
-
-
-LaTeX Warning: Citation `euractiv22022021737firegrounds' on page 7 undefined on
- input line 662.
-
-
-LaTeX Warning: Citation `benny18022019737returnUAE' on page 7 undefined on inpu
-t line 663.
-
-
-LaTeX Warning: Citation `biersmichel22022021777grounds' on page 7 undefined on 
-input line 664.
-
-
-LaTeX Warning: Citation `reuters23022021777metalfatigue' on page 7 undefined on
- input line 665.
-
-[7]
-
-LaTeX Warning: Citation `pinghuang2410201TanjinFactreport' on page 8 undefined 
-on input line 683.
-
-
-LaTeX Warning: Citation `portoTanjinExplosionSight' on page 8 undefined on inpu
-t line 683.
-
-
-LaTeX Warning: Citation `imago17082015TanjinApartmentImages' on page 8 undefine
-d on input line 683.
-
-
-LaTeX Warning: Citation `trager14082015Chemicalblast' on page 8 undefined on in
-put line 683.
-
-
-LaTeX Warning: Citation `pangeramo27082015TanjinExplosion' on page 8 undefined 
-on input line 683.
-
-
-LaTeX Warning: Citation `ap06082020ammaniumnitrate' on page 8 undefined on inpu
-t line 683.
-
-
-LaTeX Warning: Citation `morris14082015TanjinIndustryImpact' on page 8 undefine
-d on input line 683.
-
-
-LaTeX Warning: Citation `milesyu20082015exposingtoxicgovlines' on page 8 undefi
-ned on input line 683.
-
-
-LaTeX Warning: Citation `artemis30032016tanjininsurance' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `aidenxiatanjinblast' on page 8 undefined on input line
- 683.
-
-
-LaTeX Warning: Citation `danwangTanjinflexreport' on page 8 undefined on input 
-line 683.
-
-
-LaTeX Warning: Citation `keyHighlightsTanjin' on page 8 undefined on input line
- 683.
-
-
-LaTeX Warning: Citation `hartley13082015videofootage' on page 8 undefined on in
-put line 683.
-
-
-LaTeX Warning: Citation `odonnel01062017firetanjinblast2015' on page 8 undefine
-d on input line 683.
-
-
-LaTeX Warning: Citation `fan15082015newyorkermistrustchina' on page 8 undefined
- on input line 683.
-
-
-LaTeX Warning: Citation `yanlidongchinamediaframingTanjin' on page 8 undefined 
-on input line 683.
-
-
-LaTeX Warning: Citation `evans27092017TnjinInsurance' on page 8 undefined on in
-put line 683.
-
-
-LaTeX Warning: Citation `jasi26032019chineschemplant' on page 8 undefined on in
-put line 683.
-
-
-LaTeX Warning: Citation `shiqingTanjinExecutiveSentence' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `sophiebeach15082015' on page 8 undefined on input line
- 683.
-
-
-LaTeX Warning: Citation `hamzeh05082020BeirutBlast' on page 8 undefined on inpu
-t line 683.
-
-
-LaTeX Warning: Citation `chemwatch18082015TanjiinExplosion' on page 8 undefined
- on input line 683.
-
-
-LaTeX Warning: Citation `thehindu15062019chinaExplosion' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `santagotimes24032019chinablast' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `klingecorp28042020causedTanjin' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `mcgarryExplosions2017' on page 8 undefined on input li
-ne 683.
-
-
-LaTeX Warning: Citation `roswnfeld13082015TanjinReports' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `aria12082015explosionaTanjin' on page 8 undefined on i
-nput line 683.
-
-
-LaTeX Warning: Citation `tremblay11022016chineseInvestigatorsTanjin' on page 8 
-undefined on input line 683.
-
-
-LaTeX Warning: Citation `taylor13082015TanjinExplosianAftermath' on page 8 unde
-fined on input line 683.
-
-
-LaTeX Warning: Citation `associatedPresss13082013' on page 8 undefined on input
- line 683.
-
-
-LaTeX Warning: Citation `un20082015InvestigationTanjin' on page 8 undefined on 
-input line 683.
-
-
-LaTeX Warning: Citation `france2412082015TnjinExplosion' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `npr14082015TanjinCause' on page 8 undefined on input l
-ine 683.
-
-
-LaTeX Warning: Citation `bbc05022016TanjinResponsibles' on page 8 undefined on 
-input line 683.
-
-
-LaTeX Warning: Citation `CBodeen15082015TanjinExplosion' on page 8 undefined on
- input line 683.
-
-
-LaTeX Warning: Citation `reutersTanjinInsurance' on page 8 undefined on input l
-ine 683.
-
-
-LaTeX Warning: Citation `yu082016evaluationTanjin2015' on page 8 undefined on i
-nput line 683.
-
-
-LaTeX Warning: Citation `wiki2015TanjinExplosions' on page 8 undefined on input
- line 683.
-
-
-LaTeX Warning: Citation `bbc17082015whathappenedTanjin' on page 8 undefined on 
-input line 683.
-
-
-LaTeX Warning: Citation `mortimer19082016taijinexplosioncrater' on page 8 undef
-ined on input line 683.
-
-
-LaTeX Warning: Citation `internationallabourofficeChmControlTooliit' on page 8 
-undefined on input line 683.
-
-
-LaTeX Warning: Citation `euTaxationCustomsICSC' on page 8 undefined on input li
-ne 683.
-
-
-LaTeX Warning: Citation `iloWHOChemSafetyCards' on page 8 undefined on input li
-ne 684.
-
-
-Overfull \hbox (174.17477pt too wide) in paragraph at lines 678--685
-\OT1/cmss/m/n/10 .[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[
-[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],
-[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]],
- []
+LaTeX Warning: Citation `boeing737maxdisplay' on page 6 undefined on input line
+ 591.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -1059,50 +465,57 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.685 	\paragraph{Datum en Plaats} 	\newline
+l.686 	\paragraph{Datum en Plaats} 	\newline
                                              \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+[6]
 
-LaTeX Warning: Citation `bnnvara13062018malirapport' on page 8 undefined on inp
-ut line 966.
-
-
-LaTeX Warning: Citation `eucal11012021malimissieverlengd' on page 8 undefined o
-n input line 967.
+LaTeX Warning: Citation `bnnvara13062018malirapport' on page 7 undefined on inp
+ut line 967.
 
 
-LaTeX Warning: Citation `nos21052014zorgenmalimissie' on page 8 undefined on in
-put line 968.
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.990 	\newline
+                \indent Het mortierongeluk in Mali op 06/04/2016.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[7]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1031 	\newline
+                 \indent
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `meijnders' on page 8 undefined on input line 969.
+! LaTeX Error: There's no line here to end.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1198 	\newline
+                 \indent  Op woensdag 25 februar 2009 voltrok zich de  ramp ...
 
-LaTeX Warning: Citation `bnrwebredactie' on page 8 undefined on input line 970.
-
-
-
-LaTeX Warning: Citation `keultjes01062016malimissiecoalitie' on page 8 undefine
-d on input line 971.
-
-
-LaTeX Warning: Citation `veenhof18012019' on page 8 undefined on input line 972
-.
-
-
-LaTeX Warning: Citation `isitman06012016militair' on page 8 undefined on input 
-line 973.
-
-
-LaTeX Warning: Citation `nporadio11072016filmdemissie' on page 8 undefined on i
-nput line 974.
-
-
-LaTeX Warning: Citation `parlementairmonitor15122013mortierongeluk' on page 8 u
-ndefined on input line 975.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 [8]
 
@@ -1112,96 +525,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.989 	\newline
-                \indent Het mortierongeluk in Mali op 06/04/2016.
+l.1217 	\newline
+                 \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `schipholbrand27102005video' on page 9 undefined on inp
-ut line 1022.
-
-
-LaTeX Warning: Citation `schipholbrand27102005video' on page 9 undefined on inp
-ut line 1022.
-
-
-LaTeX Warning: Citation `onderzoeksraad2610schipholoost' on page 9 undefined on
- input line 1022.
-
-
-LaTeX Warning: Citation `schipholbrandvideoargos' on page 9 undefined on input 
-line 1023.
-
-
-LaTeX Warning: Citation `nunl30052023feitenoverzicht' on page 9 undefined on in
-put line 1023.
-
-
-LaTeX Warning: Citation `parlementairemonitorschipholbrand' on page 9 undefined
- on input line 1023.
-
-
-LaTeX Warning: Citation `videonpoNOVA13112008' on page 9 undefined on input lin
-e 1023.
-
-
-LaTeX Warning: Citation `rizoomes01052014schipholbrand' on page 9 undefined on 
-input line 1023.
-
-
-LaTeX Warning: Citation `heuvelkroesschipholbrandcamerabeelden' on page 9 undef
-ined on input line 1023.
-
-
-LaTeX Warning: Citation `wikiSchipholbrand' on page 9 undefined on input line 1
-024.
-
-
-LaTeX Warning: Citation `schipholbrand27102005video' on page 9 undefined on inp
-ut line 1024.
-
-
-LaTeX Warning: Citation `onderzoeksraad2610schipholoost' on page 9 undefined on
- input line 1024.
-
-
-LaTeX Warning: Citation `schipholbrandvideoargos' on page 9 undefined on input 
-line 1024.
-
-
-LaTeX Warning: Citation `nunl30052023feitenoverzicht' on page 9 undefined on in
-put line 1024.
-
-
-LaTeX Warning: Citation `singeluitgeverijenSchipholbrand' on page 9 undefined o
-n input line 1024.
-
-
-LaTeX Warning: Citation `eenvandaagschipholbrand' on page 9 undefined on input 
-line 1024.
-
-
-LaTeX Warning: Citation `parlementairemonitorschipholbrand' on page 9 undefined
- on input line 1024.
-
-
-LaTeX Warning: Citation `videonpoNOVA13112008' on page 9 undefined on input lin
-e 1025.
-
-
-LaTeX Warning: Citation `rizoomes01052014schipholbrand' on page 9 undefined on 
-input line 1025.
-
-
-LaTeX Warning: Citation `heuvelkroesschipholbrandcamerabeelden' on page 9 undef
-ined on input line 1025.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1021--1026
-
- []
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 9 undefined on input 
+line 1231.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -1210,387 +542,70 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1029 	\newline
+l.1233 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
+
+
+LaTeX Warning: Citation `rivmTjernobyl' on page 9 undefined on input line 1239.
+
+
+
+LaTeX Warning: Citation `andereTijdenTjernobyl' on page 9 undefined on input li
+ne 1240.
+
+
+LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 9 undefined on inpu
+t line 1241.
+
+
+LaTeX Warning: Citation `erikbork26042023reactor4' on page 9 undefined on input
+ line 1242.
+
+
+LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 9 undefined on input 
+line 1243.
+
+
+LaTeX Warning: Citation `winceckCriticalToSafety' on page 9 undefined on input 
+line 1517.
+
+
+LaTeX Warning: Citation `chambersHazardAnalysisSCS' on page 9 undefined on inpu
+t line 1521.
 
 [9]
 
-LaTeX Warning: Citation `aviationsafety04101992airplaneCrashBijlmer' on page 10
- undefined on input line 1169.
+LaTeX Warning: Citation `rslater1998SCSAnalysis' on page 10 undefined on input 
+line 1533.
 
 
-LaTeX Warning: Citation `catsr25022009Boeing737AmsterdamCrash' on page 10 undef
-ined on input line 1170.
+LaTeX Warning: Citation `fulvio1993safetycriticalsystems' on page 10 undefined 
+on input line 1567.
 
 
-LaTeX Warning: Citation `BijlmerrampWiki' on page 10 undefined on input line 11
-71.
+LaTeX Warning: Citation `dlrtabid' on page 10 undefined on input line 1568.
 
 
-LaTeX Warning: Citation `ElAlFlight1862' on page 10 undefined on input line 117
-2.
+LaTeX Warning: Citation `knight2010SafetyCritical' on page 10 undefined on inpu
+t line 1569.
 
 
-LaTeX Warning: Citation `bijlmerReconstruction' on page 10 undefined on input l
-ine 1173.
+LaTeX Warning: Citation `creavisafecritical' on page 10 undefined on input line
+ 1570.
 
 
-LaTeX Warning: Citation `bijlmer5' on page 10 undefined on input line 1174.
+LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 10 undefined on 
+input line 1571.
 
 
-LaTeX Warning: Citation `dataReconstruct' on page 10 undefined on input line 11
-75.
-
-
-LaTeX Warning: Citation `dataReconstructBijlmermeerairplane1992' on page 10 und
-efined on input line 1176.
-
-
-LaTeX Warning: Citation `dataReconstructBijlmermeerairplane' on page 10 undefin
-ed on input line 1177.
-
-
-LaTeX Warning: Citation `dataReconstructBijlmermeerairplaneSimul' on page 10 un
-defined on input line 1178.
-
-
-LaTeX Warning: Citation `smailiDataReconstruction' on page 10 undefined on inpu
-t line 1179.
-
-
-LaTeX Warning: Citation `smailiDataReconstructionBijlmer' on page 10 undefined 
-on input line 1180.
-
-
-LaTeX Warning: Citation `pilotedSimulator' on page 10 undefined on input line 1
-181.
-
-
-LaTeX Warning: Citation `accidentReport' on page 10 undefined on input line 118
-2.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1193 	\newline
-                 \indent  Op woensdag 25 februar 2009 voltrok zich de  ramp ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Citation `zuilen23022019Tijdlijnpoldercrash' on page 10 undefine
-d on input line 1197.
-
-
-LaTeX Warning: Citation `wikinews04032009techfoutailines1951' on page 10 undefi
-ned on input line 1198.
-
-
-LaTeX Warning: Citation `luchtvaartnieuws21012020boeing737conclusies' on page 1
-0 undefined on input line 1199.
-
-
-LaTeX Warning: Citation `adformatie280220209communicatiegebreken' on page 10 un
-defined on input line 1200.
-
-
-LaTeX Warning: Citation `spinnael25022009onderzoekpolderbaancrash' on page 10 u
-ndefined on input line 1201.
-
-
-LaTeX Warning: Citation `crashTurkishAirlines' on page 10 undefined on input li
-ne 1202.
-
-
-LaTeX Warning: Citation `flightradar24' on page 10 undefined on input line 1203
-.
-
-
-LaTeX Warning: Citation `flightstatstracker' on page 10 undefined on input line
- 1204.
-
-[10]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1212 	\newline
-                 \indent
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Citation `espnSLMterugblik' on page 11 undefined on input line 1
-216.
-
-
-LaTeX Warning: Citation `dennisRosier01052020' on page 11 undefined on input li
-ne 1216.
-
-
-LaTeX Warning: Citation `hassing07062020slmramp' on page 11 undefined on input 
-line 1217.
-
-
-LaTeX Warning: Citation `amsterdamArchiefSLM' on page 11 undefined on input lin
-e 1217.
-
-
-LaTeX Warning: Citation `rtvOost06062019nabestaande' on page 11 undefined on in
-put line 1217.
-
-
-LaTeX Warning: Citation `breda07062021AndroSnel' on page 11 undefined on input 
-line 1218.
-
-
-LaTeX Warning: Citation `andereTijdenSLMCrash' on page 11 undefined on input li
-ne 1218.
-
-
-LaTeX Warning: Citation `aviationReport' on page 11 undefined on input line 121
-9.
-
-
-LaTeX Warning: Citation `aviationSLMCrashAccidentInvestigation' on page 11 unde
-fined on input line 1219.
-
-
-LaTeX Warning: Citation `mcDonnelDouglasCommissionReportSLMCrash' on page 11 un
-defined on input line 1219.
-
-
-LaTeX Warning: Citation `wikiSRFlight764' on page 11 undefined on input line 12
-20.
-
-
-LaTeX Warning: Citation `nos07062019SLMTerugblik' on page 11 undefined on input
- line 1220.
-
-
-LaTeX Warning: Citation `dagvantoenSLMCrash' on page 11 undefined on input line
- 1220.
-
-
-LaTeX Warning: Citation `waterkantNesty07061989' on page 11 undefined on input 
-line 1220.
-
-
-LaTeX Warning: Citation `eduNandlalSRCrash' on page 11 undefined on input line 
-1220.
-
-
-LaTeX Warning: Citation `oldjetsSRAirways' on page 11 undefined on input line 1
-220.
-
-
-LaTeX Warning: Citation `cloudberg02012021srflight764' on page 11 undefined on 
-input line 1220.
-
-
-LaTeX Warning: Citation `apnews07061989srplanecrash' on page 11 undefined on in
-put line 1220.
-
-
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 11 undefined on input
- line 1226.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1228 	\newline
-                 \indent
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Citation `rivmTjernobyl' on page 11 undefined on input line 1234
-.
-
-
-LaTeX Warning: Citation `andereTijdenTjernobyl' on page 11 undefined on input l
-ine 1235.
-
-
-LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 11 undefined on inp
-ut line 1236.
-
-
-LaTeX Warning: Citation `erikbork26042023reactor4' on page 11 undefined on inpu
-t line 1237.
-
-
-LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 11 undefined on input
- line 1238.
-
-
-LaTeX Warning: Citation `verschuur14012013tjernobylreports' on page 11 undefine
-d on input line 1330.
-
-
-LaTeX Warning: Citation `paperlessarchivesTjernobyl' on page 11 undefined on in
-put line 1331.
-
-
-LaTeX Warning: Citation `vargos082000tjernobylconcerns' on page 11 undefined on
- input line 1332.
-
-
-LaTeX Warning: Citation `mauroNuclearRiskSociety' on page 11 undefined on input
- line 1333.
-
-
-LaTeX Warning: Citation `vienna06092005LookingBack' on page 11 undefined on inp
-ut line 1334.
-
-
-LaTeX Warning: Citation `wikiTjernobyl' on page 11 undefined on input line 1335
-.
-
-
-LaTeX Warning: Citation `rivmTjernobyl' on page 11 undefined on input line 1336
-.
-
-
-LaTeX Warning: Citation `andereTijdenTjernobyl' on page 11 undefined on input l
-ine 1337.
-
-
-LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 11 undefined on inp
-ut line 1338.
-
-
-LaTeX Warning: Citation `erikbork26042023reactor4' on page 11 undefined on inpu
-t line 1339.
-
-
-LaTeX Warning: Citation `knmi04052021tjernobylbosbrand' on page 11 undefined on
- input line 1341.
-
-
-LaTeX Warning: Citation `dodonovaKVIRisicoTjernobyl' on page 11 undefined on in
-put line 1342.
-
-
-LaTeX Warning: Citation `dumarey04062020verhaalTjernobylWaarheid' on page 11 un
-defined on input line 1343.
-
-
-LaTeX Warning: Citation `sparkesNewScientistTjernoby' on page 11 undefined on i
-nput line 1344.
-
-
-LaTeX Warning: Citation `kernenergiened26041986chronologiemaatregelen' on page 
-11 undefined on input line 1345.
-
-
-LaTeX Warning: Citation `mapszoneReactor' on page 11 undefined on input line 13
-46.
-
-
-LaTeX Warning: Citation `kernhistoriek15062021tjernobyl' on page 11 undefined o
-n input line 1347.
-
-
-LaTeX Warning: Citation `nucleairforumFeitenTjernobyl' on page 11 undefined on 
-input line 1348.
-
-
-LaTeX Warning: Citation `kernongevalTjernobylFancGov' on page 11 undefined on i
-nput line 1349.
-
-
-LaTeX Warning: Citation `arendswolters062019lessenTjernobyl' on page 11 undefin
-ed on input line 1350.
-
-
-LaTeX Warning: Citation `damveld08052020tjernobyl' on page 11 undefined on inpu
-t line 1350.
-
-
-LaTeX Warning: Citation `deVriestjernobylHolland' on page 11 undefined on input
- line 1351.
-
-
-LaTeX Warning: Citation `ing3enieur29042015antistralingskoepel' on page 11 unde
-fined on input line 1351.
-
-
-LaTeX Warning: Citation `verschuur14012013tjernobylreports' on page 11 undefine
-d on input line 1352.
-
-
-LaTeX Warning: Citation `paperlessarchivesTjernobyl' on page 11 undefined on in
-put line 1352.
-
-
-LaTeX Warning: Citation `vargos082000tjernobylconcerns' on page 11 undefined on
- input line 1352.
-
-
-LaTeX Warning: Citation `mauroNuclearRiskSociety' on page 11 undefined on input
- line 1352.
-
-
-LaTeX Warning: Citation `vienna06092005LookingBack' on page 11 undefined on inp
-ut line 1352.
-
-
-LaTeX Warning: Citation `winceckCriticalToSafety' on page 11 undefined on input
- line 1512.
-
-
-LaTeX Warning: Citation `chambersHazardAnalysisSCS' on page 11 undefined on inp
-ut line 1516.
-
-[11]
-
-LaTeX Warning: Citation `rslater1998SCSAnalysis' on page 12 undefined on input 
-line 1528.
-
-
-LaTeX Warning: Citation `fulvio1993safetycriticalsystems' on page 12 undefined 
-on input line 1562.
-
-
-LaTeX Warning: Citation `dlrtabid' on page 12 undefined on input line 1563.
-
-
-LaTeX Warning: Citation `knight2010SafetyCritical' on page 12 undefined on inpu
-t line 1564.
-
-
-LaTeX Warning: Citation `creavisafecritical' on page 12 undefined on input line
- 1565.
-
-
-LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 12 undefined on 
-input line 1566.
-
-
-LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 12 undefi
-ned on input line 1567.
+LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 10 undefi
+ned on input line 1572.
 
 ! Undefined control sequence.
-l.1591 	\setion
+l.1596 	\setion
                {Modellen}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1598,65 +613,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-! LaTeX Error: Unicode character ∈ (U+2208)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1608 	[b, e] met ondergrens b ∈
-                                    Tijd en bovengrens e ∈ Tijd waar
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∈ (U+2208)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1608 ...ndergrens b ∈ Tijd en bovengrens e ∈
-                                                   Tijd waar
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ≤ (U+2264)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1609 	b ≤
-              e. Bijvoorbeeld wanneer een voetganger bij een stoplicht duwt
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1619 ...{}$ (P(t1) $\rightarrow$ $\exists$t2 \in
-                                                   [t1 + 10, t1 + 15] $\dot{...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1619 ...$\exists$t2 \in [t1 + 10, t1 + 15] $\dot
-                                                  {}$ G(t2 ))
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[12]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-1706.
- (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+1711.
+(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 
@@ -1667,22 +626,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1706 	• Deadlock ⇔
+l.1711 	• Deadlock ⇔
                          een bereikbare staat kan helemaal geen acties uitvo...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
+[10]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1737 ...m Als p en q formules zijn, dan zijn (p^
+l.1742 ...m Als p en q formules zijn, dan zijn (p^
                                                   q), (p_q), (p!q) en (p\tex...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.1737 ... dan zijn (p^q), (p_q), (p!q) en (p\text
+l.1742 ... dan zijn (p^q), (p_q), (p!q) en (p\text
                                                   {$}q) formules.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1693,7 +653,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1737 ...an zijn (p^q), (p_q), (p!q) en (p\text{$
+l.1742 ...an zijn (p^q), (p_q), (p!q) en (p\text{$
                                                   }q) formules.
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1702,7 +662,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Extra }, or forgotten \endgroup.
-l.1737 ...n zijn (p^q), (p_q), (p!q) en (p\text{$}
+l.1742 ...n zijn (p^q), (p_q), (p!q) en (p\text{$}
                                                   q) formules.
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1710,20 +670,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[13] [14]
-
-! LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1850 	∗
-            of E is the equation obtained by
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
+[11] [12]
 
 ! LaTeX Error: Unicode character ∪ (U+222A)
                not set up for use with LaTeX.
@@ -1732,195 +679,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1851 	replacing each occurrence of ∪
-                                        , ∩, U and ∅ in E by ∩, ∪, �...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∩ (U+2229)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1851 	replacing each occurrence of ∪, ∩
-                                             , U and ∅ in E by ∩, ∪, �...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∅ (U+2205)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1851 ...g each occurrence of ∪, ∩, U and ∅
-                                                   in E by ∩, ∪, ∅, an...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∩ (U+2229)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1851 ...rence of ∪, ∩, U and ∅ in E by ∩
-                                                  , ∪, ∅, and U, respect...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∪ (U+222A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1851 ... of ∪, ∩, U and ∅ in E by ∩, ∪
-                                                  , ∅, and U, respectively...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∅ (U+2205)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1851 ...��, ∩, U and ∅ in E by ∩, ∪, ∅
-                                                  , and U, respectively. For...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∩ (U+2229)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1852 	(U ∩
-               A) ∪ (B ∩ A) = A is (∅ ∪ A) ∩ (B ∪ A) = A
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∪ (U+222A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1852 	(U ∩ A) ∪
-                      (B ∩ A) = A is (∅ ∪ A) ∩ (B ∪ A) = A
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∩ (U+2229)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1852 	(U ∩ A) ∪ (B ∩
-                             A) = A is (∅ ∪ A) ∩ (B ∪ A) = A
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∅ (U+2205)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1852 	(U ∩ A) ∪ (B ∩ A) = A is (∅
-                                            ∪ A) ∩ (B ∪ A) = A
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∪ (U+222A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1852 	(U ∩ A) ∪ (B ∩ A) = A is (∅ ∪
-                                                A) ∩ (B ∪ A) = A
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∩ (U+2229)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1852 ... A) ∪ (B ∩ A) = A is (∅ ∪ A) ∩
-                                                   (B ∪ A) = A
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∪ (U+222A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1852 ... (B ∩ A) = A is (∅ ∪ A) ∩ (B ∪
-                                                   A) = A
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1855 	∗
-            is also an identity.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∪ (U+222A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1867 ...ubbele formulering. We zullen unions(∪
+l.1855 ...ubbele formulering. We zullen unions(∪
                                                   ) omwisselen in intersecti...
 
 You may provide a definition with
@@ -1934,7 +693,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1867 ...ions(∪) omwisselen in intersecties(∩
+l.1855 ...ions(∪) omwisselen in intersecties(∩
                                                   ) of intersecties() in de ...
 
 You may provide a definition with
@@ -1948,7 +707,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1867 ...ersele set omwisselen voor de nulset(∅
+l.1855 ...ersele set omwisselen voor de nulset(∅
                                                   ) of nullset voor universa...
 
 You may provide a definition with
@@ -1962,7 +721,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1867 ...ubbele formulering. We zullen unions(∪
+l.1855 ...ubbele formulering. We zullen unions(∪
                                                   ) omwisselen in intersecti...
 
 You may provide a definition with
@@ -1976,7 +735,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1867 ...ions(∪) omwisselen in intersecties(∩
+l.1855 ...ions(∪) omwisselen in intersecties(∩
                                                   ) of intersecties() in de ...
 
 You may provide a definition with
@@ -1990,114 +749,84 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1867 ...ersele set omwisselen voor de nulset(∅
+l.1855 ...ersele set omwisselen voor de nulset(∅
                                                   ) of nullset voor universa...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[15]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1871 ...com/article/Mathematical-Logic--Duality_
-                                                  41291/
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1872 	
-        
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1897 .../arxius/butlleti-digital/riemann/071218_
-                                                  conferencia_atiyah-d_artic...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1898 	
-        
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1907 ...kids.com/encyclopedia/index.php/Duality_
-                                                  %28mathematics%29
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing { inserted.
-<to be read again> 
-                   \tex_par:D 
-l.1908 	
-        
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1908 	
-        
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1908 	
-        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1909 ...u/~shiyu/s15capstone/materials/Capstone_
-                                                  Duals.pdf
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1910 	\section
-                {Computation tree logic}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Citation `alurSystemClok' on page 13 undefined on input line 193
+5.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1913--1917
+LaTeX Warning: Citation `alurModelHybrid' on page 13 undefined on input line 19
+35.
 
- []
+[13]
 
-[16]
-
-! LaTeX Error: Unicode character φ (U+03C6)
+! LaTeX Error: Unicode character − (U+2212)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1934 	toestand s van M, en een CTL-formule φ
-                                               :
+l.1946 	−
+            formele taal voor het specificeren en redeneren over hoe de
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1948 	−
+            breidt de propositielogica uit met modale/temporele operatoren
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1949 	−
+            een belangrijk gebruik: representatie van toekomstige systeemeig...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1960 	−
+            specificeer respectievelijk eigenschappen van toestanden/paden
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1961 	−
+            een CTL-formule is een toestandsformule	
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -2109,8 +838,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1945 	waarbij een E AP en ψ
-                               een padformule is voor een atomaire propositie
+l.1963 	waarbij een E AP en ψ
+                               een padformule is voor een atomaire propositie	
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -2122,20 +851,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1949 	waarbij φ
-                   een toestandsformule (stateformula) is
+l.1965 	waarbij φ
+                   een toestandsformule (stateformula) is	
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[17]
-
-LaTeX Warning: Citation `alurSystemClok' on page 18 undefined on input line 221
-2.
-
-
-LaTeX Warning: Citation `alurModelHybrid' on page 18 undefined on input line 22
-12.
-
+[14]
 
 ! LaTeX Error: Unicode character ψ (U+03C8)
                not set up for use with LaTeX.
@@ -2144,7 +865,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2232 	• If any state s is labeled with ψ
+l.2242 	• If any state s is labeled with ψ
                                              1, label it with AF ψ1.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2157,7 +878,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2232 ...is labeled with ψ1, label it with AF ψ
+l.2242 ...is labeled with ψ1, label it with AF ψ
                                                   1.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2170,7 +891,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2234 	Repeat: label any state with AF ψ
+l.2244 	Repeat: label any state with AF ψ
                                           1 if all successor states are labeled
 
 You may provide a definition with
@@ -2184,7 +905,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2235 	with AF ψ
+l.2245 	with AF ψ
                   1, until there is no change.
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2197,7 +918,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2255 	: label any state with EX ψ
+l.2265 	: label any state with EX ψ
                                     1
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -2210,12 +931,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2257 	with ψ
+l.2267 	with ψ
                1
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[18]
+[15]
 
 ! LaTeX Error: Unicode character φ (U+03C6)
                not set up for use with LaTeX.
@@ -2224,7 +945,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2280 	• Aφ
+l.2290 	• Aφ
                 (All): φ has to hold on all paths starting from the current...
 
 You may provide a definition with
@@ -2238,7 +959,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2280 	• Aφ (All): φ
+l.2290 	• Aφ (All): φ
                           has to hold on all paths starting from the current...
 
 You may provide a definition with
@@ -2252,7 +973,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2281 	• Eφ
+l.2291 	• Eφ
                 (Exists): there exists at least one path starting from the c...
 
 You may provide a definition with
@@ -2266,20 +987,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2281 ...starting from the current state where φ
+l.2291 ...starting from the current state where φ
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Overfull \hbox (10.30147pt too wide) in paragraph at lines 2320--2321
-[]\OT1/cmss/m/n/10 https://stackoverflow.com/questions/37516092/how-can-i-chang
-e-these-into-ctl-spec-in-nusmv-model 
- []
-
-[19]
-
-LaTeX Warning: Citation `WahlFairness' on page 20 undefined on input line 2337.
+LaTeX Warning: Citation `WahlFairness' on page 16 undefined on input line 2347.
 
 
 
@@ -2289,7 +1003,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2343 	D
+l.2353 	D
          at variabelen zijn onder andere: water hoog  en laag, en aanal sche...
 
 Your command was ignored.
@@ -2304,7 +1018,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2367 	G : Tijd −
+l.2377 	G : Tijd −
                     → {0, 1}, waarbij G(t) = 1 drukt uit dat op tijdstip t de
 
 You may provide a definition with
@@ -2313,7 +1027,7 @@ You may provide a definition with
 ! Undefined control sequence.
 <recently read> \bestaat 
                          
-l.2370 	$\bestaat
+l.2380 	$\bestaat
                  $t $\in$ Tijd $\dot{}$ G(t).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2329,40 +1043,41 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2374 	t ≤
+l.2384 	t ≤
               t0, we kunnen niet klagen dat (1.2) uiteindelijk wordt geschonden
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
+[16]
 
-LaTeX Warning: Citation `isbn9789526031033' on page 20 undefined on input line 
-2437.
+LaTeX Warning: Citation `isbn9789526031033' on page 17 undefined on input line 
+2447.
 
 ! Double subscript.
-l.2440 ...an ook worden geschreven als : $AG EF_[_
+l.2450 ...an ook worden geschreven als : $AG EF_[_
                                                   x_,_y_]$  $\models$ $\Phi_1$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.2440 ... ook worden geschreven als : $AG EF_[_x_
+l.2450 ... ook worden geschreven als : $AG EF_[_x_
                                                   ,_y_]$  $\models$ $\Phi_1$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.2440 ...ok worden geschreven als : $AG EF_[_x_,_
+l.2450 ...ok worden geschreven als : $AG EF_[_x_,_
                                                   y_]$  $\models$ $\Phi_1$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.2440 ... worden geschreven als : $AG EF_[_x_,_y_
+l.2450 ... worden geschreven als : $AG EF_[_x_,_y_
                                                   ]$  $\models$ $\Phi_1$
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Display math should end with $$.
 <to be read again> 
                    \forall 
-l.2444 	$\forall
+l.2454 	$\forall
                 $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d...
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -2370,7 +1085,7 @@ So I shall assume that you typed `$$' both times.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2444 	$\forall
+l.2454 	$\forall
                 $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2378,7 +1093,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2444 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
+l.2454 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
                                                   _b^{e}C(t)\,\mathrm{d}t $\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2386,7 +1101,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2444 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
+l.2454 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
                                                   $  u(b,e)
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2398,13 +1113,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2445 	\]
+l.2455 	\]
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[20] [21]
+[17]
 No file verslag.bbl.
 (verslag.aux)
 
@@ -2412,13 +1127,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7957 strings out of 475385
- 155465 string characters out of 2776908
+ 7951 strings out of 475385
+ 155401 string characters out of 2776908
  532824 words of memory out of 3000000
- 29288 multiletter control sequences out of 15000+600000
+ 29282 multiletter control sequences out of 15000+600000
  472640 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,6n,79p,1757b,327s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 67i,5n,79p,1713b,327s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss
 1000.pk> <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1000.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -2433,9 +1148,9 @@ ers/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.p
 fb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmssbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb>
-Output written on verslag.pdf (22 pages, 212661 bytes).
+Output written on verslag.pdf (18 pages, 192149 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
