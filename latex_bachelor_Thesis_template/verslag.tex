@@ -1863,6 +1863,17 @@
 	
 	\subsection{Dualiteiten}
 	
+	The dual of any statement in a Boolean algebra B is the statement obtained by interchanging the operations
+	+ and ∗, and interchanging their identity elements 0 and 1 in the original statement. For example, the dual of
+	(1 + a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗ 1) = b
+	Observe the symmetry in the axioms of a Boolean algebra B. That is, the dual of the set of axioms of B is the
+	same as the original set of axioms. Accordingly, the important principle of duality holds in B. Namely,
+	Theorem 15.1 (Principle of Duality): The dual of any theorem in a Boolean algebra is also a theorem.
+	In other words, if any statement is a consequence of the axioms of a Boolean algebra, then the dual is also a
+	consequence of those axioms since the dual statement can be proven by using the dual of each step of the proof
+	of the original statement.
+	
+	
 	
 	Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.
 	
@@ -1949,6 +1960,20 @@
 	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
 	States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
+	
+	
+	CTL, introduced by Emerson and Clarke [18], is a branching-time temporal
+	logic used as a specification language for finite-state systems. The executions
+	of the system are modeled as linear sequences of system events. Those event
+	sequences are called computation paths in the underlying computation tree
+	modeling the structure of time.
+	CTL formulas are composed of logical operators, path quantifiers, and
+	temporal operators. The path quantifiers are used to state if a property should
+	hold on some computation path (E) or on all computation paths (A) starting
+	from the current state. The temporal operators are used to describe properties
+	of a path through the computation tree. 
+	
+	
 	
 	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
 	
@@ -2238,11 +2263,13 @@
 	
 	
 	AG P: in all possible execution paths, P is always true. 
+	AG P: in alle mogelijke paden, is P altijd waar
 	
 	
 	
 	\subsection{Operator: EG}
 	EGp - p holds globally.
+	EGp - p is overal geldig.
 	EG P: in at least one execution path, P is always true.
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een enkele reeks van opeenvolgende toestanden.
 	In de huidige reeks heeft elke toestand een label p , en  is de atomaire toestandsformule p waar in die toestand behorend tot deze reeks.
@@ -2250,7 +2277,9 @@
 	
 	\subsection{Operator: AF}
 	For all finally
+	Voor alle paden geldt dat er ooit of in de toekomst
 	AFp - p holds sometime in the future.
+	AFp - p is ergens in de toekomst/ ooit geldig.
 	• If any state s is labeled with ψ1, label it with AF ψ1.
 	
 	Repeat: label any state with AF ψ1 if all successor states are labeled
@@ -2264,12 +2293,17 @@
 	\subsection{Operator: EF}
 	EF, there exists a path where finally ,from the current state, along which some state satisfies
 	EF P: in at least one execution path, sooner or later P will be true.
+	EF, er is een pad waar uiteindelijk, vaaf de huidige staat  met enkele andere staten p geldig is
+	EF P: in tenminste 1 pas, zal Pvroeg of laat geldig zijn
 	
 	We hebben hier een pad met een reeks toestanden. Waarbij ooit op dit pad een toestand kan  toestandsformule worden geëvalueerd welke  een label p heeft,  ed de atomaire toestandsformule p waar is in die toestand.
 	\subsection{Operator: AX}
 	AXp - for all paths p holds next time.
 	AX P: in all possible execution paths, in the next state P is true.
+	AXp - voor alle paden is p in de volgnde state geldig
+	AX P: in all possible execution paths, in the next state P is true.
 	
+		
 	We spreken hier van alle mogelijke paden waarvoor geldt dat in de volgende toestand kan een toestandsformule worden als "waar" wordt geëvalueerd. 
 	States hebben labels. Als de volgende toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand.
 	\subsection{Operator: EX}
@@ -2279,14 +2313,18 @@
 	with ψ1
 	.
 	EX P: in at least one execution path, in the next state P is true.
-	
+	EX P: in ten minste 1 execution path, is p geldig in de volgende state	
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een  mogelijke reeks van opeenvolgende toestanden.
 	Waarbij geldt dat in de huidige reeks er een toestand is met een opvolgende state met een label p heeft, en is de atomaire toestandsformule p waar in die toestand.
 	\subsection{Operator: p U q}
 	p holds until q holds.
 	A[P U Q]: in all possible execution paths, P is true * until Q is true (at least once).
 	E[P U Q]: in at least one execution path, P is true * until Q is true (at least once).
+
+	A[P U Q]: in alle uitvoerpaden is P geldit totdat Q geldig is.
+	E[P U Q]: in tenminste 1 pad is P geldig totdat Q geldig is.
 	
+		
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich in geval van A[P U Q]: uit over alle  reeksen van opeenvolgende toestanden.
 	Waarvoor geldt dat als de   toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand tot aan de toestand waarin een toestand het label q heeft.
 	
@@ -2401,7 +2439,10 @@
 	
 	
 	
-	
+	These properties describe the requirement that a process make progress toward a specific goal, the
+	achievement of which depends on the fairness of the system. If a process never gets to execute, it
+	usually cannot reach its goal. Therefore, these properties are often evaluated only along fair paths,
+	i.e. paths that satisfy one of the above three fairness path requirements.
 	
 	
 	
