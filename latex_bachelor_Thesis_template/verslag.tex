@@ -227,6 +227,26 @@
 	Thayer and Dorfman [Thayer et al. 1997], for example, define software
 	requirements engineering as “the science and discipline concerned
 	with establishing and documenting software requirements.”
+	
+	“Requirements engineering [DoD 1991] omvat alle levenscyclusactiviteiten
+	gewijd aan identificatie van gebruikersvereisten, analyse van de
+	eisen om aanvullende eisen af te leiden, documentatie van
+	de vereisten als specificatie en validatie van het gedocumenteerde
+	vereisten ten opzichte van gebruikersbehoeften, evenals processen die dit ondersteunen
+	deze activiteiten." Houd er rekening mee dat de engineering van vereisten domeinneutraal is
+	discipline; Het kan bijvoorbeeld worden gebruikt voor software, hardware en
+	elektromechanische systemen. Als technische discipline is het
+	omvat het gebruik van kwantitatieve methoden, waarvan sommige dat ook zullen zijn
+	beschreven in latere hoofdstukken van dit boek.
+	Terwijl de behoefteanalyse zich bezighoudt met het uitlokken en
+	onderzoek van eisen, eisen-engineering houdt zich bezig met alles
+	fasen van de levenscyclus van een project of product, van innovatie tot veroudering.
+	Vanwege de snelle levenscyclus van producten (d.w.z. innovatie → ontwikkeling →
+	release → onderhoud → veroudering) die door de software is ingeschakeld,
+	eisen engineering heeft verdere specialisaties voor software.
+	Thayer en Dorfman [Thayer et al. 1997] definiëren bijvoorbeeld software
+	requirements engineering als “de betrokken wetenschap en discipline
+	met het vaststellen en documenteren van softwarevereisten.”
 	\newline
 	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 133303.png}
 	\newline
@@ -253,6 +273,25 @@
 	the meaning may be slightly different when referring to a requirement
 	or a specification. Care must be taken, therefore, when discussing the
 	characteristics described here to define the context of the attributes.
+	
+	Kenmerken van eisen worden soms over het hoofd gezien bij het definiëren
+	eisen processen. Ze kunnen een uitstekende bron van statistieken zijn
+	het meten van de voortgang en kwaliteit van projecten. Eén vraag die wij doorgaans stellen
+	organisaties bij het bespreken van hun kwaliteitsprocessen is: “Gegeven twee
+	vereistenspecificaties, hoe zou u kwantitatief bepalen
+	dat het ene beter is dan het andere?” Deze vraag kan worden beantwoord door
+	kijkend naar de IEEE 830-standaard [IEEE 1998]. De kenmerken van
+	een goede vereiste, zoals gedefinieerd door de IEEE, wordt hierna vermeld, met
+	nog een aantal nuttige.
+	Het is belangrijk om onderscheid te maken tussen de kenmerken van een
+	eis en de kenmerken van een eisenspecificatie (een set
+	van gerelateerde vereisten). In sommige gevallen kan een kenmerk van toepassing zijn op a
+	enkele eis, in sommige gevallen naar een eisenspecificatie, en in
+	andere gevallen op de relatie tussen twee of meer vereisten. Verder,
+	de betekenis kan enigszins afwijken als er naar een vereiste wordt verwezen
+	of een specificatie. Daarom moet voorzichtigheid worden betracht bij het bespreken van de
+	kenmerken die hier worden beschreven om de context van de attributen te definiëren.
+	
 	%	Feasible
 	%	A requirement is feasible if an implementation of it on the planned
 	%	platform is possible within the constraints of the program or project.
@@ -523,18 +562,18 @@
 	%	completeness [Dekkers et al. 2001].
 	
 	
-	A quality attribute requirement (QAR) is specified in terms of
-	observable, usually measurable, characteristics of the system that
-	indicate its fitness for use. Quality attributes may be thought of as
-	modifiers of the functional requirements that indicate how they are
-	achieved. Quality attribute requirements address all “uses” of the
-	system, including those where the system is a passive object rather
-	than an active participant, such as when the system is being sold or
-	when the next version of the system is being developed. Examples of
-	quality attributes include: capacity, security, usability, cost,
-	modifiability, and fault tolerance. The term nonfunctional requirement,
-	although still commonly used, has become a synonym for quality
-	attribute requirement.
+Een kwaliteitsattribuutvereiste (QAR) wordt gespecificeerd in termen van
+waarneembare, meestal meetbare, kenmerken van het systeem
+de geschiktheid voor gebruik aangeven. Kwaliteitsattributen kunnen worden gezien als
+modifiers van de functionele eisen die aangeven hoe ze zijn
+bereikt. Kwaliteitsattribuutvereisten hebben betrekking op alle ‘gebruiken’ van de
+systeem, inclusief die waarbij het systeem eerder een passief object is
+dan een actieve deelnemer, bijvoorbeeld wanneer het systeem wordt verkocht of
+wanneer de volgende versie van het systeem wordt ontwikkeld. Voorbeelden van
+kwaliteitskenmerken zijn onder meer: capaciteit, veiligheid, bruikbaarheid, kosten,
+aanpasbaarheid en fouttolerantie. De term niet-functionele vereiste,
+hoewel het nog steeds veel wordt gebruikt, is het een synoniem geworden voor kwaliteit
+attribuutvereiste.
 	
 	\paragraph{5.3 Quality Attribute Requirements}
 	5.3 Quality Attribute Requirements
@@ -563,6 +602,34 @@
 	other topic areas give us useful indications of what the quality in use
 	will be; i.e., we say that such quality attributes are “indicative of”
 	quality in use.
+	
+	
+	5.3 Vereisten voor kwaliteitskenmerken
+	De weg naar het begrijpen van de vereisten voor kwaliteitskenmerken begint met
+	een korte omweg naar de fundamenten van systeemkwaliteit. De kwaliteit van
+	een systeem is in het algemeen de geschiktheid ervan voor het beoogde gebruik. ISO-standaard 9126-1
+	definieert een kwaliteitsmodel met vier gekoppelde themagebieden van kwaliteit:
+	• Proceskwaliteit Kwaliteit van het proces dat het proces voortbrengt
+	Product
+	• Interne kwaliteit Kwaliteit van de tussenwerkproducten
+	(waarvan sommige ook leverbare werkproducten kunnen zijn)
+	• Externe kwaliteit Kwaliteit van het eindproduct, voorheen
+	levering
+	• Kwaliteit in gebruik Kwaliteit van de grotere processen waarin de
+	geleverd product is gebruikt
+	Een kwaliteitsattribuut is een systeem- of proceseigenschap die indicatief is voor
+	kwaliteit op elk van deze kwaliteitsthemagebieden. Houd er rekening mee dat, voor onze doeleinden,
+	
+	het “proces” in “proceskwaliteit” omvat niet alleen software
+	ontwikkeling, maar alle zakelijke functies rondom het product,
+	inclusief marketing, verkoop, planning, onderhoud, installatie,
+	klantenondersteuning en de voorbereiding voor de ontwikkeling van de volgende versie.
+	Uiteraard is de gebruikskwaliteit het belangrijkste kwaliteitsgebied, maar
+	het is ook het nieuwste dat gemeten wordt, omdat het niet gemeten kan worden
+	totdat het product wordt afgeleverd. Gelukkig zijn er kwaliteitskenmerken in de
+	andere onderwerpgebieden geven ons nuttige indicaties van wat de kwaliteit in gebruik is
+	zal zijn; d.w.z. we zeggen dat dergelijke kwaliteitskenmerken “indicatief zijn voor”
+	kwaliteit in gebruik.
 	%	As an example, consider a web-based, self-service airline
 	%	reservation system. We’ll focus first on the completeness of the system,
 	%	which is one aspect of its fitness for use. For quality in use,
@@ -670,6 +737,24 @@
 	quality attribute measures you use will be very specific to your project,
 	as you will see when we discuss quality attribute workshops.
 	
+	
+	Met deze voorbeelden in gedachten vatten we vier verwante termen samen:
+	• Kwaliteitsfitness voor één of meer gedefinieerde toepassingen
+	• Kwaliteitsattribuut Een eigenschap van het systeem of het proces
+	dat duidt op kwaliteit
+	• Kwaliteitsattribuutmeting Een manier om een kwaliteit te meten
+	attribuut voor een specifiek systeem of proces
+	• Kwaliteitsattribuutvereiste Een vereiste uitgedrukt in
+	termen van een of meer kwaliteitsattribuutmetingen
+	Tabel 5.1 geeft een brede steekproef van andere onderwerpen over kwaliteitskenmerken
+	u misschien wilt overwegen, met een voorbeeldmaatregel die betrekking heeft op
+	elk onderwerp. De onderwerpen zijn ontleend aan ISO/IEC Std. 9126, maar die zijn er
+	vele andere goede bronnen van onderwerpen die op internet beschikbaar zijn. De
+	kwaliteitsattribuutmetingen die u gebruikt, zullen zeer specifiek zijn voor uw project,
+	zoals je zult zien als we workshops over kwaliteitsattributen bespreken.
+	
+	
+	
 	\subsubsection{Specificaties}
 	Formal Model: Specification is used to give a formal description
 	of the system which is being analysed. The formal
@@ -703,6 +788,40 @@
 	a system process exploiting mathematical reasoning to
 	verify if a system (i.e., the model) satisfies some requirement
 	(i.e., the timed temporal properties).
+	
+	
+	Formeel model: Specificatie wordt gebruikt om een formele beschrijving te geven
+	van het systeem dat wordt geanalyseerd. Het formele
+	specificatie beschouwt een taal met een wiskundig gedefinieerde
+	syntaxis en semantiek. In dit artikel vertegenwoordigen wij de
+	systeemgedrag als een netwerk van getimede automaten, d.w.z
+	eindige-toestandsmachine uitgebreid met klokvariabelen [11]. A
+	Het systeem is gemodelleerd als een netwerk van parallel geschakelde getimede automaten.
+	Het model is uitgebreid met begrensde discrete variabelen
+	zijn onderdeel van de staat. Een toestand van het systeem wordt gedefinieerd door de
+	locatie van alle automaten, de klokwaarden en de waarden van de
+	discrete variabelen. De automaat kan een voorsprong afvuren (d.w.z. uitvoeren
+	een overgang) afzonderlijk of synchroniseren met een andere automaat
+	met als doel een nieuwe staat te leiden.
+	
+	Hieronder specificeren we de onderscheidende elementen van de getimede automaten:
+	Bewaker: een bepaalde uitdrukking bedoeld om een Booleaanse waarde te verifiëren
+	expressie geëvalueerd op randen;
+	Invariant: een toestand die de tijd aangeeft die kan zijn
+	besteed aan een knooppunt;
+	Kanaal: overwogen voor het synchroniseren van de voortgang van
+	twee of meer automaten.
+	Temporele logica: om eigenschappen te definiëren hebben we een precieze nodig
+	notatie.
+	
+	
+	Formele verificatieomgeving: eenmaal het model gedefinieerd
+	en de temporele logische eigenschappen hebben we iets nodig dat dit mogelijk maakt
+	ons om te controleren of het op tijdautomaten gebaseerde model voldoet
+	de gedefinieerde eigenschappen. Om dit doel te bereiken overwegen we formele verificatie,
+	een systeemproces dat gebruik maakt van wiskundig redeneren
+	verifiëren of een systeem (dat wil zeggen het model) aan een bepaalde vereiste voldoet
+	(dat wil zeggen, de getimede temporele eigenschappen).
 	
 	\subsection{Requirements en specificaties}
 	
@@ -2143,16 +2262,17 @@
 	
 	\subsubsection{CTL}
 	
-	CTL, introduced by Emerson and Clarke [18], is a branching-time temporal
-	logic used as a specification language for finite-state systems. The executions
-	of the system are modeled as linear sequences of system events. Those event
-	sequences are called computation paths in the underlying computation tree
-	modeling the structure of time.
-	CTL formulas are composed of logical operators, path quantifiers, and
-	temporal operators. The path quantifiers are used to state if a property should
-	hold on some computation path (E) or on all computation paths (A) starting
-	from the current state. The temporal operators are used to describe properties
-	of a path through the computation tree. 
+	CTL, geïntroduceerd door Emerson en Clarke [18], is een tijdelijke vertakkingstijd
+	logica die wordt gebruikt als specificatietaal voor eindige-toestandssystemen. De executies
+	van het systeem worden gemodelleerd als lineaire reeksen systeemgebeurtenissen. Die gebeurtenis
+	reeksen worden in de onderliggende berekeningsboom rekenpaden genoemd
+	het modelleren van de structuur van de tijd.
+	CTL-formules zijn samengesteld uit logische operatoren, padkwantificatoren en
+	tijdelijke operatoren. De padkwantificatoren worden gebruikt om aan te geven of een eigenschap dat zou moeten doen
+	houd een bepaald rekenpad (E) of alle rekenpaden (A) vast
+	uit de huidige staat. De temporele operatoren worden gebruikt om eigenschappen te beschrijven
+	van een pad door de berekeningsboom.
+	
 	Computatieboomlogica (CTL) is een vertakkingstijdlogica
 	dat omvat zowel de propositionele connectieven als
 	temporele verbindingen AX, EX, AU, EU, AG, EG, AF,
