@@ -192,7 +192,7 @@
 	door OUT, dat waarden van de uitvoervariabelen van de software relateert aan waarden van gecontroleerde variabelen. Een uitvoervariabele kan bijvoorbeeld een Booleaanse variabele zijn die door de software is ingesteld met de
 	begrijpen dat de waarde true aangeeft dat een reactorsluiting zou moeten plaatsvinden en de waarde
 	false geeft het tegenovergestelde aan
-	
+	\includegraphics[width=14cm]{4varparnas.png}
 	
 	\paragraph{6 Variable model}
 	Een uitbreiding van een 4-variabelen model is het 6-variabelen model.
@@ -205,6 +205,507 @@
 	Domein eingenschappen  zijn beschrijvende statementsover een omgeving en zijn feiten. Domein hypotheses  zijn ook beschrijvende uitspraken over een omgeving, maar zijn aannames. 
 	Verwachtingen zijn ook aannames, maar dat zijn voorschrijvende uitspraken die behaald worden door actoren als personen, sensoren en actuators. 
 	
+	\subsubsection{Requirements}
+	
+	1.5 Definition of Requirements Engineering
+	“Requirements engineering [DoD 1991] involves all lifecycle activities
+	devoted to identification of user requirements, analysis of the
+	requirements to derive additional requirements, documentation of
+	the requirements as a specification, and validation of the documented
+	requirements against user needs, as well as processes that support
+	these activities.” Note that requirements engineering is a domainneutral
+	discipline; e.g., it can be used for software, hardware, and
+	electromechanical systems. As an engineering discipline, it
+	incorporates the use of quantitative methods, some of which will be
+	described in later chapters of this book.
+	Whereas requirements analysis deals with the elicitation and
+	examination of requirements, requirements engineering deals with all
+	phases of a project or product life cycle from innovation to obsolescence.
+	Because of the rapid product life cycle (i.e., innovation→development→
+	release→maintenance→obsolescence) that software has enabled,
+	requirements engineering has further specializations for software.
+	Thayer and Dorfman [Thayer et al. 1997], for example, define software
+	requirements engineering as “the science and discipline concerned
+	with establishing and documenting software requirements.”
+	\newline
+	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 133303.png}
+	\newline
+	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 132959.png}
+	
+	\newline
+	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 132840.png}
+	
+	1.7 Characteristics of a Good Requirement
+	Requirements characteristics are sometimes overlooked when defining
+	requirements processes. They can be an excellent source of metrics for
+	gauging project progress and quality. One question we typically ask
+	organizations when discussing their quality processes is, “Given two
+	requirements specifications, how would you quantitatively determine
+	that one is better than the other?” This question may be answered by
+	looking at the IEEE 830 Standard [IEEE 1998]. The characteristics of
+	a good requirement, as defined by the IEEE, are listed next, with
+	several additional useful ones.
+	It is important to distinguish between the characteristics of a
+	requirement and the characteristics of a requirements specification (a set
+	of related requirements). In some cases a characteristic can apply to a
+	single requirement, in some cases to a requirements specification, and in
+	other cases to the relationship of two or more requirements. Furthermore,
+	the meaning may be slightly different when referring to a requirement
+	or a specification. Care must be taken, therefore, when discussing the
+	characteristics described here to define the context of the attributes.
+	%	Feasible
+	%	A requirement is feasible if an implementation of it on the planned
+	%	platform is possible within the constraints of the program or project.
+	%	For example, the requirement to handle 10,000 transactions per second
+	%	might be feasible given current technologies, but it might not be feasible
+	%	with the selected platform or database manager. So a requirement is
+	%	feasible if and only if it can be accomplished given the resources,
+	%	budget, skills, schedule, and technology available to the project team.
+	%	Valid
+	%	A requirement is valid if and only if the requirement is one that the
+	%	system shall (must) meet. Determination of validity is normally
+	%	accomplished by review with the stakeholders who will be directly
+	%	responsible for the success or failure of the product in the marketplace.
+	%	There can be a fine line between “must” and “nice to have.” Because
+	%	the staff of a development team may be mainly focused on technology,
+	%	it is important to differentiate between stakeholder requests that are
+	%	wishful thinking and those that are actually needed to make the project
+	%	or product a success. The inclusion of requirements that are nice but
+	%	not valid is called “gold plating.” As the name implies, having
+	%	requirements on a project that are not valid will almost certainly add
+	%	cost without adding value, possibly delaying project completion.
+	%	
+	%	Unambiguous
+	%	A requirement is unambiguous if it has only one interpretation. Natural
+	%	language tends toward ambiguity. When learning writing skills in
+	%	school, ambiguity can be considered a plus. However, ambiguity is
+	%	not appropriate for writing the requirements for a product, and care
+	%	must be taken to ensure that there is no ambiguity in a requirements
+	%	specification. For example, consider this statement:
+	%	“The data complex shall withstand a catastrophe (fire, flood).”
+	%	This statement is ambiguous because it could mean “The data
+	%	complex shall withstand a catastrophe of type fire or flood,” or it
+	%	could mean “The data complex shall withstand any catastrophe, two
+	%	examples being fire and flood.” A person skilled in writing requirement
+	%	specifications would rephrase as
+	%	“The data complex shall be capable of withstanding a severe fire.
+	%	It shall also be capable of withstanding a flood.”
+	%	An example of an ambiguous statement is “The watch shall be
+	%	water resistant.” An unambiguous restatement is “The watch shall
+	%	be waterproof to an underwater depth of 12 meters.”
+	%	A measure of the quality of a requirements specification is the
+	%	percent of requirements that are unambiguous. A high level of
+	%	ambiguity could mean that the authors of the specification likely
+	%	need additional training. Ambiguity often causes a project to be late,
+	%	over budget, or both, because ambiguity allows freedom of
+	%	interpretation. It is sometimes necessary to take a holistic view of
+	%	ambiguity; e.g., a requirement may be ambiguous, but when placed
+	%	in the context of the background, domain, or other related
+	%	requirements, it may be unambiguous. Product features found in
+	%	marketing literature (e.g., shock resistant) are typically ambiguous.
+	%	However, when placed in the context of the detailed specifications
+	%	used by manufacturing, the ambiguity is no longer present. On the
+	%	other hand, a requirement may be unambiguous, but when placed
+	%	in the context of related requirements, there may be ambiguity.
+	%	
+	%	When two requirements conflict with each other or create contextual
+	%	ambiguity, they are said to be inconsistent (see the later section
+	%	“Consistent”).
+	%	Verifiable
+	%	A requirement is verifiable if the finished product or system can be
+	%	tested to ensure that it meets the requirement. Product features are
+	%	almost always abstract and thus not verifiable. Analysis must be done
+	%	to create testable requirements from the product features. For example,
+	%	the requirement “The car shall have power brakes” is not testable,
+	%	because it does not have sufficient detail. However, the more detailed
+	%	requirement “The car shall come to a full stop from 60 miles per hour
+	%	within 5 seconds” is testable, as is the requirement “The power brake
+	%	shall fully engage with 4 lbs. of pressure applied to the brake pedal.”
+	%	As we have noted, product features lack detail and tend to be
+	%	somewhat vague and not verifiable. However, the analysis of those
+	%	features and the derived requirements should result in a specification
+	%	from which full coverage test cases can be created.
+	%	Modifiable
+	%	The characteristic modifiable refers to two or more interrelated
+	%	requirements or a complete requirements specification. A requirements
+	%	specification is modifiable if its structure and style are such that any
+	%	changes to a requirement can be made easily, completely, and
+	%	consistently while retaining the structure and style. Modifiability
+	%	dictates that the requirements specification has a coherent, easy-tofollow
+	%	organization and has no redundancy (e.g., the same text
+	%	appearing more than once), and that it keeps requirements distinct
+	%	rather than intermixed. A general rule is that information in a set of
+	%	requirements should be in one and only one place so that a change to
+	%	a requirement does not require cascading changes to other
+	%	requirements.
+	%	A typical way of ensuring modifiability is to have a requirement
+	%	either reference other requirements specifically or use a trace
+	%	mechanism to connect interrelated requirements.
+	%	Consistent
+	%	In general, consistency is a relationship among at least two
+	%	requirements. A requirement is consistent if it does not contradict or is
+	%	not in conflict with any external corporate documents or standards or
+	%	other product or project requirements. Contradiction occurs when
+	%	the set of external documents, standards, and other requirements
+	%	result in ambiguity or a product is no longer feasible to build. For
+	%	example, a corporate standard might require that all user interface
+	%	forms have a corporate logo in the upper-right corner of the screen,
+	%	whereas a user interface requirement might specify that the logo be at
+	%	the bottom center of the screen. There are now two conflicting
+	%	requirements, and even though a requirements specification may be
+	%	internally consistent, the specification would still be inconsistent
+	%	because of conflict with corporate standards. Creating documentation
+	%	that is both internally and externally consistent requires careful
+	%	attention to detail during reviews.
+	%	Complete
+	%	A requirements specification is complete if it includes all relevant
+	%	correct requirements, and sufficient information is available for the
+	%	product to be built. When dealing with a high-level requirement, the
+	%	completeness characteristic applies holistically to the complete set
+	%	of lower-level requirements associated with the high-level feature
+	%	or requirement. Completeness also dictates that
+	%	• Requirements be ranked for importance and stability.
+	%	• Requirements and test plans mirror each other.
+	%	A requirements specification is complete if it includes the following
+	%	elements [IEEE 1998]:
+	%	1. Definition of the responses of the system or product to all
+	%	realizable classes of input data in all realizable classes of
+	%	situations. Note that it is important to specify the responses
+	%	to both valid and invalid input values and to use them in test
+	%	cases.
+	%	2. Full labels and references to all figures, tables, and diagrams
+	%	in the specification and definitions of all terms and units of
+	%	measure.
+	%	3. Quantification of the nonfunctional requirements. That is,
+	%	testable, agreed-on criteria must be established for each
+	%	nonfunctional requirement.
+	%	Nonfunctional requirements are usually managed by the project’s
+	%	chief architect. In order for the completed product to be correct and
+	%	complete, it must include the testable requirements that have been
+	%	derived from the high-level nonfunctional requirements.
+	%	It is difficult to create complete specifications, yet complete
+	%	specifications are mandatory under certain circumstances; e.g.,
+	%	where the implementation team has no domain knowledge, or where
+	%	communication between subject experts and developers will be
+	%	problematic. We have seen projects where the requirements definition
+	%	phase was shortened for schedule reasons. The general consensus
+	%	was that “the developers will finish writing the requirements.” But
+	%	when doing a risk analysis, it was nearly always quite clear that
+	%	having the developers complete the requirements was not an
+	%	appropriate process, due to
+	%	• Limited access to subject matter experts
+	%	• Lack of experience or bias when defining product requirements
+	%	At the back end of the project, the failure to properly define the
+	%	requirements almost always caused a greater delay than would have
+	%	happened by allowing the requirements specification to be completed
+	%	with the appropriate level of detail up front.
+	%	Traceable
+	%	Requirements traceability is the ability to describe and follow the life
+	%	of a requirement, in both a forward and backward direction, i.e., from
+	%	its origins, through its development and specification, to its
+	%	subsequent deployment and use, and through periods of ongoing
+	%	refinement and iteration in any of these phases” [Gotel et al. 1994].
+	%	Traceability is required for proper requirements management and
+	%	project tracking.
+	%	A requirement is traceable if the source of the requirement can be
+	%	identified, any product components that implement the requirement
+	%	can easily be identified, and any test cases for checking that the
+	%	requirement has been implemented can easily be identified.
+	%	Tracing is sometimes mandated by a regulatory body such as the
+	%	Federal Aviation Administration (FAA) or Food and Drug
+	%	Administration (FDA) for product safety. Furthermore, there are
+	%	some rare situations where failure to create the appropriate traces
+	%	between requirements can have legal repercussions. Traceability is
+	%	discussed in more detail in Chapter 7.
+	%	Other Project- or Product-Specific Characteristics
+	%	Occasionally, the requirements for a specific project or product have
+	%	characteristics that do not apply to all the projects or products. While
+	%	it can be argued that an attribute that crosscuts all other requirements
+	%	is just another requirement, when treated as a characteristic it is more
+	%	likely that the requirement will be fulfilled. For example, if a new
+	%	system is being built that must be downward compatible with an
+	%	older system, it could be argued that the need for downward
+	%	compatibility is just a nonfunctional requirement. However, we have
+	%	found that having such all-encompassing requirements converted to
+	%	characteristics makes it more likely that the completed system will be
+	%	in compliance. A similar approach can be used for other “umbrella”
+	%	requirements such as
+	%	• Compliance with Sarbanes-Oxley regulations
+	%	• Meeting all corporate security requirements
+	%	• Meeting electrical safety requirements
+	%	Characteristics of a Good Requirements Specification
+	%	As was stated in the definition of consistency, the definition of
+	%	a characteristic may be different when applied to requirements
+	%	and to a specification. A requirements specification is a filtered
+	%	compendium of requirements. Having the requirements in a
+	%	document rather than a database permits holistic views and allows
+	%	the addition of history, a rationale, etc. There are certain characteristics
+	%	that apply to specifications as opposed to individual requirements as
+	%	listed here:
+	%	• A requirements specification is feasible if building the product
+	%	specified is feasible given the state of technology, the budget,
+	%	and the allotted time.
+	%	• A requirements specification is unambiguous if there is no
+	%	pair-wise ambiguity in the specification.
+	%	• A requirements specification is valid if every requirement in it
+	%	is valid.
+	%	• A requirements specification is verifiable if every requirement
+	%	in it is verifiable.1
+	%	• A requirements specification is modifiable if there is no
+	%	redundancy and changes to requirements are easily and
+	%	consistently made; e.g., a change to one requirement does not
+	%	require cascading changes to other requirements.
+	%	• A requirements specification is consistent if the requirement
+	%	set is internally consistent.
+	%	• A requirements specification is complete if it provides sufficient
+	%	information for complete coverage testing of the product or
+	%	system.
+	%	• A requirements specification is traceable if every requirement
+	%	in it can be traced back to its source and forward to test
+	%	cases.
+	%	• A requirements specification is concise if the removal of any
+	%	requirement changes the definition of the product or system.
+	%	Requirements elicitation and analysis are typically done under
+	%	project time constraints. Consequently, it is important to prioritize
+	%	and identify risks when defining requirements. For example, “If
+	%	this nonfunctional requirement is not completely analyzed, what
+	%	are the risks to the project, the company, and/or the user?” By
+	%	doing a risk analysis, the effort associated with fully defining a
+	%	requirement set can usually be balanced against the needs of the
+	%	project. Techniques for doing risk analysis of high-level requirements
+	%	(e.g., balancing effort against need) will be discussed further in
+	%	Chapter 5.
+	%	
+	%	1.8 Requirements and Project Failure
+	%	It must be remembered that most systems under development are not
+	%	new; i.e., only a fraction of the requirements in the product are new or
+	%	unique [Jones 2007]. Yet issues of requirements maintenance and
+	%	long-term support are often missing from project plans; e.g., the
+	%	project plan is created as though the requirements will be discarded
+	%	after project completion. When long-term requirements management
+	%	is not planned, requirements creep can cause significant problems
+	%	late in a project. Furthermore, Capers Jones reports that the defect
+	%	rate increases significantly in requirements that are injected late over
+	%	those that are created prior to the start of implementation, and the
+	%	most egregious defects in requirements defined or modified late in a
+	%	project can sometimes show up in litigation [Jones 2007].
+	\paragraph{	1.9 Quality and Metrics in Requirements Engineering }
+	1.9 Quality and Metrics in Requirements Engineering
+	%	As was mentioned in connection with the success factors for projects,
+	%	project indicators need to be defined in order to have some measure
+	%	of project transparency. It is important to be able to answer the
+	%	questions “Am I making progress?” and “What is the quality of my
+	%	work products?” How does one, for example, determine that a
+	%	requirements specification is of high quality?
+	%	Requirement characteristics or quality indicators are extremely
+	%	important for determining artifact quality. They can be measured by
+	%	inspection (metrics), and the reported metrics can then be used to
+	%	determine the quality of individual requirements and requirements
+	%	specifications. Furthermore, metrics summaries tracked over time
+	%	can be used to identify potential problems earlier to permit corrective
+	%	actions, and provide guidance as to what type of corrective actions to
+	%	take. For example, a high level of ambiguity in a requirement set
+	%	might indicate that the analysts creating the requirements may need
+	%	additional training in requirements writing. Some of the chapters in
+	%	this book provide guidance on how to capture and use metrics to
+	%	improve requirements processes.
+	%	
+	%	Function Point Metrics as Leading Indicators
+	%	A function point is used to estimate the complexity and effort
+	%	necessary to build a software product. Capers Jones has published
+	%	extensively on this topic [Jones 2007, 2008]. Function point metrics
+	%	are an excellent way of identifying potential problems with
+	%	requirements prior to the implementation of a project. Furthermore,
+	%	there is a clear correlation between function points and requirements;
+	%	that is, function points can be used as an indicator of requirements
+	%	creep and quality. Furthermore, it has been shown that function point
+	%	analysis (FPA) can be effective in determining requirements
+	%	completeness [Dekkers et al. 2001].
+	
+	
+	A quality attribute requirement (QAR) is specified in terms of
+	observable, usually measurable, characteristics of the system that
+	indicate its fitness for use. Quality attributes may be thought of as
+	modifiers of the functional requirements that indicate how they are
+	achieved. Quality attribute requirements address all “uses” of the
+	system, including those where the system is a passive object rather
+	than an active participant, such as when the system is being sold or
+	when the next version of the system is being developed. Examples of
+	quality attributes include: capacity, security, usability, cost,
+	modifiability, and fault tolerance. The term nonfunctional requirement,
+	although still commonly used, has become a synonym for quality
+	attribute requirement.
+	
+	\paragraph{5.3 Quality Attribute Requirements}
+	5.3 Quality Attribute Requirements
+	The road to understanding quality attribute requirements starts with
+	a brief detour into the fundamentals of system quality. The quality of
+	a system, in general, is its fitness for its intended uses. ISO Std. 9126-1
+	defines a quality model with four linked topic areas of quality:
+	• Process quality Quality of the process that is producing the
+	product
+	• Internal quality Quality of the intermediate work products
+	(some of which may also be deliverable work products)
+	• External quality Quality of the finished product, before
+	delivery
+	• Quality in use Quality of the larger processes in which the
+	delivered product is used
+	A quality attribute is a system or process property indicative of
+	quality in any of these quality topic areas. Note that, for our purposes,
+	
+	the “process” in “process quality” includes not only software
+	development, but all the business functions surrounding the product,
+	including marketing, sales, planning, maintenance, installation,
+	customer support, and preparing to develop the next version.
+	Naturally, quality in use is the most important area of quality, but
+	it is also the latest one to measure, because it cannot be measured
+	until the product is delivered. Fortunately, quality attributes in the
+	other topic areas give us useful indications of what the quality in use
+	will be; i.e., we say that such quality attributes are “indicative of”
+	quality in use.
+	%	As an example, consider a web-based, self-service airline
+	%	reservation system. We’ll focus first on the completeness of the system,
+	%	which is one aspect of its fitness for use. For quality in use,
+	%	completeness might be measured, in part, by “the percentage of
+	%	actual reservations that are made successfully without involving
+	%	airline personnel.” This, after all, is a primary goal of such a system:
+	%	reduce personnel costs for reservations. This percentage will be
+	%	affected by many things, including bugs, unimplemented use cases,
+	%	ease of use, response time, server capacity, etc. It will also be affected
+	%	by the proportions of different kinds of reservations that customers
+	%	want to make. Figure 5.2 illustrates the many quality attributes, from
+	%	the four quality areas, that are indicative of the percent of unassisted
+	%	reservations in actual use.
+	%	Before the system is deployed, it has gone through system testing,
+	%	where testers, acting the part of customers, try to accomplish specified
+	%	travel reservation tasks. Completeness, here, might be measured by
+	%	“percentage of use cases passing system test,” which would be an
+	%	external quality measure. It is obviously indicative of the percent of
+	%	unassisted reservations, but it is different in several ways, including
+	%	these:
+	%	• It attaches equal weight to each use case, instead of accounting
+	%	for the frequency with which each use case is needed by
+	%	actual customers.
+	%	• Paid testers quickly become experts in using the software
+	%	they are testing, whereas many real-world customers remain
+	%	only casual users of the software. So, a tester might complete
+	%	a task successfully via a user interface that is too frustrating
+	%	for the typical customer.
+	%	• A use case that fails system testing might still work most of
+	%	the time under real-world conditions.
+	%	Before the system even reaches system testing, the development
+	%	team is tracking their progress toward completing coding. To measure
+	%	completeness at a finer grain than use cases, they count the requirements
+	%	associated with the use cases and measure the “percentage of
+	%	requirements that have passed unit testing.” This would be an internal
+	%	quality measure, both because unit tests can be performed on
+	%	preliminary configurations of the system and because some of the
+	%	unit tests represent conditions that cannot be tested via external
+	%	(system) tests.
+	%	Although process quality is in some sense a quite different matter
+	%	from product quality, we can certainly explore how product
+	%	completeness is affected by the process. First of all, the process defines
+	%	the measures of product completeness that are used in the three other
+	%	topic areas for a given project. Second, the degree to which the
+	%	organization adheres to the defined process will have a significant
+	%	effect on the accuracy and timeliness of the completeness measures,
+	%	and therefore on the ability of the organization to achieve sufficient
+	%	completeness. For example, the process may define how to count use
+	%	cases for purposes of measuring the percentage of use cases that have
+	%	passed their system tests. The project manager needs to update this
+	%	statistic at regular intervals to keep track of progress. If he doesn’t,
+	%	then the executed process is incomplete, because it does not do
+	%	everything that the defined process says it should. If the defined
+	%	process does not specify how to determine whether the set of use
+	%	cases is sufficiently complete to satisfy the stakeholders, then the
+	%	defined process itself may be considered to be incomplete as well,
+	%	which could result in lack of completeness-in-use.
+	%	When it comes to defining actual quality attribute requirements,
+	%	it helps to distinguish two types:
+	%	• Requirements that define quality attribute measures and how
+	%	and when to measure them. For example, “The system shall
+	%	measure and report ‘reservation completion time,’ starting
+	%	from the display of the first flight query screen and ending
+	%	with the display of the screen giving the reservation
+	%	confirmation number.”
+	%	• Requirements that specify what values of the quality attribute
+	%	measures indicate sufficient quality. For example, “The
+	%	‘reservation completion time’ for an experienced tester on a
+	%	lightly loaded system making a Type 3 reservation shall be
+	%	less than two minutes.”
+	%	From these examples, you can see that functional requirements
+	%	and quality attribute requirements complement each other, and
+	%	neither is sufficient without the other. It is not enough to specify all
+	%	the kinds of reservation functions (the use cases) that the product
+	%	supports, without specifying how quickly a customer should be able
+	%	to make a reservation; e.g., it should be much faster than phoning the
+	%	airline. Conversely, it is not enough to specify that a customer can
+	%	make a reservation in three minutes, without specifying the kinds of
+	%	information the customer will be able to examine, the complexity of
+	%	the itinerary that can be handled, and all the other functional details.
+	%	Nonetheless, the functional requirements are the basic stuff—the
+	%	“nouns and verbs”—of the requirements, whereas the quality
+	%	attribute requirements are typically modifiers of the functional
+	%	requirements—the “adjectives and adverbs.”
+	%	Also note that the completeness-in-use of the airline reservation
+	%	system will be affected by other quality attributes, such as ease of use,
+	%	because from the user’s viewpoint there is little difference between a
+	%	function being unimplemented and being too hard to use, too slow,
+	%	etc. In general, quality attributes will overlap within each of the
+	%	quality topic areas, and each quality attribute in one area will be
+	%	indicative of multiple quality attributes in other areas.
+	
+	With these examples in mind, we summarize four related terms:
+	• Quality Fitness for one or more defined uses
+	• Quality attribute A property of the system or the process
+	that is indicative of quality
+	• Quality attribute measure A way of measuring a quality
+	attribute for a specific system or process
+	• Quality attribute requirement A requirement expressed in
+	terms of one or more quality attribute measures
+	Table 5.1 gives a broad sampling of other quality attribute topics
+	you might want to consider, with an example measure pertaining to
+	each topic. The topics are drawn from ISO/IEC Std. 9126, but there are
+	many other good sources of topics available on the Internet. The
+	quality attribute measures you use will be very specific to your project,
+	as you will see when we discuss quality attribute workshops.
+	
+	\subsubsection{Specificaties}
+	Formal Model: Specification is used to give a formal description
+	of the system which is being analysed. The formal
+	specification considers a language with a mathematically defined
+	syntax and semantics. In this paper we represent the
+	system behaviour as a network of timed automaton i.e., a
+	finite-state machine extended with clock variables [11]. A
+	system is modelled as a network of timed automata in parallel.
+	The model is extended with bounded discrete variables that
+	are part of the state. A state of the system is defined by the
+	location of all automata, the clock values and the values of the
+	discrete variables. Automaton may fire an edge (i.e., perform
+	a transition) separately or synchronise with another automaton
+	with the aim to lead a new state.
+	
+	Below we itemize the timed automata distinctive elements:
+	Guard: a particular expression aimed to verify a boolean
+	expression evaluated on edges;
+	Invariant: a condition that indicates the time that can be
+	spent on a node;
+	Channel: considered for synchronizing the progress of
+	two or more automata.
+	Temporal Logic: to define properties we need a precise
+	notation.
+	
+	
+	Formal Verification Environment: once defined the model
+	and the temporal logic properties, we need something enabling
+	us to check whether the timed automata based model satisfies
+	the defined properties. To this aim we consider formal verification,
+	a system process exploiting mathematical reasoning to
+	verify if a system (i.e., the model) satisfies some requirement
+	(i.e., the timed temporal properties).
+	
+	\subsection{Requirements en specificaties}
+	
 	Requirements en spcificatiesl Assuming that the requirements are feasible with respect to the
 	environment, Parnas and Madey [3] proposed the following acceptability condition for the software: NAT
 	∩ (NAT;SOF;OUT) ⊆ REQ
@@ -213,7 +714,7 @@
 	condition: NAT ∩ SYS ⊆ REQ
 	https://www.sciencedirect.com/science/article/pii/S0167642315001033
 	Functional vs non functional requirements
-		\subsubsection{Safety critical systems}
+	\subsubsection{Safety critical systems}
 	
 	De kennis van de mens is veranwoordelijk voor jet scheppen van kennis. Opdoen van kennis van veiligeheidsintegriteit ten overstaan van ontwetendheid. Kennisdoelen zijn daarom altijd belangrijk en kunnen worden onderscheiden in 3 domeinen: cognitief, affectief en psychomotorisch.\cite{winceckCriticalToSafety}
 	Een Veiligheidsanalyse is een manier voor het evalueren  van ongelukken en risicos op verschillende niveaus. Met een veiligheidsanalyse wordt gekeken naar mensen en systemen die worden blootgesteld aan een gevaar/risico en de mogelijkheid deze te minimaliseren.
@@ -232,6 +733,9 @@
 	\end{enumerate}
 	
 	\cite{rslater1998SCSAnalysis}
+	
+	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 144723.png}
+	
 	%Traditional Systems
 	%Traditional areas that have been considered the home of safetycritical systems include medical care, commercial aircraft, nuclear
 	%power, and weapons. Failure in these areas can quickly lead to
@@ -375,6 +879,7 @@
 	%	Het ministerie van verkeer en Waterstaat wil in het kader van het klimaatakkoord en onderzoek laten uitvoeren naar de staat van het sluizenpark in Nederland. Het onderzoek moet zich richten op het ontwerpen en ontwikkelen van een geautomatiseerd sluismodel dat geschikt is voor een brede toepassing. In het onderzoek moet naar voren komen wat de huidige staat is van de sluizen met oog op veiligheid, efficiëntie, capaciteit, onderhoud, duurzaamheid en automatisering. Het onderzoek geeft aan hoe een volledig model worden opgeleverd opdat ontwerp van verschillend volledig geautomatiseerde sluizen in de toekomst geautomatiseerd kunnen worden.  
 	
 	
+	
 	\subsection{Rampen}
 	
 	\newline \indent Voor deze studie is onderzoek gedaan naar verschillende rampen aan de hand van het vier variabelen model.
@@ -463,7 +968,7 @@
 	Dit apparaat gebruikt elektronen om stralen met hoge energie te creëren die tumoren kunnen vernietigen met minimale impact op het omliggende gezonde weefsel.
 	
 	\paragraph{Datum en Plaats}
-	In de periode van Juni 1985 and Januari 1987 
+	De ongelukken vonden plaats in de periode van juni 1985 tot en met januari 1987.
 	\paragraph{Oorzaak}
 	\newline \indent  
 	%	
@@ -646,7 +1151,7 @@
 	Vlucht 302 is het dodelijkste ongeval van Ethiopië Airlines tot nu toe en overtreft de fatale kaping van vlucht 961, resulterend in een crash nabij de Comoren in 1996. Het is ook het dodelijkste vliegtuigongeluk dat zich in Ethiopië heeft voorgedaan, en overtreft de crash van een Antonov An-26 van de Ethiopische luchtmacht in 1982, waarbij 73 mensen omkwamen.
 	
 	Dit was het tweede MAX 8-ongeluk in minder dan vijf maanden na de crash van Lion Air-vlucht 610. Beide crashes waren aanleiding voor een twee jaar durende wereldwijde langdurige aan de grond houden van het vliegtuig en een onderzoek naar de manier waarop het vliegtuig werd goedgekeurd voor passagiersvervoer.
-	\paragraph{Datum en Plaats}
+	\paragraph{Datum en Plaats} De ramp vond plaats op  10 maart  2019 nabij de stad Bishoftu
 	%	\newline \indent  Op  10/03/2019 2019 stort vlucht ET302 van Ethiopian airlines neer.  \cite{gates18112020boeingcrisis},
 	%	\cite{boeing737maxsoftwareprobles},\cite{avetisov19032019boeingmalwarestate},\cite{thompson23112020nationalsecurityboeing},
 	%	\cite{wiki737maxgroundings},\cite{campbell02052019boengcrashhumanerrors}.
@@ -751,8 +1256,8 @@
 	%	De overheid beloofde strengere toezicht en alle bedrijven moeten een risico-inventariatie maken en onderhouden .\cite{pinghuang2410201TanjinFactreport},\cite{portoTanjinExplosionSight},\cite{imago17082015TanjinApartmentImages},\cite{trager14082015Chemicalblast},\cite{pangeramo27082015TanjinExplosion},\cite{ap06082020ammaniumnitrate},\cite{morris14082015TanjinIndustryImpact},\cite{milesyu20082015exposingtoxicgovlines},\cite{artemis30032016tanjininsurance},\cite{aidenxiatanjinblast},\cite{danwangTanjinflexreport},\cite{keyHighlightsTanjin},\cite{hartley13082015videofootage},\cite{odonnel01062017firetanjinblast2015},\cite{fan15082015newyorkermistrustchina},\cite{yanlidongchinamediaframingTanjin},\cite{evans27092017TnjinInsurance},\cite{jasi26032019chineschemplant},\cite{shiqingTanjinExecutiveSentence},\cite{sophiebeach15082015},\cite{hamzeh05082020BeirutBlast},\cite{chemwatch18082015TanjiinExplosion},\cite{thehindu15062019chinaExplosion},\cite{santagotimes24032019chinablast},\cite{klingecorp28042020causedTanjin},\cite{mcgarryExplosions2017},\cite{roswnfeld13082015TanjinReports},\cite{aria12082015explosionaTanjin},\cite{tremblay11022016chineseInvestigatorsTanjin},\cite{taylor13082015TanjinExplosianAftermath},\cite{associatedPresss13082013},\cite{un20082015InvestigationTanjin},\cite{france2412082015TnjinExplosion},\cite{npr14082015TanjinCause},\cite{bbc05022016TanjinResponsibles},\cite{CBodeen15082015TanjinExplosion},\cite{reutersTanjinInsurance},\cite{yu082016evaluationTanjin2015},\cite{wiki2015TanjinExplosions},\cite{bbc17082015whathappenedTanjin},\cite{mortimer19082016taijinexplosioncrater},\cite{internationallabourofficeChmControlTooliit},\cite{euTaxationCustomsICSC},
 	%	\cite{iloWHOChemSafetyCards}.
 	\paragraph{Datum en Plaats} 	\newline \indent 
-	Op 12 augustus 2015 waren er twee explosies bij de Rulthai logistiek. Deze faciliteit zorgde voor de opslag van  gevaarlijke stoffen.
-	De explosie tanjin china 12/08/2015. 
+	De ramp vltrok zich pp 12 augustus 2015  bij de Rulthai logistiek. Deze faciliteit zorgde voor de opslag van  gevaarlijke stoffen.
+	
 	
 	\paragraph{Oorzaak}
 	
@@ -1027,11 +1532,11 @@
 	%
 	%	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\subsubsection{de malimissie}
-	\paragraph{Beschrijving}
-	Aanwezige militair brengt slachtoffer naar de fransen, vervolgens naar de Tongolezen. Maar de kwaliteit van personeel liet te wensen over.
-	Er werd een Nederlandse arts overgevlogen. De slachtoffers werden overgevlogen naar Gao om vervolgens te worden oergevolgen naar Nederland.
-	Conclusie van de OVV\cite{bnnvara13062018malirapport}
+	%	\subsubsection{de malimissie}
+	%	\paragraph{Beschrijving}
+	%	Aanwezige militair brengt slachtoffer naar de fransen, vervolgens naar de Tongolezen. Maar de kwaliteit van personeel liet te wensen over.
+	%	Er werd een Nederlandse arts overgevlogen. De slachtoffers werden overgevlogen naar Gao om vervolgens te worden oergevolgen naar Nederland.
+	%	Conclusie van de OVV\cite{bnnvara13062018malirapport}
 	%	\cite{eucal11012021malimissieverlengd}
 	%	\cite{nos21052014zorgenmalimissie}
 	%	\cite{meijnders}
@@ -1041,28 +1546,28 @@
 	%	\cite{isitman06012016militair}
 	%	\cite{nporadio11072016filmdemissie}
 	%	\cite{parlementairmonitor15122013mortierongeluk} luidt dat:
-	\begin{itemize}
-		\item Koopcontract werd niet goed doorgelezen
-		\item Geen controle op kwaliteit en veiligheid
-		\item Zwakke plekken in het ontwerp
-		\item Opslag en gebruik in ongunstige condities
-		\item De aanwezige medische voorzieningen waren nite volgends de nederlandse militaire richtlijnen
-		\item Het ontbreek aan medische toetsing vanuit de defensie organisatie
-		\item Twijfels die werden geuit binnen de defensieorganisae vonden geen wrrklank
-		\item Ook het ongeval tijdens de mortieroefening was voor defensie geen aanleuiding om de medische voorzienignen te evalueren.
-		\item De inrichting van veilige medische zorg voor nederlandse militairen in Kidal is ondergeschikt gemaakt aan de voortgang van de missie.
-	\end{itemize}
-	\paragraph{Datum en Plaats}
-	
-	\newline \indent Het mortierongeluk in Mali op 06/04/2016. 
-	\paragraph{Oorzaak}
-	Het ongeluk werd veroorzaakt door een kapot afsluitplaatje in de mortier.    Tijdens de oefening werden de granaten warm in de zon. 
-	Granaat werd opgeslagen in niet  gekoelde containers waardoor deze aan te hoge temeperaturen zijn blootgesteld.  Dan was er vocht in de fatale granaat.
-	Door de combinatie van vocht en warmte in de granaat werden zeer gevoelige explosieve stoffen werden gevormd.
-	Het afsluitplaatje in de granaat bleek niet in staat om doorslag in veilige stand te voorkomen waarna de granaat explodeerde.
-	De granaat stond niet op scherp en in afgegaan in veilige stand
-	Uit onderzoek bleek dat de  mortieren zijn aangeschaft bij de amerikanen. Gedurende de aanschafperiode zijn procedures en controles op kwaliteit en veiligheid deels nagelaten.
-	Dit  werd vermeld in het koopcontract.
+	%	\begin{itemize}
+		%		\item Koopcontract werd niet goed doorgelezen
+		%		\item Geen controle op kwaliteit en veiligheid
+		%		\item Zwakke plekken in het ontwerp
+		%		\item Opslag en gebruik in ongunstige condities
+		%		\item De aanwezige medische voorzieningen waren nite volgends de nederlandse militaire richtlijnen
+		%		\item Het ontbreek aan medische toetsing vanuit de defensie organisatie
+		%		\item Twijfels die werden geuit binnen de defensieorganisae vonden geen wrrklank
+		%		\item Ook het ongeval tijdens de mortieroefening was voor defensie geen aanleuiding om de medische voorzienignen te evalueren.
+		%		\item De inrichting van veilige medische zorg voor nederlandse militairen in Kidal is ondergeschikt gemaakt aan de voortgang van de missie.
+		%	\end{itemize}
+	%	\paragraph{Datum en Plaats}
+	%	
+	%	\newline \indent Het mortierongeluk in Mali op 06/04/2016. 
+	%	\paragraph{Oorzaak}
+	%	Het ongeluk werd veroorzaakt door een kapot afsluitplaatje in de mortier.    Tijdens de oefening werden de granaten warm in de zon. 
+	%	Granaat werd opgeslagen in niet  gekoelde containers waardoor deze aan te hoge temeperaturen zijn blootgesteld.  Dan was er vocht in de fatale granaat.
+	%	Door de combinatie van vocht en warmte in de granaat werden zeer gevoelige explosieve stoffen werden gevormd.
+	%	Het afsluitplaatje in de granaat bleek niet in staat om doorslag in veilige stand te voorkomen waarna de granaat explodeerde.
+	%	De granaat stond niet op scherp en in afgegaan in veilige stand
+	%	Uit onderzoek bleek dat de  mortieren zijn aangeschaft bij de amerikanen. Gedurende de aanschafperiode zijn procedures en controles op kwaliteit en veiligheid deels nagelaten.
+	%	Dit  werd vermeld in het koopcontract.
 	
 	
 	% \cite{ovvMortierOngevalMaliVideo} 
@@ -1086,14 +1591,13 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsubsection{schipholbrand}
 	\paragraph{Beschrijving}
-	Bij de schipholbrand op 27/10/2005 . 
-	vielen zeker 11 doden onder mmigranten in de cellenclomplexen van schiphol-oost. Doodsoorzaak van de slachtffoffers is verstikking. Het gebouw voldeed niet aan de eisen voor brandveiligheid, personeel was niet goed getraind voor dergelijke situaties en de hulpverlening kwam door verschillende factoren te laat op gang.
+	Bij de schipholbrand op 27/10/2005 vielen zeker 11 doden onder mmigranten in de cellenclomplexen van schiphol-oost. Doodsoorzaak van de slachtffoffers is verstikking. Het gebouw voldeed niet aan de eisen voor brandveiligheid, personeel was niet goed getraind voor dergelijke situaties en de hulpverlening kwam door verschillende factoren te laat op gang.
 	%\cite{schipholbrand27102005video},\cite{schipholbrand27102005video},\cite{onderzoeksraad2610schipholoost},
 	%	\cite{schipholbrandvideoargos},\cite{nunl30052023feitenoverzicht},\cite{parlementairemonitorschipholbrand},\cite{videonpoNOVA13112008},\cite{rizoomes01052014schipholbrand},\cite{heuvelkroesschipholbrandcamerabeelden},
 	%	\cite{wikiSchipholbrand},\cite{schipholbrand27102005video},\cite{onderzoeksraad2610schipholoost},\cite{schipholbrandvideoargos},\cite{nunl30052023feitenoverzicht},\cite{singeluitgeverijenSchipholbrand},\cite{eenvandaagschipholbrand},\cite{parlementairemonitorschipholbrand},
 	%	\cite{videonpoNOVA13112008},\cite{rizoomes01052014schipholbrand},\cite{heuvelkroesschipholbrandcamerabeelden}. \\
 	\paragraph{Datum en Plaats}
-	Bij de vleugels j en k  van cellenclomplexen van schiphol-oost op 27/10/2005  . 
+	De ramp voltrok zichbij de vleugels j en k  van het cellenclomplexen van schiphol-oost op 27 oktober 2005  . 
 	\paragraph{Oorzaak}
 	\newline \indent 
 	Doordat de deur van cel 11 niet werd gesloten kreeg de brand zuurstof. De brand kon zich  uitbreiden in de aanwezigheid van grote hoeveelheid brandbare materialen.
@@ -1282,7 +1786,7 @@
 	\paragraph{Beschrijving}
 	Toen het toestel op 07/06/1989 de Anthony Nesty Zanderij naderde, was het daar, anders dan het weerbericht had voorspeld, mistig. Het zicht was evenwel niet zo slecht dat er niet op zicht kon worden geland. Gezagvoerder Will Rogers besloot echter via het Instrument Landing System (ILS) te landen, hoewel dit niet betrouwbaar was en hij voor zo'n landing ook geen toestemming had. De gezagvoerder brak drie landingspogingen af. Bij de vierde poging negeerde de bemanning de automatische waarschuwing (GPWS) dat het toestel te laag vloog. Het toestel raakte op 25 meter hoogte twee bomen. Het rolde om de lengte-as en stortte om 04.27 uur plaatselijke tijd ondersteboven neer.
 	\paragraph{Datum en Plaats}
-	07/06/1989 de Anthony Nesty Zanderij naderde
+	De ramp voltrok zich op 07 juni 1989 toen het vliegtoestel de Anthony Nesty Zanderij naderde
 	\paragraph{Oorzaak}
 	\newline \indent
 	
@@ -1297,7 +1801,7 @@
 	\paragraph{Beschrijving}
 	De mislukte veiligheidscontrole die 26 april 1986 01.24 uur in de Sovjet-Unie leiddte tot explosies in een van de reactoren in de kerncentrale. De reactoren hadden geen veiligheidsomhulling en de reactor bevat grote hoeveelheden brandbaar grafiet. Door de explosie en de brand kwamen er radioactieve stoffen vrij. Het gaat helemaal mis in de kernreactor 4. De warmteproductie nam  toe met een explosie tot gevolg. 31 mensen kwamen om, waaronder veel mensen dagen later door stralingsziekte.
 	\paragraph{Datum en Plaats}
-	De ramp van Tjernobyl voltrok zich op 26/04/1986 \cite{INSAVienna1992Chernobyl}.
+	De ramp van Tjernobyl voltrok zich op 26 april 1986 \cite{INSAVienna1992Chernobyl}.
 	\paragraph{Oorzaak}
 	\newline \indent
 	
@@ -1581,7 +2085,7 @@
 	%Wat waren de afspraken omtrent vuurwerkopslag?
 	%Waarom werden de voorschriften neit nageleefd?
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+	
 	%	\paragraph{Ondeerzoeksresultaten naar sluisbeveiliging} \\
 	%	Een belangrijk onderdeel van de besturing van sluizen is veiligheid. Veiligheid is een breed begrip.
 	%	Zo kan bij veiligheid worden gekeken naar de grootte van de sluis en de sluiskamers, het intake en discharge systeem, gebruikte materialen bij de bouw, bodemveiligheid, berscherming tegen hoogwater, wind\cite[2-3]{CivilEngineeringDivision} en droogte. Maar ook de hydrauliek van de sluisdeuren en mechanische constructies moeten getoets worden op veiligheid. Kunnen de onderdelen van de sluis omgaan met zout- en zoutwater\cite[2-9]{CivilEngineeringDivision} . Daarnaast kun je bij veiligheid denken aan de maatregelen  genomen bj onderhoudswerkzaamheden en reconstructies. Maar bij het dagelijks gebruik van sluizen spelen ook sluiscontrole en de daaarbijbehorende communicatiekabels\cite[2-11]{CivilEngineeringDivision} , operationaliteit en weggebruikers\cite[2-13]{CivilEngineeringDivision}  een rol.
@@ -1608,18 +2112,73 @@
 	\setion{Modellen}
 	
 	\subsection{De Kripke structuur}
-	
-	\subsection{Soorten modellen}
-	
-	
-	\subsubsection{LTL}
+	De kripke structuur is een set van locaties, transities, guards, klokken en data-variabelen .	
+	Temporal logic
+	− formele taal voor het specificeren en redeneren over hoe de
+	Het gedrag van een systeem verandert in de loop van de tijd
+	− breidt de propositielogica uit met modale/temporele operatoren
+	− een belangrijk gebruik: representatie van toekomstige systeemeigenschappen
+	gecontroleerd door een modelchecker.	
+	Informeel betekenen A en E ‘langs alle paden’ en ‘langs
+	ten minste één pad”, respectievelijk; terwijl X, F, G en
+	U verwijst naar ‘volgende staat’, ‘een toekomstige staat’, ‘hele toekomst’
+	staten,” en “Tot.”	
+	We gebruiken structurele inductie op CTL-formules om te definiëren
+	een tevredenheidsrelatie: M,s impliceert phi
+	dat hangt af van een transitiesysteem M = (S, →, L), a
+	toestand s van M, en een CTL-formule $\phi$.	
+	Syntaxis van CTL is opgesplitst in state- en padformules
+	− specificeer respectievelijk eigenschappen van toestanden/paden
+	− een CTL-formule is een toestandsformule	
+	State formulae: 
+	waarbij een E AP en ψ een padformule is voor een atomaire propositie	
+	Path formulae 
+	waarbij φ een toestandsformule (stateformula) is	
+	Elke padkwantificator moet worden gevolgd door een temporele kwantificator in de
+	syntactische boom van elke formule
+	%	\subsection{Soorten modellen}
+	%	
+	%	
+	%	\subsubsection{LTL}
 	
 	\subsubsection{CTL}
 	
-	\subsubsection{buchi Automata}
+	CTL, introduced by Emerson and Clarke [18], is a branching-time temporal
+	logic used as a specification language for finite-state systems. The executions
+	of the system are modeled as linear sequences of system events. Those event
+	sequences are called computation paths in the underlying computation tree
+	modeling the structure of time.
+	CTL formulas are composed of logical operators, path quantifiers, and
+	temporal operators. The path quantifiers are used to state if a property should
+	hold on some computation path (E) or on all computation paths (A) starting
+	from the current state. The temporal operators are used to describe properties
+	of a path through the computation tree. 
+	Computatieboomlogica (CTL) is een vertakkingstijdlogica
+	dat omvat zowel de propositionele connectieven als
+	temporele verbindingen AX, EX, AU, EU, AG, EG, AF,
+	en EF.
+	%	
+	%	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. 
+	We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. 
 	
-	\subsection{Tijd}
-	\subsubsection{Een begrensde responseigenschap}
+	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
+	
+	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
+	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
+	States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
+	
+	
+	
+	
+	
+	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
+	
+	
+	
+	%	\subsubsection{buchi Automata}
+	%	
+	%	\subsection{Tijd}
+	%	\subsubsection{Een begrensde responseigenschap}
 	%	Een begrensde responseigenschap stelt dat
 	%	een gewenste systeemreactie op een invoer vindt plaats binnen een tijdsinterval
 	%	[b, e] met ondergrens b ∈ Tijd en bovengrens e ∈ Tijd waar
@@ -1694,39 +2253,97 @@
 		%	\end{itemize}
 	
 	\subsection{Guards en invarianten}
-	Het systeem is een samenstelling van parallelle processen
-	elk proces is gemodelleerd als een automaat
-	de automaat heeft een aantal posities,
-	positieveranderingen worden gedaan met behulp van randen /
-	overgangen.
-	De toestand van het systeem wordt gekenmerkt door
-	de huidige
-	positie van elke automaat,
-	waarden van variabelen, en
-	klokstatus.
-	overgangen kunnen worden gecontroleerd met behulp van bewakers
-	en synchronisaties
-	guard is een voorwaarde voor variabelen en klokken
-	aangeven wanneer een transitie mogelijk is.
+	%	Het systeem is een samenstelling van parallelle processen
+	%	elk proces is gemodelleerd als een automaat
+	%	de automaat heeft een aantal posities,
+	%	positieveranderingen worden gedaan met behulp van randen /
+	%	overgangen.
+	%	De toestand van het systeem wordt gekenmerkt door
+	%	de huidige
+	%	positie van elke automaat,
+	%	waarden van variabelen, en
+	%	klokstatus.
+	%	overgangen kunnen worden gecontroleerd met behulp van bewakers
+	%	en synchronisaties
+	%	guard is een voorwaarde voor variabelen en klokken
+	%	aangeven wanneer een transitie mogelijk is.
+	%	
+	%	
+	%	Onveranderbaar . . . Conjunctie van voorwaarden van de vorm x <e of x <= e,
+	%	waar
+	%	x is een link naar een klok,
+	%	e wordt berekend tot een geheel getal.
+	%	Het kan verwijzen naar klokken, gehele variabelen, constanten.
 	
+	Invarianten en guards zijn condities.
+	Een invariant is een conditie die geldt in een state en die altijd
+	waar is wanneer de automaat zich in die state bevindt.
+	Een guard is een conditie die geldt in een transitie. M.a.w. De
+	transitie kan alleen genomen worden wanneer de guard geldig
+	is.
+	\\
 	
-	Onveranderbaar . . . Conjunctie van voorwaarden van de vorm x <e of x <= e,
-	waar
-	x is een link naar een klok,
-	e wordt berekend tot een geheel getal.
-	Het kan verwijzen naar klokken, gehele variabelen, constanten.
+	%	In a timed automaton, the unconditional transition of a
+	%	finite state automaton is extended to a triple consisting of a
+	%	guard, a synchronization label and an assignment. The
+	%	guard is a conjunction of simple constraints on the form: v
+	%	~ n where v is a variable, n is a natural number (or zero),
+	%	and ~ is one of <,£ , =,³ , >. An edge is said to be enabled
+	%	if its guard is satisfied by the current clock values. An assignment
+	%	is in the form: x := n or i := i + k where x is a
+	%	clock, i is an integer variable and k is an integer constant.
+	%	A transition’s synchronization label is either omitted or in
+	%	the form a! or a? where a is the name of a channel and a!
+	%	is the complement to a?.
 	
+	%	Below we itemize the timed automata distinctive elements:
+	%	 Guard: a particular expression aimed to verify a boolean
+	%	expression evaluated on edges;
+	%	 Invariant: a condition that indicates the time that can be
+	%	spent on a node;
+	%	 Channel: considered for synchronizing the progress of
+	%	two or more automata.
+	%	Temporal Logic: to define properties we need a precise
+	%	notation.
+	%	In fact,  safety properties are of a particular kind: they are invariants. Invariants
+	%	are LT properties that are given by a condition Φ for the states and require that Φ holds
+	%	for all reachable states.
+	%	Thus, the notion ”invariant” can be explained as follows: the condition Φ has to be fulfilled
+	%	by all initial states and satisfaction of Φ is invariant under all transitions in the reachable
+	%	fragment of the given transition system. The latter means that if Φ holds for the source
+	%	state s of a transition s−→a s, then Φ holds for the target state s too.
+	%	
+	%	
+	%
+	%	
+	%	
+	%	As we have seen in the previous section, invariants can be viewed as state properties and
+	%	can be checked by considering the reachable states. Some safety properties, however, may
+	%	impose requirements on finite path fragments, and cannot be verified by considering the
+	%	reachable states only. To see this, consider the example of a cash dispenser, also known
+	%	as an automated teller machine (ATM). A natural requirement is that money can only be
+	%	withdrawn from the dispenser once a correct personal identifier (PIN) has been provided.
+	%	This property is not an invariant, since it is not a state property. It is, however, considered
+	%	to be a safety property, as any infinite run violating the requirement has a finite prefix
+	%	that is “bad”, i.e., in which money is withdrawn without issuing a PIN before.
+	%	Formally, safety property P is defined as an LT property over AP such that any infinite
+	%	word σ where P does not hold contains a bad prefix. The latter means a finite prefix σ
+	%	where the bad thing has happened, and thus no infinite word that starts with this prefix
+	%	σ fulfills P.
+	%	
 	
+	In feite zijn veiligheidseigenschappen  een soort invarianten. Invarianten
+	zijn eigenschappen die worden gegeven door een voorwaarde Φ voor de toestanden en vereisen dat Φ geldt 	voor alle bereikbare staten.
+	Het begrip ‘invariant’ kan dus als volgt worden uitgelegd: er moet aan de voorwaarde Φ zijn voldaan
+	door alle begintoestanden en de bevrediging van Φ is onveranderlijk onder alle overgangen in het bereikbare 	pad van het gegeven transitiesysteem. 
 	
+	Invarianten kunnen worden gezien als toestandseigenschappen en 	kan worden gecontroleerd door te kijken naar de bereikbare staten. 
 	
 	\subsection{Deadlock}
-	• Deadlock ⇔ een bereikbare staat kan helemaal geen acties uitvoeren – Deadlock hangt af van de reeks acties die een bereikbare staat niet kan uitvoeren • Om de impasse te behouden moet A niet alleen overschatten wat P kan doen, maar ook wat P weigert
+	Deadlock is een bereikbare staat waarin het systeem   helemaal geen acties kan uitvoeren – Een Deadlock hangt af van de reeks acties die een bereikbare staat niet kan uitvoeren. Om de impasse te behouden moet A niet alleen overschatten wat P kan doen, maar ook wat P weigert
 	\subsection{Zeno gedrag}
-	zeno gedrag: de mogelijkheid dat in een eindige hoeveelheid tijd een oneindig antal handelingen kan worden verricht.
-	Bijvoorbeeld tijdens het nivelleren
-	Bij het opstellen van schepen
-	Bij het laten wachten van schepen
-	Bij het invaren van schepen
+	Zeno gedrag houdt in dat de mogelijkheid dat in een eindige hoeveelheid tijd een oneindig antal handelingen kan worden verricht.
+	
 	
 	\section{Logica}
 	
@@ -1818,35 +2435,35 @@
 	het domein D(x) wordt onder de kwantor geplaatst.
 	
 	
-	De beschrijving van het domein D(x) is zelf ook een predikaat. Het is een eigenschap D
-	die toegekend wordt aan de variabele x. Het is mogelijk dat zo’n domein D leeg is. Men
-	zou dat kunnen noteren met :9x D(x). Het lege domein wordt meestal aangegeven met
-	het Q teken voor een leeg domein:
-	
-	In de volgende voorbeelden wordt het domein van de kwantor beschreven met een predikaat
-	(1 < x < 4). De uitspraak “alle getallen in het domein van de getallen tussen de een
-	en de vier, zijn priemgetallen” wordt genoteerd als:
-	
-	Wij kunnen dit ook schrijven als “alle getallen, indien zij tussen een en vier liggen, zijn
-	priemgetallen”. Het domein is implicatief gekoppeld aan de eigenschap P(x). Dit noemen
-	wij een domeinoverheveling:
-	
-	Zo’n overheveling van het domein kunnen wij eveneens toepassen in een uitspraak met
-	een existenti¨ele kwantor. De uitspraak “er is een getal tussen de een en vier, dat een
-	priemgetal is” wordt genoteerd als:
-	
-	Deze uitspraak is het zelfde als “er is een getal, dat tussen de een en vier ligt en priemgetal
-	is”. Het domein wordt conjunctief gekoppeld aan de eigenschap P(x):
-	
-	
-	Als er geen domein wordt opgegeven, dan bedoelt men alle objecten in het universum van
-	x. Zo’n universum kan eindig of oneindig veel objecten bevatten. Het studentenuniversum
-	is bijvoorbeeld eindig, daarentegen is het universum van de re¨ele getallen oneindig.
-	In dit hoofdstuk behandelen wij de kwantorformules over eindige universa. Gelukkig zijn
-	wij in de informatica tevreden met eindige universa voor onze algoritmen. Eindige universa
-	worden vaak aangegeven met symbolische grenzen, zoals bijvoorbeeld: 0;1;2: : :n.
-	In hoofdstuk 5 worden kwantorformules afgeleid die algemeen geldig zijn, ook voor oneindige
-	universa.
+	%	De beschrijving van het domein D(x) is zelf ook een predikaat. Het is een eigenschap D
+	%	die toegekend wordt aan de variabele x. Het is mogelijk dat zo’n domein D leeg is. Men
+	%	zou dat kunnen noteren met :9x D(x). Het lege domein wordt meestal aangegeven met
+	%	het Q teken voor een leeg domein:
+	%	
+	%	In de volgende voorbeelden wordt het domein van de kwantor beschreven met een predikaat
+	%	(1 < x < 4). De uitspraak “alle getallen in het domein van de getallen tussen de een
+	%	en de vier, zijn priemgetallen” wordt genoteerd als:
+	%	
+	%	Wij kunnen dit ook schrijven als “alle getallen, indien zij tussen een en vier liggen, zijn
+	%	priemgetallen”. Het domein is implicatief gekoppeld aan de eigenschap P(x). Dit noemen
+	%	wij een domeinoverheveling:
+	%	
+	%	Zo’n overheveling van het domein kunnen wij eveneens toepassen in een uitspraak met
+	%	een existenti¨ele kwantor. De uitspraak “er is een getal tussen de een en vier, dat een
+	%	priemgetal is” wordt genoteerd als:
+	%	
+	%	Deze uitspraak is het zelfde als “er is een getal, dat tussen de een en vier ligt en priemgetal
+	%	is”. Het domein wordt conjunctief gekoppeld aan de eigenschap P(x):
+	%	
+	%	
+	%	Als er geen domein wordt opgegeven, dan bedoelt men alle objecten in het universum van
+	%	x. Zo’n universum kan eindig of oneindig veel objecten bevatten. Het studentenuniversum
+	%	is bijvoorbeeld eindig, daarentegen is het universum van de re¨ele getallen oneindig.
+	%	In dit hoofdstuk behandelen wij de kwantorformules over eindige universa. Gelukkig zijn
+	%	wij in de informatica tevreden met eindige universa voor onze algoritmen. Eindige universa
+	%	worden vaak aangegeven met symbolische grenzen, zoals bijvoorbeeld: 0;1;2: : :n.
+	%	In hoofdstuk 5 worden kwantorformules afgeleid die algemeen geldig zijn, ook voor oneindige
+	%	universa.
 	
 	Met de universele kwantor 8x bedoelen wij alle waarden van x binnen het opgegeven
 	domein. Als het domein niet wordt opgegeven, dan bedoelen wij een of meer waarden x
@@ -1860,28 +2477,65 @@
 	
 	
 	
+	Een overzicht van meerde temporal operators:
+	\begin{enumerate}
+		\item F sometime in the Future, The future time operator (F) is used to specify
+		that some property eventually holds at some
+		state in our path
+		\item G Globally in the future, The global operator (G) is used to specify that
+		some property holds for all states of a particular path.
+		\item X neXtime, The next time operator (X) is used to specify
+		that some property holds in the second state
+		of a path.
+		\item U until, The until operator (U) is a binary operator,
+		and is used to specify that the first property
+		holds in all states preceding the one where the
+		second property is satisfied
+		\item R the release operator, The release operator (R) is also a binary operator, and is used to specify that the second
+		property holds in all states along a path up to
+		and including the first state that satisfies the
+		first property. The first property is not required
+		to be eventually satisfied.
+	\end{enumerate}
+	Path quantifiers: 
+	\begin{enumerate}
+		\item E there Exists a path
+		\item A in All paths
+		
+	\end{enumerate}
+	
 	
 	\subsection{Dualiteiten}
 	
-	The dual of any statement in a Boolean algebra B is the statement obtained by interchanging the operations
-	+ and ∗, and interchanging their identity elements 0 and 1 in the original statement. For example, the dual of
+	%	The dual of any statement in a Boolean algebra B is the statement obtained by interchanging the operations
+	%	+ and ∗, and interchanging their identity elements 0 and 1 in the original statement. For example, the dual of
+	%	(1 + a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗ 1) = b
+	%	Observe the symmetry in the axioms of a Boolean algebra B. That is, the dual of the set of axioms of B is the
+	%	same as the original set of axioms. Accordingly, the important principle of duality holds in B. Namely,
+	%	Theorem 15.1 (Principle of Duality): The dual of any theorem in a Boolean algebra is also a theorem.
+	%	In other words, if any statement is a consequence of the axioms of a Boolean algebra, then the dual is also a
+	%	consequence of those axioms since the dual statement can be proven by using the dual of each step of the proof
+	%	of the original statement.
+	
+	Het duaal van elke uitspraak in een Booleaanse algebra B is de uitspraak die wordt verkregen door de bewerkingen uit te wisselen
+	+ en ∗, en hun identiteitselementen 0 en 1 in de oorspronkelijke verklaring verwisselen. De dubbele van bijvoorbeeld
 	(1 + a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗ 1) = b
-	Observe the symmetry in the axioms of a Boolean algebra B. That is, the dual of the set of axioms of B is the
-	same as the original set of axioms. Accordingly, the important principle of duality holds in B. Namely,
-	Theorem 15.1 (Principle of Duality): The dual of any theorem in a Boolean algebra is also a theorem.
-	In other words, if any statement is a consequence of the axioms of a Boolean algebra, then the dual is also a
-	consequence of those axioms since the dual statement can be proven by using the dual of each step of the proof
-	of the original statement.
+	Observeer de symmetrie in de axioma's van een Booleaanse algebra B. Dat wil zeggen, de duale van de reeks axioma's van B is de
+	hetzelfde als de originele set axioma's. Dienovereenkomstig geldt het belangrijke principe van dualiteit in B. Namelijk:
+	Stelling 15.1 (Dualiteitsprincipe): De dualiteit van elke stelling in een Booleaanse algebra is ook een stelling.
+	Met andere woorden: als een uitspraak een gevolg is van de axioma's van een Booleaanse algebra, dan is de duale ook een
+	gevolg van deze axioma's, aangezien de dubbele verklaring kan worden bewezen door de duale van elke stap van het bewijs te gebruiken
+	van de oorspronkelijke verklaring.
 	
 	
 	
-	Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.
-	
-	
-	
-	
-	
-	Dualiteit, in de wiskunde, principe waarbij de ene ware uitspraak uit de andere kan worden verkregen door slechts twee woorden met elkaar te verwisselen. Het is een eigenschap die behoort tot de tak van de algebra die bekend staat als de roostertheorie en die betrokken is bij de concepten van orde en structuur die in verschillende wiskundige systemen voorkomen. Een wiskundige structuur wordt een rooster genoemd als deze op een bepaalde manier kan worden geordend (zie volgorde). Projectieve meetkunde, verzamelingenleer en symbolische logica zijn voorbeelden van systemen met onderliggende roosterstructuren, en hebben daarom ook principes van dualiteit.
+	%	Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.Het dualiteitsbeginsel is een soort doordringende eigenschap van de algebraïsche structuur waarbij twee concepten alleen uitwisselbaar zijn als alle resultaten in de ene formulering ook gelden in een andere. Dit concept staat bekend als dubbele formulering. We zullen unions(∪) omwisselen in intersecties(∩) of intersecties() in de union() en ook de universele set omwisselen voor de nulset(∅) of nullset voor universal(U) om de dubbele verklaring te krijgen. Als we het symbool verwisselen en deze verklaring zelf krijgen, zal deze bekend staan als de zelf-duale verklaring.
+	%	
+	%	
+	%	
+	%	
+	%	
+	%	Dualiteit, in de wiskunde, principe waarbij de ene ware uitspraak uit de andere kan worden verkregen door slechts twee woorden met elkaar te verwisselen. Het is een eigenschap die behoort tot de tak van de algebra die bekend staat als de roostertheorie en die betrokken is bij de concepten van orde en structuur die in verschillende wiskundige systemen voorkomen. Een wiskundige structuur wordt een rooster genoemd als deze op een bepaalde manier kan worden geordend (zie volgorde). Projectieve meetkunde, verzamelingenleer en symbolische logica zijn voorbeelden van systemen met onderliggende roosterstructuren, en hebben daarom ook principes van dualiteit.
 	%	The identities in Table 1-1 are arranged in pairs, as, for example, (2a) and (2b).We now consider the principle
 	%	behind this arrangement. Suppose E is an equation of set algebra. The dual E
 	%	∗ of E is the equation obtained by
@@ -1944,64 +2598,8 @@
 	%	https://academickids.com/encyclopedia/index.php/Duality_%28mathematics%29
 	%	
 	%	https://math.berkeley.edu/~shiyu/s15capstone/materials/Capstone_Duals.pdf
-	\section{Computation tree logic}
-	
-	\subsection{Algemeen}
-	Computatieboomlogica (CTL) is een vertakkingstijdlogica
-	dat omvat zowel de propositionele connectieven als
-	temporele verbindingen AX, EX, AU, EU, AG, EG, AF,
-	en EF.
-	%	
-	%	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. 
-	We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. 
-	
-	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
-	
-	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
-	States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
 	
 	
-	CTL, introduced by Emerson and Clarke [18], is a branching-time temporal
-	logic used as a specification language for finite-state systems. The executions
-	of the system are modeled as linear sequences of system events. Those event
-	sequences are called computation paths in the underlying computation tree
-	modeling the structure of time.
-	CTL formulas are composed of logical operators, path quantifiers, and
-	temporal operators. The path quantifiers are used to state if a property should
-	hold on some computation path (E) or on all computation paths (A) starting
-	from the current state. The temporal operators are used to describe properties
-	of a path through the computation tree. 
-	
-	
-	
-	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
-	
-	
-	De kripke structuur is een set van locaties, transities, guards, klokken en data-variabelen .	
-	Temporal logic
-	− formele taal voor het specificeren en redeneren over hoe de
-	Het gedrag van een systeem verandert in de loop van de tijd
-	− breidt de propositielogica uit met modale/temporele operatoren
-	− een belangrijk gebruik: representatie van toekomstige systeemeigenschappen
-	gecontroleerd door een modelchecker.	
-	Informeel betekenen A en E ‘langs alle paden’ en ‘langs
-	ten minste één pad”, respectievelijk; terwijl X, F, G en
-	U verwijst naar ‘volgende staat’, ‘een toekomstige staat’, ‘hele toekomst’
-	staten,” en “Tot.”	
-	We gebruiken structurele inductie op CTL-formules om te definiëren
-	een tevredenheidsrelatie: M,s impliceert phi
-	dat hangt af van een transitiesysteem M = (S, →, L), a
-	toestand s van M, en een CTL-formule $\phi$.	
-	Syntaxis van CTL is opgesplitst in state- en padformules
-	− specificeer respectievelijk eigenschappen van toestanden/paden
-	− een CTL-formule is een toestandsformule	
-	State formulae: 
-	waarbij een E AP en ψ een padformule is voor een atomaire propositie	
-	Path formulae 
-	waarbij φ een toestandsformule (stateformula) is	
-	Elke padkwantificator moet worden gevolgd door een temporele kwantificator in de
-	syntactische boom van elke formule
 	
 	
 	%	Gegeven een CTL-formule φ en een eindig presenteerbaar model M, geldt M |= φ?
@@ -2064,33 +2662,6 @@
 	
 	
 	
-	
-	Een overzicht van meerde temporal operators:
-	\begin{enumerate}
-		\item F sometime in the Future, The future time operator (F) is used to specify
-		that some property eventually holds at some
-		state in our path
-		\item G Globally in the future, The global operator (G) is used to specify that
-		some property holds for all states of a particular path.
-		\item X neXtime, The next time operator (X) is used to specify
-		that some property holds in the second state
-		of a path.
-		\item U until, The until operator (U) is a binary operator,
-		and is used to specify that the first property
-		holds in all states preceding the one where the
-		second property is satisfied
-		\item R the release operator, The release operator (R) is also a binary operator, and is used to specify that the second
-		property holds in all states along a path up to
-		and including the first state that satisfies the
-		first property. The first property is not required
-		to be eventually satisfied.
-	\end{enumerate}
-	Path quantifiers: 
-	\begin{enumerate}
-		\item E there Exists a path
-		\item A in All paths
-		
-	\end{enumerate}
 	
 	%	\subsection{De Kripke structuur}
 	%	Een getimede automatisering is een 6-tupel A = ($\Sigma$, S, $S_0$, X, I, T) zodat: \\
@@ -2262,92 +2833,87 @@
 	\subsection{Operator: AG}
 	
 	
-	AG P: in all possible execution paths, P is always true. 
+	%	AG P: in all possible execution paths, P is always true. 
 	AG P: in alle mogelijke paden, is P altijd waar
 	
 	
 	
 	\subsection{Operator: EG}
-	EGp - p holds globally.
-	EGp - p is overal geldig.
-	EG P: in at least one execution path, P is always true.
+	%	EGp - p holds globally.
+	EGp - in tenminste een pad geldt p is overal geldig.
+	%	EG P: in at least one execution path, P is always true.
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een enkele reeks van opeenvolgende toestanden.
 	In de huidige reeks heeft elke toestand een label p , en  is de atomaire toestandsformule p waar in die toestand behorend tot deze reeks.
 	
 	
 	\subsection{Operator: AF}
-	For all finally
-	Voor alle paden geldt dat er ooit of in de toekomst
-	AFp - p holds sometime in the future.
-	AFp - p is ergens in de toekomst/ ooit geldig.
-	• If any state s is labeled with ψ1, label it with AF ψ1.
-	
-	Repeat: label any state with AF ψ1 if all successor states are labeled
-	with AF ψ1, until there is no change.
-	AF P: in all possible execution paths, sooner or later P will be true.
+	%	For all finally
+	%	Voor alle paden geldt dat er ooit of in de toekomst
+	%	AFp - p holds sometime in the future.
+	AF p - voor alle paden geldt, p is ergens in de toekomst/ ooit geldig.
+	%	• If any state s is labeled with ψ1, label it with AF ψ1.
+	%	
+	%	Repeat: label any state with AF ψ1 if all successor states are labeled
+	%	with AF ψ1, until there is no change.
+	%	AF P: in all possible execution paths, sooner or later P will be true.
 	
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Deze vertakkende tijdpadformule strekt zich uit over meerdere paden met in de toekomst een geldige  opvolgende  toestand.
 	Als voor alle paden geldt dat deze vanaf de huidige toestan er in  de toekomst een toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand.
 	
 	
 	\subsection{Operator: EF}
-	EF, there exists a path where finally ,from the current state, along which some state satisfies
-	EF P: in at least one execution path, sooner or later P will be true.
+	%	EF, there exists a path where finally ,from the current state, along which some state satisfies
+	%	EF P: in at least one execution path, sooner or later P will be true.
 	EF, er is een pad waar uiteindelijk, vaaf de huidige staat  met enkele andere staten p geldig is
 	EF P: in tenminste 1 pas, zal Pvroeg of laat geldig zijn
 	
 	We hebben hier een pad met een reeks toestanden. Waarbij ooit op dit pad een toestand kan  toestandsformule worden geëvalueerd welke  een label p heeft,  ed de atomaire toestandsformule p waar is in die toestand.
 	\subsection{Operator: AX}
-	AXp - for all paths p holds next time.
-	AX P: in all possible execution paths, in the next state P is true.
+	%	AXp - for all paths p holds next time.
+	%	AX P: in all possible execution paths, in the next state P is true.
 	AXp - voor alle paden is p in de volgnde state geldig
-	AX P: in all possible execution paths, in the next state P is true.
+	%	AX P: in all possible execution paths, in the next state P is true.
 	
-		
+	
 	We spreken hier van alle mogelijke paden waarvoor geldt dat in de volgende toestand kan een toestandsformule worden als "waar" wordt geëvalueerd. 
 	States hebben labels. Als de volgende toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand.
 	\subsection{Operator: EX}
-	EXp - for some path p holds next time.
-	: label any state with EX ψ1
-	if one of its successors is labeled
-	with ψ1
-	.
-	EX P: in at least one execution path, in the next state P is true.
+	%	EXp - for some path p holds next time.
+	%	: label any state with EX ψ1
+	%	if one of its successors is labeled
+	%	with ψ1
+	%	.
+	%	EX P: in at least one execution path, in the next state P is true.
 	EX P: in ten minste 1 execution path, is p geldig in de volgende state	
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een  mogelijke reeks van opeenvolgende toestanden.
 	Waarbij geldt dat in de huidige reeks er een toestand is met een opvolgende state met een label p heeft, en is de atomaire toestandsformule p waar in die toestand.
 	\subsection{Operator: p U q}
-	p holds until q holds.
-	A[P U Q]: in all possible execution paths, P is true * until Q is true (at least once).
-	E[P U Q]: in at least one execution path, P is true * until Q is true (at least once).
-
-	A[P U Q]: in alle uitvoerpaden is P geldit totdat Q geldig is.
-	E[P U Q]: in tenminste 1 pad is P geldig totdat Q geldig is.
+	%	p holds until q holds.
+	%	A[P U Q]: in all possible execution paths, P is true * until Q is true (at least once).
+	%	E[P U Q]: in at least one execution path, P is true * until Q is true (at least once).
 	
-		
+	A[P U Q]: in alle uitvoerpaden is P geldit totdat Q geldig is. Of 
+	E[P U Q]: in tenminste 1 pad is P geldig totdat Q geldig is.	
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich in geval van A[P U Q]: uit over alle  reeksen van opeenvolgende toestanden.
 	Waarvoor geldt dat als de   toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand tot aan de toestand waarin een toestand het label q heeft.
 	
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een enkele reeks van opeenvolgende toestanden.
-	Waarvoor geldt dat als de   toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand tot aan de toestand waarin een toestand het label q heeft.
+	%	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een enkele reeks van opeenvolgende toestanden.
+	%	Waarvoor geldt dat als de   toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand tot aan de toestand waarin een toestand het label q heeft.
 	
 	\subsection{Operator: p R q}
-	R (“release”) is the logical dual of the U operator. The operator requires
-	that the second argument must hold up to and including the
-	first state where the first argument holds. The first argument is not
-	required to become true eventually.
+	R (“release”) is de logische duaal van de U-operator. De operator vereist
+	dat het tweede argument stand moet houden tot en met de
+	eerste staat waar het eerste argument geldt. Het eerste argument is dat niet
+	nodig om uiteindelijk waar te worden.
 	
-	• Aφ (All): φ has to hold on all paths starting from the current state.
-	• Eφ (Exists): there exists at least one path starting from the current state where φ
-	holds.
+	%	• Aφ (All): φ has to hold on all paths starting from the current state.
+	%	• Eφ (Exists): there exists at least one path starting from the current state where φ
+	%	holds.
 	
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een mogelijke reeks van opeenvolgende toestanden.
 	States hebben labels. Als de huidige toestand een label q heeft, dan is de atomaire toestandsformule q  waar in die toestand tot aan de toestand waarin p geldig is. Met de voorwaarde dat de eigenschap p niet gelabeled hoeft de worden aan een opvolgende state.	
-	De release-operator (R) is ook een binaire operator en wordt gebruikt om de tweede aan te geven
-	eigendom geldt in alle staten langs een pad naar
-	en inclusief de eerste staat die voldoet aan de
-	eerste eigendom. De eerste eigenschap is niet vereist
-	om uiteindelijk tevreden te zijn.
+	De release-operator (R) is ook een binaire operator en betekent dat de tweede argument geldig moet zijn in alle staten  tot aan q inclusief de eerste staat die voldoet aan de
+	eerste eigenschap.  
 	
 	
 	%	Temporal Operators
@@ -2383,29 +2949,51 @@
 	
 	
 	\subsection{Fairness}
-	Er wordt een fairness constraint opgelegd aan (de planner van) het systeem dat het proces eerlijk selecteert
-	volgende worden uitgevoerd. Technisch gezien is een fairness constraint een voorwaarde voor uitvoeringen (paden) van het systeem
-	model. Hoewel deze beperkingen geen eigenschappen zijn die moeten worden geverifieerd (het zijn eerder veronderstelde omstandigheden).
-	worden afgedwongen door de implementatie), kunnen ze worden uitgedrukt in temporele logica.
+	%	Er wordt een fairness constraint opgelegd aan (de planner van) het systeem dat het proces eerlijk selecteert
+	%	volgende worden uitgevoerd. Technisch gezien is een fairness constraint een voorwaarde voor uitvoeringen (paden) van het systeem
+	%	model. Hoewel deze beperkingen geen eigenschappen zijn die moeten worden geverifieerd (het zijn eerder veronderstelde omstandigheden).
+	%	worden afgedwongen door de implementatie), kunnen ze worden uitgedrukt in temporele logica.
+	%	
+	%	fairness   is geen te controleren eigenschap van een systeem. Denk eens aan de manier waarop asynchrone systemen zijn
+	%	gemodelleerd: als een grafiek waarin elk knooppunt een mondiale systeemtoestand vertegenwoordigt, en elke opvolger van een knooppunt
+	%	komt overeen met de nieuwe mondiale toestand die wordt bereikt door een bepaald van de processen die een lokale transitie maken.
+	%	Zo’n model bevat doorgaans geen informatie over hoe vaak een proces wordt uitgevoerd, of hoe het volgende proces wordt uitgevoerd
+	%	het uit te voeren proces wordt gekozen door de planner; in feite is het model onafhankelijk van de onderliggende
+	%	besturingssysteem en dus van de planner: planning wordt niet-deterministisch behandeld.
+	%	\cite{WahlFairness}
 	
-	fairness   is geen te controleren eigenschap van een systeem. Denk eens aan de manier waarop asynchrone systemen zijn
-	gemodelleerd: als een grafiek waarin elk knooppunt een mondiale systeemtoestand vertegenwoordigt, en elke opvolger van een knooppunt
-	komt overeen met de nieuwe mondiale toestand die wordt bereikt door een bepaald van de processen die een lokale transitie maken.
-	Zo’n model bevat doorgaans geen informatie over hoe vaak een proces wordt uitgevoerd, of hoe het volgende proces wordt uitgevoerd
-	het uit te voeren proces wordt gekozen door de planner; in feite is het model onafhankelijk van de onderliggende
-	besturingssysteem en dus van de planner: planning wordt niet-deterministisch behandeld.
-	\cite{WahlFairness}
+	%	
+	%	6.5 Fairness in CTL
+	%	Recall that fairness assumptions (see Section 3.5) are used to rule out certain computations
+	%	that are considered to be unrealistic for the system under consideration. These unreasonable
+	%	computations that ignore certain transition alternatives forever are the “unfair” ones;
+	%	the remaining computations are thus the “fair” ones. As there are different notions of fairness,
+	%	various distinct forms of fairness can be imposed: unconditional, strong, and weak
+	%	Bedenk dat aannames over fairness   worden gebruikt om bepaalde gedragingen van een systeem uit te sluiten 	die voor het onderzochte systeem als onrealistisch worden beschouwd. Deze onredelijk 
+	%	eigenschappen die bepaalde transitie-alternatieven voor altijd negeren, zijn de ‘unfair’;
+	%	de overige berekeningen zijn dus de ‘eerlijke’ berekeningen. Omdat er verschillende opvattingen over rechtvaardigheid bestaan,
+	%	Er kunnen verschillende vormen van eerlijkheid worden opgelegd: onvoorwaardelijk, sterk en zwak
 	
+	Deze eigenschappen beschrijven de vereiste dat een proces vooruitgang boekt in de richting van een specifiek doel, waarvan de verwezenlijking afhangt van de fairness van het systeem. Als een proces nooit wordt uitgevoerd, kan het zijn doel meestal niet bereiken. Daarom worden deze eigenschappen vaak alleen langs eerlijke paden geëvalueerd, d.w.z. paden die voldoen aan een van de volgende drie vereisten voor fairnessconstraints:
+	Absolute Fairness, Impartiality: every process should be executed infinitely often:
+	Strong Fairness: every process that is infinitely often enabled should be executed infinitely often in
+	a state where it is enabled:
+	Weak Fairness: every process that is almost always enabled should be executed infinitely often:
+	%	\paragraph{Data variabelen} \\
+	%	Dat variabelen zijn onder andere: water hoog  en laag, en aanal schepen in de queue.
+	%	\paragraph{Acties}
+	%	Acties in het model zijn onder andere: invaren, uitvaren, deuren openen en sluiten, nivelleren
+	%	
 	
+	\subsection{Safety}
 	
-	
-	\paragraph{Data variabelen} \\
-	Dat variabelen zijn onder andere: water hoog  en laag, en aanal schepen in de queue.
-	\paragraph{Acties}
-	Acties in het model zijn onder andere: invaren, uitvaren, deuren openen en sluiten, nivelleren
-	
-	
-	%	\subsection{Safety}
+	Safety properties are often characterized as “nothing bad should happen”. The mutual
+	exclusion property—always at most one process is in its critical section—is a typical safety
+	property. It states that the bad thing (having two or more processes in their critical section
+	simultaneously) never occurs. Another typical safety property is deadlock freedom. For
+	the dining philosophers (see Example 3.2, page 90), for example, such deadlock could be
+	characterized as the situation in which all philosophers are waiting to pick up the second
+	chopstick. This bad (i.e., unwanted) situation should never occur.
 	%	In navolging van L. Lamport, die stelt dat er bij een veiligheidseigenschap  nooit iets ergs mag gebeuren. Het “slechte” vertegenwoordigt een kritieke systeemtoestand die nooit mag optreden. Een Booleaanse waarneembare C nemen: Tijd −→ {0, 1}, waarbij C(t) = 1 dat uitdrukt optijd t het systeem zich in de kritieke toestand bevindt, kan deze veiligheidseigenschap aanwezig zijn uitgedrukt door de formule:
 	%	$\forall$ t \in Tijd $\dot{}$ $\neg$ C(t)
 	%	
@@ -2421,28 +3009,19 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\subsection{liveness properties}
 	Veiligheidseigenschappen geven aan wat er wel of niet mag voorkomen,
-	maar eis niet dat er ooit iets gebeurt. Levendigheidseigenschappen geven aan wat er moet gebeuren. De eenvoudigste vorm van een liveness-eigenschap garandeert dat er uiteindelijk iets goeds gebeurt. De
-	‘goede zaak’ vertegenwoordigt een wenselijke systeemtoestand, bijvoorbeeld de
-	poorten open voor het wegverkeer. Een Booleaanse waarneembare nemen
-	G : Tijd −→ {0, 1}, waarbij G(t) = 1 drukt uit dat op tijdstip t de
-	systeem in goede staat verkeert, kan deze levendigheidseigenschap tot uitdrukking worden gebracht
-	volgens de formule:
-	$\bestaat$t $\in$ Tijd $\dot{}$ G(t).
+	maar eis niet dat er ooit iets gebeurt. liveness geeft aan wat er moet gebeuren. De eenvoudigste vorm van een liveness-eigenschap garandeert dat er uiteindelijk iets goeds gebeurt.
 	Met andere woorden: er bestaat een tijdstip waarop het systeem zich in de
-	goede staat. Houd er rekening mee dat deze eigenschap niet in bounded kan worden vervalst
-	tijd. Als voor enig tijdstip t0 alleen ¬G(t) is waargenomen
-	t ≤ t0, we kunnen niet klagen dat (1.2) uiteindelijk wordt geschonden
-	zegt niet hoe lang het zal duren voordat de goede toestand zich zal voordoen.
-	Een dergelijke liveness-eigenschap is niet sterk genoeg in de context van realtime systemen. Hier zou men graag een tijdgebonden zien wanneer de
-	goede toestand ontstaat. Dit brengt ons bij het volgende soort vastgoed.
-	begrensde responseigenschappen
+	%	goede staat bevind. Houd er rekening mee dat deze eigenschap niet in bounded kan worden vervalst
+	%	tijd. Als voor enig tijdstip t0 alleen ¬G(t) is waargenomen
+	%	t ≤ t0, we kunnen niet klagen dat (1.2) uiteindelijk wordt geschonden
+	%	zegt niet hoe lang het zal duren voordat de goede toestand zich zal voordoen.
+	%	Een dergelijke liveness-eigenschap is niet sterk genoeg in de context van realtime systemen. Hier zou men graag een tijdgebonden zien wanneer de
+	%	goede toestand ontstaat. Dit brengt ons bij het volgende soort vastgoed.
+	%	begrensde responseigenschappen
 	
 	
 	
-	These properties describe the requirement that a process make progress toward a specific goal, the
-	achievement of which depends on the fairness of the system. If a process never gets to execute, it
-	usually cannot reach its goal. Therefore, these properties are often evaluated only along fair paths,
-	i.e. paths that satisfy one of the above three fairness path requirements.
+	
 	
 	
 	
@@ -2497,15 +3076,16 @@
 		%	\end{enumerate}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%file:///C:/Users/gally/Downloads/models/isbn9789526031033.pdf
-	\cite[p.23]{isbn9789526031033}
+	%	\cite[p.23]{isbn9789526031033}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	Een  propositie kan ook worden geschreven als : $AG EF_[_x_,_y_]$  $\models$ $\Phi_1$
+	%	Een  propositie kan ook worden geschreven als : $AG EF_[_x_,_y_]$  $\models$ $\Phi_1$
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\newline Of geheel als functie:
-	\[
-	$\forall$ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq$  u(b,e)
-	\]
+	%	\newline Of geheel als functie:
+	%	\[
+	%	$\forall$ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq$  u(b,e)
+	%	\]
+	%	
 	
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

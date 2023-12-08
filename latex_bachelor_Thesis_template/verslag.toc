@@ -8,67 +8,60 @@
 \contentsline {paragraph}{MODE CONFUSION }{3}{}%
 \contentsline {paragraph}{Wat is automatiseringsparadox}{3}{}%
 \contentsline {paragraph}{4 variabelen model}{4}{}%
-\contentsline {paragraph}{6 Variable model}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Rampen}{4}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Therac-25}{5}{}%
-\contentsline {paragraph}{Beschrijving}{5}{}%
-\contentsline {paragraph}{Datum en Plaats}{5}{}%
-\contentsline {paragraph}{Oorzaak}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{5}{}%
-\contentsline {paragraph}{Beschrijving}{5}{}%
-\contentsline {paragraph}{Datum en Plaats}{6}{}%
-\contentsline {paragraph}{Oorzaak}{6}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}China explosie 2015 Tianjin}{6}{}%
-\contentsline {paragraph}{Beschrijving}{6}{}%
-\contentsline {paragraph}{Datum en Plaats}{6}{}%
-\contentsline {paragraph}{Oorzaak}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.4}de malimissie}{7}{}%
-\contentsline {paragraph}{Beschrijving}{7}{}%
-\contentsline {paragraph}{Datum en Plaats}{7}{}%
-\contentsline {paragraph}{Oorzaak}{7}{}%
-\contentsline {subsubsection}{\numberline {2.2.5}schipholbrand}{8}{}%
-\contentsline {paragraph}{Beschrijving}{8}{}%
-\contentsline {paragraph}{Datum en Plaats}{8}{}%
-\contentsline {paragraph}{Oorzaak}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.6}1951}{8}{}%
-\contentsline {paragraph}{Beschrijving}{8}{}%
-\contentsline {paragraph}{Datum en Plaats}{8}{}%
-\contentsline {paragraph}{Oorzaak}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.7}slmramp}{8}{}%
-\contentsline {paragraph}{Beschrijving}{8}{}%
-\contentsline {paragraph}{Datum en Plaats}{9}{}%
-\contentsline {paragraph}{Oorzaak}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.8}Tsjernobyl}{9}{}%
-\contentsline {paragraph}{Beschrijving}{9}{}%
-\contentsline {paragraph}{Datum en Plaats}{9}{}%
-\contentsline {paragraph}{Oorzaak}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.9}Safety critical systems}{9}{}%
-\contentsline {subsection}{\numberline {2.3}De Kripke structuur}{10}{}%
-\contentsline {subsection}{\numberline {2.4}Soorten modellen}{10}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}LTL}{10}{}%
-\contentsline {subsubsection}{\numberline {2.4.2}CTL}{10}{}%
-\contentsline {subsubsection}{\numberline {2.4.3}buchi Automata}{10}{}%
-\contentsline {subsection}{\numberline {2.5}Tijd}{10}{}%
-\contentsline {subsubsection}{\numberline {2.5.1}Een begrensde responseigenschap}{10}{}%
-\contentsline {subsection}{\numberline {2.6}Guards en invarianten}{10}{}%
-\contentsline {subsection}{\numberline {2.7}Deadlock}{10}{}%
-\contentsline {subsection}{\numberline {2.8}Zeno gedrag}{11}{}%
-\contentsline {section}{\numberline {3}Logica}{11}{}%
-\contentsline {subsection}{\numberline {3.1}Propositielogica}{11}{}%
-\contentsline {subsection}{\numberline {3.2}Predicatenlogica}{11}{}%
-\contentsline {subsection}{\numberline {3.3}Kwantoren}{12}{}%
-\contentsline {subsection}{\numberline {3.4}Dualiteiten}{13}{}%
-\contentsline {section}{\numberline {4}Computation tree logic}{13}{}%
-\contentsline {subsection}{\numberline {4.1}Algemeen}{13}{}%
-\contentsline {subsection}{\numberline {4.2}Operator: AG}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Operator: EG}{15}{}%
-\contentsline {subsection}{\numberline {4.4}Operator: AF}{15}{}%
-\contentsline {subsection}{\numberline {4.5}Operator: EF}{15}{}%
-\contentsline {subsection}{\numberline {4.6}Operator: AX}{15}{}%
-\contentsline {subsection}{\numberline {4.7}Operator: EX}{15}{}%
-\contentsline {subsection}{\numberline {4.8}Operator: p U q}{15}{}%
-\contentsline {subsection}{\numberline {4.9}Operator: p R q}{16}{}%
-\contentsline {subsection}{\numberline {4.10}Fairness}{16}{}%
-\contentsline {paragraph}{Data variabelen}{16}{}%
-\contentsline {paragraph}{Acties}{16}{}%
-\contentsline {subsection}{\numberline {4.11}liveness properties}{17}{}%
+\contentsline {paragraph}{6 Variable model}{5}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}Requirements}{6}{}%
+\contentsline {paragraph}{ 1.9 Quality and Metrics in Requirements Engineering }{10}{}%
+\contentsline {paragraph}{5.3 Quality Attribute Requirements}{10}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Specificaties}{10}{}%
+\contentsline {subsection}{\numberline {2.2}Requirements en specificaties}{11}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Safety critical systems}{11}{}%
+\contentsline {subsection}{\numberline {2.3}Rampen}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Therac-25}{12}{}%
+\contentsline {paragraph}{Beschrijving}{12}{}%
+\contentsline {paragraph}{Datum en Plaats}{13}{}%
+\contentsline {paragraph}{Oorzaak}{13}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{13}{}%
+\contentsline {paragraph}{Beschrijving}{13}{}%
+\contentsline {paragraph}{Datum en Plaats}{14}{}%
+\contentsline {paragraph}{Oorzaak}{14}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}China explosie 2015 Tianjin}{14}{}%
+\contentsline {paragraph}{Beschrijving}{14}{}%
+\contentsline {paragraph}{Datum en Plaats}{14}{}%
+\contentsline {paragraph}{Oorzaak}{15}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}schipholbrand}{15}{}%
+\contentsline {paragraph}{Beschrijving}{15}{}%
+\contentsline {paragraph}{Datum en Plaats}{15}{}%
+\contentsline {paragraph}{Oorzaak}{15}{}%
+\contentsline {subsubsection}{\numberline {2.3.5}1951}{15}{}%
+\contentsline {paragraph}{Beschrijving}{15}{}%
+\contentsline {paragraph}{Datum en Plaats}{15}{}%
+\contentsline {paragraph}{Oorzaak}{16}{}%
+\contentsline {subsubsection}{\numberline {2.3.6}slmramp}{16}{}%
+\contentsline {paragraph}{Beschrijving}{16}{}%
+\contentsline {paragraph}{Datum en Plaats}{16}{}%
+\contentsline {paragraph}{Oorzaak}{16}{}%
+\contentsline {subsubsection}{\numberline {2.3.7}Tsjernobyl}{16}{}%
+\contentsline {paragraph}{Beschrijving}{16}{}%
+\contentsline {paragraph}{Datum en Plaats}{16}{}%
+\contentsline {paragraph}{Oorzaak}{16}{}%
+\contentsline {subsection}{\numberline {2.4}De Kripke structuur}{17}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}CTL}{17}{}%
+\contentsline {subsection}{\numberline {2.5}Guards en invarianten}{17}{}%
+\contentsline {subsection}{\numberline {2.6}Deadlock}{18}{}%
+\contentsline {subsection}{\numberline {2.7}Zeno gedrag}{18}{}%
+\contentsline {section}{\numberline {3}Logica}{18}{}%
+\contentsline {subsection}{\numberline {3.1}Propositielogica}{18}{}%
+\contentsline {subsection}{\numberline {3.2}Predicatenlogica}{19}{}%
+\contentsline {subsection}{\numberline {3.3}Kwantoren}{19}{}%
+\contentsline {subsection}{\numberline {3.4}Dualiteiten}{20}{}%
+\contentsline {subsection}{\numberline {3.5}Operator: AG}{20}{}%
+\contentsline {subsection}{\numberline {3.6}Operator: EG}{21}{}%
+\contentsline {subsection}{\numberline {3.7}Operator: AF}{21}{}%
+\contentsline {subsection}{\numberline {3.8}Operator: EF}{21}{}%
+\contentsline {subsection}{\numberline {3.9}Operator: AX}{21}{}%
+\contentsline {subsection}{\numberline {3.10}Operator: EX}{21}{}%
+\contentsline {subsection}{\numberline {3.11}Operator: p U q}{21}{}%
+\contentsline {subsection}{\numberline {3.12}Operator: p R q}{22}{}%
+\contentsline {subsection}{\numberline {3.13}Fairness}{22}{}%
+\contentsline {subsection}{\numberline {3.14}Safety}{22}{}%
+\contentsline {subsection}{\numberline {3.15}liveness properties}{22}{}%

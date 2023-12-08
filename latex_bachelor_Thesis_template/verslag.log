@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  19 NOV 2023 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  8 DEC 2023 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,20 +418,62 @@ input line 171.
 
 [3]
 
-! LaTeX Error: There's no line here to end.
+LaTeX Warning: File `4varparnas.png' not found on input line 195.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+! Package pdftex.def Error: File `4varparnas.png' not found: using draft settin
+g.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.313 	\newline
-                \indent Voor deze studie is onderzoek gedaan naar verschille...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.195 ...cludegraphics[width=14cm]{4varparnas.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 [4]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+224.
+ (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+
+LaTeX Warning: File `Schermafbeelding 2023-12-08 133303.png' not found on input
+ line 231.
+
+
+! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 133303.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.231 ...]{Schermafbeelding 2023-12-08 133303.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Schermafbeelding 2023-12-08 132959.png' not found on input
+ line 233.
+
+
+! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 132959.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.233 ...]{Schermafbeelding 2023-12-08 132959.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[5] [6]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -439,65 +481,199 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.401 	\newline
-                \indent
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 5 undefined on in
-put line 543.
-
-[5]
-
-LaTeX Warning: Citation `uran05042019SPOF' on page 6 undefined on input line 59
-0.
-
-
-LaTeX Warning: Citation `boeing737maxdisplay' on page 6 undefined on input line
- 591.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.686 	\paragraph{Datum en Plaats} 	\newline
-                                             \indent
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[6]
-
-LaTeX Warning: Citation `bnnvara13062018malirapport' on page 7 undefined on inp
-ut line 967.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.990 	\newline
-                \indent Het mortierongeluk in Mali op 06/04/2016.
+l.235 	\newline
+               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [7]
 
+LaTeX Warning: File `Schermafbeelding 2023-12-08 132840.png' not found on input
+ line 236.
+
+
+! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 132840.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 ...]{Schermafbeelding 2023-12-08 132840.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[8] [9] [10]
+
+! LaTeX Error: Unicode character ∩ (U+2229)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.711 	∩
+           (NAT;SOF;OUT) ⊆ REQ
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ⊆ (U+2286)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.711 	∩ (NAT;SOF;OUT) ⊆
+                             REQ
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ∩ (U+2229)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.714 	condition: NAT ∩
+                          SYS ⊆ REQ
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ⊆ (U+2286)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.714 	condition: NAT ∩ SYS ⊆
+                                  REQ
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Citation `winceckCriticalToSafety' on page 11 undefined on input
+ line 719.
+
+
+LaTeX Warning: Citation `chambersHazardAnalysisSCS' on page 11 undefined on inp
+ut line 723.
+
+
+LaTeX Warning: Citation `rslater1998SCSAnalysis' on page 11 undefined on input 
+line 735.
+
+
+LaTeX Warning: File `Schermafbeelding 2023-12-08 144723.png' not found on input
+ line 737.
+
+
+! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144723.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.737 ...]{Schermafbeelding 2023-12-08 144723.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11]
+
+LaTeX Warning: Citation `fulvio1993safetycriticalsystems' on page 12 undefined 
+on input line 772.
+
+
+LaTeX Warning: Citation `dlrtabid' on page 12 undefined on input line 773.
+
+
+LaTeX Warning: Citation `knight2010SafetyCritical' on page 12 undefined on inpu
+t line 774.
+
+
+LaTeX Warning: Citation `creavisafecritical' on page 12 undefined on input line
+ 775.
+
+
+LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 12 undefined on 
+input line 776.
+
+
+LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 12 undefi
+ned on input line 777.
+
+
 ! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1031 	\newline
+l.885 	\newline
+                \indent Voor deze studie is onderzoek gedaan naar verschille...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[12]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.973 	\newline
+                \indent
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 13 undefined on i
+nput line 1115.
+
+
+LaTeX Warning: Citation `uran05042019SPOF' on page 13 undefined on input line 1
+162.
+
+
+LaTeX Warning: Citation `boeing737maxdisplay' on page 13 undefined on input lin
+e 1163.
+
+[13]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1258 	\paragraph{Datum en Plaats} 	\newline
+                                              \indent
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[14]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1602 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -510,14 +686,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1198 	\newline
+l.1770 	\newline
                  \indent  Op woensdag 25 februar 2009 voltrok zich de  ramp ...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[8]
+[15]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -525,15 +701,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1217 	\newline
+l.1791 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 9 undefined on input 
-line 1231.
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 16 undefined on input
+ line 1804.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -542,70 +718,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1233 	\newline
+l.1806 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `rivmTjernobyl' on page 9 undefined on input line 1239.
+LaTeX Warning: Citation `rivmTjernobyl' on page 16 undefined on input line 1812
+.
 
 
-
-LaTeX Warning: Citation `andereTijdenTjernobyl' on page 9 undefined on input li
-ne 1240.
-
-
-LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 9 undefined on inpu
-t line 1241.
+LaTeX Warning: Citation `andereTijdenTjernobyl' on page 16 undefined on input l
+ine 1813.
 
 
-LaTeX Warning: Citation `erikbork26042023reactor4' on page 9 undefined on input
- line 1242.
+LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 16 undefined on inp
+ut line 1814.
 
 
-LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 9 undefined on input 
-line 1243.
+LaTeX Warning: Citation `erikbork26042023reactor4' on page 16 undefined on inpu
+t line 1815.
 
 
-LaTeX Warning: Citation `winceckCriticalToSafety' on page 9 undefined on input 
-line 1517.
-
-
-LaTeX Warning: Citation `chambersHazardAnalysisSCS' on page 9 undefined on inpu
-t line 1521.
-
-[9]
-
-LaTeX Warning: Citation `rslater1998SCSAnalysis' on page 10 undefined on input 
-line 1533.
-
-
-LaTeX Warning: Citation `fulvio1993safetycriticalsystems' on page 10 undefined 
-on input line 1567.
-
-
-LaTeX Warning: Citation `dlrtabid' on page 10 undefined on input line 1568.
-
-
-LaTeX Warning: Citation `knight2010SafetyCritical' on page 10 undefined on inpu
-t line 1569.
-
-
-LaTeX Warning: Citation `creavisafecritical' on page 10 undefined on input line
- 1570.
-
-
-LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 10 undefined on 
-input line 1571.
-
-
-LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 10 undefi
-ned on input line 1572.
+LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 16 undefined on input
+ line 1816.
 
 ! Undefined control sequence.
-l.1596 	\setion
+l.2112 	\setion
                {Modellen}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -613,157 +753,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-1711.
-(C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-
-! LaTeX Error: Unicode character ⇔ (U+21D4)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1711 	• Deadlock ⇔
-                         een bereikbare staat kan helemaal geen acties uitvo...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[10]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1742 ...m Als p en q formules zijn, dan zijn (p^
-                                                  q), (p_q), (p!q) en (p\tex...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Undefined control sequence.
-l.1742 ... dan zijn (p^q), (p_q), (p!q) en (p\text
-                                                  {$}q) formules.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.1742 ...an zijn (p^q), (p_q), (p!q) en (p\text{$
-                                                  }q) formules.
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-l.1742 ...n zijn (p^q), (p_q), (p!q) en (p\text{$}
-                                                  q) formules.
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-[11] [12]
-
-! LaTeX Error: Unicode character ∪ (U+222A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1855 ...ubbele formulering. We zullen unions(∪
-                                                  ) omwisselen in intersecti...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∩ (U+2229)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1855 ...ions(∪) omwisselen in intersecties(∩
-                                                  ) of intersecties() in de ...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∅ (U+2205)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1855 ...ersele set omwisselen voor de nulset(∅
-                                                  ) of nullset voor universa...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∪ (U+222A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1855 ...ubbele formulering. We zullen unions(∪
-                                                  ) omwisselen in intersecti...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∩ (U+2229)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1855 ...ions(∪) omwisselen in intersecties(∩
-                                                  ) of intersecties() in de ...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∅ (U+2205)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1855 ...ersele set omwisselen voor de nulset(∅
-                                                  ) of nullset voor universa...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-LaTeX Warning: Citation `alurSystemClok' on page 13 undefined on input line 193
-5.
-
-
-LaTeX Warning: Citation `alurModelHybrid' on page 13 undefined on input line 19
-35.
-
-[13]
 
 ! LaTeX Error: Unicode character − (U+2212)
                not set up for use with LaTeX.
@@ -772,7 +761,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1946 	−
+l.2117 	−
             formele taal voor het specificeren en redeneren over hoe de
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -785,7 +774,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1948 	−
+l.2119 	−
             breidt de propositielogica uit met modale/temporele operatoren
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -798,7 +787,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1949 	−
+l.2120 	−
             een belangrijk gebruik: representatie van toekomstige systeemeig...
 
 You may provide a definition with
@@ -812,7 +801,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1960 	−
+l.2131 	−
             specificeer respectievelijk eigenschappen van toestanden/paden
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -825,7 +814,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1961 	−
+l.2132 	−
             een CTL-formule is een toestandsformule	
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -838,7 +827,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1963 	waarbij een E AP en ψ
+l.2134 	waarbij een E AP en ψ
                                een padformule is voor een atomaire propositie	
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -851,275 +840,173 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1965 	waarbij φ
+l.2136 	waarbij φ
                    een toestandsformule (stateformula) is	
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[14]
+[16]
 
-! LaTeX Error: Unicode character ψ (U+03C8)
+LaTeX Warning: Citation `alurSystemClok' on page 17 undefined on input line 216
+4.
+
+
+LaTeX Warning: Citation `alurModelHybrid' on page 17 undefined on input line 21
+64.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2285
+
+ []
+
+[17]
+
+! LaTeX Error: Unicode character Φ (U+03A6)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2242 	• If any state s is labeled with ψ
-                                             1, label it with AF ψ1.
+l.2336 ...ie worden gegeven door een voorwaarde Φ
+                                                   voor de toestanden en ver...
+
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-! LaTeX Error: Unicode character ψ (U+03C8)
+! LaTeX Error: Unicode character Φ (U+03A6)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2242 ...is labeled with ψ1, label it with AF ψ
-                                                  1.
+l.2336 ...Φ voor de toestanden en vereisen dat Φ
+                                                   geldt 	voor alle bereikba...
+
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-! LaTeX Error: Unicode character ψ (U+03C8)
+! LaTeX Error: Unicode character Φ (U+03A6)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2244 	Repeat: label any state with AF ψ
-                                          1 if all successor states are labeled
-
+l.2337 ... uitgelegd: er moet aan de voorwaarde Φ
+                                                   zijn voldaan
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-! LaTeX Error: Unicode character ψ (U+03C8)
+! LaTeX Error: Unicode character Φ (U+03A6)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2245 	with AF ψ
-                  1, until there is no change.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ψ (U+03C8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2265 	: label any state with EX ψ
-                                    1
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ψ (U+03C8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2267 	with ψ
-               1
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-[15]
-
-! LaTeX Error: Unicode character φ (U+03C6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2290 	• Aφ
-                (All): φ has to hold on all paths starting from the current...
+l.2338 ...begintoestanden en de bevrediging van Φ
+                                                   is onveranderlijk onder a...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-
-! LaTeX Error: Unicode character φ (U+03C6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2290 	• Aφ (All): φ
-                          has to hold on all paths starting from the current...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character φ (U+03C6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2291 	• Eφ
-                (Exists): there exists at least one path starting from the c...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character φ (U+03C6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2291 ...starting from the current state where φ
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-LaTeX Warning: Citation `WahlFairness' on page 16 undefined on input line 2347.
-
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2353 	D
-         at variabelen zijn onder andere: water hoog  en laag, en aanal sche...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Unicode character − (U+2212)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2377 	G : Tijd −
-                    → {0, 1}, waarbij G(t) = 1 drukt uit dat op tijdstip t de
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2371 ...m Als p en q formules zijn, dan zijn (p^
+                                                  q), (p_q), (p!q) en (p\tex...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-<recently read> \bestaat 
-                         
-l.2380 	$\bestaat
-                 $t $\in$ Tijd $\dot{}$ G(t).
+l.2371 ... dan zijn (p^q), (p_q), (p!q) en (p\text
+                                                  {$}q) formules.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+! Missing } inserted.
+<inserted text> 
+                }
+l.2371 ...an zijn (p^q), (p_q), (p!q) en (p\text{$
+                                                  }q) formules.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-! LaTeX Error: Unicode character ≤ (U+2264)
+! Extra }, or forgotten \endgroup.
+l.2371 ...n zijn (p^q), (p_q), (p!q) en (p\text{$}
+                                                  q) formules.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[18] [19]
+
+! LaTeX Error: Unicode character ∗ (U+2217)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2384 	t ≤
-              t0, we kunnen niet klagen dat (1.2) uiteindelijk wordt geschonden
+l.2521 	+ en ∗
+                , en hun identiteitselementen 0 en 1 in de oorspronkelijke v...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[16]
 
-LaTeX Warning: Citation `isbn9789526031033' on page 17 undefined on input line 
-2447.
-
-! Double subscript.
-l.2450 ...an ook worden geschreven als : $AG EF_[_
-                                                  x_,_y_]$  $\models$ $\Phi_1$
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.2450 ... ook worden geschreven als : $AG EF_[_x_
-                                                  ,_y_]$  $\models$ $\Phi_1$
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.2450 ...ok worden geschreven als : $AG EF_[_x_,_
-                                                  y_]$  $\models$ $\Phi_1$
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.2450 ... worden geschreven als : $AG EF_[_x_,_y_
-                                                  ]$  $\models$ $\Phi_1$
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Display math should end with $$.
-<to be read again> 
-                   \forall 
-l.2454 	$\forall
-                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d...
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2454 	$\forall
-                $ b,e $\in$ Time $\bullet$ A(b,e) =\int_b^{e}C(t)\,\mathrm{d...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2454 ...l$ b,e $\in$ Time $\bullet$ A(b,e) =\int
-                                                  _b^{e}C(t)\,\mathrm{d}t $\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.2454 ...(b,e) =\int_b^{e}C(t)\,\mathrm{d}t $\leq
-                                                  $  u(b,e)
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Bad math environment delimiter.
+! LaTeX Error: Unicode character ∗ (U+2217)
+               not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2455 	\]
-          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.2522 	(1 + a) ∗
+                    (b + 0) = b is (0 ∗ a) + (b ∗ 1) = b
+You may provide a definition with
+\DeclareUnicodeCharacter 
 
-[17]
+
+! LaTeX Error: Unicode character ∗ (U+2217)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2522 	(1 + a) ∗ (b + 0) = b is (0 ∗
+                                          a) + (b ∗ 1) = b
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: Unicode character ∗ (U+2217)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2522 ...a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗
+                                                   1) = b
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[20] [21] [22]
 No file verslag.bbl.
 (verslag.aux)
 
@@ -1127,30 +1014,28 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7951 strings out of 475385
- 155401 string characters out of 2776908
- 532824 words of memory out of 3000000
- 29282 multiletter control sequences out of 15000+600000
- 472640 words of font info for 39 fonts, out of 8000000 for 9000
+ 8121 strings out of 475385
+ 162264 string characters out of 2776908
+ 530824 words of memory out of 3000000
+ 29430 multiletter control sequences out of 15000+600000
+ 472808 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,5n,79p,1713b,327s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss
+ 67i,6n,79p,1714b,327s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk> <C:\Users\gally\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1000.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+0\tcss1000.pk><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gally/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gally/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/gally/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gal
-ly/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Us
-ers/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.p
-fb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmssbx10.pfb><C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb>
-Output written on verslag.pdf (18 pages, 192149 bytes).
+onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gally/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/gally/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gally/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/gal
+ly/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C
+:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb>
+Output written on verslag.pdf (23 pages, 181418 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
