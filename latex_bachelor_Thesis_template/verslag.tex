@@ -140,6 +140,22 @@
 	\paragraph{Wat is uppaal}
 	Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time systemen, gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden. Het is geschikt voor systemen die kunnen worden gemodelleerd als een verzameling niet-deterministische processen met een eindige controlestructuur en klokken met reële waarde, die communiceren via kanalen of gedeelde variabelen . Typische toepassingsgebieden zijn met name real-time controllers en communicatieprotocollen, waarbij timingaspecten van cruciaal belang zijn. %\cite{uppaalFeatures}
 	
+	UPPAAL is a verification tool for a TA based modeling language. Besides dense clocks,
+	the tool supports both simple and complex data types like bounded integers and arrays
+	as well as synchronization via shared variables and actions. The specification language
+	supports safety, liveness, deadlock, and response properties.
+	
+	To produce test sequences, we shall make use of UPPAAL’s ability to generate diagnostic
+	traces witnessing a submitted safety property. Currently UPPAAL supports three
+	options for diagnostic trace generation: some trace leading to the goal state, the shortest
+	trace with the minimum number of transitions, and fastest trace with the shortest
+	accumulated time delay. The underlying algorithm used for finding time-optimal traces
+	is a variation of the A-algorithm [2,12]. Hence, to improve performance it is possible
+	to supply a heuristic function estimating the remaining cost from any state to the goal
+	state.
+	
+	
+	
 	\paragraph{Wat is statistical model checking?}
 	Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
 	%\cite{verimagStatsModelChecking}.
@@ -205,9 +221,11 @@
 	Domein eingenschappen  zijn beschrijvende statementsover een omgeving en zijn feiten. Domein hypotheses  zijn ook beschrijvende uitspraken over een omgeving, maar zijn aannames. 
 	Verwachtingen zijn ook aannames, maar dat zijn voorschrijvende uitspraken die behaald worden door actoren als personen, sensoren en actuators. 
 	
-	\subsubsection{Requirements}
 	
-	1.5 Definition of Requirements Engineering
+	
+	\section{Requirements}
+	
+	\subsection{Requirements engineering}
 	“Requirements engineering [DoD 1991] involves all lifecycle activities
 	devoted to identification of user requirements, analysis of the
 	requirements to derive additional requirements, documentation of
@@ -228,25 +246,200 @@
 	requirements engineering as “the science and discipline concerned
 	with establishing and documenting software requirements.”
 	
-	“Requirements engineering [DoD 1991] omvat alle levenscyclusactiviteiten
-	gewijd aan identificatie van gebruikersvereisten, analyse van de
-	eisen om aanvullende eisen af te leiden, documentatie van
-	de vereisten als specificatie en validatie van het gedocumenteerde
-	vereisten ten opzichte van gebruikersbehoeften, evenals processen die dit ondersteunen
-	deze activiteiten." Houd er rekening mee dat de engineering van vereisten domeinneutraal is
-	discipline; Het kan bijvoorbeeld worden gebruikt voor software, hardware en
-	elektromechanische systemen. Als technische discipline is het
-	omvat het gebruik van kwantitatieve methoden, waarvan sommige dat ook zullen zijn
-	beschreven in latere hoofdstukken van dit boek.
-	Terwijl de behoefteanalyse zich bezighoudt met het uitlokken en
-	onderzoek van eisen, eisen-engineering houdt zich bezig met alles
-	fasen van de levenscyclus van een project of product, van innovatie tot veroudering.
-	Vanwege de snelle levenscyclus van producten (d.w.z. innovatie → ontwikkeling →
-	release → onderhoud → veroudering) die door de software is ingeschakeld,
-	eisen engineering heeft verdere specialisaties voor software.
-	Thayer en Dorfman [Thayer et al. 1997] definiëren bijvoorbeeld software
-	requirements engineering als “de betrokken wetenschap en discipline
-	met het vaststellen en documenteren van softwarevereisten.”
+	
+	Door middel van requirements wordt vastgelegd welke functionaliteiten het systeem moet bevatten, welke prestatieniveaus het moet bereiken, welke beperkingen moeten worden gehandhaafd en welke kwaliteitsattributen moeten worden nageleefd.
+	Het formuleren en vaststellen van requirements is een cruciale fase in het systeemmodelleringsproces, omdat het een duidelijk beeld geeft van de gewenste systeemeigenschappen en helpt bij het bepalen van de benodigde functionaliteit en prestaties. Dit legt de basis voor verdere stappen in het modelleringsproces, zoals ontwerp, implementatie en testen.
+	
+	\subsection{Systeem omschrijving}
+	To enable formalization (and verication) of requirements, we decorate the system description with
+	two integer variables, ErrStat and UseCase. The variable ErrStat is assigned values at unrecoverable
+	errors: 1 if Clutch fails to close, 2 if Clutch fails to open, 3 if GearBox fails to set a gear, and 4 if GearBox
+	fails to release a gear. The variable UseCase is assigned values whenever a recoverable error occurs in
+	Engine: 1 if it fail to deliver zero torque, and 2 if it is not able to nd synchronous speed. The system
+	model is also decorated to enable verication of bounded response time properties, as described in
+	Section 3.2.
+	
+	Intuitively, the rst rule describes a local internal action transition in a component,
+	and possibly the resetting of variables.
+	The second rule describes synchronisation transitions that synchronise two
+	components.
+	The third rule describes delay transitions, i.e. when all clocks increase synchronously
+	with time.
+	
+	
+	Reactive systems can be broadly classified as distributed systems whose subcomponents
+	are spatially separated and concurrent systems that share resources such as processors
+	and memories. Distributed systems communicate by message passing, whereas
+	concurrent systems may use shared variables. Concurrent processes may share a common
+	clock and execute in lock-step (time-synchronous systems, typical for hardware
+	verification problems) or operate asynchronously, sharing a common processor. In the
+	latter case, one will typically assume fairness conditions that ensure processes that
+	could execute are eventually scheduled for execution. A common framework for the
+	representation of these different kinds of systems is provided by the concept of transition
+	systems. Properties of (runs of) transition systems are conveniently expressed in
+	temporal logic.
+	
+	
+	Computerized systems pervade more and more our everyday lives. We rely on digital
+	controllers to supervise critical functions of cars, airplanes, and industrial plants. Digital
+	switching technology has replaced analog components in the telecommunication
+	industry, and security protocols enable e-commerce applications and privacy. Where
+	important investments or even human lives are at risk, quality assurance for the underlying
+	hardware and software components becomes paramount, and this requires formal
+	models that describe the relevant part of the systems at an adequate level of abstraction.
+	The systems we are focussing on are assumed to maintain an ongoing interaction
+	with their environment (e.g., the controlled system or other components of a communication
+	network) and are therefore called reactive systems [60, 94]. Traditional models
+	that describe computer programs as computing some result from given input values
+	are inadequate for the description of reactive systems. Instead, the behavior of reactive
+	systems is usually modelled by transition systems.
+	The term model checking designates a collection of techniques for the automatic
+	analysis of reactive systems. Subtle errors in the design of safety-critical systems that
+	often elude conventional simulation and testing techniques can be (and have been)
+	found in this way. Because it has been proven cost-effective and integrates well with
+	conventional design methods, model checking is being adopted as a standard procedure
+	for the quality assurance of reactive systems.
+	The inputs to a model checker are a (usually finite-state) description of the system to
+	be analysed and a number of properties, often expressed as formulas of temporal logic,
+	that are expected to hold of the system. The model checker either confirms that the
+	properties hold or reports that they are violated. In the latter case, it provides a counterexample:
+	a run that violates the property. Such a run can provide valuable feedback
+	and points to design errors. In practice, this view turns out to be somewhat idealized:
+	quite frequently, available resources only permit to analyse a rather coarse model of
+	the system. A positive verdict from the model checker is then of limited value because
+	bugs may well be hidden by the simplifications that had to be applied to the model.
+	On the other hand, counter-examples may be due to modelling artefacts and no longer
+	correspond to actual system runs. In any case, one should keep in mind that the object
+	of analysis is always an abstract model of the system. Standard procedures such as
+	code reviews are necessary to ensure that the abstract model adequately reflects the
+	behavior of the concrete system in order for the properties of interest to be established
+	or falsified. Model checkers can be of some help in this validation task because it is
+	possible to perform “sanity checks”, for example to ensure that certain runs are indeed
+	possible or that the model is free of deadlocks.
+	This paper is intended as a tutorial overview of some of the fundamental principles
+	of model checking, based on a necessarily subjective selection of the large body of
+	model checking literature.We begin with a case study in section 2 where the application
+	of model checking is considered from a user’s point of view. Section 3 reviews transition
+	systems, temporal logics, and automata-theoretic techniques that underly some approaches
+	to model checking. Section 4 introduces basic model checking algorithms for
+	linear-time and branching-time logics. Finally, section 5 collects some rather sketchy
+	references to more advanced topics. Much more material can be found in other contributions
+	to this volume and in the textbooks and survey papers [27, 28, 69, 97, 124] on
+	the subject. The paper contains many references to the relevant literature, in the hope
+	that this survey can also serve as an annotated bibliography.
+	\subsection{Requirements}
+	In het modelleren van systemen verwijst een requirement naar een specifieke functionaliteit, prestatie-eis, beperking of kwaliteitsattribuut dat aanwezig moet zijn in het systeem \cite{kotonya1998requirements}. Het is een formele beschrijving van wat het systeem moet kunnen doen of aan welke specificaties het moet voldoen.
+		Het opstellen van specificaties\cite{kotonya1998requirements} is een belangrijk proces, omdat het de basis legt voor het ontwerp en de ontwikkeling van het systeem. Door duidelijke specificaties te hebben, kunnen de betrokkenen, zoals ontwerpers en ontwikkelaars, een gemeenschappelijk begrip hebben van wat er van het systeem wordt verwacht.
+	Het is ook belangrijk om de haalbaarheid van de specificaties te overwegen. Sommige eisen kunnen technisch uitdagend zijn of beperkt worden door bijvoorbeeld budgettaire of tijdsbeperkingen. Daarom moeten de specificaties realistisch en praktisch uitvoerbaar zijn.
+	
+	Kortom, specificaties zijn gedetailleerde beschrijvingen van wat het systeem moet kunnen doen, welke prestaties het moet leveren en welke beperkingen er gelden. Ze dienen als een leidraad tijdens het ontwikkelingsproces en zorgen voor een duidelijke communicatie tussen de belanghebbenden over de gewenste
+	
+		\subsection{Goede requirements}
+		
+		Feasible
+		A requirement is feasible if an implementation of it on the planned
+		Valid
+		A requirement is valid if and only if the requirement is one that the
+		system shall (must) meet.
+		Unambiguous
+		A requirement is unambiguous if it has only one interpretation. Natural
+		language tends toward ambiguity.
+		Verifiable
+		A requirement is verifiable if the finished product or system can be
+		tested to ensure that it meets the requirement.
+		
+		Modifiable
+		The characteristic modifiable refers to two or more interrelated
+		requirements or a complete requirements specification.
+		Consistent
+		In general, consistency is a relationship among at least two
+		requirements.
+		Complete
+		A requirements specification is complete if it includes all relevant
+		correct requirements, and sufficient information is available for the
+		product to be built.
+		
+	\subsection{specificaties}
+
+		Requirements en spcificatiesl Assuming that the requirements are feasible with respect to the
+	environment, Parnas and Madey [3] proposed the following acceptability condition for the software: NAT
+	∩ (NAT;SOF;OUT) ⊆ REQ
+	Here, the operator ; is the usual composition of relations.
+	A system implementation sys= IN;SOF;OUT; is then acceptable if and only if it satisfies the following
+	condition: NAT ∩ SYS ⊆ REQ
+	https://www.sciencedirect.com/science/article/pii/S0167642315001033
+	
+	
+	Our main aim is application of formal methods to the intelligent adaptive systems to ensure correctness of system design.
+	2.1 Formal methods
+	Formal methods are mathematics based techniques for describing system properties. They provide frameworks within which people can specify, develop, and verify systems in a systematic manner. They help identify errors, ambiguities and problems in the early stages of the system development process [2].
+	Key elements of Formal methods
+	2.1.1 Formal Specification
+	It is a complete representation of the system under study using certain formal specification languages. They provide a complete syntax, semantics and pragmatics for its representation. Different specification languages used in developing formal methods are abstract state machines, CSP,LOTOS, RAISE, Rebeca modeling language, SPARK Ada, VDM and Z notation etc.[2,3].
+	
+	2.1.2 Modelling
+	In general a model is a mathematical representation of the system under study. They can of different types such as abstract state machine models, automata based models, object oriented models etc. Further automata based models can make use of deterministic finite automata, nondeterministic finite automata, timed automata, Buchi automata, ω-automata etc. These models are used for modelling the formally specified system.
+	2.1.3 Formal Verification
+	It is a process of confirming that system under study satisfies its specifications or requirements [2]. It can be achieved by various approaches such as simulation, theorem proving and model checking. They are mainly used to check different system requirements like safety, liveness, deadlock freeness and reachability requirements.
+	
+	
+	two types of labels: atomic actions and
+	delay actions (
+	
+	
+	
+	4.3 Requirements
+	In this section we list the informal requirements and desired functionality on the gear controller,
+	provided by Mecel AB. The requirements are to ensure the correctness of the gear controller. A few
+	operations, such as gear shifts and error detections, are crucial to the correctness. They must be
+	guaranteed within certain time bounds. In addition, there are also requirements on the controller to
+	ensure desired qualities of the vehicle, such as: good comfort, low fuel consumption, and low emission.
+	1. Performance.
+	2. Predictability
+	3. Functionality.
+	4. Error Detection
+ 
+	
+%	1.5 Definition of Requirements Engineering
+%	“Requirements engineering [DoD 1991] involves all lifecycle activities
+%	devoted to identification of user requirements, analysis of the
+%	requirements to derive additional requirements, documentation of
+%	the requirements as a specification, and validation of the documented
+%	requirements against user needs, as well as processes that support
+%	these activities.” Note that requirements engineering is a domainneutral
+%	discipline; e.g., it can be used for software, hardware, and
+%	electromechanical systems. As an engineering discipline, it
+%	incorporates the use of quantitative methods, some of which will be
+%	described in later chapters of this book.
+%	Whereas requirements analysis deals with the elicitation and
+%	examination of requirements, requirements engineering deals with all
+%	phases of a project or product life cycle from innovation to obsolescence.
+%	Because of the rapid product life cycle (i.e., innovation→development→
+%	release→maintenance→obsolescence) that software has enabled,
+%	requirements engineering has further specializations for software.
+%	Thayer and Dorfman [Thayer et al. 1997], for example, define software
+%	requirements engineering as “the science and discipline concerned
+%	with establishing and documenting software requirements.”
+%	
+%	“Requirements engineering [DoD 1991] omvat alle levenscyclusactiviteiten
+%	gewijd aan identificatie van gebruikersvereisten, analyse van de
+%	eisen om aanvullende eisen af te leiden, documentatie van
+%	de vereisten als specificatie en validatie van het gedocumenteerde
+%	vereisten ten opzichte van gebruikersbehoeften, evenals processen die dit ondersteunen
+%	deze activiteiten." Houd er rekening mee dat de engineering van vereisten domeinneutraal is
+%	discipline; Het kan bijvoorbeeld worden gebruikt voor software, hardware en
+%	elektromechanische systemen. Als technische discipline is het
+%	omvat het gebruik van kwantitatieve methoden, waarvan sommige dat ook zullen zijn
+%	beschreven in latere hoofdstukken van dit boek.
+%	Terwijl de behoefteanalyse zich bezighoudt met het uitlokken en
+%	onderzoek van eisen, eisen-engineering houdt zich bezig met alles
+%	fasen van de levenscyclus van een project of product, van innovatie tot veroudering.
+%	Vanwege de snelle levenscyclus van producten (d.w.z. innovatie → ontwikkeling →
+%	release → onderhoud → veroudering) die door de software is ingeschakeld,
+%	eisen engineering heeft verdere specialisaties voor software.
+%	Thayer en Dorfman [Thayer et al. 1997] definiëren bijvoorbeeld software
+%	requirements engineering als “de betrokken wetenschap en discipline
+%	met het vaststellen en documenteren van softwarevereisten.”
 	\newline
 	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 133303.png}
 	\newline
@@ -255,42 +448,42 @@
 	\newline
 	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 132840.png}
 	
-	1.7 Characteristics of a Good Requirement
-	Requirements characteristics are sometimes overlooked when defining
-	requirements processes. They can be an excellent source of metrics for
-	gauging project progress and quality. One question we typically ask
-	organizations when discussing their quality processes is, “Given two
-	requirements specifications, how would you quantitatively determine
-	that one is better than the other?” This question may be answered by
-	looking at the IEEE 830 Standard [IEEE 1998]. The characteristics of
-	a good requirement, as defined by the IEEE, are listed next, with
-	several additional useful ones.
-	It is important to distinguish between the characteristics of a
-	requirement and the characteristics of a requirements specification (a set
-	of related requirements). In some cases a characteristic can apply to a
-	single requirement, in some cases to a requirements specification, and in
-	other cases to the relationship of two or more requirements. Furthermore,
-	the meaning may be slightly different when referring to a requirement
-	or a specification. Care must be taken, therefore, when discussing the
-	characteristics described here to define the context of the attributes.
-	
-	Kenmerken van eisen worden soms over het hoofd gezien bij het definiëren
-	eisen processen. Ze kunnen een uitstekende bron van statistieken zijn
-	het meten van de voortgang en kwaliteit van projecten. Eén vraag die wij doorgaans stellen
-	organisaties bij het bespreken van hun kwaliteitsprocessen is: “Gegeven twee
-	vereistenspecificaties, hoe zou u kwantitatief bepalen
-	dat het ene beter is dan het andere?” Deze vraag kan worden beantwoord door
-	kijkend naar de IEEE 830-standaard [IEEE 1998]. De kenmerken van
-	een goede vereiste, zoals gedefinieerd door de IEEE, wordt hierna vermeld, met
-	nog een aantal nuttige.
-	Het is belangrijk om onderscheid te maken tussen de kenmerken van een
-	eis en de kenmerken van een eisenspecificatie (een set
-	van gerelateerde vereisten). In sommige gevallen kan een kenmerk van toepassing zijn op a
-	enkele eis, in sommige gevallen naar een eisenspecificatie, en in
-	andere gevallen op de relatie tussen twee of meer vereisten. Verder,
-	de betekenis kan enigszins afwijken als er naar een vereiste wordt verwezen
-	of een specificatie. Daarom moet voorzichtigheid worden betracht bij het bespreken van de
-	kenmerken die hier worden beschreven om de context van de attributen te definiëren.
+%	1.7 Characteristics of a Good Requirement
+%	Requirements characteristics are sometimes overlooked when defining
+%	requirements processes. They can be an excellent source of metrics for
+%	gauging project progress and quality. One question we typically ask
+%	organizations when discussing their quality processes is, “Given two
+%	requirements specifications, how would you quantitatively determine
+%	that one is better than the other?” This question may be answered by
+%	looking at the IEEE 830 Standard [IEEE 1998]. The characteristics of
+%	a good requirement, as defined by the IEEE, are listed next, with
+%	several additional useful ones.
+%	It is important to distinguish between the characteristics of a
+%	requirement and the characteristics of a requirements specification (a set
+%	of related requirements). In some cases a characteristic can apply to a
+%	single requirement, in some cases to a requirements specification, and in
+%	other cases to the relationship of two or more requirements. Furthermore,
+%	the meaning may be slightly different when referring to a requirement
+%	or a specification. Care must be taken, therefore, when discussing the
+%	characteristics described here to define the context of the attributes.
+%	
+%	Kenmerken van eisen worden soms over het hoofd gezien bij het definiëren
+%	eisen processen. Ze kunnen een uitstekende bron van statistieken zijn
+%	het meten van de voortgang en kwaliteit van projecten. Eén vraag die wij doorgaans stellen
+%	organisaties bij het bespreken van hun kwaliteitsprocessen is: “Gegeven twee
+%	vereistenspecificaties, hoe zou u kwantitatief bepalen
+%	dat het ene beter is dan het andere?” Deze vraag kan worden beantwoord door
+%	kijkend naar de IEEE 830-standaard [IEEE 1998]. De kenmerken van
+%	een goede vereiste, zoals gedefinieerd door de IEEE, wordt hierna vermeld, met
+%	nog een aantal nuttige.
+%	Het is belangrijk om onderscheid te maken tussen de kenmerken van een
+%	eis en de kenmerken van een eisenspecificatie (een set
+%	van gerelateerde vereisten). In sommige gevallen kan een kenmerk van toepassing zijn op a
+%	enkele eis, in sommige gevallen naar een eisenspecificatie, en in
+%	andere gevallen op de relatie tussen twee of meer vereisten. Verder,
+%	de betekenis kan enigszins afwijken als er naar een vereiste wordt verwezen
+%	of een specificatie. Daarom moet voorzichtigheid worden betracht bij het bespreken van de
+%	kenmerken die hier worden beschreven om de context van de attributen te definiëren.
 	
 	%	Feasible
 	%	A requirement is feasible if an implementation of it on the planned
@@ -528,8 +721,8 @@
 	%	those that are created prior to the start of implementation, and the
 	%	most egregious defects in requirements defined or modified late in a
 	%	project can sometimes show up in litigation [Jones 2007].
-	\paragraph{	1.9 Quality and Metrics in Requirements Engineering }
-	1.9 Quality and Metrics in Requirements Engineering
+%	\paragraph{	1.9 Quality and Metrics in Requirements Engineering }
+%	1.9 Quality and Metrics in Requirements Engineering
 	%	As was mentioned in connection with the success factors for projects,
 	%	project indicators need to be defined in order to have some measure
 	%	of project transparency. It is important to be able to answer the
@@ -562,74 +755,74 @@
 	%	completeness [Dekkers et al. 2001].
 	
 	
-	Een kwaliteitsattribuutvereiste (QAR) wordt gespecificeerd in termen van
-	waarneembare, meestal meetbare, kenmerken van het systeem
-	de geschiktheid voor gebruik aangeven. Kwaliteitsattributen kunnen worden gezien als
-	modifiers van de functionele eisen die aangeven hoe ze zijn
-	bereikt. Kwaliteitsattribuutvereisten hebben betrekking op alle ‘gebruiken’ van de
-	systeem, inclusief die waarbij het systeem eerder een passief object is
-	dan een actieve deelnemer, bijvoorbeeld wanneer het systeem wordt verkocht of
-	wanneer de volgende versie van het systeem wordt ontwikkeld. Voorbeelden van
-	kwaliteitskenmerken zijn onder meer: capaciteit, veiligheid, bruikbaarheid, kosten,
-	aanpasbaarheid en fouttolerantie. De term niet-functionele vereiste,
-	hoewel het nog steeds veel wordt gebruikt, is het een synoniem geworden voor kwaliteit
-	attribuutvereiste.
+%	Een kwaliteitsattribuutvereiste (QAR) wordt gespecificeerd in termen van
+%	waarneembare, meestal meetbare, kenmerken van het systeem
+%	de geschiktheid voor gebruik aangeven. Kwaliteitsattributen kunnen worden gezien als
+%	modifiers van de functionele eisen die aangeven hoe ze zijn
+%	bereikt. Kwaliteitsattribuutvereisten hebben betrekking op alle ‘gebruiken’ van de
+%	systeem, inclusief die waarbij het systeem eerder een passief object is
+%	dan een actieve deelnemer, bijvoorbeeld wanneer het systeem wordt verkocht of
+%	wanneer de volgende versie van het systeem wordt ontwikkeld. Voorbeelden van
+%	kwaliteitskenmerken zijn onder meer: capaciteit, veiligheid, bruikbaarheid, kosten,
+%	aanpasbaarheid en fouttolerantie. De term niet-functionele vereiste,
+%	hoewel het nog steeds veel wordt gebruikt, is het een synoniem geworden voor kwaliteit
+%	attribuutvereiste.
 	
-	\paragraph{5.3 Quality Attribute Requirements}
-	5.3 Quality Attribute Requirements
-	The road to understanding quality attribute requirements starts with
-	a brief detour into the fundamentals of system quality. The quality of
-	a system, in general, is its fitness for its intended uses. ISO Std. 9126-1
-	defines a quality model with four linked topic areas of quality:
-	• Process quality Quality of the process that is producing the
-	product
-	• Internal quality Quality of the intermediate work products
-	(some of which may also be deliverable work products)
-	• External quality Quality of the finished product, before
-	delivery
-	• Quality in use Quality of the larger processes in which the
-	delivered product is used
-	A quality attribute is a system or process property indicative of
-	quality in any of these quality topic areas. Note that, for our purposes,
-	
-	the “process” in “process quality” includes not only software
-	development, but all the business functions surrounding the product,
-	including marketing, sales, planning, maintenance, installation,
-	customer support, and preparing to develop the next version.
-	Naturally, quality in use is the most important area of quality, but
-	it is also the latest one to measure, because it cannot be measured
-	until the product is delivered. Fortunately, quality attributes in the
-	other topic areas give us useful indications of what the quality in use
-	will be; i.e., we say that such quality attributes are “indicative of”
-	quality in use.
-	
-	
-	5.3 Vereisten voor kwaliteitskenmerken
-	De weg naar het begrijpen van de vereisten voor kwaliteitskenmerken begint met
-	een korte omweg naar de fundamenten van systeemkwaliteit. De kwaliteit van
-	een systeem is in het algemeen de geschiktheid ervan voor het beoogde gebruik. ISO-standaard 9126-1
-	definieert een kwaliteitsmodel met vier gekoppelde themagebieden van kwaliteit:
-	• Proceskwaliteit Kwaliteit van het proces dat het proces voortbrengt
-	Product
-	• Interne kwaliteit Kwaliteit van de tussenwerkproducten
-	(waarvan sommige ook leverbare werkproducten kunnen zijn)
-	• Externe kwaliteit Kwaliteit van het eindproduct, voorheen
-	levering
-	• Kwaliteit in gebruik Kwaliteit van de grotere processen waarin de
-	geleverd product is gebruikt
-	Een kwaliteitsattribuut is een systeem- of proceseigenschap die indicatief is voor
-	kwaliteit op elk van deze kwaliteitsthemagebieden. Houd er rekening mee dat, voor onze doeleinden,
-	
-	het “proces” in “proceskwaliteit” omvat niet alleen software
-	ontwikkeling, maar alle zakelijke functies rondom het product,
-	inclusief marketing, verkoop, planning, onderhoud, installatie,
-	klantenondersteuning en de voorbereiding voor de ontwikkeling van de volgende versie.
-	Uiteraard is de gebruikskwaliteit het belangrijkste kwaliteitsgebied, maar
-	het is ook het nieuwste dat gemeten wordt, omdat het niet gemeten kan worden
-	totdat het product wordt afgeleverd. Gelukkig zijn er kwaliteitskenmerken in de
-	andere onderwerpgebieden geven ons nuttige indicaties van wat de kwaliteit in gebruik is
-	zal zijn; d.w.z. we zeggen dat dergelijke kwaliteitskenmerken “indicatief zijn voor”
-	kwaliteit in gebruik.
+%	\paragraph{5.3 Quality Attribute Requirements}
+%	5.3 Quality Attribute Requirements
+%	The road to understanding quality attribute requirements starts with
+%	a brief detour into the fundamentals of system quality. The quality of
+%	a system, in general, is its fitness for its intended uses. ISO Std. 9126-1
+%	defines a quality model with four linked topic areas of quality:
+%	• Process quality Quality of the process that is producing the
+%	product
+%	• Internal quality Quality of the intermediate work products
+%	(some of which may also be deliverable work products)
+%	• External quality Quality of the finished product, before
+%	delivery
+%	• Quality in use Quality of the larger processes in which the
+%	delivered product is used
+%	A quality attribute is a system or process property indicative of
+%	quality in any of these quality topic areas. Note that, for our purposes,
+%	
+%	the “process” in “process quality” includes not only software
+%	development, but all the business functions surrounding the product,
+%	including marketing, sales, planning, maintenance, installation,
+%	customer support, and preparing to develop the next version.
+%	Naturally, quality in use is the most important area of quality, but
+%	it is also the latest one to measure, because it cannot be measured
+%	until the product is delivered. Fortunately, quality attributes in the
+%	other topic areas give us useful indications of what the quality in use
+%	will be; i.e., we say that such quality attributes are “indicative of”
+%	quality in use.
+%	
+%	
+%	5.3 Vereisten voor kwaliteitskenmerken
+%	De weg naar het begrijpen van de vereisten voor kwaliteitskenmerken begint met
+%	een korte omweg naar de fundamenten van systeemkwaliteit. De kwaliteit van
+%	een systeem is in het algemeen de geschiktheid ervan voor het beoogde gebruik. ISO-standaard 9126-1
+%	definieert een kwaliteitsmodel met vier gekoppelde themagebieden van kwaliteit:
+%	• Proceskwaliteit Kwaliteit van het proces dat het proces voortbrengt
+%	Product
+%	• Interne kwaliteit Kwaliteit van de tussenwerkproducten
+%	(waarvan sommige ook leverbare werkproducten kunnen zijn)
+%	• Externe kwaliteit Kwaliteit van het eindproduct, voorheen
+%	levering
+%	• Kwaliteit in gebruik Kwaliteit van de grotere processen waarin de
+%	geleverd product is gebruikt
+%	Een kwaliteitsattribuut is een systeem- of proceseigenschap die indicatief is voor
+%	kwaliteit op elk van deze kwaliteitsthemagebieden. Houd er rekening mee dat, voor onze doeleinden,
+%	
+%	het “proces” in “proceskwaliteit” omvat niet alleen software
+%	ontwikkeling, maar alle zakelijke functies rondom het product,
+%	inclusief marketing, verkoop, planning, onderhoud, installatie,
+%	klantenondersteuning en de voorbereiding voor de ontwikkeling van de volgende versie.
+%	Uiteraard is de gebruikskwaliteit het belangrijkste kwaliteitsgebied, maar
+%	het is ook het nieuwste dat gemeten wordt, omdat het niet gemeten kan worden
+%	totdat het product wordt afgeleverd. Gelukkig zijn er kwaliteitskenmerken in de
+%	andere onderwerpgebieden geven ons nuttige indicaties van wat de kwaliteit in gebruik is
+%	zal zijn; d.w.z. we zeggen dat dergelijke kwaliteitskenmerken “indicatief zijn voor”
+%	kwaliteit in gebruik.
 	%	As an example, consider a web-based, self-service airline
 	%	reservation system. We’ll focus first on the completeness of the system,
 	%	which is one aspect of its fitness for use. For quality in use,
@@ -722,72 +915,72 @@
 	%	quality topic areas, and each quality attribute in one area will be
 	%	indicative of multiple quality attributes in other areas.
 	
-	With these examples in mind, we summarize four related terms:
-	• Quality Fitness for one or more defined uses
-	• Quality attribute A property of the system or the process
-	that is indicative of quality
-	• Quality attribute measure A way of measuring a quality
-	attribute for a specific system or process
-	• Quality attribute requirement A requirement expressed in
-	terms of one or more quality attribute measures
-	Table 5.1 gives a broad sampling of other quality attribute topics
-	you might want to consider, with an example measure pertaining to
-	each topic. The topics are drawn from ISO/IEC Std. 9126, but there are
-	many other good sources of topics available on the Internet. The
-	quality attribute measures you use will be very specific to your project,
-	as you will see when we discuss quality attribute workshops.
+%	With these examples in mind, we summarize four related terms:
+%	• Quality Fitness for one or more defined uses
+%	• Quality attribute A property of the system or the process
+%	that is indicative of quality
+%	• Quality attribute measure A way of measuring a quality
+%	attribute for a specific system or process
+%	• Quality attribute requirement A requirement expressed in
+%	terms of one or more quality attribute measures
+%	Table 5.1 gives a broad sampling of other quality attribute topics
+%	you might want to consider, with an example measure pertaining to
+%	each topic. The topics are drawn from ISO/IEC Std. 9126, but there are
+%	many other good sources of topics available on the Internet. The
+%	quality attribute measures you use will be very specific to your project,
+%	as you will see when we discuss quality attribute workshops.
+%	
+%	
+%	Met deze voorbeelden in gedachten vatten we vier verwante termen samen:
+%	• Kwaliteitsfitness voor één of meer gedefinieerde toepassingen
+%	• Kwaliteitsattribuut Een eigenschap van het systeem of het proces
+%	dat duidt op kwaliteit
+%	• Kwaliteitsattribuutmeting Een manier om een kwaliteit te meten
+%	attribuut voor een specifiek systeem of proces
+%	• Kwaliteitsattribuutvereiste Een vereiste uitgedrukt in
+%	termen van een of meer kwaliteitsattribuutmetingen
+%	Tabel 5.1 geeft een brede steekproef van andere onderwerpen over kwaliteitskenmerken
+%	u misschien wilt overwegen, met een voorbeeldmaatregel die betrekking heeft op
+%	elk onderwerp. De onderwerpen zijn ontleend aan ISO/IEC Std. 9126, maar die zijn er
+%	vele andere goede bronnen van onderwerpen die op internet beschikbaar zijn. De
+%	kwaliteitsattribuutmetingen die u gebruikt, zullen zeer specifiek zijn voor uw project,
+%	zoals je zult zien als we workshops over kwaliteitsattributen bespreken.
+%	
 	
 	
-	Met deze voorbeelden in gedachten vatten we vier verwante termen samen:
-	• Kwaliteitsfitness voor één of meer gedefinieerde toepassingen
-	• Kwaliteitsattribuut Een eigenschap van het systeem of het proces
-	dat duidt op kwaliteit
-	• Kwaliteitsattribuutmeting Een manier om een kwaliteit te meten
-	attribuut voor een specifiek systeem of proces
-	• Kwaliteitsattribuutvereiste Een vereiste uitgedrukt in
-	termen van een of meer kwaliteitsattribuutmetingen
-	Tabel 5.1 geeft een brede steekproef van andere onderwerpen over kwaliteitskenmerken
-	u misschien wilt overwegen, met een voorbeeldmaatregel die betrekking heeft op
-	elk onderwerp. De onderwerpen zijn ontleend aan ISO/IEC Std. 9126, maar die zijn er
-	vele andere goede bronnen van onderwerpen die op internet beschikbaar zijn. De
-	kwaliteitsattribuutmetingen die u gebruikt, zullen zeer specifiek zijn voor uw project,
-	zoals je zult zien als we workshops over kwaliteitsattributen bespreken.
-	
-	
-	
-	\subsubsection{Specificaties}
-	Formal Model: Specification is used to give a formal description
-	of the system which is being analysed. The formal
-	specification considers a language with a mathematically defined
-	syntax and semantics. In this paper we represent the
-	system behaviour as a network of timed automaton i.e., a
-	finite-state machine extended with clock variables [11]. A
-	system is modelled as a network of timed automata in parallel.
-	The model is extended with bounded discrete variables that
-	are part of the state. A state of the system is defined by the
-	location of all automata, the clock values and the values of the
-	discrete variables. Automaton may fire an edge (i.e., perform
-	a transition) separately or synchronise with another automaton
-	with the aim to lead a new state.
-	
-	Below we itemize the timed automata distinctive elements:
-	Guard: a particular expression aimed to verify a boolean
-	expression evaluated on edges;
-	Invariant: a condition that indicates the time that can be
-	spent on a node;
-	Channel: considered for synchronizing the progress of
-	two or more automata.
-	Temporal Logic: to define properties we need a precise
-	notation.
-	
-	
-	Formal Verification Environment: once defined the model
-	and the temporal logic properties, we need something enabling
-	us to check whether the timed automata based model satisfies
-	the defined properties. To this aim we consider formal verification,
-	a system process exploiting mathematical reasoning to
-	verify if a system (i.e., the model) satisfies some requirement
-	(i.e., the timed temporal properties).
+ 
+%	Formal Model: Specification is used to give a formal description
+%	of the system which is being analysed. The formal
+%	specification considers a language with a mathematically defined
+%	syntax and semantics. In this paper we represent the
+%	system behaviour as a network of timed automaton i.e., a
+%	finite-state machine extended with clock variables [11]. A
+%	system is modelled as a network of timed automata in parallel.
+%	The model is extended with bounded discrete variables that
+%	are part of the state. A state of the system is defined by the
+%	location of all automata, the clock values and the values of the
+%	discrete variables. Automaton may fire an edge (i.e., perform
+%	a transition) separately or synchronise with another automaton
+%	with the aim to lead a new state.
+%	
+%	Below we itemize the timed automata distinctive elements:
+%	Guard: a particular expression aimed to verify a boolean
+%	expression evaluated on edges;
+%	Invariant: a condition that indicates the time that can be
+%	spent on a node;
+%	Channel: considered for synchronizing the progress of
+%	two or more automata.
+%	Temporal Logic: to define properties we need a precise
+%	notation.
+%	
+%	
+%	Formal Verification Environment: once defined the model
+%	and the temporal logic properties, we need something enabling
+%	us to check whether the timed automata based model satisfies
+%	the defined properties. To this aim we consider formal verification,
+%	a system process exploiting mathematical reasoning to
+%	verify if a system (i.e., the model) satisfies some requirement
+%	(i.e., the timed temporal properties).
 	
 	
 	Formeel model: Specificatie wordt gebruikt om een formele beschrijving te geven
@@ -823,16 +1016,12 @@
 	verifiëren of een systeem (dat wil zeggen het model) aan een bepaalde vereiste voldoet
 	(dat wil zeggen, de getimede temporele eigenschappen).
 	
-	\subsection{Requirements en specificaties}
+ 
 	
-	Requirements en spcificatiesl Assuming that the requirements are feasible with respect to the
-	environment, Parnas and Madey [3] proposed the following acceptability condition for the software: NAT
-	∩ (NAT;SOF;OUT) ⊆ REQ
-	Here, the operator ; is the usual composition of relations.
-	A system implementation sys= IN;SOF;OUT; is then acceptable if and only if it satisfies the following
-	condition: NAT ∩ SYS ⊆ REQ
-	https://www.sciencedirect.com/science/article/pii/S0167642315001033
-	Functional vs non functional requirements
+
+	
+	\subsubsection{Functional vs non functional requirements}
+	Functionele requirements gaan over de functie die een systeem moet uitvoeren, terwijl non-functionele requrements betrwkking  hebben op de algemene eigenschappen van een systeem, zoals snelheid, bruikbaarheid, veiligheid, betrouwbaarheid. Non-functionele eisen worden ook wl systeemkwaliteiten betekent.
 	\subsubsection{Safety critical systems}
 	
 	De kennis van de mens is veranwoordelijk voor jet scheppen van kennis. Opdoen van kennis van veiligeheidsintegriteit ten overstaan van ontwetendheid. Kennisdoelen zijn daarom altijd belangrijk en kunnen worden onderscheiden in 3 domeinen: cognitief, affectief en psychomotorisch.\cite{winceckCriticalToSafety}
@@ -854,6 +1043,30 @@
 	\cite{rslater1998SCSAnalysis}
 	
 	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 144723.png}
+	
+	
+	Safety Critical Real-Time Systems (RTS). UML and MARTE are standardized
+	modelling languages widely accepted by industrial designers for
+	the design of RTS using Model-Driven Engineering (MDE). However, formal
+	verification at early phases of the system lifecycle for UML-MARTE
+	models remains mainly an open issue.
+	In this paper1, we present a time properties verification framework for
+	UML-MARTE safety critical RTS. This framework relies on a propertydriven
+	transformation from UML architecture and behaviour models to
+	executable and verifiable models expressed with Time Petri Nets (TPN).
+	Meanwhile, it translates the time properties into a set of property patterns,
+	corresponding to TPN observers. The observer-based model checking
+	approach is then performed on the produced TPN. This verification
+	framework can assess time properties like upper bound for loops and
+	buffers, Best/Worst-Case Response Time, Best/Worst-Case Execution
+	Time, Best/Worst-Case Traversal Time, schedulability, and synchronization-
+	related properties (synchronization, coincidence, exclusion, precedence,
+	sub-occurrence, causality). In addition, it can verify some behavioural
+	properties like absence of deadlock or dead branches. This
+	framework is illustrated with a representative case study. This paper also
+	provides experimental results and evaluates the method’s performance.
+	\cite{Time Properties Verification Framework for
+		UML-MARTE Safety Critical Real-Time Systems}
 	
 	%Traditional Systems
 	%Traditional areas that have been considered the home of safetycritical systems include medical care, commercial aircraft, nuclear
@@ -2259,7 +2472,170 @@
 	%	
 	%	
 	%	\subsubsection{LTL}
-	
+		\subsubsection{Timed automata}
+		A timed automaton is a (non-deterministic) finite state
+		automaton composed of edges and vertexes and extended
+		with real-valued clocks and integer variables. Clocks proceed
+		at the same rate and measure the time since they were
+		reset. Integer variables are finite domain variables with
+		rate zero.
+		
+		Automata learning algorithms have received signicant attention from the
+		verication community in the past two decades. Besides being used to improve
+		the eciency and scalability of compositional verication, automata learning has
+		also been successfully applied in other aspects of verication: among others, it has
+		been used to automatically generate interface models of computer programs [7],
+		to learn a model of the traces of the system errors for diagnosis purposes [27], to
+		nd bugs in the implementation of network protocols [39], to extract behavior
+		model of programs for statistical program analysis [29], and to do model-based
+		testing and verication [81, 107]. Later in 2017, Frits Vaandrager [102] explains
+		the concept of model learning used in the above applications.
+		In order to be of practical use, the learning algorithms have to be computationally
+		ecient and easily adaptable to the dierent learning scenarios. On the
+		one hand, with more complex tasks at hand, some researchers have proposed several
+		optimizations to improve the eciency of nite automata learning, such as
+		learning algorithms based on classication trees [59,63], ecient counterexample
+		analysis for learning algorithms [87], learning algorithm NL for nondeterministic
+		nite automata (NFAs) [20], and learning algorithms for alternating nite
+		automata [10].
+		\subsubsection{Formal testing}
+		
+		Index Terms—SCADA, model checking, formal methods, timed
+		automaton, temporal logic, critical infrastructure, security, safety
+		We have worked on projects for a broad range of application
+		domains; e.g., medical equipment, factory automation, transportation,
+		communications, automotive.
+		
+		
+		
+		documented, traced, reviewed, and tested
+		\subsubsection{Formal  verification}
+		In order to support the formal verification based on MC,
+		a timed automata should be created to express the system
+		behavior, supporting the evaluation of different properties such
+		as safety, reachability, liveness, and deadlock [10]. However,
+		generating these representations is not a simple task and
+		requires sufficient knowledge of the design team to correctly
+		express the system properties. To automate the timed automata
+		construction, it is our claim that a model transformation can
+		be performed using as input the architectural representation.
+		
+		An implementation, ψIMP, consists of a description
+		of the actual hardware design that is to be
+		verified. A specification, ρSPEC, is a description of
+		the intended/required (properties) behavior of a
+		hardware design. Formal Verification (FV) is a
+		systematic process of ensuring, through
+		exhaustive algorithmic techniques, that a design
+		implementation ψIMP satisfies the properties
+		established in its specification ρSPEC. With formal
+		verification, we are able to overcome both of
+		simulation’s challenges: the observability and the
+		controllability, since formal verification
+		algorithmically and exhaustively explores all
+		possible input values over time. The simulation is
+		empirical ‐ meaning you use trial and error to
+		discover bugs. It would take an intractable
+		amount of time to test all possible combinations.
+		Therefore, it is never complete. However the
+		verification engineers are focusing their effort on
+		how to break the design, not on what the design is
+		intended to do. Formal verification, on the other
+		hand, is mathematical and exhaustive and allows
+		the engineer to focus solely on intent, or “what is
+		the design’s correct behavior”. The main
+		disadvantage of the formal verification is its
+		limited capacity when the explosion state [6] is
+		present.
+		There are two types of formal verification:
+		• EQUIVALENCE CHECKING: It is concerned
+		with the verification that two
+		representations of the same design are
+		equivalent. Typically, it is gate level versus
+		another gate level or RTL
+		• MODEL CHECKING: Specification is in the
+		form of a temporal logic formula, the
+		truth of which is determined with respect
+		to a semantic model provided by an
+		implementation.
+		
+		
+		The main validation methods for complex systems are a simulation, testing, deductive verification,
+		and model checking. Simulation and testing [82] both involve making experiments
+		before using the system in the field. While simulation is carried out on an abstraction or a
+		model of the system, testing is done on the actual product. In the case of circuits, simulation
+		is carried out on the design of the circuit, whereas testing is done on the circuit itself. In
+		both situations, these techniques inject signals at specific points in the system and observe
+		the resulting signals at other points. For software, simulation and testing generally involve
+		preparing determined inputs and observing the corresponding outputs. These techniques
+		can be a cost-efficient method to find many errors. However, checking all of the possible
+		interactions and potential pitfalls utilizing simulation and testing techniques is rarely
+		possible.
+		This problem of design validation (ensuring the correctness of the design at the earliest
+		stage possible) is the main challenge in any responsible system development process, and
+		the tasks intended for its solution occupy a huge portions of the development cycle cost
+		and time budgets. The currently practiced techniques for design validation in most places
+		are still the veteran methods of simulation and testing. Although provably effective in the
+		very early stages of debugging, when the design is still infested with multiple bugs, their
+		effectiveness drops quickly as the design becomes cleaner, and they require an alarmingly
+		increasing amount of time to uncover the more subtle bugs.
+		A principal disadvantage of these methods is that one can never be sure when a limit
+		has been reached or even an estimate of how many bugs may still lurk in the design. As the
+		complexity of designs increases tremendously, say from 0.5 to 5 million gates per chip, some
+		far-seeing managers predict the complete collapse of these conventional methods and their
+		total inability to scale up [53].
+		The approach of formal verification is a very attractive and dramatically appealing alternative
+		to simulation and testing. While simulation and testing explore some of the possible
+		behaviors and scenarios of the system, the question of whether the unexplored trajectories
+		contain the fatal bug remains open. Formal verification on the other hand conducts an
+		exhaustive exploration of all possible behaviors. Thus, when a design is pronounced correct
+		by a formal verification method, it means that all the possible behaviors have been explored,
+		so that the questions of proper coverage or a missed behavior become irrelevant.
+		One of the main approaches to formal verification is model checking. In model checking
+		a desired behavioral property is verified over a given system (the model) through exhaustive
+		(explicit or implicit) enumeration of all the states reachable by the system and the behaviors
+		that lead to them. Compared to other approaches, model checking has three important
+		advantages. First, it is fully automatic, and its application requires no user supervision
+		or expertise in mathematical disciplines such as logic and theorem proving. Anyone who
+		can run simulations of a design is fully eligible and capable of model-checking the same
+		design. In the context of the currently practiced method, model checking can be categorized
+		as the ultimately superior simulation tool. Secondly, when the design fails to satisfy the
+		desired property, the process of model checking always generates a counterexample that
+		shows a behavior which falsifies the property. This faulty trace offers a priceless insight
+		into understanding the real reason for the failure as well as significant clues for solving the
+		problem. Last but not least, model checking has a sound and mathematical underpinning.
+		These important advantages together with the advent of symbolic model checking, which
+		allows the exhaustive implicit enumeration of an astronomic number of states, completely
+		revolutionized the field of formal verification and transformed it from a purely academic
+		discipline into a viable practical method that can potentially be integrated as an vital
+		technique for design validation in a lot of industrial development processes [53].
+		
+		\subsubsection{Formal  verification environment}
+		Formal Verification Environment: once defined the model
+		and the temporal logic properties, we need something enabling
+		us to check whether the timed automata based model satisfies
+		the defined properties. To this aim we consider formal verification,
+		a system process exploiting mathematical reasoning to
+		verify if a system (i.e., the model) satisfies some requirement
+		(i.e., the timed temporal properties).
+		
+		\subsubsection{Testing}
+		Testing is the execution of the system under test in a controlled environment following
+		a prescribed procedure with the goal of measuring one or more quality characteristics
+		of a product, such as functionality or performance. Testing is the primary software
+		validation technique used by industry today. However, despite the importance and the
+		many resources and man-hours invested by industry (about 30% to 50% of development
+		effort), testing remains quite ad hoc and error prone.
+		We focus on conformance testing i.e., checking by means of execution whether the
+		behavior of some black box implementation conforms to that of its specification, and
+		moreover doing this within minimum time. A promising approach to improving the
+		effectiveness of testing is to base test generation on an abstract formal model of the
+		system under test (SUT) and use a test generation tool to (automatically or user guided)
+		generate and execute test cases. Model based test generation has been under scientific
+		study for some time, and practically applicable test tools are emerging [4,16,18,10].
+		However, little is still known in the context of real-time systems.
+		
+		\subsubsection{Timed automata}
 	\subsubsection{CTL}
 	
 	CTL, geïntroduceerd door Emerson en Clarke [18], is een tijdelijke vertakkingstijd
@@ -2285,7 +2661,7 @@
 	
 	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
 	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
-	States hebben labels. Als de huidige toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand. Toestandsformules worden opgebouwd uit deze atomaire formules met behulp van de Booleaanse connectieven en de padlogische kwantificatoren, met de beperking dat we een padlogische kwantificator in een toestandsformule niet kunnen ontkennen. (Negatie kan effectief worden toegepast op conjuncties en disjuncties door de negatief-normale vorm te gebruiken).
+	States hebben labels.Stateformule worden opgebouwd uit deze atomaire formules met behulp van de Booleaans e kwantificatoren, met de beperking dat we een padlogische kwantificator in een statefformula niet kunnen ontkennen.  
 	
 	
 	
@@ -3104,6 +3480,13 @@
 	%	\paragraph{Acties}
 	%	Acties in het model zijn onder andere: invaren, uitvaren, deuren openen en sluiten, nivelleren
 	%	
+	
+	Recall that fairness assumptions (see Section 3.5) are used to rule out certain computations
+	that are considered to be unrealistic for the system under consideration. These unreasonable
+	computations that ignore certain transition alternatives forever are the “unfair” ones;
+	the remaining computations are thus the “fair” ones. As there are different notions of fairness,
+	various distinct forms of fairness can be imposed: unconditional, strong, and weak
+	fairness constraints.
 	
 	\subsection{Safety}
 	

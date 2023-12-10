@@ -1,67 +1,75 @@
 \babel@toc {dutch}{}\relax 
-\contentsline {section}{\numberline {1}Inleiding}{2}{}%
-\contentsline {section}{\numberline {2}Theoretisch kader}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Begrippen, tools en literatuur}{3}{}%
-\contentsline {paragraph}{Wat is uppaal}{3}{}%
-\contentsline {paragraph}{Wat is statistical model checking?}{3}{}%
-\contentsline {paragraph}{Waarom gebruiken we statistisch model checking?}{3}{}%
-\contentsline {paragraph}{MODE CONFUSION }{3}{}%
-\contentsline {paragraph}{Wat is automatiseringsparadox}{3}{}%
-\contentsline {paragraph}{4 variabelen model}{4}{}%
-\contentsline {paragraph}{6 Variable model}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Requirements}{6}{}%
-\contentsline {paragraph}{ 1.9 Quality and Metrics in Requirements Engineering }{10}{}%
-\contentsline {paragraph}{5.3 Quality Attribute Requirements}{10}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Specificaties}{10}{}%
-\contentsline {subsection}{\numberline {2.2}Requirements en specificaties}{11}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Safety critical systems}{11}{}%
-\contentsline {subsection}{\numberline {2.3}Rampen}{12}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Therac-25}{12}{}%
-\contentsline {paragraph}{Beschrijving}{12}{}%
-\contentsline {paragraph}{Datum en Plaats}{13}{}%
-\contentsline {paragraph}{Oorzaak}{13}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{13}{}%
-\contentsline {paragraph}{Beschrijving}{13}{}%
-\contentsline {paragraph}{Datum en Plaats}{14}{}%
-\contentsline {paragraph}{Oorzaak}{14}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}China explosie 2015 Tianjin}{14}{}%
-\contentsline {paragraph}{Beschrijving}{14}{}%
-\contentsline {paragraph}{Datum en Plaats}{14}{}%
-\contentsline {paragraph}{Oorzaak}{15}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}schipholbrand}{15}{}%
+\contentsline {section}{\numberline {1}Inleiding}{3}{}%
+\contentsline {section}{\numberline {2}Theoretisch kader}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Begrippen, tools en literatuur}{4}{}%
+\contentsline {paragraph}{Wat is uppaal}{4}{}%
+\contentsline {paragraph}{Wat is statistical model checking?}{4}{}%
+\contentsline {paragraph}{Waarom gebruiken we statistisch model checking?}{4}{}%
+\contentsline {paragraph}{MODE CONFUSION }{5}{}%
+\contentsline {paragraph}{Wat is automatiseringsparadox}{5}{}%
+\contentsline {paragraph}{4 variabelen model}{5}{}%
+\contentsline {paragraph}{6 Variable model}{6}{}%
+\contentsline {section}{\numberline {3}Requirements}{7}{}%
+\contentsline {subsection}{\numberline {3.1}Requirements engineering}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Systeem omschrijving}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Requirements}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Goede requirements}{9}{}%
+\contentsline {subsection}{\numberline {3.5}specificaties}{9}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Functional vs non functional requirements}{13}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Safety critical systems}{13}{}%
+\contentsline {subsection}{\numberline {3.6}Rampen}{15}{}%
+\contentsline {subsubsection}{\numberline {3.6.1}Therac-25}{15}{}%
 \contentsline {paragraph}{Beschrijving}{15}{}%
 \contentsline {paragraph}{Datum en Plaats}{15}{}%
 \contentsline {paragraph}{Oorzaak}{15}{}%
-\contentsline {subsubsection}{\numberline {2.3.5}1951}{15}{}%
-\contentsline {paragraph}{Beschrijving}{15}{}%
-\contentsline {paragraph}{Datum en Plaats}{15}{}%
-\contentsline {paragraph}{Oorzaak}{16}{}%
-\contentsline {subsubsection}{\numberline {2.3.6}slmramp}{16}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{16}{}%
 \contentsline {paragraph}{Beschrijving}{16}{}%
 \contentsline {paragraph}{Datum en Plaats}{16}{}%
 \contentsline {paragraph}{Oorzaak}{16}{}%
-\contentsline {subsubsection}{\numberline {2.3.7}Tsjernobyl}{16}{}%
-\contentsline {paragraph}{Beschrijving}{16}{}%
-\contentsline {paragraph}{Datum en Plaats}{16}{}%
-\contentsline {paragraph}{Oorzaak}{16}{}%
-\contentsline {subsection}{\numberline {2.4}De Kripke structuur}{17}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}CTL}{17}{}%
-\contentsline {subsection}{\numberline {2.5}Guards en invarianten}{17}{}%
-\contentsline {subsection}{\numberline {2.6}Deadlock}{18}{}%
-\contentsline {subsection}{\numberline {2.7}Zeno gedrag}{18}{}%
-\contentsline {section}{\numberline {3}Logica}{18}{}%
-\contentsline {subsection}{\numberline {3.1}Propositielogica}{18}{}%
-\contentsline {subsection}{\numberline {3.2}Predicatenlogica}{19}{}%
-\contentsline {subsection}{\numberline {3.3}Kwantoren}{19}{}%
-\contentsline {subsection}{\numberline {3.4}Dualiteiten}{20}{}%
-\contentsline {subsection}{\numberline {3.5}Operator: AG}{20}{}%
-\contentsline {subsection}{\numberline {3.6}Operator: EG}{21}{}%
-\contentsline {subsection}{\numberline {3.7}Operator: AF}{21}{}%
-\contentsline {subsection}{\numberline {3.8}Operator: EF}{21}{}%
-\contentsline {subsection}{\numberline {3.9}Operator: AX}{21}{}%
-\contentsline {subsection}{\numberline {3.10}Operator: EX}{21}{}%
-\contentsline {subsection}{\numberline {3.11}Operator: p U q}{21}{}%
-\contentsline {subsection}{\numberline {3.12}Operator: p R q}{22}{}%
-\contentsline {subsection}{\numberline {3.13}Fairness}{22}{}%
-\contentsline {subsection}{\numberline {3.14}Safety}{22}{}%
-\contentsline {subsection}{\numberline {3.15}liveness properties}{22}{}%
+\contentsline {subsubsection}{\numberline {3.6.3}China explosie 2015 Tianjin}{17}{}%
+\contentsline {paragraph}{Beschrijving}{17}{}%
+\contentsline {paragraph}{Datum en Plaats}{17}{}%
+\contentsline {paragraph}{Oorzaak}{17}{}%
+\contentsline {subsubsection}{\numberline {3.6.4}schipholbrand}{17}{}%
+\contentsline {paragraph}{Beschrijving}{17}{}%
+\contentsline {paragraph}{Datum en Plaats}{17}{}%
+\contentsline {paragraph}{Oorzaak}{17}{}%
+\contentsline {subsubsection}{\numberline {3.6.5}1951}{18}{}%
+\contentsline {paragraph}{Beschrijving}{18}{}%
+\contentsline {paragraph}{Datum en Plaats}{18}{}%
+\contentsline {paragraph}{Oorzaak}{18}{}%
+\contentsline {subsubsection}{\numberline {3.6.6}slmramp}{18}{}%
+\contentsline {paragraph}{Beschrijving}{18}{}%
+\contentsline {paragraph}{Datum en Plaats}{18}{}%
+\contentsline {paragraph}{Oorzaak}{18}{}%
+\contentsline {subsubsection}{\numberline {3.6.7}Tsjernobyl}{18}{}%
+\contentsline {paragraph}{Beschrijving}{18}{}%
+\contentsline {paragraph}{Datum en Plaats}{19}{}%
+\contentsline {paragraph}{Oorzaak}{19}{}%
+\contentsline {subsection}{\numberline {3.7}De Kripke structuur}{19}{}%
+\contentsline {subsubsection}{\numberline {3.7.1}Timed automata}{19}{}%
+\contentsline {subsubsection}{\numberline {3.7.2}Formal testing}{20}{}%
+\contentsline {subsubsection}{\numberline {3.7.3}Formal verification}{20}{}%
+\contentsline {subsubsection}{\numberline {3.7.4}Formal verification environment}{21}{}%
+\contentsline {subsubsection}{\numberline {3.7.5}Testing}{21}{}%
+\contentsline {subsubsection}{\numberline {3.7.6}Timed automata}{22}{}%
+\contentsline {subsubsection}{\numberline {3.7.7}CTL}{22}{}%
+\contentsline {subsection}{\numberline {3.8}Guards en invarianten}{22}{}%
+\contentsline {subsection}{\numberline {3.9}Deadlock}{23}{}%
+\contentsline {subsection}{\numberline {3.10}Zeno gedrag}{23}{}%
+\contentsline {section}{\numberline {4}Logica}{23}{}%
+\contentsline {subsection}{\numberline {4.1}Propositielogica}{23}{}%
+\contentsline {subsection}{\numberline {4.2}Predicatenlogica}{23}{}%
+\contentsline {subsection}{\numberline {4.3}Kwantoren}{24}{}%
+\contentsline {subsection}{\numberline {4.4}Dualiteiten}{25}{}%
+\contentsline {subsection}{\numberline {4.5}Operator: AG}{25}{}%
+\contentsline {subsection}{\numberline {4.6}Operator: EG}{25}{}%
+\contentsline {subsection}{\numberline {4.7}Operator: AF}{26}{}%
+\contentsline {subsection}{\numberline {4.8}Operator: EF}{26}{}%
+\contentsline {subsection}{\numberline {4.9}Operator: AX}{26}{}%
+\contentsline {subsection}{\numberline {4.10}Operator: EX}{26}{}%
+\contentsline {subsection}{\numberline {4.11}Operator: p U q}{26}{}%
+\contentsline {subsection}{\numberline {4.12}Operator: p R q}{26}{}%
+\contentsline {subsection}{\numberline {4.13}Fairness}{27}{}%
+\contentsline {subsection}{\numberline {4.14}Safety}{27}{}%
+\contentsline {subsection}{\numberline {4.15}liveness properties}{27}{}%
