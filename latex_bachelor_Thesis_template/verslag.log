@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  10 DEC 2023 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  10 DEC 2023 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,61 +378,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
- [1])
+)
 \tf@toc=\write3
 \openout3 = `verslag.toc'.
 
- [2]
+ [1]
 
-LaTeX Warning: Citation `RijnensupervisorsynthesisLock' on page 3 undefined on 
+LaTeX Warning: Citation `RijnensupervisorsynthesisLock' on page 2 undefined on 
 input line 53.
 
-[3]
+[2]
 
-! LaTeX Error: Unicode character ^^B (U+0002)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 	is a variation of the A^^B
-                                 -algorithm [2,12]. Hence, to improve perfor...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
+LaTeX Warning: Citation `bicker21102016automatiseringsparadox' on page 3 undefi
+ned on input line 147.
 
 
-LaTeX Warning: Citation `inriaStatsMoodCheck' on page 4 undefined on input line
- 162.
-
-
-LaTeX Warning: Citation `buddeModelChecker' on page 4 undefined on input line 1
-63.
-
-
-LaTeX Warning: Citation `inriaStatsMoodCheck' on page 4 undefined on input line
- 168.
-
-[4]
-
-LaTeX Warning: Citation `bicker21102016automatiseringsparadox' on page 5 undefi
-ned on input line 176.
-
-
-LaTeX Warning: Citation `vseautoparadox' on page 5 undefined on input line 177.
+LaTeX Warning: Citation `vseautoparadox' on page 3 undefined on input line 148.
 
 
 
-LaTeX Warning: Citation `blogxot21112016slimapparaat' on page 5 undefined on in
-put line 178.
+LaTeX Warning: Citation `blogxot21112016slimapparaat' on page 3 undefined on in
+put line 149.
 
 
-LaTeX Warning: Citation `ImplementabilityOf4VarSCP2015' on page 5 undefined on 
-input line 187.
+LaTeX Warning: Citation `ImplementabilityOf4VarSCP2015' on page 3 undefined on 
+input line 158.
 
 
-LaTeX Warning: File `4varparnas.png' not found on input line 211.
+LaTeX Warning: File `4varparnas.png' not found on input line 182.
 
 
 ! Package pdftex.def Error: File `4varparnas.png' not found: using draft settin
@@ -442,27 +415,27 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 ...cludegraphics[width=14cm]{4varparnas.png}
+l.182 ...cludegraphics[width=14cm]{4varparnas.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[5]
+[3]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-242.
+213.
  (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-[6] [7]
+[4] [5]
 
-LaTeX Warning: Citation `kotonya1998requirements' on page 8 undefined on input 
-line 331.
+LaTeX Warning: Citation `kotonya1998requirements' on page 6 undefined on input 
+line 302.
 
 
-LaTeX Warning: Citation `kotonya1998requirements' on page 8 undefined on input 
-line 332.
+LaTeX Warning: Citation `kotonya1998requirements' on page 6 undefined on input 
+line 303.
 
-[8]
+[6]
 
 ! LaTeX Error: Unicode character ∩ (U+2229)
                not set up for use with LaTeX.
@@ -471,7 +444,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 	∩
+l.337 	∩
            (NAT;SOF;OUT) ⊆ REQ
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -484,7 +457,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 	∩ (NAT;SOF;OUT) ⊆
+l.337 	∩ (NAT;SOF;OUT) ⊆
                              REQ
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -497,7 +470,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.369 	condition: NAT ∩
+l.340 	condition: NAT ∩
                           SYS ⊆ REQ
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -510,7 +483,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.369 	condition: NAT ∩ SYS ⊆
+l.340 	condition: NAT ∩ SYS ⊆
                                   REQ
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -523,13 +496,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.381 ...omata, timed automata, Buchi automata, ω
+l.352 ...omata, timed automata, Buchi automata, ω
                                                   -automata etc. These model...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[9]
+[7]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -537,7 +510,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.443 	\newline
+l.414 	\newline
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -545,7 +518,7 @@ or  <return>  to continue without it.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 133303.png' not found on input
- line 444.
+ line 415.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 133303.png' not f
@@ -555,14 +528,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444 ...]{Schermafbeelding 2023-12-08 133303.png}
+l.415 ...]{Schermafbeelding 2023-12-08 133303.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 132959.png' not found on input
- line 446.
+ line 417.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 132959.png' not f
@@ -572,7 +545,7 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.446 ...]{Schermafbeelding 2023-12-08 132959.png}
+l.417 ...]{Schermafbeelding 2023-12-08 132959.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -584,16 +557,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.448 	\newline
+l.419 	\newline
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[10]
+[8]
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 132840.png' not found on input
- line 449.
+ line 420.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 132840.png' not f
@@ -603,27 +576,27 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.449 ...]{Schermafbeelding 2023-12-08 132840.png}
+l.420 ...]{Schermafbeelding 2023-12-08 132840.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[11] [12]
+[9] [10]
 
-LaTeX Warning: Citation `winceckCriticalToSafety' on page 13 undefined on input
- line 1027.
-
-
-LaTeX Warning: Citation `chambersHazardAnalysisSCS' on page 13 undefined on inp
-ut line 1031.
+LaTeX Warning: Citation `winceckCriticalToSafety' on page 11 undefined on input
+ line 998.
 
 
-LaTeX Warning: Citation `rslater1998SCSAnalysis' on page 13 undefined on input 
-line 1043.
+LaTeX Warning: Citation `chambersHazardAnalysisSCS' on page 11 undefined on inp
+ut line 1002.
+
+
+LaTeX Warning: Citation `rslater1998SCSAnalysis' on page 11 undefined on input 
+line 1014.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144723.png' not found on input
- line 1045.
+ line 1016.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144723.png' not f
@@ -633,39 +606,39 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1045 ...{Schermafbeelding 2023-12-08 144723.png}
+l.1016 ...{Schermafbeelding 2023-12-08 144723.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[13]
+[11]
 
 LaTeX Warning: Citation `Time Properties Verification Framework for UML-MARTE S
-afety Critical Real-Time Systems' on page 14 undefined on input line 1069.
+afety Critical Real-Time Systems' on page 12 undefined on input line 1040.
 
-[14]
+[12]
 
-LaTeX Warning: Citation `fulvio1993safetycriticalsystems' on page 15 undefined 
-on input line 1104.
-
-
-LaTeX Warning: Citation `dlrtabid' on page 15 undefined on input line 1105.
+LaTeX Warning: Citation `fulvio1993safetycriticalsystems' on page 13 undefined 
+on input line 1075.
 
 
-LaTeX Warning: Citation `knight2010SafetyCritical' on page 15 undefined on inpu
-t line 1106.
+LaTeX Warning: Citation `dlrtabid' on page 13 undefined on input line 1076.
 
 
-LaTeX Warning: Citation `creavisafecritical' on page 15 undefined on input line
- 1107.
+LaTeX Warning: Citation `knight2010SafetyCritical' on page 13 undefined on inpu
+t line 1077.
 
 
-LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 15 undefined on 
-input line 1108.
+LaTeX Warning: Citation `creavisafecritical' on page 13 undefined on input line
+ 1078.
 
 
-LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 15 undefi
-ned on input line 1109.
+LaTeX Warning: Citation `valdes2018SafetybyAutomation' on page 13 undefined on 
+input line 1079.
+
+
+LaTeX Warning: Citation `2015whensafetymanagementsystemsfail' on page 13 undefi
+ned on input line 1080.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -674,7 +647,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1217 	\newline
+l.1188 	\newline
                  \indent Voor deze studie is onderzoek gedaan naar verschill...
 
 Your command was ignored.
@@ -688,26 +661,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1305 	\newline
+l.1276 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 15 undefined on i
-nput line 1447.
+LaTeX Warning: Citation `levesonTurnerTheracAbstract' on page 13 undefined on i
+nput line 1418.
 
-[15]
+[13]
 
-LaTeX Warning: Citation `uran05042019SPOF' on page 16 undefined on input line 1
-494.
+LaTeX Warning: Citation `uran05042019SPOF' on page 14 undefined on input line 1
+465.
 
 
-LaTeX Warning: Citation `boeing737maxdisplay' on page 16 undefined on input lin
-e 1495.
+LaTeX Warning: Citation `boeing737maxdisplay' on page 14 undefined on input lin
+e 1466.
 
-[16]
+[14]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -715,7 +688,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1590 	\paragraph{Datum en Plaats} 	\newline
+l.1561 	\paragraph{Datum en Plaats} 	\newline
                                               \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -728,13 +701,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1934 	\newline
+l.1905 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[17]
+[15]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -742,7 +715,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2102 	\newline
+l.2073 	\newline
                  \indent  Op woensdag 25 februar 2009 voltrok zich de  ramp ...
 
 Your command was ignored.
@@ -756,17 +729,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2123 	\newline
+l.2094 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 18 undefined on input
- line 2136.
+LaTeX Warning: Citation `INSAVienna1992Chernobyl' on page 16 undefined on input
+ line 2107.
 
-[18]
+[16]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -774,34 +747,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2138 	\newline
+l.2109 	\newline
                  \indent
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Citation `rivmTjernobyl' on page 19 undefined on input line 2144
+LaTeX Warning: Citation `rivmTjernobyl' on page 17 undefined on input line 2115
 .
 
 
-LaTeX Warning: Citation `andereTijdenTjernobyl' on page 19 undefined on input l
-ine 2145.
+LaTeX Warning: Citation `andereTijdenTjernobyl' on page 17 undefined on input l
+ine 2116.
 
 
-LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 19 undefined on inp
-ut line 2146.
+LaTeX Warning: Citation `kingskey19042022tjernobyl' on page 17 undefined on inp
+ut line 2117.
 
 
-LaTeX Warning: Citation `erikbork26042023reactor4' on page 19 undefined on inpu
-t line 2147.
+LaTeX Warning: Citation `erikbork26042023reactor4' on page 17 undefined on inpu
+t line 2118.
 
 
-LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 19 undefined on input
- line 2148.
+LaTeX Warning: Citation `nosTjernobyl30jaarlater' on page 17 undefined on input
+ line 2119.
 
 ! Undefined control sequence.
-l.2444 	\setion
+l.2415 	\setion
                {Modellen}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -817,7 +790,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2449 	−
+l.2420 	−
             formele taal voor het specificeren en redeneren over hoe de
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -830,7 +803,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2451 	−
+l.2422 	−
             breidt de propositielogica uit met modale/temporele operatoren
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -843,7 +816,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2452 	−
+l.2423 	−
             een belangrijk gebruik: representatie van toekomstige systeemeig...
 
 You may provide a definition with
@@ -857,7 +830,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2463 	−
+l.2434 	−
             specificeer respectievelijk eigenschappen van toestanden/paden
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -870,7 +843,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2464 	−
+l.2435 	−
             een CTL-formule is een toestandsformule	
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -883,7 +856,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2466 	waarbij een E AP en ψ
+l.2437 	waarbij een E AP en ψ
                                een padformule is voor een atomaire propositie	
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -896,12 +869,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2468 	waarbij φ
+l.2439 	waarbij φ
                    een toestandsformule (stateformula) is	
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
+LaTeX Warning: Citation `alurSystemClok' on page 17 undefined on input line 246
+8.
+
+
+LaTeX Warning: Citation `alurModelHybrid' on page 17 undefined on input line 24
+68.
+
+[17]
+
 ! LaTeX Error: Unicode character ^^N (U+000E)
                not set up for use with LaTeX.
 
@@ -909,8 +891,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2485 		the e^^N
-                 ciency and scalability of compositional veri^^Lcation, auto...
+l.2490 	the e^^N
+                ciency and scalability of compositional veri^^Lcation, autom...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -923,8 +905,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2494 		e^^N
-             cient and easily adaptable to the dierent learning scenarios. ...
+l.2499 	e^^N
+            cient and easily adaptable to the dierent learning scenarios. O...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -937,8 +919,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2494 		e^^Ncient and easily adaptable to the di
-                                                  erent learning scenarios. ...
+l.2499 	e^^Ncient and easily adaptable to the di
+                                                 erent learning scenarios. O...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -951,8 +933,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2496 		optimizations to improve the e^^N
-                                          ciency of ^^Lnite automata learnin...
+l.2501 	optimizations to improve the e^^N
+                                         ciency of ^^Lnite automata learning...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -965,7 +947,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2497 ...d on classi^^Lcation trees [59,63], e^^N
+l.2502 ...d on classi^^Lcation trees [59,63], e^^N
                                                   cient counterexample
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -978,12 +960,38 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2498 ...lgorithms [87], learning algorithm NL^^C
+l.2503 ...lgorithms [87], learning algorithm NL^^C
                                                    for nondeterministic
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[19]
+
+! LaTeX Error: Unicode character ^^B (U+0002)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2523 	is a variation of the A^^B
+                                  -algorithm [2,12]. Hence, to improve perfo...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+LaTeX Warning: Citation `inriaStatsMoodCheck' on page 18 undefined on input lin
+e 2532.
+
+
+LaTeX Warning: Citation `buddeModelChecker' on page 18 undefined on input line 
+2533.
+
+[18]
+
+LaTeX Warning: Citation `inriaStatsMoodCheck' on page 19 undefined on input lin
+e 2538.
+
 
 ! LaTeX Error: Unicode character ψ (U+03C8)
                not set up for use with LaTeX.
@@ -992,8 +1000,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2523 		An implementation, ψ
-                              IMP, consists of a description
+l.2562 	An implementation, ψ
+                             IMP, consists of a description
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1005,8 +1013,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2525 		verified. A specification, ρ
-                                      SPEC, is a description of
+l.2564 	verified. A specification, ρ
+                                     SPEC, is a description of
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1018,8 +1026,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2530 		implementation ψ
-                          IMP satisfies the properties
+l.2569 	implementation ψ
+                         IMP satisfies the properties
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1031,22 +1039,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2531 		established in its specification ρ
-                                            SPEC. With formal
+l.2570 	established in its specification ρ
+                                           SPEC. With formal
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[20] [21]
-
-LaTeX Warning: Citation `alurSystemClok' on page 22 undefined on input line 266
-0.
-
-
-LaTeX Warning: Citation `alurModelHybrid' on page 22 undefined on input line 26
-60.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2774--2781
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 2977--2984
 
  []
 
@@ -1058,7 +1057,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2832 ...ie worden gegeven door een voorwaarde Φ
+l.3035 ...ie worden gegeven door een voorwaarde Φ
                                                    voor de toestanden en ver...
 
 You may provide a definition with
@@ -1072,7 +1071,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2832 ...Φ voor de toestanden en vereisen dat Φ
+l.3035 ...Φ voor de toestanden en vereisen dat Φ
                                                    geldt 	voor alle bereikba...
 
 You may provide a definition with
@@ -1086,7 +1085,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2833 ... uitgelegd: er moet aan de voorwaarde Φ
+l.3036 ... uitgelegd: er moet aan de voorwaarde Φ
                                                    zijn voldaan
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1099,23 +1098,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2834 ...begintoestanden en de bevrediging van Φ
+l.3037 ...begintoestanden en de bevrediging van Φ
                                                    is onveranderlijk onder a...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[22]
+[21]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2867 ...m Als p en q formules zijn, dan zijn (p^
+l.3070 ...m Als p en q formules zijn, dan zijn (p^
                                                   q), (p_q), (p!q) en (p\tex...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Undefined control sequence.
-l.2867 ... dan zijn (p^q), (p_q), (p!q) en (p\text
+l.3070 ... dan zijn (p^q), (p_q), (p!q) en (p\text
                                                   {$}q) formules.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1126,7 +1125,7 @@ and I'll forget about whatever was undefined.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2867 ...an zijn (p^q), (p_q), (p!q) en (p\text{$
+l.3070 ...an zijn (p^q), (p_q), (p!q) en (p\text{$
                                                   }q) formules.
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1135,7 +1134,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 ! Extra }, or forgotten \endgroup.
-l.2867 ...n zijn (p^q), (p_q), (p!q) en (p\text{$}
+l.3070 ...n zijn (p^q), (p_q), (p!q) en (p\text{$}
                                                   q) formules.
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1143,7 +1142,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[23] [24]
+[22]
 
 ! LaTeX Error: Unicode character ∗ (U+2217)
                not set up for use with LaTeX.
@@ -1152,7 +1151,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3017 	+ en ∗
+l.3220 	+ en ∗
                 , en hun identiteitselementen 0 en 1 in de oorspronkelijke v...
 
 You may provide a definition with
@@ -1166,7 +1165,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3018 	(1 + a) ∗
+l.3221 	(1 + a) ∗
                     (b + 0) = b is (0 ∗ a) + (b ∗ 1) = b
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1179,7 +1178,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3018 	(1 + a) ∗ (b + 0) = b is (0 ∗
+l.3221 	(1 + a) ∗ (b + 0) = b is (0 ∗
                                           a) + (b ∗ 1) = b
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -1192,15 +1191,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3018 ...a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗
+l.3221 ...a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗
                                                    1) = b
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[25] [26] [27]
+[23] [24] [25] [26]
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 132840.png ' not found on inpu
-t line 3659.
+t line 3862.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 132840.png' not f
@@ -1210,14 +1209,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3659 ...Schermafbeelding 2023-12-08 132840.png }
+l.3862 ...Schermafbeelding 2023-12-08 132840.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 132959.png ' not found on inpu
-t line 3661.
+t line 3864.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 132959.png' not f
@@ -1227,14 +1226,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3661 ...Schermafbeelding 2023-12-08 132959.png }
+l.3864 ...Schermafbeelding 2023-12-08 132959.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 133123.png ' not found on inpu
-t line 3663.
+t line 3866.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 133123.png' not f
@@ -1244,14 +1243,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3663 ...Schermafbeelding 2023-12-08 133123.png }
+l.3866 ...Schermafbeelding 2023-12-08 133123.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 133201.png ' not found on inpu
-t line 3665.
+t line 3868.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 133201.png' not f
@@ -1261,14 +1260,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3665 ...Schermafbeelding 2023-12-08 133201.png }
+l.3868 ...Schermafbeelding 2023-12-08 133201.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 133242.png ' not found on inpu
-t line 3667.
+t line 3870.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 133242.png' not f
@@ -1278,14 +1277,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3667 ...Schermafbeelding 2023-12-08 133242.png }
+l.3870 ...Schermafbeelding 2023-12-08 133242.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 142543.png ' not found on inpu
-t line 3669.
+t line 3872.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 142543.png' not f
@@ -1295,14 +1294,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3669 ...Schermafbeelding 2023-12-08 142543.png }
+l.3872 ...Schermafbeelding 2023-12-08 142543.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 142602.png ' not found on inpu
-t line 3671.
+t line 3874.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 142602.png' not f
@@ -1312,14 +1311,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3671 ...Schermafbeelding 2023-12-08 142602.png }
+l.3874 ...Schermafbeelding 2023-12-08 142602.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 142800.png ' not found on inpu
-t line 3673.
+t line 3876.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 142800.png' not f
@@ -1329,14 +1328,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3673 ...Schermafbeelding 2023-12-08 142800.png }
+l.3876 ...Schermafbeelding 2023-12-08 142800.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144259.png ' not found on inpu
-t line 3675.
+t line 3878.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144259.png' not f
@@ -1346,14 +1345,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3675 ...Schermafbeelding 2023-12-08 144259.png }
+l.3878 ...Schermafbeelding 2023-12-08 144259.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144315.png ' not found on inpu
-t line 3677.
+t line 3880.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144315.png' not f
@@ -1363,14 +1362,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3677 ...Schermafbeelding 2023-12-08 144315.png }
+l.3880 ...Schermafbeelding 2023-12-08 144315.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144343.png ' not found on inpu
-t line 3679.
+t line 3882.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144343.png' not f
@@ -1380,14 +1379,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3679 ...Schermafbeelding 2023-12-08 144343.png }
+l.3882 ...Schermafbeelding 2023-12-08 144343.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144403.png ' not found on inpu
-t line 3681.
+t line 3884.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144403.png' not f
@@ -1397,14 +1396,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3681 ...Schermafbeelding 2023-12-08 144403.png }
+l.3884 ...Schermafbeelding 2023-12-08 144403.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144418.png ' not found on inpu
-t line 3683.
+t line 3886.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144418.png' not f
@@ -1414,14 +1413,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3683 ...Schermafbeelding 2023-12-08 144418.png }
+l.3886 ...Schermafbeelding 2023-12-08 144418.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144433.png ' not found on inpu
-t line 3685.
+t line 3888.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144433.png' not f
@@ -1431,14 +1430,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3685 ...Schermafbeelding 2023-12-08 144433.png }
+l.3888 ...Schermafbeelding 2023-12-08 144433.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144451.png ' not found on inpu
-t line 3687.
+t line 3890.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144451.png' not f
@@ -1448,14 +1447,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3687 ...Schermafbeelding 2023-12-08 144451.png }
+l.3890 ...Schermafbeelding 2023-12-08 144451.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144519.png ' not found on inpu
-t line 3689.
+t line 3892.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144519.png' not f
@@ -1465,14 +1464,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3689 ...Schermafbeelding 2023-12-08 144519.png }
+l.3892 ...Schermafbeelding 2023-12-08 144519.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144537.png ' not found on inpu
-t line 3691.
+t line 3894.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144537.png' not f
@@ -1482,14 +1481,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3691 ...Schermafbeelding 2023-12-08 144537.png }
+l.3894 ...Schermafbeelding 2023-12-08 144537.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144614.png ' not found on inpu
-t line 3693.
+t line 3896.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144614.png' not f
@@ -1499,14 +1498,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3693 ...Schermafbeelding 2023-12-08 144614.png }
+l.3896 ...Schermafbeelding 2023-12-08 144614.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144758.png ' not found on inpu
-t line 3695.
+t line 3898.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144758.png' not f
@@ -1516,14 +1515,14 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3695 ...Schermafbeelding 2023-12-08 144758.png }
+l.3898 ...Schermafbeelding 2023-12-08 144758.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 LaTeX Warning: File `Schermafbeelding 2023-12-08 144815.png ' not found on inpu
-t line 3697.
+t line 3900.
 
 
 ! Package pdftex.def Error: File `Schermafbeelding 2023-12-08 144815.png' not f
@@ -1533,18 +1532,18 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3697 ...Schermafbeelding 2023-12-08 144815.png }
+l.3900 ...Schermafbeelding 2023-12-08 144815.png }
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3659--3698
+Underfull \hbox (badness 10000) in paragraph at lines 3862--3901
 
  []
 
-[28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42]
-[43] [44] [45] [46] [47]
+[27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41]
+[42] [43] [44] [45] [46]
 No file verslag.bbl.
 (verslag.aux)
 
@@ -1554,7 +1553,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  8719 strings out of 475385
  190654 string characters out of 2776908
- 533824 words of memory out of 3000000
+ 532824 words of memory out of 3000000
  29992 multiletter control sequences out of 15000+600000
  472808 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1571,9 +1570,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/gal
 ly/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C
 :/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb>
-Output written on verslag.pdf (48 pages, 211645 bytes).
+Output written on verslag.pdf (47 pages, 210972 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

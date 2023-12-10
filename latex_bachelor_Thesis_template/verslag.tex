@@ -137,36 +137,7 @@
 	
 	\subsection{Begrippen, tools en literatuur}
 	
-	\paragraph{Wat is uppaal}
-	Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time systemen, gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden. Het is geschikt voor systemen die kunnen worden gemodelleerd als een verzameling niet-deterministische processen met een eindige controlestructuur en klokken met reële waarde, die communiceren via kanalen of gedeelde variabelen . Typische toepassingsgebieden zijn met name real-time controllers en communicatieprotocollen, waarbij timingaspecten van cruciaal belang zijn. %\cite{uppaalFeatures}
-	
-	UPPAAL is a verification tool for a TA based modeling language. Besides dense clocks,
-	the tool supports both simple and complex data types like bounded integers and arrays
-	as well as synchronization via shared variables and actions. The specification language
-	supports safety, liveness, deadlock, and response properties.
-	
-	To produce test sequences, we shall make use of UPPAAL’s ability to generate diagnostic
-	traces witnessing a submitted safety property. Currently UPPAAL supports three
-	options for diagnostic trace generation: some trace leading to the goal state, the shortest
-	trace with the minimum number of transitions, and fastest trace with the shortest
-	accumulated time delay. The underlying algorithm used for finding time-optimal traces
-	is a variation of the A-algorithm [2,12]. Hence, to improve performance it is possible
-	to supply a heuristic function estimating the remaining cost from any state to the goal
-	state.
-	
-	
-	
-	\paragraph{Wat is statistical model checking?}
-	Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
-	%\cite{verimagStatsModelChecking}.
-	\cite{inriaStatsMoodCheck}
-	\cite{ buddeModelChecker}
-	%\cite{AGHASuervey }
-	
-	\paragraph{Waarom gebruiken we statistisch model checking?}
-	Om de bovenstaande problemen te overwinnen stellen we voor om te werken met Statistical Model Checking , een aanpak die onlangs is voorgesteld als alternatief om een uitputtende verkenning van de toestandsruimte van het model te vermijden. Het kernidee van de aanpak is om een aantal simulaties van het systeem uit te voeren, deze te monitoren en vervolgens de resultaten uit het statistische gebied te gebruiken (inclusief het testen van sequentiële hypothesen of Monte Carlo-simulaties) om te beslissen of het systeem aan de eigenschap voldoet of niet. mate van vertrouwen. Van nature is SMC een compromis tussen testen en klassieke modelcontroletechnieken. Het is bekend dat op simulatie gebaseerde methoden veel minder geheugen- en tijdintensief zijn dan uitputtende methoden, en vaak de enige optie zijn.
-	\cite{inriaStatsMoodCheck}Alternatieve tools voor Uppaal zijn Asynchronous Events,Vesta en MRMC.
-	
+
 	
 	\paragraph{MODE CONFUSION }
 	Mode confusion treed op als geobserveerd gedrag van een technisch systeem niet past in het gedragspatroon dat de gebruiker in zijn beeldvorming heeft  en ook niet met voorstellingsvermogen kan bevatten.
@@ -2472,171 +2443,8 @@
 	%	
 	%	
 	%	\subsubsection{LTL}
-		\subsubsection{Timed automata}
-		A timed automaton is a (non-deterministic) finite state
-		automaton composed of edges and vertexes and extended
-		with real-valued clocks and integer variables. Clocks proceed
-		at the same rate and measure the time since they were
-		reset. Integer variables are finite domain variables with
-		rate zero.
-		
-		Automata learning algorithms have received signicant attention from the
-		verication community in the past two decades. Besides being used to improve
-		the eciency and scalability of compositional verication, automata learning has
-		also been successfully applied in other aspects of verication: among others, it has
-		been used to automatically generate interface models of computer programs [7],
-		to learn a model of the traces of the system errors for diagnosis purposes [27], to
-		nd bugs in the implementation of network protocols [39], to extract behavior
-		model of programs for statistical program analysis [29], and to do model-based
-		testing and verication [81, 107]. Later in 2017, Frits Vaandrager [102] explains
-		the concept of model learning used in the above applications.
-		In order to be of practical use, the learning algorithms have to be computationally
-		ecient and easily adaptable to the dierent learning scenarios. On the
-		one hand, with more complex tasks at hand, some researchers have proposed several
-		optimizations to improve the eciency of nite automata learning, such as
-		learning algorithms based on classication trees [59,63], ecient counterexample
-		analysis for learning algorithms [87], learning algorithm NL for nondeterministic
-		nite automata (NFAs) [20], and learning algorithms for alternating nite
-		automata [10].
-		\subsubsection{Formal testing}
-		
-		Index Terms—SCADA, model checking, formal methods, timed
-		automaton, temporal logic, critical infrastructure, security, safety
-		We have worked on projects for a broad range of application
-		domains; e.g., medical equipment, factory automation, transportation,
-		communications, automotive.
-		
-		
-		
-		documented, traced, reviewed, and tested
-		\subsubsection{Formal  verification}
-		In order to support the formal verification based on MC,
-		a timed automata should be created to express the system
-		behavior, supporting the evaluation of different properties such
-		as safety, reachability, liveness, and deadlock [10]. However,
-		generating these representations is not a simple task and
-		requires sufficient knowledge of the design team to correctly
-		express the system properties. To automate the timed automata
-		construction, it is our claim that a model transformation can
-		be performed using as input the architectural representation.
-		
-		An implementation, ψIMP, consists of a description
-		of the actual hardware design that is to be
-		verified. A specification, ρSPEC, is a description of
-		the intended/required (properties) behavior of a
-		hardware design. Formal Verification (FV) is a
-		systematic process of ensuring, through
-		exhaustive algorithmic techniques, that a design
-		implementation ψIMP satisfies the properties
-		established in its specification ρSPEC. With formal
-		verification, we are able to overcome both of
-		simulation’s challenges: the observability and the
-		controllability, since formal verification
-		algorithmically and exhaustively explores all
-		possible input values over time. The simulation is
-		empirical ‐ meaning you use trial and error to
-		discover bugs. It would take an intractable
-		amount of time to test all possible combinations.
-		Therefore, it is never complete. However the
-		verification engineers are focusing their effort on
-		how to break the design, not on what the design is
-		intended to do. Formal verification, on the other
-		hand, is mathematical and exhaustive and allows
-		the engineer to focus solely on intent, or “what is
-		the design’s correct behavior”. The main
-		disadvantage of the formal verification is its
-		limited capacity when the explosion state [6] is
-		present.
-		There are two types of formal verification:
-		• EQUIVALENCE CHECKING: It is concerned
-		with the verification that two
-		representations of the same design are
-		equivalent. Typically, it is gate level versus
-		another gate level or RTL
-		• MODEL CHECKING: Specification is in the
-		form of a temporal logic formula, the
-		truth of which is determined with respect
-		to a semantic model provided by an
-		implementation.
-		
-		
-		The main validation methods for complex systems are a simulation, testing, deductive verification,
-		and model checking. Simulation and testing [82] both involve making experiments
-		before using the system in the field. While simulation is carried out on an abstraction or a
-		model of the system, testing is done on the actual product. In the case of circuits, simulation
-		is carried out on the design of the circuit, whereas testing is done on the circuit itself. In
-		both situations, these techniques inject signals at specific points in the system and observe
-		the resulting signals at other points. For software, simulation and testing generally involve
-		preparing determined inputs and observing the corresponding outputs. These techniques
-		can be a cost-efficient method to find many errors. However, checking all of the possible
-		interactions and potential pitfalls utilizing simulation and testing techniques is rarely
-		possible.
-		This problem of design validation (ensuring the correctness of the design at the earliest
-		stage possible) is the main challenge in any responsible system development process, and
-		the tasks intended for its solution occupy a huge portions of the development cycle cost
-		and time budgets. The currently practiced techniques for design validation in most places
-		are still the veteran methods of simulation and testing. Although provably effective in the
-		very early stages of debugging, when the design is still infested with multiple bugs, their
-		effectiveness drops quickly as the design becomes cleaner, and they require an alarmingly
-		increasing amount of time to uncover the more subtle bugs.
-		A principal disadvantage of these methods is that one can never be sure when a limit
-		has been reached or even an estimate of how many bugs may still lurk in the design. As the
-		complexity of designs increases tremendously, say from 0.5 to 5 million gates per chip, some
-		far-seeing managers predict the complete collapse of these conventional methods and their
-		total inability to scale up [53].
-		The approach of formal verification is a very attractive and dramatically appealing alternative
-		to simulation and testing. While simulation and testing explore some of the possible
-		behaviors and scenarios of the system, the question of whether the unexplored trajectories
-		contain the fatal bug remains open. Formal verification on the other hand conducts an
-		exhaustive exploration of all possible behaviors. Thus, when a design is pronounced correct
-		by a formal verification method, it means that all the possible behaviors have been explored,
-		so that the questions of proper coverage or a missed behavior become irrelevant.
-		One of the main approaches to formal verification is model checking. In model checking
-		a desired behavioral property is verified over a given system (the model) through exhaustive
-		(explicit or implicit) enumeration of all the states reachable by the system and the behaviors
-		that lead to them. Compared to other approaches, model checking has three important
-		advantages. First, it is fully automatic, and its application requires no user supervision
-		or expertise in mathematical disciplines such as logic and theorem proving. Anyone who
-		can run simulations of a design is fully eligible and capable of model-checking the same
-		design. In the context of the currently practiced method, model checking can be categorized
-		as the ultimately superior simulation tool. Secondly, when the design fails to satisfy the
-		desired property, the process of model checking always generates a counterexample that
-		shows a behavior which falsifies the property. This faulty trace offers a priceless insight
-		into understanding the real reason for the failure as well as significant clues for solving the
-		problem. Last but not least, model checking has a sound and mathematical underpinning.
-		These important advantages together with the advent of symbolic model checking, which
-		allows the exhaustive implicit enumeration of an astronomic number of states, completely
-		revolutionized the field of formal verification and transformed it from a purely academic
-		discipline into a viable practical method that can potentially be integrated as an vital
-		technique for design validation in a lot of industrial development processes [53].
-		
-		\subsubsection{Formal  verification environment}
-		Formal Verification Environment: once defined the model
-		and the temporal logic properties, we need something enabling
-		us to check whether the timed automata based model satisfies
-		the defined properties. To this aim we consider formal verification,
-		a system process exploiting mathematical reasoning to
-		verify if a system (i.e., the model) satisfies some requirement
-		(i.e., the timed temporal properties).
-		
-		\subsubsection{Testing}
-		Testing is the execution of the system under test in a controlled environment following
-		a prescribed procedure with the goal of measuring one or more quality characteristics
-		of a product, such as functionality or performance. Testing is the primary software
-		validation technique used by industry today. However, despite the importance and the
-		many resources and man-hours invested by industry (about 30% to 50% of development
-		effort), testing remains quite ad hoc and error prone.
-		We focus on conformance testing i.e., checking by means of execution whether the
-		behavior of some black box implementation conforms to that of its specification, and
-		moreover doing this within minimum time. A promising approach to improving the
-		effectiveness of testing is to base test generation on an abstract formal model of the
-		system under test (SUT) and use a test generation tool to (automatically or user guided)
-		generate and execute test cases. Model based test generation has been under scientific
-		study for some time, and practically applicable test tools are emerging [4,16,18,10].
-		However, little is still known in the context of real-time systems.
-		
-		\subsubsection{Timed automata}
-	\subsubsection{CTL}
+	
+		\subsubsection{CTL}
 	
 	CTL, geïntroduceerd door Emerson en Clarke [18], is een tijdelijke vertakkingstijd
 	logica die wordt gebruikt als specificatietaal voor eindige-toestandssystemen. De executies
@@ -2669,7 +2477,402 @@
 	
 	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
 	
+		\paragraph{Timed automata}
+	A timed automaton is a (non-deterministic) finite state
+	automaton composed of edges and vertexes and extended
+	with real-valued clocks and integer variables. Clocks proceed
+	at the same rate and measure the time since they were
+	reset. Integer variables are finite domain variables with
+	rate zero.
 	
+	Automata learning algorithms have received signicant attention from the
+	verication community in the past two decades. Besides being used to improve
+	the eciency and scalability of compositional verication, automata learning has
+	also been successfully applied in other aspects of verication: among others, it has
+	been used to automatically generate interface models of computer programs [7],
+	to learn a model of the traces of the system errors for diagnosis purposes [27], to
+	nd bugs in the implementation of network protocols [39], to extract behavior
+	model of programs for statistical program analysis [29], and to do model-based
+	testing and verication [81, 107]. Later in 2017, Frits Vaandrager [102] explains
+	the concept of model learning used in the above applications.
+	In order to be of practical use, the learning algorithms have to be computationally
+	ecient and easily adaptable to the dierent learning scenarios. On the
+	one hand, with more complex tasks at hand, some researchers have proposed several
+	optimizations to improve the eciency of nite automata learning, such as
+	learning algorithms based on classication trees [59,63], ecient counterexample
+	analysis for learning algorithms [87], learning algorithm NL for nondeterministic
+	nite automata (NFAs) [20], and learning algorithms for alternating nite
+	automata [10].
+	
+	
+	
+	
+	\paragraph{Wat is uppaal}
+	Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time systemen, gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden. Het is geschikt voor systemen die kunnen worden gemodelleerd als een verzameling niet-deterministische processen met een eindige controlestructuur en klokken met reële waarde, die communiceren via kanalen of gedeelde variabelen . Typische toepassingsgebieden zijn met name real-time controllers en communicatieprotocollen, waarbij timingaspecten van cruciaal belang zijn. %\cite{uppaalFeatures}
+	
+	UPPAAL is a verification tool for a TA based modeling language. Besides dense clocks,
+	the tool supports both simple and complex data types like bounded integers and arrays
+	as well as synchronization via shared variables and actions. The specification language
+	supports safety, liveness, deadlock, and response properties.
+	
+	To produce test sequences, we shall make use of UPPAAL’s ability to generate diagnostic
+	traces witnessing a submitted safety property. Currently UPPAAL supports three
+	options for diagnostic trace generation: some trace leading to the goal state, the shortest
+	trace with the minimum number of transitions, and fastest trace with the shortest
+	accumulated time delay. The underlying algorithm used for finding time-optimal traces
+	is a variation of the A-algorithm [2,12]. Hence, to improve performance it is possible
+	to supply a heuristic function estimating the remaining cost from any state to the goal
+	state.
+	
+	
+	
+	\paragraph{Wat is statistical model checking?}
+	Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
+	%\cite{verimagStatsModelChecking}.
+	\cite{inriaStatsMoodCheck}
+	\cite{ buddeModelChecker}
+	%\cite{AGHASuervey }
+	
+	\paragraph{Waarom gebruiken we statistisch model checking?}
+	Om de bovenstaande problemen te overwinnen stellen we voor om te werken met Statistical Model Checking , een aanpak die onlangs is voorgesteld als alternatief om een uitputtende verkenning van de toestandsruimte van het model te vermijden. Het kernidee van de aanpak is om een aantal simulaties van het systeem uit te voeren, deze te monitoren en vervolgens de resultaten uit het statistische gebied te gebruiken (inclusief het testen van sequentiële hypothesen of Monte Carlo-simulaties) om te beslissen of het systeem aan de eigenschap voldoet of niet. mate van vertrouwen. Van nature is SMC een compromis tussen testen en klassieke modelcontroletechnieken. Het is bekend dat op simulatie gebaseerde methoden veel minder geheugen- en tijdintensief zijn dan uitputtende methoden, en vaak de enige optie zijn.
+	\cite{inriaStatsMoodCheck}Alternatieve tools voor Uppaal zijn Asynchronous Events,Vesta en MRMC.
+	
+	\paragraph{Formal testing}
+	
+	Index Terms—SCADA, model checking, formal methods, timed
+	automaton, temporal logic, critical infrastructure, security, safety
+	We have worked on projects for a broad range of application
+	domains; e.g., medical equipment, factory automation, transportation,
+	communications, automotive.
+	
+	
+	
+	documented, traced, reviewed, and tested
+	\paragraph{Formal  verification}
+	In order to support the formal verification based on MC,
+	a timed automata should be created to express the system
+	behavior, supporting the evaluation of different properties such
+	as safety, reachability, liveness, and deadlock [10]. However,
+	generating these representations is not a simple task and
+	requires sufficient knowledge of the design team to correctly
+	express the system properties. To automate the timed automata
+	construction, it is our claim that a model transformation can
+	be performed using as input the architectural representation.
+	
+	An implementation, ψIMP, consists of a description
+	of the actual hardware design that is to be
+	verified. A specification, ρSPEC, is a description of
+	the intended/required (properties) behavior of a
+	hardware design. Formal Verification (FV) is a
+	systematic process of ensuring, through
+	exhaustive algorithmic techniques, that a design
+	implementation ψIMP satisfies the properties
+	established in its specification ρSPEC. With formal
+	verification, we are able to overcome both of
+	simulation’s challenges: the observability and the
+	controllability, since formal verification
+	algorithmically and exhaustively explores all
+	possible input values over time. The simulation is
+	empirical ‐ meaning you use trial and error to
+	discover bugs. It would take an intractable
+	amount of time to test all possible combinations.
+	Therefore, it is never complete. However the
+	verification engineers are focusing their effort on
+	how to break the design, not on what the design is
+	intended to do. Formal verification, on the other
+	hand, is mathematical and exhaustive and allows
+	the engineer to focus solely on intent, or “what is
+	the design’s correct behavior”. The main
+	disadvantage of the formal verification is its
+	limited capacity when the explosion state [6] is
+	present.
+	There are two types of formal verification:
+	• EQUIVALENCE CHECKING: It is concerned
+	with the verification that two
+	representations of the same design are
+	equivalent. Typically, it is gate level versus
+	another gate level or RTL
+	• MODEL CHECKING: Specification is in the
+	form of a temporal logic formula, the
+	truth of which is determined with respect
+	to a semantic model provided by an
+	implementation.
+	
+	
+	The main validation methods for complex systems are a simulation, testing, deductive verification,
+	and model checking. Simulation and testing [82] both involve making experiments
+	before using the system in the field. While simulation is carried out on an abstraction or a
+	model of the system, testing is done on the actual product. In the case of circuits, simulation
+	is carried out on the design of the circuit, whereas testing is done on the circuit itself. In
+	both situations, these techniques inject signals at specific points in the system and observe
+	the resulting signals at other points. For software, simulation and testing generally involve
+	preparing determined inputs and observing the corresponding outputs. These techniques
+	can be a cost-efficient method to find many errors. However, checking all of the possible
+	interactions and potential pitfalls utilizing simulation and testing techniques is rarely
+	possible.
+	This problem of design validation (ensuring the correctness of the design at the earliest
+	stage possible) is the main challenge in any responsible system development process, and
+	the tasks intended for its solution occupy a huge portions of the development cycle cost
+	and time budgets. The currently practiced techniques for design validation in most places
+	are still the veteran methods of simulation and testing. Although provably effective in the
+	very early stages of debugging, when the design is still infested with multiple bugs, their
+	effectiveness drops quickly as the design becomes cleaner, and they require an alarmingly
+	increasing amount of time to uncover the more subtle bugs.
+	A principal disadvantage of these methods is that one can never be sure when a limit
+	has been reached or even an estimate of how many bugs may still lurk in the design. As the
+	complexity of designs increases tremendously, say from 0.5 to 5 million gates per chip, some
+	far-seeing managers predict the complete collapse of these conventional methods and their
+	total inability to scale up [53].
+	The approach of formal verification is a very attractive and dramatically appealing alternative
+	to simulation and testing. While simulation and testing explore some of the possible
+	behaviors and scenarios of the system, the question of whether the unexplored trajectories
+	contain the fatal bug remains open. Formal verification on the other hand conducts an
+	exhaustive exploration of all possible behaviors. Thus, when a design is pronounced correct
+	by a formal verification method, it means that all the possible behaviors have been explored,
+	so that the questions of proper coverage or a missed behavior become irrelevant.
+	One of the main approaches to formal verification is model checking. In model checking
+	a desired behavioral property is verified over a given system (the model) through exhaustive
+	(explicit or implicit) enumeration of all the states reachable by the system and the behaviors
+	that lead to them. Compared to other approaches, model checking has three important
+	advantages. First, it is fully automatic, and its application requires no user supervision
+	or expertise in mathematical disciplines such as logic and theorem proving. Anyone who
+	can run simulations of a design is fully eligible and capable of model-checking the same
+	design. In the context of the currently practiced method, model checking can be categorized
+	as the ultimately superior simulation tool. Secondly, when the design fails to satisfy the
+	desired property, the process of model checking always generates a counterexample that
+	shows a behavior which falsifies the property. This faulty trace offers a priceless insight
+	into understanding the real reason for the failure as well as significant clues for solving the
+	problem. Last but not least, model checking has a sound and mathematical underpinning.
+	These important advantages together with the advent of symbolic model checking, which
+	allows the exhaustive implicit enumeration of an astronomic number of states, completely
+	revolutionized the field of formal verification and transformed it from a purely academic
+	discipline into a viable practical method that can potentially be integrated as an vital
+	technique for design validation in a lot of industrial development processes [53].
+	
+	\paragraph{Formal  verification environment}
+	Formal Verification Environment: once defined the model
+	and the temporal logic properties, we need something enabling
+	us to check whether the timed automata based model satisfies
+	the defined properties. To this aim we consider formal verification,
+	a system process exploiting mathematical reasoning to
+	verify if a system (i.e., the model) satisfies some requirement
+	(i.e., the timed temporal properties).
+	
+	\paragraph{Testing}
+	Testing is the execution of the system under test in a controlled environment following
+	a prescribed procedure with the goal of measuring one or more quality characteristics
+	of a product, such as functionality or performance. Testing is the primary software
+	validation technique used by industry today. However, despite the importance and the
+	many resources and man-hours invested by industry (about 30% to 50% of development
+	effort), testing remains quite ad hoc and error prone.
+	We focus on conformance testing i.e., checking by means of execution whether the
+	behavior of some black box implementation conforms to that of its specification, and
+	moreover doing this within minimum time. A promising approach to improving the
+	effectiveness of testing is to base test generation on an abstract formal model of the
+	system under test (SUT) and use a test generation tool to (automatically or user guided)
+	generate and execute test cases. Model based test generation has been under scientific
+	study for some time, and practically applicable test tools are emerging [4,16,18,10].
+	However, little is still known in the context of real-time systems.
+	
+	
+%		\subsection{Timed automata}
+%		A timed automaton is a (non-deterministic) finite state
+%		automaton composed of edges and vertexes and extended
+%		with real-valued clocks and integer variables. Clocks proceed
+%		at the same rate and measure the time since they were
+%		reset. Integer variables are finite domain variables with
+%		rate zero.
+%		
+%		Automata learning algorithms have received signicant attention from the
+%		verication community in the past two decades. Besides being used to improve
+%		the eciency and scalability of compositional verication, automata learning has
+%		also been successfully applied in other aspects of verication: among others, it has
+%		been used to automatically generate interface models of computer programs [7],
+%		to learn a model of the traces of the system errors for diagnosis purposes [27], to
+%		nd bugs in the implementation of network protocols [39], to extract behavior
+%		model of programs for statistical program analysis [29], and to do model-based
+%		testing and verication [81, 107]. Later in 2017, Frits Vaandrager [102] explains
+%		the concept of model learning used in the above applications.
+%		In order to be of practical use, the learning algorithms have to be computationally
+%		ecient and easily adaptable to the dierent learning scenarios. On the
+%		one hand, with more complex tasks at hand, some researchers have proposed several
+%		optimizations to improve the eciency of nite automata learning, such as
+%		learning algorithms based on classication trees [59,63], ecient counterexample
+%		analysis for learning algorithms [87], learning algorithm NL for nondeterministic
+%		nite automata (NFAs) [20], and learning algorithms for alternating nite
+%		automata [10].
+%		
+%		
+%	
+%		
+%			\paragraph{Wat is uppaal}
+%		Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time systemen, gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden. Het is geschikt voor systemen die kunnen worden gemodelleerd als een verzameling niet-deterministische processen met een eindige controlestructuur en klokken met reële waarde, die communiceren via kanalen of gedeelde variabelen . Typische toepassingsgebieden zijn met name real-time controllers en communicatieprotocollen, waarbij timingaspecten van cruciaal belang zijn. %\cite{uppaalFeatures}
+%		
+%		UPPAAL is a verification tool for a TA based modeling language. Besides dense clocks,
+%		the tool supports both simple and complex data types like bounded integers and arrays
+%		as well as synchronization via shared variables and actions. The specification language
+%		supports safety, liveness, deadlock, and response properties.
+%		
+%		To produce test sequences, we shall make use of UPPAAL’s ability to generate diagnostic
+%		traces witnessing a submitted safety property. Currently UPPAAL supports three
+%		options for diagnostic trace generation: some trace leading to the goal state, the shortest
+%		trace with the minimum number of transitions, and fastest trace with the shortest
+%		accumulated time delay. The underlying algorithm used for finding time-optimal traces
+%		is a variation of the A-algorithm [2,12]. Hence, to improve performance it is possible
+%		to supply a heuristic function estimating the remaining cost from any state to the goal
+%		state.
+%		
+%		
+%		
+%		\paragraph{Wat is statistical model checking?}
+%		Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
+%		%\cite{verimagStatsModelChecking}.
+%		\cite{inriaStatsMoodCheck}
+%		\cite{ buddeModelChecker}
+%		%\cite{AGHASuervey }
+%		
+%		\paragraph{Waarom gebruiken we statistisch model checking?}
+%		Om de bovenstaande problemen te overwinnen stellen we voor om te werken met Statistical Model Checking , een aanpak die onlangs is voorgesteld als alternatief om een uitputtende verkenning van de toestandsruimte van het model te vermijden. Het kernidee van de aanpak is om een aantal simulaties van het systeem uit te voeren, deze te monitoren en vervolgens de resultaten uit het statistische gebied te gebruiken (inclusief het testen van sequentiële hypothesen of Monte Carlo-simulaties) om te beslissen of het systeem aan de eigenschap voldoet of niet. mate van vertrouwen. Van nature is SMC een compromis tussen testen en klassieke modelcontroletechnieken. Het is bekend dat op simulatie gebaseerde methoden veel minder geheugen- en tijdintensief zijn dan uitputtende methoden, en vaak de enige optie zijn.
+%		\cite{inriaStatsMoodCheck}Alternatieve tools voor Uppaal zijn Asynchronous Events,Vesta en MRMC.
+%		
+%		\subsubsection{Formal testing}
+%		
+%		Index Terms—SCADA, model checking, formal methods, timed
+%		automaton, temporal logic, critical infrastructure, security, safety
+%		We have worked on projects for a broad range of application
+%		domains; e.g., medical equipment, factory automation, transportation,
+%		communications, automotive.
+%		
+%		
+%		
+%		documented, traced, reviewed, and tested
+%		\subsubsection{Formal  verification}
+%		In order to support the formal verification based on MC,
+%		a timed automata should be created to express the system
+%		behavior, supporting the evaluation of different properties such
+%		as safety, reachability, liveness, and deadlock [10]. However,
+%		generating these representations is not a simple task and
+%		requires sufficient knowledge of the design team to correctly
+%		express the system properties. To automate the timed automata
+%		construction, it is our claim that a model transformation can
+%		be performed using as input the architectural representation.
+%		
+%		An implementation, ψIMP, consists of a description
+%		of the actual hardware design that is to be
+%		verified. A specification, ρSPEC, is a description of
+%		the intended/required (properties) behavior of a
+%		hardware design. Formal Verification (FV) is a
+%		systematic process of ensuring, through
+%		exhaustive algorithmic techniques, that a design
+%		implementation ψIMP satisfies the properties
+%		established in its specification ρSPEC. With formal
+%		verification, we are able to overcome both of
+%		simulation’s challenges: the observability and the
+%		controllability, since formal verification
+%		algorithmically and exhaustively explores all
+%		possible input values over time. The simulation is
+%		empirical ‐ meaning you use trial and error to
+%		discover bugs. It would take an intractable
+%		amount of time to test all possible combinations.
+%		Therefore, it is never complete. However the
+%		verification engineers are focusing their effort on
+%		how to break the design, not on what the design is
+%		intended to do. Formal verification, on the other
+%		hand, is mathematical and exhaustive and allows
+%		the engineer to focus solely on intent, or “what is
+%		the design’s correct behavior”. The main
+%		disadvantage of the formal verification is its
+%		limited capacity when the explosion state [6] is
+%		present.
+%		There are two types of formal verification:
+%		• EQUIVALENCE CHECKING: It is concerned
+%		with the verification that two
+%		representations of the same design are
+%		equivalent. Typically, it is gate level versus
+%		another gate level or RTL
+%		• MODEL CHECKING: Specification is in the
+%		form of a temporal logic formula, the
+%		truth of which is determined with respect
+%		to a semantic model provided by an
+%		implementation.
+%		
+%		
+%		The main validation methods for complex systems are a simulation, testing, deductive verification,
+%		and model checking. Simulation and testing [82] both involve making experiments
+%		before using the system in the field. While simulation is carried out on an abstraction or a
+%		model of the system, testing is done on the actual product. In the case of circuits, simulation
+%		is carried out on the design of the circuit, whereas testing is done on the circuit itself. In
+%		both situations, these techniques inject signals at specific points in the system and observe
+%		the resulting signals at other points. For software, simulation and testing generally involve
+%		preparing determined inputs and observing the corresponding outputs. These techniques
+%		can be a cost-efficient method to find many errors. However, checking all of the possible
+%		interactions and potential pitfalls utilizing simulation and testing techniques is rarely
+%		possible.
+%		This problem of design validation (ensuring the correctness of the design at the earliest
+%		stage possible) is the main challenge in any responsible system development process, and
+%		the tasks intended for its solution occupy a huge portions of the development cycle cost
+%		and time budgets. The currently practiced techniques for design validation in most places
+%		are still the veteran methods of simulation and testing. Although provably effective in the
+%		very early stages of debugging, when the design is still infested with multiple bugs, their
+%		effectiveness drops quickly as the design becomes cleaner, and they require an alarmingly
+%		increasing amount of time to uncover the more subtle bugs.
+%		A principal disadvantage of these methods is that one can never be sure when a limit
+%		has been reached or even an estimate of how many bugs may still lurk in the design. As the
+%		complexity of designs increases tremendously, say from 0.5 to 5 million gates per chip, some
+%		far-seeing managers predict the complete collapse of these conventional methods and their
+%		total inability to scale up [53].
+%		The approach of formal verification is a very attractive and dramatically appealing alternative
+%		to simulation and testing. While simulation and testing explore some of the possible
+%		behaviors and scenarios of the system, the question of whether the unexplored trajectories
+%		contain the fatal bug remains open. Formal verification on the other hand conducts an
+%		exhaustive exploration of all possible behaviors. Thus, when a design is pronounced correct
+%		by a formal verification method, it means that all the possible behaviors have been explored,
+%		so that the questions of proper coverage or a missed behavior become irrelevant.
+%		One of the main approaches to formal verification is model checking. In model checking
+%		a desired behavioral property is verified over a given system (the model) through exhaustive
+%		(explicit or implicit) enumeration of all the states reachable by the system and the behaviors
+%		that lead to them. Compared to other approaches, model checking has three important
+%		advantages. First, it is fully automatic, and its application requires no user supervision
+%		or expertise in mathematical disciplines such as logic and theorem proving. Anyone who
+%		can run simulations of a design is fully eligible and capable of model-checking the same
+%		design. In the context of the currently practiced method, model checking can be categorized
+%		as the ultimately superior simulation tool. Secondly, when the design fails to satisfy the
+%		desired property, the process of model checking always generates a counterexample that
+%		shows a behavior which falsifies the property. This faulty trace offers a priceless insight
+%		into understanding the real reason for the failure as well as significant clues for solving the
+%		problem. Last but not least, model checking has a sound and mathematical underpinning.
+%		These important advantages together with the advent of symbolic model checking, which
+%		allows the exhaustive implicit enumeration of an astronomic number of states, completely
+%		revolutionized the field of formal verification and transformed it from a purely academic
+%		discipline into a viable practical method that can potentially be integrated as an vital
+%		technique for design validation in a lot of industrial development processes [53].
+%		
+%		\subsubsection{Formal  verification environment}
+%		Formal Verification Environment: once defined the model
+%		and the temporal logic properties, we need something enabling
+%		us to check whether the timed automata based model satisfies
+%		the defined properties. To this aim we consider formal verification,
+%		a system process exploiting mathematical reasoning to
+%		verify if a system (i.e., the model) satisfies some requirement
+%		(i.e., the timed temporal properties).
+%		
+%		\subsubsection{Testing}
+%		Testing is the execution of the system under test in a controlled environment following
+%		a prescribed procedure with the goal of measuring one or more quality characteristics
+%		of a product, such as functionality or performance. Testing is the primary software
+%		validation technique used by industry today. However, despite the importance and the
+%		many resources and man-hours invested by industry (about 30% to 50% of development
+%		effort), testing remains quite ad hoc and error prone.
+%		We focus on conformance testing i.e., checking by means of execution whether the
+%		behavior of some black box implementation conforms to that of its specification, and
+%		moreover doing this within minimum time. A promising approach to improving the
+%		effectiveness of testing is to base test generation on an abstract formal model of the
+%		system under test (SUT) and use a test generation tool to (automatically or user guided)
+%		generate and execute test cases. Model based test generation has been under scientific
+%		study for some time, and practically applicable test tools are emerging [4,16,18,10].
+%		However, little is still known in the context of real-time systems.
+		
+ 
 	
 	%	\subsubsection{buchi Automata}
 	%	
