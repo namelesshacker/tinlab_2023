@@ -195,7 +195,6 @@
 	
 	
 	\section{Requirements}
-	
 	\subsection{Requirements engineering}
 	“Requirements engineering [DoD 1991] involves all lifecycle activities
 	devoted to identification of user requirements, analysis of the
@@ -217,122 +216,101 @@
 	requirements engineering as “the science and discipline concerned
 	with establishing and documenting software requirements.”
 	
+	Requirementsenginnering gaat over alle activititen gericht op het identificeren van user requirements, analyse van  de requirements om extr requirements af te leiden,documentatie van requirements als een specificatie, validering 
+	van de gedocumenteerde requirements tegenover gebruikersbehoefte en ook processen die deze activiteiten ondersteunen.
+	Requirementsengineering kan gebruikt worden voor software, hardware en elektromechanische system. 
+	Requirements analyse houd zicch bezig met de elicitation en bestudering van requirements, requirements engineering houdt zich bezig met all faen van project of product-ontwikkeling levenscycly van innovatie tot veroudereing.
 	
-	Door middel van requirements wordt vastgelegd welke functionaliteiten het systeem moet bevatten, welke prestatieniveaus het moet bereiken, welke beperkingen moeten worden gehandhaafd en welke kwaliteitsattributen moeten worden nageleefd.
-	Het formuleren en vaststellen van requirements is een cruciale fase in het systeemmodelleringsproces, omdat het een duidelijk beeld geeft van de gewenste systeemeigenschappen en helpt bij het bepalen van de benodigde functionaliteit en prestaties. Dit legt de basis voor verdere stappen in het modelleringsproces, zoals ontwerp, implementatie en testen.
+	
+	Door middel van requirements wordt vastgelegd welke functionaliteiten het systeem moet bevatten, welke prestatieniveaus het moet bereiken, welke beperkingen moeten worden gehandhaafd en welke kwaliteitsattributen moeten worden nageleefd. Het formuleren en vaststellen van requirements is een cruciale fase in het systeemmodelleringsproces, omdat het een duidelijk beeld geeft van de gewenste systeemeigenschappen en helpt bij het bepalen van de benodigde functionaliteit en prestaties. Dit legt de basis voor verdere stappen in het modelleringsproces, zoals ontwerp, implementatie en testen.
 	
 	\subsection{Systeem omschrijving}
-	To enable formalization (and verication) of requirements, we decorate the system description with
-	two integer variables, ErrStat and UseCase. The variable ErrStat is assigned values at unrecoverable
-	errors: 1 if Clutch fails to close, 2 if Clutch fails to open, 3 if GearBox fails to set a gear, and 4 if GearBox
-	fails to release a gear. The variable UseCase is assigned values whenever a recoverable error occurs in
-	Engine: 1 if it fail to deliver zero torque, and 2 if it is not able to nd synchronous speed. The system
-	model is also decorated to enable verication of bounded response time properties, as described in
-	Section 3.2.
-	
-	Intuitively, the rst rule describes a local internal action transition in a component,
-	and possibly the resetting of variables.
-	The second rule describes synchronisation transitions that synchronise two
-	components.
-	The third rule describes delay transitions, i.e. when all clocks increase synchronously
-	with time.
 	
 	
-	Reactive systems can be broadly classified as distributed systems whose subcomponents
-	are spatially separated and concurrent systems that share resources such as processors
-	and memories. Distributed systems communicate by message passing, whereas
-	concurrent systems may use shared variables. Concurrent processes may share a common
-	clock and execute in lock-step (time-synchronous systems, typical for hardware
-	verification problems) or operate asynchronously, sharing a common processor. In the
-	latter case, one will typically assume fairness conditions that ensure processes that
-	could execute are eventually scheduled for execution. A common framework for the
-	representation of these different kinds of systems is provided by the concept of transition
-	systems. Properties of (runs of) transition systems are conveniently expressed in
-	temporal logic.
+	Een model kan weergave zijn voor een computersysteem uit het dagelijks leven. Dit kunnen systemen met kritische functies zijn zoals auto's vliegtuigen en industriële installaties, maar ook andere modellen kunnen gemodelleerd worden zials telecomunicatie, security protocols, e-commerce applicaties en privacy.
+	Een model is een mathematische representatie van een systeem. Dit kunne state machine modellen zijn, autamata modellen object georienteerde modellen zijn.
+	Op automata gebaseerde modellen kunnen gebruik maken van deterministische finite automata. non-deterministische finite automata, timed automata, Buchi-automata, w-automata zijin etc.
+	Deze modellen worden gebruik voor het modelleren van een formeel gespecificeerd systeem.
+	Het systeem is gemodelleerd als een netwerk van parallel geschakelde getimede automaten.
+	Het model is uitgebreid met begrensde discrete variabelen
+	zijn onderdeel van de staat. Een toestand van het systeem wordt gedefinieerd door de
+	locatie van alle automaten, de klokwaarden en de waarden van de
+	discrete variabelen. De automaat kan een voorsprong afvuren (d.w.z. uitvoeren
+	een overgang) afzonderlijk of synchroniseren met een andere automaat
+	met als doel een nieuwe staat te leiden.
+	Bij een Formeel model wordt Specificatie  gebruikt om een formele beschrijving te geven
+	van het systeem dat wordt geanalyseerd. Het formele
+	specificatie beschouwt een taal met een wiskundig gedefinieerde
+	syntaxis en semantiek. 
+	Het doel van de toepassing  van model checking is  de toepassing van formele methoden op een intelligent systeem om de correctheid van een systeemontwerp te garanderen.
+	
+	De  input voor een model checker zijn omschrijvingen van een systeem welke geanalyseerd moet worden met een aantal eigenschappen, vaak uitgedrukt in formules voor temporele logica,   die naar verwachting van het systeem zullen houden. De model checker bevestigd dat de eigenschappen geldig zijn of geeft aan dat deze niet geldig zijn.
+	De gebruikte formele methoden zijn op wiskunde gebaseerde technieken voor de beschrijving van systeemeigenschappen.
+	Aan de hand van de formele methode is het mogelijk om systemen te specificeren, ontwikkelen en verifiëren op een systematische manier.
+	Het helpt bij het identificeren van errors, onduidelijkheden in de vroege stadia van het systeem ontwikkelproces.
+	Een Formele Specificatie is een complete representatie van een systeem onder studie waarbij bepaalde formele specificatie worden vertaald.
+	Een formele specificatie is een complete representatie van een systeem onder studie voor een bepaalde formele specificatie taal.
+	Deze formele specificatie verschaffen een complexe syntax, semantiek en pragmatiek voor de representatie. Verschillende specificatie talen gebruikt worden in de formele methode zijn abstracte state machines zoals
 	
 	
-	Computerized systems pervade more and more our everyday lives. We rely on digital
-	controllers to supervise critical functions of cars, airplanes, and industrial plants. Digital
-	switching technology has replaced analog components in the telecommunication
-	industry, and security protocols enable e-commerce applications and privacy. Where
-	important investments or even human lives are at risk, quality assurance for the underlying
-	hardware and software components becomes paramount, and this requires formal
-	models that describe the relevant part of the systems at an adequate level of abstraction.
-	The systems we are focussing on are assumed to maintain an ongoing interaction
-	with their environment (e.g., the controlled system or other components of a communication
-	network) and are therefore called reactive systems [60, 94]. Traditional models
-	that describe computer programs as computing some result from given input values
-	are inadequate for the description of reactive systems. Instead, the behavior of reactive
-	systems is usually modelled by transition systems.
-	The term model checking designates a collection of techniques for the automatic
-	analysis of reactive systems. Subtle errors in the design of safety-critical systems that
-	often elude conventional simulation and testing techniques can be (and have been)
-	found in this way. Because it has been proven cost-effective and integrates well with
-	conventional design methods, model checking is being adopted as a standard procedure
-	for the quality assurance of reactive systems.
-	The inputs to a model checker are a (usually finite-state) description of the system to
-	be analysed and a number of properties, often expressed as formulas of temporal logic,
-	that are expected to hold of the system. The model checker either confirms that the
-	properties hold or reports that they are violated. In the latter case, it provides a counterexample:
-	a run that violates the property. Such a run can provide valuable feedback
-	and points to design errors. In practice, this view turns out to be somewhat idealized:
-	quite frequently, available resources only permit to analyse a rather coarse model of
-	the system. A positive verdict from the model checker is then of limited value because
-	bugs may well be hidden by the simplifications that had to be applied to the model.
-	On the other hand, counter-examples may be due to modelling artefacts and no longer
-	correspond to actual system runs. In any case, one should keep in mind that the object
-	of analysis is always an abstract model of the system. Standard procedures such as
-	code reviews are necessary to ensure that the abstract model adequately reflects the
-	behavior of the concrete system in order for the properties of interest to be established
-	or falsified. Model checkers can be of some help in this validation task because it is
-	possible to perform “sanity checks”, for example to ensure that certain runs are indeed
-	possible or that the model is free of deadlocks.
-	This paper is intended as a tutorial overview of some of the fundamental principles
-	of model checking, based on a necessarily subjective selection of the large body of
-	model checking literature.We begin with a case study in section 2 where the application
-	of model checking is considered from a user’s point of view. Section 3 reviews transition
-	systems, temporal logics, and automata-theoretic techniques that underly some approaches
-	to model checking. Section 4 introduces basic model checking algorithms for
-	linear-time and branching-time logics. Finally, section 5 collects some rather sketchy
-	references to more advanced topics. Much more material can be found in other contributions
-	to this volume and in the textbooks and survey papers [27, 28, 69, 97, 124] on
-	the subject. The paper contains many references to the relevant literature, in the hope
-	that this survey can also serve as an annotated bibliography.
+	Formele verificatie is een proces waarin bevestigd wordt of het bestudeerde systeem voldoet aan de specificaties of requirements. 
+	Dit kan worden gereaslisserd door verschillende manieren zials simulatie, stelling bewijzen en model checking. Zij worden voornamelijk gebruikt om te controleren op veiligheid, liveness, deadlock freeness en reachability requirements. 
+	
+	Formele verificatieomgeving: eenmaal het model gedefinieerd
+	en de temporele logische eigenschappen hebben we iets nodig dat dit mogelijk maakt
+	ons om te controleren of het op tijdautomaten gebaseerde model voldoet
+	de gedefinieerde eigenschappen. Om dit doel te bereiken overwegen we formele verificatie,
+	een systeemproces dat gebruik maakt van wiskundig redeneren
+	verifiëren of een systeem (dat wil zeggen het model) aan een bepaalde vereiste voldoet
+	(dat wil zeggen, de getimede temporele eigenschappen).
+	
+	
+	
+	
+	
+	
+	In general a model is a mathematical representation of the system under study. They can of different types such as abstract state machine models, automata based models, object oriented models etc. 
+	Further automata based models can make use of deterministic finite automata, nondeterministic finite automata, timed automata, Buchi automata, ω-automata etc. 
+	These models are used for modelling the formally specified system.
+	
+	
+	
+	
+	
 	\subsection{Requirements}
 	In het modelleren van systemen verwijst een requirement naar een specifieke functionaliteit, prestatie-eis, beperking of kwaliteitsattribuut dat aanwezig moet zijn in het systeem \cite{kotonya1998requirements}. Het is een formele beschrijving van wat het systeem moet kunnen doen of aan welke specificaties het moet voldoen.
-		Het opstellen van specificaties\cite{kotonya1998requirements} is een belangrijk proces, omdat het de basis legt voor het ontwerp en de ontwikkeling van het systeem. Door duidelijke specificaties te hebben, kunnen de betrokkenen, zoals ontwerpers en ontwikkelaars, een gemeenschappelijk begrip hebben van wat er van het systeem wordt verwacht.
+	Het opstellen van specificaties\cite{kotonya1998requirements} is een belangrijk proces, omdat het de basis legt voor het ontwerp en de ontwikkeling van het systeem. Door duidelijke specificaties te hebben, kunnen de betrokkenen, zoals ontwerpers en ontwikkelaars, een gemeenschappelijk begrip hebben van wat er van het systeem wordt verwacht.
 	Het is ook belangrijk om de haalbaarheid van de specificaties te overwegen. Sommige eisen kunnen technisch uitdagend zijn of beperkt worden door bijvoorbeeld budgettaire of tijdsbeperkingen. Daarom moeten de specificaties realistisch en praktisch uitvoerbaar zijn.
 	
+	
+	\subsection{Goede requirements}
+	
+	Feasible:
+	A requirement is feasible if an implementation of it on the planned
+	Valid:
+	A requirement is valid if and only if the requirement is one that the
+	system shall (must) meet.
+	Unambiguous:
+	A requirement is unambiguous if it has only one interpretation. Natural
+	language tends toward ambiguity.
+	Verifiable:
+	A requirement is verifiable if the finished product or system can be
+	tested to ensure that it meets the requirement.
+	Modifiable:
+	The characteristic modifiable refers to two or more interrelated
+	requirements or a complete requirements specification.
+	Consistent:
+	In general, consistency is a relationship among at least two
+	requirements.
+	Complete:
+	A requirements specification is complete if it includes all relevant
+	correct requirements, and sufficient information is available for the
+	product to be built.
+	
+	\subsection{specificaties}
 	Kortom, specificaties zijn gedetailleerde beschrijvingen van wat het systeem moet kunnen doen, welke prestaties het moet leveren en welke beperkingen er gelden. Ze dienen als een leidraad tijdens het ontwikkelingsproces en zorgen voor een duidelijke communicatie tussen de belanghebbenden over de gewenste
 	
-		\subsection{Goede requirements}
-		
-		Feasible
-		A requirement is feasible if an implementation of it on the planned
-		Valid
-		A requirement is valid if and only if the requirement is one that the
-		system shall (must) meet.
-		Unambiguous
-		A requirement is unambiguous if it has only one interpretation. Natural
-		language tends toward ambiguity.
-		Verifiable
-		A requirement is verifiable if the finished product or system can be
-		tested to ensure that it meets the requirement.
-		
-		Modifiable
-		The characteristic modifiable refers to two or more interrelated
-		requirements or a complete requirements specification.
-		Consistent
-		In general, consistency is a relationship among at least two
-		requirements.
-		Complete
-		A requirements specification is complete if it includes all relevant
-		correct requirements, and sufficient information is available for the
-		product to be built.
-		
-	\subsection{specificaties}
-
-		Requirements en spcificatiesl Assuming that the requirements are feasible with respect to the
+	Requirements en spcificatiesl Assuming that the requirements are feasible with respect to the
 	environment, Parnas and Madey [3] proposed the following acceptability condition for the software: NAT
 	∩ (NAT;SOF;OUT) ⊆ REQ
 	Here, the operator ; is the usual composition of relations.
@@ -341,17 +319,6 @@
 	https://www.sciencedirect.com/science/article/pii/S0167642315001033
 	
 	
-	Our main aim is application of formal methods to the intelligent adaptive systems to ensure correctness of system design.
-	2.1 Formal methods
-	Formal methods are mathematics based techniques for describing system properties. They provide frameworks within which people can specify, develop, and verify systems in a systematic manner. They help identify errors, ambiguities and problems in the early stages of the system development process [2].
-	Key elements of Formal methods
-	2.1.1 Formal Specification
-	It is a complete representation of the system under study using certain formal specification languages. They provide a complete syntax, semantics and pragmatics for its representation. Different specification languages used in developing formal methods are abstract state machines, CSP,LOTOS, RAISE, Rebeca modeling language, SPARK Ada, VDM and Z notation etc.[2,3].
-	
-	2.1.2 Modelling
-	In general a model is a mathematical representation of the system under study. They can of different types such as abstract state machine models, automata based models, object oriented models etc. Further automata based models can make use of deterministic finite automata, nondeterministic finite automata, timed automata, Buchi automata, ω-automata etc. These models are used for modelling the formally specified system.
-	2.1.3 Formal Verification
-	It is a process of confirming that system under study satisfies its specifications or requirements [2]. It can be achieved by various approaches such as simulation, theorem proving and model checking. They are mainly used to check different system requirements like safety, liveness, deadlock freeness and reachability requirements.
 	
 	
 	two types of labels: atomic actions and
@@ -359,16 +326,213 @@
 	
 	
 	
-	4.3 Requirements
-	In this section we list the informal requirements and desired functionality on the gear controller,
-	provided by Mecel AB. The requirements are to ensure the correctness of the gear controller. A few
-	operations, such as gear shifts and error detections, are crucial to the correctness. They must be
-	guaranteed within certain time bounds. In addition, there are also requirements on the controller to
-	ensure desired qualities of the vehicle, such as: good comfort, low fuel consumption, and low emission.
-	1. Performance.
-	2. Predictability
-	3. Functionality.
-	4. Error Detection
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\subsubsection{Functional vs non functional requirements}
+	Functionele requirements gaan over de functie die een systeem moet uitvoeren, terwijl non-functionele requrements betrwkking  hebben op de algemene eigenschappen van een systeem, zoals snelheid, bruikbaarheid, veiligheid, betrouwbaarheid. Non-functionele eisen worden ook wl systeemkwaliteiten betekent.
+	\subsubsection{Safety critical systems}
+	
+	De kennis van de mens is veranwoordelijk voor jet scheppen van kennis. Opdoen van kennis van veiligeheidsintegriteit ten overstaan van ontwetendheid. Kennisdoelen zijn daarom altijd belangrijk en kunnen worden onderscheiden in 3 domeinen: cognitief, affectief en psychomotorisch.\cite{winceckCriticalToSafety}
+	Een Veiligheidsanalyse is een manier voor het evalueren  van ongelukken en risicos op verschillende niveaus. Met een veiligheidsanalyse wordt gekeken naar mensen en systemen die worden blootgesteld aan een gevaar/risico en de mogelijkheid deze te minimaliseren.
+	Veiligheid is moeilijk te definiëren omdat het een vaag concept is.
+	Een veiligheidsanalist  moet kennis hebben van het systeem, maar ook ervaring met het systeem en vooral hoe een fout in het systeem zich voordoet.
+	Volgens Stoney\cite{chambersHazardAnalysisSCS} is veiligheid een aspect dat de veiligheid van mensenleven  of de omgevig niet in gevaar brengt.
+	De interactie tussen systeem en omgeving levert kennis op door ad-hoc ervaring. Maar ook is kennis van abstractie en systeemdoelen belangrijk.
+	Het kwalificeren van informatie moet ook op waarde geschat worden Een verkeerde schatting kan fataal zijn. Zelfs als een veiligheidsanalyse  is gedaan waarbij risicos zijn gedefinieerd en geprioretiseerd is een definitie van een veiligheidsniveau nodig. Soms zijn hier richtlijnen voor en soms ook niet.
+	Er zijn voorbeelden van tools en technieken te gebruiken voor een veiligheidsanalyse. En dat zijn
+	\begin{enumerate}
+		\item   checklists voor critical safety items
+		\item  fault tree analysis
+		\item  event tree analysis
+		\item failure modes en critical effects analysis (FMECA, FMET)
+		\item hazard operability studies
+	\end{enumerate}
+	
+	\cite{rslater1998SCSAnalysis}
+	
+	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 144723.png}
+	
+	
+%	\subsection{Requirements engineering}
+%	“Requirements engineering [DoD 1991] involves all lifecycle activities
+%	devoted to identification of user requirements, analysis of the
+%	requirements to derive additional requirements, documentation of
+%	the requirements as a specification, and validation of the documented
+%	requirements against user needs, as well as processes that support
+%	these activities.” Note that requirements engineering is a domainneutral
+%	discipline; e.g., it can be used for software, hardware, and
+%	electromechanical systems. As an engineering discipline, it
+%	incorporates the use of quantitative methods, some of which will be
+%	described in later chapters of this book.
+%	Whereas requirements analysis deals with the elicitation and
+%	examination of requirements, requirements engineering deals with all
+%	phases of a project or product life cycle from innovation to obsolescence.
+%	Because of the rapid product life cycle (i.e., innovation→development→
+%	release→maintenance→obsolescence) that software has enabled,
+%	requirements engineering has further specializations for software.
+%	Thayer and Dorfman [Thayer et al. 1997], for example, define software
+%	requirements engineering as “the science and discipline concerned
+%	with establishing and documenting software requirements.”
+%	
+%	
+%	Door middel van requirements wordt vastgelegd welke functionaliteiten het systeem moet bevatten, welke prestatieniveaus het moet bereiken, welke beperkingen moeten worden gehandhaafd en welke kwaliteitsattributen moeten worden nageleefd.
+%	Het formuleren en vaststellen van requirements is een cruciale fase in het systeemmodelleringsproces, omdat het een duidelijk beeld geeft van de gewenste systeemeigenschappen en helpt bij het bepalen van de benodigde functionaliteit en prestaties. Dit legt de basis voor verdere stappen in het modelleringsproces, zoals ontwerp, implementatie en testen.
+%	
+%	\subsection{Systeem omschrijving}
+%	To enable formalization (and verication) of requirements, we decorate the system description with
+%	two integer variables, ErrStat and UseCase. The variable ErrStat is assigned values at unrecoverable
+%	errors: 1 if Clutch fails to close, 2 if Clutch fails to open, 3 if GearBox fails to set a gear, and 4 if GearBox
+%	fails to release a gear. The variable UseCase is assigned values whenever a recoverable error occurs in
+%	Engine: 1 if it fail to deliver zero torque, and 2 if it is not able to nd synchronous speed. The system
+%	model is also decorated to enable verication of bounded response time properties, as described in
+%	Section 3.2.
+%	
+%	Intuitively, the rst rule describes a local internal action transition in a component,
+%	and possibly the resetting of variables.
+%	The second rule describes synchronisation transitions that synchronise two
+%	components.
+%	The third rule describes delay transitions, i.e. when all clocks increase synchronously
+%	with time.
+%	
+%	
+%	Reactive systems can be broadly classified as distributed systems whose subcomponents
+%	are spatially separated and concurrent systems that share resources such as processors
+%	and memories. Distributed systems communicate by message passing, whereas
+%	concurrent systems may use shared variables. Concurrent processes may share a common
+%	clock and execute in lock-step (time-synchronous systems, typical for hardware
+%	verification problems) or operate asynchronously, sharing a common processor. In the
+%	latter case, one will typically assume fairness conditions that ensure processes that
+%	could execute are eventually scheduled for execution. A common framework for the
+%	representation of these different kinds of systems is provided by the concept of transition
+%	systems. Properties of (runs of) transition systems are conveniently expressed in
+%	temporal logic.
+%	
+%	
+%	Computerized systems pervade more and more our everyday lives. We rely on digital
+%	controllers to supervise critical functions of cars, airplanes, and industrial plants. Digital
+%	switching technology has replaced analog components in the telecommunication
+%	industry, and security protocols enable e-commerce applications and privacy. Where
+%	important investments or even human lives are at risk, quality assurance for the underlying
+%	hardware and software components becomes paramount, and this requires formal
+%	models that describe the relevant part of the systems at an adequate level of abstraction.
+%	The systems we are focussing on are assumed to maintain an ongoing interaction
+%	with their environment (e.g., the controlled system or other components of a communication
+%	network) and are therefore called reactive systems [60, 94]. Traditional models
+%	that describe computer programs as computing some result from given input values
+%	are inadequate for the description of reactive systems. Instead, the behavior of reactive
+%	systems is usually modelled by transition systems.
+%	The term model checking designates a collection of techniques for the automatic
+%	analysis of reactive systems. Subtle errors in the design of safety-critical systems that
+%	often elude conventional simulation and testing techniques can be (and have been)
+%	found in this way. Because it has been proven cost-effective and integrates well with
+%	conventional design methods, model checking is being adopted as a standard procedure
+%	for the quality assurance of reactive systems.
+%	The inputs to a model checker are a (usually finite-state) description of the system to
+%	be analysed and a number of properties, often expressed as formulas of temporal logic,
+%	that are expected to hold of the system. The model checker either confirms that the
+%	properties hold or reports that they are violated. In the latter case, it provides a counterexample:
+%	a run that violates the property. Such a run can provide valuable feedback
+%	and points to design errors. In practice, this view turns out to be somewhat idealized:
+%	quite frequently, available resources only permit to analyse a rather coarse model of
+%	the system. A positive verdict from the model checker is then of limited value because
+%	bugs may well be hidden by the simplifications that had to be applied to the model.
+%	On the other hand, counter-examples may be due to modelling artefacts and no longer
+%	correspond to actual system runs. In any case, one should keep in mind that the object
+%	of analysis is always an abstract model of the system. Standard procedures such as
+%	code reviews are necessary to ensure that the abstract model adequately reflects the
+%	behavior of the concrete system in order for the properties of interest to be established
+%	or falsified. Model checkers can be of some help in this validation task because it is
+%	possible to perform “sanity checks”, for example to ensure that certain runs are indeed
+%	possible or that the model is free of deadlocks.
+%	This paper is intended as a tutorial overview of some of the fundamental principles
+%	of model checking, based on a necessarily subjective selection of the large body of
+%	model checking literature.We begin with a case study in section 2 where the application
+%	of model checking is considered from a user’s point of view. Section 3 reviews transition
+%	systems, temporal logics, and automata-theoretic techniques that underly some approaches
+%	to model checking. Section 4 introduces basic model checking algorithms for
+%	linear-time and branching-time logics. Finally, section 5 collects some rather sketchy
+%	references to more advanced topics. Much more material can be found in other contributions
+%	to this volume and in the textbooks and survey papers [27, 28, 69, 97, 124] on
+%	the subject. The paper contains many references to the relevant literature, in the hope
+%	that this survey can also serve as an annotated bibliography.
+%	\subsection{Requirements}
+%	In het modelleren van systemen verwijst een requirement naar een specifieke functionaliteit, prestatie-eis, beperking of kwaliteitsattribuut dat aanwezig moet zijn in het systeem \cite{kotonya1998requirements}. Het is een formele beschrijving van wat het systeem moet kunnen doen of aan welke specificaties het moet voldoen.
+%		Het opstellen van specificaties\cite{kotonya1998requirements} is een belangrijk proces, omdat het de basis legt voor het ontwerp en de ontwikkeling van het systeem. Door duidelijke specificaties te hebben, kunnen de betrokkenen, zoals ontwerpers en ontwikkelaars, een gemeenschappelijk begrip hebben van wat er van het systeem wordt verwacht.
+%	Het is ook belangrijk om de haalbaarheid van de specificaties te overwegen. Sommige eisen kunnen technisch uitdagend zijn of beperkt worden door bijvoorbeeld budgettaire of tijdsbeperkingen. Daarom moeten de specificaties realistisch en praktisch uitvoerbaar zijn.
+%	
+%	Kortom, specificaties zijn gedetailleerde beschrijvingen van wat het systeem moet kunnen doen, welke prestaties het moet leveren en welke beperkingen er gelden. Ze dienen als een leidraad tijdens het ontwikkelingsproces en zorgen voor een duidelijke communicatie tussen de belanghebbenden over de gewenste
+%	
+%		\subsection{Goede requirements}
+%		
+%		Feasible
+%		A requirement is feasible if an implementation of it on the planned
+%		Valid
+%		A requirement is valid if and only if the requirement is one that the
+%		system shall (must) meet.
+%		Unambiguous
+%		A requirement is unambiguous if it has only one interpretation. Natural
+%		language tends toward ambiguity.
+%		Verifiable
+%		A requirement is verifiable if the finished product or system can be
+%		tested to ensure that it meets the requirement.
+%		
+%		Modifiable
+%		The characteristic modifiable refers to two or more interrelated
+%		requirements or a complete requirements specification.
+%		Consistent
+%		In general, consistency is a relationship among at least two
+%		requirements.
+%		Complete
+%		A requirements specification is complete if it includes all relevant
+%		correct requirements, and sufficient information is available for the
+%		product to be built.
+%		
+%	\subsection{specificaties}
+%
+%		Requirements en spcificatiesl Assuming that the requirements are feasible with respect to the
+%	environment, Parnas and Madey [3] proposed the following acceptability condition for the software: NAT
+%	∩ (NAT;SOF;OUT) ⊆ REQ
+%	Here, the operator ; is the usual composition of relations.
+%	A system implementation sys= IN;SOF;OUT; is then acceptable if and only if it satisfies the following
+%	condition: NAT ∩ SYS ⊆ REQ
+%	https://www.sciencedirect.com/science/article/pii/S0167642315001033
+%	
+%	
+%	Our main aim is application of formal methods to the intelligent adaptive systems to ensure correctness of system design.
+%	2.1 Formal methods
+%	Formal methods are mathematics based techniques for describing system properties. They provide frameworks within which people can specify, develop, and verify systems in a systematic manner. They help identify errors, ambiguities and problems in the early stages of the system development process [2].
+%	Key elements of Formal methods
+%	2.1.1 Formal Specification
+%	It is a complete representation of the system under study using certain formal specification languages. They provide a complete syntax, semantics and pragmatics for its representation. Different specification languages used in developing formal methods are abstract state machines, CSP,LOTOS, RAISE, Rebeca modeling language, SPARK Ada, VDM and Z notation etc.[2,3].
+%	
+%	2.1.2 Modelling
+%	In general a model is a mathematical representation of the system under study. They can of different types such as abstract state machine models, automata based models, object oriented models etc. Further automata based models can make use of deterministic finite automata, nondeterministic finite automata, timed automata, Buchi automata, ω-automata etc. These models are used for modelling the formally specified system.
+%	2.1.3 Formal Verification
+%	It is a process of confirming that system under study satisfies its specifications or requirements [2]. It can be achieved by various approaches such as simulation, theorem proving and model checking. They are mainly used to check different system requirements like safety, liveness, deadlock freeness and reachability requirements.
+%	
+%	
+%	two types of labels: atomic actions and
+%	delay actions (
+%	
+%	
+%	
+%	4.3 Requirements
+%	In this section we list the informal requirements and desired functionality on the gear controller,
+%	provided by Mecel AB. The requirements are to ensure the correctness of the gear controller. A few
+%	operations, such as gear shifts and error detections, are crucial to the correctness. They must be
+%	guaranteed within certain time bounds. In addition, there are also requirements on the controller to
+%	ensure desired qualities of the vehicle, such as: good comfort, low fuel consumption, and low emission.
+%	1. Performance.
+%	2. Predictability
+%	3. Functionality.
+%	4. Error Detection
  
 	
 %	1.5 Definition of Requirements Engineering
@@ -954,38 +1118,38 @@
 %	(i.e., the timed temporal properties).
 	
 	
-	Formeel model: Specificatie wordt gebruikt om een formele beschrijving te geven
-	van het systeem dat wordt geanalyseerd. Het formele
-	specificatie beschouwt een taal met een wiskundig gedefinieerde
-	syntaxis en semantiek. In dit artikel vertegenwoordigen wij de
-	systeemgedrag als een netwerk van getimede automaten, d.w.z
-	eindige-toestandsmachine uitgebreid met klokvariabelen [11]. A
-	Het systeem is gemodelleerd als een netwerk van parallel geschakelde getimede automaten.
-	Het model is uitgebreid met begrensde discrete variabelen
-	zijn onderdeel van de staat. Een toestand van het systeem wordt gedefinieerd door de
-	locatie van alle automaten, de klokwaarden en de waarden van de
-	discrete variabelen. De automaat kan een voorsprong afvuren (d.w.z. uitvoeren
-	een overgang) afzonderlijk of synchroniseren met een andere automaat
-	met als doel een nieuwe staat te leiden.
-	
-	Hieronder specificeren we de onderscheidende elementen van de getimede automaten:
-	Bewaker: een bepaalde uitdrukking bedoeld om een Booleaanse waarde te verifiëren
-	expressie geëvalueerd op randen;
-	Invariant: een toestand die de tijd aangeeft die kan zijn
-	besteed aan een knooppunt;
-	Kanaal: overwogen voor het synchroniseren van de voortgang van
-	twee of meer automaten.
-	Temporele logica: om eigenschappen te definiëren hebben we een precieze nodig
-	notatie.
-	
-	
-	Formele verificatieomgeving: eenmaal het model gedefinieerd
-	en de temporele logische eigenschappen hebben we iets nodig dat dit mogelijk maakt
-	ons om te controleren of het op tijdautomaten gebaseerde model voldoet
-	de gedefinieerde eigenschappen. Om dit doel te bereiken overwegen we formele verificatie,
-	een systeemproces dat gebruik maakt van wiskundig redeneren
-	verifiëren of een systeem (dat wil zeggen het model) aan een bepaalde vereiste voldoet
-	(dat wil zeggen, de getimede temporele eigenschappen).
+%	Formeel model: Specificatie wordt gebruikt om een formele beschrijving te geven
+%	van het systeem dat wordt geanalyseerd. Het formele
+%	specificatie beschouwt een taal met een wiskundig gedefinieerde
+%	syntaxis en semantiek. In dit artikel vertegenwoordigen wij de
+%	systeemgedrag als een netwerk van getimede automaten, d.w.z
+%	eindige-toestandsmachine uitgebreid met klokvariabelen [11]. A
+%	Het systeem is gemodelleerd als een netwerk van parallel geschakelde getimede automaten.
+%	Het model is uitgebreid met begrensde discrete variabelen
+%	zijn onderdeel van de staat. Een toestand van het systeem wordt gedefinieerd door de
+%	locatie van alle automaten, de klokwaarden en de waarden van de
+%	discrete variabelen. De automaat kan een voorsprong afvuren (d.w.z. uitvoeren
+%	een overgang) afzonderlijk of synchroniseren met een andere automaat
+%	met als doel een nieuwe staat te leiden.
+%	
+%	Hieronder specificeren we de onderscheidende elementen van de getimede automaten:
+%	Bewaker: een bepaalde uitdrukking bedoeld om een Booleaanse waarde te verifiëren
+%	expressie geëvalueerd op randen;
+%	Invariant: een toestand die de tijd aangeeft die kan zijn
+%	besteed aan een knooppunt;
+%	Kanaal: overwogen voor het synchroniseren van de voortgang van
+%	twee of meer automaten.
+%	Temporele logica: om eigenschappen te definiëren hebben we een precieze nodig
+%	notatie.
+%	
+%	
+%	Formele verificatieomgeving: eenmaal het model gedefinieerd
+%	en de temporele logische eigenschappen hebben we iets nodig dat dit mogelijk maakt
+%	ons om te controleren of het op tijdautomaten gebaseerde model voldoet
+%	de gedefinieerde eigenschappen. Om dit doel te bereiken overwegen we formele verificatie,
+%	een systeemproces dat gebruik maakt van wiskundig redeneren
+%	verifiëren of een systeem (dat wil zeggen het model) aan een bepaalde vereiste voldoet
+%	(dat wil zeggen, de getimede temporele eigenschappen).
 	
  
 	
@@ -1015,27 +1179,27 @@
 	
 	\includegraphics[width=14cm]{Schermafbeelding 2023-12-08 144723.png}
 	
-	
-	Safety Critical Real-Time Systems (RTS). UML and MARTE are standardized
-	modelling languages widely accepted by industrial designers for
-	the design of RTS using Model-Driven Engineering (MDE). However, formal
-	verification at early phases of the system lifecycle for UML-MARTE
-	models remains mainly an open issue.
-	In this paper1, we present a time properties verification framework for
-	UML-MARTE safety critical RTS. This framework relies on a propertydriven
-	transformation from UML architecture and behaviour models to
-	executable and verifiable models expressed with Time Petri Nets (TPN).
-	Meanwhile, it translates the time properties into a set of property patterns,
-	corresponding to TPN observers. The observer-based model checking
-	approach is then performed on the produced TPN. This verification
-	framework can assess time properties like upper bound for loops and
-	buffers, Best/Worst-Case Response Time, Best/Worst-Case Execution
-	Time, Best/Worst-Case Traversal Time, schedulability, and synchronization-
-	related properties (synchronization, coincidence, exclusion, precedence,
-	sub-occurrence, causality). In addition, it can verify some behavioural
-	properties like absence of deadlock or dead branches. This
-	framework is illustrated with a representative case study. This paper also
-	provides experimental results and evaluates the method’s performance.
+%	
+%	Safety Critical Real-Time Systems (RTS). UML and MARTE are standardized
+%	modelling languages widely accepted by industrial designers for
+%	the design of RTS using Model-Driven Engineering (MDE). However, formal
+%	verification at early phases of the system lifecycle for UML-MARTE
+%	models remains mainly an open issue.
+%	In this paper1, we present a time properties verification framework for
+%	UML-MARTE safety critical RTS. This framework relies on a propertydriven
+%	transformation from UML architecture and behaviour models to
+%	executable and verifiable models expressed with Time Petri Nets (TPN).
+%	Meanwhile, it translates the time properties into a set of property patterns,
+%	corresponding to TPN observers. The observer-based model checking
+%	approach is then performed on the produced TPN. This verification
+%	framework can assess time properties like upper bound for loops and
+%	buffers, Best/Worst-Case Response Time, Best/Worst-Case Execution
+%	Time, Best/Worst-Case Traversal Time, schedulability, and synchronization-
+%	related properties (synchronization, coincidence, exclusion, precedence,
+%	sub-occurrence, causality). In addition, it can verify some behavioural
+%	properties like absence of deadlock or dead branches. This
+%	framework is illustrated with a representative case study. This paper also
+%	provides experimental results and evaluates the method’s performance.
 	\cite{Time Properties Verification Framework for
 		UML-MARTE Safety Critical Real-Time Systems}
 	
@@ -2443,130 +2607,68 @@
 	%	
 	%	
 	%	\subsubsection{LTL}
-	
 		\subsubsection{CTL}
 	
-	CTL, geïntroduceerd door Emerson en Clarke [18], is een tijdelijke vertakkingstijd
-	logica die wordt gebruikt als specificatietaal voor eindige-toestandssystemen. De executies
-	van het systeem worden gemodelleerd als lineaire reeksen systeemgebeurtenissen. Die gebeurtenis
-	reeksen worden in de onderliggende berekeningsboom rekenpaden genoemd
-	het modelleren van de structuur van de tijd.
-	CTL-formules zijn samengesteld uit logische operatoren, padkwantificatoren en
-	tijdelijke operatoren. De padkwantificatoren worden gebruikt om aan te geven of een eigenschap dat zou moeten doen
-	houd een bepaald rekenpad (E) of alle rekenpaden (A) vast
-	uit de huidige staat. De temporele operatoren worden gebruikt om eigenschappen te beschrijven
-	van een pad door de berekeningsboom.
-	
-	Computatieboomlogica (CTL) is een vertakkingstijdlogica
-	dat omvat zowel de propositionele connectieven als
-	temporele verbindingen AX, EX, AU, EU, AG, EG, AF,
-	en EF.
-	%	
-	%	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. 
-	We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. 
-	
+	Computational Tree Logic(CTL), geïntroduceerd door Emerson en Clarke  , is een   logica die wordt gebruikt als specificatietaal voor model checking.  
+	CTL-formules zijn samengesteld uit logische operatoren, padkwantificatoren en 	tijdelijke operatoren. De kwantificatoren worden gebruikt om aan te geven of een eigenschap van het systeem geldig is op een bepaald rekenpad (E) of alle rekenpaden (A) van
+	een locatie. Enkele temporele operatoren gebruikt om eigenschappen te beschrijven van een pad zijn AX, EX, AU, EU, AG, EG, AF,en EF. Met deze kwantoren is  mogelijk specificaties van een requirement te vertalen naar een formele specificatie.
+	Een systeem of model in Uppaal bestaat uit locaties, die zijn verbonden via edges met synchronisaties, realtime-clocks en integer variabelen
+	Deze formele speificatie wordt op zijn beurt weer getest in eenformeel verifieerbare omgeing. 
 	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
 	
-	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
-	States hebben labels.Stateformule worden opgebouwd uit deze atomaire formules met behulp van de Booleaans e kwantificatoren, met de beperking dat we een padlogische kwantificator in een statefformula niet kunnen ontkennen.  
+	Op deze manier is een systeem van een model testbaar op correctheid, rechability, safety,deadlock en liveness. 
 	
-	
-	
-	
-	
-	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
-	
-		\paragraph{Timed automata}
-	A timed automaton is a (non-deterministic) finite state
-	automaton composed of edges and vertexes and extended
-	with real-valued clocks and integer variables. Clocks proceed
-	at the same rate and measure the time since they were
-	reset. Integer variables are finite domain variables with
-	rate zero.
-	
-	Automata learning algorithms have received signicant attention from the
-	verication community in the past two decades. Besides being used to improve
-	the eciency and scalability of compositional verication, automata learning has
-	also been successfully applied in other aspects of verication: among others, it has
-	been used to automatically generate interface models of computer programs [7],
-	to learn a model of the traces of the system errors for diagnosis purposes [27], to
-	nd bugs in the implementation of network protocols [39], to extract behavior
-	model of programs for statistical program analysis [29], and to do model-based
-	testing and verication [81, 107]. Later in 2017, Frits Vaandrager [102] explains
-	the concept of model learning used in the above applications.
-	In order to be of practical use, the learning algorithms have to be computationally
-	ecient and easily adaptable to the dierent learning scenarios. On the
-	one hand, with more complex tasks at hand, some researchers have proposed several
-	optimizations to improve the eciency of nite automata learning, such as
-	learning algorithms based on classication trees [59,63], ecient counterexample
-	analysis for learning algorithms [87], learning algorithm NL for nondeterministic
-	nite automata (NFAs) [20], and learning algorithms for alternating nite
-	automata [10].
+	Deze manier van testen verbeterd niet alleen de efficiency en schaalbaarheid van  compositional verifcation, automata   is ook successfully toegepast in andere aspecten of verication: among others, it has
+	zoals het  automatically generate interface models of computer programs ,
+	to learn a model of the traces of the system errors for diagnosis purposes  ,   bugs achterhalen in de implementation van network protocols  , gedrag te testen
+	model of programs for statistical program analysis  , and to do model-based
+	testing and verication  .  
 	
 	
 	
 	
 	\paragraph{Wat is uppaal}
 	Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time systemen, gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden. Het is geschikt voor systemen die kunnen worden gemodelleerd als een verzameling niet-deterministische processen met een eindige controlestructuur en klokken met reële waarde, die communiceren via kanalen of gedeelde variabelen . Typische toepassingsgebieden zijn met name real-time controllers en communicatieprotocollen, waarbij timingaspecten van cruciaal belang zijn. %\cite{uppaalFeatures}
-	
-	UPPAAL is a verification tool for a TA based modeling language. Besides dense clocks,
-	the tool supports both simple and complex data types like bounded integers and arrays
-	as well as synchronization via shared variables and actions. The specification language
+	Behalve clocks, ondersteund de tool   zowel simple and complex data types zals bounded integers and arrays, synchronization via shared variablelen en actions. The observer-based model checking
+	approach is then performed on the produced TPN. This verification
+	framework can assess time properties like upper bound for loops and
+	buffers, Best/Worst-Case Response Time, Best/Worst-Case Execution
+	Time, Best/Worst-Case Traversal Time, schedulability, and synchronization-
+	related properties (synchronization, coincidence, exclusion, precedence,
+	sub-occurrence, causality) The specification language
 	supports safety, liveness, deadlock, and response properties.
 	
-	To produce test sequences, we shall make use of UPPAAL’s ability to generate diagnostic
-	traces witnessing a submitted safety property. Currently UPPAAL supports three
-	options for diagnostic trace generation: some trace leading to the goal state, the shortest
+	UPPAAL heeft een functie om diagnostische
+	traces uit te voeren . UPPAAL ondersteund  options voor  diagnostic trace generation: some trace leading to the goal state, the shortest
 	trace with the minimum number of transitions, and fastest trace with the shortest
-	accumulated time delay. The underlying algorithm used for finding time-optimal traces
+	accumulated time delay. Het algorithm used for finding time-optimal traces
 	is a variation of the A-algorithm [2,12]. Hence, to improve performance it is possible
 	to supply a heuristic function estimating the remaining cost from any state to the goal
 	state.
-	
-	
-	
-	\paragraph{Wat is statistical model checking?}
-	Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
-	%\cite{verimagStatsModelChecking}.
-	\cite{inriaStatsMoodCheck}
-	\cite{ buddeModelChecker}
-	%\cite{AGHASuervey }
-	
-	\paragraph{Waarom gebruiken we statistisch model checking?}
-	Om de bovenstaande problemen te overwinnen stellen we voor om te werken met Statistical Model Checking , een aanpak die onlangs is voorgesteld als alternatief om een uitputtende verkenning van de toestandsruimte van het model te vermijden. Het kernidee van de aanpak is om een aantal simulaties van het systeem uit te voeren, deze te monitoren en vervolgens de resultaten uit het statistische gebied te gebruiken (inclusief het testen van sequentiële hypothesen of Monte Carlo-simulaties) om te beslissen of het systeem aan de eigenschap voldoet of niet. mate van vertrouwen. Van nature is SMC een compromis tussen testen en klassieke modelcontroletechnieken. Het is bekend dat op simulatie gebaseerde methoden veel minder geheugen- en tijdintensief zijn dan uitputtende methoden, en vaak de enige optie zijn.
-	\cite{inriaStatsMoodCheck}Alternatieve tools voor Uppaal zijn Asynchronous Events,Vesta en MRMC.
+	Het domein waarop Uppaal modellen worden gebruikt is breed. Dit bevat o.a. medical equipment, factory automation, transportation,
+	communications, automotive.
 	
 	\paragraph{Formal testing}
 	
-	Index Terms—SCADA, model checking, formal methods, timed
+	model checking, formal methods, timed
 	automaton, temporal logic, critical infrastructure, security, safety
-	We have worked on projects for a broad range of application
-	domains; e.g., medical equipment, factory automation, transportation,
-	communications, automotive.
+	
+	
 	
 	
 	
 	documented, traced, reviewed, and tested
 	\paragraph{Formal  verification}
-	In order to support the formal verification based on MC,
-	a timed automata should be created to express the system
-	behavior, supporting the evaluation of different properties such
-	as safety, reachability, liveness, and deadlock [10]. However,
-	generating these representations is not a simple task and
-	requires sufficient knowledge of the design team to correctly
-	express the system properties. To automate the timed automata
-	construction, it is our claim that a model transformation can
-	be performed using as input the architectural representation.
 	
-	An implementation, ψIMP, consists of a description
+	
+	An implementation,, consists of a description
 	of the actual hardware design that is to be
 	verified. A specification, ρSPEC, is a description of
 	the intended/required (properties) behavior of a
 	hardware design. Formal Verification (FV) is a
 	systematic process of ensuring, through
 	exhaustive algorithmic techniques, that a design
-	implementation ψIMP satisfies the properties
+	implementation satisfies the properties
 	established in its specification ρSPEC. With formal
 	verification, we are able to overcome both of
 	simulation’s challenges: the observability and the
@@ -2586,7 +2688,16 @@
 	disadvantage of the formal verification is its
 	limited capacity when the explosion state [6] is
 	present.
-	There are two types of formal verification:
+	
+	Een implementatie, bestaat uit een omschrijving van het hardware design dat moet worden geverifieerd. Een specificatie is een beschrijvnig van de vereiste eigenschappen van een hardware design.
+	Formele verificatie is een systematich proces dat ervoor moet zorgen dat, door middel van  exhaustive algorithmic techniques, dat een implementatieontwerp voldoet aan de eisen vastgesteld ine het specificatiedocument.
+	Met formele verificatie komen we voor een nieuwe uitdaging: de oberserveerbaarheid en de controleerbaarheid, sindsdat formele verificatie algorithmically and exhaustively  alle input waarden controleert in een tijdsvak.
+	De simulatie is empirisch, wat betekent dart je trial en error gebruikt om bugs te achterhalen. Het zou veel tijd kosten om alle mogelijke compinaties te testen.
+	Het is daarom nooit compleet. Maar verfificatie richts zich op de fouten in het ontwerp, niet op wat het ontwerp zou moeten doen. Formele verificatie, aande andere kant, is een wiskundige en uitputtende en stelt de engineer  in taat de focus te leggen op de
+	intentie, of "wat is juiste gedrag van het ontwerp". Het voornamelijks nadeel van formele verificatie is de beperkte capaciteit als er een state-explosie
+	
+	
+	Er zijn twee typen formal verification:
 	• EQUIVALENCE CHECKING: It is concerned
 	with the verification that two
 	representations of the same design are
@@ -2599,30 +2710,6 @@
 	implementation.
 	
 	
-	The main validation methods for complex systems are a simulation, testing, deductive verification,
-	and model checking. Simulation and testing [82] both involve making experiments
-	before using the system in the field. While simulation is carried out on an abstraction or a
-	model of the system, testing is done on the actual product. In the case of circuits, simulation
-	is carried out on the design of the circuit, whereas testing is done on the circuit itself. In
-	both situations, these techniques inject signals at specific points in the system and observe
-	the resulting signals at other points. For software, simulation and testing generally involve
-	preparing determined inputs and observing the corresponding outputs. These techniques
-	can be a cost-efficient method to find many errors. However, checking all of the possible
-	interactions and potential pitfalls utilizing simulation and testing techniques is rarely
-	possible.
-	This problem of design validation (ensuring the correctness of the design at the earliest
-	stage possible) is the main challenge in any responsible system development process, and
-	the tasks intended for its solution occupy a huge portions of the development cycle cost
-	and time budgets. The currently practiced techniques for design validation in most places
-	are still the veteran methods of simulation and testing. Although provably effective in the
-	very early stages of debugging, when the design is still infested with multiple bugs, their
-	effectiveness drops quickly as the design becomes cleaner, and they require an alarmingly
-	increasing amount of time to uncover the more subtle bugs.
-	A principal disadvantage of these methods is that one can never be sure when a limit
-	has been reached or even an estimate of how many bugs may still lurk in the design. As the
-	complexity of designs increases tremendously, say from 0.5 to 5 million gates per chip, some
-	far-seeing managers predict the complete collapse of these conventional methods and their
-	total inability to scale up [53].
 	The approach of formal verification is a very attractive and dramatically appealing alternative
 	to simulation and testing. While simulation and testing explore some of the possible
 	behaviors and scenarios of the system, the question of whether the unexplored trajectories
@@ -2649,6 +2736,14 @@
 	discipline into a viable practical method that can potentially be integrated as an vital
 	technique for design validation in a lot of industrial development processes [53].
 	
+	Dee aanpak van formele verifcatie is een aantrekkelijke en interressant alternatief voor simulatie en testen. Terwijl simulatie en testen behoren tot een van de gedragingen en sscenarios van het systeem, de vraag 
+	of  noontgonnen paden met een fatale bug open blijven. Formele verificatie aande  andere hand  gaat in op een verkenning van alle mogelijke gedragingen. Dus, als een ontwerp correct is verklaard aan de hand van een formele verificatie methode,
+	betekent dit dat alle mogelijke gedragingen zijn nagelopen op een manier dat gezegd kan worden dat er geen ontbrekende en ongetoetste vragen meer zijn.
+	Een van de manieren voor formal verificatie is model checking. I model checing wordt een gedragseigenschap geverifieerd over een model door implpiciet of expliciet alle bereikbare locaties a te lopen die naar een dergelijke state/locatie kunnen leiden.
+	Vergeleken met andere methoden heeft model checking zin voordelen.
+	Ten eerste is het volledig automatisch. As er fouten opduiken dan wordt er een counterexample gegenegeer waaruit de bugs zichtbaar worden. Hierdoor rijg je inzicht in de oorzaak waarom een failure ontstaat en worden oplossingen zichtbaar.
+	Model checking heeft een 	solide en wiskundige onderhouwing
+	
 	\paragraph{Formal  verification environment}
 	Formal Verification Environment: once defined the model
 	and the temporal logic properties, we need something enabling
@@ -2665,15 +2760,236 @@
 	validation technique used by industry today. However, despite the importance and the
 	many resources and man-hours invested by industry (about 30% to 50% of development
 	effort), testing remains quite ad hoc and error prone.
-	We focus on conformance testing i.e., checking by means of execution whether the
-	behavior of some black box implementation conforms to that of its specification, and
-	moreover doing this within minimum time. A promising approach to improving the
-	effectiveness of testing is to base test generation on an abstract formal model of the
-	system under test (SUT) and use a test generation tool to (automatically or user guided)
-	generate and execute test cases. Model based test generation has been under scientific
-	study for some time, and practically applicable test tools are emerging [4,16,18,10].
-	However, little is still known in the context of real-time systems.
-	
+%		\subsubsection{CTL}
+%	
+%	CTL, geïntroduceerd door Emerson en Clarke [18], is een tijdelijke vertakkingstijd
+%	logica die wordt gebruikt als specificatietaal voor eindige-toestandssystemen. De executies
+%	van het systeem worden gemodelleerd als lineaire reeksen systeemgebeurtenissen. Die gebeurtenis
+%	reeksen worden in de onderliggende berekeningsboom rekenpaden genoemd
+%	het modelleren van de structuur van de tijd.
+%	CTL-formules zijn samengesteld uit logische operatoren, padkwantificatoren en
+%	tijdelijke operatoren. De padkwantificatoren worden gebruikt om aan te geven of een eigenschap dat zou moeten doen
+%	houd een bepaald rekenpad (E) of alle rekenpaden (A) vast
+%	uit de huidige staat. De temporele operatoren worden gebruikt om eigenschappen te beschrijven
+%	van een pad door de berekeningsboom.
+%	
+%	Computatieboomlogica (CTL) is een vertakkingstijdlogica
+%	dat omvat zowel de propositionele connectieven als
+%	temporele verbindingen AX, EX, AU, EU, AG, EG, AF,
+%	en EF.
+%	%	
+%	%	Doel van de studieis het modellerern vane eng eautomatiseerde sluis in Upaal. Het testen van het model op correctheid, rechability, safety en liveness kan worden uitgewerkt aan de hand van specificates en proposities vertaald uit de requirementsanalyse. 
+%	We moeten aantonen dat een real-time programma voldoet aan de eisen opgesteld en gespecificeerd. 
+%	
+%	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
+%	
+%	Temporele logica is een al lang gebruikt en goed begrepen concept om softwarespecificaties en computerprogramma's te modelleren door middel van toestandsovergangsemantiek.
+%	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over mogelijke reeksen van opeenvolgende toestanden.
+%	States hebben labels.Stateformule worden opgebouwd uit deze atomaire formules met behulp van de Booleaans e kwantificatoren, met de beperking dat we een padlogische kwantificator in een statefformula niet kunnen ontkennen.  
+%	
+%	
+%	
+%	
+%	
+%	Het bewijs van de modeleigenschappen kan wiskundig worden opgesteld met behulp van kwantoren, zoals:
+%	
+%		\paragraph{Timed automata}
+%	A timed automaton is a (non-deterministic) finite state
+%	automaton composed of edges and vertexes and extended
+%	with real-valued clocks and integer variables. Clocks proceed
+%	at the same rate and measure the time since they were
+%	reset. Integer variables are finite domain variables with
+%	rate zero.
+%	
+%	Automata learning algorithms have received signicant attention from the
+%	verication community in the past two decades. Besides being used to improve
+%	the eciency and scalability of compositional verication, automata learning has
+%	also been successfully applied in other aspects of verication: among others, it has
+%	been used to automatically generate interface models of computer programs [7],
+%	to learn a model of the traces of the system errors for diagnosis purposes [27], to
+%	nd bugs in the implementation of network protocols [39], to extract behavior
+%	model of programs for statistical program analysis [29], and to do model-based
+%	testing and verication [81, 107]. Later in 2017, Frits Vaandrager [102] explains
+%	the concept of model learning used in the above applications.
+%	In order to be of practical use, the learning algorithms have to be computationally
+%	ecient and easily adaptable to the dierent learning scenarios. On the
+%	one hand, with more complex tasks at hand, some researchers have proposed several
+%	optimizations to improve the eciency of nite automata learning, such as
+%	learning algorithms based on classication trees [59,63], ecient counterexample
+%	analysis for learning algorithms [87], learning algorithm NL for nondeterministic
+%	nite automata (NFAs) [20], and learning algorithms for alternating nite
+%	automata [10].
+%	
+%	
+%	
+%	
+%	\paragraph{Wat is uppaal}
+%	Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time systemen, gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden. Het is geschikt voor systemen die kunnen worden gemodelleerd als een verzameling niet-deterministische processen met een eindige controlestructuur en klokken met reële waarde, die communiceren via kanalen of gedeelde variabelen . Typische toepassingsgebieden zijn met name real-time controllers en communicatieprotocollen, waarbij timingaspecten van cruciaal belang zijn. %\cite{uppaalFeatures}
+%	
+%	UPPAAL is a verification tool for a TA based modeling language. Besides dense clocks,
+%	the tool supports both simple and complex data types like bounded integers and arrays
+%	as well as synchronization via shared variables and actions. The specification language
+%	supports safety, liveness, deadlock, and response properties.
+%	
+%	To produce test sequences, we shall make use of UPPAAL’s ability to generate diagnostic
+%	traces witnessing a submitted safety property. Currently UPPAAL supports three
+%	options for diagnostic trace generation: some trace leading to the goal state, the shortest
+%	trace with the minimum number of transitions, and fastest trace with the shortest
+%	accumulated time delay. The underlying algorithm used for finding time-optimal traces
+%	is a variation of the A-algorithm [2,12]. Hence, to improve performance it is possible
+%	to supply a heuristic function estimating the remaining cost from any state to the goal
+%	state.
+%	
+%	
+%	
+%	\paragraph{Wat is statistical model checking?}
+%	Dit verwijst naar verschillende technieken dfie worden gebruikt voor de monitoring van een systeem. Daarbij wordt vooral gelet op een specifieke eigenschap. Met de resultaten van de statsitieken wordt de juistheid van een ontwerp beoordeeld. Statistisch model checking wordt onder andere toegepast in systeembiologie, software engineering en industriele toepassingen.
+%	%\cite{verimagStatsModelChecking}.
+%	\cite{inriaStatsMoodCheck}
+%	\cite{ buddeModelChecker}
+%	%\cite{AGHASuervey }
+%	
+%	\paragraph{Waarom gebruiken we statistisch model checking?}
+%	Om de bovenstaande problemen te overwinnen stellen we voor om te werken met Statistical Model Checking , een aanpak die onlangs is voorgesteld als alternatief om een uitputtende verkenning van de toestandsruimte van het model te vermijden. Het kernidee van de aanpak is om een aantal simulaties van het systeem uit te voeren, deze te monitoren en vervolgens de resultaten uit het statistische gebied te gebruiken (inclusief het testen van sequentiële hypothesen of Monte Carlo-simulaties) om te beslissen of het systeem aan de eigenschap voldoet of niet. mate van vertrouwen. Van nature is SMC een compromis tussen testen en klassieke modelcontroletechnieken. Het is bekend dat op simulatie gebaseerde methoden veel minder geheugen- en tijdintensief zijn dan uitputtende methoden, en vaak de enige optie zijn.
+%	\cite{inriaStatsMoodCheck}Alternatieve tools voor Uppaal zijn Asynchronous Events,Vesta en MRMC.
+%	
+%	\paragraph{Formal testing}
+%	
+%	Index Terms—SCADA, model checking, formal methods, timed
+%	automaton, temporal logic, critical infrastructure, security, safety
+%	We have worked on projects for a broad range of application
+%	domains; e.g., medical equipment, factory automation, transportation,
+%	communications, automotive.
+%	
+%	
+%	
+%	documented, traced, reviewed, and tested
+%	\paragraph{Formal  verification}
+%	In order to support the formal verification based on MC,
+%	a timed automata should be created to express the system
+%	behavior, supporting the evaluation of different properties such
+%	as safety, reachability, liveness, and deadlock [10]. However,
+%	generating these representations is not a simple task and
+%	requires sufficient knowledge of the design team to correctly
+%	express the system properties. To automate the timed automata
+%	construction, it is our claim that a model transformation can
+%	be performed using as input the architectural representation.
+%	
+%	An implementation, ψIMP, consists of a description
+%	of the actual hardware design that is to be
+%	verified. A specification, ρSPEC, is a description of
+%	the intended/required (properties) behavior of a
+%	hardware design. Formal Verification (FV) is a
+%	systematic process of ensuring, through
+%	exhaustive algorithmic techniques, that a design
+%	implementation ψIMP satisfies the properties
+%	established in its specification ρSPEC. With formal
+%	verification, we are able to overcome both of
+%	simulation’s challenges: the observability and the
+%	controllability, since formal verification
+%	algorithmically and exhaustively explores all
+%	possible input values over time. The simulation is
+%	empirical ‐ meaning you use trial and error to
+%	discover bugs. It would take an intractable
+%	amount of time to test all possible combinations.
+%	Therefore, it is never complete. However the
+%	verification engineers are focusing their effort on
+%	how to break the design, not on what the design is
+%	intended to do. Formal verification, on the other
+%	hand, is mathematical and exhaustive and allows
+%	the engineer to focus solely on intent, or “what is
+%	the design’s correct behavior”. The main
+%	disadvantage of the formal verification is its
+%	limited capacity when the explosion state [6] is
+%	present.
+%	There are two types of formal verification:
+%	• EQUIVALENCE CHECKING: It is concerned
+%	with the verification that two
+%	representations of the same design are
+%	equivalent. Typically, it is gate level versus
+%	another gate level or RTL
+%	• MODEL CHECKING: Specification is in the
+%	form of a temporal logic formula, the
+%	truth of which is determined with respect
+%	to a semantic model provided by an
+%	implementation.
+%	
+%	
+%	The main validation methods for complex systems are a simulation, testing, deductive verification,
+%	and model checking. Simulation and testing [82] both involve making experiments
+%	before using the system in the field. While simulation is carried out on an abstraction or a
+%	model of the system, testing is done on the actual product. In the case of circuits, simulation
+%	is carried out on the design of the circuit, whereas testing is done on the circuit itself. In
+%	both situations, these techniques inject signals at specific points in the system and observe
+%	the resulting signals at other points. For software, simulation and testing generally involve
+%	preparing determined inputs and observing the corresponding outputs. These techniques
+%	can be a cost-efficient method to find many errors. However, checking all of the possible
+%	interactions and potential pitfalls utilizing simulation and testing techniques is rarely
+%	possible.
+%	This problem of design validation (ensuring the correctness of the design at the earliest
+%	stage possible) is the main challenge in any responsible system development process, and
+%	the tasks intended for its solution occupy a huge portions of the development cycle cost
+%	and time budgets. The currently practiced techniques for design validation in most places
+%	are still the veteran methods of simulation and testing. Although provably effective in the
+%	very early stages of debugging, when the design is still infested with multiple bugs, their
+%	effectiveness drops quickly as the design becomes cleaner, and they require an alarmingly
+%	increasing amount of time to uncover the more subtle bugs.
+%	A principal disadvantage of these methods is that one can never be sure when a limit
+%	has been reached or even an estimate of how many bugs may still lurk in the design. As the
+%	complexity of designs increases tremendously, say from 0.5 to 5 million gates per chip, some
+%	far-seeing managers predict the complete collapse of these conventional methods and their
+%	total inability to scale up [53].
+%	The approach of formal verification is a very attractive and dramatically appealing alternative
+%	to simulation and testing. While simulation and testing explore some of the possible
+%	behaviors and scenarios of the system, the question of whether the unexplored trajectories
+%	contain the fatal bug remains open. Formal verification on the other hand conducts an
+%	exhaustive exploration of all possible behaviors. Thus, when a design is pronounced correct
+%	by a formal verification method, it means that all the possible behaviors have been explored,
+%	so that the questions of proper coverage or a missed behavior become irrelevant.
+%	One of the main approaches to formal verification is model checking. In model checking
+%	a desired behavioral property is verified over a given system (the model) through exhaustive
+%	(explicit or implicit) enumeration of all the states reachable by the system and the behaviors
+%	that lead to them. Compared to other approaches, model checking has three important
+%	advantages. First, it is fully automatic, and its application requires no user supervision
+%	or expertise in mathematical disciplines such as logic and theorem proving. Anyone who
+%	can run simulations of a design is fully eligible and capable of model-checking the same
+%	design. In the context of the currently practiced method, model checking can be categorized
+%	as the ultimately superior simulation tool. Secondly, when the design fails to satisfy the
+%	desired property, the process of model checking always generates a counterexample that
+%	shows a behavior which falsifies the property. This faulty trace offers a priceless insight
+%	into understanding the real reason for the failure as well as significant clues for solving the
+%	problem. Last but not least, model checking has a sound and mathematical underpinning.
+%	These important advantages together with the advent of symbolic model checking, which
+%	allows the exhaustive implicit enumeration of an astronomic number of states, completely
+%	revolutionized the field of formal verification and transformed it from a purely academic
+%	discipline into a viable practical method that can potentially be integrated as an vital
+%	technique for design validation in a lot of industrial development processes [53].
+%	
+%	\paragraph{Formal  verification environment}
+%	Formal Verification Environment: once defined the model
+%	and the temporal logic properties, we need something enabling
+%	us to check whether the timed automata based model satisfies
+%	the defined properties. To this aim we consider formal verification,
+%	a system process exploiting mathematical reasoning to
+%	verify if a system (i.e., the model) satisfies some requirement
+%	(i.e., the timed temporal properties).
+%	
+%	\paragraph{Testing}
+%	Testing is the execution of the system under test in a controlled environment following
+%	a prescribed procedure with the goal of measuring one or more quality characteristics
+%	of a product, such as functionality or performance. Testing is the primary software
+%	validation technique used by industry today. However, despite the importance and the
+%	many resources and man-hours invested by industry (about 30% to 50% of development
+%	effort), testing remains quite ad hoc and error prone.
+%	We focus on conformance testing i.e., checking by means of execution whether the
+%	behavior of some black box implementation conforms to that of its specification, and
+%	moreover doing this within minimum time. A promising approach to improving the
+%	effectiveness of testing is to base test generation on an abstract formal model of the
+%	system under test (SUT) and use a test generation tool to (automatically or user guided)
+%	generate and execute test cases. Model based test generation has been under scientific
+%	study for some time, and practically applicable test tools are emerging [4,16,18,10].
+%	However, little is still known in the context of real-time systems.
+%	
 	
 %		\subsection{Timed automata}
 %		A timed automaton is a (non-deterministic) finite state

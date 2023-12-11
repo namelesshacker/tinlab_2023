@@ -10,65 +10,64 @@
 \contentsline {subsection}{\numberline {3.1}Requirements engineering}{5}{}%
 \contentsline {subsection}{\numberline {3.2}Systeem omschrijving}{5}{}%
 \contentsline {subsection}{\numberline {3.3}Requirements}{6}{}%
-\contentsline {subsection}{\numberline {3.4}Goede requirements}{7}{}%
+\contentsline {subsection}{\numberline {3.4}Goede requirements}{6}{}%
 \contentsline {subsection}{\numberline {3.5}specificaties}{7}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Functional vs non functional requirements}{11}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Safety critical systems}{11}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Functional vs non functional requirements}{7}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Safety critical systems}{7}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}Functional vs non functional requirements}{11}{}%
+\contentsline {subsubsection}{\numberline {3.5.4}Safety critical systems}{11}{}%
 \contentsline {subsection}{\numberline {3.6}Rampen}{13}{}%
 \contentsline {subsubsection}{\numberline {3.6.1}Therac-25}{13}{}%
 \contentsline {paragraph}{Beschrijving}{13}{}%
-\contentsline {paragraph}{Datum en Plaats}{13}{}%
-\contentsline {paragraph}{Oorzaak}{13}{}%
-\contentsline {subsubsection}{\numberline {3.6.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{14}{}%
-\contentsline {paragraph}{Beschrijving}{14}{}%
 \contentsline {paragraph}{Datum en Plaats}{14}{}%
 \contentsline {paragraph}{Oorzaak}{14}{}%
+\contentsline {subsubsection}{\numberline {3.6.2}Ethiopian Airlines Flight 302,boeing 737 crashes}{14}{}%
+\contentsline {paragraph}{Beschrijving}{14}{}%
+\contentsline {paragraph}{Datum en Plaats}{15}{}%
+\contentsline {paragraph}{Oorzaak}{15}{}%
 \contentsline {subsubsection}{\numberline {3.6.3}China explosie 2015 Tianjin}{15}{}%
 \contentsline {paragraph}{Beschrijving}{15}{}%
 \contentsline {paragraph}{Datum en Plaats}{15}{}%
-\contentsline {paragraph}{Oorzaak}{15}{}%
-\contentsline {subsubsection}{\numberline {3.6.4}schipholbrand}{15}{}%
-\contentsline {paragraph}{Beschrijving}{15}{}%
-\contentsline {paragraph}{Datum en Plaats}{15}{}%
-\contentsline {paragraph}{Oorzaak}{15}{}%
+\contentsline {paragraph}{Oorzaak}{16}{}%
+\contentsline {subsubsection}{\numberline {3.6.4}schipholbrand}{16}{}%
+\contentsline {paragraph}{Beschrijving}{16}{}%
+\contentsline {paragraph}{Datum en Plaats}{16}{}%
+\contentsline {paragraph}{Oorzaak}{16}{}%
 \contentsline {subsubsection}{\numberline {3.6.5}1951}{16}{}%
 \contentsline {paragraph}{Beschrijving}{16}{}%
 \contentsline {paragraph}{Datum en Plaats}{16}{}%
-\contentsline {paragraph}{Oorzaak}{16}{}%
-\contentsline {subsubsection}{\numberline {3.6.6}slmramp}{16}{}%
-\contentsline {paragraph}{Beschrijving}{16}{}%
-\contentsline {paragraph}{Datum en Plaats}{16}{}%
-\contentsline {paragraph}{Oorzaak}{16}{}%
-\contentsline {subsubsection}{\numberline {3.6.7}Tsjernobyl}{16}{}%
-\contentsline {paragraph}{Beschrijving}{16}{}%
+\contentsline {paragraph}{Oorzaak}{17}{}%
+\contentsline {subsubsection}{\numberline {3.6.6}slmramp}{17}{}%
+\contentsline {paragraph}{Beschrijving}{17}{}%
 \contentsline {paragraph}{Datum en Plaats}{17}{}%
 \contentsline {paragraph}{Oorzaak}{17}{}%
-\contentsline {subsection}{\numberline {3.7}De Kripke structuur}{17}{}%
-\contentsline {subsubsection}{\numberline {3.7.1}CTL}{17}{}%
-\contentsline {paragraph}{Timed automata}{18}{}%
+\contentsline {subsubsection}{\numberline {3.6.7}Tsjernobyl}{17}{}%
+\contentsline {paragraph}{Beschrijving}{17}{}%
+\contentsline {paragraph}{Datum en Plaats}{17}{}%
+\contentsline {paragraph}{Oorzaak}{17}{}%
+\contentsline {subsection}{\numberline {3.7}De Kripke structuur}{18}{}%
+\contentsline {subsubsection}{\numberline {3.7.1}CTL}{18}{}%
 \contentsline {paragraph}{Wat is uppaal}{18}{}%
-\contentsline {paragraph}{Wat is statistical model checking?}{19}{}%
-\contentsline {paragraph}{Waarom gebruiken we statistisch model checking?}{19}{}%
 \contentsline {paragraph}{Formal testing}{19}{}%
 \contentsline {paragraph}{Formal verification}{19}{}%
 \contentsline {paragraph}{Formal verification environment}{20}{}%
-\contentsline {paragraph}{Testing}{21}{}%
+\contentsline {paragraph}{Testing}{20}{}%
 \contentsline {subsection}{\numberline {3.8}Guards en invarianten}{21}{}%
 \contentsline {subsection}{\numberline {3.9}Deadlock}{21}{}%
 \contentsline {subsection}{\numberline {3.10}Zeno gedrag}{21}{}%
 \contentsline {section}{\numberline {4}Logica}{21}{}%
 \contentsline {subsection}{\numberline {4.1}Propositielogica}{21}{}%
 \contentsline {subsection}{\numberline {4.2}Predicatenlogica}{22}{}%
-\contentsline {subsection}{\numberline {4.3}Kwantoren}{23}{}%
-\contentsline {subsection}{\numberline {4.4}Dualiteiten}{24}{}%
+\contentsline {subsection}{\numberline {4.3}Kwantoren}{22}{}%
+\contentsline {subsection}{\numberline {4.4}Dualiteiten}{23}{}%
 \contentsline {subsection}{\numberline {4.5}Operator: AG}{24}{}%
 \contentsline {subsection}{\numberline {4.6}Operator: EG}{24}{}%
 \contentsline {subsection}{\numberline {4.7}Operator: AF}{24}{}%
 \contentsline {subsection}{\numberline {4.8}Operator: EF}{24}{}%
 \contentsline {subsection}{\numberline {4.9}Operator: AX}{24}{}%
-\contentsline {subsection}{\numberline {4.10}Operator: EX}{25}{}%
-\contentsline {subsection}{\numberline {4.11}Operator: p U q}{25}{}%
+\contentsline {subsection}{\numberline {4.10}Operator: EX}{24}{}%
+\contentsline {subsection}{\numberline {4.11}Operator: p U q}{24}{}%
 \contentsline {subsection}{\numberline {4.12}Operator: p R q}{25}{}%
 \contentsline {subsection}{\numberline {4.13}Fairness}{25}{}%
-\contentsline {subsection}{\numberline {4.14}Safety}{26}{}%
-\contentsline {subsection}{\numberline {4.15}liveness properties}{26}{}%
+\contentsline {subsection}{\numberline {4.14}Safety}{25}{}%
+\contentsline {subsection}{\numberline {4.15}liveness properties}{25}{}%
