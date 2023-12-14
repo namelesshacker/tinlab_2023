@@ -47,20 +47,20 @@
 \contentsline {paragraph}{Model en verificatieomgeving}{16}{}%
 \contentsline {subsection}{\numberline {4.2}Guards en invarianten}{17}{}%
 \contentsline {subsection}{\numberline {4.3}Deadlock}{17}{}%
-\contentsline {subsection}{\numberline {4.4}Zeno gedrag}{18}{}%
-\contentsline {section}{\numberline {5}Logica}{18}{}%
-\contentsline {subsection}{\numberline {5.1}Propositielogica}{18}{}%
+\contentsline {subsection}{\numberline {4.4}Zeno gedrag}{17}{}%
+\contentsline {section}{\numberline {5}Logica}{17}{}%
+\contentsline {subsection}{\numberline {5.1}Propositielogica}{17}{}%
 \contentsline {subsection}{\numberline {5.2}Predicatenlogica}{18}{}%
-\contentsline {subsection}{\numberline {5.3}Kwantoren}{19}{}%
-\contentsline {subsection}{\numberline {5.4}Dualiteiten}{20}{}%
-\contentsline {subsection}{\numberline {5.5}Operator: AG}{20}{}%
+\contentsline {subsection}{\numberline {5.3}Kwantoren}{18}{}%
+\contentsline {subsection}{\numberline {5.4}Dualiteiten}{19}{}%
+\contentsline {subsection}{\numberline {5.5}Operator: AG}{19}{}%
 \contentsline {subsection}{\numberline {5.6}Operator: EG}{20}{}%
 \contentsline {subsection}{\numberline {5.7}Operator: AF}{20}{}%
-\contentsline {subsection}{\numberline {5.8}Operator: EF}{21}{}%
-\contentsline {subsection}{\numberline {5.9}Operator: AX}{21}{}%
-\contentsline {subsection}{\numberline {5.10}Operator: EX}{21}{}%
-\contentsline {subsection}{\numberline {5.11}Operator: p U q}{21}{}%
+\contentsline {subsection}{\numberline {5.8}Operator: EF}{20}{}%
+\contentsline {subsection}{\numberline {5.9}Operator: AX}{20}{}%
+\contentsline {subsection}{\numberline {5.10}Operator: EX}{20}{}%
+\contentsline {subsection}{\numberline {5.11}Operator: p U q}{20}{}%
 \contentsline {subsection}{\numberline {5.12}Operator: p R q}{21}{}%
-\contentsline {subsection}{\numberline {5.13}Fairness}{22}{}%
-\contentsline {subsection}{\numberline {5.14}Safety}{22}{}%
+\contentsline {subsection}{\numberline {5.13}Fairness}{21}{}%
+\contentsline {subsection}{\numberline {5.14}Safety}{21}{}%
 \contentsline {subsection}{\numberline {5.15}liveness properties}{22}{}%
