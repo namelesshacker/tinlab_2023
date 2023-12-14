@@ -231,9 +231,9 @@
 	
 	
 	\subsection{Requirements}
-	In het modelleren van systemen verwijst een requirement naar een specifieke functionaliteit, prestatie-eis, beperking of kwaliteitsattribuut dat aanwezig moet zijn in het systeem \cite{kotonya1998requirements}. In dit verslag maken we onderscheid tussen de requirements en specificaties. Een requirements is een formele beschrijving van wat het systeem moet kunnen doen en een specificatie gaat over hoe het systeem werkt en met welke kwaliteitseigenschappen.
+	In het modelleren van systemen verwijst een requirement naar een specifieke functionaliteit, prestatie-eis, beperking of kwaliteitsattribuut dat aanwezig moet zijn in het systeem \cite{kotonya1998requirements}. In dit verslag maken we onderscheid tussen de requirements en specificaties. Een requirements is een formele beschrijving van wat het systeem moet kunnen doen en een specificatie gaat over hoe het systeem werkt en met welke kwaliteitseigenschappen. Een requirement wordt vastgelegd in een specificatiedocument.
 	Het opstellen van specificaties\cite{kotonya1998requirements} is een belangrijk proces, omdat het de basis legt voor het ontwerp en de ontwikkeling van het systeem. Door duidelijke specificaties te hebben, kunnen de betrokken stakeholders een gemeenschappelijk begrip hebben van wat er van het systeem wordt verwacht en in hoeveere dit veilig en haalbaar is.
-
+ 
 	
 	
 %	\subsection{Goede requirements}
@@ -321,20 +321,19 @@
 	\subsubsection{Safety critical systems}
 	
 	
-	Een Veiligheidsanalyse is een manier voor het evalueren  van ongelukken en risicos op verschillende niveaus. Met een veiligheidsanalyse wordt gekeken naar mensen en systemen die worden blootgesteld aan een gevaar/risico en de mogelijkheid deze te minimaliseren.
+	Een veiligheidsanalyse is een manier voor het evalueren  van ongelukken en risicos op verschillende niveaus. Met een veiligheidsanalyse wordt gekeken naar mensen en systemen die worden blootgesteld aan een gevaar/risico en de mogelijkheid deze te minimaliseren.
 	Veiligheid is moeilijk te definiëren omdat het een vaag concept is.
 	De kennis van de mens is veranwoordelijk voor het scheppen van veiligheid.  Kennisdoelen zijn daarom altijd belangrijk en kunnen worden onderscheiden in 3 domeinen: cognitief, affectief en psychomotorisch.\cite{winceckCriticalToSafety}
 	Een veiligheidsanalist  moet kennis hebben van het systeem, maar ook ervaring met het systeem en vooral hoe een fout in het systeem zich voordoet.
 	Volgens Stoney\cite{chambersHazardAnalysisSCS} is veiligheid een aspect dat de veiligheid van mensenleven  of de omgevig niet in gevaar brengt.
 	De interactie tussen systeem en omgeving levert kennis op door ad-hoc ervaring. Maar ook is kennis van abstractie en systeemdoelen belangrijk.
-	Het kwalificeren van informatie moet ook op waarde geschat worden Een verkeerde schatting kan fataal zijn. Zelfs als een veiligheidsanalyse  is gedaan waarbij risicos zijn gedefinieerd en geprioretiseerd is een definitie van een veiligheidsniveau nodig. Soms zijn hier richtlijnen voor en soms ook niet.
+	Het kwalificeren van informatie moet ook op waarde geschat worden. Een verkeerde schatting kan fataal zijn. Zelfs als een veiligheidsanalyse  is gedaan waarbij risico's zijn gedefinieerd en geprioretiseerd is een definitie van een veiligheidsniveau nodig. Soms zijn hier richtlijnen voor en soms ook niet.
 	Er zijn voorbeelden van tools en technieken te gebruiken voor een veiligheidsanalyse. En dat zijn
 	\begin{enumerate}
-		\item checklists voor critical safety items
-		\item fault tree analyse
-		\item event tree analyse
-		\item failure modes en critical effects analysis (FMECA, FMET)
-		\item hazard operability studies
+		\item checklists voor kritische veiligheidsitems
+		\item fault-boom analyse
+		\item event-boom analyse
+		\item fouttoestand en kritische effect-analyse (FMECA, FMET)
 	\end{enumerate}
 	
 	\cite{rslater1998SCSAnalysis}
@@ -2562,15 +2561,20 @@
 	
 	\subsection{De Kripke structuur}
 	De kripke structuur is een set van locaties, transities, guards, klokken en data-variabelen .	
+%	
+%	We use a type of state transition graph called a Kripke structure to capture this intuition bout the behaviour of reactive systems. A kripke structure consists of a set of states, a set of transitions between states, and a function that lbels each state with a set of properties that are true in this state.
+%	Paths in a kripke structure model computations of the systems.
+%	Althogh these models are very simple, they are sufficiently expressive to apture those aspects of temporal behaviour that are most important for reasoning about reactive systes.
+%	
+%	Concurrent systems are usually given by the text or a program or diagram for a circuit. There are many different types of concurrent systems (synchronous and asynchronous circuits, programs with shared variables, programs that communicate by message passing. And so on) 
+%	Because of this diversity we need a unifying formalism that can represent a concurrent system of any type. We will use formalas of first oder logic for this purpose.
+%	Given a formula that represents a concurrent system, it is straightforward to extract the Kripke structure that models the system.
 	
-	We use a type of stat transition graph called a Kripke structure to capture this intuition bout the behaviour of reactive systems. A kripke structure consists of a set of states, a set of transitions between states, and a function that lbels each state with a set of properties that are true in this state.
-	Paths in a kripke structure model computations of the systems.
-	Althogh these models are very simple, they are sufficiently expressive to apture those aspects of temporal behaviour that are most important for reasoning about reactive systes.
+	We gebruiken een Kripke-structuur, om  het gedrag van reactieve systemen vast te leggen. Een kripke-structuur bestaat uit een reeks toestanden, een reeks overgangen tussen toestanden, en een functie die elke toestand een reeks eigenschappen geeft die 'geldig' zijn in deze toestand.
+	Paden in een kripke-structuur modelleren staan voor de transities van het systeem.
+	  
 	
-	Concurrent systems are usually given by the text o a program or diagram for a circuit. Teere are may different types of concurrent systems (synchronous and asynchronous circuits, programs with shared variables, programs that communicate by message passing. And so on) 
-	Because of this diversity we need a unifying formalism that can represent a concurrent system of any type. We will use formalas of first oder logic for this purpose.
-	Given a formula that represents a concurrent system, it is straightforward to extract the Kripke structure that models the system.
-	
+	 
 	
 %	Temporal logic
 %	− formele taal voor het specificeren en redeneren over hoe de
@@ -2604,14 +2608,14 @@
 	
 	Computational Tree Logic(CTL), geïntroduceerd door Emerson en Clarke  , is een   logica die wordt gebruikt als specificatietaal voor model checking.  
 	CTL-formules zijn samengesteld uit logische operatoren, padkwantificatoren en 	tijdelijke operatoren. De kwantificatoren worden gebruikt om aan te geven of een eigenschap van het systeem geldig is op een bepaald rekenpad (E) of alle rekenpaden (A) van
-	een locatie. Enkele temporele operatoren gebruikt om eigenschappen te beschrijven van een pad zijn AX, EX, AU, EU, AG, EG, AF,en EF. Met deze kwantoren is  mogelijk specificaties van een requirement te vertalen naar een formele specificatie.
-	
-		model checking, formal methods, timed
-	automaton, temporal logic, 
+	een locatie. Enkele temporele operatoren gebruikt om eigenschappen te beschrijven van een pad zijn AX, EX, AU, EU, AG, EG, AF,en EF. Met deze kwantoren is  mogelijk specificaties van een requirement te vertalen naar een formele specificatie. Op deze manier is een systeem van een model testbaar op correctheid, rechability, safety,deadlock,responsiveness en liveness requirements. 
+%	
+%		model checking, formal methods, timed
+%	automaton, temporal logic, 
+%
+%	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
 
-	Een formele verificatie van de gespecificeerde requirements ofwel modeleigenschappen wordt gerealiseerd door deze te vertalen naar de query-language van de symbolic model-checker Uppaal.  \cite{alurSystemClok},\cite{alurModelHybrid}.
 
-Op deze manier is een systeem van een model testbaar op correctheid, rechability, safety,deadlock,responsiveness en liveness requirements. 
 
 
 % The observer-based model checking
@@ -2626,29 +2630,29 @@ Op deze manier is een systeem van een model testbaar op correctheid, rechability
 
 
 \paragraph{Model en verificatieomgeving}
-Een model kan weergave zijn voor een computersysteem uit het dagelijks leven. Dit kunnen systemen met kritische functies zijn zoals auto's vliegtuigen en industriële installaties, maar ook andere systemen waarbij timingaspecten van cruciaal belang zijn  kunnen gemodelleerd worden zoals telecomunicatie, security protocols,  medical equipment, factory automation, transportation,
+Een model kan een weergave zijn voor een computersysteem uit het dagelijks leven. Dit kunnen systemen met kritische functies zijn zoals auto's vliegtuigen en industriële installaties, maar ook andere systemen waarbij timingaspecten van cruciaal belang zijn  kunnen gemodelleerd worden zoals telecomunicatie, security protocollen,  medical equipment, factory automation, transportation,
 communications, automotive, e-commerce applicaties en privacy.
-Een Formele Specificatie is een complete representatie van een systeem onder studie waarbij bepaalde formele specificatie worden vertaald. Verschillende specificatie technieken die  gebruikt worden als  formele methode zijn abstracte state machines zoals abstract state machine models, automata based models, object oriented models etc. Daarnaast zijn er ook op automata gebaseerde modellen welke gerbruik maken van deterministic finite automata, nondeterministic finite automata, timed automata, Buchi automata, ω-automata etc.  
-
-In model checing wordt een gedragseigenschap geverifieerd over een model door implpiciet of expliciet alle bereikbare locaties a te lopen die naar een dergelijke state/locatie kunnen leiden. De  eigenschappen worden uitgedrukt in formules voor temporele logica. 
+Formele verificatie is een systematich proces waarin bevestigd wordt of het bestudeerde systeem voldoet aan de specificaties of requirements  vastgesteld in het specificatiedocument.
+Een formele specificatie is een complete representatie van een systeem  waarbij bepaalde formele specificaties worden vertaald. Verschillende specificatie technieken die  gebruikt worden als  formele methode zijn abstracte state machines zoals abstract state machine models, automata based models, object oriented models etc. Daarnaast zijn er ook op automata gebaseerde modellen welke gebruik maken van deterministic finite automata, nondeterministic finite automata, timed automata, Buchi automata, ω-automata etc.  
+In model checking wordt een gedragseigenschap geverifieerd over een model door impliciet of expliciet alle bereikbare locaties na te lopen die naar een dergelijke state/locatie kunnen leiden. De  eigenschappen worden uitgedrukt in formules voor temporele logica. 
 Deze formele verificatie aan de hand van temporele logica, is een systeemproces dat gebruik maakt van wiskundig redenerenverifiëren of een systeem (dat wil zeggen het model) aan een bepaalde vereiste,de getimede temporele eigenschappen, voldoet.
 De model checker bevestigd dat de eigenschappen geldig zijn of geeft aan dat deze niet geldig zijn.
-Formele verificatie is een systematich proces waarin bevestigd wordt of het bestudeerde systeem voldoet aan de specificaties of requirements  vastgesteld ine het specificatiedocument.
-Dit kan naast  model checking worden gerealiseerd met  verschillende manieren zoals simulatie, stelling bewijzen en testen. 
-Vergeleken met andere methoden zoals simulatie en testen heeft model checking zin voordelen.
-Ten eerste is het volledig automatisch. As er fouten opduiken dan wordt er een counterexample gegenegeer waaruit de bugs zichtbaar worden. Hierdoor rijg je inzicht in de oorzaak waarom een failure ontstaat en worden oplossingen zichtbaar.
-Model checking heeft een solide en wiskundige onderhouwing.
-
-Een toestand van het systeem wordt gedefinieerd door de
-locatie van alle automaten, de klokwaarden en de waarden van de
-discrete variabelen.  
-
-
-
-In de formele verificatieomgeving wordt ons mogelijk gemaak om te controleren of het op tijdautomaten gebaseerde model  met de temporele logische eigenschappen  voldoet aan dde gedefinieerde eigenschappen.    
+%
+%Dit kan naast  model checking worden gerealiseerd met  verschillende manieren zoals simulatie, stelling bewijzen en testen. 
+%Vergeleken met andere methoden zoals simulatie en testen heeft model checking zin voordelen.
+%Ten eerste is het volledig automatisch. As er fouten opduiken dan wordt er een counterexample gegenegeer waaruit de bugs zichtbaar worden. Hierdoor rijg je inzicht in de oorzaak waarom een failure ontstaat en worden oplossingen zichtbaar.
+%Model checking heeft een solide en wiskundige onderhouwing.
+%
+%Een toestand van het systeem wordt gedefinieerd door de
+%locatie van alle automaten, de klokwaarden en de waarden van de
+%discrete variabelen.  
 
 
-Uppaal is een geïntegreerde toolomgeving voor het modelleren, simuleren en verifiëren van real-time  controllers en communicatieprotocollen,  , gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden.
+
+In de formele verificatieomgeving wordt het mogelijk gemaak om te controleren of het op tijdautomaten gebaseerde model  met de temporele logische eigenschappen  voldoet aan de gedefinieerde eigenschappen.    
+
+
+Een goed voorbeeld van een verificatieomgeving is Uppaal. Uppaal is een tool voor het modelleren, simuleren en verifiëren van real-time  controllers en communicatieprotocollen,  , gezamenlijk ontwikkeld door Basic Research in Computer Science aan de Universiteit van Aalborg in Denemarken en de afdeling Informatietechnologie aan de Universiteit van Uppsala in Zweden.
 
 Behalve clocks, ondersteund de tool   zowel simple and complex data types zoals bounded integers, arrays, synchronization via shared variablelen en actions schedulability.
 
@@ -2740,17 +2744,17 @@ Behalve clocks, ondersteund de tool   zowel simple and complex data types zoals 
 %  intentie, of "wat is juiste gedrag van het ontwerp". Het voornamelijks nadeel van formele verificatie is de beperkte capaciteit als er een state-explosie
 %  
   
-  Er zijn twee typen formal verification:
-  • EQUIVALENCE CHECKING: It is concerned
-  with the verification that two
-  representations of the same design are
-  equivalent. Typically, it is gate level versus
-  another gate level or RTL
-  • MODEL CHECKING: Specification is in the
-  form of a temporal logic formula, the
-  truth of which is determined with respect
-  to a semantic model provided by an
-  implementation.
+%  Er zijn twee typen formal verification:
+%  • EQUIVALENCE CHECKING: It is concerned
+%  with the verification that two
+%  representations of the same design are
+%  equivalent. Typically, it is gate level versus
+%  another gate level or RTL
+%  • MODEL CHECKING: Specification is in the
+%  form of a temporal logic formula, the
+%  truth of which is determined with respect
+%  to a semantic model provided by an
+%  implementation.
   
 %	
 %		Dee aanpak van formele verifcatie is een aantrekkelijke en interressant alternatief voor simulatie en testen. Terwijl simulatie en testen behoren tot een van de gedragingen en sscenarios van het systeem, de vraag 
@@ -3395,12 +3399,13 @@ Behalve clocks, ondersteund de tool   zowel simple and complex data types zoals 
 	%	Het kan verwijzen naar klokken, gehele variabelen, constanten.
 	
 	Invarianten en guards zijn condities.
-	Een invariant is een conditie die geldt in een state en die altijd
-	waar is wanneer de automaat zich in die state bevindt.
-	Een guard is een conditie die geldt in een transitie. M.a.w. De
+		Een guard is een conditie die geldt in een transitie.   De
 	transitie kan alleen genomen worden wanneer de guard geldig
 	is.
-	\\
+	Een invariant is een conditie die geldt in een state en die altijd
+	waar is wanneer de automaat zich in die state bevindt.
+
+ 
 	
 	%	In a timed automaton, the unconditional transition of a
 	%	finite state automaton is extended to a triple consisting of a
@@ -3450,16 +3455,12 @@ Behalve clocks, ondersteund de tool   zowel simple and complex data types zoals 
 	%	where the bad thing has happened, and thus no infinite word that starts with this prefix
 	%	σ fulfills P.
 	%	
-	
-	In feite zijn veiligheidseigenschappen  een soort invarianten. Invarianten
-	zijn eigenschappen die worden gegeven door een voorwaarde Φ voor de toestanden en vereisen dat Φ geldt 	voor alle bereikbare staten.
-	Het begrip ‘invariant’ kan dus als volgt worden uitgelegd: er moet aan de voorwaarde Φ zijn voldaan
-	door alle begintoestanden en de bevrediging van Φ is onveranderlijk onder alle overgangen in het bereikbare 	pad van het gegeven transitiesysteem. 
-	
-	Invarianten kunnen worden gezien als toestandseigenschappen en 	kan worden gecontroleerd door te kijken naar de bereikbare staten. 
+	% 	In feite zijn veiligheidseigenschappen  een soort invarianten. 
+Invarianten zijn eigenschappen die worden gegeven door een voorwaarde  voor de toestanden en vereisten geldend 	voor alle bereikbare staten.
+	Het begrip ‘invariant’ kan dus als volgt worden uitgelegd: er moet aan de voorwaarde $\phi$ zijn voldaan 	door alle begintoestanden en de bevrediging van  $\phi$ is onveranderlijk onder alle overgangen in het bereikbare 	pad van het gegeven transitiesysteem.  Invarianten kunnen worden gezien als toestandseigenschappen en 	kan worden gecontroleerd door te kijken naar de bereikbare staten. 
 	
 	\subsection{Deadlock}
-	Deadlock is een bereikbare staat waarin het systeem   helemaal geen acties kan uitvoeren – Een Deadlock hangt af van de reeks acties die een bereikbare staat niet kan uitvoeren. Om de impasse te behouden moet A niet alleen overschatten wat P kan doen, maar ook wat P weigert
+	Een deadlock is een bereikbare staat waarin het systeem   helemaal geen acties kan uitvoeren. Een deadlock hangt af van de reeks acties die een bereikbare staat niet kan uitvoeren. Om de impasse te behouden moet A niet alleen overschatten wat P kan doen, maar ook wat P weigert.
 	\subsection{Zeno gedrag}
 	Zeno gedrag houdt in dat de mogelijkheid dat in een eindige hoeveelheid tijd een oneindig antal handelingen kan worden verricht.
 	
@@ -3527,7 +3528,6 @@ Behalve clocks, ondersteund de tool   zowel simple and complex data types zoals 
 		\item menselijke objecten M(x)
 		\item x is een priemgetal P(x)
 	\end{enumerate}
-	
 	
 	
 	In de uitspraken geven wij de eigenschappen sterfelijk en priemgetal aan met de hoofdletters
