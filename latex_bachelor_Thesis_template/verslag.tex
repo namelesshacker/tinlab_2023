@@ -4099,53 +4099,38 @@ Invarianten zijn eigenschappen die worden gegeven door een voorwaarde  voor de t
 	%	de overige berekeningen zijn dus de ‘eerlijke’ berekeningen. Omdat er verschillende opvattingen over rechtvaardigheid bestaan,
 	%	Er kunnen verschillende vormen van eerlijkheid worden opgelegd: onvoorwaardelijk, sterk en zwak
 	
-	Deze eigenschappen beschrijven de vereiste dat een proces vooruitgang boekt in de richting van een specifiek doel, waarvan de verwezenlijking afhangt van de fairness van het systeem. Als een proces nooit wordt uitgevoerd, kan het zijn doel meestal niet bereiken. Daarom worden deze eigenschappen vaak alleen langs eerlijke paden geëvalueerd, d.w.z. paden die voldoen aan een van de volgende drie vereisten voor fairnessconstraints:
-	Absolute Fairness, Impartiality: every process should be executed infinitely often:
-	Strong Fairness: every process that is infinitely often enabled should be executed infinitely often in
-	a state where it is enabled:
-	Weak Fairness: every process that is almost always enabled should be executed infinitely often:
+	Deze eigenschappen beschrijven de vereiste dat een proces vooruitgang boekt in de richting van een specifiek doel, waarvan de verwezenlijking afhangt van de fairness van het systeem. Als een proces nooit wordt uitgevoerd, kan het zijn doel meestal niet bereiken. Daarom worden deze eigenschappen vaak alleen langs eerlijke paden geëvalueerd, d.w.z. paden die voldoen aan de   vereisten voor fairnessconstraints:
+%	Absolute Fairness, Impartiality: every process should be executed infinitely often:
+%	Strong Fairness: every process that is infinitely often enabled should be executed infinitely often in
+%	a state where it is enabled:
+%	Weak Fairness: every process that is almost always enabled should be executed infinitely often:
 	%	\paragraph{Data variabelen} \\
 	%	Dat variabelen zijn onder andere: water hoog  en laag, en aanal schepen in de queue.
 	%	\paragraph{Acties}
 	%	Acties in het model zijn onder andere: invaren, uitvaren, deuren openen en sluiten, nivelleren
 	%	
 	
-	Recall that fairness assumptions (see Section 3.5) are used to rule out certain computations
-	that are considered to be unrealistic for the system under consideration. These unreasonable
-	computations that ignore certain transition alternatives forever are the “unfair” ones;
-	the remaining computations are thus the “fair” ones. As there are different notions of fairness,
-	various distinct forms of fairness can be imposed: unconditional, strong, and weak
-	fairness constraints.
+%	Recall that fairness assumptions (see Section 3.5) are used to rule out certain computations
+%	that are considered to be unrealistic for the system under consideration. These unreasonable
+%	computations that ignore certain transition alternatives forever are the “unfair” ones;
+%	the remaining computations are thus the “fair” ones. As there are different notions of fairness,
+%	various distinct forms of fairness can be imposed: unconditional, strong, and weak
+%	fairness constraints.
 	
 	\subsection{Safety}
 	
-	Safety properties are often characterized as “nothing bad should happen”. The mutual
-	exclusion property—always at most one process is in its critical section—is a typical safety
-	property. It states that the bad thing (having two or more processes in their critical section
-	simultaneously) never occurs. Another typical safety property is deadlock freedom. For
-	the dining philosophers (see Example 3.2, page 90), for example, such deadlock could be
-	characterized as the situation in which all philosophers are waiting to pick up the second
-	chopstick. This bad (i.e., unwanted) situation should never occur.
+%	Safety properties are often characterized as “nothing bad should happen”. The mutual
+%	exclusion property—always at most one process is in its critical section—is a typical safety
+%	property. It states that the bad thing (having two or more processes in their critical section
+%	simultaneously) never occurs. Another typical safety property is deadlock freedom. For
+%	the dining philosophers (see Example 3.2, page 90), for example, such deadlock could be
+%	characterized as the situation in which all philosophers are waiting to pick up the second
+%	chopstick. This bad (i.e., unwanted) situation should never occur.
 	
-	Veiligheidseigenschappen worden vaak gekarakteriseerd als ‘er mag niets ergs gebeuren’. Het wederzijdse
-	De uitsluitingseigenschap – er bevindt zich altijd maximaal één proces in de kritieke sectie – is een typische veiligheid
-	eigendom. Er wordt gesteld dat het slechte ding (het hebben van twee of meer processen in hun kritieke sectie
-	tegelijkertijd) komt nooit voor. Een andere typische veiligheidseigenschap is de vrijheid van impasse. Voor
-	de eetfilosofen (zie Voorbeeld 3.2, pagina 90) zou bijvoorbeeld zo’n impasse kunnen zijn
-	gekarakteriseerd als de situatie waarin alle filosofen wachten om de tweede op te pikken
-	eetstokje. Deze slechte (d.w.z. ongewenste) situatie mag nooit voorkomen.
+	Veiligheidseigenschappen worden vaak gekarakteriseerd als ‘er mag niets ergs gebeuren’. Zoals een trein op een kruispunt met  alle stoplichten op groen. Er mogen bijvoorbeeld nooit twee processen tegelijkerijd in hun kritische fase belanden. Een systeem kan nooit een state/locatie breeiken die niet zjn toegestaan volgens de requirements. Een andere safety-property is deadlockvrij.
 	
-	the system cannot reach states that are forbidden
-	by the requirements.
-	Following L. Lamport, a safety property states that
-	something bad must never happen. The “bad thing” represents a
-	critical system state that should never occur, for instance a train
-	being inside a crossing with the gates open.
-	Liveness properties.
-	Safety properties state what may or may not occur,
-	but do not require that anything ever does happen. Liveness properties
-	state what must occur. The simplest form of a liveness property
-	guarantees that
+ 
+
 	%	In navolging van L. Lamport, die stelt dat er bij een veiligheidseigenschap  nooit iets ergs mag gebeuren. Het “slechte” vertegenwoordigt een kritieke systeemtoestand die nooit mag optreden. Een Booleaanse waarneembare C nemen: Tijd −→ {0, 1}, waarbij C(t) = 1 dat uitdrukt optijd t het systeem zich in de kritieke toestand bevindt, kan deze veiligheidseigenschap aanwezig zijn uitgedrukt door de formule:
 	%	$\forall$ t \in Tijd $\dot{}$ $\neg$ C(t)
 	%	
@@ -4162,7 +4147,7 @@ Invarianten zijn eigenschappen die worden gegeven door een voorwaarde  voor de t
 	\subsection{liveness properties}
 	Veiligheidseigenschappen geven aan wat er wel of niet mag voorkomen,
 	maar eis niet dat er ooit iets gebeurt. liveness geeft aan wat er moet gebeuren. De eenvoudigste vorm van een liveness-eigenschap garandeert dat er uiteindelijk iets goeds gebeurt.
-	Met andere woorden: er bestaat een tijdstip waarop het systeem zich in de
+%	Met andere woorden: er bestaat een tijdstip waarop het systeem zich in de
 	%	goede staat bevind. Houd er rekening mee dat deze eigenschap niet in bounded kan worden vervalst
 	%	tijd. Als voor enig tijdstip t0 alleen ¬G(t) is waargenomen
 	%	t ≤ t0, we kunnen niet klagen dat (1.2) uiteindelijk wordt geschonden
