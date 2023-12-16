@@ -3391,14 +3391,11 @@ Behalve clocks, ondersteund de tool   zowel simple and complex data types zoals 
 	%	Het kan verwijzen naar klokken, gehele variabelen, constanten.
 	
 	Invarianten en guards zijn condities.
-		Een guard is een conditie die geldt in een transitie.   De
+	Een guard is een conditie die geldt in een transitie.   De
 	transitie kan alleen genomen worden wanneer de guard geldig
 	is.
 	Een invariant is een conditie die geldt in een state en die altijd
-	waar is wanneer de automaat zich in die state bevindt.
-
- 
-	
+	waar is wanneer de automaat zich in die state bevindt.	
 	%	In a timed automaton, the unconditional transition of a
 	%	finite state automaton is extended to a triple consisting of a
 	%	guard, a synchronization label and an assignment. The
@@ -3955,8 +3952,8 @@ Invarianten zijn eigenschappen die worden gegeven door een voorwaarde  voor de t
 	%	EGp - p holds globally.
 	EGp - in tenminste één pad geldt p is overal geldig.
 	%	EG P: in at least one execution path, P is always true.
-	Een pad is een reeks toestanden. Bij elke state kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een enkele reeks van opeenvolgende toestanden.
-	In de huidige reeks heeft elke toestand een label p , en  is de atomaire toestandsformule p waar in die toestand behorend tot deze reeks.
+	Een pad is een reeks toestanden. Bij elke state kan een propositie  worden geëvalueerd. Een propositie is geldig op een enkele reeks van opeenvolgende states.
+	In de huidige reeks heeft elke toestand een label p , en  is de propositie p waar in die toestand behorend tot deze reeks.
 	
 	
 	\subsection{Operator: AF}
@@ -3970,24 +3967,24 @@ Invarianten zijn eigenschappen die worden gegeven door een voorwaarde  voor de t
 	%	with AF ψ1, until there is no change.
 	%	AF P: in all possible execution paths, sooner or later P will be true.
 	
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Deze vertakkende tijdpadformule strekt zich uit over meerdere paden met in de toekomst een geldige  opvolgende  toestand.
-	Als voor alle paden geldt dat deze vanaf de huidige toestan er in  de toekomst een toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand.
+	Een pad is een reeks statea. Bij elke state kan een propositie worden geëvalueerd. Deze propositie is geldig over meerdere paden met in de toekomst een geldige  opvolgende  state.
+	Als voor alle paden geldt dat deze vanaf de huidige states er in  de toekomst een states een label p heeft, dan is de popositie p waar in die states.
 	
 	
 	\subsection{Operator: EF}
 	%	EF, there exists a path where finally ,from the current state, along which some state satisfies
 	%	EF P: in at least one execution path, sooner or later P will be true.
 	EF, er is een pad waar uiteindelijk, vaaf de huidige staat  met enkele andere staten p geldig is
-	EF P: in tenminste 1 pas, zal P vroeg of laat geldig zijn
+	EF P: in tenminste 1 pas, zal P vroeg of laat geldig zijn.
 	
-	We hebben hier een pad met een reeks toestanden. Waarbij ooit op dit pad een toestand kan  toestandsformule worden geëvalueerd welke  een label p heeft,  ed de atomaire toestandsformule p waar is in die toestand.
+	We hebben hier een pad met een reeks states. Waarbij ooit op dit pad een state kan  propositie worden geëvalueerd welke  een label p heeft,  en de propositie p waar is in die states.
 	\subsection{Operator: AX}
 	%	AXp - for all paths p holds next time.
 	%	AX P: in all possible execution paths, in the next state P is true.
-	AXp - voor alle paden is p in de volgnde state geldig
+	AXp - voor alle paden is p in de volgnde state geldig.
 	%	AX P: in all possible execution paths, in the next state P is true.
-	We spreken hier van alle mogelijke paden waarvoor geldt dat in de volgende toestand kan een toestandsformule worden als "waar" wordt geëvalueerd. 
-	States hebben labels. Als de volgende toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand.
+	We spreken hier van alle mogelijke paden waarvoor geldt dat in de volgende states kan een propositie worden als "waar" wordt geëvalueerd. 
+	States hebben labels. Als de volgende state een label p heeft, dan is de propositie p waar in die state.
 	\subsection{Operator: EX}
 	%	EXp - for some path p holds next time.
 	%	: label any state with EX ψ1
@@ -3995,18 +3992,18 @@ Invarianten zijn eigenschappen die worden gegeven door een voorwaarde  voor de t
 	%	with ψ1
 	%	.
 	%	EX P: in at least one execution path, in the next state P is true.
-	EX P: in ten minste 1 execution path, is p geldig in de volgende state	
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een  mogelijke reeks van opeenvolgende toestanden.
-	Waarbij geldt dat in de huidige reeks er een toestand is met een opvolgende state met een label p heeft, en is de atomaire toestandsformule p waar in die toestand.
+	EX P: in ten minste 1 pad waarop p geldig in de volgende state.	
+	Een pad is een reeks states. Bij elke state kan een propositie worden geëvalueerd. Een propositie is  mogelijke reeks van opeenvolgende toestanden.
+	Waarbij geldt dat in de huidige reeks er een state is met een opvolgende state met een label p , en dus is de propositie p waar in die state.
 	\subsection{Operator: p U q}
 	%	p holds until q holds.
 	%	A[P U Q]: in all possible execution paths, P is true * until Q is true (at least once).
 	%	E[P U Q]: in at least one execution path, P is true * until Q is true (at least once).
 	
-	A[P U Q]: in alle uitvoerpaden is P geldit totdat Q geldig is. Of 
+	A[P U Q]: in alle uitvoerpaden is P geldit totdat Q geldig is.  
 	E[P U Q]: in tenminste 1 pad is P geldig totdat Q geldig is.	
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich in geval van A[P U Q]: uit over alle  reeksen van opeenvolgende toestanden.
-	Waarvoor geldt dat als de   toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand tot aan de toestand waarin een toestand het label q heeft.
+	Een pad is een reeks states. Bij elke state kan een propositie worden geëvalueerd. Een pad strekt zich in geval van A[P U Q]: uit over alle  reeksen van opeenvolgende states.
+	Waarvoor geldt dat als de   state een label p heeft, dan is de propositie p waar in die state tot aan de state waarin een state het label q heeft.
 	
 	%	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een enkele reeks van opeenvolgende toestanden.
 	%	Waarvoor geldt dat als de   toestand een label p heeft, dan is de atomaire toestandsformule p waar in die toestand tot aan de toestand waarin een toestand het label q heeft.
@@ -4014,15 +4011,15 @@ Invarianten zijn eigenschappen die worden gegeven door een voorwaarde  voor de t
 	\subsection{Operator: p R q}
 	R (“release”) is de logische duaal van de U-operator. De operator vereist
 	dat het tweede argument stand moet houden tot en met de
-	eerste staat waar het eerste argument geldt. Het eerste argument is dat niet
+	eerste state waar het eerste argument geldt. Het eerste argument is dat niet
 	nodig om uiteindelijk waar te worden.
 	
 	%	• Aφ (All): φ has to hold on all paths starting from the current state.
 	%	• Eφ (Exists): there exists at least one path starting from the current state where φ
 	%	holds.
 	
-	Een pad is een reeks toestanden. Bij elke toestand kan een toestandsformule worden geëvalueerd. Een vertakkende tijdpadformule strekt zich uit over een mogelijke reeks van opeenvolgende toestanden.
-	States hebben labels. Als de huidige toestand een label q heeft, dan is de atomaire toestandsformule q  waar in die toestand tot aan de toestand waarin p geldig is. Met de voorwaarde dat de eigenschap p niet gelabeled hoeft de worden aan een opvolgende state.	
+	Een pad is een reeks states. Bij elke state kan een propositie worden geëvalueerd. Een pas strekt zich uit over een mogelijke reeks van opeenvolgende toestanden.
+	States hebben labels. Als de huidige state een label q heeft, dan is de propositie q  waar in die state tot aan de states waarin p geldig is. Met de voorwaarde dat de eigenschap p niet gelabeled hoeft de worden aan een opvolgende state.	
 	De release-operator (R) is ook een binaire operator en betekent dat de tweede argument geldig moet zijn in alle staten  tot aan q inclusief de eerste staat die voldoet aan de
 	eerste eigenschap.  
 	

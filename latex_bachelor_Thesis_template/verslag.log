@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  16 DEC 2023 00:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.8)  16 DEC 2023 01:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,7 +714,7 @@ You may provide a definition with
 
 [16] [17]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-3503.
+3500.
 
 (C:\Users\gally\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -728,21 +728,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3637 	+ en ∗
-                , en hun identiteitselementen 0 en 1 in de oorspronkelijke v...
-
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-! LaTeX Error: Unicode character ∗ (U+2217)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3638 	(1 + a) ∗
+l.3635 	(1 + a) ∗
                     (b + 0) = b is (0 ∗ a) + (b ∗ 1) = b
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -755,7 +741,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3638 	(1 + a) ∗ (b + 0) = b is (0 ∗
+l.3635 	(1 + a) ∗ (b + 0) = b is (0 ∗
                                           a) + (b ∗ 1) = b
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -768,7 +754,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3638 ...a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗
+l.3635 ...a) ∗ (b + 0) = b is (0 ∗ a) + (b ∗
                                                    1) = b
 You may provide a definition with
 \DeclareUnicodeCharacter 
@@ -781,10 +767,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 8117 strings out of 475385
- 162249 string characters out of 2776908
+ 8118 strings out of 475385
+ 162257 string characters out of 2776908
  531824 words of memory out of 3000000
- 29426 multiletter control sequences out of 15000+600000
+ 29427 multiletter control sequences out of 15000+600000
  472808 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,6n,79p,1714b,327s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -800,7 +786,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/
 gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Users/gally/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb>
-Output written on verslag.pdf (22 pages, 171448 bytes).
+Output written on verslag.pdf (22 pages, 171539 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
